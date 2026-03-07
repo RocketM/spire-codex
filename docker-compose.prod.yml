@@ -1,0 +1,24 @@
+name: spire-codex
+
+services:
+  backend:
+    build: ./backend
+    container_name: spire-codex-backend
+    volumes:
+      - ./data:/data:ro
+    environment:
+      - DATA_DIR=/data
+    networks:
+      - nginx_web-network
+
+  frontend:
+    image: ptrlrd/spire-codex-frontend:latest
+    container_name: spire-codex-frontend
+    depends_on:
+      - backend
+    networks:
+      - nginx_web-network
+
+networks:
+  nginx_web-network:
+    external: true
