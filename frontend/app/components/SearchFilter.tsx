@@ -26,14 +26,14 @@ export default function SearchFilter({
   placeholder = "Search...",
 }: SearchFilterProps) {
   return (
-    <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center mb-6">
-      <div className="relative flex-1 w-full">
+    <div className="flex flex-wrap gap-2 items-center mb-6">
+      <div className="relative flex-1 min-w-[140px]">
         <input
           type="text"
           value={search}
           onChange={(e) => onSearchChange(e.target.value)}
           placeholder={placeholder}
-          className="w-full px-4 py-2.5 bg-[var(--bg-card)] border border-[var(--border-subtle)] rounded-lg text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors"
+          className="w-full px-4 py-2.5 bg-[var(--bg-card)] border border-[var(--border-subtle)] rounded-lg text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:outline-none focus:border-[var(--accent-gold)]/50 transition-colors text-sm"
         />
       </div>
       {filters?.map((filter) => (
@@ -41,7 +41,7 @@ export default function SearchFilter({
           key={filter.label}
           value={filter.value}
           onChange={(e) => filter.onChange(e.target.value)}
-          className="px-3 py-2.5 bg-[var(--bg-card)] border border-[var(--border-subtle)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)]/50 cursor-pointer"
+          className="px-3 py-2.5 bg-[var(--bg-card)] border border-[var(--border-subtle)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)]/50 cursor-pointer text-sm"
         >
           <option value="">{filter.label}</option>
           {filter.options.map((opt) => (
