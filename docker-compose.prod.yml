@@ -2,7 +2,7 @@ name: spire-codex
 
 services:
   backend:
-    build: ./backend
+    image: ptrlrd/spire-codex-backend:latest
     container_name: spire-codex-backend
     volumes:
       - ./data:/data:ro
