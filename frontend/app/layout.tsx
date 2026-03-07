@@ -17,6 +17,14 @@ export const metadata: Metadata = {
   title: "Spire Codex - Slay the Spire 2 Database",
   description:
     "A comprehensive database for Slay the Spire 2 — browse cards, relics, characters, monsters, and potions.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({

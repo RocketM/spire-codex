@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import type { Character } from "@/lib/api";
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
 const colorStyles: Record<string, string> = {
   red: "border-red-700/60 from-red-900/20",

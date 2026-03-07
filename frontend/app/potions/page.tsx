@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import type { Potion } from "@/lib/api";
 import SearchFilter from "../components/SearchFilter";
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
 const rarityColors: Record<string, string> = {
   Common: "border-gray-500/40 text-gray-300",

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import type { Monster } from "@/lib/api";
 import SearchFilter from "../components/SearchFilter";
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
 const typeColors: Record<string, string> = {
   Normal: "border-gray-600/40",

@@ -1,6 +1,6 @@
 import type { Card } from "@/lib/api";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
 const colorMap: Record<string, string> = {
   ironclad: "border-red-800/60 hover:border-red-600",
