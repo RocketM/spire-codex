@@ -80,8 +80,9 @@ export default function MonstersPage() {
                   <img
                     src={`${API}${monster.image_url}`}
                     alt={monster.name}
-                    className="w-full h-32 object-cover rounded-t-lg"
+                    className="w-full h-40 object-contain rounded-t-lg"
                     loading="lazy"
+                    crossOrigin="anonymous"
                   />
                 </div>
               )}

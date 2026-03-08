@@ -11,6 +11,7 @@ const links = [
   { href: "/relics", label: "Relics" },
   { href: "/monsters", label: "Monsters" },
   { href: "/potions", label: "Potions" },
+  { href: "/about", label: "About" },
 ];
 
 export default function Navbar() {

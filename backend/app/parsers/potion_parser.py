@@ -2,11 +2,13 @@
 import json
 import re
 from pathlib import Path
+from description_resolver import resolve_description, extract_vars_from_source
 
 BASE = Path(__file__).resolve().parents[3]
 DECOMPILED = BASE / "extraction" / "decompiled"
 LOCALIZATION = BASE / "extraction" / "raw" / "localization" / "eng"
 POTIONS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Potions"
+STATIC_IMAGES = BASE / "backend" / "static" / "images" / "potions"
 OUTPUT = BASE / "data"
 
 
@@ -37,18 +39,28 @@ def parse_single_potion(filepath: Path, localization: dict) -> dict | None:
     rarity_match = re.search(r'Rarity\s*=>\s*PotionRarity\.(\w+)', content)
     rarity = rarity_match.group(1) if rarity_match else "Common"
 
+    # Extract variable values from source
+    all_vars = extract_vars_from_source(content)
+
     # Localization
     title = localization.get(f"{potion_id}.title", class_name)
-    description = localization.get(f"{potion_id}.description", "")
-    desc_clean = re.sub(r'\[/?(?:gold|blue|red|purple|green|orange|pink)\]', '', description)
+    description_raw = localization.get(f"{potion_id}.description", "")
+
+    # Resolve templates, keep [gold] for frontend rendering
+    description_resolved = resolve_description(description_raw, all_vars)
+    desc_clean = re.sub(r'\[/?(?:blue|red|purple|green|orange|pink)\]', '', description_resolved)
+
+    # Image URL
+    image_file = STATIC_IMAGES / f"{potion_id.lower()}.png"
+    image_url = f"/static/images/potions/{potion_id.lower()}.png" if image_file.exists() else None
 
     return {
         "id": potion_id,
         "name": title,
         "description": desc_clean,
-        "description_raw": description,
+        "description_raw": description_raw,
         "rarity": rarity,
-        "image_url": f"/static/images/potions/{potion_id.lower()}.png",
+        "image_url": image_url,
     }
 
 

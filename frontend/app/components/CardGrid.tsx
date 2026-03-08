@@ -1,3 +1,6 @@
+"use client";
+
+import React from "react";
 import type { Card } from "@/lib/api";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
@@ -35,40 +38,150 @@ const typeIcons: Record<string, string> = {
   Quest: "★",
 };
 
-function cleanDescription(desc: string): string {
-  return desc
-    .replace(/\{(\w+):?[^}]*\}/g, "X")
-    .replace(/\n/g, " ");
+const keywordTooltips: Record<string, string> = {
+  Exhaust: "Remove this card from your deck when played.",
+  Ethereal: "If this card is in your hand at end of turn, discard it.",
+  Innate: "Always appears in your opening hand.",
+  Unplayable: "Cannot be played from your hand.",
+  Retain: "Keep this card in your hand at end of turn.",
+  Sly: "Can be played from the discard pile.",
+  Eternal: "Cannot be removed from your deck.",
+};
+
+const energyIconMap: Record<string, string> = {
+  ironclad: "ironclad", silent: "silent", defect: "defect",
+  necrobinder: "necrobinder", regent: "regent", colorless: "colorless",
+};
+
+function renderDescription(card: Card, upgraded: boolean): React.ReactNode {
+  // Use the pre-rendered description (with [energy:N], [star:N], [gold]...[/gold] markers)
+  const desc = (card.description || "").replace(/\n/g, " ");
+  const u = upgraded && card.upgrade ? card.upgrade : null;
+  const vars = card.vars || {};
+
+  // Apply upgrades to numeric values in the description
+  let text = desc;
+  if (u) {
+    for (const [key, upVal] of Object.entries(u)) {
+      if (upVal == null) continue;
+      // Find the base value from vars (case-insensitive)
+      const varKey = Object.keys(vars).find(k => k.toLowerCase() === key.toLowerCase());
+      if (varKey && vars[varKey] != null) {
+        const base = vars[varKey];
+        const upgraded = getUpgradedValue(base, upVal);
+        if (upgraded !== null && upgraded !== base) {
+          // Replace the base value in the text — match word boundaries
+          const baseStr = String(base);
+          const upgradedStr = String(upgraded);
+          // Only replace first occurrence to avoid over-replacing
+          text = text.replace(new RegExp(`\\b${baseStr}\\b`), upgradedStr);
+        }
+      }
+      // Handle energy icon count upgrades
+      if (key.toLowerCase() === "energy") {
+        const baseEnergy = vars["Energy"] ?? 1;
+        const upEnergy = getUpgradedValue(baseEnergy, upVal) ?? baseEnergy;
+        text = text.replace(/\[energy:(\d+)\]/, `[energy:${upEnergy}]`);
+      }
+    }
+  }
+
+  // Parse [gold]...[/gold], [energy:N], [star:N] into React nodes
+  const parts: React.ReactNode[] = [];
+  const regex = /(\[gold\].*?\[\/gold\]|\[energy:(\d+)\]|\[star:(\d+)\])/g;
+  let lastIndex = 0;
+  let matchArr: RegExpExecArray | null;
+
+  while ((matchArr = regex.exec(text)) !== null) {
+    if (matchArr.index > lastIndex) {
+      parts.push(text.slice(lastIndex, matchArr.index));
+    }
+
+    const segment = matchArr[0];
+    if (segment.startsWith("[gold]")) {
+      const inner = segment.replace(/\[gold\]/g, "").replace(/\[\/gold\]/g, "");
+      parts.push(<span key={matchArr.index} className="text-[var(--accent-gold)]">{inner}</span>);
+    } else if (segment.startsWith("[energy:")) {
+      const count = parseInt(matchArr[2]);
+      const iconName = energyIconMap[card.color] || "colorless";
+      const icons = [];
+      for (let i = 0; i < count; i++) {
+        icons.push(
+          <img key={i} src={`${API_BASE}/static/images/icons/${iconName}_energy_icon.png`}
+            alt="energy" className="inline-block w-4 h-4 align-text-bottom" crossOrigin="anonymous" />
+        );
+      }
+      parts.push(<span key={matchArr.index}>{icons}</span>);
+    } else if (segment.startsWith("[star:")) {
+      const count = parseInt(matchArr[3]);
+      const icons = [];
+      for (let i = 0; i < count; i++) {
+        icons.push(
+          <img key={i} src={`${API_BASE}/static/images/icons/star_icon.png`}
+            alt="star" className="inline-block w-4 h-4 align-text-bottom" crossOrigin="anonymous" />
+        );
+      }
+      parts.push(<span key={matchArr.index}>{icons}</span>);
+    }
+
+    lastIndex = regex.lastIndex;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts;
 }
 
-export default function CardGrid({ cards }: { cards: Card[] }) {
+function getUpgradedValue(base: number | null, upgradeVal: string | number | null | undefined): number | null {
+  if (base == null || upgradeVal == null) return base;
+  if (typeof upgradeVal === "number") return upgradeVal;
+  if (typeof upgradeVal === "string" && upgradeVal.startsWith("+")) return base + parseInt(upgradeVal);
+  return base;
+}
+
+export default function CardGrid({ cards, upgraded = false, betaArt = false }: { cards: Card[]; upgraded?: boolean; betaArt?: boolean }) {
   return (
     <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
-      {cards.map((card) => (
+      {cards.map((card) => {
+        const u = upgraded && card.upgrade ? card.upgrade : null;
+        const dmg = u ? getUpgradedValue(card.damage, u.damage) : card.damage;
+        const blk = u ? getUpgradedValue(card.block, u.block) : card.block;
+        const cost = u && u.cost != null ? u.cost as number : card.cost;
+        const isUpgraded = upgraded && card.upgrade != null;
+
+        return (
         <div
           key={card.id}
           className={`group relative bg-[var(--bg-card)] rounded-lg border-2 ${
-            colorMap[card.color] || "border-[var(--border-subtle)] hover:border-[var(--border-accent)]"
+            isUpgraded ? "border-emerald-700/60 hover:border-emerald-500" : colorMap[card.color] || "border-[var(--border-subtle)] hover:border-[var(--border-accent)]"
           } p-4 transition-all hover:bg-[var(--bg-card-hover)] hover:shadow-lg hover:shadow-black/20`}
         >
-          {card.image_url && (
-            <div className="mb-3 -mx-4 -mt-4">
-              <img
-                src={`${API_BASE}${card.image_url}`}
-                alt={card.name}
-                className="w-full h-32 object-cover rounded-t-lg"
-                loading="lazy"
-              />
-            </div>
-          )}
+          {(() => {
+            const imgUrl = betaArt && card.beta_image_url ? card.beta_image_url : (card.image_url || card.beta_image_url);
+            return imgUrl ? (
+              <div className="mb-3 -mx-4 -mt-4">
+                <img
+                  src={`${API_BASE}${imgUrl}`}
+                  alt={card.name}
+                  className="w-full h-32 object-cover rounded-t-lg"
+                  loading="lazy"
+                  crossOrigin="anonymous"
+                />
+              </div>
+            ) : null;
+          })()}
 
           {/* Header */}
           <div className="flex items-start justify-between mb-2">
             <h3 className="font-semibold text-[var(--text-primary)] leading-tight">
-              {card.name}
+              {card.name}{isUpgraded && <span className="text-emerald-400">+</span>}
             </h3>
-            <span className="ml-2 flex-shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-full bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-sm font-bold text-[var(--accent-gold)]">
-              {card.cost >= 0 ? card.cost : "X"}
+            <span className={`ml-2 flex-shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-full bg-[var(--bg-primary)] border text-sm font-bold ${
+              isUpgraded && u?.cost != null ? "border-emerald-700/50 text-emerald-400" : "border-[var(--border-subtle)] text-[var(--accent-gold)]"
+            }`}>
+              {cost >= 0 ? cost : "X"}
             </span>
           </div>
 
@@ -88,20 +201,24 @@ export default function CardGrid({ cards }: { cards: Card[] }) {
           </div>
 
           {/* Stats */}
-          {(card.damage || card.block) && (
+          {(dmg || blk) && (
             <div className="flex gap-3 mb-3">
-              {card.damage && (
-                <span className="text-xs px-2 py-0.5 rounded bg-red-950/50 text-red-300 border border-red-900/30">
-                  {card.damage}
+              {dmg && (
+                <span className={`text-xs px-2 py-0.5 rounded border ${
+                  isUpgraded && u?.damage ? "bg-emerald-950/40 text-emerald-300 border-emerald-900/30" : "bg-red-950/50 text-red-300 border-red-900/30"
+                }`}>
+                  {dmg}
                   {card.hit_count && card.hit_count > 1
                     ? ` x${card.hit_count}`
                     : ""}{" "}
                   DMG
                 </span>
               )}
-              {card.block && (
-                <span className="text-xs px-2 py-0.5 rounded bg-blue-950/50 text-blue-300 border border-blue-900/30">
-                  {card.block} BLK
+              {blk && (
+                <span className={`text-xs px-2 py-0.5 rounded border ${
+                  isUpgraded && u?.block ? "bg-emerald-950/40 text-emerald-300 border-emerald-900/30" : "bg-blue-950/50 text-blue-300 border-blue-900/30"
+                }`}>
+                  {blk} BLK
                 </span>
               )}
             </div>
@@ -109,24 +226,31 @@ export default function CardGrid({ cards }: { cards: Card[] }) {
 
           {/* Description */}
           <p className="text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-3">
-            {cleanDescription(card.description)}
+            {renderDescription(card, upgraded)}
           </p>
 
           {/* Keywords */}
           {card.keywords && card.keywords.length > 0 && (
-            <div className="flex gap-1 mt-3">
+            <div className="flex flex-wrap gap-1 mt-3">
               {card.keywords.map((kw) => (
                 <span
                   key={kw}
-                  className="text-[10px] px-1.5 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--accent-gold-light)] border border-[var(--accent-gold)]/20"
+                  className="relative text-[10px] px-1.5 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--accent-gold-light)] border border-[var(--accent-gold)]/20 cursor-help group/kw"
+                  title={keywordTooltips[kw] || kw}
                 >
                   {kw}
+                  {keywordTooltips[kw] && (
+                    <span className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 w-48 px-2.5 py-1.5 rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[11px] text-[var(--text-secondary)] leading-snug shadow-lg opacity-0 group-hover/kw:opacity-100 transition-opacity z-10">
+                      {keywordTooltips[kw]}
+                    </span>
+                  )}
                 </span>
               ))}
             </div>
           )}
         </div>
-      ))}
+        );
+      })}
     </div>
   );
 }

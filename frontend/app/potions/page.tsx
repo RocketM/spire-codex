@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import type { Potion } from "@/lib/api";
 import SearchFilter from "../components/SearchFilter";
+import RichDescription from "../components/RichDescription";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -17,10 +18,6 @@ const rarityOptions = [
   { label: "Uncommon", value: "Uncommon" },
   { label: "Rare", value: "Rare" },
 ];
-
-function cleanDescription(desc: string): string {
-  return desc.replace(/\{[^}]+\}/g, "X");
-}
 
 export default function PotionsPage() {
   const [potions, setPotions] = useState<Potion[]>([]);
@@ -82,6 +79,7 @@ export default function PotionsPage() {
                       alt={potion.name}
                       className="w-12 h-12 object-contain flex-shrink-0"
                       loading="lazy"
+                      crossOrigin="anonymous"
                     />
                   )}
                   <div className="flex-1 min-w-0">
@@ -96,7 +94,7 @@ export default function PotionsPage() {
                       {potion.rarity}
                     </span>
                     <p className="text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-3">
-                      {cleanDescription(potion.description)}
+                      <RichDescription text={potion.description} />
                     </p>
                   </div>
                 </div>

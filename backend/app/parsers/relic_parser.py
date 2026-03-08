@@ -2,12 +2,14 @@
 import json
 import re
 from pathlib import Path
+from description_resolver import resolve_description, extract_vars_from_source
 
 BASE = Path(__file__).resolve().parents[3]
 DECOMPILED = BASE / "extraction" / "decompiled"
 LOCALIZATION = BASE / "extraction" / "raw" / "localization" / "eng"
 RELICS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Relics"
 RELIC_POOLS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.RelicPools"
+STATIC_IMAGES = BASE / "backend" / "static" / "images" / "relics"
 OUTPUT = BASE / "data"
 
 
@@ -59,25 +61,36 @@ def parse_single_relic(filepath: Path, localization: dict, relic_pools: dict) ->
     rarity_match = re.search(r'Rarity\s*=>\s*RelicRarity\.(\w+)', content)
     rarity = rarity_match.group(1) if rarity_match else "Unknown"
 
+    # Extract variable values from source
+    all_vars = extract_vars_from_source(content)
+
     # Localization
     title = localization.get(f"{relic_id}.title", class_name)
-    description = localization.get(f"{relic_id}.description", "")
+    description_raw = localization.get(f"{relic_id}.description", "")
     flavor = localization.get(f"{relic_id}.flavor", "")
-    desc_clean = re.sub(r'\[/?(?:gold|blue|red|purple|green|orange|pink)\]', '', description)
+
+    # Resolve templates, then strip color tags (preserve [gold] for frontend rendering)
+    description_resolved = resolve_description(description_raw, all_vars)
+    # Keep [gold]...[/gold] for frontend, strip other color tags
+    desc_clean = re.sub(r'\[/?(?:blue|red|purple|green|orange|pink)\]', '', description_resolved)
     flavor_clean = re.sub(r'\[/?(?:gold|blue|red|purple|green|orange|pink)\]', '', flavor)
 
     # Pool/character
     pool = relic_pools.get(class_name, "shared")
 
+    # Image URL
+    image_file = STATIC_IMAGES / f"{relic_id.lower()}.png"
+    image_url = f"/static/images/relics/{relic_id.lower()}.png" if image_file.exists() else None
+
     return {
         "id": relic_id,
         "name": title,
         "description": desc_clean,
-        "description_raw": description,
+        "description_raw": description_raw,
         "flavor": flavor_clean,
         "rarity": rarity,
         "pool": pool,
-        "image_url": f"/static/images/relics/{relic_id.lower()}.png",
+        "image_url": image_url,
     }
 
 

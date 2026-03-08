@@ -18,27 +18,37 @@ RELICS_DST = STATIC_IMAGES / "relics"
 POTIONS_DST = STATIC_IMAGES / "potions"
 CHARS_DST = STATIC_IMAGES / "characters"
 MONSTERS_DST = STATIC_IMAGES / "monsters"
+ICONS_SRC = RAW_IMAGES / "packed" / "sprite_fonts"
+ICONS_DST = STATIC_IMAGES / "icons"
 
 
 def copy_cards():
-    """Copy card portraits, flattening subdirectory structure."""
+    """Copy card portraits, separating beta art into a beta/ subfolder."""
     CARDS_DST.mkdir(parents=True, exist_ok=True)
+    beta_dst = CARDS_DST / "beta"
+    beta_dst.mkdir(parents=True, exist_ok=True)
     count = 0
+    beta_count = 0
     # Top-level pngs (e.g. ancient_beta.png, beta.png)
     for png in CARD_PORTRAITS.glob("*.png"):
-        if png.suffix == ".png" and not png.name.endswith(".import"):
-            shutil.copy2(png, CARDS_DST / png.name)
-            count += 1
-    # Subdirectory pngs (ironclad/bash.png, etc.) including beta subdirs
+        if png.name.endswith(".import"):
+            continue
+        shutil.copy2(png, CARDS_DST / png.name)
+        count += 1
+    # Subdirectory pngs — separate beta from non-beta
     for png in CARD_PORTRAITS.rglob("*.png"):
         if png.name.endswith(".import"):
             continue
         if png.parent == CARD_PORTRAITS:
             continue  # already handled above
-        dst = CARDS_DST / png.name
-        shutil.copy2(png, dst)
-        count += 1
+        if "beta" in png.parent.name:
+            shutil.copy2(png, beta_dst / png.name)
+            beta_count += 1
+        else:
+            shutil.copy2(png, CARDS_DST / png.name)
+            count += 1
     print(f"Copied {count} card images -> static/images/cards/")
+    print(f"Copied {beta_count} beta card images -> static/images/cards/beta/")
 
 
 def copy_relics():
@@ -92,6 +102,17 @@ def copy_monsters():
     print(f"Copied {count} monster images -> static/images/monsters/")
 
 
+def copy_icons():
+    ICONS_DST.mkdir(parents=True, exist_ok=True)
+    count = 0
+    for png in ICONS_SRC.glob("*.png"):
+        if png.name.endswith(".import"):
+            continue
+        shutil.copy2(png, ICONS_DST / png.name)
+        count += 1
+    print(f"Copied {count} icon images -> static/images/icons/")
+
+
 def main():
     print("=== Copying game images to static directory ===\n")
     copy_cards()
@@ -99,6 +120,7 @@ def main():
     copy_potions()
     copy_characters()
     copy_monsters()
+    copy_icons()
     print("\n=== Done! ===")
 
 

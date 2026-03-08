@@ -1,9 +1,17 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import type { Character } from "@/lib/api";
+import type { Character, Relic, Card } from "@/lib/api";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+
+function toUpperSnake(s: string): string {
+  return s.replace(/([a-z0-9])([A-Z])/g, "$1_$2").toUpperCase();
+}
+
+function cleanDescription(desc: string): string {
+  return desc.replace(/\{[^}]+\}/g, "X");
+}
 
 const colorStyles: Record<string, string> = {
   red: "border-red-700/60 from-red-900/20",
@@ -15,12 +23,25 @@ const colorStyles: Record<string, string> = {
 
 export default function CharactersPage() {
   const [characters, setCharacters] = useState<Character[]>([]);
+  const [relicMap, setRelicMap] = useState<Record<string, Relic>>({});
+  const [cardMap, setCardMap] = useState<Record<string, Card>>({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`${API}/api/characters`)
-      .then((r) => r.json())
-      .then(setCharacters)
+    Promise.all([
+      fetch(`${API}/api/characters`).then((r) => r.json()),
+      fetch(`${API}/api/relics`).then((r) => r.json()),
+      fetch(`${API}/api/cards`).then((r) => r.json()),
+    ])
+      .then(([chars, relics, cards]: [Character[], Relic[], Card[]]) => {
+        setCharacters(chars);
+        const rm: Record<string, Relic> = {};
+        for (const r of relics) rm[r.id] = r;
+        setRelicMap(rm);
+        const cm: Record<string, Card> = {};
+        for (const c of cards) cm[c.id] = c;
+        setCardMap(cm);
+      })
       .finally(() => setLoading(false));
   }, []);
 
@@ -55,6 +76,7 @@ export default function CharactersPage() {
                   alt={char.name}
                   className="w-10 h-10 rounded-full object-cover border-2 border-[var(--border-subtle)] ml-auto flex-shrink-0"
                   loading="lazy"
+                  crossOrigin="anonymous"
                 />
               </div>
               <p className="text-sm text-[var(--text-secondary)] mb-5">
@@ -87,14 +109,24 @@ export default function CharactersPage() {
                   Starting Deck ({char.starting_deck.length} cards)
                 </h3>
                 <div className="flex flex-wrap gap-1">
-                  {char.starting_deck.map((card, i) => (
-                    <span
-                      key={`${card}-${i}`}
-                      className="text-xs px-2 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--text-secondary)] border border-[var(--border-subtle)]"
-                    >
-                      {card.replace(/([A-Z])/g, " $1").trim()}
-                    </span>
-                  ))}
+                  {char.starting_deck.map((cardName, i) => {
+                    const cardData = cardMap[toUpperSnake(cardName)];
+                    return (
+                      <span
+                        key={`${cardName}-${i}`}
+                        className="relative text-xs px-2 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--text-secondary)] border border-[var(--border-subtle)] cursor-help group/card"
+                      >
+                        {cardName.replace(/([A-Z])/g, " $1").trim()}
+                        {cardData && (
+                          <span className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 w-52 px-2.5 py-2 rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[11px] text-[var(--text-secondary)] leading-snug shadow-lg opacity-0 group-hover/card:opacity-100 transition-opacity z-10">
+                            <span className="block font-semibold text-[var(--text-primary)] mb-1">{cardData.name}</span>
+                            <span className="block text-[var(--text-muted)] mb-1">{cardData.type} · Cost {cardData.cost}</span>
+                            <span className="block">{cleanDescription(cardData.description)}</span>
+                          </span>
+                        )}
+                      </span>
+                    );
+                  })}
                 </div>
               </div>
 
@@ -103,14 +135,23 @@ export default function CharactersPage() {
                   Starting Relic
                 </h3>
                 <div className="flex flex-wrap gap-1">
-                  {char.starting_relics.map((relic) => (
-                    <span
-                      key={relic}
-                      className="text-xs px-2 py-0.5 rounded bg-[var(--accent-gold)]/10 text-[var(--accent-gold)] border border-[var(--accent-gold)]/20"
-                    >
-                      {relic.replace(/([A-Z])/g, " $1").trim()}
-                    </span>
-                  ))}
+                  {char.starting_relics.map((relicName) => {
+                    const relicData = relicMap[toUpperSnake(relicName)];
+                    return (
+                      <span
+                        key={relicName}
+                        className="relative text-xs px-2 py-0.5 rounded bg-[var(--accent-gold)]/10 text-[var(--accent-gold)] border border-[var(--accent-gold)]/20 cursor-help group/relic"
+                      >
+                        {relicName.replace(/([A-Z])/g, " $1").trim()}
+                        {relicData && (
+                          <span className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 w-52 px-2.5 py-2 rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[11px] text-[var(--text-secondary)] leading-snug shadow-lg opacity-0 group-hover/relic:opacity-100 transition-opacity z-10">
+                            <span className="block font-semibold text-[var(--accent-gold)] mb-1">{relicData.name}</span>
+                            <span className="block">{cleanDescription(relicData.description)}</span>
+                          </span>
+                        )}
+                      </span>
+                    );
+                  })}
                 </div>
               </div>
             </div>

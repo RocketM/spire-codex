@@ -57,7 +57,13 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
     content = filepath.read_text(encoding="utf-8")
     class_name = filepath.stem
 
-    if class_name.startswith("Mock") or class_name.startswith("Deprecated"):
+    # Skip test/mock/deprecated monsters
+    skip_prefixes = ("Mock", "Deprecated")
+    skip_names = {
+        "BigDummy", "FakeMerchantMonster", "MultiAttackMoveMonster",
+        "OneHpMonster", "SingleAttackMoveMonster", "TenHpMonster",
+    }
+    if class_name.startswith(skip_prefixes) or class_name in skip_names:
         return None
 
     monster_id = class_name_to_id(class_name)
@@ -128,6 +134,10 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
         loc_key = f"{monster_id}.moves.{move}.title"
         move_title = localization.get(loc_key, move.replace("_", " ").title())
         move_details.append({"id": move, "name": move_title})
+
+    # Skip monsters with no meaningful data (segments, stubs)
+    if not min_hp and not move_details and not damage_values:
+        return None
 
     # Image URL - check if a matching image exists
     image_file = IMAGES_DIR / f"{monster_id.lower()}.png"

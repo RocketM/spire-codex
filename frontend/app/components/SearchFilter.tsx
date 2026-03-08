@@ -16,6 +16,7 @@ interface SearchFilterProps {
   }[];
   resultCount?: number;
   placeholder?: string;
+  extra?: React.ReactNode;
 }
 
 export default function SearchFilter({
@@ -24,6 +25,7 @@ export default function SearchFilter({
   filters,
   resultCount,
   placeholder = "Search...",
+  extra,
 }: SearchFilterProps) {
   return (
     <div className="flex flex-wrap gap-2 items-center mb-6">
@@ -55,6 +57,11 @@ export default function SearchFilter({
         <span className="text-sm text-[var(--text-muted)] whitespace-nowrap">
           {resultCount} results
         </span>
+      )}
+      {extra && (
+        <div className="flex items-center gap-2 ml-auto">
+          {extra}
+        </div>
       )}
     </div>
   );
