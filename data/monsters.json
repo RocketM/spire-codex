@@ -27,8 +27,8 @@
     "max_hp_ascension": 24,
     "moves": [
       {
-        "id": "KILLSHOT_MOVE",
-        "name": "Killshot Move"
+        "id": "KILLSHOT",
+        "name": "Killshot"
       }
     ],
     "damage_values": {
@@ -85,20 +85,20 @@
     "max_hp_ascension": 46,
     "moves": [
       {
-        "id": "BOOT_UP_MOVE",
-        "name": "Boot Up Move"
+        "id": "BOOT_UP",
+        "name": "Boot Up"
       },
       {
-        "id": "ONE_TWO_MOVE",
-        "name": "One Two Move"
+        "id": "ONE_TWO",
+        "name": "The One-Two"
       },
       {
-        "id": "SHARPEN_MOVE",
-        "name": "Sharpen Move"
+        "id": "SHARPEN",
+        "name": "Sharpen"
       },
       {
-        "id": "HAMMER_UPPERCUT_MOVE",
-        "name": "Hammer Uppercut Move"
+        "id": "HAMMER_UPPERCUT",
+        "name": "Hammer Uppercut"
       }
     ],
     "damage_values": {
@@ -126,8 +126,8 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "NOTHING_MOVE",
-        "name": "Nothing Move"
+        "id": "NOTHING",
+        "name": "Nothing"
       }
     ],
     "damage_values": null,
@@ -144,8 +144,8 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "NOTHING_MOVE",
-        "name": "Nothing Move"
+        "id": "NOTHING",
+        "name": "Nothing"
       }
     ],
     "damage_values": null,
@@ -162,8 +162,8 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "NOTHING_MOVE",
-        "name": "Nothing Move"
+        "id": "NOTHING",
+        "name": "Nothing"
       }
     ],
     "damage_values": null,
@@ -180,8 +180,8 @@
     "max_hp_ascension": 24,
     "moves": [
       {
-        "id": "BITE_MOVE",
-        "name": "Bite Move"
+        "id": "BITE",
+        "name": "Bite"
       }
     ],
     "damage_values": {
@@ -203,16 +203,16 @@
     "max_hp_ascension": 39,
     "moves": [
       {
-        "id": "THRASH_MOVE",
-        "name": "Thrash Move"
+        "id": "THRASH",
+        "name": "Thrash"
       },
       {
-        "id": "BUFF_MOVE",
-        "name": "Buff Move"
+        "id": "BUFF",
+        "name": "Buff"
       },
       {
-        "id": "THRASH2_MOVE",
-        "name": "Thrash2 Move"
+        "id": "THRASH2",
+        "name": "Thrash"
       }
     ],
     "damage_values": {
@@ -233,12 +233,12 @@
     "max_hp_ascension": 49,
     "moves": [
       {
-        "id": "HEADBUTT_MOVE",
-        "name": "Headbutt Move"
+        "id": "HEADBUTT",
+        "name": "Headbutt"
       },
       {
-        "id": "DIZZY_MOVE",
-        "name": "Dizzy Move"
+        "id": "DIZZY",
+        "name": "Dizzy"
       }
     ],
     "damage_values": {
@@ -260,12 +260,12 @@
     "max_hp_ascension": 44,
     "moves": [
       {
-        "id": "TRASH_MOVE",
-        "name": "Trash Move"
+        "id": "TRASH",
+        "name": "Trash"
       },
       {
-        "id": "TOXIC_SPIT_MOVE",
-        "name": "Toxic Spit Move"
+        "id": "TOXIC_SPIT",
+        "name": "Toxic Spit"
       }
     ],
     "damage_values": {
@@ -287,12 +287,12 @@
     "max_hp_ascension": 34,
     "moves": [
       {
-        "id": "BEAT_MOVE",
-        "name": "Beat Move"
+        "id": "BEAT",
+        "name": "Beat"
       },
       {
-        "id": "ROAR_MOVE",
-        "name": "Roar Move"
+        "id": "ROAR",
+        "name": "Roar"
       }
     ],
     "damage_values": {
@@ -314,20 +314,20 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "INITIAL_SLEEP_MOVE",
-        "name": "Initial Sleep Move"
+        "id": "INITIAL_SLEEP",
+        "name": "Initial Sleep"
       },
       {
-        "id": "WAKE_MOVE",
-        "name": "Wake Move"
+        "id": "WAKE",
+        "name": "Wake"
       },
       {
-        "id": "SLEEP_MOVE",
-        "name": "Sleep Move"
+        "id": "SLEEP",
+        "name": "Sleep"
       },
       {
-        "id": "SLASHES_MOVE",
-        "name": "Slashes Move"
+        "id": "SLASHES",
+        "name": "Slashes"
       }
     ],
     "damage_values": {
@@ -349,12 +349,12 @@
     "max_hp_ascension": 99,
     "moves": [
       {
-        "id": "PECK_MOVE",
-        "name": "Peck Move"
+        "id": "PECK",
+        "name": "Peck"
       },
       {
-        "id": "SWOOP_MOVE",
-        "name": "Swoop Move"
+        "id": "SWOOP",
+        "name": "Swoop"
       }
     ],
     "damage_values": {
@@ -380,8 +380,8 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "NOTHING_MOVE",
-        "name": "Nothing Move"
+        "id": "NOTHING",
+        "name": "Nothing"
       }
     ],
     "damage_values": null,
@@ -398,12 +398,12 @@
     "max_hp_ascension": 42,
     "moves": [
       {
-        "id": "INCANTATION_MOVE",
-        "name": "Incantation Move"
+        "id": "INCANTATION",
+        "name": "Incantation"
       },
       {
-        "id": "DARK_STRIKE_MOVE",
-        "name": "Dark Strike Move"
+        "id": "DARK_STRIKE",
+        "name": "Dark Strike"
       }
     ],
     "damage_values": {
@@ -413,7 +413,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/cultists.png"
   },
   {
     "id": "CEREMONIAL_BEAST",
@@ -425,28 +425,28 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "STAMP_MOVE",
-        "name": "Stamp Move"
+        "id": "STAMP",
+        "name": "Stamp"
       },
       {
-        "id": "PLOW_MOVE",
-        "name": "Plow Move"
+        "id": "PLOW",
+        "name": "Plow"
       },
       {
-        "id": "STUN_MOVE",
-        "name": "Stun Move"
+        "id": "STUN",
+        "name": "Stun"
       },
       {
-        "id": "BEAST_CRY_MOVE",
-        "name": "Beast Cry Move"
+        "id": "BEAST_CRY",
+        "name": "Beast Cry"
       },
       {
-        "id": "STOMP_MOVE",
-        "name": "Stomp Move"
+        "id": "STOMP",
+        "name": "Stomp"
       },
       {
-        "id": "CRUSH_MOVE",
-        "name": "Crush Move"
+        "id": "CRUSH",
+        "name": "Crush"
       }
     ],
     "damage_values": {
@@ -476,12 +476,12 @@
     "max_hp_ascension": 67,
     "moves": [
       {
-        "id": "CLAMP_MOVE",
-        "name": "Clamp Move"
+        "id": "CLAMP",
+        "name": "Clamp"
       },
       {
-        "id": "SCREECH_MOVE",
-        "name": "Screech Move"
+        "id": "SCREECH",
+        "name": "Screech"
       }
     ],
     "damage_values": {
@@ -503,16 +503,16 @@
     "max_hp_ascension": 29,
     "moves": [
       {
-        "id": "WHIP_SLAP_MOVE",
-        "name": "Whip Slap Move"
+        "id": "WHIP_SLAP",
+        "name": "Whip Slap"
       },
       {
-        "id": "GLOMP_MOVE",
-        "name": "Glomp Move"
+        "id": "GLOMP",
+        "name": "Glomp"
       },
       {
-        "id": "GOOP_MOVE",
-        "name": "Goop Move"
+        "id": "GOOP",
+        "name": "Goop"
       }
     ],
     "damage_values": {
@@ -537,12 +537,12 @@
     "max_hp_ascension": 22,
     "moves": [
       {
-        "id": "FIRE_MOVE",
-        "name": "Fire Move"
+        "id": "FIRE",
+        "name": "Fire!"
       },
       {
-        "id": "RELOAD_MOVE",
-        "name": "Reload Move"
+        "id": "RELOAD",
+        "name": "Reload"
       }
     ],
     "damage_values": {
@@ -564,24 +564,24 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "THRASH_MOVE",
-        "name": "Thrash Move"
+        "id": "THRASH",
+        "name": "Thrash"
       },
       {
-        "id": "ENLARGING_STRIKE_MOVE",
-        "name": "Enlarging Strike Move"
+        "id": "ENLARGING_STRIKE",
+        "name": "Enlarging Strike"
       },
       {
-        "id": "BUG_STING_MOVE",
-        "name": "Bug Sting Move"
+        "id": "BUG_STING",
+        "name": "Bug Sting"
       },
       {
-        "id": "ADAPT_MOVE",
-        "name": "Adapt Move"
+        "id": "ADAPT",
+        "name": "Adapt"
       },
       {
-        "id": "GUARDED_STRIKE_MOVE",
-        "name": "Guarded Strike Move"
+        "id": "GUARDED_STRIKE",
+        "name": "Guarded Strike"
       }
     ],
     "damage_values": {
@@ -615,12 +615,12 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "CHARGE_UP_MOVE",
-        "name": "Charge Up Move"
+        "id": "CHARGE_UP",
+        "name": "Charge Up"
       },
       {
-        "id": "REPEATER_MOVE",
-        "name": "Repeater Move"
+        "id": "REPEATER",
+        "name": "Repeater"
       },
       {
         "id": "REPEATER_MOVE_2",
@@ -631,8 +631,8 @@
         "name": "Expel Blast"
       },
       {
-        "id": "SUBMERGE_MOVE",
-        "name": "Submerge Move"
+        "id": "SUBMERGE",
+        "name": "Submerge"
       }
     ],
     "damage_values": {
@@ -658,12 +658,12 @@
     "max_hp_ascension": 54,
     "moves": [
       {
-        "id": "INCANTATION_MOVE",
-        "name": "Incantation Move"
+        "id": "INCANTATION",
+        "name": "Incantation"
       },
       {
-        "id": "DARK_STRIKE_MOVE",
-        "name": "Dark Strike Move"
+        "id": "DARK_STRIKE",
+        "name": "Dark Strike"
       }
     ],
     "damage_values": {
@@ -673,7 +673,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/cultists.png"
   },
   {
     "id": "DECIMILLIPEDE_SEGMENT",
@@ -685,24 +685,24 @@
     "max_hp_ascension": 56,
     "moves": [
       {
-        "id": "WRITHE_MOVE",
-        "name": "Writhe Move"
+        "id": "WRITHE",
+        "name": "Writhe"
       },
       {
-        "id": "BULK_MOVE",
-        "name": "Bulk Move"
+        "id": "BULK",
+        "name": "Bulk"
       },
       {
-        "id": "CONSTRICT_MOVE",
-        "name": "Constrict Move"
+        "id": "CONSTRICT",
+        "name": "Constrict"
       },
       {
-        "id": "DEAD_MOVE",
-        "name": "Dead Move"
+        "id": "DEAD",
+        "name": "Dead"
       },
       {
-        "id": "REATTACH_MOVE",
-        "name": "Reattach Move"
+        "id": "REATTACH",
+        "name": "Reattach"
       }
     ],
     "damage_values": {
@@ -732,12 +732,12 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "FORBIDDEN_INCANTATION_MOVE",
-        "name": "Forbidden Incantation Move"
+        "id": "FORBIDDEN_INCANTATION",
+        "name": "Forbidden Incantation"
       },
       {
-        "id": "SAVAGE_MOVE",
-        "name": "Savage Move"
+        "id": "SAVAGE",
+        "name": "Savage"
       }
     ],
     "damage_values": {
@@ -759,20 +759,20 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "DRAMATIC_OPEN_MOVE",
-        "name": "Dramatic Open Move"
+        "id": "DRAMATIC_OPEN",
+        "name": "Dramatic Open"
       },
       {
-        "id": "ENFORCE_MOVE",
-        "name": "Enforce Move"
+        "id": "ENFORCE",
+        "name": "Enforce"
       },
       {
-        "id": "DOOR_SLAM_MOVE",
-        "name": "Door Slam Move"
+        "id": "DOOR_SLAM",
+        "name": "Door Slam"
       },
       {
-        "id": "DEAD_MOVE",
-        "name": "Dead Move"
+        "id": "DEAD",
+        "name": "Dead"
       }
     ],
     "damage_values": {
@@ -801,16 +801,16 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "WHAT_IS_IT_MOVE",
-        "name": "What Is It Move"
+        "id": "WHAT_IS_IT",
+        "name": "What Is It"
       },
       {
-        "id": "BEAM_MOVE",
-        "name": "Beam Move"
+        "id": "BEAM",
+        "name": "Beam"
       },
       {
-        "id": "GET_BACK_IN_MOVE",
-        "name": "Get Back In Move"
+        "id": "GET_BACK_IN",
+        "name": "Get Back In"
       }
     ],
     "damage_values": {
@@ -836,16 +836,16 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "PHEROMONE_SPIT_MOVE",
-        "name": "Pheromone Spit Move"
+        "id": "PHEROMONE_SPIT",
+        "name": "Pheromone Spit"
       },
       {
-        "id": "BEES_MOVE",
-        "name": "Bees Move"
+        "id": "BEES",
+        "name": "Beeeees!"
       },
       {
-        "id": "SPEAR_MOVE",
-        "name": "Spear Move"
+        "id": "SPEAR",
+        "name": "Spear!"
       }
     ],
     "damage_values": {
@@ -871,16 +871,16 @@
     "max_hp_ascension": 29,
     "moves": [
       {
-        "id": "SKITTER_MOVE",
-        "name": "Skitter Move"
+        "id": "SKITTER",
+        "name": "Skitter"
       },
       {
-        "id": "MANDIBLE_MOVE",
-        "name": "Mandible Move"
+        "id": "MANDIBLE",
+        "name": "Mandible"
       },
       {
-        "id": "ENRAGE_MOVE",
-        "name": "Enrage Move"
+        "id": "ENRAGE",
+        "name": "Enrage"
       }
     ],
     "damage_values": {
@@ -905,8 +905,8 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "DISTRACT_MOVE",
-        "name": "Distract Move"
+        "id": "DISTRACT",
+        "name": "Distract"
       }
     ],
     "damage_values": null,
@@ -923,16 +923,16 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "FABRICATE_MOVE",
-        "name": "Fabricate Move"
+        "id": "FABRICATE",
+        "name": "Fabricate"
       },
       {
-        "id": "FABRICATING_STRIKE_MOVE",
-        "name": "Fabricating Strike Move"
+        "id": "FABRICATING_STRIKE",
+        "name": "Fabricating Strike"
       },
       {
-        "id": "DISINTEGRATE_MOVE",
-        "name": "Disintegrate Move"
+        "id": "DISINTEGRATE",
+        "name": "Disintegrate"
       }
     ],
     "damage_values": {
@@ -958,12 +958,12 @@
     "max_hp_ascension": 18,
     "moves": [
       {
-        "id": "SPAWNED_MOVE",
-        "name": "Spawned Move"
+        "id": "SPAWNED",
+        "name": "Spawned"
       },
       {
-        "id": "FLEE_MOVE",
-        "name": "Flee Move"
+        "id": "FLEE",
+        "name": "Flee"
       }
     ],
     "damage_values": null,
@@ -984,12 +984,12 @@
         "name": "War Chant"
       },
       {
-        "id": "FLAIL_MOVE",
-        "name": "Flail Move"
+        "id": "FLAIL",
+        "name": "Flail"
       },
       {
-        "id": "RAM_MOVE",
-        "name": "Ram Move"
+        "id": "RAM",
+        "name": "Ram"
       }
     ],
     "damage_values": {
@@ -1015,16 +1015,16 @@
     "max_hp_ascension": 53,
     "moves": [
       {
-        "id": "VULNERABLE_SPORES_MOVE",
-        "name": "Vulnerable Spores Move"
+        "id": "VULNERABLE_SPORES",
+        "name": "Vulnerable Spores"
       },
       {
-        "id": "FRAIL_SPORES_MOVE",
-        "name": "Frail Spores Move"
+        "id": "FRAIL_SPORES",
+        "name": "Frail Spores"
       },
       {
-        "id": "SMASH_MOVE",
-        "name": "Smash Move"
+        "id": "SMASH",
+        "name": "Smash"
       }
     ],
     "damage_values": {
@@ -1050,20 +1050,20 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "ILLUSION_MOVE",
-        "name": "Illusion Move"
+        "id": "ILLUSION",
+        "name": "Illusion"
       },
       {
-        "id": "SWIPE_MOVE",
-        "name": "Swipe Move"
+        "id": "SWIPE",
+        "name": "Swipe"
       },
       {
-        "id": "SWIPE_RANDOM_MOVE",
-        "name": "Swipe Random Move"
+        "id": "SWIPE_RANDOM",
+        "name": "Swipe Random"
       },
       {
-        "id": "HEADBUTT_MOVE",
-        "name": "Headbutt Move"
+        "id": "HEADBUTT",
+        "name": "Headbutt"
       }
     ],
     "damage_values": {
@@ -1089,16 +1089,16 @@
     "max_hp_ascension": 56,
     "moves": [
       {
-        "id": "TACKLE_MOVE",
-        "name": "Tackle Move"
+        "id": "TACKLE",
+        "name": "Tackle"
       },
       {
-        "id": "LATCH_MOVE",
-        "name": "Latch Move"
+        "id": "LATCH",
+        "name": "Latch"
       },
       {
-        "id": "LASH_MOVE",
-        "name": "Lash Move"
+        "id": "LASH",
+        "name": "Lash"
       }
     ],
     "damage_values": {
@@ -1202,8 +1202,8 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "EXPLODE_MOVE",
-        "name": "Explode Move"
+        "id": "EXPLODE",
+        "name": "Explode"
       }
     ],
     "damage_values": {
@@ -1252,7 +1252,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/orb_head.png"
   },
   {
     "id": "GREMLIN_MERC",
@@ -1264,16 +1264,16 @@
     "max_hp_ascension": 53,
     "moves": [
       {
-        "id": "GIMME_MOVE",
-        "name": "Gimme Move"
+        "id": "GIMME",
+        "name": "Gimme"
       },
       {
-        "id": "DOUBLE_SMASH_MOVE",
-        "name": "Double Smash Move"
+        "id": "DOUBLE_SMASH",
+        "name": "Double Smash"
       },
       {
-        "id": "HEHE_MOVE",
-        "name": "Hehe Move"
+        "id": "HEHE",
+        "name": "Hehe"
       }
     ],
     "damage_values": {
@@ -1303,8 +1303,8 @@
     "max_hp_ascension": 26,
     "moves": [
       {
-        "id": "GUARD_MOVE",
-        "name": "Guard Move"
+        "id": "GUARD",
+        "name": "Guard"
       }
     ],
     "damage_values": null,
@@ -1321,20 +1321,20 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "RAMMING_SPEED_MOVE",
-        "name": "Ramming Speed Move"
+        "id": "RAMMING_SPEED",
+        "name": "Ramming Speed"
       },
       {
-        "id": "SWIPE_MOVE",
-        "name": "Swipe Move"
+        "id": "SWIPE",
+        "name": "Swipe"
       },
       {
-        "id": "STOMP_MOVE",
-        "name": "Stomp Move"
+        "id": "STOMP",
+        "name": "Stomp"
       },
       {
-        "id": "HAUNT_MOVE",
-        "name": "Haunt Move"
+        "id": "HAUNT",
+        "name": "Haunt"
       }
     ],
     "damage_values": {
@@ -1364,16 +1364,16 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "TENDERIZING_GOOP_MOVE",
-        "name": "Tenderizing Goop Move"
+        "id": "TENDERIZING_GOOP",
+        "name": "Tenderizing Goop"
       },
       {
-        "id": "BITE_MOVE",
-        "name": "Bite Move"
+        "id": "BITE",
+        "name": "Bite"
       },
       {
-        "id": "PUNCTURE_MOVE",
-        "name": "Puncture Move"
+        "id": "PUNCTURE",
+        "name": "Puncture"
       }
     ],
     "damage_values": {
@@ -1399,20 +1399,20 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "JAB_MOVE",
-        "name": "Jab Move"
+        "id": "JAB",
+        "name": "Jab"
       },
       {
-        "id": "RADIATE_MOVE",
-        "name": "Radiate Move"
+        "id": "RADIATE",
+        "name": "Radiate"
       },
       {
-        "id": "WHIRLWIND_MOVE",
-        "name": "Whirlwind Move"
+        "id": "WHIRLWIND",
+        "name": "Whirlwind"
       },
       {
-        "id": "PULSATE_MOVE",
-        "name": "Pulsate Move"
+        "id": "PULSATE",
+        "name": "Pulsate"
       }
     ],
     "damage_values": {
@@ -1442,16 +1442,16 @@
     "max_hp_ascension": 18,
     "moves": [
       {
-        "id": "JAB_MOVE",
-        "name": "Jab Move"
+        "id": "JAB",
+        "name": "Jab"
       },
       {
-        "id": "WHIRLWIND_MOVE",
-        "name": "Whirlwind Move"
+        "id": "WHIRLWIND",
+        "name": "Whirlwind"
       },
       {
-        "id": "PIERCING_GAZE_MOVE",
-        "name": "Piercing Gaze Move"
+        "id": "PIERCING_GAZE",
+        "name": "Piercing Gaze"
       }
     ],
     "damage_values": {
@@ -1481,15 +1481,15 @@
     "max_hp_ascension": 63,
     "moves": [
       {
-        "id": "QUICK_SLASH_MOVE",
+        "id": "QUICK_SLASH",
         "name": "Quick Slash"
       },
       {
-        "id": "BOOMERANG_MOVE",
+        "id": "BOOMERANG",
         "name": "Boomerang"
       },
       {
-        "id": "POWER_DANCE_MOVE",
+        "id": "POWER_DANCE",
         "name": "Power Dance"
       }
     ],
@@ -1516,20 +1516,20 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "ORB_OF_FRAILTY_MOVE",
-        "name": "Orb Of Frailty Move"
+        "id": "ORB_OF_FRAILTY",
+        "name": "Orb Of Frailty"
       },
       {
-        "id": "ORB_OF_WEAKNESS_MOVE",
-        "name": "Orb Of Weakness Move"
+        "id": "ORB_OF_WEAKNESS",
+        "name": "Orb Of Weakness"
       },
       {
-        "id": "BEAM_MOVE",
-        "name": "Soul Beam"
+        "id": "BEAM",
+        "name": "Beam"
       },
       {
-        "id": "RITUAL_MOVE",
-        "name": "Dark Ritual"
+        "id": "RITUAL",
+        "name": "Ritual"
       }
     ],
     "damage_values": {
@@ -1559,20 +1559,20 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "CURSE_OF_KNOWLEDGE_MOVE",
-        "name": "Curse Of Knowledge Move"
+        "id": "CURSE_OF_KNOWLEDGE",
+        "name": "Curse of Knowledge"
       },
       {
-        "id": "SLAP_MOVE",
-        "name": "Slap Move"
+        "id": "SLAP",
+        "name": "Slap"
       },
       {
-        "id": "KNOWLEDGE_OVERWHELMING_MOVE",
-        "name": "Knowledge Overwhelming Move"
+        "id": "KNOWLEDGE_OVERWHELMING",
+        "name": "Knowledge Overwhelming"
       },
       {
-        "id": "PONDER_MOVE",
-        "name": "Ponder Move"
+        "id": "PONDER",
+        "name": "Ponder"
       }
     ],
     "damage_values": {
@@ -1602,24 +1602,24 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "SLEEP_MOVE",
-        "name": "Sleep Move"
+        "id": "SLEEP",
+        "name": "Sleep"
       },
       {
-        "id": "SLASH_MOVE",
-        "name": "Slash Move"
+        "id": "SLASH",
+        "name": "Slash"
       },
       {
-        "id": "SLASH2_MOVE",
-        "name": "Slash2 Move"
+        "id": "SLASH2",
+        "name": "Slash2"
       },
       {
-        "id": "DISEMBOWEL_MOVE",
-        "name": "Disembowel Move"
+        "id": "DISEMBOWEL",
+        "name": "Disembowel"
       },
       {
-        "id": "SOUL_SIPHON_MOVE",
-        "name": "Soul Siphon Move"
+        "id": "SOUL_SIPHON",
+        "name": "Soul Siphon"
       }
     ],
     "damage_values": {
@@ -1676,12 +1676,12 @@
     "max_hp_ascension": 16,
     "moves": [
       {
-        "id": "BUTT_MOVE",
-        "name": "Butt Move"
+        "id": "BUTT",
+        "name": "Butt"
       },
       {
-        "id": "GOOP_MOVE",
-        "name": "Goop Move"
+        "id": "GOOP",
+        "name": "Goop"
       }
     ],
     "damage_values": {
@@ -1703,16 +1703,16 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "ADVANCED_GAS_MOVE",
-        "name": "Advanced Gas Move"
+        "id": "ADVANCED_GAS",
+        "name": "Advanced Gas"
       },
       {
-        "id": "BLOAT_MOVE",
-        "name": "Bloat Move"
+        "id": "BLOAT",
+        "name": "Bloat"
       },
       {
-        "id": "SUPER_GAS_BLAST_MOVE",
-        "name": "Super Gas Blast Move"
+        "id": "SUPER_GAS_BLAST",
+        "name": "Super Gas Blast"
       }
     ],
     "damage_values": {
@@ -1730,7 +1730,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/living_smog.png"
   },
   {
     "id": "LIVING_SHIELD",
@@ -1742,12 +1742,12 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "SHIELD_SLAM_MOVE",
-        "name": "Shield Slam Move"
+        "id": "SHIELD_SLAM",
+        "name": "Shield Slam"
       },
       {
-        "id": "SMASH_MOVE",
-        "name": "Smash Move"
+        "id": "SMASH",
+        "name": "Smash"
       }
     ],
     "damage_values": {
@@ -1772,16 +1772,16 @@
     "max_hp_ascension": 141,
     "moves": [
       {
-        "id": "WEB_CANNON_MOVE",
-        "name": "Web Cannon Move"
+        "id": "WEB_CANNON",
+        "name": "Web Cannon"
       },
       {
-        "id": "POUNCE_MOVE",
-        "name": "Pounce Move"
+        "id": "POUNCE",
+        "name": "Pounce"
       },
       {
-        "id": "CURL_AND_GROW_MOVE",
-        "name": "Curl And Grow Move"
+        "id": "CURL_AND_GROW",
+        "name": "Curl and Grow"
       }
     ],
     "damage_values": {
@@ -1807,24 +1807,24 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "FIRST_POWER_SHIELD_MOVE",
-        "name": "First Power Shield Move"
+        "id": "FIRST_POWER_SHIELD",
+        "name": "First Power Shield"
       },
       {
-        "id": "DAMPEN_MOVE",
-        "name": "Dampen Move"
+        "id": "DAMPEN",
+        "name": "Dampen"
       },
       {
-        "id": "PREP_MOVE",
-        "name": "Prep Move"
+        "id": "PREP",
+        "name": "Prep"
       },
       {
         "id": "MAGIC_BOMB",
         "name": "Magic Bomb"
       },
       {
-        "id": "RAM_MOVE",
-        "name": "Ram Move"
+        "id": "RAM",
+        "name": "Ram"
       }
     ],
     "damage_values": {
@@ -1854,16 +1854,16 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "RIP_AND_TEAR_MOVE",
-        "name": "Rip And Tear Move"
+        "id": "RIP_AND_TEAR",
+        "name": "Rip and Tear"
       },
       {
-        "id": "ROAR_MOVE",
-        "name": "Roar Move"
+        "id": "ROAR",
+        "name": "Roar"
       },
       {
-        "id": "CLAW_MOVE",
-        "name": "Claw Move"
+        "id": "CLAW",
+        "name": "Claw"
       }
     ],
     "damage_values": {
@@ -1889,20 +1889,20 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "CHARGE_MOVE",
-        "name": "Charge Move"
+        "id": "CHARGE",
+        "name": "Charge"
       },
       {
-        "id": "FLAMETHROWER_MOVE",
-        "name": "Flamethrower Move"
+        "id": "FLAMETHROWER",
+        "name": "Flamethrower"
       },
       {
-        "id": "WINDUP_MOVE",
-        "name": "Windup Move"
+        "id": "WINDUP",
+        "name": "Windup"
       },
       {
-        "id": "HEAVY_CLEAVE_MOVE",
-        "name": "Heavy Cleave Move"
+        "id": "HEAVY_CLEAVE",
+        "name": "Heavy Cleave"
       }
     ],
     "damage_values": {
@@ -1930,16 +1930,16 @@
     "max_hp_ascension": 69,
     "moves": [
       {
-        "id": "TOXIC_MOVE",
-        "name": "Toxic Move"
+        "id": "TOXIC",
+        "name": "Toxic Cornucopia"
       },
       {
-        "id": "BITE_MOVE",
-        "name": "Bite Move"
+        "id": "BITE",
+        "name": "Bite"
       },
       {
-        "id": "SUCK_MOVE",
-        "name": "Suck Move"
+        "id": "SUCK",
+        "name": "Suck"
       }
     ],
     "damage_values": {
@@ -1965,16 +1965,16 @@
     "max_hp_ascension": 48,
     "moves": [
       {
-        "id": "BUTT_MOVE",
-        "name": "Butt Move"
+        "id": "BUTT",
+        "name": "Butt"
       },
       {
-        "id": "SLICE_MOVE",
-        "name": "Slice Move"
+        "id": "SLICE",
+        "name": "Slice"
       },
       {
-        "id": "HISS_MOVE",
-        "name": "Hiss Move"
+        "id": "HISS",
+        "name": "Hiss"
       }
     ],
     "damage_values": {
@@ -2000,8 +2000,8 @@
     "max_hp_ascension": 29,
     "moves": [
       {
-        "id": "NOISE_MOVE",
-        "name": "Noise Move"
+        "id": "NOISE",
+        "name": "Noise"
       }
     ],
     "damage_values": null,
@@ -2018,8 +2018,8 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "NOTHING_MOVE",
-        "name": "Nothing Move"
+        "id": "NOTHING",
+        "name": "Nothing"
       }
     ],
     "damage_values": null,
@@ -2036,20 +2036,20 @@
     "max_hp_ascension": 132,
     "moves": [
       {
-        "id": "LAY_EGGS_MOVE",
-        "name": "Lay Eggs Move"
+        "id": "LAY_EGGS",
+        "name": "Lay Eggs"
       },
       {
-        "id": "SMASH_MOVE",
-        "name": "Smash Move"
+        "id": "SMASH",
+        "name": "Smash"
       },
       {
-        "id": "TENDERIZER_MOVE",
-        "name": "Tenderizer Move"
+        "id": "TENDERIZER",
+        "name": "Tenderizer"
       },
       {
-        "id": "NUTRITIONAL_PASTE_MOVE",
-        "name": "Nutritional Paste Move"
+        "id": "NUTRITIONAL_PASTE",
+        "name": "Nutritional Paste"
       }
     ],
     "damage_values": {
@@ -2118,8 +2118,8 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "NOTHING_MOVE",
-        "name": "Nothing Move"
+        "id": "NOTHING",
+        "name": "Nothing"
       }
     ],
     "damage_values": null,
@@ -2136,8 +2136,8 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "SLAM_MOVE",
-        "name": "Slam Move"
+        "id": "SLAM",
+        "name": "Slam"
       }
     ],
     "damage_values": {
@@ -2159,20 +2159,20 @@
     "max_hp_ascension": 33,
     "moves": [
       {
-        "id": "BITE_MOVE",
-        "name": "Bite Move"
+        "id": "BITE",
+        "name": "Bite"
       },
       {
-        "id": "LASH_MOVE",
-        "name": "Lash Move"
+        "id": "LASH",
+        "name": "Lash"
       },
       {
-        "id": "FLAIL_MOVE",
-        "name": "Flail Move"
+        "id": "FLAIL",
+        "name": "Flail"
       },
       {
-        "id": "ENLARGE_MOVE",
-        "name": "Enlarge Move"
+        "id": "ENLARGE",
+        "name": "Enlarge"
       }
     ],
     "damage_values": {
@@ -2201,12 +2201,12 @@
     "max_hp_ascension": 68,
     "moves": [
       {
-        "id": "INFECT_MOVE",
-        "name": "Infect Move"
+        "id": "INFECT",
+        "name": "Infect"
       },
       {
-        "id": "LASH_MOVE",
-        "name": "Lash Move"
+        "id": "LASH",
+        "name": "Lash"
       }
     ],
     "damage_values": {
@@ -2228,16 +2228,16 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "READY_MOVE",
-        "name": "Ready Move"
+        "id": "READY",
+        "name": "READY"
       },
       {
-        "id": "STRONG_PUNCH_MOVE",
-        "name": "Strong Punch Move"
+        "id": "STRONG_PUNCH",
+        "name": "Strong Punch"
       },
       {
-        "id": "FAST_PUNCH_MOVE",
-        "name": "Fast Punch Move"
+        "id": "FAST_PUNCH",
+        "name": "Fast Punch"
       }
     ],
     "damage_values": {
@@ -2263,28 +2263,28 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "PUPPET_STRINGS_MOVE",
-        "name": "Puppet Strings Move"
+        "id": "PUPPET_STRINGS",
+        "name": "Puppet Strings"
       },
       {
-        "id": "YOUR_MINE_MOVE",
-        "name": "Your Mine Move"
+        "id": "YOUR_MINE",
+        "name": "Your Mine"
       },
       {
-        "id": "BURN_BRIGHT_FOR_ME_MOVE",
-        "name": "Burn Bright For Me Move"
+        "id": "BURN_BRIGHT_FOR_ME",
+        "name": "Burn Bright for Me"
       },
       {
-        "id": "OFF_WITH_YOUR_HEAD_MOVE",
-        "name": "Off With Your Head Move"
+        "id": "OFF_WITH_YOUR_HEAD",
+        "name": "Off with Your Head"
       },
       {
-        "id": "EXECUTION_MOVE",
-        "name": "Execution Move"
+        "id": "EXECUTION",
+        "name": "Execution"
       },
       {
-        "id": "ENRAGE_MOVE",
-        "name": "Enrage Move"
+        "id": "ENRAGE",
+        "name": "Enrage"
       }
     ],
     "damage_values": {
@@ -2310,24 +2310,24 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "TARGETING_RETICLE_MOVE",
-        "name": "Targeting Reticle Move"
+        "id": "TARGETING_RETICLE",
+        "name": "Targeting Reticle"
       },
       {
-        "id": "PRECISION_BEAM_MOVE",
-        "name": "Precision Beam Move"
+        "id": "PRECISION_BEAM",
+        "name": "Precision Beam"
       },
       {
-        "id": "CHARGE_UP_MOVE",
-        "name": "Charge Up Move"
+        "id": "CHARGE_UP",
+        "name": "Charge Up"
       },
       {
-        "id": "LASER_MOVE",
-        "name": "Laser Move"
+        "id": "LASER",
+        "name": "Laser"
       },
       {
-        "id": "RECHARGE_MOVE",
-        "name": "Recharge Move"
+        "id": "RECHARGE",
+        "name": "Recharge"
       }
     ],
     "damage_values": {
@@ -2392,16 +2392,16 @@
     "max_hp_ascension": 49,
     "moves": [
       {
-        "id": "SEA_KICK_MOVE",
-        "name": "Sea Kick Move"
+        "id": "SEA_KICK",
+        "name": "Sea Kick"
       },
       {
-        "id": "SPINNING_KICK_MOVE",
-        "name": "Spinning Kick Move"
+        "id": "SPINNING_KICK",
+        "name": "Spinning Kick"
       },
       {
-        "id": "BUBBLE_BURP_MOVE",
-        "name": "Bubble Burp Move"
+        "id": "BUBBLE_BURP",
+        "name": "Bubble Burp"
       }
     ],
     "damage_values": {
@@ -2426,12 +2426,12 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "PRESSURIZE_MOVE",
-        "name": "Pressurize Move"
+        "id": "PRESSURIZE",
+        "name": "Pressurize"
       },
       {
-        "id": "JET_MOVE",
-        "name": "Jet Move"
+        "id": "JET",
+        "name": "Jet"
       }
     ],
     "damage_values": {
@@ -2453,16 +2453,16 @@
     "max_hp_ascension": 42,
     "moves": [
       {
-        "id": "SHRINKER_MOVE",
-        "name": "Shrinker Move"
+        "id": "SHRINKER",
+        "name": "Shrinker"
       },
       {
-        "id": "CHOMP_MOVE",
-        "name": "Chomp Move"
+        "id": "CHOMP",
+        "name": "Chomp"
       },
       {
-        "id": "STOMP_MOVE",
-        "name": "Stomp Move"
+        "id": "STOMP",
+        "name": "Stomp"
       }
     ],
     "damage_values": {
@@ -2488,20 +2488,20 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "INERTIA_MOVE",
-        "name": "Inertia Move"
+        "id": "INERTIA",
+        "name": "Inertia"
       },
       {
-        "id": "ZOOM_MOVE",
-        "name": "Zoom Move"
+        "id": "ZOOM",
+        "name": "Zoom"
       },
       {
-        "id": "SUPER_CRAB_MOVE",
-        "name": "Super Crab Move"
+        "id": "SUPER_CRAB",
+        "name": "Super Crab"
       },
       {
-        "id": "SMASH_MOVE",
-        "name": "Smash Move"
+        "id": "SMASH",
+        "name": "Smash"
       }
     ],
     "damage_values": {
@@ -2519,7 +2519,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/skulkling_colomy.png"
   },
   {
     "id": "SLIMED_BERSERKER",
@@ -2531,20 +2531,20 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "VOMIT_ICHOR_MOVE",
-        "name": "Vomit Ichor Move"
+        "id": "VOMIT_ICHOR",
+        "name": "Vomit Ichor"
       },
       {
-        "id": "LEECHING_HUG_MOVE",
-        "name": "Leeching Hug Move"
+        "id": "LEECHING_HUG",
+        "name": "Leeching Hug"
       },
       {
-        "id": "SMOTHER_MOVE",
-        "name": "Smother Move"
+        "id": "SMOTHER",
+        "name": "Smother"
       },
       {
-        "id": "FURIOUS_PUMMELING_MOVE",
-        "name": "Furious Pummeling Move"
+        "id": "FURIOUS_PUMMELING",
+        "name": "Furious Pummeling"
       }
     ],
     "damage_values": {
@@ -2605,16 +2605,16 @@
     "max_hp_ascension": 42,
     "moves": [
       {
-        "id": "OIL_SPRAY_MOVE",
-        "name": "Oil Spray Move"
+        "id": "OIL_SPRAY",
+        "name": "Oil Spray"
       },
       {
-        "id": "SLAM_MOVE",
-        "name": "Slam Move"
+        "id": "SLAM",
+        "name": "Slam"
       },
       {
-        "id": "RAGE_MOVE",
-        "name": "Rage Move"
+        "id": "RAGE",
+        "name": "Rage"
       }
     ],
     "damage_values": {
@@ -2644,12 +2644,12 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "SNORE_MOVE",
-        "name": "Snore Move"
+        "id": "SNORE",
+        "name": "Snore"
       },
       {
-        "id": "ROLL_OUT_MOVE",
-        "name": "Roll Out Move"
+        "id": "ROLL_OUT",
+        "name": "Roll Out"
       }
     ],
     "damage_values": {
@@ -2671,8 +2671,8 @@
     "max_hp_ascension": 36,
     "moves": [
       {
-        "id": "ENERGY_ORB_MOVE",
-        "name": "Energy Orb Move"
+        "id": "ENERGY_ORB",
+        "name": "Energy Orb"
       }
     ],
     "damage_values": {
@@ -2694,12 +2694,12 @@
     "max_hp_ascension": 15,
     "moves": [
       {
-        "id": "SPAWNED_MOVE",
-        "name": "Spawned Move"
+        "id": "SPAWNED",
+        "name": "Spawned"
       },
       {
-        "id": "TACKLE_MOVE",
-        "name": "Tackle Move"
+        "id": "TACKLE",
+        "name": "Tackle"
       }
     ],
     "damage_values": {
@@ -2721,24 +2721,24 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "BECKON_MOVE",
-        "name": "Beckon Move"
+        "id": "BECKON",
+        "name": "Beckon"
       },
       {
-        "id": "DE_GAS_MOVE",
-        "name": "De Gas Move"
+        "id": "DE_GAS",
+        "name": "De-Gas"
       },
       {
-        "id": "GAZE_MOVE",
-        "name": "Gaze Move"
+        "id": "GAZE",
+        "name": "Gaze"
       },
       {
-        "id": "FADE_MOVE",
-        "name": "Fade Move"
+        "id": "FADE",
+        "name": "Fade"
       },
       {
-        "id": "SCREAM_MOVE",
-        "name": "Scream Move"
+        "id": "SCREAM",
+        "name": "Scream"
       }
     ],
     "damage_values": {
@@ -2768,16 +2768,16 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "SOUL_BURN_MOVE",
-        "name": "Soul Burn Move"
+        "id": "SOUL_BURN",
+        "name": "Soul Burn"
       },
       {
-        "id": "MAELSTROM_MOVE",
-        "name": "Maelstrom Move"
+        "id": "MAELSTROM",
+        "name": "Maelstrom"
       },
       {
-        "id": "DRAIN_LIFE_MOVE",
-        "name": "Drain Life Move"
+        "id": "DRAIN_LIFE",
+        "name": "Drain Life"
       }
     ],
     "damage_values": {
@@ -2842,16 +2842,16 @@
     "max_hp_ascension": 124,
     "moves": [
       {
-        "id": "PROTRUDING_SPIKES_MOVE",
-        "name": "Protruding Spikes Move"
+        "id": "PROTRUDING_SPIKES",
+        "name": "Protruding Spikes"
       },
       {
-        "id": "SPIKE_EXPLOSION_MOVE",
-        "name": "Spike Explosion Move"
+        "id": "SPIKE_EXPLOSION",
+        "name": "Spike Explosion"
       },
       {
-        "id": "TONGUE_LASH_MOVE",
-        "name": "Tongue Lash Move"
+        "id": "TONGUE_LASH",
+        "name": "Tongue Lash"
       }
     ],
     "damage_values": {
@@ -2877,8 +2877,8 @@
     "max_hp_ascension": 29,
     "moves": [
       {
-        "id": "STAB_MOVE",
-        "name": "Stab Move"
+        "id": "STAB",
+        "name": "Stab"
       }
     ],
     "damage_values": {
@@ -2900,20 +2900,20 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "CRASH_MOVE",
-        "name": "Crash Move"
+        "id": "CRASH",
+        "name": "Crash"
       },
       {
         "id": "ThrashMove",
         "name": "Thrashmove"
       },
       {
-        "id": "STUN_MOVE",
-        "name": "Stun Move"
+        "id": "STUN",
+        "name": "Stun"
       },
       {
-        "id": "TERROR_MOVE",
-        "name": "Terror Move"
+        "id": "TERROR",
+        "name": "Terror"
       }
     ],
     "damage_values": {
@@ -2939,35 +2939,35 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "RESPAWN_MOVE",
+        "id": "RESPAWN",
         "name": "Respawn"
       },
       {
-        "id": "BITE_MOVE",
+        "id": "BITE",
         "name": "Bite"
       },
       {
-        "id": "SKULL_BASH_MOVE",
+        "id": "SKULL_BASH",
         "name": "Skull Bash"
       },
       {
-        "id": "POUNCE_MOVE",
+        "id": "POUNCE",
         "name": "Pounce"
       },
       {
-        "id": "MULTI_CLAW_MOVE",
-        "name": "Multi-Claw"
+        "id": "MULTI_CLAW",
+        "name": "Multi Claw"
       },
       {
-        "id": "PHASE3_LACERATE_MOVE",
-        "name": "Lacerate"
+        "id": "PHASE3_LACERATE",
+        "name": "Phase3 Lacerate"
       },
       {
-        "id": "BIG_POUNCE_MOVE",
+        "id": "BIG_POUNCE",
         "name": "Big Pounce"
       },
       {
-        "id": "BURNING_GROWL_MOVE",
+        "id": "BURNING_GROWL",
         "name": "Burning Growl"
       }
     ],
@@ -3009,16 +3009,16 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "SMASH_MOVE",
-        "name": "Smash Move"
+        "id": "SMASH",
+        "name": "Smash"
       },
       {
-        "id": "BEAM_MOVE",
-        "name": "Beam Move"
+        "id": "BEAM",
+        "name": "Beam"
       },
       {
-        "id": "BARRAGE_MOVE",
-        "name": "Barrage Move"
+        "id": "BARRAGE",
+        "name": "Barrage"
       }
     ],
     "damage_values": {
@@ -3033,7 +3033,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/the_adversary_placeholder.png"
   },
   {
     "id": "THE_ADVERSARY_MK_THREE",
@@ -3045,16 +3045,16 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "CRASH_MOVE",
-        "name": "Crash Move"
+        "id": "CRASH",
+        "name": "Crash"
       },
       {
-        "id": "FLAME_BEAM_MOVE",
-        "name": "Flame Beam Move"
+        "id": "FLAME_BEAM",
+        "name": "Flame Beam"
       },
       {
-        "id": "BARRAGE_MOVE",
-        "name": "Barrage Move"
+        "id": "BARRAGE",
+        "name": "Barrage"
       }
     ],
     "damage_values": {
@@ -3069,7 +3069,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/the_adversary_placeholder.png"
   },
   {
     "id": "THE_ADVERSARY_MK_TWO",
@@ -3081,16 +3081,16 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "BASH_MOVE",
-        "name": "Bash Move"
+        "id": "BASH",
+        "name": "Bash"
       },
       {
-        "id": "FLAME_BEAM_MOVE",
-        "name": "Flame Beam Move"
+        "id": "FLAME_BEAM",
+        "name": "Flame Beam"
       },
       {
-        "id": "BARRAGE_MOVE",
-        "name": "Barrage Move"
+        "id": "BARRAGE",
+        "name": "Barrage"
       }
     ],
     "damage_values": {
@@ -3105,7 +3105,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/the_adversary_placeholder.png"
   },
   {
     "id": "THE_FORGOTTEN",
@@ -3144,8 +3144,8 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "LIQUIFY_GROUND_MOVE",
-        "name": "Liquify Ground Move"
+        "id": "LIQUIFY_GROUND",
+        "name": "Liquify Ground"
       },
       {
         "id": "THRASH_MOVE_1",
@@ -3156,12 +3156,12 @@
         "name": "Thrash Move 2"
       },
       {
-        "id": "LUNGING_BITE_MOVE",
-        "name": "Lunging Bite Move"
+        "id": "LUNGING_BITE",
+        "name": "Lunging Bite"
       },
       {
-        "id": "SALIVATE_MOVE",
-        "name": "Salivate Move"
+        "id": "SALIVATE",
+        "name": "Salivate"
       }
     ],
     "damage_values": {
@@ -3214,20 +3214,20 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "ILLUSION_MOVE",
-        "name": "Illusion Move"
+        "id": "ILLUSION",
+        "name": "Illusion"
       },
       {
-        "id": "PIERCING_GAZE_MOVE",
-        "name": "Piercing Gaze Move"
+        "id": "PIERCING_GAZE",
+        "name": "Piercing Gaze"
       },
       {
-        "id": "SAIL_MOVE",
-        "name": "Sail Move"
+        "id": "SAIL",
+        "name": "Sail"
       },
       {
-        "id": "HARDENING_STRIKE_MOVE",
-        "name": "Hardening Strike Move"
+        "id": "HARDENING_STRIKE",
+        "name": "Hardening Strike"
       }
     ],
     "damage_values": {
@@ -3253,24 +3253,24 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "THIEVERY_MOVE",
-        "name": "Thievery Move"
+        "id": "THIEVERY",
+        "name": "Thievery"
       },
       {
-        "id": "NAB_MOVE",
-        "name": "Nab Move"
+        "id": "NAB",
+        "name": "Nab"
       },
       {
-        "id": "HAT_TRICK_MOVE",
-        "name": "Hat Trick Move"
+        "id": "HAT_TRICK",
+        "name": "Hat Trick"
       },
       {
-        "id": "FLUTTER_MOVE",
-        "name": "Flutter Move"
+        "id": "FLUTTER",
+        "name": "Flutter"
       },
       {
-        "id": "ESCAPE_MOVE",
-        "name": "Escape Move"
+        "id": "ESCAPE",
+        "name": "Escape"
       }
     ],
     "damage_values": {
@@ -3300,16 +3300,16 @@
     "max_hp_ascension": 26,
     "moves": [
       {
-        "id": "SPIKE_SPIT_MOVE",
-        "name": "Spike Spit Move"
+        "id": "SPIKE_SPIT",
+        "name": "Spike Spit"
       },
       {
-        "id": "WHIRL_MOVE",
-        "name": "Whirl Move"
+        "id": "WHIRL",
+        "name": "Whirl"
       },
       {
-        "id": "SPIKEN_MOVE",
-        "name": "Spiken Move"
+        "id": "SPIKEN",
+        "name": "Spiken"
       }
     ],
     "damage_values": {
@@ -3335,24 +3335,24 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "TACKLE_1_MOVE",
-        "name": "Tackle 1 Move"
+        "id": "TACKLE_1",
+        "name": "Tackle 1"
       },
       {
-        "id": "TACKLE_2_MOVE",
-        "name": "Tackle 2 Move"
+        "id": "TACKLE_2",
+        "name": "Tackle 2"
       },
       {
-        "id": "BEAM_MOVE",
-        "name": "Beam Move"
+        "id": "BEAM",
+        "name": "Beam"
       },
       {
-        "id": "TACKLE_3_MOVE",
-        "name": "Tackle 3 Move"
+        "id": "TACKLE_3",
+        "name": "Tackle 3"
       },
       {
-        "id": "TACKLE_4_MOVE",
-        "name": "Tackle 4 Move"
+        "id": "TACKLE_4",
+        "name": "Tackle 4"
       }
     ],
     "damage_values": {
@@ -3370,7 +3370,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/amalgam.png"
   },
   {
     "id": "TOUGH_EGG",
@@ -3382,12 +3382,12 @@
     "max_hp_ascension": 19,
     "moves": [
       {
-        "id": "HATCH_MOVE",
-        "name": "Hatch Move"
+        "id": "HATCH",
+        "name": "HATCH"
       },
       {
-        "id": "NIBBLE_MOVE",
-        "name": "Nibble Move"
+        "id": "NIBBLE",
+        "name": "Nibble"
       }
     ],
     "damage_values": {
@@ -3409,12 +3409,12 @@
     "max_hp_ascension": 26,
     "moves": [
       {
-        "id": "TRACK_MOVE",
-        "name": "Track Move"
+        "id": "TRACK",
+        "name": "Track"
       },
       {
-        "id": "HOUNDS_MOVE",
-        "name": "Hounds Move"
+        "id": "HOUNDS",
+        "name": "Unleash the Hounds"
       }
     ],
     "damage_values": {
@@ -3436,20 +3436,20 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "BITE_MOVE",
-        "name": "Bite Move"
+        "id": "BITE",
+        "name": "Bite"
       },
       {
-        "id": "BURROW_MOVE",
-        "name": "Burrow Move"
+        "id": "BURROW",
+        "name": "Burrow"
       },
       {
         "id": "BELOW_MOVE_1",
         "name": "Below Move 1"
       },
       {
-        "id": "DIZZY_MOVE",
-        "name": "Dizzy Move"
+        "id": "DIZZY",
+        "name": "Dizzy"
       }
     ],
     "damage_values": {
@@ -3483,8 +3483,8 @@
         "name": "Unload Move 2"
       },
       {
-        "id": "RELOAD_MOVE",
-        "name": "Reload Move"
+        "id": "RELOAD",
+        "name": "Reload"
       }
     ],
     "damage_values": {
@@ -3506,12 +3506,12 @@
     "max_hp_ascension": 29,
     "moves": [
       {
-        "id": "CLUMP_SHOT_MOVE",
-        "name": "Clump Shot Move"
+        "id": "CLUMP_SHOT",
+        "name": "Clump Shot"
       },
       {
-        "id": "STICKY_SHOT_MOVE",
-        "name": "Sticky Shot Move"
+        "id": "STICKY_SHOT",
+        "name": "Sticky Shot"
       }
     ],
     "damage_values": {
@@ -3533,8 +3533,8 @@
     "max_hp_ascension": 12,
     "moves": [
       {
-        "id": "BUTT_MOVE",
-        "name": "Butt Move"
+        "id": "BUTT",
+        "name": "Butt"
       }
     ],
     "damage_values": {
@@ -3556,20 +3556,20 @@
     "max_hp_ascension": 22,
     "moves": [
       {
-        "id": "SCRATCH_MOVE",
-        "name": "Scratch Move"
+        "id": "SCRATCH",
+        "name": "Scratch"
       },
       {
-        "id": "DISEASE_BITE_MOVE",
-        "name": "Disease Bite Move"
+        "id": "DISEASE_BITE",
+        "name": "Disease Bite"
       },
       {
-        "id": "SCREECH_MOVE",
-        "name": "Screech Move"
+        "id": "SCREECH",
+        "name": "Screech"
       },
       {
-        "id": "CALL_FOR_BACKUP_MOVE",
-        "name": "Call For Backup Move"
+        "id": "CALL_FOR_BACKUP",
+        "name": "Call for Backup"
       }
     ],
     "damage_values": {
@@ -3595,20 +3595,20 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "INK_BLOT_MOVE",
-        "name": "Ink Blot Move"
+        "id": "INK_BLOT",
+        "name": "Ink Blot"
       },
       {
-        "id": "INKY_LANCE_MOVE",
-        "name": "Inky Lance Move"
+        "id": "INKY_LANCE",
+        "name": "Inky Lance"
       },
       {
-        "id": "DISMEMBER_MOVE",
-        "name": "Dismember Move"
+        "id": "DISMEMBER",
+        "name": "Dismember"
       },
       {
-        "id": "PREPARE_MOVE",
-        "name": "Prepare Move"
+        "id": "PREPARE",
+        "name": "Prepare"
       }
     ],
     "damage_values": {
@@ -3638,16 +3638,16 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "GRASPING_VINES_MOVE",
-        "name": "Grasping Vines Move"
+        "id": "GRASPING_VINES",
+        "name": "Grasping Vines"
       },
       {
-        "id": "SWIPE_MOVE",
-        "name": "Swipe Move"
+        "id": "SWIPE",
+        "name": "Swipe"
       },
       {
-        "id": "CHOMP_MOVE",
-        "name": "Chomp Move"
+        "id": "CHOMP",
+        "name": "Chomp"
       }
     ],
     "damage_values": {
@@ -3677,36 +3677,36 @@
     "max_hp_ascension": null,
     "moves": [
       {
-        "id": "PRESSURIZE_MOVE",
-        "name": "Pressurize Move"
+        "id": "PRESSURIZE",
+        "name": "Pressurize"
       },
       {
-        "id": "STOMP_MOVE",
-        "name": "Stomp Move"
+        "id": "STOMP",
+        "name": "Stomp"
       },
       {
-        "id": "RAM_MOVE",
-        "name": "Ram Move"
+        "id": "RAM",
+        "name": "Ram"
       },
       {
-        "id": "SIPHON_MOVE",
-        "name": "Siphon Move"
+        "id": "SIPHON",
+        "name": "Siphon"
       },
       {
-        "id": "PRESSURE_GUN_MOVE",
-        "name": "Pressure Gun Move"
+        "id": "PRESSURE_GUN",
+        "name": "Pressure Gun"
       },
       {
-        "id": "PRESSURE_UP_MOVE",
-        "name": "Pressure Up Move"
+        "id": "PRESSURE_UP",
+        "name": "Pressure Up"
       },
       {
-        "id": "ABOUT_TO_BLOW_MOVE",
-        "name": "About To Blow Move"
+        "id": "ABOUT_TO_BLOW",
+        "name": "About To Blow"
       },
       {
-        "id": "EXPLODE_MOVE",
-        "name": "Explode Move"
+        "id": "EXPLODE",
+        "name": "Explode"
       }
     ],
     "damage_values": {
@@ -3740,16 +3740,16 @@
     "max_hp_ascension": 22,
     "moves": [
       {
-        "id": "NASTY_BITE_MOVE",
-        "name": "Nasty Bite Move"
+        "id": "NASTY_BITE",
+        "name": "Nasty Bite"
       },
       {
-        "id": "WRIGGLE_MOVE",
-        "name": "Wriggle Move"
+        "id": "WRIGGLE",
+        "name": "Wriggle"
       },
       {
-        "id": "SPAWNED_MOVE",
-        "name": "Spawned Move"
+        "id": "SPAWNED",
+        "name": "Spawned"
       }
     ],
     "damage_values": {

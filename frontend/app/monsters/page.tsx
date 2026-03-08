@@ -114,7 +114,7 @@ export default function MonstersPage() {
                   {monster.min_hp_ascension && (
                     <div className="flex items-center gap-1.5">
                       <span className="text-xs text-[var(--text-muted)]">
-                        A+
+                        A+ HP
                       </span>
                       <span className="text-sm font-medium text-orange-400">
                         {monster.min_hp_ascension}

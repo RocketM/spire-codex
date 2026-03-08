@@ -131,17 +131,33 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
     name = localization.get(f"{monster_id}.name", class_name)
     move_details = []
     for move in moves:
-        loc_key = f"{monster_id}.moves.{move}.title"
-        move_title = localization.get(loc_key, move.replace("_", " ").title())
-        move_details.append({"id": move, "name": move_title})
+        # Localization keys omit the _MOVE suffix (e.g. "INCANTATION" not "INCANTATION_MOVE")
+        loc_move = re.sub(r'_MOVE$', '', move)
+        loc_key = f"{monster_id}.moves.{loc_move}.title"
+        move_title = localization.get(loc_key, loc_move.replace("_", " ").title())
+        move_details.append({"id": loc_move, "name": move_title})
 
     # Skip monsters with no meaningful data (segments, stubs)
     if not min_hp and not move_details and not damage_values:
         return None
 
     # Image URL - check if a matching image exists
-    image_file = IMAGES_DIR / f"{monster_id.lower()}.png"
-    image_url = f"/static/images/monsters/{monster_id.lower()}.png" if image_file.exists() else None
+    # Some monsters share sprites or have different filenames than their IDs
+    IMAGE_ALIASES = {
+        "CALCIFIED_CULTIST": "cultists",
+        "DAMP_CULTIST": "cultists",
+        "GLOBE_HEAD": "orb_head",
+        "TORCH_HEAD_AMALGAM": "amalgam",
+        "SKULKING_COLONY": "skulkling_colomy",
+        "LIVING_FOG": "living_smog",
+        "THE_ADVERSARY_MK_ONE": "the_adversary_placeholder",
+        "THE_ADVERSARY_MK_TWO": "the_adversary_placeholder",
+        "THE_ADVERSARY_MK_THREE": "the_adversary_placeholder",
+        "DECIMILLIPEDE_SEGMENT": "decimillipede",
+    }
+    img_name = IMAGE_ALIASES.get(monster_id, monster_id.lower())
+    image_file = IMAGES_DIR / f"{img_name}.png"
+    image_url = f"/static/images/monsters/{img_name}.png" if image_file.exists() else None
 
     return {
         "id": monster_id,
