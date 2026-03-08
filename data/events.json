@@ -28,12 +28,12 @@
       {
         "id": "COMBINE_DEFENDS",
         "title": "Combine Defends",
-        "description": "Remove 2 Defends. Add  to your Deck."
+        "description": "Remove 2 Defends. Add [Card] to your Deck."
       },
       {
         "id": "COMBINE_STRIKES",
         "title": "Combine Strikes",
-        "description": "Remove 2 Strikes. Add  to your Deck."
+        "description": "Remove 2 Strikes. Add [Card] to your Deck."
       }
     ]
   },
@@ -66,17 +66,17 @@
       {
         "id": "SETTING_1",
         "title": "Setting 1",
-        "description": "Fight a  HP dummy. Procure 1 random Potion."
+        "description": "Fight a [SettingHp] HP dummy. Procure 1 random Potion."
       },
       {
         "id": "SETTING_2",
         "title": "Setting 2",
-        "description": "Fight a  HP dummy. Upgrade 2 random cards."
+        "description": "Fight a [SettingHp] HP dummy. Upgrade 2 random cards."
       },
       {
         "id": "SETTING_3",
         "title": "Setting 3",
-        "description": "Fight a  HP dummy. Obtain a random Relic."
+        "description": "Fight a [SettingHp] HP dummy. Obtain a random Relic."
       }
     ]
   },
@@ -109,12 +109,12 @@
       {
         "id": "EXTERMINATION",
         "title": "Learn Extermination Technique",
-        "description": "Add  to your Deck."
+        "description": "Add [Card] to your Deck."
       },
       {
         "id": "SQUASH",
         "title": "Learn Squash Technique",
-        "description": "Add  to your Deck."
+        "description": "Add [Card] to your Deck."
       }
     ]
   },
@@ -133,7 +133,7 @@
       {
         "id": "TAKE",
         "title": "Take the Egg",
-        "description": "Add  to your Deck."
+        "description": "Add [Card] to your Deck."
       }
     ]
   },
@@ -186,7 +186,7 @@
       {
         "id": "EXTRACT_CURRENT_PRIZE_1",
         "title": "Extract Nectar",
-        "description": "Gain  Gold."
+        "description": "Gain [Prize] Gold."
       },
       {
         "id": "REACH_DEEPER_1",
@@ -205,7 +205,7 @@
       {
         "id": "PAYMENT_PLAN",
         "title": "Payment Plan",
-        "description": "Gain a . Divine 6 times."
+        "description": "Gain a [Curse Title]. Divine 6 times."
       },
       {
         "id": "UNCOVER_FUTURE",
@@ -402,7 +402,22 @@
           "text": "...where did I put... Oh!\nCome to see my collection!? Take anything from that pile over there, put it to good use!"
         }
       ]
-    }
+    },
+    "image_url": "/static/images/misc/ancients/darv.png",
+    "relics": [
+      "DUSTY_TOME",
+      "ASTROLABE",
+      "BLACK_STAR",
+      "CALLING_BELL",
+      "EMPTY_CAGE",
+      "PANDORAS_BOX",
+      "RUNIC_PYRAMID",
+      "SNECKO_EYE",
+      "ECTOPLASM",
+      "SOZU",
+      "PHILOSOPHERS_STONE",
+      "VELVET_CHOKER"
+    ]
   },
   {
     "id": "DENSE_VEGETATION",
@@ -476,12 +491,12 @@
       {
         "id": "BOTTLE",
         "title": "Bottle",
-        "description": "Procure ."
+        "description": "Procure [Potion]."
       },
       {
         "id": "CLIMB",
         "title": "Climb",
-        "description": "Obtain . Lose 13 Max HP."
+        "description": "Obtain [Relic]. Lose 13 Max HP."
       }
     ]
   },
@@ -517,12 +532,12 @@
       {
         "id": "ENTER_YOUR_HOLE",
         "title": "Enter Your Hole",
-        "description": "Enchant a card with ."
+        "description": "Enchant a card with [Enchantment]."
       },
       {
         "id": "RESIST",
         "title": "Resist",
-        "description": "Remove 2 cards from your Deck. Add  to your Deck."
+        "description": "Remove 2 cards from your Deck. Add [Resist Curse] to your Deck."
       }
     ]
   },
@@ -535,13 +550,13 @@
     "options": [
       {
         "id": "ACCEPT",
-        "title": "Accept the {Relic}",
-        "description": "Obtain ."
+        "title": "Accept the [Relic]",
+        "description": "Obtain [Relic]."
       },
       {
         "id": "CONFRONT",
         "title": "Confront with Truth",
-        "description": "Add  to your Deck. Enchant a card that Exhausts with ."
+        "description": "Add [Curse] to your Deck. Enchant a card that Exhausts with [Enchantment]."
       },
       {
         "id": "CONFRONT_LOCKED",
@@ -617,7 +632,7 @@
       {
         "id": "CLAIM",
         "title": "Capture the Wisp",
-        "description": "Add  to your Deck. Obtain the ."
+        "description": "Add [Curse] to your Deck. Obtain the [Relic]."
       },
       {
         "id": "CLAIM_LOCKED",
@@ -862,7 +877,30 @@
           "text": "I’ve... remade you....\n...go... ..up....."
         }
       ]
-    }
+    },
+    "image_url": "/static/images/misc/ancients/neow.png",
+    "relics": [
+      "ARCANE_SCROLL",
+      "BOOMING_CONCH",
+      "POMANDER",
+      "GOLDEN_PEARL",
+      "LEAD_PAPERWEIGHT",
+      "NEW_LEAF",
+      "NEOWS_TORMENT",
+      "PRECISE_SCISSORS",
+      "LOST_COFFER",
+      "NUTRITIOUS_OYSTER",
+      "STONE_HUMIDIFIER",
+      "MASSIVE_SCROLL",
+      "LAVA_ROCK",
+      "SMALL_CAPSULE",
+      "SILVER_CRUCIBLE",
+      "CURSED_PEARL",
+      "LARGE_CAPSULE",
+      "LEAFY_POULTICE",
+      "PRECARIOUS_SHEARS",
+      "SCROLL_BOXES"
+    ]
   },
   {
     "id": "NONUPEIPE",
@@ -1022,7 +1060,20 @@
           "text": "I haven’t had a visitor in a millennia!\nYou’re looking quite drab, here, let’s find something delightful for you to wear."
         }
       ]
-    }
+    },
+    "image_url": "/static/images/misc/ancients/nonupeipe.png",
+    "relics": [
+      "BLESSED_ANTLER",
+      "BRILLIANT_SCARF",
+      "DELICATE_FROND",
+      "DIAMOND_DIADEM",
+      "FUR_COAT",
+      "GLITTER",
+      "JEWELRY_BOX",
+      "LOOMING_FRUIT",
+      "SIGNET_RING",
+      "BEAUTIFUL_BRACELET"
+    ]
   },
   {
     "id": "OROBAS",
@@ -1198,7 +1249,20 @@
           "text": "Puppet puppet!! All the way up here?! Take these, take take!"
         }
       ]
-    }
+    },
+    "image_url": "/static/images/misc/ancients/orobas.png",
+    "relics": [
+      "ELECTRIC_SHRYMP",
+      "GLASS_EYE",
+      "SAND_CASTLE",
+      "ALCHEMICAL_COFFER",
+      "DRIFTWOOD",
+      "RADIANT_PEARL",
+      "SEA_GLASS",
+      "PRISMATIC_GEM",
+      "TOUCH_OF_OROBAS",
+      "ARCHAIC_TOOTH"
+    ]
   },
   {
     "id": "PAEL",
@@ -1348,7 +1412,20 @@
           "text": "A puppet has arrived?\nCan you check on Father? I’m too tired..."
         }
       ]
-    }
+    },
+    "image_url": "/static/images/misc/ancients/pael.png",
+    "relics": [
+      "PAELS_CLAW",
+      "PAELS_TOOTH",
+      "PAELS_GROWTH",
+      "PAELS_LEGION",
+      "PAELS_FLESH",
+      "PAELS_HORN",
+      "PAELS_TEARS",
+      "PAELS_WING",
+      "PAELS_EYE",
+      "PAELS_BLOOD"
+    ]
   },
   {
     "id": "POTION_COURIER",
@@ -1397,12 +1474,12 @@
     "options": [
       {
         "id": "GOLD",
-        "title": "Give {Gold} Gold",
+        "title": "Give 100 Gold",
         "description": "Obtain a random Relic."
       },
       {
         "id": "POTION",
-        "title": "Give {Potion}",
+        "title": "Give [Potion]",
         "description": "Obtain a random Relic."
       },
       {
@@ -1412,7 +1489,7 @@
       },
       {
         "id": "RELIC",
-        "title": "Give {Relic}",
+        "title": "Give [Relic]",
         "description": "Obtain 2 random Relics."
       },
       {
@@ -1451,17 +1528,17 @@
       {
         "id": "BOTTOM",
         "title": "Take the Bottom One",
-        "description": "Trade  for ."
+        "description": "Trade [Bottom Relic Owned] for [Bottom Relic New]."
       },
       {
         "id": "MIDDLE",
         "title": "Take the Middle One",
-        "description": "Trade  for ."
+        "description": "Trade [Middle Relic Owned] for [Middle Relic New]."
       },
       {
         "id": "TOP",
         "title": "Take the Top One",
-        "description": "Trade  for ."
+        "description": "Trade [Top Relic Owned] for [Top Relic New]."
       }
     ]
   },
@@ -1494,7 +1571,7 @@
       {
         "id": "ENJOY_TEA",
         "title": "Enjoy Your Tea",
-        "description": "Obtain . Heal to full HP."
+        "description": "Obtain [Relic]. Heal to full HP."
       },
       {
         "id": "PICK_FIGHT",
@@ -1518,7 +1595,7 @@
       {
         "id": "PLANT",
         "title": "Plant and Nourish",
-        "description": "Enchant a card with ."
+        "description": "Enchant a card with [Enchantment]."
       }
     ]
   },
@@ -1537,7 +1614,7 @@
       {
         "id": "READ_ENTIRE_BOOK",
         "title": "Read the Entire Book",
-        "description": "Choose a Power to Enchant with  2."
+        "description": "Choose a Power to Enchant with [Enchantment] 2."
       },
       {
         "id": "READ_ENTIRE_BOOK_LOCKED",
@@ -1547,7 +1624,7 @@
       {
         "id": "READ_PASSAGE",
         "title": "Read a Random Passage",
-        "description": "Choose a Skill to Enchant with  2."
+        "description": "Choose a Skill to Enchant with [Enchantment] 2."
       },
       {
         "id": "READ_PASSAGE_LOCKED",
@@ -1557,7 +1634,7 @@
       {
         "id": "READ_THE_BACK",
         "title": "Read the Back",
-        "description": "Choose an Attack to Enchant with  2."
+        "description": "Choose an Attack to Enchant with [Enchantment] 2."
       },
       {
         "id": "READ_THE_BACK_LOCKED",
@@ -1576,12 +1653,12 @@
       {
         "id": "HOLD_ON_0",
         "title": "Hold On",
-        "description": "Lose  HP. The card in the above option is randomized."
+        "description": "Lose [Hp Loss] HP. The card in the above option is randomized."
       },
       {
         "id": "OVERCOME",
         "title": "Overcome",
-        "description": " is removed from your Deck."
+        "description": "[Random Card] is removed from your Deck."
       }
     ]
   },
@@ -1638,7 +1715,7 @@
       {
         "id": "LIFT",
         "title": "Drink and Lift",
-        "description": "Lose . Gain 10 Max HP."
+        "description": "Lose [Drink Random Potion]. Gain 10 Max HP."
       },
       {
         "id": "LIFT_LOCKED",
@@ -1672,7 +1749,7 @@
       {
         "id": "GRAB_SWORD",
         "title": "Grab the Sword",
-        "description": "Obtain the ."
+        "description": "Obtain the [Relic]."
       }
     ]
   },
@@ -1705,7 +1782,7 @@
       {
         "id": "APPROACH",
         "title": "Approach",
-        "description": "Enchant an Attack with ."
+        "description": "Enchant an Attack with [Enchantment]."
       },
       {
         "id": "APPROACH_LOCKED",
@@ -1921,7 +1998,20 @@
           "text": "SO WEAK! BUT YOU HAVE POTENTIAL!\nUSE THIS WEAPON!!"
         }
       ]
-    }
+    },
+    "image_url": "/static/images/misc/ancients/tanx.png",
+    "relics": [
+      "CLAWS",
+      "CROSSBOW",
+      "IRON_CLUB",
+      "MEAT_CLEAVER",
+      "SAI",
+      "SPIKED_GAUNTLETS",
+      "TANXS_WHISTLE",
+      "THROWING_AXE",
+      "WAR_HAMMER",
+      "TRI_BOOMERANG"
+    ]
   },
   {
     "id": "TEA_MASTER",
@@ -1933,7 +2023,7 @@
       {
         "id": "BONE_TEA",
         "title": "Bone Tea",
-        "description": "Pay 50 Gold. "
+        "description": "Pay 50 Gold. [Bone Tea Description]"
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -1943,7 +2033,7 @@
       {
         "id": "EMBER_TEA",
         "title": "Ember Tea",
-        "description": "Pay 150 Gold. "
+        "description": "Pay 150 Gold. [Ember Tea Description]"
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -1953,7 +2043,7 @@
       {
         "id": "TEA_OF_DISCOURTESY",
         "title": "Tea of Discourtesy",
-        "description": ""
+        "description": "[Tea Of Discourtesy Description]"
       }
     ]
   },
@@ -2145,7 +2235,20 @@
           "text": "Oh, a visitor! Do come in, dear!\nWhat can Tezcatara do for you?"
         }
       ]
-    }
+    },
+    "image_url": "/static/images/misc/ancients/tezcatara.png",
+    "relics": [
+      "NUTRITIOUS_SOUP",
+      "VERY_HOT_COCOA",
+      "YUMMY_COOKIE",
+      "BIIIG_HUG",
+      "STORYBOOK",
+      "SEAL_OF_GOLD",
+      "TOASTY_MITTENS",
+      "GOLDEN_COMPASS",
+      "PUMPKIN_CANDLE",
+      "TOY_BOX"
+    ]
   },
   {
     "id": "THE_ARCHITECT",
@@ -2164,8 +2267,8 @@
     "options": [
       {
         "id": "POTION",
-        "title": "Insert {Rarity} Potion",
-        "description": "Lose . Obtain an Upgraded  ."
+        "title": "Insert [Rarity] Potion",
+        "description": "Lose [Potion]. Obtain an Upgraded [Rarity] [Type]."
       }
     ]
   },
@@ -2217,7 +2320,7 @@
       {
         "id": "ORNATE",
         "title": "That",
-        "description": "Add  to your Deck. Obtain a random Relic."
+        "description": "Add [Curse] to your Deck. Obtain a random Relic."
       },
       {
         "id": "PLAIN",
@@ -2264,7 +2367,7 @@
     "name": "The Trial",
     "type": "Event",
     "act": "Act 3 - Glory",
-    "description": "You join a line of people entering a massive building.\n\nAs you pass under a golden archway, horns blare, confetti explodes, and streamers glide down from the ceiling!\n\n“Entrant , you are the DECIDER for today's Trial.”",
+    "description": "You join a line of people entering a massive building.\n\nAs you pass under a golden archway, horns blare, confetti explodes, and streamers glide down from the ceiling!\n\n“Entrant [Entrant Number], you are the DECIDER for today's Trial.”",
     "options": [
       {
         "id": "ACCEPT",
@@ -2500,7 +2603,20 @@
           "text": "Give yourself to me and you will be feared as much as I."
         }
       ]
-    }
+    },
+    "image_url": "/static/images/misc/ancients/vakuu.png",
+    "relics": [
+      "BLOOD_SOAKED_ROSE",
+      "WHISPERING_EARRING",
+      "FIDDLE",
+      "PRESERVED_FOG",
+      "SERE_TALON",
+      "DISTINGUISHED_CAPE",
+      "CHOICES_PARADOX",
+      "MUSIC_BOX",
+      "LORDS_PARASOL",
+      "JEWELED_MASK"
+    ]
   },
   {
     "id": "WAR_HISTORIAN_REPY",
@@ -2575,7 +2691,7 @@
       {
         "id": "FEATURED_ITEM",
         "title": "Wongo's Featured Item",
-        "description": "Pay 200 Gold. Obtain ."
+        "description": "Pay 200 Gold. Obtain [Random Relic]."
       },
       {
         "id": "FEATURED_ITEM_LOCKED",
@@ -2647,12 +2763,12 @@
       {
         "id": "BIRD",
         "title": "Bird",
-        "description": "Choose 1 starter card to Transform into ."
+        "description": "Choose 1 starter card to Transform into [Bird Card]."
       },
       {
         "id": "SNAKE",
         "title": "Snake",
-        "description": "Enchant 1 card with ."
+        "description": "Enchant 1 card with [Snake Enchantment]."
       },
       {
         "id": "SNAKE_LOCKED",
@@ -2662,7 +2778,7 @@
       {
         "id": "TORUS",
         "title": "Torus",
-        "description": "Choose 1 starter card to Transform into ."
+        "description": "Choose 1 starter card to Transform into [Toric Card]."
       }
     ]
   },

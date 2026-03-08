@@ -52,7 +52,7 @@
   {
     "id": "ARCHAIC_TOOTH",
     "name": "Archaic Tooth",
-    "description": "Upon pickup, [gold]Transform[/gold] .",
+    "description": "Upon pickup, [gold]Transform[/gold] [Starter Card.String Value].",
     "description_raw": "Upon pickup, [gold]Transform[/gold] {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] into [gold]{AncientCard}[/gold]|a starter card with an ancient version}.",
     "flavor": "Details for this relic will be revealed in the future...",
     "rarity": "Ancient",
@@ -332,7 +332,7 @@
   {
     "id": "BRIMSTONE",
     "name": "Brimstone",
-    "description": "At the start of your turn, gain  [gold]Strength[/gold] and ALL enemies gain  [gold]Strength[/gold].",
+    "description": "At the start of your turn, gain [Self Strength] [gold]Strength[/gold] and ALL enemies gain [Enemy Strength] [gold]Strength[/gold].",
     "description_raw": "At the start of your turn, gain [blue]{SelfStrength}[/blue] [gold]Strength[/gold] and ALL enemies gain [blue]{EnemyStrength}[/blue] [gold]Strength[/gold].",
     "flavor": "Details for this relic will be revealed in the future...",
     "rarity": "Shop",
@@ -682,7 +682,7 @@
   {
     "id": "DUSTY_TOME",
     "name": "Dusty Tome",
-    "description": "Upon pickup, obtain [/gold]|an [gold]Ancient Card[/gold]}.",
+    "description": "Upon pickup, obtain [Ancient Card.String Value][/gold]|an [gold]Ancient Card[/gold]}.",
     "description_raw": "Upon pickup, obtain {AncientCard.StringValue:cond:[gold]{}[/gold]|an [gold]Ancient Card[/gold]}.",
     "flavor": "Details for this relic will be revealed in the future...",
     "rarity": "Ancient",
@@ -1252,7 +1252,7 @@
   {
     "id": "LARGE_CAPSULE",
     "name": "Large Capsule",
-    "description": "Upon pickup, obtain  random [gold]Relics[/gold]. Add an additional [gold]Strike[/gold] and [gold]Defend[/gold] to your [gold]Deck[/gold].",
+    "description": "Upon pickup, obtain 2 random [gold]Relics[/gold]. Add an additional [gold]Strike[/gold] and [gold]Defend[/gold] to your [gold]Deck[/gold].",
     "description_raw": "Upon pickup, obtain [blue]{Relics}[/blue] random [gold]{Relics:plural:Relic|Relics}[/gold]. Add an additional [gold]Strike[/gold] and [gold]Defend[/gold] to your [gold]Deck[/gold].",
     "flavor": "Details for this relic will be revealed in the future...",
     "rarity": "Ancient",
@@ -1702,7 +1702,7 @@
   {
     "id": "PAELS_CLAW",
     "name": "Pael's Claw",
-    "description": "Upon pickup, [gold]Enchant[/gold] all [gold]Defends[/gold] with .",
+    "description": "Upon pickup, [gold]Enchant[/gold] all [gold]Defends[/gold] with [Enchantment Name].",
     "description_raw": "Upon pickup, [gold]Enchant[/gold] all [gold]Defends[/gold] with [purple]{EnchantmentName}[/purple].",
     "flavor": "Details for this relic will be revealed in the future...",
     "rarity": "Ancient",
@@ -1732,7 +1732,7 @@
   {
     "id": "PAELS_GROWTH",
     "name": "Pael's Growth",
-    "description": "Upon pickup, [gold]Enchant[/gold] a card with .",
+    "description": "Upon pickup, [gold]Enchant[/gold] a card with [Enchantment Name].",
     "description_raw": "Upon pickup, [gold]Enchant[/gold] a card with [purple]{EnchantmentName}[/purple].",
     "flavor": "Details for this relic will be revealed in the future...",
     "rarity": "Ancient",
@@ -1772,7 +1772,7 @@
   {
     "id": "PAELS_TOOTH",
     "name": "Pael's Tooth",
-    "description": "Upon pickup, remove 5 cards from your [gold]Deck[/gold]. After each combat, randomly add 1 back [gold]Upgraded[/gold].|}",
+    "description": "Upon pickup, remove 5 cards from your [gold]Deck[/gold]. After each combat, randomly add 1 back [gold]Upgraded[/gold].[Card Titles.String Value]|}",
     "description_raw": "Upon pickup, remove [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. After each combat, randomly add [blue]1[/blue] back [gold]Upgraded[/gold].{CardTitles.StringValue:cond:\n\nCards in the Pot:\n{}|}",
     "flavor": "Details for this relic will be revealed in the future...",
     "rarity": "Ancient",
@@ -1902,7 +1902,7 @@
   {
     "id": "PHYLACTERY_UNBOUND",
     "name": "Phylactery Unbound",
-    "description": "At the start of each combat, [gold]Summon[/gold] . At the start of your turn, [gold]Summon[/gold] .",
+    "description": "At the start of each combat, [gold]Summon[/gold] 5. At the start of your turn, [gold]Summon[/gold] 2.",
     "description_raw": "At the start of each combat, [gold]Summon[/gold] [blue]{StartOfCombat}[/blue]. At the start of your turn, [gold]Summon[/gold] [blue]{StartOfTurn}[/blue].",
     "flavor": "Details for this relic will be revealed in the future...",
     "rarity": "Starter",
@@ -2172,7 +2172,7 @@
   {
     "id": "ROYAL_STAMP",
     "name": "Royal Stamp",
-    "description": "Upon pickup, choose an Attack or Skill in your [gold]Deck[/gold] to [gold]Enchant[/gold] with .",
+    "description": "Upon pickup, choose an Attack or Skill in your [gold]Deck[/gold] to [gold]Enchant[/gold] with [Enchantment].",
     "description_raw": "Upon pickup, choose an Attack or Skill in your [gold]Deck[/gold] to [gold]Enchant[/gold] with [purple]{Enchantment}[/purple].",
     "flavor": "Details for this relic will be revealed in the future...",
     "rarity": "Shop",
@@ -2252,7 +2252,7 @@
   {
     "id": "SEA_GLASS",
     "name": "Sea Glass",
-    "description": "See 15 cards from [/gold]|another character}. Choose any number of them to add to your [gold]Deck[/gold].",
+    "description": "See 15 cards from [Character.String Value][/gold]|another character}. Choose any number of them to add to your [gold]Deck[/gold].",
     "description_raw": "See [blue]{Cards}[/blue] cards from {Character.StringValue:cond:[gold]{}[/gold]|another character}. Choose any number of them to add to your [gold]Deck[/gold].",
     "flavor": "Details for this relic will be revealed in the future...",
     "rarity": "Ancient",
@@ -2602,7 +2602,7 @@
   {
     "id": "TOUCH_OF_OROBAS",
     "name": "Touch of Orobas",
-    "description": "Upon pickup, replace .",
+    "description": "Upon pickup, replace [Starter Relic.String Value].",
     "description_raw": "Upon pickup, replace {StarterRelic.StringValue:cond:[gold]{StarterRelic}[/gold] with [gold]{UpgradedRelic}[/gold]|your starter [gold]Relic[/gold] with an [gold]Ancient[/gold] version}.",
     "flavor": "Details for this relic will be revealed in the future...",
     "rarity": "Ancient",

@@ -14,6 +14,8 @@ const links = [
   { href: "/enchantments", label: "Enchantments" },
   { href: "/encounters", label: "Encounters" },
   { href: "/events", label: "Events" },
+  { href: "/powers", label: "Powers" },
+  { href: "/reference", label: "Reference" },
   { href: "/about", label: "About" },
 ];
 

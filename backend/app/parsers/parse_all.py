@@ -7,6 +7,8 @@ from potion_parser import main as parse_potions
 from enchantment_parser import main as parse_enchantments
 from encounter_parser import main as parse_encounters
 from event_parser import main as parse_events
+from power_parser import main as parse_powers
+from keyword_parser import main as parse_keywords_etc
 
 if __name__ == "__main__":
     print("=== Parsing Slay the Spire 2 Game Data ===\n")
@@ -18,4 +20,6 @@ if __name__ == "__main__":
     parse_enchantments()
     parse_encounters()
     parse_events()
+    parse_powers()
+    parse_keywords_etc()
     print("\n=== Done! ===")

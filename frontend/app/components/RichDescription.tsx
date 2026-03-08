@@ -16,7 +16,7 @@ export default function RichDescription({
   energyIcon?: string;
 }) {
   const parts: React.ReactNode[] = [];
-  const regex = /(\[gold\].*?\[\/gold\]|\[energy:(\d+)\]|\[star:(\d+)\])/g;
+  const regex = /(\[gold\].*?\[\/gold\]|\[energy:(\d+)\]|\[star:(\d+)\]|\[([A-Z][a-z]+(?:\s+[A-Za-z]*)*)\])/g;
   let lastIndex = 0;
   let matchArr: RegExpExecArray | null;
 
@@ -63,6 +63,13 @@ export default function RichDescription({
         );
       }
       parts.push(<span key={matchArr.index}>{icons}</span>);
+    } else if (matchArr[4]) {
+      // Dynamic runtime variable placeholder e.g. [Card], [Relic], [Potion]
+      parts.push(
+        <span key={matchArr.index} className="text-[var(--text-muted)] italic">
+          {matchArr[4]}
+        </span>
+      );
     }
 
     lastIndex = regex.lastIndex;

@@ -131,6 +131,57 @@ export interface GameEvent {
   options: EventOption[] | null;
   epithet: string | null;
   dialogue: Record<string, DialogueLine[]> | null;
+  image_url: string | null;
+  relics: string[] | null;
+}
+
+export interface Power {
+  id: string;
+  name: string;
+  description: string;
+  description_raw: string | null;
+  type: string;
+  stack_type: string;
+  allow_negative: boolean | null;
+}
+
+export interface Keyword {
+  id: string;
+  name: string;
+  description: string;
+}
+
+export interface Intent {
+  id: string;
+  name: string;
+  description: string;
+}
+
+export interface Orb {
+  id: string;
+  name: string;
+  description: string;
+  description_raw: string | null;
+}
+
+export interface Affliction {
+  id: string;
+  name: string;
+  description: string;
+  extra_card_text: string | null;
+  is_stackable: boolean;
+}
+
+export interface Modifier {
+  id: string;
+  name: string;
+  description: string;
+}
+
+export interface Achievement {
+  id: string;
+  name: string;
+  description: string;
 }
 
 export interface Stats {
@@ -142,6 +193,13 @@ export interface Stats {
   enchantments: number;
   encounters: number;
   events: number;
+  powers: number;
+  keywords: number;
+  intents: number;
+  orbs: number;
+  afflictions: number;
+  modifiers: number;
+  achievements: number;
 }
 
 export const api = {
@@ -162,4 +220,12 @@ export const api = {
   getEncounter: (id: string) => fetchApi<Encounter>(`/api/encounters/${id}`),
   getEvents: (params?: string) => fetchApi<GameEvent[]>(`/api/events${params ? `?${params}` : ""}`),
   getEvent: (id: string) => fetchApi<GameEvent>(`/api/events/${id}`),
+  getPowers: (params?: string) => fetchApi<Power[]>(`/api/powers${params ? `?${params}` : ""}`),
+  getPower: (id: string) => fetchApi<Power>(`/api/powers/${id}`),
+  getKeywords: () => fetchApi<Keyword[]>("/api/keywords"),
+  getIntents: () => fetchApi<Intent[]>("/api/intents"),
+  getOrbs: () => fetchApi<Orb[]>("/api/orbs"),
+  getAfflictions: () => fetchApi<Affliction[]>("/api/afflictions"),
+  getModifiers: () => fetchApi<Modifier[]>("/api/modifiers"),
+  getAchievements: () => fetchApi<Achievement[]>("/api/achievements"),
 };

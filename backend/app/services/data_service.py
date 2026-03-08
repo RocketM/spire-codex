@@ -55,6 +55,48 @@ def load_events() -> list[dict]:
         return json.load(f)
 
 
+@lru_cache(maxsize=1)
+def load_powers() -> list[dict]:
+    with open(DATA_DIR / "powers.json", "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+@lru_cache(maxsize=1)
+def load_keywords() -> list[dict]:
+    with open(DATA_DIR / "keywords.json", "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+@lru_cache(maxsize=1)
+def load_intents() -> list[dict]:
+    with open(DATA_DIR / "intents.json", "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+@lru_cache(maxsize=1)
+def load_orbs() -> list[dict]:
+    with open(DATA_DIR / "orbs.json", "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+@lru_cache(maxsize=1)
+def load_afflictions() -> list[dict]:
+    with open(DATA_DIR / "afflictions.json", "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+@lru_cache(maxsize=1)
+def load_modifiers() -> list[dict]:
+    with open(DATA_DIR / "modifiers.json", "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+@lru_cache(maxsize=1)
+def load_achievements() -> list[dict]:
+    with open(DATA_DIR / "achievements.json", "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
 def get_stats() -> dict:
     return {
         "cards": len(load_cards()),
@@ -65,4 +107,11 @@ def get_stats() -> dict:
         "enchantments": len(load_enchantments()),
         "encounters": len(load_encounters()),
         "events": len(load_events()),
+        "powers": len(load_powers()),
+        "keywords": len(load_keywords()),
+        "intents": len(load_intents()),
+        "orbs": len(load_orbs()),
+        "afflictions": len(load_afflictions()),
+        "modifiers": len(load_modifiers()),
+        "achievements": len(load_achievements()),
     }

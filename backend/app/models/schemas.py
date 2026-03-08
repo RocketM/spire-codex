@@ -143,6 +143,57 @@ class Event(BaseModel):
     options: list[EventOption] | None = None
     epithet: str | None = None
     dialogue: dict[str, list[DialogueLine]] | None = None
+    image_url: str | None = None
+    relics: list[str] | None = None
+
+
+class Power(BaseModel):
+    id: str
+    name: str
+    description: str
+    description_raw: str | None = None
+    type: str
+    stack_type: str
+    allow_negative: bool | None = None
+
+
+class Keyword(BaseModel):
+    id: str
+    name: str
+    description: str
+
+
+class Intent(BaseModel):
+    id: str
+    name: str
+    description: str
+
+
+class Orb(BaseModel):
+    id: str
+    name: str
+    description: str
+    description_raw: str | None = None
+
+
+class Affliction(BaseModel):
+    id: str
+    name: str
+    description: str
+    extra_card_text: str | None = None
+    is_stackable: bool = False
+
+
+class Modifier(BaseModel):
+    id: str
+    name: str
+    description: str
+
+
+class Achievement(BaseModel):
+    id: str
+    name: str
+    description: str
 
 
 class StatsResponse(BaseModel):
@@ -154,3 +205,10 @@ class StatsResponse(BaseModel):
     enchantments: int
     encounters: int
     events: int
+    powers: int
+    keywords: int
+    intents: int
+    orbs: int
+    afflictions: int
+    modifiers: int
+    achievements: int

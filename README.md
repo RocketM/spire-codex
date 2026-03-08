@@ -4,7 +4,7 @@ A comprehensive database and API for **Slay the Spire 2** game data, built by re
 
 **Live site**: [spire-codex.com](https://spire-codex.com)
 
-**Data**: 576 cards · 5 characters · 289 relics · 121 monsters · 63 potions · 22 enchantments · 87 encounters · 66 events — all extracted directly from the game.
+**Data**: 576 cards · 5 characters · 289 relics · 111 monsters · 63 potions · 260 powers · 22 enchantments · 87 encounters · 66 events · 16 modifiers · 33 achievements · and more — all extracted directly from the game.
 
 ## How It Was Built
 
@@ -22,12 +22,20 @@ Slay the Spire 2 is built with Godot 4 but all game logic lives in a C#/.NET 8 D
    - **Enchantments**: Card type restrictions, stackability, Amount-based scaling
    - **Encounters**: Monster compositions, room type (Boss/Elite/Monster), act placement, tags
    - **Events**: Multi-page descriptions, choices with outcomes, act placement
+   - **Ancients**: 8 Ancient NPCs with epithets, character-specific dialogue, relic offerings, portrait icons
+   - **Powers**: PowerType (Buff/Debuff), PowerStackType (Counter/Single), DynamicVars, descriptions
+   - **Orbs**: Passive/Evoke values, descriptions
+   - **Afflictions**: Stackability, extra card text, descriptions
+   - **Modifiers**: Run modifier descriptions
+   - **Keywords**: Card keyword definitions (Exhaust, Ethereal, Innate, etc.)
+   - **Intents**: Monster intent descriptions
+   - **Achievements**: Unlock conditions, descriptions
 
-4. **Description Resolution** — A shared `description_resolver.py` module resolves SmartFormat localization templates (`{Damage:diff()}`, `{Energy:energyIcons()}`, `{Cards:plural:card|cards}`) into human-readable text with `[gold]`, `[energy:N]`, `[star:N]` markers for frontend rendering.
+4. **Description Resolution** — A shared `description_resolver.py` module resolves SmartFormat localization templates (`{Damage:diff()}`, `{Energy:energyIcons()}`, `{Cards:plural:card|cards}`) into human-readable text with `[gold]`, `[energy:N]`, `[star:N]` markers for frontend rendering. Runtime-dynamic variables (e.g., `{Card}`, `{Relic}`) are preserved as readable placeholders.
 
-5. **Monster Sprite Rendering** — Monster sprites are Spine skeletal animations, not static images. A headless Node.js renderer assembles the idle poses into 512×512 portrait PNGs (see [Spine Renderer](#spine-renderer) below).
+5. **Spine Rendering** — Characters and monsters are Spine skeletal animations, not static images. A headless Node.js renderer assembles idle poses into 512×512 portrait PNGs. Renders 125 of 158 skeleton files including all 5 characters (combat, rest site, character select poses), 95+ monsters, NPCs (Neow, Tezcatara), and more. Skin-based variants (Cultists, Bowlbugs) are rendered individually. See [Spine Renderer](#spine-renderer) below.
 
-6. **Images** — Card portraits, relic/potion icons, and character art extracted from game assets and served as static files.
+6. **Images** — Card portraits, relic/potion icons, character art, monster sprites, Ancient portrait icons, and boss encounter icons extracted from game assets and served as static files.
 
 ## Project Structure
 
@@ -48,6 +56,8 @@ spire-codex/
 │   │       ├── enchantment_parser.py
 │   │       ├── encounter_parser.py
 │   │       ├── event_parser.py
+│   │       ├── power_parser.py
+│   │       ├── keyword_parser.py        # Keywords, intents, orbs, afflictions, modifiers, achievements
 │   │       ├── description_resolver.py   # Shared SmartFormat resolver
 │   │       └── parse_all.py
 │   ├── static/images/          # Game images (not committed)
@@ -55,14 +65,15 @@ spire-codex/
 │   ├── Dockerfile
 │   └── requirements.txt
 ├── frontend/                   # Next.js 16 + TypeScript + Tailwind CSS
-│   ├── app/                    # Pages: cards, characters, relics, monsters,
-│   │   │                       #   potions, enchantments, encounters, events, about
+│   ├── app/                    # Pages: cards, characters, relics, monsters, potions,
+│   │   │                       #   enchantments, encounters, events, powers, reference, about
 │   │   └── components/         # CardGrid, RichDescription, SearchFilter, Navbar, Footer
 │   ├── lib/api.ts              # API client + TypeScript interfaces
 │   └── Dockerfile
 ├── tools/
-│   └── spine-renderer/         # Headless monster sprite renderer
-│       ├── render.mjs
+│   └── spine-renderer/         # Headless Spine skeleton renderer
+│       ├── render.mjs           # Monster renderer
+│       ├── render_all.mjs       # Universal renderer (all .skel files)
 │       └── package.json
 ├── data/                       # Parsed JSON data files
 ├── extraction/                 # Raw game files (not committed)
@@ -78,7 +89,7 @@ spire-codex/
 
 | Endpoint | Description | Filters |
 |---|---|---|
-| `GET /api/cards` | All cards | `color`, `type`, `rarity`, `search` |
+| `GET /api/cards` | All cards | `color`, `type`, `rarity`, `keyword`, `search` |
 | `GET /api/cards/{id}` | Single card | — |
 | `GET /api/characters` | All characters | — |
 | `GET /api/characters/{id}` | Single character | — |
@@ -92,9 +103,23 @@ spire-codex/
 | `GET /api/enchantments/{id}` | Single enchantment | — |
 | `GET /api/encounters` | All encounters | `room_type`, `act`, `search` |
 | `GET /api/encounters/{id}` | Single encounter | — |
-| `GET /api/events` | All events | `type`, `act`, `search` |
+| `GET /api/events` | All events (Ancients include image, relics, dialogue) | `type`, `act`, `search` |
 | `GET /api/events/{id}` | Single event | — |
-| `GET /api/stats` | Entity counts | — |
+| `GET /api/powers` | All powers/buffs/debuffs | `type`, `search` |
+| `GET /api/powers/{id}` | Single power | — |
+| `GET /api/keywords` | Card keyword definitions | — |
+| `GET /api/keywords/{id}` | Single keyword | — |
+| `GET /api/intents` | Monster intent types | — |
+| `GET /api/intents/{id}` | Single intent | — |
+| `GET /api/orbs` | All orbs | — |
+| `GET /api/orbs/{id}` | Single orb | — |
+| `GET /api/afflictions` | Card afflictions | — |
+| `GET /api/afflictions/{id}` | Single affliction | — |
+| `GET /api/modifiers` | Run modifiers | — |
+| `GET /api/modifiers/{id}` | Single modifier | — |
+| `GET /api/achievements` | All achievements | — |
+| `GET /api/achievements/{id}` | Single achievement | — |
+| `GET /api/stats` | Entity counts (15 categories) | — |
 
 Rate limited to **60 requests per minute** per IP. Interactive docs at `/docs` (Swagger UI).
 
@@ -156,6 +181,8 @@ python3 potion_parser.py
 python3 enchantment_parser.py
 python3 encounter_parser.py
 python3 event_parser.py
+python3 power_parser.py
+python3 keyword_parser.py        # Keywords, intents, orbs, afflictions, modifiers, achievements
 ```
 
 To copy game images into the static directory:
@@ -170,11 +197,11 @@ Monster sprites in StS2 are [Spine](http://esotericsoftware.com/) skeletal anima
 
 ### How it works
 
-1. Loads the `.skel`, `.atlas`, and `.png` for each monster from `extraction/raw/animations/monsters/`
+1. Finds `.skel`, `.atlas`, and `.png` files under `extraction/raw/animations/`
 2. Applies the idle animation at time 0 using `@esotericsoftware/spine-canvas` (v4.2.106, matching the game's Spine 4.2.x binary format)
 3. Calculates a bounding box from all visible attachments, **excluding shadow/ground slots** for tighter framing
 4. Renders at **2× supersampling** (1024px) to reduce canvas triangle-mesh seam artifacts, then downscales to 512×512
-5. Outputs PNGs to `backend/static/images/monsters/`
+5. Outputs PNGs to `backend/static/images/`
 
 ### Usage
 
@@ -182,12 +209,27 @@ Monster sprites in StS2 are [Spine](http://esotericsoftware.com/) skeletal anima
 cd tools/spine-renderer
 npm install
 
-# Render all monsters
+# Render ALL skeleton files (monsters, characters, backgrounds, NPCs)
+node render_all.mjs
+
+# Render all monsters only
 node render.mjs
 
 # Render a specific monster
-node render.mjs FrogKnight
+node render.mjs cultists
 ```
+
+### Render coverage
+
+| Category | Rendered | Total | Notes |
+|---|---|---|---|
+| Monsters | 95+ | 101 dirs | Skin variants rendered separately (Cultists, Bowlbugs) |
+| Characters (combat) | 5 | 5 | Battle stance poses |
+| Characters (rest site) | 6 | 6 | Includes Osty |
+| Characters (select) | 5 | 5 | Wide cinematic poses |
+| Backgrounds/NPCs | 10 | 14 | Neow, Tezcatara, merchant rooms, main menu |
+| VFX/UI | 2 | 16 | Most VFX need specific animation frames |
+| **Total** | **125** | **158** | |
 
 ### Technical details
 
@@ -195,7 +237,7 @@ node render.mjs FrogKnight
 - **Triangle rendering** enabled (`triangleRendering = true`) — required for mesh attachments (most monster body parts). Without it, only RegionAttachments render.
 - `Physics.reset` parameter required by spine-canvas 4.2.x `updateWorldTransform()`
 - Shadow slots (`shadow`, `shadow2`, `ground`, `ground_shadow`) excluded from bounds calculation to prevent stretched framing
-- Currently renders ~82 of 100 monsters. Some fail due to missing assets or unsupported features.
+- Skin-based skeletons (Cultists: coral/slug, Bowlbugs: cocoon/goop/rock/web, Cubex: circleeye/diamondeye/squareeye) require explicit skin selection
 
 ### Dependencies
 
@@ -216,9 +258,6 @@ ilspycmd -p -o extraction/decompiled "/path/to/sts2.dll"
 
 ## Roadmap
 
-- **Automated extraction pipeline** — End-to-end script from game install to parsed JSON
-- **Powers/buffs/debuffs** — 262 power models in the decompiled code, not yet parsed
-- **More images** — Card art, enchantment icons, encounter scenes from extracted assets
 - **Individual detail pages** — Click-through pages with full details instead of just grids
 - **Global search** — Search across all entity types simultaneously
 - **Database backend** — Replace JSON loading with SQLite/PostgreSQL

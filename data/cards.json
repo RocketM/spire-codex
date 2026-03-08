@@ -38,7 +38,7 @@
       "Power": 4
     },
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/abrasive.png",
     "beta_image_url": "/static/images/cards/beta/abrasive.png"
   },
   {
@@ -166,7 +166,7 @@
     "upgrade": {
       "damage": "+5"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/adaptive_strike.png",
     "beta_image_url": "/static/images/cards/beta/adaptive_strike.png"
   },
   {
@@ -552,7 +552,7 @@
       "Power": 1
     },
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/apparition.png",
     "beta_image_url": "/static/images/cards/beta/apparition.png"
   },
   {
@@ -883,7 +883,7 @@
       "HpLoss": 13
     },
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/bad_luck.png",
     "beta_image_url": "/static/images/cards/beta/bad_luck.png"
   },
   {
@@ -3028,7 +3028,7 @@
     "upgrade": {
       "damage": "+4"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/clash.png",
     "beta_image_url": "/static/images/cards/beta/clash.png"
   },
   {
@@ -3354,7 +3354,7 @@
     "upgrade": {
       "block": "+1"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/compact.png",
     "beta_image_url": "/static/images/cards/beta/compact.png"
   },
   {
@@ -3490,7 +3490,7 @@
     "upgrade": {
       "repeat": "+1"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/consuming_shadow.png",
     "beta_image_url": "/static/images/cards/beta/consuming_shadow.png"
   },
   {
@@ -5190,7 +5190,7 @@
     "tags": null,
     "vars": null,
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/distraction.png",
     "beta_image_url": "/static/images/cards/beta/distraction.png"
   },
   {
@@ -5485,7 +5485,7 @@
     "upgrade": {
       "cards": "+1"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/dual_wield.png",
     "beta_image_url": "/static/images/cards/beta/dual_wield.png"
   },
   {
@@ -5822,7 +5822,7 @@
     "tags": null,
     "vars": null,
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/entrench.png",
     "beta_image_url": "/static/images/cards/beta/entrench.png"
   },
   {
@@ -6388,7 +6388,7 @@
     "upgrade": {
       "strength": "+2"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/feeding_frenzy.png",
     "beta_image_url": "/static/images/cards/beta/feeding_frenzy.png"
   },
   {
@@ -6452,7 +6452,7 @@
       "Power": 1
     },
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/feral.png",
     "beta_image_url": "/static/images/cards/beta/feral.png"
   },
   {
@@ -6591,7 +6591,7 @@
     "upgrade": {
       "block": "+4"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/fight_through.png",
     "beta_image_url": "/static/images/cards/beta/fight_through.png"
   },
   {
@@ -7276,7 +7276,7 @@
     "upgrade": {
       "cards": "+1"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/fuel.png",
     "beta_image_url": "/static/images/cards/beta/fuel.png"
   },
   {
@@ -7411,7 +7411,7 @@
       "damage": "+2",
       "extradamage": "+2"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/gang_up.png",
     "beta_image_url": "/static/images/cards/beta/gang_up.png"
   },
   {
@@ -8116,7 +8116,7 @@
       "Power": 6
     },
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/hailstorm.png",
     "beta_image_url": "/static/images/cards/beta/hailstorm.png"
   },
   {
@@ -8783,7 +8783,7 @@
       "Power": 2
     },
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/hotfix.png",
     "beta_image_url": "/static/images/cards/beta/hotfix.png"
   },
   {
@@ -9357,7 +9357,7 @@
       "Power": 2
     },
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/iteration.png",
     "beta_image_url": "/static/images/cards/beta/iteration.png"
   },
   {
@@ -9615,7 +9615,7 @@
     "upgrade": {
       "damage": "+4"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/knockdown.png",
     "beta_image_url": "/static/images/cards/beta/knockdown.png"
   },
   {
@@ -9949,7 +9949,7 @@
     "upgrade": {
       "block": "+5"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/lift.png",
     "beta_image_url": "/static/images/cards/beta/lift.png"
   },
   {
@@ -10864,7 +10864,7 @@
     "upgrade": {
       "cards": "+1"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/modded.png",
     "beta_image_url": "/static/images/cards/beta/modded.png"
   },
   {
@@ -11648,7 +11648,7 @@
       "Repeat": 3
     },
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/outbreak.png",
     "beta_image_url": "/static/images/cards/beta/outbreak.png"
   },
   {
@@ -11679,7 +11679,7 @@
     "upgrade": {
       "energy": "+1"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/outmaneuver.png",
     "beta_image_url": "/static/images/cards/beta/outmaneuver.png"
   },
   {
@@ -13352,7 +13352,7 @@
     "upgrade": {
       "damage": "+3"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/rebound.png",
     "beta_image_url": "/static/images/cards/beta/rebound.png"
   },
   {
@@ -14299,7 +14299,7 @@
     "upgrade": {
       "damage": "+3"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/seeker_strike.png",
     "beta_image_url": "/static/images/cards/beta/seeker_strike.png"
   },
   {
@@ -14534,7 +14534,7 @@
     "upgrade": {
       "block": "+4"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/shadow_shield.png",
     "beta_image_url": "/static/images/cards/beta/shadow_shield.png"
   },
   {
@@ -14686,7 +14686,7 @@
     "upgrade": {
       "damage": "+4"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/shatter.png",
     "beta_image_url": "/static/images/cards/beta/shatter.png"
   },
   {
@@ -15122,7 +15122,7 @@
       "Power": 3
     },
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/sloth.png",
     "beta_image_url": "/static/images/cards/beta/sloth.png"
   },
   {
@@ -15157,7 +15157,7 @@
       "Power": 5
     },
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/smokestack.png",
     "beta_image_url": "/static/images/cards/beta/smokestack.png"
   },
   {
@@ -15561,7 +15561,7 @@
       "Power": 1
     },
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/spinner.png",
     "beta_image_url": "/static/images/cards/beta/spinner.png"
   },
   {
@@ -15622,7 +15622,7 @@
     "upgrade": {
       "damage": "+3"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/spite.png",
     "beta_image_url": "/static/images/cards/beta/spite.png"
   },
   {
@@ -15882,7 +15882,7 @@
     "upgrade": {
       "calculationbase": "+3"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/stack.png",
     "beta_image_url": "/static/images/cards/beta/stack.png"
   },
   {
@@ -16356,7 +16356,7 @@
     "tags": null,
     "vars": null,
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/subroutine.png",
     "beta_image_url": "/static/images/cards/beta/subroutine.png"
   },
   {
@@ -16663,7 +16663,7 @@
       "damage": "+5",
       "ostydamage": "+5"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/sweeping_gaze.png",
     "beta_image_url": "/static/images/cards/beta/sweeping_gaze.png"
   },
   {
@@ -16762,7 +16762,7 @@
       "CalculationExtra": 2
     },
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/synchronize.png",
     "beta_image_url": "/static/images/cards/beta/synchronize.png"
   },
   {
@@ -16793,7 +16793,7 @@
     "upgrade": {
       "damage": "+6"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/synthesis.png",
     "beta_image_url": "/static/images/cards/beta/synthesis.png"
   },
   {
@@ -17607,7 +17607,7 @@
     "tags": null,
     "vars": null,
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/trash_to_treasure.png",
     "beta_image_url": "/static/images/cards/beta/trash_to_treasure.png"
   },
   {
@@ -18273,7 +18273,7 @@
     "upgrade": {
       "damage": "+4"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/volley.png",
     "beta_image_url": "/static/images/cards/beta/volley.png"
   },
   {
@@ -18305,7 +18305,7 @@
       "CalculationExtra": 1
     },
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/voltaic.png",
     "beta_image_url": "/static/images/cards/beta/voltaic.png"
   },
   {
@@ -18340,7 +18340,7 @@
       "Power": 1
     },
     "upgrade": null,
-    "image_url": null,
+    "image_url": "/static/images/cards/waste_away.png",
     "beta_image_url": "/static/images/cards/beta/waste_away.png"
   },
   {

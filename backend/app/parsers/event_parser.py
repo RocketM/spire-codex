@@ -9,6 +9,7 @@ DECOMPILED = BASE / "extraction" / "decompiled"
 LOCALIZATION = BASE / "extraction" / "raw" / "localization" / "eng"
 EVENTS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Events"
 ACTS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Acts"
+IMAGES_DIR = BASE / "backend" / "static" / "images" / "misc" / "ancients"
 OUTPUT = BASE / "data"
 
 
@@ -92,7 +93,8 @@ def parse_options_from_localization(event_id: str, localization: dict, vars_dict
             option_keys.add(option_name)
 
     for opt_name in sorted(option_keys):
-        title = localization.get(f"{prefix}{opt_name}.title", opt_name)
+        title_raw = localization.get(f"{prefix}{opt_name}.title", opt_name)
+        title = strip_rich_tags(resolve_description(title_raw, vars_dict))
         desc_raw = localization.get(f"{prefix}{opt_name}.description", "")
         desc_resolved = resolve_description(desc_raw, vars_dict) if desc_raw else ""
         desc_clean = strip_rich_tags(desc_resolved)
@@ -162,6 +164,20 @@ def parse_ancient_dialogue(event_id: str, localization: dict) -> dict[str, list[
     return dialogue
 
 
+def extract_ancient_relics(content: str) -> list[str]:
+    """Extract relic class names offered by an Ancient from C# source."""
+    relic_ids = []
+    seen = set()
+    # Pattern: RelicOption<ClassName>() or ModelDb.Relic<ClassName>()
+    for m in re.finditer(r'(?:RelicOption|ModelDb\.Relic)<(\w+)>', content):
+        name = m.group(1)
+        relic_id = class_name_to_id(name)
+        if relic_id not in seen:
+            seen.add(relic_id)
+            relic_ids.append(relic_id)
+    return relic_ids
+
+
 def parse_single_event(filepath: Path, localization: dict, act_mapping: dict) -> dict | None:
     content = filepath.read_text(encoding="utf-8")
     class_name = filepath.stem
@@ -207,7 +223,7 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict) ->
         "options": options if options else None,
     }
 
-    # Enrich Ancient events with epithet and dialogue
+    # Enrich Ancient events with epithet, dialogue, image, and relics
     if is_ancient:
         epithet = localization.get(f"{event_id}.epithet", "")
         if epithet:
@@ -215,6 +231,17 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict) ->
         dialogue = parse_ancient_dialogue(event_id, localization)
         if dialogue:
             result["dialogue"] = dialogue
+
+        # Image URL
+        img_name = event_id.lower()
+        image_file = IMAGES_DIR / f"{img_name}.png"
+        if image_file.exists():
+            result["image_url"] = f"/static/images/misc/ancients/{img_name}.png"
+
+        # Relic offerings
+        relics = extract_ancient_relics(content)
+        if relics:
+            result["relics"] = relics
 
         # Use first-visit dialogue as description if none exists
         if not result["description"]:

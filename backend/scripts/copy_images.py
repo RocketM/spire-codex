@@ -20,6 +20,9 @@ CHARS_DST = STATIC_IMAGES / "characters"
 MONSTERS_DST = STATIC_IMAGES / "monsters"
 ICONS_SRC = RAW_IMAGES / "packed" / "sprite_fonts"
 ICONS_DST = STATIC_IMAGES / "icons"
+ANCIENTS_SRC = RAW_IMAGES / "ui" / "run_history"
+ANCIENTS_DST = STATIC_IMAGES / "misc" / "ancients"
+BOSSES_DST = STATIC_IMAGES / "misc" / "bosses"
 
 
 def copy_cards():
@@ -113,6 +116,30 @@ def copy_icons():
     print(f"Copied {count} icon images -> static/images/icons/")
 
 
+def copy_ancients():
+    ANCIENTS_DST.mkdir(parents=True, exist_ok=True)
+    count = 0
+    ANCIENT_NAMES = {"darv", "neow", "nonupeipe", "orobas", "pael", "tanx", "tezcatara", "vakuu"}
+    for png in ANCIENTS_SRC.glob("*.png"):
+        if png.name.endswith(".import"):
+            continue
+        if png.stem in ANCIENT_NAMES:
+            shutil.copy2(png, ANCIENTS_DST / png.name)
+            count += 1
+    print(f"Copied {count} ancient icons -> static/images/misc/ancients/")
+
+
+def copy_bosses():
+    BOSSES_DST.mkdir(parents=True, exist_ok=True)
+    count = 0
+    for png in ANCIENTS_SRC.glob("*_boss.png"):
+        if png.name.endswith(".import"):
+            continue
+        shutil.copy2(png, BOSSES_DST / png.name)
+        count += 1
+    print(f"Copied {count} boss icons -> static/images/misc/bosses/")
+
+
 def main():
     print("=== Copying game images to static directory ===\n")
     copy_cards()
@@ -121,6 +148,8 @@ def main():
     copy_characters()
     copy_monsters()
     copy_icons()
+    copy_ancients()
+    copy_bosses()
     print("\n=== Done! ===")
 
 

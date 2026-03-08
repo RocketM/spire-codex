@@ -84,16 +84,25 @@ def resolve_description(raw: str, vars_dict: dict[str, int], is_upgraded: bool =
     text = re.sub(r'\{(\w+):diff\(\)\}', resolve_diff, text)
 
     # Handle remaining {Var} without formatter
+    def _make_readable(name: str) -> str:
+        readable = re.sub(r'(?<=[a-z])(?=[A-Z])', ' ', name)
+        readable = re.sub(r'\d+', '', readable).strip()
+        return readable
+
     def resolve_bare(m):
         val = _lookup(m.group(1), vars_dict)
-        return str(val) if val is not None else ""
+        if val is not None:
+            return str(val)
+        return f"[{_make_readable(m.group(1))}]"
     text = re.sub(r'\{(\w+)\}', resolve_bare, text)
 
     # Handle {Var:cond:...} and other complex formatters -> just show value
     def resolve_remaining(m):
         var_name = m.group(1).split(":")[0]
         val = _lookup(var_name, vars_dict)
-        return str(val) if val is not None else ""
+        if val is not None:
+            return str(val)
+        return f"[{_make_readable(var_name)}]"
     text = re.sub(r'\{([^}]+)\}', resolve_remaining, text)
 
     return text

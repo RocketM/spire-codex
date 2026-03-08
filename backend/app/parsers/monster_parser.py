@@ -144,8 +144,8 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
     # Image URL - check if a matching image exists
     # Some monsters share sprites or have different filenames than their IDs
     IMAGE_ALIASES = {
-        "CALCIFIED_CULTIST": "cultists",
-        "DAMP_CULTIST": "cultists",
+        "CALCIFIED_CULTIST": "calcified_cultist",
+        "DAMP_CULTIST": "damp_cultist",
         "GLOBE_HEAD": "orb_head",
         "TORCH_HEAD_AMALGAM": "amalgam",
         "SKULKING_COLONY": "skulkling_colomy",
@@ -153,7 +153,10 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
         "THE_ADVERSARY_MK_ONE": "the_adversary_placeholder",
         "THE_ADVERSARY_MK_TWO": "the_adversary_placeholder",
         "THE_ADVERSARY_MK_THREE": "the_adversary_placeholder",
-        "DECIMILLIPEDE_SEGMENT": "decimillipede",
+        "BOWLBUG_EGG": "bowlbug_egg",
+        "BOWLBUG_NECTAR": "bowlbug_nectar",
+        "BOWLBUG_ROCK": "bowlbug_rock",
+        "BOWLBUG_SILK": "bowlbug_silk",
     }
     img_name = IMAGE_ALIASES.get(monster_id, monster_id.lower())
     image_file = IMAGES_DIR / f"{img_name}.png"

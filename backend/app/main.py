@@ -7,14 +7,14 @@ from pathlib import Path
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
-from .routers import cards, characters, relics, monsters, potions, enchantments, encounters, events
+from .routers import cards, characters, relics, monsters, potions, enchantments, encounters, events, powers, keywords, intents, orbs, afflictions, modifiers, achievements
 from .services.data_service import get_stats
 
 limiter = Limiter(key_func=get_remote_address, default_limits=["60/minute"])
 
 app = FastAPI(
     title="Spire Codex API",
-    description="Comprehensive API for Slay the Spire 2 game data including cards, characters, relics, monsters, and potions.",
+    description="Comprehensive API for Slay the Spire 2 game data — 1,554 entities across 15 categories including cards, characters, relics, monsters, potions, powers, enchantments, encounters, events, keywords, orbs, afflictions, modifiers, and achievements.",
     version="1.0.0",
 )
 
@@ -46,6 +46,13 @@ app.include_router(potions.router)
 app.include_router(enchantments.router)
 app.include_router(encounters.router)
 app.include_router(events.router)
+app.include_router(powers.router)
+app.include_router(keywords.router)
+app.include_router(intents.router)
+app.include_router(orbs.router)
+app.include_router(afflictions.router)
+app.include_router(modifiers.router)
+app.include_router(achievements.router)
 
 
 @app.get("/api/stats", tags=["Stats"])
@@ -69,6 +76,13 @@ def root(request: Request):
             "enchantments": "/api/enchantments",
             "encounters": "/api/encounters",
             "events": "/api/events",
+            "powers": "/api/powers",
+            "keywords": "/api/keywords",
+            "intents": "/api/intents",
+            "orbs": "/api/orbs",
+            "afflictions": "/api/afflictions",
+            "modifiers": "/api/modifiers",
+            "achievements": "/api/achievements",
             "stats": "/api/stats",
         },
     }

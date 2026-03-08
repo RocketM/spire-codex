@@ -114,7 +114,7 @@
     "block_values": {
       "bootUp": 10
     },
-    "image_url": null
+    "image_url": "/static/images/monsters/axebot.png"
   },
   {
     "id": "BATTLE_FRIEND_V1",
@@ -191,7 +191,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/bowlbug_egg.png"
   },
   {
     "id": "BOWLBUG_NECTAR",
@@ -221,7 +221,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/bowlbug_nectar.png"
   },
   {
     "id": "BOWLBUG_ROCK",
@@ -248,7 +248,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/bowlbug_rock.png"
   },
   {
     "id": "BOWLBUG_SILK",
@@ -275,7 +275,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/bowlbug_silk.png"
   },
   {
     "id": "BRUTE_RUBY_RAIDER",
@@ -413,7 +413,7 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/cultists.png"
+    "image_url": "/static/images/monsters/calcified_cultist.png"
   },
   {
     "id": "CEREMONIAL_BEAST",
@@ -646,7 +646,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/cubex_construct.png"
   },
   {
     "id": "DAMP_CULTIST",
@@ -673,7 +673,7 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/cultists.png"
+    "image_url": "/static/images/monsters/damp_cultist.png"
   },
   {
     "id": "DECIMILLIPEDE_SEGMENT",
@@ -747,7 +747,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/devoted_sculptor.png"
   },
   {
     "id": "DOOR",
@@ -1003,7 +1003,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/flail_knight.png"
   },
   {
     "id": "FLYCONID",
@@ -1387,7 +1387,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/hunter_killer.png"
   },
   {
     "id": "INFESTED_PRISM",
@@ -2298,7 +2298,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/queen.png"
   },
   {
     "id": "ROCKET",
@@ -2632,7 +2632,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/sludge_spinner.png"
   },
   {
     "id": "SLUMBERING_BEETLE",
@@ -2659,7 +2659,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/slumbering_beetle.png"
   },
   {
     "id": "SNAPPING_JAXFRUIT",
@@ -2795,7 +2795,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/soul_nexus.png"
   },
   {
     "id": "SPECTRAL_KNIGHT",
@@ -2865,7 +2865,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/spiny_toad.png"
   },
   {
     "id": "STABBOT",
@@ -3288,7 +3288,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/thieving_hopper.png"
   },
   {
     "id": "TOADPOLE",
@@ -3397,7 +3397,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/tough_egg.png"
   },
   {
     "id": "TRACKER_RUBY_RAIDER",
@@ -3424,7 +3424,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/tracker_ruby_raider.png"
   },
   {
     "id": "TUNNELER",
