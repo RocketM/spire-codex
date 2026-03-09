@@ -603,7 +603,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/crusher.png"
   },
   {
     "id": "CUBEX_CONSTRUCT",
@@ -720,7 +720,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/decimillipede.png"
   },
   {
     "id": "DEVOTED_SCULPTOR",
@@ -824,7 +824,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/doormaker.png"
   },
   {
     "id": "ENTOMANCER",
@@ -1038,7 +1038,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/flyconid.png"
   },
   {
     "id": "FOGMOG",
@@ -2063,7 +2063,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/ovicopter.png"
   },
   {
     "id": "OWL_MAGISTRATE",
@@ -2345,7 +2345,7 @@
       }
     },
     "block_values": null,
-    "image_url": null
+    "image_url": "/static/images/monsters/rocket.png"
   },
   {
     "id": "SCROLL_OF_BITING",

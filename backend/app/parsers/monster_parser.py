@@ -157,6 +157,12 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
         "BOWLBUG_NECTAR": "bowlbug_nectar",
         "BOWLBUG_ROCK": "bowlbug_rock",
         "BOWLBUG_SILK": "bowlbug_silk",
+        "CRUSHER": "crusher",
+        "ROCKET": "rocket",
+        "DOORMAKER": "doormaker",
+        "FLYCONID": "flyconid",
+        "OVICOPTER": "ovicopter",
+        "DECIMILLIPEDE_SEGMENT": "decimillipede",
     }
     img_name = IMAGE_ALIASES.get(monster_id, monster_id.lower())
     image_file = IMAGES_DIR / f"{img_name}.png"
