@@ -230,6 +230,7 @@ export interface Stats {
   modifiers: number;
   achievements: number;
   epochs: number;
+  images: number;
 }
 
 export const api = {

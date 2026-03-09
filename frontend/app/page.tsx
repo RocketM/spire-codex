@@ -157,6 +157,14 @@ export default function Home() {
       accent: "text-violet-400",
     },
     {
+      href: "/images",
+      title: "Images",
+      count: stats?.images ?? "–",
+      desc: "Browse and download all game art assets",
+      gradient: "from-pink-900/30 to-transparent",
+      accent: "text-pink-400",
+    },
+    {
       href: "/reference",
       title: "Reference",
       count: stats
@@ -194,7 +202,7 @@ export default function Home() {
                 stats.potions + stats.powers + stats.enchantments + stats.encounters +
                 stats.events + (stats.keywords ?? 0) + (stats.orbs ?? 0) +
                 (stats.afflictions ?? 0) + (stats.modifiers ?? 0) + (stats.achievements ?? 0) +
-                (stats.epochs ?? 0);
+                (stats.epochs ?? 0) + (stats.images ?? 0);
               return (
                 <p className="text-sm text-[var(--text-muted)]">
                   {total.toLocaleString()} entities across 16 categories including cards, characters,

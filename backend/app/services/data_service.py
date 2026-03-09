@@ -109,6 +109,14 @@ def load_stories() -> list[dict]:
         return json.load(f)
 
 
+@lru_cache(maxsize=1)
+def count_images() -> int:
+    images_dir = Path(os.environ.get("STATIC_DIR", Path(__file__).resolve().parents[2] / "static")) / "images"
+    if not images_dir.exists():
+        return 0
+    return sum(1 for _ in images_dir.rglob("*.png"))
+
+
 def get_stats() -> dict:
     return {
         "cards": len(load_cards()),
@@ -127,4 +135,5 @@ def get_stats() -> dict:
         "modifiers": len(load_modifiers()),
         "achievements": len(load_achievements()),
         "epochs": len(load_epochs()),
+        "images": count_images(),
     }

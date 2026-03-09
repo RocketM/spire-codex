@@ -242,3 +242,4 @@ class StatsResponse(BaseModel):
     modifiers: int
     achievements: int
     epochs: int
+    images: int
