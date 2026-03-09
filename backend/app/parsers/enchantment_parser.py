@@ -60,11 +60,9 @@ def parse_single_enchantment(filepath: Path, localization: dict) -> dict | None:
 
     # Resolve description templates
     description_resolved = resolve_description(description_raw, all_vars)
-    desc_clean = re.sub(r'\[/?(?:blue|red|purple|green|orange|pink)\]', '', description_resolved)
+    desc_clean = description_resolved
 
     extra_text_resolved = resolve_description(extra_card_text_raw, all_vars) if extra_card_text_raw else None
-    if extra_text_resolved:
-        extra_text_resolved = re.sub(r'\[/?(?:blue|red|purple|green|orange|pink)\]', '', extra_text_resolved)
 
     # Card type restriction
     card_type = parse_card_type_restriction(content)

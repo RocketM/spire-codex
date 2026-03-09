@@ -30,12 +30,13 @@ def load_localization() -> dict:
 
 
 def strip_rich_tags(text: str) -> str:
-    """Strip game rich text tags like [gold], [sine], [jitter], [rainbow ...], [b], [i], etc."""
-    # Handle tags with attributes like [rainbow freq=0.3 sat=0.8 val=1]
+    """Strip non-renderable rich text tags, preserving colors and effects for frontend."""
+    # Strip tags with attributes like [rainbow freq=0.3 sat=0.8 val=1]
     text = re.sub(r'\[rainbow[^\]]*\]', '', text)
     text = re.sub(r'\[font_size=\d+\]', '', text)
-    # Strip simple open/close tags
-    text = re.sub(r'\[/?(?:gold|blue|red|purple|green|orange|pink|aqua|sine|jitter|thinky_dots|b|i|font_size)\]', '', text)
+    # Strip only non-renderable tags — keep colors (gold, blue, red, green, purple, orange, pink, aqua)
+    # and effects (sine, jitter, b) for frontend rendering
+    text = re.sub(r'\[/?(?:thinky_dots|i|font_size)\]', '', text)
     return text
 
 
@@ -62,9 +63,36 @@ def build_act_mapping() -> dict[str, str]:
     return event_to_act
 
 
-def extract_event_vars(content: str) -> dict[str, int]:
-    """Extract constant values and DynamicVar declarations from event source."""
-    vars_dict = {}
+def load_all_titles() -> dict[str, str]:
+    """Load title mappings from all localization files for resolving StringVar model references."""
+    titles = {}
+    loc_files = ["cards.json", "relics.json", "potions.json", "enchantments.json", "powers.json"]
+    for filename in loc_files:
+        loc_file = LOCALIZATION / filename
+        if not loc_file.exists():
+            continue
+        with open(loc_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        for key, value in data.items():
+            if key.endswith(".title"):
+                entity_id = key[:-6]  # Strip ".title"
+                titles[entity_id] = value
+    return titles
+
+
+_title_cache: dict[str, str] | None = None
+
+
+def get_title_map() -> dict[str, str]:
+    global _title_cache
+    if _title_cache is None:
+        _title_cache = load_all_titles()
+    return _title_cache
+
+
+def extract_event_vars(content: str) -> dict[str, int | str]:
+    """Extract constant values, DynamicVar, and StringVar declarations from event source."""
+    vars_dict: dict[str, int | str] = {}
 
     # const int fields: private const int _uncoverFutureCost = 50;
     for m in re.finditer(r'const\s+int\s+_?(\w+)\s*=\s*(\d+)', content):
@@ -74,6 +102,29 @@ def extract_event_vars(content: str) -> dict[str, int]:
     for m in re.finditer(r'new\s+DynamicVar\("(\w+)",\s*(\d+)m?\)', content):
         vars_dict[m.group(1)] = int(m.group(2))
 
+    # StringVar with model references:
+    # new StringVar("Name", ModelDb.Card<ClassName>().Title)
+    # new StringVar("Name", ModelDb.Enchantment<ClassName>().Title.GetFormattedText())
+    # new StringVar("Name", ModelDb.Relic<ClassName>().Title.GetFormattedText())
+    # new StringVar("Name", ModelDb.Potion<ClassName>().Title.GetFormattedText())
+    title_map = get_title_map()
+    for m in re.finditer(
+        r'new\s+StringVar\("(\w+)",\s*ModelDb\.(?:Card|Enchantment|Relic|Potion)<([^>]+)>\(\)\.Title(?:\.GetFormattedText\(\))?\)',
+        content
+    ):
+        var_name = m.group(1)
+        class_name = m.group(2)
+        # Strip namespace prefix if present (e.g. MegaCrit.Sts2...LostWisp -> LostWisp)
+        if "." in class_name:
+            class_name = class_name.rsplit(".", 1)[1]
+        entity_id = class_name_to_id(class_name)
+        title = title_map.get(entity_id, class_name)
+        vars_dict[var_name] = title
+
+    # StringVar with literal string: new StringVar("Name", "Value")
+    for m in re.finditer(r'new\s+StringVar\("(\w+)",\s*"([^"]+)"\)', content):
+        vars_dict[m.group(1)] = m.group(2)
+
     # Also get vars from standard extraction
     vars_dict.update(extract_vars_from_source(content))
 
@@ -81,10 +132,14 @@ def extract_event_vars(content: str) -> dict[str, int]:
 
 
 def parse_options_from_localization(event_id: str, localization: dict, vars_dict: dict) -> list[dict]:
-    """Extract event options (choices) from localization keys."""
+    """Extract event options (choices) from localization keys for INITIAL page."""
+    return parse_page_options(event_id, "INITIAL", localization, vars_dict)
+
+
+def parse_page_options(event_id: str, page_name: str, localization: dict, vars_dict: dict) -> list[dict]:
+    """Extract options for a specific page."""
     options = []
-    # Pattern: EVENT_ID.pages.INITIAL.options.OPTION_NAME.title
-    prefix = f"{event_id}.pages.INITIAL.options."
+    prefix = f"{event_id}.pages.{page_name}.options."
     option_keys = set()
     for key in localization:
         if key.startswith(prefix):
@@ -98,8 +153,6 @@ def parse_options_from_localization(event_id: str, localization: dict, vars_dict
         desc_raw = localization.get(f"{prefix}{opt_name}.description", "")
         desc_resolved = resolve_description(desc_raw, vars_dict) if desc_raw else ""
         desc_clean = strip_rich_tags(desc_resolved)
-        # Keep [gold]...[/gold] for frontend rendering
-        desc_clean = re.sub(r'\[/?(?:blue|red|purple|green|orange|pink|aqua)\]', '', desc_clean)
         options.append({
             "id": opt_name,
             "title": title,
@@ -107,6 +160,40 @@ def parse_options_from_localization(event_id: str, localization: dict, vars_dict
         })
 
     return options
+
+
+def parse_all_pages(event_id: str, localization: dict, vars_dict: dict) -> list[dict] | None:
+    """Extract all pages for an event, building the full decision tree."""
+    # Discover all page names
+    page_prefix = f"{event_id}.pages."
+    page_names = set()
+    for key in localization:
+        if key.startswith(page_prefix):
+            rest = key[len(page_prefix):]
+            page_name = rest.split(".")[0]
+            page_names.add(page_name)
+
+    if len(page_names) <= 1:
+        return None  # Only INITIAL page, no multi-page flow
+
+    pages = []
+    for page_name in sorted(page_names):
+        desc_raw = localization.get(f"{page_prefix}{page_name}.description", "")
+        desc_resolved = resolve_description(desc_raw, vars_dict) if desc_raw else ""
+        desc_clean = strip_rich_tags(desc_resolved)
+
+        options = parse_page_options(event_id, page_name, localization, vars_dict)
+
+        page = {
+            "id": page_name,
+            "description": desc_clean if desc_clean else None,
+        }
+        if options:
+            page["options"] = options
+
+        pages.append(page)
+
+    return pages if len(pages) > 1 else None
 
 
 def is_ancient_event(content: str) -> bool:
@@ -198,7 +285,6 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict) ->
     vars_dict = extract_event_vars(content)
     desc_resolved = resolve_description(desc_raw, vars_dict) if desc_raw else ""
     desc_clean = strip_rich_tags(desc_resolved)
-    desc_clean = re.sub(r'\[/?(?:blue|red|purple|green|orange|pink|aqua)\]', '', desc_clean)
 
     # Options (choices)
     options = parse_options_from_localization(event_id, localization, vars_dict)
@@ -214,6 +300,9 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict) ->
         # Check if it's referenced across multiple acts via encounter system
         event_type = "Shared"
 
+    # Parse all pages (multi-page events)
+    pages = parse_all_pages(event_id, localization, vars_dict)
+
     result = {
         "id": event_id,
         "name": title,
@@ -221,6 +310,7 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict) ->
         "act": act,
         "description": desc_clean if desc_clean else None,
         "options": options if options else None,
+        "pages": pages,
     }
 
     # Enrich Ancient events with epithet, dialogue, image, and relics

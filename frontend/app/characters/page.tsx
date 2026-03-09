@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import type { Character, Relic, Card } from "@/lib/api";
+import RichDescription from "../components/RichDescription";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -80,7 +81,7 @@ export default function CharactersPage() {
                 />
               </div>
               <p className="text-sm text-[var(--text-secondary)] mb-5">
-                {char.description}
+                <RichDescription text={char.description} />
               </p>
 
               <div className="grid grid-cols-3 gap-3 mb-5">
@@ -121,7 +122,7 @@ export default function CharactersPage() {
                           <span className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 w-52 px-2.5 py-2 rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[11px] text-[var(--text-secondary)] leading-snug shadow-lg opacity-0 group-hover/card:opacity-100 transition-opacity z-10">
                             <span className="block font-semibold text-[var(--text-primary)] mb-1">{cardData.name}</span>
                             <span className="block text-[var(--text-muted)] mb-1">{cardData.type} · Cost {cardData.cost}</span>
-                            <span className="block">{cleanDescription(cardData.description)}</span>
+                            <span className="block"><RichDescription text={cleanDescription(cardData.description)} /></span>
                           </span>
                         )}
                       </span>
@@ -146,7 +147,7 @@ export default function CharactersPage() {
                         {relicData && (
                           <span className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 w-52 px-2.5 py-2 rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[11px] text-[var(--text-secondary)] leading-snug shadow-lg opacity-0 group-hover/relic:opacity-100 transition-opacity z-10">
                             <span className="block font-semibold text-[var(--accent-gold)] mb-1">{relicData.name}</span>
-                            <span className="block">{cleanDescription(relicData.description)}</span>
+                            <span className="block"><RichDescription text={cleanDescription(relicData.description)} /></span>
                           </span>
                         )}
                       </span>

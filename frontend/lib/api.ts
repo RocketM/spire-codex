@@ -116,6 +116,12 @@ export interface EventOption {
   description: string;
 }
 
+export interface EventPage {
+  id: string;
+  description: string | null;
+  options: EventOption[] | null;
+}
+
 export interface DialogueLine {
   order: string;
   speaker: string;
@@ -129,6 +135,7 @@ export interface GameEvent {
   act: string | null;
   description: string | null;
   options: EventOption[] | null;
+  pages: EventPage[] | null;
   epithet: string | null;
   dialogue: Record<string, DialogueLine[]> | null;
   image_url: string | null;

@@ -72,7 +72,7 @@ def parse_single_power(filepath: Path, localization: dict) -> dict | None:
         description_raw = localization.get(f"{desc_key}.description", "")
 
     description_resolved = resolve_description(description_raw, all_vars) if description_raw else ""
-    desc_clean = re.sub(r'\[/?(?:blue|red|purple|green|orange|pink)\]', '', description_resolved)
+    desc_clean = description_resolved
 
     return {
         "id": power_id,

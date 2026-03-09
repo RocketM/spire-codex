@@ -75,7 +75,7 @@ def parse_character(filepath: Path, localization: dict) -> dict | None:
     # Localization
     title = localization.get(f"{char_id}.title", class_name)
     description = localization.get(f"{char_id}.description", "")
-    desc_clean = re.sub(r'\[/?(?:gold|blue|red|purple|green|orange|pink|sine)\]', '', description)
+    desc_clean = description
 
     return {
         "id": char_id,

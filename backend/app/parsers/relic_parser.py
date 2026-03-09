@@ -69,11 +69,10 @@ def parse_single_relic(filepath: Path, localization: dict, relic_pools: dict) ->
     description_raw = localization.get(f"{relic_id}.description", "")
     flavor = localization.get(f"{relic_id}.flavor", "")
 
-    # Resolve templates, then strip color tags (preserve [gold] for frontend rendering)
+    # Resolve templates, keep color tags for frontend rendering
     description_resolved = resolve_description(description_raw, all_vars)
-    # Keep [gold]...[/gold] for frontend, strip other color tags
-    desc_clean = re.sub(r'\[/?(?:blue|red|purple|green|orange|pink)\]', '', description_resolved)
-    flavor_clean = re.sub(r'\[/?(?:gold|blue|red|purple|green|orange|pink)\]', '', flavor)
+    desc_clean = description_resolved
+    flavor_clean = flavor
 
     # Pool/character
     pool = relic_pools.get(class_name, "shared")

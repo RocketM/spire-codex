@@ -48,7 +48,7 @@ def parse_single_potion(filepath: Path, localization: dict) -> dict | None:
 
     # Resolve templates, keep [gold] for frontend rendering
     description_resolved = resolve_description(description_raw, all_vars)
-    desc_clean = re.sub(r'\[/?(?:blue|red|purple|green|orange|pink)\]', '', description_resolved)
+    desc_clean = description_resolved
 
     # Image URL
     image_file = STATIC_IMAGES / f"{potion_id.lower()}.png"

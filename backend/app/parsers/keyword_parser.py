@@ -20,7 +20,11 @@ def class_name_to_id(name: str) -> str:
 
 
 def clean_description(text: str) -> str:
-    return re.sub(r'\[/?(?:blue|red|purple|green|orange|pink)\]', '', text)
+    """Strip only non-renderable tags, keep colors and effects for frontend."""
+    text = re.sub(r'\[/?(?:thinky_dots|i|font_size)\]', '', text)
+    text = re.sub(r'\[rainbow[^\]]*\]', '', text)
+    text = re.sub(r'\[font_size=\d+\]', '', text)
+    return text
 
 
 # --- Keywords ---

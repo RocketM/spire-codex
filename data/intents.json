@@ -2,7 +2,7 @@
   {
     "id": "ATTACK",
     "name": "Aggressive",
-    "description": "This enemy intends to [gold]Attack[/gold] {IsMultiplayer:everyone |}for {Damage} damage{Repeat:plural:| {} times}."
+    "description": "This enemy intends to [gold]Attack[/gold] {IsMultiplayer:everyone |}for [blue]{Damage}[/blue] damage{Repeat:plural:| [blue]{}[/blue] times}."
   },
   {
     "id": "BUFF",
@@ -17,7 +17,7 @@
   {
     "id": "DEATH_BLOW",
     "name": "Death Blow",
-    "description": "This creature is trying to take you down with it. It will attack you for {Damage} damage before being destroyed."
+    "description": "This creature is trying to take you down with it. It will attack you for [blue]{Damage}[/blue] damage before being destroyed."
   },
   {
     "id": "DEBUFF",
@@ -52,7 +52,7 @@
   {
     "id": "STATUS",
     "name": "Strategic",
-    "description": "This enemy intends to give you {CardCount} [gold]Status[/gold] {CardCount:plural:card|cards}."
+    "description": "This enemy intends to give you [blue]{CardCount}[/blue] [gold]Status[/gold] {CardCount:plural:card|cards}."
   },
   {
     "id": "STUN",

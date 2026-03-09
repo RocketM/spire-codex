@@ -12,7 +12,7 @@
         "name": "Axebot"
       }
     ],
-    "loss_text": "{character} was dismembered by some {encounter}."
+    "loss_text": "{character} was dismembered by some [gold]{encounter}[/gold]."
   },
   {
     "id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
@@ -35,7 +35,7 @@
         "name": "Battle Friend V3"
       }
     ],
-    "loss_text": "{character} was somehow killed by {encounter}???"
+    "loss_text": "{character} was somehow killed by [gold]{encounter}[/gold]???"
   },
   {
     "id": "BOWLBUGS_NORMAL",
@@ -64,7 +64,7 @@
         "name": "Bowlbug Silk"
       }
     ],
-    "loss_text": "{character} got in the way of a busy {encounter}."
+    "loss_text": "{character} got in the way of a busy [gold]{encounter}[/gold]."
   },
   {
     "id": "BOWLBUGS_WEAK",
@@ -89,7 +89,7 @@
         "name": "Bowlbug Rock"
       }
     ],
-    "loss_text": "{character} got in the way of some busy {encounter}."
+    "loss_text": "{character} got in the way of some busy [gold]{encounter}[/gold]."
   },
   {
     "id": "BYGONE_EFFIGY_ELITE",
@@ -104,7 +104,7 @@
         "name": "Bygone Effigy"
       }
     ],
-    "loss_text": "{character} was sliced in half by a {encounter}."
+    "loss_text": "{character} was sliced in half by a [gold]{encounter}[/gold]."
   },
   {
     "id": "BYRDONIS_ELITE",
@@ -119,7 +119,7 @@
         "name": "Byrdonis"
       }
     ],
-    "loss_text": "{encounter} protected its children from {character}."
+    "loss_text": "[gold]{encounter}[/gold] protected its children from {character}."
   },
   {
     "id": "CEREMONIAL_BEAST_BOSS",
@@ -134,7 +134,7 @@
         "name": "Ceremonial Beast"
       }
     ],
-    "loss_text": "{character} was put to rest by the {encounter}."
+    "loss_text": "{character} was put to rest by the [gold]{encounter}[/gold]."
   },
   {
     "id": "CHOMPERS_NORMAL",
@@ -151,7 +151,7 @@
         "name": "Chomper"
       }
     ],
-    "loss_text": "{character} was chomped to death by {encounter}."
+    "loss_text": "{character} was chomped to death by [gold]{encounter}[/gold]."
   },
   {
     "id": "CONSTRUCT_MENAGERIE_NORMAL",
@@ -170,7 +170,7 @@
         "name": "Punch Construct"
       }
     ],
-    "loss_text": "The {encounter} crushed {character}."
+    "loss_text": "The [gold]{encounter}[/gold] crushed {character}."
   },
   {
     "id": "CORPSE_SLUGS_NORMAL",
@@ -187,7 +187,7 @@
         "name": "Corpse Slug"
       }
     ],
-    "loss_text": "{encounter} feasted on {character}."
+    "loss_text": "[gold]{encounter}[/gold] feasted on {character}."
   },
   {
     "id": "CORPSE_SLUGS_WEAK",
@@ -204,7 +204,7 @@
         "name": "Corpse Slug"
       }
     ],
-    "loss_text": "{encounter} feasted on {character}."
+    "loss_text": "[gold]{encounter}[/gold] feasted on {character}."
   },
   {
     "id": "CUBEX_CONSTRUCT_NORMAL",
@@ -219,7 +219,7 @@
         "name": "Cubex Construct"
       }
     ],
-    "loss_text": "{character} was lasered to death by a {encounter}."
+    "loss_text": "{character} was lasered to death by a [gold]{encounter}[/gold]."
   },
   {
     "id": "CULTISTS_NORMAL",
@@ -238,7 +238,7 @@
         "name": "Damp Cultist"
       }
     ],
-    "loss_text": "{character} was slain by some {encounter}. Caaaaw..."
+    "loss_text": "{character} was slain by some [gold]{encounter}[/gold]. [sine]Caaaaw[/sine]..."
   },
   {
     "id": "DECIMILLIPEDE_ELITE",
@@ -261,7 +261,7 @@
         "name": "Decimillipede Segment Middle"
       }
     ],
-    "loss_text": "{character} couldn't survive {encounter}'s domain."
+    "loss_text": "{character} couldn't survive [gold]{encounter}[/gold]'s domain."
   },
   {
     "id": "DENSE_VEGETATION_EVENT_ENCOUNTER",
@@ -276,7 +276,7 @@
         "name": "Wriggler"
       }
     ],
-    "loss_text": "{character} was infested by {encounter}."
+    "loss_text": "{character} was infested by [gold]{encounter}[/gold]."
   },
   {
     "id": "DEVOTED_SCULPTOR_WEAK",
@@ -291,7 +291,7 @@
         "name": "Devoted Sculptor"
       }
     ],
-    "loss_text": "{character} was smashed to pieces by {encounter}."
+    "loss_text": "{character} was smashed to pieces by [gold]{encounter}[/gold]."
   },
   {
     "id": "DOORMAKER_BOSS",
@@ -310,7 +310,7 @@
         "name": "Doormaker"
       }
     ],
-    "loss_text": "{encounter} didn't take kindly to {character}'s disturbance."
+    "loss_text": "[gold]{encounter}[/gold] didn't take kindly to {character}'s disturbance."
   },
   {
     "id": "ENTOMANCER_ELITE",
@@ -325,7 +325,7 @@
         "name": "Entomancer"
       }
     ],
-    "loss_text": "{character} was stung to death by an {encounter}."
+    "loss_text": "{character} was stung to death by an [gold]{encounter}[/gold]."
   },
   {
     "id": "EXOSKELETONS_NORMAL",
@@ -342,7 +342,7 @@
         "name": "Exoskeleton"
       }
     ],
-    "loss_text": "{character} was eviscerated by {encounter}."
+    "loss_text": "{character} was eviscerated by [gold]{encounter}[/gold]."
   },
   {
     "id": "EXOSKELETONS_WEAK",
@@ -359,7 +359,7 @@
         "name": "Exoskeleton"
       }
     ],
-    "loss_text": "{character} was eviscerated by some {encounter}."
+    "loss_text": "{character} was eviscerated by some [gold]{encounter}[/gold]."
   },
   {
     "id": "FABRICATOR_NORMAL",
@@ -374,7 +374,7 @@
         "name": "Fabricator"
       }
     ],
-    "loss_text": "{character} was zapped by a {encounter}'s bots."
+    "loss_text": "{character} was zapped by a [gold]{encounter}[/gold]'s bots."
   },
   {
     "id": "FAKE_MERCHANT_EVENT_ENCOUNTER",
@@ -389,7 +389,7 @@
         "name": "Fake Merchant Monster"
       }
     ],
-    "loss_text": "{character} faced the wrath of {encounter}"
+    "loss_text": "{character} faced the wrath of [gold]{encounter}[/gold]"
   },
   {
     "id": "FLYCONID_NORMAL",
@@ -415,7 +415,7 @@
         "name": "Twig Slime M"
       }
     ],
-    "loss_text": "{character} was absorbed by a {encounter}."
+    "loss_text": "{character} was absorbed by a [gold]{encounter}[/gold]."
   },
   {
     "id": "FOGMOG_NORMAL",
@@ -434,7 +434,7 @@
         "name": "Fogmog"
       }
     ],
-    "loss_text": "{character} was distracted by a {encounter}'s illusions."
+    "loss_text": "{character} was distracted by a [gold]{encounter}[/gold]'s illusions."
   },
   {
     "id": "FOSSIL_STALKER_NORMAL",
@@ -449,7 +449,7 @@
         "name": "Fossil Stalker"
       }
     ],
-    "loss_text": "{character} was ambushed by a {encounter}."
+    "loss_text": "{character} was ambushed by a [gold]{encounter}[/gold]."
   },
   {
     "id": "FROG_KNIGHT_NORMAL",
@@ -464,7 +464,7 @@
         "name": "Frog Knight"
       }
     ],
-    "loss_text": "A valiant {encounter} triumphed over {character}."
+    "loss_text": "A valiant [gold]{encounter}[/gold] triumphed over {character}."
   },
   {
     "id": "FUZZY_WURM_CRAWLER_WEAK",
@@ -481,7 +481,7 @@
         "name": "Fuzzy Wurm Crawler"
       }
     ],
-    "loss_text": "A {encounter} spat on {character}."
+    "loss_text": "A [gold]{encounter}[/gold] spat on {character}."
   },
   {
     "id": "GLOBE_HEAD_NORMAL",
@@ -496,7 +496,7 @@
         "name": "Globe Head"
       }
     ],
-    "loss_text": "{encounter} zapped {character}."
+    "loss_text": "[gold]{encounter}[/gold] zapped {character}."
   },
   {
     "id": "GREMLIN_MERC_NORMAL",
@@ -519,7 +519,7 @@
         "name": "Sneaky Gremlin"
       }
     ],
-    "loss_text": "{character} got mugged by {encounter}."
+    "loss_text": "{character} got mugged by [gold]{encounter}[/gold]."
   },
   {
     "id": "HAUNTED_SHIP_NORMAL",
@@ -534,7 +534,7 @@
         "name": "Haunted Ship"
       }
     ],
-    "loss_text": "A {encounter} stomped all over {character}."
+    "loss_text": "A [gold]{encounter}[/gold] stomped all over {character}."
   },
   {
     "id": "HUNTER_KILLER_NORMAL",
@@ -549,7 +549,7 @@
         "name": "Hunter Killer"
       }
     ],
-    "loss_text": "{character} was disemboweled by a {encounter}."
+    "loss_text": "{character} was disemboweled by a [gold]{encounter}[/gold]."
   },
   {
     "id": "INFESTED_PRISMS_ELITE",
@@ -564,7 +564,7 @@
         "name": "Infested Prism"
       }
     ],
-    "loss_text": "{character} was stopped by an {encounter}."
+    "loss_text": "{character} was stopped by an [gold]{encounter}[/gold]."
   },
   {
     "id": "INKLETS_NORMAL",
@@ -579,7 +579,7 @@
         "name": "Inklet"
       }
     ],
-    "loss_text": "Some {encounter} wouldn't let {character} pass."
+    "loss_text": "Some [gold]{encounter}[/gold] wouldn't let {character} pass."
   },
   {
     "id": "KAISER_CRAB_BOSS",
@@ -598,7 +598,7 @@
         "name": "Rocket"
       }
     ],
-    "loss_text": "The {encounter} struck {character} from all sides."
+    "loss_text": "The [gold]{encounter}[/gold] struck {character} from all sides."
   },
   {
     "id": "KNIGHTS_ELITE",
@@ -623,7 +623,7 @@
         "name": "Spectral Knight"
       }
     ],
-    "loss_text": "{character} was slain by a {encounter}."
+    "loss_text": "{character} was slain by a [gold]{encounter}[/gold]."
   },
   {
     "id": "KNOWLEDGE_DEMON_BOSS",
@@ -638,7 +638,7 @@
         "name": "Knowledge Demon"
       }
     ],
-    "loss_text": "The {encounter} cursed {character} with overwhelming knowledge."
+    "loss_text": "The [gold]{encounter}[/gold] cursed {character} with overwhelming knowledge."
   },
   {
     "id": "LAGAVULIN_MATRIARCH_BOSS",
@@ -653,7 +653,7 @@
         "name": "Lagavulin Matriarch"
       }
     ],
-    "loss_text": "{character} was cut in half by the {encounter}."
+    "loss_text": "{character} was cut in half by the [gold]{encounter}[/gold]."
   },
   {
     "id": "LIVING_FOG_NORMAL",
@@ -672,7 +672,7 @@
         "name": "Living Fog"
       }
     ],
-    "loss_text": "{character} couldn't bear the stench of some {encounter}."
+    "loss_text": "{character} couldn't bear the stench of some [gold]{encounter}[/gold]."
   },
   {
     "id": "LOUSE_PROGENITOR_NORMAL",
@@ -687,7 +687,7 @@
         "name": "Louse Progenitor"
       }
     ],
-    "loss_text": "{character} was paralyzed by a {encounter}."
+    "loss_text": "{character} was paralyzed by a [gold]{encounter}[/gold]."
   },
   {
     "id": "MAWLER_NORMAL",
@@ -702,7 +702,7 @@
         "name": "Mawler"
       }
     ],
-    "loss_text": "{character} became a delicious meal for a {encounter}."
+    "loss_text": "{character} became a delicious meal for a [gold]{encounter}[/gold]."
   },
   {
     "id": "MECHA_KNIGHT_ELITE",
@@ -717,7 +717,7 @@
         "name": "Mecha Knight"
       }
     ],
-    "loss_text": "{character} was stabbed and burned by a {encounter}."
+    "loss_text": "{character} was stabbed and burned by a [gold]{encounter}[/gold]."
   },
   {
     "id": "MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER",
@@ -732,7 +732,7 @@
         "name": "Mysterious Knight"
       }
     ],
-    "loss_text": "{character} tried to take a {encounter}'s key."
+    "loss_text": "{character} tried to take a [gold]{encounter}[/gold]'s key."
   },
   {
     "id": "MYTES_NORMAL",
@@ -747,7 +747,7 @@
         "name": "Myte"
       }
     ],
-    "loss_text": "{character} was swarmed by a {encounter}."
+    "loss_text": "{character} was swarmed by a [gold]{encounter}[/gold]."
   },
   {
     "id": "NIBBITS_NORMAL",
@@ -762,7 +762,7 @@
         "name": "Nibbit"
       }
     ],
-    "loss_text": "{encounter} beat up {character}."
+    "loss_text": "[gold]{encounter}[/gold] beat up {character}."
   },
   {
     "id": "NIBBITS_WEAK",
@@ -779,7 +779,7 @@
         "name": "Nibbit"
       }
     ],
-    "loss_text": "{encounter} beat up {character}."
+    "loss_text": "[gold]{encounter}[/gold] beat up {character}."
   },
   {
     "id": "OVERGROWTH_CRAWLERS",
@@ -801,7 +801,7 @@
         "name": "Shrinker Beetle"
       }
     ],
-    "loss_text": "Some {encounter} feasted on {character}."
+    "loss_text": "Some [gold]{encounter}[/gold] feasted on {character}."
   },
   {
     "id": "OVICOPTER_NORMAL",
@@ -820,7 +820,7 @@
         "name": "Tough Egg"
       }
     ],
-    "loss_text": "{character} became food for an {encounter}'s children."
+    "loss_text": "{character} became food for an [gold]{encounter}[/gold]'s children."
   },
   {
     "id": "OWL_MAGISTRATE_NORMAL",
@@ -835,7 +835,7 @@
         "name": "Owl Magistrate"
       }
     ],
-    "loss_text": "{character} was sentenced to death by an {encounter}."
+    "loss_text": "{character} was sentenced to death by an [gold]{encounter}[/gold]."
   },
   {
     "id": "PHANTASMAL_GARDENERS_ELITE",
@@ -850,7 +850,7 @@
         "name": "Phantasmal Gardener"
       }
     ],
-    "loss_text": "{character} was put to rest by the {encounter}."
+    "loss_text": "{character} was put to rest by the [gold]{encounter}[/gold]."
   },
   {
     "id": "PHROG_PARASITE_ELITE",
@@ -869,7 +869,7 @@
         "name": "Wriggler"
       }
     ],
-    "loss_text": "A {encounter} spread its colony to {character}."
+    "loss_text": "A [gold]{encounter}[/gold] spread its colony to {character}."
   },
   {
     "id": "PUNCH_CONSTRUCT_NORMAL",
@@ -884,7 +884,7 @@
         "name": "Punch Construct"
       }
     ],
-    "loss_text": "{character} engaged in fisticuffs with a {encounter}."
+    "loss_text": "{character} engaged in fisticuffs with a [gold]{encounter}[/gold]."
   },
   {
     "id": "PUNCH_OFF_EVENT_ENCOUNTER",
@@ -899,7 +899,7 @@
         "name": "Punch Construct"
       }
     ],
-    "loss_text": "{character} interrupted a bout between two {encounter}."
+    "loss_text": "{character} interrupted a bout between two [gold]{encounter}[/gold]."
   },
   {
     "id": "QUEEN_BOSS",
@@ -918,7 +918,7 @@
         "name": "Torch Head Amalgam"
       }
     ],
-    "loss_text": "The {encounter} added a piece of {character} to her collection."
+    "loss_text": "The [gold]{encounter}[/gold] added a piece of {character} to her collection."
   },
   {
     "id": "RUBY_RAIDERS_NORMAL",
@@ -949,7 +949,7 @@
         "name": "Tracker Ruby Raider"
       }
     ],
-    "loss_text": "{character} got jumped by a group of {encounter}."
+    "loss_text": "{character} got jumped by a group of [gold]{encounter}[/gold]."
   },
   {
     "id": "SCROLLS_OF_BITING_NORMAL",
@@ -966,7 +966,7 @@
         "name": "Scroll Of Biting"
       }
     ],
-    "loss_text": "{encounter} tore {character} to shreds."
+    "loss_text": "[gold]{encounter}[/gold] tore {character} to shreds."
   },
   {
     "id": "SCROLLS_OF_BITING_WEAK",
@@ -983,7 +983,7 @@
         "name": "Scroll Of Biting"
       }
     ],
-    "loss_text": "Some {encounter} tore {character} to shreds."
+    "loss_text": "Some [gold]{encounter}[/gold] tore {character} to shreds."
   },
   {
     "id": "SEAPUNK_WEAK",
@@ -1000,7 +1000,7 @@
         "name": "Seapunk"
       }
     ],
-    "loss_text": "A {encounter} clobbered {character}."
+    "loss_text": "A [gold]{encounter}[/gold] clobbered {character}."
   },
   {
     "id": "SEWER_CLAM_NORMAL",
@@ -1015,7 +1015,7 @@
         "name": "Sewer Clam"
       }
     ],
-    "loss_text": "{character} was gobbled up by a {encounter}."
+    "loss_text": "{character} was gobbled up by a [gold]{encounter}[/gold]."
   },
   {
     "id": "SHRINKER_BEETLE_WEAK",
@@ -1032,7 +1032,7 @@
         "name": "Shrinker Beetle"
       }
     ],
-    "loss_text": "A {encounter} snacked on {character}."
+    "loss_text": "A [gold]{encounter}[/gold] snacked on {character}."
   },
   {
     "id": "SKULKING_COLONY_ELITE",
@@ -1047,7 +1047,7 @@
         "name": "Skulking Colony"
       }
     ],
-    "loss_text": "{character} was absorbed by a {encounter}"
+    "loss_text": "{character} was absorbed by a [gold]{encounter}[/gold]"
   },
   {
     "id": "SLIMED_BERSERKER_NORMAL",
@@ -1062,7 +1062,7 @@
         "name": "Slimed Berserker"
       }
     ],
-    "loss_text": "{character} was absorbed into a {encounter}."
+    "loss_text": "{character} was absorbed into a [gold]{encounter}[/gold]."
   },
   {
     "id": "SLIMES_NORMAL",
@@ -1091,7 +1091,7 @@
         "name": "Twig Slime S"
       }
     ],
-    "loss_text": "{character} was felled by a {encounter}."
+    "loss_text": "{character} was felled by a [gold]{encounter}[/gold]."
   },
   {
     "id": "SLIMES_WEAK",
@@ -1120,7 +1120,7 @@
         "name": "Twig Slime S"
       }
     ],
-    "loss_text": "{character} was felled by a {encounter}."
+    "loss_text": "{character} was felled by a [gold]{encounter}[/gold]."
   },
   {
     "id": "SLITHERING_STRANGLER_NORMAL",
@@ -1155,7 +1155,7 @@
         "name": "Twig Slime S"
       }
     ],
-    "loss_text": "{character} was suffocated by a {encounter}."
+    "loss_text": "{character} was suffocated by a [gold]{encounter}[/gold]."
   },
   {
     "id": "SLUDGE_SPINNER_WEAK",
@@ -1170,7 +1170,7 @@
         "name": "Sludge Spinner"
       }
     ],
-    "loss_text": "{character} couldn't defeat a {encounter}."
+    "loss_text": "{character} couldn't defeat a [gold]{encounter}[/gold]."
   },
   {
     "id": "SLUMBERING_BEETLE_NORMAL",
@@ -1195,7 +1195,7 @@
         "name": "Slumbering Beetle"
       }
     ],
-    "loss_text": "{character} interrupted a {encounter}."
+    "loss_text": "{character} interrupted a [gold]{encounter}[/gold]."
   },
   {
     "id": "SNAPPING_JAXFRUIT_NORMAL",
@@ -1216,7 +1216,7 @@
         "name": "Snapping Jaxfruit"
       }
     ],
-    "loss_text": "{character} ran afoul of some {encounter}."
+    "loss_text": "{character} ran afoul of some [gold]{encounter}[/gold]."
   },
   {
     "id": "SOUL_FYSH_BOSS",
@@ -1231,7 +1231,7 @@
         "name": "Soul Fysh"
       }
     ],
-    "loss_text": "A {encounter} beckoned {character} to their doom."
+    "loss_text": "A [gold]{encounter}[/gold] beckoned {character} to their doom."
   },
   {
     "id": "SOUL_NEXUS_ELITE",
@@ -1246,7 +1246,7 @@
         "name": "Soul Nexus"
       }
     ],
-    "loss_text": "{character} died to a {encounter} on a forgotten battlefield."
+    "loss_text": "{character} died to a [gold]{encounter}[/gold] on a forgotten battlefield."
   },
   {
     "id": "SPINY_TOAD_NORMAL",
@@ -1261,7 +1261,7 @@
         "name": "Spiny Toad"
       }
     ],
-    "loss_text": "{character} couldn't pierce the {encounter}'s spikes."
+    "loss_text": "{character} couldn't pierce the [gold]{encounter}[/gold]'s spikes."
   },
   {
     "id": "TERROR_EEL_ELITE",
@@ -1276,7 +1276,7 @@
         "name": "Terror Eel"
       }
     ],
-    "loss_text": "A {encounter} was too terrifying for {character}."
+    "loss_text": "A [gold]{encounter}[/gold] was too terrifying for {character}."
   },
   {
     "id": "TEST_SUBJECT_BOSS",
@@ -1291,7 +1291,7 @@
         "name": "Test Subject"
       }
     ],
-    "loss_text": "A {encounter} loyally guarded its masters from {character}."
+    "loss_text": "A [gold]{encounter}[/gold] loyally guarded its masters from {character}."
   },
   {
     "id": "THE_ARCHITECT_EVENT_ENCOUNTER",
@@ -1321,7 +1321,7 @@
         "name": "The Insatiable"
       }
     ],
-    "loss_text": "{encounter} devoured {character}. And yet, it still hungers..."
+    "loss_text": "[gold]{encounter}[/gold] devoured {character}. And yet, it still hungers..."
   },
   {
     "id": "THE_KIN_BOSS",
@@ -1340,7 +1340,7 @@
         "name": "Kin Priest"
       }
     ],
-    "loss_text": "{character} was annihilated by {encounter}'s superior strategy."
+    "loss_text": "{character} was annihilated by [gold]{encounter}[/gold]'s superior strategy."
   },
   {
     "id": "THE_LOST_AND_FORGOTTEN_NORMAL",
@@ -1359,7 +1359,7 @@
         "name": "The Lost"
       }
     ],
-    "loss_text": "The {encounter} stole {character}'s will to live."
+    "loss_text": "The [gold]{encounter}[/gold] stole {character}'s will to live."
   },
   {
     "id": "THE_OBSCURA_NORMAL",
@@ -1374,7 +1374,7 @@
         "name": "The Obscura"
       }
     ],
-    "loss_text": "{encounter} and its illusion smashed {character}."
+    "loss_text": "[gold]{encounter}[/gold] and its illusion smashed {character}."
   },
   {
     "id": "THIEVING_HOPPER_WEAK",
@@ -1391,7 +1391,7 @@
         "name": "Thieving Hopper"
       }
     ],
-    "loss_text": "A {encounter} mugged {character}."
+    "loss_text": "A [gold]{encounter}[/gold] mugged {character}."
   },
   {
     "id": "TOADPOLES_NORMAL",
@@ -1410,7 +1410,7 @@
         "name": "Toadpole"
       }
     ],
-    "loss_text": "{character} was defeated by some {encounter}."
+    "loss_text": "{character} was defeated by some [gold]{encounter}[/gold]."
   },
   {
     "id": "TOADPOLES_WEAK",
@@ -1425,7 +1425,7 @@
         "name": "Toadpole"
       }
     ],
-    "loss_text": "{character} couldn't deal with some {encounter}."
+    "loss_text": "{character} couldn't deal with some [gold]{encounter}[/gold]."
   },
   {
     "id": "TUNNELER_NORMAL",
@@ -1451,7 +1451,7 @@
         "name": "Tunneler"
       }
     ],
-    "loss_text": "A {encounter} finished off {character}."
+    "loss_text": "A [gold]{encounter}[/gold] finished off {character}."
   },
   {
     "id": "TUNNELER_WEAK",
@@ -1468,7 +1468,7 @@
         "name": "Tunneler"
       }
     ],
-    "loss_text": "{character} got whacked by a {encounter}."
+    "loss_text": "{character} got whacked by a [gold]{encounter}[/gold]."
   },
   {
     "id": "TURRET_OPERATOR_WEAK",
@@ -1487,7 +1487,7 @@
         "name": "Turret Operator"
       }
     ],
-    "loss_text": "A {encounter} riddled {character} full of holes."
+    "loss_text": "A [gold]{encounter}[/gold] riddled {character} full of holes."
   },
   {
     "id": "TWO_TAILED_RATS_NORMAL",
@@ -1502,7 +1502,7 @@
         "name": "Two Tailed Rat"
       }
     ],
-    "loss_text": "{character} was swarmed by some {encounter}."
+    "loss_text": "{character} was swarmed by some [gold]{encounter}[/gold]."
   },
   {
     "id": "VANTOM_BOSS",
@@ -1517,7 +1517,7 @@
         "name": "Vantom"
       }
     ],
-    "loss_text": "{character} was turned into an Inklet by the {encounter}."
+    "loss_text": "{character} was turned into an Inklet by the [gold]{encounter}[/gold]."
   },
   {
     "id": "VINE_SHAMBLER_NORMAL",
@@ -1532,7 +1532,7 @@
         "name": "Vine Shambler"
       }
     ],
-    "loss_text": "{character} couldn't escape a {encounter}."
+    "loss_text": "{character} couldn't escape a [gold]{encounter}[/gold]."
   },
   {
     "id": "WATERFALL_GIANT_BOSS",
@@ -1547,6 +1547,6 @@
         "name": "Waterfall Giant"
       }
     ],
-    "loss_text": "The {encounter} cleansed the Underdocks of {character}."
+    "loss_text": "The [gold]{encounter}[/gold] cleansed the Underdocks of {character}."
   }
 ]

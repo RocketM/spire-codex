@@ -93,8 +93,7 @@ def parse_single_encounter(filepath: Path, localization: dict, act_mapping: dict
     # Localization
     title = localization.get(f"{enc_id}.title", monster_class_to_name(class_name))
     loss_text = localization.get(f"{enc_id}.loss", "")
-    # Strip color tags from loss text
-    loss_clean = re.sub(r'\[/?(?:gold|blue|red|purple|green|orange|pink|sine|jitter)\]', '', loss_text)
+    loss_clean = loss_text
 
     # Act mapping
     act = act_mapping.get(class_name)

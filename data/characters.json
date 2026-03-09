@@ -58,7 +58,7 @@
   {
     "id": "NECROBINDER",
     "name": "The Necrobinder",
-    "description": "A Spireborn lich who seeks revenge.\nCalls upon her trusty left hand, Osty, in combat.",
+    "description": "A Spireborn lich who seeks revenge.\nCalls upon her trusty left hand, [gold]Osty[/gold], in combat.",
     "starting_hp": 66,
     "starting_gold": 99,
     "max_energy": 3,

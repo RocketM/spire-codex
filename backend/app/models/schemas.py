@@ -128,6 +128,12 @@ class EventOption(BaseModel):
     description: str
 
 
+class EventPage(BaseModel):
+    id: str
+    description: str | None = None
+    options: list[EventOption] | None = None
+
+
 class DialogueLine(BaseModel):
     order: str
     speaker: str
@@ -141,6 +147,7 @@ class Event(BaseModel):
     act: str | None = None
     description: str | None = None
     options: list[EventOption] | None = None
+    pages: list[EventPage] | None = None
     epithet: str | None = None
     dialogue: dict[str, list[DialogueLine]] | None = None
     image_url: str | None = None

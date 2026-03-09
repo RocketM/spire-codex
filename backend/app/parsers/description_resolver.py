@@ -2,7 +2,7 @@
 import re
 
 
-def _lookup(name: str, vars_dict: dict[str, int], default=None):
+def _lookup(name: str, vars_dict: dict[str, int | str], default=None):
     """Case-insensitive variable lookup."""
     if name in vars_dict:
         return vars_dict[name]
@@ -12,7 +12,7 @@ def _lookup(name: str, vars_dict: dict[str, int], default=None):
     return default
 
 
-def resolve_description(raw: str, vars_dict: dict[str, int], is_upgraded: bool = False) -> str:
+def resolve_description(raw: str, vars_dict: dict[str, int | str], is_upgraded: bool = False) -> str:
     """Resolve SmartFormat templates in descriptions."""
     text = raw
 

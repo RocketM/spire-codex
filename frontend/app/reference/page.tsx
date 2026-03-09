@@ -169,7 +169,7 @@ export default function ReferencePage() {
               {ach.name}
             </h3>
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-              {ach.description}
+              <RichDescription text={ach.description} />
             </p>
           </>
         )}

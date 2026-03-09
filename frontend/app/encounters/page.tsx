@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import type { Encounter } from "@/lib/api";
 import SearchFilter from "../components/SearchFilter";
+import RichDescription from "../components/RichDescription";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -138,7 +139,7 @@ export default function EncountersPage() {
 
               {enc.loss_text && (
                 <p className="text-xs text-[var(--text-muted)] italic leading-relaxed">
-                  {enc.loss_text}
+                  <RichDescription text={enc.loss_text} />
                 </p>
               )}
             </div>

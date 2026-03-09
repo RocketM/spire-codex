@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import type { GameEvent, DialogueLine } from "@/lib/api";
+import type { GameEvent, EventPage, DialogueLine } from "@/lib/api";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
 
@@ -32,19 +32,93 @@ const actOptions = [
   { label: "Underdocks", value: "underdocks" },
 ];
 
+const PAGE_COLORS = [
+  "border-l-indigo-500/60",
+  "border-l-cyan-500/60",
+  "border-l-emerald-500/60",
+  "border-l-amber-500/60",
+  "border-l-rose-500/60",
+  "border-l-purple-500/60",
+  "border-l-blue-500/60",
+  "border-l-orange-500/60",
+  "border-l-teal-500/60",
+  "border-l-pink-500/60",
+];
+
+
+function PageBlock({
+  page,
+  index,
+  total,
+}: {
+  page: EventPage;
+  index: number;
+  total: number;
+}) {
+  const colorClass = PAGE_COLORS[index % PAGE_COLORS.length];
+  const isInitial = page.id === "INITIAL";
+  const pageName = page.id.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+
+  return (
+    <div
+      className={`border-l-2 ${colorClass} pl-3 py-1.5`}
+    >
+      <p className="text-[10px] uppercase tracking-wider text-[var(--text-muted)] mb-1">
+        {isInitial ? "Start" : pageName}
+      </p>
+      {page.description && (
+        <p className="text-xs text-[var(--text-secondary)] leading-relaxed mb-1.5 line-clamp-3">
+          <RichDescription text={page.description} />
+        </p>
+      )}
+      {page.options && page.options.length > 0 && (
+        <div className="space-y-1">
+          {page.options.map((opt) => (
+            <div
+              key={opt.id}
+              className="rounded bg-[var(--bg-primary)]/60 border border-[var(--border-subtle)] px-2 py-1"
+            >
+              <p className="text-xs font-medium text-[var(--text-primary)]">
+                <RichDescription text={opt.title} />
+              </p>
+              {opt.description && (
+                <p className="text-[11px] text-[var(--text-secondary)] mt-0.5">
+                  <RichDescription text={opt.description} />
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function EventsPage() {
   const [events, setEvents] = useState<GameEvent[]>([]);
   const [search, setSearch] = useState("");
   const [type, setType] = useState("");
   const [act, setAct] = useState("");
   const [loading, setLoading] = useState(true);
-  const [expandedDialogue, setExpandedDialogue] = useState<Record<string, string | null>>({});
+  const [expandedDialogue, setExpandedDialogue] = useState<
+    Record<string, string | null>
+  >({});
+  const [expandedPages, setExpandedPages] = useState<Record<string, boolean>>(
+    {}
+  );
   const [relicNames, setRelicNames] = useState<Record<string, string>>({});
 
   const toggleDialogue = (eventId: string, group: string) => {
     setExpandedDialogue((prev) => ({
       ...prev,
       [eventId]: prev[eventId] === group ? null : group,
+    }));
+  };
+
+  const togglePages = (eventId: string) => {
+    setExpandedPages((prev) => ({
+      ...prev,
+      [eventId]: !prev[eventId],
     }));
   };
 
@@ -103,141 +177,193 @@ export default function EventsPage() {
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-          {events.map((event) => (
-            <div
-              key={event.id}
-              className={`bg-[var(--bg-card)] rounded-lg border ${
-                typeColors[event.type] || "border-[var(--border-subtle)]"
-              } p-4 hover:bg-[var(--bg-card-hover)] transition-all`}
-            >
-              <div className="flex items-start justify-between mb-2">
-                <div className="flex items-start gap-3">
-                  {event.image_url && (
-                    <img
-                      src={`${API}${event.image_url}`}
-                      alt={event.name}
-                      className="w-10 h-10 object-contain flex-shrink-0"
-                      crossOrigin="anonymous"
-                    />
-                  )}
-                  <div>
-                    <h3 className="font-semibold text-[var(--text-primary)]">
-                      {event.name}
-                    </h3>
-                    {event.epithet && (
-                      <p className="text-xs text-purple-400 italic">
-                        {event.epithet}
-                      </p>
+          {events.map((event) => {
+            const pageCount = event.pages?.length ?? 0;
+            const isExpanded = expandedPages[event.id];
+
+            return (
+              <div
+                key={event.id}
+                className={`bg-[var(--bg-card)] rounded-lg border ${
+                  typeColors[event.type] || "border-[var(--border-subtle)]"
+                } p-4 hover:bg-[var(--bg-card-hover)] transition-all`}
+              >
+                <div className="flex items-start justify-between mb-2">
+                  <div className="flex items-start gap-3">
+                    {event.image_url && (
+                      <img
+                        src={`${API}${event.image_url}`}
+                        alt={event.name}
+                        className="w-10 h-10 object-contain flex-shrink-0"
+                        crossOrigin="anonymous"
+                      />
                     )}
-                  </div>
-                </div>
-                <span
-                  className={`text-[10px] px-1.5 py-0.5 rounded border flex-shrink-0 ml-2 ${
-                    typeBadge[event.type] || "bg-gray-800 text-gray-300 border-gray-700"
-                  }`}
-                >
-                  {event.type}
-                </span>
-              </div>
-
-              {event.act && (
-                <p className="text-xs text-[var(--text-muted)] mb-2">
-                  {event.act}
-                </p>
-              )}
-
-              {event.description && (
-                <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-3">
-                  {event.description}
-                </p>
-              )}
-
-              {event.options && event.options.length > 0 && (
-                <div className="space-y-1.5">
-                  <p className="text-[10px] uppercase tracking-wider text-[var(--text-muted)]">
-                    Choices
-                  </p>
-                  {event.options.map((opt) => (
-                    <div
-                      key={opt.id}
-                      className="rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)] px-3 py-2"
-                    >
-                      <p className="text-sm font-medium text-[var(--text-primary)]">
-                        <RichDescription text={opt.title} />
-                      </p>
-                      {opt.description && (
-                        <p className="text-xs text-[var(--text-secondary)] mt-0.5">
-                          <RichDescription text={opt.description} />
+                    <div>
+                      <h3 className="font-semibold text-[var(--text-primary)]">
+                        {event.name}
+                      </h3>
+                      {event.epithet && (
+                        <p className="text-xs text-purple-400 italic">
+                          {event.epithet}
                         </p>
                       )}
                     </div>
-                  ))}
-                </div>
-              )}
-
-              {event.relics && event.relics.length > 0 && (
-                <div className="mt-3">
-                  <p className="text-[10px] uppercase tracking-wider text-[var(--text-muted)] mb-1.5">
-                    Relic Offerings
-                  </p>
-                  <div className="flex flex-wrap gap-1">
-                    {event.relics.map((relicId) => (
+                  </div>
+                  <div className="flex items-center gap-1.5 flex-shrink-0 ml-2">
+                    {pageCount > 1 && (
                       <span
-                        key={relicId}
-                        className="text-[11px] px-1.5 py-0.5 rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-secondary)]"
+                        className="text-[10px] px-1.5 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--text-muted)] border border-[var(--border-subtle)]"
+                        title={`${pageCount} pages`}
                       >
-                        {relicNames[relicId] || relicId.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
+                        {pageCount} pages
                       </span>
-                    ))}
+                    )}
+                    <span
+                      className={`text-[10px] px-1.5 py-0.5 rounded border ${
+                        typeBadge[event.type] ||
+                        "bg-gray-800 text-gray-300 border-gray-700"
+                      }`}
+                    >
+                      {event.type}
+                    </span>
                   </div>
                 </div>
-              )}
 
-              {event.dialogue && Object.keys(event.dialogue).length > 0 && (
-                <div className="mt-3 space-y-1">
-                  <p className="text-[10px] uppercase tracking-wider text-[var(--text-muted)]">
-                    Dialogue
+                {event.act && (
+                  <p className="text-xs text-[var(--text-muted)] mb-2">
+                    {event.act}
                   </p>
-                  <div className="flex flex-wrap gap-1">
-                    {Object.keys(event.dialogue).map((group) => (
-                      <button
-                        key={group}
-                        onClick={() => toggleDialogue(event.id, group)}
-                        className={`text-[11px] px-2 py-0.5 rounded border transition-colors cursor-pointer ${
-                          expandedDialogue[event.id] === group
-                            ? "bg-purple-950/60 text-purple-300 border-purple-800/50"
-                            : "bg-[var(--bg-primary)] text-[var(--text-muted)] border-[var(--border-subtle)] hover:text-[var(--text-secondary)] hover:border-purple-800/30"
-                        }`}
+                )}
+
+                {event.description && (
+                  <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-3">
+                    <RichDescription text={event.description} />
+                  </p>
+                )}
+
+                {/* Initial options */}
+                {event.options && event.options.length > 0 && (
+                  <div className="space-y-1.5">
+                    <p className="text-[10px] uppercase tracking-wider text-[var(--text-muted)]">
+                      Choices
+                    </p>
+                    {event.options.map((opt) => (
+                      <div
+                        key={opt.id}
+                        className="rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)] px-3 py-2"
                       >
-                        {group}
-                      </button>
-                    ))}
-                  </div>
-                  {expandedDialogue[event.id] &&
-                    event.dialogue[expandedDialogue[event.id]!] && (
-                      <div className="mt-2 space-y-1.5 max-h-48 overflow-y-auto">
-                        {event.dialogue[expandedDialogue[event.id]!].map(
-                          (line, i) => (
-                            <div
-                              key={i}
-                              className={`text-xs px-2.5 py-1.5 rounded ${
-                                line.speaker === "ancient"
-                                  ? "bg-purple-950/30 text-purple-200 border-l-2 border-purple-700/50"
-                                  : "bg-indigo-950/30 text-indigo-200 border-l-2 border-indigo-700/50 ml-4"
-                              }`}
-                            >
-                              <span className="whitespace-pre-line">
-                                {line.text}
-                              </span>
-                            </div>
-                          )
+                        <p className="text-sm font-medium text-[var(--text-primary)]">
+                          <RichDescription text={opt.title} />
+                        </p>
+                        {opt.description && (
+                          <p className="text-xs text-[var(--text-secondary)] mt-0.5">
+                            <RichDescription text={opt.description} />
+                          </p>
                         )}
                       </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Multi-page flow */}
+                {event.pages && event.pages.length > 1 && (
+                  <div className="mt-3">
+                    <button
+                      onClick={() => togglePages(event.id)}
+                      className="text-[10px] uppercase tracking-wider text-[var(--text-muted)] hover:text-[var(--text-secondary)] cursor-pointer transition-colors flex items-center gap-1"
+                    >
+                      <span
+                        className={`inline-block transition-transform ${isExpanded ? "rotate-90" : ""}`}
+                      >
+                        ▶
+                      </span>
+                      All Pages ({pageCount})
+                    </button>
+                    {isExpanded && (
+                      <div className="mt-2 space-y-2 max-h-96 overflow-y-auto">
+                        {event.pages.map((page, i) => (
+                          <PageBlock
+                            key={page.id}
+                            page={page}
+                            index={i}
+                            total={event.pages!.length}
+                          />
+                        ))}
+                      </div>
                     )}
-                </div>
-              )}
-            </div>
-          ))}
+                  </div>
+                )}
+
+                {/* Relic offerings */}
+                {event.relics && event.relics.length > 0 && (
+                  <div className="mt-3">
+                    <p className="text-[10px] uppercase tracking-wider text-[var(--text-muted)] mb-1.5">
+                      Relic Offerings
+                    </p>
+                    <div className="flex flex-wrap gap-1">
+                      {event.relics.map((relicId) => (
+                        <span
+                          key={relicId}
+                          className="text-[11px] px-1.5 py-0.5 rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-secondary)]"
+                        >
+                          {relicNames[relicId] ||
+                            relicId
+                              .replace(/_/g, " ")
+                              .replace(/\b\w/g, (c) => c.toUpperCase())}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Dialogue */}
+                {event.dialogue &&
+                  Object.keys(event.dialogue).length > 0 && (
+                    <div className="mt-3 space-y-1">
+                      <p className="text-[10px] uppercase tracking-wider text-[var(--text-muted)]">
+                        Dialogue
+                      </p>
+                      <div className="flex flex-wrap gap-1">
+                        {Object.keys(event.dialogue).map((group) => (
+                          <button
+                            key={group}
+                            onClick={() => toggleDialogue(event.id, group)}
+                            className={`text-[11px] px-2 py-0.5 rounded border transition-colors cursor-pointer ${
+                              expandedDialogue[event.id] === group
+                                ? "bg-purple-950/60 text-purple-300 border-purple-800/50"
+                                : "bg-[var(--bg-primary)] text-[var(--text-muted)] border-[var(--border-subtle)] hover:text-[var(--text-secondary)] hover:border-purple-800/30"
+                            }`}
+                          >
+                            {group}
+                          </button>
+                        ))}
+                      </div>
+                      {expandedDialogue[event.id] &&
+                        event.dialogue[expandedDialogue[event.id]!] && (
+                          <div className="mt-2 space-y-1.5 max-h-48 overflow-y-auto">
+                            {event.dialogue[expandedDialogue[event.id]!].map(
+                              (line, i) => (
+                                <div
+                                  key={i}
+                                  className={`text-xs px-2.5 py-1.5 rounded ${
+                                    line.speaker === "ancient"
+                                      ? "bg-purple-950/30 text-purple-200 border-l-2 border-purple-700/50"
+                                      : "bg-indigo-950/30 text-indigo-200 border-l-2 border-indigo-700/50 ml-4"
+                                  }`}
+                                >
+                                  <span className="whitespace-pre-line">
+                                    <RichDescription text={line.text} />
+                                  </span>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        )}
+                    </div>
+                  )}
+              </div>
+            );
+          })}
         </div>
       )}
     </div>
