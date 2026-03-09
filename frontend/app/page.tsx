@@ -198,16 +198,13 @@ export default function Home() {
               The complete database for Slay the Spire 2
             </p>
             {stats && (() => {
-              const total = stats.cards + stats.characters + stats.relics + stats.monsters +
-                stats.potions + stats.powers + stats.enchantments + stats.encounters +
-                stats.events + (stats.keywords ?? 0) + (stats.orbs ?? 0) +
-                (stats.afflictions ?? 0) + (stats.modifiers ?? 0) + (stats.achievements ?? 0) +
-                (stats.epochs ?? 0) + (stats.images ?? 0);
+              const { images: _images, ...entityStats } = stats;
+              const counts = Object.values(entityStats).filter((v): v is number => typeof v === "number" && v > 0);
+              const total = counts.reduce((a, b) => a + b, 0);
+              const categories = counts.length;
               return (
                 <p className="text-sm text-[var(--text-muted)]">
-                  {total.toLocaleString()} entities across 16 categories including cards, characters,
-                  relics, monsters, potions, powers, enchantments, encounters, events, epochs,
-                  keywords, orbs, afflictions, modifiers, and achievements
+                  {total.toLocaleString()} entities across {categories} categories
                 </p>
               );
             })()}

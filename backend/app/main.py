@@ -14,7 +14,7 @@ limiter = Limiter(key_func=get_remote_address, default_limits=["60/minute"])
 
 app = FastAPI(
     title="Spire Codex API",
-    description="Comprehensive API for Slay the Spire 2 game data — 1,554 entities across 15 categories including cards, characters, relics, monsters, potions, powers, enchantments, encounters, events, keywords, orbs, afflictions, modifiers, and achievements.",
+    description="Comprehensive API for Slay the Spire 2 game data — cards, characters, relics, monsters, potions, powers, enchantments, encounters, events, epochs, keywords, orbs, afflictions, modifiers, achievements, and more.",
     version="1.0.0",
 )
 
