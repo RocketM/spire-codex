@@ -8,9 +8,11 @@ import { createCanvas, loadImage } from "canvas";
 import {
   TextureAtlas, AtlasAttachmentLoader, SkeletonBinary, Skeleton,
   AnimationState, AnimationStateData, SkeletonRenderer, Texture, Physics,
+  RegionAttachment,
 } from "@esotericsoftware/spine-canvas";
 import fs from "node:fs";
 import path from "node:path";
+import { renderSkeleton, imageDataToPng } from "./render_utils.mjs";
 
 const BASE = path.resolve(import.meta.dirname, "../..");
 const ANIM_ROOT = path.join(BASE, "extraction/raw/animations");
@@ -100,9 +102,15 @@ async function renderSkel(skelPath, outPath) {
     const an = (att.name || "").toLowerCase();
     if (SHADOW_NAMES.has(sn) || SHADOW_NAMES.has(an)) continue;
     const verts = new Float32Array(1000);
-    const nf = att.worldVerticesLength || 8;
     try {
-      att.computeWorldVertices(slot, 0, nf, verts, 0, 2);
+      let nf;
+      if (att instanceof RegionAttachment) {
+        nf = 8;
+        att.computeWorldVertices(slot, verts, 0, 2);
+      } else {
+        nf = att.worldVerticesLength || 8;
+        att.computeWorldVertices(slot, 0, nf, verts, 0, 2);
+      }
       for (let i = 0; i < nf; i += 2) {
         if (verts[i] < minX) minX = verts[i];
         if (verts[i] > maxX) maxX = verts[i];
@@ -120,24 +128,12 @@ async function renderSkel(skelPath, outPath) {
   const avail = RENDER_SIZE - PADDING * 2;
   const scale = Math.min(avail / sw, avail / sh);
 
-  const canvas = createCanvas(RENDER_SIZE, RENDER_SIZE);
-  const ctx = canvas.getContext("2d");
-  ctx.clearRect(0, 0, RENDER_SIZE, RENDER_SIZE);
-  ctx.save();
-  ctx.translate(RENDER_SIZE / 2, RENDER_SIZE / 2);
-  ctx.scale(scale, -scale);
-  ctx.translate(-(minX + maxX) / 2, -(minY + maxY) / 2);
-  const renderer = new SkeletonRenderer(ctx);
-  renderer.triangleRendering = true;
-  renderer.draw(skeleton);
-  ctx.restore();
-
-  const out = createCanvas(OUTPUT_SIZE, OUTPUT_SIZE);
-  const oc = out.getContext("2d");
-  oc.drawImage(canvas, 0, 0, OUTPUT_SIZE, OUTPUT_SIZE);
+  // Render skeleton (with automatic slot-by-slot fallback for complex meshes)
+  const imgData = renderSkeleton(skeleton, RENDER_SIZE, scale, minX, minY, maxX, maxY);
+  const buffer = imageDataToPng(imgData, RENDER_SIZE, OUTPUT_SIZE);
 
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
-  fs.writeFileSync(outPath, out.toBuffer("image/png"));
+  fs.writeFileSync(outPath, buffer);
   return { status: "ok", size: `${sw.toFixed(0)}x${sh.toFixed(0)}` };
 }
 

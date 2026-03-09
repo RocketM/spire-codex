@@ -2,9 +2,11 @@ import { createCanvas, loadImage } from "canvas";
 import {
   TextureAtlas, AtlasAttachmentLoader, SkeletonBinary, Skeleton,
   AnimationState, AnimationStateData, SkeletonRenderer, Texture, Physics,
+  RegionAttachment,
 } from "@esotericsoftware/spine-canvas";
 import fs from "fs";
 import path from "path";
+import { renderSkeleton, imageDataToPng } from "./render_utils.mjs";
 
 class NT extends Texture {
   constructor(i) { super(i); }
@@ -51,9 +53,15 @@ async function renderWithSkin(dir, skelName, atlasName, skinName, outPath) {
     if (!a || !a.computeWorldVertices) continue;
     if (SH.has(slot.data.name.toLowerCase())) continue;
     const v = new Float32Array(1000);
-    const nf = a.worldVerticesLength || 8;
     try {
-      a.computeWorldVertices(slot, 0, nf, v, 0, 2);
+      let nf;
+      if (a instanceof RegionAttachment) {
+        nf = 8;
+        a.computeWorldVertices(slot, v, 0, 2);
+      } else {
+        nf = a.worldVerticesLength || 8;
+        a.computeWorldVertices(slot, 0, nf, v, 0, 2);
+      }
       for (let i = 0; i < nf; i += 2) {
         if (v[i] < x1) x1 = v[i];
         if (v[i] > x2) x2 = v[i];
@@ -67,23 +75,12 @@ async function renderWithSkin(dir, skelName, atlasName, skinName, outPath) {
   const RS = 1024, PAD = 40;
   const avail = RS - PAD * 2;
   const sc = Math.min(avail / (x2 - x1), avail / (y2 - y1));
-  const c = createCanvas(RS, RS);
-  const ctx = c.getContext("2d");
-  ctx.clearRect(0, 0, RS, RS);
-  ctx.save();
-  ctx.translate(RS / 2, RS / 2);
-  ctx.scale(sc, -sc);
-  ctx.translate(-(x1 + x2) / 2, -(y1 + y2) / 2);
-  const renderer = new SkeletonRenderer(ctx);
-  renderer.triangleRendering = true;
-  renderer.draw(sk);
-  ctx.restore();
 
-  const o = createCanvas(512, 512);
-  const oc = o.getContext("2d");
-  oc.drawImage(c, 0, 0, 512, 512);
+  // Render skeleton (with automatic slot-by-slot fallback for complex meshes)
+  const imgData = renderSkeleton(sk, RS, sc, x1, y1, x2, y2);
+  const buf = imageDataToPng(imgData, RS, 512);
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
-  fs.writeFileSync(outPath, o.toBuffer("image/png"));
+  fs.writeFileSync(outPath, buf);
   console.log("  OK " + skinName + " -> " + path.basename(outPath));
 }
 

@@ -18,9 +18,11 @@ import {
   TextureFilter,
   TextureWrap,
   Physics,
+  RegionAttachment,
 } from "@esotericsoftware/spine-canvas";
 import fs from "node:fs";
 import path from "node:path";
+import { renderSkeleton, imageDataToPng } from "./render_utils.mjs";
 
 const MONSTERS_DIR = path.resolve(
   import.meta.dirname,
@@ -140,15 +142,17 @@ async function renderMonster(monsterDir, monsterName) {
     if (shouldExcludeSlot(slotName, attName)) continue;
     if (attachment.computeWorldVertices) {
       const verts = new Float32Array(1000);
-      let numFloats = 0;
-      if (attachment.worldVerticesLength !== undefined) {
-        numFloats = attachment.worldVerticesLength;
-      } else {
-        // RegionAttachment has 8 vertices (4 corners * 2)
-        numFloats = 8;
-      }
       try {
-        attachment.computeWorldVertices(slot, 0, numFloats, verts, 0, 2);
+        let numFloats;
+        if (attachment instanceof RegionAttachment) {
+          // RegionAttachment: computeWorldVertices(slot, worldVertices, offset, stride)
+          numFloats = 8;
+          attachment.computeWorldVertices(slot, verts, 0, 2);
+        } else {
+          // MeshAttachment: computeWorldVertices(slot, start, count, worldVertices, offset, stride)
+          numFloats = attachment.worldVerticesLength || 8;
+          attachment.computeWorldVertices(slot, 0, numFloats, verts, 0, 2);
+        }
         for (let i = 0; i < numFloats; i += 2) {
           const x = verts[i], y = verts[i + 1];
           if (x < minX) minX = x;
@@ -188,42 +192,14 @@ async function renderMonster(monsterDir, monsterName) {
   // Calculate canvas size to fit with padding, maintaining aspect ratio
   const availableSize = RENDER_SIZE - PADDING * 2;
   const scale = Math.min(availableSize / skelWidth, availableSize / skelHeight);
-  const canvasWidth = RENDER_SIZE;
-  const canvasHeight = RENDER_SIZE;
 
-  // Create canvas and render
-  const canvas = createCanvas(canvasWidth, canvasHeight);
-  const ctx = canvas.getContext("2d");
-
-  // Transparent background
-  ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-
-  // Transform: center the skeleton in the canvas
-  // Spine Y is up, canvas Y is down — flip Y
-  const centerX = (minX + maxX) / 2;
-  const centerY = (minY + maxY) / 2;
-
-  ctx.save();
-  ctx.translate(canvasWidth / 2, canvasHeight / 2);
-  ctx.scale(scale, -scale); // flip Y
-  ctx.translate(-centerX, -centerY);
-
-  // Draw skeleton
-  const renderer = new SkeletonRenderer(ctx);
-  renderer.triangleRendering = true;
-  renderer.draw(skeleton);
-
-  ctx.restore();
-
-  // Downscale to output size
-  const outCanvas = createCanvas(OUTPUT_SIZE, OUTPUT_SIZE);
-  const outCtx = outCanvas.getContext("2d");
-  outCtx.drawImage(canvas, 0, 0, OUTPUT_SIZE, OUTPUT_SIZE);
+  // Render skeleton (with automatic slot-by-slot fallback for complex meshes)
+  const imgData = renderSkeleton(skeleton, RENDER_SIZE, scale, minX, minY, maxX, maxY);
+  const buffer = imageDataToPng(imgData, RENDER_SIZE, OUTPUT_SIZE);
 
   // Save to PNG
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   const outPath = path.join(OUTPUT_DIR, `${monsterName}.png`);
-  const buffer = outCanvas.toBuffer("image/png");
   fs.writeFileSync(outPath, buffer);
   console.log(`  Rendered ${monsterName} (${skelWidth.toFixed(0)}x${skelHeight.toFixed(0)}) -> ${outPath}`);
   return true;
