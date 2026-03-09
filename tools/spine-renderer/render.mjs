@@ -117,7 +117,7 @@ async function renderMonster(monsterDir, monsterName) {
 
   // Compute bounds (exclude shadow/ground/VFX slots for tighter framing)
   const EXCLUDE_EXACT = new Set(["shadow", "shadow2", "ground", "ground_shadow", "main shadow", "sword shadow"]);
-  const EXCLUDE_PATTERNS = [/path/i, /whoosh/i, /windpath/i, /vulnerable/i, /projectile/i];
+  const EXCLUDE_PATTERNS = [/path/i, /whoosh/i, /windpath/i, /vulnerable/i, /projectile/i, /megablade/i, /megatail/i, /whip_path/i];
   function shouldExcludeSlot(slotName, attName) {
     if (EXCLUDE_EXACT.has(slotName) || EXCLUDE_EXACT.has(attName)) return true;
     for (const pat of EXCLUDE_PATTERNS) {
@@ -160,6 +160,21 @@ async function renderMonster(monsterDir, monsterName) {
   if (!isFinite(minX)) {
     console.warn(`  Skipping ${monsterName}: no renderable attachments`);
     return false;
+  }
+
+  // Hide VFX slots so they aren't rendered (but keep shadows — they only affect bounds, not visuals)
+  const HIDE_PATTERNS = [/path/i, /whoosh/i, /windpath/i, /vulnerable/i, /projectile/i, /megablade/i, /megatail/i];
+  for (const slot of slots) {
+    const attachment = slot.getAttachment();
+    if (!attachment) continue;
+    const slotName = slot.data.name.toLowerCase();
+    const attName = (attachment.name || "").toLowerCase();
+    for (const pat of HIDE_PATTERNS) {
+      if (pat.test(slotName) || pat.test(attName)) {
+        slot.setAttachment(null);
+        break;
+      }
+    }
   }
 
   const skelWidth = maxX - minX;
