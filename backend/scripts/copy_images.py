@@ -23,6 +23,8 @@ ICONS_DST = STATIC_IMAGES / "icons"
 ANCIENTS_SRC = RAW_IMAGES / "ui" / "run_history"
 ANCIENTS_DST = STATIC_IMAGES / "misc" / "ancients"
 BOSSES_DST = STATIC_IMAGES / "misc" / "bosses"
+AUDIO_SRC = BASE / "extraction" / "raw" / "debug_audio"
+AUDIO_DST = STATIC_IMAGES.parent / "audio"
 
 
 def copy_cards():
@@ -56,13 +58,25 @@ def copy_cards():
 
 def copy_relics():
     RELICS_DST.mkdir(parents=True, exist_ok=True)
+    beta_dst = RELICS_DST / "beta"
+    beta_dst.mkdir(parents=True, exist_ok=True)
     count = 0
+    beta_count = 0
     for png in RELICS_SRC.glob("*.png"):
         if png.name.endswith(".import"):
             continue
         shutil.copy2(png, RELICS_DST / png.name)
         count += 1
+    beta_src = RELICS_SRC / "beta"
+    if beta_src.exists():
+        for png in beta_src.glob("*.png"):
+            if png.name.endswith(".import"):
+                continue
+            shutil.copy2(png, beta_dst / png.name)
+            beta_count += 1
     print(f"Copied {count} relic images -> static/images/relics/")
+    if beta_count:
+        print(f"Copied {beta_count} beta relic images -> static/images/relics/beta/")
 
 
 def copy_potions():
@@ -96,13 +110,22 @@ def copy_characters():
 
 def copy_monsters():
     MONSTERS_DST.mkdir(parents=True, exist_ok=True)
+    beta_dst = MONSTERS_DST / "beta"
+    beta_dst.mkdir(parents=True, exist_ok=True)
     count = 0
+    beta_count = 0
     for png in MONSTERS_SRC.rglob("*.png"):
         if png.name.endswith(".import"):
             continue
-        shutil.copy2(png, MONSTERS_DST / png.name)
-        count += 1
+        if "beta" in png.parent.name:
+            shutil.copy2(png, beta_dst / png.name)
+            beta_count += 1
+        else:
+            shutil.copy2(png, MONSTERS_DST / png.name)
+            count += 1
     print(f"Copied {count} monster images -> static/images/monsters/")
+    if beta_count:
+        print(f"Copied {beta_count} beta monster images -> static/images/monsters/beta/")
 
 
 def copy_icons():
@@ -140,6 +163,16 @@ def copy_bosses():
     print(f"Copied {count} boss icons -> static/images/misc/bosses/")
 
 
+def copy_audio():
+    AUDIO_DST.mkdir(parents=True, exist_ok=True)
+    count = 0
+    for f in AUDIO_SRC.iterdir():
+        if f.suffix in (".mp3", ".wav") and not f.name.endswith(".import"):
+            shutil.copy2(f, AUDIO_DST / f.name)
+            count += 1
+    print(f"Copied {count} audio files -> static/audio/")
+
+
 def main():
     print("=== Copying game images to static directory ===\n")
     copy_cards()
@@ -150,6 +183,7 @@ def main():
     copy_icons()
     copy_ancients()
     copy_bosses()
+    copy_audio()
     print("\n=== Done! ===")
 
 

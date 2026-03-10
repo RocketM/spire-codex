@@ -24,6 +24,9 @@ CATEGORIES: dict[str, tuple[str, str, bool, list[str] | None]] = {
     "bosses": ("Bosses", "misc/bosses", False, None),
     "npcs": ("NPCs", "misc", False, ["neow.png", "tezcatara.png", "merchant.png", "fake_merchant.png"]),
     "renders": ("Spine Renders", "renders", True, None),
+    "cards-beta": ("Cards (Beta Art)", "cards/beta", False, None),
+    "relics-beta": ("Relics (Beta Art)", "relics/beta", False, None),
+    "monsters-beta": ("Monsters (Beta Art)", "monsters/beta", False, None),
 }
 
 
