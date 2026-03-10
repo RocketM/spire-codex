@@ -20,10 +20,21 @@ const rarityOptions = [
   { label: "Rare", value: "Rare" },
 ];
 
+const poolOptions = [
+  { label: "Shared", value: "shared" },
+  { label: "Ironclad", value: "ironclad" },
+  { label: "Silent", value: "silent" },
+  { label: "Defect", value: "defect" },
+  { label: "Necrobinder", value: "necrobinder" },
+  { label: "Regent", value: "regent" },
+  { label: "Event", value: "event" },
+];
+
 export default function PotionsPage() {
   const [potions, setPotions] = useState<Potion[]>([]);
   const [search, setSearch] = useState("");
   const [rarity, setRarity] = useState("");
+  const [pool, setPool] = useState("");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -31,11 +42,12 @@ export default function PotionsPage() {
     const params = new URLSearchParams();
     if (rarity) params.set("rarity", rarity);
     if (search) params.set("search", search);
+    if (pool) params.set("pool", pool);
     fetch(`${API}/api/potions?${params}`)
       .then((r) => r.json())
       .then(setPotions)
       .finally(() => setLoading(false));
-  }, [rarity, search]);
+  }, [rarity, search, pool]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -54,6 +66,12 @@ export default function PotionsPage() {
             value: rarity,
             options: rarityOptions,
             onChange: setRarity,
+          },
+          {
+            label: "All Characters",
+            value: pool,
+            options: poolOptions,
+            onChange: setPool,
           },
         ]}
       />

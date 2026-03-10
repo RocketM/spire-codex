@@ -14,7 +14,7 @@ Slay the Spire 2 is built with Godot 4 but all game logic lives in a C#/.NET 8 D
 
 2. **DLL Decompilation** — [ILSpy](https://github.com/icsharpcode/ILSpy) decompiles `sts2.dll` into ~3,300 readable C# source files containing all game models.
 
-3. **Data Parsing** — Python regex-based parsers extract structured data from the decompiled C# source:
+3. **Data Parsing** — 20 Python regex-based parsers extract structured data from the decompiled C# source:
    - **Cards**: `base(cost, CardType, CardRarity, TargetType)` constructors + `DamageVar`, `BlockVar`, `PowerVar<T>` for stats
    - **Characters**: `StartingHp`, `StartingGold`, `MaxEnergy`, `StartingDeck`, `StartingRelics`
    - **Relics/Potions**: Rarity, pool, descriptions resolved from SmartFormat templates
@@ -31,6 +31,9 @@ Slay the Spire 2 is built with Godot 4 but all game logic lives in a C#/.NET 8 D
    - **Keywords**: Card keyword definitions (Exhaust, Ethereal, Innate, etc.)
    - **Intents**: Monster intent descriptions
    - **Achievements**: Unlock conditions, descriptions
+   - **Acts**: Boss discovery order, encounters, events, ancients, room counts
+   - **Ascension Levels**: 11 levels (0–10) with descriptions from localization
+   - **Potion Pools**: Character-specific pools parsed from pool classes and epoch references
 
 4. **Description Resolution** — A shared `description_resolver.py` module resolves SmartFormat localization templates (`{Damage:diff()}`, `{Energy:energyIcons()}`, `{Cards:plural:card|cards}`) into human-readable text with rich text markers for frontend rendering. Runtime-dynamic variables (e.g., `{Card}`, `{Relic}`) are preserved as readable placeholders. `StringVar` references in events (e.g., `{Enchantment1}` → `ModelDb.Enchantment<Sharp>().Title`) are resolved to display names via localization lookup.
 
@@ -47,7 +50,7 @@ spire-codex/
 ├── backend/                    # FastAPI backend
 │   ├── app/
 │   │   ├── main.py             # App entry, CORS, rate limiting, static files
-│   │   ├── routers/            # API endpoints (19 routers)
+│   │   ├── routers/            # API endpoints (22 routers)
 │   │   ├── models/schemas.py   # Pydantic models
 │   │   ├── services/           # JSON data loading
 │   │   └── parsers/            # C# source → JSON parsers
@@ -62,6 +65,9 @@ spire-codex/
 │   │       ├── power_parser.py
 │   │       ├── keyword_parser.py        # Keywords, intents, orbs, afflictions, modifiers, achievements
 │   │       ├── epoch_parser.py
+│   │       ├── act_parser.py
+│   │       ├── ascension_parser.py
+│   │       ├── pool_parser.py            # Adds character pool to potions
 │   │       ├── description_resolver.py   # Shared SmartFormat resolver
 │   │       └── parse_all.py
 │   ├── static/images/          # Game images (not committed)
@@ -72,7 +78,10 @@ spire-codex/
 │   ├── app/                    # Pages: cards, characters, relics, monsters, potions,
 │   │   │                       #   enchantments, encounters, events, powers, timeline,
 │   │   │                       #   reference, images, changelog, about
-│   │   └── components/         # CardGrid, RichDescription, SearchFilter, Navbar, Footer
+│   │   │                       #   Detail pages: cards/[id], characters/[id], relics/[id],
+│   │   │                       #   monsters/[id], potions/[id], enchantments/[id],
+│   │   │                       #   encounters/[id], events/[id]
+│   │   └── components/         # CardGrid, RichDescription, SearchFilter, GlobalSearch, Navbar, Footer
 │   ├── lib/api.ts              # API client + TypeScript interfaces
 │   └── Dockerfile
 ├── tools/
@@ -100,21 +109,29 @@ spire-codex/
 
 | Page | Route | Description |
 |---|---|---|
-| Home | `/` | Dashboard with entity counts and category cards |
+| Home | `/` | Dashboard with entity counts, category cards, character links |
 | Cards | `/cards` | Filterable card grid with modal detail view |
-| Characters | `/characters` | Character stats, starting decks, relics |
+| Card Detail | `/cards/[id]` | Full card stats, upgrade info, image |
+| Characters | `/characters` | Character overview grid |
+| Character Detail | `/characters/[id]` | Stats, starting deck/relics, quotes, NPC dialogue trees |
 | Relics | `/relics` | Filterable relic grid |
+| Relic Detail | `/relics/[id]` | Full relic info with rich text flavor |
 | Monsters | `/monsters` | Monster grid with HP, moves, Spine renders |
-| Potions | `/potions` | Filterable potion grid |
+| Monster Detail | `/monsters/[id]` | HP ranges, moves, damage values, ascension scaling |
+| Potions | `/potions` | Filterable potion grid (rarity, character pool) |
+| Potion Detail | `/potions/[id]` | Full potion info |
 | Enchantments | `/enchantments` | Enchantment list with card type filters |
+| Enchantment Detail | `/enchantments/[id]` | Full enchantment info |
 | Encounters | `/encounters` | Encounter compositions by act/room type |
+| Encounter Detail | `/encounters/[id]` | Monster lineup, room type, tags |
 | Events | `/events` | Multi-page event trees with expandable choices |
+| Event Detail | `/events/[id]` | Full event pages, options, Ancient dialogue |
 | Powers | `/powers` | Buffs, debuffs, and neutral powers |
-| Timeline | `/timeline` | Epoch progression with unlock requirements |
-| Reference | `/reference` | Keywords, intents, orbs, afflictions, modifiers, achievements |
+| Timeline | `/timeline` | Epoch progression with era grouping, unlock requirements |
+| Reference | `/reference` | Keywords, intents, orbs, afflictions, modifiers, achievements, acts, ascensions |
 | Images | `/images` | Browsable game assets with ZIP download per category |
 | Changelog | `/changelog` | Data diffs between game updates |
-| About | `/about` | Project info |
+| About | `/about` | Project info, stats, pipeline visualization |
 
 ## API Endpoints
 
@@ -122,13 +139,13 @@ spire-codex/
 |---|---|---|
 | `GET /api/cards` | All cards | `color`, `type`, `rarity`, `keyword`, `search` |
 | `GET /api/cards/{id}` | Single card | — |
-| `GET /api/characters` | All characters | — |
-| `GET /api/characters/{id}` | Single character | — |
+| `GET /api/characters` | All characters | `search` |
+| `GET /api/characters/{id}` | Single character (with quotes, dialogues) | — |
 | `GET /api/relics` | All relics | `rarity`, `pool`, `search` |
 | `GET /api/relics/{id}` | Single relic | — |
 | `GET /api/monsters` | All monsters | `type`, `search` |
 | `GET /api/monsters/{id}` | Single monster | — |
-| `GET /api/potions` | All potions | `rarity`, `search` |
+| `GET /api/potions` | All potions | `rarity`, `pool`, `search` |
 | `GET /api/potions/{id}` | Single potion | — |
 | `GET /api/enchantments` | All enchantments | `card_type`, `search` |
 | `GET /api/enchantments/{id}` | Single enchantment | — |
@@ -158,9 +175,13 @@ spire-codex/
 | `GET /api/images/{category}/download` | ZIP download of image category | — |
 | `GET /api/changelogs` | Changelog summaries (all versions) | — |
 | `GET /api/changelogs/{tag}` | Full changelog for a version tag | — |
+| `GET /api/acts` | All acts | — |
+| `GET /api/acts/{id}` | Single act | — |
+| `GET /api/ascensions` | Ascension levels (0–10) | — |
 | `GET /api/stats` | Entity counts across all categories | — |
+| `POST /api/feedback` | Submit feedback (proxied to Discord) | — |
 
-Rate limited to **60 requests per minute** per IP. Interactive docs at `/docs` (Swagger UI).
+Rate limited to **60 requests per minute** per IP. Feedback endpoint limited to **5 per minute** per IP. Interactive docs at `/docs` (Swagger UI).
 
 ### Rich Text Formatting
 
@@ -179,6 +200,7 @@ Text fields (`description`, `loss_text`, `flavor`, dialogue `text`, option `titl
 | `[sine]...[/sine]` | Effect | `[sine]swirling vortex[/sine]` | Wavy animated text |
 | `[jitter]...[/jitter]` | Effect | `[jitter]CLANG![/jitter]` | Shaking animated text |
 | `[b]...[/b]` | Effect | `[b]bold text[/b]` | Bold text |
+| `[i]...[/i]` | Effect | `[i]whispers[/i]` | Italic text |
 | `[energy:N]` | Icon | `[energy:2]` | Energy icon(s) |
 | `[star:N]` | Icon | `[star:1]` | Star icon(s) |
 | `[Card]`, `[Relic]` | Placeholder | `[Card]` | Runtime-dynamic (italic) |
@@ -421,8 +443,8 @@ Steam install locations:
 
 ## Roadmap
 
-- **Individual detail pages** — Click-through pages with full details instead of just grids
-- **Global search** — Search across all entity types simultaneously
+- ~~**Individual detail pages**~~ — ✅ Click-through pages for cards, characters, relics, monsters, potions, enchantments, encounters, events
+- ~~**Global search**~~ — ✅ Press `.` anywhere to search across all categories
 - **Database backend** — Replace JSON loading with SQLite/PostgreSQL
 
 ## Tech Stack

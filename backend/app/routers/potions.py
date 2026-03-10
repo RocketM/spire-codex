@@ -10,11 +10,14 @@ router = APIRouter(prefix="/api/potions", tags=["Potions"])
 def get_potions(
     request: Request,
     rarity: str | None = Query(None, description="Filter by rarity"),
+    pool: str | None = Query(None, description="Filter by character pool"),
     search: str | None = Query(None, description="Search by name"),
 ):
     potions = load_potions()
     if rarity:
         potions = [p for p in potions if p["rarity"].lower() == rarity.lower()]
+    if pool:
+        potions = [p for p in potions if p.get("pool", "").lower() == pool.lower()]
     if search:
         potions = [p for p in potions if search.lower() in p["name"].lower()]
     return potions

@@ -19,6 +19,7 @@ const EFFECT_CLASSES: Record<string, string> = {
   sine: "rich-sine",
   jitter: "rich-jitter",
   b: "font-bold",
+  i: "italic",
 };
 
 interface Token {
@@ -28,9 +29,12 @@ interface Token {
   count?: number;
 }
 
+// Tags that should be silently stripped (opening and closing)
+const STRIP_TAGS = new Set(["font_size", "thinky_dots", "rainbow"]);
+
 function tokenize(text: string): Token[] {
   const tokens: Token[] = [];
-  const regex = /\[(\/?)(\w+)(?::(\d+))?\]/g;
+  const regex = /\[(\/?)(\w+)(?:[=:]([^\]]*))?\]/g;
   let lastIndex = 0;
   let m: RegExpExecArray | null;
 
@@ -43,7 +47,9 @@ function tokenize(text: string): Token[] {
     const tag = m[2];
     const num = m[3];
 
-    if (tag === "energy" && num) {
+    if (STRIP_TAGS.has(tag)) {
+      // Silently strip these tags (both open and close)
+    } else if (tag === "energy" && num) {
       tokens.push({ type: "energy", value: m[0], count: parseInt(num) });
     } else if (tag === "star" && num) {
       tokens.push({ type: "star", value: m[0], count: parseInt(num) });
@@ -209,9 +215,9 @@ function renderNode(
 // Valid rich text tags that should NOT be cleaned
 const VALID_TAGS = new Set([
   "gold", "red", "blue", "green", "purple", "orange", "pink", "aqua",
-  "sine", "jitter", "b",
+  "sine", "jitter", "b", "i",
   "/gold", "/red", "/blue", "/green", "/purple", "/orange", "/pink", "/aqua",
-  "/sine", "/jitter", "/b",
+  "/sine", "/jitter", "/b", "/i",
 ]);
 
 /**
@@ -229,8 +235,9 @@ function cleanTemplateVars(text: string): string {
   text = text.replace(/\{\w+\}/g, "X");
   // Handle dynamic [Var] square bracket vars — but preserve valid rich text tags and icons
   text = text.replace(/\[([^\]]+)\]/g, (match, inner) => {
-    // Preserve valid tags and icon tags like energy:2, star:1
+    // Preserve valid tags, icon tags, and parameterized tags like font_size=22
     if (VALID_TAGS.has(inner) || /^(energy|star):\d+$/.test(inner)) return match;
+    if (/^\/?(font_size|thinky_dots|rainbow)(=\d+)?$/.test(inner)) return match;
     // Numeric vars → "X"
     if (/^(Amount|Passive|Evoke|Damage Decrease|Damage Increase)$/i.test(inner)) return "X";
     // Context-dependent names → strip

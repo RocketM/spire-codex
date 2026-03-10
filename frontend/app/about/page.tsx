@@ -1,118 +1,205 @@
+const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+
+const STATS = [
+  { label: "Cards", count: 576 },
+  { label: "Relics", count: 289 },
+  { label: "Powers", count: 260 },
+  { label: "Monsters", count: 111 },
+  { label: "Encounters", count: 87 },
+  { label: "Events", count: 66 },
+  { label: "Potions", count: 63 },
+  { label: "Epochs", count: 57 },
+  { label: "Achievements", count: 33 },
+  { label: "Enchantments", count: 22 },
+  { label: "Modifiers", count: 16 },
+  { label: "Intents", count: 14 },
+  { label: "Ascension Levels", count: 11 },
+  { label: "Afflictions", count: 9 },
+  { label: "Keywords", count: 8 },
+  { label: "Stories", count: 8 },
+  { label: "Characters", count: 5 },
+  { label: "Orbs", count: 5 },
+  { label: "Acts", count: 4 },
+];
+
+const PIPELINE_STEPS = [
+  {
+    title: "PCK Extraction",
+    desc: "GDRE Tools extracts the Godot .pck file — images, Spine animations, localization data (~9,947 files)",
+  },
+  {
+    title: "DLL Decompilation",
+    desc: "ILSpy decompiles sts2.dll into ~3,300 C# source files containing all game models",
+  },
+  {
+    title: "Data Parsing",
+    desc: "17 Python parsers extract structured data from decompiled C# source + localization JSON",
+  },
+  {
+    title: "Spine Rendering",
+    desc: "Headless Node.js renderer assembles skeletal animations into 512×512 portrait PNGs (130+ sprites)",
+  },
+  {
+    title: "API + Frontend",
+    desc: "FastAPI serves parsed data as a REST API with 20+ endpoints; Next.js frontend consumes it",
+  },
+];
+
 export default function AboutPage() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="text-3xl font-bold mb-8">
         <span className="text-[var(--accent-gold)]">About</span>{" "}
         <span className="text-[var(--text-primary)]">Spire Codex</span>
       </h1>
 
-      <div className="space-y-6 text-[var(--text-secondary)] leading-relaxed">
-        <p>
-          I&apos;ve been loving Slay the Spire 2 and got extremely curious about how the game was
-          built. I wanted to build an API of all of the data, which then led me to just consuming the
-          API and making a cute little frontend for it.
-        </p>
+      <div className="space-y-8">
+        {/* Intro */}
+        <div className="text-[var(--text-secondary)] leading-relaxed space-y-4">
+          <p>
+            Spire Codex is a comprehensive database for Slay the Spire 2, built by reverse-engineering
+            the game files. Every card, relic, monster, potion, event, and power on this site was
+            extracted directly from the game&apos;s source code and localization data.
+          </p>
+          <p>
+            The project started from curiosity about how StS2 was built, and grew into a full API
+            and website. The goal is to provide the kind of detailed, searchable reference that the
+            Spire community deserves.
+          </p>
+        </div>
 
-        <p>
-          The reason I built it is because I feel that StS didn&apos;t really have a lot of good resources
-          for new players — I am relatively new to the Spire series with about 40 hours on both
-          PC/mobile.
-        </p>
+        {/* Stats */}
+        <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-6">
+          <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-4">
+            What&apos;s Inside
+          </h2>
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3">
+            {STATS.map((s) => (
+              <div key={s.label} className="text-center">
+                <div className="text-xl font-bold text-[var(--accent-gold)]">{s.count}</div>
+                <div className="text-xs text-[var(--text-muted)]">{s.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
 
-        <p>
-          This is purely for educational purposes and shouldn&apos;t be used to recompile the game and
-          get it for free.
-        </p>
+        {/* How It Works */}
+        <div>
+          <h2 className="text-xl font-semibold text-[var(--text-primary)] mb-4">
+            How It Works
+          </h2>
+          <p className="text-[var(--text-secondary)] mb-4">
+            Slay the Spire 2 is built with Godot 4, but all game logic lives in a C#/.NET 8 DLL.
+            The data pipeline:
+          </p>
+          <div className="space-y-3">
+            {PIPELINE_STEPS.map((step, i) => (
+              <div
+                key={step.title}
+                className="flex gap-4 items-start bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-4"
+              >
+                <div className="w-8 h-8 rounded-full bg-[var(--accent-gold)]/10 text-[var(--accent-gold)] flex items-center justify-center text-sm font-bold flex-shrink-0">
+                  {i + 1}
+                </div>
+                <div>
+                  <div className="font-medium text-[var(--text-primary)] text-sm">{step.title}</div>
+                  <div className="text-sm text-[var(--text-secondary)]">{step.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
 
-        <h2 className="text-xl font-semibold text-[var(--text-primary)] pt-4">
-          Roadmap
-        </h2>
+        {/* Features */}
+        <div>
+          <h2 className="text-xl font-semibold text-[var(--text-primary)] mb-4">
+            Features
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              { title: "Detail Pages", desc: "Click-through pages for cards, characters, relics, monsters, and potions with full stats" },
+              { title: "Global Search", desc: "Press . anywhere to search across all categories instantly" },
+              { title: "Rich Text Rendering", desc: "Game BBCode tags rendered with colors, animations, and inline icons" },
+              { title: "Character Dialogues", desc: "NPC conversation trees and character quotes from the game's localization" },
+              { title: "Spine Renders", desc: "130+ monster and character sprites rendered from skeletal animations" },
+              { title: "REST API", desc: "Full API with filtering, search, and Swagger docs for your own projects" },
+              { title: "Changelog Tracking", desc: "Field-level diffs between game updates across all categories" },
+              { title: "Image Downloads", desc: "Browse and download all extracted game art by category" },
+            ].map((f) => (
+              <div
+                key={f.title}
+                className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-4"
+              >
+                <div className="font-medium text-[var(--text-primary)] text-sm mb-1">{f.title}</div>
+                <div className="text-xs text-[var(--text-secondary)]">{f.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
 
-        <ul className="space-y-3">
-          <li className="flex gap-3">
-            <span className="text-[var(--accent-gold)] flex-shrink-0">-</span>
-            <span>
-              Automate the decompilation process so I can extract everything quickly and update the
-              API to always be current (or hoping the devs make an API that makes this project
-              null-void)
-            </span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-[var(--accent-gold)] flex-shrink-0">-</span>
-            <span>
-              Powers/buffs/debuffs — there are 262 power models in the game files waiting to be parsed
-            </span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-[var(--accent-gold)] flex-shrink-0">-</span>
-            <span>
-              More images — card art, enchantment icons, and encounter scene images from the
-              game&apos;s extracted assets
-            </span>
-          </li>
-        </ul>
+        {/* Tech Stack */}
+        <div>
+          <h2 className="text-xl font-semibold text-[var(--text-primary)] mb-4">
+            Tech Stack
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm">
+            {[
+              { label: "Backend", items: "Python, FastAPI, Pydantic" },
+              { label: "Frontend", items: "Next.js, TypeScript, Tailwind" },
+              { label: "Rendering", items: "Node.js, Spine Canvas" },
+              { label: "Infra", items: "Docker, Forgejo CI" },
+            ].map((t) => (
+              <div key={t.label} className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-3">
+                <div className="font-medium text-[var(--text-primary)] mb-1">{t.label}</div>
+                <div className="text-xs text-[var(--text-muted)]">{t.items}</div>
+              </div>
+            ))}
+          </div>
+        </div>
 
-        <h2 className="text-xl font-semibold text-[var(--text-primary)] pt-4">
-          How It Works
-        </h2>
+        {/* Links */}
+        <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-6">
+          <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-4">
+            Get Involved
+          </h2>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <a
+              href="https://github.com/ptrlrd/spire-codex"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--accent-gold)] hover:underline"
+            >
+              GitHub
+            </a>
+            <span className="text-[var(--border-subtle)]">·</span>
+            <a
+              href="https://discord.gg/xMsTBeh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--accent-gold)] hover:underline"
+            >
+              Discord
+            </a>
+            <span className="text-[var(--border-subtle)]">·</span>
+            <a
+              href={`${API_BASE}/docs`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--accent-gold)] hover:underline"
+            >
+              API Documentation
+            </a>
+          </div>
+          <p className="text-xs text-[var(--text-muted)] mt-4">
+            Found a bug or have a feature request? Use the Submit Feedback button in the footer,
+            or open an issue on GitHub.
+          </p>
+        </div>
 
-        <p>
-          Slay the Spire 2 is built with Godot 4 but all the game logic lives in a C#/.NET 8 DLL.
-          The data pipeline works like this:
-        </p>
-
-        <ol className="space-y-2 list-decimal list-inside">
-          <li>Extract the Godot PCK file to get images, animations, and localization data</li>
-          <li>Decompile the C# DLL with ILSpy to get all game models</li>
-          <li>Python parsers extract card stats, monster data, relic effects, etc. from the decompiled source</li>
-          <li>A FastAPI backend serves the parsed data as a REST API</li>
-          <li>This Next.js frontend consumes the API</li>
-        </ol>
-
-        <p>
-          Monster sprites are Spine skeletal animations — we render the idle poses headlessly using
-          the Spine runtime to generate the portrait images you see on the site.
-        </p>
-
-        <p>
-          The entire project is open source and available on{" "}
-          <a
-            href="https://github.com/ptrlrd/spire-codex"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--accent-gold)] hover:underline"
-          >
-            GitHub
-          </a>
-          . I tried to document everything needed to build it locally — it has some prerequisite
-          knowledge like Docker and CLI exposure.
-        </p>
-
-        <h2 className="text-xl font-semibold text-[var(--text-primary)] pt-4">
-          Get in Touch
-        </h2>
-
-        <p>
-          If you want to chat about the project, have ideas, or just want to hang out, feel free to
-          join the{" "}
-          <a
-            href="https://discord.gg/xMsTBeh"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--accent-gold)] hover:underline"
-          >
-            Discord
-          </a>
-          . Found a bug or have a feature request? You can{" "}
-          <a
-            href="https://github.com/ptrlrd/spire-codex/issues/new"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--accent-gold)] hover:underline"
-          >
-            open an issue on GitHub
-          </a>
-          . Both are welcome!
+        {/* Disclaimer */}
+        <p className="text-xs text-[var(--text-muted)] border-t border-[var(--border-subtle)] pt-6">
+          This project is for educational purposes. All game data belongs to Mega Crit Games.
+          This should not be used to recompile or redistribute the game.
         </p>
       </div>
     </div>

@@ -59,6 +59,14 @@ def load_localization() -> dict:
     return {}
 
 
+def load_eras_localization() -> dict:
+    loc_file = LOCALIZATION / "eras.json"
+    if loc_file.exists():
+        with open(loc_file, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
 def strip_rich_tags(text: str) -> str:
     text = re.sub(r'\[rainbow[^\]]*\]', '', text)
     text = re.sub(r'\[font_size=\d+\]', '', text)
@@ -231,6 +239,8 @@ def parse_single_epoch(filepath: Path, localization: dict) -> dict | None:
         "id": epoch_id,
         "title": title,
         "era": era,
+        "era_name": None,
+        "era_year": None,
         "era_position": era_position,
         "story_id": story_id,
         "sort_order": sort_order,
@@ -247,10 +257,19 @@ def parse_single_epoch(filepath: Path, localization: dict) -> dict | None:
 
 def parse_all_epochs() -> list[dict]:
     localization = load_localization()
+    eras_loc = load_eras_localization()
     epochs = []
     for filepath in sorted(EPOCHS_DIR.glob("*.cs")):
         epoch = parse_single_epoch(filepath, localization)
-        if epoch:
+        if epoch and epoch["era"]:
+            # Add era display name and year from eras localization
+            era_key = epoch["era"].upper()
+            era_name = eras_loc.get(f"{era_key}.name", "")
+            era_year = eras_loc.get(f"{era_key}.year", "")
+            epoch["era_name"] = era_name if era_name else None
+            epoch["era_year"] = era_year if era_year else None
+            epochs.append(epoch)
+        elif epoch:
             epochs.append(epoch)
     epochs.sort(key=lambda e: e["sort_order"])
     return epochs

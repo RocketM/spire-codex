@@ -107,7 +107,25 @@ class Potion(BaseModel):
     description: str
     description_raw: str | None = None
     rarity: str
+    pool: str | None = None
     image_url: str | None = None
+
+
+class Act(BaseModel):
+    id: str
+    name: str
+    num_rooms: int | None = None
+    bosses: list[str]
+    ancients: list[str]
+    events: list[str]
+    encounters: list[str]
+
+
+class Ascension(BaseModel):
+    id: str
+    level: int
+    name: str
+    description: str
 
 
 class Enchantment(BaseModel):
@@ -223,6 +241,8 @@ class Epoch(BaseModel):
     title: str
     description: str | None = None
     era: str
+    era_name: str | None = None
+    era_year: str | None = None
     era_position: int
     sort_order: int
     story_id: str | None = None
@@ -257,4 +277,6 @@ class StatsResponse(BaseModel):
     modifiers: int
     achievements: int
     epochs: int
+    acts: int
+    ascensions: int
     images: int

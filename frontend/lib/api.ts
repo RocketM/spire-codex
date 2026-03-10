@@ -95,7 +95,25 @@ export interface Potion {
   name: string;
   description: string;
   rarity: string;
+  pool: string | null;
   image_url: string | null;
+}
+
+export interface Act {
+  id: string;
+  name: string;
+  num_rooms: number | null;
+  bosses: string[];
+  ancients: string[];
+  events: string[];
+  encounters: string[];
+}
+
+export interface Ascension {
+  id: string;
+  level: number;
+  name: string;
+  description: string;
 }
 
 export interface Enchantment {
@@ -211,6 +229,8 @@ export interface Epoch {
   title: string;
   description: string | null;
   era: string;
+  era_name: string | null;
+  era_year: string | null;
   era_position: number;
   sort_order: number;
   story_id: string | null;
@@ -245,6 +265,8 @@ export interface Stats {
   modifiers: number;
   achievements: number;
   epochs: number;
+  acts: number;
+  ascensions: number;
   images: number;
 }
 
@@ -278,4 +300,7 @@ export const api = {
   getEpoch: (id: string) => fetchApi<Epoch>(`/api/epochs/${id}`),
   getStories: () => fetchApi<Story[]>("/api/stories"),
   getStory: (id: string) => fetchApi<Story>(`/api/stories/${id}`),
+  getActs: () => fetchApi<Act[]>("/api/acts"),
+  getAct: (id: string) => fetchApi<Act>(`/api/acts/${id}`),
+  getAscensions: () => fetchApi<Ascension[]>("/api/ascensions"),
 };

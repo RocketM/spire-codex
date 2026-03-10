@@ -110,6 +110,18 @@ def load_stories() -> list[dict]:
 
 
 @lru_cache(maxsize=1)
+def load_acts() -> list[dict]:
+    with open(DATA_DIR / "acts.json", "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+@lru_cache(maxsize=1)
+def load_ascensions() -> list[dict]:
+    with open(DATA_DIR / "ascensions.json", "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+@lru_cache(maxsize=1)
 def count_images() -> int:
     images_dir = Path(os.environ.get("STATIC_DIR", Path(__file__).resolve().parents[2] / "static")) / "images"
     if not images_dir.exists():
@@ -135,5 +147,7 @@ def get_stats() -> dict:
         "modifiers": len(load_modifiers()),
         "achievements": len(load_achievements()),
         "epochs": len(load_epochs()),
+        "acts": len(load_acts()),
+        "ascensions": len(load_ascensions()),
         "images": count_images(),
     }

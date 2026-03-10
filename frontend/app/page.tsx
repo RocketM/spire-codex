@@ -122,9 +122,11 @@ export default function Home() {
           (stats.afflictions ?? 0) +
           (stats.intents ?? 0) +
           (stats.modifiers ?? 0) +
-          (stats.achievements ?? 0)
+          (stats.achievements ?? 0) +
+          (stats.acts ?? 0) +
+          (stats.ascensions ?? 0)
         : "–",
-      desc: "Keywords, orbs, afflictions, modifiers, and achievements",
+      desc: "Acts, ascension, keywords, orbs, afflictions, and more",
       gradient: "from-slate-800/30 to-transparent",
       accent: "text-slate-400",
     },

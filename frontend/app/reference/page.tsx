@@ -8,6 +8,8 @@ import type {
   Affliction,
   Modifier,
   Achievement,
+  Act,
+  Ascension,
 } from "@/lib/api";
 import RichDescription from "../components/RichDescription";
 
@@ -68,6 +70,43 @@ export default function ReferencePage() {
       <h1 className="text-3xl font-bold mb-8">
         <span className="text-[var(--accent-gold)]">Reference</span>
       </h1>
+
+      <ReferenceSection<Act>
+        title="Acts"
+        endpoint="acts"
+        accent="text-emerald-400"
+        render={(act) => (
+          <>
+            <h3 className="font-semibold text-[var(--text-primary)] mb-2">
+              {act.name}
+            </h3>
+            <div className="text-xs text-[var(--text-muted)] space-y-1">
+              {act.num_rooms && <div>{act.num_rooms} rooms</div>}
+              <div>{act.bosses.length} bosses · {act.encounters.length} encounters</div>
+              <div>{act.events.length} events · {act.ancients.length} ancients</div>
+            </div>
+          </>
+        )}
+      />
+
+      <ReferenceSection<Ascension>
+        title="Ascension Levels"
+        endpoint="ascensions"
+        accent="text-rose-400"
+        render={(asc) => (
+          <>
+            <div className="flex items-baseline gap-2 mb-1">
+              <span className="text-lg font-bold text-rose-400">{asc.level}</span>
+              <h3 className="font-semibold text-[var(--text-primary)]">
+                {asc.name}
+              </h3>
+            </div>
+            <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+              <RichDescription text={asc.description} />
+            </p>
+          </>
+        )}
+      />
 
       <ReferenceSection<Keyword>
         title="Keywords"
