@@ -109,12 +109,22 @@ def find_game_files(game_dir: Path) -> tuple[Path | None, Path | None]:
     """Find .pck and .dll in the game directory (may be in subdirs)."""
     pck = None
     dll = None
+    # Try exact name first, then fall back to any .pck/.dll
     for f in game_dir.rglob(PCK_NAME):
         pck = f
         break
+    if not pck:
+        for f in game_dir.rglob("*.pck"):
+            pck = f
+            break
     for f in game_dir.rglob(DLL_NAME):
         dll = f
         break
+    if not dll:
+        for f in game_dir.rglob("*.dll"):
+            if "sts2" in f.name.lower() or "slay" in f.name.lower():
+                dll = f
+                break
     return pck, dll
 
 
