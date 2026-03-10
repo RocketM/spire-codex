@@ -97,8 +97,10 @@ def resolve_description(raw: str, vars_dict: dict[str, int | str], is_upgraded: 
 
     # Handle remaining {Var} without formatter
     def _make_readable(name: str) -> str:
-        readable = re.sub(r'(?<=[a-z])(?=[A-Z])', ' ', name)
-        readable = re.sub(r'\d+', '', readable).strip()
+        # Strip trailing digits (e.g. Enchantment1 -> Enchantment) but keep
+        # CamelCase intact so [OwnerName] stays a single token for the
+        # frontend tokenizer (spaces would break it into a false BBCode tag).
+        readable = re.sub(r'\d+$', '', name).strip()
         return readable
 
     def resolve_bare(m):
@@ -181,6 +183,17 @@ def extract_vars_from_source(content: str) -> dict[str, int]:
         extra_val = all_vars.get('ExtraDamage', 0)
         if base_val or extra_val:
             all_vars['CalculatedDamage'] = base_val + extra_val
+
+    # Pattern: new XxxVar(PropertyName, ...) where property is backed by a private field
+    # e.g. new DamageVar(CurrentDamage, ValueProp.Move) with private int _currentDamage = 13
+    for m in re.finditer(r'new\s+(\w+)Var\(([A-Z]\w+)\s*(?:,\s*[^)]+)?\)', content):
+        var_type = m.group(1)  # e.g. "Damage", "Block"
+        prop_name = m.group(2)  # e.g. "CurrentDamage"
+        if var_type not in all_vars and prop_name not in ("ValueProp",):
+            field_name = '_' + prop_name[0].lower() + prop_name[1:]
+            field_match = re.search(rf'private\s+int\s+{re.escape(field_name)}\s*=\s*(\d+)', content)
+            if field_match:
+                all_vars[var_type] = int(field_match.group(1))
 
     # Const values: private const int _varName = N;
     for m in re.finditer(r'private\s+const\s+int\s+_?(\w+)\s*=\s*(\d+)', content):

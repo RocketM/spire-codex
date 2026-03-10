@@ -20,7 +20,7 @@
   {
     "id": "ADAPTABLE",
     "name": "Adaptable",
-    "description": "When [gold][Owner Name][/gold] would be defeated, it instead revives even stronger.",
+    "description": "When [gold][OwnerName][/gold] would be defeated, it instead revives even stronger.",
     "description_raw": "When [gold]{OwnerName}[/gold] would be defeated, it instead revives even stronger.",
     "type": "Buff",
     "stack_type": "Single",
@@ -110,7 +110,7 @@
   {
     "id": "BARRICADE",
     "name": "Barricade",
-    "description": "[gold]Block[/gold] is not removed at the start of [Applier Name.String Value] turn.",
+    "description": "[gold]Block[/gold] is not removed at the start of [ApplierName.StringValue] turn.",
     "description_raw": "[gold]Block[/gold] is not removed at the start of {ApplierName.StringValue:cond:[gold]{OwnerName}'s[/gold]|your} turn.",
     "type": "Buff",
     "stack_type": "Single",
@@ -191,7 +191,7 @@
   {
     "id": "BURROWED",
     "name": "Burrowed",
-    "description": "[gold]Block[/gold] is not removed at the start of [gold][Owner Name][/gold]'s turn. [gold]Stunned[/gold] if all [gold]Block[/gold] is removed.",
+    "description": "[gold]Block[/gold] is not removed at the start of [gold][OwnerName][/gold]'s turn. [gold]Stunned[/gold] if all [gold]Block[/gold] is removed.",
     "description_raw": "[gold]Block[/gold] is not removed at the start of [gold]{OwnerName}[/gold]'s turn. [gold]Stunned[/gold] if all [gold]Block[/gold] is removed.",
     "type": "Buff",
     "stack_type": "Single",
@@ -263,7 +263,7 @@
   {
     "id": "COLOSSUS",
     "name": "Colossus",
-    "description": "You receive [blue][Damage Decrease]%[/blue] less damage from [gold]Vulnerable[/gold] enemies for [blue]2[/blue] turns.",
+    "description": "You receive [blue][DamageDecrease]%[/blue] less damage from [gold]Vulnerable[/gold] enemies for [blue]2[/blue] turns.",
     "description_raw": "You receive [blue]{DamageDecrease:percentLess()}%[/blue] less damage from [gold]Vulnerable[/gold] enemies {Amount:plural:this turn|for [blue]{}[/blue] turns}.",
     "type": "Buff",
     "stack_type": "Counter",
@@ -281,7 +281,7 @@
   {
     "id": "CONQUEROR",
     "name": "Conqueror",
-    "description": "[gold]Sovereign Blade[/gold] deals double damage to [gold][Owner Name][/gold] for the next [blue]2[/blue] turns.",
+    "description": "[gold]Sovereign Blade[/gold] deals double damage to [gold][OwnerName][/gold] for the next [blue]2[/blue] turns.",
     "description_raw": "[gold]Sovereign Blade[/gold] deals double damage to [gold]{OwnerName}[/gold] {Amount:plural:this turn|for the next [blue]{}[/blue] turns}.",
     "type": "Debuff",
     "stack_type": "Counter",
@@ -362,7 +362,7 @@
   {
     "id": "CRAB_RAGE",
     "name": "Crab Rage",
-    "description": "When an ally dies, [gold][Owner Name][/gold] gains [blue]5[/blue] [gold]Strength[/gold] and [blue]99[/blue] [gold]Block[/gold].",
+    "description": "When an ally dies, [gold][OwnerName][/gold] gains [blue]5[/blue] [gold]Strength[/gold] and [blue]99[/blue] [gold]Block[/gold].",
     "description_raw": "When an ally dies, [gold]{OwnerName}[/gold] gains [blue]{StrengthPower}[/blue] [gold]Strength[/gold] and [blue]{Block}[/blue] [gold]Block[/gold].",
     "type": "Buff",
     "stack_type": "Single",
@@ -479,7 +479,7 @@
   {
     "id": "DEMISE",
     "name": "Demise",
-    "description": "At the end of [gold][Owner Name][/gold]'s turn, it loses [blue][Amount][/blue] HP.",
+    "description": "At the end of [gold][OwnerName][/gold]'s turn, it loses [blue][Amount][/blue] HP.",
     "description_raw": "At the end of [gold]{OwnerName}[/gold]'s turn, it loses [blue]{Amount}[/blue] HP.",
     "type": "Debuff",
     "stack_type": "Counter",
@@ -542,7 +542,7 @@
   {
     "id": "DOOM",
     "name": "Doom",
-    "description": "At the end of the enemy turn, if [gold][Owner Name][/gold] has [blue][Amount][/blue] or less HP, it dies.",
+    "description": "At the end of the enemy turn, if [gold][OwnerName][/gold] has [blue][Amount][/blue] or less HP, it dies.",
     "description_raw": "At the end of the {OnPlayer:player|enemy} turn, if [gold]{OwnerName}[/gold] has [blue]{Amount}[/blue] or less HP, it dies.",
     "type": "Debuff",
     "stack_type": "Counter",
@@ -839,7 +839,7 @@
   {
     "id": "GALVANIC",
     "name": "Galvanic",
-    "description": "Powers are afflicted with [gold][Affliction Title][/gold].",
+    "description": "Powers are afflicted with [gold][AfflictionTitle][/gold].",
     "description_raw": "Powers are afflicted with [gold]{AfflictionTitle}[/gold].",
     "type": "Buff",
     "stack_type": "Counter",
@@ -866,7 +866,7 @@
   {
     "id": "GRAPPLE",
     "name": "Grapple",
-    "description": "Whenever you gain [gold]Block[/gold] this turn, deal [blue][Amount][/blue] damage to [gold][Owner Name][/gold].",
+    "description": "Whenever you gain [gold]Block[/gold] this turn, deal [blue][Amount][/blue] damage to [gold][OwnerName][/gold].",
     "description_raw": "Whenever you gain [gold]Block[/gold] this turn, deal [blue]{Amount}[/blue] damage to [gold]{OwnerName}[/gold].",
     "type": "Debuff",
     "stack_type": "Counter",
@@ -884,7 +884,7 @@
   {
     "id": "GUARDED",
     "name": "Guarded",
-    "description": "Take half damage from enemies. Removed if [gold][Applier.String Value][/gold] dies.",
+    "description": "Take half damage from enemies. Removed if [gold][Applier.StringValue][/gold] dies.",
     "description_raw": "Take half damage from enemies. Removed if [gold]{Applier.StringValue}[/gold] dies.",
     "type": "Buff",
     "stack_type": "Single",
@@ -920,7 +920,7 @@
   {
     "id": "HARD_TO_KILL",
     "name": "Hard to Kill",
-    "description": "Reduce all damage taken and HP lost by [gold][Owner Name][/gold] to [blue]9[/blue].",
+    "description": "Reduce all damage taken and HP lost by [gold][OwnerName][/gold] to [blue]9[/blue].",
     "description_raw": "Reduce all damage taken and HP lost by [gold]{OwnerName}[/gold] to [blue]9[/blue].",
     "type": "Buff",
     "stack_type": "Counter",
@@ -929,7 +929,7 @@
   {
     "id": "HARDENED_SHELL",
     "name": "Hardened Shell",
-    "description": "[gold][Owner Name][/gold] cannot lose more than [blue][Amount][/blue] HP each turn.",
+    "description": "[gold][OwnerName][/gold] cannot lose more than [blue][Amount][/blue] HP each turn.",
     "description_raw": "[gold]{OwnerName}[/gold] cannot lose more than [blue]{Amount}[/blue] HP each turn.",
     "type": "Buff",
     "stack_type": "Counter",
@@ -1001,7 +1001,7 @@
   {
     "id": "HIGH_VOLTAGE",
     "name": "High Voltage",
-    "description": "At the start of [gold][Owner Name]'s[/gold] turn, it gains [blue][Amount][/blue] [gold]Strength[/gold].",
+    "description": "At the start of [gold][OwnerName]'s[/gold] turn, it gains [blue][Amount][/blue] [gold]Strength[/gold].",
     "description_raw": "At the start of [gold]{OwnerName}'s[/gold] turn, it gains [blue]{Amount}[/blue] [gold]Strength[/gold].",
     "type": "Buff",
     "stack_type": "Counter",
@@ -1028,7 +1028,7 @@
   {
     "id": "IMBALANCED",
     "name": "Imbalanced",
-    "description": "If [gold][Owner Name]'s[/gold] attacks are fully blocked, it becomes [gold]Stunned[/gold].",
+    "description": "If [gold][OwnerName]'s[/gold] attacks are fully blocked, it becomes [gold]Stunned[/gold].",
     "description_raw": "If [gold]{OwnerName}'s[/gold] attacks are fully blocked{IsMultiplayer: by any player|}, it becomes [gold]Stunned[/gold].",
     "type": "Debuff",
     "stack_type": "Single",
@@ -1397,7 +1397,7 @@
   {
     "id": "PAPER_CUTS",
     "name": "Paper Cuts",
-    "description": "Whenever [gold][Owner Name][/gold] deals unblocked attack damage to you, you lose [blue][Amount][/blue] [gold]Max HP[/gold].",
+    "description": "Whenever [gold][OwnerName][/gold] deals unblocked attack damage to you, you lose [blue][Amount][/blue] [gold]Max HP[/gold].",
     "description_raw": "Whenever [gold]{OwnerName}[/gold] deals unblocked attack damage to you, you lose [blue]{Amount}[/blue] [gold]Max HP[/gold].",
     "type": "Buff",
     "stack_type": "Counter",
@@ -1460,7 +1460,7 @@
   {
     "id": "PLOW",
     "name": "Plow",
-    "description": "The first time [gold][Owner Name]'s[/gold] HP reaches [blue][Amount][/blue] or below, it becomes [gold]Stunned[/gold] and loses all its [gold]Strength[/gold].",
+    "description": "The first time [gold][OwnerName]'s[/gold] HP reaches [blue][Amount][/blue] or below, it becomes [gold]Stunned[/gold] and loses all its [gold]Strength[/gold].",
     "description_raw": "The first time [gold]{OwnerName}'s[/gold] HP reaches [blue]{Amount}[/blue] or below, it becomes [gold]Stunned[/gold] and loses all its [gold]Strength[/gold].",
     "type": "Debuff",
     "stack_type": "Counter",
@@ -1739,7 +1739,7 @@
   {
     "id": "SHRIEK",
     "name": "Shriek",
-    "description": "The first time [gold][Owner Name]'s[/gold] HP reaches [blue][Amount][/blue] or below, it becomes [gold]Stunned[/gold].",
+    "description": "The first time [gold][OwnerName]'s[/gold] HP reaches [blue][Amount][/blue] or below, it becomes [gold]Stunned[/gold].",
     "description_raw": "The first time [gold]{OwnerName}'s[/gold] HP reaches [blue]{Amount}[/blue] or below, it becomes [gold]Stunned[/gold].",
     "type": "Debuff",
     "stack_type": "Counter",
@@ -1748,7 +1748,7 @@
   {
     "id": "SHRINK",
     "name": "Shrink",
-    "description": "[Applier Name.String Value] is alive, your|[gold][Owner Name]'s[/gold]} Attacks deal [blue]30%[/blue] less damage>1? for the next [blue][[/blue] turns|].",
+    "description": "[ApplierName.StringValue] is alive, your|[gold][OwnerName]'s[/gold]} Attacks deal [blue]30%[/blue] less damage>1? for the next [blue][[/blue] turns|].",
     "description_raw": "{ApplierName.StringValue:cond:While {} is alive, your|[gold]{OwnerName}'s[/gold]} Attacks deal [blue]{DamageDecrease}%[/blue] less damage{Amount:cond:==1? next turn|>1? for the next [blue]{}[/blue] turns|}.",
     "type": "Debuff",
     "stack_type": "None",
@@ -1784,7 +1784,7 @@
   {
     "id": "SKITTISH",
     "name": "Skittish",
-    "description": "The first time [gold][Owner Name][/gold] is hit each turn, it gains [blue][Amount][/blue] [gold]Block[/gold].",
+    "description": "The first time [gold][OwnerName][/gold] is hit each turn, it gains [blue][Amount][/blue] [gold]Block[/gold].",
     "description_raw": "The first time [gold]{OwnerName}[/gold] is hit each turn, it gains [blue]{Amount}[/blue] [gold]Block[/gold].",
     "type": "Buff",
     "stack_type": "Counter",
@@ -1802,7 +1802,7 @@
   {
     "id": "SLIPPERY",
     "name": "Slippery",
-    "description": "The next [blue]2[/blue] times [gold][Owner Name][/gold] loses HP, it only loses [blue]1[/blue] HP instead.",
+    "description": "The next [blue]2[/blue] times [gold][OwnerName][/gold] loses HP, it only loses [blue]1[/blue] HP instead.",
     "description_raw": "The next {Amount:plural:time|[blue]{}[/blue] times} [gold]{OwnerName}[/gold] loses HP, it only loses [blue]1[/blue] HP instead.",
     "type": "Buff",
     "stack_type": "Counter",
@@ -2000,7 +2000,7 @@
   {
     "id": "SUCK",
     "name": "Suck",
-    "description": "Whenever [gold][Owner Name][/gold] deals unblocked attack damage, it gains [blue][Amount][/blue] [gold]Strength[/gold].",
+    "description": "Whenever [gold][OwnerName][/gold] deals unblocked attack damage, it gains [blue][Amount][/blue] [gold]Strength[/gold].",
     "description_raw": "Whenever [gold]{OwnerName}[/gold] deals unblocked attack damage, it gains [blue]{Amount}[/blue] [gold]Strength[/gold].",
     "type": "Buff",
     "stack_type": "Counter",
@@ -2270,7 +2270,7 @@
   {
     "id": "VIGOR",
     "name": "Vigor",
-    "description": "[gold][Owner Name's[/gold]] next Attack deals [blue][Amount][/blue] additional damage.",
+    "description": "[gold][OwnerName's[/gold]] next Attack deals [blue][Amount][/blue] additional damage.",
     "description_raw": "{OnPlayer:Your|[gold]{OwnerName}'s[/gold]} next Attack deals [blue]{Amount}[/blue] additional damage.",
     "type": "Buff",
     "stack_type": "Counter",
@@ -2279,7 +2279,7 @@
   {
     "id": "VITAL_SPARK",
     "name": "Vital Spark",
-    "description": "The first time [gold][Owner Name][/gold] takes Attack damage each turn, the attacker gains [energy:1].",
+    "description": "The first time [gold][OwnerName][/gold] takes Attack damage each turn, the attacker gains [energy:1].",
     "description_raw": "The first time [gold]{OwnerName}[/gold] takes Attack damage each turn, the attacker gains {Energy:energyIcons()}.",
     "type": "Buff",
     "stack_type": "Counter",
@@ -2297,7 +2297,7 @@
   {
     "id": "VULNERABLE",
     "name": "Vulnerable",
-    "description": "Receive [blue][Damage Increase]%[/blue] more damage from Attacks for [blue][Amount][/blue] turns.",
+    "description": "Receive [blue][DamageIncrease]%[/blue] more damage from Attacks for [blue][Amount][/blue] turns.",
     "description_raw": "Receive [blue]{DamageIncrease:percentMore()}%[/blue] more damage from Attacks for [blue]{Amount}[/blue] {Amount:plural:turn|turns}.",
     "type": "Debuff",
     "stack_type": "Counter",

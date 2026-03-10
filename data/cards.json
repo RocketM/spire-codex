@@ -38,7 +38,9 @@
       "DexterityPower": 1,
       "Dexterity": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "thornspower": "+2"
+    },
     "image_url": "/static/images/cards/abrasive.png",
     "beta_image_url": "/static/images/cards/beta/abrasive.png"
   },
@@ -67,7 +69,9 @@
     "vars": {
       "Accelerant": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "accelerant": "+1"
+    },
     "image_url": "/static/images/cards/accelerant.png",
     "beta_image_url": null
   },
@@ -102,7 +106,9 @@
       "AccuracyPower": 4,
       "Accuracy": 4
     },
-    "upgrade": null,
+    "upgrade": {
+      "accuracypower": "+2"
+    },
     "image_url": "/static/images/cards/accuracy.png",
     "beta_image_url": null
   },
@@ -616,7 +622,9 @@
       "ArsenalPower": 1,
       "Arsenal": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "arsenalpower": "+1"
+    },
     "image_url": "/static/images/cards/arsenal.png",
     "beta_image_url": "/static/images/cards/beta/arsenal.png"
   },
@@ -954,7 +962,7 @@
   {
     "id": "BARRAGE",
     "name": "Barrage",
-    "description": "Deal 5 damage for each [gold]Channeled[/gold] Orb.[In Combat]",
+    "description": "Deal 5 damage for each [gold]Channeled[/gold] Orb.[InCombat]",
     "description_raw": "Deal {Damage:diff()} damage for each [gold]Channeled[/gold] Orb.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 1,
     "is_x_cost": null,
@@ -1341,7 +1349,9 @@
       "BiasedCognitionPower": 1,
       "BiasedCognition": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "focuspower": "+1"
+    },
     "image_url": "/static/images/cards/biased_cognition.png",
     "beta_image_url": null
   },
@@ -1410,7 +1420,9 @@
       "BlackHolePower": 3,
       "BlackHole": 3
     },
-    "upgrade": null,
+    "upgrade": {
+      "blackholepower": "+1"
+    },
     "image_url": "/static/images/cards/black_hole.png",
     "beta_image_url": "/static/images/cards/beta/black_hole.png"
   },
@@ -1647,7 +1659,7 @@
   {
     "id": "BODY_SLAM",
     "name": "Body Slam",
-    "description": "Deal damage equal to your [gold]Block[/gold].[In Combat]",
+    "description": "Deal damage equal to your [gold]Block[/gold].[InCombat]",
     "description_raw": "Deal damage equal to your [gold]Block[/gold].{InCombat:\n(Deals {CalculatedDamage:diff()} damage)|}",
     "cost": 1,
     "is_x_cost": null,
@@ -2159,7 +2171,9 @@
       "BufferPower": 1,
       "Buffer": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "bufferpower": "+1"
+    },
     "image_url": "/static/images/cards/buffer.png",
     "beta_image_url": null
   },
@@ -2422,7 +2436,9 @@
     "vars": {
       "Skills": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "skills": "+1"
+    },
     "image_url": "/static/images/cards/burst.png",
     "beta_image_url": null
   },
@@ -2575,7 +2591,9 @@
       "CalcifyPower": 4,
       "Calcify": 4
     },
-    "upgrade": null,
+    "upgrade": {
+      "calcifypower": "+2"
+    },
     "image_url": "/static/images/cards/calcify.png",
     "beta_image_url": null
   },
@@ -2668,7 +2686,9 @@
       "ThornsPower": 3,
       "Thorns": 3
     },
-    "upgrade": null,
+    "upgrade": {
+      "thornspower": "+2"
+    },
     "image_url": "/static/images/cards/caltrops.png",
     "beta_image_url": "/static/images/cards/beta/caltrops.png"
   },
@@ -2943,7 +2963,9 @@
     "vars": {
       "BlockForStars": 2
     },
-    "upgrade": null,
+    "upgrade": {
+      "blockforstars": "+1"
+    },
     "image_url": "/static/images/cards/child_of_the_stars.png",
     "beta_image_url": "/static/images/cards/beta/child_of_the_stars.png"
   },
@@ -3066,7 +3088,8 @@
       "Damage": 3
     },
     "upgrade": {
-      "damage": "+1"
+      "damage": "+1",
+      "increase": "+1"
     },
     "image_url": "/static/images/cards/claw.png",
     "beta_image_url": null
@@ -3369,7 +3392,7 @@
   {
     "id": "COMPILE_DRIVER",
     "name": "Compile Driver",
-    "description": "Deal 7 damage.\nDraw 1 card for each unique Orb you have.[In Combat]",
+    "description": "Deal 7 damage.\nDraw 1 card for each unique Orb you have.[InCombat]",
     "description_raw": "Deal {Damage:diff()} damage.\nDraw 1 card for each unique Orb you have.{InCombat:\n(Draw {CalculatedCards:diff()} {CalculatedCards:plural:card|cards})|}",
     "cost": 1,
     "is_x_cost": null,
@@ -3566,7 +3589,9 @@
       "CoolantPower": 2,
       "Coolant": 2
     },
-    "upgrade": null,
+    "upgrade": {
+      "coolantpower": "+1"
+    },
     "image_url": "/static/images/cards/coolant.png",
     "beta_image_url": null
   },
@@ -3663,7 +3688,9 @@
     "vars": {
       "CorrosiveWave": 3
     },
-    "upgrade": null,
+    "upgrade": {
+      "corrosivewave": "+1"
+    },
     "image_url": "/static/images/cards/corrosive_wave.png",
     "beta_image_url": "/static/images/cards/beta/corrosive_wave.png"
   },
@@ -3758,7 +3785,9 @@
       "CountdownPower": 6,
       "Countdown": 6
     },
-    "upgrade": null,
+    "upgrade": {
+      "countdownpower": "+3"
+    },
     "image_url": "/static/images/cards/countdown.png",
     "beta_image_url": null
   },
@@ -3888,7 +3917,9 @@
       "CrimsonMantlePower": 8,
       "CrimsonMantle": 8
     },
-    "upgrade": null,
+    "upgrade": {
+      "crimsonmantlepower": "+2"
+    },
     "image_url": "/static/images/cards/crimson_mantle.png",
     "beta_image_url": "/static/images/cards/beta/crimson_mantle.png"
   },
@@ -3923,7 +3954,9 @@
       "CrueltyPower": 25,
       "Cruelty": 25
     },
-    "upgrade": null,
+    "upgrade": {
+      "crueltypower": "+25"
+    },
     "image_url": "/static/images/cards/cruelty.png",
     "beta_image_url": null
   },
@@ -3954,7 +3987,8 @@
       "Damage": 7
     },
     "upgrade": {
-      "damage": "+1"
+      "damage": "+1",
+      "strengthloss": "+1"
     },
     "image_url": "/static/images/cards/crush_under.png",
     "beta_image_url": "/static/images/cards/beta/crush_under.png"
@@ -4083,7 +4117,9 @@
       "DanseMacabrePower": 3,
       "DanseMacabre": 3
     },
-    "upgrade": null,
+    "upgrade": {
+      "dansemacabrepower": "+1"
+    },
     "image_url": "/static/images/cards/danse_macabre.png",
     "beta_image_url": "/static/images/cards/beta/danse_macabre.png"
   },
@@ -4141,7 +4177,9 @@
     "vars": {
       "StrengthLoss": 9
     },
-    "upgrade": null,
+    "upgrade": {
+      "strengthloss": "+6"
+    },
     "image_url": "/static/images/cards/dark_shackles.png",
     "beta_image_url": null
   },
@@ -4415,7 +4453,8 @@
       "Debilitate": 3
     },
     "upgrade": {
-      "damage": "+2"
+      "damage": "+2",
+      "debilitatepower": "+1"
     },
     "image_url": "/static/images/cards/debilitate.png",
     "beta_image_url": "/static/images/cards/beta/debilitate.png"
@@ -4806,7 +4845,9 @@
       "FocusPower": 1,
       "Focus": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "focuspower": "+1"
+    },
     "image_url": "/static/images/cards/defragment.png",
     "beta_image_url": null
   },
@@ -4947,14 +4988,16 @@
       "StrengthPower": 2,
       "Strength": 2
     },
-    "upgrade": null,
+    "upgrade": {
+      "strengthpower": "+1"
+    },
     "image_url": "/static/images/cards/demon_form.png",
     "beta_image_url": null
   },
   {
     "id": "DEMONIC_SHIELD",
     "name": "Demonic Shield",
-    "description": "Lose 1 HP.\nGive another player [gold]Block[/gold] equal to your [gold]Block[/gold].[In Combat]",
+    "description": "Lose 1 HP.\nGive another player [gold]Block[/gold] equal to your [gold]Block[/gold].[InCombat]",
     "description_raw": "Lose {HpLoss:diff()} HP.\nGive another player [gold]Block[/gold] equal to your [gold]Block[/gold].{InCombat:\n(Gives {CalculatedBlock:diff()} [gold]Block[/gold])|}",
     "cost": 0,
     "is_x_cost": null,
@@ -5047,7 +5090,9 @@
       "DevourLifePower": 1,
       "DevourLife": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "devourlifepower": "+1"
+    },
     "image_url": "/static/images/cards/devour_life.png",
     "beta_image_url": "/static/images/cards/beta/devour_life.png"
   },
@@ -5558,7 +5603,8 @@
       "StarCost": 3
     },
     "upgrade": {
-      "damage": "+2"
+      "damage": "+2",
+      "strengthloss": "+2"
     },
     "image_url": "/static/images/cards/dying_star.png",
     "beta_image_url": "/static/images/cards/beta/dying_star.png"
@@ -5751,7 +5797,9 @@
     "vars": {
       "StrengthLoss": 8
     },
-    "upgrade": null,
+    "upgrade": {
+      "strengthloss": "+3"
+    },
     "image_url": "/static/images/cards/enfeebling_touch.png",
     "beta_image_url": "/static/images/cards/beta/enfeebling_touch.png"
   },
@@ -5900,7 +5948,9 @@
       "EnvenomPower": 1,
       "Envenom": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "envenompower": "+1"
+    },
     "image_url": "/static/images/cards/envenom.png",
     "beta_image_url": null
   },
@@ -6031,7 +6081,9 @@
       "PlatingPower": 7,
       "Plating": 7
     },
-    "upgrade": null,
+    "upgrade": {
+      "platingpower": "+2"
+    },
     "image_url": "/static/images/cards/eternal_armor.png",
     "beta_image_url": null
   },
@@ -6155,7 +6207,9 @@
     "vars": {
       "Power": 2
     },
-    "upgrade": null,
+    "upgrade": {
+      "power": "+1"
+    },
     "image_url": "/static/images/cards/expose.png",
     "beta_image_url": null
   },
@@ -6261,7 +6315,9 @@
     "vars": {
       "Shivs": 4
     },
-    "upgrade": null,
+    "upgrade": {
+      "shivs": "+1"
+    },
     "image_url": "/static/images/cards/fan_of_knives.png",
     "beta_image_url": null
   },
@@ -6292,7 +6348,9 @@
     "vars": {
       "ExtraBlock": 5
     },
-    "upgrade": null,
+    "upgrade": {
+      "extrablock": "+2"
+    },
     "image_url": "/static/images/cards/fasten.png",
     "beta_image_url": "/static/images/cards/beta/fasten.png"
   },
@@ -6434,7 +6492,9 @@
     "vars": {
       "Power": 3
     },
-    "upgrade": null,
+    "upgrade": {
+      "power": "+1"
+    },
     "image_url": "/static/images/cards/feel_no_pain.png",
     "beta_image_url": null
   },
@@ -6649,7 +6709,7 @@
   {
     "id": "FINISHER",
     "name": "Finisher",
-    "description": "Deal 6 damage for each Attack already played this turn.[In Combat]",
+    "description": "Deal 6 damage for each Attack already played this turn.[InCombat]",
     "description_raw": "Deal {Damage:diff()} damage for each Attack already played this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 1,
     "is_x_cost": null,
@@ -6713,7 +6773,7 @@
   {
     "id": "FLAK_CANNON",
     "name": "Flak Cannon",
-    "description": "[gold]Exhaust[/gold] ALL your [gold]Status[/gold] cards.\nDeal 8 damage to a random enemy for each card [gold]Exhausted[/gold].[In Combat]",
+    "description": "[gold]Exhaust[/gold] ALL your [gold]Status[/gold] cards.\nDeal 8 damage to a random enemy for each card [gold]Exhausted[/gold].[InCombat]",
     "description_raw": "[gold]Exhaust[/gold] ALL your [gold]Status[/gold] cards.\nDeal {Damage:diff()} damage to a random enemy for each card [gold]Exhausted[/gold].{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 2,
     "is_x_cost": null,
@@ -6770,7 +6830,8 @@
       "Block": 12
     },
     "upgrade": {
-      "block": "+4"
+      "block": "+4",
+      "damageback": "+2"
     },
     "image_url": "/static/images/cards/flame_barrier.png",
     "beta_image_url": null
@@ -6872,7 +6933,7 @@
   {
     "id": "FLECHETTES",
     "name": "Flechettes",
-    "description": "Deal 5 damage for each Skill in your [gold]Hand[/gold].[In Combat]",
+    "description": "Deal 5 damage for each Skill in your [gold]Hand[/gold].[InCombat]",
     "description_raw": "Deal {Damage:diff()} damage for each Skill in your [gold]Hand[/gold].{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 1,
     "is_x_cost": null,
@@ -6970,7 +7031,8 @@
       "Focus": 1
     },
     "upgrade": {
-      "damage": "+2"
+      "damage": "+2",
+      "focuspower": "+1"
     },
     "image_url": "/static/images/cards/focused_strike.png",
     "beta_image_url": "/static/images/cards/beta/focused_strike.png"
@@ -7264,7 +7326,8 @@
       "Cards": 1
     },
     "upgrade": {
-      "damage": "+1"
+      "damage": "+1",
+      "playmax": "+1"
     },
     "image_url": "/static/images/cards/ftl.png",
     "beta_image_url": null
@@ -7497,14 +7560,16 @@
     "vars": {
       "StarsPerTurn": 2
     },
-    "upgrade": null,
+    "upgrade": {
+      "starsperturn": "+1"
+    },
     "image_url": "/static/images/cards/genesis.png",
     "beta_image_url": "/static/images/cards/beta/genesis.png"
   },
   {
     "id": "GENETIC_ALGORITHM",
     "name": "Genetic Algorithm",
-    "description": "Gain X [gold]Block[/gold].\nPermanently increase this card's [gold]Block[/gold] by 3.",
+    "description": "Gain 1 [gold]Block[/gold].\nPermanently increase this card's [gold]Block[/gold] by 3.",
     "description_raw": "Gain {Block:diff()} [gold]Block[/gold].\nPermanently increase this card's [gold]Block[/gold] by {Increase:diff()}.",
     "cost": 1,
     "is_x_cost": null,
@@ -7515,7 +7580,7 @@
     "target": "Self",
     "color": "defect",
     "damage": null,
-    "block": null,
+    "block": 1,
     "hit_count": null,
     "powers_applied": null,
     "cards_draw": null,
@@ -7526,9 +7591,12 @@
     ],
     "tags": null,
     "vars": {
-      "Increase": 3
+      "Increase": 3,
+      "Block": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "increase": "+1"
+    },
     "image_url": "/static/images/cards/genetic_algorithm.png",
     "beta_image_url": null
   },
@@ -7717,7 +7785,8 @@
       "Block": 11
     },
     "upgrade": {
-      "block": "+2"
+      "block": "+2",
+      "blocknextturn": "+2"
     },
     "image_url": "/static/images/cards/glitterstream.png",
     "beta_image_url": null
@@ -7796,7 +7865,7 @@
   {
     "id": "GOLD_AXE",
     "name": "Gold Axe",
-    "description": "Deal damage equal to the number of cards played this combat.[In Combat]",
+    "description": "Deal damage equal to the number of cards played this combat.[InCombat]",
     "description_raw": "Deal damage equal to the number of cards played this combat.{InCombat:\n(Deals {CalculatedDamage:diff()} damage)|}",
     "cost": 1,
     "is_x_cost": null,
@@ -7888,7 +7957,8 @@
       "Grapple": 5
     },
     "upgrade": {
-      "damage": "+2"
+      "damage": "+2",
+      "grapplepower": "+2"
     },
     "image_url": "/static/images/cards/grapple.png",
     "beta_image_url": null
@@ -8145,7 +8215,9 @@
       "HailstormPower": 6,
       "Hailstorm": 6
     },
-    "upgrade": null,
+    "upgrade": {
+      "hailstormpower": "+2"
+    },
     "image_url": "/static/images/cards/hailstorm.png",
     "beta_image_url": "/static/images/cards/beta/hailstorm.png"
   },
@@ -8203,7 +8275,8 @@
       "Damage": 20
     },
     "upgrade": {
-      "damage": "+5"
+      "damage": "+5",
+      "gold": "+5"
     },
     "image_url": "/static/images/cards/hand_of_greed.png",
     "beta_image_url": null
@@ -8498,7 +8571,7 @@
   {
     "id": "HELIX_DRILL",
     "name": "Helix Drill",
-    "description": "Deal 3 damage for each [energy:1] previously spent this turn.[In Combat]",
+    "description": "Deal 3 damage for each [energy:1] previously spent this turn.[InCombat]",
     "description_raw": "Deal {Damage:diff()} damage for each {energyPrefix:energyIcons(1)} previously spent this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 0,
     "is_x_cost": null,
@@ -8646,7 +8719,9 @@
       "StarNextTurnPower": 3,
       "StarNextTurn": 3
     },
-    "upgrade": null,
+    "upgrade": {
+      "starnextturnpower": "+1"
+    },
     "image_url": "/static/images/cards/hidden_cache.png",
     "beta_image_url": "/static/images/cards/beta/hidden_cache.png"
   },
@@ -8705,7 +8780,9 @@
     "vars": {
       "Replay": 2
     },
-    "upgrade": null,
+    "upgrade": {
+      "replay": "+1"
+    },
     "image_url": "/static/images/cards/hidden_gem.png",
     "beta_image_url": "/static/images/cards/beta/hidden_gem.png"
   },
@@ -8816,7 +8893,9 @@
       "FocusPower": 2,
       "Focus": 2
     },
-    "upgrade": null,
+    "upgrade": {
+      "focuspower": "+1"
+    },
     "image_url": "/static/images/cards/hotfix.png",
     "beta_image_url": "/static/images/cards/beta/hotfix.png"
   },
@@ -9167,7 +9246,9 @@
       "InfernoPower": 6,
       "Inferno": 6
     },
-    "upgrade": null,
+    "upgrade": {
+      "infernopower": "+3"
+    },
     "image_url": "/static/images/cards/inferno.png",
     "beta_image_url": null
   },
@@ -9229,7 +9310,9 @@
       "StrengthPower": 2,
       "Strength": 2
     },
-    "upgrade": null,
+    "upgrade": {
+      "strengthpower": "+1"
+    },
     "image_url": "/static/images/cards/inflame.png",
     "beta_image_url": null
   },
@@ -9390,7 +9473,9 @@
       "IterationPower": 2,
       "Iteration": 2
     },
-    "upgrade": null,
+    "upgrade": {
+      "iterationpower": "+1"
+    },
     "image_url": "/static/images/cards/iteration.png",
     "beta_image_url": "/static/images/cards/beta/iteration.png"
   },
@@ -9490,7 +9575,9 @@
       "JuggernautPower": 5,
       "Juggernaut": 5
     },
-    "upgrade": null,
+    "upgrade": {
+      "juggernautpower": "+2"
+    },
     "image_url": "/static/images/cards/juggernaut.png",
     "beta_image_url": null
   },
@@ -9578,14 +9665,16 @@
       "Increase": 3,
       "Damage": 8
     },
-    "upgrade": null,
+    "upgrade": {
+      "increase": "+2"
+    },
     "image_url": "/static/images/cards/kingly_punch.png",
     "beta_image_url": "/static/images/cards/beta/kingly_punch.png"
   },
   {
     "id": "KNIFE_TRAP",
     "name": "Knife Trap",
-    "description": "Play every [gold]Shiv[/gold] in your [gold]Exhaust Pile[/gold] on the enemy.[In Combat]",
+    "description": "Play every [gold]Shiv[/gold] in your [gold]Exhaust Pile[/gold] on the enemy.[InCombat]",
     "description_raw": "{IfUpgraded:show:[gold]Upgrade[/gold] and play|Play} every [gold]Shiv[/gold] in your [gold]Exhaust Pile[/gold] on the enemy.{InCombat:\n(Plays {CalculatedShivs:diff()} [gold]{CalculatedShivs:plural:Shiv|Shivs}[/gold])|}",
     "cost": 2,
     "is_x_cost": null,
@@ -9647,7 +9736,8 @@
       "Knockdown": 2
     },
     "upgrade": {
-      "damage": "+4"
+      "damage": "+4",
+      "knockdownpower": "+1"
     },
     "image_url": "/static/images/cards/knockdown.png",
     "beta_image_url": "/static/images/cards/beta/knockdown.png"
@@ -9955,7 +10045,9 @@
       "LethalityPower": 50,
       "Lethality": 50
     },
-    "upgrade": null,
+    "upgrade": {
+      "lethalitypower": "+25"
+    },
     "image_url": "/static/images/cards/lethality.png",
     "beta_image_url": "/static/images/cards/beta/lethality.png"
   },
@@ -10053,7 +10145,9 @@
     "vars": {
       "Loop": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "loop": "+1"
+    },
     "image_url": "/static/images/cards/loop.png",
     "beta_image_url": null
   },
@@ -10094,7 +10188,7 @@
   {
     "id": "LUNAR_BLAST",
     "name": "Lunar Blast",
-    "description": "Deal 4 damage for each Skill already played this turn.[In Combat]",
+    "description": "Deal 4 damage for each Skill already played this turn.[InCombat]",
     "description_raw": "Deal {Damage:diff()} damage for each Skill already played this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 0,
     "is_x_cost": null,
@@ -10156,7 +10250,7 @@
   {
     "id": "MAD_SCIENCE",
     "name": "Mad Science",
-    "description": "Skill|Power):Deal 12.|Gain 8 [gold]Block[/gold].|}[Has Rider][Choking][Wisdom][Expertise][Curious]|Skill|Power):\n???|\n???|???}",
+    "description": "Skill|Power):Deal 12.|Gain 8 [gold]Block[/gold].|}[HasRider][Choking][Wisdom][Expertise][Curious]|Skill|Power):\n???|\n???|???}",
     "description_raw": "{CardType:choose(Attack|Skill|Power):Deal {Damage:diff()} damage{Violence: {ViolenceHits:diff()} times|}.|Gain {Block:diff()} [gold]Block[/gold].|}{HasRider:{Sapping:\nApply {SappingWeak:diff()} [gold]Weak[/gold].\nApply {SappingVulnerable:diff()} [gold]Vulnerable[/gold].|}{Choking:\nWhenever you play a card this turn, the enemy loses {ChokingDamage:diff()} HP.|}{Energized:\nGain {EnergizedEnergy:energyIcons()}.|}{Wisdom:\nDraw {WisdomCards:diff()} cards.|}{Chaos:\nAdd a random card into your [gold]Hand[/gold]. It costs 0 {energyPrefix:energyIcons(1)} this turn.|}{Expertise:Gain {ExpertiseStrength:diff()} [gold]Strength[/gold].\nGain {ExpertiseDexterity:diff()} [gold]Dexterity[/gold].|}{Curious:Powers cost {CuriousReduction:diff()} {energyPrefix:energyIcons(1)} less.|}{Improvement:At the end of combat, [gold]Upgrade[/gold] a random card.|}|{CardType:choose(Attack|Skill|Power):\n???|\n???|???}}",
     "cost": 1,
     "is_x_cost": null,
@@ -10275,7 +10369,8 @@
       "Damage": 15
     },
     "upgrade": {
-      "damage": "+5"
+      "damage": "+5",
+      "strengthloss": "+5"
     },
     "image_url": "/static/images/cards/mangle.png",
     "beta_image_url": null
@@ -10398,7 +10493,8 @@
       "Damage": 5
     },
     "upgrade": {
-      "damage": "+1"
+      "damage": "+1",
+      "increase": "+1"
     },
     "image_url": "/static/images/cards/maul.png",
     "beta_image_url": "/static/images/cards/beta/maul.png"
@@ -10643,7 +10739,7 @@
   {
     "id": "MIND_BLAST",
     "name": "Mind Blast",
-    "description": "Deal damage equal to the number of cards in your [gold]Draw Pile[/gold].[In Combat]",
+    "description": "Deal damage equal to the number of cards in your [gold]Draw Pile[/gold].[InCombat]",
     "description_raw": "Deal damage equal to the number of cards in your [gold]Draw Pile[/gold].{InCombat:\n(Deals {CalculatedDamage:diff()} damage)|}",
     "cost": 1,
     "is_x_cost": null,
@@ -10818,7 +10914,7 @@
   {
     "id": "MIRAGE",
     "name": "Mirage",
-    "description": "Gain [gold]Block[/gold] equal to [gold]Poison[/gold] on ALL enemies.[In Combat]",
+    "description": "Gain [gold]Block[/gold] equal to [gold]Poison[/gold] on ALL enemies.[InCombat]",
     "description_raw": "Gain [gold]Block[/gold] equal to [gold]Poison[/gold] on ALL enemies.{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
     "cost": 1,
     "is_x_cost": null,
@@ -11306,7 +11402,9 @@
       "Plating": 8,
       "StarCost": 5
     },
-    "upgrade": null,
+    "upgrade": {
+      "platingpower": "+3"
+    },
     "image_url": "/static/images/cards/neutron_aegis.png",
     "beta_image_url": "/static/images/cards/beta/neutron_aegis.png"
   },
@@ -11342,7 +11440,7 @@
   {
     "id": "NO_ESCAPE",
     "name": "No Escape",
-    "description": "Apply 10 [gold]Doom[/gold], plus an additional 5 [gold]Doom[/gold] for every 10 [gold]Doom[/gold] already on this enemy.[Is Targeting]",
+    "description": "Apply 10 [gold]Doom[/gold], plus an additional 5 [gold]Doom[/gold] for every 10 [gold]Doom[/gold] already on this enemy.[IsTargeting]",
     "description_raw": "Apply {CalculationBase:diff()} [gold]Doom[/gold], plus an additional {CalculationExtra:diff()} [gold]Doom[/gold] for every {DoomThreshold:diff()} [gold]Doom[/gold] already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}",
     "cost": 1,
     "is_x_cost": null,
@@ -11456,7 +11554,9 @@
     "vars": {
       "PoisonPerTurn": 2
     },
-    "upgrade": null,
+    "upgrade": {
+      "poisonperturn": "+1"
+    },
     "image_url": "/static/images/cards/noxious_fumes.png",
     "beta_image_url": null
   },
@@ -11627,7 +11727,9 @@
     "vars": {
       "Attacks": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "attacks": "+1"
+    },
     "image_url": "/static/images/cards/one_two_punch.png",
     "beta_image_url": null
   },
@@ -11692,7 +11794,9 @@
       "OutbreakPower": 11,
       "Outbreak": 11
     },
-    "upgrade": null,
+    "upgrade": {
+      "outbreakpower": "+4"
+    },
     "image_url": "/static/images/cards/outbreak.png",
     "beta_image_url": "/static/images/cards/beta/outbreak.png"
   },
@@ -11876,7 +11980,9 @@
     "vars": {
       "PanacheDamage": 10
     },
-    "upgrade": null,
+    "upgrade": {
+      "panachedamage": "+4"
+    },
     "image_url": "/static/images/cards/panache.png",
     "beta_image_url": null
   },
@@ -11945,7 +12051,9 @@
       "ParryPower": 6,
       "Parry": 6
     },
-    "upgrade": null,
+    "upgrade": {
+      "parrypower": "+3"
+    },
     "image_url": "/static/images/cards/parry.png",
     "beta_image_url": "/static/images/cards/beta/parry.png"
   },
@@ -12047,7 +12155,8 @@
       "Vigor": 2
     },
     "upgrade": {
-      "block": "+2"
+      "block": "+2",
+      "vigorpower": "+1"
     },
     "image_url": "/static/images/cards/patter.png",
     "beta_image_url": "/static/images/cards/beta/patter.png"
@@ -12151,7 +12260,9 @@
       "PhantomBladesPower": 9,
       "PhantomBlades": 9
     },
-    "upgrade": null,
+    "upgrade": {
+      "phantombladespower": "+3"
+    },
     "image_url": "/static/images/cards/phantom_blades.png",
     "beta_image_url": "/static/images/cards/beta/phantom_blades.png"
   },
@@ -12216,7 +12327,9 @@
     "vars": {
       "StrengthLoss": 6
     },
-    "upgrade": null,
+    "upgrade": {
+      "strengthloss": "+2"
+    },
     "image_url": "/static/images/cards/piercing_wail.png",
     "beta_image_url": null
   },
@@ -12578,7 +12691,9 @@
       "PrepTimePower": 4,
       "PrepTime": 4
     },
-    "upgrade": null,
+    "upgrade": {
+      "preptimepower": "+2"
+    },
     "image_url": "/static/images/cards/prep_time.png",
     "beta_image_url": "/static/images/cards/beta/prep_time.png"
   },
@@ -12846,7 +12961,7 @@
   {
     "id": "PULL_FROM_BELOW",
     "name": "Pull from Below",
-    "description": "Deal 5 damage for each [gold]Ethereal[/gold] card played this combat.[In Combat]",
+    "description": "Deal 5 damage for each [gold]Ethereal[/gold] card played this combat.[InCombat]",
     "description_raw": "Deal {Damage:diff()} damage for each [gold]Ethereal[/gold] card played this combat.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 1,
     "is_x_cost": null,
@@ -12937,7 +13052,9 @@
     "vars": {
       "Power": 2
     },
-    "upgrade": null,
+    "upgrade": {
+      "power": "+1"
+    },
     "image_url": "/static/images/cards/putrefy.png",
     "beta_image_url": null
   },
@@ -13033,7 +13150,7 @@
   {
     "id": "RADIATE",
     "name": "Radiate",
-    "description": "Deal 3 damage to ALL enemies for each [star:1] gained this turn.[In Combat]",
+    "description": "Deal 3 damage to ALL enemies for each [star:1] gained this turn.[InCombat]",
     "description_raw": "Deal {Damage:diff()} damage to ALL enemies for each {Stars:starIcons()} gained this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 0,
     "is_x_cost": null,
@@ -13089,7 +13206,9 @@
     "vars": {
       "Power": 3
     },
-    "upgrade": null,
+    "upgrade": {
+      "power": "+2"
+    },
     "image_url": "/static/images/cards/rage.png",
     "beta_image_url": null
   },
@@ -13179,14 +13298,16 @@
       "Increase": 5,
       "Damage": 9
     },
-    "upgrade": null,
+    "upgrade": {
+      "increase": "+4"
+    },
     "image_url": "/static/images/cards/rampage.png",
     "beta_image_url": null
   },
   {
     "id": "RATTLE",
     "name": "Rattle",
-    "description": "[gold]Osty[/gold] deals 7 damage.\nHits an additional time for each other time he has attacked this turn.[In Combat]",
+    "description": "[gold]Osty[/gold] deals 7 damage.\nHits an additional time for each other time he has attacked this turn.[InCombat]",
     "description_raw": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage.\nHits an additional time for each other time he has attacked this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 1,
     "is_x_cost": null,
@@ -13671,7 +13792,9 @@
       "Strength": 1,
       "StarCost": 3
     },
-    "upgrade": null,
+    "upgrade": {
+      "strengthpower": "+1"
+    },
     "image_url": "/static/images/cards/resonance.png",
     "beta_image_url": "/static/images/cards/beta/resonance.png"
   },
@@ -13876,7 +13999,9 @@
       "RollingBoulderPower": 5,
       "RollingBoulder": 5
     },
-    "upgrade": null,
+    "upgrade": {
+      "rollingboulderpower": "+5"
+    },
     "image_url": "/static/images/cards/rolling_boulder.png",
     "beta_image_url": "/static/images/cards/beta/rolling_boulder.png"
   },
@@ -14456,7 +14581,9 @@
       "SerpentFormPower": 4,
       "SerpentForm": 4
     },
-    "upgrade": null,
+    "upgrade": {
+      "serpentformpower": "+1"
+    },
     "image_url": "/static/images/cards/serpent_form.png",
     "beta_image_url": "/static/images/cards/beta/serpent_form.png"
   },
@@ -14711,7 +14838,9 @@
       "EnemyStrengthLoss": 2,
       "PlayerStrengthLoss": 2
     },
-    "upgrade": null,
+    "upgrade": {
+      "enemystrengthloss": "+1"
+    },
     "image_url": "/static/images/cards/shared_fate.png",
     "beta_image_url": null
   },
@@ -14844,7 +14973,9 @@
     "vars": {
       "Power": 3
     },
-    "upgrade": null,
+    "upgrade": {
+      "power": "+2"
+    },
     "image_url": "/static/images/cards/shockwave.png",
     "beta_image_url": "/static/images/cards/beta/shockwave.png"
   },
@@ -14948,7 +15079,8 @@
     },
     "upgrade": {
       "damage": "+1",
-      "ostydamage": "+1"
+      "ostydamage": "+1",
+      "sicempower": "+1"
     },
     "image_url": "/static/images/cards/sic_em.png",
     "beta_image_url": "/static/images/cards/beta/sic_em.png"
@@ -15083,7 +15215,9 @@
       "SleightOfFleshPower": 9,
       "SleightOfFlesh": 9
     },
-    "upgrade": null,
+    "upgrade": {
+      "sleightoffleshpower": "+4"
+    },
     "image_url": "/static/images/cards/sleight_of_flesh.png",
     "beta_image_url": "/static/images/cards/beta/sleight_of_flesh.png"
   },
@@ -15215,7 +15349,9 @@
       "SmokestackPower": 5,
       "Smokestack": 5
     },
-    "upgrade": null,
+    "upgrade": {
+      "smokestackpower": "+2"
+    },
     "image_url": "/static/images/cards/smokestack.png",
     "beta_image_url": "/static/images/cards/beta/smokestack.png"
   },
@@ -15326,7 +15462,9 @@
       "SneakyPower": 1,
       "Sneaky": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "sneakypower": "+1"
+    },
     "image_url": "/static/images/cards/sneaky.png",
     "beta_image_url": "/static/images/cards/beta/sneaky.png"
   },
@@ -15589,7 +15727,9 @@
       "SpeedsterPower": 2,
       "Speedster": 2
     },
-    "upgrade": null,
+    "upgrade": {
+      "speedsterpower": "+1"
+    },
     "image_url": "/static/images/cards/speedster.png",
     "beta_image_url": "/static/images/cards/beta/speedster.png"
   },
@@ -15653,7 +15793,9 @@
     "vars": {
       "BlockOnExhaust": 4
     },
-    "upgrade": null,
+    "upgrade": {
+      "blockonexhaust": "+1"
+    },
     "image_url": "/static/images/cards/spirit_of_ash.png",
     "beta_image_url": "/static/images/cards/beta/spirit_of_ash.png"
   },
@@ -15921,7 +16063,7 @@
   {
     "id": "STACK",
     "name": "Stack",
-    "description": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pile[/gold]|}.[In Combat]",
+    "description": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pile[/gold]|}.[InCombat]",
     "description_raw": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pile[/gold]{IfUpgraded:show: +{CalculationBase}|}.{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold].)|}",
     "cost": 1,
     "is_x_cost": null,
@@ -16101,7 +16243,9 @@
       "PlatingPower": 4,
       "Plating": 4
     },
-    "upgrade": null,
+    "upgrade": {
+      "platingpower": "+2"
+    },
     "image_url": "/static/images/cards/stone_armor.png",
     "beta_image_url": null
   },
@@ -16136,7 +16280,9 @@
       "StormPower": 1,
       "Storm": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "stormpower": "+1"
+    },
     "image_url": "/static/images/cards/storm.png",
     "beta_image_url": null
   },
@@ -16200,7 +16346,8 @@
       "Strangle": 2
     },
     "upgrade": {
-      "damage": "+2"
+      "damage": "+2",
+      "stranglepower": "+1"
     },
     "image_url": "/static/images/cards/strangle.png",
     "beta_image_url": "/static/images/cards/beta/strangle.png"
@@ -16805,7 +16952,7 @@
   {
     "id": "SYNCHRONIZE",
     "name": "Synchronize",
-    "description": "Gain 2 [gold]Focus[/gold] this turn for each unique Orb you have.[In Combat]",
+    "description": "Gain 2 [gold]Focus[/gold] this turn for each unique Orb you have.[InCombat]",
     "description_raw": "Gain {CalculationExtra:diff()} [gold]Focus[/gold] this turn for each unique Orb you have.{InCombat:\n(Gain {CalculatedFocus:diff()} [gold]Focus[/gold])|}",
     "cost": 1,
     "is_x_cost": null,
@@ -16998,7 +17145,7 @@
   {
     "id": "TEAR_ASUNDER",
     "name": "Tear Asunder",
-    "description": "Deal 5 damage.\nHits an additional time for each time you lost HP this combat.[In Combat]",
+    "description": "Deal 5 damage.\nHits an additional time for each time you lost HP this combat.[InCombat]",
     "description_raw": "Deal {Damage:diff()} damage.\nHits an additional time for each time you lost HP this combat.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times}.)|}",
     "cost": 2,
     "is_x_cost": null,
@@ -17087,7 +17234,9 @@
       "VigorPower": 6,
       "Vigor": 6
     },
-    "upgrade": null,
+    "upgrade": {
+      "vigorpower": "+2"
+    },
     "image_url": "/static/images/cards/terraforming.png",
     "beta_image_url": "/static/images/cards/beta/terraforming.png"
   },
@@ -17148,7 +17297,9 @@
       "Turns": 3,
       "BombDamage": 40
     },
-    "upgrade": null,
+    "upgrade": {
+      "bombdamage": "+10"
+    },
     "image_url": "/static/images/cards/the_bomb.png",
     "beta_image_url": null
   },
@@ -17219,7 +17370,7 @@
   {
     "id": "THE_SCYTHE",
     "name": "The Scythe",
-    "description": "Deal X damage.\nPermanently increase this card's damage by 3.",
+    "description": "Deal 13 damage.\nPermanently increase this card's damage by 3.",
     "description_raw": "Deal {Damage:diff()} damage.\nPermanently increase this card's damage by {Increase:diff()}.",
     "cost": 2,
     "is_x_cost": null,
@@ -17229,7 +17380,7 @@
     "rarity": "Rare",
     "target": "AnyEnemy",
     "color": "necrobinder",
-    "damage": null,
+    "damage": 13,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -17242,9 +17393,12 @@
     "tags": null,
     "vars": {
       "Increase": 3,
+      "Damage": 13,
       "baseDamage": 13
     },
-    "upgrade": null,
+    "upgrade": {
+      "increase": "+1"
+    },
     "image_url": "/static/images/cards/the_scythe.png",
     "beta_image_url": "/static/images/cards/beta/the_scythe.png"
   },
@@ -17433,7 +17587,9 @@
       "ThunderPower": 6,
       "Thunder": 6
     },
-    "upgrade": null,
+    "upgrade": {
+      "thunderpower": "+2"
+    },
     "image_url": "/static/images/cards/thunder.png",
     "beta_image_url": "/static/images/cards/beta/thunder.png"
   },
@@ -17478,7 +17634,7 @@
   {
     "id": "TIMES_UP",
     "name": "Time's Up",
-    "description": "Deal damage equal to the enemy's [gold]Doom[/gold].[Is Targeting]",
+    "description": "Deal damage equal to the enemy's [gold]Doom[/gold].[IsTargeting]",
     "description_raw": "Deal damage equal to the enemy's [gold]Doom[/gold].{IsTargeting:\n(Deals {CalculatedDamage:diff()} damage)|}",
     "cost": 2,
     "is_x_cost": null,
@@ -18124,7 +18280,9 @@
       "Power": 1,
       "Damage": 13
     },
-    "upgrade": null,
+    "upgrade": {
+      "power": "+1"
+    },
     "image_url": "/static/images/cards/uppercut.png",
     "beta_image_url": null
   },
@@ -18315,7 +18473,9 @@
       "VoidFormPower": 2,
       "VoidForm": 2
     },
-    "upgrade": null,
+    "upgrade": {
+      "voidformpower": "+1"
+    },
     "image_url": "/static/images/cards/void_form.png",
     "beta_image_url": "/static/images/cards/beta/void_form.png"
   },
@@ -18353,7 +18513,7 @@
   {
     "id": "VOLTAIC",
     "name": "Voltaic",
-    "description": "[gold]Channel Lightning[/gold] equal to the [gold]Lightning[/gold] already [gold]Channeled[/gold] this combat.[In Combat]",
+    "description": "[gold]Channel Lightning[/gold] equal to the [gold]Lightning[/gold] already [gold]Channeled[/gold] this combat.[InCombat]",
     "description_raw": "[gold]Channel Lightning[/gold] equal to the [gold]Lightning[/gold] already [gold]Channeled[/gold] this combat.{InCombat:\n([gold]Channel[/gold] {CalculatedChannels:diff()} [gold]Lightning[/gold])|}",
     "cost": 2,
     "is_x_cost": null,
@@ -18442,7 +18602,9 @@
     "vars": {
       "RetainAmount": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "retainamount": "+1"
+    },
     "image_url": "/static/images/cards/well_laid_plans.png",
     "beta_image_url": null
   },
@@ -18665,7 +18827,9 @@
       "WraithFormPower": 1,
       "WraithForm": 1
     },
-    "upgrade": null,
+    "upgrade": {
+      "intangiblepower": "+1"
+    },
     "image_url": "/static/images/cards/wraith_form.png",
     "beta_image_url": null
   },

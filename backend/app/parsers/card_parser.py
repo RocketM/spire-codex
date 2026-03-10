@@ -245,11 +245,18 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict) -> d
     if cost_upgrade is not None:
         card["upgrade"]["cost"] = cost_upgrade
 
-    # Upgrade power vars
+    # Upgrade power vars — property access: Xxx.UpgradeValueBy(Nm)
     for pm in re.finditer(r'(\w+)\.UpgradeValueBy\((\d+)m\)', content):
         var_name = pm.group(1)
         val = int(pm.group(2))
         if var_name not in ("Damage", "Block"):
+            card["upgrade"][var_name.lower()] = f"+{val}"
+
+    # Upgrade vars — dictionary access: ["VarName"].UpgradeValueBy(Nm)
+    for pm in re.finditer(r'\["(\w+)"\]\.UpgradeValueBy\((\d+)m\)', content):
+        var_name = pm.group(1)
+        val = int(pm.group(2))
+        if var_name.lower() not in card["upgrade"]:
             card["upgrade"][var_name.lower()] = f"+{val}"
 
     if not card["upgrade"]:

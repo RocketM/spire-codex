@@ -190,7 +190,7 @@
       },
       {
         "id": "MAINTAIN_CONTROL",
-        "description": "Resisting the temptation to give in, you climb atop a tree where the aroma doesn't reach but its effects claw at your mind.\n\nMaintaining control is difficult; you tether your thoughts to your [blue]Core Principles[/blue].\n\n[Aroma Principle]\n[Aroma Principle]\n[Aroma Principle]\n\nThe aroma subsides."
+        "description": "Resisting the temptation to give in, you climb atop a tree where the aroma doesn't reach but its effects claw at your mind.\n\nMaintaining control is difficult; you tether your thoughts to your [blue]Core Principles[/blue].\n\n[AromaPrinciple]\n[AromaPrinciple]\n[AromaPrinciple]\n\nThe aroma subsides."
       }
     ]
   },
@@ -204,17 +204,17 @@
       {
         "id": "SETTING_1",
         "title": "Setting 1",
-        "description": "Fight a [blue][SettingHp][/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
+        "description": "Fight a [blue][Setting1Hp][/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
       },
       {
         "id": "SETTING_2",
         "title": "Setting 2",
-        "description": "Fight a [blue][SettingHp][/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
+        "description": "Fight a [blue][Setting2Hp][/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
       },
       {
         "id": "SETTING_3",
         "title": "Setting 3",
-        "description": "Fight a [blue][SettingHp][/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
+        "description": "Fight a [blue][Setting3Hp][/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
       }
     ],
     "pages": [
@@ -229,17 +229,17 @@
           {
             "id": "SETTING_1",
             "title": "Setting 1",
-            "description": "Fight a [blue][SettingHp][/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
+            "description": "Fight a [blue][Setting1Hp][/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
           },
           {
             "id": "SETTING_2",
             "title": "Setting 2",
-            "description": "Fight a [blue][SettingHp][/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
+            "description": "Fight a [blue][Setting2Hp][/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
           },
           {
             "id": "SETTING_3",
             "title": "Setting 3",
-            "description": "Fight a [blue][SettingHp][/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
+            "description": "Fight a [blue][Setting3Hp][/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
           }
         ]
       },
@@ -2480,7 +2480,7 @@
       },
       {
         "id": "SHATTER",
-        "description": "You concentrate and identify a giant seamless mirror in front of you.\nWith a swift kick you [jitter]SHATTER[/jitter] the giant mirror!\nRight as you shatter the mirror your reflection braces [pronoun Object]self as [pronoun Subject] becomes a thousand beautiful glittering shards.\n\nHow can a place like this exist?"
+        "description": "You concentrate and identify a giant seamless mirror in front of you.\nWith a swift kick you [jitter]SHATTER[/jitter] the giant mirror!\nRight as you shatter the mirror your reflection braces [pronounObject]self as [pronounSubject] becomes a thousand beautiful glittering shards.\n\nHow can a place like this exist?"
       },
       {
         "id": "TOUCH_A_MIRROR",
@@ -3548,7 +3548,7 @@
       {
         "id": "BONE_TEA",
         "title": "Bone Tea",
-        "description": "Pay [red]50[/red] [gold]Gold[/gold]. [Bone Tea Description]"
+        "description": "Pay [red]50[/red] [gold]Gold[/gold]. [BoneTeaDescription]"
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3558,7 +3558,7 @@
       {
         "id": "EMBER_TEA",
         "title": "Ember Tea",
-        "description": "Pay [red]150[/red] [gold]Gold[/gold]. [Ember Tea Description]"
+        "description": "Pay [red]150[/red] [gold]Gold[/gold]. [EmberTeaDescription]"
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3568,7 +3568,7 @@
       {
         "id": "TEA_OF_DISCOURTESY",
         "title": "Tea of Discourtesy",
-        "description": "[Tea Of Discourtesy Description]"
+        "description": "[TeaOfDiscourtesyDescription]"
       }
     ],
     "pages": [
@@ -3583,7 +3583,7 @@
           {
             "id": "BONE_TEA",
             "title": "Bone Tea",
-            "description": "Pay [red]50[/red] [gold]Gold[/gold]. [Bone Tea Description]"
+            "description": "Pay [red]50[/red] [gold]Gold[/gold]. [BoneTeaDescription]"
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3593,7 +3593,7 @@
           {
             "id": "EMBER_TEA",
             "title": "Ember Tea",
-            "description": "Pay [red]150[/red] [gold]Gold[/gold]. [Ember Tea Description]"
+            "description": "Pay [red]150[/red] [gold]Gold[/gold]. [EmberTeaDescription]"
           },
           {
             "id": "EMBER_TEA_LOCKED",
@@ -3603,7 +3603,7 @@
           {
             "id": "TEA_OF_DISCOURTESY",
             "title": "Tea of Discourtesy",
-            "description": "[Tea Of Discourtesy Description]"
+            "description": "[TeaOfDiscourtesyDescription]"
           }
         ]
       },
@@ -4053,7 +4053,7 @@
           {
             "id": "CHOKING",
             "title": "Choking",
-            "description": "Whenever you play a card this turn, the enemy loses [blue][Choking Damage][/blue] HP."
+            "description": "Whenever you play a card this turn, the enemy loses [blue][ChokingDamage][/blue] HP."
           },
           {
             "id": "CURIOUS",
@@ -4068,7 +4068,7 @@
           {
             "id": "EXPERTISE",
             "title": "Expertise",
-            "description": "Gain [blue][Expertise Strength][/blue] [gold]Strength[/gold]. Gain [blue][Expertise Dexterity][/blue] [gold]Dexterity[/gold]."
+            "description": "Gain [blue][ExpertiseStrength][/blue] [gold]Strength[/gold]. Gain [blue][ExpertiseDexterity][/blue] [gold]Dexterity[/gold]."
           },
           {
             "id": "IMPROVEMENT",
@@ -4078,7 +4078,7 @@
           {
             "id": "SAPPING",
             "title": "Sapping",
-            "description": "Apply [blue][Sapping Weak][/blue] [gold]Weak[/gold]. Apply [blue][Sapping Vulnerable][/blue] [gold]Vulnerable[/gold]."
+            "description": "Apply [blue][SappingWeak][/blue] [gold]Weak[/gold]. Apply [blue][SappingVulnerable][/blue] [gold]Vulnerable[/gold]."
           },
           {
             "id": "VIOLENCE",
@@ -4159,7 +4159,7 @@
     "name": "The Trial",
     "type": "Event",
     "act": "Act 3 - Glory",
-    "description": "You join a line of people entering a massive building.\n\nAs you pass under a [gold]golden archway[/gold], horns blare, [jitter]confetti explodes[/jitter], and [sine]streamers glide[/sine] down from the ceiling!\n\n“Entrant [blue][Entrant Number][/blue], you are the [green]DECIDER[/green] for today's [gold]Trial[/gold].”",
+    "description": "You join a line of people entering a massive building.\n\nAs you pass under a [gold]golden archway[/gold], horns blare, [jitter]confetti explodes[/jitter], and [sine]streamers glide[/sine] down from the ceiling!\n\n“Entrant [blue][EntrantNumber][/blue], you are the [green]DECIDER[/green] for today's [gold]Trial[/gold].”",
     "options": [
       {
         "id": "ACCEPT",
@@ -4175,7 +4175,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "You join a line of people entering a massive building.\n\nAs you pass under a [gold]golden archway[/gold], horns blare, [jitter]confetti explodes[/jitter], and [sine]streamers glide[/sine] down from the ceiling!\n\n“Entrant [blue][Entrant Number][/blue], you are the [green]DECIDER[/green] for today's [gold]Trial[/gold].”",
+        "description": "You join a line of people entering a massive building.\n\nAs you pass under a [gold]golden archway[/gold], horns blare, [jitter]confetti explodes[/jitter], and [sine]streamers glide[/sine] down from the ceiling!\n\n“Entrant [blue][EntrantNumber][/blue], you are the [green]DECIDER[/green] for today's [gold]Trial[/gold].”",
         "options": [
           {
             "id": "ACCEPT",
