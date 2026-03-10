@@ -20,6 +20,12 @@ interface CategoryConfig {
 
 const CATEGORIES: CategoryConfig[] = [
   {
+    label: "Characters",
+    endpoint: "/api/characters",
+    linkFn: (item) => `/characters/${item.id}`,
+    subtitleFn: (item) => (item.color ? String(item.color) : ""),
+  },
+  {
     label: "Cards",
     endpoint: "/api/cards",
     linkFn: (item) => `/cards/${item.id}`,

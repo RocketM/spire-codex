@@ -34,6 +34,18 @@ export interface Card {
   beta_image_url: string | null;
 }
 
+export interface CharacterDialogueLine {
+  order: number;
+  speaker: string;
+  text: string;
+}
+
+export interface CharacterDialogue {
+  ancient: string;
+  ancient_name: string;
+  lines: CharacterDialogueLine[];
+}
+
 export interface Character {
   id: string;
   name: string;
@@ -47,6 +59,9 @@ export interface Character {
   unlocks_after: string | null;
   gender: string | null;
   color: string | null;
+  dialogue_color: string | null;
+  quotes: Record<string, string> | null;
+  dialogues: CharacterDialogue[] | null;
   image_url: string | null;
 }
 

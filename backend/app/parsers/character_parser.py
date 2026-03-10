@@ -24,7 +24,58 @@ def load_localization() -> dict:
     return {}
 
 
-def parse_character(filepath: Path, localization: dict) -> dict | None:
+def load_ancients_localization() -> dict:
+    loc_file = LOCALIZATION / "ancients.json"
+    if loc_file.exists():
+        with open(loc_file, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def parse_ancient_dialogues(ancients_loc: dict, char_id: str) -> list[dict]:
+    """Parse NPC dialogue trees for a specific character."""
+    dialogues = []
+    # Group by ancient -> conversation index
+    convos: dict[str, dict[str, list]] = {}
+    prefix_pattern = re.compile(
+        rf'^(\w+)\.talk\.{char_id}\.(\d+)-(\d+)(r?)\.(\w+)$'
+    )
+    for key, value in ancients_loc.items():
+        m = prefix_pattern.match(key)
+        if not m:
+            continue
+        ancient = m.group(1)
+        convo_idx = m.group(2)
+        line_idx = int(m.group(3))
+        is_random = bool(m.group(4))
+        speaker_type = m.group(5)  # "ancient", "char", "next"
+
+        if speaker_type == "next":
+            continue
+
+        convo_key = f"{ancient}.{convo_idx}"
+        if convo_key not in convos:
+            convos[convo_key] = {"ancient": ancient, "index": convo_idx, "random": is_random, "lines": []}
+        convos[convo_key]["lines"].append({
+            "order": line_idx,
+            "speaker": speaker_type,
+            "text": value,
+        })
+
+    for convo_key in sorted(convos.keys()):
+        convo = convos[convo_key]
+        convo["lines"].sort(key=lambda x: x["order"])
+        ancient_name = convo["ancient"].replace("_", " ").title()
+        dialogues.append({
+            "ancient": convo["ancient"],
+            "ancient_name": ancient_name,
+            "lines": convo["lines"],
+        })
+
+    return dialogues
+
+
+def parse_character(filepath: Path, localization: dict, ancients_loc: dict) -> dict | None:
     content = filepath.read_text(encoding="utf-8")
     class_name = filepath.stem
 
@@ -44,7 +95,6 @@ def parse_character(filepath: Path, localization: dict) -> dict | None:
     # Starting deck
     starting_deck = []
     for m in re.finditer(r'ModelDb\.Card<(\w+)>\(\)', content):
-        # Only cards in StartingDeck block
         starting_deck.append(m.group(1))
 
     # Starting relics
@@ -72,15 +122,38 @@ def parse_character(filepath: Path, localization: dict) -> dict | None:
     unlock_match = re.search(r'UnlocksAfterRunAs\s*=>\s*ModelDb\.Character<(\w+)>', content)
     unlocks_after = unlock_match.group(1) if unlock_match else None
 
+    # Dialogue color
+    dialogue_color_match = re.search(r'DialogueColor\s*=>\s*(?:StsColors\.)?(\w+)', content)
+    dialogue_color = dialogue_color_match.group(1) if dialogue_color_match else None
+
     # Localization
     title = localization.get(f"{char_id}.title", class_name)
     description = localization.get(f"{char_id}.description", "")
-    desc_clean = description
+
+    # Quotes / flavor text from localization
+    quotes = {}
+    quote_keys = [
+        ("event_death_prevention", "eventDeathPrevention"),
+        ("gold_monologue", "goldMonologue"),
+        ("aroma_principle", "aromaPrinciple"),
+        ("banter_alive", "banter.alive.endTurnPing"),
+        ("banter_dead", "banter.dead.endTurnPing"),
+        ("unlock_text", "unlockText"),
+        ("cards_modifier_title", "cardsModifierTitle"),
+        ("cards_modifier_description", "cardsModifierDescription"),
+    ]
+    for field_name, loc_key in quote_keys:
+        val = localization.get(f"{char_id}.{loc_key}")
+        if val:
+            quotes[field_name] = val
+
+    # Ancient NPC dialogues
+    dialogues = parse_ancient_dialogues(ancients_loc, char_id)
 
     return {
         "id": char_id,
         "name": title,
-        "description": desc_clean,
+        "description": description,
         "starting_hp": starting_hp,
         "starting_gold": starting_gold,
         "max_energy": max_energy,
@@ -90,15 +163,19 @@ def parse_character(filepath: Path, localization: dict) -> dict | None:
         "unlocks_after": unlocks_after,
         "gender": gender,
         "color": color,
+        "dialogue_color": dialogue_color,
+        "quotes": quotes if quotes else None,
+        "dialogues": dialogues if dialogues else None,
         "image_url": f"/static/images/characters/char_select_{char_id.lower()}.png",
     }
 
 
 def parse_all_characters() -> list[dict]:
     localization = load_localization()
+    ancients_loc = load_ancients_localization()
     characters = []
     for filepath in sorted(CHARS_DIR.glob("*.cs")):
-        char = parse_character(filepath, localization)
+        char = parse_character(filepath, localization, ancients_loc)
         if char:
             characters.append(char)
     return characters

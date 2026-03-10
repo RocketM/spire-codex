@@ -8,6 +8,7 @@ services:
       - ./data:/data:ro
     environment:
       - DATA_DIR=/data
+      - FEEDBACK_WEBHOOK_URL=${FEEDBACK_WEBHOOK_URL:-}
     networks:
       - nginx_web-network
 

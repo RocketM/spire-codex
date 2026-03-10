@@ -35,6 +35,18 @@ class Card(BaseModel):
     beta_image_url: str | None = None
 
 
+class CharacterDialogueLine(BaseModel):
+    order: int
+    speaker: str
+    text: str
+
+
+class CharacterDialogue(BaseModel):
+    ancient: str
+    ancient_name: str
+    lines: list[CharacterDialogueLine]
+
+
 class Character(BaseModel):
     id: str
     name: str
@@ -48,6 +60,9 @@ class Character(BaseModel):
     unlocks_after: str | None = None
     gender: str | None = None
     color: str | None = None
+    dialogue_color: str | None = None
+    quotes: dict[str, str] | None = None
+    dialogues: list[CharacterDialogue] | None = None
     image_url: str | None = None
 
 

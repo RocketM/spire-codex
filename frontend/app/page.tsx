@@ -167,7 +167,7 @@ export default function Home() {
           {CHARACTERS.map((char) => (
             <Link
               key={char.id}
-              href="/characters"
+              href={`/characters/${char.id.toUpperCase()}`}
               className="group relative overflow-hidden rounded-xl bg-[var(--bg-card)] border border-[var(--border-subtle)] hover:border-[var(--border-accent)] transition-all"
             >
               <div

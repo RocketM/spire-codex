@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import type { Character, Relic, Card } from "@/lib/api";
 import RichDescription from "../components/RichDescription";
 
@@ -64,9 +65,10 @@ export default function CharactersPage() {
         {characters.map((char) => {
           const style = colorStyles[char.color || ""] || "border-[var(--border-subtle)] from-gray-900/20";
           return (
-            <div
+            <Link
+              href={`/characters/${char.id}`}
               key={char.id}
-              className={`rounded-xl border-2 ${style} bg-gradient-to-br to-transparent bg-[var(--bg-card)] p-6 transition-all hover:shadow-lg hover:shadow-black/20`}
+              className={`rounded-xl border-2 ${style} bg-gradient-to-br to-transparent bg-[var(--bg-card)] p-6 transition-all hover:shadow-lg hover:shadow-black/20 cursor-pointer`}
             >
               <div className="flex items-center gap-3 mb-2">
                 <h2 className="text-2xl font-bold text-[var(--text-primary)]">
@@ -155,7 +157,7 @@ export default function CharactersPage() {
                   })}
                 </div>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>

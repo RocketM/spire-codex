@@ -10,6 +10,7 @@ services:
       - ./backend/static:/app/static:ro
     environment:
       - DATA_DIR=/data
+      - FEEDBACK_WEBHOOK_URL=${FEEDBACK_WEBHOOK_URL:-}
 
   frontend:
     build:

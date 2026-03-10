@@ -3,32 +3,27 @@
 import { useState } from "react";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
-const WEBHOOK_URL = "https://discord.com/api/webhooks/1480700714383577163/Ad_4vSxXvBxEYRayhzD0jklabKvSOoDIsoLiiEZeX4u7KdNeOyyyarX5gTpmlEaS92sz";
 
 function FeedbackModal({ onClose }: { onClose: () => void }) {
   const [type, setType] = useState("Bug");
+  const [contact, setContact] = useState("");
   const [contents, setContents] = useState("");
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState("");
 
   async function handleSubmit() {
-    if (!contents.trim()) return;
+    if (!contents.trim() || !contact.trim()) return;
     setSending(true);
     setError("");
     try {
-      const res = await fetch(WEBHOOK_URL, {
+      const res = await fetch(`${API_BASE}/api/feedback`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          content: `<@99656376954916864>`,
-          embeds: [{
-            title: `${type} Report`,
-            description: contents.trim(),
-            color: type === "Bug" ? 0xff4444 : 0x44aaff,
-            footer: { text: "Spire Codex Feedback" },
-            timestamp: new Date().toISOString(),
-          }],
+          type,
+          contact: contact.trim(),
+          contents: contents.trim(),
         }),
       });
       if (!res.ok) throw new Error("Failed to send");
@@ -64,7 +59,16 @@ function FeedbackModal({ onClose }: { onClose: () => void }) {
               <option value="Feature Request">Feature Request</option>
             </select>
 
-            <label className="block text-sm text-[var(--text-secondary)] mb-1">Contents</label>
+            <label className="block text-sm text-[var(--text-secondary)] mb-1">Discord Username or Email <span className="text-red-400">*</span></label>
+            <input
+              type="text"
+              value={contact}
+              onChange={(e) => setContact(e.target.value)}
+              placeholder="username#1234 or email@example.com"
+              className="w-full mb-4 px-3 py-2 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] text-sm focus:outline-none focus:border-[var(--accent-gold)]"
+            />
+
+            <label className="block text-sm text-[var(--text-secondary)] mb-1">Contents <span className="text-red-400">*</span></label>
             <textarea
               value={contents}
               onChange={(e) => setContents(e.target.value)}
@@ -84,7 +88,7 @@ function FeedbackModal({ onClose }: { onClose: () => void }) {
               </button>
               <button
                 onClick={handleSubmit}
-                disabled={sending || !contents.trim()}
+                disabled={sending || !contents.trim() || !contact.trim()}
                 className="px-4 py-2 rounded-lg text-sm font-medium bg-[var(--accent-gold)] text-[var(--bg-primary)] hover:opacity-90 transition-opacity disabled:opacity-50"
               >
                 {sending ? "Sending..." : "Submit"}
