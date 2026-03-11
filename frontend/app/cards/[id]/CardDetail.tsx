@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import type { Card } from "@/lib/api";
 import RichDescription from "@/app/components/RichDescription";
+import type { RelatedCard } from "@/app/components/RichDescription";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -107,6 +108,7 @@ export default function CardDetail() {
   const id = params.id as string;
 
   const [card, setCard] = useState<Card | null>(null);
+  const [spawnedCards, setSpawnedCards] = useState<Card[]>([]);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
   const [upgraded, setUpgraded] = useState(false);
@@ -125,7 +127,20 @@ export default function CardDetail() {
         return r.json();
       })
       .then((data) => {
-        if (data) setCard(data);
+        if (data) {
+          setCard(data);
+          if (data.spawns_cards && data.spawns_cards.length > 0) {
+            Promise.all(
+              data.spawns_cards.map((sid: string) =>
+                fetch(`${API}/api/cards/${sid}`)
+                  .then((r) => (r.ok ? r.json() : null))
+                  .catch(() => null)
+              )
+            ).then((results) =>
+              setSpawnedCards(results.filter(Boolean))
+            );
+          }
+        }
       })
       .catch(() => setNotFound(true))
       .finally(() => setLoading(false));
@@ -294,7 +309,18 @@ export default function CardDetail() {
 
           {/* Description */}
           <div className="text-sm text-[var(--text-secondary)] leading-relaxed mb-5">
-            <RichDescription text={descText} energyIcon={energyIcon} />
+            <RichDescription
+              text={descText}
+              energyIcon={energyIcon}
+              relatedCards={spawnedCards.map((sc): RelatedCard => ({
+                id: sc.id,
+                name: sc.name,
+                image_url: sc.image_url,
+                type: sc.type,
+                rarity: sc.rarity,
+                cost: sc.cost,
+              }))}
+            />
           </div>
 
           {/* Powers Applied */}

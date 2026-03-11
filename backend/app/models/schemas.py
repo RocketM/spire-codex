@@ -29,6 +29,7 @@ class Card(BaseModel):
     hp_loss: int | None = None
     keywords: list[str] | None = None
     tags: list[str] | None = None
+    spawns_cards: list[str] | None = None
     vars: dict[str, int] | None = None
     upgrade: dict[str, str | int | None] | None = None
     image_url: str | None = None

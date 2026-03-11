@@ -19,7 +19,8 @@ def get_powers(
     if stack_type:
         powers = [p for p in powers if p.get("stack_type", "").lower() == stack_type.lower()]
     if search:
-        powers = [p for p in powers if search.lower() in p["name"].lower()]
+        q = search.lower()
+        powers = [p for p in powers if q in p["name"].lower() or q in p.get("description", "").lower()]
     return powers
 
 

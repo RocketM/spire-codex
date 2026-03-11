@@ -1,8 +1,18 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
+import Link from "next/link";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+
+export interface RelatedCard {
+  id: string;
+  name: string;
+  image_url: string | null;
+  type: string;
+  rarity: string;
+  cost: number;
+}
 
 const COLOR_CLASSES: Record<string, string> = {
   gold: "text-[var(--accent-gold)]",
@@ -139,7 +149,8 @@ let keyCounter = 0;
 
 function renderNode(
   node: StyledNode,
-  energyIcon: string
+  energyIcon: string,
+  relatedCards?: RelatedCard[]
 ): React.ReactNode {
   const key = keyCounter++;
 
@@ -184,11 +195,29 @@ function renderNode(
   }
 
   if (node.text !== undefined) {
+    if (relatedCards?.length) {
+      const segments = splitWithCardRefs(node.text, relatedCards);
+      if (segments.some((s) => s.card)) {
+        return (
+          <React.Fragment key={key}>
+            {segments.map((seg, i) =>
+              seg.card ? (
+                <CardHoverTip key={i} card={seg.card}>
+                  {seg.text}
+                </CardHoverTip>
+              ) : (
+                <React.Fragment key={i}>{seg.text}</React.Fragment>
+              )
+            )}
+          </React.Fragment>
+        );
+      }
+    }
     return node.text;
   }
 
   const children = (node.children ?? []).map((child) =>
-    renderNode(child, energyIcon)
+    renderNode(child, energyIcon, relatedCards)
   );
 
   if (node.classes.length === 0) {
@@ -253,16 +282,105 @@ function cleanTemplateVars(text: string): string {
   return text;
 }
 
+function CardHoverTip({ card, children }: { card: RelatedCard; children: React.ReactNode }) {
+  const [show, setShow] = useState(false);
+
+  return (
+    <span
+      className="relative inline"
+      onMouseEnter={() => setShow(true)}
+      onMouseLeave={() => setShow(false)}
+    >
+      <Link
+        href={`/cards/${card.id.toLowerCase()}`}
+        className="underline decoration-dotted underline-offset-2 decoration-[var(--text-muted)] hover:decoration-[var(--accent-gold)] transition-colors"
+      >
+        {children}
+      </Link>
+      {show && (
+        <span className="absolute z-50 bottom-full left-1/2 -translate-x-1/2 mb-2 pointer-events-none">
+          <span className="block w-48 bg-[var(--bg-card)] border border-[var(--border-subtle)] rounded-lg shadow-xl shadow-black/60 overflow-hidden">
+            {card.image_url && (
+              <span className="block bg-black/40">
+                <img
+                  src={`${API_BASE}${card.image_url}`}
+                  alt={card.name}
+                  className="w-full h-24 object-contain"
+                  crossOrigin="anonymous"
+                />
+              </span>
+            )}
+            <span className="block px-2.5 py-2">
+              <span className="block text-xs font-semibold text-[var(--text-primary)]">
+                {card.name}
+              </span>
+              <span className="block text-[10px] text-[var(--text-muted)] mt-0.5">
+                {card.type} · {card.rarity} · Cost {card.cost}
+              </span>
+            </span>
+          </span>
+        </span>
+      )}
+    </span>
+  );
+}
+
+/** Split a text string around related card name matches, returning segments. */
+function splitWithCardRefs(
+  text: string,
+  cards: RelatedCard[]
+): { text: string; card?: RelatedCard }[] {
+  if (!cards.length) return [{ text }];
+
+  // Build patterns sorted by name length desc (longer names match first)
+  const sorted = [...cards].sort((a, b) => b.name.length - a.name.length);
+  const patterns = sorted.flatMap((c) => {
+    // Match exact name and common plural forms
+    const escaped = c.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return [{ re: new RegExp(`(${escaped}(?:s|es)?)`, "gi"), card: c }];
+  });
+
+  let segments: { text: string; card?: RelatedCard }[] = [{ text }];
+
+  for (const { re, card } of patterns) {
+    const next: { text: string; card?: RelatedCard }[] = [];
+    for (const seg of segments) {
+      if (seg.card) {
+        next.push(seg);
+        continue;
+      }
+      let last = 0;
+      let m: RegExpExecArray | null;
+      re.lastIndex = 0;
+      while ((m = re.exec(seg.text)) !== null) {
+        if (m.index > last) {
+          next.push({ text: seg.text.slice(last, m.index) });
+        }
+        next.push({ text: m[1], card });
+        last = m.index + m[0].length;
+      }
+      if (last < seg.text.length) {
+        next.push({ text: seg.text.slice(last) });
+      }
+    }
+    segments = next;
+  }
+
+  return segments;
+}
+
 export default function RichDescription({
   text,
   energyIcon = "colorless",
+  relatedCards,
 }: {
   text: string;
   energyIcon?: string;
+  relatedCards?: RelatedCard[];
 }) {
   keyCounter = 0;
   const cleaned = cleanTemplateVars(text);
   const tokens = tokenize(cleaned);
   const tree = buildTree(tokens);
-  return <>{renderNode(tree, energyIcon)}</>;
+  return <>{renderNode(tree, energyIcon, relatedCards)}</>;
 }

@@ -192,6 +192,27 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict) -> d
         if re.search(rf'CardTag\.{tag}', content):
             tags.append(tag)
 
+    # Related/spawned cards — detect via multiple patterns
+    related = set()
+    all_card_files = {f.stem for f in CARDS_DIR.glob("*.cs")}
+    # HoverTipFactory.FromCard<X> — the game's own "related card" system
+    for m in re.finditer(r'HoverTipFactory\.FromCard(?:WithCardHoverTips)?<(\w+)>', content):
+        related.add(m.group(1))
+    # CreateCard<X> — direct card creation
+    for m in re.finditer(r'CreateCard<(\w+)>', content):
+        related.add(m.group(1))
+    # CardClass.Create( — static factory, only if it's a known card
+    for m in re.finditer(r'(\w+)\.Create\(', content):
+        if m.group(1) in all_card_files:
+            related.add(m.group(1))
+    # .OfType<X>() — type-based card references, only if it's a known card
+    for m in re.finditer(r'\.OfType<(\w+)>\(\)', content):
+        if m.group(1) in all_card_files:
+            related.add(m.group(1))
+    # Remove self-references
+    related.discard(class_name)
+    spawns_cards = sorted(class_name_to_id(s) for s in related) if related else None
+
     # X-cost detection
     is_x_cost = bool(re.search(r'HasEnergyCostX\s*=>\s*true', content) or re.search(r'CostsX', content))
     is_x_star_cost = bool(re.search(r'HasStarCostX\s*=>\s*true', content))
@@ -237,6 +258,7 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict) -> d
         "hp_loss": hp_loss,
         "keywords": keywords if keywords else None,
         "tags": tags if tags else None,
+        "spawns_cards": spawns_cards,
         "vars": all_vars if all_vars else None,
         "upgrade": {},
         "image_url": f"/static/images/cards/{card_id.lower()}.png" if (STATIC_IMAGES / f"{card_id.lower()}.png").exists() else None,

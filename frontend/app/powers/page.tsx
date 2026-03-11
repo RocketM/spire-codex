@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import type { Power } from "@/lib/api";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
@@ -80,8 +81,9 @@ export default function PowersPage() {
               typeColors[power.type] ||
               "border-[var(--border-subtle)] text-gray-400";
             return (
-              <div
+              <Link
                 key={power.id}
+                href={`/powers/${power.id.toLowerCase()}`}
                 className={`bg-[var(--bg-card)] rounded-lg border ${style.split(" ")[0]} p-4 hover:bg-[var(--bg-card-hover)] transition-all`}
               >
                 <div className="flex items-start justify-between mb-2">
@@ -114,7 +116,7 @@ export default function PowersPage() {
                     <RichDescription text={power.description} />
                   </p>
                 )}
-              </div>
+              </Link>
             );
           })}
         </div>

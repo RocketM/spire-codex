@@ -28,6 +28,7 @@ export interface Card {
   hp_loss: number | null;
   keywords: string[] | null;
   tags: string[] | null;
+  spawns_cards: string[] | null;
   vars: Record<string, number> | null;
   upgrade: Record<string, string | number | null> | null;
   image_url: string | null;

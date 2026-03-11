@@ -58,7 +58,7 @@ const CATEGORIES: CategoryConfig[] = [
   {
     label: "Powers",
     endpoint: "/api/powers",
-    linkFn: () => `/powers`,
+    linkFn: (item) => `/powers/${item.id.toLowerCase()}`,
     subtitleFn: (item) => {
       const parts: string[] = [];
       if (item.type) parts.push(String(item.type));

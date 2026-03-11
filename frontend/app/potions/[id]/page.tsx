@@ -5,7 +5,11 @@ const API_INTERNAL = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API
 const API_PUBLIC = process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXT_PUBLIC_API_URL || "";
 
 function stripTags(text: string): string {
-  return text.replace(/\[\/?\w+(?:[=:][^\]]+)?\]/g, "").trim();
+  return text
+    .replace(/\[\/?\w+(?:[=:][^\]]+)?\]/g, "")
+    .replace(/\{[^}]+\}/g, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
 }
 
 type Props = { params: Promise<{ id: string }> };

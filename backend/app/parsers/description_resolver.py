@@ -73,6 +73,8 @@ def resolve_description(raw: str, vars_dict: dict[str, int | str], is_upgraded: 
             val = _lookup(var_name, vars_dict, 2)
             result = singular if val == 1 else plural_form
             result = result.replace("{}", str(val))
+            # Handle {:diff()} and {:formatter} self-references (current context var)
+            result = re.sub(r'\{:\w+\(\)\}', str(val), result)
             text = text[:start] + result + text[i:]
         return text
     text = resolve_all_plurals(text)

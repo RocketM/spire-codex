@@ -32,6 +32,7 @@
       "Sly"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "ThornsPower": 4,
       "Thorns": 4,
@@ -66,6 +67,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Accelerant": 1
     },
@@ -102,6 +104,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SHIV"
+    ],
     "vars": {
       "AccuracyPower": 4,
       "Accuracy": 4
@@ -134,6 +139,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 3
     },
@@ -167,6 +173,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 18
     },
@@ -200,6 +207,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 1,
       "Cards": 2
@@ -237,6 +245,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "AfterimagePower": 1,
       "Afterimage": 1
@@ -271,6 +280,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Summon": 6
     },
@@ -302,6 +312,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "add_innate": true
@@ -333,6 +344,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 0
@@ -362,6 +374,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 2,
       "StarCost": 2
@@ -394,6 +407,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10
     },
@@ -425,6 +439,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 6
     },
@@ -458,6 +473,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "add_retain": true
@@ -492,6 +508,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "DexterityPower": 3,
       "Dexterity": 3
@@ -527,6 +544,7 @@
       "Innate"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 1
@@ -564,6 +582,7 @@
       "Ethereal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "IntangiblePower": 1,
       "Intangible": 1
@@ -596,6 +615,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 5
     },
@@ -630,6 +650,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "ArsenalPower": 1,
       "Arsenal": 1
@@ -666,6 +687,7 @@
       "Eternal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/ascenders_bane.png",
@@ -695,6 +717,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 6,
       "ExtraDamage": 3,
@@ -737,6 +760,7 @@
       "Innate"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10,
       "VulnerablePower": 1,
@@ -771,6 +795,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 14,
       "StarCost": 3
@@ -803,6 +828,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 1
     },
@@ -834,6 +860,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 5,
       "Cards": 2
@@ -869,6 +896,7 @@
       "Innate"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 11
     },
@@ -903,6 +931,7 @@
       "Eternal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "HpLoss": 13
     },
@@ -932,6 +961,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 7
     },
@@ -963,6 +993,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 33,
       "Energy": 2
@@ -995,6 +1026,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 5,
       "CalculationBase": 0,
@@ -1028,6 +1060,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 2
@@ -1062,6 +1095,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 8,
       "VulnerablePower": 2,
@@ -1096,6 +1130,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 3
     },
@@ -1127,6 +1162,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "add_innate": true
@@ -1161,6 +1197,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 3,
       "VulnerablePower": 1,
@@ -1195,6 +1232,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 3
     },
@@ -1226,6 +1264,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 5,
       "CalculationBase": 5,
@@ -1261,6 +1300,7 @@
     "hp_loss": 6,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "HpLoss": 6
     },
@@ -1290,6 +1330,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "MINION_DIVE_BOMB"
+    ],
     "vars": {
       "Damage": 4
     },
@@ -1321,6 +1364,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 3
     },
@@ -1361,6 +1405,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "FocusPower": 4,
       "Focus": 4,
@@ -1397,6 +1442,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 1,
       "Energy": 1,
@@ -1436,6 +1482,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "BlackHolePower": 3,
       "BlackHole": 3
@@ -1470,6 +1517,9 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": [
+      "SHIV"
+    ],
     "vars": {
       "Cards": 3
     },
@@ -1506,6 +1556,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthPower": 2,
       "Strength": 2
@@ -1540,6 +1591,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 8
     },
@@ -1571,6 +1623,7 @@
     "hp_loss": 2,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "HpLoss": 2,
       "Block": 16
@@ -1603,6 +1656,7 @@
     "hp_loss": 3,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "HpLoss": 3,
       "Energy": 2
@@ -1635,6 +1689,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 32
     },
@@ -1666,6 +1721,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Blur": 1,
       "Block": 5
@@ -1698,6 +1754,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 0,
       "ExtraDamage": 1,
@@ -1731,6 +1788,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Summon": 5
     },
@@ -1762,6 +1820,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 3
     },
@@ -1795,6 +1854,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 18
     },
@@ -1828,6 +1888,7 @@
     "tags": [
       "OstyAttack"
     ],
+    "spawns_cards": null,
     "vars": {
       "OstyDamage": 9,
       "Block": 9,
@@ -1863,6 +1924,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "DAZED"
+    ],
     "vars": {
       "Block": 6
     },
@@ -1897,6 +1961,7 @@
       "Innate"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 10
     },
@@ -1933,6 +1998,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 1,
       "DoomPower": 3,
@@ -1971,6 +2037,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Repeat": 3,
       "PoisonPower": 3,
@@ -2009,6 +2076,7 @@
     "hp_loss": 1,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "HpLoss": 1,
       "StrengthPower": 1,
@@ -2047,6 +2115,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 20,
       "VulnerablePower": 5,
@@ -2081,6 +2150,7 @@
     "hp_loss": 1,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 9,
       "HpLoss": 1
@@ -2113,6 +2183,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "MaxHp": 1,
       "Energy": 2,
@@ -2152,6 +2223,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "PoisonPower": 9,
       "Poison": 9
@@ -2189,6 +2261,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "BufferPower": 1,
       "Buffer": 1
@@ -2230,6 +2303,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "OrbSlots": 1,
       "StrengthPower": 2,
@@ -2266,6 +2340,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 2
@@ -2295,6 +2370,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 4,
       "ExtraDamage": 2,
@@ -2329,6 +2405,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 13,
       "Forge": 10
@@ -2364,6 +2441,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 3
     },
@@ -2397,6 +2475,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 2
     },
@@ -2426,6 +2505,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 2
     },
@@ -2457,6 +2537,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Skills": 1
     },
@@ -2488,6 +2569,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 52
     },
@@ -2519,6 +2601,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 14
     },
@@ -2552,6 +2635,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/byrdonis_egg.png",
@@ -2579,6 +2663,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 2
@@ -2613,6 +2698,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalcifyPower": 4,
       "Calcify": 4
@@ -2647,6 +2733,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "add_retain": true
@@ -2676,6 +2763,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 1
     },
@@ -2712,6 +2800,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "ThornsPower": 3,
       "Thorns": 3
@@ -2744,6 +2833,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Repeat": 2
     },
@@ -2775,6 +2865,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SOUL"
+    ],
     "vars": {
       "Damage": 3,
       "Cards": 3
@@ -2808,6 +2901,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/cascade.png",
@@ -2835,6 +2929,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 2
     },
@@ -2866,6 +2961,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 6,
       "Repeat": 3
@@ -2898,6 +2994,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Repeat": 1
     },
@@ -2929,6 +3026,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "MINION_STRIKE"
+    ],
     "vars": {
       "Cards": 2
     },
@@ -2958,6 +3058,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 7,
       "Energy": 1
@@ -2990,6 +3091,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "BlockForStars": 2
     },
@@ -3023,6 +3125,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "remove_exhaust": true
@@ -3052,6 +3155,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CardsToExhaust": 1,
       "Damage": 17
@@ -3084,6 +3188,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 14
     },
@@ -3115,6 +3220,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Increase": 2,
       "Damage": 3
@@ -3148,6 +3254,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Summon": 3
     },
@@ -3179,6 +3286,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SHIV"
+    ],
     "vars": {
       "Block": 6,
       "Cards": 1
@@ -3211,6 +3321,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 7,
       "StarCost": 1
@@ -3246,6 +3357,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/clumsy.png",
@@ -3273,6 +3385,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 6
     },
@@ -3304,6 +3417,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "DEBRIS"
+    ],
     "vars": {
       "Damage": 9
     },
@@ -3335,6 +3451,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Colossus": 1,
       "Block": 5
@@ -3376,6 +3493,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 33,
       "VulnerablePower": 3,
@@ -3412,6 +3530,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "FUEL"
+    ],
     "vars": {
       "Block": 6
     },
@@ -3443,6 +3564,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 7,
       "CalculationBase": 0,
@@ -3476,6 +3598,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 8,
       "ExtraDamage": 2,
@@ -3511,6 +3634,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Forge": 3
     },
@@ -3547,6 +3671,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Repeat": 2,
       "ConsumingShadowPower": 1,
@@ -3580,6 +3705,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 1,
       "Stars": 1
@@ -3617,6 +3743,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CoolantPower": 2,
       "Coolant": 2
@@ -3649,6 +3776,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 1
     },
@@ -3685,6 +3813,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthPower": 5,
       "Strength": 5
@@ -3717,6 +3846,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CorrosiveWave": 3
     },
@@ -3748,6 +3878,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Power": 1
     },
@@ -3779,6 +3910,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 6
     },
@@ -3815,6 +3947,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CountdownPower": 6,
       "Countdown": 6
@@ -3847,6 +3980,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "DEBRIS"
+    ],
     "vars": {
       "Damage": 21
     },
@@ -3878,6 +4014,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CreativeAi": 1
     },
@@ -3909,6 +4046,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 6,
       "ExtraDamage": 2,
@@ -3949,6 +4087,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CrimsonMantlePower": 8,
       "CrimsonMantle": 8
@@ -3986,6 +4125,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CrueltyPower": 25,
       "Cruelty": 25
@@ -4018,6 +4158,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthLoss": 1,
       "Damage": 7
@@ -4054,6 +4195,7 @@
       "Eternal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/curse_of_the_bell.png",
@@ -4081,6 +4223,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 4
     },
@@ -4112,6 +4255,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 9
     },
@@ -4148,6 +4292,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 2,
       "DanseMacabrePower": 3,
@@ -4181,6 +4326,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 1
@@ -4212,6 +4358,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthLoss": 9
     },
@@ -4243,6 +4390,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/darkness.png",
@@ -4270,6 +4418,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10,
       "Block": 10
@@ -4306,6 +4455,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/dazed.png",
@@ -4338,6 +4488,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "PoisonPower": 5,
       "Poison": 5
@@ -4370,6 +4521,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 8,
       "ExtraDamage": 3,
@@ -4414,6 +4566,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "DoomPower": 21,
       "Doom": 21,
@@ -4448,6 +4601,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 6,
       "Repeat": 2
@@ -4485,6 +4639,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 7,
       "DebilitatePower": 3,
@@ -4521,6 +4676,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/debris.png",
@@ -4550,6 +4706,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Gold": 10
     },
@@ -4581,6 +4738,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 2
     },
@@ -4612,6 +4770,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 3,
       "Repeat": 3,
@@ -4647,6 +4806,7 @@
     "tags": [
       "Defend"
     ],
+    "spawns_cards": null,
     "vars": {
       "Block": 5
     },
@@ -4680,6 +4840,7 @@
     "tags": [
       "Defend"
     ],
+    "spawns_cards": null,
     "vars": {
       "Block": 5
     },
@@ -4713,6 +4874,7 @@
     "tags": [
       "Defend"
     ],
+    "spawns_cards": null,
     "vars": {
       "Block": 5
     },
@@ -4746,6 +4908,7 @@
     "tags": [
       "Defend"
     ],
+    "spawns_cards": null,
     "vars": {
       "Block": 5
     },
@@ -4779,6 +4942,7 @@
     "tags": [
       "Defend"
     ],
+    "spawns_cards": null,
     "vars": {
       "Block": 5
     },
@@ -4812,6 +4976,7 @@
       "Ethereal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 13
     },
@@ -4843,6 +5008,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 4
     },
@@ -4879,6 +5045,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "FocusPower": 1,
       "Focus": 1
@@ -4918,6 +5085,7 @@
       "Ethereal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 6,
       "WeakPower": 1,
@@ -4952,6 +5120,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 11,
       "Energy": 1
@@ -4987,6 +5156,7 @@
       "Ethereal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 1,
       "Cards": 1
@@ -5024,6 +5194,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthPower": 2,
       "Strength": 2
@@ -5058,6 +5229,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 0,
       "HpLoss": 1,
@@ -5091,6 +5263,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 30,
       "StarCost": 4
@@ -5128,6 +5301,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SOUL"
+    ],
     "vars": {
       "DevourLifePower": 1,
       "DevourLife": 1
@@ -5160,6 +5336,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SOUL"
+    ],
     "vars": {
       "Summon": 3
     },
@@ -5193,6 +5372,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "remove_exhaust": true
@@ -5227,6 +5407,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "DisintegrationPower": 6,
       "Disintegration": 6
@@ -5257,6 +5438,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 8
     },
@@ -5290,6 +5472,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 0
@@ -5319,6 +5502,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 4
     },
@@ -5352,6 +5536,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthPerVulnerable": 1
     },
@@ -5385,6 +5570,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 0
@@ -5421,6 +5607,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "WeakPower": 1,
       "Weak": 1
@@ -5451,6 +5638,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10,
       "Cards": 2
@@ -5487,6 +5675,7 @@
       "Innate"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 11
     },
@@ -5520,6 +5709,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 3
     },
@@ -5556,6 +5746,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 2,
       "DrumOfBattlePower": 1,
@@ -5589,6 +5780,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 1
     },
@@ -5620,6 +5812,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 0
@@ -5651,6 +5844,7 @@
       "Ethereal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthLoss": 9,
       "Damage": 9,
@@ -5687,6 +5881,7 @@
       "Ethereal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "EchoForm": 1
     },
@@ -5718,6 +5913,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10
     },
@@ -5749,6 +5945,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "intangibleThreshold": 9
     },
@@ -5785,6 +5982,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "DoomPower": 29,
       "Doom": 29
@@ -5819,6 +6017,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 2
     },
@@ -5852,6 +6051,7 @@
       "Ethereal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthLoss": 8
     },
@@ -5885,6 +6085,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/enlightenment.png",
@@ -5914,6 +6115,7 @@
       "Eternal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/enthralled.png",
@@ -5941,6 +6143,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 1
@@ -5970,6 +6173,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 1
     },
@@ -6006,6 +6210,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "EnvenomPower": 1,
       "Envenom": 1
@@ -6038,6 +6243,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Equilibrium": 1,
       "Block": 13
@@ -6072,6 +6278,7 @@
       "Retain"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 11
     },
@@ -6103,6 +6310,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 3
     },
@@ -6139,6 +6347,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "PlatingPower": 7,
       "Plating": 7
@@ -6171,6 +6380,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 8
     },
@@ -6202,6 +6412,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 0,
       "CalculationBase": 0,
@@ -6235,6 +6446,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 6
     },
@@ -6268,6 +6480,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Power": 2
     },
@@ -6299,6 +6512,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 3,
       "Repeat": 4
@@ -6340,6 +6554,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 7,
       "VulnerablePower": 1,
@@ -6376,6 +6591,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SHIV"
+    ],
     "vars": {
       "Shivs": 4
     },
@@ -6409,6 +6627,7 @@
     "tags": [
       "Defend"
     ],
+    "spawns_cards": null,
     "vars": {
       "ExtraBlock": 5
     },
@@ -6447,6 +6666,7 @@
       "Ethereal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 7,
       "VulnerablePower": 1,
@@ -6483,6 +6703,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10,
       "MaxHp": 3
@@ -6521,6 +6742,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthPower": 5,
       "Strength": 5
@@ -6553,6 +6775,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Power": 3
     },
@@ -6589,6 +6812,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "FeralPower": 1,
       "Feral": 1
@@ -6623,6 +6847,7 @@
     "tags": [
       "OstyAttack"
     ],
+    "spawns_cards": null,
     "vars": {
       "OstyDamage": 3,
       "Cards": 1,
@@ -6659,6 +6884,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 7
     },
@@ -6695,6 +6921,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "EnemyStrength": 1,
       "Damage": 5,
@@ -6731,6 +6958,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "WOUND"
+    ],
     "vars": {
       "Block": 13
     },
@@ -6762,6 +6992,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 4,
       "Cards": 1
@@ -6794,6 +7025,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 6,
       "CalculationBase": 0,
@@ -6827,6 +7059,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 7
     },
@@ -6858,6 +7091,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 8,
       "CalculationBase": 0,
@@ -6891,6 +7125,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "DamageBack": 4,
       "Block": 12
@@ -6924,6 +7159,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 1
@@ -6953,6 +7189,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 5,
       "Cards": 1
@@ -6987,6 +7224,7 @@
     "tags": [
       "OstyAttack"
     ],
+    "spawns_cards": null,
     "vars": {
       "OstyDamage": 12,
       "Damage": 12
@@ -7020,6 +7258,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 5,
       "CalculationBase": 0,
@@ -7055,6 +7294,7 @@
       "Sly"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 7
     },
@@ -7093,6 +7333,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 9,
       "FocusPower": 1,
@@ -7132,6 +7373,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 6,
       "WeakPower": 1,
@@ -7170,6 +7412,7 @@
       "Eternal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/folly.png",
@@ -7202,6 +7445,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "DexterityPower": 2,
       "Dexterity": 2
@@ -7236,6 +7480,7 @@
       "Eternal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 1
@@ -7265,6 +7510,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 2
     },
@@ -7296,6 +7542,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 3
     },
@@ -7327,6 +7574,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/frantic_escape.png",
@@ -7359,6 +7607,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 1,
       "StrengthPower": 2,
@@ -7392,6 +7641,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "PlayMax": 3,
       "Damage": 5,
@@ -7428,6 +7678,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 1,
       "Cards": 1
@@ -7460,6 +7711,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Forge": 4
     },
@@ -7491,6 +7743,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 1
@@ -7529,6 +7782,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 13,
       "VulnerablePower": 2,
@@ -7565,6 +7819,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 5,
       "ExtraDamage": 5,
@@ -7599,6 +7854,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 7,
       "Stars": 1
@@ -7631,6 +7887,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StarsPerTurn": 2
     },
@@ -7664,6 +7921,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Increase": 3,
       "Block": 1
@@ -7696,6 +7954,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 16
     },
@@ -7727,6 +7986,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 6
     },
@@ -7758,6 +8018,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 5
     },
@@ -7789,6 +8050,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "PutBack": 1,
       "Cards": 3
@@ -7823,6 +8085,9 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": [
+      "SOUL"
+    ],
     "vars": {
       "Cards": 3
     },
@@ -7854,6 +8119,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "BlockNextTurn": 4,
       "Block": 11
@@ -7887,6 +8153,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Stars": 1,
       "Cards": 2
@@ -7924,6 +8191,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 3,
       "WeakPower": 1,
@@ -7958,6 +8226,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 0,
       "ExtraDamage": 1,
@@ -7991,6 +8260,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 50
     },
@@ -8027,6 +8297,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 7,
       "GrapplePower": 5,
@@ -8061,6 +8332,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SOUL"
+    ],
     "vars": {
       "Block": 8,
       "Cards": 1
@@ -8095,6 +8369,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 4
     },
@@ -8130,6 +8405,7 @@
       "Eternal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/greed.png",
@@ -8159,6 +8435,9 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": [
+      "MINION_SACRIFICE"
+    ],
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/guards.png",
@@ -8186,6 +8465,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 12,
       "Cards": 2,
@@ -8222,6 +8502,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Combats": 5
     },
@@ -8251,6 +8532,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SLIMED"
+    ],
     "vars": {
       "Damage": 4,
       "Repeat": 3
@@ -8288,6 +8572,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "HailstormPower": 6,
       "Hailstorm": 6
@@ -8320,6 +8605,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 1
@@ -8349,6 +8635,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Gold": 20,
       "Damage": 20
@@ -8382,6 +8669,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 7
     },
@@ -8413,6 +8701,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10
     },
@@ -8444,6 +8733,9 @@
     "hp_loss": 6,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SOUL"
+    ],
     "vars": {
       "HpLoss": 6
     },
@@ -8475,6 +8767,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 0
@@ -8511,6 +8804,7 @@
       "Sly"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "PoisonPower": 4,
       "Poison": 4
@@ -8543,6 +8837,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 9
     },
@@ -8574,6 +8869,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 8,
       "Energy": 4
@@ -8606,6 +8902,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 15,
       "Energy": 2
@@ -8639,6 +8936,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 17,
       "Repeat": 1
@@ -8671,6 +8969,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 3,
       "CalculationBase": 0,
@@ -8704,6 +9003,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "add_innate": true
@@ -8733,6 +9033,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 1
@@ -8762,6 +9063,7 @@
     "hp_loss": 2,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "HpLoss": 2,
       "Damage": 14
@@ -8799,6 +9101,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Stars": 1,
       "StarNextTurnPower": 3,
@@ -8832,6 +9135,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SHIV"
+    ],
     "vars": {
       "Shivs": 2,
       "Cards": 2
@@ -8862,6 +9168,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Replay": 2
     },
@@ -8900,6 +9207,7 @@
     "tags": [
       "OstyAttack"
     ],
+    "spawns_cards": null,
     "vars": {
       "OstyDamage": 11,
       "VulnerablePower": 2,
@@ -8938,6 +9246,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 3
     },
@@ -8975,6 +9284,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "FocusPower": 2,
       "Focus": 2
@@ -9007,6 +9317,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 16
     },
@@ -9038,6 +9349,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 2
     },
@@ -9074,6 +9386,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 26,
       "FocusPower": 3,
@@ -9107,6 +9420,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 9
     },
@@ -9138,6 +9452,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 19,
       "Repeat": 3
@@ -9172,6 +9487,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "remove_exhaust": true
@@ -9201,6 +9517,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 2
     },
@@ -9234,6 +9551,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 30
     },
@@ -9267,6 +9585,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 3
     },
@@ -9298,6 +9617,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 0
@@ -9332,6 +9652,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "InfernoPower": 6,
       "Inferno": 6
@@ -9364,6 +9685,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SHIV"
+    ],
     "vars": null,
     "upgrade": {
       "add_innate": true
@@ -9398,6 +9722,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthPower": 2,
       "Strength": 2
@@ -9432,6 +9757,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/injury.png",
@@ -9459,6 +9785,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 9
     },
@@ -9490,6 +9817,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Summon": 2,
       "Energy": 2
@@ -9523,6 +9851,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 5,
       "Block": 5
@@ -9561,6 +9890,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "IterationPower": 2,
       "Iteration": 2
@@ -9595,6 +9925,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 1
     },
@@ -9626,6 +9957,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 25,
       "Cards": 3
@@ -9663,6 +9995,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "JuggernautPower": 5,
       "Juggernaut": 5
@@ -9695,6 +10028,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "add_innate": true
@@ -9724,6 +10058,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 24
     },
@@ -9755,6 +10090,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Increase": 3,
       "Damage": 8
@@ -9788,6 +10124,9 @@
     "keywords": null,
     "tags": [
       "Shiv"
+    ],
+    "spawns_cards": [
+      "SHIV"
     ],
     "vars": {
       "CalculationBase": 0,
@@ -9824,6 +10163,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10,
       "KnockdownPower": 2,
@@ -9858,6 +10198,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 30,
       "Stars": 5
@@ -9901,6 +10242,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "WeakPower": 1,
       "Weak": 1,
@@ -9937,6 +10279,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "gloryActIndex": 2
     },
@@ -9966,6 +10309,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/largesse.png",
@@ -9994,6 +10338,9 @@
     "keywords": null,
     "tags": [
       "Strike"
+    ],
+    "spawns_cards": [
+      "SHIV"
     ],
     "vars": {
       "Shivs": 1,
@@ -10027,6 +10374,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 9
     },
@@ -10063,6 +10411,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 11,
       "WeakPower": 2,
@@ -10099,6 +10448,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Summon": 6
     },
@@ -10137,6 +10487,7 @@
       "Ethereal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "LethalityPower": 50,
       "Lethality": 50
@@ -10169,6 +10520,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 11
     },
@@ -10181,7 +10533,7 @@
   {
     "id": "LIGHTNING_ROD",
     "name": "Lightning Rod",
-    "description": "Gain 4 [gold]Block[/gold].\nAt the start of the next [] turns, [gold]Channel[/gold] 1 [gold]Lightning[/gold].",
+    "description": "Gain 4 [gold]Block[/gold].\nAt the start of the next 2 turns, [gold]Channel[/gold] 1 [gold]Lightning[/gold].",
     "description_raw": "Gain {Block:diff()} [gold]Block[/gold].\nAt the start of the next {LightningRodPower:plural:turn|{:diff()} turns}, [gold]Channel[/gold] 1 [gold]Lightning[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -10205,6 +10557,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 4,
       "LightningRodPower": 2,
@@ -10238,6 +10591,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Loop": 1
     },
@@ -10272,6 +10626,7 @@
       "Retain"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 2
     },
@@ -10303,6 +10658,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 4,
       "CalculationBase": 0,
@@ -10336,6 +10692,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 1
     },
@@ -10367,6 +10724,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "ViolenceHits": 3,
       "EnergizedEnergy": 2,
@@ -10403,6 +10761,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 6,
       "Cards": 3
@@ -10437,6 +10796,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/malaise.png",
@@ -10464,6 +10824,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthLoss": 10,
       "Damage": 15
@@ -10497,6 +10858,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 7
     },
@@ -10530,6 +10892,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 3
     },
@@ -10561,6 +10924,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 1
@@ -10590,6 +10954,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Increase": 1,
       "Damage": 5
@@ -10623,6 +10988,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 1
@@ -10652,6 +11018,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 13,
       "Energy": 1
@@ -10684,6 +11051,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 8,
       "ExtraDamage": 4,
@@ -10721,6 +11089,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 3
     },
@@ -10761,6 +11130,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 14,
       "VulnerablePower": 2,
@@ -10799,6 +11169,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 24
     },
@@ -10832,6 +11203,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 0,
       "CalculationExtra": 1
@@ -10866,6 +11238,7 @@
       "Innate"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 0,
       "ExtraDamage": 1,
@@ -10904,6 +11277,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "MindRotPower": 1,
       "MindRot": 1
@@ -10938,6 +11312,7 @@
     "tags": [
       "Minion"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 13
     },
@@ -10973,6 +11348,7 @@
     "tags": [
       "Minion"
     ],
+    "spawns_cards": null,
     "vars": {
       "Block": 9
     },
@@ -11009,6 +11385,7 @@
       "Strike",
       "Minion"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 7,
       "Cards": 1
@@ -11043,6 +11420,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 0,
       "CalculationExtra": 1
@@ -11075,6 +11453,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 7
     },
@@ -11107,6 +11486,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Repeat": 1,
       "Cards": 1
@@ -11141,6 +11521,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10
     },
@@ -11174,6 +11555,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 10
     },
@@ -11205,6 +11587,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthLoss": 1
     },
@@ -11236,6 +11619,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Power": 1
     },
@@ -11267,6 +11651,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/multi_cast.png",
@@ -11294,6 +11679,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 1,
       "ExtraDamage": 1,
@@ -11327,6 +11713,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Summon": 5
     },
@@ -11363,6 +11750,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 5,
       "DoomPower": 7,
@@ -11378,7 +11766,7 @@
   {
     "id": "NEOWS_FURY",
     "name": "Neow's Fury",
-    "description": "Deal 10 damage.\nPut [] random cards from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
+    "description": "Deal 10 damage.\nPut 2 random cards from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
     "description_raw": "Deal {Damage:diff()} damage.\nPut {Cards:plural:a random card|{:diff()} random cards} from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -11399,6 +11787,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10,
       "Cards": 2
@@ -11436,6 +11825,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 3,
       "Cards": 2,
@@ -11475,6 +11865,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 3,
       "WeakPower": 1,
@@ -11514,6 +11905,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "PlatingPower": 8,
       "Plating": 8,
@@ -11549,6 +11941,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 2
@@ -11578,6 +11971,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "DoomThreshold": 10,
       "CalculationBase": 10,
@@ -11613,6 +12007,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 3,
       "numOfCardsPerTurn": 3
@@ -11643,6 +12038,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 0
@@ -11672,6 +12068,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "PoisonPerTurn": 2
     },
@@ -11708,6 +12105,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10,
       "WeakPower": 2,
@@ -11747,6 +12145,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "DoomPower": 3,
       "Doom": 3
@@ -11781,6 +12180,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "HpLoss": 6,
       "Energy": 2,
@@ -11814,6 +12214,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 8
     },
@@ -11845,6 +12246,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Attacks": 1
     },
@@ -11876,6 +12278,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 1
     },
@@ -11912,6 +12315,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Repeat": 3,
       "OutbreakPower": 11,
@@ -11945,6 +12349,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 2
     },
@@ -11976,6 +12381,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "BURN"
+    ],
     "vars": {
       "Cards": 2
     },
@@ -12007,6 +12415,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 17,
       "Cards": 3
@@ -12039,6 +12448,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 1
     },
@@ -12070,6 +12480,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CardPlay": 5,
       "Cards": 1
@@ -12102,6 +12513,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "PanacheDamage": 10
     },
@@ -12135,6 +12547,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Turns": 2,
       "Block": 30
@@ -12172,6 +12585,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SOVEREIGN_BLADE"
+    ],
     "vars": {
       "ParryPower": 6,
       "Parry": 6
@@ -12206,6 +12622,7 @@
       "Ethereal"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 3
     },
@@ -12237,6 +12654,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 9,
       "StarCost": 2
@@ -12274,6 +12692,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 8,
       "VigorPower": 2,
@@ -12308,6 +12727,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 2,
       "Repeat": 3
@@ -12342,6 +12762,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 6,
       "ExtraDamage": 2,
@@ -12381,6 +12802,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SHIV"
+    ],
     "vars": {
       "PhantomBladesPower": 9,
       "PhantomBlades": 9
@@ -12413,6 +12837,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "PutBack": 1,
       "Damage": 10,
@@ -12449,6 +12874,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthLoss": 6
     },
@@ -12480,6 +12906,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 6
     },
@@ -12511,6 +12938,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 3
     },
@@ -12542,6 +12970,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 17
     },
@@ -12578,6 +13007,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 6,
       "PoisonPower": 3,
@@ -12614,6 +13044,7 @@
     "tags": [
       "OstyAttack"
     ],
+    "spawns_cards": null,
     "vars": {
       "OstyDamage": 6,
       "Damage": 6
@@ -12649,6 +13080,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 9,
       "Cards": 1
@@ -12685,6 +13117,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/poor_sleep.png",
@@ -12712,6 +13145,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 12
     },
@@ -12743,6 +13177,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 13,
       "ExtraDamage": 2,
@@ -12776,6 +13211,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 15
     },
@@ -12812,6 +13248,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "PrepTimePower": 4,
       "PrepTime": 4
@@ -12844,6 +13281,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 1
     },
@@ -12875,6 +13313,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "GIANT_ROCK"
+    ],
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/primal_force.png",
@@ -12904,6 +13345,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 2
     },
@@ -12937,6 +13379,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "remove_exhaust": true
@@ -12966,6 +13409,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 6
     },
@@ -12999,6 +13443,7 @@
     "tags": [
       "OstyAttack"
     ],
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 10,
       "ExtraDamage": 1,
@@ -13042,6 +13487,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthPower": 1,
       "Strength": 1,
@@ -13077,6 +13523,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Summon": 4,
       "Block": 7
@@ -13110,6 +13557,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 5,
       "CalculationBase": 0,
@@ -13146,6 +13594,7 @@
       "Retain"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 3
     },
@@ -13179,6 +13628,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Power": 2
     },
@@ -13210,6 +13660,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 1
     },
@@ -13241,6 +13692,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Repeat": 4
     },
@@ -13272,6 +13724,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StarCost": 2
     },
@@ -13301,6 +13754,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 3,
       "Stars": 1,
@@ -13335,6 +13789,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Power": 3
     },
@@ -13368,6 +13823,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "remove_exhaust": true
@@ -13397,6 +13853,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 12
     },
@@ -13428,6 +13885,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Increase": 5,
       "Damage": 9
@@ -13462,6 +13920,7 @@
     "tags": [
       "OstyAttack"
     ],
+    "spawns_cards": null,
     "vars": {
       "OstyDamage": 7,
       "CalculationBase": 0,
@@ -13499,6 +13958,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Summon": 20
     },
@@ -13532,6 +13992,7 @@
       "Retain"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 27
     },
@@ -13563,6 +14024,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "add_retain": true
@@ -13592,6 +14054,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SOUL"
+    ],
     "vars": {
       "Damage": 9,
       "Cards": 1
@@ -13626,6 +14091,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 4
     },
@@ -13657,6 +14123,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 9
     },
@@ -13688,6 +14155,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Forge": 6,
       "Energy": 1
@@ -13720,6 +14188,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 17,
       "StarCost": 3
@@ -13754,6 +14223,7 @@
       "Sly"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 2
     },
@@ -13785,6 +14255,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Repeat": 2,
       "Damage": 9
@@ -13819,6 +14290,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/regret.png",
@@ -13848,6 +14320,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 15,
       "Cards": 2,
@@ -13883,6 +14356,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 15,
       "ExtraDamage": 5,
@@ -13923,6 +14397,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthPower": 1,
       "Strength": 1,
@@ -13958,6 +14433,7 @@
       "Retain"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 2,
       "Energy": 2
@@ -13993,6 +14469,7 @@
       "Sly"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 3,
       "Repeat": 4
@@ -14027,6 +14504,7 @@
     "tags": [
       "OstyAttack"
     ],
+    "spawns_cards": null,
     "vars": {
       "OstyDamage": 4,
       "Energy": 2,
@@ -14061,6 +14539,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 7
     },
@@ -14092,6 +14571,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 13,
       "Cards": 1
@@ -14130,6 +14610,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "IncrementAmount": 5,
       "RollingBoulderPower": 5,
@@ -14165,6 +14646,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Stars": 9,
       "StarCost": 5
@@ -14197,6 +14679,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Gold": 30
     },
@@ -14233,6 +14716,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StrengthPower": 1,
       "Strength": 1
@@ -14267,6 +14751,7 @@
       "Retain"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 0
@@ -14296,6 +14781,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 12
     },
@@ -14327,6 +14813,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 2
     },
@@ -14363,6 +14850,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 1,
       "DoomPower": 13,
@@ -14397,6 +14885,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 7,
       "Cards": 4
@@ -14432,6 +14921,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "add_retain": true
@@ -14463,6 +14953,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 8
     },
@@ -14496,6 +14987,9 @@
       "Ethereal"
     ],
     "tags": null,
+    "spawns_cards": [
+      "SOUL"
+    ],
     "vars": {
       "Cards": 1
     },
@@ -14525,6 +15019,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 5
     },
@@ -14558,6 +15053,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "remove_exhaust": true
@@ -14589,6 +15085,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "remove_exhaust": true
@@ -14620,6 +15117,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 6,
       "Cards": 3
@@ -14652,6 +15150,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Forge": 7
     },
@@ -14688,6 +15187,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SWEEPING_GAZE"
+    ],
     "vars": {
       "SentryModePower": 1,
       "SentryMode": 1
@@ -14725,6 +15227,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "SerpentFormPower": 4,
       "SerpentForm": 4
@@ -14764,6 +15267,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 7,
       "StrengthPower": 2,
@@ -14798,6 +15302,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 7,
       "Repeat": 7,
@@ -14831,6 +15336,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SOUL"
+    ],
     "vars": {
       "Damage": 13
     },
@@ -14862,6 +15370,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 11
     },
@@ -14893,6 +15402,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 3
     },
@@ -14924,6 +15434,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Power": 1
     },
@@ -14957,6 +15468,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Frail": 1
     },
@@ -14988,6 +15500,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "EnemyStrengthLoss": 2,
       "PlayerStrengthLoss": 2
@@ -15020,6 +15533,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 11
     },
@@ -15053,6 +15567,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 8,
       "Stars": 2
@@ -15089,6 +15604,7 @@
     "tags": [
       "Shiv"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 4,
       "CalculationBase": 0,
@@ -15124,6 +15640,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Power": 3
     },
@@ -15155,6 +15672,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 2
     },
@@ -15186,6 +15704,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 8,
       "Cards": 1
@@ -15225,6 +15744,7 @@
     "tags": [
       "OstyAttack"
     ],
+    "spawns_cards": null,
     "vars": {
       "OstyDamage": 5,
       "SicEmPower": 2,
@@ -15268,6 +15788,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "SignalBoostPower": 1,
       "SignalBoost": 1
@@ -15300,6 +15821,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 7
     },
@@ -15331,6 +15853,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 3
     },
@@ -15367,6 +15890,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "SleightOfFleshPower": 9,
       "SleightOfFlesh": 9
@@ -15399,6 +15923,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 6
     },
@@ -15432,6 +15957,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 1
     },
@@ -15466,6 +15992,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "SlothPower": 3,
       "Sloth": 3
@@ -15501,6 +16028,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "SmokestackPower": 5,
       "Smokestack": 5
@@ -15540,6 +16068,7 @@
       "Retain"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "PoisonPower": 7,
       "Poison": 7
@@ -15574,6 +16103,7 @@
     "tags": [
       "OstyAttack"
     ],
+    "spawns_cards": null,
     "vars": {
       "OstyDamage": 7,
       "Damage": 7
@@ -15614,6 +16144,7 @@
       "Sly"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "SneakyPower": 1,
       "Sneaky": 1
@@ -15648,6 +16179,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 8,
       "Stars": 1
@@ -15683,6 +16215,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/soot.png",
@@ -15712,6 +16245,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 2
     },
@@ -15743,6 +16277,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SOUL"
+    ],
     "vars": {
       "CalculationBase": 9,
       "ExtraDamage": 2,
@@ -15779,6 +16316,7 @@
       "Retain"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10,
       "CalculationBase": 0,
@@ -15816,6 +16354,7 @@
       "Retain"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 8
     },
@@ -15847,6 +16386,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 1
     },
@@ -15883,6 +16423,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "SpeedsterPower": 2,
       "Speedster": 2
@@ -15920,6 +16461,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "SpinnerPower": 1,
       "Spinner": 1
@@ -15950,6 +16492,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "BlockOnExhaust": 4
     },
@@ -15981,6 +16524,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 6,
       "Cards": 1
@@ -16013,6 +16557,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/splash.png",
@@ -16042,6 +16587,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Gold": 600
     },
@@ -16071,6 +16617,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Forge": 10
     },
@@ -16104,6 +16651,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/spore_mind.png",
@@ -16133,6 +16681,7 @@
       "Retain"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Summon": 3,
       "Heal": 5
@@ -16171,6 +16720,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10,
       "VulnerablePower": 2,
@@ -16207,6 +16757,7 @@
     "tags": [
       "OstyAttack"
     ],
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 25,
       "ExtraDamage": 5,
@@ -16242,6 +16793,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 0,
       "CalculationExtra": 1
@@ -16274,6 +16826,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Power": 1
     },
@@ -16305,6 +16858,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 5
     },
@@ -16338,6 +16892,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 0
@@ -16367,6 +16922,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 12
     },
@@ -16403,6 +16959,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "PlatingPower": 4,
       "Plating": 4
@@ -16440,6 +16997,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StormPower": 1,
       "Storm": 1
@@ -16472,6 +17030,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SHIV"
+    ],
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/storm_of_steel.png",
@@ -16504,6 +17065,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 8,
       "StranglePower": 2,
@@ -16538,6 +17100,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 0
@@ -16569,6 +17132,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 6
     },
@@ -16602,6 +17166,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 6
     },
@@ -16635,6 +17200,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 6
     },
@@ -16668,6 +17234,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 6
     },
@@ -16701,6 +17268,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 6
     },
@@ -16732,6 +17300,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 0
@@ -16766,6 +17335,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 8,
       "WeakPower": 1,
@@ -16800,6 +17370,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SOVEREIGN_BLADE"
+    ],
     "vars": {
       "Forge": 8
     },
@@ -16831,6 +17404,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 24,
       "Energy": 3
@@ -16865,6 +17439,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 4
     },
@@ -16896,6 +17471,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 5,
       "ExtraDamage": 3,
@@ -16937,6 +17513,7 @@
       "Innate"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 11,
       "WeakPower": 3,
@@ -16971,6 +17548,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 8
     },
@@ -17002,6 +17580,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 6,
       "Cards": 1
@@ -17039,6 +17618,7 @@
     "tags": [
       "OstyAttack"
     ],
+    "spawns_cards": null,
     "vars": {
       "OstyDamage": 10,
       "Damage": 10
@@ -17072,6 +17652,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 3,
       "Repeat": 3
@@ -17109,6 +17690,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SOVEREIGN_BLADE"
+    ],
     "vars": {
       "SwordSagePower": 1,
       "SwordSage": 1
@@ -17143,6 +17727,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 0,
       "CalculationExtra": 2
@@ -17175,6 +17760,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 12
     },
@@ -17208,6 +17794,7 @@
       "Sly"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 1
     },
@@ -17239,6 +17826,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 11
     },
@@ -17270,6 +17858,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 0
@@ -17304,6 +17893,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 7,
       "VulnerablePower": 1,
@@ -17338,6 +17928,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 5,
       "Repeat": 1,
@@ -17372,6 +17963,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/tempest.png",
@@ -17404,6 +17996,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "VigorPower": 6,
       "Vigor": 6
@@ -17436,6 +18029,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 3
     },
@@ -17467,6 +18061,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Turns": 3,
       "BombDamage": 40
@@ -17499,6 +18094,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 50
     },
@@ -17532,6 +18128,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10
     },
@@ -17565,6 +18162,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Increase": 3,
       "Damage": 13,
@@ -17598,6 +18196,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "StarCost": 3
     },
@@ -17629,6 +18228,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Forge": 30,
       "StarCost": 4
@@ -17663,6 +18263,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 2
     },
@@ -17694,6 +18295,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 4
     },
@@ -17725,6 +18327,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 11
     },
@@ -17761,6 +18364,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "ThunderPower": 6,
       "Thunder": 6
@@ -17798,6 +18402,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 4,
       "VulnerablePower": 1,
@@ -17833,6 +18438,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 0,
       "ExtraDamage": 1,
@@ -17866,6 +18472,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 0
@@ -17895,6 +18502,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Turns": 2,
       "Block": 5
@@ -17929,6 +18537,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 5
     },
@@ -17958,6 +18567,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 1
@@ -17989,6 +18599,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 1
     },
@@ -18020,6 +18631,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "add_innate": true
@@ -18054,6 +18666,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "VulnerablePower": 2,
       "Vulnerable": 2
@@ -18086,6 +18699,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 7
     },
@@ -18117,6 +18731,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "VOID"
+    ],
     "vars": {
       "Energy": 2
     },
@@ -18150,6 +18767,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 5
     },
@@ -18183,6 +18801,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "add_innate": true
@@ -18214,6 +18833,7 @@
     "tags": [
       "Defend"
     ],
+    "spawns_cards": null,
     "vars": {
       "Block": 11
     },
@@ -18247,6 +18867,7 @@
     "tags": [
       "Strike"
     ],
+    "spawns_cards": null,
     "vars": {
       "Damage": 14
     },
@@ -18278,6 +18899,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 7
     },
@@ -18311,6 +18933,7 @@
     "tags": [
       "OstyAttack"
     ],
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 6,
       "ExtraDamage": 1,
@@ -18344,6 +18967,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 1
@@ -18373,6 +18997,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 12
     },
@@ -18406,6 +19031,7 @@
       "Sly"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Block": 9
     },
@@ -18437,6 +19063,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": [
+      "SHIV"
+    ],
     "vars": {
       "Cards": 3
     },
@@ -18468,6 +19097,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Power": 1,
       "Damage": 13
@@ -18500,6 +19130,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 5
     },
@@ -18531,6 +19162,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10
     },
@@ -18562,6 +19194,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Stars": 2
     },
@@ -18593,6 +19226,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Cards": 1
     },
@@ -18627,6 +19261,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 1
     },
@@ -18661,6 +19296,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "VoidFormPower": 2,
       "VoidForm": 2
@@ -18693,6 +19329,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 10
     },
@@ -18726,6 +19363,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "CalculationBase": 0,
       "CalculationExtra": 1
@@ -18763,6 +19401,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "WasteAwayPower": 1,
       "WasteAway": 1
@@ -18793,6 +19432,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "RetainAmount": 1
     },
@@ -18824,6 +19464,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 5
     },
@@ -18857,6 +19498,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 33
     },
@@ -18890,6 +19532,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 0
@@ -18921,6 +19564,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "add_retain": true
@@ -18952,6 +19596,7 @@
       "Exhaust"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Energy": 1
     },
@@ -18985,6 +19630,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/wound.png",
@@ -19021,6 +19667,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "IntangiblePower": 2,
       "Intangible": 2,
@@ -19058,6 +19705,7 @@
       "Unplayable"
     ],
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": null,
     "image_url": "/static/images/cards/writhe.png",
@@ -19085,6 +19733,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": {
       "Damage": 7,
       "Forge": 5
@@ -19118,6 +19767,7 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
+    "spawns_cards": null,
     "vars": null,
     "upgrade": {
       "cost": 0

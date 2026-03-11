@@ -14,6 +14,7 @@ const colorOptions = [
   { label: "Necrobinder", value: "necrobinder" },
   { label: "Regent", value: "regent" },
   { label: "Colorless", value: "colorless" },
+  { label: "Token", value: "token" },
   { label: "Curse", value: "curse" },
 ];
 
@@ -31,6 +32,7 @@ const rarityOptions = [
   { label: "Uncommon", value: "Uncommon" },
   { label: "Rare", value: "Rare" },
   { label: "Ancient", value: "Ancient" },
+  { label: "Token", value: "Token" },
 ];
 
 const keywordOptions = [
