@@ -220,8 +220,9 @@ export default function AboutPage() {
           <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
             Special thanks to{" "}
             <span className="text-[var(--text-primary)] font-medium">vesper-arch</span>,{" "}
-            <span className="text-[var(--text-primary)] font-medium">terracubist</span>, and{" "}
-            <span className="text-[var(--text-primary)] font-medium">U77654</span>{" "}
+            <span className="text-[var(--text-primary)] font-medium">terracubist</span>,{" "}
+            <span className="text-[var(--text-primary)] font-medium">U77654</span>, and{" "}
+            <span className="text-[var(--text-primary)] font-medium">Purple Aspired Dreaming</span>{" "}
             for QA testing, bug reports, and contributions.
           </p>
         </div>
