@@ -208,6 +208,24 @@ export default function AboutPage() {
           </p>
         </div>
 
+        {/* Thank You */}
+        <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-6">
+          <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-3">
+            Thank You
+          </h2>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-4">
+            Thanks to everyone who&apos;s been using the site, reporting bugs, and helping
+            make it better. This project wouldn&apos;t be where it is without the community.
+          </p>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+            Special thanks to{" "}
+            <span className="text-[var(--text-primary)] font-medium">vesper-arch</span>,{" "}
+            <span className="text-[var(--text-primary)] font-medium">terracubist</span>, and{" "}
+            <span className="text-[var(--text-primary)] font-medium">U77654</span>{" "}
+            for QA testing, bug reports, and contributions.
+          </p>
+        </div>
+
         {/* Disclaimer */}
         <p className="text-xs text-[var(--text-muted)] border-t border-[var(--border-subtle)] pt-6">
           This project is for educational purposes. All game data belongs to Mega Crit Games.
