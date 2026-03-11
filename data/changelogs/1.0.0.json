@@ -1,17 +1,17 @@
 {
   "app_id": 2868840,
-  "game_version": "0.1.1",
-  "build_id": "",
+  "game_version": "1.0.0",
+  "build_id": "22238966",
   "codex_version": null,
-  "tag": "0.1.1",
-  "date": "2026-03-08",
-  "title": "Rich Text & Event Improvements",
+  "tag": "1.0.0",
+  "date": "2026-03-10",
+  "title": "Initial Release",
   "from_ref": "2fa2a30",
-  "to_ref": "37d2fc7",
+  "to_ref": "v1.0.0",
   "summary": {
-    "added": 0,
+    "added": 65,
     "removed": 0,
-    "changed": 725
+    "changed": 753
   },
   "categories": [
     {
@@ -25,9 +25,103 @@
           "name": "The Necrobinder",
           "changes": [
             {
-              "field": "description",
-              "old": "A Spireborn lich who seeks revenge.\nCalls upon her trusty left hand, Osty, in...",
-              "new": "A Spireborn lich who seeks revenge.\nCalls upon her trusty left hand, [gold]Os..."
+              "field": "quotes",
+              "old": "none",
+              "new": "8 fields"
+            },
+            {
+              "field": "dialogue_color",
+              "old": "none",
+              "new": "new"
+            },
+            {
+              "field": "dialogues",
+              "old": "none",
+              "new": "28 items"
+            }
+          ]
+        },
+        {
+          "id": "DEFECT",
+          "name": "The Defect",
+          "changes": [
+            {
+              "field": "quotes",
+              "old": "none",
+              "new": "8 fields"
+            },
+            {
+              "field": "dialogue_color",
+              "old": "none",
+              "new": "new"
+            },
+            {
+              "field": "dialogues",
+              "old": "none",
+              "new": "27 items"
+            }
+          ]
+        },
+        {
+          "id": "IRONCLAD",
+          "name": "The Ironclad",
+          "changes": [
+            {
+              "field": "quotes",
+              "old": "none",
+              "new": "7 fields"
+            },
+            {
+              "field": "dialogue_color",
+              "old": "none",
+              "new": "new"
+            },
+            {
+              "field": "dialogues",
+              "old": "none",
+              "new": "27 items"
+            }
+          ]
+        },
+        {
+          "id": "REGENT",
+          "name": "The Regent",
+          "changes": [
+            {
+              "field": "quotes",
+              "old": "none",
+              "new": "8 fields"
+            },
+            {
+              "field": "dialogue_color",
+              "old": "none",
+              "new": "new"
+            },
+            {
+              "field": "dialogues",
+              "old": "none",
+              "new": "27 items"
+            }
+          ]
+        },
+        {
+          "id": "SILENT",
+          "name": "The Silent",
+          "changes": [
+            {
+              "field": "quotes",
+              "old": "none",
+              "new": "8 fields"
+            },
+            {
+              "field": "dialogue_color",
+              "old": "none",
+              "new": "new"
+            },
+            {
+              "field": "dialogues",
+              "old": "none",
+              "new": "28 items"
             }
           ]
         }
@@ -4305,9 +4399,9 @@
           "name": "Attack Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Choose 1 of 3 random Attack cards to add into your [gold]Hand[/gold]. It's fr...",
-              "new": "Choose [blue]1[/blue] of [blue]3[/blue] random Attack cards to add into your ..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4316,9 +4410,9 @@
           "name": "Beetle Juice",
           "changes": [
             {
-              "field": "description",
-              "old": "Enemy's attacks deal 30% less damage for the next 4 turns.",
-              "new": "Enemy's attacks deal [blue]30%[/blue] less damage for the next [blue]4[/blue]..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4327,9 +4421,9 @@
           "name": "Block Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 12 [gold]Block[/gold].",
-              "new": "Gain [blue]12[/blue] [gold]Block[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4338,9 +4432,9 @@
           "name": "Blood Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Heal for 20% of your Max HP.",
-              "new": "Heal for [green]20%[/green] of your Max HP."
+              "field": "pool",
+              "old": "none",
+              "new": "ironclad"
             }
           ]
         },
@@ -4349,9 +4443,9 @@
           "name": "Bone Brew",
           "changes": [
             {
-              "field": "description",
-              "old": "[gold]Summon[/gold] 15.",
-              "new": "[gold]Summon[/gold] [blue]15[/blue]."
+              "field": "pool",
+              "old": "none",
+              "new": "necrobinder"
             }
           ]
         },
@@ -4360,9 +4454,9 @@
           "name": "Bottled Potential",
           "changes": [
             {
-              "field": "description",
-              "old": "Shuffle ALL your cards into your [gold]Draw Pile[/gold]. Draw 5 cards.",
-              "new": "Shuffle ALL your cards into your [gold]Draw Pile[/gold]. Draw [blue]5[/blue] ..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4371,9 +4465,9 @@
           "name": "Clarity Extract",
           "changes": [
             {
-              "field": "description",
-              "old": "Draw 1 card. At the start of your next 3 turns, draw 1 additional card.",
-              "new": "Draw [blue]1[/blue] card. At the start of your next [blue]3[/blue] turns, dra..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4382,9 +4476,9 @@
           "name": "Colorless Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Choose 1 of 3 random Colorless cards to add into your [gold]Hand[/gold]. It's...",
-              "new": "Choose [blue]1[/blue] of [blue]3[/blue] random Colorless cards to add into yo..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4393,9 +4487,9 @@
           "name": "Cosmic Concoction",
           "changes": [
             {
-              "field": "description",
-              "old": "Add 3 [gold]Upgraded[/gold] Colorless cards into your [gold]Hand[/gold].",
-              "new": "Add [blue]3[/blue] [gold]Upgraded[/gold] Colorless cards into your [gold]Hand..."
+              "field": "pool",
+              "old": "none",
+              "new": "regent"
             }
           ]
         },
@@ -4404,9 +4498,9 @@
           "name": "Cunning Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Add 3 [gold]Upgraded Shivs[/gold] into your [gold]Hand[/gold].",
-              "new": "Add [blue]3[/blue] [gold]Upgraded Shivs[/gold] into your [gold]Hand[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "silent"
             }
           ]
         },
@@ -4415,9 +4509,9 @@
           "name": "Cure All",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain [energy:1]. Draw 2 cards.",
-              "new": "Gain [energy:1]. Draw [blue]2[/blue] cards."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4426,9 +4520,9 @@
           "name": "Dexterity Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 2 [gold]Dexterity[/gold].",
-              "new": "Gain [blue]2[/blue] [gold]Dexterity[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4437,9 +4531,9 @@
           "name": "Distilled Chaos",
           "changes": [
             {
-              "field": "description",
-              "old": "Play the top 3 cards of your [gold]Draw Pile[/gold].",
-              "new": "Play the top [blue]3[/blue] cards of your [gold]Draw Pile[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4448,9 +4542,9 @@
           "name": "Explosive Ampoule",
           "changes": [
             {
-              "field": "description",
-              "old": "Deal 10 damage to ALL enemies.",
-              "new": "Deal [blue]10[/blue] damage to ALL enemies."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4459,9 +4553,9 @@
           "name": "Fairy in a Bottle",
           "changes": [
             {
-              "field": "description",
-              "old": "When you would die, instead this potion is discarded and you heal to 30% of y...",
-              "new": "When you would die, instead this potion is discarded and you heal to [blue]30..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4470,9 +4564,9 @@
           "name": "Fire Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Deal 20 damage.",
-              "new": "Deal [blue]20[/blue] damage."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4481,9 +4575,9 @@
           "name": "Flex Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 5 [gold]Strength[/gold]. At the end of your turn, lose 5 [gold]Strength[...",
-              "new": "Gain [blue]5[/blue] [gold]Strength[/gold]. At the end of your turn, lose [blu..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4492,9 +4586,9 @@
           "name": "Focus Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 2 [gold]Focus[/gold].",
-              "new": "Gain [blue]2[/blue] [gold]Focus[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "defect"
             }
           ]
         },
@@ -4503,9 +4597,9 @@
           "name": "Foul Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Deal 12 damage to EVERYONE.\nCan be thrown at the [gold]Merchant[/gold] for 10...",
-              "new": "Deal [blue]12[/blue] damage to EVERYONE.\nCan be thrown at the [gold]Merchant[..."
+              "field": "pool",
+              "old": "none",
+              "new": "event"
             }
           ]
         },
@@ -4514,9 +4608,9 @@
           "name": "Fruit Juice",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 5 Max HP.",
-              "new": "Gain [blue]5[/blue] Max HP."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4525,9 +4619,9 @@
           "name": "Fysh Oil",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 1 [gold]Strength[/gold] and 1 [gold]Dexterity[/gold].",
-              "new": "Gain [blue]1[/blue] [gold]Strength[/gold] and [blue]1[/blue] [gold]Dexterity[..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4536,9 +4630,9 @@
           "name": "Ghost in a Jar",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 1 [gold]Intangible[/gold].",
-              "new": "Gain [blue]1[/blue] [gold]Intangible[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "silent"
             }
           ]
         },
@@ -4547,9 +4641,9 @@
           "name": "Glowwater Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "[gold]Exhaust[/gold] your [gold]Hand[/gold]. Draw 10 cards.",
-              "new": "[gold]Exhaust[/gold] your [gold]Hand[/gold]. Draw [blue]10[/blue] cards."
+              "field": "pool",
+              "old": "none",
+              "new": "event"
             }
           ]
         },
@@ -4558,9 +4652,9 @@
           "name": "Heart of Iron",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 7 [gold]Plating[/gold].",
-              "new": "Gain [blue]7[/blue] [gold]Plating[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4569,9 +4663,9 @@
           "name": "King's Courage",
           "changes": [
             {
-              "field": "description",
-              "old": "[gold]Forge[/gold] 15.",
-              "new": "[gold]Forge[/gold] [blue]15[/blue]."
+              "field": "pool",
+              "old": "none",
+              "new": "regent"
             }
           ]
         },
@@ -4580,9 +4674,9 @@
           "name": "Liquid Bronze",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 3 [gold]Thorns[/gold].",
-              "new": "Gain [blue]3[/blue] [gold]Thorns[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4591,9 +4685,9 @@
           "name": "Liquid Memories",
           "changes": [
             {
-              "field": "description",
-              "old": "Put a card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold]. I...",
-              "new": "Put a card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold]. I..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4602,9 +4696,9 @@
           "name": "Lucky Tonic",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 1 [gold]Buffer[/gold].",
-              "new": "Gain [blue]1[/blue] [gold]Buffer[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4613,9 +4707,9 @@
           "name": "Mazaleth's Gift",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 1 [gold]Ritual[/gold].",
-              "new": "Gain [blue]1[/blue] [gold]Ritual[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4624,9 +4718,9 @@
           "name": "Poison Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Apply 6 [gold]Poison[/gold].",
-              "new": "Apply [blue]6[/blue] [gold]Poison[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "silent"
             }
           ]
         },
@@ -4635,9 +4729,9 @@
           "name": "Potion of Binding",
           "changes": [
             {
-              "field": "description",
-              "old": "Apply 1 [gold]Weak[/gold] and 1 [gold]Vulnerable[/gold] to ALL enemies.",
-              "new": "Apply [blue]1[/blue] [gold]Weak[/gold] and [blue]1[/blue] [gold]Vulnerable[/g..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4646,9 +4740,9 @@
           "name": "Potion of Capacity",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 2 [gold]Orb Slots[/gold].",
-              "new": "Gain [blue]2[/blue] [gold]Orb Slots[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "defect"
             }
           ]
         },
@@ -4657,9 +4751,9 @@
           "name": "Potion of Doom",
           "changes": [
             {
-              "field": "description",
-              "old": "Apply 33 [gold]Doom[/gold].",
-              "new": "Apply [blue]33[/blue] [gold]Doom[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "necrobinder"
             }
           ]
         },
@@ -4668,9 +4762,9 @@
           "name": "Potion-Shaped Rock",
           "changes": [
             {
-              "field": "description",
-              "old": "Deal 15 damage.",
-              "new": "Deal [blue]15[/blue] damage."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4679,9 +4773,9 @@
           "name": "Pot of Ghouls",
           "changes": [
             {
-              "field": "description",
-              "old": "Add 2 [gold]Souls[/gold] into your [gold]Hand[/gold].",
-              "new": "Add [blue]2[/blue] [gold]Souls[/gold] into your [gold]Hand[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "necrobinder"
             }
           ]
         },
@@ -4690,9 +4784,9 @@
           "name": "Powdered Demise",
           "changes": [
             {
-              "field": "description",
-              "old": "Enemy loses 9 HP at the end of each of its turns.",
-              "new": "Enemy loses [blue]9[/blue] HP at the end of each of its turns."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4701,9 +4795,9 @@
           "name": "Power Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Choose 1 of 3 random Power cards to add into your [gold]Hand[/gold]. It's fre...",
-              "new": "Choose [blue]1[/blue] of [blue]3[/blue] random Power cards to add into your [..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4712,9 +4806,9 @@
           "name": "Radiant Tincture",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain [energy:1]. Gain an additional [energy:1] at the start of your next 3 tu...",
-              "new": "Gain [energy:1]. Gain an additional [energy:1] at the start of your next [blu..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4723,9 +4817,9 @@
           "name": "Regen Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 5 [gold]Regen[/gold].",
-              "new": "Gain [green]5[/green] [gold]Regen[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4734,9 +4828,9 @@
           "name": "Shackling Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "ALL enemies lose 7 [gold]Strength[/gold] this turn.",
-              "new": "ALL enemies lose [blue]7[/blue] [gold]Strength[/gold] this turn."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4745,9 +4839,9 @@
           "name": "Ship in a Bottle",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 10 [gold]Block[/gold]. Next turn, gain 10 [gold]Block[/gold].",
-              "new": "Gain [blue]10[/blue] [gold]Block[/gold]. Next turn, gain [blue]10[/blue] [gol..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4756,9 +4850,9 @@
           "name": "Skill Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Choose 1 of 3 random Skill cards to add into your [gold]Hand[/gold]. It's fre...",
-              "new": "Choose [blue]1[/blue] of [blue]3[/blue] random Skill cards to add into your [..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4767,9 +4861,9 @@
           "name": "Snecko Oil",
           "changes": [
             {
-              "field": "description",
-              "old": "Draw 7 cards. Randomize the cost of cards in your [gold]Hand[/gold] this turn.",
-              "new": "Draw [blue]7[/blue] cards. Randomize the cost of cards in your [gold]Hand[/go..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4778,9 +4872,9 @@
           "name": "Soldier's Stew",
           "changes": [
             {
-              "field": "description",
-              "old": "All cards containing [gold]Strike[/gold] gain 1 [gold]Replay[/gold] this combat.",
-              "new": "All cards containing [gold]Strike[/gold] gain [blue]1[/blue] [gold]Replay[/go..."
+              "field": "pool",
+              "old": "none",
+              "new": "ironclad"
             }
           ]
         },
@@ -4789,9 +4883,9 @@
           "name": "Speed Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 5 [gold]Dexterity[/gold]. At the end of your turn, lose 5 [gold]Dexterit...",
-              "new": "Gain [blue]5[/blue] [gold]Dexterity[/gold]. At the end of your turn, lose [bl..."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4800,9 +4894,9 @@
           "name": "Stable Serum",
           "changes": [
             {
-              "field": "description",
-              "old": "[gold]Retain[/gold] your [gold]Hand[/gold] for 2 turns.",
-              "new": "[gold]Retain[/gold] your [gold]Hand[/gold] for [blue]2[/blue] turns."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4811,9 +4905,9 @@
           "name": "Strength Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Gain 2 [gold]Strength[/gold].",
-              "new": "Gain [blue]2[/blue] [gold]Strength[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4822,9 +4916,9 @@
           "name": "Swift Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Draw 3 cards.",
-              "new": "Draw [blue]3[/blue] cards."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4833,9 +4927,9 @@
           "name": "Vulnerable Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Apply 3 [gold]Vulnerable[/gold].",
-              "new": "Apply [blue]3[/blue] [gold]Vulnerable[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         },
@@ -4844,9 +4938,152 @@
           "name": "Weak Potion",
           "changes": [
             {
-              "field": "description",
-              "old": "Apply 3 [gold]Weak[/gold].",
-              "new": "Apply [blue]3[/blue] [gold]Weak[/gold]."
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
+            }
+          ]
+        },
+        {
+          "id": "ASHWATER",
+          "name": "Ashwater",
+          "changes": [
+            {
+              "field": "pool",
+              "old": "none",
+              "new": "ironclad"
+            }
+          ]
+        },
+        {
+          "id": "BLESSING_OF_THE_FORGE",
+          "name": "Blessing of the Forge",
+          "changes": [
+            {
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
+            }
+          ]
+        },
+        {
+          "id": "DROPLET_OF_PRECOGNITION",
+          "name": "Droplet of Precognition",
+          "changes": [
+            {
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
+            }
+          ]
+        },
+        {
+          "id": "DUPLICATOR",
+          "name": "Duplicator",
+          "changes": [
+            {
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
+            }
+          ]
+        },
+        {
+          "id": "ENERGY_POTION",
+          "name": "Energy Potion",
+          "changes": [
+            {
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
+            }
+          ]
+        },
+        {
+          "id": "ENTROPIC_BREW",
+          "name": "Entropic Brew",
+          "changes": [
+            {
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
+            }
+          ]
+        },
+        {
+          "id": "ESSENCE_OF_DARKNESS",
+          "name": "Essence of Darkness",
+          "changes": [
+            {
+              "field": "pool",
+              "old": "none",
+              "new": "defect"
+            }
+          ]
+        },
+        {
+          "id": "FORTIFIER",
+          "name": "Fortifier",
+          "changes": [
+            {
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
+            }
+          ]
+        },
+        {
+          "id": "GAMBLERS_BREW",
+          "name": "Gambler's Brew",
+          "changes": [
+            {
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
+            }
+          ]
+        },
+        {
+          "id": "GIGANTIFICATION_POTION",
+          "name": "Gigantification Potion",
+          "changes": [
+            {
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
+            }
+          ]
+        },
+        {
+          "id": "OROBIC_ACID",
+          "name": "Orobic Acid",
+          "changes": [
+            {
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
+            }
+          ]
+        },
+        {
+          "id": "STAR_POTION",
+          "name": "Star Potion",
+          "changes": [
+            {
+              "field": "pool",
+              "old": "none",
+              "new": "regent"
+            }
+          ]
+        },
+        {
+          "id": "TOUCH_OF_INSANITY",
+          "name": "Touch of Insanity",
+          "changes": [
+            {
+              "field": "pool",
+              "old": "none",
+              "new": "shared"
             }
           ]
         }
@@ -9769,6 +10006,574 @@
               "new": "Whenever you enter a new room, lose [red]1[/red] Max HP. Start each combat wi..."
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "epochs",
+      "name": "Epochs",
+      "old_count": 0,
+      "new_count": 57,
+      "added": [
+        {
+          "id": "ACT2_B_EPOCH",
+          "name": "Somewhere",
+          "title": "Somewhere",
+          "era": "Seeds3"
+        },
+        {
+          "id": "ACT3_B_EPOCH",
+          "name": "Elsewhere",
+          "title": "Elsewhere",
+          "era": "Seeds0"
+        },
+        {
+          "id": "COLORLESS1_EPOCH",
+          "name": "Preon",
+          "title": "Preon",
+          "era": "Prehistoria0"
+        },
+        {
+          "id": "COLORLESS2_EPOCH",
+          "name": "The Architect",
+          "title": "The Architect",
+          "era": "Prehistoria2"
+        },
+        {
+          "id": "COLORLESS3_EPOCH",
+          "name": "Traitors",
+          "title": "Traitors",
+          "era": "Seeds2"
+        },
+        {
+          "id": "COLORLESS4_EPOCH",
+          "name": "Slumber",
+          "title": "Slumber",
+          "era": "Seeds3"
+        },
+        {
+          "id": "COLORLESS5_EPOCH",
+          "name": "Buy Something!",
+          "title": "Buy Something!",
+          "era": "Blight1"
+        },
+        {
+          "id": "CUSTOM_AND_SEEDS_EPOCH",
+          "name": "Seeds",
+          "title": "Seeds",
+          "era": "Seeds0"
+        },
+        {
+          "id": "DAILY_RUN_EPOCH",
+          "name": "The Daily",
+          "title": "The Daily",
+          "era": "Invitation6"
+        },
+        {
+          "id": "DARV_EPOCH",
+          "name": "Darv",
+          "title": "Darv",
+          "era": "Invitation4"
+        },
+        {
+          "id": "DEFECT1_EPOCH",
+          "name": "Booting Up",
+          "title": "Booting Up",
+          "era": "Invitation1"
+        },
+        {
+          "id": "DEFECT2_EPOCH",
+          "name": "Tricked",
+          "title": "Tricked",
+          "era": "Invitation2"
+        },
+        {
+          "id": "DEFECT3_EPOCH",
+          "name": "Hello! Hello!",
+          "title": "Hello! Hello!",
+          "era": "Flourish1"
+        },
+        {
+          "id": "DEFECT4_EPOCH",
+          "name": "Resolving Bugs",
+          "title": "Resolving Bugs",
+          "era": "Flourish2"
+        },
+        {
+          "id": "DEFECT5_EPOCH",
+          "name": "Confrontation",
+          "title": "Confrontation",
+          "era": "Flourish3"
+        },
+        {
+          "id": "DEFECT6_EPOCH",
+          "name": "Laser Beams",
+          "title": "Laser Beams",
+          "era": "Blight2"
+        },
+        {
+          "id": "DEFECT7_EPOCH",
+          "name": "Ooh Shiny!",
+          "title": "Ooh Shiny!",
+          "era": "Invitation6"
+        },
+        {
+          "id": "EVENT1_EPOCH",
+          "name": "Cultists",
+          "title": "Cultists",
+          "era": "Flourish1"
+        },
+        {
+          "id": "EVENT2_EPOCH",
+          "name": "They Return",
+          "title": "They Return",
+          "era": "Invitation1"
+        },
+        {
+          "id": "EVENT3_EPOCH",
+          "name": "The Spire",
+          "title": "The Spire",
+          "era": "Blight1"
+        },
+        {
+          "id": "IRONCLAD2_EPOCH",
+          "name": "The Ironclad",
+          "title": "The Ironclad",
+          "era": "Blight1"
+        },
+        {
+          "id": "IRONCLAD3_EPOCH",
+          "name": "Devastation",
+          "title": "Devastation",
+          "era": "Seeds3"
+        },
+        {
+          "id": "IRONCLAD4_EPOCH",
+          "name": "The Pact",
+          "title": "The Pact",
+          "era": "Seeds2"
+        },
+        {
+          "id": "IRONCLAD5_EPOCH",
+          "name": "Ablaze",
+          "title": "Ablaze",
+          "era": "Blight2"
+        },
+        {
+          "id": "IRONCLAD6_EPOCH",
+          "name": "Snuffed",
+          "title": "Snuffed",
+          "era": "Flourish3"
+        },
+        {
+          "id": "IRONCLAD7_EPOCH",
+          "name": "My Face",
+          "title": "My Face",
+          "era": "Invitation5"
+        },
+        {
+          "id": "NECROBINDER1_EPOCH",
+          "name": "Life and Death",
+          "title": "Life and Death",
+          "era": "Invitation5"
+        },
+        {
+          "id": "NECROBINDER2_EPOCH",
+          "name": "The Twelve",
+          "title": "The Twelve",
+          "era": "Invitation0"
+        },
+        {
+          "id": "NECROBINDER3_EPOCH",
+          "name": "Futility",
+          "title": "Futility",
+          "era": "Invitation1"
+        },
+        {
+          "id": "NECROBINDER4_EPOCH",
+          "name": "Spireborn",
+          "title": "Spireborn",
+          "era": "Invitation2"
+        },
+        {
+          "id": "NECROBINDER5_EPOCH",
+          "name": "The Giant",
+          "title": "The Giant",
+          "era": "Invitation3"
+        },
+        {
+          "id": "NECROBINDER6_EPOCH",
+          "name": "Annihilation",
+          "title": "Annihilation",
+          "era": "Invitation4"
+        },
+        {
+          "id": "NECROBINDER7_EPOCH",
+          "name": "To Kill",
+          "title": "To Kill",
+          "era": "Invitation7"
+        },
+        {
+          "id": "NEOW_EPOCH",
+          "name": "Neow",
+          "title": "Neow",
+          "era": "Invitation0"
+        },
+        {
+          "id": "OROBAS_EPOCH",
+          "name": "Orobas",
+          "title": "Orobas",
+          "era": "Flourish0"
+        },
+        {
+          "id": "POTION1_EPOCH",
+          "name": "Open",
+          "title": "Open",
+          "era": "Invitation0"
+        },
+        {
+          "id": "POTION2_EPOCH",
+          "name": "The Calm",
+          "title": "The Calm",
+          "era": "Flourish0"
+        },
+        {
+          "id": "REGENT1_EPOCH",
+          "name": "Anomalous Planet",
+          "title": "Anomalous Planet",
+          "era": "Flourish2"
+        },
+        {
+          "id": "REGENT2_EPOCH",
+          "name": "I Arrive",
+          "title": "I Arrive",
+          "era": "Invitation1"
+        },
+        {
+          "id": "REGENT3_EPOCH",
+          "name": "We Need a Hero!",
+          "title": "We Need a Hero!",
+          "era": "Invitation2"
+        },
+        {
+          "id": "REGENT4_EPOCH",
+          "name": "Grand Strategy",
+          "title": "Grand Strategy",
+          "era": "Invitation3"
+        },
+        {
+          "id": "REGENT5_EPOCH",
+          "name": "Friends",
+          "title": "Friends",
+          "era": "Flourish3"
+        },
+        {
+          "id": "REGENT6_EPOCH",
+          "name": "Discontent",
+          "title": "Discontent",
+          "era": "Flourish1"
+        },
+        {
+          "id": "REGENT7_EPOCH",
+          "name": "Little King",
+          "title": "Little King",
+          "era": "Invitation5"
+        },
+        {
+          "id": "RELIC1_EPOCH",
+          "name": "Scribbles",
+          "title": "Scribbles",
+          "era": "Prehistoria1"
+        },
+        {
+          "id": "RELIC2_EPOCH",
+          "name": "Ancients",
+          "title": "Ancients",
+          "era": "Seeds1"
+        },
+        {
+          "id": "RELIC3_EPOCH",
+          "name": "Civilization",
+          "title": "Civilization",
+          "era": "Flourish1"
+        },
+        {
+          "id": "RELIC4_EPOCH",
+          "name": "Consequences",
+          "title": "Consequences",
+          "era": "Blight0"
+        },
+        {
+          "id": "RELIC5_EPOCH",
+          "name": "Arise",
+          "title": "Arise",
+          "era": "Flourish1"
+        },
+        {
+          "id": "SILENT1_EPOCH",
+          "name": "Fog Rolls In",
+          "title": "Fog Rolls In",
+          "era": "Invitation0"
+        },
+        {
+          "id": "SILENT2_EPOCH",
+          "name": "Bigger Prey",
+          "title": "Bigger Prey",
+          "era": "Flourish0"
+        },
+        {
+          "id": "SILENT3_EPOCH",
+          "name": "Ill",
+          "title": "Ill",
+          "era": "Flourish3"
+        },
+        {
+          "id": "SILENT4_EPOCH",
+          "name": "Trophies",
+          "title": "Trophies",
+          "era": "Blight1"
+        },
+        {
+          "id": "SILENT5_EPOCH",
+          "name": "Poisoner",
+          "title": "Poisoner",
+          "era": "Blight2"
+        },
+        {
+          "id": "SILENT6_EPOCH",
+          "name": "Nemesis",
+          "title": "Nemesis",
+          "era": "Prehistoria2"
+        },
+        {
+          "id": "SILENT7_EPOCH",
+          "name": "Soup",
+          "title": "Soup",
+          "era": "Invitation5"
+        },
+        {
+          "id": "UNDERDOCKS_EPOCH",
+          "name": "Underdocks",
+          "title": "Underdocks",
+          "era": "Invitation1"
+        }
+      ],
+      "changed": [
+        {
+          "id": "ACT3_B_EPOCH",
+          "name": "Elsewhere",
+          "changes": [
+            {
+              "field": "era_name",
+              "old": "none",
+              "new": "Seeds"
+            },
+            {
+              "field": "era_year",
+              "old": "none",
+              "new": "0"
+            }
+          ]
+        },
+        {
+          "id": "COLORLESS1_EPOCH",
+          "name": "Preon",
+          "changes": [
+            {
+              "field": "era_name",
+              "old": "none",
+              "new": "Prehistoria"
+            },
+            {
+              "field": "era_year",
+              "old": "none",
+              "new": "???"
+            }
+          ]
+        },
+        {
+          "id": "CUSTOM_AND_SEEDS_EPOCH",
+          "name": "Seeds",
+          "changes": [
+            {
+              "field": "era_name",
+              "old": "none",
+              "new": "Seeds"
+            },
+            {
+              "field": "era_year",
+              "old": "none",
+              "new": "0"
+            }
+          ]
+        },
+        {
+          "id": "NECROBINDER2_EPOCH",
+          "name": "The Twelve",
+          "changes": [
+            {
+              "field": "era_name",
+              "old": "none",
+              "new": "Doors"
+            },
+            {
+              "field": "era_year",
+              "old": "none",
+              "new": "2,733"
+            }
+          ]
+        },
+        {
+          "id": "NEOW_EPOCH",
+          "name": "Neow",
+          "changes": [
+            {
+              "field": "era_name",
+              "old": "none",
+              "new": "Doors"
+            },
+            {
+              "field": "era_year",
+              "old": "none",
+              "new": "2,733"
+            }
+          ]
+        },
+        {
+          "id": "OROBAS_EPOCH",
+          "name": "Orobas",
+          "changes": [
+            {
+              "field": "era_name",
+              "old": "none",
+              "new": "Flourish"
+            },
+            {
+              "field": "era_year",
+              "old": "none",
+              "new": "1,800"
+            }
+          ]
+        },
+        {
+          "id": "POTION1_EPOCH",
+          "name": "Open",
+          "changes": [
+            {
+              "field": "era_name",
+              "old": "none",
+              "new": "Doors"
+            },
+            {
+              "field": "era_year",
+              "old": "none",
+              "new": "2,733"
+            }
+          ]
+        },
+        {
+          "id": "POTION2_EPOCH",
+          "name": "The Calm",
+          "changes": [
+            {
+              "field": "era_name",
+              "old": "none",
+              "new": "Flourish"
+            },
+            {
+              "field": "era_year",
+              "old": "none",
+              "new": "1,800"
+            }
+          ]
+        },
+        {
+          "id": "RELIC4_EPOCH",
+          "name": "Consequences",
+          "changes": [
+            {
+              "field": "era_name",
+              "old": "none",
+              "new": "Infection"
+            },
+            {
+              "field": "era_year",
+              "old": "none",
+              "new": "1,201"
+            }
+          ]
+        },
+        {
+          "id": "SILENT1_EPOCH",
+          "name": "Fog Rolls In",
+          "changes": [
+            {
+              "field": "era_name",
+              "old": "none",
+              "new": "Doors"
+            },
+            {
+              "field": "era_year",
+              "old": "none",
+              "new": "2,733"
+            }
+          ]
+        },
+        {
+          "id": "SILENT2_EPOCH",
+          "name": "Bigger Prey",
+          "changes": [
+            {
+              "field": "era_name",
+              "old": "none",
+              "new": "Flourish"
+            },
+            {
+              "field": "era_year",
+              "old": "none",
+              "new": "1,800"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stories",
+      "name": "Stories",
+      "old_count": 0,
+      "new_count": 8,
+      "added": [
+        {
+          "id": "DEFECT",
+          "name": "The Defect"
+        },
+        {
+          "id": "IRONCLAD",
+          "name": "The Ironclad"
+        },
+        {
+          "id": "MAGNUM_OPUS",
+          "name": "Magnum Opus"
+        },
+        {
+          "id": "NECROBINDER",
+          "name": "The Necrobinder"
+        },
+        {
+          "id": "REGENT",
+          "name": "The Regent"
+        },
+        {
+          "id": "REOPENING",
+          "name": "The Reopening"
+        },
+        {
+          "id": "SILENT",
+          "name": "The Silent"
+        },
+        {
+          "id": "TALES_FROM_THE_SPIRE",
+          "name": "Tales from the Spire"
         }
       ]
     }
