@@ -7,14 +7,14 @@
     "description": "あなたは隠された小部屋を見つけた。\n\n不可思議なリズムで変色する、煮えたぎる液体の池から蒸気が立ち昇っている。 天井から垂れ下がるフジツボのような塊から粘性の体液が滴り、水面に落ちると身悶えするようにシューッと音を立てた。 空気は重く、[blue]塩気[/blue]と[green]生々しい有機物[/green]の臭いが充満している。\n\n最も大きな池の縁に近づくと、水面が波打ち、液体はより一層激しく泡立ち始めた。 まるであなたの入浴を待ちわびているかのようだ。",
     "options": [
       {
-        "id": "ABSTAIN",
-        "title": "遠慮する",
-        "description": "HPを[green]10[/green]回復する。"
-      },
-      {
         "id": "IMMERSE",
         "title": "入浴する",
         "description": "最大HPが[green]2[/green]増加する。 [red]3[/red]ダメージを受ける。"
+      },
+      {
+        "id": "ABSTAIN",
+        "title": "遠慮する",
+        "description": "HPを[green]10[/green]回復する。"
       }
     ],
     "pages": [
@@ -27,14 +27,14 @@
         "description": null,
         "options": [
           {
-            "id": "EXIT_BATHS",
-            "title": "浴場を出る。",
-            "description": ""
-          },
-          {
             "id": "LINGER",
             "title": "長風呂する",
             "description": "最大HPが[green]2[/green]増加。 [red]3[/red]ダメージを受ける。"
+          },
+          {
+            "id": "EXIT_BATHS",
+            "title": "浴場を出る。",
+            "description": ""
           }
         ]
       },
@@ -55,14 +55,14 @@
         "description": "あなたは隠された小部屋を見つけた。\n\n不可思議なリズムで変色する、煮えたぎる液体の池から蒸気が立ち昇っている。 天井から垂れ下がるフジツボのような塊から粘性の体液が滴り、水面に落ちると身悶えするようにシューッと音を立てた。 空気は重く、[blue]塩気[/blue]と[green]生々しい有機物[/green]の臭いが充満している。\n\n最も大きな池の縁に近づくと、水面が波打ち、液体はより一層激しく泡立ち始めた。 まるであなたの入浴を待ちわびているかのようだ。",
         "options": [
           {
-            "id": "ABSTAIN",
-            "title": "遠慮する",
-            "description": "HPを[green]10[/green]回復する。"
-          },
-          {
             "id": "IMMERSE",
             "title": "入浴する",
             "description": "最大HPが[green]2[/green]増加する。 [red]3[/red]ダメージを受ける。"
+          },
+          {
+            "id": "ABSTAIN",
+            "title": "遠慮する",
+            "description": "HPを[green]10[/green]回復する。"
           }
         ]
       },
@@ -257,14 +257,14 @@
     "description": "[jitter]*ブスッ*[/jitter]\n\n頭のてっぺんに鋭い痛みが走ったかと思うと、脳内に直接、奇妙な声が響いてきた。\n\n[purple][sine]「知識ヲ、共有スル？？」[/sine][/purple]\n\nさて、どうしたものか……",
     "options": [
       {
-        "id": "RIP",
-        "title": "ヒルを引き剥がす",
-        "description": "HPを[red]5[/red]失う。 無色カード報酬を1枚受け取る。"
-      },
-      {
         "id": "SHARE_KNOWLEDGE",
         "title": "知識を共有する",
         "description": "ランダムなカード[blue]5[/blue]枚から[blue]1[/blue]枚を選び、[gold]デッキ[/gold]に追加。"
+      },
+      {
+        "id": "RIP",
+        "title": "ヒルを引き剥がす",
+        "description": "HPを[red]5[/red]失う。 無色カード報酬を1枚受け取る。"
       }
     ],
     "pages": [
@@ -273,14 +273,14 @@
         "description": "[jitter]*ブスッ*[/jitter]\n\n頭のてっぺんに鋭い痛みが走ったかと思うと、脳内に直接、奇妙な声が響いてきた。\n\n[purple][sine]「知識ヲ、共有スル？？」[/sine][/purple]\n\nさて、どうしたものか……",
         "options": [
           {
-            "id": "RIP",
-            "title": "ヒルを引き剥がす",
-            "description": "HPを[red]5[/red]失う。 無色カード報酬を1枚受け取る。"
-          },
-          {
             "id": "SHARE_KNOWLEDGE",
             "title": "知識を共有する",
             "description": "ランダムなカード[blue]5[/blue]枚から[blue]1[/blue]枚を選び、[gold]デッキ[/gold]に追加。"
+          },
+          {
+            "id": "RIP",
+            "title": "ヒルを引き剥がす",
+            "description": "HPを[red]5[/red]失う。 無色カード報酬を1枚受け取る。"
           }
         ]
       },
@@ -558,14 +558,14 @@
     "description": "[sine][blue]「来ることは、視えておったぞ……！」[/blue][/sine]\n\n[purple]神秘的な小屋[/purple]に入ると、[jitter]しわがれた[/jitter]声が響いてきた。\n\n[sine][blue]「お主の運命がここへ導いたのじゃ。 お主の未来と運勢を明らかにせねばならん。 我らすべてを救うために！！」[/blue][/sine]\n「さあ、[gold]水晶占い[/gold]のコースを選んでおくれ。 この免責事項にもサインを頼むぞい」老婆はそう言って、ペンと羊皮紙を取り出した。",
     "options": [
       {
-        "id": "PAYMENT_PLAN",
-        "title": "支払いプラン",
-        "description": "[red]負債[/red]を1枚獲得。 [blue]6[/blue]回[purple]占う[/purple]。"
-      },
-      {
         "id": "UNCOVER_FUTURE",
         "title": "未来を明らかにする",
         "description": "[red]50[/red][gold]ゴールド[/gold]を支払う。 [blue]3[/blue]回[purple]占う[/purple]"
+      },
+      {
+        "id": "PAYMENT_PLAN",
+        "title": "支払いプラン",
+        "description": "[red]負債[/red]を1枚獲得。 [blue]6[/blue]回[purple]占う[/purple]。"
       }
     ],
     "pages": [
@@ -578,14 +578,14 @@
         "description": "[sine][blue]「来ることは、視えておったぞ……！」[/blue][/sine]\n\n[purple]神秘的な小屋[/purple]に入ると、[jitter]しわがれた[/jitter]声が響いてきた。\n\n[sine][blue]「お主の運命がここへ導いたのじゃ。 お主の未来と運勢を明らかにせねばならん。 我らすべてを救うために！！」[/blue][/sine]\n「さあ、[gold]水晶占い[/gold]のコースを選んでおくれ。 この免責事項にもサインを頼むぞい」老婆はそう言って、ペンと羊皮紙を取り出した。",
         "options": [
           {
-            "id": "PAYMENT_PLAN",
-            "title": "支払いプラン",
-            "description": "[red]負債[/red]を1枚獲得。 [blue]6[/blue]回[purple]占う[/purple]。"
-          },
-          {
             "id": "UNCOVER_FUTURE",
             "title": "未来を明らかにする",
             "description": "[red]50[/red][gold]ゴールド[/gold]を支払う。 [blue]3[/blue]回[purple]占う[/purple]"
+          },
+          {
+            "id": "PAYMENT_PLAN",
+            "title": "支払いプラン",
+            "description": "[red]負債[/red]を1枚獲得。 [blue]6[/blue]回[purple]占う[/purple]。"
           }
         ]
       },
@@ -813,14 +813,14 @@
     "description": "しばらく道を間違えて進んでいたようだ。 [green]シダ[/green]や[green]低木[/green]、そして[green]ツタ[/green]が生い茂る、鬱蒼としたジャングルに迷い込んでしまった。 特に[green]ツタ[/green]がひどい。 疲労困憊の中、暗い幻聴が頭をよぎる。\n\n[sine][purple]「お前は道に迷い、備えもなく、逃れられぬ死が近づいている。」[/purple][/sine]\n\nどうするべきか？",
     "options": [
       {
-        "id": "REST",
-        "title": "休憩する",
-        "description": "HPを[green]30% Max[/green]回復する。 [red]敵[/red]と戦う。"
-      },
-      {
         "id": "TRUDGE_ON",
         "title": "意地でも進む",
         "description": "[gold]デッキ[/gold]からカードを1枚削除する。 HPを[red]11[/red]失う。"
+      },
+      {
+        "id": "REST",
+        "title": "休憩する",
+        "description": "HPを[green]30% Max[/green]回復する。 [red]敵[/red]と戦う。"
       }
     ],
     "pages": [
@@ -829,14 +829,14 @@
         "description": "しばらく道を間違えて進んでいたようだ。 [green]シダ[/green]や[green]低木[/green]、そして[green]ツタ[/green]が生い茂る、鬱蒼としたジャングルに迷い込んでしまった。 特に[green]ツタ[/green]がひどい。 疲労困憊の中、暗い幻聴が頭をよぎる。\n\n[sine][purple]「お前は道に迷い、備えもなく、逃れられぬ死が近づいている。」[/purple][/sine]\n\nどうするべきか？",
         "options": [
           {
-            "id": "REST",
-            "title": "休憩する",
-            "description": "HPを[green]30% Max[/green]回復する。 [red]敵[/red]と戦う。"
-          },
-          {
             "id": "TRUDGE_ON",
             "title": "意地でも進む",
             "description": "[gold]デッキ[/gold]からカードを1枚削除する。 HPを[red]11[/red]失う。"
+          },
+          {
+            "id": "REST",
+            "title": "休憩する",
+            "description": "HPを[green]30% Max[/green]回復する。 [red]敵[/red]と戦う。"
           }
         ]
       },
@@ -865,11 +865,6 @@
     "description": "あなたは隠し部屋に足を踏み入れた……\n\n部屋中が人形で埋め尽くされている。 一つとして同じものはなく、その表情は[green]喜び[/green]から[purple]悲哀[/purple]まで様々だ。 着ている服は時代が数世紀に渡ってバラバラで、異界の物とすら思われるものもある。\n\n次第に、[sine][blue]合唱のようなささやき声[/blue][/sine]は大きくなり、やがて[jitter][red]絶叫[/red][/jitter]となって、我先にとあなたを呼び求めるようになった……\n\nどれか一つを選び、一刻も早く立ち去らなければ。",
     "options": [
       {
-        "id": "EXAMINE",
-        "title": "念入りに調べ、最良のものを選ぶ",
-        "description": "HPを[red]15[/red]失う。 [blue]3[/blue]つの[gold]人形レリック[/gold]から[blue]1[/blue]つを選ぶ。"
-      },
-      {
         "id": "RANDOM",
         "title": "ランダムに選ぶ",
         "description": "ランダムな[gold]人形レリック[/gold]を1体獲得する。"
@@ -878,6 +873,11 @@
         "id": "TAKE_SOME_TIME",
         "title": "少しだけ時間をかける",
         "description": "HPを[red]5[/red]失う。 [blue]2[/blue]つの[gold]人形レリック[/gold]から[blue]1[/blue]つを選ぶ。"
+      },
+      {
+        "id": "EXAMINE",
+        "title": "念入りに調べ、最良のものを選ぶ",
+        "description": "HPを[red]15[/red]失う。 [blue]3[/blue]つの[gold]人形レリック[/gold]から[blue]1[/blue]つを選ぶ。"
       }
     ],
     "pages": [
@@ -898,11 +898,6 @@
         "description": "あなたは隠し部屋に足を踏み入れた……\n\n部屋中が人形で埋め尽くされている。 一つとして同じものはなく、その表情は[green]喜び[/green]から[purple]悲哀[/purple]まで様々だ。 着ている服は時代が数世紀に渡ってバラバラで、異界の物とすら思われるものもある。\n\n次第に、[sine][blue]合唱のようなささやき声[/blue][/sine]は大きくなり、やがて[jitter][red]絶叫[/red][/jitter]となって、我先にとあなたを呼び求めるようになった……\n\nどれか一つを選び、一刻も早く立ち去らなければ。",
         "options": [
           {
-            "id": "EXAMINE",
-            "title": "念入りに調べ、最良のものを選ぶ",
-            "description": "HPを[red]15[/red]失う。 [blue]3[/blue]つの[gold]人形レリック[/gold]から[blue]1[/blue]つを選ぶ。"
-          },
-          {
             "id": "RANDOM",
             "title": "ランダムに選ぶ",
             "description": "ランダムな[gold]人形レリック[/gold]を1体獲得する。"
@@ -911,6 +906,11 @@
             "id": "TAKE_SOME_TIME",
             "title": "少しだけ時間をかける",
             "description": "HPを[red]5[/red]失う。 [blue]2[/blue]つの[gold]人形レリック[/gold]から[blue]1[/blue]つを選ぶ。"
+          },
+          {
+            "id": "EXAMINE",
+            "title": "念入りに調べ、最良のものを選ぶ",
+            "description": "HPを[red]15[/red]失う。 [blue]3[/blue]つの[gold]人形レリック[/gold]から[blue]1[/blue]つを選ぶ。"
           }
         ]
       },
@@ -943,14 +943,14 @@
     "description": "さっきまで何もなかったはずの場所に、入り口が現れた……\n\n中に入ると、二つの輝く扉と[gold]身なりの良いドアマン[/gold]が待っていた。\n「やっと、お客様がいらした！ どうぞどうぞ！ お好きな扉をお選びください！」\n\n[blue]ここは本当にスパイアの中なのか？ それにしてはあまりに綺麗すぎる…… [/blue]",
     "options": [
       {
-        "id": "DARK",
-        "title": "闇の扉",
-        "description": "[gold]デッキ[/gold]からカードを[blue]1[/blue]枚削除。"
-      },
-      {
         "id": "LIGHT",
         "title": "光の扉",
         "description": "ランダムなカードを[blue]2[/blue]枚[gold]アップグレード[/gold]。"
+      },
+      {
+        "id": "DARK",
+        "title": "闇の扉",
+        "description": "[gold]デッキ[/gold]からカードを[blue]1[/blue]枚削除。"
       }
     ],
     "pages": [
@@ -963,14 +963,14 @@
         "description": "さっきまで何もなかったはずの場所に、入り口が現れた……\n\n中に入ると、二つの輝く扉と[gold]身なりの良いドアマン[/gold]が待っていた。\n「やっと、お客様がいらした！ どうぞどうぞ！ お好きな扉をお選びください！」\n\n[blue]ここは本当にスパイアの中なのか？ それにしてはあまりに綺麗すぎる…… [/blue]",
         "options": [
           {
-            "id": "DARK",
-            "title": "闇の扉",
-            "description": "[gold]デッキ[/gold]からカードを[blue]1[/blue]枚削除。"
-          },
-          {
             "id": "LIGHT",
             "title": "光の扉",
             "description": "ランダムなカードを[blue]2[/blue]枚[gold]アップグレード[/gold]。"
+          },
+          {
+            "id": "DARK",
+            "title": "闇の扉",
+            "description": "[gold]デッキ[/gold]からカードを[blue]1[/blue]枚削除。"
           }
         ]
       },
@@ -1044,6 +1044,11 @@
         "description": null,
         "options": [
           {
+            "id": "LOCKED",
+            "title": "金欠",
+            "description": "まだ食べられるが、[gold]ゴールド[/gold]がもうない。"
+          },
+          {
             "id": "CAVIAR",
             "title": "レーンからキャビアを取る",
             "description": "[red]35[/red][gold]ゴールド[/gold]を支払う。 最大HPが[green]4[/green]増加する。 食事を続ける！"
@@ -1067,11 +1072,6 @@
             "id": "JELLY_LIVER",
             "title": "レーンからゼリーレバーを取る",
             "description": "[red]35[/red][gold]ゴールド[/gold]を支払う。 カードを1枚[gold]変化[/gold]させる。 食事を続ける！"
-          },
-          {
-            "id": "LOCKED",
-            "title": "金欠",
-            "description": "まだ食べられるが、[gold]ゴールド[/gold]がもうない。"
           },
           {
             "id": "SEAPUNK_SALAD",
@@ -1139,14 +1139,14 @@
     "description": "[jitter]巨大な人型の穴が無数にうがたれた[/jitter]広大な野原が突如として眼前に現れ、あなたは足を止めた。\n\n無数にある穴のうちの一つが、あなたの体格や輪郭と寸分違わず一致している。\n\n[sine][orange]ぴったりだ…… [/orange][/sine]",
     "options": [
       {
-        "id": "ENTER_YOUR_HOLE",
-        "title": "“自分の”穴に入る",
-        "description": "カード1枚に、[purple]完璧な適合[/purple]を[gold]エンチャント[/gold]する。"
-      },
-      {
         "id": "RESIST",
         "title": "やめておく",
         "description": "[gold]デッキ[/gold]からカードを[blue]2[/blue]枚削除。 [red]凡庸[/red]を[gold]デッキ[/gold]に追加。"
+      },
+      {
+        "id": "ENTER_YOUR_HOLE",
+        "title": "“自分の”穴に入る",
+        "description": "カード1枚に、[purple]完璧な適合[/purple]を[gold]エンチャント[/gold]する。"
       }
     ],
     "pages": [
@@ -1159,14 +1159,14 @@
         "description": "[jitter]巨大な人型の穴が無数にうがたれた[/jitter]広大な野原が突如として眼前に現れ、あなたは足を止めた。\n\n無数にある穴のうちの一つが、あなたの体格や輪郭と寸分違わず一致している。\n\n[sine][orange]ぴったりだ…… [/orange][/sine]",
         "options": [
           {
-            "id": "ENTER_YOUR_HOLE",
-            "title": "“自分の”穴に入る",
-            "description": "カード1枚に、[purple]完璧な適合[/purple]を[gold]エンチャント[/gold]する。"
-          },
-          {
             "id": "RESIST",
             "title": "やめておく",
             "description": "[gold]デッキ[/gold]からカードを[blue]2[/blue]枚削除。 [red]凡庸[/red]を[gold]デッキ[/gold]に追加。"
+          },
+          {
+            "id": "ENTER_YOUR_HOLE",
+            "title": "“自分の”穴に入る",
+            "description": "カード1枚に、[purple]完璧な適合[/purple]を[gold]エンチャント[/gold]する。"
           }
         ]
       },
@@ -1184,9 +1184,9 @@
     "description": "[jitter][aqua]青い炎が揺らめく[/aqua][/jitter]墓が一つある……\n\n誇り高き戦士が戦死したが、その魂は安らぐことなく彷徨っているようだ。 魂は戦い続けることを望み、あなたと共に連れて行ってくれと[sine]懇願[/sine]しているようだ。\n\nだが、[red]真実[/red]と向き合わせるほうが、彼のためではないだろうか？",
     "options": [
       {
-        "id": "ACCEPT",
-        "title": "忘れ去られし魂を受け入れる",
-        "description": "[gold]忘れ去られし魂[/gold]を獲得。"
+        "id": "CONFRONT_LOCKED",
+        "title": "ロック中",
+        "description": "[gold]廃棄[/gold]を持っていて、[purple]エンチャント[/purple]できるカードがない。"
       },
       {
         "id": "CONFRONT",
@@ -1194,9 +1194,9 @@
         "description": "[red]腐敗[/red]を[gold]デッキ[/gold]に追加。 [gold]廃棄[/gold]を持つカード1枚に[purple]魂力[/purple]を[gold]エンチャント[/gold]する。"
       },
       {
-        "id": "CONFRONT_LOCKED",
-        "title": "ロック中",
-        "description": "[gold]廃棄[/gold]を持っていて、[purple]エンチャント[/purple]できるカードがない。"
+        "id": "ACCEPT",
+        "title": "忘れ去られし魂を受け入れる",
+        "description": "[gold]忘れ去られし魂[/gold]を獲得。"
       }
     ],
     "pages": [
@@ -1213,9 +1213,9 @@
         "description": "[jitter][aqua]青い炎が揺らめく[/aqua][/jitter]墓が一つある……\n\n誇り高き戦士が戦死したが、その魂は安らぐことなく彷徨っているようだ。 魂は戦い続けることを望み、あなたと共に連れて行ってくれと[sine]懇願[/sine]しているようだ。\n\nだが、[red]真実[/red]と向き合わせるほうが、彼のためではないだろうか？",
         "options": [
           {
-            "id": "ACCEPT",
-            "title": "忘れ去られし魂を受け入れる",
-            "description": "[gold]忘れ去られし魂[/gold]を獲得。"
+            "id": "CONFRONT_LOCKED",
+            "title": "ロック中",
+            "description": "[gold]廃棄[/gold]を持っていて、[purple]エンチャント[/purple]できるカードがない。"
           },
           {
             "id": "CONFRONT",
@@ -1223,9 +1223,9 @@
             "description": "[red]腐敗[/red]を[gold]デッキ[/gold]に追加。 [gold]廃棄[/gold]を持つカード1枚に[purple]魂力[/purple]を[gold]エンチャント[/gold]する。"
           },
           {
-            "id": "CONFRONT_LOCKED",
-            "title": "ロック中",
-            "description": "[gold]廃棄[/gold]を持っていて、[purple]エンチャント[/purple]できるカードがない。"
+            "id": "ACCEPT",
+            "title": "忘れ去られし魂を受け入れる",
+            "description": "[gold]忘れ去られし魂[/gold]を獲得。"
           }
         ]
       }
@@ -1333,14 +1333,14 @@
     "description": "開けた場所で、[green]寄せ集めの冒険者パーティ[/green]に出会った。 [purple]巨大な迷宮[/purple]を見下ろしながら、身振り手振りを交えて話している、\n\n彼らはこの迷宮の財宝を狙う[b]壮大なクエスト[/b]に、一緒に挑まないかと持ちかけてきた。 経験豊かなあなたには、この迷宮に[red][jitter]致命的な罠[/jitter][/red]と[orange][sine]ガーディアン[/sine][/orange]がひしめいていることが手に取るようにわかる。\n\n協力すれば楽にはなるだろう。 だがその分、戦利品は山分けになってしまう。",
     "options": [
       {
-        "id": "JOIN_FORCES",
-        "title": "パーティーを組む",
-        "description": "[blue]50[/blue][gold]ゴールド[/gold]を獲得。"
-      },
-      {
         "id": "SOLO_QUEST",
         "title": "ソロプレイを貫く",
         "description": "[blue]150[/blue][gold]ゴールド[/gold]を獲得。 HPを[red]18[/red]失う。"
+      },
+      {
+        "id": "JOIN_FORCES",
+        "title": "パーティーを組む",
+        "description": "[blue]50[/blue][gold]ゴールド[/gold]を獲得。"
       }
     ],
     "pages": [
@@ -1349,14 +1349,14 @@
         "description": "開けた場所で、[green]寄せ集めの冒険者パーティ[/green]に出会った。 [purple]巨大な迷宮[/purple]を見下ろしながら、身振り手振りを交えて話している、\n\n彼らはこの迷宮の財宝を狙う[b]壮大なクエスト[/b]に、一緒に挑まないかと持ちかけてきた。 経験豊かなあなたには、この迷宮に[red][jitter]致命的な罠[/jitter][/red]と[orange][sine]ガーディアン[/sine][/orange]がひしめいていることが手に取るようにわかる。\n\n協力すれば楽にはなるだろう。 だがその分、戦利品は山分けになってしまう。",
         "options": [
           {
-            "id": "JOIN_FORCES",
-            "title": "パーティーを組む",
-            "description": "[blue]50[/blue][gold]ゴールド[/gold]を獲得。"
-          },
-          {
             "id": "SOLO_QUEST",
             "title": "ソロプレイを貫く",
             "description": "[blue]150[/blue][gold]ゴールド[/gold]を獲得。 HPを[red]18[/red]失う。"
+          },
+          {
+            "id": "JOIN_FORCES",
+            "title": "パーティーを組む",
+            "description": "[blue]50[/blue][gold]ゴールド[/gold]を獲得。"
           }
         ]
       },
@@ -1383,14 +1383,14 @@
         "description": "[red]腐敗[/red]を[gold]デッキ[/gold]に追加。 [gold]迷子のウィスプ[/gold]を獲得する。"
       },
       {
-        "id": "CLAIM_LOCKED",
-        "title": "ロック中",
-        "description": "最大HPが低すぎる。"
-      },
-      {
         "id": "SEARCH",
         "title": "周辺を探索する",
         "description": "[blue]60[/blue][gold]ゴールド[/gold]を獲得。"
+      },
+      {
+        "id": "CLAIM_LOCKED",
+        "title": "ロック中",
+        "description": "最大HPが低すぎる。"
       }
     ],
     "pages": [
@@ -1408,14 +1408,14 @@
             "description": "[red]腐敗[/red]を[gold]デッキ[/gold]に追加。 [gold]迷子のウィスプ[/gold]を獲得する。"
           },
           {
-            "id": "CLAIM_LOCKED",
-            "title": "ロック中",
-            "description": "最大HPが低すぎる。"
-          },
-          {
             "id": "SEARCH",
             "title": "周辺を探索する",
             "description": "[blue]60[/blue][gold]ゴールド[/gold]を獲得。"
+          },
+          {
+            "id": "CLAIM_LOCKED",
+            "title": "ロック中",
+            "description": "最大HPが低すぎる。"
           }
         ]
       },
@@ -1433,6 +1433,11 @@
     "description": "不自然な青い光に包まれた空き地に足を踏み入れた。 そびえ立つキノコたちが発光して脈打ち、その傘は膨れ上がりテカテカと光っている。 近づくと、菌類たちは胸の奥まで響くような[sine][purple]心をかき乱すメロディ[/purple][/sine]を奏で始めた。\n\nあなたは一番大きなキノコの中に何かが埋まっていることに気づいた。 それは菌類の歌のリズムに合わせて[sine]脈動しながら[/sine]光っている。",
     "options": [
       {
+        "id": "REACH_INTO_THE_FLESH",
+        "title": "キノコの中に手を突っ込む",
+        "description": "[gold]デッキ[/gold]からカードを[blue]2[/blue]枚削除。 [red]菌糸の汚染[/red]を[gold]デッキ[/gold]に追加。"
+      },
+      {
         "id": "OFFER_TRIBUTE",
         "title": "貢物を捧げる",
         "description": "[red]149[/red][gold]ゴールド[/gold]を支払う。 ランダムな[gold]レリック[/gold]を1個獲得する。"
@@ -1441,11 +1446,6 @@
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "ロック中",
         "description": "[blue]149[/blue][gold]ゴールド[/gold]が必要。"
-      },
-      {
-        "id": "REACH_INTO_THE_FLESH",
-        "title": "キノコの中に手を突っ込む",
-        "description": "[gold]デッキ[/gold]からカードを[blue]2[/blue]枚削除。 [red]菌糸の汚染[/red]を[gold]デッキ[/gold]に追加。"
       }
     ],
     "pages": [
@@ -1453,6 +1453,11 @@
         "id": "INITIAL",
         "description": "不自然な青い光に包まれた空き地に足を踏み入れた。 そびえ立つキノコたちが発光して脈打ち、その傘は膨れ上がりテカテカと光っている。 近づくと、菌類たちは胸の奥まで響くような[sine][purple]心をかき乱すメロディ[/purple][/sine]を奏で始めた。\n\nあなたは一番大きなキノコの中に何かが埋まっていることに気づいた。 それは菌類の歌のリズムに合わせて[sine]脈動しながら[/sine]光っている。",
         "options": [
+          {
+            "id": "REACH_INTO_THE_FLESH",
+            "title": "キノコの中に手を突っ込む",
+            "description": "[gold]デッキ[/gold]からカードを[blue]2[/blue]枚削除。 [red]菌糸の汚染[/red]を[gold]デッキ[/gold]に追加。"
+          },
           {
             "id": "OFFER_TRIBUTE",
             "title": "貢物を捧げる",
@@ -1462,11 +1467,6 @@
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "ロック中",
             "description": "[blue]149[/blue][gold]ゴールド[/gold]が必要。"
-          },
-          {
-            "id": "REACH_INTO_THE_FLESH",
-            "title": "キノコの中に手を突っ込む",
-            "description": "[gold]デッキ[/gold]からカードを[blue]2[/blue]枚削除。 [red]菌糸の汚染[/red]を[gold]デッキ[/gold]に追加。"
           }
         ]
       },
@@ -2314,14 +2314,14 @@
     "description": "2体の[gold]パンチ・コンストラクト[/gold]が殴り合っており、その間にいくつかのお宝が落ちているのが見える……\n\n盗み取ってみるか？",
     "options": [
       {
-        "id": "I_CAN_TAKE_THEM",
-        "title": "あいつらなら倒せそうだ",
-        "description": "[gold]より良い報酬[/gold]を求めて戦う"
-      },
-      {
         "id": "NAB",
         "title": "盗む",
         "description": "[red]負傷[/red]を[gold]デッキ[/gold]に追加。 ランダムな[gold]レリック[/gold]を1個獲得する。"
+      },
+      {
+        "id": "I_CAN_TAKE_THEM",
+        "title": "あいつらなら倒せそうだ",
+        "description": "[gold]より良い報酬[/gold]を求めて戦う"
       }
     ],
     "pages": [
@@ -2330,14 +2330,14 @@
         "description": "2体の[gold]パンチ・コンストラクト[/gold]が殴り合っており、その間にいくつかのお宝が落ちているのが見える……\n\n盗み取ってみるか？",
         "options": [
           {
-            "id": "I_CAN_TAKE_THEM",
-            "title": "あいつらなら倒せそうだ",
-            "description": "[gold]より良い報酬[/gold]を求めて戦う"
-          },
-          {
             "id": "NAB",
             "title": "盗む",
             "description": "[red]負傷[/red]を[gold]デッキ[/gold]に追加。 ランダムな[gold]レリック[/gold]を1個獲得する。"
+          },
+          {
+            "id": "I_CAN_TAKE_THEM",
+            "title": "あいつらなら倒せそうだ",
+            "description": "[gold]より良い報酬[/gold]を求めて戦う"
           }
         ]
       },
@@ -2366,14 +2366,14 @@
     "description": "[purple]これまで見たこともないぐらいに年老いた老人[/purple]が、あなたに近づいてきた。\n[sine]「また会ったな…… 私だ、ランウィッドだ！」[/sine]\n\nあなたはこの男に全く見覚えがない。",
     "options": [
       {
-        "id": "GOLD",
-        "title": "100ゴールドを渡す",
-        "description": "ランダムな[gold]レリック[/gold]を1個獲得する。"
-      },
-      {
         "id": "POTION",
         "title": "Potionを渡す",
         "description": "ランダムな[gold]レリック[/gold]を1個獲得する。"
+      },
+      {
+        "id": "RELIC",
+        "title": "Relicを渡す",
+        "description": "ランダムな[gold]レリック[/gold]を[blue]2[/blue]個入手する。"
       },
       {
         "id": "POTION_LOCKED",
@@ -2381,9 +2381,9 @@
         "description": "渡せるポーションが1つもない。"
       },
       {
-        "id": "RELIC",
-        "title": "Relicを渡す",
-        "description": "ランダムな[gold]レリック[/gold]を[blue]2[/blue]個入手する。"
+        "id": "GOLD",
+        "title": "100ゴールドを渡す",
+        "description": "ランダムな[gold]レリック[/gold]を1個獲得する。"
       },
       {
         "id": "RELIC_LOCKED",
@@ -2401,14 +2401,14 @@
         "description": "[purple]これまで見たこともないぐらいに年老いた老人[/purple]が、あなたに近づいてきた。\n[sine]「また会ったな…… 私だ、ランウィッドだ！」[/sine]\n\nあなたはこの男に全く見覚えがない。",
         "options": [
           {
-            "id": "GOLD",
-            "title": "100ゴールドを渡す",
-            "description": "ランダムな[gold]レリック[/gold]を1個獲得する。"
-          },
-          {
             "id": "POTION",
             "title": "Potionを渡す",
             "description": "ランダムな[gold]レリック[/gold]を1個獲得する。"
+          },
+          {
+            "id": "RELIC",
+            "title": "Relicを渡す",
+            "description": "ランダムな[gold]レリック[/gold]を[blue]2[/blue]個入手する。"
           },
           {
             "id": "POTION_LOCKED",
@@ -2416,9 +2416,9 @@
             "description": "渡せるポーションが1つもない。"
           },
           {
-            "id": "RELIC",
-            "title": "Relicを渡す",
-            "description": "ランダムな[gold]レリック[/gold]を[blue]2[/blue]個入手する。"
+            "id": "GOLD",
+            "title": "100ゴールドを渡す",
+            "description": "ランダムな[gold]レリック[/gold]を1個獲得する。"
           },
           {
             "id": "RELIC_LOCKED",
@@ -2445,14 +2445,14 @@
     "description": "これは何だ？ この場所は何かがおかしい……\n[sine]…… いしかおがか何は所場のこ ？ だ何はれこ[/sine]",
     "options": [
       {
-        "id": "SHATTER",
-        "title": "鏡を割る",
-        "description": "[gold]デッキ[/gold]を複製する。 [purple]不運[/purple]を受け取る。"
-      },
-      {
         "id": "TOUCH_A_MIRROR",
         "title": "鏡に触れる",
         "description": "ランダムなカードを[blue]2[/blue]枚[red]ダウングレード[/red]する。 ランダムなカードを[blue]4[/blue]枚[green]アップグレード[/green]する。"
+      },
+      {
+        "id": "SHATTER",
+        "title": "鏡を割る",
+        "description": "[gold]デッキ[/gold]を複製する。 [purple]不運[/purple]を受け取る。"
       }
     ],
     "pages": [
@@ -2461,14 +2461,14 @@
         "description": "これは何だ？ この場所は何かがおかしい……\n[sine]…… いしかおがか何は所場のこ ？ だ何はれこ[/sine]",
         "options": [
           {
-            "id": "SHATTER",
-            "title": "鏡を割る",
-            "description": "[gold]デッキ[/gold]を複製する。 [purple]不運[/purple]を受け取る。"
-          },
-          {
             "id": "TOUCH_A_MIRROR",
             "title": "鏡に触れる",
             "description": "ランダムなカードを[blue]2[/blue]枚[red]ダウングレード[/red]する。 ランダムなカードを[blue]4[/blue]枚[green]アップグレード[/green]する。"
+          },
+          {
+            "id": "SHATTER",
+            "title": "鏡を割る",
+            "description": "[gold]デッキ[/gold]を複製する。 [purple]不運[/purple]を受け取る。"
           }
         ]
       },
@@ -2490,8 +2490,8 @@
     "description": "角を曲がると、影を纏った人影に出くわした。 男はこちらへ向き直る。\n\n「ウェルカム！ 何が必要だ？」\n男がそう言って上着を広げると、[sine][purple]怪しげな品々[/purple][/sine]がズラリと並んでいた。",
     "options": [
       {
-        "id": "BOTTOM",
-        "title": "一番下の品を選ぶ",
+        "id": "TOP",
+        "title": "一番上の品を選ぶ",
         "description": "[gold]one of your Relics[/gold]を[gold]a random Relic[/gold]と交換する。"
       },
       {
@@ -2500,8 +2500,8 @@
         "description": "[gold]one of your Relics[/gold]を[gold]a random Relic[/gold]と交換する。"
       },
       {
-        "id": "TOP",
-        "title": "一番上の品を選ぶ",
+        "id": "BOTTOM",
+        "title": "一番下の品を選ぶ",
         "description": "[gold]one of your Relics[/gold]を[gold]a random Relic[/gold]と交換する。"
       }
     ],
@@ -2515,8 +2515,8 @@
         "description": "角を曲がると、影を纏った人影に出くわした。 男はこちらへ向き直る。\n\n「ウェルカム！ 何が必要だ？」\n男がそう言って上着を広げると、[sine][purple]怪しげな品々[/purple][/sine]がズラリと並んでいた。",
         "options": [
           {
-            "id": "BOTTOM",
-            "title": "一番下の品を選ぶ",
+            "id": "TOP",
+            "title": "一番上の品を選ぶ",
             "description": "[gold]one of your Relics[/gold]を[gold]a random Relic[/gold]と交換する。"
           },
           {
@@ -2525,8 +2525,8 @@
             "description": "[gold]one of your Relics[/gold]を[gold]a random Relic[/gold]と交換する。"
           },
           {
-            "id": "TOP",
-            "title": "一番上の品を選ぶ",
+            "id": "BOTTOM",
+            "title": "一番下の品を選ぶ",
             "description": "[gold]one of your Relics[/gold]を[gold]a random Relic[/gold]と交換する。"
           }
         ]
@@ -2691,19 +2691,14 @@
     "description": "床に一冊の本が落ちている。\n「スパイアを攻略する3つの極意」\n\n本は[red]血まみれ[/red]で、どうみても胡散臭いシロモノだ。\n\n読んでみるか?",
     "options": [
       {
-        "id": "NO_OPTIONS",
-        "title": "先へ進む",
-        "description": "エンチャントできるカードがない。"
+        "id": "READ_THE_BACK",
+        "title": "裏表紙を読む",
+        "description": "アタックを1枚選び、[purple]鋭利[/purple][blue]2[/blue]を[gold]エンチャント[/gold]する。"
       },
       {
-        "id": "READ_ENTIRE_BOOK",
-        "title": "読破する",
-        "description": "パワーを1枚選び、[purple]迅速[/purple][blue]2[/blue]を[gold]エンチャント[/gold]する。"
-      },
-      {
-        "id": "READ_ENTIRE_BOOK_LOCKED",
+        "id": "READ_THE_BACK_LOCKED",
         "title": "ロック中",
-        "description": "[gold]エンチャント[/gold]できるパワーがない。"
+        "description": "[gold]エンチャント[/gold]できるアタックがない。"
       },
       {
         "id": "READ_PASSAGE",
@@ -2716,14 +2711,19 @@
         "description": "[gold]エンチャント[/gold]できるスキルがない。"
       },
       {
-        "id": "READ_THE_BACK",
-        "title": "裏表紙を読む",
-        "description": "アタックを1枚選び、[purple]鋭利[/purple][blue]2[/blue]を[gold]エンチャント[/gold]する。"
+        "id": "READ_ENTIRE_BOOK",
+        "title": "読破する",
+        "description": "パワーを1枚選び、[purple]迅速[/purple][blue]2[/blue]を[gold]エンチャント[/gold]する。"
       },
       {
-        "id": "READ_THE_BACK_LOCKED",
+        "id": "READ_ENTIRE_BOOK_LOCKED",
         "title": "ロック中",
-        "description": "[gold]エンチャント[/gold]できるアタックがない。"
+        "description": "[gold]エンチャント[/gold]できるパワーがない。"
+      },
+      {
+        "id": "NO_OPTIONS",
+        "title": "先へ進む",
+        "description": "エンチャントできるカードがない。"
       }
     ],
     "pages": [
@@ -2732,19 +2732,14 @@
         "description": "床に一冊の本が落ちている。\n「スパイアを攻略する3つの極意」\n\n本は[red]血まみれ[/red]で、どうみても胡散臭いシロモノだ。\n\n読んでみるか?",
         "options": [
           {
-            "id": "NO_OPTIONS",
-            "title": "先へ進む",
-            "description": "エンチャントできるカードがない。"
+            "id": "READ_THE_BACK",
+            "title": "裏表紙を読む",
+            "description": "アタックを1枚選び、[purple]鋭利[/purple][blue]2[/blue]を[gold]エンチャント[/gold]する。"
           },
           {
-            "id": "READ_ENTIRE_BOOK",
-            "title": "読破する",
-            "description": "パワーを1枚選び、[purple]迅速[/purple][blue]2[/blue]を[gold]エンチャント[/gold]する。"
-          },
-          {
-            "id": "READ_ENTIRE_BOOK_LOCKED",
+            "id": "READ_THE_BACK_LOCKED",
             "title": "ロック中",
-            "description": "[gold]エンチャント[/gold]できるパワーがない。"
+            "description": "[gold]エンチャント[/gold]できるアタックがない。"
           },
           {
             "id": "READ_PASSAGE",
@@ -2757,14 +2752,19 @@
             "description": "[gold]エンチャント[/gold]できるスキルがない。"
           },
           {
-            "id": "READ_THE_BACK",
-            "title": "裏表紙を読む",
-            "description": "アタックを1枚選び、[purple]鋭利[/purple][blue]2[/blue]を[gold]エンチャント[/gold]する。"
+            "id": "READ_ENTIRE_BOOK",
+            "title": "読破する",
+            "description": "パワーを1枚選び、[purple]迅速[/purple][blue]2[/blue]を[gold]エンチャント[/gold]する。"
           },
           {
-            "id": "READ_THE_BACK_LOCKED",
+            "id": "READ_ENTIRE_BOOK_LOCKED",
             "title": "ロック中",
-            "description": "[gold]エンチャント[/gold]できるアタックがない。"
+            "description": "[gold]エンチャント[/gold]できるパワーがない。"
+          },
+          {
+            "id": "NO_OPTIONS",
+            "title": "先へ進む",
+            "description": "エンチャントできるカードがない。"
           }
         ]
       },
@@ -2794,14 +2794,14 @@
     "description": "ぐらつく木の橋を渡っていると、突然[blue][jitter]どしゃぶりの雨[/jitter][/blue]に見舞われた。 [purple][sine]すさまじい突風[/sine][/purple]が容赦なく吹き付け、旅の終わりへ誘おうとしている。",
     "options": [
       {
-        "id": "HOLD_ON_0",
-        "title": "しがみつく",
-        "description": "HPを[red]3+[/red]失う。 上の選択肢のカードがランダムに変わる。"
-      },
-      {
         "id": "OVERCOME",
         "title": "乗り越える",
         "description": "[gold]デッキ[/gold]から[red]a random Card[/red]が失われる。"
+      },
+      {
+        "id": "HOLD_ON_0",
+        "title": "しがみつく",
+        "description": "HPを[red]3+[/red]失う。 上の選択肢のカードがランダムに変わる。"
       }
     ],
     "pages": [
@@ -2898,14 +2898,14 @@
         "description": "ぐらつく木の橋を渡っていると、突然[blue][jitter]どしゃぶりの雨[/jitter][/blue]に見舞われた。 [purple][sine]すさまじい突風[/sine][/purple]が容赦なく吹き付け、旅の終わりへ誘おうとしている。",
         "options": [
           {
-            "id": "HOLD_ON_0",
-            "title": "しがみつく",
-            "description": "HPを[red]3+[/red]失う。 上の選択肢のカードがランダムに変わる。"
-          },
-          {
             "id": "OVERCOME",
             "title": "乗り越える",
             "description": "[gold]デッキ[/gold]から[red]a random Card[/red]が失われる。"
+          },
+          {
+            "id": "HOLD_ON_0",
+            "title": "しがみつく",
+            "description": "HPを[red]3+[/red]失う。 上の選択肢のカードがランダムに変わる。"
           }
         ]
       },
@@ -2923,14 +2923,14 @@
     "description": "あなたは[aqua][sine]巨大ならせんの渦巻き[/sine][/aqua]に偶然出くわした。 水は美しいバランスで渦を巻き、周囲の壁は螺旋模様で彩られている。\n\n[purple][sine]ぐるぐると…… ぐるぐると……\n…… ぐるぐると…… なんて光景だ…… [/sine][/purple]\n\nどうする？",
     "options": [
       {
-        "id": "DRINK",
-        "title": "飲む",
-        "description": "HPを[green]33% Max[/green]回復する。"
-      },
-      {
         "id": "OBSERVE",
         "title": "観察する",
         "description": "[gold]ストライク[/gold]か[gold]防御[/gold]1枚に、[purple]らせん[/purple]を[gold]エンチャント[/gold]する。"
+      },
+      {
+        "id": "DRINK",
+        "title": "飲む",
+        "description": "HPを[green]33% Max[/green]回復する。"
       },
       {
         "id": "REACH_IN",
@@ -2948,14 +2948,14 @@
         "description": "あなたは[aqua][sine]巨大ならせんの渦巻き[/sine][/aqua]に偶然出くわした。 水は美しいバランスで渦を巻き、周囲の壁は螺旋模様で彩られている。\n\n[purple][sine]ぐるぐると…… ぐるぐると……\n…… ぐるぐると…… なんて光景だ…… [/sine][/purple]\n\nどうする？",
         "options": [
           {
-            "id": "DRINK",
-            "title": "飲む",
-            "description": "HPを[green]33% Max[/green]回復する。"
-          },
-          {
             "id": "OBSERVE",
             "title": "観察する",
             "description": "[gold]ストライク[/gold]か[gold]防御[/gold]1枚に、[purple]らせん[/purple]を[gold]エンチャント[/gold]する。"
+          },
+          {
+            "id": "DRINK",
+            "title": "飲む",
+            "description": "HPを[green]33% Max[/green]回復する。"
           },
           {
             "id": "REACH_IN",
@@ -3037,14 +3037,14 @@
         "description": "ポーションが必要。"
       },
       {
-        "id": "PUSH",
-        "title": "押す",
-        "description": "HPを[red]6[/red]失う。 アタック1枚に[purple]活発[/purple][blue]8[/blue]を[gold]エンチャント[/gold]する。"
-      },
-      {
         "id": "PUSH_LOCKED",
         "title": "ロック中",
         "description": "アタックが必要。"
+      },
+      {
+        "id": "PUSH",
+        "title": "押す",
+        "description": "HPを[red]6[/red]失う。 アタック1枚に[purple]活発[/purple][blue]8[/blue]を[gold]エンチャント[/gold]する。"
       }
     ],
     "pages": [
@@ -3063,14 +3063,14 @@
             "description": "ポーションが必要。"
           },
           {
-            "id": "PUSH",
-            "title": "押す",
-            "description": "HPを[red]6[/red]失う。 アタック1枚に[purple]活発[/purple][blue]8[/blue]を[gold]エンチャント[/gold]する。"
-          },
-          {
             "id": "PUSH_LOCKED",
             "title": "ロック中",
             "description": "アタックが必要。"
+          },
+          {
+            "id": "PUSH",
+            "title": "押す",
+            "description": "HPを[red]6[/red]失う。 アタック1枚に[purple]活発[/purple][blue]8[/blue]を[gold]エンチャント[/gold]する。"
           }
         ]
       },
@@ -3092,14 +3092,14 @@
     "description": "池に半ば沈みかけた古い石像を見つけた。 その手は[blue]石の剣[/blue]の上に静かに添えられている。\n\n池の底では、何かが[gold][sine]きらきらと光って[/sine][/gold]いる。\nお供え物だろうか？\n\n切実にゴールドを必要としているんだが……",
     "options": [
       {
-        "id": "DIVE_INTO_WATER",
-        "title": "池に飛び込む",
-        "description": "[blue]111[/blue][gold]ゴールド[/gold]を獲得。 HPを[red]7[/red]失う。"
-      },
-      {
         "id": "GRAB_SWORD",
         "title": "剣を掴む",
         "description": "[gold]石の剣[/gold]を獲得する。"
+      },
+      {
+        "id": "DIVE_INTO_WATER",
+        "title": "池に飛び込む",
+        "description": "[blue]111[/blue][gold]ゴールド[/gold]を獲得。 HPを[red]7[/red]失う。"
       }
     ],
     "pages": [
@@ -3116,14 +3116,14 @@
         "description": "池に半ば沈みかけた古い石像を見つけた。 その手は[blue]石の剣[/blue]の上に静かに添えられている。\n\n池の底では、何かが[gold][sine]きらきらと光って[/sine][/gold]いる。\nお供え物だろうか？\n\n切実にゴールドを必要としているんだが……",
         "options": [
           {
-            "id": "DIVE_INTO_WATER",
-            "title": "池に飛び込む",
-            "description": "[blue]111[/blue][gold]ゴールド[/gold]を獲得。 HPを[red]7[/red]失う。"
-          },
-          {
             "id": "GRAB_SWORD",
             "title": "剣を掴む",
             "description": "[gold]石の剣[/gold]を獲得する。"
+          },
+          {
+            "id": "DIVE_INTO_WATER",
+            "title": "池に飛び込む",
+            "description": "[blue]111[/blue][gold]ゴールド[/gold]を獲得。 HPを[red]7[/red]失う。"
           }
         ]
       }
@@ -3182,14 +3182,14 @@
     "description": "冒険の途中、暗くて形を成していない肉塊に遭遇した。 そこからは、途方もない時を経た、邪悪な気配が漂っている。\n\n[sine]こっちに来い…… [/sine]",
     "options": [
       {
-        "id": "APPROACH",
-        "title": "近づく",
-        "description": "アタック1枚に、[purple]腐敗[/purple]を[gold]エンチャント[/gold]する。"
-      },
-      {
         "id": "APPROACH_LOCKED",
         "title": "ロック中",
         "description": "エンチャントできるアタックがない。"
+      },
+      {
+        "id": "APPROACH",
+        "title": "近づく",
+        "description": "アタック1枚に、[purple]腐敗[/purple]を[gold]エンチャント[/gold]する。"
       },
       {
         "id": "KILL_WITH_FIRE",
@@ -3207,14 +3207,14 @@
         "description": "冒険の途中、暗くて形を成していない肉塊に遭遇した。 そこからは、途方もない時を経た、邪悪な気配が漂っている。\n\n[sine]こっちに来い…… [/sine]",
         "options": [
           {
-            "id": "APPROACH",
-            "title": "近づく",
-            "description": "アタック1枚に、[purple]腐敗[/purple]を[gold]エンチャント[/gold]する。"
-          },
-          {
             "id": "APPROACH_LOCKED",
             "title": "ロック中",
             "description": "エンチャントできるアタックがない。"
+          },
+          {
+            "id": "APPROACH",
+            "title": "近づく",
+            "description": "アタック1枚に、[purple]腐敗[/purple]を[gold]エンチャント[/gold]する。"
           },
           {
             "id": "KILL_WITH_FIRE",
@@ -3859,14 +3859,14 @@
     "description": "かすかに発光する鍵を見つけ、拾い上げようとしたその時。\n\n「その鍵、ずっと探してたんだ！ 悪いけど、返してくれないか？」\n\nどう見ても関わらない方がよさそうな人物だが、決めつけも良くないかもしれない。",
     "options": [
       {
-        "id": "KEEP_THE_KEY",
-        "title": "鍵を渡さない",
-        "description": "鍵を手に入れるため、戦う。"
-      },
-      {
         "id": "RETURN_THE_KEY",
         "title": "鍵を返す",
         "description": "[blue]100[/blue][gold]ゴールド[/gold]を獲得。"
+      },
+      {
+        "id": "KEEP_THE_KEY",
+        "title": "鍵を渡さない",
+        "description": "鍵を手に入れるため、戦う。"
       }
     ],
     "pages": [
@@ -3886,14 +3886,14 @@
         "description": "かすかに発光する鍵を見つけ、拾い上げようとしたその時。\n\n「その鍵、ずっと探してたんだ！ 悪いけど、返してくれないか？」\n\nどう見ても関わらない方がよさそうな人物だが、決めつけも良くないかもしれない。",
         "options": [
           {
-            "id": "KEEP_THE_KEY",
-            "title": "鍵を渡さない",
-            "description": "鍵を手に入れるため、戦う。"
-          },
-          {
             "id": "RETURN_THE_KEY",
             "title": "鍵を返す",
             "description": "[blue]100[/blue][gold]ゴールド[/gold]を獲得。"
+          },
+          {
+            "id": "KEEP_THE_KEY",
+            "title": "鍵を渡さない",
+            "description": "鍵を手に入れるため、戦う。"
           }
         ]
       },
@@ -3963,14 +3963,14 @@
     "description": "近くの穴から突如として腕が2本突き出てきた。 一方の手には[gold]怪しげな財宝の袋[/gold]、もう一方には明らかに[purple]呪われたレリック[/purple]が握られている。\n\n[jitter][blue]「こっちか…… そっちか？」[/blue][/jitter]\n穴の奥底から、しゃがれた声がささやく。",
     "options": [
       {
-        "id": "ORNATE",
-        "title": "そっち",
-        "description": "[red]不器用[/red]を[gold]デッキ[/gold]に追加。 ランダムな[gold]レリック[/gold]を1個獲得する。"
-      },
-      {
         "id": "PLAIN",
         "title": "こっち",
         "description": "HPを[red]6[/red]失う。 [blue]41-69[/blue][gold]ゴールド[/gold]を獲得。"
+      },
+      {
+        "id": "ORNATE",
+        "title": "そっち",
+        "description": "[red]不器用[/red]を[gold]デッキ[/gold]に追加。 ランダムな[gold]レリック[/gold]を1個獲得する。"
       }
     ],
     "pages": [
@@ -3979,14 +3979,14 @@
         "description": "近くの穴から突如として腕が2本突き出てきた。 一方の手には[gold]怪しげな財宝の袋[/gold]、もう一方には明らかに[purple]呪われたレリック[/purple]が握られている。\n\n[jitter][blue]「こっちか…… そっちか？」[/blue][/jitter]\n穴の奥底から、しゃがれた声がささやく。",
         "options": [
           {
-            "id": "ORNATE",
-            "title": "そっち",
-            "description": "[red]不器用[/red]を[gold]デッキ[/gold]に追加。 ランダムな[gold]レリック[/gold]を1個獲得する。"
-          },
-          {
             "id": "PLAIN",
             "title": "こっち",
             "description": "HPを[red]6[/red]失う。 [blue]41-69[/blue][gold]ゴールド[/gold]を獲得。"
+          },
+          {
+            "id": "ORNATE",
+            "title": "そっち",
+            "description": "[red]不器用[/red]を[gold]デッキ[/gold]に追加。 ランダムな[gold]レリック[/gold]を1個獲得する。"
           }
         ]
       },
@@ -4024,14 +4024,14 @@
             "description": "アタックを作成する。"
           },
           {
-            "id": "POWER",
-            "title": "ガジェット",
-            "description": "パワーを作成する。"
-          },
-          {
             "id": "SKILL",
             "title": "防具",
             "description": "スキルを作成する。"
+          },
+          {
+            "id": "POWER",
+            "title": "ガジェット",
+            "description": "パワーを作成する。"
           }
         ]
       },
@@ -4039,36 +4039,6 @@
         "id": "CHOOSE_RIDER",
         "description": "「素晴らしい選択だ！ じゃあ、そいつに[sine]どんな機能[/sine]を付けようか？」\n[orange]科学者[/orange]は嬉しそうにもみ手をしている。",
         "options": [
-          {
-            "id": "CHAOS",
-            "title": "混沌",
-            "description": "ランダムなカードを1枚[gold]手札[/gold]に加える。 このターン、そのコストは[blue]0[/blue][energy:1]。"
-          },
-          {
-            "id": "CHOKING",
-            "title": "窒息",
-            "description": "このターン、カードをプレイするたび、敵はHPを[blue][ChokingDamage][/blue]失う。"
-          },
-          {
-            "id": "CURIOUS",
-            "title": "好奇心",
-            "description": "パワーのコストが[blue]1[/blue][energy:1]減少する。"
-          },
-          {
-            "id": "ENERGIZED",
-            "title": "活性化",
-            "description": "[energy:2]を得る。"
-          },
-          {
-            "id": "EXPERTISE",
-            "title": "専門家",
-            "description": "[gold]筋力[/gold][blue][ExpertiseStrength][/blue]を得る。 [gold]敏捷[/gold][blue][ExpertiseDexterity][/blue]を得る。"
-          },
-          {
-            "id": "IMPROVEMENT",
-            "title": "改良",
-            "description": "戦闘終了時、ランダムなカードを1枚[gold]アップグレード[/gold]する。"
-          },
           {
             "id": "SAPPING",
             "title": "虚弱",
@@ -4080,9 +4050,39 @@
             "description": "追加で[blue]2[/blue]回ダメージを与える。"
           },
           {
+            "id": "CHOKING",
+            "title": "窒息",
+            "description": "このターン、カードをプレイするたび、敵はHPを[blue][ChokingDamage][/blue]失う。"
+          },
+          {
+            "id": "ENERGIZED",
+            "title": "活性化",
+            "description": "[energy:2]を得る。"
+          },
+          {
             "id": "WISDOM",
             "title": "知恵",
             "description": "カードを[blue]3[/blue]枚引く。"
+          },
+          {
+            "id": "CHAOS",
+            "title": "混沌",
+            "description": "ランダムなカードを1枚[gold]手札[/gold]に加える。 このターン、そのコストは[blue]0[/blue][energy:1]。"
+          },
+          {
+            "id": "EXPERTISE",
+            "title": "専門家",
+            "description": "[gold]筋力[/gold][blue][ExpertiseStrength][/blue]を得る。 [gold]敏捷[/gold][blue][ExpertiseDexterity][/blue]を得る。"
+          },
+          {
+            "id": "CURIOUS",
+            "title": "好奇心",
+            "description": "パワーのコストが[blue]1[/blue][energy:1]減少する。"
+          },
+          {
+            "id": "IMPROVEMENT",
+            "title": "改良",
+            "description": "戦闘終了時、ランダムなカードを1枚[gold]アップグレード[/gold]する。"
           }
         ]
       },
@@ -4281,14 +4281,14 @@
     "description": "人里離れた[gold]休憩所[/gold]を見つけ、少し休もうと[orange]火[/orange]をおこすことにした。\n…… そう思ったのも束の間だ。\n\n火は燃え上がると、上ではなく[sine]横[/sine]へと大きくなり、[purple]油が滲み出る木々[/purple]の木立ちへと向かっていく。\n\nそれでも休んで大丈夫だろうか？",
     "options": [
       {
-        "id": "KILL",
-        "title": "木々を伐採する",
-        "description": "最大HPを[red]8[/red]失う。 ランダムな[gold]レリック[/gold]を1個獲得する。"
-      },
-      {
         "id": "REST",
         "title": "構わず休む",
         "description": "[green]HPを全回復する。 [/green] [red]寝不足[/red]を受け取る。"
+      },
+      {
+        "id": "KILL",
+        "title": "木々を伐採する",
+        "description": "最大HPを[red]8[/red]失う。 ランダムな[gold]レリック[/gold]を1個獲得する。"
       }
     ],
     "pages": [
@@ -4297,14 +4297,14 @@
         "description": "人里離れた[gold]休憩所[/gold]を見つけ、少し休もうと[orange]火[/orange]をおこすことにした。\n…… そう思ったのも束の間だ。\n\n火は燃え上がると、上ではなく[sine]横[/sine]へと大きくなり、[purple]油が滲み出る木々[/purple]の木立ちへと向かっていく。\n\nそれでも休んで大丈夫だろうか？",
         "options": [
           {
-            "id": "KILL",
-            "title": "木々を伐採する",
-            "description": "最大HPを[red]8[/red]失う。 ランダムな[gold]レリック[/gold]を1個獲得する。"
-          },
-          {
             "id": "REST",
             "title": "構わず休む",
             "description": "[green]HPを全回復する。 [/green] [red]寝不足[/red]を受け取る。"
+          },
+          {
+            "id": "KILL",
+            "title": "木々を伐採する",
+            "description": "最大HPを[red]8[/red]失う。 ランダムな[gold]レリック[/gold]を1個獲得する。"
           }
         ]
       },
@@ -4595,16 +4595,6 @@
         "description": "最大HPが[green]6[/green]増加する。"
       },
       {
-        "id": "PRICKLY_SPONGE",
-        "title": "チクチクするスポンジ",
-        "description": "[red]155[/red][gold]ゴールド[/gold]を支払う。 カード[blue]2[/blue]枚に[purple]安定性[/purple]を[gold]エンチャント[/gold]する。"
-      },
-      {
-        "id": "PRICKLY_SPONGE_LOCKED",
-        "title": "ロック中",
-        "description": "[blue]155[/blue][gold]ゴールド[/gold]が必要。"
-      },
-      {
         "id": "TENTACLE_QUILL",
         "title": "触手の羽ペン",
         "description": "[red]65[/red][gold]ゴールド[/gold]を支払う。 カード1枚に[purple]安定性[/purple]を[gold]エンチャント[/gold]する。"
@@ -4613,6 +4603,16 @@
         "id": "TENTACLE_QUILL_LOCKED",
         "title": "ロック中",
         "description": "[blue]65[/blue][gold]ゴールド[/gold]が必要。"
+      },
+      {
+        "id": "PRICKLY_SPONGE",
+        "title": "チクチクするスポンジ",
+        "description": "[red]155[/red][gold]ゴールド[/gold]を支払う。 カード[blue]2[/blue]枚に[purple]安定性[/purple]を[gold]エンチャント[/gold]する。"
+      },
+      {
+        "id": "PRICKLY_SPONGE_LOCKED",
+        "title": "ロック中",
+        "description": "[blue]155[/blue][gold]ゴールド[/gold]が必要。"
       }
     ],
     "pages": [
@@ -4630,16 +4630,6 @@
             "description": "最大HPが[green]6[/green]増加する。"
           },
           {
-            "id": "PRICKLY_SPONGE",
-            "title": "チクチクするスポンジ",
-            "description": "[red]155[/red][gold]ゴールド[/gold]を支払う。 カード[blue]2[/blue]枚に[purple]安定性[/purple]を[gold]エンチャント[/gold]する。"
-          },
-          {
-            "id": "PRICKLY_SPONGE_LOCKED",
-            "title": "ロック中",
-            "description": "[blue]155[/blue][gold]ゴールド[/gold]が必要。"
-          },
-          {
             "id": "TENTACLE_QUILL",
             "title": "触手の羽ペン",
             "description": "[red]65[/red][gold]ゴールド[/gold]を支払う。 カード1枚に[purple]安定性[/purple]を[gold]エンチャント[/gold]する。"
@@ -4648,6 +4638,16 @@
             "id": "TENTACLE_QUILL_LOCKED",
             "title": "ロック中",
             "description": "[blue]65[/blue][gold]ゴールド[/gold]が必要。"
+          },
+          {
+            "id": "PRICKLY_SPONGE",
+            "title": "チクチクするスポンジ",
+            "description": "[red]155[/red][gold]ゴールド[/gold]を支払う。 カード[blue]2[/blue]枚に[purple]安定性[/purple]を[gold]エンチャント[/gold]する。"
+          },
+          {
+            "id": "PRICKLY_SPONGE_LOCKED",
+            "title": "ロック中",
+            "description": "[blue]155[/blue][gold]ゴールド[/gold]が必要。"
           }
         ]
       },
@@ -4689,11 +4689,6 @@
         "description": "[blue]200[/blue][gold]ゴールド[/gold]が必要。"
       },
       {
-        "id": "LEAVE",
-        "title": "退店する",
-        "description": "ランダムなカードを1枚[red]ダウングレード[/red]する。"
-      },
-      {
         "id": "MYSTERY_BOX",
         "title": "ウォンゴのミステリーボックス",
         "description": "[red]300[/red][gold]ゴールド[/gold]を支払う。 [blue]5[/blue]回の戦闘後、ランダムな[gold]レリック[/gold]を[blue]3[/blue]個入手する。"
@@ -4702,6 +4697,11 @@
         "id": "MYSTERY_BOX_LOCKED",
         "title": "ロック中",
         "description": "[blue]300[/blue][gold]ゴールド[/gold]が必要。"
+      },
+      {
+        "id": "LEAVE",
+        "title": "退店する",
+        "description": "ランダムなカードを1枚[red]ダウングレード[/red]する。"
       }
     ],
     "pages": [
@@ -4742,11 +4742,6 @@
             "description": "[blue]200[/blue][gold]ゴールド[/gold]が必要。"
           },
           {
-            "id": "LEAVE",
-            "title": "退店する",
-            "description": "ランダムなカードを1枚[red]ダウングレード[/red]する。"
-          },
-          {
             "id": "MYSTERY_BOX",
             "title": "ウォンゴのミステリーボックス",
             "description": "[red]300[/red][gold]ゴールド[/gold]を支払う。 [blue]5[/blue]回の戦闘後、ランダムな[gold]レリック[/gold]を[blue]3[/blue]個入手する。"
@@ -4755,6 +4750,11 @@
             "id": "MYSTERY_BOX_LOCKED",
             "title": "ロック中",
             "description": "[blue]300[/blue][gold]ゴールド[/gold]が必要。"
+          },
+          {
+            "id": "LEAVE",
+            "title": "退店する",
+            "description": "ランダムなカードを1枚[red]ダウングレード[/red]する。"
           }
         ]
       },
@@ -4772,14 +4772,14 @@
     "description": "[jitter]低い地鳴り[/jitter]のような音をたどっていくと、静かに水をたたえる泉に行き当たり、あなたはその美しさに目を奪われた。 [sine][aqua]エメラルドグリーン[/aqua][/sine]に澄み渡り、中では[sine][gold]光り輝く粒子[/gold][/sine]が集まっている。\n\n泉はまるでこちらを誘っているかのようだ。 何か悪いことが起きるはずもないだろう。",
     "options": [
       {
-        "id": "BATHE",
-        "title": "泉につかる",
-        "description": "[gold]デッキ[/gold]からカードを[blue]1[/blue]枚削除。 [red]罪悪感[/red]を[blue]1[/blue]枚[gold]デッキ[/gold]に追加。"
-      },
-      {
         "id": "BOTTLE",
         "title": "瓶に汲む",
         "description": "ランダムな[gold]ポーション[/gold]を[blue]1[/blue]個獲得。"
+      },
+      {
+        "id": "BATHE",
+        "title": "泉につかる",
+        "description": "[gold]デッキ[/gold]からカードを[blue]1[/blue]枚削除。 [red]罪悪感[/red]を[blue]1[/blue]枚[gold]デッキ[/gold]に追加。"
       }
     ],
     "pages": [
@@ -4796,14 +4796,14 @@
         "description": "[jitter]低い地鳴り[/jitter]のような音をたどっていくと、静かに水をたたえる泉に行き当たり、あなたはその美しさに目を奪われた。 [sine][aqua]エメラルドグリーン[/aqua][/sine]に澄み渡り、中では[sine][gold]光り輝く粒子[/gold][/sine]が集まっている。\n\n泉はまるでこちらを誘っているかのようだ。 何か悪いことが起きるはずもないだろう。",
         "options": [
           {
-            "id": "BATHE",
-            "title": "泉につかる",
-            "description": "[gold]デッキ[/gold]からカードを[blue]1[/blue]枚削除。 [red]罪悪感[/red]を[blue]1[/blue]枚[gold]デッキ[/gold]に追加。"
-          },
-          {
             "id": "BOTTLE",
             "title": "瓶に汲む",
             "description": "ランダムな[gold]ポーション[/gold]を[blue]1[/blue]個獲得。"
+          },
+          {
+            "id": "BATHE",
+            "title": "泉につかる",
+            "description": "[gold]デッキ[/gold]からカードを[blue]1[/blue]枚削除。 [red]罪悪感[/red]を[blue]1[/blue]枚[gold]デッキ[/gold]に追加。"
           }
         ]
       }
@@ -4862,9 +4862,9 @@
     "description": "ほこりまみれの箱を開けると、中には精巧な3つの木彫りが入っていた。\n\n鳥、ヘビ、そして…… ドーナツ型？\n\nすぐそばにある台座には、木彫りの底の形とぴったり合うくぼみが空いている。 どの木彫りを台座に置こうか？",
     "options": [
       {
-        "id": "BIRD",
-        "title": "鳥",
-        "description": "スターターカードを[blue]1[/blue]枚選び、[gold]ついばみ[/gold]に[gold]変化[/gold]させる。"
+        "id": "SNAKE_LOCKED",
+        "title": "ロック中",
+        "description": "[purple]スリザー[/purple]をエンチャントできるカードがない。"
       },
       {
         "id": "SNAKE",
@@ -4872,9 +4872,9 @@
         "description": "カードを[blue]1[/blue]枚選び、[purple]スリザー[/purple]を[gold]エンチャント[/gold]する。"
       },
       {
-        "id": "SNAKE_LOCKED",
-        "title": "ロック中",
-        "description": "[purple]スリザー[/purple]をエンチャントできるカードがない。"
+        "id": "BIRD",
+        "title": "鳥",
+        "description": "スターターカードを[blue]1[/blue]枚選び、[gold]ついばみ[/gold]に[gold]変化[/gold]させる。"
       },
       {
         "id": "TORUS",
@@ -4892,9 +4892,9 @@
         "description": "ほこりまみれの箱を開けると、中には精巧な3つの木彫りが入っていた。\n\n鳥、ヘビ、そして…… ドーナツ型？\n\nすぐそばにある台座には、木彫りの底の形とぴったり合うくぼみが空いている。 どの木彫りを台座に置こうか？",
         "options": [
           {
-            "id": "BIRD",
-            "title": "鳥",
-            "description": "スターターカードを[blue]1[/blue]枚選び、[gold]ついばみ[/gold]に[gold]変化[/gold]させる。"
+            "id": "SNAKE_LOCKED",
+            "title": "ロック中",
+            "description": "[purple]スリザー[/purple]をエンチャントできるカードがない。"
           },
           {
             "id": "SNAKE",
@@ -4902,9 +4902,9 @@
             "description": "カードを[blue]1[/blue]枚選び、[purple]スリザー[/purple]を[gold]エンチャント[/gold]する。"
           },
           {
-            "id": "SNAKE_LOCKED",
-            "title": "ロック中",
-            "description": "[purple]スリザー[/purple]をエンチャントできるカードがない。"
+            "id": "BIRD",
+            "title": "鳥",
+            "description": "スターターカードを[blue]1[/blue]枚選び、[gold]ついばみ[/gold]に[gold]変化[/gold]させる。"
           },
           {
             "id": "TORUS",
@@ -4931,11 +4931,6 @@
     "description": "顔にクモの巣が引っかかり、あなたは[jitter][red]パニック[/red][/jitter]に陥った！\nしかし次の瞬間、不思議な[sine][blue]静寂の波[/blue][/sine]が、あなたの心をスッと落ち着かせる……。\n\n[sine]「落ち着き給え。 私の巣を荒らすのはよしてくれないか」[/sine]\n\nなぜこんなにすぐ冷静になれたのだろう？\n見ると、[orange]小さな[/orange]クモが糸を伝ってスルスルと降りてきた。 どうやら[gold]ゴールド[/gold]を支払えば、彼が特別な“ゼン”の技術を授けてくれるようだ。",
     "options": [
       {
-        "id": "ARACHNID_ACUPUNCTURE",
-        "title": "蜘蛛式・鍼治療",
-        "description": "[red]250[/red][gold]ゴールド[/gold]を支払う。 [gold]デッキ[/gold]からカードを[blue]2[/blue]枚削除。"
-      },
-      {
         "id": "BREATHING_TECHNIQUES",
         "title": "呼吸法",
         "description": "[red]50[/red][gold]ゴールド[/gold]を支払う。 [gold]悟り[/gold]を[blue]2[/blue]枚[gold]デッキ[/gold]に追加する。"
@@ -4944,6 +4939,11 @@
         "id": "EMOTIONAL_AWARENESS",
         "title": "感情のコントロール",
         "description": "[red]125[/red][gold]ゴールド[/gold]を支払う。 [gold]デッキ[/gold]からカードを[blue]1[/blue]枚削除。"
+      },
+      {
+        "id": "ARACHNID_ACUPUNCTURE",
+        "title": "蜘蛛式・鍼治療",
+        "description": "[red]250[/red][gold]ゴールド[/gold]を支払う。 [gold]デッキ[/gold]からカードを[blue]2[/blue]枚削除。"
       },
       {
         "id": "LOCKED",
@@ -4969,11 +4969,6 @@
         "description": "顔にクモの巣が引っかかり、あなたは[jitter][red]パニック[/red][/jitter]に陥った！\nしかし次の瞬間、不思議な[sine][blue]静寂の波[/blue][/sine]が、あなたの心をスッと落ち着かせる……。\n\n[sine]「落ち着き給え。 私の巣を荒らすのはよしてくれないか」[/sine]\n\nなぜこんなにすぐ冷静になれたのだろう？\n見ると、[orange]小さな[/orange]クモが糸を伝ってスルスルと降りてきた。 どうやら[gold]ゴールド[/gold]を支払えば、彼が特別な“ゼン”の技術を授けてくれるようだ。",
         "options": [
           {
-            "id": "ARACHNID_ACUPUNCTURE",
-            "title": "蜘蛛式・鍼治療",
-            "description": "[red]250[/red][gold]ゴールド[/gold]を支払う。 [gold]デッキ[/gold]からカードを[blue]2[/blue]枚削除。"
-          },
-          {
             "id": "BREATHING_TECHNIQUES",
             "title": "呼吸法",
             "description": "[red]50[/red][gold]ゴールド[/gold]を支払う。 [gold]悟り[/gold]を[blue]2[/blue]枚[gold]デッキ[/gold]に追加する。"
@@ -4982,6 +4977,11 @@
             "id": "EMOTIONAL_AWARENESS",
             "title": "感情のコントロール",
             "description": "[red]125[/red][gold]ゴールド[/gold]を支払う。 [gold]デッキ[/gold]からカードを[blue]1[/blue]枚削除。"
+          },
+          {
+            "id": "ARACHNID_ACUPUNCTURE",
+            "title": "蜘蛛式・鍼治療",
+            "description": "[red]250[/red][gold]ゴールド[/gold]を支払う。 [gold]デッキ[/gold]からカードを[blue]2[/blue]枚削除。"
           },
           {
             "id": "LOCKED",

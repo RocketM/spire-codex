@@ -22,14 +22,14 @@
         "description": null,
         "options": [
           {
-            "id": "EXIT_BATHS",
-            "title": "Esci dalle terme",
-            "description": ""
-          },
-          {
             "id": "LINGER",
             "title": "Rimani",
             "description": "Ottieni [green]2[/green] PV massimi. Subisci [red]3[/red] di danno."
+          },
+          {
+            "id": "EXIT_BATHS",
+            "title": "Esci dalle terme",
+            "description": ""
           }
         ]
       },

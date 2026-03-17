@@ -7,14 +7,14 @@
     "description": "Gözlerden uzak bir oda keşfedersin.\n\nBuhar, kaynar havuzlarda hipnotik bir ritimle renk değiştiren sıcak bir sıvının üzerinden yükselir. Tavandan sarkan midyemsi oluşumlar, yüzeye değdiğinde tıslayıp kıvranan, koyu, yapışkan bir sıvı damlatır. Hava ağırdır; [blue]tuz[/blue] ve [green]şüphesiz derecede organik[/green] bir kokuyla doludur.\n\nEn büyük havuzun kenarına yaklaştığında sıvı dalgalanır. Sular, sanki girişini bekliyormuşçasına daha şiddetli kabarmaya başlar.",
     "options": [
       {
-        "id": "ABSTAIN",
-        "title": "Kaçın",
-        "description": "[green]10[/green] CP iyileş."
-      },
-      {
         "id": "IMMERSE",
         "title": "Gir",
         "description": "[green]2[/green] Maksimum CP elde et. [red]3[/red] hasar al."
+      },
+      {
+        "id": "ABSTAIN",
+        "title": "Kaçın",
+        "description": "[green]10[/green] CP iyileş."
       }
     ],
     "pages": [
@@ -27,14 +27,14 @@
         "description": null,
         "options": [
           {
-            "id": "EXIT_BATHS",
-            "title": "Havuzlardan Ayrıl",
-            "description": ""
-          },
-          {
             "id": "LINGER",
             "title": "Biraz Daha Kal",
             "description": "[green]2[/green] Maksimum CP elde et. [red]3[/red] hasar al."
+          },
+          {
+            "id": "EXIT_BATHS",
+            "title": "Havuzlardan Ayrıl",
+            "description": ""
           }
         ]
       },
@@ -55,14 +55,14 @@
         "description": "Gözlerden uzak bir oda keşfedersin.\n\nBuhar, kaynar havuzlarda hipnotik bir ritimle renk değiştiren sıcak bir sıvının üzerinden yükselir. Tavandan sarkan midyemsi oluşumlar, yüzeye değdiğinde tıslayıp kıvranan, koyu, yapışkan bir sıvı damlatır. Hava ağırdır; [blue]tuz[/blue] ve [green]şüphesiz derecede organik[/green] bir kokuyla doludur.\n\nEn büyük havuzun kenarına yaklaştığında sıvı dalgalanır. Sular, sanki girişini bekliyormuşçasına daha şiddetli kabarmaya başlar.",
         "options": [
           {
-            "id": "ABSTAIN",
-            "title": "Kaçın",
-            "description": "[green]10[/green] CP iyileş."
-          },
-          {
             "id": "IMMERSE",
             "title": "Gir",
             "description": "[green]2[/green] Maksimum CP elde et. [red]3[/red] hasar al."
+          },
+          {
+            "id": "ABSTAIN",
+            "title": "Kaçın",
+            "description": "[green]10[/green] CP iyileş."
           }
         ]
       },
@@ -257,14 +257,14 @@
     "description": "[jitter]*tak*[/jitter]\n\nBaşının tepesinde keskin bir acı hissedersin ve bir düşünce zihnine saplanır.\n\n[purple][sine]“BİLGİYİ PAYLAŞ???”[/sine][/purple]\n\nNasıl devam edeceğinden emin değilsin...",
     "options": [
       {
-        "id": "RIP",
-        "title": "Sülüğü Kafandan Sök",
-        "description": "[red]5[/red] CP kaybet. Renksiz bir kart elde et."
-      },
-      {
         "id": "SHARE_KNOWLEDGE",
         "title": "Bilgiyi Paylaş",
         "description": "[gold]Deste[/gold]'ne eklemek için [blue]5[/blue] rastgele karttan [blue]1[/blue] tanesini seç."
+      },
+      {
+        "id": "RIP",
+        "title": "Sülüğü Kafandan Sök",
+        "description": "[red]5[/red] CP kaybet. Renksiz bir kart elde et."
       }
     ],
     "pages": [
@@ -273,14 +273,14 @@
         "description": "[jitter]*tak*[/jitter]\n\nBaşının tepesinde keskin bir acı hissedersin ve bir düşünce zihnine saplanır.\n\n[purple][sine]“BİLGİYİ PAYLAŞ???”[/sine][/purple]\n\nNasıl devam edeceğinden emin değilsin...",
         "options": [
           {
-            "id": "RIP",
-            "title": "Sülüğü Kafandan Sök",
-            "description": "[red]5[/red] CP kaybet. Renksiz bir kart elde et."
-          },
-          {
             "id": "SHARE_KNOWLEDGE",
             "title": "Bilgiyi Paylaş",
             "description": "[gold]Deste[/gold]'ne eklemek için [blue]5[/blue] rastgele karttan [blue]1[/blue] tanesini seç."
+          },
+          {
+            "id": "RIP",
+            "title": "Sülüğü Kafandan Sök",
+            "description": "[red]5[/red] CP kaybet. Renksiz bir kart elde et."
           }
         ]
       },
@@ -558,14 +558,14 @@
     "description": "[sine][blue]“İçeri gireceğini öngörmüştüm!..”[/blue][/sine]\n\n[jitter]Hırıltılı[/jitter] bir ses, [purple]mistik bir kulübeye[/purple] adım attığında yankılanır.\n\n[sine][blue]“Kaderin seni buraya getirdi. HEPİMİZİ KURTARABİLMEN için geleceğini ve talihini açığa çıkarmalıyız!!”[/blue][/sine]\n“Pekâlâ, işte [gold]Kristal Küre okuması[/gold] için seçenekler. Şunu da imzalamayı unutma,” derken kalemle parşömeni ortaya çıkarır.",
     "options": [
       {
-        "id": "PAYMENT_PLAN",
-        "title": "Ödeme Planı",
-        "description": "[red]Borç[/red] elde et. [blue]6[/blue] kez [purple]Kehanetini Ortaya Çıkar[/purple]."
-      },
-      {
         "id": "UNCOVER_FUTURE",
         "title": "Geleceğini Ortaya Çıkar",
         "description": "[red]50[/red] [gold]Altın[/gold] öde. [blue]3[/blue] kez [purple]Kehanetini Ortaya Çıkar[/purple]."
+      },
+      {
+        "id": "PAYMENT_PLAN",
+        "title": "Ödeme Planı",
+        "description": "[red]Borç[/red] elde et. [blue]6[/blue] kez [purple]Kehanetini Ortaya Çıkar[/purple]."
       }
     ],
     "pages": [
@@ -578,14 +578,14 @@
         "description": "[sine][blue]“İçeri gireceğini öngörmüştüm!..”[/blue][/sine]\n\n[jitter]Hırıltılı[/jitter] bir ses, [purple]mistik bir kulübeye[/purple] adım attığında yankılanır.\n\n[sine][blue]“Kaderin seni buraya getirdi. HEPİMİZİ KURTARABİLMEN için geleceğini ve talihini açığa çıkarmalıyız!!”[/blue][/sine]\n“Pekâlâ, işte [gold]Kristal Küre okuması[/gold] için seçenekler. Şunu da imzalamayı unutma,” derken kalemle parşömeni ortaya çıkarır.",
         "options": [
           {
-            "id": "PAYMENT_PLAN",
-            "title": "Ödeme Planı",
-            "description": "[red]Borç[/red] elde et. [blue]6[/blue] kez [purple]Kehanetini Ortaya Çıkar[/purple]."
-          },
-          {
             "id": "UNCOVER_FUTURE",
             "title": "Geleceğini Ortaya Çıkar",
             "description": "[red]50[/red] [gold]Altın[/gold] öde. [blue]3[/blue] kez [purple]Kehanetini Ortaya Çıkar[/purple]."
+          },
+          {
+            "id": "PAYMENT_PLAN",
+            "title": "Ödeme Planı",
+            "description": "[red]Borç[/red] elde et. [blue]6[/blue] kez [purple]Kehanetini Ortaya Çıkar[/purple]."
           }
         ]
       },
@@ -813,14 +813,14 @@
     "description": "Bir süredir yanlış yoldan ilerledikten sonra, kendini [green]eğrelti otları[/green], [green]çalılıklar[/green] ve [green]sarmaşıklarla[/green] dolu sık bir ormanda bulursun. Özellikle de [green]sarmaşıklarla[/green] dolup taşmaktadır burası. Üstüne bir yorgunluk çöker ve aklına iç karartıcı bir fikir gelir:\n\n[sine][purple]“Kayboldun, hazırlıksızsın ve ölümün kaçınılmazlığı yaklaşıyor.”[/purple][/sine]\n\nNe yapacaksın?",
     "options": [
       {
-        "id": "REST",
-        "title": "Dinlen",
-        "description": "[green]30% Max[/green] CP iyileş. Bazı [red]düşmanlarla[/red] savaş."
-      },
-      {
         "id": "TRUDGE_ON",
         "title": "Güçlükle Yürümeye Devam Et",
         "description": "[gold]Deste[/gold]'nden bir kartı kaldır. [red]11[/red] CP kaybet."
+      },
+      {
+        "id": "REST",
+        "title": "Dinlen",
+        "description": "[green]30% Max[/green] CP iyileş. Bazı [red]düşmanlarla[/red] savaş."
       }
     ],
     "pages": [
@@ -829,14 +829,14 @@
         "description": "Bir süredir yanlış yoldan ilerledikten sonra, kendini [green]eğrelti otları[/green], [green]çalılıklar[/green] ve [green]sarmaşıklarla[/green] dolu sık bir ormanda bulursun. Özellikle de [green]sarmaşıklarla[/green] dolup taşmaktadır burası. Üstüne bir yorgunluk çöker ve aklına iç karartıcı bir fikir gelir:\n\n[sine][purple]“Kayboldun, hazırlıksızsın ve ölümün kaçınılmazlığı yaklaşıyor.”[/purple][/sine]\n\nNe yapacaksın?",
         "options": [
           {
-            "id": "REST",
-            "title": "Dinlen",
-            "description": "[green]30% Max[/green] CP iyileş. Bazı [red]düşmanlarla[/red] savaş."
-          },
-          {
             "id": "TRUDGE_ON",
             "title": "Güçlükle Yürümeye Devam Et",
             "description": "[gold]Deste[/gold]'nden bir kartı kaldır. [red]11[/red] CP kaybet."
+          },
+          {
+            "id": "REST",
+            "title": "Dinlen",
+            "description": "[green]30% Max[/green] CP iyileş. Bazı [red]düşmanlarla[/red] savaş."
           }
         ]
       },
@@ -865,11 +865,6 @@
     "description": "Gizli bir odaya girersin...\n\nOda, sayısız bebekle tıka basa doludur. Her biri benzersizdir; yüz ifadeleri [green]neşeden[/green] [purple]kedere[/purple] değişir, kıyafetleri ise yüzyılları ve bildiğin diyarları aşar.\n\n[sine][blue]Fısıltılardan oluşan bir koronun sesi[/blue][/sine] giderek yükselir; ta ki [jitter][red]bebekler birbirlerinin üzerine bağırmaya[/red][/jitter] ve seni çağırmaya başlayana dek...\n\nBirini seçmeli ve derhâl çıkmalısın.",
     "options": [
       {
-        "id": "EXAMINE",
-        "title": "Her Birini İncele ve En İyi Kararı Ver",
-        "description": "[red]15[/red] CP kaybet. [blue]3[/blue] [gold]Bebek Kalıntısı[/gold]'ndan [blue]1[/blue] tanesini seç."
-      },
-      {
         "id": "RANDOM",
         "title": "Rastgele Birini Seç",
         "description": "Rastgele bir [gold]Bebek Kalıntısı[/gold] elde et."
@@ -878,6 +873,11 @@
         "id": "TAKE_SOME_TIME",
         "title": "Biraz Zaman Ayır",
         "description": "[red]5[/red] CP kaybet. [blue]2[/blue] [gold]Bebek Kalıntısı[/gold]'ndan [blue]1[/blue] tanesini seç."
+      },
+      {
+        "id": "EXAMINE",
+        "title": "Her Birini İncele ve En İyi Kararı Ver",
+        "description": "[red]15[/red] CP kaybet. [blue]3[/blue] [gold]Bebek Kalıntısı[/gold]'ndan [blue]1[/blue] tanesini seç."
       }
     ],
     "pages": [
@@ -898,11 +898,6 @@
         "description": "Gizli bir odaya girersin...\n\nOda, sayısız bebekle tıka basa doludur. Her biri benzersizdir; yüz ifadeleri [green]neşeden[/green] [purple]kedere[/purple] değişir, kıyafetleri ise yüzyılları ve bildiğin diyarları aşar.\n\n[sine][blue]Fısıltılardan oluşan bir koronun sesi[/blue][/sine] giderek yükselir; ta ki [jitter][red]bebekler birbirlerinin üzerine bağırmaya[/red][/jitter] ve seni çağırmaya başlayana dek...\n\nBirini seçmeli ve derhâl çıkmalısın.",
         "options": [
           {
-            "id": "EXAMINE",
-            "title": "Her Birini İncele ve En İyi Kararı Ver",
-            "description": "[red]15[/red] CP kaybet. [blue]3[/blue] [gold]Bebek Kalıntısı[/gold]'ndan [blue]1[/blue] tanesini seç."
-          },
-          {
             "id": "RANDOM",
             "title": "Rastgele Birini Seç",
             "description": "Rastgele bir [gold]Bebek Kalıntısı[/gold] elde et."
@@ -911,6 +906,11 @@
             "id": "TAKE_SOME_TIME",
             "title": "Biraz Zaman Ayır",
             "description": "[red]5[/red] CP kaybet. [blue]2[/blue] [gold]Bebek Kalıntısı[/gold]'ndan [blue]1[/blue] tanesini seç."
+          },
+          {
+            "id": "EXAMINE",
+            "title": "Her Birini İncele ve En İyi Kararı Ver",
+            "description": "[red]15[/red] CP kaybet. [blue]3[/blue] [gold]Bebek Kalıntısı[/gold]'ndan [blue]1[/blue] tanesini seç."
           }
         ]
       },
@@ -943,14 +943,14 @@
     "description": "Az önce hiçbir şeyin olmadığı yerde bir kapı beliriverir...\n\nİçeri girdiğinde iki parıldayan kapı ve [gold]şık giyimli bir kapıcı[/gold] ile karşılaşırsın.\n“Sonunda, bir ziyaretçi! Lütfen, lütfen! Bir kapı seçin. Herhangi bir kapı olabilir!”\n\n[blue]Hâlâ [gold]Spire[/gold]’da mıyız? Burası nasıl bu kadar temiz?[/blue]",
     "options": [
       {
-        "id": "DARK",
-        "title": "Karanlık Kapı",
-        "description": "[gold]Deste[/gold]'nden [blue]1[/blue] kart kaldır."
-      },
-      {
         "id": "LIGHT",
         "title": "Aydınlık Kapı",
         "description": "Rastgele [blue]2[/blue] kartını [gold]Geliştir[/gold]."
+      },
+      {
+        "id": "DARK",
+        "title": "Karanlık Kapı",
+        "description": "[gold]Deste[/gold]'nden [blue]1[/blue] kart kaldır."
       }
     ],
     "pages": [
@@ -963,14 +963,14 @@
         "description": "Az önce hiçbir şeyin olmadığı yerde bir kapı beliriverir...\n\nİçeri girdiğinde iki parıldayan kapı ve [gold]şık giyimli bir kapıcı[/gold] ile karşılaşırsın.\n“Sonunda, bir ziyaretçi! Lütfen, lütfen! Bir kapı seçin. Herhangi bir kapı olabilir!”\n\n[blue]Hâlâ [gold]Spire[/gold]’da mıyız? Burası nasıl bu kadar temiz?[/blue]",
         "options": [
           {
-            "id": "DARK",
-            "title": "Karanlık Kapı",
-            "description": "[gold]Deste[/gold]'nden [blue]1[/blue] kart kaldır."
-          },
-          {
             "id": "LIGHT",
             "title": "Aydınlık Kapı",
             "description": "Rastgele [blue]2[/blue] kartını [gold]Geliştir[/gold]."
+          },
+          {
+            "id": "DARK",
+            "title": "Karanlık Kapı",
+            "description": "[gold]Deste[/gold]'nden [blue]1[/blue] kart kaldır."
           }
         ]
       },
@@ -1044,6 +1044,11 @@
         "description": null,
         "options": [
           {
+            "id": "LOCKED",
+            "title": "Beş Parasız",
+            "description": "Daha fazlasını yiyebilecek yerin var ama [gold]Altın[/gold]'ın tükendi."
+          },
+          {
             "id": "CAVIAR",
             "title": "Havyarı Banttan Al",
             "description": "[red]35[/red] [gold]Altın[/gold] öde. [green]4[/green] Maksiumum CP elde et. Ziyafete devam et!"
@@ -1067,11 +1072,6 @@
             "id": "JELLY_LIVER",
             "title": "Deniz Anası Ciğerini Banttan Al",
             "description": "[red]35[/red] [gold]Altın[/gold] öde. Bir kartı [gold]Dönüştür[/gold]. Ziyafete devam et!"
-          },
-          {
-            "id": "LOCKED",
-            "title": "Beş Parasız",
-            "description": "Daha fazlasını yiyebilecek yerin var ama [gold]Altın[/gold]'ın tükendi."
           },
           {
             "id": "SEAPUNK_SALAD",
@@ -1139,14 +1139,14 @@
     "description": "Bir anda karşına çıkan, [jitter]devasa beden hatlarıyla oyulmuş[/jitter] uçsuz bucaksız bir alan, adımlarını olduğu yerde dondurur.\n\nBu siluetlerden biri seninkiyle birebir örtüşür.\n\n[sine][orange]Bu mükemmel...[/orange][/sine]",
     "options": [
       {
-        "id": "ENTER_YOUR_HOLE",
-        "title": "Deliğine Gir",
-        "description": "Bir kartı [purple]Cuk Oturdu[/purple] ile [gold]Büyüle[/gold]."
-      },
-      {
         "id": "RESIST",
         "title": "Diren",
         "description": "[gold]Deste[/gold]'nden [blue]2[/blue] kart kaldır. [gold]Deste[/gold]'ne [red]Sıradanlık[/red] ekle."
+      },
+      {
+        "id": "ENTER_YOUR_HOLE",
+        "title": "Deliğine Gir",
+        "description": "Bir kartı [purple]Cuk Oturdu[/purple] ile [gold]Büyüle[/gold]."
       }
     ],
     "pages": [
@@ -1159,14 +1159,14 @@
         "description": "Bir anda karşına çıkan, [jitter]devasa beden hatlarıyla oyulmuş[/jitter] uçsuz bucaksız bir alan, adımlarını olduğu yerde dondurur.\n\nBu siluetlerden biri seninkiyle birebir örtüşür.\n\n[sine][orange]Bu mükemmel...[/orange][/sine]",
         "options": [
           {
-            "id": "ENTER_YOUR_HOLE",
-            "title": "Deliğine Gir",
-            "description": "Bir kartı [purple]Cuk Oturdu[/purple] ile [gold]Büyüle[/gold]."
-          },
-          {
             "id": "RESIST",
             "title": "Diren",
             "description": "[gold]Deste[/gold]'nden [blue]2[/blue] kart kaldır. [gold]Deste[/gold]'ne [red]Sıradanlık[/red] ekle."
+          },
+          {
+            "id": "ENTER_YOUR_HOLE",
+            "title": "Deliğine Gir",
+            "description": "Bir kartı [purple]Cuk Oturdu[/purple] ile [gold]Büyüle[/gold]."
           }
         ]
       },
@@ -1184,9 +1184,9 @@
     "description": "[jitter][aqua]Kaynayıp duran mavi bir alevle[/aqua][/jitter] işaretlenmiş tek bir mezar vardır...\n\nGururlu bir savaşçı savaşta ölmüştür; fakat ruhu huzursuzdur. Savaşmaya devam etmek ister. Seninle birlikte yolculuk etmeyi [sine]yalvarırcasına[/sine] dilediğini hissedersin.\n\nBelki de onun için en iyisi [red]gerçekle[/red] yüzleşmektir.",
     "options": [
       {
-        "id": "ACCEPT",
-        "title": "Unutulmuş Ruh'u Kabul Et",
-        "description": "[gold]Unutulmuş Ruh[/gold] elde et."
+        "id": "CONFRONT_LOCKED",
+        "title": "Kilitli",
+        "description": "[purple]Büyülenebilecek[/purple] hiçbir [gold]Tüket[/gold] kartın yok."
       },
       {
         "id": "CONFRONT",
@@ -1194,9 +1194,9 @@
         "description": "[gold]Deste[/gold]'ne [red]Çürüme[/red] ekle. [gold]Tüketilen[/gold] bir kartı [purple]Ruh'un Gücü[/purple] ile [gold]Büyüle[/gold]."
       },
       {
-        "id": "CONFRONT_LOCKED",
-        "title": "Kilitli",
-        "description": "[purple]Büyülenebilecek[/purple] hiçbir [gold]Tüket[/gold] kartın yok."
+        "id": "ACCEPT",
+        "title": "Unutulmuş Ruh'u Kabul Et",
+        "description": "[gold]Unutulmuş Ruh[/gold] elde et."
       }
     ],
     "pages": [
@@ -1213,9 +1213,9 @@
         "description": "[jitter][aqua]Kaynayıp duran mavi bir alevle[/aqua][/jitter] işaretlenmiş tek bir mezar vardır...\n\nGururlu bir savaşçı savaşta ölmüştür; fakat ruhu huzursuzdur. Savaşmaya devam etmek ister. Seninle birlikte yolculuk etmeyi [sine]yalvarırcasına[/sine] dilediğini hissedersin.\n\nBelki de onun için en iyisi [red]gerçekle[/red] yüzleşmektir.",
         "options": [
           {
-            "id": "ACCEPT",
-            "title": "Unutulmuş Ruh'u Kabul Et",
-            "description": "[gold]Unutulmuş Ruh[/gold] elde et."
+            "id": "CONFRONT_LOCKED",
+            "title": "Kilitli",
+            "description": "[purple]Büyülenebilecek[/purple] hiçbir [gold]Tüket[/gold] kartın yok."
           },
           {
             "id": "CONFRONT",
@@ -1223,9 +1223,9 @@
             "description": "[gold]Deste[/gold]'ne [red]Çürüme[/red] ekle. [gold]Tüketilen[/gold] bir kartı [purple]Ruh'un Gücü[/purple] ile [gold]Büyüle[/gold]."
           },
           {
-            "id": "CONFRONT_LOCKED",
-            "title": "Kilitli",
-            "description": "[purple]Büyülenebilecek[/purple] hiçbir [gold]Tüket[/gold] kartın yok."
+            "id": "ACCEPT",
+            "title": "Unutulmuş Ruh'u Kabul Et",
+            "description": "[gold]Unutulmuş Ruh[/gold] elde et."
           }
         ]
       }
@@ -1333,14 +1333,14 @@
     "description": "Bir açıklıkta, bakışlarını aşağıya dikmiş ve [purple]devasa bir labirenti[/purple] işaret eden [green]derme çatma bir maceracı grubuyla[/green] karşılaşırsın.\n\nLabirentin zenginliklerini yağmalamak için seni [b]Destansı bir Göreve[/b] birlikte atılmaya davet ederler. Deneyimli bir maceracı olarak bu labirentin [red][jitter]ölümcül tuzaklarla[/jitter][/red] ve [orange][sine]muhafızlarla[/sine][/orange] dolu olduğu gerçeği, senin için apaçıktır.\n\nBirlikte çalışmak işleri kolaylaştırırdı... ama öyle yaparsan ganimeti paylaşmak zorunda kalırsın.",
     "options": [
       {
-        "id": "JOIN_FORCES",
-        "title": "Güçlerinizi Birleştirin",
-        "description": "[blue]50[/blue] [gold]Altın[/gold] elde et."
-      },
-      {
         "id": "SOLO_QUEST",
         "title": "Tek Kişilik Görev",
         "description": "[blue]150[/blue] [gold]Altın[/gold] elde et. [red]18[/red] CP kaybet."
+      },
+      {
+        "id": "JOIN_FORCES",
+        "title": "Güçlerinizi Birleştirin",
+        "description": "[blue]50[/blue] [gold]Altın[/gold] elde et."
       }
     ],
     "pages": [
@@ -1349,14 +1349,14 @@
         "description": "Bir açıklıkta, bakışlarını aşağıya dikmiş ve [purple]devasa bir labirenti[/purple] işaret eden [green]derme çatma bir maceracı grubuyla[/green] karşılaşırsın.\n\nLabirentin zenginliklerini yağmalamak için seni [b]Destansı bir Göreve[/b] birlikte atılmaya davet ederler. Deneyimli bir maceracı olarak bu labirentin [red][jitter]ölümcül tuzaklarla[/jitter][/red] ve [orange][sine]muhafızlarla[/sine][/orange] dolu olduğu gerçeği, senin için apaçıktır.\n\nBirlikte çalışmak işleri kolaylaştırırdı... ama öyle yaparsan ganimeti paylaşmak zorunda kalırsın.",
         "options": [
           {
-            "id": "JOIN_FORCES",
-            "title": "Güçlerinizi Birleştirin",
-            "description": "[blue]50[/blue] [gold]Altın[/gold] elde et."
-          },
-          {
             "id": "SOLO_QUEST",
             "title": "Tek Kişilik Görev",
             "description": "[blue]150[/blue] [gold]Altın[/gold] elde et. [red]18[/red] CP kaybet."
+          },
+          {
+            "id": "JOIN_FORCES",
+            "title": "Güçlerinizi Birleştirin",
+            "description": "[blue]50[/blue] [gold]Altın[/gold] elde et."
           }
         ]
       },
@@ -1383,14 +1383,14 @@
         "description": "[gold]Deste[/gold]'ne [red]Çürüme[/red] kartını ekle. [gold]Kayıp Kıvılcım[/gold] kalıntısını elde et."
       },
       {
-        "id": "CLAIM_LOCKED",
-        "title": "Kilitli",
-        "description": "Sahip olduğun maksimum CP çok düşük."
-      },
-      {
         "id": "SEARCH",
         "title": "Etrafı Araştır",
         "description": "[blue]60[/blue] [gold]Altın[/gold] elde et."
+      },
+      {
+        "id": "CLAIM_LOCKED",
+        "title": "Kilitli",
+        "description": "Sahip olduğun maksimum CP çok düşük."
       }
     ],
     "pages": [
@@ -1408,14 +1408,14 @@
             "description": "[gold]Deste[/gold]'ne [red]Çürüme[/red] kartını ekle. [gold]Kayıp Kıvılcım[/gold] kalıntısını elde et."
           },
           {
-            "id": "CLAIM_LOCKED",
-            "title": "Kilitli",
-            "description": "Sahip olduğun maksimum CP çok düşük."
-          },
-          {
             "id": "SEARCH",
             "title": "Etrafı Araştır",
             "description": "[blue]60[/blue] [gold]Altın[/gold] elde et."
+          },
+          {
+            "id": "CLAIM_LOCKED",
+            "title": "Kilitli",
+            "description": "Sahip olduğun maksimum CP çok düşük."
           }
         ]
       },
@@ -1433,6 +1433,11 @@
     "description": "Doğal olmayan mavi bir parıltıya bulanmış bir açıklığa rastlarsın. Devasa mantarlar ışık üreterek nabız gibi atar; şapkaları şişkindir ve ıslaktır. Yaklaştıkça, mantarlar [sine][purple]ürkütücü, melodik tonlar[/purple][/sine] yaymaya başlar ve bu sesler göğsünün derinliklerinde yankılanır.\n\nEn büyük mantarın etli dokusunun içine gömülü, parıldayan bir şey fark edersin. Bu şey, mantarların şarkısıyla aynı ritimde [sine]atarak[/sine] titreşmektedir.",
     "options": [
       {
+        "id": "REACH_INTO_THE_FLESH",
+        "title": "Canlı Dokuya Elini Uzat",
+        "description": "[gold]Deste[/gold]'nden [blue]2[/blue] kartı çıkar. [gold]Deste[/gold]'ne bir adet [red]Zihin İstilası[/red] ekle."
+      },
+      {
         "id": "OFFER_TRIBUTE",
         "title": "Adak Sun",
         "description": "[red]149[/red] [gold]Altın[/gold] öde. Rastgele bir [gold]Kalıntı[/gold] elde et."
@@ -1441,11 +1446,6 @@
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "Kilitli",
         "description": "[blue]149[/blue] [gold]Altın[/gold] gerektirir."
-      },
-      {
-        "id": "REACH_INTO_THE_FLESH",
-        "title": "Canlı Dokuya Elini Uzat",
-        "description": "[gold]Deste[/gold]'nden [blue]2[/blue] kartı çıkar. [gold]Deste[/gold]'ne bir adet [red]Zihin İstilası[/red] ekle."
       }
     ],
     "pages": [
@@ -1453,6 +1453,11 @@
         "id": "INITIAL",
         "description": "Doğal olmayan mavi bir parıltıya bulanmış bir açıklığa rastlarsın. Devasa mantarlar ışık üreterek nabız gibi atar; şapkaları şişkindir ve ıslaktır. Yaklaştıkça, mantarlar [sine][purple]ürkütücü, melodik tonlar[/purple][/sine] yaymaya başlar ve bu sesler göğsünün derinliklerinde yankılanır.\n\nEn büyük mantarın etli dokusunun içine gömülü, parıldayan bir şey fark edersin. Bu şey, mantarların şarkısıyla aynı ritimde [sine]atarak[/sine] titreşmektedir.",
         "options": [
+          {
+            "id": "REACH_INTO_THE_FLESH",
+            "title": "Canlı Dokuya Elini Uzat",
+            "description": "[gold]Deste[/gold]'nden [blue]2[/blue] kartı çıkar. [gold]Deste[/gold]'ne bir adet [red]Zihin İstilası[/red] ekle."
+          },
           {
             "id": "OFFER_TRIBUTE",
             "title": "Adak Sun",
@@ -1462,11 +1467,6 @@
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "Kilitli",
             "description": "[blue]149[/blue] [gold]Altın[/gold] gerektirir."
-          },
-          {
-            "id": "REACH_INTO_THE_FLESH",
-            "title": "Canlı Dokuya Elini Uzat",
-            "description": "[gold]Deste[/gold]'nden [blue]2[/blue] kartı çıkar. [gold]Deste[/gold]'ne bir adet [red]Zihin İstilası[/red] ekle."
           }
         ]
       },
@@ -2314,14 +2314,14 @@
     "description": "İki [gold]Yumruklayan Yapı[/gold] birbirine girişmiş durumdadır ve aralarında biraz ganimet görürsün...\n\nOnu kapmaya çalışmalı mısın?",
     "options": [
       {
-        "id": "I_CAN_TAKE_THEM",
-        "title": "Haklarından Gelebilirim",
-        "description": "Daha [gold]Görkemli Ödüller[/gold] için onlarla savaş."
-      },
-      {
         "id": "NAB",
         "title": "Çaktırmadan Aşır",
         "description": "[gold]Deste[/gold]'ne bir [red]Yaralanma[/red] ekle. Rastgele bir [gold]Kalıntı[/gold] elde et."
+      },
+      {
+        "id": "I_CAN_TAKE_THEM",
+        "title": "Haklarından Gelebilirim",
+        "description": "Daha [gold]Görkemli Ödüller[/gold] için onlarla savaş."
       }
     ],
     "pages": [
@@ -2330,14 +2330,14 @@
         "description": "İki [gold]Yumruklayan Yapı[/gold] birbirine girişmiş durumdadır ve aralarında biraz ganimet görürsün...\n\nOnu kapmaya çalışmalı mısın?",
         "options": [
           {
-            "id": "I_CAN_TAKE_THEM",
-            "title": "Haklarından Gelebilirim",
-            "description": "Daha [gold]Görkemli Ödüller[/gold] için onlarla savaş."
-          },
-          {
             "id": "NAB",
             "title": "Çaktırmadan Aşır",
             "description": "[gold]Deste[/gold]'ne bir [red]Yaralanma[/red] ekle. Rastgele bir [gold]Kalıntı[/gold] elde et."
+          },
+          {
+            "id": "I_CAN_TAKE_THEM",
+            "title": "Haklarından Gelebilirim",
+            "description": "Daha [gold]Görkemli Ödüller[/gold] için onlarla savaş."
           }
         ]
       },
@@ -2366,14 +2366,14 @@
     "description": "[purple]Hayatında gördüğün en yaşlı kişi[/purple] sana doğru yaklaşır.\n[sine]“Bir kez daha karşılaştık... Benim, Ranwid!”[/sine]\n\nBu adamı tanımıyorsun.",
     "options": [
       {
-        "id": "GOLD",
-        "title": "100 Altın ver.",
-        "description": "Rastgele bir [gold]Kalıntı[/gold] elde et."
-      },
-      {
         "id": "POTION",
         "title": "İksiri Ver: Potion",
         "description": "Rastgele bir [gold]Kalıntı[/gold] elde et."
+      },
+      {
+        "id": "RELIC",
+        "title": "Kalıntı'yı Ver: Relic",
+        "description": "Rastgele [blue]2[/blue] [gold]Kalıntı[/gold] elde et."
       },
       {
         "id": "POTION_LOCKED",
@@ -2381,9 +2381,9 @@
         "description": "Verebileceğin hiçbir İksir yok."
       },
       {
-        "id": "RELIC",
-        "title": "Kalıntı'yı Ver: Relic",
-        "description": "Rastgele [blue]2[/blue] [gold]Kalıntı[/gold] elde et."
+        "id": "GOLD",
+        "title": "100 Altın ver.",
+        "description": "Rastgele bir [gold]Kalıntı[/gold] elde et."
       },
       {
         "id": "RELIC_LOCKED",
@@ -2401,14 +2401,14 @@
         "description": "[purple]Hayatında gördüğün en yaşlı kişi[/purple] sana doğru yaklaşır.\n[sine]“Bir kez daha karşılaştık... Benim, Ranwid!”[/sine]\n\nBu adamı tanımıyorsun.",
         "options": [
           {
-            "id": "GOLD",
-            "title": "100 Altın ver.",
-            "description": "Rastgele bir [gold]Kalıntı[/gold] elde et."
-          },
-          {
             "id": "POTION",
             "title": "İksiri Ver: Potion",
             "description": "Rastgele bir [gold]Kalıntı[/gold] elde et."
+          },
+          {
+            "id": "RELIC",
+            "title": "Kalıntı'yı Ver: Relic",
+            "description": "Rastgele [blue]2[/blue] [gold]Kalıntı[/gold] elde et."
           },
           {
             "id": "POTION_LOCKED",
@@ -2416,9 +2416,9 @@
             "description": "Verebileceğin hiçbir İksir yok."
           },
           {
-            "id": "RELIC",
-            "title": "Kalıntı'yı Ver: Relic",
-            "description": "Rastgele [blue]2[/blue] [gold]Kalıntı[/gold] elde et."
+            "id": "GOLD",
+            "title": "100 Altın ver.",
+            "description": "Rastgele bir [gold]Kalıntı[/gold] elde et."
           },
           {
             "id": "RELIC_LOCKED",
@@ -2445,14 +2445,14 @@
     "description": "Bu da ne? Burada bir şey yanlış gibi...\n[sine]...ibig şılnay yeş rib adaruB ?en ad uB[/sine]",
     "options": [
       {
-        "id": "SHATTER",
-        "title": "Parçala",
-        "description": "[gold]Deste[/gold]'ni birebir kopyala. [purple]Kötü Şans[/purple] elde et."
-      },
-      {
         "id": "TOUCH_A_MIRROR",
         "title": "Bir Aynaya Dokun",
         "description": "Rastgele [blue]2[/blue] kartın [red]geliştirmesini kaldır[/red]. Rastgele [blue]4[/blue] kartı [green]Geliştir[/green]."
+      },
+      {
+        "id": "SHATTER",
+        "title": "Parçala",
+        "description": "[gold]Deste[/gold]'ni birebir kopyala. [purple]Kötü Şans[/purple] elde et."
       }
     ],
     "pages": [
@@ -2461,14 +2461,14 @@
         "description": "Bu da ne? Burada bir şey yanlış gibi...\n[sine]...ibig şılnay yeş rib adaruB ?en ad uB[/sine]",
         "options": [
           {
-            "id": "SHATTER",
-            "title": "Parçala",
-            "description": "[gold]Deste[/gold]'ni birebir kopyala. [purple]Kötü Şans[/purple] elde et."
-          },
-          {
             "id": "TOUCH_A_MIRROR",
             "title": "Bir Aynaya Dokun",
             "description": "Rastgele [blue]2[/blue] kartın [red]geliştirmesini kaldır[/red]. Rastgele [blue]4[/blue] kartı [green]Geliştir[/green]."
+          },
+          {
+            "id": "SHATTER",
+            "title": "Parçala",
+            "description": "[gold]Deste[/gold]'ni birebir kopyala. [purple]Kötü Şans[/purple] elde et."
           }
         ]
       },
@@ -2490,8 +2490,8 @@
     "description": "Bir köşeyi dönersin ve bir anda, gölgeler içinden bir figür karşında öylece durmaktadır. Sana dönerek yüzünü sana çevirir:\n\n“Hoş geldin! Ne alıp satıyorsun?”\nFigür, soruyu sorarken pelerinini bir anda savurarak [sine][purple]şüpheli mallardan[/purple][/sine] oluşan bir koleksiyon sergiler.",
     "options": [
       {
-        "id": "BOTTOM",
-        "title": "En Alttakini Al",
+        "id": "TOP",
+        "title": "En Yukardakini Al",
         "description": "[gold]one of your Relics[/gold] karşılığında [gold]a random Relic[/gold] al."
       },
       {
@@ -2500,8 +2500,8 @@
         "description": "[gold]one of your Relics[/gold] karşılığında [gold]a random Relic[/gold] al."
       },
       {
-        "id": "TOP",
-        "title": "En Yukardakini Al",
+        "id": "BOTTOM",
+        "title": "En Alttakini Al",
         "description": "[gold]one of your Relics[/gold] karşılığında [gold]a random Relic[/gold] al."
       }
     ],
@@ -2515,8 +2515,8 @@
         "description": "Bir köşeyi dönersin ve bir anda, gölgeler içinden bir figür karşında öylece durmaktadır. Sana dönerek yüzünü sana çevirir:\n\n“Hoş geldin! Ne alıp satıyorsun?”\nFigür, soruyu sorarken pelerinini bir anda savurarak [sine][purple]şüpheli mallardan[/purple][/sine] oluşan bir koleksiyon sergiler.",
         "options": [
           {
-            "id": "BOTTOM",
-            "title": "En Alttakini Al",
+            "id": "TOP",
+            "title": "En Yukardakini Al",
             "description": "[gold]one of your Relics[/gold] karşılığında [gold]a random Relic[/gold] al."
           },
           {
@@ -2525,8 +2525,8 @@
             "description": "[gold]one of your Relics[/gold] karşılığında [gold]a random Relic[/gold] al."
           },
           {
-            "id": "TOP",
-            "title": "En Yukardakini Al",
+            "id": "BOTTOM",
+            "title": "En Alttakini Al",
             "description": "[gold]one of your Relics[/gold] karşılığında [gold]a random Relic[/gold] al."
           }
         ]
@@ -2691,19 +2691,14 @@
     "description": "Yerde büyük bir kitap durmaktadır:\n“Spire’ı Fethetmenin En İyi 3 Yolu”\n\nKitap [red]kana bulanmıştır[/red]; bu yüzden bu el yazmasını son derece şüpheli bulursun.\n\nOkuyacak mısın?",
     "options": [
       {
-        "id": "NO_OPTIONS",
-        "title": "Yoluna Devam Et",
-        "description": "Büyüleyebileceğin hiçbir kartın yok."
+        "id": "READ_THE_BACK",
+        "title": "Arkasını Oku",
+        "description": "[blue]2[/blue] [purple]Keskin[/purple] ile [gold]Büyülemek[/gold] için bir Saldırı kartı seç."
       },
       {
-        "id": "READ_ENTIRE_BOOK",
-        "title": "Tüm Kitabı Oku",
-        "description": "[blue]2[/blue] [purple]Hızlı[/purple] ile [gold]Büyülemek[/gold] için bir Güç kartı seç."
-      },
-      {
-        "id": "READ_ENTIRE_BOOK_LOCKED",
+        "id": "READ_THE_BACK_LOCKED",
         "title": "Kilitli",
-        "description": "[gold]Büyüleyebileceğin[/gold] hiçbir Güç kartın yok."
+        "description": "[gold]Büyüleyebileceğin[/gold] hiçbir Saldırı kartın yok."
       },
       {
         "id": "READ_PASSAGE",
@@ -2716,14 +2711,19 @@
         "description": "[gold]Büyüleyebileceğin[/gold] hiçbir Beceri kartın yok."
       },
       {
-        "id": "READ_THE_BACK",
-        "title": "Arkasını Oku",
-        "description": "[blue]2[/blue] [purple]Keskin[/purple] ile [gold]Büyülemek[/gold] için bir Saldırı kartı seç."
+        "id": "READ_ENTIRE_BOOK",
+        "title": "Tüm Kitabı Oku",
+        "description": "[blue]2[/blue] [purple]Hızlı[/purple] ile [gold]Büyülemek[/gold] için bir Güç kartı seç."
       },
       {
-        "id": "READ_THE_BACK_LOCKED",
+        "id": "READ_ENTIRE_BOOK_LOCKED",
         "title": "Kilitli",
-        "description": "[gold]Büyüleyebileceğin[/gold] hiçbir Saldırı kartın yok."
+        "description": "[gold]Büyüleyebileceğin[/gold] hiçbir Güç kartın yok."
+      },
+      {
+        "id": "NO_OPTIONS",
+        "title": "Yoluna Devam Et",
+        "description": "Büyüleyebileceğin hiçbir kartın yok."
       }
     ],
     "pages": [
@@ -2732,19 +2732,14 @@
         "description": "Yerde büyük bir kitap durmaktadır:\n“Spire’ı Fethetmenin En İyi 3 Yolu”\n\nKitap [red]kana bulanmıştır[/red]; bu yüzden bu el yazmasını son derece şüpheli bulursun.\n\nOkuyacak mısın?",
         "options": [
           {
-            "id": "NO_OPTIONS",
-            "title": "Yoluna Devam Et",
-            "description": "Büyüleyebileceğin hiçbir kartın yok."
+            "id": "READ_THE_BACK",
+            "title": "Arkasını Oku",
+            "description": "[blue]2[/blue] [purple]Keskin[/purple] ile [gold]Büyülemek[/gold] için bir Saldırı kartı seç."
           },
           {
-            "id": "READ_ENTIRE_BOOK",
-            "title": "Tüm Kitabı Oku",
-            "description": "[blue]2[/blue] [purple]Hızlı[/purple] ile [gold]Büyülemek[/gold] için bir Güç kartı seç."
-          },
-          {
-            "id": "READ_ENTIRE_BOOK_LOCKED",
+            "id": "READ_THE_BACK_LOCKED",
             "title": "Kilitli",
-            "description": "[gold]Büyüleyebileceğin[/gold] hiçbir Güç kartın yok."
+            "description": "[gold]Büyüleyebileceğin[/gold] hiçbir Saldırı kartın yok."
           },
           {
             "id": "READ_PASSAGE",
@@ -2757,14 +2752,19 @@
             "description": "[gold]Büyüleyebileceğin[/gold] hiçbir Beceri kartın yok."
           },
           {
-            "id": "READ_THE_BACK",
-            "title": "Arkasını Oku",
-            "description": "[blue]2[/blue] [purple]Keskin[/purple] ile [gold]Büyülemek[/gold] için bir Saldırı kartı seç."
+            "id": "READ_ENTIRE_BOOK",
+            "title": "Tüm Kitabı Oku",
+            "description": "[blue]2[/blue] [purple]Hızlı[/purple] ile [gold]Büyülemek[/gold] için bir Güç kartı seç."
           },
           {
-            "id": "READ_THE_BACK_LOCKED",
+            "id": "READ_ENTIRE_BOOK_LOCKED",
             "title": "Kilitli",
-            "description": "[gold]Büyüleyebileceğin[/gold] hiçbir Saldırı kartın yok."
+            "description": "[gold]Büyüleyebileceğin[/gold] hiçbir Güç kartın yok."
+          },
+          {
+            "id": "NO_OPTIONS",
+            "title": "Yoluna Devam Et",
+            "description": "Büyüleyebileceğin hiçbir kartın yok."
           }
         ]
       },
@@ -2794,14 +2794,14 @@
     "description": "Derme çatma bir ahşap köprüden geçerken bir anda [blue][jitter]sağanak bir yağmur[/jitter][/blue] bastırır. [purple][sine]Şiddetli rüzgârlar[/sine][/purple] seni savurur; yolculuğunu sona erdirecek bir tehdit doğurur.",
     "options": [
       {
-        "id": "HOLD_ON_0",
-        "title": "Tutun",
-        "description": "[red]3+[/red] CP kaybet. Üstteki seçenekteki kart değişir."
-      },
-      {
         "id": "OVERCOME",
         "title": "Üstesinden Gel",
         "description": "[red]a random Card[/red] [gold]Deste[/gold]'nden kaldırılır."
+      },
+      {
+        "id": "HOLD_ON_0",
+        "title": "Tutun",
+        "description": "[red]3+[/red] CP kaybet. Üstteki seçenekteki kart değişir."
       }
     ],
     "pages": [
@@ -2898,14 +2898,14 @@
         "description": "Derme çatma bir ahşap köprüden geçerken bir anda [blue][jitter]sağanak bir yağmur[/jitter][/blue] bastırır. [purple][sine]Şiddetli rüzgârlar[/sine][/purple] seni savurur; yolculuğunu sona erdirecek bir tehdit doğurur.",
         "options": [
           {
-            "id": "HOLD_ON_0",
-            "title": "Tutun",
-            "description": "[red]3+[/red] CP kaybet. Üstteki seçenekteki kart değişir."
-          },
-          {
             "id": "OVERCOME",
             "title": "Üstesinden Gel",
             "description": "[red]a random Card[/red] [gold]Deste[/gold]'nden kaldırılır."
+          },
+          {
+            "id": "HOLD_ON_0",
+            "title": "Tutun",
+            "description": "[red]3+[/red] CP kaybet. Üstteki seçenekteki kart değişir."
           }
         ]
       },
@@ -2923,14 +2923,14 @@
     "description": "[aqua][sine]Devasa, Sarmal Bir Girdap[/sine][/aqua] ile karşılaşırsın. Sular kusursuz bir zarafetle döner; çevresindeki duvarlar sarmal desenlerle bezenmiştir.\n\n[purple][sine]Döne döne... döne...\n...ve yine döne... ne manzara ama...[/sine][/purple]\n\nNe yapacaksın?",
     "options": [
       {
-        "id": "DRINK",
-        "title": "İç",
-        "description": "[green]33% Max[/green] CP iyileştir."
-      },
-      {
         "id": "OBSERVE",
         "title": "Gözlemle",
         "description": "Bir [gold]Saldırı[/gold] veya [gold]Savunma[/gold] kartını [purple]Sarmal[/purple] ile [gold]Büyüle[/gold]."
+      },
+      {
+        "id": "DRINK",
+        "title": "İç",
+        "description": "[green]33% Max[/green] CP iyileştir."
       },
       {
         "id": "REACH_IN",
@@ -2948,14 +2948,14 @@
         "description": "[aqua][sine]Devasa, Sarmal Bir Girdap[/sine][/aqua] ile karşılaşırsın. Sular kusursuz bir zarafetle döner; çevresindeki duvarlar sarmal desenlerle bezenmiştir.\n\n[purple][sine]Döne döne... döne...\n...ve yine döne... ne manzara ama...[/sine][/purple]\n\nNe yapacaksın?",
         "options": [
           {
-            "id": "DRINK",
-            "title": "İç",
-            "description": "[green]33% Max[/green] CP iyileştir."
-          },
-          {
             "id": "OBSERVE",
             "title": "Gözlemle",
             "description": "Bir [gold]Saldırı[/gold] veya [gold]Savunma[/gold] kartını [purple]Sarmal[/purple] ile [gold]Büyüle[/gold]."
+          },
+          {
+            "id": "DRINK",
+            "title": "İç",
+            "description": "[green]33% Max[/green] CP iyileştir."
           },
           {
             "id": "REACH_IN",
@@ -3037,14 +3037,14 @@
         "description": "Bir İksir gerektirir."
       },
       {
-        "id": "PUSH",
-        "title": "İt",
-        "description": "[red]6[/red] CP kaybet. Bir Saldırı kartını [blue]8[/blue] [purple]Güçlü[/purple] ile [gold]Büyüle[/gold]."
-      },
-      {
         "id": "PUSH_LOCKED",
         "title": "Kilitli",
         "description": "Bir Saldırı gerektirir."
+      },
+      {
+        "id": "PUSH",
+        "title": "İt",
+        "description": "[red]6[/red] CP kaybet. Bir Saldırı kartını [blue]8[/blue] [purple]Güçlü[/purple] ile [gold]Büyüle[/gold]."
       }
     ],
     "pages": [
@@ -3063,14 +3063,14 @@
             "description": "Bir İksir gerektirir."
           },
           {
-            "id": "PUSH",
-            "title": "İt",
-            "description": "[red]6[/red] CP kaybet. Bir Saldırı kartını [blue]8[/blue] [purple]Güçlü[/purple] ile [gold]Büyüle[/gold]."
-          },
-          {
             "id": "PUSH_LOCKED",
             "title": "Kilitli",
             "description": "Bir Saldırı gerektirir."
+          },
+          {
+            "id": "PUSH",
+            "title": "İt",
+            "description": "[red]6[/red] CP kaybet. Bir Saldırı kartını [blue]8[/blue] [purple]Güçlü[/purple] ile [gold]Büyüle[/gold]."
           }
         ]
       },
@@ -3092,14 +3092,14 @@
     "description": "Bir göletin içinde yarı yarıya batmış eski bir heykel fark edersin. Elleri nazikçe [blue]taş bir kılıcın[/blue] üzerinde durmaktadır.\n\nAyrıca göletin dibinde [gold][sine]parıldayan[/sine][/gold] bir şey de gözüne çarpar.\nBunlar para mı acaba?\n\nGerçekten de biraz paraya ihtiyacın vardı...",
     "options": [
       {
-        "id": "DIVE_INTO_WATER",
-        "title": "Suya Dal",
-        "description": "[blue]111[/blue] [gold]Altın[/gold] elde et. [red]7[/red] CP kaybet."
-      },
-      {
         "id": "GRAB_SWORD",
         "title": "Kılıcı Al",
         "description": "Kalıntıyı elde et: [gold]Taş Kılıç[/gold]"
+      },
+      {
+        "id": "DIVE_INTO_WATER",
+        "title": "Suya Dal",
+        "description": "[blue]111[/blue] [gold]Altın[/gold] elde et. [red]7[/red] CP kaybet."
       }
     ],
     "pages": [
@@ -3116,14 +3116,14 @@
         "description": "Bir göletin içinde yarı yarıya batmış eski bir heykel fark edersin. Elleri nazikçe [blue]taş bir kılıcın[/blue] üzerinde durmaktadır.\n\nAyrıca göletin dibinde [gold][sine]parıldayan[/sine][/gold] bir şey de gözüne çarpar.\nBunlar para mı acaba?\n\nGerçekten de biraz paraya ihtiyacın vardı...",
         "options": [
           {
-            "id": "DIVE_INTO_WATER",
-            "title": "Suya Dal",
-            "description": "[blue]111[/blue] [gold]Altın[/gold] elde et. [red]7[/red] CP kaybet."
-          },
-          {
             "id": "GRAB_SWORD",
             "title": "Kılıcı Al",
             "description": "Kalıntıyı elde et: [gold]Taş Kılıç[/gold]"
+          },
+          {
+            "id": "DIVE_INTO_WATER",
+            "title": "Suya Dal",
+            "description": "[blue]111[/blue] [gold]Altın[/gold] elde et. [red]7[/red] CP kaybet."
           }
         ]
       }
@@ -3182,14 +3182,14 @@
     "description": "Yolculuğun sırasında karanlık, biçimsiz bir poliple karşılaşırsın. Onun çok yaşlı, ve son derece kötü olduğunu hissedebiliyorsundur.\n\n[sine]Yaklaş...[/sine]",
     "options": [
       {
-        "id": "APPROACH",
-        "title": "Yaklaş",
-        "description": "Bir Saldırı kartını [purple]Yozlaşmış[/purple] ile [gold]Büyüle[/gold]."
-      },
-      {
         "id": "APPROACH_LOCKED",
         "title": "Kilitli",
         "description": "Hiçbir Saldırı kartın Büyülenemiyor."
+      },
+      {
+        "id": "APPROACH",
+        "title": "Yaklaş",
+        "description": "Bir Saldırı kartını [purple]Yozlaşmış[/purple] ile [gold]Büyüle[/gold]."
       },
       {
         "id": "KILL_WITH_FIRE",
@@ -3207,14 +3207,14 @@
         "description": "Yolculuğun sırasında karanlık, biçimsiz bir poliple karşılaşırsın. Onun çok yaşlı, ve son derece kötü olduğunu hissedebiliyorsundur.\n\n[sine]Yaklaş...[/sine]",
         "options": [
           {
-            "id": "APPROACH",
-            "title": "Yaklaş",
-            "description": "Bir Saldırı kartını [purple]Yozlaşmış[/purple] ile [gold]Büyüle[/gold]."
-          },
-          {
             "id": "APPROACH_LOCKED",
             "title": "Kilitli",
             "description": "Hiçbir Saldırı kartın Büyülenemiyor."
+          },
+          {
+            "id": "APPROACH",
+            "title": "Yaklaş",
+            "description": "Bir Saldırı kartını [purple]Yozlaşmış[/purple] ile [gold]Büyüle[/gold]."
           },
           {
             "id": "KILL_WITH_FIRE",
@@ -3859,14 +3859,14 @@
     "description": "Hafifçe parıldayan bir anahtarla karşılaşırsın ve onu almak için eğilirsin.\n\n“Her yerde bu anahtarı arıyordum! Müsaade edersen alayım...”\n\nBu kişi pek hayra alamet gibi görünmüyor; ama belki de peşin hükümlü olmamak gerekir.",
     "options": [
       {
-        "id": "KEEP_THE_KEY",
-        "title": "Anahtarı Sakla",
-        "description": "Anahtar'ı elde etmek için savaş."
-      },
-      {
         "id": "RETURN_THE_KEY",
         "title": "Anahtarı Geri Ver",
         "description": "[blue]100[/blue] [gold]Altın[/gold] elde et."
+      },
+      {
+        "id": "KEEP_THE_KEY",
+        "title": "Anahtarı Sakla",
+        "description": "Anahtar'ı elde etmek için savaş."
       }
     ],
     "pages": [
@@ -3886,14 +3886,14 @@
         "description": "Hafifçe parıldayan bir anahtarla karşılaşırsın ve onu almak için eğilirsin.\n\n“Her yerde bu anahtarı arıyordum! Müsaade edersen alayım...”\n\nBu kişi pek hayra alamet gibi görünmüyor; ama belki de peşin hükümlü olmamak gerekir.",
         "options": [
           {
-            "id": "KEEP_THE_KEY",
-            "title": "Anahtarı Sakla",
-            "description": "Anahtar'ı elde etmek için savaş."
-          },
-          {
             "id": "RETURN_THE_KEY",
             "title": "Anahtarı Geri Ver",
             "description": "[blue]100[/blue] [gold]Altın[/gold] elde et."
+          },
+          {
+            "id": "KEEP_THE_KEY",
+            "title": "Anahtarı Sakla",
+            "description": "Anahtar'ı elde etmek için savaş."
           }
         ]
       },
@@ -3963,14 +3963,14 @@
     "description": "Yakındaki bir delikten kollar aniden fırlar. Bir elinde [gold]bol zenginliklerle dolu, şüpheli bir torba[/gold], diğerinde ise apaçık [purple]lanetli bir kalıntı[/purple] tutar.\n\nAşağıdan kısık bir ses fısıldar:\n[jitter][blue]“Bu mu? Şu mu?”[/blue][/jitter]",
     "options": [
       {
-        "id": "ORNATE",
-        "title": "Şu",
-        "description": "[gold]Deste[/gold]'ne bir [red]Sakar[/red] ekle. Rastgele bir [gold]Kalıntı[/gold] elde et."
-      },
-      {
         "id": "PLAIN",
         "title": "Bu",
         "description": "[red]6[/red] CP kaybet. [blue]41-69[/blue] [gold]Altın[/gold] elde et."
+      },
+      {
+        "id": "ORNATE",
+        "title": "Şu",
+        "description": "[gold]Deste[/gold]'ne bir [red]Sakar[/red] ekle. Rastgele bir [gold]Kalıntı[/gold] elde et."
       }
     ],
     "pages": [
@@ -3979,14 +3979,14 @@
         "description": "Yakındaki bir delikten kollar aniden fırlar. Bir elinde [gold]bol zenginliklerle dolu, şüpheli bir torba[/gold], diğerinde ise apaçık [purple]lanetli bir kalıntı[/purple] tutar.\n\nAşağıdan kısık bir ses fısıldar:\n[jitter][blue]“Bu mu? Şu mu?”[/blue][/jitter]",
         "options": [
           {
-            "id": "ORNATE",
-            "title": "Şu",
-            "description": "[gold]Deste[/gold]'ne bir [red]Sakar[/red] ekle. Rastgele bir [gold]Kalıntı[/gold] elde et."
-          },
-          {
             "id": "PLAIN",
             "title": "Bu",
             "description": "[red]6[/red] CP kaybet. [blue]41-69[/blue] [gold]Altın[/gold] elde et."
+          },
+          {
+            "id": "ORNATE",
+            "title": "Şu",
+            "description": "[gold]Deste[/gold]'ne bir [red]Sakar[/red] ekle. Rastgele bir [gold]Kalıntı[/gold] elde et."
           }
         ]
       },
@@ -4024,14 +4024,14 @@
             "description": "Bir Saldırı oluştur."
           },
           {
-            "id": "POWER",
-            "title": "Alet",
-            "description": "Bir Güç oluştur."
-          },
-          {
             "id": "SKILL",
             "title": "Koruyucu",
             "description": "Bir Beceri oluştur."
+          },
+          {
+            "id": "POWER",
+            "title": "Alet",
+            "description": "Bir Güç oluştur."
           }
         ]
       },
@@ -4039,36 +4039,6 @@
         "id": "CHOOSE_RIDER",
         "description": "“Mükemmel bir seçim! Peki bu şey [sine]NE YAPMALI[/sine]?”\n[orange]Bilim insanı[/orange], keyifle ellerini ovuşturur.",
         "options": [
-          {
-            "id": "CHAOS",
-            "title": "Kaos",
-            "description": "[gold]El[/gold]'ine rastgele bir kart ekle. Bu tur maliyeti [blue]0[/blue] [energy:1] olur."
-          },
-          {
-            "id": "CHOKING",
-            "title": "Boğucu",
-            "description": "Bu tur her kart oynadığında düşman [blue][ChokingDamage][/blue] CP kaybeder."
-          },
-          {
-            "id": "CURIOUS",
-            "title": "Meraklı",
-            "description": "Güç kartlarının maliyeti [blue]1[/blue] [energy:1] azalır."
-          },
-          {
-            "id": "ENERGIZED",
-            "title": "Enerji Yüklü",
-            "description": "[energy:2] elde et."
-          },
-          {
-            "id": "EXPERTISE",
-            "title": "Uzmanlık",
-            "description": "[blue][ExpertiseStrength][/blue] [gold]Kuvvet[/gold] elde et. [blue][ExpertiseDexterity][/blue] [gold]Çeviklik[/gold] elde et."
-          },
-          {
-            "id": "IMPROVEMENT",
-            "title": "Geliştirme",
-            "description": "Savaşın sonunda rastgele bir kartı [gold]Geliştir[/gold]."
-          },
           {
             "id": "SAPPING",
             "title": "Zayıflatma",
@@ -4080,9 +4050,39 @@
             "description": "Fazladan [blue]2[/blue] kez vurur."
           },
           {
+            "id": "CHOKING",
+            "title": "Boğucu",
+            "description": "Bu tur her kart oynadığında düşman [blue][ChokingDamage][/blue] CP kaybeder."
+          },
+          {
+            "id": "ENERGIZED",
+            "title": "Enerji Yüklü",
+            "description": "[energy:2] elde et."
+          },
+          {
             "id": "WISDOM",
             "title": "Bilgelik",
             "description": "[blue]3[/blue] kart çek."
+          },
+          {
+            "id": "CHAOS",
+            "title": "Kaos",
+            "description": "[gold]El[/gold]'ine rastgele bir kart ekle. Bu tur maliyeti [blue]0[/blue] [energy:1] olur."
+          },
+          {
+            "id": "EXPERTISE",
+            "title": "Uzmanlık",
+            "description": "[blue][ExpertiseStrength][/blue] [gold]Kuvvet[/gold] elde et. [blue][ExpertiseDexterity][/blue] [gold]Çeviklik[/gold] elde et."
+          },
+          {
+            "id": "CURIOUS",
+            "title": "Meraklı",
+            "description": "Güç kartlarının maliyeti [blue]1[/blue] [energy:1] azalır."
+          },
+          {
+            "id": "IMPROVEMENT",
+            "title": "Geliştirme",
+            "description": "Savaşın sonunda rastgele bir kartı [gold]Geliştir[/gold]."
           }
         ]
       },
@@ -4281,14 +4281,14 @@
     "description": "Gözlerden uzak bir [gold]Dinlenme Alanı[/gold] bulur ve biraz soluklanmak için bir [orange]ateş[/orange] yakarsın...\nya da en azından öyle sanırsın.\n\nAteş yakıldıktan sonra kabarıp büyümeye başlar; yukarı doğru değil, [purple]yağ sızdıran ağaçlardan[/purple] oluşan bir koruluğa uzanarak [sine]yanlara doğru[/sine] hareket eder.\n\nYine de dinlenmeyi denemeli misin?",
     "options": [
       {
-        "id": "KILL",
-        "title": "Ağaçları Öldür",
-        "description": "[red]8[/red] Maksimum CP kaybet. Rastgele bir [gold]Kalıntı[/gold] elde et."
-      },
-      {
         "id": "REST",
         "title": "Yine de Dinlen",
         "description": "[green]Tüm CP'ni iyileştir.[/green] Bir [red]Uykusuzluk[/red] elde et."
+      },
+      {
+        "id": "KILL",
+        "title": "Ağaçları Öldür",
+        "description": "[red]8[/red] Maksimum CP kaybet. Rastgele bir [gold]Kalıntı[/gold] elde et."
       }
     ],
     "pages": [
@@ -4297,14 +4297,14 @@
         "description": "Gözlerden uzak bir [gold]Dinlenme Alanı[/gold] bulur ve biraz soluklanmak için bir [orange]ateş[/orange] yakarsın...\nya da en azından öyle sanırsın.\n\nAteş yakıldıktan sonra kabarıp büyümeye başlar; yukarı doğru değil, [purple]yağ sızdıran ağaçlardan[/purple] oluşan bir koruluğa uzanarak [sine]yanlara doğru[/sine] hareket eder.\n\nYine de dinlenmeyi denemeli misin?",
         "options": [
           {
-            "id": "KILL",
-            "title": "Ağaçları Öldür",
-            "description": "[red]8[/red] Maksimum CP kaybet. Rastgele bir [gold]Kalıntı[/gold] elde et."
-          },
-          {
             "id": "REST",
             "title": "Yine de Dinlen",
             "description": "[green]Tüm CP'ni iyileştir.[/green] Bir [red]Uykusuzluk[/red] elde et."
+          },
+          {
+            "id": "KILL",
+            "title": "Ağaçları Öldür",
+            "description": "[red]8[/red] Maksimum CP kaybet. Rastgele bir [gold]Kalıntı[/gold] elde et."
           }
         ]
       },
@@ -4595,16 +4595,6 @@
         "description": "[green]6[/green] Maksimum CP elde et."
       },
       {
-        "id": "PRICKLY_SPONGE",
-        "title": "Dikenli Sünger",
-        "description": "[red]155[/red] [gold]Altın[/gold] öde. [blue]2[/blue] kartı [purple]Sabit[/purple] ile [gold]Büyüle[/gold]."
-      },
-      {
-        "id": "PRICKLY_SPONGE_LOCKED",
-        "title": "Kilitli",
-        "description": "[blue]155[/blue] [gold]Altın[/gold] gerektirir."
-      },
-      {
         "id": "TENTACLE_QUILL",
         "title": "Dokunaç Kalem",
         "description": "[red]65[/red] [gold]Altın[/gold] öde. Bir kartı [purple]Sabit[/purple] ile [gold]Büyüle[/gold]."
@@ -4613,6 +4603,16 @@
         "id": "TENTACLE_QUILL_LOCKED",
         "title": "Kilitli",
         "description": "[blue]65[/blue] [gold]Altın[/gold] gerektirir."
+      },
+      {
+        "id": "PRICKLY_SPONGE",
+        "title": "Dikenli Sünger",
+        "description": "[red]155[/red] [gold]Altın[/gold] öde. [blue]2[/blue] kartı [purple]Sabit[/purple] ile [gold]Büyüle[/gold]."
+      },
+      {
+        "id": "PRICKLY_SPONGE_LOCKED",
+        "title": "Kilitli",
+        "description": "[blue]155[/blue] [gold]Altın[/gold] gerektirir."
       }
     ],
     "pages": [
@@ -4630,16 +4630,6 @@
             "description": "[green]6[/green] Maksimum CP elde et."
           },
           {
-            "id": "PRICKLY_SPONGE",
-            "title": "Dikenli Sünger",
-            "description": "[red]155[/red] [gold]Altın[/gold] öde. [blue]2[/blue] kartı [purple]Sabit[/purple] ile [gold]Büyüle[/gold]."
-          },
-          {
-            "id": "PRICKLY_SPONGE_LOCKED",
-            "title": "Kilitli",
-            "description": "[blue]155[/blue] [gold]Altın[/gold] gerektirir."
-          },
-          {
             "id": "TENTACLE_QUILL",
             "title": "Dokunaç Kalem",
             "description": "[red]65[/red] [gold]Altın[/gold] öde. Bir kartı [purple]Sabit[/purple] ile [gold]Büyüle[/gold]."
@@ -4648,6 +4638,16 @@
             "id": "TENTACLE_QUILL_LOCKED",
             "title": "Kilitli",
             "description": "[blue]65[/blue] [gold]Altın[/gold] gerektirir."
+          },
+          {
+            "id": "PRICKLY_SPONGE",
+            "title": "Dikenli Sünger",
+            "description": "[red]155[/red] [gold]Altın[/gold] öde. [blue]2[/blue] kartı [purple]Sabit[/purple] ile [gold]Büyüle[/gold]."
+          },
+          {
+            "id": "PRICKLY_SPONGE_LOCKED",
+            "title": "Kilitli",
+            "description": "[blue]155[/blue] [gold]Altın[/gold] gerektirir."
           }
         ]
       },
@@ -4689,11 +4689,6 @@
         "description": "[blue]200[/blue] [gold]Altın[/gold] gerekir."
       },
       {
-        "id": "LEAVE",
-        "title": "Ayrıl",
-        "description": "Rastgele bir kartın [red]geliştirmesini kaldır[/red]."
-      },
-      {
         "id": "MYSTERY_BOX",
         "title": "Wongo'nun Gizemli Kutusu",
         "description": "[red]300[/red] [gold]Altın[/gold] öde. [blue]5[/blue] savaştan sonra rastgele [blue]3[/blue] [gold]Kalıntı[/gold] elde et."
@@ -4702,6 +4697,11 @@
         "id": "MYSTERY_BOX_LOCKED",
         "title": "Kilitli",
         "description": "[blue]300[/blue] [gold]Altın[/gold] gerekir."
+      },
+      {
+        "id": "LEAVE",
+        "title": "Ayrıl",
+        "description": "Rastgele bir kartın [red]geliştirmesini kaldır[/red]."
       }
     ],
     "pages": [
@@ -4742,11 +4742,6 @@
             "description": "[blue]200[/blue] [gold]Altın[/gold] gerekir."
           },
           {
-            "id": "LEAVE",
-            "title": "Ayrıl",
-            "description": "Rastgele bir kartın [red]geliştirmesini kaldır[/red]."
-          },
-          {
             "id": "MYSTERY_BOX",
             "title": "Wongo'nun Gizemli Kutusu",
             "description": "[red]300[/red] [gold]Altın[/gold] öde. [blue]5[/blue] savaştan sonra rastgele [blue]3[/blue] [gold]Kalıntı[/gold] elde et."
@@ -4755,6 +4750,11 @@
             "id": "MYSTERY_BOX_LOCKED",
             "title": "Kilitli",
             "description": "[blue]300[/blue] [gold]Altın[/gold] gerekir."
+          },
+          {
+            "id": "LEAVE",
+            "title": "Ayrıl",
+            "description": "Rastgele bir kartın [red]geliştirmesini kaldır[/red]."
           }
         ]
       },
@@ -4772,14 +4772,14 @@
     "description": "[jitter]Alçak bir uğultunun[/jitter] kaynağını takip eder ve kendini sakin bir pınarın huzuruna kapılmış hâlde bulursun. Su, [sine][aqua]zümrüt yeşili[/aqua][/sine] bir tona sahiptir ve içinde [sine][gold]ışıldayan zerrecik kümeleri[/gold][/sine] dolaşmaktadır.\n\nİnsanı içine çağırıyor gibi. Ne ters gidebilir ki?",
     "options": [
       {
-        "id": "BATHE",
-        "title": "Yıkan",
-        "description": "[gold]Deste[/gold]'nden [blue]1[/blue] kart kaldır. [gold]Deste[/gold]'ne [blue]1[/blue] [red]Suçlu[/red] ekle."
-      },
-      {
         "id": "BOTTLE",
         "title": "Şişele",
         "description": "Rastgele [blue]1[/blue] [gold]İksir[/gold] elde et."
+      },
+      {
+        "id": "BATHE",
+        "title": "Yıkan",
+        "description": "[gold]Deste[/gold]'nden [blue]1[/blue] kart kaldır. [gold]Deste[/gold]'ne [blue]1[/blue] [red]Suçlu[/red] ekle."
       }
     ],
     "pages": [
@@ -4796,14 +4796,14 @@
         "description": "[jitter]Alçak bir uğultunun[/jitter] kaynağını takip eder ve kendini sakin bir pınarın huzuruna kapılmış hâlde bulursun. Su, [sine][aqua]zümrüt yeşili[/aqua][/sine] bir tona sahiptir ve içinde [sine][gold]ışıldayan zerrecik kümeleri[/gold][/sine] dolaşmaktadır.\n\nİnsanı içine çağırıyor gibi. Ne ters gidebilir ki?",
         "options": [
           {
-            "id": "BATHE",
-            "title": "Yıkan",
-            "description": "[gold]Deste[/gold]'nden [blue]1[/blue] kart kaldır. [gold]Deste[/gold]'ne [blue]1[/blue] [red]Suçlu[/red] ekle."
-          },
-          {
             "id": "BOTTLE",
             "title": "Şişele",
             "description": "Rastgele [blue]1[/blue] [gold]İksir[/gold] elde et."
+          },
+          {
+            "id": "BATHE",
+            "title": "Yıkan",
+            "description": "[gold]Deste[/gold]'nden [blue]1[/blue] kart kaldır. [gold]Deste[/gold]'ne [blue]1[/blue] [red]Suçlu[/red] ekle."
           }
         ]
       }
@@ -4862,9 +4862,9 @@
     "description": "Tozlu bir sandığı açtığında üç adet özenle oyulmuş ahşap figürle karşılaşırsın:\n\nBir kuş, bir yılan ve... galiba bir simit.\n\nYakındaki bir kaidede, oymaların tabanlarıyla birebir uyuşan girintiler vardır. Kaideye hangisini yerleştireceksin?",
     "options": [
       {
-        "id": "BIRD",
-        "title": "Kuş",
-        "description": "[gold]Gagala[/gold] kartına [gold]Dönüştürmek[/gold] için başlangıç kartlarından [blue]1[/blue] tanesini seç."
+        "id": "SNAKE_LOCKED",
+        "title": "Kilitli",
+        "description": "Kartlarından hiçbiri [purple]Sürüngen[/purple] ile Büyülenemiyor."
       },
       {
         "id": "SNAKE",
@@ -4872,9 +4872,9 @@
         "description": "[blue]1[/blue] kartı [purple]Sürüngen[/purple] ile [gold]Büyüle[/gold]."
       },
       {
-        "id": "SNAKE_LOCKED",
-        "title": "Kilitli",
-        "description": "Kartlarından hiçbiri [purple]Sürüngen[/purple] ile Büyülenemiyor."
+        "id": "BIRD",
+        "title": "Kuş",
+        "description": "[gold]Gagala[/gold] kartına [gold]Dönüştürmek[/gold] için başlangıç kartlarından [blue]1[/blue] tanesini seç."
       },
       {
         "id": "TORUS",
@@ -4892,9 +4892,9 @@
         "description": "Tozlu bir sandığı açtığında üç adet özenle oyulmuş ahşap figürle karşılaşırsın:\n\nBir kuş, bir yılan ve... galiba bir simit.\n\nYakındaki bir kaidede, oymaların tabanlarıyla birebir uyuşan girintiler vardır. Kaideye hangisini yerleştireceksin?",
         "options": [
           {
-            "id": "BIRD",
-            "title": "Kuş",
-            "description": "[gold]Gagala[/gold] kartına [gold]Dönüştürmek[/gold] için başlangıç kartlarından [blue]1[/blue] tanesini seç."
+            "id": "SNAKE_LOCKED",
+            "title": "Kilitli",
+            "description": "Kartlarından hiçbiri [purple]Sürüngen[/purple] ile Büyülenemiyor."
           },
           {
             "id": "SNAKE",
@@ -4902,9 +4902,9 @@
             "description": "[blue]1[/blue] kartı [purple]Sürüngen[/purple] ile [gold]Büyüle[/gold]."
           },
           {
-            "id": "SNAKE_LOCKED",
-            "title": "Kilitli",
-            "description": "Kartlarından hiçbiri [purple]Sürüngen[/purple] ile Büyülenemiyor."
+            "id": "BIRD",
+            "title": "Kuş",
+            "description": "[gold]Gagala[/gold] kartına [gold]Dönüştürmek[/gold] için başlangıç kartlarından [blue]1[/blue] tanesini seç."
           },
           {
             "id": "TORUS",
@@ -4931,11 +4931,6 @@
     "description": "Bir örümcek ağından geçerken [jitter][red]PANİKLERSİN[/red][/jitter]!\nSonrasında, [sine][blue]bir sakinlik hissi[/blue][/sine] üzerine yayılır...\n\n[sine]“Sakin ol. Ağımı böyle telaşla bozmayı bırakman lazım.”[/sine]\n\nBu kadar çabuk nasıl sakinleştiğini merak edersin.\n[orange]Ufacık tefecik[/orange] bir örümcek ipini salarak yanına iner. Görünüşe göre [gold]altın[/gold] karşılığında sana bazı teknikler öğretmeye niyetlidir.",
     "options": [
       {
-        "id": "ARACHNID_ACUPUNCTURE",
-        "title": "Örümcek Akupunkturu",
-        "description": "[red]250[/red] [gold]Altın[/gold] öde. [gold]Deste[/gold]'nden [blue]2[/blue] kart çıkar."
-      },
-      {
         "id": "BREATHING_TECHNIQUES",
         "title": "Nefes Alma Teknikleri",
         "description": "[red]50[/red] [gold]Altın[/gold] öde. [gold]Deste[/gold]'ne [blue]2[/blue] [gold]Aydınlanma[/gold] ekle."
@@ -4944,6 +4939,11 @@
         "id": "EMOTIONAL_AWARENESS",
         "title": "Duygusal Farkındalık",
         "description": "[red]125[/red] [gold]Altın[/gold] öde. [gold]Deste[/gold]'nden [blue]1[/blue] kart çıkar."
+      },
+      {
+        "id": "ARACHNID_ACUPUNCTURE",
+        "title": "Örümcek Akupunkturu",
+        "description": "[red]250[/red] [gold]Altın[/gold] öde. [gold]Deste[/gold]'nden [blue]2[/blue] kart çıkar."
       },
       {
         "id": "LOCKED",
@@ -4969,11 +4969,6 @@
         "description": "Bir örümcek ağından geçerken [jitter][red]PANİKLERSİN[/red][/jitter]!\nSonrasında, [sine][blue]bir sakinlik hissi[/blue][/sine] üzerine yayılır...\n\n[sine]“Sakin ol. Ağımı böyle telaşla bozmayı bırakman lazım.”[/sine]\n\nBu kadar çabuk nasıl sakinleştiğini merak edersin.\n[orange]Ufacık tefecik[/orange] bir örümcek ipini salarak yanına iner. Görünüşe göre [gold]altın[/gold] karşılığında sana bazı teknikler öğretmeye niyetlidir.",
         "options": [
           {
-            "id": "ARACHNID_ACUPUNCTURE",
-            "title": "Örümcek Akupunkturu",
-            "description": "[red]250[/red] [gold]Altın[/gold] öde. [gold]Deste[/gold]'nden [blue]2[/blue] kart çıkar."
-          },
-          {
             "id": "BREATHING_TECHNIQUES",
             "title": "Nefes Alma Teknikleri",
             "description": "[red]50[/red] [gold]Altın[/gold] öde. [gold]Deste[/gold]'ne [blue]2[/blue] [gold]Aydınlanma[/gold] ekle."
@@ -4982,6 +4977,11 @@
             "id": "EMOTIONAL_AWARENESS",
             "title": "Duygusal Farkındalık",
             "description": "[red]125[/red] [gold]Altın[/gold] öde. [gold]Deste[/gold]'nden [blue]1[/blue] kart çıkar."
+          },
+          {
+            "id": "ARACHNID_ACUPUNCTURE",
+            "title": "Örümcek Akupunkturu",
+            "description": "[red]250[/red] [gold]Altın[/gold] öde. [gold]Deste[/gold]'nden [blue]2[/blue] kart çıkar."
           },
           {
             "id": "LOCKED",

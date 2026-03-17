@@ -7,14 +7,14 @@
     "description": "Odkrywasz ustronną komnatę.\n\nPara unosi się z bulgoczących zbiorników gorącej cieczy, zmieniającej kolory w hipnotyzującym rytmie. Z sufitu wystaje zeskorupiała narośl, z której ocieka lepki płyn, sycząc z każdym skapnięciem. W gęstym powietrzu czuć zapach [blue]soli[/blue] oraz czegoś [green]ewidentnie organicznego[/green].\n\nZbliżasz się do brzegu największego zbiornika, a powierzchnia zebranej w nim cieczy zaczyna falować. Wody bulgoczą coraz mocniej, jakby oczekiwały twojego wejścia.",
     "options": [
       {
-        "id": "ABSTAIN",
-        "title": "Powstrzymaj się",
-        "description": "Przywróć [green]10[/green] PŻ."
-      },
-      {
         "id": "IMMERSE",
         "title": "Zanurz się",
         "description": "Zyskaj [green]2[/green] maks. PŻ. Otrzymaj [red]3[/red] pkt. obrażeń."
+      },
+      {
+        "id": "ABSTAIN",
+        "title": "Powstrzymaj się",
+        "description": "Przywróć [green]10[/green] PŻ."
       }
     ],
     "pages": [
@@ -27,14 +27,14 @@
         "description": null,
         "options": [
           {
-            "id": "EXIT_BATHS",
-            "title": "Wyjdź z wody",
-            "description": ""
-          },
-          {
             "id": "LINGER",
             "title": "Pozostań",
             "description": "Zyskaj [green]2[/green] maks. PŻ. Otrzymaj [red]3[/red] pkt. obrażeń."
+          },
+          {
+            "id": "EXIT_BATHS",
+            "title": "Wyjdź z wody",
+            "description": ""
           }
         ]
       },
@@ -55,14 +55,14 @@
         "description": "Odkrywasz ustronną komnatę.\n\nPara unosi się z bulgoczących zbiorników gorącej cieczy, zmieniającej kolory w hipnotyzującym rytmie. Z sufitu wystaje zeskorupiała narośl, z której ocieka lepki płyn, sycząc z każdym skapnięciem. W gęstym powietrzu czuć zapach [blue]soli[/blue] oraz czegoś [green]ewidentnie organicznego[/green].\n\nZbliżasz się do brzegu największego zbiornika, a powierzchnia zebranej w nim cieczy zaczyna falować. Wody bulgoczą coraz mocniej, jakby oczekiwały twojego wejścia.",
         "options": [
           {
-            "id": "ABSTAIN",
-            "title": "Powstrzymaj się",
-            "description": "Przywróć [green]10[/green] PŻ."
-          },
-          {
             "id": "IMMERSE",
             "title": "Zanurz się",
             "description": "Zyskaj [green]2[/green] maks. PŻ. Otrzymaj [red]3[/red] pkt. obrażeń."
+          },
+          {
+            "id": "ABSTAIN",
+            "title": "Powstrzymaj się",
+            "description": "Przywróć [green]10[/green] PŻ."
           }
         ]
       },
@@ -257,14 +257,14 @@
     "description": "[jitter]*łup*[/jitter]\n\nOdczuwasz przeszywający ból głowy i nagle przeszywa cię pewna myśl.\n\n[purple][sine]„CHCESZ WIEDZĘ???”[/sine][/purple]\n\nNie do końca wiesz, jak masz postąpić...",
     "options": [
       {
-        "id": "RIP",
-        "title": "Oderwij pijawkę",
-        "description": "Utrać [red]5[/red] PŻ. Wybierz bezbarwną kartę z łupów."
-      },
-      {
         "id": "SHARE_KNOWLEDGE",
         "title": "Chcę wiedzę",
         "description": "Wybierz [blue]1[/blue] z [blue]5[/blue] losowych kart i dodaj ją do [gold]talii[/gold]."
+      },
+      {
+        "id": "RIP",
+        "title": "Oderwij pijawkę",
+        "description": "Utrać [red]5[/red] PŻ. Wybierz bezbarwną kartę z łupów."
       }
     ],
     "pages": [
@@ -273,14 +273,14 @@
         "description": "[jitter]*łup*[/jitter]\n\nOdczuwasz przeszywający ból głowy i nagle przeszywa cię pewna myśl.\n\n[purple][sine]„CHCESZ WIEDZĘ???”[/sine][/purple]\n\nNie do końca wiesz, jak masz postąpić...",
         "options": [
           {
-            "id": "RIP",
-            "title": "Oderwij pijawkę",
-            "description": "Utrać [red]5[/red] PŻ. Wybierz bezbarwną kartę z łupów."
-          },
-          {
             "id": "SHARE_KNOWLEDGE",
             "title": "Chcę wiedzę",
             "description": "Wybierz [blue]1[/blue] z [blue]5[/blue] losowych kart i dodaj ją do [gold]talii[/gold]."
+          },
+          {
+            "id": "RIP",
+            "title": "Oderwij pijawkę",
+            "description": "Utrać [red]5[/red] PŻ. Wybierz bezbarwną kartę z łupów."
           }
         ]
       },
@@ -558,14 +558,14 @@
     "description": "[sine][blue]„Nasze spotkanie było zapisane w gwiazdach!”[/blue][/sine]\n\nPo wejściu do [purple]mistycznej chaty[/purple] słyszysz [jitter]chrapliwy[/jitter] głos.\n\n[sine][blue]„To musiało być przeznaczenie. Dziś odkryjemy twoją przyszłość! Z pewnością pomoże ci to URATOWAĆ NAS WSZYSTKICH!!”[/blue][/sine]\n„Przygotuj się na moc [gold]Kryształowej Kuli[/gold].” Po chwili dodaje: „Poproszę tylko wpisać tutaj dzisiejszą datę i podpis”, a następnie wyciąga pióro i pergamin.",
     "options": [
       {
-        "id": "PAYMENT_PLAN",
-        "title": "Zadłużenie",
-        "description": "Otrzymaj [red]Dług[/red]. Zyskaj [purple]Wróżenie[/purple] [blue]6[/blue] razy."
-      },
-      {
         "id": "UNCOVER_FUTURE",
         "title": "Odkryj przyszłość",
         "description": "Zapłać [red]50[/red] szt. [gold]Złota[/gold]. Zyskaj [purple]Wróżenie[/purple] [blue]3[/blue] razy."
+      },
+      {
+        "id": "PAYMENT_PLAN",
+        "title": "Zadłużenie",
+        "description": "Otrzymaj [red]Dług[/red]. Zyskaj [purple]Wróżenie[/purple] [blue]6[/blue] razy."
       }
     ],
     "pages": [
@@ -578,14 +578,14 @@
         "description": "[sine][blue]„Nasze spotkanie było zapisane w gwiazdach!”[/blue][/sine]\n\nPo wejściu do [purple]mistycznej chaty[/purple] słyszysz [jitter]chrapliwy[/jitter] głos.\n\n[sine][blue]„To musiało być przeznaczenie. Dziś odkryjemy twoją przyszłość! Z pewnością pomoże ci to URATOWAĆ NAS WSZYSTKICH!!”[/blue][/sine]\n„Przygotuj się na moc [gold]Kryształowej Kuli[/gold].” Po chwili dodaje: „Poproszę tylko wpisać tutaj dzisiejszą datę i podpis”, a następnie wyciąga pióro i pergamin.",
         "options": [
           {
-            "id": "PAYMENT_PLAN",
-            "title": "Zadłużenie",
-            "description": "Otrzymaj [red]Dług[/red]. Zyskaj [purple]Wróżenie[/purple] [blue]6[/blue] razy."
-          },
-          {
             "id": "UNCOVER_FUTURE",
             "title": "Odkryj przyszłość",
             "description": "Zapłać [red]50[/red] szt. [gold]Złota[/gold]. Zyskaj [purple]Wróżenie[/purple] [blue]3[/blue] razy."
+          },
+          {
+            "id": "PAYMENT_PLAN",
+            "title": "Zadłużenie",
+            "description": "Otrzymaj [red]Dług[/red]. Zyskaj [purple]Wróżenie[/purple] [blue]6[/blue] razy."
           }
         ]
       },
@@ -813,14 +813,14 @@
     "description": "Błądzisz już od jakiegoś czasu i nie możesz odnaleźć drogi w gęstej dżungli pełnej [green]paproci[/green], [green]zarośli[/green] oraz [green]pnączy[/green]. Zwłaszcza [green]pnączy[/green]. Dopada cię wyczerpanie, przez co nachodzi cię mroczna myśl:\n\n[sine][purple]„Nie wiem, co zrobić. Nawet nie wiem, gdzie jestem. Na pewno tu zaraz zginę.”[/purple][/sine]\n\nCo zamierzasz zrobić?",
     "options": [
       {
-        "id": "REST",
-        "title": "Odpocznij",
-        "description": "Przywróć [green]30% Max[/green] PŻ. Walcz z paroma [red]przeciwnikami[/red]."
-      },
-      {
         "id": "TRUDGE_ON",
         "title": "Brnij dalej",
         "description": "Usuń kartę z [gold]talii[/gold]. Utrać [red]11[/red] PŻ."
+      },
+      {
+        "id": "REST",
+        "title": "Odpocznij",
+        "description": "Przywróć [green]30% Max[/green] PŻ. Walcz z paroma [red]przeciwnikami[/red]."
       }
     ],
     "pages": [
@@ -829,14 +829,14 @@
         "description": "Błądzisz już od jakiegoś czasu i nie możesz odnaleźć drogi w gęstej dżungli pełnej [green]paproci[/green], [green]zarośli[/green] oraz [green]pnączy[/green]. Zwłaszcza [green]pnączy[/green]. Dopada cię wyczerpanie, przez co nachodzi cię mroczna myśl:\n\n[sine][purple]„Nie wiem, co zrobić. Nawet nie wiem, gdzie jestem. Na pewno tu zaraz zginę.”[/purple][/sine]\n\nCo zamierzasz zrobić?",
         "options": [
           {
-            "id": "REST",
-            "title": "Odpocznij",
-            "description": "Przywróć [green]30% Max[/green] PŻ. Walcz z paroma [red]przeciwnikami[/red]."
-          },
-          {
             "id": "TRUDGE_ON",
             "title": "Brnij dalej",
             "description": "Usuń kartę z [gold]talii[/gold]. Utrać [red]11[/red] PŻ."
+          },
+          {
+            "id": "REST",
+            "title": "Odpocznij",
+            "description": "Przywróć [green]30% Max[/green] PŻ. Walcz z paroma [red]przeciwnikami[/red]."
           }
         ]
       },
@@ -865,11 +865,6 @@
     "description": "Wchodzisz do ukrytego pomieszczenia...\n\nJest wypełniony różnorodnymi lalkami. Każda jest jedyna w swoim rodzaju, a ich miny wyrażają przeróżne emocje, od [green]radości[/green] aż po [purple]smutek[/purple].\n\n[sine][blue]Szmery i szepty[/blue][/sine] robią się coraz głośniejsze, aż w końcu lalki zaczynają się [jitter][red]przekrzykiwać[/red][/jitter], wołając cię...\n\nMusisz wybrać jedną z nich i jak najszybciej stąd uciekać.",
     "options": [
       {
-        "id": "EXAMINE",
-        "title": "Przyjrzyj się każdej i wybierz najlepszą",
-        "description": "Utrać [red]15[/red] PŻ. Wybierz [blue]1[/blue] z [blue]3[/blue] [gold]Lalkowych Artefaktów[/gold]."
-      },
-      {
         "id": "RANDOM",
         "title": "Wybierz losowo",
         "description": "Otrzymaj losowy [gold]Lalkowy Artefakt[/gold]."
@@ -878,6 +873,11 @@
         "id": "TAKE_SOME_TIME",
         "title": "Zastanów się na spokojnie",
         "description": "Utrać [red]5[/red] PŻ. Wybierz [blue]1[/blue] z [blue]2[/blue] [gold]Lalkowych Artefaktów[/gold]."
+      },
+      {
+        "id": "EXAMINE",
+        "title": "Przyjrzyj się każdej i wybierz najlepszą",
+        "description": "Utrać [red]15[/red] PŻ. Wybierz [blue]1[/blue] z [blue]3[/blue] [gold]Lalkowych Artefaktów[/gold]."
       }
     ],
     "pages": [
@@ -898,11 +898,6 @@
         "description": "Wchodzisz do ukrytego pomieszczenia...\n\nJest wypełniony różnorodnymi lalkami. Każda jest jedyna w swoim rodzaju, a ich miny wyrażają przeróżne emocje, od [green]radości[/green] aż po [purple]smutek[/purple].\n\n[sine][blue]Szmery i szepty[/blue][/sine] robią się coraz głośniejsze, aż w końcu lalki zaczynają się [jitter][red]przekrzykiwać[/red][/jitter], wołając cię...\n\nMusisz wybrać jedną z nich i jak najszybciej stąd uciekać.",
         "options": [
           {
-            "id": "EXAMINE",
-            "title": "Przyjrzyj się każdej i wybierz najlepszą",
-            "description": "Utrać [red]15[/red] PŻ. Wybierz [blue]1[/blue] z [blue]3[/blue] [gold]Lalkowych Artefaktów[/gold]."
-          },
-          {
             "id": "RANDOM",
             "title": "Wybierz losowo",
             "description": "Otrzymaj losowy [gold]Lalkowy Artefakt[/gold]."
@@ -911,6 +906,11 @@
             "id": "TAKE_SOME_TIME",
             "title": "Zastanów się na spokojnie",
             "description": "Utrać [red]5[/red] PŻ. Wybierz [blue]1[/blue] z [blue]2[/blue] [gold]Lalkowych Artefaktów[/gold]."
+          },
+          {
+            "id": "EXAMINE",
+            "title": "Przyjrzyj się każdej i wybierz najlepszą",
+            "description": "Utrać [red]15[/red] PŻ. Wybierz [blue]1[/blue] z [blue]3[/blue] [gold]Lalkowych Artefaktów[/gold]."
           }
         ]
       },
@@ -943,14 +943,14 @@
     "description": "Przed tobą pojawiają się dwa połyskujące wejścia oraz [gold]elegancko ubrany stróż[/gold].\n„Nareszcie jakiś gość! Proszę, zapraszam! Proszę wybrać drzwi, dowolne drzwi!”\n\n[blue]Czy wciąż jesteśmy w Iglicy? Jakim cudem to miejsce jest takie czyste?[/blue]",
     "options": [
       {
-        "id": "DARK",
-        "title": "Drzwi Ciemności",
-        "description": "Usuń [blue]1[/blue] kartę z [gold]talii[/gold]."
-      },
-      {
         "id": "LIGHT",
         "title": "Drzwi Światła",
         "description": "[gold]Ulepsz[/gold] [blue]2[/blue] losowe karty."
+      },
+      {
+        "id": "DARK",
+        "title": "Drzwi Ciemności",
+        "description": "Usuń [blue]1[/blue] kartę z [gold]talii[/gold]."
       }
     ],
     "pages": [
@@ -963,14 +963,14 @@
         "description": "Przed tobą pojawiają się dwa połyskujące wejścia oraz [gold]elegancko ubrany stróż[/gold].\n„Nareszcie jakiś gość! Proszę, zapraszam! Proszę wybrać drzwi, dowolne drzwi!”\n\n[blue]Czy wciąż jesteśmy w Iglicy? Jakim cudem to miejsce jest takie czyste?[/blue]",
         "options": [
           {
-            "id": "DARK",
-            "title": "Drzwi Ciemności",
-            "description": "Usuń [blue]1[/blue] kartę z [gold]talii[/gold]."
-          },
-          {
             "id": "LIGHT",
             "title": "Drzwi Światła",
             "description": "[gold]Ulepsz[/gold] [blue]2[/blue] losowe karty."
+          },
+          {
+            "id": "DARK",
+            "title": "Drzwi Ciemności",
+            "description": "Usuń [blue]1[/blue] kartę z [gold]talii[/gold]."
           }
         ]
       },
@@ -1044,6 +1044,11 @@
         "description": null,
         "options": [
           {
+            "id": "LOCKED",
+            "title": "Bankrut",
+            "description": "Nie starcza ci już [gold]Złota[/gold] na jedzenie."
+          },
+          {
             "id": "CAVIAR",
             "title": "Spróbuj Kawioru",
             "description": "Zapłać [red]35[/red] szt. [gold]Złota[/gold]. Otrzymaj [green]4[/green] maks. PŻ. Ucztuj dalej!"
@@ -1067,11 +1072,6 @@
             "id": "JELLY_LIVER",
             "title": "Spróbuj Wątróbki",
             "description": "Zapłać [red]35[/red] szt. [gold]Złota[/gold]. [gold]Zmień[/gold] kartę. Ucztuj dalej!"
-          },
-          {
-            "id": "LOCKED",
-            "title": "Bankrut",
-            "description": "Nie starcza ci już [gold]Złota[/gold] na jedzenie."
           },
           {
             "id": "SEAPUNK_SALAD",
@@ -1139,14 +1139,14 @@
     "description": "Zatrzymujesz się na widok ogromnego pola wypełnionego [jitter]wyżłobionymi konturami ludzkich ciał[/jitter].\n\nJeden z nich pasuje do ciebie.\n\n[sine][orange]Jest idealny...[/orange][/sine]",
     "options": [
       {
-        "id": "ENTER_YOUR_HOLE",
-        "title": "Wejdź do swojej dziury",
-        "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Pętla[/purple] na kartę."
-      },
-      {
         "id": "RESIST",
         "title": "Stawiaj opór",
         "description": "Usuń [blue]2[/blue] karty z [gold]talii[/gold]. Dodaj [red]Normalność[/red] do [gold]talii[/gold]."
+      },
+      {
+        "id": "ENTER_YOUR_HOLE",
+        "title": "Wejdź do swojej dziury",
+        "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Pętla[/purple] na kartę."
       }
     ],
     "pages": [
@@ -1159,14 +1159,14 @@
         "description": "Zatrzymujesz się na widok ogromnego pola wypełnionego [jitter]wyżłobionymi konturami ludzkich ciał[/jitter].\n\nJeden z nich pasuje do ciebie.\n\n[sine][orange]Jest idealny...[/orange][/sine]",
         "options": [
           {
-            "id": "ENTER_YOUR_HOLE",
-            "title": "Wejdź do swojej dziury",
-            "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Pętla[/purple] na kartę."
-          },
-          {
             "id": "RESIST",
             "title": "Stawiaj opór",
             "description": "Usuń [blue]2[/blue] karty z [gold]talii[/gold]. Dodaj [red]Normalność[/red] do [gold]talii[/gold]."
+          },
+          {
+            "id": "ENTER_YOUR_HOLE",
+            "title": "Wejdź do swojej dziury",
+            "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Pętla[/purple] na kartę."
           }
         ]
       },
@@ -1184,9 +1184,9 @@
     "description": "Widzisz pojedynczy grób z [jitter][aqua]falującym, błękitnym płomieniem[/aqua][/jitter]...\n\nDumny wojownik umarł w walce, ale jego dusza nadal nie może zaznać spokoju, ponieważ wciąż chce walczyć. Czujesz, że [sine]błaga[/sine] cię o to, żeby dołączyć do twojej podróży.\n\nMoże lepiej byłoby dla niego, gdyby spojrzał [red]prawdzie[/red] w oczy?",
     "options": [
       {
-        "id": "ACCEPT",
-        "title": "ACCEPT",
-        "description": "Otrzymaj Artefakt: [gold]Zapomniana dusza[/gold]."
+        "id": "CONFRONT_LOCKED",
+        "title": "Zablokowane",
+        "description": "Nie masz żadnej karty z [gold]Wyczerpaniem[/gold], na którą możesz rzucić [purple]Zaklęcie[/purple]."
       },
       {
         "id": "CONFRONT",
@@ -1194,9 +1194,9 @@
         "description": "Dodaj [red]Rozkład[/red] do [gold]talii[/gold]. Rzuć [gold]Zaklęcie[/gold] [purple]Zapał[/purple] na kartę z [gold]Wyczerpaniem[/gold]."
       },
       {
-        "id": "CONFRONT_LOCKED",
-        "title": "Zablokowane",
-        "description": "Nie masz żadnej karty z [gold]Wyczerpaniem[/gold], na którą możesz rzucić [purple]Zaklęcie[/purple]."
+        "id": "ACCEPT",
+        "title": "ACCEPT",
+        "description": "Otrzymaj Artefakt: [gold]Zapomniana dusza[/gold]."
       }
     ],
     "pages": [
@@ -1213,9 +1213,9 @@
         "description": "Widzisz pojedynczy grób z [jitter][aqua]falującym, błękitnym płomieniem[/aqua][/jitter]...\n\nDumny wojownik umarł w walce, ale jego dusza nadal nie może zaznać spokoju, ponieważ wciąż chce walczyć. Czujesz, że [sine]błaga[/sine] cię o to, żeby dołączyć do twojej podróży.\n\nMoże lepiej byłoby dla niego, gdyby spojrzał [red]prawdzie[/red] w oczy?",
         "options": [
           {
-            "id": "ACCEPT",
-            "title": "ACCEPT",
-            "description": "Otrzymaj Artefakt: [gold]Zapomniana dusza[/gold]."
+            "id": "CONFRONT_LOCKED",
+            "title": "Zablokowane",
+            "description": "Nie masz żadnej karty z [gold]Wyczerpaniem[/gold], na którą możesz rzucić [purple]Zaklęcie[/purple]."
           },
           {
             "id": "CONFRONT",
@@ -1223,9 +1223,9 @@
             "description": "Dodaj [red]Rozkład[/red] do [gold]talii[/gold]. Rzuć [gold]Zaklęcie[/gold] [purple]Zapał[/purple] na kartę z [gold]Wyczerpaniem[/gold]."
           },
           {
-            "id": "CONFRONT_LOCKED",
-            "title": "Zablokowane",
-            "description": "Nie masz żadnej karty z [gold]Wyczerpaniem[/gold], na którą możesz rzucić [purple]Zaklęcie[/purple]."
+            "id": "ACCEPT",
+            "title": "ACCEPT",
+            "description": "Otrzymaj Artefakt: [gold]Zapomniana dusza[/gold]."
           }
         ]
       }
@@ -1333,14 +1333,14 @@
     "description": "Znajdujesz na przesieku [green]kolorową drużynę poszukiwaczy przygód[/green]. Wskazują ci na [purple]gigantyczny labirynt[/purple] pod wami.\n\nProponują połączyć siły w [b]epickiej misji[/b] zdobycia skarbów w tym labiryncie. Jako poszukiwacz przygód wiesz już z doświadczenia, że labirynt musi być wypełniony [red][jitter]śmiertelnymi pułapkami[/jitter][/red] i [orange][sine]strażnikami[/sine][/orange].\n\nByłoby łatwiej wyruszyć razem w drużynie, ale wtedy trzeba byłoby podzielić się znalezionymi skarbami.",
     "options": [
       {
-        "id": "JOIN_FORCES",
-        "title": "Połącz siły",
-        "description": "Zyskaj [blue]50[/blue] szt. [gold]Złota[/gold]."
-      },
-      {
         "id": "SOLO_QUEST",
         "title": "Samotna misja",
         "description": "Zyskaj [blue]150[/blue] szt. [gold]Złota[/gold]. Utrać [red]18[/red] PŻ."
+      },
+      {
+        "id": "JOIN_FORCES",
+        "title": "Połącz siły",
+        "description": "Zyskaj [blue]50[/blue] szt. [gold]Złota[/gold]."
       }
     ],
     "pages": [
@@ -1349,14 +1349,14 @@
         "description": "Znajdujesz na przesieku [green]kolorową drużynę poszukiwaczy przygód[/green]. Wskazują ci na [purple]gigantyczny labirynt[/purple] pod wami.\n\nProponują połączyć siły w [b]epickiej misji[/b] zdobycia skarbów w tym labiryncie. Jako poszukiwacz przygód wiesz już z doświadczenia, że labirynt musi być wypełniony [red][jitter]śmiertelnymi pułapkami[/jitter][/red] i [orange][sine]strażnikami[/sine][/orange].\n\nByłoby łatwiej wyruszyć razem w drużynie, ale wtedy trzeba byłoby podzielić się znalezionymi skarbami.",
         "options": [
           {
-            "id": "JOIN_FORCES",
-            "title": "Połącz siły",
-            "description": "Zyskaj [blue]50[/blue] szt. [gold]Złota[/gold]."
-          },
-          {
             "id": "SOLO_QUEST",
             "title": "Samotna misja",
             "description": "Zyskaj [blue]150[/blue] szt. [gold]Złota[/gold]. Utrać [red]18[/red] PŻ."
+          },
+          {
+            "id": "JOIN_FORCES",
+            "title": "Połącz siły",
+            "description": "Zyskaj [blue]50[/blue] szt. [gold]Złota[/gold]."
           }
         ]
       },
@@ -1383,14 +1383,14 @@
         "description": "Dodaj [red]Rozkład[/red] do [gold]talii[/gold]. Otrzymaj Artefakt: [gold]Zagubiony ognik[/gold]."
       },
       {
-        "id": "CLAIM_LOCKED",
-        "title": "Zablokowane",
-        "description": "Masz za mało maks. PŻ."
-      },
-      {
         "id": "SEARCH",
         "title": "Przeszukaj obszar",
         "description": "Zyskaj [blue]60[/blue] szt. [gold]Złota[/gold]."
+      },
+      {
+        "id": "CLAIM_LOCKED",
+        "title": "Zablokowane",
+        "description": "Masz za mało maks. PŻ."
       }
     ],
     "pages": [
@@ -1408,14 +1408,14 @@
             "description": "Dodaj [red]Rozkład[/red] do [gold]talii[/gold]. Otrzymaj Artefakt: [gold]Zagubiony ognik[/gold]."
           },
           {
-            "id": "CLAIM_LOCKED",
-            "title": "Zablokowane",
-            "description": "Masz za mało maks. PŻ."
-          },
-          {
             "id": "SEARCH",
             "title": "Przeszukaj obszar",
             "description": "Zyskaj [blue]60[/blue] szt. [gold]Złota[/gold]."
+          },
+          {
+            "id": "CLAIM_LOCKED",
+            "title": "Zablokowane",
+            "description": "Masz za mało maks. PŻ."
           }
         ]
       },
@@ -1433,6 +1433,11 @@
     "description": "Napotykasz się na ogromne grzyby, które emanują nienaturalną, niebieską poświatą. Pulsują bioluminescencją tak mocno, że ich kapelusze puchną i świecą się. Gdy podchodzisz bliżej, zaczynają wydawać z siebie [sine][purple]melodyjne dźwięki[/purple][/sine], które rozbrzmiewają w twojej głowie.\n\nWe wnętrzu największego grzyba zauważasz coś świecącego i [sine]pulsującego[/sine] w rytmie melodii.",
     "options": [
       {
+        "id": "REACH_INTO_THE_FLESH",
+        "title": "Sięgnij do wnętrza",
+        "description": "Usuń [blue]2[/blue] karty z [gold]talii[/gold]. Dodaj [red]Zarodnik[/red] do [gold]talii[/gold]."
+      },
+      {
         "id": "OFFER_TRIBUTE",
         "title": "Złóż hołd",
         "description": "Zapłać [red]149[/red] szt. [gold]Złota[/gold]. Otrzymaj losowy [gold]Artefakt[/gold]."
@@ -1441,11 +1446,6 @@
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "Zablokowane",
         "description": "Wymaga [blue]149[/blue] szt. [gold]Złota[/gold]."
-      },
-      {
-        "id": "REACH_INTO_THE_FLESH",
-        "title": "Sięgnij do wnętrza",
-        "description": "Usuń [blue]2[/blue] karty z [gold]talii[/gold]. Dodaj [red]Zarodnik[/red] do [gold]talii[/gold]."
       }
     ],
     "pages": [
@@ -1453,6 +1453,11 @@
         "id": "INITIAL",
         "description": "Napotykasz się na ogromne grzyby, które emanują nienaturalną, niebieską poświatą. Pulsują bioluminescencją tak mocno, że ich kapelusze puchną i świecą się. Gdy podchodzisz bliżej, zaczynają wydawać z siebie [sine][purple]melodyjne dźwięki[/purple][/sine], które rozbrzmiewają w twojej głowie.\n\nWe wnętrzu największego grzyba zauważasz coś świecącego i [sine]pulsującego[/sine] w rytmie melodii.",
         "options": [
+          {
+            "id": "REACH_INTO_THE_FLESH",
+            "title": "Sięgnij do wnętrza",
+            "description": "Usuń [blue]2[/blue] karty z [gold]talii[/gold]. Dodaj [red]Zarodnik[/red] do [gold]talii[/gold]."
+          },
           {
             "id": "OFFER_TRIBUTE",
             "title": "Złóż hołd",
@@ -1462,11 +1467,6 @@
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "Zablokowane",
             "description": "Wymaga [blue]149[/blue] szt. [gold]Złota[/gold]."
-          },
-          {
-            "id": "REACH_INTO_THE_FLESH",
-            "title": "Sięgnij do wnętrza",
-            "description": "Usuń [blue]2[/blue] karty z [gold]talii[/gold]. Dodaj [red]Zarodnik[/red] do [gold]talii[/gold]."
           }
         ]
       },
@@ -2314,14 +2314,14 @@
     "description": "Widzisz dwóch bijących się [gold]Robokserów[/gold] oraz błyszczący skarb pomiędzy nimi...\n\nMoże cię nie zauważą, jak im go zabierzesz?",
     "options": [
       {
-        "id": "I_CAN_TAKE_THEM",
-        "title": "Dam sobie z nimi radę",
-        "description": "Walcz z nimi po [gold]większe nagrody[/gold]."
-      },
-      {
         "id": "NAB",
         "title": "Zabierz skarb",
         "description": "Dodaj [red]Kontuzję[/red] do [gold]talii[/gold]. Otrzymaj losowy [gold]Artefakt[/gold]."
+      },
+      {
+        "id": "I_CAN_TAKE_THEM",
+        "title": "Dam sobie z nimi radę",
+        "description": "Walcz z nimi po [gold]większe nagrody[/gold]."
       }
     ],
     "pages": [
@@ -2330,14 +2330,14 @@
         "description": "Widzisz dwóch bijących się [gold]Robokserów[/gold] oraz błyszczący skarb pomiędzy nimi...\n\nMoże cię nie zauważą, jak im go zabierzesz?",
         "options": [
           {
-            "id": "I_CAN_TAKE_THEM",
-            "title": "Dam sobie z nimi radę",
-            "description": "Walcz z nimi po [gold]większe nagrody[/gold]."
-          },
-          {
             "id": "NAB",
             "title": "Zabierz skarb",
             "description": "Dodaj [red]Kontuzję[/red] do [gold]talii[/gold]. Otrzymaj losowy [gold]Artefakt[/gold]."
+          },
+          {
+            "id": "I_CAN_TAKE_THEM",
+            "title": "Dam sobie z nimi radę",
+            "description": "Walcz z nimi po [gold]większe nagrody[/gold]."
           }
         ]
       },
@@ -2366,14 +2366,14 @@
     "description": "Podchodzi do ciebie [purple]chyba najstarsza osoba w całej Iglicy[/purple].\n[sine]„Znów się spotykamy... to ja, Ranwid!”[/sine]\n\nNie masz bladego pojęcia, kim ten człowiek jest.",
     "options": [
       {
-        "id": "GOLD",
-        "title": "Podaruj 100 szt. Złota.",
-        "description": "Otrzymaj losowy [gold]Artefakt[/gold]."
-      },
-      {
         "id": "POTION",
         "title": "Podaruj Miksturę: Potion",
         "description": "Otrzymaj losowy [gold]Artefakt[/gold]."
+      },
+      {
+        "id": "RELIC",
+        "title": "Podaruj Artefakt: Relic",
+        "description": "Otrzymaj [blue]2[/blue] losowe [gold]Artefakty[/gold]."
       },
       {
         "id": "POTION_LOCKED",
@@ -2381,9 +2381,9 @@
         "description": "Nie masz żadnych Mikstur do podarowania."
       },
       {
-        "id": "RELIC",
-        "title": "Podaruj Artefakt: Relic",
-        "description": "Otrzymaj [blue]2[/blue] losowe [gold]Artefakty[/gold]."
+        "id": "GOLD",
+        "title": "Podaruj 100 szt. Złota.",
+        "description": "Otrzymaj losowy [gold]Artefakt[/gold]."
       },
       {
         "id": "RELIC_LOCKED",
@@ -2401,14 +2401,14 @@
         "description": "Podchodzi do ciebie [purple]chyba najstarsza osoba w całej Iglicy[/purple].\n[sine]„Znów się spotykamy... to ja, Ranwid!”[/sine]\n\nNie masz bladego pojęcia, kim ten człowiek jest.",
         "options": [
           {
-            "id": "GOLD",
-            "title": "Podaruj 100 szt. Złota.",
-            "description": "Otrzymaj losowy [gold]Artefakt[/gold]."
-          },
-          {
             "id": "POTION",
             "title": "Podaruj Miksturę: Potion",
             "description": "Otrzymaj losowy [gold]Artefakt[/gold]."
+          },
+          {
+            "id": "RELIC",
+            "title": "Podaruj Artefakt: Relic",
+            "description": "Otrzymaj [blue]2[/blue] losowe [gold]Artefakty[/gold]."
           },
           {
             "id": "POTION_LOCKED",
@@ -2416,9 +2416,9 @@
             "description": "Nie masz żadnych Mikstur do podarowania."
           },
           {
-            "id": "RELIC",
-            "title": "Podaruj Artefakt: Relic",
-            "description": "Otrzymaj [blue]2[/blue] losowe [gold]Artefakty[/gold]."
+            "id": "GOLD",
+            "title": "Podaruj 100 szt. Złota.",
+            "description": "Otrzymaj losowy [gold]Artefakt[/gold]."
           },
           {
             "id": "RELIC_LOCKED",
@@ -2437,14 +2437,14 @@
     "description": "Co to za miejsce? Coś tu jest nie tak...\n[sine]...kat ein tsej ut śoC ?ecsjeim az ot oC[/sine]",
     "options": [
       {
-        "id": "SHATTER",
-        "title": "Roztrzaskaj",
-        "description": "Zduplikuj swoją [gold]talię[/gold]. Otrzymaj Klątwę [purple]Pech[/purple]."
-      },
-      {
         "id": "TOUCH_A_MIRROR",
         "title": "Dotknij lustra",
         "description": "[red]Zdegraduj[/red] [blue]2[/blue] losowe karty. [green]Ulepsz[/green] [blue]4[/blue] losowe karty."
+      },
+      {
+        "id": "SHATTER",
+        "title": "Roztrzaskaj",
+        "description": "Zduplikuj swoją [gold]talię[/gold]. Otrzymaj Klątwę [purple]Pech[/purple]."
       }
     ],
     "pages": [
@@ -2453,14 +2453,14 @@
         "description": "Co to za miejsce? Coś tu jest nie tak...\n[sine]...kat ein tsej ut śoC ?ecsjeim az ot oC[/sine]",
         "options": [
           {
-            "id": "SHATTER",
-            "title": "Roztrzaskaj",
-            "description": "Zduplikuj swoją [gold]talię[/gold]. Otrzymaj Klątwę [purple]Pech[/purple]."
-          },
-          {
             "id": "TOUCH_A_MIRROR",
             "title": "Dotknij lustra",
             "description": "[red]Zdegraduj[/red] [blue]2[/blue] losowe karty. [green]Ulepsz[/green] [blue]4[/blue] losowe karty."
+          },
+          {
+            "id": "SHATTER",
+            "title": "Roztrzaskaj",
+            "description": "Zduplikuj swoją [gold]talię[/gold]. Otrzymaj Klątwę [purple]Pech[/purple]."
           }
         ]
       },
@@ -2482,8 +2482,8 @@
     "description": "You turn a corner and suddenly, a shadowy figure is just standing there. He pivots to face you.\n\n“Welcome! What're ya trading?”\nThe figure inquires as he flares open his cloak to reveal a slew of [sine][purple]suspicious wares[/purple][/sine].",
     "options": [
       {
-        "id": "BOTTOM",
-        "title": "Weź ten na dole",
+        "id": "TOP",
+        "title": "Weź ten na górze",
         "description": "Zamień: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
       },
       {
@@ -2492,8 +2492,8 @@
         "description": "Zamień: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
       },
       {
-        "id": "TOP",
-        "title": "Weź ten na górze",
+        "id": "BOTTOM",
+        "title": "Weź ten na dole",
         "description": "Zamień: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
       }
     ],
@@ -2507,8 +2507,8 @@
         "description": "You turn a corner and suddenly, a shadowy figure is just standing there. He pivots to face you.\n\n“Welcome! What're ya trading?”\nThe figure inquires as he flares open his cloak to reveal a slew of [sine][purple]suspicious wares[/purple][/sine].",
         "options": [
           {
-            "id": "BOTTOM",
-            "title": "Weź ten na dole",
+            "id": "TOP",
+            "title": "Weź ten na górze",
             "description": "Zamień: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
           },
           {
@@ -2517,8 +2517,8 @@
             "description": "Zamień: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
           },
           {
-            "id": "TOP",
-            "title": "Weź ten na górze",
+            "id": "BOTTOM",
+            "title": "Weź ten na dole",
             "description": "Zamień: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
           }
         ]
@@ -2683,19 +2683,14 @@
     "description": "On the floor lies a tome,\n“Top 3 Ways to Conquer the Spire”\n\nThe book is [red]encrusted with blood[/red] so you find this manuscript highly suspicious.\n\nWill you read it?",
     "options": [
       {
-        "id": "NO_OPTIONS",
-        "title": "Przejdź dalej",
-        "description": "Nie masz żadnych kart, na które można rzucić Zaklęcie."
+        "id": "READ_THE_BACK",
+        "title": "Przeczytaj tył",
+        "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Szlifierka[/purple] [blue]2[/blue] na Atak."
       },
       {
-        "id": "READ_ENTIRE_BOOK",
-        "title": "Przeczytaj całą książkę",
-        "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Sprint[/purple] [blue]2[/blue] na Moc."
-      },
-      {
-        "id": "READ_ENTIRE_BOOK_LOCKED",
+        "id": "READ_THE_BACK_LOCKED",
         "title": "Zablokowane",
-        "description": "Nie masz żadnych Mocy, na które można rzucić [gold]Zaklęcie[/gold]."
+        "description": "Nie masz żadnych Ataków, na które można rzucić [gold]Zaklęcie[/gold]."
       },
       {
         "id": "READ_PASSAGE",
@@ -2708,14 +2703,19 @@
         "description": "Nie masz żadnych Umiejętności, na które można rzucić [gold]Zaklęcie[/gold]."
       },
       {
-        "id": "READ_THE_BACK",
-        "title": "Przeczytaj tył",
-        "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Szlifierka[/purple] [blue]2[/blue] na Atak."
+        "id": "READ_ENTIRE_BOOK",
+        "title": "Przeczytaj całą książkę",
+        "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Sprint[/purple] [blue]2[/blue] na Moc."
       },
       {
-        "id": "READ_THE_BACK_LOCKED",
+        "id": "READ_ENTIRE_BOOK_LOCKED",
         "title": "Zablokowane",
-        "description": "Nie masz żadnych Ataków, na które można rzucić [gold]Zaklęcie[/gold]."
+        "description": "Nie masz żadnych Mocy, na które można rzucić [gold]Zaklęcie[/gold]."
+      },
+      {
+        "id": "NO_OPTIONS",
+        "title": "Przejdź dalej",
+        "description": "Nie masz żadnych kart, na które można rzucić Zaklęcie."
       }
     ],
     "pages": [
@@ -2724,19 +2724,14 @@
         "description": "On the floor lies a tome,\n“Top 3 Ways to Conquer the Spire”\n\nThe book is [red]encrusted with blood[/red] so you find this manuscript highly suspicious.\n\nWill you read it?",
         "options": [
           {
-            "id": "NO_OPTIONS",
-            "title": "Przejdź dalej",
-            "description": "Nie masz żadnych kart, na które można rzucić Zaklęcie."
+            "id": "READ_THE_BACK",
+            "title": "Przeczytaj tył",
+            "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Szlifierka[/purple] [blue]2[/blue] na Atak."
           },
           {
-            "id": "READ_ENTIRE_BOOK",
-            "title": "Przeczytaj całą książkę",
-            "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Sprint[/purple] [blue]2[/blue] na Moc."
-          },
-          {
-            "id": "READ_ENTIRE_BOOK_LOCKED",
+            "id": "READ_THE_BACK_LOCKED",
             "title": "Zablokowane",
-            "description": "Nie masz żadnych Mocy, na które można rzucić [gold]Zaklęcie[/gold]."
+            "description": "Nie masz żadnych Ataków, na które można rzucić [gold]Zaklęcie[/gold]."
           },
           {
             "id": "READ_PASSAGE",
@@ -2749,14 +2744,19 @@
             "description": "Nie masz żadnych Umiejętności, na które można rzucić [gold]Zaklęcie[/gold]."
           },
           {
-            "id": "READ_THE_BACK",
-            "title": "Przeczytaj tył",
-            "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Szlifierka[/purple] [blue]2[/blue] na Atak."
+            "id": "READ_ENTIRE_BOOK",
+            "title": "Przeczytaj całą książkę",
+            "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Sprint[/purple] [blue]2[/blue] na Moc."
           },
           {
-            "id": "READ_THE_BACK_LOCKED",
+            "id": "READ_ENTIRE_BOOK_LOCKED",
             "title": "Zablokowane",
-            "description": "Nie masz żadnych Ataków, na które można rzucić [gold]Zaklęcie[/gold]."
+            "description": "Nie masz żadnych Mocy, na które można rzucić [gold]Zaklęcie[/gold]."
+          },
+          {
+            "id": "NO_OPTIONS",
+            "title": "Przejdź dalej",
+            "description": "Nie masz żadnych kart, na które można rzucić Zaklęcie."
           }
         ]
       },
@@ -2786,14 +2786,14 @@
     "description": "While crossing a rickety wooden bridge, there is a sudden [blue][jitter]torrent of rain[/jitter][/blue]. [purple][sine]Massive gusts of wind[/sine][/purple] buffet you, threatening to end your journey.",
     "options": [
       {
-        "id": "HOLD_ON_0",
-        "title": "Trzymaj się",
-        "description": "Utrać [red]3+[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
-      },
-      {
         "id": "OVERCOME",
         "title": "Overcome",
         "description": "Usuń [red]a random Card[/red] z [gold]talii[/gold]."
+      },
+      {
+        "id": "HOLD_ON_0",
+        "title": "Trzymaj się",
+        "description": "Utrać [red]3+[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
       }
     ],
     "pages": [
@@ -2890,14 +2890,14 @@
         "description": "While crossing a rickety wooden bridge, there is a sudden [blue][jitter]torrent of rain[/jitter][/blue]. [purple][sine]Massive gusts of wind[/sine][/purple] buffet you, threatening to end your journey.",
         "options": [
           {
-            "id": "HOLD_ON_0",
-            "title": "Trzymaj się",
-            "description": "Utrać [red]3+[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
-          },
-          {
             "id": "OVERCOME",
             "title": "Overcome",
             "description": "Usuń [red]a random Card[/red] z [gold]talii[/gold]."
+          },
+          {
+            "id": "HOLD_ON_0",
+            "title": "Trzymaj się",
+            "description": "Utrać [red]3+[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
           }
         ]
       },
@@ -2915,14 +2915,14 @@
     "description": "You happen upon a [aqua][sine]Massive Spiraling Whirlpool[/sine][/aqua]. The water swirls with beautiful precision and its surrounding walls are adorned with spiral patterns.\n\n[purple][sine]Around and around... around...\n....and around.... what a sight......[/sine][/purple]\n\nWhat do you do?",
     "options": [
       {
-        "id": "DRINK",
-        "title": "Wypij",
-        "description": "Przywróć [green]33% Max[/green] PŻ."
-      },
-      {
         "id": "OBSERVE",
         "title": "Obserwuj",
         "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Spirala[/purple] na [gold]Uderzenie[/gold] albo [gold]Obronę[/gold]."
+      },
+      {
+        "id": "DRINK",
+        "title": "Wypij",
+        "description": "Przywróć [green]33% Max[/green] PŻ."
       },
       {
         "id": "REACH_IN",
@@ -2940,14 +2940,14 @@
         "description": "You happen upon a [aqua][sine]Massive Spiraling Whirlpool[/sine][/aqua]. The water swirls with beautiful precision and its surrounding walls are adorned with spiral patterns.\n\n[purple][sine]Around and around... around...\n....and around.... what a sight......[/sine][/purple]\n\nWhat do you do?",
         "options": [
           {
-            "id": "DRINK",
-            "title": "Wypij",
-            "description": "Przywróć [green]33% Max[/green] PŻ."
-          },
-          {
             "id": "OBSERVE",
             "title": "Obserwuj",
             "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Spirala[/purple] na [gold]Uderzenie[/gold] albo [gold]Obronę[/gold]."
+          },
+          {
+            "id": "DRINK",
+            "title": "Wypij",
+            "description": "Przywróć [green]33% Max[/green] PŻ."
           },
           {
             "id": "REACH_IN",
@@ -3029,14 +3029,14 @@
         "description": "Wymaga Mikstury."
       },
       {
-        "id": "PUSH",
-        "title": "Pchnij",
-        "description": "Utrać [red]6[/red] PŻ. Rzuć [gold]Zaklęcie[/gold] [purple]Werwa[/purple] [blue]8[/blue] na Atak."
-      },
-      {
         "id": "PUSH_LOCKED",
         "title": "Zablokowane",
         "description": "Wymaga Ataku."
+      },
+      {
+        "id": "PUSH",
+        "title": "Pchnij",
+        "description": "Utrać [red]6[/red] PŻ. Rzuć [gold]Zaklęcie[/gold] [purple]Werwa[/purple] [blue]8[/blue] na Atak."
       }
     ],
     "pages": [
@@ -3055,14 +3055,14 @@
             "description": "Wymaga Mikstury."
           },
           {
-            "id": "PUSH",
-            "title": "Pchnij",
-            "description": "Utrać [red]6[/red] PŻ. Rzuć [gold]Zaklęcie[/gold] [purple]Werwa[/purple] [blue]8[/blue] na Atak."
-          },
-          {
             "id": "PUSH_LOCKED",
             "title": "Zablokowane",
             "description": "Wymaga Ataku."
+          },
+          {
+            "id": "PUSH",
+            "title": "Pchnij",
+            "description": "Utrać [red]6[/red] PŻ. Rzuć [gold]Zaklęcie[/gold] [purple]Werwa[/purple] [blue]8[/blue] na Atak."
           }
         ]
       },
@@ -3084,14 +3084,14 @@
     "description": "You spot an aged statue half submerged in a pond; its hands gently rest atop a [blue]stone sword[/blue].\n\nSomething is also [gold][sine]glittering[/sine][/gold] at the bottom of the pond.\nVotive offerings perhaps?\n\nYou could really use some money...",
     "options": [
       {
-        "id": "DIVE_INTO_WATER",
-        "title": "Skocz do wody",
-        "description": "Zyskaj [blue]111[/blue] szt. [gold]Złota[/gold]. Utrać [red]7[/red] PŻ."
-      },
-      {
         "id": "GRAB_SWORD",
         "title": "Weź miecz",
         "description": "Otrzymaj [gold]Kamienny miecz[/gold]."
+      },
+      {
+        "id": "DIVE_INTO_WATER",
+        "title": "Skocz do wody",
+        "description": "Zyskaj [blue]111[/blue] szt. [gold]Złota[/gold]. Utrać [red]7[/red] PŻ."
       }
     ],
     "pages": [
@@ -3108,14 +3108,14 @@
         "description": "You spot an aged statue half submerged in a pond; its hands gently rest atop a [blue]stone sword[/blue].\n\nSomething is also [gold][sine]glittering[/sine][/gold] at the bottom of the pond.\nVotive offerings perhaps?\n\nYou could really use some money...",
         "options": [
           {
-            "id": "DIVE_INTO_WATER",
-            "title": "Skocz do wody",
-            "description": "Zyskaj [blue]111[/blue] szt. [gold]Złota[/gold]. Utrać [red]7[/red] PŻ."
-          },
-          {
             "id": "GRAB_SWORD",
             "title": "Weź miecz",
             "description": "Otrzymaj [gold]Kamienny miecz[/gold]."
+          },
+          {
+            "id": "DIVE_INTO_WATER",
+            "title": "Skocz do wody",
+            "description": "Zyskaj [blue]111[/blue] szt. [gold]Złota[/gold]. Utrać [red]7[/red] PŻ."
           }
         ]
       }
@@ -3174,14 +3174,14 @@
     "description": "Along your travels, you stumble upon a dark, amorphous polyp. You can sense that it is very old, and very evil.\n\n[sine]Approach...[/sine]",
     "options": [
       {
-        "id": "APPROACH",
-        "title": "Podejdź",
-        "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Korupcja[/purple] na Atak."
-      },
-      {
         "id": "APPROACH_LOCKED",
         "title": "Zablokowane",
         "description": "Nie można rzucić Zaklęcia na żaden z twoich Ataków."
+      },
+      {
+        "id": "APPROACH",
+        "title": "Podejdź",
+        "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Korupcja[/purple] na Atak."
       },
       {
         "id": "KILL_WITH_FIRE",
@@ -3199,14 +3199,14 @@
         "description": "Along your travels, you stumble upon a dark, amorphous polyp. You can sense that it is very old, and very evil.\n\n[sine]Approach...[/sine]",
         "options": [
           {
-            "id": "APPROACH",
-            "title": "Podejdź",
-            "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Korupcja[/purple] na Atak."
-          },
-          {
             "id": "APPROACH_LOCKED",
             "title": "Zablokowane",
             "description": "Nie można rzucić Zaklęcia na żaden z twoich Ataków."
+          },
+          {
+            "id": "APPROACH",
+            "title": "Podejdź",
+            "description": "Rzuć [gold]Zaklęcie[/gold] [purple]Korupcja[/purple] na Atak."
           },
           {
             "id": "KILL_WITH_FIRE",
@@ -3851,14 +3851,14 @@
     "description": "Natrafiasz na świecący się klucz i podnosisz go.\n\n„Szukałem tego klucza wszędzie! Jeżeli nie masz nic przeciwko...”\n\n Wygląda to trochę kłopotliwie, więc może lepiej nie ryzykować.",
     "options": [
       {
-        "id": "KEEP_THE_KEY",
-        "title": "Zatrzymaj Klucz",
-        "description": "Walcz o Klucz"
-      },
-      {
         "id": "RETURN_THE_KEY",
         "title": "Oddaj Klucz",
         "description": "Zyskaj [blue]100[/blue] szt. [gold]Złota[/gold]."
+      },
+      {
+        "id": "KEEP_THE_KEY",
+        "title": "Zatrzymaj Klucz",
+        "description": "Walcz o Klucz"
       }
     ],
     "pages": [
@@ -3878,14 +3878,14 @@
         "description": "Natrafiasz na świecący się klucz i podnosisz go.\n\n„Szukałem tego klucza wszędzie! Jeżeli nie masz nic przeciwko...”\n\n Wygląda to trochę kłopotliwie, więc może lepiej nie ryzykować.",
         "options": [
           {
-            "id": "KEEP_THE_KEY",
-            "title": "Zatrzymaj Klucz",
-            "description": "Walcz o Klucz"
-          },
-          {
             "id": "RETURN_THE_KEY",
             "title": "Oddaj Klucz",
             "description": "Zyskaj [blue]100[/blue] szt. [gold]Złota[/gold]."
+          },
+          {
+            "id": "KEEP_THE_KEY",
+            "title": "Zatrzymaj Klucz",
+            "description": "Walcz o Klucz"
           }
         ]
       },
@@ -3955,14 +3955,14 @@
     "description": "Arms suddenly jut out from a nearby hole, clutching a [gold]suspicious bag of riches[/gold] and a clearly [purple]cursed relic[/purple].\n\n[jitter][blue]“This... or That?”[/blue][/jitter]\na scratched-up voice whispers from below.",
     "options": [
       {
-        "id": "ORNATE",
-        "title": "To",
-        "description": "Dodaj [red]Niezdarność[/red] do [gold]talii[/gold]. Otrzymaj losowy [gold]Artefakt[/gold]."
-      },
-      {
         "id": "PLAIN",
         "title": "Tamto",
         "description": "Utrać [red]6[/red] PŻ. Zyskaj [blue]41-69[/blue] szt. [gold]Złota[/gold]."
+      },
+      {
+        "id": "ORNATE",
+        "title": "To",
+        "description": "Dodaj [red]Niezdarność[/red] do [gold]talii[/gold]. Otrzymaj losowy [gold]Artefakt[/gold]."
       }
     ],
     "pages": [
@@ -3971,14 +3971,14 @@
         "description": "Arms suddenly jut out from a nearby hole, clutching a [gold]suspicious bag of riches[/gold] and a clearly [purple]cursed relic[/purple].\n\n[jitter][blue]“This... or That?”[/blue][/jitter]\na scratched-up voice whispers from below.",
         "options": [
           {
-            "id": "ORNATE",
-            "title": "To",
-            "description": "Dodaj [red]Niezdarność[/red] do [gold]talii[/gold]. Otrzymaj losowy [gold]Artefakt[/gold]."
-          },
-          {
             "id": "PLAIN",
             "title": "Tamto",
             "description": "Utrać [red]6[/red] PŻ. Zyskaj [blue]41-69[/blue] szt. [gold]Złota[/gold]."
+          },
+          {
+            "id": "ORNATE",
+            "title": "To",
+            "description": "Dodaj [red]Niezdarność[/red] do [gold]talii[/gold]. Otrzymaj losowy [gold]Artefakt[/gold]."
           }
         ]
       },
@@ -4016,14 +4016,14 @@
             "description": "Make an ATAK."
           },
           {
-            "id": "POWER",
-            "title": "Gadżet",
-            "description": "Make a Potęga."
-          },
-          {
             "id": "SKILL",
             "title": "Obrońca",
             "description": "Make a UMIEJĘTNOŚĆ."
+          },
+          {
+            "id": "POWER",
+            "title": "Gadżet",
+            "description": "Make a Potęga."
           }
         ]
       },
@@ -4031,36 +4031,6 @@
         "id": "CHOOSE_RIDER",
         "description": "„Świetny wybór! Now what should it [sine]DO[/sine]?”\nThe [orange]scientist[/orange] rubs her hands together with glee.",
         "options": [
-          {
-            "id": "CHAOS",
-            "title": "Chaos",
-            "description": "Add a random card into your [gold]Hand[/gold]. W tej turze kosztuje [blue]0[/blue] [energy:1]."
-          },
-          {
-            "id": "CHOKING",
-            "title": "Duszenie",
-            "description": "Kiedykolwiek zagrasz kartę w tej turze, przeciwnik traci [blue][ChokingDamage][/blue] PŻ."
-          },
-          {
-            "id": "CURIOUS",
-            "title": "Ciekawość",
-            "description": "Moce kosztują [blue]1[/blue] [energy:1] mniej."
-          },
-          {
-            "id": "ENERGIZED",
-            "title": "Zasilanie",
-            "description": "Zyskaj [energy:2]."
-          },
-          {
-            "id": "EXPERTISE",
-            "title": "Ekspertyza",
-            "description": "Zyskaj [blue][ExpertiseStrength][/blue] pkt. [gold]Siły[/gold]. Zyskaj [blue][ExpertiseDexterity][/blue] pkt. [gold]Zręczności[/gold]."
-          },
-          {
-            "id": "IMPROVEMENT",
-            "title": "Usprawnienie",
-            "description": "[gold]Ulepsz[/gold] losową kartę pod koniec walki."
-          },
           {
             "id": "SAPPING",
             "title": "Osłabienie",
@@ -4072,9 +4042,39 @@
             "description": "Uderza [blue]2[/blue] dodatkowe razy."
           },
           {
+            "id": "CHOKING",
+            "title": "Duszenie",
+            "description": "Kiedykolwiek zagrasz kartę w tej turze, przeciwnik traci [blue][ChokingDamage][/blue] PŻ."
+          },
+          {
+            "id": "ENERGIZED",
+            "title": "Zasilanie",
+            "description": "Zyskaj [energy:2]."
+          },
+          {
             "id": "WISDOM",
             "title": "Mądrość",
             "description": "Dobierz [blue]3[/blue] karty."
+          },
+          {
+            "id": "CHAOS",
+            "title": "Chaos",
+            "description": "Add a random card into your [gold]Hand[/gold]. W tej turze kosztuje [blue]0[/blue] [energy:1]."
+          },
+          {
+            "id": "EXPERTISE",
+            "title": "Ekspertyza",
+            "description": "Zyskaj [blue][ExpertiseStrength][/blue] pkt. [gold]Siły[/gold]. Zyskaj [blue][ExpertiseDexterity][/blue] pkt. [gold]Zręczności[/gold]."
+          },
+          {
+            "id": "CURIOUS",
+            "title": "Ciekawość",
+            "description": "Moce kosztują [blue]1[/blue] [energy:1] mniej."
+          },
+          {
+            "id": "IMPROVEMENT",
+            "title": "Usprawnienie",
+            "description": "[gold]Ulepsz[/gold] losową kartę pod koniec walki."
           }
         ]
       },
@@ -4273,14 +4273,14 @@
     "description": "You find a secluded [gold]Rest Site[/gold] and start a [orange]fire[/orange] to get some rest.\nOr so you thought.\n\nOnce the fire is started, it begins to swell, reaching not upwards but [sine]sideways[/sine] towards a grove of [purple]oil-seeping trees[/purple].\n\nShould you try resting anyways?",
     "options": [
       {
-        "id": "KILL",
-        "title": "Zabij Drzewa",
-        "description": "Utrać [red]8[/red] maks. PŻ. Otrzymaj losowy [gold]Artefakt[/gold]."
-      },
-      {
         "id": "REST",
         "title": "Odpocznij pomimo to",
         "description": "[green]Przywróć wszystkie PŻ.[/green] Otrzymaj [red]Kiepski sen[/red]."
+      },
+      {
+        "id": "KILL",
+        "title": "Zabij Drzewa",
+        "description": "Utrać [red]8[/red] maks. PŻ. Otrzymaj losowy [gold]Artefakt[/gold]."
       }
     ],
     "pages": [
@@ -4289,14 +4289,14 @@
         "description": "You find a secluded [gold]Rest Site[/gold] and start a [orange]fire[/orange] to get some rest.\nOr so you thought.\n\nOnce the fire is started, it begins to swell, reaching not upwards but [sine]sideways[/sine] towards a grove of [purple]oil-seeping trees[/purple].\n\nShould you try resting anyways?",
         "options": [
           {
-            "id": "KILL",
-            "title": "Zabij Drzewa",
-            "description": "Utrać [red]8[/red] maks. PŻ. Otrzymaj losowy [gold]Artefakt[/gold]."
-          },
-          {
             "id": "REST",
             "title": "Odpocznij pomimo to",
             "description": "[green]Przywróć wszystkie PŻ.[/green] Otrzymaj [red]Kiepski sen[/red]."
+          },
+          {
+            "id": "KILL",
+            "title": "Zabij Drzewa",
+            "description": "Utrać [red]8[/red] maks. PŻ. Otrzymaj losowy [gold]Artefakt[/gold]."
           }
         ]
       },
@@ -4587,16 +4587,6 @@
         "description": "Zyskaj [green]6[/green] maks. PŻ."
       },
       {
-        "id": "PRICKLY_SPONGE",
-        "title": "Prickly Sponge",
-        "description": ""
-      },
-      {
-        "id": "PRICKLY_SPONGE_LOCKED",
-        "title": "Zablokowane",
-        "description": "Wymaga [blue]155[/blue] szt. [gold]Złota[/gold]."
-      },
-      {
         "id": "TENTACLE_QUILL",
         "title": "Tentacle Quill",
         "description": "Zapłać [red]65[/red] szt. [gold]Złota[/gold]. Rzuć [gold]Zaklęcie[/gold] [purple]Pewnik[/purple] na kartę."
@@ -4605,6 +4595,16 @@
         "id": "TENTACLE_QUILL_LOCKED",
         "title": "Zablokowane",
         "description": "Wymaga [blue]65[/blue] szt. [gold]Złota[/gold]."
+      },
+      {
+        "id": "PRICKLY_SPONGE",
+        "title": "Prickly Sponge",
+        "description": ""
+      },
+      {
+        "id": "PRICKLY_SPONGE_LOCKED",
+        "title": "Zablokowane",
+        "description": "Wymaga [blue]155[/blue] szt. [gold]Złota[/gold]."
       }
     ],
     "pages": [
@@ -4622,16 +4622,6 @@
             "description": "Zyskaj [green]6[/green] maks. PŻ."
           },
           {
-            "id": "PRICKLY_SPONGE",
-            "title": "Prickly Sponge",
-            "description": ""
-          },
-          {
-            "id": "PRICKLY_SPONGE_LOCKED",
-            "title": "Zablokowane",
-            "description": "Wymaga [blue]155[/blue] szt. [gold]Złota[/gold]."
-          },
-          {
             "id": "TENTACLE_QUILL",
             "title": "Tentacle Quill",
             "description": "Zapłać [red]65[/red] szt. [gold]Złota[/gold]. Rzuć [gold]Zaklęcie[/gold] [purple]Pewnik[/purple] na kartę."
@@ -4640,6 +4630,16 @@
             "id": "TENTACLE_QUILL_LOCKED",
             "title": "Zablokowane",
             "description": "Wymaga [blue]65[/blue] szt. [gold]Złota[/gold]."
+          },
+          {
+            "id": "PRICKLY_SPONGE",
+            "title": "Prickly Sponge",
+            "description": ""
+          },
+          {
+            "id": "PRICKLY_SPONGE_LOCKED",
+            "title": "Zablokowane",
+            "description": "Wymaga [blue]155[/blue] szt. [gold]Złota[/gold]."
           }
         ]
       },
@@ -4681,11 +4681,6 @@
         "description": "Wymaga [blue]200[/blue] szt. [gold]Złota[/gold]."
       },
       {
-        "id": "LEAVE",
-        "title": "Wyjdź",
-        "description": "[red]Zdegraduj[/red] losową kartę."
-      },
-      {
         "id": "MYSTERY_BOX",
         "title": "Wongo's Mystery Box",
         "description": "Zapłać [red]300[/red] szt. [gold]Złota[/gold]. Otrzymaj [blue]3[/blue] losowe [gold]Artefakty[/gold] po [blue]5[/blue] walkach."
@@ -4694,6 +4689,11 @@
         "id": "MYSTERY_BOX_LOCKED",
         "title": "Zablokowane",
         "description": "Wymaga [blue]300[/blue] szt. [gold]Złota[/gold]."
+      },
+      {
+        "id": "LEAVE",
+        "title": "Wyjdź",
+        "description": "[red]Zdegraduj[/red] losową kartę."
       }
     ],
     "pages": [
@@ -4730,11 +4730,6 @@
             "description": "Wymaga [blue]200[/blue] szt. [gold]Złota[/gold]."
           },
           {
-            "id": "LEAVE",
-            "title": "Wyjdź",
-            "description": "[red]Zdegraduj[/red] losową kartę."
-          },
-          {
             "id": "MYSTERY_BOX",
             "title": "Wongo's Mystery Box",
             "description": "Zapłać [red]300[/red] szt. [gold]Złota[/gold]. Otrzymaj [blue]3[/blue] losowe [gold]Artefakty[/gold] po [blue]5[/blue] walkach."
@@ -4743,6 +4738,11 @@
             "id": "MYSTERY_BOX_LOCKED",
             "title": "Zablokowane",
             "description": "Wymaga [blue]300[/blue] szt. [gold]Złota[/gold]."
+          },
+          {
+            "id": "LEAVE",
+            "title": "Wyjdź",
+            "description": "[red]Zdegraduj[/red] losową kartę."
           }
         ]
       },
@@ -4760,14 +4760,14 @@
     "description": "You trace a [jitter]low rumble[/jitter] to its source and find yourself captivated by a tranquil wellspring. The water is an [sine][aqua]emerald green[/aqua][/sine] with clusters of [sine][gold]glowing motes[/gold][/sine].\n\nIt looks inviting. What can possibly go wrong?",
     "options": [
       {
-        "id": "BATHE",
-        "title": "Weź kąpiel",
-        "description": "Usuń [blue]1[/blue] kartę z [gold]talii[/gold]. Dodaj [blue]1[/blue] [red]Poczucie winy[/red] do [gold]talii[/gold]."
-      },
-      {
         "id": "BOTTLE",
         "title": "Zaczerpnij wody",
         "description": "Otrzymaj [blue]1[/blue] losową [gold]Miksturę[/gold]."
+      },
+      {
+        "id": "BATHE",
+        "title": "Weź kąpiel",
+        "description": "Usuń [blue]1[/blue] kartę z [gold]talii[/gold]. Dodaj [blue]1[/blue] [red]Poczucie winy[/red] do [gold]talii[/gold]."
       }
     ],
     "pages": [
@@ -4784,14 +4784,14 @@
         "description": "You trace a [jitter]low rumble[/jitter] to its source and find yourself captivated by a tranquil wellspring. The water is an [sine][aqua]emerald green[/aqua][/sine] with clusters of [sine][gold]glowing motes[/gold][/sine].\n\nIt looks inviting. What can possibly go wrong?",
         "options": [
           {
-            "id": "BATHE",
-            "title": "Weź kąpiel",
-            "description": "Usuń [blue]1[/blue] kartę z [gold]talii[/gold]. Dodaj [blue]1[/blue] [red]Poczucie winy[/red] do [gold]talii[/gold]."
-          },
-          {
             "id": "BOTTLE",
             "title": "Zaczerpnij wody",
             "description": "Otrzymaj [blue]1[/blue] losową [gold]Miksturę[/gold]."
+          },
+          {
+            "id": "BATHE",
+            "title": "Weź kąpiel",
+            "description": "Usuń [blue]1[/blue] kartę z [gold]talii[/gold]. Dodaj [blue]1[/blue] [red]Poczucie winy[/red] do [gold]talii[/gold]."
           }
         ]
       }
@@ -4850,9 +4850,9 @@
     "description": "You open a dusty box to find a set of 3 elaborate wood carvings:\n\nA bird, snake, and... a torus?\n\nA nearby pedestal has indentations which match the bottom of the carvings. Which carving will you place on the pedestal?",
     "options": [
       {
-        "id": "BIRD",
-        "title": "Ptak",
-        "description": "Wybierz [blue]1[/blue] kartę startową i [gold]Zmień[/gold] ją w [gold]Dziobanie[/gold]."
+        "id": "SNAKE_LOCKED",
+        "title": "Zablokowane",
+        "description": "Nie można rzucić Zaklęcia [purple]Ślizg[/purple] na żadną kartę."
       },
       {
         "id": "SNAKE",
@@ -4860,9 +4860,9 @@
         "description": "Rzuć [gold]Zaklęcie[/gold][purple]Ślizg[/purple] na [blue]1[/blue] kartę."
       },
       {
-        "id": "SNAKE_LOCKED",
-        "title": "Zablokowane",
-        "description": "Nie można rzucić Zaklęcia [purple]Ślizg[/purple] na żadną kartę."
+        "id": "BIRD",
+        "title": "Ptak",
+        "description": "Wybierz [blue]1[/blue] kartę startową i [gold]Zmień[/gold] ją w [gold]Dziobanie[/gold]."
       },
       {
         "id": "TORUS",
@@ -4880,9 +4880,9 @@
         "description": "You open a dusty box to find a set of 3 elaborate wood carvings:\n\nA bird, snake, and... a torus?\n\nA nearby pedestal has indentations which match the bottom of the carvings. Which carving will you place on the pedestal?",
         "options": [
           {
-            "id": "BIRD",
-            "title": "Ptak",
-            "description": "Wybierz [blue]1[/blue] kartę startową i [gold]Zmień[/gold] ją w [gold]Dziobanie[/gold]."
+            "id": "SNAKE_LOCKED",
+            "title": "Zablokowane",
+            "description": "Nie można rzucić Zaklęcia [purple]Ślizg[/purple] na żadną kartę."
           },
           {
             "id": "SNAKE",
@@ -4890,9 +4890,9 @@
             "description": "Rzuć [gold]Zaklęcie[/gold][purple]Ślizg[/purple] na [blue]1[/blue] kartę."
           },
           {
-            "id": "SNAKE_LOCKED",
-            "title": "Zablokowane",
-            "description": "Nie można rzucić Zaklęcia [purple]Ślizg[/purple] na żadną kartę."
+            "id": "BIRD",
+            "title": "Ptak",
+            "description": "Wybierz [blue]1[/blue] kartę startową i [gold]Zmień[/gold] ją w [gold]Dziobanie[/gold]."
           },
           {
             "id": "TORUS",
@@ -4919,11 +4919,6 @@
     "description": "You walk through a spider web and [jitter][red]PANIC[/red][/jitter]!\nBut then, a [sine][blue]wave of calm[/blue][/sine] washes over you...\n\n[sine]“Calm down. I need you to quit fussing up my web.”[/sine]\n\nHow did you calm down so quickly?\nAn [orange]itsy bitsy[/orange] spider abseils down to meet you. It seems willing to impart some techniques for [gold]gold[/gold].",
     "options": [
       {
-        "id": "ARACHNID_ACUPUNCTURE",
-        "title": "Pajęczakowa akupunktura",
-        "description": "Zapłać [red]250[/red] szt. [gold]Złota[/gold]. Usuń [blue]2[/blue] karty z [gold]talii[/gold]."
-      },
-      {
         "id": "BREATHING_TECHNIQUES",
         "title": "Techniki oddechowe",
         "description": "Zapłać [red]50[/red] szt. [gold]Złota[/gold]. Dodaj [blue]2[/blue] [gold]Oświecenia[/gold] do [gold]talii[/gold]."
@@ -4932,6 +4927,11 @@
         "id": "EMOTIONAL_AWARENESS",
         "title": "Świadomość emocjonalna",
         "description": "Zapłać [red]125[/red] szt. [gold]Złota[/gold]. Usuń [blue]1[/blue] kartę z [gold]talii[/gold]."
+      },
+      {
+        "id": "ARACHNID_ACUPUNCTURE",
+        "title": "Pajęczakowa akupunktura",
+        "description": "Zapłać [red]250[/red] szt. [gold]Złota[/gold]. Usuń [blue]2[/blue] karty z [gold]talii[/gold]."
       },
       {
         "id": "LOCKED",
@@ -4957,11 +4957,6 @@
         "description": "You walk through a spider web and [jitter][red]PANIC[/red][/jitter]!\nBut then, a [sine][blue]wave of calm[/blue][/sine] washes over you...\n\n[sine]“Calm down. I need you to quit fussing up my web.”[/sine]\n\nHow did you calm down so quickly?\nAn [orange]itsy bitsy[/orange] spider abseils down to meet you. It seems willing to impart some techniques for [gold]gold[/gold].",
         "options": [
           {
-            "id": "ARACHNID_ACUPUNCTURE",
-            "title": "Pajęczakowa akupunktura",
-            "description": "Zapłać [red]250[/red] szt. [gold]Złota[/gold]. Usuń [blue]2[/blue] karty z [gold]talii[/gold]."
-          },
-          {
             "id": "BREATHING_TECHNIQUES",
             "title": "Techniki oddechowe",
             "description": "Zapłać [red]50[/red] szt. [gold]Złota[/gold]. Dodaj [blue]2[/blue] [gold]Oświecenia[/gold] do [gold]talii[/gold]."
@@ -4970,6 +4965,11 @@
             "id": "EMOTIONAL_AWARENESS",
             "title": "Świadomość emocjonalna",
             "description": "Zapłać [red]125[/red] szt. [gold]Złota[/gold]. Usuń [blue]1[/blue] kartę z [gold]talii[/gold]."
+          },
+          {
+            "id": "ARACHNID_ACUPUNCTURE",
+            "title": "Pajęczakowa akupunktura",
+            "description": "Zapłać [red]250[/red] szt. [gold]Złota[/gold]. Usuń [blue]2[/blue] karty z [gold]talii[/gold]."
           },
           {
             "id": "LOCKED",

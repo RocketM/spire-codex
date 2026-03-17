@@ -245,12 +245,32 @@ def load_relic_descriptions(data_dir: Path) -> dict[str, str]:
     return {}
 
 
-def parse_options_from_localization(event_id: str, localization: dict, vars_dict: dict, relic_descs: dict[str, str]) -> list[dict]:
+def extract_option_order(content: str, event_id: str) -> dict[str, list[str]]:
+    """Extract option order from C# source by finding localization keys in declaration order.
+
+    Returns a dict of page_name -> [ordered option IDs].
+    """
+    order: dict[str, list[str]] = {}
+    # Match localization keys like "EVENT_ID.pages.PAGE.options.OPTION_NAME"
+    pattern = re.escape(event_id) + r'\.pages\.(\w+)\.options\.(\w+)'
+    seen: dict[str, set[str]] = {}
+    for m in re.finditer(pattern, content):
+        page, opt = m.group(1), m.group(2)
+        if page not in order:
+            order[page] = []
+            seen[page] = set()
+        if opt not in seen[page]:
+            seen[page].add(opt)
+            order[page].append(opt)
+    return order
+
+
+def parse_options_from_localization(event_id: str, localization: dict, vars_dict: dict, relic_descs: dict[str, str], source_order: dict[str, list[str]] | None = None) -> list[dict]:
     """Extract event options (choices) from localization keys for INITIAL page."""
-    return parse_page_options(event_id, "INITIAL", localization, vars_dict, relic_descs)
+    return parse_page_options(event_id, "INITIAL", localization, vars_dict, relic_descs, source_order)
 
 
-def parse_page_options(event_id: str, page_name: str, localization: dict, vars_dict: dict, relic_descs: dict[str, str]) -> list[dict]:
+def parse_page_options(event_id: str, page_name: str, localization: dict, vars_dict: dict, relic_descs: dict[str, str], source_order: dict[str, list[str]] | None = None) -> list[dict]:
     """Extract options for a specific page."""
     options = []
     prefix = f"{event_id}.pages.{page_name}.options."
@@ -261,7 +281,15 @@ def parse_page_options(event_id: str, page_name: str, localization: dict, vars_d
             option_name = rest.split(".")[0]
             option_keys.add(option_name)
 
-    for opt_name in sorted(option_keys):
+    # Use C# source order if available, fall back to alphabetical
+    if source_order and page_name in source_order:
+        ordered = [o for o in source_order[page_name] if o in option_keys]
+        # Append any keys from localization not found in source (shouldn't happen, but safe)
+        ordered += sorted(option_keys - set(ordered))
+    else:
+        ordered = sorted(option_keys)
+
+    for opt_name in ordered:
         title_raw = localization.get(f"{prefix}{opt_name}.title", opt_name)
         title = strip_rich_tags(resolve_description(title_raw, vars_dict))
         desc_raw = localization.get(f"{prefix}{opt_name}.description", "")
@@ -281,7 +309,7 @@ def parse_page_options(event_id: str, page_name: str, localization: dict, vars_d
     return options
 
 
-def parse_all_pages(event_id: str, localization: dict, vars_dict: dict, relic_descs: dict[str, str]) -> list[dict] | None:
+def parse_all_pages(event_id: str, localization: dict, vars_dict: dict, relic_descs: dict[str, str], source_order: dict[str, list[str]] | None = None) -> list[dict] | None:
     """Extract all pages for an event, building the full decision tree."""
     # Discover all page names
     page_prefix = f"{event_id}.pages."
@@ -301,7 +329,7 @@ def parse_all_pages(event_id: str, localization: dict, vars_dict: dict, relic_de
         desc_resolved = resolve_description(desc_raw, vars_dict) if desc_raw else ""
         desc_clean = strip_rich_tags(desc_resolved)
 
-        options = parse_page_options(event_id, page_name, localization, vars_dict, relic_descs)
+        options = parse_page_options(event_id, page_name, localization, vars_dict, relic_descs, source_order)
 
         page = {
             "id": page_name,
@@ -405,8 +433,11 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict, ti
     desc_resolved = resolve_description(desc_raw, vars_dict) if desc_raw else ""
     desc_clean = strip_rich_tags(desc_resolved)
 
+    # Extract option order from C# source
+    source_order = extract_option_order(content, event_id)
+
     # Options (choices) — skip for Ancient events, their offerings are in the relics list
-    options = [] if is_ancient else parse_options_from_localization(event_id, localization, vars_dict, relic_descs)
+    options = [] if is_ancient else parse_options_from_localization(event_id, localization, vars_dict, relic_descs, source_order)
 
     # Act mapping
     act = act_mapping.get(class_name)
@@ -420,7 +451,7 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict, ti
         event_type = "Shared"
 
     # Parse all pages (multi-page events)
-    pages = parse_all_pages(event_id, localization, vars_dict, relic_descs)
+    pages = parse_all_pages(event_id, localization, vars_dict, relic_descs, source_order)
 
     result = {
         "id": event_id,

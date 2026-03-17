@@ -7,14 +7,14 @@
     "description": null,
     "options": [
       {
-        "id": "ABSTAIN",
-        "title": "ABSTAIN",
-        "description": "ฟื้นฟู [green]10[/green] HP"
-      },
-      {
         "id": "IMMERSE",
         "title": "IMMERSE",
         "description": "ได้รับ [green]2[/green] HP สูงสุด ได้รับความเสียหาย [red]3[/red]"
+      },
+      {
+        "id": "ABSTAIN",
+        "title": "ABSTAIN",
+        "description": "ฟื้นฟู [green]10[/green] HP"
       }
     ],
     "pages": [
@@ -34,14 +34,14 @@
         "description": null,
         "options": [
           {
-            "id": "ABSTAIN",
-            "title": "ABSTAIN",
-            "description": "ฟื้นฟู [green]10[/green] HP"
-          },
-          {
             "id": "IMMERSE",
             "title": "IMMERSE",
             "description": "ได้รับ [green]2[/green] HP สูงสุด ได้รับความเสียหาย [red]3[/red]"
+          },
+          {
+            "id": "ABSTAIN",
+            "title": "ABSTAIN",
+            "description": "ฟื้นฟู [green]10[/green] HP"
           }
         ]
       }
@@ -145,14 +145,14 @@
     "description": "[jitter]*จี๊ด*[/jitter]\n\nคุณรู้สึกถึงความเจ็บแปลบบริเวณศีรษะ และมีความคิดพุ่งเข้าหัวคุณ\n\n[purple][sine]“แบ่งปันความรู้กันไหม???”[/sine][/purple]\n\nคุณไม่แน่ใจว่าควรทำอย่างไร...",
     "options": [
       {
-        "id": "RIP",
-        "title": "ดึงปลิงออก",
-        "description": "เสีย [red]5[/red] HP ได้รับรางวัลการ์ดไร้สี 1 ใบ"
-      },
-      {
         "id": "SHARE_KNOWLEDGE",
         "title": "แบ่งปันความรู้",
         "description": "เลือกการ์ด [blue]1[/blue] จาก [blue]5[/blue] ใบที่ถูกสุ่มมาเพื่อเพิ่มเข้า[gold]กองการ์ด[/gold]"
+      },
+      {
+        "id": "RIP",
+        "title": "ดึงปลิงออก",
+        "description": "เสีย [red]5[/red] HP ได้รับรางวัลการ์ดไร้สี 1 ใบ"
       }
     ],
     "pages": [
@@ -161,14 +161,14 @@
         "description": "[jitter]*จี๊ด*[/jitter]\n\nคุณรู้สึกถึงความเจ็บแปลบบริเวณศีรษะ และมีความคิดพุ่งเข้าหัวคุณ\n\n[purple][sine]“แบ่งปันความรู้กันไหม???”[/sine][/purple]\n\nคุณไม่แน่ใจว่าควรทำอย่างไร...",
         "options": [
           {
-            "id": "RIP",
-            "title": "ดึงปลิงออก",
-            "description": "เสีย [red]5[/red] HP ได้รับรางวัลการ์ดไร้สี 1 ใบ"
-          },
-          {
             "id": "SHARE_KNOWLEDGE",
             "title": "แบ่งปันความรู้",
             "description": "เลือกการ์ด [blue]1[/blue] จาก [blue]5[/blue] ใบที่ถูกสุ่มมาเพื่อเพิ่มเข้า[gold]กองการ์ด[/gold]"
+          },
+          {
+            "id": "RIP",
+            "title": "ดึงปลิงออก",
+            "description": "เสีย [red]5[/red] HP ได้รับรางวัลการ์ดไร้สี 1 ใบ"
           }
         ]
       },
@@ -486,14 +486,14 @@
     "description": null,
     "options": [
       {
-        "id": "REST",
-        "title": "พักผ่อน",
-        "description": "ฟื้นฟู [green]30% Max[/green] HP และต่อสู้[red]ศัตรู[/red]กลุ่มหนึ่ง"
-      },
-      {
         "id": "TRUDGE_ON",
         "title": "TRUDGE_ON",
         "description": "กำจัดการ์ด 1 ใบจาก[gold]กองการ์ด[/gold] เสีย [red]11[/red] HP"
+      },
+      {
+        "id": "REST",
+        "title": "พักผ่อน",
+        "description": "ฟื้นฟู [green]30% Max[/green] HP และต่อสู้[red]ศัตรู[/red]กลุ่มหนึ่ง"
       }
     ],
     "pages": [
@@ -502,14 +502,14 @@
         "description": null,
         "options": [
           {
-            "id": "REST",
-            "title": "พักผ่อน",
-            "description": "ฟื้นฟู [green]30% Max[/green] HP และต่อสู้[red]ศัตรู[/red]กลุ่มหนึ่ง"
-          },
-          {
             "id": "TRUDGE_ON",
             "title": "TRUDGE_ON",
             "description": "กำจัดการ์ด 1 ใบจาก[gold]กองการ์ด[/gold] เสีย [red]11[/red] HP"
+          },
+          {
+            "id": "REST",
+            "title": "พักผ่อน",
+            "description": "ฟื้นฟู [green]30% Max[/green] HP และต่อสู้[red]ศัตรู[/red]กลุ่มหนึ่ง"
           }
         ]
       },
@@ -534,11 +534,6 @@
     "description": null,
     "options": [
       {
-        "id": "EXAMINE",
-        "title": "ตรวจสอบแต่ละชิ้นแล้วเลือกให้ดีที่สุด",
-        "description": "เสีย [red]15[/red] HP เลือก[gold]เครื่องรางตุ๊กตา[/gold] [blue]1[/blue] จาก [blue]3[/blue] ชิ้น"
-      },
-      {
         "id": "RANDOM",
         "title": "เลือกแบบสุ่ม",
         "description": "ได้รับ[gold]เครื่องรางตุ๊กตา[/gold] 1 ชิ้นแบบสุ่ม"
@@ -547,6 +542,11 @@
         "id": "TAKE_SOME_TIME",
         "title": "ขอเวลาสักพัก",
         "description": "เสีย [red]5[/red] HP เลือก[gold]เครื่องรางตุ๊กตา[/gold] [blue]1[/blue] จาก [blue]2[/blue] ชิ้น"
+      },
+      {
+        "id": "EXAMINE",
+        "title": "ตรวจสอบแต่ละชิ้นแล้วเลือกให้ดีที่สุด",
+        "description": "เสีย [red]15[/red] HP เลือก[gold]เครื่องรางตุ๊กตา[/gold] [blue]1[/blue] จาก [blue]3[/blue] ชิ้น"
       }
     ],
     "pages": [
@@ -554,11 +554,6 @@
         "id": "INITIAL",
         "description": null,
         "options": [
-          {
-            "id": "EXAMINE",
-            "title": "ตรวจสอบแต่ละชิ้นแล้วเลือกให้ดีที่สุด",
-            "description": "เสีย [red]15[/red] HP เลือก[gold]เครื่องรางตุ๊กตา[/gold] [blue]1[/blue] จาก [blue]3[/blue] ชิ้น"
-          },
           {
             "id": "RANDOM",
             "title": "เลือกแบบสุ่ม",
@@ -568,6 +563,11 @@
             "id": "TAKE_SOME_TIME",
             "title": "ขอเวลาสักพัก",
             "description": "เสีย [red]5[/red] HP เลือก[gold]เครื่องรางตุ๊กตา[/gold] [blue]1[/blue] จาก [blue]2[/blue] ชิ้น"
+          },
+          {
+            "id": "EXAMINE",
+            "title": "ตรวจสอบแต่ละชิ้นแล้วเลือกให้ดีที่สุด",
+            "description": "เสีย [red]15[/red] HP เลือก[gold]เครื่องรางตุ๊กตา[/gold] [blue]1[/blue] จาก [blue]3[/blue] ชิ้น"
           }
         ]
       },
@@ -592,14 +592,14 @@
     "description": null,
     "options": [
       {
-        "id": "DARK",
-        "title": "ประตูแห่งความมืด",
-        "description": "กำจัดการ์ด [blue]1[/blue]ใบใน[gold]กองการ์ด[/gold]"
-      },
-      {
         "id": "LIGHT",
         "title": "ประตูแห่งแสง",
         "description": "[gold]พัฒนา[/gold]การ์ด [blue]2[/blue] ใบแบบสุ่ม"
+      },
+      {
+        "id": "DARK",
+        "title": "ประตูแห่งความมืด",
+        "description": "กำจัดการ์ด [blue]1[/blue]ใบใน[gold]กองการ์ด[/gold]"
       }
     ],
     "pages": null
@@ -656,14 +656,14 @@
     "description": null,
     "options": [
       {
-        "id": "ENTER_YOUR_HOLE",
-        "title": "ENTER_YOUR_HOLE",
-        "description": "[gold]ร่ายมนตร์[/gold]ใส่การ์ด 1 ใบด้วย[purple]มนตร์เหมาะเหม็ง[/purple]"
-      },
-      {
         "id": "RESIST",
         "title": "RESIST",
         "description": "กำจัดการ์ด [blue]2[/blue] ใบจาก[gold]กองการ์ด[/gold] เพิ่ม[red]จำกัดฐานะ[/red]เข้า[gold]กองการ์ด[/gold]"
+      },
+      {
+        "id": "ENTER_YOUR_HOLE",
+        "title": "ENTER_YOUR_HOLE",
+        "description": "[gold]ร่ายมนตร์[/gold]ใส่การ์ด 1 ใบด้วย[purple]มนตร์เหมาะเหม็ง[/purple]"
       }
     ],
     "pages": null
@@ -676,9 +676,9 @@
     "description": null,
     "options": [
       {
-        "id": "ACCEPT",
-        "title": "ยอมรับForgottenSoul",
-        "description": "ได้รับ[gold]ForgottenSoul[/gold]"
+        "id": "CONFRONT_LOCKED",
+        "title": "ล็อก",
+        "description": "ไม่สามารถ[purple]ร่ายมนตร์[/purple]ได้เพราะคุณไม่มีการ์ดที่มี[gold]สลาย[/gold]"
       },
       {
         "id": "CONFRONT",
@@ -686,9 +686,9 @@
         "description": "เพิ่ม[red]ความเสื่อมสลาย[/red]เข้า[gold]กองการ์ด[/gold] [gold]ร่ายมนตร์[/gold]การ์ด 1 ใบที่มี[gold]สลาย[/gold]ด้วย[purple]มนตร์พลังวิญญาณ[/purple]"
       },
       {
-        "id": "CONFRONT_LOCKED",
-        "title": "ล็อก",
-        "description": "ไม่สามารถ[purple]ร่ายมนตร์[/purple]ได้เพราะคุณไม่มีการ์ดที่มี[gold]สลาย[/gold]"
+        "id": "ACCEPT",
+        "title": "ยอมรับForgottenSoul",
+        "description": "ได้รับ[gold]ForgottenSoul[/gold]"
       }
     ],
     "pages": null
@@ -730,14 +730,14 @@
     "description": null,
     "options": [
       {
-        "id": "JOIN_FORCES",
-        "title": "JOIN_FORCES",
-        "description": "ได้รับ [blue]50[/blue] [gold]ทอง[/gold]"
-      },
-      {
         "id": "SOLO_QUEST",
         "title": "SOLO_QUEST",
         "description": "ได้รับ [blue]150[/blue] [gold]ทอง[/gold] เสีย [red]18[/red] HP"
+      },
+      {
+        "id": "JOIN_FORCES",
+        "title": "JOIN_FORCES",
+        "description": "ได้รับ [blue]50[/blue] [gold]ทอง[/gold]"
       }
     ],
     "pages": null
@@ -755,14 +755,14 @@
         "description": "เพิ่ม[red]ความเสื่อมสลาย[/red]เข้า[gold]กองการ์ด[/gold] ได้รับ[gold]LostWisp[/gold]"
       },
       {
-        "id": "CLAIM_LOCKED",
-        "title": "ล็อก",
-        "description": "HP สูงสุดของคุณต่ำเกินไป"
-      },
-      {
         "id": "SEARCH",
         "title": "ค้นหาบริเวณรอบข้าง",
         "description": "ได้รับ [blue]60[/blue] [gold]ทอง[/gold]"
+      },
+      {
+        "id": "CLAIM_LOCKED",
+        "title": "ล็อก",
+        "description": "HP สูงสุดของคุณต่ำเกินไป"
       }
     ],
     "pages": null
@@ -775,6 +775,11 @@
     "description": null,
     "options": [
       {
+        "id": "REACH_INTO_THE_FLESH",
+        "title": "REACH_INTO_THE_FLESH",
+        "description": "กำจัดการ์ด [blue]2[/blue] ใบจาก[gold]กองการ์ด[/gold] เพิ่ม[red]Spore Mind[/red]เข้า[gold]กองการ์ด[/gold]"
+      },
+      {
         "id": "OFFER_TRIBUTE",
         "title": "OFFER_TRIBUTE",
         "description": "จ่าย [red]149[/red] [gold]ทอง[/gold] ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
@@ -783,11 +788,6 @@
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "ล็อก",
         "description": "ต้องการ [blue]149[/blue] [gold]ทอง[/gold]"
-      },
-      {
-        "id": "REACH_INTO_THE_FLESH",
-        "title": "REACH_INTO_THE_FLESH",
-        "description": "กำจัดการ์ด [blue]2[/blue] ใบจาก[gold]กองการ์ด[/gold] เพิ่ม[red]Spore Mind[/red]เข้า[gold]กองการ์ด[/gold]"
       }
     ],
     "pages": null
@@ -962,14 +962,14 @@
     "description": null,
     "options": [
       {
-        "id": "I_CAN_TAKE_THEM",
-        "title": "ฉันเอาอยู่",
-        "description": "ต่อสู้พวกมันเพื่อ[gold]รางวัลที่ดีขึ้น[/gold]"
-      },
-      {
         "id": "NAB",
         "title": "NAB",
         "description": "เพิ่ม[red]Injury[/red]เข้า[gold]กองการ์ด[/gold] ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
+      },
+      {
+        "id": "I_CAN_TAKE_THEM",
+        "title": "ฉันเอาอยู่",
+        "description": "ต่อสู้พวกมันเพื่อ[gold]รางวัลที่ดีขึ้น[/gold]"
       }
     ],
     "pages": [
@@ -978,14 +978,14 @@
         "description": null,
         "options": [
           {
-            "id": "I_CAN_TAKE_THEM",
-            "title": "ฉันเอาอยู่",
-            "description": "ต่อสู้พวกมันเพื่อ[gold]รางวัลที่ดีขึ้น[/gold]"
-          },
-          {
             "id": "NAB",
             "title": "NAB",
             "description": "เพิ่ม[red]Injury[/red]เข้า[gold]กองการ์ด[/gold] ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
+          },
+          {
+            "id": "I_CAN_TAKE_THEM",
+            "title": "ฉันเอาอยู่",
+            "description": "ต่อสู้พวกมันเพื่อ[gold]รางวัลที่ดีขึ้น[/gold]"
           }
         ]
       },
@@ -1010,14 +1010,14 @@
     "description": null,
     "options": [
       {
-        "id": "GOLD",
-        "title": "ให้ 100 ทอง",
-        "description": "ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
-      },
-      {
         "id": "POTION",
         "title": "ให้Potion",
         "description": "ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
+      },
+      {
+        "id": "RELIC",
+        "title": "ให้Relic",
+        "description": "ได้รับ[gold]เครื่องราง[/gold] [blue]2[/blue] ชิ้นแบบสุ่ม"
       },
       {
         "id": "POTION_LOCKED",
@@ -1025,9 +1025,9 @@
         "description": "คุณไม่เหลือขวดยาที่สามารถมอบให้ได้"
       },
       {
-        "id": "RELIC",
-        "title": "ให้Relic",
-        "description": "ได้รับ[gold]เครื่องราง[/gold] [blue]2[/blue] ชิ้นแบบสุ่ม"
+        "id": "GOLD",
+        "title": "ให้ 100 ทอง",
+        "description": "ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
       },
       {
         "id": "RELIC_LOCKED",
@@ -1045,14 +1045,14 @@
     "description": null,
     "options": [
       {
-        "id": "SHATTER",
-        "title": "ทุบให้แตก",
-        "description": "ทำสำเนาทั้ง[gold]กองการ์ด[/gold] ได้รับ[purple]โชคร้าย[/purple]"
-      },
-      {
         "id": "TOUCH_A_MIRROR",
         "title": "สัมผัสกระจก",
         "description": "[red]ย้อนการพัฒนา[/red]การ์ด [blue]2[/blue] ใบแบบสุ่ม [green]พัฒนา[/green]การ์ด [blue]4[/blue] ใบแบบสุ่ม"
+      },
+      {
+        "id": "SHATTER",
+        "title": "ทุบให้แตก",
+        "description": "ทำสำเนาทั้ง[gold]กองการ์ด[/gold] ได้รับ[purple]โชคร้าย[/purple]"
       }
     ],
     "pages": null
@@ -1065,8 +1065,8 @@
     "description": null,
     "options": [
       {
-        "id": "BOTTOM",
-        "title": "เอาอันล่าง",
+        "id": "TOP",
+        "title": "เอาอันบน",
         "description": "แลก[gold]one of your Relics[/gold]เป็น[gold]a random Relic[/gold]"
       },
       {
@@ -1075,8 +1075,8 @@
         "description": "แลก[gold]one of your Relics[/gold]เป็น[gold]a random Relic[/gold]"
       },
       {
-        "id": "TOP",
-        "title": "เอาอันบน",
+        "id": "BOTTOM",
+        "title": "เอาอันล่าง",
         "description": "แลก[gold]one of your Relics[/gold]เป็น[gold]a random Relic[/gold]"
       }
     ],
@@ -1171,19 +1171,14 @@
     "description": null,
     "options": [
       {
-        "id": "NO_OPTIONS",
-        "title": "ช่างมัน",
-        "description": "คุณไม่มีการ์ดให้ร่ายมนตร์ใส่"
+        "id": "READ_THE_BACK",
+        "title": "อ่านปกหลัง",
+        "description": "เลือกการ์ดโจมตี 1 ใบเพื่อ[gold]ร่ายมนตร์[/gold]ด้วย[purple]มนตร์แหลมคม[/purple] [blue]2[/blue]"
       },
       {
-        "id": "READ_ENTIRE_BOOK",
-        "title": "อ่านทั้งเล่ม",
-        "description": "เลือกการ์ดพลัง 1 ใบเพื่อ[gold]ร่ายมนตร์[/gold]ด้วย[purple]มนตร์ฉับพลัน[/purple] [blue]2[/blue]"
-      },
-      {
-        "id": "READ_ENTIRE_BOOK_LOCKED",
+        "id": "READ_THE_BACK_LOCKED",
         "title": "ล็อก",
-        "description": "คุณไม่มีการ์ดพลังให้[gold]ร่ายมนตร์[/gold]ใส่"
+        "description": "คุณไม่มีการ์ดโจมตีให้[gold]ร่ายมนตร์[/gold]ใส่"
       },
       {
         "id": "READ_PASSAGE",
@@ -1196,14 +1191,19 @@
         "description": "คุณไม่มีการ์ดทักษะให้[gold]ร่ายมนตร์[/gold]ใส่"
       },
       {
-        "id": "READ_THE_BACK",
-        "title": "อ่านปกหลัง",
-        "description": "เลือกการ์ดโจมตี 1 ใบเพื่อ[gold]ร่ายมนตร์[/gold]ด้วย[purple]มนตร์แหลมคม[/purple] [blue]2[/blue]"
+        "id": "READ_ENTIRE_BOOK",
+        "title": "อ่านทั้งเล่ม",
+        "description": "เลือกการ์ดพลัง 1 ใบเพื่อ[gold]ร่ายมนตร์[/gold]ด้วย[purple]มนตร์ฉับพลัน[/purple] [blue]2[/blue]"
       },
       {
-        "id": "READ_THE_BACK_LOCKED",
+        "id": "READ_ENTIRE_BOOK_LOCKED",
         "title": "ล็อก",
-        "description": "คุณไม่มีการ์ดโจมตีให้[gold]ร่ายมนตร์[/gold]ใส่"
+        "description": "คุณไม่มีการ์ดพลังให้[gold]ร่ายมนตร์[/gold]ใส่"
+      },
+      {
+        "id": "NO_OPTIONS",
+        "title": "ช่างมัน",
+        "description": "คุณไม่มีการ์ดให้ร่ายมนตร์ใส่"
       }
     ],
     "pages": [
@@ -1212,19 +1212,14 @@
         "description": null,
         "options": [
           {
-            "id": "NO_OPTIONS",
-            "title": "ช่างมัน",
-            "description": "คุณไม่มีการ์ดให้ร่ายมนตร์ใส่"
+            "id": "READ_THE_BACK",
+            "title": "อ่านปกหลัง",
+            "description": "เลือกการ์ดโจมตี 1 ใบเพื่อ[gold]ร่ายมนตร์[/gold]ด้วย[purple]มนตร์แหลมคม[/purple] [blue]2[/blue]"
           },
           {
-            "id": "READ_ENTIRE_BOOK",
-            "title": "อ่านทั้งเล่ม",
-            "description": "เลือกการ์ดพลัง 1 ใบเพื่อ[gold]ร่ายมนตร์[/gold]ด้วย[purple]มนตร์ฉับพลัน[/purple] [blue]2[/blue]"
-          },
-          {
-            "id": "READ_ENTIRE_BOOK_LOCKED",
+            "id": "READ_THE_BACK_LOCKED",
             "title": "ล็อก",
-            "description": "คุณไม่มีการ์ดพลังให้[gold]ร่ายมนตร์[/gold]ใส่"
+            "description": "คุณไม่มีการ์ดโจมตีให้[gold]ร่ายมนตร์[/gold]ใส่"
           },
           {
             "id": "READ_PASSAGE",
@@ -1237,14 +1232,19 @@
             "description": "คุณไม่มีการ์ดทักษะให้[gold]ร่ายมนตร์[/gold]ใส่"
           },
           {
-            "id": "READ_THE_BACK",
-            "title": "อ่านปกหลัง",
-            "description": "เลือกการ์ดโจมตี 1 ใบเพื่อ[gold]ร่ายมนตร์[/gold]ด้วย[purple]มนตร์แหลมคม[/purple] [blue]2[/blue]"
+            "id": "READ_ENTIRE_BOOK",
+            "title": "อ่านทั้งเล่ม",
+            "description": "เลือกการ์ดพลัง 1 ใบเพื่อ[gold]ร่ายมนตร์[/gold]ด้วย[purple]มนตร์ฉับพลัน[/purple] [blue]2[/blue]"
           },
           {
-            "id": "READ_THE_BACK_LOCKED",
+            "id": "READ_ENTIRE_BOOK_LOCKED",
             "title": "ล็อก",
-            "description": "คุณไม่มีการ์ดโจมตีให้[gold]ร่ายมนตร์[/gold]ใส่"
+            "description": "คุณไม่มีการ์ดพลังให้[gold]ร่ายมนตร์[/gold]ใส่"
+          },
+          {
+            "id": "NO_OPTIONS",
+            "title": "ช่างมัน",
+            "description": "คุณไม่มีการ์ดให้ร่ายมนตร์ใส่"
           }
         ]
       },
@@ -1274,14 +1274,14 @@
     "description": null,
     "options": [
       {
-        "id": "HOLD_ON_0",
-        "title": "จับไว้",
-        "description": "เสีย [red]3+[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
-      },
-      {
         "id": "OVERCOME",
         "title": "พิชิต",
         "description": "[red]a random Card[/red]ถูกกำจัดออกจาก[gold]กองการ์ด[/gold]"
+      },
+      {
+        "id": "HOLD_ON_0",
+        "title": "จับไว้",
+        "description": "เสีย [red]3+[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
       }
     ],
     "pages": [
@@ -1378,14 +1378,14 @@
         "description": null,
         "options": [
           {
-            "id": "HOLD_ON_0",
-            "title": "จับไว้",
-            "description": "เสีย [red]3+[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
-          },
-          {
             "id": "OVERCOME",
             "title": "พิชิต",
             "description": "[red]a random Card[/red]ถูกกำจัดออกจาก[gold]กองการ์ด[/gold]"
+          },
+          {
+            "id": "HOLD_ON_0",
+            "title": "จับไว้",
+            "description": "เสีย [red]3+[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
           }
         ]
       },
@@ -1403,14 +1403,14 @@
     "description": null,
     "options": [
       {
-        "id": "DRINK",
-        "title": "ดื่ม",
-        "description": "ฟื้นฟู [green]33% Max[/green] HP"
-      },
-      {
         "id": "OBSERVE",
         "title": "สังเกต",
         "description": "[gold]ร่ายมนตร์[/gold] [gold]จู่โจม[/gold]หรือ[gold]ป้องกัน[/gold]ด้วย[purple]Spiral[/purple]"
+      },
+      {
+        "id": "DRINK",
+        "title": "ดื่ม",
+        "description": "ฟื้นฟู [green]33% Max[/green] HP"
       },
       {
         "id": "REACH_IN",
@@ -1458,14 +1458,14 @@
         "description": "ตัองการขวดยา 1 ขวด"
       },
       {
-        "id": "PUSH",
-        "title": "ผลัก",
-        "description": "เสีย [red]6[/red] HP [gold]ร่ายมนตร์[/gold]การ์ดโจมตี 1 ใบด้วย[purple]Vigorous[/purple] [blue]8[/blue]"
-      },
-      {
         "id": "PUSH_LOCKED",
         "title": "ล็อก",
         "description": "ตัองการการ์ดโจมตี 1 ใบ"
+      },
+      {
+        "id": "PUSH",
+        "title": "ผลัก",
+        "description": "เสีย [red]6[/red] HP [gold]ร่ายมนตร์[/gold]การ์ดโจมตี 1 ใบด้วย[purple]Vigorous[/purple] [blue]8[/blue]"
       }
     ],
     "pages": null
@@ -1478,14 +1478,14 @@
     "description": null,
     "options": [
       {
-        "id": "DIVE_INTO_WATER",
-        "title": "DIVE_INTO_WATER",
-        "description": "ได้รับ [blue]111[/blue] [gold]ทอง[/gold] เสีย [red]7[/red] HP"
-      },
-      {
         "id": "GRAB_SWORD",
         "title": "GRAB_SWORD",
         "description": "ได้รับ[gold]SwordOfStone[/gold]"
+      },
+      {
+        "id": "DIVE_INTO_WATER",
+        "title": "DIVE_INTO_WATER",
+        "description": "ได้รับ [blue]111[/blue] [gold]ทอง[/gold] เสีย [red]7[/red] HP"
       }
     ],
     "pages": null
@@ -1539,14 +1539,14 @@
     "description": null,
     "options": [
       {
-        "id": "APPROACH",
-        "title": "APPROACH",
-        "description": "[gold]ร่ายมนตร์[/gold]การ์ดโจมตี 1 ใบด้วย[purple]มนตร์ผุพัง[/purple]"
-      },
-      {
         "id": "APPROACH_LOCKED",
         "title": "ล็อก",
         "description": "คุณไม่มีการ์ดโจมตีที่สามารถร่ายมนตร์ใส่ได้"
+      },
+      {
+        "id": "APPROACH",
+        "title": "APPROACH",
+        "description": "[gold]ร่ายมนตร์[/gold]การ์ดโจมตี 1 ใบด้วย[purple]มนตร์ผุพัง[/purple]"
       },
       {
         "id": "KILL_WITH_FIRE",
@@ -1759,14 +1759,14 @@
     "description": null,
     "options": [
       {
-        "id": "KEEP_THE_KEY",
-        "title": "เก็บกุญแจไว้",
-        "description": "ต่อสู้เพื่อชิงกุญแจ"
-      },
-      {
         "id": "RETURN_THE_KEY",
         "title": "คืนกุญแจ",
         "description": "ได้รับ [blue]100[/blue] [gold]ทอง[/gold]"
+      },
+      {
+        "id": "KEEP_THE_KEY",
+        "title": "เก็บกุญแจไว้",
+        "description": "ต่อสู้เพื่อชิงกุญแจ"
       }
     ],
     "pages": [
@@ -1786,14 +1786,14 @@
         "description": null,
         "options": [
           {
-            "id": "KEEP_THE_KEY",
-            "title": "เก็บกุญแจไว้",
-            "description": "ต่อสู้เพื่อชิงกุญแจ"
-          },
-          {
             "id": "RETURN_THE_KEY",
             "title": "คืนกุญแจ",
             "description": "ได้รับ [blue]100[/blue] [gold]ทอง[/gold]"
+          },
+          {
+            "id": "KEEP_THE_KEY",
+            "title": "เก็บกุญแจไว้",
+            "description": "ต่อสู้เพื่อชิงกุญแจ"
           }
         ]
       }
@@ -1822,14 +1822,14 @@
     "description": null,
     "options": [
       {
-        "id": "ORNATE",
-        "title": "อันนั้น",
-        "description": "เพิ่ม[red]ความซุ่มซ่าม[/red]เข้า[gold]กองการ์ด[/gold] ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
-      },
-      {
         "id": "PLAIN",
         "title": "อันนี้",
         "description": "เสีย [red]6[/red] HP ได้รับ [blue]41-69[/blue] [gold]ทอง[/gold]"
+      },
+      {
+        "id": "ORNATE",
+        "title": "อันนั้น",
+        "description": "เพิ่ม[red]ความซุ่มซ่าม[/red]เข้า[gold]กองการ์ด[/gold] ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
       }
     ],
     "pages": null
@@ -1858,14 +1858,14 @@
             "description": "ทำการ์ดโจมตีที่มีความสามารถพิเศษ สร้างความเสียหาย [blue]12[/blue]"
           },
           {
-            "id": "POWER",
-            "title": "อุปกรณ์",
-            "description": "สร้างการ์ดพลังที่มีความสามารถพิเศษ"
-          },
-          {
             "id": "SKILL",
             "title": "เครื่องป้องกัน",
             "description": "สร้างการ์ดทักษะที่มีความสามารถพิเศษ ได้รับ [blue]8[/blue] [gold]บล็อก[/gold]"
+          },
+          {
+            "id": "POWER",
+            "title": "อุปกรณ์",
+            "description": "สร้างการ์ดพลังที่มีความสามารถพิเศษ"
           }
         ]
       },
@@ -1873,36 +1873,6 @@
         "id": "CHOOSE_RIDER",
         "description": null,
         "options": [
-          {
-            "id": "CHAOS",
-            "title": "CHAOS",
-            "description": "เพิ่มการ์ด 1 ใบแบบสุ่มใส่[gold]มือ[/gold] มันมีค่าร่าย [blue]0[/blue] [energy:1] ในเทิร์นนี้"
-          },
-          {
-            "id": "CHOKING",
-            "title": "CHOKING",
-            "description": "ทุกครั้งที่คุณเล่นการ์ดในเทิร์นนี้ ศัตรูเสีย [blue][ChokingDamage][/blue] HP"
-          },
-          {
-            "id": "CURIOUS",
-            "title": "CURIOUS",
-            "description": "การ์ดพลังมีค่าร่ายลดลง [blue]1[/blue] [energy:1]"
-          },
-          {
-            "id": "ENERGIZED",
-            "title": "ENERGIZED",
-            "description": "ได้รับ [energy:2]"
-          },
-          {
-            "id": "EXPERTISE",
-            "title": "ความช่ำชอง",
-            "description": "ได้รับ [blue][ExpertiseStrength][/blue] [gold]ความแข็งแรง[/gold] ได้รับ [blue][ExpertiseDexterity][/blue] [gold]ความชำนาญ[/gold]"
-          },
-          {
-            "id": "IMPROVEMENT",
-            "title": "การปรับปรุง",
-            "description": "ตอนจบการต่อสู้ [gold]พัฒนา[/gold]การ์ด 1 ใบแบบสุ่ม"
-          },
           {
             "id": "SAPPING",
             "title": "SAPPING",
@@ -1914,9 +1884,39 @@
             "description": "โจมตีเพิ่ม [blue]2[/blue] ครั้ง"
           },
           {
+            "id": "CHOKING",
+            "title": "CHOKING",
+            "description": "ทุกครั้งที่คุณเล่นการ์ดในเทิร์นนี้ ศัตรูเสีย [blue][ChokingDamage][/blue] HP"
+          },
+          {
+            "id": "ENERGIZED",
+            "title": "ENERGIZED",
+            "description": "ได้รับ [energy:2]"
+          },
+          {
             "id": "WISDOM",
             "title": "WISDOM",
             "description": "จั่วการ์ด [blue]3[/blue] ใบ"
+          },
+          {
+            "id": "CHAOS",
+            "title": "CHAOS",
+            "description": "เพิ่มการ์ด 1 ใบแบบสุ่มใส่[gold]มือ[/gold] มันมีค่าร่าย [blue]0[/blue] [energy:1] ในเทิร์นนี้"
+          },
+          {
+            "id": "EXPERTISE",
+            "title": "ความช่ำชอง",
+            "description": "ได้รับ [blue][ExpertiseStrength][/blue] [gold]ความแข็งแรง[/gold] ได้รับ [blue][ExpertiseDexterity][/blue] [gold]ความชำนาญ[/gold]"
+          },
+          {
+            "id": "CURIOUS",
+            "title": "CURIOUS",
+            "description": "การ์ดพลังมีค่าร่ายลดลง [blue]1[/blue] [energy:1]"
+          },
+          {
+            "id": "IMPROVEMENT",
+            "title": "การปรับปรุง",
+            "description": "ตอนจบการต่อสู้ [gold]พัฒนา[/gold]การ์ด 1 ใบแบบสุ่ม"
           }
         ]
       },
@@ -2025,14 +2025,14 @@
     "description": null,
     "options": [
       {
-        "id": "KILL",
-        "title": "KILL",
-        "description": "[red]เสีย 8 HP สูงสุด[/red] ได้รับ[gold]เครื่องราง[/gold]แบบสุ่ม"
-      },
-      {
         "id": "REST",
         "title": "ก็จะพักผ่อนอยู่ดี",
         "description": "[green]ฟื้นฟู HP จนเต็ม[/green] ได้รับ[red]Poor Sleep[/red]"
+      },
+      {
+        "id": "KILL",
+        "title": "KILL",
+        "description": "[red]เสีย 8 HP สูงสุด[/red] ได้รับ[gold]เครื่องราง[/gold]แบบสุ่ม"
       }
     ],
     "pages": null
@@ -2092,16 +2092,6 @@
         "description": "ได้รับ [green]6[/green] HP สูงสุด"
       },
       {
-        "id": "PRICKLY_SPONGE",
-        "title": "PRICKLY_SPONGE",
-        "description": "จ่าย [red]155[/red] [gold]ทอง[/gold] [gold]ร่ายมนตร์[/gold]การ์ด [blue]2[/blue] ใบด้วย[purple]Steady[/purple]"
-      },
-      {
-        "id": "PRICKLY_SPONGE_LOCKED",
-        "title": "ล็อก",
-        "description": "ต้องการ [blue]155[/blue] [gold]ทอง[/gold]"
-      },
-      {
         "id": "TENTACLE_QUILL",
         "title": "TENTACLE_QUILL",
         "description": "จ่าย [red]65[/red] [gold]ทอง[/gold] [gold]ร่ายมนตร์[/gold]การ์ด 1 ใบด้วย[purple]Steady[/purple]"
@@ -2110,6 +2100,16 @@
         "id": "TENTACLE_QUILL_LOCKED",
         "title": "ล็อก",
         "description": "ต้องการ [blue]65[/blue] [gold]ทอง[/gold]"
+      },
+      {
+        "id": "PRICKLY_SPONGE",
+        "title": "PRICKLY_SPONGE",
+        "description": "จ่าย [red]155[/red] [gold]ทอง[/gold] [gold]ร่ายมนตร์[/gold]การ์ด [blue]2[/blue] ใบด้วย[purple]Steady[/purple]"
+      },
+      {
+        "id": "PRICKLY_SPONGE_LOCKED",
+        "title": "ล็อก",
+        "description": "ต้องการ [blue]155[/blue] [gold]ทอง[/gold]"
       }
     ],
     "pages": null
@@ -2142,11 +2142,6 @@
         "description": "ต้องการ [blue]200[/blue] [gold]ทอง[/gold]"
       },
       {
-        "id": "LEAVE",
-        "title": "LEAVE",
-        "description": "[red]ลดระดับ[/red]การ์ด 1 ใบแบบสุ่ม"
-      },
-      {
         "id": "MYSTERY_BOX",
         "title": "MYSTERY_BOX",
         "description": "จ่าย [red]300[/red] [gold]ทอง[/gold] ได้รับ[gold]เครื่องราง[/gold] [blue]3[/blue] ชิ้นแบบสุ่ม หลังจาก [blue]5[/blue] การต่อสู้"
@@ -2155,6 +2150,11 @@
         "id": "MYSTERY_BOX_LOCKED",
         "title": "ล็อก",
         "description": "ต้องการ [blue]300[/blue] [gold]ทอง[/gold]"
+      },
+      {
+        "id": "LEAVE",
+        "title": "LEAVE",
+        "description": "[red]ลดระดับ[/red]การ์ด 1 ใบแบบสุ่ม"
       }
     ],
     "pages": null
@@ -2167,14 +2167,14 @@
     "description": null,
     "options": [
       {
-        "id": "BATHE",
-        "title": "BATHE",
-        "description": "กำจัดการ์ด [blue]1[/blue] ใบจาก[gold]กองการ์ด[/gold] เพิ่ม[red]Guilty[/red] [blue]1[/blue] ใบเข้า[gold]กองการ์ด[/gold]"
-      },
-      {
         "id": "BOTTLE",
         "title": "BOTTLE",
         "description": "จัดหา[gold]ขวดยา[/gold] [blue]1[/blue] ขวดแบบสุ่ม"
+      },
+      {
+        "id": "BATHE",
+        "title": "BATHE",
+        "description": "กำจัดการ์ด [blue]1[/blue] ใบจาก[gold]กองการ์ด[/gold] เพิ่ม[red]Guilty[/red] [blue]1[/blue] ใบเข้า[gold]กองการ์ด[/gold]"
       }
     ],
     "pages": null
@@ -2207,9 +2207,9 @@
     "description": null,
     "options": [
       {
-        "id": "BIRD",
-        "title": "นก",
-        "description": "เลือกการ์ดเริ่มต้น [blue]1[/blue] ใบเพื่อ[gold]แปรสภาพ[/gold]ให้เป็น[gold]Peck[/gold]"
+        "id": "SNAKE_LOCKED",
+        "title": "ล็อก",
+        "description": ""
       },
       {
         "id": "SNAKE",
@@ -2217,9 +2217,9 @@
         "description": "[gold]ร่ายมนตร์[/gold]การ์ด [blue]1[/blue] ใบด้วย[purple]มนตร์อสรพิษ[/purple]"
       },
       {
-        "id": "SNAKE_LOCKED",
-        "title": "ล็อก",
-        "description": ""
+        "id": "BIRD",
+        "title": "นก",
+        "description": "เลือกการ์ดเริ่มต้น [blue]1[/blue] ใบเพื่อ[gold]แปรสภาพ[/gold]ให้เป็น[gold]Peck[/gold]"
       },
       {
         "id": "TORUS",
@@ -2237,11 +2237,6 @@
     "description": null,
     "options": [
       {
-        "id": "ARACHNID_ACUPUNCTURE",
-        "title": "ARACHNID_ACUPUNCTURE",
-        "description": "จ่าย [red]250[/red] [gold]ทอง[/gold] กำจัดการ์ด [blue]2[/blue] ใบจาก[gold]กองการ์ด[/gold]"
-      },
-      {
         "id": "BREATHING_TECHNIQUES",
         "title": "BREATHING_TECHNIQUES",
         "description": "จ่าย [red]50[/red] [gold]ทอง[/gold] เพิ่ม[gold]Enlightenment[/gold] [blue]2[/blue] ใบเข้า[gold]กองการ์ด[/gold]"
@@ -2250,6 +2245,11 @@
         "id": "EMOTIONAL_AWARENESS",
         "title": "EMOTIONAL_AWARENESS",
         "description": "จ่าย [red]125[/red] [gold]ทอง[/gold] กำจัดการ์ด [blue]1[/blue] ใบจาก[gold]กองการ์ด[/gold]"
+      },
+      {
+        "id": "ARACHNID_ACUPUNCTURE",
+        "title": "ARACHNID_ACUPUNCTURE",
+        "description": "จ่าย [red]250[/red] [gold]ทอง[/gold] กำจัดการ์ด [blue]2[/blue] ใบจาก[gold]กองการ์ด[/gold]"
       },
       {
         "id": "LOCKED",

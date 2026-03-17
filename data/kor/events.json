@@ -7,14 +7,14 @@
     "description": "당신은 후미진 곳에 있는 방을 발견했습니다.\n\n최면을 거는 듯한 리듬으로 색이 변하는 뜨거운 액체 웅덩이에서는 증기가 피어오르고 있습니다. 천장에는 따개비처럼 매달린 증식물들로부터, 바닥에 닿는 순간 치익 소리를 내며 부글거리는 끈적한 액체가 떨어지고 있습니다. 주변의 공기는 [blue]소금기[/blue]와 함께 [green]명백하게 유기적인[/green] 무언가로 가득 찬 채로, 무겁게 가라앉아 있습니다.\n\n가장 큰 웅덩이의 가장자리로 다가가니, 액체에 파동이 일기 시작합니다. 당신이 들어올 것을 기대하기라도 한 듯 더 맹렬하게 거품이 일어납니다.",
     "options": [
       {
-        "id": "ABSTAIN",
-        "title": "자제한다",
-        "description": "체력을 [green]10[/green] 회복합니다."
-      },
-      {
         "id": "IMMERSE",
         "title": "몸을 담근다",
         "description": "최대 체력을 [green]2[/green] 얻습니다. 피해를 [red]3[/red] 받습니다."
+      },
+      {
+        "id": "ABSTAIN",
+        "title": "자제한다",
+        "description": "체력을 [green]10[/green] 회복합니다."
       }
     ],
     "pages": [
@@ -27,14 +27,14 @@
         "description": null,
         "options": [
           {
-            "id": "EXIT_BATHS",
-            "title": "탕에서 나간다",
-            "description": ""
-          },
-          {
             "id": "LINGER",
             "title": "좀 더 머문다",
             "description": "최대 체력을 [green]2[/green] 얻습니다. 피해를 [red]3[/red] 받습니다."
+          },
+          {
+            "id": "EXIT_BATHS",
+            "title": "탕에서 나간다",
+            "description": ""
           }
         ]
       },
@@ -55,14 +55,14 @@
         "description": "당신은 후미진 곳에 있는 방을 발견했습니다.\n\n최면을 거는 듯한 리듬으로 색이 변하는 뜨거운 액체 웅덩이에서는 증기가 피어오르고 있습니다. 천장에는 따개비처럼 매달린 증식물들로부터, 바닥에 닿는 순간 치익 소리를 내며 부글거리는 끈적한 액체가 떨어지고 있습니다. 주변의 공기는 [blue]소금기[/blue]와 함께 [green]명백하게 유기적인[/green] 무언가로 가득 찬 채로, 무겁게 가라앉아 있습니다.\n\n가장 큰 웅덩이의 가장자리로 다가가니, 액체에 파동이 일기 시작합니다. 당신이 들어올 것을 기대하기라도 한 듯 더 맹렬하게 거품이 일어납니다.",
         "options": [
           {
-            "id": "ABSTAIN",
-            "title": "자제한다",
-            "description": "체력을 [green]10[/green] 회복합니다."
-          },
-          {
             "id": "IMMERSE",
             "title": "몸을 담근다",
             "description": "최대 체력을 [green]2[/green] 얻습니다. 피해를 [red]3[/red] 받습니다."
+          },
+          {
+            "id": "ABSTAIN",
+            "title": "자제한다",
+            "description": "체력을 [green]10[/green] 회복합니다."
           }
         ]
       },
@@ -257,14 +257,14 @@
     "description": "[jitter]*푹*[/jitter]\n\n당신의 머리 위쪽에 날카로운 통증이 스치고, 한 생각이 당신의 마음을 파고듭니다.\n\n[purple][sine]“지식을 공유하겠나???”[/sine][/purple]\n\n당신은 어떻게 해야 할지 확신이 서지 않습니다...",
     "options": [
       {
-        "id": "RIP",
-        "title": "거머리를 떼어낸다",
-        "description": "체력을 [red]5[/red] 잃습니다. 무색 카드 보상을 1번 얻습니다."
-      },
-      {
         "id": "SHARE_KNOWLEDGE",
         "title": "지식을 공유한다",
         "description": "무작위 카드 [blue]5[/blue]장 중 [blue]1[/blue]장을 선택해 [gold]덱[/gold]에 추가합니다."
+      },
+      {
+        "id": "RIP",
+        "title": "거머리를 떼어낸다",
+        "description": "체력을 [red]5[/red] 잃습니다. 무색 카드 보상을 1번 얻습니다."
       }
     ],
     "pages": [
@@ -273,14 +273,14 @@
         "description": "[jitter]*푹*[/jitter]\n\n당신의 머리 위쪽에 날카로운 통증이 스치고, 한 생각이 당신의 마음을 파고듭니다.\n\n[purple][sine]“지식을 공유하겠나???”[/sine][/purple]\n\n당신은 어떻게 해야 할지 확신이 서지 않습니다...",
         "options": [
           {
-            "id": "RIP",
-            "title": "거머리를 떼어낸다",
-            "description": "체력을 [red]5[/red] 잃습니다. 무색 카드 보상을 1번 얻습니다."
-          },
-          {
             "id": "SHARE_KNOWLEDGE",
             "title": "지식을 공유한다",
             "description": "무작위 카드 [blue]5[/blue]장 중 [blue]1[/blue]장을 선택해 [gold]덱[/gold]에 추가합니다."
+          },
+          {
+            "id": "RIP",
+            "title": "거머리를 떼어낸다",
+            "description": "체력을 [red]5[/red] 잃습니다. 무색 카드 보상을 1번 얻습니다."
           }
         ]
       },
@@ -558,14 +558,14 @@
     "description": "[sine][blue]“당신이 올 것을 알고 있었습니다...!”[/blue][/sine]\n\n[purple]신비로운 오두막[/purple]에 들어서자 [jitter]탁한[/jitter] 목소리의 존재가 당신을 부릅니다.\n\n[sine][blue]“당신의 운명이 당신을 이곳으로 이끌었습니다. 당신의 미래와 운명을 밝혀내야만 우리 모두가 구원받을 수 있습니다!!”[/blue][/sine]\n“좋아요, 여기가 [gold]수정구 점술[/gold]에서 고를 수 있는 항목들입니다. 여기 면책 서류에도 서명해주시고.” 점술가는 펜과 양피지를 꺼내며 말합니다.",
     "options": [
       {
-        "id": "PAYMENT_PLAN",
-        "title": "분할 납부",
-        "description": "[red]빚[/red]을 얻습니다. [blue]6[/blue]번 [purple]점을 칩니다[/purple]."
-      },
-      {
         "id": "UNCOVER_FUTURE",
         "title": "미래를 알아본다",
         "description": "[gold]골드[/gold]를 [red]50[/red] 지불합니다. [blue]3[/blue]번 [purple]점을 칩니다[/purple]."
+      },
+      {
+        "id": "PAYMENT_PLAN",
+        "title": "분할 납부",
+        "description": "[red]빚[/red]을 얻습니다. [blue]6[/blue]번 [purple]점을 칩니다[/purple]."
       }
     ],
     "pages": [
@@ -578,14 +578,14 @@
         "description": "[sine][blue]“당신이 올 것을 알고 있었습니다...!”[/blue][/sine]\n\n[purple]신비로운 오두막[/purple]에 들어서자 [jitter]탁한[/jitter] 목소리의 존재가 당신을 부릅니다.\n\n[sine][blue]“당신의 운명이 당신을 이곳으로 이끌었습니다. 당신의 미래와 운명을 밝혀내야만 우리 모두가 구원받을 수 있습니다!!”[/blue][/sine]\n“좋아요, 여기가 [gold]수정구 점술[/gold]에서 고를 수 있는 항목들입니다. 여기 면책 서류에도 서명해주시고.” 점술가는 펜과 양피지를 꺼내며 말합니다.",
         "options": [
           {
-            "id": "PAYMENT_PLAN",
-            "title": "분할 납부",
-            "description": "[red]빚[/red]을 얻습니다. [blue]6[/blue]번 [purple]점을 칩니다[/purple]."
-          },
-          {
             "id": "UNCOVER_FUTURE",
             "title": "미래를 알아본다",
             "description": "[gold]골드[/gold]를 [red]50[/red] 지불합니다. [blue]3[/blue]번 [purple]점을 칩니다[/purple]."
+          },
+          {
+            "id": "PAYMENT_PLAN",
+            "title": "분할 납부",
+            "description": "[red]빚[/red]을 얻습니다. [blue]6[/blue]번 [purple]점을 칩니다[/purple]."
           }
         ]
       },
@@ -813,14 +813,14 @@
     "description": "한참 동안 길을 잘못 든 채로 헤매다 보니, 당신은 [green]양치류[/green]와 [green]관목[/green], [green]덩굴[/green]이 뒤엉킨 울창한 정글에 들어왔다는 것을 깨닫습니다. 특히 [green]덩굴[/green]이 많네요. 피로가 몰려오고, 불길한 생각 하나가 머리를 스칩니다:\n\n[sine][purple]“너는 길을 잃었고, 무방비하며, 피할 수 없는 죽음이 가까워지고 있다.”[/purple][/sine]\n\n무엇을 할까요?",
     "options": [
       {
-        "id": "REST",
-        "title": "휴식한다",
-        "description": "체력을 [green]30% Max[/green] 회복합니다. [red]적[/red]들과 싸웁니다."
-      },
-      {
         "id": "TRUDGE_ON",
         "title": "묵묵히 나아간다",
         "description": "[gold]덱[/gold]에서 카드를 1장 제거합니다. 체력을 [red]11[/red] 잃습니다."
+      },
+      {
+        "id": "REST",
+        "title": "휴식한다",
+        "description": "체력을 [green]30% Max[/green] 회복합니다. [red]적[/red]들과 싸웁니다."
       }
     ],
     "pages": [
@@ -829,14 +829,14 @@
         "description": "한참 동안 길을 잘못 든 채로 헤매다 보니, 당신은 [green]양치류[/green]와 [green]관목[/green], [green]덩굴[/green]이 뒤엉킨 울창한 정글에 들어왔다는 것을 깨닫습니다. 특히 [green]덩굴[/green]이 많네요. 피로가 몰려오고, 불길한 생각 하나가 머리를 스칩니다:\n\n[sine][purple]“너는 길을 잃었고, 무방비하며, 피할 수 없는 죽음이 가까워지고 있다.”[/purple][/sine]\n\n무엇을 할까요?",
         "options": [
           {
-            "id": "REST",
-            "title": "휴식한다",
-            "description": "체력을 [green]30% Max[/green] 회복합니다. [red]적[/red]들과 싸웁니다."
-          },
-          {
             "id": "TRUDGE_ON",
             "title": "묵묵히 나아간다",
             "description": "[gold]덱[/gold]에서 카드를 1장 제거합니다. 체력을 [red]11[/red] 잃습니다."
+          },
+          {
+            "id": "REST",
+            "title": "휴식한다",
+            "description": "체력을 [green]30% Max[/green] 회복합니다. [red]적[/red]들과 싸웁니다."
           }
         ]
       },
@@ -865,11 +865,6 @@
     "description": "당신은 숨겨진 방에 들어섭니다...\n\n방 안은 다양한 인형들로 가득합니다. 모든 인형들은 저마다 [green]기쁨[/green]부터 [purple]슬픔[/purple]까지 다양한 표정을 띄고 있으며, 수세기의 시간과 당신이 알지 못하는 영역까지 아우르는 복장을 입고 있습니다.\n\n인형들이 [sine][blue]입을 모아 속삭이는 소리[/blue][/sine]는 점점 커지더니, 이윽고 다른 인형보다 [jitter][red]더 크게 소리치려 하며[/red][/jitter] 당신을 부르기 시작합니다...\n\n인형 중 하나를 선택하고 즉시 자리를 떠야 합니다.",
     "options": [
       {
-        "id": "EXAMINE",
-        "title": "깊게 고민한 뒤 최고의 선택을 한다",
-        "description": "체력을 [red]15[/red] 잃습니다. [gold]인형 유물[/gold] [blue]3[/blue]개 중 [blue]1[/blue]개를 선택합니다."
-      },
-      {
         "id": "RANDOM",
         "title": "아무거나 고른다",
         "description": "무작위 [gold]인형 유물[/gold]을 1개 얻습니다."
@@ -878,6 +873,11 @@
         "id": "TAKE_SOME_TIME",
         "title": "잠시 고민한다",
         "description": "체력을 [red]5[/red] 잃습니다. [gold]인형 유물[/gold] [blue]2[/blue]개 중 [blue]1[/blue]개를 선택합니다."
+      },
+      {
+        "id": "EXAMINE",
+        "title": "깊게 고민한 뒤 최고의 선택을 한다",
+        "description": "체력을 [red]15[/red] 잃습니다. [gold]인형 유물[/gold] [blue]3[/blue]개 중 [blue]1[/blue]개를 선택합니다."
       }
     ],
     "pages": [
@@ -898,11 +898,6 @@
         "description": "당신은 숨겨진 방에 들어섭니다...\n\n방 안은 다양한 인형들로 가득합니다. 모든 인형들은 저마다 [green]기쁨[/green]부터 [purple]슬픔[/purple]까지 다양한 표정을 띄고 있으며, 수세기의 시간과 당신이 알지 못하는 영역까지 아우르는 복장을 입고 있습니다.\n\n인형들이 [sine][blue]입을 모아 속삭이는 소리[/blue][/sine]는 점점 커지더니, 이윽고 다른 인형보다 [jitter][red]더 크게 소리치려 하며[/red][/jitter] 당신을 부르기 시작합니다...\n\n인형 중 하나를 선택하고 즉시 자리를 떠야 합니다.",
         "options": [
           {
-            "id": "EXAMINE",
-            "title": "깊게 고민한 뒤 최고의 선택을 한다",
-            "description": "체력을 [red]15[/red] 잃습니다. [gold]인형 유물[/gold] [blue]3[/blue]개 중 [blue]1[/blue]개를 선택합니다."
-          },
-          {
             "id": "RANDOM",
             "title": "아무거나 고른다",
             "description": "무작위 [gold]인형 유물[/gold]을 1개 얻습니다."
@@ -911,6 +906,11 @@
             "id": "TAKE_SOME_TIME",
             "title": "잠시 고민한다",
             "description": "체력을 [red]5[/red] 잃습니다. [gold]인형 유물[/gold] [blue]2[/blue]개 중 [blue]1[/blue]개를 선택합니다."
+          },
+          {
+            "id": "EXAMINE",
+            "title": "깊게 고민한 뒤 최고의 선택을 한다",
+            "description": "체력을 [red]15[/red] 잃습니다. [gold]인형 유물[/gold] [blue]3[/blue]개 중 [blue]1[/blue]개를 선택합니다."
           }
         ]
       },
@@ -943,14 +943,14 @@
     "description": "방금 전까지만 해도 존재하지 않았던 출입구가 어느새 생겨나 있습니다...\n\n안으로 들어서자, 희미하게 빛나는 두 개의 문과 [gold]잘 차려입은 문지기[/gold]가 보입니다.\n“드디어, 방문객이시군요! 제발 부디! 문을 선택해주세요, 아무거나요!”\n\n[blue]여긴 아직 첨탑 안인 걸까요? 어떻게 이렇게 깨끗할 수가 있죠?[/blue]",
     "options": [
       {
-        "id": "DARK",
-        "title": "어둠의 문",
-        "description": "[gold]덱[/gold]에서 카드를 [blue]1[/blue]장 제거합니다."
-      },
-      {
         "id": "LIGHT",
         "title": "빛의 문",
         "description": "무작위 카드를 [blue]2[/blue]장 [gold]강화[/gold]합니다."
+      },
+      {
+        "id": "DARK",
+        "title": "어둠의 문",
+        "description": "[gold]덱[/gold]에서 카드를 [blue]1[/blue]장 제거합니다."
       }
     ],
     "pages": [
@@ -963,14 +963,14 @@
         "description": "방금 전까지만 해도 존재하지 않았던 출입구가 어느새 생겨나 있습니다...\n\n안으로 들어서자, 희미하게 빛나는 두 개의 문과 [gold]잘 차려입은 문지기[/gold]가 보입니다.\n“드디어, 방문객이시군요! 제발 부디! 문을 선택해주세요, 아무거나요!”\n\n[blue]여긴 아직 첨탑 안인 걸까요? 어떻게 이렇게 깨끗할 수가 있죠?[/blue]",
         "options": [
           {
-            "id": "DARK",
-            "title": "어둠의 문",
-            "description": "[gold]덱[/gold]에서 카드를 [blue]1[/blue]장 제거합니다."
-          },
-          {
             "id": "LIGHT",
             "title": "빛의 문",
             "description": "무작위 카드를 [blue]2[/blue]장 [gold]강화[/gold]합니다."
+          },
+          {
+            "id": "DARK",
+            "title": "어둠의 문",
+            "description": "[gold]덱[/gold]에서 카드를 [blue]1[/blue]장 제거합니다."
           }
         ]
       },
@@ -1044,6 +1044,11 @@
         "description": null,
         "options": [
           {
+            "id": "LOCKED",
+            "title": "빈털터리",
+            "description": "더 먹을 수는 있지만, [gold]골드[/gold]가 없습니다."
+          },
+          {
             "id": "CAVIAR",
             "title": "캐비어를 집는다",
             "description": "[gold]골드[/gold]를 [red]35[/red] 지불합니다. 최대 체력을 [green]4[/green] 얻습니다. 만찬을 이어갑니다!"
@@ -1067,11 +1072,6 @@
             "id": "JELLY_LIVER",
             "title": "젤리 간을 집는다",
             "description": "[gold]골드[/gold]를 [red]35[/red] 지불합니다. 카드를 1장 [gold]변화[/gold]시킵니다. 만찬을 이어갑니다!"
-          },
-          {
-            "id": "LOCKED",
-            "title": "빈털터리",
-            "description": "더 먹을 수는 있지만, [gold]골드[/gold]가 없습니다."
           },
           {
             "id": "SEAPUNK_SALAD",
@@ -1139,14 +1139,14 @@
     "description": "거대한 들판이 갑작스럽게 눈앞에 펼쳐지고, 당신은 [jitter]사람들의 윤곽이 선명하게 새겨진 흔적들[/jitter]을 발견하고 걸음을 멈춥니다.\n\n새겨진 윤곽 중 하나는 당신의 것과 일치합니다.\n\n[sine][orange]완벽하네요...[/orange][/sine]",
     "options": [
       {
-        "id": "ENTER_YOUR_HOLE",
-        "title": "내 구멍에 들어간다",
-        "description": "카드 1장에 [purple]안성맞춤[/purple]을 [gold]인챈트[/gold]합니다."
-      },
-      {
         "id": "RESIST",
         "title": "저항한다",
         "description": "[gold]덱[/gold]에서 카드를 [blue]2[/blue]장 제거합니다. [gold]덱[/gold]에 [red]규칙 준수[/red]를 추가합니다."
+      },
+      {
+        "id": "ENTER_YOUR_HOLE",
+        "title": "내 구멍에 들어간다",
+        "description": "카드 1장에 [purple]안성맞춤[/purple]을 [gold]인챈트[/gold]합니다."
       }
     ],
     "pages": [
@@ -1159,14 +1159,14 @@
         "description": "거대한 들판이 갑작스럽게 눈앞에 펼쳐지고, 당신은 [jitter]사람들의 윤곽이 선명하게 새겨진 흔적들[/jitter]을 발견하고 걸음을 멈춥니다.\n\n새겨진 윤곽 중 하나는 당신의 것과 일치합니다.\n\n[sine][orange]완벽하네요...[/orange][/sine]",
         "options": [
           {
-            "id": "ENTER_YOUR_HOLE",
-            "title": "내 구멍에 들어간다",
-            "description": "카드 1장에 [purple]안성맞춤[/purple]을 [gold]인챈트[/gold]합니다."
-          },
-          {
             "id": "RESIST",
             "title": "저항한다",
             "description": "[gold]덱[/gold]에서 카드를 [blue]2[/blue]장 제거합니다. [gold]덱[/gold]에 [red]규칙 준수[/red]를 추가합니다."
+          },
+          {
+            "id": "ENTER_YOUR_HOLE",
+            "title": "내 구멍에 들어간다",
+            "description": "카드 1장에 [purple]안성맞춤[/purple]을 [gold]인챈트[/gold]합니다."
           }
         ]
       },
@@ -1184,9 +1184,9 @@
     "description": "[jitter][aqua]푸른 불꽃이 거세게 일렁이는[/aqua][/jitter] 무덤 하나가 있습니다...\n\n긍지 높은 한 전사는 전투 중 사망했지만, 영혼은 아직 안식을 얻지 못했습니다. 그 영혼은 계속 싸우고 싶어하고, 당신과 함께 여행을 떠나고 싶다 [sine]애원하는[/sine] 듯합니다.\n\n하지만 어쩌면, 이제는 그가 [red]진실[/red]을 마주해야 할 때일지도 모릅니다.",
     "options": [
       {
-        "id": "ACCEPT",
-        "title": "잊힌 영혼을 받아들인다",
-        "description": "[gold]잊힌 영혼[/gold]을 얻습니다."
+        "id": "CONFRONT_LOCKED",
+        "title": "잠김",
+        "description": "[purple]인챈트[/purple]할 수 있는 [gold]소멸[/gold] 카드를 보유하고 있지 않습니다."
       },
       {
         "id": "CONFRONT",
@@ -1194,9 +1194,9 @@
         "description": "[gold]덱[/gold]에 [red]부패[/red]를 추가합니다. [gold]소멸[/gold] 카드에 [purple]영혼의 힘[/purple]을 [gold]인챈트[/gold]합니다."
       },
       {
-        "id": "CONFRONT_LOCKED",
-        "title": "잠김",
-        "description": "[purple]인챈트[/purple]할 수 있는 [gold]소멸[/gold] 카드를 보유하고 있지 않습니다."
+        "id": "ACCEPT",
+        "title": "잊힌 영혼을 받아들인다",
+        "description": "[gold]잊힌 영혼[/gold]을 얻습니다."
       }
     ],
     "pages": [
@@ -1213,9 +1213,9 @@
         "description": "[jitter][aqua]푸른 불꽃이 거세게 일렁이는[/aqua][/jitter] 무덤 하나가 있습니다...\n\n긍지 높은 한 전사는 전투 중 사망했지만, 영혼은 아직 안식을 얻지 못했습니다. 그 영혼은 계속 싸우고 싶어하고, 당신과 함께 여행을 떠나고 싶다 [sine]애원하는[/sine] 듯합니다.\n\n하지만 어쩌면, 이제는 그가 [red]진실[/red]을 마주해야 할 때일지도 모릅니다.",
         "options": [
           {
-            "id": "ACCEPT",
-            "title": "잊힌 영혼을 받아들인다",
-            "description": "[gold]잊힌 영혼[/gold]을 얻습니다."
+            "id": "CONFRONT_LOCKED",
+            "title": "잠김",
+            "description": "[purple]인챈트[/purple]할 수 있는 [gold]소멸[/gold] 카드를 보유하고 있지 않습니다."
           },
           {
             "id": "CONFRONT",
@@ -1223,9 +1223,9 @@
             "description": "[gold]덱[/gold]에 [red]부패[/red]를 추가합니다. [gold]소멸[/gold] 카드에 [purple]영혼의 힘[/purple]을 [gold]인챈트[/gold]합니다."
           },
           {
-            "id": "CONFRONT_LOCKED",
-            "title": "잠김",
-            "description": "[purple]인챈트[/purple]할 수 있는 [gold]소멸[/gold] 카드를 보유하고 있지 않습니다."
+            "id": "ACCEPT",
+            "title": "잊힌 영혼을 받아들인다",
+            "description": "[gold]잊힌 영혼[/gold]을 얻습니다."
           }
         ]
       }
@@ -1333,14 +1333,14 @@
     "description": "당신은 공터에서 [purple]거대한 미로[/purple]를 내려다보며 손짓하고 있는 [green]오합지졸 모험가 무리[/green]를 만났습니다.\n\n모험가들은 당신에게, 이 미로의 전리품을 차지하기 위한 [b]장대한 모험[/b]에 함께 협력할 것을 제안합니다. 경험 많은 모험가인 당신은, 이 미로가 [red][jitter]치명적인 함정[/jitter][/red]과 [orange][sine]수호자[/sine][/orange]들로 가득 차 있음을 곧바로 깨닫습니다.\n\n함께 나아가면 더 수월하겠지만, 얻는 전리품은 나눠야 할 것입니다.",
     "options": [
       {
-        "id": "JOIN_FORCES",
-        "title": "협력한다",
-        "description": "[gold]골드[/gold]를 [blue]50[/blue] 얻습니다."
-      },
-      {
         "id": "SOLO_QUEST",
         "title": "홀로 탐색한다",
         "description": "[gold]골드[/gold]를 [blue]150[/blue] 얻습니다. 체력을 [red]18[/red] 잃습니다."
+      },
+      {
+        "id": "JOIN_FORCES",
+        "title": "협력한다",
+        "description": "[gold]골드[/gold]를 [blue]50[/blue] 얻습니다."
       }
     ],
     "pages": [
@@ -1349,14 +1349,14 @@
         "description": "당신은 공터에서 [purple]거대한 미로[/purple]를 내려다보며 손짓하고 있는 [green]오합지졸 모험가 무리[/green]를 만났습니다.\n\n모험가들은 당신에게, 이 미로의 전리품을 차지하기 위한 [b]장대한 모험[/b]에 함께 협력할 것을 제안합니다. 경험 많은 모험가인 당신은, 이 미로가 [red][jitter]치명적인 함정[/jitter][/red]과 [orange][sine]수호자[/sine][/orange]들로 가득 차 있음을 곧바로 깨닫습니다.\n\n함께 나아가면 더 수월하겠지만, 얻는 전리품은 나눠야 할 것입니다.",
         "options": [
           {
-            "id": "JOIN_FORCES",
-            "title": "협력한다",
-            "description": "[gold]골드[/gold]를 [blue]50[/blue] 얻습니다."
-          },
-          {
             "id": "SOLO_QUEST",
             "title": "홀로 탐색한다",
             "description": "[gold]골드[/gold]를 [blue]150[/blue] 얻습니다. 체력을 [red]18[/red] 잃습니다."
+          },
+          {
+            "id": "JOIN_FORCES",
+            "title": "협력한다",
+            "description": "[gold]골드[/gold]를 [blue]50[/blue] 얻습니다."
           }
         ]
       },
@@ -1383,14 +1383,14 @@
         "description": "[gold]덱[/gold]에 [red]부패[/red]를 추가합니다. [gold]길 잃은 위습[/gold]을 얻습니다."
       },
       {
-        "id": "CLAIM_LOCKED",
-        "title": "잠김",
-        "description": "최대 체력이 너무 낮습니다."
-      },
-      {
         "id": "SEARCH",
         "title": "주변을 탐색한다",
         "description": "[gold]골드[/gold]를 [blue]60[/blue] 얻습니다."
+      },
+      {
+        "id": "CLAIM_LOCKED",
+        "title": "잠김",
+        "description": "최대 체력이 너무 낮습니다."
       }
     ],
     "pages": [
@@ -1408,14 +1408,14 @@
             "description": "[gold]덱[/gold]에 [red]부패[/red]를 추가합니다. [gold]길 잃은 위습[/gold]을 얻습니다."
           },
           {
-            "id": "CLAIM_LOCKED",
-            "title": "잠김",
-            "description": "최대 체력이 너무 낮습니다."
-          },
-          {
             "id": "SEARCH",
             "title": "주변을 탐색한다",
             "description": "[gold]골드[/gold]를 [blue]60[/blue] 얻습니다."
+          },
+          {
+            "id": "CLAIM_LOCKED",
+            "title": "잠김",
+            "description": "최대 체력이 너무 낮습니다."
           }
         ]
       },
@@ -1433,6 +1433,11 @@
     "description": "당신은 우연히 부자연스러운 푸른 빛에 휩싸인 공터를 발견합니다. 높게 치솟은 버섯들은 마치 살아있는 듯이 빛나고 맥동하며, 볼록해진 갓은 반짝거리고 있습니다. 가까이 다가가자 버섯들은 [sine][purple]섬뜩하면서도 감미로운 선율[/purple][/sine]을 노래하기 시작하고, 그 울림은 당신의 가슴 속에 깊게 울려 퍼집니다.\n\n당신은 가장 거대한 버섯의 살 속에 박혀 반짝이는 무언가를 발견했고, 그것은 버섯의 노랫소리에 박자를 맞추듯이 [sine]맥동하고[/sine] 있습니다.",
     "options": [
       {
+        "id": "REACH_INTO_THE_FLESH",
+        "title": "버섯의 살에 다가간다",
+        "description": "[gold]덱[/gold]에서 카드를 [blue]2[/blue]장 제거합니다. [gold]덱[/gold]에 [red]포자 잠식[/red]을 추가합니다."
+      },
+      {
         "id": "OFFER_TRIBUTE",
         "title": "공물을 바친다",
         "description": "[gold]골드[/gold]를 [red]149[/red] 지불합니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
@@ -1441,11 +1446,6 @@
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "잠김",
         "description": "[gold]골드[/gold]가 [blue]149[/blue] 필요합니다."
-      },
-      {
-        "id": "REACH_INTO_THE_FLESH",
-        "title": "버섯의 살에 다가간다",
-        "description": "[gold]덱[/gold]에서 카드를 [blue]2[/blue]장 제거합니다. [gold]덱[/gold]에 [red]포자 잠식[/red]을 추가합니다."
       }
     ],
     "pages": [
@@ -1453,6 +1453,11 @@
         "id": "INITIAL",
         "description": "당신은 우연히 부자연스러운 푸른 빛에 휩싸인 공터를 발견합니다. 높게 치솟은 버섯들은 마치 살아있는 듯이 빛나고 맥동하며, 볼록해진 갓은 반짝거리고 있습니다. 가까이 다가가자 버섯들은 [sine][purple]섬뜩하면서도 감미로운 선율[/purple][/sine]을 노래하기 시작하고, 그 울림은 당신의 가슴 속에 깊게 울려 퍼집니다.\n\n당신은 가장 거대한 버섯의 살 속에 박혀 반짝이는 무언가를 발견했고, 그것은 버섯의 노랫소리에 박자를 맞추듯이 [sine]맥동하고[/sine] 있습니다.",
         "options": [
+          {
+            "id": "REACH_INTO_THE_FLESH",
+            "title": "버섯의 살에 다가간다",
+            "description": "[gold]덱[/gold]에서 카드를 [blue]2[/blue]장 제거합니다. [gold]덱[/gold]에 [red]포자 잠식[/red]을 추가합니다."
+          },
           {
             "id": "OFFER_TRIBUTE",
             "title": "공물을 바친다",
@@ -1462,11 +1467,6 @@
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "잠김",
             "description": "[gold]골드[/gold]가 [blue]149[/blue] 필요합니다."
-          },
-          {
-            "id": "REACH_INTO_THE_FLESH",
-            "title": "버섯의 살에 다가간다",
-            "description": "[gold]덱[/gold]에서 카드를 [blue]2[/blue]장 제거합니다. [gold]덱[/gold]에 [red]포자 잠식[/red]을 추가합니다."
           }
         ]
       },
@@ -2314,14 +2314,14 @@
     "description": "[gold]권투형 구조체[/gold] 두 마리가 서로 격렬하게 치고받고 있는 가운데, 둘 사이에 보물이 놓여 있는 모습이 보입니다...\n\n슬쩍 낚아채 볼까요?",
     "options": [
       {
-        "id": "I_CAN_TAKE_THEM",
-        "title": "저 정도는 가뿐하지",
-        "description": "싸우고 [gold]더 좋은 보상[/gold]을 얻습니다."
-      },
-      {
         "id": "NAB",
         "title": "낚아챈다",
         "description": "[gold]덱[/gold]에 [red]상처[/red]를 추가합니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
+      },
+      {
+        "id": "I_CAN_TAKE_THEM",
+        "title": "저 정도는 가뿐하지",
+        "description": "싸우고 [gold]더 좋은 보상[/gold]을 얻습니다."
       }
     ],
     "pages": [
@@ -2330,14 +2330,14 @@
         "description": "[gold]권투형 구조체[/gold] 두 마리가 서로 격렬하게 치고받고 있는 가운데, 둘 사이에 보물이 놓여 있는 모습이 보입니다...\n\n슬쩍 낚아채 볼까요?",
         "options": [
           {
-            "id": "I_CAN_TAKE_THEM",
-            "title": "저 정도는 가뿐하지",
-            "description": "싸우고 [gold]더 좋은 보상[/gold]을 얻습니다."
-          },
-          {
             "id": "NAB",
             "title": "낚아챈다",
             "description": "[gold]덱[/gold]에 [red]상처[/red]를 추가합니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
+          },
+          {
+            "id": "I_CAN_TAKE_THEM",
+            "title": "저 정도는 가뿐하지",
+            "description": "싸우고 [gold]더 좋은 보상[/gold]을 얻습니다."
           }
         ]
       },
@@ -2366,14 +2366,14 @@
     "description": "당신이 [purple]지금까지 본 사람 중 가장 나이가 많은 사람[/purple]이 당신에게 다가옵니다.\n[sine]“또 만났네요... 저잖아요, 랜위드!”[/sine]\n\n당신은 이 사람을 모릅니다.",
     "options": [
       {
-        "id": "GOLD",
-        "title": "골드를 100 준다",
-        "description": "무작위 [gold]유물[/gold]을 1개 얻습니다."
-      },
-      {
         "id": "POTION",
         "title": "Potion을(를) 준다",
         "description": "무작위 [gold]유물[/gold]을 1개 얻습니다."
+      },
+      {
+        "id": "RELIC",
+        "title": "Relic을(를) 준다",
+        "description": "무작위 [gold]유물[/gold]을 [blue]2[/blue]개 얻습니다."
       },
       {
         "id": "POTION_LOCKED",
@@ -2381,9 +2381,9 @@
         "description": "줄 수 있는 포션이 없습니다."
       },
       {
-        "id": "RELIC",
-        "title": "Relic을(를) 준다",
-        "description": "무작위 [gold]유물[/gold]을 [blue]2[/blue]개 얻습니다."
+        "id": "GOLD",
+        "title": "골드를 100 준다",
+        "description": "무작위 [gold]유물[/gold]을 1개 얻습니다."
       },
       {
         "id": "RELIC_LOCKED",
@@ -2401,14 +2401,14 @@
         "description": "당신이 [purple]지금까지 본 사람 중 가장 나이가 많은 사람[/purple]이 당신에게 다가옵니다.\n[sine]“또 만났네요... 저잖아요, 랜위드!”[/sine]\n\n당신은 이 사람을 모릅니다.",
         "options": [
           {
-            "id": "GOLD",
-            "title": "골드를 100 준다",
-            "description": "무작위 [gold]유물[/gold]을 1개 얻습니다."
-          },
-          {
             "id": "POTION",
             "title": "Potion을(를) 준다",
             "description": "무작위 [gold]유물[/gold]을 1개 얻습니다."
+          },
+          {
+            "id": "RELIC",
+            "title": "Relic을(를) 준다",
+            "description": "무작위 [gold]유물[/gold]을 [blue]2[/blue]개 얻습니다."
           },
           {
             "id": "POTION_LOCKED",
@@ -2416,9 +2416,9 @@
             "description": "줄 수 있는 포션이 없습니다."
           },
           {
-            "id": "RELIC",
-            "title": "Relic을(를) 준다",
-            "description": "무작위 [gold]유물[/gold]을 [blue]2[/blue]개 얻습니다."
+            "id": "GOLD",
+            "title": "골드를 100 준다",
+            "description": "무작위 [gold]유물[/gold]을 1개 얻습니다."
           },
           {
             "id": "RELIC_LOCKED",
@@ -2445,14 +2445,14 @@
     "description": "이건 뭘까요? 이곳은 뭔가 이상한 느낌이 듭니다...\n[sine]...다니듭 이낌느 한상이 가뭔 은곳이 ?요까뭘 건이[/sine]",
     "options": [
       {
-        "id": "SHATTER",
-        "title": "부순다",
-        "description": "[gold]덱[/gold]을 복제합니다. [purple]불운[/purple]을 얻습니다."
-      },
-      {
         "id": "TOUCH_A_MIRROR",
         "title": "거울을 만진다",
         "description": "무작위 카드를 [blue]2[/blue]장 [red]열화[/red]시킵니다. 무작위 카드를 [blue]4[/blue]장 [green]강화[/green]합니다."
+      },
+      {
+        "id": "SHATTER",
+        "title": "부순다",
+        "description": "[gold]덱[/gold]을 복제합니다. [purple]불운[/purple]을 얻습니다."
       }
     ],
     "pages": [
@@ -2461,14 +2461,14 @@
         "description": "이건 뭘까요? 이곳은 뭔가 이상한 느낌이 듭니다...\n[sine]...다니듭 이낌느 한상이 가뭔 은곳이 ?요까뭘 건이[/sine]",
         "options": [
           {
-            "id": "SHATTER",
-            "title": "부순다",
-            "description": "[gold]덱[/gold]을 복제합니다. [purple]불운[/purple]을 얻습니다."
-          },
-          {
             "id": "TOUCH_A_MIRROR",
             "title": "거울을 만진다",
             "description": "무작위 카드를 [blue]2[/blue]장 [red]열화[/red]시킵니다. 무작위 카드를 [blue]4[/blue]장 [green]강화[/green]합니다."
+          },
+          {
+            "id": "SHATTER",
+            "title": "부순다",
+            "description": "[gold]덱[/gold]을 복제합니다. [purple]불운[/purple]을 얻습니다."
           }
         ]
       },
@@ -2490,8 +2490,8 @@
     "description": "당신이 모퉁이를 도는 순간, 바로 앞에 수상한 인물이 서 있습니다. 그는 당신을 향해 돌아서며 말합니다.\n\n“어서 오세요! 뭔가 거래하실 건가요?”\n그는 질문과 동시에 망토를 펼치며, 당신에게 대량의 [sine][purple]수상한 물건들[/purple][/sine]을 선보입니다.",
     "options": [
       {
-        "id": "BOTTOM",
-        "title": "아래의 것을 가져간다",
+        "id": "TOP",
+        "title": "위의 것을 가져간다",
         "description": "[gold]one of your Relics[/gold]을(를) [gold]a random Relic[/gold](와)과 거래합니다."
       },
       {
@@ -2500,8 +2500,8 @@
         "description": "[gold]one of your Relics[/gold]을(를) [gold]a random Relic[/gold](와)과 거래합니다."
       },
       {
-        "id": "TOP",
-        "title": "위의 것을 가져간다",
+        "id": "BOTTOM",
+        "title": "아래의 것을 가져간다",
         "description": "[gold]one of your Relics[/gold]을(를) [gold]a random Relic[/gold](와)과 거래합니다."
       }
     ],
@@ -2515,8 +2515,8 @@
         "description": "당신이 모퉁이를 도는 순간, 바로 앞에 수상한 인물이 서 있습니다. 그는 당신을 향해 돌아서며 말합니다.\n\n“어서 오세요! 뭔가 거래하실 건가요?”\n그는 질문과 동시에 망토를 펼치며, 당신에게 대량의 [sine][purple]수상한 물건들[/purple][/sine]을 선보입니다.",
         "options": [
           {
-            "id": "BOTTOM",
-            "title": "아래의 것을 가져간다",
+            "id": "TOP",
+            "title": "위의 것을 가져간다",
             "description": "[gold]one of your Relics[/gold]을(를) [gold]a random Relic[/gold](와)과 거래합니다."
           },
           {
@@ -2525,8 +2525,8 @@
             "description": "[gold]one of your Relics[/gold]을(를) [gold]a random Relic[/gold](와)과 거래합니다."
           },
           {
-            "id": "TOP",
-            "title": "위의 것을 가져간다",
+            "id": "BOTTOM",
+            "title": "아래의 것을 가져간다",
             "description": "[gold]one of your Relics[/gold]을(를) [gold]a random Relic[/gold](와)과 거래합니다."
           }
         ]
@@ -2691,19 +2691,14 @@
     "description": "바닥에는 책 한 권이 놓여있습니다.\n“첨탑을 정복하기 위한 3가지 방법”\n\n책의 표면은 [red]피로 뒤덮여[/red] 있었기 때문에, 굉장히 수상쩍은 느낌이 듭니다.\n\n읽어보시겠습니까?",
     "options": [
       {
-        "id": "NO_OPTIONS",
-        "title": "나아간다",
-        "description": "인챈트할 수 있는 카드가 없습니다."
+        "id": "READ_THE_BACK",
+        "title": "뒷면을 읽는다",
+        "description": "공격 카드를 1장 선택해 [purple]예리[/purple]를 [blue]2[/blue] [gold]인챈트[/gold]합니다."
       },
       {
-        "id": "READ_ENTIRE_BOOK",
-        "title": "책을 모두 읽는다",
-        "description": "파워 카드를 1장 선택해 [purple]신속[/purple]을 [blue]2[/blue] [gold]인챈트[/gold]합니다."
-      },
-      {
-        "id": "READ_ENTIRE_BOOK_LOCKED",
+        "id": "READ_THE_BACK_LOCKED",
         "title": "잠김",
-        "description": "[gold]인챈트[/gold]할 수 있는 파워 카드가 없습니다."
+        "description": "[gold]인챈트[/gold]할 수 있는 공격 카드가 없습니다."
       },
       {
         "id": "READ_PASSAGE",
@@ -2716,14 +2711,19 @@
         "description": "[gold]인챈트[/gold]할 수 있는 스킬 카드가 없습니다."
       },
       {
-        "id": "READ_THE_BACK",
-        "title": "뒷면을 읽는다",
-        "description": "공격 카드를 1장 선택해 [purple]예리[/purple]를 [blue]2[/blue] [gold]인챈트[/gold]합니다."
+        "id": "READ_ENTIRE_BOOK",
+        "title": "책을 모두 읽는다",
+        "description": "파워 카드를 1장 선택해 [purple]신속[/purple]을 [blue]2[/blue] [gold]인챈트[/gold]합니다."
       },
       {
-        "id": "READ_THE_BACK_LOCKED",
+        "id": "READ_ENTIRE_BOOK_LOCKED",
         "title": "잠김",
-        "description": "[gold]인챈트[/gold]할 수 있는 공격 카드가 없습니다."
+        "description": "[gold]인챈트[/gold]할 수 있는 파워 카드가 없습니다."
+      },
+      {
+        "id": "NO_OPTIONS",
+        "title": "나아간다",
+        "description": "인챈트할 수 있는 카드가 없습니다."
       }
     ],
     "pages": [
@@ -2732,19 +2732,14 @@
         "description": "바닥에는 책 한 권이 놓여있습니다.\n“첨탑을 정복하기 위한 3가지 방법”\n\n책의 표면은 [red]피로 뒤덮여[/red] 있었기 때문에, 굉장히 수상쩍은 느낌이 듭니다.\n\n읽어보시겠습니까?",
         "options": [
           {
-            "id": "NO_OPTIONS",
-            "title": "나아간다",
-            "description": "인챈트할 수 있는 카드가 없습니다."
+            "id": "READ_THE_BACK",
+            "title": "뒷면을 읽는다",
+            "description": "공격 카드를 1장 선택해 [purple]예리[/purple]를 [blue]2[/blue] [gold]인챈트[/gold]합니다."
           },
           {
-            "id": "READ_ENTIRE_BOOK",
-            "title": "책을 모두 읽는다",
-            "description": "파워 카드를 1장 선택해 [purple]신속[/purple]을 [blue]2[/blue] [gold]인챈트[/gold]합니다."
-          },
-          {
-            "id": "READ_ENTIRE_BOOK_LOCKED",
+            "id": "READ_THE_BACK_LOCKED",
             "title": "잠김",
-            "description": "[gold]인챈트[/gold]할 수 있는 파워 카드가 없습니다."
+            "description": "[gold]인챈트[/gold]할 수 있는 공격 카드가 없습니다."
           },
           {
             "id": "READ_PASSAGE",
@@ -2757,14 +2752,19 @@
             "description": "[gold]인챈트[/gold]할 수 있는 스킬 카드가 없습니다."
           },
           {
-            "id": "READ_THE_BACK",
-            "title": "뒷면을 읽는다",
-            "description": "공격 카드를 1장 선택해 [purple]예리[/purple]를 [blue]2[/blue] [gold]인챈트[/gold]합니다."
+            "id": "READ_ENTIRE_BOOK",
+            "title": "책을 모두 읽는다",
+            "description": "파워 카드를 1장 선택해 [purple]신속[/purple]을 [blue]2[/blue] [gold]인챈트[/gold]합니다."
           },
           {
-            "id": "READ_THE_BACK_LOCKED",
+            "id": "READ_ENTIRE_BOOK_LOCKED",
             "title": "잠김",
-            "description": "[gold]인챈트[/gold]할 수 있는 공격 카드가 없습니다."
+            "description": "[gold]인챈트[/gold]할 수 있는 파워 카드가 없습니다."
+          },
+          {
+            "id": "NO_OPTIONS",
+            "title": "나아간다",
+            "description": "인챈트할 수 있는 카드가 없습니다."
           }
         ]
       },
@@ -2794,14 +2794,14 @@
     "description": "무너져 내릴 듯한 나무 다리를 건너던 도중, [blue][jitter]갑작스럽게 폭우[/jitter][/blue]가 쏟아집니다. [purple][sine]거대한 돌풍[/sine][/purple]이, 마치 당신의 여정을 끝내려는 듯이 위협적으로 휘몰아칩니다.",
     "options": [
       {
-        "id": "HOLD_ON_0",
-        "title": "버틴다",
-        "description": "체력을 [red]3+[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
-      },
-      {
         "id": "OVERCOME",
         "title": "헤쳐 나간다",
         "description": "[red]a random Card[/red](이)가 [gold]덱[/gold]에서 제거됩니다."
+      },
+      {
+        "id": "HOLD_ON_0",
+        "title": "버틴다",
+        "description": "체력을 [red]3+[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
       }
     ],
     "pages": [
@@ -2898,14 +2898,14 @@
         "description": "무너져 내릴 듯한 나무 다리를 건너던 도중, [blue][jitter]갑작스럽게 폭우[/jitter][/blue]가 쏟아집니다. [purple][sine]거대한 돌풍[/sine][/purple]이, 마치 당신의 여정을 끝내려는 듯이 위협적으로 휘몰아칩니다.",
         "options": [
           {
-            "id": "HOLD_ON_0",
-            "title": "버틴다",
-            "description": "체력을 [red]3+[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
-          },
-          {
             "id": "OVERCOME",
             "title": "헤쳐 나간다",
             "description": "[red]a random Card[/red](이)가 [gold]덱[/gold]에서 제거됩니다."
+          },
+          {
+            "id": "HOLD_ON_0",
+            "title": "버틴다",
+            "description": "체력을 [red]3+[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
           }
         ]
       },
@@ -2923,14 +2923,14 @@
     "description": "당신은 우연히 [aqua][sine]거대한 나선형 소용돌이[/sine][/aqua]를 발견했습니다. 물은 아름답게 소용돌이치고, 나선형 무늬가 주변 벽을 수놓고 있습니다.\n\n[purple][sine]빙글빙글 돌고...돌고...\n또 돌고...정말 멋진 광경입니다......[/sine][/purple]\n\n무엇을 할까요?",
     "options": [
       {
-        "id": "DRINK",
-        "title": "마신다",
-        "description": "체력을 [green]33% Max[/green] 회복합니다."
-      },
-      {
         "id": "OBSERVE",
         "title": "관찰한다",
         "description": "[gold]타격[/gold]이나 [gold]수비[/gold] 1장에 [purple]소용돌이[/purple]를 [gold]인챈트[/gold]합니다."
+      },
+      {
+        "id": "DRINK",
+        "title": "마신다",
+        "description": "체력을 [green]33% Max[/green] 회복합니다."
       },
       {
         "id": "REACH_IN",
@@ -2948,14 +2948,14 @@
         "description": "당신은 우연히 [aqua][sine]거대한 나선형 소용돌이[/sine][/aqua]를 발견했습니다. 물은 아름답게 소용돌이치고, 나선형 무늬가 주변 벽을 수놓고 있습니다.\n\n[purple][sine]빙글빙글 돌고...돌고...\n또 돌고...정말 멋진 광경입니다......[/sine][/purple]\n\n무엇을 할까요?",
         "options": [
           {
-            "id": "DRINK",
-            "title": "마신다",
-            "description": "체력을 [green]33% Max[/green] 회복합니다."
-          },
-          {
             "id": "OBSERVE",
             "title": "관찰한다",
             "description": "[gold]타격[/gold]이나 [gold]수비[/gold] 1장에 [purple]소용돌이[/purple]를 [gold]인챈트[/gold]합니다."
+          },
+          {
+            "id": "DRINK",
+            "title": "마신다",
+            "description": "체력을 [green]33% Max[/green] 회복합니다."
           },
           {
             "id": "REACH_IN",
@@ -3037,14 +3037,14 @@
         "description": "포션이 필요합니다."
       },
       {
-        "id": "PUSH",
-        "title": "민다",
-        "description": "체력을 [red]6[/red] 잃습니다. 공격 카드 1장에 [purple]활력[/purple]을 [blue]8[/blue] [gold]인챈트[/gold]합니다."
-      },
-      {
         "id": "PUSH_LOCKED",
         "title": "잠김",
         "description": "공격 카드가 필요합니다."
+      },
+      {
+        "id": "PUSH",
+        "title": "민다",
+        "description": "체력을 [red]6[/red] 잃습니다. 공격 카드 1장에 [purple]활력[/purple]을 [blue]8[/blue] [gold]인챈트[/gold]합니다."
       }
     ],
     "pages": [
@@ -3063,14 +3063,14 @@
             "description": "포션이 필요합니다."
           },
           {
-            "id": "PUSH",
-            "title": "민다",
-            "description": "체력을 [red]6[/red] 잃습니다. 공격 카드 1장에 [purple]활력[/purple]을 [blue]8[/blue] [gold]인챈트[/gold]합니다."
-          },
-          {
             "id": "PUSH_LOCKED",
             "title": "잠김",
             "description": "공격 카드가 필요합니다."
+          },
+          {
+            "id": "PUSH",
+            "title": "민다",
+            "description": "체력을 [red]6[/red] 잃습니다. 공격 카드 1장에 [purple]활력[/purple]을 [blue]8[/blue] [gold]인챈트[/gold]합니다."
           }
         ]
       },
@@ -3092,14 +3092,14 @@
     "description": "당신은 연못에 반쯤 잠겨 있는 오래된 석상을 발견했습니다. 석상의 두 손은 [blue]돌 검[/blue] 위에 조심스레 얹혀 있습니다.\n\n연못 바닥에는 무언가가 [gold][sine]반짝거리고[/sine][/gold] 있습니다.\n누군가에게 바치기 위한 것들일까요?\n\n저 돈들은 꽤나 도움이 될 것 같습니다...",
     "options": [
       {
-        "id": "DIVE_INTO_WATER",
-        "title": "물로 뛰어든다",
-        "description": "[gold]골드[/gold]를 [blue]111[/blue] 얻습니다. 체력을 [red]7[/red] 잃습니다."
-      },
-      {
         "id": "GRAB_SWORD",
         "title": "검을 집는다",
         "description": "[gold]돌 검[/gold]을 얻습니다."
+      },
+      {
+        "id": "DIVE_INTO_WATER",
+        "title": "물로 뛰어든다",
+        "description": "[gold]골드[/gold]를 [blue]111[/blue] 얻습니다. 체력을 [red]7[/red] 잃습니다."
       }
     ],
     "pages": [
@@ -3116,14 +3116,14 @@
         "description": "당신은 연못에 반쯤 잠겨 있는 오래된 석상을 발견했습니다. 석상의 두 손은 [blue]돌 검[/blue] 위에 조심스레 얹혀 있습니다.\n\n연못 바닥에는 무언가가 [gold][sine]반짝거리고[/sine][/gold] 있습니다.\n누군가에게 바치기 위한 것들일까요?\n\n저 돈들은 꽤나 도움이 될 것 같습니다...",
         "options": [
           {
-            "id": "DIVE_INTO_WATER",
-            "title": "물로 뛰어든다",
-            "description": "[gold]골드[/gold]를 [blue]111[/blue] 얻습니다. 체력을 [red]7[/red] 잃습니다."
-          },
-          {
             "id": "GRAB_SWORD",
             "title": "검을 집는다",
             "description": "[gold]돌 검[/gold]을 얻습니다."
+          },
+          {
+            "id": "DIVE_INTO_WATER",
+            "title": "물로 뛰어든다",
+            "description": "[gold]골드[/gold]를 [blue]111[/blue] 얻습니다. 체력을 [red]7[/red] 잃습니다."
           }
         ]
       }
@@ -3182,14 +3182,14 @@
     "description": "당신은 길을 나아가던 도중 우연히, 형태가 일정치 않은 한 검은색 덩어리를 발견합니다. 당신은 그 덩어리가 굉장히 오래되었고, 극도로 사악한 존재라는 것을 느낄 수 있었습니다.\n\n[sine]가까이 다가갑니다...[/sine]",
     "options": [
       {
-        "id": "APPROACH",
-        "title": "다가간다",
-        "description": "공격 카드 1장에 [purple]오염[/purple]을 [gold]인챈트[/gold]합니다."
-      },
-      {
         "id": "APPROACH_LOCKED",
         "title": "잠김",
         "description": "인챈트할 수 있는 공격 카드가 없습니다."
+      },
+      {
+        "id": "APPROACH",
+        "title": "다가간다",
+        "description": "공격 카드 1장에 [purple]오염[/purple]을 [gold]인챈트[/gold]합니다."
       },
       {
         "id": "KILL_WITH_FIRE",
@@ -3207,14 +3207,14 @@
         "description": "당신은 길을 나아가던 도중 우연히, 형태가 일정치 않은 한 검은색 덩어리를 발견합니다. 당신은 그 덩어리가 굉장히 오래되었고, 극도로 사악한 존재라는 것을 느낄 수 있었습니다.\n\n[sine]가까이 다가갑니다...[/sine]",
         "options": [
           {
-            "id": "APPROACH",
-            "title": "다가간다",
-            "description": "공격 카드 1장에 [purple]오염[/purple]을 [gold]인챈트[/gold]합니다."
-          },
-          {
             "id": "APPROACH_LOCKED",
             "title": "잠김",
             "description": "인챈트할 수 있는 공격 카드가 없습니다."
+          },
+          {
+            "id": "APPROACH",
+            "title": "다가간다",
+            "description": "공격 카드 1장에 [purple]오염[/purple]을 [gold]인챈트[/gold]합니다."
           },
           {
             "id": "KILL_WITH_FIRE",
@@ -3859,14 +3859,14 @@
     "description": "당신은 희미하게 빛나는 열쇠를 발견하고, 열쇠를 집어 들기 위해 다가갑니다.\n\n“그 열쇠를 찾으러 사방팔방 뒤지고 있었다네! 혹시 실례가 아니라면...”\n\n조금 귀찮아 보이는 사람이긴 하지만, 함부로 단정 짓는 건 좋지 않을 것 같습니다.",
     "options": [
       {
-        "id": "KEEP_THE_KEY",
-        "title": "열쇠를 지킨다",
-        "description": "열쇠를 얻기 위해 싸웁니다."
-      },
-      {
         "id": "RETURN_THE_KEY",
         "title": "열쇠를 돌려준다",
         "description": "[gold]골드[/gold]를 [blue]100[/blue] 얻습니다."
+      },
+      {
+        "id": "KEEP_THE_KEY",
+        "title": "열쇠를 지킨다",
+        "description": "열쇠를 얻기 위해 싸웁니다."
       }
     ],
     "pages": [
@@ -3886,14 +3886,14 @@
         "description": "당신은 희미하게 빛나는 열쇠를 발견하고, 열쇠를 집어 들기 위해 다가갑니다.\n\n“그 열쇠를 찾으러 사방팔방 뒤지고 있었다네! 혹시 실례가 아니라면...”\n\n조금 귀찮아 보이는 사람이긴 하지만, 함부로 단정 짓는 건 좋지 않을 것 같습니다.",
         "options": [
           {
-            "id": "KEEP_THE_KEY",
-            "title": "열쇠를 지킨다",
-            "description": "열쇠를 얻기 위해 싸웁니다."
-          },
-          {
             "id": "RETURN_THE_KEY",
             "title": "열쇠를 돌려준다",
             "description": "[gold]골드[/gold]를 [blue]100[/blue] 얻습니다."
+          },
+          {
+            "id": "KEEP_THE_KEY",
+            "title": "열쇠를 지킨다",
+            "description": "열쇠를 얻기 위해 싸웁니다."
           }
         ]
       },
@@ -3963,14 +3963,14 @@
     "description": "근처의 구멍에서 갑자기, [gold]보물이 담긴 수상한 자루[/gold]와 명백히 [purple]저주받은 유물[/purple]을 움켜진 손이 튀어나옵니다.\n\n[jitter][blue]\"이거... 아님 저거?\"[/blue][/jitter]\n날카롭게 긁어대는 목소리가 아래쪽에서 속삭입니다.",
     "options": [
       {
-        "id": "ORNATE",
-        "title": "저거",
-        "description": "[red]서투름[/red]을 [gold]덱[/gold]에 추가합니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
-      },
-      {
         "id": "PLAIN",
         "title": "이거",
         "description": "체력을 [red]6[/red] 잃습니다. [gold]골드[/gold]를 [blue]41-69[/blue] 얻습니다."
+      },
+      {
+        "id": "ORNATE",
+        "title": "저거",
+        "description": "[red]서투름[/red]을 [gold]덱[/gold]에 추가합니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
       }
     ],
     "pages": [
@@ -3979,14 +3979,14 @@
         "description": "근처의 구멍에서 갑자기, [gold]보물이 담긴 수상한 자루[/gold]와 명백히 [purple]저주받은 유물[/purple]을 움켜진 손이 튀어나옵니다.\n\n[jitter][blue]\"이거... 아님 저거?\"[/blue][/jitter]\n날카롭게 긁어대는 목소리가 아래쪽에서 속삭입니다.",
         "options": [
           {
-            "id": "ORNATE",
-            "title": "저거",
-            "description": "[red]서투름[/red]을 [gold]덱[/gold]에 추가합니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
-          },
-          {
             "id": "PLAIN",
             "title": "이거",
             "description": "체력을 [red]6[/red] 잃습니다. [gold]골드[/gold]를 [blue]41-69[/blue] 얻습니다."
+          },
+          {
+            "id": "ORNATE",
+            "title": "저거",
+            "description": "[red]서투름[/red]을 [gold]덱[/gold]에 추가합니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
           }
         ]
       },
@@ -4024,14 +4024,14 @@
             "description": "공격 카드를 만듭니다."
           },
           {
-            "id": "POWER",
-            "title": "도구",
-            "description": "파워 카드를 만듭니다."
-          },
-          {
             "id": "SKILL",
             "title": "보호대",
             "description": "스킬 카드를 만듭니다."
+          },
+          {
+            "id": "POWER",
+            "title": "도구",
+            "description": "파워 카드를 만듭니다."
           }
         ]
       },
@@ -4039,36 +4039,6 @@
         "id": "CHOOSE_RIDER",
         "description": "“훌륭한 선택이군요! 그럼 이걸로 [sine]뭘[/sine] 해야 할까요?”\n[orange]과학자[/orange]는 기쁨에 찬 표정으로 두 손을 비벼댑니다.",
         "options": [
-          {
-            "id": "CHAOS",
-            "title": "혼돈",
-            "description": "무작위 카드를 1장 [gold]손[/gold]으로 가져옵니다. 이번 턴 동안 그 카드의 비용이 [blue]0[/blue] [energy:1]이 됩니다."
-          },
-          {
-            "id": "CHOKING",
-            "title": "질식",
-            "description": "이번 턴에 카드를 사용할 때마다, 대상 적이 체력을 [blue][ChokingDamage][/blue] 잃습니다."
-          },
-          {
-            "id": "CURIOUS",
-            "title": "호기심",
-            "description": "파워 카드의 비용이 [blue]1[/blue] [energy:1] 감소합니다."
-          },
-          {
-            "id": "ENERGIZED",
-            "title": "충전",
-            "description": "[energy:2]를 얻습니다."
-          },
-          {
-            "id": "EXPERTISE",
-            "title": "전문성",
-            "description": "[gold]힘[/gold]을 [blue][ExpertiseStrength][/blue] 얻습니다. [gold]민첩[/gold]을 [blue][ExpertiseDexterity][/blue] 얻습니다."
-          },
-          {
-            "id": "IMPROVEMENT",
-            "title": "개선",
-            "description": "매 전투 종료 시, 무작위 카드를 1장 [gold]강화[/gold]합니다."
-          },
           {
             "id": "SAPPING",
             "title": "탈력",
@@ -4080,9 +4050,39 @@
             "description": "추가로 [blue]2[/blue]번 적중합니다."
           },
           {
+            "id": "CHOKING",
+            "title": "질식",
+            "description": "이번 턴에 카드를 사용할 때마다, 대상 적이 체력을 [blue][ChokingDamage][/blue] 잃습니다."
+          },
+          {
+            "id": "ENERGIZED",
+            "title": "충전",
+            "description": "[energy:2]를 얻습니다."
+          },
+          {
             "id": "WISDOM",
             "title": "지혜",
             "description": "카드를 [blue]3[/blue]장 뽑습니다."
+          },
+          {
+            "id": "CHAOS",
+            "title": "혼돈",
+            "description": "무작위 카드를 1장 [gold]손[/gold]으로 가져옵니다. 이번 턴 동안 그 카드의 비용이 [blue]0[/blue] [energy:1]이 됩니다."
+          },
+          {
+            "id": "EXPERTISE",
+            "title": "전문성",
+            "description": "[gold]힘[/gold]을 [blue][ExpertiseStrength][/blue] 얻습니다. [gold]민첩[/gold]을 [blue][ExpertiseDexterity][/blue] 얻습니다."
+          },
+          {
+            "id": "CURIOUS",
+            "title": "호기심",
+            "description": "파워 카드의 비용이 [blue]1[/blue] [energy:1] 감소합니다."
+          },
+          {
+            "id": "IMPROVEMENT",
+            "title": "개선",
+            "description": "매 전투 종료 시, 무작위 카드를 1장 [gold]강화[/gold]합니다."
           }
         ]
       },
@@ -4281,14 +4281,14 @@
     "description": "한적한 [gold]휴식 장소[/gold]를 발견한 당신은 [orange]불[/orange]을 피우고 잠시 휴식을 취합니다.\n적어도, 그렇게 믿고 있었습니다.\n\n불을 피우자 불길은 위로 치솟는 대신 [sine]옆으로[/sine] 퍼져가며, [purple]기름이 스며 나오는 나무들[/purple]이 모인 숲을 향해 번져 갑니다.\n\n그럼에도 불구하고 휴식을 취할까요?",
     "options": [
       {
-        "id": "KILL",
-        "title": "나무들을 베어낸다",
-        "description": "최대 체력을 [red]8[/red] 잃습니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
-      },
-      {
         "id": "REST",
         "title": "그래도 휴식한다",
         "description": "[green]체력을 모두 회복합니다.[/green] [red]수면 부족[/red]을 얻습니다."
+      },
+      {
+        "id": "KILL",
+        "title": "나무들을 베어낸다",
+        "description": "최대 체력을 [red]8[/red] 잃습니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
       }
     ],
     "pages": [
@@ -4297,14 +4297,14 @@
         "description": "한적한 [gold]휴식 장소[/gold]를 발견한 당신은 [orange]불[/orange]을 피우고 잠시 휴식을 취합니다.\n적어도, 그렇게 믿고 있었습니다.\n\n불을 피우자 불길은 위로 치솟는 대신 [sine]옆으로[/sine] 퍼져가며, [purple]기름이 스며 나오는 나무들[/purple]이 모인 숲을 향해 번져 갑니다.\n\n그럼에도 불구하고 휴식을 취할까요?",
         "options": [
           {
-            "id": "KILL",
-            "title": "나무들을 베어낸다",
-            "description": "최대 체력을 [red]8[/red] 잃습니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
-          },
-          {
             "id": "REST",
             "title": "그래도 휴식한다",
             "description": "[green]체력을 모두 회복합니다.[/green] [red]수면 부족[/red]을 얻습니다."
+          },
+          {
+            "id": "KILL",
+            "title": "나무들을 베어낸다",
+            "description": "최대 체력을 [red]8[/red] 잃습니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
           }
         ]
       },
@@ -4595,16 +4595,6 @@
         "description": "최대 체력을 [green]6[/green] 얻습니다."
       },
       {
-        "id": "PRICKLY_SPONGE",
-        "title": "꺼끌꺼끌한 스펀지",
-        "description": "[gold]골드[/gold]를 [red]155[/red] 지불합니다. 카드 [blue]2[/blue]장에 [purple]안정[/purple]을 [gold]인챈트[/gold]합니다."
-      },
-      {
-        "id": "PRICKLY_SPONGE_LOCKED",
-        "title": "잠김",
-        "description": "[gold]골드[/gold]가 [blue]155[/blue] 필요합니다."
-      },
-      {
         "id": "TENTACLE_QUILL",
         "title": "촉수 펜",
         "description": "[gold]골드[/gold]를 [red]65[/red] 지불합니다. 카드 1장에 [purple]안정[/purple]을 [gold]인챈트[/gold]합니다."
@@ -4613,6 +4603,16 @@
         "id": "TENTACLE_QUILL_LOCKED",
         "title": "잠김",
         "description": "[gold]골드[/gold]가 [blue]65[/blue] 필요합니다."
+      },
+      {
+        "id": "PRICKLY_SPONGE",
+        "title": "꺼끌꺼끌한 스펀지",
+        "description": "[gold]골드[/gold]를 [red]155[/red] 지불합니다. 카드 [blue]2[/blue]장에 [purple]안정[/purple]을 [gold]인챈트[/gold]합니다."
+      },
+      {
+        "id": "PRICKLY_SPONGE_LOCKED",
+        "title": "잠김",
+        "description": "[gold]골드[/gold]가 [blue]155[/blue] 필요합니다."
       }
     ],
     "pages": [
@@ -4630,16 +4630,6 @@
             "description": "최대 체력을 [green]6[/green] 얻습니다."
           },
           {
-            "id": "PRICKLY_SPONGE",
-            "title": "꺼끌꺼끌한 스펀지",
-            "description": "[gold]골드[/gold]를 [red]155[/red] 지불합니다. 카드 [blue]2[/blue]장에 [purple]안정[/purple]을 [gold]인챈트[/gold]합니다."
-          },
-          {
-            "id": "PRICKLY_SPONGE_LOCKED",
-            "title": "잠김",
-            "description": "[gold]골드[/gold]가 [blue]155[/blue] 필요합니다."
-          },
-          {
             "id": "TENTACLE_QUILL",
             "title": "촉수 펜",
             "description": "[gold]골드[/gold]를 [red]65[/red] 지불합니다. 카드 1장에 [purple]안정[/purple]을 [gold]인챈트[/gold]합니다."
@@ -4648,6 +4638,16 @@
             "id": "TENTACLE_QUILL_LOCKED",
             "title": "잠김",
             "description": "[gold]골드[/gold]가 [blue]65[/blue] 필요합니다."
+          },
+          {
+            "id": "PRICKLY_SPONGE",
+            "title": "꺼끌꺼끌한 스펀지",
+            "description": "[gold]골드[/gold]를 [red]155[/red] 지불합니다. 카드 [blue]2[/blue]장에 [purple]안정[/purple]을 [gold]인챈트[/gold]합니다."
+          },
+          {
+            "id": "PRICKLY_SPONGE_LOCKED",
+            "title": "잠김",
+            "description": "[gold]골드[/gold]가 [blue]155[/blue] 필요합니다."
           }
         ]
       },
@@ -4689,11 +4689,6 @@
         "description": "[gold]골드[/gold]가 [blue]200[/blue] 필요합니다."
       },
       {
-        "id": "LEAVE",
-        "title": "떠난다",
-        "description": "무작위 카드 1장이 [red]열화[/red]됩니다."
-      },
-      {
         "id": "MYSTERY_BOX",
         "title": "웡고스 랜덤 박스",
         "description": "[gold]골드[/gold]를 [red]300[/red] 지불합니다. [blue]5[/blue]번의 전투 후에 무작위 [gold]유물[/gold]을 [blue]3[/blue]개 얻습니다."
@@ -4702,6 +4697,11 @@
         "id": "MYSTERY_BOX_LOCKED",
         "title": "잠김",
         "description": "[gold]골드[/gold]가 [blue]300[/blue] 필요합니다."
+      },
+      {
+        "id": "LEAVE",
+        "title": "떠난다",
+        "description": "무작위 카드 1장이 [red]열화[/red]됩니다."
       }
     ],
     "pages": [
@@ -4742,11 +4742,6 @@
             "description": "[gold]골드[/gold]가 [blue]200[/blue] 필요합니다."
           },
           {
-            "id": "LEAVE",
-            "title": "떠난다",
-            "description": "무작위 카드 1장이 [red]열화[/red]됩니다."
-          },
-          {
             "id": "MYSTERY_BOX",
             "title": "웡고스 랜덤 박스",
             "description": "[gold]골드[/gold]를 [red]300[/red] 지불합니다. [blue]5[/blue]번의 전투 후에 무작위 [gold]유물[/gold]을 [blue]3[/blue]개 얻습니다."
@@ -4755,6 +4750,11 @@
             "id": "MYSTERY_BOX_LOCKED",
             "title": "잠김",
             "description": "[gold]골드[/gold]가 [blue]300[/blue] 필요합니다."
+          },
+          {
+            "id": "LEAVE",
+            "title": "떠난다",
+            "description": "무작위 카드 1장이 [red]열화[/red]됩니다."
           }
         ]
       },
@@ -4772,14 +4772,14 @@
     "description": "[jitter]낮게 울리는 소리[/jitter]의 근원을 따라가던 당신은 고요한 샘 앞에 이르렀고, 그 샘의 모습에 매료됩니다. [sine][aqua]에메랄드빛 녹색[/aqua][/sine]의 물에는 [sine][gold]빛나는 알갱이[/gold][/sine]들이 모여 있습니다.\n\n샘이 당신을 유혹하고 있는 듯합니다. 설마 무슨 문제라도 있겠어요?",
     "options": [
       {
-        "id": "BATHE",
-        "title": "몸을 담근다",
-        "description": "[gold]덱[/gold]에서 카드를 [blue]1[/blue]장 제거합니다. [gold]덱[/gold]에 [red]죄책감[/red]을 [blue]1[/blue]장 추가합니다."
-      },
-      {
         "id": "BOTTLE",
         "title": "병에 담는다",
         "description": "무작위 [gold]포션[/gold]을 [blue]1[/blue]개 생성합니다."
+      },
+      {
+        "id": "BATHE",
+        "title": "몸을 담근다",
+        "description": "[gold]덱[/gold]에서 카드를 [blue]1[/blue]장 제거합니다. [gold]덱[/gold]에 [red]죄책감[/red]을 [blue]1[/blue]장 추가합니다."
       }
     ],
     "pages": [
@@ -4796,14 +4796,14 @@
         "description": "[jitter]낮게 울리는 소리[/jitter]의 근원을 따라가던 당신은 고요한 샘 앞에 이르렀고, 그 샘의 모습에 매료됩니다. [sine][aqua]에메랄드빛 녹색[/aqua][/sine]의 물에는 [sine][gold]빛나는 알갱이[/gold][/sine]들이 모여 있습니다.\n\n샘이 당신을 유혹하고 있는 듯합니다. 설마 무슨 문제라도 있겠어요?",
         "options": [
           {
-            "id": "BATHE",
-            "title": "몸을 담근다",
-            "description": "[gold]덱[/gold]에서 카드를 [blue]1[/blue]장 제거합니다. [gold]덱[/gold]에 [red]죄책감[/red]을 [blue]1[/blue]장 추가합니다."
-          },
-          {
             "id": "BOTTLE",
             "title": "병에 담는다",
             "description": "무작위 [gold]포션[/gold]을 [blue]1[/blue]개 생성합니다."
+          },
+          {
+            "id": "BATHE",
+            "title": "몸을 담근다",
+            "description": "[gold]덱[/gold]에서 카드를 [blue]1[/blue]장 제거합니다. [gold]덱[/gold]에 [red]죄책감[/red]을 [blue]1[/blue]장 추가합니다."
           }
         ]
       }
@@ -4862,9 +4862,9 @@
     "description": "당신은 먼지가 쌓인 상자를 열고, 정교한 형태의 나무 조각 3개를 발견했습니다:\n\n새, 뱀, 그리고... 고리?\n\n근처에 있던 받침대에는 조각의 바닥 부분과 일치하는 움푹 들어간 흔적이 있습니다. 받침대 위에 어떤 조각을 올려놓을까요?",
     "options": [
       {
-        "id": "BIRD",
-        "title": "새",
-        "description": "시작 카드를 [blue]1[/blue]장 선택해 [gold]쪼기[/gold]로 [gold]변화[/gold]시킵니다."
+        "id": "SNAKE_LOCKED",
+        "title": "잠김",
+        "description": "[purple]미끈거림[/purple]을 인챈트할 수 있는 카드가 없습니다."
       },
       {
         "id": "SNAKE",
@@ -4872,9 +4872,9 @@
         "description": "카드 [blue]1[/blue]장에 [purple]스르륵[/purple]을 [gold]인챈트[/gold]합니다."
       },
       {
-        "id": "SNAKE_LOCKED",
-        "title": "잠김",
-        "description": "[purple]미끈거림[/purple]을 인챈트할 수 있는 카드가 없습니다."
+        "id": "BIRD",
+        "title": "새",
+        "description": "시작 카드를 [blue]1[/blue]장 선택해 [gold]쪼기[/gold]로 [gold]변화[/gold]시킵니다."
       },
       {
         "id": "TORUS",
@@ -4892,9 +4892,9 @@
         "description": "당신은 먼지가 쌓인 상자를 열고, 정교한 형태의 나무 조각 3개를 발견했습니다:\n\n새, 뱀, 그리고... 고리?\n\n근처에 있던 받침대에는 조각의 바닥 부분과 일치하는 움푹 들어간 흔적이 있습니다. 받침대 위에 어떤 조각을 올려놓을까요?",
         "options": [
           {
-            "id": "BIRD",
-            "title": "새",
-            "description": "시작 카드를 [blue]1[/blue]장 선택해 [gold]쪼기[/gold]로 [gold]변화[/gold]시킵니다."
+            "id": "SNAKE_LOCKED",
+            "title": "잠김",
+            "description": "[purple]미끈거림[/purple]을 인챈트할 수 있는 카드가 없습니다."
           },
           {
             "id": "SNAKE",
@@ -4902,9 +4902,9 @@
             "description": "카드 [blue]1[/blue]장에 [purple]스르륵[/purple]을 [gold]인챈트[/gold]합니다."
           },
           {
-            "id": "SNAKE_LOCKED",
-            "title": "잠김",
-            "description": "[purple]미끈거림[/purple]을 인챈트할 수 있는 카드가 없습니다."
+            "id": "BIRD",
+            "title": "새",
+            "description": "시작 카드를 [blue]1[/blue]장 선택해 [gold]쪼기[/gold]로 [gold]변화[/gold]시킵니다."
           },
           {
             "id": "TORUS",
@@ -4931,11 +4931,6 @@
     "description": "당신은 거미줄에 걸려, [jitter][red]공황[/red][/jitter] 상태에 빠졌습니다!\n하지만 곧, [sine][blue]평온의 파도[/blue][/sine]가 당신을 덮쳐옵니다...\n\n[sine]“진정하세요. 제 거미줄을 어지럽히지 말아주시죠.”[/sine]\n\n어떻게 이렇게 빨리 진정할 수 있었던 걸까요?\n[orange]아주 작은[/orange] 거미가 당신을 보기 위해 아래로 내려옵니다. [gold]골드[/gold]를 준다면 몇 가지 기술을 기꺼이 전수해 줄 것 같습니다.",
     "options": [
       {
-        "id": "ARACHNID_ACUPUNCTURE",
-        "title": "거미류 침술",
-        "description": "[gold]골드[/gold]를 [red]250[/red] 지불합니다. [gold]덱[/gold]에서 카드를 [blue]2[/blue]장 제거합니다."
-      },
-      {
         "id": "BREATHING_TECHNIQUES",
         "title": "호흡법",
         "description": "[gold]골드[/gold]를 [red]50[/red] 지불합니다. [gold]덱[/gold]에 [gold]계몽[/gold]을 [blue]2[/blue]장 추가합니다."
@@ -4944,6 +4939,11 @@
         "id": "EMOTIONAL_AWARENESS",
         "title": "감정의 인식",
         "description": "[gold]골드[/gold]를 [red]125[/red] 지불합니다. [gold]덱[/gold]에서 카드를 [blue]1[/blue]장 제거합니다."
+      },
+      {
+        "id": "ARACHNID_ACUPUNCTURE",
+        "title": "거미류 침술",
+        "description": "[gold]골드[/gold]를 [red]250[/red] 지불합니다. [gold]덱[/gold]에서 카드를 [blue]2[/blue]장 제거합니다."
       },
       {
         "id": "LOCKED",
@@ -4969,11 +4969,6 @@
         "description": "당신은 거미줄에 걸려, [jitter][red]공황[/red][/jitter] 상태에 빠졌습니다!\n하지만 곧, [sine][blue]평온의 파도[/blue][/sine]가 당신을 덮쳐옵니다...\n\n[sine]“진정하세요. 제 거미줄을 어지럽히지 말아주시죠.”[/sine]\n\n어떻게 이렇게 빨리 진정할 수 있었던 걸까요?\n[orange]아주 작은[/orange] 거미가 당신을 보기 위해 아래로 내려옵니다. [gold]골드[/gold]를 준다면 몇 가지 기술을 기꺼이 전수해 줄 것 같습니다.",
         "options": [
           {
-            "id": "ARACHNID_ACUPUNCTURE",
-            "title": "거미류 침술",
-            "description": "[gold]골드[/gold]를 [red]250[/red] 지불합니다. [gold]덱[/gold]에서 카드를 [blue]2[/blue]장 제거합니다."
-          },
-          {
             "id": "BREATHING_TECHNIQUES",
             "title": "호흡법",
             "description": "[gold]골드[/gold]를 [red]50[/red] 지불합니다. [gold]덱[/gold]에 [gold]계몽[/gold]을 [blue]2[/blue]장 추가합니다."
@@ -4982,6 +4977,11 @@
             "id": "EMOTIONAL_AWARENESS",
             "title": "감정의 인식",
             "description": "[gold]골드[/gold]를 [red]125[/red] 지불합니다. [gold]덱[/gold]에서 카드를 [blue]1[/blue]장 제거합니다."
+          },
+          {
+            "id": "ARACHNID_ACUPUNCTURE",
+            "title": "거미류 침술",
+            "description": "[gold]골드[/gold]를 [red]250[/red] 지불합니다. [gold]덱[/gold]에서 카드를 [blue]2[/blue]장 제거합니다."
           },
           {
             "id": "LOCKED",

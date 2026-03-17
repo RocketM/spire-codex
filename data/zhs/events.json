@@ -7,14 +7,14 @@
     "description": "你发现了一间僻静的密室。\n\n氤氲的雾气从沸腾的池水中升腾而起，池水的色泽正以一种催眠般的节奏变幻。天花板上垂挂着覆满藤壶的异形生长物，滴落的黏稠液体在触及水面的瞬间，一边发出嘶嘶声，一边如活物般扭动挣扎。空气粘滞沉重，充斥着[blue]盐[/blue]的味道和某种[green]不言而喻的活物的气息[/green]。\n\n当你靠近那口最大的水池时，液面泛起了涟漪。水流翻腾得愈发狂乱，仿佛正期待着你的到来。",
     "options": [
       {
-        "id": "ABSTAIN",
-        "title": "敬而远之",
-        "description": "回复[green]10[/green]点生命。"
-      },
-      {
         "id": "IMMERSE",
         "title": "投身其中",
         "description": "获得[green]2[/green]点最大生命值。受到[red]3[/red]点伤害。"
+      },
+      {
+        "id": "ABSTAIN",
+        "title": "敬而远之",
+        "description": "回复[green]10[/green]点生命。"
       }
     ],
     "pages": [
@@ -27,14 +27,14 @@
         "description": null,
         "options": [
           {
-            "id": "EXIT_BATHS",
-            "title": "离开浴场",
-            "description": ""
-          },
-          {
             "id": "LINGER",
             "title": "沉溺",
             "description": "获得[green]2[/green]点最大生命值。受到[red]3[/red]点伤害。"
+          },
+          {
+            "id": "EXIT_BATHS",
+            "title": "离开浴场",
+            "description": ""
           }
         ]
       },
@@ -55,14 +55,14 @@
         "description": "你发现了一间僻静的密室。\n\n氤氲的雾气从沸腾的池水中升腾而起，池水的色泽正以一种催眠般的节奏变幻。天花板上垂挂着覆满藤壶的异形生长物，滴落的黏稠液体在触及水面的瞬间，一边发出嘶嘶声，一边如活物般扭动挣扎。空气粘滞沉重，充斥着[blue]盐[/blue]的味道和某种[green]不言而喻的活物的气息[/green]。\n\n当你靠近那口最大的水池时，液面泛起了涟漪。水流翻腾得愈发狂乱，仿佛正期待着你的到来。",
         "options": [
           {
-            "id": "ABSTAIN",
-            "title": "敬而远之",
-            "description": "回复[green]10[/green]点生命。"
-          },
-          {
             "id": "IMMERSE",
             "title": "投身其中",
             "description": "获得[green]2[/green]点最大生命值。受到[red]3[/red]点伤害。"
+          },
+          {
+            "id": "ABSTAIN",
+            "title": "敬而远之",
+            "description": "回复[green]10[/green]点生命。"
           }
         ]
       },
@@ -257,14 +257,14 @@
     "description": "[jitter]咚！[/jitter]\n\n你的头顶传来一阵刺痛，一个念头刺入了你的脑海。\n\n[purple][sine][b]“分享知识吗？？？”[/b][/sine][/purple]\n\n你不知如何是好…",
     "options": [
       {
-        "id": "RIP",
-        "title": "把它扯下来",
-        "description": "失去[red]5[/red]点生命值。获得一组无色卡牌奖励。"
-      },
-      {
         "id": "SHARE_KNOWLEDGE",
         "title": "分享知识",
         "description": "从[blue]5[/blue]张随机牌中选择[blue]1[/blue]张加入你的[gold]牌组[/gold]。"
+      },
+      {
+        "id": "RIP",
+        "title": "把它扯下来",
+        "description": "失去[red]5[/red]点生命值。获得一组无色卡牌奖励。"
       }
     ],
     "pages": [
@@ -273,14 +273,14 @@
         "description": "[jitter]咚！[/jitter]\n\n你的头顶传来一阵刺痛，一个念头刺入了你的脑海。\n\n[purple][sine][b]“分享知识吗？？？”[/b][/sine][/purple]\n\n你不知如何是好…",
         "options": [
           {
-            "id": "RIP",
-            "title": "把它扯下来",
-            "description": "失去[red]5[/red]点生命值。获得一组无色卡牌奖励。"
-          },
-          {
             "id": "SHARE_KNOWLEDGE",
             "title": "分享知识",
             "description": "从[blue]5[/blue]张随机牌中选择[blue]1[/blue]张加入你的[gold]牌组[/gold]。"
+          },
+          {
+            "id": "RIP",
+            "title": "把它扯下来",
+            "description": "失去[red]5[/red]点生命值。获得一组无色卡牌奖励。"
           }
         ]
       },
@@ -558,14 +558,14 @@
     "description": "[sine][blue]“我预见到了你的到来…！”[/blue][/sine]\n\n当你走进一间[purple]神秘小屋[/purple]时，一个[jitter]沙哑[/jitter]的声音传了过来。\n\n[sine][blue]“你的命运指引你来到此处。我们必须揭开你的未来与运势，这样你才能拯救我们所有人！！”[/blue][/sine]\n“好啦，这是进行[gold]水晶球占卜[/gold]的几个选项。另外，记得把这份免责协议也签了，”她一边说着，一边拿出了笔和羊皮纸。",
     "options": [
       {
-        "id": "PAYMENT_PLAN",
-        "title": "分期付款",
-        "description": "获得一张[red]债务[/red]。[purple]占卜[/purple][blue]6[/blue]次。"
-      },
-      {
         "id": "UNCOVER_FUTURE",
         "title": "揭幕未来",
         "description": "支付[red]50[/red][gold]金币[/gold]。[purple]占卜[/purple][blue]3[/blue]次。"
+      },
+      {
+        "id": "PAYMENT_PLAN",
+        "title": "分期付款",
+        "description": "获得一张[red]债务[/red]。[purple]占卜[/purple][blue]6[/blue]次。"
       }
     ],
     "pages": [
@@ -578,14 +578,14 @@
         "description": "[sine][blue]“我预见到了你的到来…！”[/blue][/sine]\n\n当你走进一间[purple]神秘小屋[/purple]时，一个[jitter]沙哑[/jitter]的声音传了过来。\n\n[sine][blue]“你的命运指引你来到此处。我们必须揭开你的未来与运势，这样你才能拯救我们所有人！！”[/blue][/sine]\n“好啦，这是进行[gold]水晶球占卜[/gold]的几个选项。另外，记得把这份免责协议也签了，”她一边说着，一边拿出了笔和羊皮纸。",
         "options": [
           {
-            "id": "PAYMENT_PLAN",
-            "title": "分期付款",
-            "description": "获得一张[red]债务[/red]。[purple]占卜[/purple][blue]6[/blue]次。"
-          },
-          {
             "id": "UNCOVER_FUTURE",
             "title": "揭幕未来",
             "description": "支付[red]50[/red][gold]金币[/gold]。[purple]占卜[/purple][blue]3[/blue]次。"
+          },
+          {
+            "id": "PAYMENT_PLAN",
+            "title": "分期付款",
+            "description": "获得一张[red]债务[/red]。[purple]占卜[/purple][blue]6[/blue]次。"
           }
         ]
       },
@@ -813,14 +813,14 @@
     "description": "你在错路上走了一段时间之后，你发现自己置身于一片由[green]蕨类[/green]、[green]灌木[/green]和[green]藤蔓[/green]构成的茂密丛林中。尤其是[green]藤蔓[/green]。精疲力竭的感觉油然而生，一个可怕的念头随之浮现在脑海里：\n\n[sine][purple]“你迷路了，毫无防备，而死亡的阴影正悄然逼近。”[/purple][/sine]\n\n你要怎么办呢？",
     "options": [
       {
-        "id": "REST",
-        "title": "休息",
-        "description": "回复[green]30% Max[/green]点生命。[red]进入战斗[/red]。"
-      },
-      {
         "id": "TRUDGE_ON",
         "title": "坚持跋涉",
         "description": "从你的[gold]牌组[/gold]中移除一张牌。失去[red]11[/red]点生命。"
+      },
+      {
+        "id": "REST",
+        "title": "休息",
+        "description": "回复[green]30% Max[/green]点生命。[red]进入战斗[/red]。"
       }
     ],
     "pages": [
@@ -829,14 +829,14 @@
         "description": "你在错路上走了一段时间之后，你发现自己置身于一片由[green]蕨类[/green]、[green]灌木[/green]和[green]藤蔓[/green]构成的茂密丛林中。尤其是[green]藤蔓[/green]。精疲力竭的感觉油然而生，一个可怕的念头随之浮现在脑海里：\n\n[sine][purple]“你迷路了，毫无防备，而死亡的阴影正悄然逼近。”[/purple][/sine]\n\n你要怎么办呢？",
         "options": [
           {
-            "id": "REST",
-            "title": "休息",
-            "description": "回复[green]30% Max[/green]点生命。[red]进入战斗[/red]。"
-          },
-          {
             "id": "TRUDGE_ON",
             "title": "坚持跋涉",
             "description": "从你的[gold]牌组[/gold]中移除一张牌。失去[red]11[/red]点生命。"
+          },
+          {
+            "id": "REST",
+            "title": "休息",
+            "description": "回复[green]30% Max[/green]点生命。[red]进入战斗[/red]。"
           }
         ]
       },
@@ -865,11 +865,6 @@
     "description": "你走进了一间隐藏的密室……\n\n这里堆满了琳琅满目的玩偶。每一只都独一无二，它们的表情亦从[green]喜悦[/green]到[purple]悲哀[/purple]各不相同，其服饰跨越了数个世纪，甚至来自你认知之外的领域。\n\n一阵[sine][blue]低语的合唱[/blue][/sine]变得越来越响，直到[jitter][red]那些玩偶互相争吵着大叫起来[/red][/jitter]，放声呼唤着你……\n\n你必须选择一个，并立刻离开这个地方。",
     "options": [
       {
-        "id": "EXAMINE",
-        "title": "仔细检查然后挑选最好的那个",
-        "description": "失去[red]15[/red]点生命。从[blue]3[/blue]尊[gold]玩偶遗物[/gold]中选择[blue]1[/blue]尊带走。"
-      },
-      {
         "id": "RANDOM",
         "title": "随机拿走一尊",
         "description": "获取一尊[gold]玩偶遗物[/gold]。"
@@ -878,6 +873,11 @@
         "id": "TAKE_SOME_TIME",
         "title": "花点时间慢慢来",
         "description": "失去[red]5[/red]点生命。从[blue]2[/blue]尊[gold]玩偶遗物[/gold]中选择[blue]1[/blue]尊带走。"
+      },
+      {
+        "id": "EXAMINE",
+        "title": "仔细检查然后挑选最好的那个",
+        "description": "失去[red]15[/red]点生命。从[blue]3[/blue]尊[gold]玩偶遗物[/gold]中选择[blue]1[/blue]尊带走。"
       }
     ],
     "pages": [
@@ -898,11 +898,6 @@
         "description": "你走进了一间隐藏的密室……\n\n这里堆满了琳琅满目的玩偶。每一只都独一无二，它们的表情亦从[green]喜悦[/green]到[purple]悲哀[/purple]各不相同，其服饰跨越了数个世纪，甚至来自你认知之外的领域。\n\n一阵[sine][blue]低语的合唱[/blue][/sine]变得越来越响，直到[jitter][red]那些玩偶互相争吵着大叫起来[/red][/jitter]，放声呼唤着你……\n\n你必须选择一个，并立刻离开这个地方。",
         "options": [
           {
-            "id": "EXAMINE",
-            "title": "仔细检查然后挑选最好的那个",
-            "description": "失去[red]15[/red]点生命。从[blue]3[/blue]尊[gold]玩偶遗物[/gold]中选择[blue]1[/blue]尊带走。"
-          },
-          {
             "id": "RANDOM",
             "title": "随机拿走一尊",
             "description": "获取一尊[gold]玩偶遗物[/gold]。"
@@ -911,6 +906,11 @@
             "id": "TAKE_SOME_TIME",
             "title": "花点时间慢慢来",
             "description": "失去[red]5[/red]点生命。从[blue]2[/blue]尊[gold]玩偶遗物[/gold]中选择[blue]1[/blue]尊带走。"
+          },
+          {
+            "id": "EXAMINE",
+            "title": "仔细检查然后挑选最好的那个",
+            "description": "失去[red]15[/red]点生命。从[blue]3[/blue]尊[gold]玩偶遗物[/gold]中选择[blue]1[/blue]尊带走。"
           }
         ]
       },
@@ -943,14 +943,14 @@
     "description": "一道门扉突然凭空出现了…\n\n你步入其中，见到了两道散发着微光的门，以及一位[gold]衣着得体的看门人[/gold]。\n“终于有访客了！请，请！选一扇门，任何一扇都可以！”\n\n[blue]我们还在尖塔里吗？这地方为何竟如此洁净？[/blue]",
     "options": [
       {
-        "id": "DARK",
-        "title": "暗之门",
-        "description": "从你的[gold]牌组[/gold]中选择[blue]1[/blue]张牌移除。"
-      },
-      {
         "id": "LIGHT",
         "title": "光之门",
         "description": "随机[gold]升级[/gold][blue]2[/blue]张牌。"
+      },
+      {
+        "id": "DARK",
+        "title": "暗之门",
+        "description": "从你的[gold]牌组[/gold]中选择[blue]1[/blue]张牌移除。"
       }
     ],
     "pages": [
@@ -963,14 +963,14 @@
         "description": "一道门扉突然凭空出现了…\n\n你步入其中，见到了两道散发着微光的门，以及一位[gold]衣着得体的看门人[/gold]。\n“终于有访客了！请，请！选一扇门，任何一扇都可以！”\n\n[blue]我们还在尖塔里吗？这地方为何竟如此洁净？[/blue]",
         "options": [
           {
-            "id": "DARK",
-            "title": "暗之门",
-            "description": "从你的[gold]牌组[/gold]中选择[blue]1[/blue]张牌移除。"
-          },
-          {
             "id": "LIGHT",
             "title": "光之门",
             "description": "随机[gold]升级[/gold][blue]2[/blue]张牌。"
+          },
+          {
+            "id": "DARK",
+            "title": "暗之门",
+            "description": "从你的[gold]牌组[/gold]中选择[blue]1[/blue]张牌移除。"
           }
         ]
       },
@@ -1044,6 +1044,11 @@
         "description": null,
         "options": [
           {
+            "id": "LOCKED",
+            "title": "破产了",
+            "description": "你还能吃得下更多，但是兜里没[gold]金币[/gold]了。"
+          },
+          {
             "id": "CAVIAR",
             "title": "从传送带上拿份鱼子酱",
             "description": "支付[red]35[/red][gold]金币[/gold]。获得[green]4[/green]点最大生命。接着吃！"
@@ -1067,11 +1072,6 @@
             "id": "JELLY_LIVER",
             "title": "从传送带上拿份果冻肝",
             "description": "支付[red]35[/red][gold]金币[/gold]。 [gold]变化[/gold]一张牌。接着吃！"
-          },
-          {
-            "id": "LOCKED",
-            "title": "破产了",
-            "description": "你还能吃得下更多，但是兜里没[gold]金币[/gold]了。"
           },
           {
             "id": "SEAPUNK_SALAD",
@@ -1139,14 +1139,14 @@
     "description": "眼前突然出现一大片土地，上面[jitter]凿刻着密密麻麻的人形轮廓[/jitter]，让你不由得停下了脚步。\n\n其中有一个洞的轮廓，竟然和你的体型一模一样。\n\n[sine][orange]完美契合…[/orange][/sine]",
     "options": [
       {
-        "id": "ENTER_YOUR_HOLE",
-        "title": "进入你的洞",
-        "description": "为一张牌[gold]附魔[/gold]：[purple]完美契合[/purple]。"
-      },
-      {
         "id": "RESIST",
         "title": "抵抗诱惑",
         "description": "从你的[gold]牌组[/gold]中移除[blue]2[/blue]张牌。将一张[red]凡庸[/red]添加到你的[gold]牌组[/gold]中。"
+      },
+      {
+        "id": "ENTER_YOUR_HOLE",
+        "title": "进入你的洞",
+        "description": "为一张牌[gold]附魔[/gold]：[purple]完美契合[/purple]。"
       }
     ],
     "pages": [
@@ -1159,14 +1159,14 @@
         "description": "眼前突然出现一大片土地，上面[jitter]凿刻着密密麻麻的人形轮廓[/jitter]，让你不由得停下了脚步。\n\n其中有一个洞的轮廓，竟然和你的体型一模一样。\n\n[sine][orange]完美契合…[/orange][/sine]",
         "options": [
           {
-            "id": "ENTER_YOUR_HOLE",
-            "title": "进入你的洞",
-            "description": "为一张牌[gold]附魔[/gold]：[purple]完美契合[/purple]。"
-          },
-          {
             "id": "RESIST",
             "title": "抵抗诱惑",
             "description": "从你的[gold]牌组[/gold]中移除[blue]2[/blue]张牌。将一张[red]凡庸[/red]添加到你的[gold]牌组[/gold]中。"
+          },
+          {
+            "id": "ENTER_YOUR_HOLE",
+            "title": "进入你的洞",
+            "description": "为一张牌[gold]附魔[/gold]：[purple]完美契合[/purple]。"
           }
         ]
       },
@@ -1184,9 +1184,9 @@
     "description": "一座孤冢上[jitter][aqua]翻腾着汹涌的蓝焰[/aqua][/jitter]…\n\n一名高傲的战士战死于此，灵魂却躁动不安。但它渴望继续战斗，你甚至能感觉到它在[sine]哀求[/sine]你带着它一起踏上征途。\n\n但也许，让它直面[red]真相[/red]才是更好的选择？",
     "options": [
       {
-        "id": "ACCEPT",
-        "title": "接受这颗遗忘之魂",
-        "description": "获得[gold]遗忘之魂[/gold]。"
+        "id": "CONFRONT_LOCKED",
+        "title": "已锁定",
+        "description": "你没有可被[purple]附魔[/purple]的带有[gold]消耗[/gold]的卡牌。"
       },
       {
         "id": "CONFRONT",
@@ -1194,9 +1194,9 @@
         "description": "将一张[red]腐朽[/red]到你的[gold]牌组[/gold]。 为一张带有[gold]消耗[/gold]的牌[gold]附魔[/gold]：[purple]灵魂之力[/purple]。"
       },
       {
-        "id": "CONFRONT_LOCKED",
-        "title": "已锁定",
-        "description": "你没有可被[purple]附魔[/purple]的带有[gold]消耗[/gold]的卡牌。"
+        "id": "ACCEPT",
+        "title": "接受这颗遗忘之魂",
+        "description": "获得[gold]遗忘之魂[/gold]。"
       }
     ],
     "pages": [
@@ -1213,9 +1213,9 @@
         "description": "一座孤冢上[jitter][aqua]翻腾着汹涌的蓝焰[/aqua][/jitter]…\n\n一名高傲的战士战死于此，灵魂却躁动不安。但它渴望继续战斗，你甚至能感觉到它在[sine]哀求[/sine]你带着它一起踏上征途。\n\n但也许，让它直面[red]真相[/red]才是更好的选择？",
         "options": [
           {
-            "id": "ACCEPT",
-            "title": "接受这颗遗忘之魂",
-            "description": "获得[gold]遗忘之魂[/gold]。"
+            "id": "CONFRONT_LOCKED",
+            "title": "已锁定",
+            "description": "你没有可被[purple]附魔[/purple]的带有[gold]消耗[/gold]的卡牌。"
           },
           {
             "id": "CONFRONT",
@@ -1223,9 +1223,9 @@
             "description": "将一张[red]腐朽[/red]到你的[gold]牌组[/gold]。 为一张带有[gold]消耗[/gold]的牌[gold]附魔[/gold]：[purple]灵魂之力[/purple]。"
           },
           {
-            "id": "CONFRONT_LOCKED",
-            "title": "已锁定",
-            "description": "你没有可被[purple]附魔[/purple]的带有[gold]消耗[/gold]的卡牌。"
+            "id": "ACCEPT",
+            "title": "接受这颗遗忘之魂",
+            "description": "获得[gold]遗忘之魂[/gold]。"
           }
         ]
       }
@@ -1333,14 +1333,14 @@
     "description": "在一片林间空地上，你撞见了一群[green]寒碜的冒险者小队[/green]，他们正俯瞰着一座[purple]巨型迷宫[/purple]并指手画脚。\n\n他们邀请你入伙，共同开启一场搜刮迷宫财富的[b]史诗级任务[/b]。身为老手，你心知肚明这迷宫里塞满了[red][jitter]致命陷阱[/jitter][/red]和[orange][sine]守卫[/sine][/orange]。\n\n搭伙干活确实容易些，但那样你就得跟人平分战利品了。",
     "options": [
       {
-        "id": "JOIN_FORCES",
-        "title": "结伴同行",
-        "description": "获得[blue]50[/blue][gold]金币[/gold]。"
-      },
-      {
         "id": "SOLO_QUEST",
         "title": "独自挑战",
         "description": "获得[blue]150[/blue][gold]金币[/gold]。失去[red]18[/red]点生命。"
+      },
+      {
+        "id": "JOIN_FORCES",
+        "title": "结伴同行",
+        "description": "获得[blue]50[/blue][gold]金币[/gold]。"
       }
     ],
     "pages": [
@@ -1349,14 +1349,14 @@
         "description": "在一片林间空地上，你撞见了一群[green]寒碜的冒险者小队[/green]，他们正俯瞰着一座[purple]巨型迷宫[/purple]并指手画脚。\n\n他们邀请你入伙，共同开启一场搜刮迷宫财富的[b]史诗级任务[/b]。身为老手，你心知肚明这迷宫里塞满了[red][jitter]致命陷阱[/jitter][/red]和[orange][sine]守卫[/sine][/orange]。\n\n搭伙干活确实容易些，但那样你就得跟人平分战利品了。",
         "options": [
           {
-            "id": "JOIN_FORCES",
-            "title": "结伴同行",
-            "description": "获得[blue]50[/blue][gold]金币[/gold]。"
-          },
-          {
             "id": "SOLO_QUEST",
             "title": "独自挑战",
             "description": "获得[blue]150[/blue][gold]金币[/gold]。失去[red]18[/red]点生命。"
+          },
+          {
+            "id": "JOIN_FORCES",
+            "title": "结伴同行",
+            "description": "获得[blue]50[/blue][gold]金币[/gold]。"
           }
         ]
       },
@@ -1383,14 +1383,14 @@
         "description": "将一张[red]腐朽[/red]添加到你的[gold]牌组[/gold]。获得[gold]迷失鬼火[/gold]。"
       },
       {
-        "id": "CLAIM_LOCKED",
-        "title": "已锁定",
-        "description": "你的最大生命值太低了。"
-      },
-      {
         "id": "SEARCH",
         "title": "搜索附近的区域",
         "description": "获得[blue]60[/blue][gold]金币[/gold]。"
+      },
+      {
+        "id": "CLAIM_LOCKED",
+        "title": "已锁定",
+        "description": "你的最大生命值太低了。"
       }
     ],
     "pages": [
@@ -1408,14 +1408,14 @@
             "description": "将一张[red]腐朽[/red]添加到你的[gold]牌组[/gold]。获得[gold]迷失鬼火[/gold]。"
           },
           {
-            "id": "CLAIM_LOCKED",
-            "title": "已锁定",
-            "description": "你的最大生命值太低了。"
-          },
-          {
             "id": "SEARCH",
             "title": "搜索附近的区域",
             "description": "获得[blue]60[/blue][gold]金币[/gold]。"
+          },
+          {
+            "id": "CLAIM_LOCKED",
+            "title": "已锁定",
+            "description": "你的最大生命值太低了。"
           }
         ]
       },
@@ -1433,6 +1433,11 @@
     "description": "你撞入了一片沐浴在诡异蓝光下的林间空地。高耸的蘑菇随着生物荧光起伏脉动，菌盖肿胀而泛着光泽。当你靠近时，真菌们竟开始发出[sine][purple]凄美而婉转的旋律[/purple][/sine]，这旋律在你的胸腔内激荡。\n\n你注意到，在那个体型最大的蘑菇肉质中嵌入了某种闪光的东西，正随着真菌之歌有节奏地[sine]跃动[/sine]。",
     "options": [
       {
+        "id": "REACH_INTO_THE_FLESH",
+        "title": "探入菌肉",
+        "description": "从你的[gold]牌组[/gold]移除[blue]2[/blue]张牌。将一张[red]孢子心灵[/red]添加到你的[gold]牌组[/gold]。"
+      },
+      {
         "id": "OFFER_TRIBUTE",
         "title": "供奉",
         "description": "支付[red]149[/red][gold]金币[/gold]。获取一件随机[gold]遗物[/gold]。"
@@ -1441,11 +1446,6 @@
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "已锁定",
         "description": "需要[blue]149[/blue][gold]金币[/gold]。"
-      },
-      {
-        "id": "REACH_INTO_THE_FLESH",
-        "title": "探入菌肉",
-        "description": "从你的[gold]牌组[/gold]移除[blue]2[/blue]张牌。将一张[red]孢子心灵[/red]添加到你的[gold]牌组[/gold]。"
       }
     ],
     "pages": [
@@ -1453,6 +1453,11 @@
         "id": "INITIAL",
         "description": "你撞入了一片沐浴在诡异蓝光下的林间空地。高耸的蘑菇随着生物荧光起伏脉动，菌盖肿胀而泛着光泽。当你靠近时，真菌们竟开始发出[sine][purple]凄美而婉转的旋律[/purple][/sine]，这旋律在你的胸腔内激荡。\n\n你注意到，在那个体型最大的蘑菇肉质中嵌入了某种闪光的东西，正随着真菌之歌有节奏地[sine]跃动[/sine]。",
         "options": [
+          {
+            "id": "REACH_INTO_THE_FLESH",
+            "title": "探入菌肉",
+            "description": "从你的[gold]牌组[/gold]移除[blue]2[/blue]张牌。将一张[red]孢子心灵[/red]添加到你的[gold]牌组[/gold]。"
+          },
           {
             "id": "OFFER_TRIBUTE",
             "title": "供奉",
@@ -1462,11 +1467,6 @@
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "已锁定",
             "description": "需要[blue]149[/blue][gold]金币[/gold]。"
-          },
-          {
-            "id": "REACH_INTO_THE_FLESH",
-            "title": "探入菌肉",
-            "description": "从你的[gold]牌组[/gold]移除[blue]2[/blue]张牌。将一张[red]孢子心灵[/red]添加到你的[gold]牌组[/gold]。"
           }
         ]
       },
@@ -2314,14 +2314,14 @@
     "description": "两个[gold]拳击构装体[/gold]正在挥拳互殴，而你看到在它们两个之间有一些财宝……\n\n要不要把财宝顺走？",
     "options": [
       {
-        "id": "I_CAN_TAKE_THEM",
-        "title": "我能打两个",
-        "description": "和它们战斗以得到[gold]更好的奖励[/gold]。"
-      },
-      {
         "id": "NAB",
         "title": "顺走",
         "description": "将一张[red]受伤[/red]加入到你的[gold]牌组[/gold]。获得一件随机[gold]遗物[/gold]。"
+      },
+      {
+        "id": "I_CAN_TAKE_THEM",
+        "title": "我能打两个",
+        "description": "和它们战斗以得到[gold]更好的奖励[/gold]。"
       }
     ],
     "pages": [
@@ -2330,14 +2330,14 @@
         "description": "两个[gold]拳击构装体[/gold]正在挥拳互殴，而你看到在它们两个之间有一些财宝……\n\n要不要把财宝顺走？",
         "options": [
           {
-            "id": "I_CAN_TAKE_THEM",
-            "title": "我能打两个",
-            "description": "和它们战斗以得到[gold]更好的奖励[/gold]。"
-          },
-          {
             "id": "NAB",
             "title": "顺走",
             "description": "将一张[red]受伤[/red]加入到你的[gold]牌组[/gold]。获得一件随机[gold]遗物[/gold]。"
+          },
+          {
+            "id": "I_CAN_TAKE_THEM",
+            "title": "我能打两个",
+            "description": "和它们战斗以得到[gold]更好的奖励[/gold]。"
           }
         ]
       },
@@ -2366,14 +2366,14 @@
     "description": "一个[purple]你至今为止见过最年迈的人[/purple]走到了你的身前。\n[sine]“我们又见面了....是我，兰伟德！”[/sine]\n\n你不认识这个男人。",
     "options": [
       {
-        "id": "GOLD",
-        "title": "给他100金币",
-        "description": "获得一件随机[gold]遗物[/gold]。"
-      },
-      {
         "id": "POTION",
         "title": "给他Potion",
         "description": "获得一件随机[gold]遗物[/gold]。"
+      },
+      {
+        "id": "RELIC",
+        "title": "给他Relic",
+        "description": "获得[blue]2[/blue]件随机[gold]遗物[/gold]。"
       },
       {
         "id": "POTION_LOCKED",
@@ -2381,9 +2381,9 @@
         "description": "你没有任何可以给他的药水。"
       },
       {
-        "id": "RELIC",
-        "title": "给他Relic",
-        "description": "获得[blue]2[/blue]件随机[gold]遗物[/gold]。"
+        "id": "GOLD",
+        "title": "给他100金币",
+        "description": "获得一件随机[gold]遗物[/gold]。"
       },
       {
         "id": "RELIC_LOCKED",
@@ -2401,14 +2401,14 @@
         "description": "一个[purple]你至今为止见过最年迈的人[/purple]走到了你的身前。\n[sine]“我们又见面了....是我，兰伟德！”[/sine]\n\n你不认识这个男人。",
         "options": [
           {
-            "id": "GOLD",
-            "title": "给他100金币",
-            "description": "获得一件随机[gold]遗物[/gold]。"
-          },
-          {
             "id": "POTION",
             "title": "给他Potion",
             "description": "获得一件随机[gold]遗物[/gold]。"
+          },
+          {
+            "id": "RELIC",
+            "title": "给他Relic",
+            "description": "获得[blue]2[/blue]件随机[gold]遗物[/gold]。"
           },
           {
             "id": "POTION_LOCKED",
@@ -2416,9 +2416,9 @@
             "description": "你没有任何可以给他的药水。"
           },
           {
-            "id": "RELIC",
-            "title": "给他Relic",
-            "description": "获得[blue]2[/blue]件随机[gold]遗物[/gold]。"
+            "id": "GOLD",
+            "title": "给他100金币",
+            "description": "获得一件随机[gold]遗物[/gold]。"
           },
           {
             "id": "RELIC_LOCKED",
@@ -2445,14 +2445,14 @@
     "description": "这是什么？这里感觉不太对劲….\n[sine]….劲对太不觉感里这？么什是这[/sine]",
     "options": [
       {
-        "id": "SHATTER",
-        "title": "打碎",
-        "description": "复制你的整个[gold]牌组[/gold]。获得[purple]霉运[/purple]。"
-      },
-      {
         "id": "TOUCH_A_MIRROR",
         "title": "触碰镜子",
         "description": "[red]降级[/red][blue]2[/blue]张随机卡牌。[green]升级[/green][blue]4[/blue]张随机卡牌。"
+      },
+      {
+        "id": "SHATTER",
+        "title": "打碎",
+        "description": "复制你的整个[gold]牌组[/gold]。获得[purple]霉运[/purple]。"
       }
     ],
     "pages": [
@@ -2461,14 +2461,14 @@
         "description": "这是什么？这里感觉不太对劲….\n[sine]….劲对太不觉感里这？么什是这[/sine]",
         "options": [
           {
-            "id": "SHATTER",
-            "title": "打碎",
-            "description": "复制你的整个[gold]牌组[/gold]。获得[purple]霉运[/purple]。"
-          },
-          {
             "id": "TOUCH_A_MIRROR",
             "title": "触碰镜子",
             "description": "[red]降级[/red][blue]2[/blue]张随机卡牌。[green]升级[/green][blue]4[/blue]张随机卡牌。"
+          },
+          {
+            "id": "SHATTER",
+            "title": "打碎",
+            "description": "复制你的整个[gold]牌组[/gold]。获得[purple]霉运[/purple]。"
           }
         ]
       },
@@ -2490,8 +2490,8 @@
     "description": "你走过一个拐角，一个黑影突然矗立在前方。他转过身来，正对着你。\n\n“欢迎！想做点什么买卖？”\n他开口询问，同时猛地掀开斗篷，露出一大堆[sine][purple]可疑货物[/purple][/sine]。",
     "options": [
       {
-        "id": "BOTTOM",
-        "title": "拿下面那件",
+        "id": "TOP",
+        "title": "拿上面那件",
         "description": "用[gold]one of your Relics[/gold]换[gold]a random Relic[/gold]。"
       },
       {
@@ -2500,8 +2500,8 @@
         "description": "用[gold]one of your Relics[/gold]换[gold]a random Relic[/gold]。"
       },
       {
-        "id": "TOP",
-        "title": "拿上面那件",
+        "id": "BOTTOM",
+        "title": "拿下面那件",
         "description": "用[gold]one of your Relics[/gold]换[gold]a random Relic[/gold]。"
       }
     ],
@@ -2515,8 +2515,8 @@
         "description": "你走过一个拐角，一个黑影突然矗立在前方。他转过身来，正对着你。\n\n“欢迎！想做点什么买卖？”\n他开口询问，同时猛地掀开斗篷，露出一大堆[sine][purple]可疑货物[/purple][/sine]。",
         "options": [
           {
-            "id": "BOTTOM",
-            "title": "拿下面那件",
+            "id": "TOP",
+            "title": "拿上面那件",
             "description": "用[gold]one of your Relics[/gold]换[gold]a random Relic[/gold]。"
           },
           {
@@ -2525,8 +2525,8 @@
             "description": "用[gold]one of your Relics[/gold]换[gold]a random Relic[/gold]。"
           },
           {
-            "id": "TOP",
-            "title": "拿上面那件",
+            "id": "BOTTOM",
+            "title": "拿下面那件",
             "description": "用[gold]one of your Relics[/gold]换[gold]a random Relic[/gold]。"
           }
         ]
@@ -2691,19 +2691,14 @@
     "description": "地上有一本书：\n《征服高塔的3种最佳方法》\n\n这本书上[red]血迹斑斑[/red]，所以你觉得它非常可疑。\n\n你要读它吗？",
     "options": [
       {
-        "id": "NO_OPTIONS",
-        "title": "离开",
-        "description": "你没有任何可以附魔的牌。"
+        "id": "READ_THE_BACK",
+        "title": "读下封底",
+        "description": "选择一张攻击牌[gold]附魔[/gold]：[purple]锋利[/purple][blue]2[/blue]。"
       },
       {
-        "id": "READ_ENTIRE_BOOK",
-        "title": "读完整本书",
-        "description": "选择一张能力牌[gold]附魔[/gold]：[purple]迅速[/purple][blue]2[/blue]。"
-      },
-      {
-        "id": "READ_ENTIRE_BOOK_LOCKED",
+        "id": "READ_THE_BACK_LOCKED",
         "title": "锁定",
-        "description": "你没有任何可以[gold]附魔[/gold]的能力牌。"
+        "description": "你没有任何可以[gold]附魔[/gold]的攻击牌。"
       },
       {
         "id": "READ_PASSAGE",
@@ -2716,14 +2711,19 @@
         "description": "你没有任何可以[gold]附魔[/gold]的技能牌。"
       },
       {
-        "id": "READ_THE_BACK",
-        "title": "读下封底",
-        "description": "选择一张攻击牌[gold]附魔[/gold]：[purple]锋利[/purple][blue]2[/blue]。"
+        "id": "READ_ENTIRE_BOOK",
+        "title": "读完整本书",
+        "description": "选择一张能力牌[gold]附魔[/gold]：[purple]迅速[/purple][blue]2[/blue]。"
       },
       {
-        "id": "READ_THE_BACK_LOCKED",
+        "id": "READ_ENTIRE_BOOK_LOCKED",
         "title": "锁定",
-        "description": "你没有任何可以[gold]附魔[/gold]的攻击牌。"
+        "description": "你没有任何可以[gold]附魔[/gold]的能力牌。"
+      },
+      {
+        "id": "NO_OPTIONS",
+        "title": "离开",
+        "description": "你没有任何可以附魔的牌。"
       }
     ],
     "pages": [
@@ -2732,19 +2732,14 @@
         "description": "地上有一本书：\n《征服高塔的3种最佳方法》\n\n这本书上[red]血迹斑斑[/red]，所以你觉得它非常可疑。\n\n你要读它吗？",
         "options": [
           {
-            "id": "NO_OPTIONS",
-            "title": "离开",
-            "description": "你没有任何可以附魔的牌。"
+            "id": "READ_THE_BACK",
+            "title": "读下封底",
+            "description": "选择一张攻击牌[gold]附魔[/gold]：[purple]锋利[/purple][blue]2[/blue]。"
           },
           {
-            "id": "READ_ENTIRE_BOOK",
-            "title": "读完整本书",
-            "description": "选择一张能力牌[gold]附魔[/gold]：[purple]迅速[/purple][blue]2[/blue]。"
-          },
-          {
-            "id": "READ_ENTIRE_BOOK_LOCKED",
+            "id": "READ_THE_BACK_LOCKED",
             "title": "锁定",
-            "description": "你没有任何可以[gold]附魔[/gold]的能力牌。"
+            "description": "你没有任何可以[gold]附魔[/gold]的攻击牌。"
           },
           {
             "id": "READ_PASSAGE",
@@ -2757,14 +2752,19 @@
             "description": "你没有任何可以[gold]附魔[/gold]的技能牌。"
           },
           {
-            "id": "READ_THE_BACK",
-            "title": "读下封底",
-            "description": "选择一张攻击牌[gold]附魔[/gold]：[purple]锋利[/purple][blue]2[/blue]。"
+            "id": "READ_ENTIRE_BOOK",
+            "title": "读完整本书",
+            "description": "选择一张能力牌[gold]附魔[/gold]：[purple]迅速[/purple][blue]2[/blue]。"
           },
           {
-            "id": "READ_THE_BACK_LOCKED",
+            "id": "READ_ENTIRE_BOOK_LOCKED",
             "title": "锁定",
-            "description": "你没有任何可以[gold]附魔[/gold]的攻击牌。"
+            "description": "你没有任何可以[gold]附魔[/gold]的能力牌。"
+          },
+          {
+            "id": "NO_OPTIONS",
+            "title": "离开",
+            "description": "你没有任何可以附魔的牌。"
           }
         ]
       },
@@ -2794,14 +2794,14 @@
     "description": "当你穿过一座摇摇欲坠的木桥时，忽然间[blue][jitter]暴雨倾盆[/jitter][/blue]。[purple][sine]阵阵狂风[/sine][/purple]不断向你袭来，似乎要将你的旅程终结与此。",
     "options": [
       {
-        "id": "HOLD_ON_0",
-        "title": "再撑一会",
-        "description": "失去[red]3+[/red]点生命。重新随机上方选项中的卡牌。"
-      },
-      {
         "id": "OVERCOME",
         "title": "跨越",
         "description": "[red]a random Card[/red]将从你的[gold]牌组[/gold]中被移除。"
+      },
+      {
+        "id": "HOLD_ON_0",
+        "title": "再撑一会",
+        "description": "失去[red]3+[/red]点生命。重新随机上方选项中的卡牌。"
       }
     ],
     "pages": [
@@ -2898,14 +2898,14 @@
         "description": "当你穿过一座摇摇欲坠的木桥时，忽然间[blue][jitter]暴雨倾盆[/jitter][/blue]。[purple][sine]阵阵狂风[/sine][/purple]不断向你袭来，似乎要将你的旅程终结与此。",
         "options": [
           {
-            "id": "HOLD_ON_0",
-            "title": "再撑一会",
-            "description": "失去[red]3+[/red]点生命。重新随机上方选项中的卡牌。"
-          },
-          {
             "id": "OVERCOME",
             "title": "跨越",
             "description": "[red]a random Card[/red]将从你的[gold]牌组[/gold]中被移除。"
+          },
+          {
+            "id": "HOLD_ON_0",
+            "title": "再撑一会",
+            "description": "失去[red]3+[/red]点生命。重新随机上方选项中的卡牌。"
           }
         ]
       },
@@ -2923,14 +2923,14 @@
     "description": "你偶遇了一个[aqua][sine]巨大的螺旋漩涡[/sine][/aqua]。水流以精准而优雅的韵律回旋着，四周的墙壁也布满了螺旋纹路。\n\n[purple][sine]转啊，转啊…转…\n…转个不停…何等奇景…[/sine][/purple]\n\n你要做什么呢？？",
     "options": [
       {
-        "id": "DRINK",
-        "title": "饮用",
-        "description": "回复[green]33% Max[/green]点生命。"
-      },
-      {
         "id": "OBSERVE",
         "title": "观察",
         "description": "为一张“[gold]打击[/gold]”或“[gold]防御[/gold]”[gold]附魔[/gold]：[purple]涡旋[/purple]。"
+      },
+      {
+        "id": "DRINK",
+        "title": "饮用",
+        "description": "回复[green]33% Max[/green]点生命。"
       },
       {
         "id": "REACH_IN",
@@ -2948,14 +2948,14 @@
         "description": "你偶遇了一个[aqua][sine]巨大的螺旋漩涡[/sine][/aqua]。水流以精准而优雅的韵律回旋着，四周的墙壁也布满了螺旋纹路。\n\n[purple][sine]转啊，转啊…转…\n…转个不停…何等奇景…[/sine][/purple]\n\n你要做什么呢？？",
         "options": [
           {
-            "id": "DRINK",
-            "title": "饮用",
-            "description": "回复[green]33% Max[/green]点生命。"
-          },
-          {
             "id": "OBSERVE",
             "title": "观察",
             "description": "为一张“[gold]打击[/gold]”或“[gold]防御[/gold]”[gold]附魔[/gold]：[purple]涡旋[/purple]。"
+          },
+          {
+            "id": "DRINK",
+            "title": "饮用",
+            "description": "回复[green]33% Max[/green]点生命。"
           },
           {
             "id": "REACH_IN",
@@ -3037,14 +3037,14 @@
         "description": "需要药水。"
       },
       {
-        "id": "PUSH",
-        "title": "用力去推",
-        "description": "失去[red]6[/red]点生命。[gold]附魔[/gold]一张攻击牌：[purple]活力[/purple][blue]8[/blue]。"
-      },
-      {
         "id": "PUSH_LOCKED",
         "title": "锁定",
         "description": "需要一张攻击牌。"
+      },
+      {
+        "id": "PUSH",
+        "title": "用力去推",
+        "description": "失去[red]6[/red]点生命。[gold]附魔[/gold]一张攻击牌：[purple]活力[/purple][blue]8[/blue]。"
       }
     ],
     "pages": [
@@ -3063,14 +3063,14 @@
             "description": "需要药水。"
           },
           {
-            "id": "PUSH",
-            "title": "用力去推",
-            "description": "失去[red]6[/red]点生命。[gold]附魔[/gold]一张攻击牌：[purple]活力[/purple][blue]8[/blue]。"
-          },
-          {
             "id": "PUSH_LOCKED",
             "title": "锁定",
             "description": "需要一张攻击牌。"
+          },
+          {
+            "id": "PUSH",
+            "title": "用力去推",
+            "description": "失去[red]6[/red]点生命。[gold]附魔[/gold]一张攻击牌：[purple]活力[/purple][blue]8[/blue]。"
           }
         ]
       },
@@ -3092,14 +3092,14 @@
     "description": "你看见一尊古老的雕像，一半沉没在池塘的水中。雕像的手放在一把[blue]石剑[/blue]之上。\n\n同时你还看见，池塘的水底似乎有一些东西在[gold][sine]闪烁[/sine][/gold]着光芒。\n或许是人们祈愿投下的金币？\n\n钱可是个好东西……",
     "options": [
       {
-        "id": "DIVE_INTO_WATER",
-        "title": "潜水",
-        "description": "获得[blue]111[/blue][gold]金币[/gold]。失去[red]7[/red]点生命."
-      },
-      {
         "id": "GRAB_SWORD",
         "title": "拿起石剑",
         "description": "获得[gold]石之剑[/gold]。"
+      },
+      {
+        "id": "DIVE_INTO_WATER",
+        "title": "潜水",
+        "description": "获得[blue]111[/blue][gold]金币[/gold]。失去[red]7[/red]点生命."
       }
     ],
     "pages": [
@@ -3116,14 +3116,14 @@
         "description": "你看见一尊古老的雕像，一半沉没在池塘的水中。雕像的手放在一把[blue]石剑[/blue]之上。\n\n同时你还看见，池塘的水底似乎有一些东西在[gold][sine]闪烁[/sine][/gold]着光芒。\n或许是人们祈愿投下的金币？\n\n钱可是个好东西……",
         "options": [
           {
-            "id": "DIVE_INTO_WATER",
-            "title": "潜水",
-            "description": "获得[blue]111[/blue][gold]金币[/gold]。失去[red]7[/red]点生命."
-          },
-          {
             "id": "GRAB_SWORD",
             "title": "拿起石剑",
             "description": "获得[gold]石之剑[/gold]。"
+          },
+          {
+            "id": "DIVE_INTO_WATER",
+            "title": "潜水",
+            "description": "获得[blue]111[/blue][gold]金币[/gold]。失去[red]7[/red]点生命."
           }
         ]
       }
@@ -3182,14 +3182,14 @@
     "description": "在你的旅程中，你遇到了一个黑色无定形的肉块状生物，你能感觉到它非常古老、并且非常邪恶。\n\n[sine]过来吧…[/sine]",
     "options": [
       {
-        "id": "APPROACH",
-        "title": "靠近",
-        "description": "将一张攻击牌[gold]附魔[/gold]：[purple]腐化[/purple]。"
-      },
-      {
         "id": "APPROACH_LOCKED",
         "title": "锁定",
         "description": "你没有可以附魔的攻击牌。"
+      },
+      {
+        "id": "APPROACH",
+        "title": "靠近",
+        "description": "将一张攻击牌[gold]附魔[/gold]：[purple]腐化[/purple]。"
       },
       {
         "id": "KILL_WITH_FIRE",
@@ -3207,14 +3207,14 @@
         "description": "在你的旅程中，你遇到了一个黑色无定形的肉块状生物，你能感觉到它非常古老、并且非常邪恶。\n\n[sine]过来吧…[/sine]",
         "options": [
           {
-            "id": "APPROACH",
-            "title": "靠近",
-            "description": "将一张攻击牌[gold]附魔[/gold]：[purple]腐化[/purple]。"
-          },
-          {
             "id": "APPROACH_LOCKED",
             "title": "锁定",
             "description": "你没有可以附魔的攻击牌。"
+          },
+          {
+            "id": "APPROACH",
+            "title": "靠近",
+            "description": "将一张攻击牌[gold]附魔[/gold]：[purple]腐化[/purple]。"
           },
           {
             "id": "KILL_WITH_FIRE",
@@ -3859,14 +3859,14 @@
     "description": "你发现了一把发出微光的钥匙，于是将它捡了起来。\n\n“我找这把钥匙可把这里翻了个遍！你要是不介意的话……”\n\n这家伙看起来不是什么好人，但或许你也不该以貌取人。",
     "options": [
       {
-        "id": "KEEP_THE_KEY",
-        "title": "留下钥匙",
-        "description": "战斗来取得钥匙。"
-      },
-      {
         "id": "RETURN_THE_KEY",
         "title": "交还钥匙",
         "description": "获得[blue]100[/blue][gold]金币[/gold]。"
+      },
+      {
+        "id": "KEEP_THE_KEY",
+        "title": "留下钥匙",
+        "description": "战斗来取得钥匙。"
       }
     ],
     "pages": [
@@ -3886,14 +3886,14 @@
         "description": "你发现了一把发出微光的钥匙，于是将它捡了起来。\n\n“我找这把钥匙可把这里翻了个遍！你要是不介意的话……”\n\n这家伙看起来不是什么好人，但或许你也不该以貌取人。",
         "options": [
           {
-            "id": "KEEP_THE_KEY",
-            "title": "留下钥匙",
-            "description": "战斗来取得钥匙。"
-          },
-          {
             "id": "RETURN_THE_KEY",
             "title": "交还钥匙",
             "description": "获得[blue]100[/blue][gold]金币[/gold]。"
+          },
+          {
+            "id": "KEEP_THE_KEY",
+            "title": "留下钥匙",
+            "description": "战斗来取得钥匙。"
           }
         ]
       },
@@ -3963,14 +3963,14 @@
     "description": "附近的一个坑洞里突然蹿出一双手臂，一只手紧握着一袋[gold]可疑的财宝[/gold]，另一只则拿着一件明显[purple]被诅咒的遗物[/purple]。\n\n[jitter][blue]“这个……还是那个？”[/blue][/jitter]\n一个嘶哑的声音从地下传来，向你低语。",
     "options": [
       {
-        "id": "ORNATE",
-        "title": "那个",
-        "description": "将一张[red]笨拙[/red]加入你的[gold]牌组[/gold]。获得一件随机[gold]遗物[/gold]。"
-      },
-      {
         "id": "PLAIN",
         "title": "这个",
         "description": "失去[red]6[/red]点生命。获得[blue]41-69[/blue][gold]金币[/gold]。"
+      },
+      {
+        "id": "ORNATE",
+        "title": "那个",
+        "description": "将一张[red]笨拙[/red]加入你的[gold]牌组[/gold]。获得一件随机[gold]遗物[/gold]。"
       }
     ],
     "pages": [
@@ -3979,14 +3979,14 @@
         "description": "附近的一个坑洞里突然蹿出一双手臂，一只手紧握着一袋[gold]可疑的财宝[/gold]，另一只则拿着一件明显[purple]被诅咒的遗物[/purple]。\n\n[jitter][blue]“这个……还是那个？”[/blue][/jitter]\n一个嘶哑的声音从地下传来，向你低语。",
         "options": [
           {
-            "id": "ORNATE",
-            "title": "那个",
-            "description": "将一张[red]笨拙[/red]加入你的[gold]牌组[/gold]。获得一件随机[gold]遗物[/gold]。"
-          },
-          {
             "id": "PLAIN",
             "title": "这个",
             "description": "失去[red]6[/red]点生命。获得[blue]41-69[/blue][gold]金币[/gold]。"
+          },
+          {
+            "id": "ORNATE",
+            "title": "那个",
+            "description": "将一张[red]笨拙[/red]加入你的[gold]牌组[/gold]。获得一件随机[gold]遗物[/gold]。"
           }
         ]
       },
@@ -4024,14 +4024,14 @@
             "description": "制作一张攻击牌。"
           },
           {
-            "id": "POWER",
-            "title": "装置",
-            "description": "制作一张能力牌。"
-          },
-          {
             "id": "SKILL",
             "title": "护具",
             "description": "制作一张技能牌。"
+          },
+          {
+            "id": "POWER",
+            "title": "装置",
+            "description": "制作一张能力牌。"
           }
         ]
       },
@@ -4039,36 +4039,6 @@
         "id": "CHOOSE_RIDER",
         "description": "“很棒的选择！那么，它应该发挥什么[sine]作用[/sine]呢？”\n[orange]科学家[/orange]开心地搓起了她的双手。",
         "options": [
-          {
-            "id": "CHAOS",
-            "title": "混沌",
-            "description": "将一张随机牌放入你的[gold]手牌[/gold]。这张牌在本回合这张牌在本回合耗能变为[blue]0[/blue][energy:1]。"
-          },
-          {
-            "id": "CHOKING",
-            "title": "扼杀",
-            "description": "本回合，你每打出一张牌，该敌人失去[blue][ChokingDamage][/blue]点生命。"
-          },
-          {
-            "id": "CURIOUS",
-            "title": "好奇",
-            "description": "能力牌的耗能减少[blue]1[/blue][energy:1]。"
-          },
-          {
-            "id": "ENERGIZED",
-            "title": "充能",
-            "description": "获得[energy:2]。"
-          },
-          {
-            "id": "EXPERTISE",
-            "title": "专长",
-            "description": "获得[blue][ExpertiseStrength][/blue]点[gold]力量[/gold]。获得[blue][ExpertiseDexterity][/blue]点[gold]敏捷[/gold]。"
-          },
-          {
-            "id": "IMPROVEMENT",
-            "title": "精进",
-            "description": "在战斗结束时，随机[gold]升级[/gold]一张牌。"
-          },
           {
             "id": "SAPPING",
             "title": "削弱",
@@ -4080,9 +4050,39 @@
             "description": "额外命中[blue]2[/blue]次。"
           },
           {
+            "id": "CHOKING",
+            "title": "扼杀",
+            "description": "本回合，你每打出一张牌，该敌人失去[blue][ChokingDamage][/blue]点生命。"
+          },
+          {
+            "id": "ENERGIZED",
+            "title": "充能",
+            "description": "获得[energy:2]。"
+          },
+          {
             "id": "WISDOM",
             "title": "智慧",
             "description": "抽[blue]3[/blue]张牌。"
+          },
+          {
+            "id": "CHAOS",
+            "title": "混沌",
+            "description": "将一张随机牌放入你的[gold]手牌[/gold]。这张牌在本回合这张牌在本回合耗能变为[blue]0[/blue][energy:1]。"
+          },
+          {
+            "id": "EXPERTISE",
+            "title": "专长",
+            "description": "获得[blue][ExpertiseStrength][/blue]点[gold]力量[/gold]。获得[blue][ExpertiseDexterity][/blue]点[gold]敏捷[/gold]。"
+          },
+          {
+            "id": "CURIOUS",
+            "title": "好奇",
+            "description": "能力牌的耗能减少[blue]1[/blue][energy:1]。"
+          },
+          {
+            "id": "IMPROVEMENT",
+            "title": "精进",
+            "description": "在战斗结束时，随机[gold]升级[/gold]一张牌。"
           }
         ]
       },
@@ -4281,14 +4281,14 @@
     "description": "你找到了一个隔绝的[gold]休息处[/gold]，于是点起[orange]篝火[/orange]打算休息。\n结果只是打算而已。\n\n篝火点起后，火光立即胀大起来，不是向上而是向着[sine]侧面[/sine]延伸向一片满是[purple]冒油树木[/purple]的林地。\n\n要不要不管这个情况，就这么继续休息？",
     "options": [
       {
-        "id": "KILL",
-        "title": "杀死树木",
-        "description": "失去[red]8[/red]点最大生命。获得一件随机[gold]遗物[/gold]。"
-      },
-      {
         "id": "REST",
         "title": "就这样休息",
         "description": "[green]回复全部生命值。[/green]获得[red]睡眠不佳[/red]。"
+      },
+      {
+        "id": "KILL",
+        "title": "杀死树木",
+        "description": "失去[red]8[/red]点最大生命。获得一件随机[gold]遗物[/gold]。"
       }
     ],
     "pages": [
@@ -4297,14 +4297,14 @@
         "description": "你找到了一个隔绝的[gold]休息处[/gold]，于是点起[orange]篝火[/orange]打算休息。\n结果只是打算而已。\n\n篝火点起后，火光立即胀大起来，不是向上而是向着[sine]侧面[/sine]延伸向一片满是[purple]冒油树木[/purple]的林地。\n\n要不要不管这个情况，就这么继续休息？",
         "options": [
           {
-            "id": "KILL",
-            "title": "杀死树木",
-            "description": "失去[red]8[/red]点最大生命。获得一件随机[gold]遗物[/gold]。"
-          },
-          {
             "id": "REST",
             "title": "就这样休息",
             "description": "[green]回复全部生命值。[/green]获得[red]睡眠不佳[/red]。"
+          },
+          {
+            "id": "KILL",
+            "title": "杀死树木",
+            "description": "失去[red]8[/red]点最大生命。获得一件随机[gold]遗物[/gold]。"
           }
         ]
       },
@@ -4595,16 +4595,6 @@
         "description": "获得[green]6[/green]点最大生命。"
       },
       {
-        "id": "PRICKLY_SPONGE",
-        "title": "扎手海绵",
-        "description": "支付[red]155[/red][gold]金币[/gold]。给[blue]2[/blue]张牌[gold]附魔[/gold]：[purple]稳定[/purple]。"
-      },
-      {
-        "id": "PRICKLY_SPONGE_LOCKED",
-        "title": "锁定",
-        "description": "需要[blue]155[/blue][gold]金币[/gold]。"
-      },
-      {
         "id": "TENTACLE_QUILL",
         "title": "触手羽毛笔",
         "description": "支付[red]65[/red][gold]金币[/gold]。给一张牌[gold]附魔[/gold]：[purple]稳定[/purple]。"
@@ -4613,6 +4603,16 @@
         "id": "TENTACLE_QUILL_LOCKED",
         "title": "锁定",
         "description": "需要[blue]65[/blue][gold]金币[/gold]。"
+      },
+      {
+        "id": "PRICKLY_SPONGE",
+        "title": "扎手海绵",
+        "description": "支付[red]155[/red][gold]金币[/gold]。给[blue]2[/blue]张牌[gold]附魔[/gold]：[purple]稳定[/purple]。"
+      },
+      {
+        "id": "PRICKLY_SPONGE_LOCKED",
+        "title": "锁定",
+        "description": "需要[blue]155[/blue][gold]金币[/gold]。"
       }
     ],
     "pages": [
@@ -4630,16 +4630,6 @@
             "description": "获得[green]6[/green]点最大生命。"
           },
           {
-            "id": "PRICKLY_SPONGE",
-            "title": "扎手海绵",
-            "description": "支付[red]155[/red][gold]金币[/gold]。给[blue]2[/blue]张牌[gold]附魔[/gold]：[purple]稳定[/purple]。"
-          },
-          {
-            "id": "PRICKLY_SPONGE_LOCKED",
-            "title": "锁定",
-            "description": "需要[blue]155[/blue][gold]金币[/gold]。"
-          },
-          {
             "id": "TENTACLE_QUILL",
             "title": "触手羽毛笔",
             "description": "支付[red]65[/red][gold]金币[/gold]。给一张牌[gold]附魔[/gold]：[purple]稳定[/purple]。"
@@ -4648,6 +4638,16 @@
             "id": "TENTACLE_QUILL_LOCKED",
             "title": "锁定",
             "description": "需要[blue]65[/blue][gold]金币[/gold]。"
+          },
+          {
+            "id": "PRICKLY_SPONGE",
+            "title": "扎手海绵",
+            "description": "支付[red]155[/red][gold]金币[/gold]。给[blue]2[/blue]张牌[gold]附魔[/gold]：[purple]稳定[/purple]。"
+          },
+          {
+            "id": "PRICKLY_SPONGE_LOCKED",
+            "title": "锁定",
+            "description": "需要[blue]155[/blue][gold]金币[/gold]。"
           }
         ]
       },
@@ -4689,11 +4689,6 @@
         "description": "需要[blue]200[/blue][gold]金币[/gold]。"
       },
       {
-        "id": "LEAVE",
-        "title": "离开",
-        "description": "随机[red]降级[/red]一张牌。"
-      },
-      {
         "id": "MYSTERY_BOX",
         "title": "旺购的神秘盲盒",
         "description": "支付[red]300[/red][gold]金币[/gold]。在[blue]5[/blue]场战斗后获得[blue]3[/blue]个随机[gold]遗物[/gold]。"
@@ -4702,6 +4697,11 @@
         "id": "MYSTERY_BOX_LOCKED",
         "title": "锁定",
         "description": "需要[blue]300[/blue][gold]金币[/gold]。"
+      },
+      {
+        "id": "LEAVE",
+        "title": "离开",
+        "description": "随机[red]降级[/red]一张牌。"
       }
     ],
     "pages": [
@@ -4742,11 +4742,6 @@
             "description": "需要[blue]200[/blue][gold]金币[/gold]。"
           },
           {
-            "id": "LEAVE",
-            "title": "离开",
-            "description": "随机[red]降级[/red]一张牌。"
-          },
-          {
             "id": "MYSTERY_BOX",
             "title": "旺购的神秘盲盒",
             "description": "支付[red]300[/red][gold]金币[/gold]。在[blue]5[/blue]场战斗后获得[blue]3[/blue]个随机[gold]遗物[/gold]。"
@@ -4755,6 +4750,11 @@
             "id": "MYSTERY_BOX_LOCKED",
             "title": "锁定",
             "description": "需要[blue]300[/blue][gold]金币[/gold]。"
+          },
+          {
+            "id": "LEAVE",
+            "title": "离开",
+            "description": "随机[red]降级[/red]一张牌。"
           }
         ]
       },
@@ -4772,14 +4772,14 @@
     "description": "你跟着一阵[jitter]低沉的轰鸣声[/jitter]找到了源头：居然是一处平静的泉水，让你心生向往。泉水[sine][aqua]绿如碧玉[/aqua][/sine]，你还能从中看见一些[sine][gold]发光的尘埃[/gold][/sine]。\n\n看起来十分诱人，这不可能出什么差错的吧？",
     "options": [
       {
-        "id": "BATHE",
-        "title": "沐浴",
-        "description": "从你的[gold]牌组[/gold]中移除[blue]1[/blue]张牌。将[blue]1[/blue]张[red]内疚[/red]添加到你的[gold]牌组[/gold]。"
-      },
-      {
         "id": "BOTTLE",
         "title": "装瓶",
         "description": "获得[blue]1[/blue]瓶随机[gold]药水[/gold]。"
+      },
+      {
+        "id": "BATHE",
+        "title": "沐浴",
+        "description": "从你的[gold]牌组[/gold]中移除[blue]1[/blue]张牌。将[blue]1[/blue]张[red]内疚[/red]添加到你的[gold]牌组[/gold]。"
       }
     ],
     "pages": [
@@ -4796,14 +4796,14 @@
         "description": "你跟着一阵[jitter]低沉的轰鸣声[/jitter]找到了源头：居然是一处平静的泉水，让你心生向往。泉水[sine][aqua]绿如碧玉[/aqua][/sine]，你还能从中看见一些[sine][gold]发光的尘埃[/gold][/sine]。\n\n看起来十分诱人，这不可能出什么差错的吧？",
         "options": [
           {
-            "id": "BATHE",
-            "title": "沐浴",
-            "description": "从你的[gold]牌组[/gold]中移除[blue]1[/blue]张牌。将[blue]1[/blue]张[red]内疚[/red]添加到你的[gold]牌组[/gold]。"
-          },
-          {
             "id": "BOTTLE",
             "title": "装瓶",
             "description": "获得[blue]1[/blue]瓶随机[gold]药水[/gold]。"
+          },
+          {
+            "id": "BATHE",
+            "title": "沐浴",
+            "description": "从你的[gold]牌组[/gold]中移除[blue]1[/blue]张牌。将[blue]1[/blue]张[red]内疚[/red]添加到你的[gold]牌组[/gold]。"
           }
         ]
       }
@@ -4862,9 +4862,9 @@
     "description": "你打开一个尘封的盒子，发现里面有一组3个相当精细的木雕：\n\n一只鸟、一条蛇、还有……一个圆环？\n\n附近有一个基座，上面的凹陷痕迹正与这些木雕底部的形状吻合。你要把哪个木雕放在基座上呢？",
     "options": [
       {
-        "id": "BIRD",
-        "title": "鸟",
-        "description": "选择[blue]1[/blue]张初始牌[gold]变化[/gold]为[gold]啄击[/gold]。"
+        "id": "SNAKE_LOCKED",
+        "title": "锁定",
+        "description": "你没有任何牌可以添加附魔：[purple]蛇行[/purple]。"
       },
       {
         "id": "SNAKE",
@@ -4872,9 +4872,9 @@
         "description": "给[blue]1[/blue]张牌[gold]附魔[/gold]：[purple]蛇行[/purple]。"
       },
       {
-        "id": "SNAKE_LOCKED",
-        "title": "锁定",
-        "description": "你没有任何牌可以添加附魔：[purple]蛇行[/purple]。"
+        "id": "BIRD",
+        "title": "鸟",
+        "description": "选择[blue]1[/blue]张初始牌[gold]变化[/gold]为[gold]啄击[/gold]。"
       },
       {
         "id": "TORUS",
@@ -4892,9 +4892,9 @@
         "description": "你打开一个尘封的盒子，发现里面有一组3个相当精细的木雕：\n\n一只鸟、一条蛇、还有……一个圆环？\n\n附近有一个基座，上面的凹陷痕迹正与这些木雕底部的形状吻合。你要把哪个木雕放在基座上呢？",
         "options": [
           {
-            "id": "BIRD",
-            "title": "鸟",
-            "description": "选择[blue]1[/blue]张初始牌[gold]变化[/gold]为[gold]啄击[/gold]。"
+            "id": "SNAKE_LOCKED",
+            "title": "锁定",
+            "description": "你没有任何牌可以添加附魔：[purple]蛇行[/purple]。"
           },
           {
             "id": "SNAKE",
@@ -4902,9 +4902,9 @@
             "description": "给[blue]1[/blue]张牌[gold]附魔[/gold]：[purple]蛇行[/purple]。"
           },
           {
-            "id": "SNAKE_LOCKED",
-            "title": "锁定",
-            "description": "你没有任何牌可以添加附魔：[purple]蛇行[/purple]。"
+            "id": "BIRD",
+            "title": "鸟",
+            "description": "选择[blue]1[/blue]张初始牌[gold]变化[/gold]为[gold]啄击[/gold]。"
           },
           {
             "id": "TORUS",
@@ -4931,11 +4931,6 @@
     "description": "你在行走时撞到了一张蜘蛛网，立即[jitter][red]慌了神[/red][/jitter]！\n可是很快，一阵[sine][blue]平静的感觉[/blue][/sine]席卷了你……\n\n[sine]“冷静下来，我需要你不再弄坏我的网。”[/sine]\n\n你怎么会这么快就冷静下来的呢？\n一只[orange]小之又小[/orange]的蜘蛛沿着丝线降落下来与你问好，它看起来愿意收取一些[gold]金币[/gold]来分享它的部分技术。",
     "options": [
       {
-        "id": "ARACHNID_ACUPUNCTURE",
-        "title": "蜘蛛针灸",
-        "description": "支付[red]250[/red][gold]金币[/gold]。从你的[gold]牌组[/gold]中移除[blue]2[/blue]张牌。"
-      },
-      {
         "id": "BREATHING_TECHNIQUES",
         "title": "呼吸技法",
         "description": "支付[red]50[/red][gold]金币[/gold]。将[blue]2[/blue]张[gold]开悟[/gold]加入到你的[gold]牌组[/gold]。"
@@ -4944,6 +4939,11 @@
         "id": "EMOTIONAL_AWARENESS",
         "title": "情绪觉察",
         "description": "支付[red]125[/red][gold]金币[/gold]。从你的[gold]牌组[/gold]中移除[blue]1[/blue]张牌。"
+      },
+      {
+        "id": "ARACHNID_ACUPUNCTURE",
+        "title": "蜘蛛针灸",
+        "description": "支付[red]250[/red][gold]金币[/gold]。从你的[gold]牌组[/gold]中移除[blue]2[/blue]张牌。"
       },
       {
         "id": "LOCKED",
@@ -4969,11 +4969,6 @@
         "description": "你在行走时撞到了一张蜘蛛网，立即[jitter][red]慌了神[/red][/jitter]！\n可是很快，一阵[sine][blue]平静的感觉[/blue][/sine]席卷了你……\n\n[sine]“冷静下来，我需要你不再弄坏我的网。”[/sine]\n\n你怎么会这么快就冷静下来的呢？\n一只[orange]小之又小[/orange]的蜘蛛沿着丝线降落下来与你问好，它看起来愿意收取一些[gold]金币[/gold]来分享它的部分技术。",
         "options": [
           {
-            "id": "ARACHNID_ACUPUNCTURE",
-            "title": "蜘蛛针灸",
-            "description": "支付[red]250[/red][gold]金币[/gold]。从你的[gold]牌组[/gold]中移除[blue]2[/blue]张牌。"
-          },
-          {
             "id": "BREATHING_TECHNIQUES",
             "title": "呼吸技法",
             "description": "支付[red]50[/red][gold]金币[/gold]。将[blue]2[/blue]张[gold]开悟[/gold]加入到你的[gold]牌组[/gold]。"
@@ -4982,6 +4977,11 @@
             "id": "EMOTIONAL_AWARENESS",
             "title": "情绪觉察",
             "description": "支付[red]125[/red][gold]金币[/gold]。从你的[gold]牌组[/gold]中移除[blue]1[/blue]张牌。"
+          },
+          {
+            "id": "ARACHNID_ACUPUNCTURE",
+            "title": "蜘蛛针灸",
+            "description": "支付[red]250[/red][gold]金币[/gold]。从你的[gold]牌组[/gold]中移除[blue]2[/blue]张牌。"
           },
           {
             "id": "LOCKED",

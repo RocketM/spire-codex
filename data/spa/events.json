@@ -7,14 +7,14 @@
     "description": "Descubres una caverna recóndita.\n\nEl vapor emerge de unas pozas en las que un líquido muy caliente borbotea y cambia de color con un ritmo hipnótico. El techo está cubierto de percebes, de los que gotea un líquido viscoso que sisea al entrar en contacto con la superficie. El aire está cargado de [blue]sal[/blue] y de algo [green]inequívocamente orgánico[/green].\n\nSegún te acercas al borde de la poza más grande, el líquido empieza a borbotear más intensamente, como esperando que te adentres en la poza.",
     "options": [
       {
-        "id": "ABSTAIN",
-        "title": "Abstenerse",
-        "description": "Recupera [green]10[/green] PV."
-      },
-      {
         "id": "IMMERSE",
         "title": "Sumergirse",
         "description": "Gana [green]2[/green] PV máx. Recibe [red]3[/red] de daño."
+      },
+      {
+        "id": "ABSTAIN",
+        "title": "Abstenerse",
+        "description": "Recupera [green]10[/green] PV."
       }
     ],
     "pages": [
@@ -27,14 +27,14 @@
         "description": null,
         "options": [
           {
-            "id": "EXIT_BATHS",
-            "title": "Salir de la poza",
-            "description": ""
-          },
-          {
             "id": "LINGER",
             "title": "Quedarse",
             "description": "Gana [green]2[/green] PV máx. Recibe [red]3[/red] de daño."
+          },
+          {
+            "id": "EXIT_BATHS",
+            "title": "Salir de la poza",
+            "description": ""
           }
         ]
       },
@@ -55,14 +55,14 @@
         "description": "Descubres una caverna recóndita.\n\nEl vapor emerge de unas pozas en las que un líquido muy caliente borbotea y cambia de color con un ritmo hipnótico. El techo está cubierto de percebes, de los que gotea un líquido viscoso que sisea al entrar en contacto con la superficie. El aire está cargado de [blue]sal[/blue] y de algo [green]inequívocamente orgánico[/green].\n\nSegún te acercas al borde de la poza más grande, el líquido empieza a borbotear más intensamente, como esperando que te adentres en la poza.",
         "options": [
           {
-            "id": "ABSTAIN",
-            "title": "Abstenerse",
-            "description": "Recupera [green]10[/green] PV."
-          },
-          {
             "id": "IMMERSE",
             "title": "Sumergirse",
             "description": "Gana [green]2[/green] PV máx. Recibe [red]3[/red] de daño."
+          },
+          {
+            "id": "ABSTAIN",
+            "title": "Abstenerse",
+            "description": "Recupera [green]10[/green] PV."
           }
         ]
       },
@@ -257,14 +257,14 @@
     "description": "[jitter]*plof*[/jitter]\n\nSientes un dolor agudo en la parte superior de tu cabeza y un pensamiento perfora tu mente.\n\n[purple][sine]«¿¿¿COMPARTIR CONOCIMIENTO???»[/sine][/purple]\n\nNo sabes qué hacer a continuación...",
     "options": [
       {
-        "id": "RIP",
-        "title": "Arrancarse el parásito",
-        "description": "Pierde [red]5[/red] PV. Gana una carta incolora."
-      },
-      {
         "id": "SHARE_KNOWLEDGE",
         "title": "Compartir conocimiento",
         "description": "Elige [blue]1[/blue] de entre [blue]5[/blue] cartas aleatorias y añádela a tu [gold]Mazo[/gold]."
+      },
+      {
+        "id": "RIP",
+        "title": "Arrancarse el parásito",
+        "description": "Pierde [red]5[/red] PV. Gana una carta incolora."
       }
     ],
     "pages": [
@@ -273,14 +273,14 @@
         "description": "[jitter]*plof*[/jitter]\n\nSientes un dolor agudo en la parte superior de tu cabeza y un pensamiento perfora tu mente.\n\n[purple][sine]«¿¿¿COMPARTIR CONOCIMIENTO???»[/sine][/purple]\n\nNo sabes qué hacer a continuación...",
         "options": [
           {
-            "id": "RIP",
-            "title": "Arrancarse el parásito",
-            "description": "Pierde [red]5[/red] PV. Gana una carta incolora."
-          },
-          {
             "id": "SHARE_KNOWLEDGE",
             "title": "Compartir conocimiento",
             "description": "Elige [blue]1[/blue] de entre [blue]5[/blue] cartas aleatorias y añádela a tu [gold]Mazo[/gold]."
+          },
+          {
+            "id": "RIP",
+            "title": "Arrancarse el parásito",
+            "description": "Pierde [red]5[/red] PV. Gana una carta incolora."
           }
         ]
       },
@@ -558,14 +558,14 @@
     "description": "Oyes una voz [jitter]áspera[/jitter] al entrar en una [purple]cabaña de aspecto místico[/purple].\n\n[sine][blue]«Ah, predije que vendrías...»[/blue][/sine]\n\n[sine][blue]«Tu destino ha querido que llegases aquí. ¡¡Hemos de descubrir lo que te aguarda en el camino para que puedas SALVARNOS A TODOS!!»[/blue][/sine]\n«Vale, estas son las opciones que tienes para [gold]leer la esfera de cristal[/gold]. Ah, y que no se te olvide firmar este documento de exención de responsabilidad», dice mientras te ofrece un bolígrafo y un pergamino.",
     "options": [
       {
-        "id": "PAYMENT_PLAN",
-        "title": "Plan de pagos",
-        "description": "Gana 1 [red]Deuda[/red]. [purple]Adivina[/purple] [blue]6[/blue] veces."
-      },
-      {
         "id": "UNCOVER_FUTURE",
         "title": "Descubrir el futuro",
         "description": "Paga [red]50[/red] de [gold]Oro[/gold]. [purple]Adivina[/purple] [blue]3[/blue] veces."
+      },
+      {
+        "id": "PAYMENT_PLAN",
+        "title": "Plan de pagos",
+        "description": "Gana 1 [red]Deuda[/red]. [purple]Adivina[/purple] [blue]6[/blue] veces."
       }
     ],
     "pages": [
@@ -578,14 +578,14 @@
         "description": "Oyes una voz [jitter]áspera[/jitter] al entrar en una [purple]cabaña de aspecto místico[/purple].\n\n[sine][blue]«Ah, predije que vendrías...»[/blue][/sine]\n\n[sine][blue]«Tu destino ha querido que llegases aquí. ¡¡Hemos de descubrir lo que te aguarda en el camino para que puedas SALVARNOS A TODOS!!»[/blue][/sine]\n«Vale, estas son las opciones que tienes para [gold]leer la esfera de cristal[/gold]. Ah, y que no se te olvide firmar este documento de exención de responsabilidad», dice mientras te ofrece un bolígrafo y un pergamino.",
         "options": [
           {
-            "id": "PAYMENT_PLAN",
-            "title": "Plan de pagos",
-            "description": "Gana 1 [red]Deuda[/red]. [purple]Adivina[/purple] [blue]6[/blue] veces."
-          },
-          {
             "id": "UNCOVER_FUTURE",
             "title": "Descubrir el futuro",
             "description": "Paga [red]50[/red] de [gold]Oro[/gold]. [purple]Adivina[/purple] [blue]3[/blue] veces."
+          },
+          {
+            "id": "PAYMENT_PLAN",
+            "title": "Plan de pagos",
+            "description": "Gana 1 [red]Deuda[/red]. [purple]Adivina[/purple] [blue]6[/blue] veces."
           }
         ]
       },
@@ -813,14 +813,14 @@
     "description": "Hace tiempo que te has desviado del camino correcto y has acabado en una densa jungla de [green]helechos[/green], [green]arbustos[/green] y [green]enredaderas[/green]. Sobre todo [green]enredaderas[/green]. El agotamiento se apodera de ti y una idea muy oscura empieza a rondar por tu mente:\n\n[sine][purple]«Te has perdido. Careces de preparación. La inevitable muerte se acerca».[/purple][/sine]\n\n¿Qué haces?",
     "options": [
       {
-        "id": "REST",
-        "title": "Descansar",
-        "description": "Te curas [green]30% Max[/green] PV. Lucha contra unos [red]enemigos[/red]."
-      },
-      {
         "id": "TRUDGE_ON",
         "title": "Continuar",
         "description": "Elimina una carta de tu [gold]Mazo[/gold]. Pierde [red]11[/red] PV."
+      },
+      {
+        "id": "REST",
+        "title": "Descansar",
+        "description": "Te curas [green]30% Max[/green] PV. Lucha contra unos [red]enemigos[/red]."
       }
     ],
     "pages": [
@@ -829,14 +829,14 @@
         "description": "Hace tiempo que te has desviado del camino correcto y has acabado en una densa jungla de [green]helechos[/green], [green]arbustos[/green] y [green]enredaderas[/green]. Sobre todo [green]enredaderas[/green]. El agotamiento se apodera de ti y una idea muy oscura empieza a rondar por tu mente:\n\n[sine][purple]«Te has perdido. Careces de preparación. La inevitable muerte se acerca».[/purple][/sine]\n\n¿Qué haces?",
         "options": [
           {
-            "id": "REST",
-            "title": "Descansar",
-            "description": "Te curas [green]30% Max[/green] PV. Lucha contra unos [red]enemigos[/red]."
-          },
-          {
             "id": "TRUDGE_ON",
             "title": "Continuar",
             "description": "Elimina una carta de tu [gold]Mazo[/gold]. Pierde [red]11[/red] PV."
+          },
+          {
+            "id": "REST",
+            "title": "Descansar",
+            "description": "Te curas [green]30% Max[/green] PV. Lucha contra unos [red]enemigos[/red]."
           }
         ]
       },
@@ -865,11 +865,6 @@
     "description": "Entras en una sala secreta...\n\nEstá repleta de muñecos. Cada uno es único, y sus expresiones varían desde la [green]felicidad[/green] a la [purple]tristeza[/purple]. Sus atuendos parecen sacados de épocas y reinos distintos.\n\nEscuchas un [sine][blue]coro de susurros[/blue][/sine] que empieza a sonar cada vez más y más fuerte, hasta que [jitter][red]los muñecos se ponen a gritar[/red][/jitter] para hacerse oír entre los demás y llamar tu atención...\n\nTienes que elegir uno de ellos y marcharte de inmediato.",
     "options": [
       {
-        "id": "EXAMINE",
-        "title": "Examinar cada uno y tomar la mejor decisión",
-        "description": "Pierde [red]15[/red] PV. Elige [blue]1[/blue] de entre [blue]3[/blue] [gold]Reliquias de muñeco[/gold]."
-      },
-      {
         "id": "RANDOM",
         "title": "Elegir al azar",
         "description": "Obtienes una [gold]Reliquia de muñeco[/gold] aleatoria."
@@ -878,6 +873,11 @@
         "id": "TAKE_SOME_TIME",
         "title": "Tomarte tu tiempo",
         "description": "Pierdes [red]5[/red] PV. Elige [blue]1[/blue] de entre [blue]2[/blue] [gold]Reliquias de muñeco[/gold]."
+      },
+      {
+        "id": "EXAMINE",
+        "title": "Examinar cada uno y tomar la mejor decisión",
+        "description": "Pierde [red]15[/red] PV. Elige [blue]1[/blue] de entre [blue]3[/blue] [gold]Reliquias de muñeco[/gold]."
       }
     ],
     "pages": [
@@ -898,11 +898,6 @@
         "description": "Entras en una sala secreta...\n\nEstá repleta de muñecos. Cada uno es único, y sus expresiones varían desde la [green]felicidad[/green] a la [purple]tristeza[/purple]. Sus atuendos parecen sacados de épocas y reinos distintos.\n\nEscuchas un [sine][blue]coro de susurros[/blue][/sine] que empieza a sonar cada vez más y más fuerte, hasta que [jitter][red]los muñecos se ponen a gritar[/red][/jitter] para hacerse oír entre los demás y llamar tu atención...\n\nTienes que elegir uno de ellos y marcharte de inmediato.",
         "options": [
           {
-            "id": "EXAMINE",
-            "title": "Examinar cada uno y tomar la mejor decisión",
-            "description": "Pierde [red]15[/red] PV. Elige [blue]1[/blue] de entre [blue]3[/blue] [gold]Reliquias de muñeco[/gold]."
-          },
-          {
             "id": "RANDOM",
             "title": "Elegir al azar",
             "description": "Obtienes una [gold]Reliquia de muñeco[/gold] aleatoria."
@@ -911,6 +906,11 @@
             "id": "TAKE_SOME_TIME",
             "title": "Tomarte tu tiempo",
             "description": "Pierdes [red]5[/red] PV. Elige [blue]1[/blue] de entre [blue]2[/blue] [gold]Reliquias de muñeco[/gold]."
+          },
+          {
+            "id": "EXAMINE",
+            "title": "Examinar cada uno y tomar la mejor decisión",
+            "description": "Pierde [red]15[/red] PV. Elige [blue]1[/blue] de entre [blue]3[/blue] [gold]Reliquias de muñeco[/gold]."
           }
         ]
       },
@@ -943,14 +943,14 @@
     "description": "Donde antes no había nada, ahora ves una puerta...\n\nAl atravesarla, te encuentras frente a dos portales relucientes y a un [gold]portero bien vestido[/gold].\n«¡Una visita, por fin! ¡Por favor, elige un portal! ¡El que quieras!»\n\n[blue]¿Sigues en la Torre? ¿Cómo es que este lugar está tan limpio?[/blue]",
     "options": [
       {
-        "id": "DARK",
-        "title": "Portal de Oscuridad",
-        "description": "Elimina [blue]1[/blue] carta de tu [gold]Mazo[/gold]."
-      },
-      {
         "id": "LIGHT",
         "title": "Portal de Luz",
         "description": "[gold]Mejora[/gold] [blue]2[/blue] cartas aleatorias."
+      },
+      {
+        "id": "DARK",
+        "title": "Portal de Oscuridad",
+        "description": "Elimina [blue]1[/blue] carta de tu [gold]Mazo[/gold]."
       }
     ],
     "pages": [
@@ -963,14 +963,14 @@
         "description": "Donde antes no había nada, ahora ves una puerta...\n\nAl atravesarla, te encuentras frente a dos portales relucientes y a un [gold]portero bien vestido[/gold].\n«¡Una visita, por fin! ¡Por favor, elige un portal! ¡El que quieras!»\n\n[blue]¿Sigues en la Torre? ¿Cómo es que este lugar está tan limpio?[/blue]",
         "options": [
           {
-            "id": "DARK",
-            "title": "Portal de Oscuridad",
-            "description": "Elimina [blue]1[/blue] carta de tu [gold]Mazo[/gold]."
-          },
-          {
             "id": "LIGHT",
             "title": "Portal de Luz",
             "description": "[gold]Mejora[/gold] [blue]2[/blue] cartas aleatorias."
+          },
+          {
+            "id": "DARK",
+            "title": "Portal de Oscuridad",
+            "description": "Elimina [blue]1[/blue] carta de tu [gold]Mazo[/gold]."
           }
         ]
       },
@@ -1044,6 +1044,11 @@
         "description": null,
         "options": [
           {
+            "id": "LOCKED",
+            "title": "Ni un duro",
+            "description": "Podrías seguir comiendo, pero no te queda [gold]Oro[/gold]."
+          },
+          {
             "id": "CAVIAR",
             "title": "Coger el caviar de la cinta transportadora",
             "description": "Paga [red]35[/red] de [gold]Oro[/gold]. Gana [green]4[/green] PV máx. ¡Que el festín continúe!"
@@ -1067,11 +1072,6 @@
             "id": "JELLY_LIVER",
             "title": "Coger hígado de medusa de la cinta transportadora",
             "description": "Paga [red]35[/red] de [gold]Oro[/gold]. [gold]Transforma[/gold] una carta. ¡Que el festín continúe!"
-          },
-          {
-            "id": "LOCKED",
-            "title": "Ni un duro",
-            "description": "Podrías seguir comiendo, pero no te queda [gold]Oro[/gold]."
           },
           {
             "id": "SEAPUNK_SALAD",
@@ -1139,14 +1139,14 @@
     "description": "Te detienes por completo al ver un enorme campo [jitter]lleno de agujeros que parecen siluetas de humanoides[/jitter].\n\nY una de esas siluetas es igualita a la tuya.\n\n[sine][orange]Es perfecta...[/orange][/sine]",
     "options": [
       {
-        "id": "ENTER_YOUR_HOLE",
-        "title": "Entrar en el agujero",
-        "description": "[gold]Encanta[/gold] una carta con [purple]A medida[/purple]."
-      },
-      {
         "id": "RESIST",
         "title": "Resistirse",
         "description": "Elimina [blue]2[/blue] cartas de tu [gold]Mazo[/gold]. Añade [red]Normalidad[/red] a tu [gold]Mazo[/gold]."
+      },
+      {
+        "id": "ENTER_YOUR_HOLE",
+        "title": "Entrar en el agujero",
+        "description": "[gold]Encanta[/gold] una carta con [purple]A medida[/purple]."
       }
     ],
     "pages": [
@@ -1159,14 +1159,14 @@
         "description": "Te detienes por completo al ver un enorme campo [jitter]lleno de agujeros que parecen siluetas de humanoides[/jitter].\n\nY una de esas siluetas es igualita a la tuya.\n\n[sine][orange]Es perfecta...[/orange][/sine]",
         "options": [
           {
-            "id": "ENTER_YOUR_HOLE",
-            "title": "Entrar en el agujero",
-            "description": "[gold]Encanta[/gold] una carta con [purple]A medida[/purple]."
-          },
-          {
             "id": "RESIST",
             "title": "Resistirse",
             "description": "Elimina [blue]2[/blue] cartas de tu [gold]Mazo[/gold]. Añade [red]Normalidad[/red] a tu [gold]Mazo[/gold]."
+          },
+          {
+            "id": "ENTER_YOUR_HOLE",
+            "title": "Entrar en el agujero",
+            "description": "[gold]Encanta[/gold] una carta con [purple]A medida[/purple]."
           }
         ]
       },
@@ -1184,9 +1184,9 @@
     "description": "Ves una tumba solitaria cubierta de [jitter][aqua]llamas azules[/aqua][/jitter]...\n\nUn orgulloso guerrero pereció en combate, pero su alma no es capaz de descansar. Quiere seguir luchando, sientes cómo [sine]ruega[/sine] acompañarte en tu camino.\n\nPero quizá sea mejor que asuma la [red]realidad[/red].",
     "options": [
       {
-        "id": "ACCEPT",
-        "title": "Aceptar Alma olvidada",
-        "description": "Obtienes [gold]Alma olvidada[/gold]."
+        "id": "CONFRONT_LOCKED",
+        "title": "Bloqueado",
+        "description": "No tienes cartas con [gold]Agotamiento[/gold] que puedan ser [purple]Encantadas[/purple]."
       },
       {
         "id": "CONFRONT",
@@ -1194,9 +1194,9 @@
         "description": "Añade [red]Descomposición[/red] a tu [gold]Mazo[/gold]. [gold]Encanta[/gold] una carta que tenga [gold]Agotamiento[/gold] con [purple]Poder del alma[/purple]."
       },
       {
-        "id": "CONFRONT_LOCKED",
-        "title": "Bloqueado",
-        "description": "No tienes cartas con [gold]Agotamiento[/gold] que puedan ser [purple]Encantadas[/purple]."
+        "id": "ACCEPT",
+        "title": "Aceptar Alma olvidada",
+        "description": "Obtienes [gold]Alma olvidada[/gold]."
       }
     ],
     "pages": [
@@ -1213,9 +1213,9 @@
         "description": "Ves una tumba solitaria cubierta de [jitter][aqua]llamas azules[/aqua][/jitter]...\n\nUn orgulloso guerrero pereció en combate, pero su alma no es capaz de descansar. Quiere seguir luchando, sientes cómo [sine]ruega[/sine] acompañarte en tu camino.\n\nPero quizá sea mejor que asuma la [red]realidad[/red].",
         "options": [
           {
-            "id": "ACCEPT",
-            "title": "Aceptar Alma olvidada",
-            "description": "Obtienes [gold]Alma olvidada[/gold]."
+            "id": "CONFRONT_LOCKED",
+            "title": "Bloqueado",
+            "description": "No tienes cartas con [gold]Agotamiento[/gold] que puedan ser [purple]Encantadas[/purple]."
           },
           {
             "id": "CONFRONT",
@@ -1223,9 +1223,9 @@
             "description": "Añade [red]Descomposición[/red] a tu [gold]Mazo[/gold]. [gold]Encanta[/gold] una carta que tenga [gold]Agotamiento[/gold] con [purple]Poder del alma[/purple]."
           },
           {
-            "id": "CONFRONT_LOCKED",
-            "title": "Bloqueado",
-            "description": "No tienes cartas con [gold]Agotamiento[/gold] que puedan ser [purple]Encantadas[/purple]."
+            "id": "ACCEPT",
+            "title": "Aceptar Alma olvidada",
+            "description": "Obtienes [gold]Alma olvidada[/gold]."
           }
         ]
       }
@@ -1333,14 +1333,14 @@
     "description": "Llegas a un claro en el que un [green]grupo de aventureros de aspecto precario[/green] está observando y señalando un [purple]gigantesco laberinto[/purple].\n\nTe ofrecen unirte a ellos en una [b]misión épica[/b] para conseguir los tesoros que oculta el laberinto. Tu experiencia te dice que seguramente este laberinto esté lleno de [red][jitter]trampas letales[/jitter][/red] y [orange][sine]guardianes[/sine][/orange].\n\nSería más fácil si te unieras a ellos, pero tendrías que dividir el botín.",
     "options": [
       {
-        "id": "JOIN_FORCES",
-        "title": "Unirse a ellos",
-        "description": "Gana [blue]50[/blue] de [gold]Oro[/gold]."
-      },
-      {
         "id": "SOLO_QUEST",
         "title": "Entrar por tu cuenta",
         "description": "Gana [blue]150[/blue] de [gold]Oro[/gold]. Pierde [red]18[/red] PV."
+      },
+      {
+        "id": "JOIN_FORCES",
+        "title": "Unirse a ellos",
+        "description": "Gana [blue]50[/blue] de [gold]Oro[/gold]."
       }
     ],
     "pages": [
@@ -1349,14 +1349,14 @@
         "description": "Llegas a un claro en el que un [green]grupo de aventureros de aspecto precario[/green] está observando y señalando un [purple]gigantesco laberinto[/purple].\n\nTe ofrecen unirte a ellos en una [b]misión épica[/b] para conseguir los tesoros que oculta el laberinto. Tu experiencia te dice que seguramente este laberinto esté lleno de [red][jitter]trampas letales[/jitter][/red] y [orange][sine]guardianes[/sine][/orange].\n\nSería más fácil si te unieras a ellos, pero tendrías que dividir el botín.",
         "options": [
           {
-            "id": "JOIN_FORCES",
-            "title": "Unirse a ellos",
-            "description": "Gana [blue]50[/blue] de [gold]Oro[/gold]."
-          },
-          {
             "id": "SOLO_QUEST",
             "title": "Entrar por tu cuenta",
             "description": "Gana [blue]150[/blue] de [gold]Oro[/gold]. Pierde [red]18[/red] PV."
+          },
+          {
+            "id": "JOIN_FORCES",
+            "title": "Unirse a ellos",
+            "description": "Gana [blue]50[/blue] de [gold]Oro[/gold]."
           }
         ]
       },
@@ -1383,14 +1383,14 @@
         "description": "Añade [red]Descomposición[/red] a tu [gold]Mazo[/gold]. Obtienes el [gold]Fuego fatuo perdido[/gold]."
       },
       {
-        "id": "CLAIM_LOCKED",
-        "title": "Bloqueado",
-        "description": "Tus PV máx. son demasiado bajos."
-      },
-      {
         "id": "SEARCH",
         "title": "Explorar la zona",
         "description": "Gana [blue]60[/blue] de [gold]Oro[/gold]."
+      },
+      {
+        "id": "CLAIM_LOCKED",
+        "title": "Bloqueado",
+        "description": "Tus PV máx. son demasiado bajos."
       }
     ],
     "pages": [
@@ -1408,14 +1408,14 @@
             "description": "Añade [red]Descomposición[/red] a tu [gold]Mazo[/gold]. Obtienes el [gold]Fuego fatuo perdido[/gold]."
           },
           {
-            "id": "CLAIM_LOCKED",
-            "title": "Bloqueado",
-            "description": "Tus PV máx. son demasiado bajos."
-          },
-          {
             "id": "SEARCH",
             "title": "Explorar la zona",
             "description": "Gana [blue]60[/blue] de [gold]Oro[/gold]."
+          },
+          {
+            "id": "CLAIM_LOCKED",
+            "title": "Bloqueado",
+            "description": "Tus PV máx. son demasiado bajos."
           }
         ]
       },
@@ -1433,6 +1433,11 @@
     "description": "Llegas a un claro bañado por una extraña luz azulada. Ves enormes setas bioluminiscentes con píleos muy protuberantes y brillantes. Según te acercas, los hongos empiezan a emitir unos [sine][purple]sonidos inquietantes y melódicos[/purple][/sine] que reverberan y retumban en tu pecho.\n\nVes algo incrustado en la carne de la seta más grande que parece brillar con mayor intensidad, [sine]latiendo[/sine] al ritmo de la sonata fúngica.",
     "options": [
       {
+        "id": "REACH_INTO_THE_FLESH",
+        "title": "Meter la mano",
+        "description": "Elimina [blue]2[/blue] cartas de tu [gold]Mazo[/gold]. Añade [red]Espora cerebral[/red] a tu [gold]Mazo[/gold]."
+      },
+      {
         "id": "OFFER_TRIBUTE",
         "title": "Ofrecer tributo",
         "description": "Paga [red]149[/red] de [gold]Oro[/gold]. Obtén una [gold]Reliquia[/gold] aleatoria."
@@ -1441,11 +1446,6 @@
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "Bloqueado",
         "description": "Necesitas [blue]149[/blue] de [gold]Oro[/gold]."
-      },
-      {
-        "id": "REACH_INTO_THE_FLESH",
-        "title": "Meter la mano",
-        "description": "Elimina [blue]2[/blue] cartas de tu [gold]Mazo[/gold]. Añade [red]Espora cerebral[/red] a tu [gold]Mazo[/gold]."
       }
     ],
     "pages": [
@@ -1453,6 +1453,11 @@
         "id": "INITIAL",
         "description": "Llegas a un claro bañado por una extraña luz azulada. Ves enormes setas bioluminiscentes con píleos muy protuberantes y brillantes. Según te acercas, los hongos empiezan a emitir unos [sine][purple]sonidos inquietantes y melódicos[/purple][/sine] que reverberan y retumban en tu pecho.\n\nVes algo incrustado en la carne de la seta más grande que parece brillar con mayor intensidad, [sine]latiendo[/sine] al ritmo de la sonata fúngica.",
         "options": [
+          {
+            "id": "REACH_INTO_THE_FLESH",
+            "title": "Meter la mano",
+            "description": "Elimina [blue]2[/blue] cartas de tu [gold]Mazo[/gold]. Añade [red]Espora cerebral[/red] a tu [gold]Mazo[/gold]."
+          },
           {
             "id": "OFFER_TRIBUTE",
             "title": "Ofrecer tributo",
@@ -1462,11 +1467,6 @@
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "Bloqueado",
             "description": "Necesitas [blue]149[/blue] de [gold]Oro[/gold]."
-          },
-          {
-            "id": "REACH_INTO_THE_FLESH",
-            "title": "Meter la mano",
-            "description": "Elimina [blue]2[/blue] cartas de tu [gold]Mazo[/gold]. Añade [red]Espora cerebral[/red] a tu [gold]Mazo[/gold]."
           }
         ]
       },
@@ -2314,14 +2314,14 @@
     "description": "Dos [gold]Puñotrones[/gold] están teniendo una pacífica discusión a puño limpio. Ves un tesoro entre ellos...\n\n¿Intentas cogerlo?",
     "options": [
       {
-        "id": "I_CAN_TAKE_THEM",
-        "title": "Puedo con ellos",
-        "description": "Luchar contra ellos para obtener una [gold]recompensa mejor[/gold]."
-      },
-      {
         "id": "NAB",
         "title": "Coger el tesoro",
         "description": "Añade [red]Lesión[/red] a tu [gold]Mazo[/gold]. Obtén una [gold]Reliquia[/gold] aleatoria."
+      },
+      {
+        "id": "I_CAN_TAKE_THEM",
+        "title": "Puedo con ellos",
+        "description": "Luchar contra ellos para obtener una [gold]recompensa mejor[/gold]."
       }
     ],
     "pages": [
@@ -2330,14 +2330,14 @@
         "description": "Dos [gold]Puñotrones[/gold] están teniendo una pacífica discusión a puño limpio. Ves un tesoro entre ellos...\n\n¿Intentas cogerlo?",
         "options": [
           {
-            "id": "I_CAN_TAKE_THEM",
-            "title": "Puedo con ellos",
-            "description": "Luchar contra ellos para obtener una [gold]recompensa mejor[/gold]."
-          },
-          {
             "id": "NAB",
             "title": "Coger el tesoro",
             "description": "Añade [red]Lesión[/red] a tu [gold]Mazo[/gold]. Obtén una [gold]Reliquia[/gold] aleatoria."
+          },
+          {
+            "id": "I_CAN_TAKE_THEM",
+            "title": "Puedo con ellos",
+            "description": "Luchar contra ellos para obtener una [gold]recompensa mejor[/gold]."
           }
         ]
       },
@@ -2366,14 +2366,14 @@
     "description": "Se te acerca la [purple]persona más vieja que has visto en tu vida[/purple].\n[sine]«Volvemos a encontrarnos... ¡Soy yo, Ranwid!»[/sine]\n\nNo tienes ni idea de quién es este señor.",
     "options": [
       {
-        "id": "GOLD",
-        "title": "Darle 100 de oro",
-        "description": "Obtienes una [gold]Reliquia[/gold] aleatoria."
-      },
-      {
         "id": "POTION",
         "title": "Darle Potion",
         "description": "Obtienes una [gold]Reliquia[/gold] aleatoria."
+      },
+      {
+        "id": "RELIC",
+        "title": "Darle Relic",
+        "description": "Obtienes [blue]2[/blue] [gold]Reliquias[/gold] aleatorias."
       },
       {
         "id": "POTION_LOCKED",
@@ -2381,9 +2381,9 @@
         "description": "No tienes Pociones que puedas entregar."
       },
       {
-        "id": "RELIC",
-        "title": "Darle Relic",
-        "description": "Obtienes [blue]2[/blue] [gold]Reliquias[/gold] aleatorias."
+        "id": "GOLD",
+        "title": "Darle 100 de oro",
+        "description": "Obtienes una [gold]Reliquia[/gold] aleatoria."
       },
       {
         "id": "RELIC_LOCKED",
@@ -2401,14 +2401,14 @@
         "description": "Se te acerca la [purple]persona más vieja que has visto en tu vida[/purple].\n[sine]«Volvemos a encontrarnos... ¡Soy yo, Ranwid!»[/sine]\n\nNo tienes ni idea de quién es este señor.",
         "options": [
           {
-            "id": "GOLD",
-            "title": "Darle 100 de oro",
-            "description": "Obtienes una [gold]Reliquia[/gold] aleatoria."
-          },
-          {
             "id": "POTION",
             "title": "Darle Potion",
             "description": "Obtienes una [gold]Reliquia[/gold] aleatoria."
+          },
+          {
+            "id": "RELIC",
+            "title": "Darle Relic",
+            "description": "Obtienes [blue]2[/blue] [gold]Reliquias[/gold] aleatorias."
           },
           {
             "id": "POTION_LOCKED",
@@ -2416,9 +2416,9 @@
             "description": "No tienes Pociones que puedas entregar."
           },
           {
-            "id": "RELIC",
-            "title": "Darle Relic",
-            "description": "Obtienes [blue]2[/blue] [gold]Reliquias[/gold] aleatorias."
+            "id": "GOLD",
+            "title": "Darle 100 de oro",
+            "description": "Obtienes una [gold]Reliquia[/gold] aleatoria."
           },
           {
             "id": "RELIC_LOCKED",
@@ -2441,14 +2441,14 @@
     "description": "¿Qué es esto? Qué sensación más extraña...\n[sine]...añartxe sám nóicasnes éuQ ¿otse se éuQ?[/sine]",
     "options": [
       {
-        "id": "SHATTER",
-        "title": "Romper el espejo",
-        "description": "Duplica tu [gold]Mazo[/gold]. Recibes [purple]Mala suerte[/purple]."
-      },
-      {
         "id": "TOUCH_A_MIRROR",
         "title": "Tocar el espejo",
         "description": "[red]Elimina la mejora[/red] de [blue]2[/blue] cartas aleatorias. [green]Mejora[/green] [blue]4[/blue] cartas aleatorias."
+      },
+      {
+        "id": "SHATTER",
+        "title": "Romper el espejo",
+        "description": "Duplica tu [gold]Mazo[/gold]. Recibes [purple]Mala suerte[/purple]."
       }
     ],
     "pages": [
@@ -2457,14 +2457,14 @@
         "description": "¿Qué es esto? Qué sensación más extraña...\n[sine]...añartxe sám nóicasnes éuQ ¿otse se éuQ?[/sine]",
         "options": [
           {
-            "id": "SHATTER",
-            "title": "Romper el espejo",
-            "description": "Duplica tu [gold]Mazo[/gold]. Recibes [purple]Mala suerte[/purple]."
-          },
-          {
             "id": "TOUCH_A_MIRROR",
             "title": "Tocar el espejo",
             "description": "[red]Elimina la mejora[/red] de [blue]2[/blue] cartas aleatorias. [green]Mejora[/green] [blue]4[/blue] cartas aleatorias."
+          },
+          {
+            "id": "SHATTER",
+            "title": "Romper el espejo",
+            "description": "Duplica tu [gold]Mazo[/gold]. Recibes [purple]Mala suerte[/purple]."
           }
         ]
       },
@@ -2486,8 +2486,8 @@
     "description": "Doblas una esquina y, de repente, te encuentras con una figura sombría que se gira para observarte.\n\n«¡Te doy la bienvenida! ¿Quieres hacer negocios?»\nLa figura abre su capa y te muestra un montón de [sine][purple]artículos sospechosos[/purple][/sine].",
     "options": [
       {
-        "id": "BOTTOM",
-        "title": "Coger el de abajo",
+        "id": "TOP",
+        "title": "Coger el de arriba",
         "description": "Intercambiar [gold]one of your Relics[/gold] por [gold]a random Relic[/gold]."
       },
       {
@@ -2496,8 +2496,8 @@
         "description": "Intercambiar [gold]one of your Relics[/gold] por [gold]a random Relic[/gold]."
       },
       {
-        "id": "TOP",
-        "title": "Coger el de arriba",
+        "id": "BOTTOM",
+        "title": "Coger el de abajo",
         "description": "Intercambiar [gold]one of your Relics[/gold] por [gold]a random Relic[/gold]."
       }
     ],
@@ -2511,8 +2511,8 @@
         "description": "Doblas una esquina y, de repente, te encuentras con una figura sombría que se gira para observarte.\n\n«¡Te doy la bienvenida! ¿Quieres hacer negocios?»\nLa figura abre su capa y te muestra un montón de [sine][purple]artículos sospechosos[/purple][/sine].",
         "options": [
           {
-            "id": "BOTTOM",
-            "title": "Coger el de abajo",
+            "id": "TOP",
+            "title": "Coger el de arriba",
             "description": "Intercambiar [gold]one of your Relics[/gold] por [gold]a random Relic[/gold]."
           },
           {
@@ -2521,8 +2521,8 @@
             "description": "Intercambiar [gold]one of your Relics[/gold] por [gold]a random Relic[/gold]."
           },
           {
-            "id": "TOP",
-            "title": "Coger el de arriba",
+            "id": "BOTTOM",
+            "title": "Coger el de abajo",
             "description": "Intercambiar [gold]one of your Relics[/gold] por [gold]a random Relic[/gold]."
           }
         ]
@@ -2687,19 +2687,14 @@
     "description": "Te encuentras un libro tirado en el suelo:\n«Las tres mejores maneras de conquistar la Torre».\n\nEl libro está [red]cubierto de sangre seca[/red], así que\nno te da precisamente buena espina.\n\n¿Lo vas a leer?",
     "options": [
       {
-        "id": "NO_OPTIONS",
-        "title": "Continuar",
-        "description": "No tienes cartas que puedas Encantar."
+        "id": "READ_THE_BACK",
+        "title": "Leer la contraportada",
+        "description": "Elige un Ataque y [gold]Encántalo[/gold] con [purple]Filo[/purple] [blue]2[/blue]."
       },
       {
-        "id": "READ_ENTIRE_BOOK",
-        "title": "Leer el libro entero",
-        "description": "Elige un Poder y [gold]Encántalo[/gold] con [purple]Rapidez[/purple] [blue]2[/blue]."
-      },
-      {
-        "id": "READ_ENTIRE_BOOK_LOCKED",
+        "id": "READ_THE_BACK_LOCKED",
         "title": "Bloqueado",
-        "description": "No tienes Poderes que puedas [gold]Encantar[/gold]."
+        "description": "No tienes Ataques que puedas [gold]Encantar[/gold]."
       },
       {
         "id": "READ_PASSAGE",
@@ -2712,14 +2707,19 @@
         "description": "No tienes Habilidades que puedas [gold]Encantar[/gold]."
       },
       {
-        "id": "READ_THE_BACK",
-        "title": "Leer la contraportada",
-        "description": "Elige un Ataque y [gold]Encántalo[/gold] con [purple]Filo[/purple] [blue]2[/blue]."
+        "id": "READ_ENTIRE_BOOK",
+        "title": "Leer el libro entero",
+        "description": "Elige un Poder y [gold]Encántalo[/gold] con [purple]Rapidez[/purple] [blue]2[/blue]."
       },
       {
-        "id": "READ_THE_BACK_LOCKED",
+        "id": "READ_ENTIRE_BOOK_LOCKED",
         "title": "Bloqueado",
-        "description": "No tienes Ataques que puedas [gold]Encantar[/gold]."
+        "description": "No tienes Poderes que puedas [gold]Encantar[/gold]."
+      },
+      {
+        "id": "NO_OPTIONS",
+        "title": "Continuar",
+        "description": "No tienes cartas que puedas Encantar."
       }
     ],
     "pages": [
@@ -2728,19 +2728,14 @@
         "description": "Te encuentras un libro tirado en el suelo:\n«Las tres mejores maneras de conquistar la Torre».\n\nEl libro está [red]cubierto de sangre seca[/red], así que\nno te da precisamente buena espina.\n\n¿Lo vas a leer?",
         "options": [
           {
-            "id": "NO_OPTIONS",
-            "title": "Continuar",
-            "description": "No tienes cartas que puedas Encantar."
+            "id": "READ_THE_BACK",
+            "title": "Leer la contraportada",
+            "description": "Elige un Ataque y [gold]Encántalo[/gold] con [purple]Filo[/purple] [blue]2[/blue]."
           },
           {
-            "id": "READ_ENTIRE_BOOK",
-            "title": "Leer el libro entero",
-            "description": "Elige un Poder y [gold]Encántalo[/gold] con [purple]Rapidez[/purple] [blue]2[/blue]."
-          },
-          {
-            "id": "READ_ENTIRE_BOOK_LOCKED",
+            "id": "READ_THE_BACK_LOCKED",
             "title": "Bloqueado",
-            "description": "No tienes Poderes que puedas [gold]Encantar[/gold]."
+            "description": "No tienes Ataques que puedas [gold]Encantar[/gold]."
           },
           {
             "id": "READ_PASSAGE",
@@ -2753,14 +2748,19 @@
             "description": "No tienes Habilidades que puedas [gold]Encantar[/gold]."
           },
           {
-            "id": "READ_THE_BACK",
-            "title": "Leer la contraportada",
-            "description": "Elige un Ataque y [gold]Encántalo[/gold] con [purple]Filo[/purple] [blue]2[/blue]."
+            "id": "READ_ENTIRE_BOOK",
+            "title": "Leer el libro entero",
+            "description": "Elige un Poder y [gold]Encántalo[/gold] con [purple]Rapidez[/purple] [blue]2[/blue]."
           },
           {
-            "id": "READ_THE_BACK_LOCKED",
+            "id": "READ_ENTIRE_BOOK_LOCKED",
             "title": "Bloqueado",
-            "description": "No tienes Ataques que puedas [gold]Encantar[/gold]."
+            "description": "No tienes Poderes que puedas [gold]Encantar[/gold]."
+          },
+          {
+            "id": "NO_OPTIONS",
+            "title": "Continuar",
+            "description": "No tienes cartas que puedas Encantar."
           }
         ]
       },
@@ -2790,14 +2790,14 @@
     "description": "Mientras estás cruzando un desvencijado puente de madera, empieza a [blue][jitter]diluviar[/jitter][/blue]. [purple][sine]El viento empieza a soplar con fuerza[/sine][/purple], poniendo en riesgo el futuro de tu viaje.",
     "options": [
       {
-        "id": "HOLD_ON_0",
-        "title": "Resistir",
-        "description": "Pierdes [red]3+[/red] PV. Aleatoriza la carta de la opción superior."
-      },
-      {
         "id": "OVERCOME",
         "title": "Cruzar",
         "description": "Elimina [red]a random Card[/red] de tu [gold]Mazo[/gold]."
+      },
+      {
+        "id": "HOLD_ON_0",
+        "title": "Resistir",
+        "description": "Pierdes [red]3+[/red] PV. Aleatoriza la carta de la opción superior."
       }
     ],
     "pages": [
@@ -2894,14 +2894,14 @@
         "description": "Mientras estás cruzando un desvencijado puente de madera, empieza a [blue][jitter]diluviar[/jitter][/blue]. [purple][sine]El viento empieza a soplar con fuerza[/sine][/purple], poniendo en riesgo el futuro de tu viaje.",
         "options": [
           {
-            "id": "HOLD_ON_0",
-            "title": "Resistir",
-            "description": "Pierdes [red]3+[/red] PV. Aleatoriza la carta de la opción superior."
-          },
-          {
             "id": "OVERCOME",
             "title": "Cruzar",
             "description": "Elimina [red]a random Card[/red] de tu [gold]Mazo[/gold]."
+          },
+          {
+            "id": "HOLD_ON_0",
+            "title": "Resistir",
+            "description": "Pierdes [red]3+[/red] PV. Aleatoriza la carta de la opción superior."
           }
         ]
       },
@@ -2919,14 +2919,14 @@
     "description": "Te topas con un [aqua][sine]remolino enorme[/sine][/aqua]. El agua da vueltas con una precisión hermosa y las paredes circundantes están adornadas con espirales.\n\n[purple][sine]Da vueltas y vueltas... y vueltas...\n... y vueltas... es precioso...[/sine][/purple]\n\n¿Qué haces?",
     "options": [
       {
-        "id": "DRINK",
-        "title": "Beber",
-        "description": "Restaura [green]33% Max[/green] PV."
-      },
-      {
         "id": "OBSERVE",
         "title": "Observar",
         "description": "[gold]Encanta[/gold] un [gold]Golpe[/gold] o [gold]Defender[/gold] con [purple]Espiral[/purple]."
+      },
+      {
+        "id": "DRINK",
+        "title": "Beber",
+        "description": "Restaura [green]33% Max[/green] PV."
       },
       {
         "id": "REACH_IN",
@@ -2944,14 +2944,14 @@
         "description": "Te topas con un [aqua][sine]remolino enorme[/sine][/aqua]. El agua da vueltas con una precisión hermosa y las paredes circundantes están adornadas con espirales.\n\n[purple][sine]Da vueltas y vueltas... y vueltas...\n... y vueltas... es precioso...[/sine][/purple]\n\n¿Qué haces?",
         "options": [
           {
-            "id": "DRINK",
-            "title": "Beber",
-            "description": "Restaura [green]33% Max[/green] PV."
-          },
-          {
             "id": "OBSERVE",
             "title": "Observar",
             "description": "[gold]Encanta[/gold] un [gold]Golpe[/gold] o [gold]Defender[/gold] con [purple]Espiral[/purple]."
+          },
+          {
+            "id": "DRINK",
+            "title": "Beber",
+            "description": "Restaura [green]33% Max[/green] PV."
           },
           {
             "id": "REACH_IN",
@@ -3033,14 +3033,14 @@
         "description": "Necesitas una Poción."
       },
       {
-        "id": "PUSH",
-        "title": "Empujarla",
-        "description": "Pierdes [red]6[/red] PV. [gold]Encanta[/gold] un Ataque con [purple]Robustez[/purple] [blue]8[/blue]."
-      },
-      {
         "id": "PUSH_LOCKED",
         "title": "Bloqueado",
         "description": "Necesitas un Ataque."
+      },
+      {
+        "id": "PUSH",
+        "title": "Empujarla",
+        "description": "Pierdes [red]6[/red] PV. [gold]Encanta[/gold] un Ataque con [purple]Robustez[/purple] [blue]8[/blue]."
       }
     ],
     "pages": [
@@ -3059,14 +3059,14 @@
             "description": "Necesitas una Poción."
           },
           {
-            "id": "PUSH",
-            "title": "Empujarla",
-            "description": "Pierdes [red]6[/red] PV. [gold]Encanta[/gold] un Ataque con [purple]Robustez[/purple] [blue]8[/blue]."
-          },
-          {
             "id": "PUSH_LOCKED",
             "title": "Bloqueado",
             "description": "Necesitas un Ataque."
+          },
+          {
+            "id": "PUSH",
+            "title": "Empujarla",
+            "description": "Pierdes [red]6[/red] PV. [gold]Encanta[/gold] un Ataque con [purple]Robustez[/purple] [blue]8[/blue]."
           }
         ]
       },
@@ -3088,14 +3088,14 @@
     "description": "Ves una estatua envejecida medio sumergida en un estanque. Sus manos descansan sobre una [blue]espada de piedra[/blue].\n\nTambién ves algo [gold][sine]brillar[/sine][/gold] en el fondo del estanque.\n¿Quizá sean ofrendas... monetarias?\n\nNo te vendría nada mal algo de dinero...",
     "options": [
       {
-        "id": "DIVE_INTO_WATER",
-        "title": "Sumergirse en el estanque",
-        "description": "Gana [blue]111[/blue] de [gold]Oro[/gold]. Pierdes [red]7[/red] PV."
-      },
-      {
         "id": "GRAB_SWORD",
         "title": "Coger la espada",
         "description": "Obtienes la [gold]Espada de piedra.[/gold]"
+      },
+      {
+        "id": "DIVE_INTO_WATER",
+        "title": "Sumergirse en el estanque",
+        "description": "Gana [blue]111[/blue] de [gold]Oro[/gold]. Pierdes [red]7[/red] PV."
       }
     ],
     "pages": [
@@ -3112,14 +3112,14 @@
         "description": "Ves una estatua envejecida medio sumergida en un estanque. Sus manos descansan sobre una [blue]espada de piedra[/blue].\n\nTambién ves algo [gold][sine]brillar[/sine][/gold] en el fondo del estanque.\n¿Quizá sean ofrendas... monetarias?\n\nNo te vendría nada mal algo de dinero...",
         "options": [
           {
-            "id": "DIVE_INTO_WATER",
-            "title": "Sumergirse en el estanque",
-            "description": "Gana [blue]111[/blue] de [gold]Oro[/gold]. Pierdes [red]7[/red] PV."
-          },
-          {
             "id": "GRAB_SWORD",
             "title": "Coger la espada",
             "description": "Obtienes la [gold]Espada de piedra.[/gold]"
+          },
+          {
+            "id": "DIVE_INTO_WATER",
+            "title": "Sumergirse en el estanque",
+            "description": "Gana [blue]111[/blue] de [gold]Oro[/gold]. Pierdes [red]7[/red] PV."
           }
         ]
       }
@@ -3178,14 +3178,14 @@
     "description": "Durante tus aventuras, te topas con una especie de pólipo amorfo y oscuro. Puedes sentir lo extremadamente antiguo y maligno que es.\n\n[sine]«Acércate...»[/sine]",
     "options": [
       {
-        "id": "APPROACH",
-        "title": "Acercarse",
-        "description": "[gold]Encanta[/gold] un Ataque con [purple]Corrupción[/purple]."
-      },
-      {
         "id": "APPROACH_LOCKED",
         "title": "Bloqueado",
         "description": "No tienes Ataques que puedas [gold]Encantar[/gold]."
+      },
+      {
+        "id": "APPROACH",
+        "title": "Acercarse",
+        "description": "[gold]Encanta[/gold] un Ataque con [purple]Corrupción[/purple]."
       },
       {
         "id": "KILL_WITH_FIRE",
@@ -3203,14 +3203,14 @@
         "description": "Durante tus aventuras, te topas con una especie de pólipo amorfo y oscuro. Puedes sentir lo extremadamente antiguo y maligno que es.\n\n[sine]«Acércate...»[/sine]",
         "options": [
           {
-            "id": "APPROACH",
-            "title": "Acercarse",
-            "description": "[gold]Encanta[/gold] un Ataque con [purple]Corrupción[/purple]."
-          },
-          {
             "id": "APPROACH_LOCKED",
             "title": "Bloqueado",
             "description": "No tienes Ataques que puedas [gold]Encantar[/gold]."
+          },
+          {
+            "id": "APPROACH",
+            "title": "Acercarse",
+            "description": "[gold]Encanta[/gold] un Ataque con [purple]Corrupción[/purple]."
           },
           {
             "id": "KILL_WITH_FIRE",
@@ -3855,14 +3855,14 @@
     "description": "Ves una llave que brilla débilmente y te acercas a recogerla.\n\n«¡He estado buscando esa llave por todas partes! Si fueras tan amable...»\n\nEste caballero tiene muy mala pinta, pero quizá sea mejor no juzgarle por su apariencia.",
     "options": [
       {
-        "id": "KEEP_THE_KEY",
-        "title": "Quedarse con la llave",
-        "description": "Lucha para quedarte con la llave."
-      },
-      {
         "id": "RETURN_THE_KEY",
         "title": "Devolver la llave",
         "description": "Gana [blue]100[/blue] de [gold]Oro[/gold]."
+      },
+      {
+        "id": "KEEP_THE_KEY",
+        "title": "Quedarse con la llave",
+        "description": "Lucha para quedarte con la llave."
       }
     ],
     "pages": [
@@ -3882,14 +3882,14 @@
         "description": "Ves una llave que brilla débilmente y te acercas a recogerla.\n\n«¡He estado buscando esa llave por todas partes! Si fueras tan amable...»\n\nEste caballero tiene muy mala pinta, pero quizá sea mejor no juzgarle por su apariencia.",
         "options": [
           {
-            "id": "KEEP_THE_KEY",
-            "title": "Quedarse con la llave",
-            "description": "Lucha para quedarte con la llave."
-          },
-          {
             "id": "RETURN_THE_KEY",
             "title": "Devolver la llave",
             "description": "Gana [blue]100[/blue] de [gold]Oro[/gold]."
+          },
+          {
+            "id": "KEEP_THE_KEY",
+            "title": "Quedarse con la llave",
+            "description": "Lucha para quedarte con la llave."
           }
         ]
       },
@@ -3959,14 +3959,14 @@
     "description": "De repente, de un agujero cercano salen unas manos. Una sostiene una [gold]bolsa con dinero muy sospechosa[/gold] y la otra una [purple]reliquia claramente maldita[/purple].\n\nUna voz rasgada susurra desde la oscuridad:\n[jitter][blue]«¿Izquierda o derecha?»[/blue][/jitter]",
     "options": [
       {
-        "id": "ORNATE",
-        "title": "Derecha",
-        "description": "Añade [red]Torpeza[/red] a tu [gold]Mazo[/gold]. Obtén una [gold]Reliquia[/gold] aleatoria."
-      },
-      {
         "id": "PLAIN",
         "title": "Izquierda",
         "description": "Pierde [red]6[/red] PV. Gana [blue]41-69[/blue] de [gold]Oro[/gold]."
+      },
+      {
+        "id": "ORNATE",
+        "title": "Derecha",
+        "description": "Añade [red]Torpeza[/red] a tu [gold]Mazo[/gold]. Obtén una [gold]Reliquia[/gold] aleatoria."
       }
     ],
     "pages": [
@@ -3975,14 +3975,14 @@
         "description": "De repente, de un agujero cercano salen unas manos. Una sostiene una [gold]bolsa con dinero muy sospechosa[/gold] y la otra una [purple]reliquia claramente maldita[/purple].\n\nUna voz rasgada susurra desde la oscuridad:\n[jitter][blue]«¿Izquierda o derecha?»[/blue][/jitter]",
         "options": [
           {
-            "id": "ORNATE",
-            "title": "Derecha",
-            "description": "Añade [red]Torpeza[/red] a tu [gold]Mazo[/gold]. Obtén una [gold]Reliquia[/gold] aleatoria."
-          },
-          {
             "id": "PLAIN",
             "title": "Izquierda",
             "description": "Pierde [red]6[/red] PV. Gana [blue]41-69[/blue] de [gold]Oro[/gold]."
+          },
+          {
+            "id": "ORNATE",
+            "title": "Derecha",
+            "description": "Añade [red]Torpeza[/red] a tu [gold]Mazo[/gold]. Obtén una [gold]Reliquia[/gold] aleatoria."
           }
         ]
       },
@@ -4020,14 +4020,14 @@
             "description": "Crea un Ataque."
           },
           {
-            "id": "POWER",
-            "title": "Cachivache",
-            "description": "Crea un Poder."
-          },
-          {
             "id": "SKILL",
             "title": "Protector",
             "description": "Crea una Habilidad."
+          },
+          {
+            "id": "POWER",
+            "title": "Cachivache",
+            "description": "Crea un Poder."
           }
         ]
       },
@@ -4035,36 +4035,6 @@
         "id": "CHOOSE_RIDER",
         "description": "«¡Una excelente elección! Ahora dime, ¿qué debería [sine]HACER[/sine]?»\nLa [orange]científica[/orange] se frota las manos con ilusión.",
         "options": [
-          {
-            "id": "CHAOS",
-            "title": "Caos",
-            "description": "Añade una carta aleatoria a tu [gold]Mano[/gold]. Cuesta [blue]0[/blue] [energy:1] este turno."
-          },
-          {
-            "id": "CHOKING",
-            "title": "Asfixia",
-            "description": "Cuando juegues una carta este turno, el enemigo pierde [blue][ChokingDamage][/blue] PV."
-          },
-          {
-            "id": "CURIOUS",
-            "title": "Curiosidad",
-            "description": "Los poderes cuestan [blue]1[/blue] [energy:1] menos."
-          },
-          {
-            "id": "ENERGIZED",
-            "title": "Dinamismo",
-            "description": "Gana [energy:2]."
-          },
-          {
-            "id": "EXPERTISE",
-            "title": "Maestría",
-            "description": "Gana [blue][ExpertiseStrength][/blue] de [gold]Fuerza[/gold]. Gana [blue][ExpertiseDexterity][/blue] de [gold]Destreza[/gold]."
-          },
-          {
-            "id": "IMPROVEMENT",
-            "title": "Optimización",
-            "description": "Al final del combate, [gold]Mejora[/gold] una carta aleatoria."
-          },
           {
             "id": "SAPPING",
             "title": "Desgaste",
@@ -4076,9 +4046,39 @@
             "description": "Golpea [blue]2[/blue] veces más."
           },
           {
+            "id": "CHOKING",
+            "title": "Asfixia",
+            "description": "Cuando juegues una carta este turno, el enemigo pierde [blue][ChokingDamage][/blue] PV."
+          },
+          {
+            "id": "ENERGIZED",
+            "title": "Dinamismo",
+            "description": "Gana [energy:2]."
+          },
+          {
             "id": "WISDOM",
             "title": "Sabiduría",
             "description": "Roba [blue]3[/blue] cartas."
+          },
+          {
+            "id": "CHAOS",
+            "title": "Caos",
+            "description": "Añade una carta aleatoria a tu [gold]Mano[/gold]. Cuesta [blue]0[/blue] [energy:1] este turno."
+          },
+          {
+            "id": "EXPERTISE",
+            "title": "Maestría",
+            "description": "Gana [blue][ExpertiseStrength][/blue] de [gold]Fuerza[/gold]. Gana [blue][ExpertiseDexterity][/blue] de [gold]Destreza[/gold]."
+          },
+          {
+            "id": "CURIOUS",
+            "title": "Curiosidad",
+            "description": "Los poderes cuestan [blue]1[/blue] [energy:1] menos."
+          },
+          {
+            "id": "IMPROVEMENT",
+            "title": "Optimización",
+            "description": "Al final del combate, [gold]Mejora[/gold] una carta aleatoria."
           }
         ]
       },
@@ -4277,14 +4277,14 @@
     "description": "Encuentras un [gold]Lugar de descanso[/gold] y enciendes una [orange]hoguera[/orange] con la idea de echarte una siesta.\nLa idea era buena, pero...\n\nUna vez enciendes el fuego, empieza a [sine]propagarse[/sine] en dirección a una arboleda de [purple]árboles cubiertos de aceite[/purple].\n\n¿Deberías descansar un rato de todas formas?",
     "options": [
       {
-        "id": "KILL",
-        "title": "Talar los árboles",
-        "description": "Pierdes [red]8[/red] PV máx. Obtienes una [gold]Reliquia[/gold] aleatoria."
-      },
-      {
         "id": "REST",
         "title": "Descansar",
         "description": "[green]Restauras todos tus PV.[/green] Recibes [red]Insomnio[/red]."
+      },
+      {
+        "id": "KILL",
+        "title": "Talar los árboles",
+        "description": "Pierdes [red]8[/red] PV máx. Obtienes una [gold]Reliquia[/gold] aleatoria."
       }
     ],
     "pages": [
@@ -4293,14 +4293,14 @@
         "description": "Encuentras un [gold]Lugar de descanso[/gold] y enciendes una [orange]hoguera[/orange] con la idea de echarte una siesta.\nLa idea era buena, pero...\n\nUna vez enciendes el fuego, empieza a [sine]propagarse[/sine] en dirección a una arboleda de [purple]árboles cubiertos de aceite[/purple].\n\n¿Deberías descansar un rato de todas formas?",
         "options": [
           {
-            "id": "KILL",
-            "title": "Talar los árboles",
-            "description": "Pierdes [red]8[/red] PV máx. Obtienes una [gold]Reliquia[/gold] aleatoria."
-          },
-          {
             "id": "REST",
             "title": "Descansar",
             "description": "[green]Restauras todos tus PV.[/green] Recibes [red]Insomnio[/red]."
+          },
+          {
+            "id": "KILL",
+            "title": "Talar los árboles",
+            "description": "Pierdes [red]8[/red] PV máx. Obtienes una [gold]Reliquia[/gold] aleatoria."
           }
         ]
       },
@@ -4591,16 +4591,6 @@
         "description": "Gana [green]6[/green] PV máx."
       },
       {
-        "id": "PRICKLY_SPONGE",
-        "title": "Esponja espinosa",
-        "description": "Paga [red]155[/red] de [gold]Oro[/gold]. [gold]Encanta[/gold] [blue]2[/blue] cartas con [purple]Firmeza[/purple]."
-      },
-      {
-        "id": "PRICKLY_SPONGE_LOCKED",
-        "title": "Bloqueado",
-        "description": "Necesitas [blue]155[/blue] de [gold]Oro[/gold]."
-      },
-      {
         "id": "TENTACLE_QUILL",
         "title": "Pluma tentacular",
         "description": "Paga [red]65[/red] de [gold]Oro[/gold]. [gold]Encanta[/gold] una carta con [purple]Firmeza[/purple]."
@@ -4609,6 +4599,16 @@
         "id": "TENTACLE_QUILL_LOCKED",
         "title": "Bloqueado",
         "description": "Necesitas [blue]65[/blue] de [gold]Oro[/gold]."
+      },
+      {
+        "id": "PRICKLY_SPONGE",
+        "title": "Esponja espinosa",
+        "description": "Paga [red]155[/red] de [gold]Oro[/gold]. [gold]Encanta[/gold] [blue]2[/blue] cartas con [purple]Firmeza[/purple]."
+      },
+      {
+        "id": "PRICKLY_SPONGE_LOCKED",
+        "title": "Bloqueado",
+        "description": "Necesitas [blue]155[/blue] de [gold]Oro[/gold]."
       }
     ],
     "pages": [
@@ -4626,16 +4626,6 @@
             "description": "Gana [green]6[/green] PV máx."
           },
           {
-            "id": "PRICKLY_SPONGE",
-            "title": "Esponja espinosa",
-            "description": "Paga [red]155[/red] de [gold]Oro[/gold]. [gold]Encanta[/gold] [blue]2[/blue] cartas con [purple]Firmeza[/purple]."
-          },
-          {
-            "id": "PRICKLY_SPONGE_LOCKED",
-            "title": "Bloqueado",
-            "description": "Necesitas [blue]155[/blue] de [gold]Oro[/gold]."
-          },
-          {
             "id": "TENTACLE_QUILL",
             "title": "Pluma tentacular",
             "description": "Paga [red]65[/red] de [gold]Oro[/gold]. [gold]Encanta[/gold] una carta con [purple]Firmeza[/purple]."
@@ -4644,6 +4634,16 @@
             "id": "TENTACLE_QUILL_LOCKED",
             "title": "Bloqueado",
             "description": "Necesitas [blue]65[/blue] de [gold]Oro[/gold]."
+          },
+          {
+            "id": "PRICKLY_SPONGE",
+            "title": "Esponja espinosa",
+            "description": "Paga [red]155[/red] de [gold]Oro[/gold]. [gold]Encanta[/gold] [blue]2[/blue] cartas con [purple]Firmeza[/purple]."
+          },
+          {
+            "id": "PRICKLY_SPONGE_LOCKED",
+            "title": "Bloqueado",
+            "description": "Necesitas [blue]155[/blue] de [gold]Oro[/gold]."
           }
         ]
       },
@@ -4685,11 +4685,6 @@
         "description": "Necesitas [blue]200[/blue] de [gold]Oro[/gold]."
       },
       {
-        "id": "LEAVE",
-        "title": "Marcharse",
-        "description": "[red]Elimina una mejora[/red] de una carta aleatoria."
-      },
-      {
         "id": "MYSTERY_BOX",
         "title": "Caja misteriosa de Wongo's",
         "description": "Paga [red]300[/red] de [gold]Oro[/gold]. Obtienes [blue]3[/blue] [gold]Reliquias[/gold] aleatorias tras [blue]5[/blue] combates."
@@ -4698,6 +4693,11 @@
         "id": "MYSTERY_BOX_LOCKED",
         "title": "Bloqueado",
         "description": "Necesitas [blue]300[/blue] de [gold]Oro[/gold]."
+      },
+      {
+        "id": "LEAVE",
+        "title": "Marcharse",
+        "description": "[red]Elimina una mejora[/red] de una carta aleatoria."
       }
     ],
     "pages": [
@@ -4738,11 +4738,6 @@
             "description": "Necesitas [blue]200[/blue] de [gold]Oro[/gold]."
           },
           {
-            "id": "LEAVE",
-            "title": "Marcharse",
-            "description": "[red]Elimina una mejora[/red] de una carta aleatoria."
-          },
-          {
             "id": "MYSTERY_BOX",
             "title": "Caja misteriosa de Wongo's",
             "description": "Paga [red]300[/red] de [gold]Oro[/gold]. Obtienes [blue]3[/blue] [gold]Reliquias[/gold] aleatorias tras [blue]5[/blue] combates."
@@ -4751,6 +4746,11 @@
             "id": "MYSTERY_BOX_LOCKED",
             "title": "Bloqueado",
             "description": "Necesitas [blue]300[/blue] de [gold]Oro[/gold]."
+          },
+          {
+            "id": "LEAVE",
+            "title": "Marcharse",
+            "description": "[red]Elimina una mejora[/red] de una carta aleatoria."
           }
         ]
       },
@@ -4768,14 +4768,14 @@
     "description": "Sigues un [jitter]leve murmullo[/jitter] hasta su origen y encuentras un hermoso y tranquilo manantial. El agua tiene un tono [sine][aqua]verde esmeralda[/aqua][/sine] y parece contener unas [sine][gold]partículas brillantes[/gold][/sine].\n\nTe tienta darte un baño. ¿Qué podría salir mal?",
     "options": [
       {
-        "id": "BATHE",
-        "title": "Bañarse",
-        "description": "Elimina [blue]1[/blue] carta de tu [gold]Mazo[/gold]. Añade [blue]1[/blue] [red]Culpabilidad[/red] a tu [gold]Mazo[/gold]."
-      },
-      {
         "id": "BOTTLE",
         "title": "Embotellar",
         "description": "Obtienes [blue]1[/blue] [gold]Poción[/gold] aleatoria."
+      },
+      {
+        "id": "BATHE",
+        "title": "Bañarse",
+        "description": "Elimina [blue]1[/blue] carta de tu [gold]Mazo[/gold]. Añade [blue]1[/blue] [red]Culpabilidad[/red] a tu [gold]Mazo[/gold]."
       }
     ],
     "pages": [
@@ -4792,14 +4792,14 @@
         "description": "Sigues un [jitter]leve murmullo[/jitter] hasta su origen y encuentras un hermoso y tranquilo manantial. El agua tiene un tono [sine][aqua]verde esmeralda[/aqua][/sine] y parece contener unas [sine][gold]partículas brillantes[/gold][/sine].\n\nTe tienta darte un baño. ¿Qué podría salir mal?",
         "options": [
           {
-            "id": "BATHE",
-            "title": "Bañarse",
-            "description": "Elimina [blue]1[/blue] carta de tu [gold]Mazo[/gold]. Añade [blue]1[/blue] [red]Culpabilidad[/red] a tu [gold]Mazo[/gold]."
-          },
-          {
             "id": "BOTTLE",
             "title": "Embotellar",
             "description": "Obtienes [blue]1[/blue] [gold]Poción[/gold] aleatoria."
+          },
+          {
+            "id": "BATHE",
+            "title": "Bañarse",
+            "description": "Elimina [blue]1[/blue] carta de tu [gold]Mazo[/gold]. Añade [blue]1[/blue] [red]Culpabilidad[/red] a tu [gold]Mazo[/gold]."
           }
         ]
       }
@@ -4858,9 +4858,9 @@
     "description": "Abres una caja polvorienta y en ella encuentras 3 figuras de madera hábilmente talladas.\n\nUn pájaro, una serpiente y... ¿un toro?\n\nEn un pedestal cercano ves unas ranuras que encajan con la base de las figuras. ¿Qué figura quieres colocar en el pedestal?",
     "options": [
       {
-        "id": "BIRD",
-        "title": "Pájaro",
-        "description": "Elige [blue]1[/blue] Carta básica y [gold]Transfórmala[/gold] en [gold]Picotazo[/gold]."
+        "id": "SNAKE_LOCKED",
+        "title": "Bloqueado",
+        "description": "No tienes cartas que puedas encantar con [purple]Serpenteo[/purple]."
       },
       {
         "id": "SNAKE",
@@ -4868,9 +4868,9 @@
         "description": "[gold]Encanta[/gold] [blue]1[/blue] carta con [purple]Serpenteo[/purple]."
       },
       {
-        "id": "SNAKE_LOCKED",
-        "title": "Bloqueado",
-        "description": "No tienes cartas que puedas encantar con [purple]Serpenteo[/purple]."
+        "id": "BIRD",
+        "title": "Pájaro",
+        "description": "Elige [blue]1[/blue] Carta básica y [gold]Transfórmala[/gold] en [gold]Picotazo[/gold]."
       },
       {
         "id": "TORUS",
@@ -4888,9 +4888,9 @@
         "description": "Abres una caja polvorienta y en ella encuentras 3 figuras de madera hábilmente talladas.\n\nUn pájaro, una serpiente y... ¿un toro?\n\nEn un pedestal cercano ves unas ranuras que encajan con la base de las figuras. ¿Qué figura quieres colocar en el pedestal?",
         "options": [
           {
-            "id": "BIRD",
-            "title": "Pájaro",
-            "description": "Elige [blue]1[/blue] Carta básica y [gold]Transfórmala[/gold] en [gold]Picotazo[/gold]."
+            "id": "SNAKE_LOCKED",
+            "title": "Bloqueado",
+            "description": "No tienes cartas que puedas encantar con [purple]Serpenteo[/purple]."
           },
           {
             "id": "SNAKE",
@@ -4898,9 +4898,9 @@
             "description": "[gold]Encanta[/gold] [blue]1[/blue] carta con [purple]Serpenteo[/purple]."
           },
           {
-            "id": "SNAKE_LOCKED",
-            "title": "Bloqueado",
-            "description": "No tienes cartas que puedas encantar con [purple]Serpenteo[/purple]."
+            "id": "BIRD",
+            "title": "Pájaro",
+            "description": "Elige [blue]1[/blue] Carta básica y [gold]Transfórmala[/gold] en [gold]Picotazo[/gold]."
           },
           {
             "id": "TORUS",
@@ -4927,11 +4927,6 @@
     "description": "Estás explorando un túnel cuando de repente se te pega una telaraña a la cara y te entra el [jitter][red]PÁNICO[/red][/jitter].\nPero entonces, una [sine][blue]sensación de calma[/blue][/sine] te invade...\n\n[sine]«Oye, cálmate, que me estás destrozando la telaraña».[/sine]\n\n¿Cómo te has calmado tan rápido?\nUna [orange]pequeña arañita[/orange] desciende por la tela para situarse frente a ti. Parece dispuesta a enseñarte ciertas técnicas a cambio de [gold]oro[/gold].",
     "options": [
       {
-        "id": "ARACHNID_ACUPUNCTURE",
-        "title": "Acupuntura arácnida",
-        "description": "Paga [red]250[/red] de [gold]Oro[/gold]. Elimina [blue]2[/blue] cartas de tu [gold]Mazo[/gold]."
-      },
-      {
         "id": "BREATHING_TECHNIQUES",
         "title": "Técnicas de respiración",
         "description": "Paga [red]50[/red] de [gold]Oro[/gold]. Añade [blue]2[/blue] [gold]Iluminación[/gold] a tu [gold]Mazo[/gold]."
@@ -4940,6 +4935,11 @@
         "id": "EMOTIONAL_AWARENESS",
         "title": "Control de las emociones",
         "description": "Paga [red]125[/red] de [gold]Oro[/gold]. Elimina [blue]1[/blue] carta de tu [gold]Mazo[/gold]."
+      },
+      {
+        "id": "ARACHNID_ACUPUNCTURE",
+        "title": "Acupuntura arácnida",
+        "description": "Paga [red]250[/red] de [gold]Oro[/gold]. Elimina [blue]2[/blue] cartas de tu [gold]Mazo[/gold]."
       },
       {
         "id": "LOCKED",
@@ -4965,11 +4965,6 @@
         "description": "Estás explorando un túnel cuando de repente se te pega una telaraña a la cara y te entra el [jitter][red]PÁNICO[/red][/jitter].\nPero entonces, una [sine][blue]sensación de calma[/blue][/sine] te invade...\n\n[sine]«Oye, cálmate, que me estás destrozando la telaraña».[/sine]\n\n¿Cómo te has calmado tan rápido?\nUna [orange]pequeña arañita[/orange] desciende por la tela para situarse frente a ti. Parece dispuesta a enseñarte ciertas técnicas a cambio de [gold]oro[/gold].",
         "options": [
           {
-            "id": "ARACHNID_ACUPUNCTURE",
-            "title": "Acupuntura arácnida",
-            "description": "Paga [red]250[/red] de [gold]Oro[/gold]. Elimina [blue]2[/blue] cartas de tu [gold]Mazo[/gold]."
-          },
-          {
             "id": "BREATHING_TECHNIQUES",
             "title": "Técnicas de respiración",
             "description": "Paga [red]50[/red] de [gold]Oro[/gold]. Añade [blue]2[/blue] [gold]Iluminación[/gold] a tu [gold]Mazo[/gold]."
@@ -4978,6 +4973,11 @@
             "id": "EMOTIONAL_AWARENESS",
             "title": "Control de las emociones",
             "description": "Paga [red]125[/red] de [gold]Oro[/gold]. Elimina [blue]1[/blue] carta de tu [gold]Mazo[/gold]."
+          },
+          {
+            "id": "ARACHNID_ACUPUNCTURE",
+            "title": "Acupuntura arácnida",
+            "description": "Paga [red]250[/red] de [gold]Oro[/gold]. Elimina [blue]2[/blue] cartas de tu [gold]Mazo[/gold]."
           },
           {
             "id": "LOCKED",

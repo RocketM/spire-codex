@@ -7,14 +7,14 @@
     "description": "You discover a secluded chamber.\n\nSteam rises from bubbling pools of hot liquid that shifts colors with hypnotic rhythm. Barnacled growths hang from the ceiling, dripping viscous fluid that hisses and writhes when it touches the surface. The air feels heavy, laden with [blue]salt[/blue] and something [green]unmistakably organic[/green].\n\nAs you approach the edge of the largest pool, the liquid ripples. The waters bubble more intensely as if anticipating your entry.",
     "options": [
       {
-        "id": "ABSTAIN",
-        "title": "Abstain",
-        "description": "Heal [green]10[/green] HP."
-      },
-      {
         "id": "IMMERSE",
         "title": "Immerse",
         "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] damage."
+      },
+      {
+        "id": "ABSTAIN",
+        "title": "Abstain",
+        "description": "Heal [green]10[/green] HP."
       }
     ],
     "pages": [
@@ -27,14 +27,14 @@
         "description": null,
         "options": [
           {
-            "id": "EXIT_BATHS",
-            "title": "Exit Baths",
-            "description": ""
-          },
-          {
             "id": "LINGER",
             "title": "Linger",
             "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] damage."
+          },
+          {
+            "id": "EXIT_BATHS",
+            "title": "Exit Baths",
+            "description": ""
           }
         ]
       },
@@ -55,14 +55,14 @@
         "description": "You discover a secluded chamber.\n\nSteam rises from bubbling pools of hot liquid that shifts colors with hypnotic rhythm. Barnacled growths hang from the ceiling, dripping viscous fluid that hisses and writhes when it touches the surface. The air feels heavy, laden with [blue]salt[/blue] and something [green]unmistakably organic[/green].\n\nAs you approach the edge of the largest pool, the liquid ripples. The waters bubble more intensely as if anticipating your entry.",
         "options": [
           {
-            "id": "ABSTAIN",
-            "title": "Abstain",
-            "description": "Heal [green]10[/green] HP."
-          },
-          {
             "id": "IMMERSE",
             "title": "Immerse",
             "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] damage."
+          },
+          {
+            "id": "ABSTAIN",
+            "title": "Abstain",
+            "description": "Heal [green]10[/green] HP."
           }
         ]
       },
@@ -257,14 +257,14 @@
     "description": "[jitter]*thunk*[/jitter]\n\nA sharp pain is felt atop your head and a thought stabs into your mind.\n\n[purple][sine]“SHARE KNOWLEDGE???”[/sine][/purple]\n\nYou are unsure how to proceed...",
     "options": [
       {
-        "id": "RIP",
-        "title": "Rip the Leech Off",
-        "description": "Lose [red]5[/red] HP. Gain a Colorless card reward."
-      },
-      {
         "id": "SHARE_KNOWLEDGE",
         "title": "Share Knowledge",
         "description": "Choose [blue]1[/blue] of [blue]5[/blue] random cards to add to your [gold]Deck[/gold]."
+      },
+      {
+        "id": "RIP",
+        "title": "Rip the Leech Off",
+        "description": "Lose [red]5[/red] HP. Gain a Colorless card reward."
       }
     ],
     "pages": [
@@ -273,14 +273,14 @@
         "description": "[jitter]*thunk*[/jitter]\n\nA sharp pain is felt atop your head and a thought stabs into your mind.\n\n[purple][sine]“SHARE KNOWLEDGE???”[/sine][/purple]\n\nYou are unsure how to proceed...",
         "options": [
           {
-            "id": "RIP",
-            "title": "Rip the Leech Off",
-            "description": "Lose [red]5[/red] HP. Gain a Colorless card reward."
-          },
-          {
             "id": "SHARE_KNOWLEDGE",
             "title": "Share Knowledge",
             "description": "Choose [blue]1[/blue] of [blue]5[/blue] random cards to add to your [gold]Deck[/gold]."
+          },
+          {
+            "id": "RIP",
+            "title": "Rip the Leech Off",
+            "description": "Lose [red]5[/red] HP. Gain a Colorless card reward."
           }
         ]
       },
@@ -558,14 +558,14 @@
     "description": "[sine][blue]“I predicted you'd enter...!”[/blue][/sine]\n\nA [jitter]raspy[/jitter] voice calls out as you enter a [purple]mystic hut[/purple].\n\n[sine][blue]“Your destiny has brought you here. We must uncover your future and fortunes so you can SAVE US ALL!!”[/blue][/sine]\n“Okay, here are the options for the [gold]Crystal Sphere reading[/gold]. Be sure to sign this waiver as well,” she says while bringing out pen and parchment.",
     "options": [
       {
-        "id": "PAYMENT_PLAN",
-        "title": "Payment Plan",
-        "description": "Gain a [red]Debt[/red]. [purple]Divine[/purple] [blue]6[/blue] times."
-      },
-      {
         "id": "UNCOVER_FUTURE",
         "title": "Uncover Future",
         "description": "Pay [red]50[/red] [gold]Gold[/gold]. [purple]Divine[/purple] [blue]3[/blue] times."
+      },
+      {
+        "id": "PAYMENT_PLAN",
+        "title": "Payment Plan",
+        "description": "Gain a [red]Debt[/red]. [purple]Divine[/purple] [blue]6[/blue] times."
       }
     ],
     "pages": [
@@ -578,14 +578,14 @@
         "description": "[sine][blue]“I predicted you'd enter...!”[/blue][/sine]\n\nA [jitter]raspy[/jitter] voice calls out as you enter a [purple]mystic hut[/purple].\n\n[sine][blue]“Your destiny has brought you here. We must uncover your future and fortunes so you can SAVE US ALL!!”[/blue][/sine]\n“Okay, here are the options for the [gold]Crystal Sphere reading[/gold]. Be sure to sign this waiver as well,” she says while bringing out pen and parchment.",
         "options": [
           {
-            "id": "PAYMENT_PLAN",
-            "title": "Payment Plan",
-            "description": "Gain a [red]Debt[/red]. [purple]Divine[/purple] [blue]6[/blue] times."
-          },
-          {
             "id": "UNCOVER_FUTURE",
             "title": "Uncover Future",
             "description": "Pay [red]50[/red] [gold]Gold[/gold]. [purple]Divine[/purple] [blue]3[/blue] times."
+          },
+          {
+            "id": "PAYMENT_PLAN",
+            "title": "Payment Plan",
+            "description": "Gain a [red]Debt[/red]. [purple]Divine[/purple] [blue]6[/blue] times."
           }
         ]
       },
@@ -813,14 +813,14 @@
     "description": "Having taken the wrong path for a good while, you find yourself in a thick jungle of [green]ferns[/green], [green]shrubs[/green], and [green]vines[/green]. Especially [green]vines[/green]. Exhaustion sets in, and a dark thought comes to mind:\n\n[sine][purple]“You are lost, unprepared, and the inevitability of death is approaching.”[/purple][/sine]\n\nWhat do you do?",
     "options": [
       {
-        "id": "REST",
-        "title": "Rest",
-        "description": "Heal [green]30% Max[/green] HP. Fight some [red]enemies[/red]."
-      },
-      {
         "id": "TRUDGE_ON",
         "title": "Trudge On",
         "description": "Remove a card from your [gold]Deck[/gold]. Lose [red]11[/red] HP."
+      },
+      {
+        "id": "REST",
+        "title": "Rest",
+        "description": "Heal [green]30% Max[/green] HP. Fight some [red]enemies[/red]."
       }
     ],
     "pages": [
@@ -829,14 +829,14 @@
         "description": "Having taken the wrong path for a good while, you find yourself in a thick jungle of [green]ferns[/green], [green]shrubs[/green], and [green]vines[/green]. Especially [green]vines[/green]. Exhaustion sets in, and a dark thought comes to mind:\n\n[sine][purple]“You are lost, unprepared, and the inevitability of death is approaching.”[/purple][/sine]\n\nWhat do you do?",
         "options": [
           {
-            "id": "REST",
-            "title": "Rest",
-            "description": "Heal [green]30% Max[/green] HP. Fight some [red]enemies[/red]."
-          },
-          {
             "id": "TRUDGE_ON",
             "title": "Trudge On",
             "description": "Remove a card from your [gold]Deck[/gold]. Lose [red]11[/red] HP."
+          },
+          {
+            "id": "REST",
+            "title": "Rest",
+            "description": "Heal [green]30% Max[/green] HP. Fight some [red]enemies[/red]."
           }
         ]
       },
@@ -865,11 +865,6 @@
     "description": "You enter a hidden room...\n\nIt's packed with an array of dolls. Each are unique, their expressions ranging from [green]joy[/green] to [purple]sorrow[/purple], their attire spanning centuries and realms beyond your own.\n\nA [sine][blue]chorus of whispers[/blue][/sine] grows louder and louder until [jitter][red]the dolls are shouting[/red][/jitter] over each other and calling for you...\n\nYou must choose one and leave immediately.",
     "options": [
       {
-        "id": "EXAMINE",
-        "title": "Examine Each and Make the Best Choice",
-        "description": "Lose [red]15[/red] HP. Choose [blue]1[/blue] of [blue]3[/blue] [gold]Doll Relics[/gold]."
-      },
-      {
         "id": "RANDOM",
         "title": "Pick at Random",
         "description": "Obtain a random [gold]Doll Relic[/gold]."
@@ -878,6 +873,11 @@
         "id": "TAKE_SOME_TIME",
         "title": "Take Some Time",
         "description": "Lose [red]5[/red] HP. Choose [blue]1[/blue] of [blue]2[/blue] [gold]Doll Relics[/gold]."
+      },
+      {
+        "id": "EXAMINE",
+        "title": "Examine Each and Make the Best Choice",
+        "description": "Lose [red]15[/red] HP. Choose [blue]1[/blue] of [blue]3[/blue] [gold]Doll Relics[/gold]."
       }
     ],
     "pages": [
@@ -898,11 +898,6 @@
         "description": "You enter a hidden room...\n\nIt's packed with an array of dolls. Each are unique, their expressions ranging from [green]joy[/green] to [purple]sorrow[/purple], their attire spanning centuries and realms beyond your own.\n\nA [sine][blue]chorus of whispers[/blue][/sine] grows louder and louder until [jitter][red]the dolls are shouting[/red][/jitter] over each other and calling for you...\n\nYou must choose one and leave immediately.",
         "options": [
           {
-            "id": "EXAMINE",
-            "title": "Examine Each and Make the Best Choice",
-            "description": "Lose [red]15[/red] HP. Choose [blue]1[/blue] of [blue]3[/blue] [gold]Doll Relics[/gold]."
-          },
-          {
             "id": "RANDOM",
             "title": "Pick at Random",
             "description": "Obtain a random [gold]Doll Relic[/gold]."
@@ -911,6 +906,11 @@
             "id": "TAKE_SOME_TIME",
             "title": "Take Some Time",
             "description": "Lose [red]5[/red] HP. Choose [blue]1[/blue] of [blue]2[/blue] [gold]Doll Relics[/gold]."
+          },
+          {
+            "id": "EXAMINE",
+            "title": "Examine Each and Make the Best Choice",
+            "description": "Lose [red]15[/red] HP. Choose [blue]1[/blue] of [blue]3[/blue] [gold]Doll Relics[/gold]."
           }
         ]
       },
@@ -943,14 +943,14 @@
     "description": "A doorway existed where none existed moments before...\n\nYou enter to find two shimmering doorways and a [gold]well-dressed doorman[/gold].\n“Finally, a visitor! Please please! Choose a door, any door!”\n\n[blue]Are we still in the Spire? How is this place so clean?[/blue]",
     "options": [
       {
-        "id": "DARK",
-        "title": "Dark Door",
-        "description": "Remove [blue]1[/blue] card from your [gold]Deck[/gold]."
-      },
-      {
         "id": "LIGHT",
         "title": "Light Door",
         "description": "[gold]Upgrade[/gold] [blue]2[/blue] random cards."
+      },
+      {
+        "id": "DARK",
+        "title": "Dark Door",
+        "description": "Remove [blue]1[/blue] card from your [gold]Deck[/gold]."
       }
     ],
     "pages": [
@@ -963,14 +963,14 @@
         "description": "A doorway existed where none existed moments before...\n\nYou enter to find two shimmering doorways and a [gold]well-dressed doorman[/gold].\n“Finally, a visitor! Please please! Choose a door, any door!”\n\n[blue]Are we still in the Spire? How is this place so clean?[/blue]",
         "options": [
           {
-            "id": "DARK",
-            "title": "Dark Door",
-            "description": "Remove [blue]1[/blue] card from your [gold]Deck[/gold]."
-          },
-          {
             "id": "LIGHT",
             "title": "Light Door",
             "description": "[gold]Upgrade[/gold] [blue]2[/blue] random cards."
+          },
+          {
+            "id": "DARK",
+            "title": "Dark Door",
+            "description": "Remove [blue]1[/blue] card from your [gold]Deck[/gold]."
           }
         ]
       },
@@ -1044,6 +1044,11 @@
         "description": null,
         "options": [
           {
+            "id": "LOCKED",
+            "title": "Broke",
+            "description": "You could eat more but you are out of [gold]Gold[/gold]."
+          },
+          {
             "id": "CAVIAR",
             "title": "Grab Caviar off the Belt",
             "description": "Pay [red]35[/red] [gold]Gold[/gold]. Gain [green]4[/green] Max HP. Continue feasting!"
@@ -1067,11 +1072,6 @@
             "id": "JELLY_LIVER",
             "title": "Grab Jelly Liver off the Belt",
             "description": "Pay [red]35[/red] [gold]Gold[/gold]. [gold]Transform[/gold] a card. Continue feasting!"
-          },
-          {
-            "id": "LOCKED",
-            "title": "Broke",
-            "description": "You could eat more but you are out of [gold]Gold[/gold]."
           },
           {
             "id": "SEAPUNK_SALAD",
@@ -1139,14 +1139,14 @@
     "description": "The sudden sight of a massive field, [jitter]gouged with large outlines of bodies[/jitter], stops you in your tracks.\n\nOne of these outlines matches your own.\n\n[sine][orange]It's perfect...[/orange][/sine]",
     "options": [
       {
-        "id": "ENTER_YOUR_HOLE",
-        "title": "Enter Your Hole",
-        "description": "[gold]Enchant[/gold] a card with [purple]Perfect Fit[/purple]."
-      },
-      {
         "id": "RESIST",
         "title": "Resist",
         "description": "Remove [blue]2[/blue] cards from your [gold]Deck[/gold]. Add [red]Normality[/red] to your [gold]Deck[/gold]."
+      },
+      {
+        "id": "ENTER_YOUR_HOLE",
+        "title": "Enter Your Hole",
+        "description": "[gold]Enchant[/gold] a card with [purple]Perfect Fit[/purple]."
       }
     ],
     "pages": [
@@ -1159,14 +1159,14 @@
         "description": "The sudden sight of a massive field, [jitter]gouged with large outlines of bodies[/jitter], stops you in your tracks.\n\nOne of these outlines matches your own.\n\n[sine][orange]It's perfect...[/orange][/sine]",
         "options": [
           {
-            "id": "ENTER_YOUR_HOLE",
-            "title": "Enter Your Hole",
-            "description": "[gold]Enchant[/gold] a card with [purple]Perfect Fit[/purple]."
-          },
-          {
             "id": "RESIST",
             "title": "Resist",
             "description": "Remove [blue]2[/blue] cards from your [gold]Deck[/gold]. Add [red]Normality[/red] to your [gold]Deck[/gold]."
+          },
+          {
+            "id": "ENTER_YOUR_HOLE",
+            "title": "Enter Your Hole",
+            "description": "[gold]Enchant[/gold] a card with [purple]Perfect Fit[/purple]."
           }
         ]
       },
@@ -1184,9 +1184,9 @@
     "description": "There is a single grave with a [jitter][aqua]roiling blue flame[/aqua][/jitter]...\n\nA prideful warrior died in battle but its soul is restless. It wants to keep fighting, you feel it [sine]begging[/sine] to journey with you.\n\nBut perhaps it's better for it to face the [red]truth[/red]?",
     "options": [
       {
-        "id": "ACCEPT",
-        "title": "Accept the Forgotten Soul",
-        "description": "Obtain [gold]Forgotten Soul[/gold]."
+        "id": "CONFRONT_LOCKED",
+        "title": "Locked",
+        "description": "You have no cards with [gold]Exhaust[/gold] that can be [purple]Enchanted[/purple]."
       },
       {
         "id": "CONFRONT",
@@ -1194,9 +1194,9 @@
         "description": "Add [red]Decay[/red] to your [gold]Deck[/gold]. [gold]Enchant[/gold] a card that [gold]Exhausts[/gold] with [purple]Soul's Power[/purple]."
       },
       {
-        "id": "CONFRONT_LOCKED",
-        "title": "Locked",
-        "description": "You have no cards with [gold]Exhaust[/gold] that can be [purple]Enchanted[/purple]."
+        "id": "ACCEPT",
+        "title": "Accept the Forgotten Soul",
+        "description": "Obtain [gold]Forgotten Soul[/gold]."
       }
     ],
     "pages": [
@@ -1213,9 +1213,9 @@
         "description": "There is a single grave with a [jitter][aqua]roiling blue flame[/aqua][/jitter]...\n\nA prideful warrior died in battle but its soul is restless. It wants to keep fighting, you feel it [sine]begging[/sine] to journey with you.\n\nBut perhaps it's better for it to face the [red]truth[/red]?",
         "options": [
           {
-            "id": "ACCEPT",
-            "title": "Accept the Forgotten Soul",
-            "description": "Obtain [gold]Forgotten Soul[/gold]."
+            "id": "CONFRONT_LOCKED",
+            "title": "Locked",
+            "description": "You have no cards with [gold]Exhaust[/gold] that can be [purple]Enchanted[/purple]."
           },
           {
             "id": "CONFRONT",
@@ -1223,9 +1223,9 @@
             "description": "Add [red]Decay[/red] to your [gold]Deck[/gold]. [gold]Enchant[/gold] a card that [gold]Exhausts[/gold] with [purple]Soul's Power[/purple]."
           },
           {
-            "id": "CONFRONT_LOCKED",
-            "title": "Locked",
-            "description": "You have no cards with [gold]Exhaust[/gold] that can be [purple]Enchanted[/purple]."
+            "id": "ACCEPT",
+            "title": "Accept the Forgotten Soul",
+            "description": "Obtain [gold]Forgotten Soul[/gold]."
           }
         ]
       }
@@ -1333,14 +1333,14 @@
     "description": "In a clearing, you run into a [green]Ragtag Group of Adventurers[/green] looking down and gesturing at a [purple]gigantic maze[/purple].\n\nThey offer to join forces with you in an [b]Epic Quest[/b] to loot the riches of this maze. As an experienced adventurer yourself, it's clear this maze is filled with [red][jitter]deadly traps[/jitter][/red] and [orange][sine]guardians[/sine][/orange].\n\nIt would be easier if you work together, but then you would have to split the loot.",
     "options": [
       {
-        "id": "JOIN_FORCES",
-        "title": "Join Forces",
-        "description": "Gain [blue]50[/blue] [gold]Gold[/gold]."
-      },
-      {
         "id": "SOLO_QUEST",
         "title": "Solo Quest",
         "description": "Gain [blue]150[/blue] [gold]Gold[/gold]. Lose [red]18[/red] HP."
+      },
+      {
+        "id": "JOIN_FORCES",
+        "title": "Join Forces",
+        "description": "Gain [blue]50[/blue] [gold]Gold[/gold]."
       }
     ],
     "pages": [
@@ -1349,14 +1349,14 @@
         "description": "In a clearing, you run into a [green]Ragtag Group of Adventurers[/green] looking down and gesturing at a [purple]gigantic maze[/purple].\n\nThey offer to join forces with you in an [b]Epic Quest[/b] to loot the riches of this maze. As an experienced adventurer yourself, it's clear this maze is filled with [red][jitter]deadly traps[/jitter][/red] and [orange][sine]guardians[/sine][/orange].\n\nIt would be easier if you work together, but then you would have to split the loot.",
         "options": [
           {
-            "id": "JOIN_FORCES",
-            "title": "Join Forces",
-            "description": "Gain [blue]50[/blue] [gold]Gold[/gold]."
-          },
-          {
             "id": "SOLO_QUEST",
             "title": "Solo Quest",
             "description": "Gain [blue]150[/blue] [gold]Gold[/gold]. Lose [red]18[/red] HP."
+          },
+          {
+            "id": "JOIN_FORCES",
+            "title": "Join Forces",
+            "description": "Gain [blue]50[/blue] [gold]Gold[/gold]."
           }
         ]
       },
@@ -1383,14 +1383,14 @@
         "description": "Add [red]Decay[/red] to your [gold]Deck[/gold]. Obtain the [gold]Lost Wisp[/gold]."
       },
       {
-        "id": "CLAIM_LOCKED",
-        "title": "Locked",
-        "description": "Your Max HP is too low."
-      },
-      {
         "id": "SEARCH",
         "title": "Search the Nearby Area",
         "description": "Gain [blue]60[/blue] [gold]Gold[/gold]."
+      },
+      {
+        "id": "CLAIM_LOCKED",
+        "title": "Locked",
+        "description": "Your Max HP is too low."
       }
     ],
     "pages": [
@@ -1408,14 +1408,14 @@
             "description": "Add [red]Decay[/red] to your [gold]Deck[/gold]. Obtain the [gold]Lost Wisp[/gold]."
           },
           {
-            "id": "CLAIM_LOCKED",
-            "title": "Locked",
-            "description": "Your Max HP is too low."
-          },
-          {
             "id": "SEARCH",
             "title": "Search the Nearby Area",
             "description": "Gain [blue]60[/blue] [gold]Gold[/gold]."
+          },
+          {
+            "id": "CLAIM_LOCKED",
+            "title": "Locked",
+            "description": "Your Max HP is too low."
           }
         ]
       },
@@ -1433,6 +1433,11 @@
     "description": "You stumble upon a clearing bathed in an unnatural blue glow. Towering mushrooms pulse with bioluminescence, their caps swollen and glistening. As you approach, the fungi begin to emit [sine][purple]haunting, melodic tones[/purple][/sine] that reverberate throughout your chest.\n\nYou notice something gleaming, embedded within the largest mushroom's flesh, [sine]pulsing[/sine] in rhythm with the fungal song.",
     "options": [
       {
+        "id": "REACH_INTO_THE_FLESH",
+        "title": "Reach into the Flesh",
+        "description": "Remove [blue]2[/blue] cards from your [gold]Deck[/gold]. Add [red]Spore Mind[/red] to your [gold]Deck[/gold]."
+      },
+      {
         "id": "OFFER_TRIBUTE",
         "title": "Offer Tribute",
         "description": "Pay [red]149[/red] [gold]Gold[/gold]. Obtain a random [gold]Relic[/gold]."
@@ -1441,11 +1446,6 @@
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "Locked",
         "description": "Requires [blue]149[/blue] [gold]Gold[/gold]."
-      },
-      {
-        "id": "REACH_INTO_THE_FLESH",
-        "title": "Reach into the Flesh",
-        "description": "Remove [blue]2[/blue] cards from your [gold]Deck[/gold]. Add [red]Spore Mind[/red] to your [gold]Deck[/gold]."
       }
     ],
     "pages": [
@@ -1453,6 +1453,11 @@
         "id": "INITIAL",
         "description": "You stumble upon a clearing bathed in an unnatural blue glow. Towering mushrooms pulse with bioluminescence, their caps swollen and glistening. As you approach, the fungi begin to emit [sine][purple]haunting, melodic tones[/purple][/sine] that reverberate throughout your chest.\n\nYou notice something gleaming, embedded within the largest mushroom's flesh, [sine]pulsing[/sine] in rhythm with the fungal song.",
         "options": [
+          {
+            "id": "REACH_INTO_THE_FLESH",
+            "title": "Reach into the Flesh",
+            "description": "Remove [blue]2[/blue] cards from your [gold]Deck[/gold]. Add [red]Spore Mind[/red] to your [gold]Deck[/gold]."
+          },
           {
             "id": "OFFER_TRIBUTE",
             "title": "Offer Tribute",
@@ -1462,11 +1467,6 @@
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "Locked",
             "description": "Requires [blue]149[/blue] [gold]Gold[/gold]."
-          },
-          {
-            "id": "REACH_INTO_THE_FLESH",
-            "title": "Reach into the Flesh",
-            "description": "Remove [blue]2[/blue] cards from your [gold]Deck[/gold]. Add [red]Spore Mind[/red] to your [gold]Deck[/gold]."
           }
         ]
       },
@@ -2314,14 +2314,14 @@
     "description": "Two [gold]Punch Constructs[/gold] are duking it out and you see some treasure in between them...\n\nShould you try to nab it?",
     "options": [
       {
-        "id": "I_CAN_TAKE_THEM",
-        "title": "I Can Take Them",
-        "description": "Fight them for [gold]Greater Rewards[/gold]."
-      },
-      {
         "id": "NAB",
         "title": "Nab",
         "description": "Add [red]Injury[/red] to your [gold]Deck[/gold]. Obtain a random [gold]Relic[/gold]."
+      },
+      {
+        "id": "I_CAN_TAKE_THEM",
+        "title": "I Can Take Them",
+        "description": "Fight them for [gold]Greater Rewards[/gold]."
       }
     ],
     "pages": [
@@ -2330,14 +2330,14 @@
         "description": "Two [gold]Punch Constructs[/gold] are duking it out and you see some treasure in between them...\n\nShould you try to nab it?",
         "options": [
           {
-            "id": "I_CAN_TAKE_THEM",
-            "title": "I Can Take Them",
-            "description": "Fight them for [gold]Greater Rewards[/gold]."
-          },
-          {
             "id": "NAB",
             "title": "Nab",
             "description": "Add [red]Injury[/red] to your [gold]Deck[/gold]. Obtain a random [gold]Relic[/gold]."
+          },
+          {
+            "id": "I_CAN_TAKE_THEM",
+            "title": "I Can Take Them",
+            "description": "Fight them for [gold]Greater Rewards[/gold]."
           }
         ]
       },
@@ -2366,14 +2366,14 @@
     "description": "You are approached by the [purple]oldest person you have ever seen[/purple].\n[sine]“We meet once more... it's me, Ranwid!”[/sine]\n\nYou do not know this man.",
     "options": [
       {
-        "id": "GOLD",
-        "title": "Give 100 Gold",
-        "description": "Obtain a random [gold]Relic[/gold]."
-      },
-      {
         "id": "POTION",
         "title": "Give Potion",
         "description": "Obtain a random [gold]Relic[/gold]."
+      },
+      {
+        "id": "RELIC",
+        "title": "Give Relic",
+        "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold]."
       },
       {
         "id": "POTION_LOCKED",
@@ -2381,9 +2381,9 @@
         "description": "You don't have any Potions that can be given."
       },
       {
-        "id": "RELIC",
-        "title": "Give Relic",
-        "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold]."
+        "id": "GOLD",
+        "title": "Give 100 Gold",
+        "description": "Obtain a random [gold]Relic[/gold]."
       },
       {
         "id": "RELIC_LOCKED",
@@ -2401,14 +2401,14 @@
         "description": "You are approached by the [purple]oldest person you have ever seen[/purple].\n[sine]“We meet once more... it's me, Ranwid!”[/sine]\n\nYou do not know this man.",
         "options": [
           {
-            "id": "GOLD",
-            "title": "Give 100 Gold",
-            "description": "Obtain a random [gold]Relic[/gold]."
-          },
-          {
             "id": "POTION",
             "title": "Give Potion",
             "description": "Obtain a random [gold]Relic[/gold]."
+          },
+          {
+            "id": "RELIC",
+            "title": "Give Relic",
+            "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold]."
           },
           {
             "id": "POTION_LOCKED",
@@ -2416,9 +2416,9 @@
             "description": "You don't have any Potions that can be given."
           },
           {
-            "id": "RELIC",
-            "title": "Give Relic",
-            "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold]."
+            "id": "GOLD",
+            "title": "Give 100 Gold",
+            "description": "Obtain a random [gold]Relic[/gold]."
           },
           {
             "id": "RELIC_LOCKED",
@@ -2445,14 +2445,14 @@
     "description": "What is this? Something feels wrong here...\n[sine]...ereh gnorw sleef gnihtemoS ?siht si tahW[/sine]",
     "options": [
       {
-        "id": "SHATTER",
-        "title": "Shatter",
-        "description": "Duplicate your [gold]Deck[/gold]. Receive [purple]Bad Luck[/purple]."
-      },
-      {
         "id": "TOUCH_A_MIRROR",
         "title": "Touch a Mirror",
         "description": "[red]Downgrade[/red] [blue]2[/blue] random cards. [green]Upgrade[/green] [blue]4[/blue] random cards."
+      },
+      {
+        "id": "SHATTER",
+        "title": "Shatter",
+        "description": "Duplicate your [gold]Deck[/gold]. Receive [purple]Bad Luck[/purple]."
       }
     ],
     "pages": [
@@ -2461,14 +2461,14 @@
         "description": "What is this? Something feels wrong here...\n[sine]...ereh gnorw sleef gnihtemoS ?siht si tahW[/sine]",
         "options": [
           {
-            "id": "SHATTER",
-            "title": "Shatter",
-            "description": "Duplicate your [gold]Deck[/gold]. Receive [purple]Bad Luck[/purple]."
-          },
-          {
             "id": "TOUCH_A_MIRROR",
             "title": "Touch a Mirror",
             "description": "[red]Downgrade[/red] [blue]2[/blue] random cards. [green]Upgrade[/green] [blue]4[/blue] random cards."
+          },
+          {
+            "id": "SHATTER",
+            "title": "Shatter",
+            "description": "Duplicate your [gold]Deck[/gold]. Receive [purple]Bad Luck[/purple]."
           }
         ]
       },
@@ -2490,8 +2490,8 @@
     "description": "You turn a corner and suddenly, a shadowy figure is just standing there. He pivots to face you.\n\n“Welcome! What're ya trading?”\nThe figure inquires as he flares open his cloak to reveal a slew of [sine][purple]suspicious wares[/purple][/sine].",
     "options": [
       {
-        "id": "BOTTOM",
-        "title": "Take the Bottom One",
+        "id": "TOP",
+        "title": "Take the Top One",
         "description": "Trade [gold]one of your Relics[/gold] for [gold]a random Relic[/gold]."
       },
       {
@@ -2500,8 +2500,8 @@
         "description": "Trade [gold]one of your Relics[/gold] for [gold]a random Relic[/gold]."
       },
       {
-        "id": "TOP",
-        "title": "Take the Top One",
+        "id": "BOTTOM",
+        "title": "Take the Bottom One",
         "description": "Trade [gold]one of your Relics[/gold] for [gold]a random Relic[/gold]."
       }
     ],
@@ -2515,8 +2515,8 @@
         "description": "You turn a corner and suddenly, a shadowy figure is just standing there. He pivots to face you.\n\n“Welcome! What're ya trading?”\nThe figure inquires as he flares open his cloak to reveal a slew of [sine][purple]suspicious wares[/purple][/sine].",
         "options": [
           {
-            "id": "BOTTOM",
-            "title": "Take the Bottom One",
+            "id": "TOP",
+            "title": "Take the Top One",
             "description": "Trade [gold]one of your Relics[/gold] for [gold]a random Relic[/gold]."
           },
           {
@@ -2525,8 +2525,8 @@
             "description": "Trade [gold]one of your Relics[/gold] for [gold]a random Relic[/gold]."
           },
           {
-            "id": "TOP",
-            "title": "Take the Top One",
+            "id": "BOTTOM",
+            "title": "Take the Bottom One",
             "description": "Trade [gold]one of your Relics[/gold] for [gold]a random Relic[/gold]."
           }
         ]
@@ -2691,19 +2691,14 @@
     "description": "On the floor lies a tome,\n“Top 3 Ways to Conquer the Spire”\n\nThe book is [red]encrusted with blood[/red] so you find this manuscript highly suspicious.\n\nWill you read it?",
     "options": [
       {
-        "id": "NO_OPTIONS",
-        "title": "Move On",
-        "description": "You don't have any cards that can be Enchanted."
+        "id": "READ_THE_BACK",
+        "title": "Read the Back",
+        "description": "Choose an Attack to [gold]Enchant[/gold] with [purple]Sharp[/purple] [blue]2[/blue]."
       },
       {
-        "id": "READ_ENTIRE_BOOK",
-        "title": "Read the Entire Book",
-        "description": "Choose a Power to [gold]Enchant[/gold] with [purple]Swift[/purple] [blue]2[/blue]."
-      },
-      {
-        "id": "READ_ENTIRE_BOOK_LOCKED",
+        "id": "READ_THE_BACK_LOCKED",
         "title": "Locked",
-        "description": "You don't have any Powers that can be [gold]Enchanted[/gold]."
+        "description": "You don't have any Attacks that can be [gold]Enchanted[/gold]."
       },
       {
         "id": "READ_PASSAGE",
@@ -2716,14 +2711,19 @@
         "description": "You don't have any Skills that can be [gold]Enchanted[/gold]."
       },
       {
-        "id": "READ_THE_BACK",
-        "title": "Read the Back",
-        "description": "Choose an Attack to [gold]Enchant[/gold] with [purple]Sharp[/purple] [blue]2[/blue]."
+        "id": "READ_ENTIRE_BOOK",
+        "title": "Read the Entire Book",
+        "description": "Choose a Power to [gold]Enchant[/gold] with [purple]Swift[/purple] [blue]2[/blue]."
       },
       {
-        "id": "READ_THE_BACK_LOCKED",
+        "id": "READ_ENTIRE_BOOK_LOCKED",
         "title": "Locked",
-        "description": "You don't have any Attacks that can be [gold]Enchanted[/gold]."
+        "description": "You don't have any Powers that can be [gold]Enchanted[/gold]."
+      },
+      {
+        "id": "NO_OPTIONS",
+        "title": "Move On",
+        "description": "You don't have any cards that can be Enchanted."
       }
     ],
     "pages": [
@@ -2732,19 +2732,14 @@
         "description": "On the floor lies a tome,\n“Top 3 Ways to Conquer the Spire”\n\nThe book is [red]encrusted with blood[/red] so you find this manuscript highly suspicious.\n\nWill you read it?",
         "options": [
           {
-            "id": "NO_OPTIONS",
-            "title": "Move On",
-            "description": "You don't have any cards that can be Enchanted."
+            "id": "READ_THE_BACK",
+            "title": "Read the Back",
+            "description": "Choose an Attack to [gold]Enchant[/gold] with [purple]Sharp[/purple] [blue]2[/blue]."
           },
           {
-            "id": "READ_ENTIRE_BOOK",
-            "title": "Read the Entire Book",
-            "description": "Choose a Power to [gold]Enchant[/gold] with [purple]Swift[/purple] [blue]2[/blue]."
-          },
-          {
-            "id": "READ_ENTIRE_BOOK_LOCKED",
+            "id": "READ_THE_BACK_LOCKED",
             "title": "Locked",
-            "description": "You don't have any Powers that can be [gold]Enchanted[/gold]."
+            "description": "You don't have any Attacks that can be [gold]Enchanted[/gold]."
           },
           {
             "id": "READ_PASSAGE",
@@ -2757,14 +2752,19 @@
             "description": "You don't have any Skills that can be [gold]Enchanted[/gold]."
           },
           {
-            "id": "READ_THE_BACK",
-            "title": "Read the Back",
-            "description": "Choose an Attack to [gold]Enchant[/gold] with [purple]Sharp[/purple] [blue]2[/blue]."
+            "id": "READ_ENTIRE_BOOK",
+            "title": "Read the Entire Book",
+            "description": "Choose a Power to [gold]Enchant[/gold] with [purple]Swift[/purple] [blue]2[/blue]."
           },
           {
-            "id": "READ_THE_BACK_LOCKED",
+            "id": "READ_ENTIRE_BOOK_LOCKED",
             "title": "Locked",
-            "description": "You don't have any Attacks that can be [gold]Enchanted[/gold]."
+            "description": "You don't have any Powers that can be [gold]Enchanted[/gold]."
+          },
+          {
+            "id": "NO_OPTIONS",
+            "title": "Move On",
+            "description": "You don't have any cards that can be Enchanted."
           }
         ]
       },
@@ -2794,14 +2794,14 @@
     "description": "While crossing a rickety wooden bridge, there is a sudden [blue][jitter]torrent of rain[/jitter][/blue]. [purple][sine]Massive gusts of wind[/sine][/purple] buffet you, threatening to end your journey.",
     "options": [
       {
-        "id": "HOLD_ON_0",
-        "title": "Hold On",
-        "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
-      },
-      {
         "id": "OVERCOME",
         "title": "Overcome",
         "description": "[red]a random Card[/red] is removed from your [gold]Deck[/gold]."
+      },
+      {
+        "id": "HOLD_ON_0",
+        "title": "Hold On",
+        "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
       }
     ],
     "pages": [
@@ -2898,14 +2898,14 @@
         "description": "While crossing a rickety wooden bridge, there is a sudden [blue][jitter]torrent of rain[/jitter][/blue]. [purple][sine]Massive gusts of wind[/sine][/purple] buffet you, threatening to end your journey.",
         "options": [
           {
-            "id": "HOLD_ON_0",
-            "title": "Hold On",
-            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
-          },
-          {
             "id": "OVERCOME",
             "title": "Overcome",
             "description": "[red]a random Card[/red] is removed from your [gold]Deck[/gold]."
+          },
+          {
+            "id": "HOLD_ON_0",
+            "title": "Hold On",
+            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -2923,14 +2923,14 @@
     "description": "You happen upon a [aqua][sine]Massive Spiraling Whirlpool[/sine][/aqua]. The water swirls with beautiful precision and its surrounding walls are adorned with spiral patterns.\n\n[purple][sine]Around and around... around...\n....and around.... what a sight......[/sine][/purple]\n\nWhat do you do?",
     "options": [
       {
-        "id": "DRINK",
-        "title": "Drink",
-        "description": "Heal [green]33% Max[/green] HP."
-      },
-      {
         "id": "OBSERVE",
         "title": "Observe",
         "description": "[gold]Enchant[/gold] a [gold]Strike[/gold] or [gold]Defend[/gold] with [purple]Spiral[/purple]."
+      },
+      {
+        "id": "DRINK",
+        "title": "Drink",
+        "description": "Heal [green]33% Max[/green] HP."
       },
       {
         "id": "REACH_IN",
@@ -2948,14 +2948,14 @@
         "description": "You happen upon a [aqua][sine]Massive Spiraling Whirlpool[/sine][/aqua]. The water swirls with beautiful precision and its surrounding walls are adorned with spiral patterns.\n\n[purple][sine]Around and around... around...\n....and around.... what a sight......[/sine][/purple]\n\nWhat do you do?",
         "options": [
           {
-            "id": "DRINK",
-            "title": "Drink",
-            "description": "Heal [green]33% Max[/green] HP."
-          },
-          {
             "id": "OBSERVE",
             "title": "Observe",
             "description": "[gold]Enchant[/gold] a [gold]Strike[/gold] or [gold]Defend[/gold] with [purple]Spiral[/purple]."
+          },
+          {
+            "id": "DRINK",
+            "title": "Drink",
+            "description": "Heal [green]33% Max[/green] HP."
           },
           {
             "id": "REACH_IN",
@@ -3037,14 +3037,14 @@
         "description": "Requires a Potion."
       },
       {
-        "id": "PUSH",
-        "title": "Push",
-        "description": "Lose [red]6[/red] HP. [gold]Enchant[/gold] an Attack with [purple]Vigorous[/purple] [blue]8[/blue]."
-      },
-      {
         "id": "PUSH_LOCKED",
         "title": "Locked",
         "description": "Requires an Attack."
+      },
+      {
+        "id": "PUSH",
+        "title": "Push",
+        "description": "Lose [red]6[/red] HP. [gold]Enchant[/gold] an Attack with [purple]Vigorous[/purple] [blue]8[/blue]."
       }
     ],
     "pages": [
@@ -3063,14 +3063,14 @@
             "description": "Requires a Potion."
           },
           {
-            "id": "PUSH",
-            "title": "Push",
-            "description": "Lose [red]6[/red] HP. [gold]Enchant[/gold] an Attack with [purple]Vigorous[/purple] [blue]8[/blue]."
-          },
-          {
             "id": "PUSH_LOCKED",
             "title": "Locked",
             "description": "Requires an Attack."
+          },
+          {
+            "id": "PUSH",
+            "title": "Push",
+            "description": "Lose [red]6[/red] HP. [gold]Enchant[/gold] an Attack with [purple]Vigorous[/purple] [blue]8[/blue]."
           }
         ]
       },
@@ -3092,14 +3092,14 @@
     "description": "You spot an aged statue half submerged in a pond; its hands gently rest atop a [blue]stone sword[/blue].\n\nSomething is also [gold][sine]glittering[/sine][/gold] at the bottom of the pond.\nVotive offerings perhaps?\n\nYou could really use some money...",
     "options": [
       {
-        "id": "DIVE_INTO_WATER",
-        "title": "Dive into the Water",
-        "description": "Gain [blue]111[/blue] [gold]Gold[/gold]. Lose [red]7[/red] HP."
-      },
-      {
         "id": "GRAB_SWORD",
         "title": "Grab the Sword",
         "description": "Obtain the [gold]Sword of Stone.[/gold]"
+      },
+      {
+        "id": "DIVE_INTO_WATER",
+        "title": "Dive into the Water",
+        "description": "Gain [blue]111[/blue] [gold]Gold[/gold]. Lose [red]7[/red] HP."
       }
     ],
     "pages": [
@@ -3116,14 +3116,14 @@
         "description": "You spot an aged statue half submerged in a pond; its hands gently rest atop a [blue]stone sword[/blue].\n\nSomething is also [gold][sine]glittering[/sine][/gold] at the bottom of the pond.\nVotive offerings perhaps?\n\nYou could really use some money...",
         "options": [
           {
-            "id": "DIVE_INTO_WATER",
-            "title": "Dive into the Water",
-            "description": "Gain [blue]111[/blue] [gold]Gold[/gold]. Lose [red]7[/red] HP."
-          },
-          {
             "id": "GRAB_SWORD",
             "title": "Grab the Sword",
             "description": "Obtain the [gold]Sword of Stone.[/gold]"
+          },
+          {
+            "id": "DIVE_INTO_WATER",
+            "title": "Dive into the Water",
+            "description": "Gain [blue]111[/blue] [gold]Gold[/gold]. Lose [red]7[/red] HP."
           }
         ]
       }
@@ -3182,14 +3182,14 @@
     "description": "Along your travels, you stumble upon a dark, amorphous polyp. You can sense that it is very old, and very evil.\n\n[sine]Approach...[/sine]",
     "options": [
       {
-        "id": "APPROACH",
-        "title": "Approach",
-        "description": "[gold]Enchant[/gold] an Attack with [purple]Corrupted[/purple]."
-      },
-      {
         "id": "APPROACH_LOCKED",
         "title": "Locked",
         "description": "None of your Attacks can be Enchanted."
+      },
+      {
+        "id": "APPROACH",
+        "title": "Approach",
+        "description": "[gold]Enchant[/gold] an Attack with [purple]Corrupted[/purple]."
       },
       {
         "id": "KILL_WITH_FIRE",
@@ -3207,14 +3207,14 @@
         "description": "Along your travels, you stumble upon a dark, amorphous polyp. You can sense that it is very old, and very evil.\n\n[sine]Approach...[/sine]",
         "options": [
           {
-            "id": "APPROACH",
-            "title": "Approach",
-            "description": "[gold]Enchant[/gold] an Attack with [purple]Corrupted[/purple]."
-          },
-          {
             "id": "APPROACH_LOCKED",
             "title": "Locked",
             "description": "None of your Attacks can be Enchanted."
+          },
+          {
+            "id": "APPROACH",
+            "title": "Approach",
+            "description": "[gold]Enchant[/gold] an Attack with [purple]Corrupted[/purple]."
           },
           {
             "id": "KILL_WITH_FIRE",
@@ -3859,14 +3859,14 @@
     "description": "You come upon a faintly glowing key and go to pick it up.\n\n“Been looking all over for that key! Now if you don't mind...”\n\n This person looks like bad news but maybe it's not good to be judgy.",
     "options": [
       {
-        "id": "KEEP_THE_KEY",
-        "title": "Keep the Key",
-        "description": "Fight to obtain the Key."
-      },
-      {
         "id": "RETURN_THE_KEY",
         "title": "Return the Key",
         "description": "Gain [blue]100[/blue] [gold]Gold[/gold]."
+      },
+      {
+        "id": "KEEP_THE_KEY",
+        "title": "Keep the Key",
+        "description": "Fight to obtain the Key."
       }
     ],
     "pages": [
@@ -3886,14 +3886,14 @@
         "description": "You come upon a faintly glowing key and go to pick it up.\n\n“Been looking all over for that key! Now if you don't mind...”\n\n This person looks like bad news but maybe it's not good to be judgy.",
         "options": [
           {
-            "id": "KEEP_THE_KEY",
-            "title": "Keep the Key",
-            "description": "Fight to obtain the Key."
-          },
-          {
             "id": "RETURN_THE_KEY",
             "title": "Return the Key",
             "description": "Gain [blue]100[/blue] [gold]Gold[/gold]."
+          },
+          {
+            "id": "KEEP_THE_KEY",
+            "title": "Keep the Key",
+            "description": "Fight to obtain the Key."
           }
         ]
       },
@@ -3963,14 +3963,14 @@
     "description": "Arms suddenly jut out from a nearby hole, clutching a [gold]suspicious bag of riches[/gold] and a clearly [purple]cursed relic[/purple].\n\n[jitter][blue]“This... or That?”[/blue][/jitter]\na scratched-up voice whispers from below.",
     "options": [
       {
-        "id": "ORNATE",
-        "title": "That",
-        "description": "Add [red]Clumsy[/red] to your [gold]Deck[/gold]. Obtain a random [gold]Relic[/gold]."
-      },
-      {
         "id": "PLAIN",
         "title": "This",
         "description": "Lose [red]6[/red] HP. Gain [blue]41-69[/blue] [gold]Gold[/gold]."
+      },
+      {
+        "id": "ORNATE",
+        "title": "That",
+        "description": "Add [red]Clumsy[/red] to your [gold]Deck[/gold]. Obtain a random [gold]Relic[/gold]."
       }
     ],
     "pages": [
@@ -3979,14 +3979,14 @@
         "description": "Arms suddenly jut out from a nearby hole, clutching a [gold]suspicious bag of riches[/gold] and a clearly [purple]cursed relic[/purple].\n\n[jitter][blue]“This... or That?”[/blue][/jitter]\na scratched-up voice whispers from below.",
         "options": [
           {
-            "id": "ORNATE",
-            "title": "That",
-            "description": "Add [red]Clumsy[/red] to your [gold]Deck[/gold]. Obtain a random [gold]Relic[/gold]."
-          },
-          {
             "id": "PLAIN",
             "title": "This",
             "description": "Lose [red]6[/red] HP. Gain [blue]41-69[/blue] [gold]Gold[/gold]."
+          },
+          {
+            "id": "ORNATE",
+            "title": "That",
+            "description": "Add [red]Clumsy[/red] to your [gold]Deck[/gold]. Obtain a random [gold]Relic[/gold]."
           }
         ]
       },
@@ -4024,14 +4024,14 @@
             "description": "Make an Attack."
           },
           {
-            "id": "POWER",
-            "title": "Gadget",
-            "description": "Make a Power."
-          },
-          {
             "id": "SKILL",
             "title": "Protector",
             "description": "Make a Skill."
+          },
+          {
+            "id": "POWER",
+            "title": "Gadget",
+            "description": "Make a Power."
           }
         ]
       },
@@ -4039,36 +4039,6 @@
         "id": "CHOOSE_RIDER",
         "description": "“Excellent choice! Now what should it [sine]DO[/sine]?”\nThe [orange]scientist[/orange] rubs her hands together with glee.",
         "options": [
-          {
-            "id": "CHAOS",
-            "title": "Chaos",
-            "description": "Add a random card into your [gold]Hand[/gold]. It costs [blue]0[/blue] [energy:1] this turn."
-          },
-          {
-            "id": "CHOKING",
-            "title": "Choking",
-            "description": "Whenever you play a card this turn, the enemy loses [blue][ChokingDamage][/blue] HP."
-          },
-          {
-            "id": "CURIOUS",
-            "title": "Curious",
-            "description": "Powers cost [blue]1[/blue] [energy:1] less."
-          },
-          {
-            "id": "ENERGIZED",
-            "title": "Energized",
-            "description": "Gain [energy:2]."
-          },
-          {
-            "id": "EXPERTISE",
-            "title": "Expertise",
-            "description": "Gain [blue][ExpertiseStrength][/blue] [gold]Strength[/gold]. Gain [blue][ExpertiseDexterity][/blue] [gold]Dexterity[/gold]."
-          },
-          {
-            "id": "IMPROVEMENT",
-            "title": "Improvement",
-            "description": "At the end of combat, [gold]Upgrade[/gold] a random card."
-          },
           {
             "id": "SAPPING",
             "title": "Sapping",
@@ -4080,9 +4050,39 @@
             "description": "Hits [blue]2[/blue] additional times."
           },
           {
+            "id": "CHOKING",
+            "title": "Choking",
+            "description": "Whenever you play a card this turn, the enemy loses [blue][ChokingDamage][/blue] HP."
+          },
+          {
+            "id": "ENERGIZED",
+            "title": "Energized",
+            "description": "Gain [energy:2]."
+          },
+          {
             "id": "WISDOM",
             "title": "Wisdom",
             "description": "Draw [blue]3[/blue] cards."
+          },
+          {
+            "id": "CHAOS",
+            "title": "Chaos",
+            "description": "Add a random card into your [gold]Hand[/gold]. It costs [blue]0[/blue] [energy:1] this turn."
+          },
+          {
+            "id": "EXPERTISE",
+            "title": "Expertise",
+            "description": "Gain [blue][ExpertiseStrength][/blue] [gold]Strength[/gold]. Gain [blue][ExpertiseDexterity][/blue] [gold]Dexterity[/gold]."
+          },
+          {
+            "id": "CURIOUS",
+            "title": "Curious",
+            "description": "Powers cost [blue]1[/blue] [energy:1] less."
+          },
+          {
+            "id": "IMPROVEMENT",
+            "title": "Improvement",
+            "description": "At the end of combat, [gold]Upgrade[/gold] a random card."
           }
         ]
       },
@@ -4281,14 +4281,14 @@
     "description": "You find a secluded [gold]Rest Site[/gold] and start a [orange]fire[/orange] to get some rest.\nOr so you thought.\n\nOnce the fire is started, it begins to swell, reaching not upwards but [sine]sideways[/sine] towards a grove of [purple]oil-seeping trees[/purple].\n\nShould you try resting anyways?",
     "options": [
       {
-        "id": "KILL",
-        "title": "Kill the Trees",
-        "description": "Lose [red]8[/red] Max HP. Obtain a random [gold]Relic[/gold]."
-      },
-      {
         "id": "REST",
         "title": "Rest Anyways",
         "description": "[green]Heal to full HP.[/green] Receive [red]Poor Sleep[/red]."
+      },
+      {
+        "id": "KILL",
+        "title": "Kill the Trees",
+        "description": "Lose [red]8[/red] Max HP. Obtain a random [gold]Relic[/gold]."
       }
     ],
     "pages": [
@@ -4297,14 +4297,14 @@
         "description": "You find a secluded [gold]Rest Site[/gold] and start a [orange]fire[/orange] to get some rest.\nOr so you thought.\n\nOnce the fire is started, it begins to swell, reaching not upwards but [sine]sideways[/sine] towards a grove of [purple]oil-seeping trees[/purple].\n\nShould you try resting anyways?",
         "options": [
           {
-            "id": "KILL",
-            "title": "Kill the Trees",
-            "description": "Lose [red]8[/red] Max HP. Obtain a random [gold]Relic[/gold]."
-          },
-          {
             "id": "REST",
             "title": "Rest Anyways",
             "description": "[green]Heal to full HP.[/green] Receive [red]Poor Sleep[/red]."
+          },
+          {
+            "id": "KILL",
+            "title": "Kill the Trees",
+            "description": "Lose [red]8[/red] Max HP. Obtain a random [gold]Relic[/gold]."
           }
         ]
       },
@@ -4595,16 +4595,6 @@
         "description": "Gain [green]6[/green] Max HP."
       },
       {
-        "id": "PRICKLY_SPONGE",
-        "title": "Prickly Sponge",
-        "description": "Pay [red]155[/red] [gold]Gold[/gold]. [gold]Enchant[/gold] [blue]2[/blue] cards with [purple]Steady[/purple]."
-      },
-      {
-        "id": "PRICKLY_SPONGE_LOCKED",
-        "title": "Locked",
-        "description": "Requires [blue]155[/blue] [gold]Gold[/gold]."
-      },
-      {
         "id": "TENTACLE_QUILL",
         "title": "Tentacle Quill",
         "description": "Pay [red]65[/red] [gold]Gold[/gold]. [gold]Enchant[/gold] a card with [purple]Steady[/purple]."
@@ -4613,6 +4603,16 @@
         "id": "TENTACLE_QUILL_LOCKED",
         "title": "Locked",
         "description": "Requires [blue]65[/blue] [gold]Gold[/gold]."
+      },
+      {
+        "id": "PRICKLY_SPONGE",
+        "title": "Prickly Sponge",
+        "description": "Pay [red]155[/red] [gold]Gold[/gold]. [gold]Enchant[/gold] [blue]2[/blue] cards with [purple]Steady[/purple]."
+      },
+      {
+        "id": "PRICKLY_SPONGE_LOCKED",
+        "title": "Locked",
+        "description": "Requires [blue]155[/blue] [gold]Gold[/gold]."
       }
     ],
     "pages": [
@@ -4630,16 +4630,6 @@
             "description": "Gain [green]6[/green] Max HP."
           },
           {
-            "id": "PRICKLY_SPONGE",
-            "title": "Prickly Sponge",
-            "description": "Pay [red]155[/red] [gold]Gold[/gold]. [gold]Enchant[/gold] [blue]2[/blue] cards with [purple]Steady[/purple]."
-          },
-          {
-            "id": "PRICKLY_SPONGE_LOCKED",
-            "title": "Locked",
-            "description": "Requires [blue]155[/blue] [gold]Gold[/gold]."
-          },
-          {
             "id": "TENTACLE_QUILL",
             "title": "Tentacle Quill",
             "description": "Pay [red]65[/red] [gold]Gold[/gold]. [gold]Enchant[/gold] a card with [purple]Steady[/purple]."
@@ -4648,6 +4638,16 @@
             "id": "TENTACLE_QUILL_LOCKED",
             "title": "Locked",
             "description": "Requires [blue]65[/blue] [gold]Gold[/gold]."
+          },
+          {
+            "id": "PRICKLY_SPONGE",
+            "title": "Prickly Sponge",
+            "description": "Pay [red]155[/red] [gold]Gold[/gold]. [gold]Enchant[/gold] [blue]2[/blue] cards with [purple]Steady[/purple]."
+          },
+          {
+            "id": "PRICKLY_SPONGE_LOCKED",
+            "title": "Locked",
+            "description": "Requires [blue]155[/blue] [gold]Gold[/gold]."
           }
         ]
       },
@@ -4689,11 +4689,6 @@
         "description": "Requires [blue]200[/blue] [gold]Gold[/gold]."
       },
       {
-        "id": "LEAVE",
-        "title": "Leave",
-        "description": "[red]Downgrade[/red] a random card."
-      },
-      {
         "id": "MYSTERY_BOX",
         "title": "Wongo's Mystery Box",
         "description": "Pay [red]300[/red] [gold]Gold[/gold]. Obtain [blue]3[/blue] random [gold]Relics[/gold] after [blue]5[/blue] combats."
@@ -4702,6 +4697,11 @@
         "id": "MYSTERY_BOX_LOCKED",
         "title": "Locked",
         "description": "Requires [blue]300[/blue] [gold]Gold[/gold]."
+      },
+      {
+        "id": "LEAVE",
+        "title": "Leave",
+        "description": "[red]Downgrade[/red] a random card."
       }
     ],
     "pages": [
@@ -4742,11 +4742,6 @@
             "description": "Requires [blue]200[/blue] [gold]Gold[/gold]."
           },
           {
-            "id": "LEAVE",
-            "title": "Leave",
-            "description": "[red]Downgrade[/red] a random card."
-          },
-          {
             "id": "MYSTERY_BOX",
             "title": "Wongo's Mystery Box",
             "description": "Pay [red]300[/red] [gold]Gold[/gold]. Obtain [blue]3[/blue] random [gold]Relics[/gold] after [blue]5[/blue] combats."
@@ -4755,6 +4750,11 @@
             "id": "MYSTERY_BOX_LOCKED",
             "title": "Locked",
             "description": "Requires [blue]300[/blue] [gold]Gold[/gold]."
+          },
+          {
+            "id": "LEAVE",
+            "title": "Leave",
+            "description": "[red]Downgrade[/red] a random card."
           }
         ]
       },
@@ -4772,14 +4772,14 @@
     "description": "You trace a [jitter]low rumble[/jitter] to its source and find yourself captivated by a tranquil wellspring. The water is an [sine][aqua]emerald green[/aqua][/sine] with clusters of [sine][gold]glowing motes[/gold][/sine].\n\nIt looks inviting. What can possibly go wrong?",
     "options": [
       {
-        "id": "BATHE",
-        "title": "Bathe",
-        "description": "Remove [blue]1[/blue] card from your [gold]Deck[/gold]. Add [blue]1[/blue] [red]Guilty[/red] to your [gold]Deck[/gold]."
-      },
-      {
         "id": "BOTTLE",
         "title": "Bottle",
         "description": "Procure [blue]1[/blue] random [gold]Potion[/gold]."
+      },
+      {
+        "id": "BATHE",
+        "title": "Bathe",
+        "description": "Remove [blue]1[/blue] card from your [gold]Deck[/gold]. Add [blue]1[/blue] [red]Guilty[/red] to your [gold]Deck[/gold]."
       }
     ],
     "pages": [
@@ -4796,14 +4796,14 @@
         "description": "You trace a [jitter]low rumble[/jitter] to its source and find yourself captivated by a tranquil wellspring. The water is an [sine][aqua]emerald green[/aqua][/sine] with clusters of [sine][gold]glowing motes[/gold][/sine].\n\nIt looks inviting. What can possibly go wrong?",
         "options": [
           {
-            "id": "BATHE",
-            "title": "Bathe",
-            "description": "Remove [blue]1[/blue] card from your [gold]Deck[/gold]. Add [blue]1[/blue] [red]Guilty[/red] to your [gold]Deck[/gold]."
-          },
-          {
             "id": "BOTTLE",
             "title": "Bottle",
             "description": "Procure [blue]1[/blue] random [gold]Potion[/gold]."
+          },
+          {
+            "id": "BATHE",
+            "title": "Bathe",
+            "description": "Remove [blue]1[/blue] card from your [gold]Deck[/gold]. Add [blue]1[/blue] [red]Guilty[/red] to your [gold]Deck[/gold]."
           }
         ]
       }
@@ -4862,9 +4862,9 @@
     "description": "You open a dusty box to find a set of 3 elaborate wood carvings:\n\nA bird, snake, and... a torus?\n\nA nearby pedestal has indentations which match the bottom of the carvings. Which carving will you place on the pedestal?",
     "options": [
       {
-        "id": "BIRD",
-        "title": "Bird",
-        "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]Peck[/gold]."
+        "id": "SNAKE_LOCKED",
+        "title": "Locked",
+        "description": "None of your cards can be Enchanted with [purple]Slither[/purple]."
       },
       {
         "id": "SNAKE",
@@ -4872,9 +4872,9 @@
         "description": "[gold]Enchant[/gold] [blue]1[/blue] card with [purple]Slither[/purple]."
       },
       {
-        "id": "SNAKE_LOCKED",
-        "title": "Locked",
-        "description": "None of your cards can be Enchanted with [purple]Slither[/purple]."
+        "id": "BIRD",
+        "title": "Bird",
+        "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]Peck[/gold]."
       },
       {
         "id": "TORUS",
@@ -4892,9 +4892,9 @@
         "description": "You open a dusty box to find a set of 3 elaborate wood carvings:\n\nA bird, snake, and... a torus?\n\nA nearby pedestal has indentations which match the bottom of the carvings. Which carving will you place on the pedestal?",
         "options": [
           {
-            "id": "BIRD",
-            "title": "Bird",
-            "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]Peck[/gold]."
+            "id": "SNAKE_LOCKED",
+            "title": "Locked",
+            "description": "None of your cards can be Enchanted with [purple]Slither[/purple]."
           },
           {
             "id": "SNAKE",
@@ -4902,9 +4902,9 @@
             "description": "[gold]Enchant[/gold] [blue]1[/blue] card with [purple]Slither[/purple]."
           },
           {
-            "id": "SNAKE_LOCKED",
-            "title": "Locked",
-            "description": "None of your cards can be Enchanted with [purple]Slither[/purple]."
+            "id": "BIRD",
+            "title": "Bird",
+            "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]Peck[/gold]."
           },
           {
             "id": "TORUS",
@@ -4931,11 +4931,6 @@
     "description": "You walk through a spider web and [jitter][red]PANIC[/red][/jitter]!\nBut then, a [sine][blue]wave of calm[/blue][/sine] washes over you...\n\n[sine]“Calm down. I need you to quit fussing up my web.”[/sine]\n\nHow did you calm down so quickly?\nAn [orange]itsy bitsy[/orange] spider abseils down to meet you. It seems willing to impart some techniques for [gold]gold[/gold].",
     "options": [
       {
-        "id": "ARACHNID_ACUPUNCTURE",
-        "title": "Arachnid Acupuncture",
-        "description": "Pay [red]250[/red] [gold]Gold[/gold]. Remove [blue]2[/blue] cards from your [gold]Deck[/gold]."
-      },
-      {
         "id": "BREATHING_TECHNIQUES",
         "title": "Breathing Techniques",
         "description": "Pay [red]50[/red] [gold]Gold[/gold]. Add [blue]2[/blue] [gold]Enlightenment[/gold] to your [gold]Deck[/gold]."
@@ -4944,6 +4939,11 @@
         "id": "EMOTIONAL_AWARENESS",
         "title": "Emotional Awareness",
         "description": "Pay [red]125[/red] [gold]Gold[/gold]. Remove [blue]1[/blue] card from your [gold]Deck[/gold]."
+      },
+      {
+        "id": "ARACHNID_ACUPUNCTURE",
+        "title": "Arachnid Acupuncture",
+        "description": "Pay [red]250[/red] [gold]Gold[/gold]. Remove [blue]2[/blue] cards from your [gold]Deck[/gold]."
       },
       {
         "id": "LOCKED",
@@ -4969,11 +4969,6 @@
         "description": "You walk through a spider web and [jitter][red]PANIC[/red][/jitter]!\nBut then, a [sine][blue]wave of calm[/blue][/sine] washes over you...\n\n[sine]“Calm down. I need you to quit fussing up my web.”[/sine]\n\nHow did you calm down so quickly?\nAn [orange]itsy bitsy[/orange] spider abseils down to meet you. It seems willing to impart some techniques for [gold]gold[/gold].",
         "options": [
           {
-            "id": "ARACHNID_ACUPUNCTURE",
-            "title": "Arachnid Acupuncture",
-            "description": "Pay [red]250[/red] [gold]Gold[/gold]. Remove [blue]2[/blue] cards from your [gold]Deck[/gold]."
-          },
-          {
             "id": "BREATHING_TECHNIQUES",
             "title": "Breathing Techniques",
             "description": "Pay [red]50[/red] [gold]Gold[/gold]. Add [blue]2[/blue] [gold]Enlightenment[/gold] to your [gold]Deck[/gold]."
@@ -4982,6 +4977,11 @@
             "id": "EMOTIONAL_AWARENESS",
             "title": "Emotional Awareness",
             "description": "Pay [red]125[/red] [gold]Gold[/gold]. Remove [blue]1[/blue] card from your [gold]Deck[/gold]."
+          },
+          {
+            "id": "ARACHNID_ACUPUNCTURE",
+            "title": "Arachnid Acupuncture",
+            "description": "Pay [red]250[/red] [gold]Gold[/gold]. Remove [blue]2[/blue] cards from your [gold]Deck[/gold]."
           },
           {
             "id": "LOCKED",
