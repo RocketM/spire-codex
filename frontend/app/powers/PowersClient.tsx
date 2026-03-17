@@ -38,7 +38,7 @@ export default function PowersClient({ initialPowers }: { initialPowers: Power[]
     // Skip the first fetch if we have server data and lang is English with no filters
     if (initialRender.current) {
       initialRender.current = false;
-      if (lang === "eng" && !type && !stackType && !search) {
+      if (lang === "eng" && !type && !stackType && !search && initialPowers.length > 0) {
         return;
       }
     }

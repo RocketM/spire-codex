@@ -51,7 +51,7 @@ export default function RelicsClient({ initialRelics }: { initialRelics: Relic[]
     // Skip the first fetch if we have server data and lang is English with no filters
     if (initialRender.current) {
       initialRender.current = false;
-      if (lang === "eng" && !rarity && !pool && !search) {
+      if (lang === "eng" && !rarity && !pool && !search && initialRelics.length > 0) {
         return;
       }
     }

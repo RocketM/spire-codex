@@ -144,7 +144,7 @@ export default function EventsClient({ initialEvents }: { initialEvents: GameEve
     // Skip the first fetch if we have server data and lang is English with no filters
     if (initialRender.current) {
       initialRender.current = false;
-      if (lang === "eng" && !type && !act && !search) {
+      if (lang === "eng" && !type && !act && !search && initialEvents.length > 0) {
         return;
       }
     }

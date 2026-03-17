@@ -51,7 +51,7 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
   useEffect(() => {
     if (initialRender.current) {
       initialRender.current = false;
-      if (lang === "eng") return;
+      if (lang === "eng" && initialStats) return;
     }
     cachedFetch<Stats>(`${API}/api/stats?lang=${lang}`)
       .then(setStats);

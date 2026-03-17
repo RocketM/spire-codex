@@ -61,7 +61,7 @@ export default function CardsClient({ initialCards }: { initialCards: Card[] }) 
     // Skip the first fetch if we have server data and lang is English with no filters
     if (initialRender.current) {
       initialRender.current = false;
-      if (lang === "eng" && !color && !type && !rarity && !keyword && !search) {
+      if (lang === "eng" && !color && !type && !rarity && !keyword && !search && initialCards.length > 0) {
         return;
       }
     }

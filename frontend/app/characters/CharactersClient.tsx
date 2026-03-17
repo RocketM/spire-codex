@@ -37,7 +37,7 @@ export default function CharactersClient({ initialCharacters }: { initialCharact
     // Skip the first fetch if we have server data and lang is English
     if (initialRender.current) {
       initialRender.current = false;
-      if (lang === "eng") {
+      if (lang === "eng" && initialCharacters.length > 0) {
         // Still need relics and cards for tooltips on initial render
         Promise.all([
           cachedFetch<Relic[]>(`${API}/api/relics?lang=${lang}`),

@@ -32,7 +32,7 @@ export default function EnchantmentsClient({ initialEnchantments }: { initialEnc
     // Skip the first fetch if we have server data and lang is English with no filters
     if (initialRender.current) {
       initialRender.current = false;
-      if (lang === "eng" && !cardType && !search) {
+      if (lang === "eng" && !cardType && !search && initialEnchantments.length > 0) {
         return;
       }
     }

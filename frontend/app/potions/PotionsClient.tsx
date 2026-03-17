@@ -45,7 +45,7 @@ export default function PotionsClient({ initialPotions }: { initialPotions: Poti
     // Skip the first fetch if we have server data and lang is English with no filters
     if (initialRender.current) {
       initialRender.current = false;
-      if (lang === "eng" && !rarity && !pool && !search) {
+      if (lang === "eng" && !rarity && !pool && !search && initialPotions.length > 0) {
         return;
       }
     }

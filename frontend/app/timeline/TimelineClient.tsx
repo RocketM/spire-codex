@@ -201,7 +201,7 @@ export default function TimelineClient({
     // Skip the first fetch if we have server data and lang is English with no filters
     if (initialRender.current) {
       initialRender.current = false;
-      if (lang === "eng" && !storyFilter && !search) {
+      if (lang === "eng" && !storyFilter && !search && initialEpochs.length > 0) {
         return;
       }
     }
