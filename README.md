@@ -90,7 +90,9 @@ spire-codex/
 │   │                           #   encounters/[id], events/[id]
 │   ├── lib/
 │   │   ├── api.ts              # API client + TypeScript interfaces
-│   │   └── fetch-cache.ts      # Client-side in-memory fetch cache (5min TTL)
+│   │   ├── fetch-cache.ts      # Client-side in-memory fetch cache (5min TTL)
+│   │   ├── seo.ts              # Shared SEO utilities (stripTags, SITE_URL, SITE_NAME)
+│   │   └── jsonld.ts           # JSON-LD schema builders (BreadcrumbList, CollectionPage, Article, WebSite)
 │   └── Dockerfile
 ├── tools/
 │   ├── spine-renderer/         # Headless Spine skeleton renderer
@@ -485,11 +487,39 @@ Spire Codex uses **`1.X.Y`** semantic versioning:
 
 Examples: `v1.0.0` = initial release, `v1.0.1` = our bug fixes, `v1.1.0` = first Mega Crit patch incorporated.
 
+## SEO
+
+The frontend includes comprehensive SEO optimizations:
+
+- **Structured data (JSON-LD)**: WebSite schema on home page, CollectionPage + ItemList on all 10 list pages, Article + BreadcrumbList on all 7 detail pages
+- **Open Graph & Twitter Cards**: Global OG image (`/og-image.png`), `summary_large_image` Twitter cards on every page, per-entity OG images on detail pages
+- **Canonical URLs**: Every page declares a canonical URL via `alternates.canonical`
+- **Sitemap index**: `generateSitemaps()` in `app/sitemap.ts` produces 8 sub-sitemaps (~1,385 URLs total):
+
+  | Sitemap | Contents | URLs |
+  |---------|----------|------|
+  | `/sitemap/static.xml` | Home, list pages, reference, images, changelog, about | 15 |
+  | `/sitemap/cards.xml` | All card detail pages with image URLs | ~576 |
+  | `/sitemap/characters.xml` | Character detail pages with image URLs | 5 |
+  | `/sitemap/relics.xml` | All relic detail pages with image URLs | ~289 |
+  | `/sitemap/monsters.xml` | All monster detail pages with image URLs | ~111 |
+  | `/sitemap/potions.xml` | All potion detail pages with image URLs | ~63 |
+  | `/sitemap/powers.xml` | All power detail pages with image URLs | ~260 |
+  | `/sitemap/events.xml` | All event detail pages with image URLs | ~66 |
+
+  Sitemaps regenerate hourly via ISR (`revalidate: 3600`) so they stay current after deploys without requiring the API at build time. Entity entries include `<image:image>` tags for Google Image search indexing.
+
+- **Descriptive alt text**: All images include entity name + "Slay the Spire 2 {Category}" for search context
+- **Keyword-rich metadata**: Each category layout has unique title/description targeting "Slay the Spire 2 {category}" keywords
+
+Key files: `frontend/lib/seo.ts` (shared utilities), `frontend/lib/jsonld.ts` (schema builders), `frontend/app/components/JsonLd.tsx` (renderer component).
+
 ## Roadmap
 
 - ~~**Individual detail pages**~~ — ✅ Click-through pages for cards, characters, relics, monsters, potions, enchantments, encounters, events
 - ~~**Global search**~~ — ✅ Press `.` anywhere to search across all categories
 - ~~**Multi-language support**~~ — ✅ 14 languages using the game's own localization files
+- ~~**SEO (structured data + meta tags)**~~ — ✅ JSON-LD, OG/Twitter cards, canonical URLs, sitemap lastmod, alt text
 - **Database backend** — Replace JSON loading with SQLite/PostgreSQL
 
 ## Acknowledgments

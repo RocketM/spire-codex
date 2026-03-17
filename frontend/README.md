@@ -45,14 +45,43 @@ Runs at **http://localhost:3000**. Requires the backend running on port 8000.
 - **`SearchFilter.tsx`** — Reusable search bar + dropdown filters
 - **`GlobalSearch.tsx`** — Press `.` anywhere to search across all categories
 - **`CardGrid.tsx`** — Card grid with inline icons, upgrade rendering
+- **`JsonLd.tsx`** — Server component rendering `<script type="application/ld+json">` blocks
 - **`Navbar.tsx`** — Navigation with search trigger
 - **`Footer.tsx`** — Footer with feedback modal
+
+## SEO
+
+Every page includes structured data and meta tags:
+
+- **Home**: WebSite JSON-LD, keyword-rich title/description
+- **List pages** (10): CollectionPage + BreadcrumbList JSON-LD, ItemList with entity names/URLs (first 50)
+- **Detail pages** (7): Article + BreadcrumbList JSON-LD, per-entity OG images, Twitter `summary_large_image`
+- **All pages**: Canonical URLs, global OG image fallback, `metadataBase` for relative URL resolution
+
+### Sitemap
+
+`app/sitemap.ts` uses `generateSitemaps()` to produce a sitemap index with 8 sub-sitemaps (~1,385 URLs):
+
+- `/sitemap/static.xml` — 15 static pages (home, list pages, reference, etc.)
+- `/sitemap/cards.xml` — ~576 card detail pages with image URLs
+- `/sitemap/characters.xml` — 5 character pages with image URLs
+- `/sitemap/relics.xml` — ~289 relic pages with image URLs
+- `/sitemap/monsters.xml` — ~111 monster pages with image URLs
+- `/sitemap/potions.xml` — ~63 potion pages with image URLs
+- `/sitemap/powers.xml` — ~260 power pages with image URLs
+- `/sitemap/events.xml` — ~66 event pages with image URLs
+
+Sitemaps use ISR (`revalidate: 3600`) so they regenerate hourly at runtime — this is critical because the backend API isn't available during the Docker build. Entity entries include `images` for Google Image search indexing.
+
+Shared utilities in `lib/seo.ts` (stripTags, SITE_URL, SITE_NAME) and `lib/jsonld.ts` (schema builders for BreadcrumbList, CollectionPage, Article, WebSite).
 
 ## Environment Variables
 
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `NEXT_PUBLIC_API_URL` | `http://localhost:8000` | Backend API URL |
+| `NEXT_PUBLIC_SITE_URL` | `https://spire-codex.com` | Public site URL (used for canonical URLs, JSON-LD, OG tags) |
+| `API_INTERNAL_URL` | (none) | Internal API URL for server-side fetches (Docker networking) |
 
 ## Docker
 
