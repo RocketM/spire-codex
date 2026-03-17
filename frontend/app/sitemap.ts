@@ -31,13 +31,13 @@ interface EntityWithImage {
 }
 
 const DYNAMIC_ROUTES = [
-  { id: "cards", endpoint: "/api/cards", prefix: "/cards", priority: 0.8 },
-  { id: "characters", endpoint: "/api/characters", prefix: "/characters", priority: 0.9 },
-  { id: "relics", endpoint: "/api/relics", prefix: "/relics", priority: 0.8 },
-  { id: "monsters", endpoint: "/api/monsters", prefix: "/monsters", priority: 0.7 },
-  { id: "potions", endpoint: "/api/potions", prefix: "/potions", priority: 0.7 },
-  { id: "powers", endpoint: "/api/powers", prefix: "/powers", priority: 0.6 },
-  { id: "events", endpoint: "/api/events", prefix: "/events", priority: 0.6 },
+  { endpoint: "/api/cards", prefix: "/cards", priority: 0.8 },
+  { endpoint: "/api/characters", prefix: "/characters", priority: 0.9 },
+  { endpoint: "/api/relics", prefix: "/relics", priority: 0.8 },
+  { endpoint: "/api/monsters", prefix: "/monsters", priority: 0.7 },
+  { endpoint: "/api/potions", prefix: "/potions", priority: 0.7 },
+  { endpoint: "/api/powers", prefix: "/powers", priority: 0.6 },
+  { endpoint: "/api/events", prefix: "/events", priority: 0.6 },
 ];
 
 async function fetchEntities(endpoint: string): Promise<EntityWithImage[]> {
@@ -50,46 +50,35 @@ async function fetchEntities(endpoint: string): Promise<EntityWithImage[]> {
   }
 }
 
-export async function generateSitemaps() {
-  return [
-    { id: "static" },
-    ...DYNAMIC_ROUTES.map((r) => ({ id: r.id })),
-  ];
-}
-
-export default async function sitemap({
-  id,
-}: {
-  id: string;
-}): Promise<MetadataRoute.Sitemap> {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
 
-  if (id === "static") {
-    return STATIC_PAGES.map((p) => ({
-      url: `${SITE_URL}${p.path}`,
-      lastModified: now,
-      changeFrequency: p.changeFrequency,
-      priority: p.priority,
-    }));
-  }
+  const staticEntries: MetadataRoute.Sitemap = STATIC_PAGES.map((p) => ({
+    url: `${SITE_URL}${p.path}`,
+    lastModified: now,
+    changeFrequency: p.changeFrequency,
+    priority: p.priority,
+  }));
 
-  const route = DYNAMIC_ROUTES.find((r) => r.id === id);
-  if (!route) return [];
+  const dynamicResults = await Promise.all(
+    DYNAMIC_ROUTES.map(async (route) => {
+      const entities = await fetchEntities(route.endpoint);
+      return entities.map((entity) => {
+        const entry: MetadataRoute.Sitemap[number] = {
+          url: `${SITE_URL}${route.prefix}/${entity.id.toLowerCase()}`,
+          lastModified: now,
+          changeFrequency: "weekly",
+          priority: route.priority,
+        };
 
-  const entities = await fetchEntities(route.endpoint);
+        if (entity.image_url) {
+          entry.images = [`${API_PUBLIC}${entity.image_url}`];
+        }
 
-  return entities.map((entity) => {
-    const entry: MetadataRoute.Sitemap[number] = {
-      url: `${SITE_URL}${route.prefix}/${entity.id.toLowerCase()}`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: route.priority,
-    };
+        return entry;
+      });
+    })
+  );
 
-    if (entity.image_url) {
-      entry.images = [`${API_PUBLIC}${entity.image_url}`];
-    }
-
-    return entry;
-  });
+  return [...staticEntries, ...dynamicResults.flat()];
 }
