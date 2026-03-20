@@ -29,11 +29,36 @@ def load_localization(loc_dir: Path) -> dict:
     return {}
 
 
+
+# Map parent class -> { stat, positive_key, negative_key }
+TEMPORARY_POWER_BASES = {
+    "TemporaryStrengthPower":  { "stat": "Strength",  "pos_key": "TEMPORARY_STRENGTH_POWER", "neg_key": "TEMPORARY_STRENGTH_DOWN" },
+    "TemporaryDexterityPower": { "stat": "Dexterity",  "pos_key": "TEMPORARY_DEXTERITY_POWER", "neg_key": "TEMPORARY_DEXTERITY_DOWN" },
+    "TemporaryFocusPower":     { "stat": "Focus",      "pos_key": "TEMPORARY_FOCUS_POWER",     "neg_key": "TEMPORARY_FOCUS_DOWN" },
+}
+
+
+def detect_parent_power(content: str) -> tuple[str | None, bool]:
+    """Detect if a power inherits from a Temporary*Power base class.
+    Returns (parent_class_name, is_positive)."""
+    m = re.search(r'class\s+\w+\s*:\s*(\w+)', content)
+    if not m or m.group(1) not in TEMPORARY_POWER_BASES:
+        return None, True
+    parent = m.group(1)
+    pos = re.search(r'IsPositive\s*=>\s*(true|false)', content)
+    is_positive = pos.group(1) == "true" if pos else True  # default is true in base classes
+    return parent, is_positive
+
+
 def parse_single_power(filepath: Path, localization: dict) -> dict | None:
     content = filepath.read_text(encoding="utf-8")
     class_name = filepath.stem
 
     if class_name.startswith("Deprecated") or class_name.startswith("Mock"):
+        return None
+
+    # Skip abstract base classes — their children are the real powers
+    if re.search(r'\babstract\s+class\b', content):
         return None
 
     # Strip "Power" suffix for ID if present
@@ -42,13 +67,27 @@ def parse_single_power(filepath: Path, localization: dict) -> dict | None:
         base_name = base_name[:-5]
     power_id = class_name_to_id(base_name)
 
+    # Check for Temporary*Power inheritance
+    parent_class, is_positive = detect_parent_power(content)
+    parent_info = TEMPORARY_POWER_BASES.get(parent_class) if parent_class else None
+
     # PowerType: Buff, Debuff, or None/neutral
     type_match = re.search(r'(?:override\s+)?PowerType\s+Type\s*(?:=>|=)\s*PowerType\.(\w+)', content)
-    power_type = type_match.group(1) if type_match else "None"
+    if type_match:
+        power_type = type_match.group(1)
+    elif parent_info:
+        power_type = "Buff" if is_positive else "Debuff"
+    else:
+        power_type = "None"
 
     # StackType: Counter, Single, None
     stack_match = re.search(r'(?:override\s+)?PowerStackType\s+StackType\s*(?:=>|=)\s*PowerStackType\.(\w+)', content)
-    stack_type = stack_match.group(1) if stack_match else "None"
+    if stack_match:
+        stack_type = stack_match.group(1)
+    elif parent_info:
+        stack_type = "Counter"  # All Temporary*Power bases use Counter
+    else:
+        stack_type = "None"
 
     # AllowNegative
     allow_negative = bool(re.search(r'AllowNegative\s*(?:=>|=)\s*true', content))
@@ -69,11 +108,21 @@ def parse_single_power(filepath: Path, localization: dict) -> dict | None:
         full_id = class_name_to_id(class_name)
         title = localization.get(f"{full_id}.title", class_name)
 
+    # For inherited powers with no localization title, derive a readable name
+    if parent_info and title == class_name:
+        stat = parent_info["stat"]
+        direction = "" if is_positive else " Down"
+        title = f"Temporary {stat}{direction}"
+
     # Description — try smartDescription first, fall back to plain description
     # if smartDescription has unresolvable vars like {Amount}
     desc_key = power_id
     if f"{power_id}.smartDescription" not in localization and f"{power_id}.description" not in localization:
         desc_key = f"{power_id}_POWER" if f"{power_id}_POWER.smartDescription" in localization else class_name_to_id(class_name)
+
+    # For inherited powers with no own localization, use parent's localization
+    if parent_info and f"{desc_key}.smartDescription" not in localization and f"{desc_key}.description" not in localization:
+        desc_key = parent_info["neg_key"] if not is_positive else parent_info["pos_key"]
 
     smart_raw = localization.get(f"{desc_key}.smartDescription", "")
     plain_raw = localization.get(f"{desc_key}.description", "")
