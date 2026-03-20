@@ -7,11 +7,11 @@ import LanguageSelector from "./LanguageSelector";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/cards", label: "Cards" },
+  { href: "/cards", label: "Card Library" },
   { href: "/characters", label: "Characters" },
-  { href: "/relics", label: "Relics" },
-  { href: "/monsters", label: "Monsters" },
-  { href: "/potions", label: "Potions" },
+  { href: "/relics", label: "Relic Collection" },
+  { href: "/monsters", label: "Bestiary" },
+  { href: "/potions", label: "Potion Lab" },
   { href: "/enchantments", label: "Enchantments" },
   { href: "/encounters", label: "Encounters" },
   { href: "/events", label: "Events" },
