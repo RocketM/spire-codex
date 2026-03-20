@@ -34,6 +34,7 @@ class Card(BaseModel):
     upgrade: dict[str, str | int | None] | None = None
     image_url: str | None = None
     beta_image_url: str | None = None
+    compendium_order: int = 0
 
 
 class CharacterDialogueLine(BaseModel):
@@ -76,6 +77,7 @@ class Relic(BaseModel):
     rarity: str
     pool: str
     image_url: str | None = None
+    compendium_order: int = 0
 
 
 class MonsterMove(BaseModel):
@@ -110,6 +112,7 @@ class Potion(BaseModel):
     rarity: str
     pool: str | None = None
     image_url: str | None = None
+    compendium_order: int = 0
 
 
 class Act(BaseModel):
