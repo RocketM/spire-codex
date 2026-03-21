@@ -17,12 +17,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (!res.ok) return { title: "Keyword Not Found - Spire Codex" };
     const kw = await res.json();
     const desc = stripTags(kw.description);
-    const title = `${kw.name} Cards - Spire Codex - Slay the Spire 2 Database`;
+    const title = `Slay the Spire 2 ${kw.name} Cards - All ${kw.name} Cards | Spire Codex`;
     return {
       title,
       description: `${desc} Browse all ${kw.name} cards in Slay the Spire 2.`,
       openGraph: {
-        title: `${kw.name} Cards - Spire Codex - Slay the Spire 2`,
+        title: `Slay the Spire 2 ${kw.name} Cards | Spire Codex`,
         description: `${desc} Browse all ${kw.name} cards in Slay the Spire 2.`,
       },
       twitter: { card: "summary_large_image" },

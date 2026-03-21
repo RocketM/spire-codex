@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Character Comparisons - Slay the Spire 2 | Spire Codex",
+  title: "Slay the Spire 2 Character Comparisons - Side by Side | Spire Codex",
   description:
     "Compare Slay the Spire 2 characters side by side. View stat differences, card pool breakdowns, keyword distributions, and starting decks for Ironclad, Silent, Defect, Necrobinder, and Regent.",
   openGraph: {
-    title: "Character Comparisons - Slay the Spire 2 | Spire Codex",
+    title: "Slay the Spire 2 Character Comparisons - Side by Side | Spire Codex",
     description:
       "Compare Slay the Spire 2 characters side by side. Stats, card pools, keywords, and starting decks.",
   },

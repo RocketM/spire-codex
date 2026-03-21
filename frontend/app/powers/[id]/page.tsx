@@ -16,12 +16,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (!res.ok) return { title: "Power Not Found - Spire Codex" };
     const power = await res.json();
     const desc = stripTags(power.description || "");
-    const title = `${power.name} - Spire Codex - Slay the Spire 2 Database`;
+    const title = `Slay the Spire 2 ${power.name} - Power | Spire Codex`;
     return {
       title,
       description: desc || `${power.name} power from Slay the Spire 2`,
       openGraph: {
-        title: `${power.name} - Spire Codex - Slay the Spire 2`,
+        title: `Slay the Spire 2 ${power.name} - Power | Spire Codex`,
         description: desc || `${power.name} power from Slay the Spire 2`,
         images: power.image_url ? [{ url: `${API_PUBLIC}${power.image_url}` }] : [],
       },

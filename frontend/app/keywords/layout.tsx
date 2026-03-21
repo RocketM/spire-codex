@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Card Keywords - Spire Codex - Slay the Spire 2 Database",
+  title: "Slay the Spire 2 Keywords - All Card Keywords | Spire Codex",
   description:
     "Browse all card keywords in Slay the Spire 2 — Exhaust, Ethereal, Innate, Retain, Sly, Eternal, and more. See every card with each keyword.",
   openGraph: {
-    title: "Card Keywords - Spire Codex - Slay the Spire 2",
+    title: "Slay the Spire 2 Keywords - All Card Keywords | Spire Codex",
     description:
       "Browse all card keywords in Slay the Spire 2 — Exhaust, Ethereal, Innate, Retain, Sly, Eternal, and more.",
   },

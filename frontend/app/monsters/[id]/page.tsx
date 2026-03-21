@@ -16,12 +16,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const monster = await res.json();
     const hpText = monster.min_hp ? `${monster.min_hp}${monster.max_hp && monster.max_hp !== monster.min_hp ? `\u2013${monster.max_hp}` : ""} HP` : "";
     const desc = `${monster.type} monster${hpText ? ` \u00b7 ${hpText}` : ""}`;
-    const title = `${monster.name} - Spire Codex - Slay the Spire 2 Database`;
+    const title = `Slay the Spire 2 ${monster.name} - Monster | Spire Codex`;
     return {
       title,
       description: desc,
       openGraph: {
-        title: `${monster.name} - Spire Codex - Slay the Spire 2`,
+        title: `Slay the Spire 2 ${monster.name} - Monster | Spire Codex`,
         description: desc,
         images: monster.image_url ? [{ url: `${API_PUBLIC}${monster.image_url}` }] : [],
       },

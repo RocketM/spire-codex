@@ -16,12 +16,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (!res.ok) return { title: "Card Not Found - Spire Codex" };
     const card = await res.json();
     const desc = stripTags(card.description || "");
-    const title = `${card.name} - Spire Codex - Slay the Spire 2 Database`;
+    const title = `Slay the Spire 2 ${card.name} - Card | Spire Codex`;
     return {
       title,
       description: desc || `${card.name} card from Slay the Spire 2`,
       openGraph: {
-        title: `${card.name} - Spire Codex - Slay the Spire 2`,
+        title: `Slay the Spire 2 ${card.name} - Card | Spire Codex`,
         description: desc || `${card.name} card from Slay the Spire 2`,
         images: card.image_url ? [{ url: `${API_PUBLIC}${card.image_url}` }] : [],
       },
