@@ -8,6 +8,7 @@ import RichDescription from "@/app/components/RichDescription";
 import { cachedFetch } from "@/lib/fetch-cache";
 import { useLanguage } from "../../contexts/LanguageContext";
 import LocalizedNames from "@/app/components/LocalizedNames";
+import EntityHistory from "@/app/components/EntityHistory";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -94,6 +95,7 @@ export default function PotionDetail() {
         </div>
 
         <LocalizedNames entityType="potions" entityId={id} />
+        <EntityHistory entityType="potions" entityId={id} />
       </div>
     </div>
   );

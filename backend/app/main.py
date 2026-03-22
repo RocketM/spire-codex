@@ -8,7 +8,7 @@ from pathlib import Path
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
-from .routers import cards, characters, relics, monsters, potions, enchantments, encounters, events, powers, keywords, intents, orbs, afflictions, modifiers, achievements, epochs, stories, images, changelogs, feedback, acts, ascensions, names
+from .routers import cards, characters, relics, monsters, potions, enchantments, encounters, events, powers, keywords, intents, orbs, afflictions, modifiers, achievements, epochs, stories, images, changelogs, feedback, acts, ascensions, names, exports, entity_history
 from .services.data_service import get_stats, load_translation_maps
 from .dependencies import get_lang, VALID_LANGUAGES, LANGUAGE_NAMES
 
@@ -67,6 +67,8 @@ app.include_router(feedback.router)
 app.include_router(acts.router)
 app.include_router(ascensions.router)
 app.include_router(names.router)
+app.include_router(exports.router)
+app.include_router(entity_history.router)
 
 
 @app.get("/api/languages", tags=["Languages"])

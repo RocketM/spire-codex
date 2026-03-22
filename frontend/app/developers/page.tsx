@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import JsonLd from "@/app/components/JsonLd";
+import { buildSoftwareApplicationJsonLd, buildBreadcrumbJsonLd } from "@/lib/jsonld";
 
 const API_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://spire-codex.com";
 
@@ -15,8 +17,17 @@ export const metadata: Metadata = {
 };
 
 export default function DevelopersPage() {
+  const jsonLd = [
+    buildSoftwareApplicationJsonLd(),
+    buildBreadcrumbJsonLd([
+      { name: "Home", href: "/" },
+      { name: "Developers", href: "/developers" },
+    ]),
+  ];
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <JsonLd data={jsonLd} />
       <h1 className="text-3xl font-bold text-[var(--text-primary)] mb-2">
         Developers
       </h1>
@@ -83,6 +94,32 @@ export default function DevelopersPage() {
             <div>
               <code className="text-[var(--accent-gold)]">SpireCodex.scan(element)</code>
               <span className="text-[var(--text-muted)] ml-2">Scan a specific DOM element</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Changelog Widget */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold text-[var(--accent-gold)] mb-4">
+          Changelog Widget
+        </h2>
+        <p className="text-[var(--text-secondary)] mb-4">
+          Embed a compact, interactive changelog viewer showing Spire Codex update history with version switching.
+        </p>
+
+        <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-5 mb-4">
+          <h3 className="text-sm font-semibold text-[var(--text-muted)] uppercase tracking-wider mb-3">
+            Installation
+          </h3>
+          <pre className="bg-[var(--bg-primary)] rounded-lg p-4 text-sm text-[var(--text-secondary)] overflow-x-auto">
+            <code>{`<div id="scx-changelog"></div>
+<script src="${API_URL}/widget/spire-codex-changelog.js"></script>`}</code>
+          </pre>
+          <div className="space-y-2 text-sm mt-3">
+            <div className="flex gap-4">
+              <code className="text-[var(--accent-gold)] whitespace-nowrap">data-version=&quot;1.0.4&quot;</code>
+              <span className="text-[var(--text-muted)]">Show a specific version (default: latest)</span>
             </div>
           </div>
         </div>
@@ -176,6 +213,45 @@ console.log(relics.map(r => r.name));`}</code>
               </pre>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Data Exports */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold text-[var(--accent-gold)] mb-4">
+          Data Exports
+        </h2>
+        <p className="text-[var(--text-secondary)] mb-4">
+          Download all game data as a single ZIP archive. Each archive contains JSON files for every entity type (cards, relics, monsters, powers, and more).
+        </p>
+
+        <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-5 mb-4">
+          <a
+            href={`${API_URL}/api/exports/eng`}
+            className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--accent-gold)]/10 border border-[var(--accent-gold)]/30 rounded-lg text-[var(--accent-gold)] hover:bg-[var(--accent-gold)]/20 transition-colors font-medium"
+          >
+            Download English Data (ZIP)
+          </a>
+          <p className="text-sm text-[var(--text-muted)] mt-4">
+            14 languages available. Example downloads:{" "}
+            {[
+              { code: "jpn", label: "Japanese" },
+              { code: "kor", label: "Korean" },
+              { code: "zhs", label: "Chinese" },
+              { code: "fra", label: "French" },
+              { code: "deu", label: "German" },
+            ].map((lang, i) => (
+              <span key={lang.code}>
+                {i > 0 && ", "}
+                <a
+                  href={`${API_URL}/api/exports/${lang.code}`}
+                  className="text-[var(--accent-gold)] hover:underline"
+                >
+                  {lang.label}
+                </a>
+              </span>
+            ))}
+          </p>
         </div>
       </section>
 

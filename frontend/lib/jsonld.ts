@@ -124,6 +124,26 @@ export function buildVideoGameJsonLd() {
   };
 }
 
+export function buildSoftwareApplicationJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Spire Codex API",
+    applicationCategory: "DeveloperApplication",
+    operatingSystem: "Any",
+    url: `${SITE_URL}/developers`,
+    description:
+      "Public REST API and embeddable tooltip widget for Slay the Spire 2 game data. 22+ endpoints, 14-language support, no authentication required.",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    featureList: [
+      "REST API with 22+ endpoints",
+      "Embeddable tooltip widget for all 13 entity types",
+      "14-language support",
+      "Downloadable JSON data exports",
+    ],
+  };
+}
+
 export function buildFAQPageJsonLd(
   questions: { question: string; answer: string }[]
 ) {

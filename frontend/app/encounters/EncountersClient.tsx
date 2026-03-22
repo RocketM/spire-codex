@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 import type { Encounter } from "@/lib/api";
 import { cachedFetch } from "@/lib/fetch-cache";
 import SearchFilter from "../components/SearchFilter";
@@ -113,12 +114,13 @@ export default function EncountersClient({ initialEncounters }: { initialEncount
             {enc.monsters && enc.monsters.length > 0 && (
               <div className="flex flex-wrap gap-1 mb-2">
                 {enc.monsters.map((m) => (
-                  <span
+                  <Link
                     key={m.id}
-                    className="text-[10px] px-1.5 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--text-secondary)] border border-[var(--border-subtle)]"
+                    href={`/monsters/${m.id}`}
+                    className="text-[10px] px-1.5 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--text-secondary)] border border-[var(--border-subtle)] hover:border-[var(--accent-gold)]/40 hover:text-[var(--text-primary)] transition-colors"
                   >
                     {m.name}
-                  </span>
+                  </Link>
                 ))}
               </div>
             )}

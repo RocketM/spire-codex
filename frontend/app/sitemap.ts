@@ -1,4 +1,6 @@
 import type { MetadataRoute } from "next";
+import { ALL_BROWSE_SLUGS } from "./cards/browse/slug-map";
+import { SUPPORTED_LANGS } from "@/lib/languages";
 
 export const dynamic = "force-dynamic";
 
@@ -21,10 +23,12 @@ const STATIC_PAGES = [
   { path: "/timeline", priority: 0.6, changeFrequency: "weekly" as const },
   { path: "/reference", priority: 0.6, changeFrequency: "weekly" as const },
   { path: "/compare", priority: 0.6, changeFrequency: "weekly" as const },
+  { path: "/showcase", priority: 0.5, changeFrequency: "monthly" as const },
   { path: "/developers", priority: 0.5, changeFrequency: "monthly" as const },
   { path: "/images", priority: 0.5, changeFrequency: "monthly" as const },
   { path: "/changelog", priority: 0.5, changeFrequency: "weekly" as const },
   { path: "/about", priority: 0.4, changeFrequency: "monthly" as const },
+  { path: "/cards/browse", priority: 0.8, changeFrequency: "daily" as const },
 ];
 
 interface EntityWithImage {
@@ -84,5 +88,35 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   );
 
-  return [...staticEntries, ...dynamicResults.flat()];
+  // Card browse pages (programmatic SEO)
+  const browseEntries: MetadataRoute.Sitemap = ALL_BROWSE_SLUGS.map((slug) => ({
+    url: `${SITE_URL}/cards/browse/${slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
+  // Localized landing pages (13 languages x 3 pages each: home, cards, relics)
+  const langEntries: MetadataRoute.Sitemap = SUPPORTED_LANGS.flatMap((lang) => [
+    {
+      url: `${SITE_URL}/${lang}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    },
+    {
+      url: `${SITE_URL}/${lang}/cards`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.5,
+    },
+    {
+      url: `${SITE_URL}/${lang}/relics`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.5,
+    },
+  ]);
+
+  return [...staticEntries, ...browseEntries, ...langEntries, ...dynamicResults.flat()];
 }

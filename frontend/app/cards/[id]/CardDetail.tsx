@@ -9,6 +9,7 @@ import type { RelatedCard } from "@/app/components/RichDescription";
 import { cachedFetch } from "@/lib/fetch-cache";
 import { useLanguage } from "../../contexts/LanguageContext";
 import LocalizedNames from "@/app/components/LocalizedNames";
+import EntityHistory from "@/app/components/EntityHistory";
 import RelatedCards from "@/app/components/RelatedCards";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
@@ -324,15 +325,19 @@ export default function CardDetail() {
                 Powers Applied
               </h3>
               <div className="flex flex-wrap gap-2">
-                {card.powers_applied.map((pa) => (
-                  <span
-                    key={pa.power}
-                    className="text-xs px-2.5 py-1 rounded bg-purple-950/40 text-purple-300 border border-purple-900/30"
-                  >
-                    {pa.power.replace(/([A-Z])/g, " $1").trim()}
-                    {pa.amount ? ` ${pa.amount}` : ""}
-                  </span>
-                ))}
+                {card.powers_applied.map((pa) => {
+                  const powerId = pa.power.replace(/([A-Z])/g, "_$1").replace(/^_/, "").toUpperCase();
+                  return (
+                    <Link
+                      key={pa.power}
+                      href={`/powers/${powerId}`}
+                      className="text-xs px-2.5 py-1 rounded bg-purple-950/40 text-purple-300 border border-purple-900/30 hover:border-purple-700/50 hover:bg-purple-950/60 transition-colors"
+                    >
+                      {pa.power.replace(/([A-Z])/g, " $1").trim()}
+                      {pa.amount ? ` ${pa.amount}` : ""}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           )}
@@ -411,6 +416,7 @@ export default function CardDetail() {
           />
 
           <LocalizedNames entityType="cards" entityId={id} />
+          <EntityHistory entityType="cards" entityId={id} />
         </div>
       </div>
     </div>

@@ -1,0 +1,4 @@
+[
+  { "id": "spire-codex-api", "name": "Spire Codex API", "description": "The official REST API powering Spire Codex. 22+ endpoints with 14-language support.", "url": "https://spire-codex.com/developers", "category": "api", "author": "ptrlrd" },
+  { "id": "spire-codex-widget", "name": "Tooltip Widget", "description": "Embeddable Wowhead-style tooltips for cards, relics, potions, and all 13 entity types.", "url": "https://spire-codex.com/developers", "category": "widget", "author": "ptrlrd" }
+]

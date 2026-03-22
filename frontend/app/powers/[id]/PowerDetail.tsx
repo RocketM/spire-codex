@@ -1,13 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import type { Power } from "@/lib/api";
+import type { Power, Card } from "@/lib/api";
 import RichDescription from "@/app/components/RichDescription";
 import { cachedFetch } from "@/lib/fetch-cache";
 import { useLanguage } from "../../contexts/LanguageContext";
 import LocalizedNames from "@/app/components/LocalizedNames";
+import EntityHistory from "@/app/components/EntityHistory";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -21,6 +22,7 @@ export default function PowerDetail() {
   const { id } = useParams<{ id: string }>();
   const { lang } = useLanguage();
   const [power, setPower] = useState<Power | null>(null);
+  const [allCards, setAllCards] = useState<Card[]>([]);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
 
@@ -32,6 +34,20 @@ export default function PowerDetail() {
       .catch(() => setNotFound(true))
       .finally(() => setLoading(false));
   }, [id, lang]);
+
+  useEffect(() => {
+    cachedFetch<Card[]>(`${API}/api/cards?lang=${lang}`).then(setAllCards);
+  }, [lang]);
+
+  const relatedCards = useMemo(() => {
+    if (!id || allCards.length === 0) return [];
+    return allCards.filter((card) =>
+      card.powers_applied?.some((pa) => {
+        const powerId = pa.power.replace(/([A-Z])/g, "_$1").replace(/^_/, "").toUpperCase();
+        return powerId === id.toUpperCase();
+      })
+    );
+  }, [id, allCards]);
 
   if (loading) {
     return (
@@ -91,7 +107,27 @@ export default function PowerDetail() {
           </div>
         )}
 
+        {relatedCards.length > 0 && (
+          <div className="mt-6 pt-5 border-t border-[var(--border-subtle)]">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">
+              Cards That Apply This Power
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {relatedCards.map((card) => (
+                <Link
+                  key={card.id}
+                  href={`/cards/${card.id}`}
+                  className="text-xs px-2.5 py-1 rounded bg-[var(--bg-primary)] text-[var(--text-secondary)] border border-[var(--border-subtle)] hover:border-[var(--accent-gold)]/40 hover:text-[var(--text-primary)] transition-colors"
+                >
+                  {card.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
         <LocalizedNames entityType="powers" entityId={id} />
+        <EntityHistory entityType="powers" entityId={id} />
       </div>
     </div>
   );
