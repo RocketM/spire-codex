@@ -386,7 +386,8 @@
     "powers_applied": [
       {
         "power": "トゲ",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Thorns"
       }
     ],
     "cards_draw": null,
@@ -539,7 +540,8 @@
     "powers_applied": [
       {
         "power": "やっちゃえ",
-        "amount": 2
+        "amount": 2,
+        "power_key": "SicEm"
       }
     ],
     "cards_draw": null,
@@ -985,7 +987,8 @@
     "powers_applied": [
       {
         "power": "インフェルノ",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Inferno"
       }
     ],
     "cards_draw": null,
@@ -1098,7 +1101,8 @@
     "powers_applied": [
       {
         "power": "ウォームアップ",
-        "amount": 4
+        "amount": 4,
+        "power_key": "PrepTime"
       }
     ],
     "cards_draw": null,
@@ -1211,7 +1215,8 @@
     "powers_applied": [
       {
         "power": "破滅",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -1394,7 +1399,8 @@
     "powers_applied": [
       {
         "power": "カウントダウン",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Countdown"
       }
     ],
     "cards_draw": null,
@@ -1575,11 +1581,13 @@
     "powers_applied": [
       {
         "power": "弱体",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       },
       {
         "power": "脱力",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -1762,7 +1770,8 @@
     "powers_applied": [
       {
         "power": "グラップル",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Grapple"
       }
     ],
     "cards_draw": null,
@@ -1980,7 +1989,8 @@
     "powers_applied": [
       {
         "power": "サンダー",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Thunder"
       }
     ],
     "cards_draw": null,
@@ -2021,7 +2031,8 @@
     "powers_applied": [
       {
         "power": "弱体",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -2382,7 +2393,8 @@
     "powers_applied": [
       {
         "power": "ジャガーノート",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Juggernaut"
       }
     ],
     "cards_draw": null,
@@ -2785,7 +2797,8 @@
     "powers_applied": [
       {
         "power": "ストーム",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Storm"
       }
     ],
     "cards_draw": null,
@@ -2826,7 +2839,8 @@
     "powers_applied": [
       {
         "power": "プレート",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Plating"
       }
     ],
     "cards_draw": null,
@@ -2867,7 +2881,8 @@
     "powers_applied": [
       {
         "power": "スピナー",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Spinner"
       }
     ],
     "cards_draw": null,
@@ -2906,7 +2921,8 @@
     "powers_applied": [
       {
         "power": "スピードスター",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Speedster"
       }
     ],
     "cards_draw": null,
@@ -3083,7 +3099,8 @@
     "powers_applied": [
       {
         "power": "筋力",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -3605,7 +3622,8 @@
     "powers_applied": [
       {
         "power": "活力",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Vigor"
       }
     ],
     "cards_draw": null,
@@ -3749,11 +3767,13 @@
     "powers_applied": [
       {
         "power": "破滅",
-        "amount": 21
+        "amount": 21,
+        "power_key": "Doom"
       },
       {
         "power": "脱力",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -3796,7 +3816,8 @@
     "powers_applied": [
       {
         "power": "集中力",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -4054,7 +4075,8 @@
     "powers_applied": [
       {
         "power": "プレート",
-        "amount": 8
+        "amount": 8,
+        "power_key": "Plating"
       }
     ],
     "cards_draw": null,
@@ -4096,7 +4118,8 @@
     "powers_applied": [
       {
         "power": "ニューロサージ",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Neurosurge"
       }
     ],
     "cards_draw": 2,
@@ -4139,7 +4162,8 @@
     "powers_applied": [
       {
         "power": "脱力",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -4291,7 +4315,8 @@
     "powers_applied": [
       {
         "power": "ノックダウン",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Knockdown"
       }
     ],
     "cards_draw": null,
@@ -4334,7 +4359,8 @@
     "powers_applied": [
       {
         "power": "弱体",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -4381,7 +4407,8 @@
     "powers_applied": [
       {
         "power": "集中力",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -4489,7 +4516,8 @@
     "powers_applied": [
       {
         "power": "毒",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -4567,7 +4595,8 @@
     "powers_applied": [
       {
         "power": "弱体",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -4646,7 +4675,8 @@
     "powers_applied": [
       {
         "power": "バッファー",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Buffer"
       }
     ],
     "cards_draw": null,
@@ -4722,7 +4752,8 @@
     "powers_applied": [
       {
         "power": "毒",
-        "amount": 9
+        "amount": 9,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -4939,7 +4970,8 @@
     "powers_applied": [
       {
         "power": "パリィ",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Parry"
       }
     ],
     "cards_draw": null,
@@ -5165,7 +5197,8 @@
     "powers_applied": [
       {
         "power": "弱体",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -5279,7 +5312,8 @@
     "powers_applied": [
       {
         "power": "ファントムブレード",
-        "amount": 9
+        "amount": 9,
+        "power_key": "PhantomBlades"
       }
     ],
     "cards_draw": null,
@@ -5397,7 +5431,8 @@
     "powers_applied": [
       {
         "power": "集中力",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -5442,7 +5477,8 @@
     "powers_applied": [
       {
         "power": "敏捷",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -5557,7 +5593,8 @@
     "powers_applied": [
       {
         "power": "筋力",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -5599,7 +5636,8 @@
     "powers_applied": [
       {
         "power": "筋力",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -5640,7 +5678,8 @@
     "powers_applied": [
       {
         "power": "ブラックホール",
-        "amount": 3
+        "amount": 3,
+        "power_key": "BlackHole"
       }
     ],
     "cards_draw": null,
@@ -5794,7 +5833,8 @@
     "powers_applied": [
       {
         "power": "ヘイルストーム",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Hailstorm"
       }
     ],
     "cards_draw": null,
@@ -6121,7 +6161,8 @@
     "powers_applied": [
       {
         "power": "集中力",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -7589,7 +7630,8 @@
     "powers_applied": [
       {
         "power": "脱力",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -7704,7 +7746,8 @@
     "powers_applied": [
       {
         "power": "プレート",
-        "amount": 7
+        "amount": 7,
+        "power_key": "Plating"
       }
     ],
     "cards_draw": null,
@@ -8102,7 +8145,8 @@
     "powers_applied": [
       {
         "power": "信号増幅",
-        "amount": 1
+        "amount": 1,
+        "power_key": "SignalBoost"
       }
     ],
     "cards_draw": null,
@@ -8145,7 +8189,8 @@
     "powers_applied": [
       {
         "power": "筋力",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -8190,7 +8235,8 @@
     "powers_applied": [
       {
         "power": "破滅",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -8378,7 +8424,8 @@
     "powers_applied": [
       {
         "power": "筋力",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -8565,7 +8612,8 @@
     "powers_applied": [
       {
         "power": "冷却材",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Coolant"
       }
     ],
     "cards_draw": null,
@@ -8859,11 +8907,13 @@
     "powers_applied": [
       {
         "power": "トゲ",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Thorns"
       },
       {
         "power": "敏捷",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -9022,7 +9072,8 @@
     "powers_applied": [
       {
         "power": "剣聖",
-        "amount": 1
+        "amount": 1,
+        "power_key": "SwordSage"
       }
     ],
     "cards_draw": null,
@@ -9353,7 +9404,8 @@
     "powers_applied": [
       {
         "power": "反復",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Iteration"
       }
     ],
     "cards_draw": null,
@@ -9394,7 +9446,8 @@
     "powers_applied": [
       {
         "power": "脱力",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -9659,7 +9712,8 @@
     "powers_applied": [
       {
         "power": "呪肉の奇術",
-        "amount": 9
+        "amount": 9,
+        "power_key": "SleightOfFlesh"
       }
     ],
     "cards_draw": null,
@@ -10127,7 +10181,8 @@
     "powers_applied": [
       {
         "power": "筋力",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -10243,7 +10298,8 @@
     "powers_applied": [
       {
         "power": "大岩転がし",
-        "amount": 5
+        "amount": 5,
+        "power_key": "RollingBoulder"
       }
     ],
     "cards_draw": null,
@@ -10285,7 +10341,8 @@
     "powers_applied": [
       {
         "power": "大蛇化",
-        "amount": 4
+        "amount": 4,
+        "power_key": "SerpentForm"
       }
     ],
     "cards_draw": null,
@@ -10471,7 +10528,8 @@
     "powers_applied": [
       {
         "power": "破滅",
-        "amount": 13
+        "amount": 13,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": 1,
@@ -11083,7 +11141,8 @@
     "powers_applied": [
       {
         "power": "活力",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vigor"
       }
     ],
     "cards_draw": null,
@@ -11162,7 +11221,8 @@
     "powers_applied": [
       {
         "power": "崩壊",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Disintegration"
       }
     ],
     "cards_draw": null,
@@ -11305,7 +11365,8 @@
     "powers_applied": [
       {
         "power": "霊体",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Intangible"
       }
     ],
     "cards_draw": null,
@@ -11600,11 +11661,13 @@
     "powers_applied": [
       {
         "power": "弱体",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Vulnerable"
       },
       {
         "power": "脱力",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -12074,7 +12137,8 @@
     "powers_applied": [
       {
         "power": "怠惰",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Sloth"
       }
     ],
     "cards_draw": null,
@@ -12330,7 +12394,8 @@
     "powers_applied": [
       {
         "power": "筋力",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -12441,7 +12506,8 @@
     "powers_applied": [
       {
         "power": "感染爆発",
-        "amount": 11
+        "amount": 11,
+        "power_key": "Outbreak"
       }
     ],
     "cards_draw": null,
@@ -12591,7 +12657,8 @@
     "powers_applied": [
       {
         "power": "戦いのドラム",
-        "amount": 1
+        "amount": 1,
+        "power_key": "DrumOfBattle"
       }
     ],
     "cards_draw": 2,
@@ -12881,7 +12948,8 @@
     "powers_applied": [
       {
         "power": "脱力",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -12926,7 +12994,8 @@
     "powers_applied": [
       {
         "power": "弱体",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -13039,7 +13108,8 @@
     "powers_applied": [
       {
         "power": "弱体",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -13587,7 +13657,8 @@
     "powers_applied": [
       {
         "power": "弱体",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -13957,7 +14028,8 @@
     "powers_applied": [
       {
         "power": "敏捷",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -14033,11 +14105,13 @@
     "powers_applied": [
       {
         "power": "筋力",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       },
       {
         "power": "敏捷",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -14081,7 +14155,8 @@
     "powers_applied": [
       {
         "power": "武器庫",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Arsenal"
       }
     ],
     "cards_draw": null,
@@ -14155,7 +14230,8 @@
     "powers_applied": [
       {
         "power": "死の舞踏",
-        "amount": 3
+        "amount": 3,
+        "power_key": "DanseMacabre"
       }
     ],
     "cards_draw": null,
@@ -14305,11 +14381,13 @@
     "powers_applied": [
       {
         "power": "霊体",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Intangible"
       },
       {
         "power": "死霊化",
-        "amount": 1
+        "amount": 1,
+        "power_key": "WraithForm"
       }
     ],
     "cards_draw": null,
@@ -14352,7 +14430,8 @@
     "powers_applied": [
       {
         "power": "残像",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Afterimage"
       }
     ],
     "cards_draw": null,
@@ -14428,7 +14507,8 @@
     "powers_applied": [
       {
         "power": "残酷",
-        "amount": 25
+        "amount": 25,
+        "power_key": "Cruelty"
       }
     ],
     "cards_draw": null,
@@ -14506,7 +14586,8 @@
     "powers_applied": [
       {
         "power": "殺意",
-        "amount": 50
+        "amount": 50,
+        "power_key": "Lethality"
       }
     ],
     "cards_draw": null,
@@ -14549,7 +14630,8 @@
     "powers_applied": [
       {
         "power": "毒",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -14592,7 +14674,8 @@
     "powers_applied": [
       {
         "power": "毒の仕込み",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Envenom"
       }
     ],
     "cards_draw": null,
@@ -14633,7 +14716,8 @@
     "powers_applied": [
       {
         "power": "毒",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -14812,11 +14896,13 @@
     "powers_applied": [
       {
         "power": "弱体",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       },
       {
         "power": "脱力",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -14896,7 +14982,8 @@
     "powers_applied": [
       {
         "power": "深紅の衣",
-        "amount": 8
+        "amount": 8,
+        "power_key": "CrimsonMantle"
       }
     ],
     "cards_draw": null,
@@ -15399,7 +15486,8 @@
     "powers_applied": [
       {
         "power": "脱力",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -15582,7 +15670,8 @@
     "powers_applied": [
       {
         "power": "筋力",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -15661,7 +15750,8 @@
     "powers_applied": [
       {
         "power": "煙突",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Smokestack"
       }
     ],
     "cards_draw": null,
@@ -16139,7 +16229,8 @@
     "powers_applied": [
       {
         "power": "弱体",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -16254,7 +16345,8 @@
     "powers_applied": [
       {
         "power": "脱力",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -16333,7 +16425,8 @@
     "powers_applied": [
       {
         "power": "筋力",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -16446,7 +16539,8 @@
     "powers_applied": [
       {
         "power": "監視モード",
-        "amount": 1
+        "amount": 1,
+        "power_key": "SentryMode"
       }
     ],
     "cards_draw": null,
@@ -16522,7 +16616,8 @@
     "powers_applied": [
       {
         "power": "脱力",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -17034,7 +17129,8 @@
     "powers_applied": [
       {
         "power": "弱体",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -17183,7 +17279,8 @@
     "powers_applied": [
       {
         "power": "精度上昇",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Accuracy"
       }
     ],
     "cards_draw": null,
@@ -17226,7 +17323,8 @@
     "powers_applied": [
       {
         "power": "精神腐敗",
-        "amount": 1
+        "amount": 1,
+        "power_key": "MindRot"
       }
     ],
     "cards_draw": null,
@@ -17342,7 +17440,8 @@
     "powers_applied": [
       {
         "power": "破滅",
-        "amount": 29
+        "amount": 29,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -17459,7 +17558,8 @@
     "powers_applied": [
       {
         "power": "絞殺",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strangle"
       }
     ],
     "cards_draw": null,
@@ -17789,11 +17889,13 @@
     "powers_applied": [
       {
         "power": "筋力",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       },
       {
         "power": "敏捷",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -18050,7 +18152,8 @@
     "powers_applied": [
       {
         "power": "毒",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -18230,11 +18333,13 @@
     "powers_applied": [
       {
         "power": "弱体",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       },
       {
         "power": "脱力",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -18389,7 +18494,8 @@
     "powers_applied": [
       {
         "power": "虚無化",
-        "amount": 2
+        "amount": 2,
+        "power_key": "VoidForm"
       }
     ],
     "cards_draw": null,
@@ -18465,7 +18571,8 @@
     "powers_applied": [
       {
         "power": "虚脱",
-        "amount": 1
+        "amount": 1,
+        "power_key": "WasteAway"
       }
     ],
     "cards_draw": null,
@@ -18541,7 +18648,8 @@
     "powers_applied": [
       {
         "power": "毒",
-        "amount": 7
+        "amount": 7,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -18728,7 +18836,8 @@
     "powers_applied": [
       {
         "power": "筋力",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -18843,7 +18952,8 @@
     "powers_applied": [
       {
         "power": "衰弱",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Debilitate"
       }
     ],
     "cards_draw": null,
@@ -19106,11 +19216,13 @@
     "powers_applied": [
       {
         "power": "集中力",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Focus"
       },
       {
         "power": "認知偏向",
-        "amount": 1
+        "amount": 1,
+        "power_key": "BiasedCognition"
       }
     ],
     "cards_draw": null,
@@ -19153,7 +19265,8 @@
     "powers_applied": [
       {
         "power": "破滅",
-        "amount": 7
+        "amount": 7,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -19264,7 +19377,8 @@
     "powers_applied": [
       {
         "power": "貪る影",
-        "amount": 1
+        "amount": 1,
+        "power_key": "ConsumingShadow"
       }
     ],
     "cards_draw": null,
@@ -19454,7 +19568,8 @@
     "powers_applied": [
       {
         "power": "脱力",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -19605,11 +19720,13 @@
     "powers_applied": [
       {
         "power": "脱力",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       },
       {
         "power": "弱体",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -19654,7 +19771,8 @@
     "powers_applied": [
       {
         "power": "弱体",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -19769,7 +19887,8 @@
     "powers_applied": [
       {
         "power": "脱力",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -19882,7 +20001,8 @@
     "powers_applied": [
       {
         "power": "筋力",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -19999,7 +20119,8 @@
     "powers_applied": [
       {
         "power": "避雷針",
-        "amount": 2
+        "amount": 2,
+        "power_key": "LightningRod"
       }
     ],
     "cards_draw": null,
@@ -20111,7 +20232,8 @@
     "powers_applied": [
       {
         "power": "野生",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Feral"
       }
     ],
     "cards_draw": null,
@@ -20724,7 +20846,8 @@
     "powers_applied": [
       {
         "power": "次ターンスター",
-        "amount": 3
+        "amount": 3,
+        "power_key": "StarNextTurn"
       }
     ],
     "cards_draw": null,
@@ -20766,7 +20889,8 @@
     "powers_applied": [
       {
         "power": "隠密",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Sneaky"
       }
     ],
     "cards_draw": null,
@@ -21327,7 +21451,8 @@
     "powers_applied": [
       {
         "power": "骨強化",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Calcify"
       }
     ],
     "cards_draw": null,
@@ -21443,7 +21568,8 @@
     "powers_applied": [
       {
         "power": "魂喰らい",
-        "amount": 1
+        "amount": 1,
+        "power_key": "DevourLife"
       }
     ],
     "cards_draw": null,

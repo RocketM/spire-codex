@@ -4,6 +4,7 @@ from pydantic import BaseModel
 
 class PowerApplied(BaseModel):
     power: str
+    power_key: str | None = None
     amount: int
 
 

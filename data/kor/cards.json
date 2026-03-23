@@ -89,7 +89,8 @@
     "powers_applied": [
       {
         "power": "약화",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -277,11 +278,13 @@
     "powers_applied": [
       {
         "power": "취약",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       },
       {
         "power": "약화",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -502,7 +505,8 @@
     "powers_applied": [
       {
         "power": "취약",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -801,7 +805,8 @@
     "powers_applied": [
       {
         "power": "검성",
-        "amount": 1
+        "amount": 1,
+        "power_key": "SwordSage"
       }
     ],
     "cards_draw": null,
@@ -992,7 +997,8 @@
     "powers_applied": [
       {
         "power": "경계 태세",
-        "amount": 1
+        "amount": 1,
+        "power_key": "SentryMode"
       }
     ],
     "cards_draw": null,
@@ -1348,7 +1354,8 @@
     "powers_applied": [
       {
         "power": "힘",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -1461,7 +1468,8 @@
     "powers_applied": [
       {
         "power": "공허의 형상",
-        "amount": 2
+        "amount": 2,
+        "power_key": "VoidForm"
       }
     ],
     "cards_draw": null,
@@ -1538,7 +1546,8 @@
     "powers_applied": [
       {
         "power": "힘",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -1764,7 +1773,8 @@
     "powers_applied": [
       {
         "power": "구렁이의 형상",
-        "amount": 4
+        "amount": 4,
+        "power_key": "SerpentForm"
       }
     ],
     "cards_draw": null,
@@ -1916,7 +1926,8 @@
     "powers_applied": [
       {
         "power": "굴뚝",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Smokestack"
       }
     ],
     "cards_draw": null,
@@ -1957,7 +1968,8 @@
     "powers_applied": [
       {
         "power": "굴러가는 바위",
-        "amount": 5
+        "amount": 5,
+        "power_key": "RollingBoulder"
       }
     ],
     "cards_draw": null,
@@ -2290,7 +2302,8 @@
     "powers_applied": [
       {
         "power": "그래플링",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Grapple"
       }
     ],
     "cards_draw": null,
@@ -2439,7 +2452,8 @@
     "powers_applied": [
       {
         "power": "그림자 소모",
-        "amount": 1
+        "amount": 1,
+        "power_key": "ConsumingShadow"
       }
     ],
     "cards_draw": null,
@@ -2694,11 +2708,13 @@
     "powers_applied": [
       {
         "power": "힘",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       },
       {
         "power": "민첩",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -3068,7 +3084,8 @@
     "powers_applied": [
       {
         "power": "나태",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Sloth"
       }
     ],
     "cards_draw": null,
@@ -3107,7 +3124,8 @@
     "powers_applied": [
       {
         "power": "힘",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -3398,7 +3416,8 @@
     "powers_applied": [
       {
         "power": "냉각재",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Coolant"
       }
     ],
     "cards_draw": null,
@@ -3548,11 +3567,13 @@
     "powers_applied": [
       {
         "power": "약화",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       },
       {
         "power": "취약",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -3665,7 +3686,8 @@
     "powers_applied": [
       {
         "power": "약화",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -3782,7 +3804,8 @@
     "powers_applied": [
       {
         "power": "약화",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -4298,7 +4321,8 @@
     "powers_applied": [
       {
         "power": "힘",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -4343,7 +4367,8 @@
     "powers_applied": [
       {
         "power": "덮쳐!",
-        "amount": 2
+        "amount": 2,
+        "power_key": "SicEm"
       }
     ],
     "cards_draw": null,
@@ -4462,7 +4487,8 @@
     "powers_applied": [
       {
         "power": "취약",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -4578,7 +4604,8 @@
     "powers_applied": [
       {
         "power": "독 바르기",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Envenom"
       }
     ],
     "cards_draw": null,
@@ -4619,7 +4646,8 @@
     "powers_applied": [
       {
         "power": "중독",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -4732,7 +4760,8 @@
     "powers_applied": [
       {
         "power": "판금",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Plating"
       }
     ],
     "cards_draw": null,
@@ -4991,7 +5020,8 @@
     "powers_applied": [
       {
         "power": "취약",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -5186,7 +5216,8 @@
     "powers_applied": [
       {
         "power": "때려눕히기",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Knockdown"
       }
     ],
     "cards_draw": null,
@@ -5229,7 +5260,8 @@
     "powers_applied": [
       {
         "power": "취약",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -5340,7 +5372,8 @@
     "powers_applied": [
       {
         "power": "취약",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -5455,7 +5488,8 @@
     "powers_applied": [
       {
         "power": "가시",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Thorns"
       }
     ],
     "cards_draw": null,
@@ -5603,7 +5637,8 @@
     "powers_applied": [
       {
         "power": "종말",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -5818,7 +5853,8 @@
     "powers_applied": [
       {
         "power": "중독",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -6043,7 +6079,8 @@
     "powers_applied": [
       {
         "power": "목 조르기",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strangle"
       }
     ],
     "cards_draw": null,
@@ -6227,7 +6264,8 @@
     "powers_applied": [
       {
         "power": "무기고",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Arsenal"
       }
     ],
     "cards_draw": null,
@@ -6344,7 +6382,8 @@
     "powers_applied": [
       {
         "power": "약화",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -6603,7 +6642,8 @@
     "powers_applied": [
       {
         "power": "밀집",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -6717,7 +6757,8 @@
     "powers_applied": [
       {
         "power": "취약",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -6903,7 +6944,8 @@
     "powers_applied": [
       {
         "power": "약화",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -7021,7 +7063,8 @@
     "powers_applied": [
       {
         "power": "민첩",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -7062,7 +7105,8 @@
     "powers_applied": [
       {
         "power": "발병",
-        "amount": 11
+        "amount": 11,
+        "power_key": "Outbreak"
       }
     ],
     "cards_draw": null,
@@ -7104,7 +7148,8 @@
     "powers_applied": [
       {
         "power": "힘",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -7397,7 +7442,8 @@
     "powers_applied": [
       {
         "power": "중독",
-        "amount": 7
+        "amount": 7,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -7440,7 +7486,8 @@
     "powers_applied": [
       {
         "power": "버퍼",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Buffer"
       }
     ],
     "cards_draw": null,
@@ -7553,7 +7600,8 @@
     "powers_applied": [
       {
         "power": "벼락",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Thunder"
       }
     ],
     "cards_draw": null,
@@ -7631,11 +7679,13 @@
     "powers_applied": [
       {
         "power": "취약",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       },
       {
         "power": "약화",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -7680,7 +7730,8 @@
     "powers_applied": [
       {
         "power": "활력",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vigor"
       }
     ],
     "cards_draw": null,
@@ -8332,7 +8383,8 @@
     "powers_applied": [
       {
         "power": "분해",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Disintegration"
       }
     ],
     "cards_draw": null,
@@ -8441,7 +8493,8 @@
     "powers_applied": [
       {
         "power": "불바다",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Inferno"
       }
     ],
     "cards_draw": null,
@@ -8625,7 +8678,8 @@
     "powers_applied": [
       {
         "power": "약화",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -8736,7 +8790,8 @@
     "powers_applied": [
       {
         "power": "블랙홀",
-        "amount": 3
+        "amount": 3,
+        "power_key": "BlackHole"
       }
     ],
     "cards_draw": null,
@@ -8777,7 +8832,8 @@
     "powers_applied": [
       {
         "power": "종말",
-        "amount": 7
+        "amount": 7,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -8890,7 +8946,8 @@
     "powers_applied": [
       {
         "power": "다음 턴 별",
-        "amount": 3
+        "amount": 3,
+        "power_key": "StarNextTurn"
       }
     ],
     "cards_draw": null,
@@ -9006,7 +9063,8 @@
     "powers_applied": [
       {
         "power": "비열함",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Sneaky"
       }
     ],
     "cards_draw": null,
@@ -9528,7 +9586,8 @@
     "powers_applied": [
       {
         "power": "힘",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -9679,7 +9738,8 @@
     "powers_applied": [
       {
         "power": "살점 재주",
-        "amount": 9
+        "amount": 9,
+        "power_key": "SleightOfFlesh"
       }
     ],
     "cards_draw": null,
@@ -9790,7 +9850,8 @@
     "powers_applied": [
       {
         "power": "생명 삼키기",
-        "amount": 1
+        "amount": 1,
+        "power_key": "DevourLife"
       }
     ],
     "cards_draw": null,
@@ -10075,7 +10136,8 @@
     "powers_applied": [
       {
         "power": "석회화",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Calcify"
       }
     ],
     "cards_draw": null,
@@ -10440,7 +10502,8 @@
     "powers_applied": [
       {
         "power": "쇠락",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Debilitate"
       }
     ],
     "cards_draw": null,
@@ -10520,7 +10583,8 @@
     "powers_applied": [
       {
         "power": "쇠퇴",
-        "amount": 1
+        "amount": 1,
+        "power_key": "WasteAway"
       }
     ],
     "cards_draw": null,
@@ -10959,7 +11023,8 @@
     "powers_applied": [
       {
         "power": "순회",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Iteration"
       }
     ],
     "cards_draw": null,
@@ -11142,7 +11207,8 @@
     "powers_applied": [
       {
         "power": "스피너",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Spinner"
       }
     ],
     "cards_draw": null,
@@ -11181,7 +11247,8 @@
     "powers_applied": [
       {
         "power": "스피드스터",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Speedster"
       }
     ],
     "cards_draw": null,
@@ -11333,7 +11400,8 @@
     "powers_applied": [
       {
         "power": "신호 증폭",
-        "amount": 1
+        "amount": 1,
+        "power_key": "SignalBoost"
       }
     ],
     "cards_draw": null,
@@ -11490,7 +11558,8 @@
     "powers_applied": [
       {
         "power": "중독",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -11533,7 +11602,8 @@
     "powers_applied": [
       {
         "power": "악랄함",
-        "amount": 25
+        "amount": 25,
+        "power_key": "Cruelty"
       }
     ],
     "cards_draw": null,
@@ -11648,7 +11718,8 @@
     "powers_applied": [
       {
         "power": "힘",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -11801,7 +11872,8 @@
     "powers_applied": [
       {
         "power": "취약",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -11919,7 +11991,8 @@
     "powers_applied": [
       {
         "power": "야성",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Feral"
       }
     ],
     "cards_draw": null,
@@ -12458,11 +12531,13 @@
     "powers_applied": [
       {
         "power": "가시",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Thorns"
       },
       {
         "power": "민첩",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -12507,7 +12582,8 @@
     "powers_applied": [
       {
         "power": "종말",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -12650,7 +12726,8 @@
     "powers_applied": [
       {
         "power": "판금",
-        "amount": 7
+        "amount": 7,
+        "power_key": "Plating"
       }
     ],
     "cards_draw": null,
@@ -12691,7 +12768,8 @@
     "powers_applied": [
       {
         "power": "불가침",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Intangible"
       }
     ],
     "cards_draw": null,
@@ -12882,7 +12960,8 @@
     "powers_applied": [
       {
         "power": "민첩",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -13035,7 +13114,8 @@
     "powers_applied": [
       {
         "power": "약화",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -13217,7 +13297,8 @@
     "powers_applied": [
       {
         "power": "우박 폭풍",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Hailstorm"
       }
     ],
     "cards_draw": null,
@@ -13258,7 +13339,8 @@
     "powers_applied": [
       {
         "power": "힘",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -13654,11 +13736,13 @@
     "powers_applied": [
       {
         "power": "불가침",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Intangible"
       },
       {
         "power": "유령의 형상",
-        "amount": 1
+        "amount": 1,
+        "power_key": "WraithForm"
       }
     ],
     "cards_draw": null,
@@ -13773,11 +13857,13 @@
     "powers_applied": [
       {
         "power": "취약",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       },
       {
         "power": "약화",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -13926,7 +14012,8 @@
     "powers_applied": [
       {
         "power": "약화",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -14072,11 +14159,13 @@
     "powers_applied": [
       {
         "power": "밀집",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Focus"
       },
       {
         "power": "인지 편향",
-        "amount": 1
+        "amount": 1,
+        "power_key": "BiasedCognition"
       }
     ],
     "cards_draw": null,
@@ -14301,7 +14390,8 @@
     "powers_applied": [
       {
         "power": "힘",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -14445,7 +14535,8 @@
     "powers_applied": [
       {
         "power": "잔상",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Afterimage"
       }
     ],
     "cards_draw": null,
@@ -15168,7 +15259,8 @@
     "powers_applied": [
       {
         "power": "전투의 북소리",
-        "amount": 1
+        "amount": 1,
+        "power_key": "DrumOfBattle"
       }
     ],
     "cards_draw": 2,
@@ -15278,7 +15370,8 @@
     "powers_applied": [
       {
         "power": "절대적인 힘",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Juggernaut"
       }
     ],
     "cards_draw": null,
@@ -15461,7 +15554,8 @@
     "powers_applied": [
       {
         "power": "정밀",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Accuracy"
       }
     ],
     "cards_draw": null,
@@ -15650,7 +15744,8 @@
     "powers_applied": [
       {
         "power": "정신 오염",
-        "amount": 1
+        "amount": 1,
+        "power_key": "MindRot"
       }
     ],
     "cards_draw": null,
@@ -15689,7 +15784,8 @@
     "powers_applied": [
       {
         "power": "정신 폭주",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Neurosurge"
       }
     ],
     "cards_draw": 2,
@@ -15843,7 +15939,8 @@
     "powers_applied": [
       {
         "power": "약화",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -15925,7 +16022,8 @@
     "powers_applied": [
       {
         "power": "밀집",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -16002,7 +16100,8 @@
     "powers_applied": [
       {
         "power": "종말",
-        "amount": 29
+        "amount": 29,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -16153,11 +16252,13 @@
     "powers_applied": [
       {
         "power": "종말",
-        "amount": 21
+        "amount": 21,
+        "power_key": "Doom"
       },
       {
         "power": "약화",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -16200,7 +16301,8 @@
     "powers_applied": [
       {
         "power": "죽음의 무도",
-        "amount": 3
+        "amount": 3,
+        "power_key": "DanseMacabre"
       }
     ],
     "cards_draw": null,
@@ -16317,7 +16419,8 @@
     "powers_applied": [
       {
         "power": "준비 시간",
-        "amount": 4
+        "amount": 4,
+        "power_key": "PrepTime"
       }
     ],
     "cards_draw": null,
@@ -16391,7 +16494,8 @@
     "powers_applied": [
       {
         "power": "판금",
-        "amount": 8
+        "amount": 8,
+        "power_key": "Plating"
       }
     ],
     "cards_draw": null,
@@ -16513,11 +16617,13 @@
     "powers_applied": [
       {
         "power": "힘",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       },
       {
         "power": "민첩",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -16889,7 +16995,8 @@
     "powers_applied": [
       {
         "power": "취약",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -16967,7 +17074,8 @@
     "powers_applied": [
       {
         "power": "종말",
-        "amount": 13
+        "amount": 13,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": 1,
@@ -17082,7 +17190,8 @@
     "powers_applied": [
       {
         "power": "중독",
-        "amount": 9
+        "amount": 9,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -17436,7 +17545,8 @@
     "powers_applied": [
       {
         "power": "취약",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -17587,7 +17697,8 @@
     "powers_applied": [
       {
         "power": "쳐내기",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Parry"
       }
     ],
     "cards_draw": null,
@@ -18101,7 +18212,8 @@
     "powers_applied": [
       {
         "power": "치사성",
-        "amount": 50
+        "amount": 50,
+        "power_key": "Lethality"
       }
     ],
     "cards_draw": null,
@@ -18144,7 +18256,8 @@
     "powers_applied": [
       {
         "power": "카운트다운",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Countdown"
       }
     ],
     "cards_draw": null,
@@ -18552,7 +18665,8 @@
     "powers_applied": [
       {
         "power": "중독",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -18919,7 +19033,8 @@
     "powers_applied": [
       {
         "power": "활력",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Vigor"
       }
     ],
     "cards_draw": null,
@@ -19101,7 +19216,8 @@
     "powers_applied": [
       {
         "power": "밀집",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -19183,7 +19299,8 @@
     "powers_applied": [
       {
         "power": "힘",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -19724,7 +19841,8 @@
     "powers_applied": [
       {
         "power": "폭풍",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Storm"
       }
     ],
     "cards_draw": null,
@@ -19880,7 +19998,8 @@
     "powers_applied": [
       {
         "power": "피뢰침",
-        "amount": 2
+        "amount": 2,
+        "power_key": "LightningRod"
       }
     ],
     "cards_draw": null,
@@ -20060,7 +20179,8 @@
     "powers_applied": [
       {
         "power": "핏빛 망토",
-        "amount": 8
+        "amount": 8,
+        "power_key": "CrimsonMantle"
       }
     ],
     "cards_draw": null,
@@ -20286,7 +20406,8 @@
     "powers_applied": [
       {
         "power": "취약",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -20405,7 +20526,8 @@
     "powers_applied": [
       {
         "power": "밀집",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -20622,7 +20744,8 @@
     "powers_applied": [
       {
         "power": "힘",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -20701,11 +20824,13 @@
     "powers_applied": [
       {
         "power": "취약",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Vulnerable"
       },
       {
         "power": "약화",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -21041,7 +21166,8 @@
     "powers_applied": [
       {
         "power": "환영검",
-        "amount": 9
+        "amount": 9,
+        "power_key": "PhantomBlades"
       }
     ],
     "cards_draw": null,

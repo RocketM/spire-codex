@@ -18,7 +18,8 @@
     "powers_applied": [
       {
         "power": "ความแข็งแรง",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -60,7 +61,8 @@
     "powers_applied": [
       {
         "power": "จุดอ่อน",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -103,11 +105,13 @@
     "powers_applied": [
       {
         "power": "ความแข็งแรง",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       },
       {
         "power": "ความชำนาญ",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -400,7 +404,8 @@
     "powers_applied": [
       {
         "power": "Calcify",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Calcify"
       }
     ],
     "cards_draw": null,
@@ -797,11 +802,13 @@
     "powers_applied": [
       {
         "power": "จุดอ่อน",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Vulnerable"
       },
       {
         "power": "ความอ่อนแอ",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -957,7 +964,8 @@
     "powers_applied": [
       {
         "power": "ConsumingShadow",
-        "amount": 1
+        "amount": 1,
+        "power_key": "ConsumingShadow"
       }
     ],
     "cards_draw": null,
@@ -1035,7 +1043,8 @@
     "powers_applied": [
       {
         "power": "Coolant",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Coolant"
       }
     ],
     "cards_draw": null,
@@ -1076,7 +1085,8 @@
     "powers_applied": [
       {
         "power": "ความแข็งแรง",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -1263,7 +1273,8 @@
     "powers_applied": [
       {
         "power": "CrimsonMantle",
-        "amount": 8
+        "amount": 8,
+        "power_key": "CrimsonMantle"
       }
     ],
     "cards_draw": null,
@@ -1304,7 +1315,8 @@
     "powers_applied": [
       {
         "power": "Cruelty",
-        "amount": 25
+        "amount": 25,
+        "power_key": "Cruelty"
       }
     ],
     "cards_draw": null,
@@ -1421,11 +1433,13 @@
     "powers_applied": [
       {
         "power": "อายุขัย",
-        "amount": 21
+        "amount": 21,
+        "power_key": "Doom"
       },
       {
         "power": "ความอ่อนแอ",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -1468,7 +1482,8 @@
     "powers_applied": [
       {
         "power": "Debilitate",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Debilitate"
       }
     ],
     "cards_draw": null,
@@ -1698,7 +1713,8 @@
     "powers_applied": [
       {
         "power": "Disintegration",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Disintegration"
       }
     ],
     "cards_draw": null,
@@ -1958,7 +1974,8 @@
     "powers_applied": [
       {
         "power": "อายุขัย",
-        "amount": 29
+        "amount": 29,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -2178,7 +2195,8 @@
     "powers_applied": [
       {
         "power": "Plating",
-        "amount": 7
+        "amount": 7,
+        "power_key": "Plating"
       }
     ],
     "cards_draw": null,
@@ -2364,11 +2382,13 @@
     "powers_applied": [
       {
         "power": "จุดอ่อน",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       },
       {
         "power": "ความอ่อนแอ",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -2413,7 +2433,8 @@
     "powers_applied": [
       {
         "power": "ความแข็งแรง",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -2454,7 +2475,8 @@
     "powers_applied": [
       {
         "power": "Feral",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Feral"
       }
     ],
     "cards_draw": null,
@@ -2891,11 +2913,13 @@
     "powers_applied": [
       {
         "power": "จุดอ่อน",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       },
       {
         "power": "ความอ่อนแอ",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -3269,7 +3293,8 @@
     "powers_applied": [
       {
         "power": "Grapple",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Grapple"
       }
     ],
     "cards_draw": null,
@@ -3534,7 +3559,8 @@
     "powers_applied": [
       {
         "power": "Hailstorm",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Hailstorm"
       }
     ],
     "cards_draw": null,
@@ -3826,7 +3852,8 @@
     "powers_applied": [
       {
         "power": "ดาวเทิร์นถัดไป",
-        "amount": 3
+        "amount": 3,
+        "power_key": "StarNextTurn"
       }
     ],
     "cards_draw": null,
@@ -3939,7 +3966,8 @@
     "powers_applied": [
       {
         "power": "จุดอ่อน",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -4058,7 +4086,8 @@
     "powers_applied": [
       {
         "power": "Iteration",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Iteration"
       }
     ],
     "cards_draw": null,
@@ -4241,7 +4270,8 @@
     "powers_applied": [
       {
         "power": "Knockdown",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Knockdown"
       }
     ],
     "cards_draw": null,
@@ -4320,11 +4350,13 @@
     "powers_applied": [
       {
         "power": "ความอ่อนแอ",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       },
       {
         "power": "จุดอ่อน",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -4512,7 +4544,8 @@
     "powers_applied": [
       {
         "power": "Lethality",
-        "amount": 50
+        "amount": 50,
+        "power_key": "Lethality"
       }
     ],
     "cards_draw": null,
@@ -4925,7 +4958,8 @@
     "powers_applied": [
       {
         "power": "MindRot",
-        "amount": 1
+        "amount": 1,
+        "power_key": "MindRot"
       }
     ],
     "cards_draw": null,
@@ -5215,7 +5249,8 @@
     "powers_applied": [
       {
         "power": "อายุขัย",
-        "amount": 7
+        "amount": 7,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -5296,7 +5331,8 @@
     "powers_applied": [
       {
         "power": "Neurosurge",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Neurosurge"
       }
     ],
     "cards_draw": 2,
@@ -5339,7 +5375,8 @@
     "powers_applied": [
       {
         "power": "Plating",
-        "amount": 8
+        "amount": 8,
+        "power_key": "Plating"
       }
     ],
     "cards_draw": null,
@@ -5451,7 +5488,8 @@
     "powers_applied": [
       {
         "power": "ความอ่อนแอ",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -5494,7 +5532,8 @@
     "powers_applied": [
       {
         "power": "อายุขัย",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -5640,7 +5679,8 @@
     "powers_applied": [
       {
         "power": "Outbreak",
-        "amount": 11
+        "amount": 11,
+        "power_key": "Outbreak"
       }
     ],
     "cards_draw": null,
@@ -5789,7 +5829,8 @@
     "powers_applied": [
       {
         "power": "Parry",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Parry"
       }
     ],
     "cards_draw": null,
@@ -5905,7 +5946,8 @@
     "powers_applied": [
       {
         "power": "ความกำยำ",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vigor"
       }
     ],
     "cards_draw": null,
@@ -5984,7 +6026,8 @@
     "powers_applied": [
       {
         "power": "PhantomBlades",
-        "amount": 9
+        "amount": 9,
+        "power_key": "PhantomBlades"
       }
     ],
     "cards_draw": null,
@@ -6315,7 +6358,8 @@
     "powers_applied": [
       {
         "power": "PrepTime",
-        "amount": 4
+        "amount": 4,
+        "power_key": "PrepTime"
       }
     ],
     "cards_draw": null,
@@ -6536,11 +6580,13 @@
     "powers_applied": [
       {
         "power": "ความแข็งแรง",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       },
       {
         "power": "ความชำนาญ",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -7210,7 +7256,8 @@
     "powers_applied": [
       {
         "power": "ความแข็งแรง",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -7366,7 +7413,8 @@
     "powers_applied": [
       {
         "power": "หินกลิ้ง",
-        "amount": 5
+        "amount": 5,
+        "power_key": "RollingBoulder"
       }
     ],
     "cards_draw": null,
@@ -7551,7 +7599,8 @@
     "powers_applied": [
       {
         "power": "อายุขัย",
-        "amount": 13
+        "amount": 13,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": 1,
@@ -7741,7 +7790,8 @@
     "powers_applied": [
       {
         "power": "SentryMode",
-        "amount": 1
+        "amount": 1,
+        "power_key": "SentryMode"
       }
     ],
     "cards_draw": null,
@@ -7784,7 +7834,8 @@
     "powers_applied": [
       {
         "power": "ความแข็งแรง",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -8154,7 +8205,8 @@
     "powers_applied": [
       {
         "power": "SicEm",
-        "amount": 2
+        "amount": 2,
+        "power_key": "SicEm"
       }
     ],
     "cards_draw": null,
@@ -8201,7 +8253,8 @@
     "powers_applied": [
       {
         "power": "SignalBoost",
-        "amount": 1
+        "amount": 1,
+        "power_key": "SignalBoost"
       }
     ],
     "cards_draw": null,
@@ -8244,7 +8297,8 @@
     "powers_applied": [
       {
         "power": "SleightOfFlesh",
-        "amount": 9
+        "amount": 9,
+        "power_key": "SleightOfFlesh"
       }
     ],
     "cards_draw": null,
@@ -8285,7 +8339,8 @@
     "powers_applied": [
       {
         "power": "Smokestack",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Smokestack"
       }
     ],
     "cards_draw": null,
@@ -8326,7 +8381,8 @@
     "powers_applied": [
       {
         "power": "พิษ",
-        "amount": 7
+        "amount": 7,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -8408,7 +8464,8 @@
     "powers_applied": [
       {
         "power": "Sneaky",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Sneaky"
       }
     ],
     "cards_draw": null,
@@ -8595,7 +8652,8 @@
     "powers_applied": [
       {
         "power": "Spinner",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Spinner"
       }
     ],
     "cards_draw": null,
@@ -8878,7 +8936,8 @@
     "powers_applied": [
       {
         "power": "จุดอ่อน",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -9102,7 +9161,8 @@
     "powers_applied": [
       {
         "power": "Plating",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Plating"
       }
     ],
     "cards_draw": null,
@@ -9143,7 +9203,8 @@
     "powers_applied": [
       {
         "power": "Strangle",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strangle"
       }
     ],
     "cards_draw": null,
@@ -9364,7 +9425,8 @@
     "powers_applied": [
       {
         "power": "ความอ่อนแอ",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -9451,7 +9513,8 @@
     "powers_applied": [
       {
         "power": "SwordSage",
-        "amount": 1
+        "amount": 1,
+        "power_key": "SwordSage"
       }
     ],
     "cards_draw": null,
@@ -9635,7 +9698,8 @@
     "powers_applied": [
       {
         "power": "จุดอ่อน",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -9716,7 +9780,8 @@
     "powers_applied": [
       {
         "power": "ความกำยำ",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Vigor"
       }
     ],
     "cards_draw": null,
@@ -10222,7 +10287,8 @@
     "powers_applied": [
       {
         "power": "จุดอ่อน",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -10728,7 +10794,8 @@
     "powers_applied": [
       {
         "power": "VoidForm",
-        "amount": 2
+        "amount": 2,
+        "power_key": "VoidForm"
       }
     ],
     "cards_draw": null,
@@ -10842,7 +10909,8 @@
     "powers_applied": [
       {
         "power": "WasteAway",
-        "amount": 1
+        "amount": 1,
+        "power_key": "WasteAway"
       }
     ],
     "cards_draw": null,
@@ -10992,7 +11060,8 @@
     "powers_applied": [
       {
         "power": "พิษ",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -11069,7 +11138,8 @@
     "powers_applied": [
       {
         "power": "ความอ่อนแอ",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -11290,7 +11360,8 @@
     "powers_applied": [
       {
         "power": "กลืนกินชีวิต",
-        "amount": 1
+        "amount": 1,
+        "power_key": "DevourLife"
       }
     ],
     "cards_draw": null,
@@ -11368,7 +11439,8 @@
     "powers_applied": [
       {
         "power": "ความอ่อนแอ",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -11486,7 +11558,8 @@
     "powers_applied": [
       {
         "power": "ไร้ตัวตน",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Intangible"
       }
     ],
     "cards_draw": null,
@@ -11530,7 +11603,8 @@
     "powers_applied": [
       {
         "power": "ความแข็งแรง",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -11676,7 +11750,8 @@
     "powers_applied": [
       {
         "power": "กำลังภายใน",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Juggernaut"
       }
     ],
     "cards_draw": null,
@@ -11790,7 +11865,8 @@
     "powers_applied": [
       {
         "power": "อายุขัย",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -11832,7 +11908,8 @@
     "powers_applied": [
       {
         "power": "หนาม",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Thorns"
       }
     ],
     "cards_draw": null,
@@ -11908,7 +11985,8 @@
     "powers_applied": [
       {
         "power": "ความอ่อนแอ",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -12094,7 +12172,8 @@
     "powers_applied": [
       {
         "power": "คลังสรรพาวุธ",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Arsenal"
       }
     ],
     "cards_draw": null,
@@ -12280,7 +12359,8 @@
     "powers_applied": [
       {
         "power": "จุดอ่อน",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -12669,7 +12749,8 @@
     "powers_applied": [
       {
         "power": "ความเกียจคร้าน",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Sloth"
       }
     ],
     "cards_draw": null,
@@ -12708,7 +12789,8 @@
     "powers_applied": [
       {
         "power": "ความอ่อนแอ",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -12852,7 +12934,8 @@
     "powers_applied": [
       {
         "power": "ความแม่นยำ",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Accuracy"
       }
     ],
     "cards_draw": null,
@@ -13390,7 +13473,8 @@
     "powers_applied": [
       {
         "power": "ความชำนาญ",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -13431,7 +13515,8 @@
     "powers_applied": [
       {
         "power": "โฟกัส",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -13653,7 +13738,8 @@
     "powers_applied": [
       {
         "power": "ความแข็งแรง",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -14146,7 +14232,8 @@
     "powers_applied": [
       {
         "power": "โฟกัส",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -14687,7 +14774,8 @@
     "powers_applied": [
       {
         "power": "ความอ่อนแอ",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -14730,7 +14818,8 @@
     "powers_applied": [
       {
         "power": "จุดอ่อน",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -14843,7 +14932,8 @@
     "powers_applied": [
       {
         "power": "นับถอยหลัง",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Countdown"
       }
     ],
     "cards_draw": null,
@@ -15060,7 +15150,8 @@
     "powers_applied": [
       {
         "power": "พิษ",
-        "amount": 9
+        "amount": 9,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -15209,7 +15300,8 @@
     "powers_applied": [
       {
         "power": "ความชำนาญ",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -15681,7 +15773,8 @@
     "powers_applied": [
       {
         "power": "ผู้ใช้ความเร็ว",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Speedster"
       }
     ],
     "cards_draw": null,
@@ -15760,11 +15853,13 @@
     "powers_applied": [
       {
         "power": "จุดอ่อน",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       },
       {
         "power": "ความอ่อนแอ",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -16208,7 +16303,8 @@
     "powers_applied": [
       {
         "power": "พิษ",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -16360,7 +16456,8 @@
     "powers_applied": [
       {
         "power": "ความอ่อนแอ",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -16440,7 +16537,8 @@
     "powers_applied": [
       {
         "power": "ฟ้าคะนอง",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Thunder"
       }
     ],
     "cards_draw": null,
@@ -16481,7 +16579,8 @@
     "powers_applied": [
       {
         "power": "จุดอ่อน",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -16594,7 +16693,8 @@
     "powers_applied": [
       {
         "power": "ภาพติดตาชั่วขณะ",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Afterimage"
       }
     ],
     "cards_draw": null,
@@ -16709,7 +16809,8 @@
     "powers_applied": [
       {
         "power": "มรสุม",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Storm"
       }
     ],
     "cards_draw": null,
@@ -16786,7 +16887,8 @@
     "powers_applied": [
       {
         "power": "ความแข็งแรง",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -16831,7 +16933,8 @@
     "powers_applied": [
       {
         "power": "ความแข็งแรง",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -16914,7 +17017,8 @@
     "powers_applied": [
       {
         "power": "ความแข็งแรง",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -16955,7 +17059,8 @@
     "powers_applied": [
       {
         "power": "พิษ",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -17075,7 +17180,8 @@
     "powers_applied": [
       {
         "power": "ม่านกันชน",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Buffer"
       }
     ],
     "cards_draw": null,
@@ -17324,7 +17430,8 @@
     "powers_applied": [
       {
         "power": "ระบำมรณะ",
-        "amount": 3
+        "amount": 3,
+        "power_key": "DanseMacabre"
       }
     ],
     "cards_draw": null,
@@ -17692,7 +17799,8 @@
     "powers_applied": [
       {
         "power": "ความแข็งแรง",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -17733,11 +17841,13 @@
     "powers_applied": [
       {
         "power": "ไร้ตัวตน",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Intangible"
       },
       {
         "power": "ร่างมายา",
-        "amount": 1
+        "amount": 1,
+        "power_key": "WraithForm"
       }
     ],
     "cards_draw": null,
@@ -17780,7 +17890,8 @@
     "powers_applied": [
       {
         "power": "ร่างอสรพิษ",
-        "amount": 4
+        "amount": 4,
+        "power_key": "SerpentForm"
       }
     ],
     "cards_draw": null,
@@ -17920,7 +18031,8 @@
     "powers_applied": [
       {
         "power": "จุดอ่อน",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -18004,7 +18116,8 @@
     "powers_applied": [
       {
         "power": "ลั่นกลองรบ",
-        "amount": 1
+        "amount": 1,
+        "power_key": "DrumOfBattle"
       }
     ],
     "cards_draw": 2,
@@ -18084,7 +18197,8 @@
     "powers_applied": [
       {
         "power": "โฟกัส",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -18126,7 +18240,8 @@
     "powers_applied": [
       {
         "power": "จุดอ่อน",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -18881,7 +18996,8 @@
     "powers_applied": [
       {
         "power": "สายล่อฟ้า",
-        "amount": 2
+        "amount": 2,
+        "power_key": "LightningRod"
       }
     ],
     "cards_draw": null,
@@ -19030,7 +19146,8 @@
     "powers_applied": [
       {
         "power": "พิษ",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -19073,7 +19190,8 @@
     "powers_applied": [
       {
         "power": "ความอ่อนแอ",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -19187,7 +19305,8 @@
     "powers_applied": [
       {
         "power": "หลุมดำ",
-        "amount": 3
+        "amount": 3,
+        "power_key": "BlackHole"
       }
     ],
     "cards_draw": null,
@@ -19336,11 +19455,13 @@
     "powers_applied": [
       {
         "power": "โฟกัส",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Focus"
       },
       {
         "power": "อคติทางการรู้คิด",
-        "amount": 1
+        "amount": 1,
+        "power_key": "BiasedCognition"
       }
     ],
     "cards_draw": null,
@@ -19664,7 +19785,8 @@
     "powers_applied": [
       {
         "power": "อาบยาพิษ",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Envenom"
       }
     ],
     "cards_draw": null,
@@ -20467,7 +20589,8 @@
     "powers_applied": [
       {
         "power": "เพลิงโลกันตร์",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Inferno"
       }
     ],
     "cards_draw": null,
@@ -20867,11 +20990,13 @@
     "powers_applied": [
       {
         "power": "หนาม",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Thorns"
       },
       {
         "power": "ความชำนาญ",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -20949,7 +21074,8 @@
     "powers_applied": [
       {
         "power": "โฟกัส",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,

@@ -415,6 +415,7 @@ def localize_card(card: dict, type_map: dict, rarity_map: dict,
         card["keywords"] = [kw_names.get(kw.upper(), kw) for kw in card["keywords"]]
     if card["powers_applied"]:
         for pa in card["powers_applied"]:
+            pa["power_key"] = pa["power"]
             pa["power"] = power_names.get(pa["power"], pa["power"])
     return card
 

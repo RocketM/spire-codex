@@ -456,7 +456,8 @@ export default function CardDetail() {
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {card.powers_applied.map((pa) => {
-                      const powerId = pa.power.replace(/([A-Z])/g, "_$1").replace(/^_/, "").toUpperCase();
+                      const powerName = pa.power_key || pa.power;
+                      const powerId = powerName.replace(/([A-Z])/g, "_$1").replace(/^_/, "").toUpperCase();
                       return (
                         <Link
                           key={pa.power}

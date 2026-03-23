@@ -18,11 +18,13 @@
     "powers_applied": [
       {
         "power": "Épines",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Thorns"
       },
       {
         "power": "Dextérité",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -594,7 +596,8 @@
     "powers_applied": [
       {
         "power": "Force",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -636,7 +639,8 @@
     "powers_applied": [
       {
         "power": "Amoindrir",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Debilitate"
       }
     ],
     "cards_draw": null,
@@ -679,7 +683,8 @@
     "powers_applied": [
       {
         "power": "Signal amplifié",
-        "amount": 1
+        "amount": 1,
+        "power_key": "SignalBoost"
       }
     ],
     "cards_draw": null,
@@ -722,7 +727,8 @@
     "powers_applied": [
       {
         "power": "Fatalité",
-        "amount": 7
+        "amount": 7,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -765,7 +771,8 @@
     "powers_applied": [
       {
         "power": "Dextérité",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -806,7 +813,8 @@
     "powers_applied": [
       {
         "power": "Vulnérable",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -885,7 +893,8 @@
     "powers_applied": [
       {
         "power": "Intangible",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Intangible"
       }
     ],
     "cards_draw": null,
@@ -1139,7 +1148,8 @@
     "powers_applied": [
       {
         "power": "Blindage",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Plating"
       }
     ],
     "cards_draw": null,
@@ -1180,7 +1190,8 @@
     "powers_applied": [
       {
         "power": "Blindage",
-        "amount": 7
+        "amount": 7,
+        "power_key": "Plating"
       }
     ],
     "cards_draw": null,
@@ -1221,7 +1232,8 @@
     "powers_applied": [
       {
         "power": "Arsenal",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Arsenal"
       }
     ],
     "cards_draw": null,
@@ -1297,7 +1309,8 @@
     "powers_applied": [
       {
         "power": "Vulnérable",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -1623,7 +1636,8 @@
     "powers_applied": [
       {
         "power": "Affaibli",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -1848,11 +1862,13 @@
     "powers_applied": [
       {
         "power": "Focalisation",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Focus"
       },
       {
         "power": "Biais cognitif",
-        "amount": 1
+        "amount": 1,
+        "power_key": "BiasedCognition"
       }
     ],
     "cards_draw": null,
@@ -2331,7 +2347,8 @@
     "powers_applied": [
       {
         "power": "Inferno",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Inferno"
       }
     ],
     "cards_draw": null,
@@ -2372,7 +2389,8 @@
     "powers_applied": [
       {
         "power": "Vulnérable",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -2415,7 +2433,8 @@
     "powers_applied": [
       {
         "power": "Poison",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -2703,7 +2722,8 @@
     "powers_applied": [
       {
         "power": "Étoile au prochain tour",
-        "amount": 3
+        "amount": 3,
+        "power_key": "StarNextTurn"
       }
     ],
     "cards_draw": null,
@@ -2815,7 +2835,8 @@
     "powers_applied": [
       {
         "power": "Calcification",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Calcify"
       }
     ],
     "cards_draw": null,
@@ -3176,7 +3197,8 @@
     "powers_applied": [
       {
         "power": "Épines",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Thorns"
       }
     ],
     "cards_draw": null,
@@ -3217,7 +3239,8 @@
     "powers_applied": [
       {
         "power": "Cheminée",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Smokestack"
       }
     ],
     "cards_draw": null,
@@ -3297,11 +3320,13 @@
     "powers_applied": [
       {
         "power": "Vulnérable",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       },
       {
         "power": "Affaibli",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -3749,11 +3774,13 @@
     "powers_applied": [
       {
         "power": "Vulnérable",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Vulnerable"
       },
       {
         "power": "Affaibli",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -4007,7 +4034,8 @@
     "powers_applied": [
       {
         "power": "Force",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -4048,7 +4076,8 @@
     "powers_applied": [
       {
         "power": "Focalisation",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -4124,7 +4153,8 @@
     "powers_applied": [
       {
         "power": "Affaibli",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -4345,7 +4375,8 @@
     "powers_applied": [
       {
         "power": "Vulnérable",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -4644,7 +4675,8 @@
     "powers_applied": [
       {
         "power": "Cruauté",
-        "amount": 25
+        "amount": 25,
+        "power_key": "Cruelty"
       }
     ],
     "cards_draw": null,
@@ -4791,7 +4823,8 @@
     "powers_applied": [
       {
         "power": "Danse Macabre",
-        "amount": 3
+        "amount": 3,
+        "power_key": "DanseMacabre"
       }
     ],
     "cards_draw": null,
@@ -5055,7 +5088,8 @@
     "powers_applied": [
       {
         "power": "Affaibli",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -5352,7 +5386,8 @@
     "powers_applied": [
       {
         "power": "Décompte",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Countdown"
       }
     ],
     "cards_draw": null,
@@ -5650,7 +5685,8 @@
     "powers_applied": [
       {
         "power": "Affaibli",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -5730,11 +5766,13 @@
     "powers_applied": [
       {
         "power": "Vulnérable",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       },
       {
         "power": "Affaibli",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -5893,7 +5931,8 @@
     "powers_applied": [
       {
         "power": "Focalisation",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -5934,7 +5973,8 @@
     "powers_applied": [
       {
         "power": "Délabrement mental",
-        "amount": 1
+        "amount": 1,
+        "power_key": "MindRot"
       }
     ],
     "cards_draw": null,
@@ -6045,7 +6085,8 @@
     "powers_applied": [
       {
         "power": "Périssable",
-        "amount": 1
+        "amount": 1,
+        "power_key": "WasteAway"
       }
     ],
     "cards_draw": null,
@@ -6119,7 +6160,8 @@
     "powers_applied": [
       {
         "power": "Désintégration",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Disintegration"
       }
     ],
     "cards_draw": null,
@@ -6342,7 +6384,8 @@
     "powers_applied": [
       {
         "power": "Dévoration de vie",
-        "amount": 1
+        "amount": 1,
+        "power_key": "DevourLife"
       }
     ],
     "cards_draw": null,
@@ -6599,7 +6642,8 @@
     "powers_applied": [
       {
         "power": "Force",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -6895,7 +6939,8 @@
     "powers_applied": [
       {
         "power": "Envenimer",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Envenom"
       }
     ],
     "cards_draw": null,
@@ -7046,7 +7091,8 @@
     "powers_applied": [
       {
         "power": "Excès de vitesse",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Speedster"
       }
     ],
     "cards_draw": null,
@@ -7306,7 +7352,8 @@
     "powers_applied": [
       {
         "power": "Fatalité",
-        "amount": 29
+        "amount": 29,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -7347,7 +7394,8 @@
     "powers_applied": [
       {
         "power": "Affaibli",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -7426,7 +7474,8 @@
     "powers_applied": [
       {
         "power": "Poison",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -7754,7 +7803,8 @@
     "powers_applied": [
       {
         "power": "Forme du néant",
-        "amount": 2
+        "amount": 2,
+        "power_key": "VoidForm"
       }
     ],
     "cards_draw": null,
@@ -7795,7 +7845,8 @@
     "powers_applied": [
       {
         "power": "Forme du serpent",
-        "amount": 4
+        "amount": 4,
+        "power_key": "SerpentForm"
       }
     ],
     "cards_draw": null,
@@ -7836,7 +7887,8 @@
     "powers_applied": [
       {
         "power": "Force",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -7914,11 +7966,13 @@
     "powers_applied": [
       {
         "power": "Intangible",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Intangible"
       },
       {
         "power": "Forme spectrale",
-        "amount": 1
+        "amount": 1,
+        "power_key": "WraithForm"
       }
     ],
     "cards_draw": null,
@@ -8593,7 +8647,8 @@
     "powers_applied": [
       {
         "power": "Focalisation",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -8792,7 +8847,8 @@
     "powers_applied": [
       {
         "power": "Force",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -9059,7 +9115,8 @@
     "powers_applied": [
       {
         "power": "Furtivité",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Sneaky"
       }
     ],
     "cards_draw": null,
@@ -9774,7 +9831,8 @@
     "powers_applied": [
       {
         "power": "Vulnérable",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -9817,11 +9875,13 @@
     "powers_applied": [
       {
         "power": "Affaibli",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       },
       {
         "power": "Vulnérable",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -10257,7 +10317,8 @@
     "powers_applied": [
       {
         "power": "Image rémanente",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Afterimage"
       }
     ],
     "cards_draw": null,
@@ -10513,7 +10574,8 @@
     "powers_applied": [
       {
         "power": "Influx neuronal",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Neurosurge"
       }
     ],
     "cards_draw": 2,
@@ -10662,7 +10724,8 @@
     "powers_applied": [
       {
         "power": "Vulnérable",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -10777,7 +10840,8 @@
     "powers_applied": [
       {
         "power": "Itération",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Iteration"
       }
     ],
     "cards_draw": null,
@@ -10960,7 +11024,8 @@
     "powers_applied": [
       {
         "power": "Dextérité",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -11110,7 +11175,8 @@
     "powers_applied": [
       {
         "power": "Mastodonte",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Juggernaut"
       }
     ],
     "cards_draw": null,
@@ -11477,7 +11543,8 @@
     "powers_applied": [
       {
         "power": "Force",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -11630,7 +11697,8 @@
     "powers_applied": [
       {
         "power": "Lames fantomatiques",
-        "amount": 9
+        "amount": 9,
+        "power_key": "PhantomBlades"
       }
     ],
     "cards_draw": null,
@@ -11845,7 +11913,8 @@
     "powers_applied": [
       {
         "power": "Liquide de refroidissement",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Coolant"
       }
     ],
     "cards_draw": null,
@@ -12103,7 +12172,8 @@
     "powers_applied": [
       {
         "power": "Létalité",
-        "amount": 50
+        "amount": 50,
+        "power_key": "Lethality"
       }
     ],
     "cards_draw": null,
@@ -12391,7 +12461,8 @@
     "powers_applied": [
       {
         "power": "Manteau pourpre",
-        "amount": 8
+        "amount": 8,
+        "power_key": "CrimsonMantle"
       }
     ],
     "cards_draw": null,
@@ -12471,7 +12542,8 @@
     "powers_applied": [
       {
         "power": "Force",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -12952,7 +13024,8 @@
     "powers_applied": [
       {
         "power": "Poison",
-        "amount": 7
+        "amount": 7,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -13248,7 +13321,8 @@
     "powers_applied": [
       {
         "power": "Affaibli",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -13396,7 +13470,8 @@
     "powers_applied": [
       {
         "power": "Fatalité",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -13476,7 +13551,8 @@
     "powers_applied": [
       {
         "power": "Ombre dévorante",
-        "amount": 1
+        "amount": 1,
+        "power_key": "ConsumingShadow"
       }
     ],
     "cards_draw": null,
@@ -13590,7 +13666,8 @@
     "powers_applied": [
       {
         "power": "Tempête",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Storm"
       }
     ],
     "cards_draw": null,
@@ -13846,7 +13923,8 @@
     "powers_applied": [
       {
         "power": "Parade",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Parry"
       }
     ],
     "cards_draw": null,
@@ -13889,7 +13967,8 @@
     "powers_applied": [
       {
         "power": "Paratonnerre",
-        "amount": 2
+        "amount": 2,
+        "power_key": "LightningRod"
       }
     ],
     "cards_draw": null,
@@ -13966,7 +14045,8 @@
     "powers_applied": [
       {
         "power": "Paresse",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Sloth"
       }
     ],
     "cards_draw": null,
@@ -14330,7 +14410,8 @@
     "powers_applied": [
       {
         "power": "Fatalité",
-        "amount": 13
+        "amount": 13,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": 1,
@@ -14373,7 +14454,8 @@
     "powers_applied": [
       {
         "power": "Vigueur",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vigor"
       }
     ],
     "cards_draw": null,
@@ -14452,7 +14534,8 @@
     "powers_applied": [
       {
         "power": "Pierre qui roule",
-        "amount": 5
+        "amount": 5,
+        "power_key": "RollingBoulder"
       }
     ],
     "cards_draw": null,
@@ -14884,7 +14967,8 @@
     "powers_applied": [
       {
         "power": "Pluie de grêlons",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Hailstorm"
       }
     ],
     "cards_draw": null,
@@ -14925,11 +15009,13 @@
     "powers_applied": [
       {
         "power": "Vulnérable",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       },
       {
         "power": "Affaibli",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -15046,7 +15132,8 @@
     "powers_applied": [
       {
         "power": "Poison",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -15272,7 +15359,8 @@
     "powers_applied": [
       {
         "power": "Poison",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -15350,11 +15438,13 @@
     "powers_applied": [
       {
         "power": "Fatalité",
-        "amount": 21
+        "amount": 21,
+        "power_key": "Doom"
       },
       {
         "power": "Affaibli",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -15471,7 +15561,8 @@
     "powers_applied": [
       {
         "power": "Prise au sol",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Grapple"
       }
     ],
     "cards_draw": null,
@@ -15514,11 +15605,13 @@
     "powers_applied": [
       {
         "power": "Force",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       },
       {
         "power": "Dextérité",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -15785,11 +15878,13 @@
     "powers_applied": [
       {
         "power": "Force",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       },
       {
         "power": "Dextérité",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -15833,7 +15928,8 @@
     "powers_applied": [
       {
         "power": "Vulnérable",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -15913,7 +16009,8 @@
     "powers_applied": [
       {
         "power": "Précision",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Accuracy"
       }
     ],
     "cards_draw": null,
@@ -16416,7 +16513,8 @@
     "powers_applied": [
       {
         "power": "Vulnérable",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -16786,7 +16884,8 @@
     "powers_applied": [
       {
         "power": "À terre",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Knockdown"
       }
     ],
     "cards_draw": null,
@@ -16829,7 +16928,8 @@
     "powers_applied": [
       {
         "power": "Force",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -17081,7 +17181,8 @@
     "powers_applied": [
       {
         "power": "Force",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -17339,7 +17440,8 @@
     "powers_applied": [
       {
         "power": "Affaibli",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -17384,7 +17486,8 @@
     "powers_applied": [
       {
         "power": "Force",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -17532,7 +17635,8 @@
     "powers_applied": [
       {
         "power": "Sage à l'épée",
-        "amount": 1
+        "amount": 1,
+        "power_key": "SwordSage"
       }
     ],
     "cards_draw": null,
@@ -17756,7 +17860,8 @@
     "powers_applied": [
       {
         "power": "Sauvagerie",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Feral"
       }
     ],
     "cards_draw": null,
@@ -18092,7 +18197,8 @@
     "powers_applied": [
       {
         "power": "Sentinelle",
-        "amount": 1
+        "amount": 1,
+        "power_key": "SentryMode"
       }
     ],
     "cards_draw": null,
@@ -18416,7 +18522,8 @@
     "powers_applied": [
       {
         "power": "Strangulation",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strangle"
       }
     ],
     "cards_draw": null,
@@ -18676,7 +18783,8 @@
     "powers_applied": [
       {
         "power": "Fatalité",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -18937,7 +19045,8 @@
     "powers_applied": [
       {
         "power": "Tambour de guerre",
-        "amount": 1
+        "amount": 1,
+        "power_key": "DrumOfBattle"
       }
     ],
     "cards_draw": 2,
@@ -18979,7 +19088,8 @@
     "powers_applied": [
       {
         "power": "Tampon",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Buffer"
       }
     ],
     "cards_draw": null,
@@ -19192,7 +19302,8 @@
     "powers_applied": [
       {
         "power": "Vigueur",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Vigor"
       }
     ],
     "cards_draw": null,
@@ -19233,7 +19344,8 @@
     "powers_applied": [
       {
         "power": "Vulnérable",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -19315,7 +19427,8 @@
     "powers_applied": [
       {
         "power": "Tonnerre",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Thunder"
       }
     ],
     "cards_draw": null,
@@ -19356,7 +19469,8 @@
     "powers_applied": [
       {
         "power": "Vulnérable",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -19440,7 +19554,8 @@
     "powers_applied": [
       {
         "power": "Tisserand",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Spinner"
       }
     ],
     "cards_draw": null,
@@ -19479,7 +19594,8 @@
     "powers_applied": [
       {
         "power": "Tour de chair",
-        "amount": 9
+        "amount": 9,
+        "power_key": "SleightOfFlesh"
       }
     ],
     "cards_draw": null,
@@ -19767,7 +19883,8 @@
     "powers_applied": [
       {
         "power": "Trou noir",
-        "amount": 3
+        "amount": 3,
+        "power_key": "BlackHole"
       }
     ],
     "cards_draw": null,
@@ -19980,7 +20097,8 @@
     "powers_applied": [
       {
         "power": "Focalisation",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -20205,7 +20323,8 @@
     "powers_applied": [
       {
         "power": "Affaibli",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -20283,7 +20402,8 @@
     "powers_applied": [
       {
         "power": "Poison",
-        "amount": 9
+        "amount": 9,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -20431,7 +20551,8 @@
     "powers_applied": [
       {
         "power": "Force",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -20511,7 +20632,8 @@
     "powers_applied": [
       {
         "power": "Affaibli",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -20808,7 +20930,8 @@
     "powers_applied": [
       {
         "power": "À l'attaque !",
-        "amount": 2
+        "amount": 2,
+        "power_key": "SicEm"
       }
     ],
     "cards_draw": null,
@@ -20892,7 +21015,8 @@
     "powers_applied": [
       {
         "power": "Préparatifs",
-        "amount": 4
+        "amount": 4,
+        "power_key": "PrepTime"
       }
     ],
     "cards_draw": null,
@@ -21040,7 +21164,8 @@
     "powers_applied": [
       {
         "power": "Blindage",
-        "amount": 8
+        "amount": 8,
+        "power_key": "Plating"
       }
     ],
     "cards_draw": null,
@@ -21117,7 +21242,8 @@
     "powers_applied": [
       {
         "power": "Épidémie",
-        "amount": 11
+        "amount": 11,
+        "power_key": "Outbreak"
       }
     ],
     "cards_draw": null,

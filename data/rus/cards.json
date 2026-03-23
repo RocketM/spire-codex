@@ -304,7 +304,8 @@
     "powers_applied": [
       {
         "power": "Алая мантия",
-        "amount": 8
+        "amount": 8,
+        "power_key": "CrimsonMantle"
       }
     ],
     "cards_draw": null,
@@ -629,7 +630,8 @@
     "powers_applied": [
       {
         "power": "Арсенал",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Arsenal"
       }
     ],
     "cards_draw": null,
@@ -706,7 +708,8 @@
     "powers_applied": [
       {
         "power": "Асфиксия",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strangle"
       }
     ],
     "cards_draw": null,
@@ -1102,7 +1105,8 @@
     "powers_applied": [
       {
         "power": "Злой рок",
-        "amount": 13
+        "amount": 13,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": 1,
@@ -1720,7 +1724,8 @@
     "powers_applied": [
       {
         "power": "Буфер",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Buffer"
       }
     ],
     "cards_draw": null,
@@ -2125,11 +2130,13 @@
     "powers_applied": [
       {
         "power": "Злой рок",
-        "amount": 21
+        "amount": 21,
+        "power_key": "Doom"
       },
       {
         "power": "Слабость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -2172,7 +2179,8 @@
     "powers_applied": [
       {
         "power": "Сила",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -2249,7 +2257,8 @@
     "powers_applied": [
       {
         "power": "Взять",
-        "amount": 2
+        "amount": 2,
+        "power_key": "SicEm"
       }
     ],
     "cards_draw": null,
@@ -2331,7 +2340,8 @@
     "powers_applied": [
       {
         "power": "Уязвимость",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -2445,7 +2455,8 @@
     "powers_applied": [
       {
         "power": "Сила",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -2882,7 +2893,8 @@
     "powers_applied": [
       {
         "power": "Сила",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -2999,11 +3011,13 @@
     "powers_applied": [
       {
         "power": "Уязвимость",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       },
       {
         "power": "Слабость",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -3159,7 +3173,8 @@
     "powers_applied": [
       {
         "power": "Фокус",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -3308,7 +3323,8 @@
     "powers_applied": [
       {
         "power": "Гонка",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Speedster"
       }
     ],
     "cards_draw": null,
@@ -3349,7 +3365,8 @@
     "powers_applied": [
       {
         "power": "Град",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Hailstorm"
       }
     ],
     "cards_draw": null,
@@ -3390,7 +3407,8 @@
     "powers_applied": [
       {
         "power": "Ловкость",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -3431,7 +3449,8 @@
     "powers_applied": [
       {
         "power": "Гром",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Thunder"
       }
     ],
     "cards_draw": null,
@@ -3472,7 +3491,8 @@
     "powers_applied": [
       {
         "power": "Громоотвод",
-        "amount": 2
+        "amount": 2,
+        "power_key": "LightningRod"
       }
     ],
     "cards_draw": null,
@@ -3626,7 +3646,8 @@
     "powers_applied": [
       {
         "power": "Уязвимость",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -3669,7 +3690,8 @@
     "powers_applied": [
       {
         "power": "Уязвимость",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -3970,7 +3992,8 @@
     "powers_applied": [
       {
         "power": "Фокус",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -4047,11 +4070,13 @@
     "powers_applied": [
       {
         "power": "Шипы",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Thorns"
       },
       {
         "power": "Ловкость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -4096,7 +4121,8 @@
     "powers_applied": [
       {
         "power": "Дикость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Feral"
       }
     ],
     "cards_draw": null,
@@ -4172,7 +4198,8 @@
     "powers_applied": [
       {
         "power": "Слабость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -4252,7 +4279,8 @@
     "powers_applied": [
       {
         "power": "Дозор",
-        "amount": 1
+        "amount": 1,
+        "power_key": "SentryMode"
       }
     ],
     "cards_draw": null,
@@ -4477,7 +4505,8 @@
     "powers_applied": [
       {
         "power": "Яд",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -4520,7 +4549,8 @@
     "powers_applied": [
       {
         "power": "Дымоход",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Smokestack"
       }
     ],
     "cards_draw": null,
@@ -4632,7 +4662,8 @@
     "powers_applied": [
       {
         "power": "Шипы",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Thorns"
       }
     ],
     "cards_draw": null,
@@ -4923,7 +4954,8 @@
     "powers_applied": [
       {
         "power": "Жестокость",
-        "amount": 25
+        "amount": 25,
+        "power_key": "Cruelty"
       }
     ],
     "cards_draw": null,
@@ -5070,7 +5102,8 @@
     "powers_applied": [
       {
         "power": "Злой рок",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -5181,7 +5214,8 @@
     "powers_applied": [
       {
         "power": "Загнивающий рассудок",
-        "amount": 1
+        "amount": 1,
+        "power_key": "MindRot"
       }
     ],
     "cards_draw": null,
@@ -5581,7 +5615,8 @@
     "powers_applied": [
       {
         "power": "Слабость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -5702,7 +5737,8 @@
     "powers_applied": [
       {
         "power": "Захват",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Grapple"
       }
     ],
     "cards_draw": null,
@@ -5997,7 +6033,8 @@
     "powers_applied": [
       {
         "power": "Яд",
-        "amount": 7
+        "amount": 7,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -6040,11 +6077,13 @@
     "powers_applied": [
       {
         "power": "Слабость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       },
       {
         "power": "Уязвимость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -6369,7 +6408,8 @@
     "powers_applied": [
       {
         "power": "Изнурение",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Debilitate"
       }
     ],
     "cards_draw": null,
@@ -6668,7 +6708,8 @@
     "powers_applied": [
       {
         "power": "Панцирь",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Plating"
       }
     ],
     "cards_draw": null,
@@ -6709,7 +6750,8 @@
     "powers_applied": [
       {
         "power": "Каменная лавина",
-        "amount": 5
+        "amount": 5,
+        "power_key": "RollingBoulder"
       }
     ],
     "cards_draw": null,
@@ -7027,7 +7069,8 @@
     "powers_applied": [
       {
         "power": "Сила",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -7324,11 +7367,13 @@
     "powers_applied": [
       {
         "power": "Уязвимость",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Vulnerable"
       },
       {
         "power": "Слабость",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -7445,7 +7490,8 @@
     "powers_applied": [
       {
         "power": "Злой рок",
-        "amount": 29
+        "amount": 29,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -7997,7 +8043,8 @@
     "powers_applied": [
       {
         "power": "Кромешный ад",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Inferno"
       }
     ],
     "cards_draw": null,
@@ -8288,7 +8335,8 @@
     "powers_applied": [
       {
         "power": "Лень",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Sloth"
       }
     ],
     "cards_draw": null,
@@ -8582,7 +8630,8 @@
     "powers_applied": [
       {
         "power": "Уязвимость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -8700,7 +8749,8 @@
     "powers_applied": [
       {
         "power": "Мастер меча",
-        "amount": 1
+        "amount": 1,
+        "power_key": "SwordSage"
       }
     ],
     "cards_draw": null,
@@ -8815,7 +8865,8 @@
     "powers_applied": [
       {
         "power": "Махина",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Juggernaut"
       }
     ],
     "cards_draw": null,
@@ -9042,11 +9093,13 @@
     "powers_applied": [
       {
         "power": "Уязвимость",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       },
       {
         "power": "Слабость",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -9128,7 +9181,8 @@
     "powers_applied": [
       {
         "power": "Меткость",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Accuracy"
       }
     ],
     "cards_draw": null,
@@ -9319,7 +9373,8 @@
     "powers_applied": [
       {
         "power": "Мозговой штурм",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Neurosurge"
       }
     ],
     "cards_draw": 2,
@@ -9470,7 +9525,8 @@
     "powers_applied": [
       {
         "power": "Злой рок",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -9654,7 +9710,8 @@
     "powers_applied": [
       {
         "power": "Сила",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -9767,7 +9824,8 @@
     "powers_applied": [
       {
         "power": "Наповал",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Knockdown"
       }
     ],
     "cards_draw": null,
@@ -9845,7 +9903,8 @@
     "powers_applied": [
       {
         "power": "Уязвимость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -10029,7 +10088,8 @@
     "powers_applied": [
       {
         "power": "Небытие",
-        "amount": 1
+        "amount": 1,
+        "power_key": "WasteAway"
       }
     ],
     "cards_draw": null,
@@ -10140,7 +10200,8 @@
     "powers_applied": [
       {
         "power": "Панцирь",
-        "amount": 8
+        "amount": 8,
+        "power_key": "Plating"
       }
     ],
     "cards_draw": null,
@@ -10182,7 +10243,8 @@
     "powers_applied": [
       {
         "power": "Ненасытная тень",
-        "amount": 1
+        "amount": 1,
+        "power_key": "ConsumingShadow"
       }
     ],
     "cards_draw": null,
@@ -10257,7 +10319,8 @@
     "powers_applied": [
       {
         "power": "Слабость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -10445,7 +10508,8 @@
     "powers_applied": [
       {
         "power": "Панцирь",
-        "amount": 7
+        "amount": 7,
+        "power_key": "Plating"
       }
     ],
     "cards_draw": null,
@@ -10630,7 +10694,8 @@
     "powers_applied": [
       {
         "power": "Сила",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -10813,7 +10878,8 @@
     "powers_applied": [
       {
         "power": "Слабость",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -10891,7 +10957,8 @@
     "powers_applied": [
       {
         "power": "Слабость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -10972,7 +11039,8 @@
     "powers_applied": [
       {
         "power": "Облик бездны",
-        "amount": 2
+        "amount": 2,
+        "power_key": "VoidForm"
       }
     ],
     "cards_draw": null,
@@ -11013,7 +11081,8 @@
     "powers_applied": [
       {
         "power": "Сила",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -11087,7 +11156,8 @@
     "powers_applied": [
       {
         "power": "Облик змеи",
-        "amount": 4
+        "amount": 4,
+        "power_key": "SerpentForm"
       }
     ],
     "cards_draw": null,
@@ -11128,11 +11198,13 @@
     "powers_applied": [
       {
         "power": "Неосязаемость",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Intangible"
       },
       {
         "power": "Облик призрака",
-        "amount": 1
+        "amount": 1,
+        "power_key": "WraithForm"
       }
     ],
     "cards_draw": null,
@@ -11245,7 +11317,8 @@
     "powers_applied": [
       {
         "power": "Фокус",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -11471,7 +11544,8 @@
     "powers_applied": [
       {
         "power": "Обратный отсчет",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Countdown"
       }
     ],
     "cards_draw": null,
@@ -11903,7 +11977,8 @@
     "powers_applied": [
       {
         "power": "Окостенение",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Calcify"
       }
     ],
     "cards_draw": null,
@@ -12227,7 +12302,8 @@
     "powers_applied": [
       {
         "power": "Отравление",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Envenom"
       }
     ],
     "cards_draw": null,
@@ -12268,7 +12344,8 @@
     "powers_applied": [
       {
         "power": "Яд",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -12384,7 +12461,8 @@
     "powers_applied": [
       {
         "power": "Злой рок",
-        "amount": 7
+        "amount": 7,
+        "power_key": "Doom"
       }
     ],
     "cards_draw": null,
@@ -12571,7 +12649,8 @@
     "powers_applied": [
       {
         "power": "Охлаждение",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Coolant"
       }
     ],
     "cards_draw": null,
@@ -12684,11 +12763,13 @@
     "powers_applied": [
       {
         "power": "Уязвимость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       },
       {
         "power": "Слабость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -12769,7 +12850,8 @@
     "powers_applied": [
       {
         "power": "Парирование",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Parry"
       }
     ],
     "cards_draw": null,
@@ -13108,7 +13190,8 @@
     "powers_applied": [
       {
         "power": "Бодрость",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vigor"
       }
     ],
     "cards_draw": null,
@@ -13329,7 +13412,8 @@
     "powers_applied": [
       {
         "power": "Пляска смерти",
-        "amount": 3
+        "amount": 3,
+        "power_key": "DanseMacabre"
       }
     ],
     "cards_draw": null,
@@ -13515,7 +13599,8 @@
     "powers_applied": [
       {
         "power": "Податливая плоть",
-        "amount": 9
+        "amount": 9,
+        "power_key": "SleightOfFlesh"
       }
     ],
     "cards_draw": null,
@@ -13556,7 +13641,8 @@
     "powers_applied": [
       {
         "power": "Подготовка",
-        "amount": 4
+        "amount": 4,
+        "power_key": "PrepTime"
       }
     ],
     "cards_draw": null,
@@ -13674,7 +13760,8 @@
     "powers_applied": [
       {
         "power": "Слабость",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -13795,7 +13882,8 @@
     "powers_applied": [
       {
         "power": "Пожиратель жизни",
-        "amount": 1
+        "amount": 1,
+        "power_key": "DevourLife"
       }
     ],
     "cards_draw": null,
@@ -14345,11 +14433,13 @@
     "powers_applied": [
       {
         "power": "Фокус",
-        "amount": 4
+        "amount": 4,
+        "power_key": "Focus"
       },
       {
         "power": "Предвзятость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "BiasedCognition"
       }
     ],
     "cards_draw": null,
@@ -14604,7 +14694,8 @@
     "powers_applied": [
       {
         "power": "Неосязаемость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Intangible"
       }
     ],
     "cards_draw": null,
@@ -14681,7 +14772,8 @@
     "powers_applied": [
       {
         "power": "Призрачные клинки",
-        "amount": 9
+        "amount": 9,
+        "power_key": "PhantomBlades"
       }
     ],
     "cards_draw": null,
@@ -14759,7 +14851,8 @@
     "powers_applied": [
       {
         "power": "Пробы и ошибки",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Iteration"
       }
     ],
     "cards_draw": null,
@@ -14979,7 +15072,8 @@
     "powers_applied": [
       {
         "power": "Уязвимость",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -15733,7 +15827,8 @@
     "powers_applied": [
       {
         "power": "Уязвимость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -15887,7 +15982,8 @@
     "powers_applied": [
       {
         "power": "Расщепление",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Disintegration"
       }
     ],
     "cards_draw": null,
@@ -15963,7 +16059,8 @@
     "powers_applied": [
       {
         "power": "Сила",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -16080,7 +16177,8 @@
     "powers_applied": [
       {
         "power": "Ритм битвы",
-        "amount": 1
+        "amount": 1,
+        "power_key": "DrumOfBattle"
       }
     ],
     "cards_draw": 2,
@@ -16849,7 +16947,8 @@
     "powers_applied": [
       {
         "power": "Яд",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -17001,7 +17100,8 @@
     "powers_applied": [
       {
         "power": "Скрытность",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Sneaky"
       }
     ],
     "cards_draw": null,
@@ -17117,7 +17217,8 @@
     "powers_applied": [
       {
         "power": "Сила",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -17158,7 +17259,8 @@
     "powers_applied": [
       {
         "power": "След в воздухе",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Afterimage"
       }
     ],
     "cards_draw": null,
@@ -17417,7 +17519,8 @@
     "powers_applied": [
       {
         "power": "Яд",
-        "amount": 5
+        "amount": 5,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -17458,7 +17561,8 @@
     "powers_applied": [
       {
         "power": "Смертоубийство",
-        "amount": 50
+        "amount": 50,
+        "power_key": "Lethality"
       }
     ],
     "cards_draw": null,
@@ -17675,7 +17779,8 @@
     "powers_applied": [
       {
         "power": "Слабость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -17751,7 +17856,8 @@
     "powers_applied": [
       {
         "power": "Спиннер",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Spinner"
       }
     ],
     "cards_draw": null,
@@ -18183,7 +18289,8 @@
     "powers_applied": [
       {
         "power": "Уязвимость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -18440,7 +18547,8 @@
     "powers_applied": [
       {
         "power": "Отложенная звезда",
-        "amount": 3
+        "amount": 3,
+        "power_key": "StarNextTurn"
       }
     ],
     "cards_draw": null,
@@ -18768,7 +18876,8 @@
     "powers_applied": [
       {
         "power": "Бодрость",
-        "amount": 6
+        "amount": 6,
+        "power_key": "Vigor"
       }
     ],
     "cards_draw": null,
@@ -19031,7 +19140,8 @@
     "powers_applied": [
       {
         "power": "Яд",
-        "amount": 9
+        "amount": 9,
+        "power_key": "Poison"
       }
     ],
     "cards_draw": null,
@@ -19140,7 +19250,8 @@
     "powers_applied": [
       {
         "power": "Уязвимость",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -19290,7 +19401,8 @@
     "powers_applied": [
       {
         "power": "Уязвимость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Vulnerable"
       }
     ],
     "cards_draw": null,
@@ -19443,11 +19555,13 @@
     "powers_applied": [
       {
         "power": "Сила",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Strength"
       },
       {
         "power": "Ловкость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -19676,7 +19790,8 @@
     "powers_applied": [
       {
         "power": "Сила",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -19839,11 +19954,13 @@
     "powers_applied": [
       {
         "power": "Сила",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       },
       {
         "power": "Ловкость",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -20031,7 +20148,8 @@
     "powers_applied": [
       {
         "power": "Усиленный сигнал",
-        "amount": 1
+        "amount": 1,
+        "power_key": "SignalBoost"
       }
     ],
     "cards_draw": null,
@@ -20074,7 +20192,8 @@
     "powers_applied": [
       {
         "power": "Слабость",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -20227,7 +20346,8 @@
     "powers_applied": [
       {
         "power": "Фокус",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Focus"
       }
     ],
     "cards_draw": null,
@@ -20628,7 +20748,8 @@
     "powers_applied": [
       {
         "power": "Слабость",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Weak"
       }
     ],
     "cards_draw": null,
@@ -20737,7 +20858,8 @@
     "powers_applied": [
       {
         "power": "Черная дыра",
-        "amount": 3
+        "amount": 3,
+        "power_key": "BlackHole"
       }
     ],
     "cards_draw": null,
@@ -20814,7 +20936,8 @@
     "powers_applied": [
       {
         "power": "Сила",
-        "amount": 2
+        "amount": 2,
+        "power_key": "Strength"
       }
     ],
     "cards_draw": null,
@@ -20960,7 +21083,8 @@
     "powers_applied": [
       {
         "power": "Ловкость",
-        "amount": 3
+        "amount": 3,
+        "power_key": "Dexterity"
       }
     ],
     "cards_draw": null,
@@ -21109,7 +21233,8 @@
     "powers_applied": [
       {
         "power": "Шторм",
-        "amount": 1
+        "amount": 1,
+        "power_key": "Storm"
       }
     ],
     "cards_draw": null,
@@ -21297,7 +21422,8 @@
     "powers_applied": [
       {
         "power": "Эпидемия",
-        "amount": 11
+        "amount": 11,
+        "power_key": "Outbreak"
       }
     ],
     "cards_draw": null,
