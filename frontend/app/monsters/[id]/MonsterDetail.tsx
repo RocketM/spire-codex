@@ -178,7 +178,7 @@ export default function MonsterDetail() {
                       {val.hit_count ? ` × ${val.hit_count}` : ""}
                       {val.hit_count ? <span className="text-xs text-[var(--text-muted)] font-normal ml-1">= {val.normal * val.hit_count}</span> : null}
                     </span>
-                    {val.ascension !== undefined && (
+                    {val.ascension != null && (
                       <>
                         <span className="text-[var(--text-muted)]">|</span>
                         <span className="font-medium text-orange-400">
