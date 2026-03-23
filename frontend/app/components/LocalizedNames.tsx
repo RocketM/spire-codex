@@ -22,7 +22,7 @@ export default function LocalizedNames({ entityType, entityId }: LocalizedNamesP
   }, [open, entityType, entityId, names]);
 
   return (
-    <div className="mt-4 border-t border-[var(--border-subtle)] pt-4">
+    <div className="mt-4">
       <button
         onClick={() => setOpen(!open)}
         className="text-xs text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors flex items-center gap-1"
