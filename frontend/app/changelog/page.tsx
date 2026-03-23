@@ -173,6 +173,7 @@ export default function ChangelogPage() {
   const [changelogs, setChangelogs] = useState<ChangelogSummary[]>([]);
   const [selected, setSelected] = useState<ChangelogDetail | null>(null);
   const [loading, setLoading] = useState(true);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     fetch(`${API}/api/changelogs`)
@@ -183,23 +184,51 @@ export default function ChangelogPage() {
       .then((data: ChangelogSummary[]) => {
         if (!Array.isArray(data) || data.length === 0) return;
         setChangelogs(data);
-        const firstTag = data[0].tag || data[0].game_version;
-        if (firstTag) {
-          fetch(`${API}/api/changelogs/${firstTag}`)
-            .then((r) => (r.ok ? r.json() : null))
-            .then((d) => d && setSelected(d));
+        // Check URL hash for a specific version (e.g., #1.0.6)
+        const hash = window.location.hash.replace("#", "");
+        const targetTag = hash && data.some((d) => d.tag === hash)
+          ? hash
+          : data[0].tag || data[0].game_version;
+        if (targetTag) {
+          loadVersionDirect(targetTag);
         }
       })
       .catch(() => {})
       .finally(() => setLoading(false));
   }, []);
 
-  function loadVersion(tag: string) {
+  // Listen for hash changes (browser back/forward)
+  useEffect(() => {
+    function onHashChange() {
+      const hash = window.location.hash.replace("#", "");
+      if (hash && changelogs.some((c) => c.tag === hash)) {
+        loadVersionDirect(hash);
+      }
+    }
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
+  }, [changelogs]);
+
+  function loadVersionDirect(tag: string) {
     setSelected(null);
     fetch(`${API}/api/changelogs/${tag}`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setSelected(d))
       .catch(() => {});
+  }
+
+  function loadVersion(tag: string) {
+    window.history.pushState(null, "", `#${tag}`);
+    loadVersionDirect(tag);
+  }
+
+  function copyLink() {
+    if (!selected) return;
+    const url = `${window.location.origin}/changelog#${selected.tag}`;
+    navigator.clipboard.writeText(url).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
   }
 
   return (
@@ -250,11 +279,18 @@ export default function ChangelogPage() {
             {selected ? (
               <>
                 <div className="mb-6">
-                  <div className="flex items-baseline gap-3 mb-1">
+                  <div className="flex items-center gap-3 mb-1">
                     <h2 className="text-xl font-bold text-[var(--text-primary)]">
                       v{selected.game_version}
                     </h2>
                     <span className="text-sm text-[var(--text-muted)]">{selected.date}</span>
+                    <button
+                      onClick={copyLink}
+                      className="ml-auto text-xs px-2.5 py-1 rounded-lg border border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--text-primary)] hover:border-[var(--border-accent)] transition-colors"
+                      title="Copy link to this version"
+                    >
+                      {copied ? "Copied!" : "Share"}
+                    </button>
                   </div>
                   <p className="text-sm text-[var(--text-secondary)] mb-2">{selected.title}</p>
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-[var(--text-muted)] mb-3">
