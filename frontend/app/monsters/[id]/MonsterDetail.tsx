@@ -174,7 +174,7 @@ export default function MonsterDetail() {
                   </span>
                   <div className="flex items-center gap-4">
                     <span className="text-sm font-medium text-red-400">
-                      {val.normal}{val.hit_count ? ` ×${val.hit_count}` : ""}
+                      {val.normal}{val.hit_count ? ` × ${val.hit_count}` : ""}
                     </span>
                     {val.hit_count && (
                       <span className="text-xs text-[var(--text-muted)]">
@@ -183,7 +183,7 @@ export default function MonsterDetail() {
                     )}
                     {val.ascension !== undefined && (
                       <span className="text-sm font-medium text-orange-400">
-                        A: {val.ascension}{val.hit_count ? ` ×${val.hit_count}` : ""}
+                        A: {val.ascension}{val.hit_count ? ` × ${val.hit_count}` : ""}
                       </span>
                     )}
                     {val.ascension !== undefined && val.hit_count && (
