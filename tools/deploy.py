@@ -263,39 +263,78 @@ def build_indexnow_urls() -> list[str]:
     for kw in ["exhaust", "ethereal", "innate", "retain", "sly", "eternal", "unplayable"]:
         urls.append(f"{SITE_URL}/keywords/{kw}")
 
-    # Cap at 10,000 (IndexNow limit)
-    return urls[:10000]
+    # Localized pages (13 languages)
+    LANGS = ["deu", "esp", "fra", "ita", "jpn", "kor", "pol", "ptb", "rus", "spa", "tha", "tur", "zhs"]
+    LANG_ENTITY_ROUTES = ["cards", "relics", "potions", "monsters", "powers", "events", "characters"]
+
+    for lang in LANGS:
+        # Landing + list pages
+        urls.append(f"{SITE_URL}/{lang}")
+        for route in LANG_ENTITY_ROUTES:
+            urls.append(f"{SITE_URL}/{lang}/{route}")
+
+        # Localized detail pages
+        for filename, route in entity_routes.items():
+            if route not in LANG_ENTITY_ROUTES:
+                continue
+            data_file = DATA_DIR / "eng" / f"{filename}.json"
+            if not data_file.exists():
+                data_file = DATA_DIR / f"{filename}.json"
+            if data_file.exists():
+                try:
+                    with open(data_file, "r") as f:
+                        entities = json.load(f)
+                    for entity in entities:
+                        entity_id = entity.get("id", "").lower()
+                        if entity_id:
+                            urls.append(f"{SITE_URL}/{lang}/{route}/{entity_id}")
+                except Exception:
+                    pass
+
+    # Cap at 10,000 (IndexNow limit per request)
+    # If over, split into multiple batches
+    return urls
 
 
 def ping_indexnow():
     """Notify Bing, Yandex, and other IndexNow-participating engines about updated pages."""
-    urls = build_indexnow_urls()
+    all_urls = build_indexnow_urls()
 
     print(f"\n{'='*60}")
-    print(f"  Pinging IndexNow ({len(urls)} URLs)")
+    print(f"  Pinging IndexNow ({len(all_urls)} URLs)")
     print(f"{'='*60}")
 
-    payload = json.dumps({
-        "host": SITE_HOST,
-        "key": INDEXNOW_KEY,
-        "keyLocation": f"{SITE_URL}/{INDEXNOW_KEY}.txt",
-        "urlList": urls,
-    }).encode("utf-8")
+    # IndexNow accepts max 10,000 URLs per request — batch if needed
+    BATCH_SIZE = 10000
+    for i in range(0, len(all_urls), BATCH_SIZE):
+        batch = all_urls[i:i + BATCH_SIZE]
+        batch_num = i // BATCH_SIZE + 1
+        total_batches = (len(all_urls) + BATCH_SIZE - 1) // BATCH_SIZE
 
-    req = urllib.request.Request(
-        "https://api.indexnow.org/indexnow",
-        data=payload,
-        headers={"Content-Type": "application/json"},
-        method="POST",
-    )
+        if total_batches > 1:
+            print(f"  Batch {batch_num}/{total_batches} ({len(batch)} URLs)")
 
-    try:
-        resp = urllib.request.urlopen(req, timeout=30)
-        print(f"  ✓ IndexNow responded: {resp.status}")
-    except urllib.error.HTTPError as e:
-        print(f"  ✗ IndexNow error: {e.code} {e.reason}")
-    except Exception as e:
-        print(f"  ✗ IndexNow failed: {e}")
+        payload = json.dumps({
+            "host": SITE_HOST,
+            "key": INDEXNOW_KEY,
+            "keyLocation": f"{SITE_URL}/{INDEXNOW_KEY}.txt",
+            "urlList": batch,
+        }).encode("utf-8")
+
+        req = urllib.request.Request(
+            "https://api.indexnow.org/indexnow",
+            data=payload,
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+
+        try:
+            resp = urllib.request.urlopen(req, timeout=30)
+            print(f"  ✓ IndexNow responded: {resp.status}")
+        except urllib.error.HTTPError as e:
+            print(f"  ✗ IndexNow error: {e.code} {e.reason}")
+        except Exception as e:
+            print(f"  ✗ IndexNow failed: {e}")
 
 
 if __name__ == "__main__":
