@@ -66,6 +66,20 @@ const energyIconMap: Record<string, string> = {
   colorless: "colorless",
 };
 
+// Merchant price ranges
+function getMerchantPriceRange(rarity: string, color: string): { min: number; max: number } | null {
+  const isColorless = color === "colorless";
+  let base: number;
+  switch (rarity) {
+    case "Common": base = 50; break;
+    case "Uncommon": base = 75; break;
+    case "Rare": base = 150; break;
+    default: return null;
+  }
+  if (isColorless) base = Math.round(base * 1.15);
+  return { min: Math.floor(base * 0.95), max: Math.ceil(base * 1.05) };
+}
+
 function getUpgradedValue(
   base: number | null,
   upgradeVal: string | number | null | undefined
@@ -108,6 +122,8 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
   return desc;
 }
 
+type Tab = "overview" | "details" | "info";
+
 export default function CardDetail() {
   const params = useParams();
   const id = params.id as string;
@@ -119,6 +135,7 @@ export default function CardDetail() {
   const [notFound, setNotFound] = useState(false);
   const [upgraded, setUpgraded] = useState(false);
   const [betaArt, setBetaArt] = useState(false);
+  const [tab, setTab] = useState<Tab>("overview");
 
   useEffect(() => {
     if (!id) return;
@@ -187,6 +204,13 @@ export default function CardDetail() {
 
   const descText = getUpgradedDescription(card, upgraded);
   const energyIcon = energyIconMap[card.color] || "colorless";
+  const priceRange = getMerchantPriceRange(card.rarity, card.color);
+
+  const tabs: { key: Tab; label: string }[] = [
+    { key: "overview", label: "Overview" },
+    { key: "details", label: "Details" },
+    { key: "info", label: "Info" },
+  ];
 
   return (
     <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -270,119 +294,28 @@ export default function CardDetail() {
             )}
           </div>
 
-          {/* Stats: DMG / BLK */}
-          {(dmg || blk) && (
-            <div className="flex gap-3 mb-5">
-              {dmg && (
-                <span
-                  className={`text-sm px-3 py-1 rounded border ${
-                    isUpgraded && u?.damage
-                      ? "bg-emerald-950/40 text-emerald-300 border-emerald-900/30"
-                      : "bg-red-950/50 text-red-300 border-red-900/30"
-                  }`}
-                >
-                  {dmg}
-                  {card.hit_count && card.hit_count > 1
-                    ? ` x${card.hit_count}`
-                    : ""}{" "}
-                  DMG
-                </span>
-              )}
-              {blk && (
-                <span
-                  className={`text-sm px-3 py-1 rounded border ${
-                    isUpgraded && u?.block
-                      ? "bg-emerald-950/40 text-emerald-300 border-emerald-900/30"
-                      : "bg-blue-950/50 text-blue-300 border-blue-900/30"
-                  }`}
-                >
-                  {blk} BLK
-                </span>
-              )}
-            </div>
-          )}
+          {/* Tabs */}
+          <div className="flex gap-1 mb-5 border-b border-[var(--border-subtle)]">
+            {tabs.map((t) => (
+              <button
+                key={t.key}
+                onClick={() => setTab(t.key)}
+                className={`px-3 py-2 text-sm font-medium transition-colors border-b-2 -mb-px ${
+                  tab === t.key
+                    ? "border-[var(--accent-gold)] text-[var(--accent-gold)]"
+                    : "border-transparent text-[var(--text-muted)] hover:text-[var(--text-secondary)]"
+                }`}
+              >
+                {t.label}
+              </button>
+            ))}
 
-          {/* Description */}
-          <div className="text-sm text-[var(--text-secondary)] leading-relaxed mb-5">
-            <RichDescription
-              text={descText}
-              energyIcon={energyIcon}
-              relatedCards={spawnedCards.map((sc): RelatedCard => ({
-                id: sc.id,
-                name: sc.name,
-                image_url: sc.image_url,
-                type: sc.type,
-                rarity: sc.rarity,
-                cost: sc.cost,
-              }))}
-            />
-          </div>
-
-          {/* Powers Applied */}
-          {card.powers_applied && card.powers_applied.length > 0 && (
-            <div className="mb-5">
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">
-                Powers Applied
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {card.powers_applied.map((pa) => {
-                  const powerId = pa.power.replace(/([A-Z])/g, "_$1").replace(/^_/, "").toUpperCase();
-                  return (
-                    <Link
-                      key={pa.power}
-                      href={`/powers/${powerId}`}
-                      className="text-xs px-2.5 py-1 rounded bg-purple-950/40 text-purple-300 border border-purple-900/30 hover:border-purple-700/50 hover:bg-purple-950/60 transition-colors"
-                    >
-                      {pa.power.replace(/([A-Z])/g, " $1").trim()}
-                      {pa.amount ? ` ${pa.amount}` : ""}
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
-          {/* Keywords */}
-          {card.keywords && card.keywords.length > 0 && (
-            <div className="flex flex-wrap gap-1.5 mb-5">
-              {card.keywords.map((kw) => (
-                <Link
-                  key={kw}
-                  href={`/keywords/${kw.toLowerCase()}`}
-                  className="text-xs px-2 py-1 rounded bg-[var(--bg-primary)] text-[var(--accent-gold-light)] border border-[var(--accent-gold)]/20 hover:border-[var(--accent-gold)]/50 transition-colors"
-                >
-                  {kw}
-                  {keywordTooltips[kw] && (
-                    <span className="text-[var(--text-muted)] ml-1.5">
-                      &mdash; {keywordTooltips[kw]}
-                    </span>
-                  )}
-                </Link>
-              ))}
-            </div>
-          )}
-
-          {/* Tags */}
-          {card.tags && card.tags.length > 0 && (
-            <div className="flex flex-wrap gap-1.5 mb-5">
-              {card.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="text-[11px] px-2 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--text-muted)] border border-[var(--border-subtle)]"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          )}
-
-          {/* Toggle buttons */}
-          {(hasBetaArt || hasUpgrade) && (
-            <div className="flex justify-end gap-2 pt-4">
+            {/* Toggle buttons in tab bar */}
+            <div className="ml-auto flex items-center gap-1.5">
               {hasBetaArt && (
                 <button
                   onClick={() => setBetaArt(!betaArt)}
-                  className={`text-base w-9 h-9 flex items-center justify-center rounded transition-colors ${
+                  className={`text-sm w-8 h-8 flex items-center justify-center rounded transition-colors ${
                     betaArt
                       ? "bg-amber-950/60 border border-amber-700/50"
                       : "bg-[var(--bg-primary)] border border-[var(--border-subtle)] opacity-50 hover:opacity-100"
@@ -395,7 +328,7 @@ export default function CardDetail() {
               {hasUpgrade && (
                 <button
                   onClick={() => setUpgraded(!upgraded)}
-                  className={`text-base w-9 h-9 flex items-center justify-center rounded transition-colors ${
+                  className={`text-sm w-8 h-8 flex items-center justify-center rounded transition-colors ${
                     upgraded
                       ? "bg-emerald-950/60 border border-emerald-700/50"
                       : "bg-[var(--bg-primary)] border border-[var(--border-subtle)] opacity-50 hover:opacity-100"
@@ -406,17 +339,156 @@ export default function CardDetail() {
                 </button>
               )}
             </div>
+          </div>
+
+          {/* ===== Overview Tab ===== */}
+          {tab === "overview" && (
+            <>
+              {/* Stats: DMG / BLK */}
+              {(dmg || blk) && (
+                <div className="flex gap-3 mb-5">
+                  {dmg && (
+                    <span
+                      className={`text-sm px-3 py-1 rounded border ${
+                        isUpgraded && u?.damage
+                          ? "bg-emerald-950/40 text-emerald-300 border-emerald-900/30"
+                          : "bg-red-950/50 text-red-300 border-red-900/30"
+                      }`}
+                    >
+                      {dmg}
+                      {card.hit_count && card.hit_count > 1
+                        ? ` x${card.hit_count}`
+                        : ""}{" "}
+                      DMG
+                    </span>
+                  )}
+                  {blk && (
+                    <span
+                      className={`text-sm px-3 py-1 rounded border ${
+                        isUpgraded && u?.block
+                          ? "bg-emerald-950/40 text-emerald-300 border-emerald-900/30"
+                          : "bg-blue-950/50 text-blue-300 border-blue-900/30"
+                      }`}
+                    >
+                      {blk} BLK
+                    </span>
+                  )}
+                </div>
+              )}
+
+              {/* Description */}
+              <div className="text-sm text-[var(--text-secondary)] leading-relaxed mb-5">
+                <RichDescription
+                  text={descText}
+                  energyIcon={energyIcon}
+                  relatedCards={spawnedCards.map((sc): RelatedCard => ({
+                    id: sc.id,
+                    name: sc.name,
+                    image_url: sc.image_url,
+                    type: sc.type,
+                    rarity: sc.rarity,
+                    cost: sc.cost,
+                  }))}
+                />
+              </div>
+
+              {/* Keywords */}
+              {card.keywords && card.keywords.length > 0 && (
+                <div className="flex flex-wrap gap-1.5 mb-5">
+                  {card.keywords.map((kw) => (
+                    <Link
+                      key={kw}
+                      href={`/keywords/${kw.toLowerCase()}`}
+                      className="text-xs px-2 py-1 rounded bg-[var(--bg-primary)] text-[var(--accent-gold-light)] border border-[var(--accent-gold)]/20 hover:border-[var(--accent-gold)]/50 transition-colors"
+                    >
+                      {kw}
+                      {keywordTooltips[kw] && (
+                        <span className="text-[var(--text-muted)] ml-1.5">
+                          &mdash; {keywordTooltips[kw]}
+                        </span>
+                      )}
+                    </Link>
+                  ))}
+                </div>
+              )}
+
+              {/* Tags */}
+              {card.tags && card.tags.length > 0 && (
+                <div className="flex flex-wrap gap-1.5">
+                  {card.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-[11px] px-2 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--text-muted)] border border-[var(--border-subtle)]"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </>
           )}
 
-          <RelatedCards
-            currentId={id}
-            keywords={card.keywords}
-            tags={card.tags}
-            color={card.color}
-          />
+          {/* ===== Details Tab ===== */}
+          {tab === "details" && (
+            <>
+              {/* Merchant Price */}
+              {priceRange && (
+                <div className="mb-5">
+                  <h3 className="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">
+                    Merchant Price
+                  </h3>
+                  <span className="text-sm px-3 py-1 rounded border bg-amber-950/30 text-[var(--accent-gold)] border-amber-900/30">
+                    {priceRange.min}–{priceRange.max} Gold
+                  </span>
+                  {card.color === "colorless" && (
+                    <span className="text-xs text-[var(--text-muted)] ml-2">
+                      (15% colorless markup)
+                    </span>
+                  )}
+                </div>
+              )}
 
-          <LocalizedNames entityType="cards" entityId={id} />
-          <EntityHistory entityType="cards" entityId={id} />
+              {/* Powers Applied */}
+              {card.powers_applied && card.powers_applied.length > 0 && (
+                <div className="mb-5">
+                  <h3 className="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">
+                    Powers Applied
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {card.powers_applied.map((pa) => {
+                      const powerId = pa.power.replace(/([A-Z])/g, "_$1").replace(/^_/, "").toUpperCase();
+                      return (
+                        <Link
+                          key={pa.power}
+                          href={`/powers/${powerId}`}
+                          className="text-xs px-2.5 py-1 rounded bg-purple-950/40 text-purple-300 border border-purple-900/30 hover:border-purple-700/50 hover:bg-purple-950/60 transition-colors"
+                        >
+                          {pa.power.replace(/([A-Z])/g, " $1").trim()}
+                          {pa.amount ? ` ${pa.amount}` : ""}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {/* Related Cards */}
+              <RelatedCards
+                currentId={id}
+                keywords={card.keywords}
+                tags={card.tags}
+                color={card.color}
+              />
+            </>
+          )}
+
+          {/* ===== Info Tab ===== */}
+          {tab === "info" && (
+            <>
+              <LocalizedNames entityType="cards" entityId={id} />
+              <EntityHistory entityType="cards" entityId={id} />
+            </>
+          )}
         </div>
       </div>
     </div>
