@@ -53,7 +53,7 @@ function countByField(cards: Card[], field: "type" | "rarity"): Record<string, n
   // Use the _key variant (English) for consistent counting across languages
   const keyField = field === "type" ? "type_key" : "rarity_key";
   for (const card of cards) {
-    const val = (card as Record<string, unknown>)[keyField] as string || card[field] || "Unknown";
+    const val = (card as unknown as Record<string, string>)[keyField] || card[field] || "Unknown";
     counts[val] = (counts[val] || 0) + 1;
   }
   return counts;
