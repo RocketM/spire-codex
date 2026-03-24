@@ -96,7 +96,7 @@ export default async function LangKeywordsPage({ params }: { params: Promise<{ l
         Card Keywords
       </h1>
       <p className="text-[var(--text-secondary)] mb-8">
-        Keywords define special behaviors for cards in ${gameName}. Click a keyword to see all cards with that keyword.
+        Keywords define special behaviors for cards in {gameName}. Click a keyword to see all cards with that keyword.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
