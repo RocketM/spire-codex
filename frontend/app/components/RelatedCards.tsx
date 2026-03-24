@@ -6,6 +6,7 @@ import type { Card } from "@/lib/api";
 import { cachedFetch } from "@/lib/fetch-cache";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import { t } from "@/lib/ui-translations";
+import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -23,6 +24,7 @@ interface RelatedGroup {
 
 export default function RelatedCards({ currentId, keywords, tags, color }: RelatedCardsProps) {
   const { lang } = useLanguage();
+  const lp = useLangPrefix();
   const [groups, setGroups] = useState<RelatedGroup[]>([]);
   const [open, setOpen] = useState(false);
 
@@ -86,7 +88,7 @@ export default function RelatedCards({ currentId, keywords, tags, color }: Relat
                 {group.cards.map((card) => (
                   <Link
                     key={card.id}
-                    href={`/cards/${card.id.toLowerCase()}`}
+                    href={`${lp}/cards/${card.id.toLowerCase()}`}
                     className="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] hover:border-[var(--border-accent)] transition-colors text-xs"
                   >
                     {card.image_url && (

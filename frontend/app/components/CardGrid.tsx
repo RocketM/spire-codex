@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import type { Card } from "@/lib/api";
+import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -136,6 +137,7 @@ function getUpgradedValue(base: number | null, upgradeVal: string | number | nul
 }
 
 function CardItem({ card }: { card: Card }) {
+  const lp = useLangPrefix();
   const [upgraded, setUpgraded] = useState(false);
   const [betaArt, setBetaArt] = useState(false);
 
@@ -153,7 +155,7 @@ function CardItem({ card }: { card: Card }) {
         isUpgraded ? "border-emerald-700/60 hover:border-emerald-500" : colorMap[card.color] || "border-[var(--border-subtle)] hover:border-[var(--border-accent)]"
       } p-4 transition-all hover:bg-[var(--bg-card-hover)] hover:shadow-lg hover:shadow-black/20`}
     >
-      <Link href={`/cards/${card.id.toLowerCase()}`} className="absolute inset-0 z-10" />
+      <Link href={`${lp}/cards/${card.id.toLowerCase()}`} className="absolute inset-0 z-10" />
 
       {(() => {
         const imgUrl = betaArt && card.beta_image_url ? card.beta_image_url : (card.image_url || card.beta_image_url);

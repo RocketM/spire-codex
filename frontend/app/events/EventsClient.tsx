@@ -8,6 +8,7 @@ import { cachedFetch } from "@/lib/fetch-cache";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
 import { useLanguage } from "../contexts/LanguageContext";
+import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -99,7 +100,8 @@ function PageBlock({
 }
 
 export default function EventsClient({ initialEvents }: { initialEvents: GameEvent[] }) {
-  const [events, setEvents] = useState<GameEvent[]>(initialEvents);
+    const lp = useLangPrefix();
+const [events, setEvents] = useState<GameEvent[]>(initialEvents);
   const [search, setSearch] = useState("");
   const [type, setType] = useState("");
   const [act, setAct] = useState("");
@@ -321,7 +323,7 @@ export default function EventsClient({ initialEvents }: { initialEvents: GameEve
                       return (
                         <Link
                           key={relicId}
-                          href={`/relics/${relicId.toLowerCase()}`}
+                          href={`${lp}/relics/${relicId.toLowerCase()}`}
                           onClick={(e) => e.stopPropagation()}
                           className="flex items-center gap-2.5 px-2.5 py-2 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] hover:border-[var(--accent-gold)]/50 transition-colors"
                         >

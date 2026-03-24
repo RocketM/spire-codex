@@ -7,6 +7,7 @@ import { cachedFetch } from "@/lib/fetch-cache";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
 import { useLanguage } from "../contexts/LanguageContext";
+import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -36,7 +37,8 @@ const actOptions = [
 ];
 
 export default function EncountersClient({ initialEncounters }: { initialEncounters: Encounter[] }) {
-  const [encounters, setEncounters] = useState<Encounter[]>(initialEncounters);
+    const lp = useLangPrefix();
+const [encounters, setEncounters] = useState<Encounter[]>(initialEncounters);
   const [search, setSearch] = useState("");
   const [roomType, setRoomType] = useState("");
   const [act, setAct] = useState("");
@@ -116,7 +118,7 @@ export default function EncountersClient({ initialEncounters }: { initialEncount
                 {enc.monsters.map((m) => (
                   <Link
                     key={m.id}
-                    href={`/monsters/${m.id}`}
+                    href={`${lp}/monsters/${m.id}`}
                     className="text-[10px] px-1.5 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--text-secondary)] border border-[var(--border-subtle)] hover:border-[var(--accent-gold)]/40 hover:text-[var(--text-primary)] transition-colors"
                   >
                     {m.name}

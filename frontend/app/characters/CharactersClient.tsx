@@ -6,6 +6,7 @@ import type { Character, Relic, Card } from "@/lib/api";
 import { cachedFetch } from "@/lib/fetch-cache";
 import RichDescription from "../components/RichDescription";
 import { useLanguage } from "../contexts/LanguageContext";
+import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -27,7 +28,8 @@ const colorStyles: Record<string, string> = {
 
 export default function CharactersClient({ initialCharacters }: { initialCharacters: Character[] }) {
   const { lang } = useLanguage();
-  const [characters, setCharacters] = useState<Character[]>(initialCharacters);
+    const lp = useLangPrefix();
+const [characters, setCharacters] = useState<Character[]>(initialCharacters);
   const [relicMap, setRelicMap] = useState<Record<string, Relic>>({});
   const [cardMap, setCardMap] = useState<Record<string, Card>>({});
   const [loading, setLoading] = useState(false);
@@ -84,7 +86,7 @@ export default function CharactersClient({ initialCharacters }: { initialCharact
         const style = colorStyles[char.color || ""] || "border-[var(--border-subtle)] from-gray-900/20";
         return (
           <Link
-            href={`/characters/${char.id.toLowerCase()}`}
+            href={`${lp}/characters/${char.id.toLowerCase()}`}
             key={char.id}
             className={`rounded-xl border-2 ${style} bg-gradient-to-br to-transparent bg-[var(--bg-card)] p-6 transition-all hover:shadow-lg hover:shadow-black/20 cursor-pointer`}
           >

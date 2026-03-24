@@ -6,6 +6,7 @@ import type { Monster } from "@/lib/api";
 import { cachedFetch } from "@/lib/fetch-cache";
 import SearchFilter from "../components/SearchFilter";
 import { useLanguage } from "../contexts/LanguageContext";
+import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -29,7 +30,8 @@ const typeOptions = [
 
 export default function MonstersClient({ initialMonsters }: { initialMonsters: Monster[] }) {
   const { lang } = useLanguage();
-  const [monsters, setMonsters] = useState<Monster[]>(initialMonsters);
+    const lp = useLangPrefix();
+const [monsters, setMonsters] = useState<Monster[]>(initialMonsters);
   const [search, setSearch] = useState("");
   const [type, setType] = useState("");
   const initialRender = useRef(true);
@@ -71,7 +73,7 @@ export default function MonstersClient({ initialMonsters }: { initialMonsters: M
         {monsters.map((monster) => (
           <Link
             key={monster.id}
-            href={`/monsters/${monster.id.toLowerCase()}`}
+            href={`${lp}/monsters/${monster.id.toLowerCase()}`}
             className={`bg-[var(--bg-card)] rounded-lg border ${
               typeColors[monster.type] || "border-[var(--border-subtle)]"
             } p-4 hover:bg-[var(--bg-card-hover)] transition-all cursor-pointer`}

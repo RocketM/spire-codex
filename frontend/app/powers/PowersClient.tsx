@@ -7,6 +7,7 @@ import { cachedFetch } from "@/lib/fetch-cache";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
 import { useLanguage } from "../contexts/LanguageContext";
+import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -27,7 +28,8 @@ const stackOptions = [
 ];
 
 export default function PowersClient({ initialPowers }: { initialPowers: Power[] }) {
-  const [powers, setPowers] = useState<Power[]>(initialPowers);
+    const lp = useLangPrefix();
+const [powers, setPowers] = useState<Power[]>(initialPowers);
   const [search, setSearch] = useState("");
   const [type, setType] = useState("");
   const [stackType, setStackType] = useState("");
@@ -82,7 +84,7 @@ export default function PowersClient({ initialPowers }: { initialPowers: Power[]
           return (
             <Link
               key={power.id}
-              href={`/powers/${power.id.toLowerCase()}`}
+              href={`${lp}/powers/${power.id.toLowerCase()}`}
               className={`bg-[var(--bg-card)] rounded-lg border ${style.split(" ")[0]} p-4 hover:bg-[var(--bg-card-hover)] transition-all`}
             >
               <div className="flex items-start justify-between mb-2">

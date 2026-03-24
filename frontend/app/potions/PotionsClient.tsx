@@ -7,6 +7,7 @@ import Link from "next/link";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
 import { useLanguage } from "../contexts/LanguageContext";
+import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -40,7 +41,8 @@ const sortOptions = [
 
 export default function PotionsClient({ initialPotions }: { initialPotions: Potion[] }) {
   const { lang } = useLanguage();
-  const [potions, setPotions] = useState<Potion[]>(initialPotions);
+    const lp = useLangPrefix();
+const [potions, setPotions] = useState<Potion[]>(initialPotions);
   const [search, setSearch] = useState("");
   const [rarity, setRarity] = useState("");
   const [pool, setPool] = useState("");
@@ -114,7 +116,7 @@ export default function PotionsClient({ initialPotions }: { initialPotions: Poti
             return (
               <Link
                 key={potion.id}
-                href={`/potions/${potion.id.toLowerCase()}`}
+                href={`${lp}/potions/${potion.id.toLowerCase()}`}
                 className={`bg-[var(--bg-card)] rounded-lg border ${style.split(" ")[0]} p-4 hover:bg-[var(--bg-card-hover)] transition-all cursor-pointer block`}
               >
                 <div className="flex gap-3">

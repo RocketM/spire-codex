@@ -9,6 +9,7 @@ import { cachedFetch } from "@/lib/fetch-cache";
 import { useLanguage } from "../../contexts/LanguageContext";
 import LocalizedNames from "@/app/components/LocalizedNames";
 import EntityHistory from "@/app/components/EntityHistory";
+import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -21,7 +22,8 @@ const typeColors: Record<string, string> = {
 export default function PowerDetail() {
   const { id } = useParams<{ id: string }>();
   const { lang } = useLanguage();
-  const [power, setPower] = useState<Power | null>(null);
+    const lp = useLangPrefix();
+const [power, setPower] = useState<Power | null>(null);
   const [allCards, setAllCards] = useState<Card[]>([]);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
@@ -61,7 +63,7 @@ export default function PowerDetail() {
     return (
       <div className="max-w-2xl mx-auto px-4 py-12 text-center">
         <p className="text-[var(--text-muted)] mb-4">Power not found.</p>
-        <Link href="/powers" className="text-[var(--accent-gold)] hover:underline">
+        <Link href={`${lp}/powers`} className="text-[var(--accent-gold)] hover:underline">
           &larr; Back to Powers
         </Link>
       </div>
@@ -73,7 +75,7 @@ export default function PowerDetail() {
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
       <Link
-        href="/powers"
+        href={`${lp}/powers`}
         className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6 inline-block"
       >
         &larr; Back to Powers
@@ -116,7 +118,7 @@ export default function PowerDetail() {
               {relatedCards.map((card) => (
                 <Link
                   key={card.id}
-                  href={`/cards/${card.id}`}
+                  href={`${lp}/cards/${card.id}`}
                   className="text-xs px-2.5 py-1 rounded bg-[var(--bg-primary)] text-[var(--text-secondary)] border border-[var(--border-subtle)] hover:border-[var(--accent-gold)]/40 hover:text-[var(--text-primary)] transition-colors"
                 >
                   {card.name}

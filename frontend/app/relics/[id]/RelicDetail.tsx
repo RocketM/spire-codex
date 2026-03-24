@@ -10,6 +10,7 @@ import { useLanguage } from "../../contexts/LanguageContext";
 import { t } from "@/lib/ui-translations";
 import LocalizedNames from "@/app/components/LocalizedNames";
 import EntityHistory from "@/app/components/EntityHistory";
+import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -44,7 +45,8 @@ type Tab = "overview" | "details" | "info";
 export default function RelicDetail() {
   const { id } = useParams<{ id: string }>();
   const { lang } = useLanguage();
-  const [relic, setRelic] = useState<Relic | null>(null);
+    const lp = useLangPrefix();
+const [relic, setRelic] = useState<Relic | null>(null);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
   const [tab, setTab] = useState<Tab>("overview");
@@ -70,7 +72,7 @@ export default function RelicDetail() {
     return (
       <div className="max-w-2xl mx-auto px-4 py-12 text-center">
         <p className="text-[var(--text-muted)] mb-4">Relic not found.</p>
-        <Link href="/relics" className="text-[var(--accent-gold)] hover:underline">
+        <Link href={`${lp}/relics`} className="text-[var(--accent-gold)] hover:underline">
           &larr; {t("Back to", lang)} {t("Relics", lang)}
         </Link>
       </div>
@@ -89,7 +91,7 @@ export default function RelicDetail() {
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
       <Link
-        href="/relics"
+        href={`${lp}/relics`}
         className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6 inline-block"
       >
         &larr; {t("Back to", lang)} {t("Relics", lang)}

@@ -12,6 +12,7 @@ import { t } from "@/lib/ui-translations";
 import LocalizedNames from "@/app/components/LocalizedNames";
 import EntityHistory from "@/app/components/EntityHistory";
 import RelatedCards from "@/app/components/RelatedCards";
+import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -130,7 +131,8 @@ export default function CardDetail() {
   const id = params.id as string;
   const { lang } = useLanguage();
 
-  const [card, setCard] = useState<Card | null>(null);
+    const lp = useLangPrefix();
+const [card, setCard] = useState<Card | null>(null);
   const [spawnedCards, setSpawnedCards] = useState<Card[]>([]);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
@@ -173,7 +175,7 @@ export default function CardDetail() {
     return (
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Link
-          href="/cards"
+          href={`${lp}/cards`}
           className="inline-flex items-center gap-1 text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6"
         >
           &larr; {t("Back to", lang)} {t("Cards", lang)}
@@ -216,7 +218,7 @@ export default function CardDetail() {
   return (
     <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Link
-        href="/cards"
+        href={`${lp}/cards`}
         className="inline-flex items-center gap-1 text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6"
       >
         &larr; {t("Back to", lang)} {t("Cards", lang)}
@@ -399,7 +401,7 @@ export default function CardDetail() {
                   {card.keywords.map((kw) => (
                     <Link
                       key={kw}
-                      href={`/keywords/${kw.toLowerCase()}`}
+                      href={`${lp}/keywords/${kw.toLowerCase()}`}
                       className="text-xs px-2 py-1 rounded bg-[var(--bg-primary)] text-[var(--accent-gold-light)] border border-[var(--accent-gold)]/20 hover:border-[var(--accent-gold)]/50 transition-colors"
                     >
                       {kw}
@@ -462,7 +464,7 @@ export default function CardDetail() {
                       return (
                         <Link
                           key={pa.power}
-                          href={`/powers/${powerId}`}
+                          href={`${lp}/powers/${powerId}`}
                           className="text-xs px-2.5 py-1 rounded bg-purple-950/40 text-purple-300 border border-purple-900/30 hover:border-purple-700/50 hover:bg-purple-950/60 transition-colors"
                         >
                           {pa.power.replace(/([A-Z])/g, " $1").trim()}

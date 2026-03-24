@@ -7,6 +7,7 @@ import Link from "next/link";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
 import { useLanguage } from "../contexts/LanguageContext";
+import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -46,7 +47,8 @@ const sortOptions = [
 ];
 
 export default function RelicsClient({ initialRelics }: { initialRelics: Relic[] }) {
-  const [relics, setRelics] = useState<Relic[]>(initialRelics);
+    const lp = useLangPrefix();
+const [relics, setRelics] = useState<Relic[]>(initialRelics);
   const [search, setSearch] = useState("");
   const [rarity, setRarity] = useState("");
   const [pool, setPool] = useState("");
@@ -113,7 +115,7 @@ export default function RelicsClient({ initialRelics }: { initialRelics: Relic[]
           return (
             <Link
               key={relic.id}
-              href={`/relics/${relic.id.toLowerCase()}`}
+              href={`${lp}/relics/${relic.id.toLowerCase()}`}
               className={`bg-[var(--bg-card)] rounded-lg border ${style.split(" ")[0]} p-4 hover:bg-[var(--bg-card-hover)] transition-all cursor-pointer block`}
             >
               <div className="flex gap-3">
