@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { redirect } from "next/navigation";
+import EncounterDetail from "@/app/encounters/[id]/EncounterDetail";
 import { stripTags, SITE_URL } from "@/lib/seo";
+import JsonLd from "@/app/components/JsonLd";
+import { buildDetailPageJsonLd, buildFAQPageJsonLd } from "@/lib/jsonld";
 import { isValidLang, LANG_HREFLANG, LANG_NAMES, LANG_GAME_NAME, SUPPORTED_LANGS, type LangCode } from "@/lib/languages";
 
 export const dynamic = "force-dynamic";
@@ -37,7 +39,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
   const { lang, id } = await params;
   if (!isValidLang(lang)) return null;
-
-  // Encounters don't have a dedicated detail page — redirect to the list page
-  redirect(`/${lang}/encounters`);
+  let jsonLd = null;
+  try {
+    const res = await fetch(`${API_INTERNAL}/api/encounters/${id}?lang=${lang}`);
+    if (res.ok) {
+      const data = await res.json();
+      const name = data.name || id;
+      const desc = data.monsters?.length
+        ? `${name} is a ${data.room_type} encounter featuring ${data.monsters.map((m: { name: string }) => m.name).join(", ")}.`
+        : `${name} encounter`;
+      const detailJsonLd = buildDetailPageJsonLd({
+        name, description: desc, path: `/${lang}/encounters/${id}`,
+        category: "Encounter",
+        breadcrumbs: [{ name: "Home", href: `/${lang}` }, { name: "Encounters", href: `/${lang}/encounters` }, { name, href: `/${lang}/encounters/${id}` }],
+      });
+      jsonLd = [...detailJsonLd, buildFAQPageJsonLd([{ question: `${name}?`, answer: desc }])];
+    }
+  } catch {}
+  return (
+    <>
+      {jsonLd && <JsonLd data={jsonLd} />}
+      <EncounterDetail />
+    </>
+  );
 }

@@ -87,11 +87,12 @@ const [encounters, setEncounters] = useState<Encounter[]>(initialEncounters);
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
         {encounters.map((enc) => (
-          <div
+          <Link
             key={enc.id}
+            href={`${lp}/encounters/${enc.id.toLowerCase()}`}
             className={`bg-[var(--bg-card)] rounded-lg border ${
               roomTypeColors[enc.room_type] || "border-[var(--border-subtle)]"
-            } p-4 hover:bg-[var(--bg-card-hover)] transition-all`}
+            } p-4 hover:bg-[var(--bg-card-hover)] transition-all block`}
           >
             <div className="flex items-start justify-between mb-2">
               <h3 className="font-semibold text-[var(--text-primary)]">
@@ -116,13 +117,12 @@ const [encounters, setEncounters] = useState<Encounter[]>(initialEncounters);
             {enc.monsters && enc.monsters.length > 0 && (
               <div className="flex flex-wrap gap-1 mb-2">
                 {enc.monsters.map((m) => (
-                  <Link
+                  <span
                     key={m.id}
-                    href={`${lp}/monsters/${m.id}`}
-                    className="text-[10px] px-1.5 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--text-secondary)] border border-[var(--border-subtle)] hover:border-[var(--accent-gold)]/40 hover:text-[var(--text-primary)] transition-colors"
+                    className="text-[10px] px-1.5 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--text-secondary)] border border-[var(--border-subtle)]"
                   >
                     {m.name}
-                  </Link>
+                  </span>
                 ))}
               </div>
             )}
@@ -145,7 +145,7 @@ const [encounters, setEncounters] = useState<Encounter[]>(initialEncounters);
                 <RichDescription text={enc.loss_text} />
               </p>
             )}
-          </div>
+          </Link>
         ))}
       </div>
     </>

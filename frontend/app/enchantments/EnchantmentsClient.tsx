@@ -1,11 +1,13 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 import type { Enchantment } from "@/lib/api";
 import { cachedFetch } from "@/lib/fetch-cache";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
 import { useLanguage } from "../contexts/LanguageContext";
+import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -22,6 +24,7 @@ const cardTypeOptions = [
 ];
 
 export default function EnchantmentsClient({ initialEnchantments }: { initialEnchantments: Enchantment[] }) {
+  const lp = useLangPrefix();
   const [enchantments, setEnchantments] = useState<Enchantment[]>(initialEnchantments);
   const [search, setSearch] = useState("");
   const [cardType, setCardType] = useState("");
@@ -63,9 +66,10 @@ export default function EnchantmentsClient({ initialEnchantments }: { initialEnc
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
         {enchantments.map((ench) => (
-          <div
+          <Link
             key={ench.id}
-            className="bg-[var(--bg-card)] rounded-lg border border-cyan-800/40 p-4 hover:bg-[var(--bg-card-hover)] transition-all"
+            href={`${lp}/enchantments/${ench.id.toLowerCase()}`}
+            className="bg-[var(--bg-card)] rounded-lg border border-cyan-800/40 p-4 hover:bg-[var(--bg-card-hover)] transition-all block"
           >
             <div className="flex items-start gap-3 mb-2">
               {ench.image_url && (
@@ -110,7 +114,7 @@ export default function EnchantmentsClient({ initialEnchantments }: { initialEnc
                 Card text: <RichDescription text={ench.extra_card_text} />
               </p>
             )}
-          </div>
+          </Link>
         ))}
       </div>
     </>

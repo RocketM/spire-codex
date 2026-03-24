@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { redirect } from "next/navigation";
+import EnchantmentDetail from "@/app/enchantments/[id]/EnchantmentDetail";
 import { stripTags, SITE_URL } from "@/lib/seo";
 import JsonLd from "@/app/components/JsonLd";
 import { buildDetailPageJsonLd, buildFAQPageJsonLd } from "@/lib/jsonld";
-import RichDescription from "@/app/components/RichDescription";
 import { isValidLang, LANG_HREFLANG, LANG_NAMES, LANG_GAME_NAME, SUPPORTED_LANGS, type LangCode } from "@/lib/languages";
 
 export const dynamic = "force-dynamic";
 
 const API_INTERNAL = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const API_PUBLIC = process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXT_PUBLIC_API_URL || "";
 
 type Props = { params: Promise<{ lang: string; id: string }> };
 
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title,
       description: desc || `${name} - ${gameName}`,
-      openGraph: { title, description: desc || `${name} - ${gameName}`, locale: LANG_HREFLANG[langCode] },
+      openGraph: { title, description: desc || `${name} - ${gameName}`, locale: LANG_HREFLANG[langCode], images: entity.image_url ? [{ url: `${API_PUBLIC}${entity.image_url}` }] : [] },
       twitter: { card: "summary_large_image" },
       alternates: { canonical: `/${lang}/enchantments/${id}`, languages },
     };
@@ -41,7 +41,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
   const { lang, id } = await params;
   if (!isValidLang(lang)) return null;
-
-  // Enchantments don't have a dedicated detail page — redirect to the list page
-  redirect(`/${lang}/enchantments`);
+  let jsonLd = null;
+  try {
+    const res = await fetch(`${API_INTERNAL}/api/enchantments/${id}?lang=${lang}`);
+    if (res.ok) {
+      const data = await res.json();
+      const desc = stripTags(data.description || "");
+      const name = data.name || id;
+      const detailJsonLd = buildDetailPageJsonLd({
+        name, description: desc || name, path: `/${lang}/enchantments/${id}`,
+        imageUrl: data.image_url ? `${API_PUBLIC}${data.image_url}` : undefined, category: "Enchantment",
+        breadcrumbs: [{ name: "Home", href: `/${lang}` }, { name: "Enchantments", href: `/${lang}/enchantments` }, { name, href: `/${lang}/enchantments/${id}` }],
+      });
+      jsonLd = [...detailJsonLd, buildFAQPageJsonLd([{ question: `${name}?`, answer: desc || name }])];
+    }
+  } catch {}
+  return (
+    <>
+      {jsonLd && <JsonLd data={jsonLd} />}
+      <EnchantmentDetail />
+    </>
+  );
 }

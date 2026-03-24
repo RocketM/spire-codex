@@ -44,6 +44,8 @@ const DYNAMIC_ROUTES = [
   { endpoint: "/api/relics", prefix: "/relics", priority: 0.8 },
   { endpoint: "/api/monsters", prefix: "/monsters", priority: 0.7 },
   { endpoint: "/api/potions", prefix: "/potions", priority: 0.7 },
+  { endpoint: "/api/enchantments", prefix: "/enchantments", priority: 0.6 },
+  { endpoint: "/api/encounters", prefix: "/encounters", priority: 0.6 },
   { endpoint: "/api/powers", prefix: "/powers", priority: 0.6 },
   { endpoint: "/api/events", prefix: "/events", priority: 0.6 },
   { endpoint: "/api/keywords", prefix: "/keywords", priority: 0.7 },
@@ -98,7 +100,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   // Localized pages: landing pages + list pages + detail pages
-  const LANG_ENTITY_ROUTES = ["cards", "relics", "potions", "monsters", "powers", "events", "characters"];
+  const LANG_ENTITY_ROUTES = ["cards", "relics", "potions", "monsters", "powers", "events", "characters", "enchantments", "encounters"];
   const langListEntries: MetadataRoute.Sitemap = SUPPORTED_LANGS.flatMap((lang) => [
     {
       url: `${SITE_URL}/${lang}`,
