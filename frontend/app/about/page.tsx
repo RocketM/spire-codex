@@ -223,8 +223,9 @@ export default function AboutPage() {
             Special thanks to{" "}
             <span className="text-[var(--text-primary)] font-medium">vesper-arch</span>,{" "}
             <span className="text-[var(--text-primary)] font-medium">terracubist</span>,{" "}
-            <span className="text-[var(--text-primary)] font-medium">U77654</span>, and{" "}
-            <span className="text-[var(--text-primary)] font-medium">Purple Aspired Dreaming</span>{" "}
+            <span className="text-[var(--text-primary)] font-medium">U77654</span>,{" "}
+            <span className="text-[var(--text-primary)] font-medium">Purple Aspired Dreaming</span>, and{" "}
+            <span className="text-[var(--text-primary)] font-medium">Kobaru</span>{" "}
             for QA testing, bug reports, and contributions.
           </p>
         </div>

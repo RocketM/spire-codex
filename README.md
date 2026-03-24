@@ -541,7 +541,7 @@ Full docs: [spire-codex.com/developers](https://spire-codex.com/developers)
 
 ## Acknowledgments
 
-Thanks to **vesper-arch**, **terracubist**, and **U77654** for QA testing, bug reports, and contributions.
+Thanks to **vesper-arch**, **terracubist**, **U77654**, **Purple Aspired Dreaming**, and **Kobaru** for QA testing, bug reports, and contributions.
 
 ## Tech Stack
 
