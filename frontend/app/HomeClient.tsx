@@ -66,21 +66,34 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
       .then(setTranslations);
   }, [lang]);
 
-  // Section name: use game translations first, then our UI translations, then capitalize
+  // Section name: use game translations if actually translated, otherwise our UI translations
   const SECTION_LABEL_MAP: Record<string, string> = {
     cards: "Card Library", characters: "Characters", relics: "Relic Collection",
     monsters: "Bestiary", potions: "Potion Lab", enchantments: "Enchantments",
     encounters: "Encounters", events: "Events", powers: "Powers",
     timeline: "Timeline", images: "Images", reference: "Reference",
   };
+  const ENGLISH_FALLBACKS = new Set(Object.values(SECTION_LABEL_MAP).map(v => v.toLowerCase()));
   const sectionKey = (key: string) => {
     const gameT = translations.sections?.[key];
-    if (gameT) return gameT;
+    // Only use game translation if it's actually translated (not just the English word)
+    if (gameT && lang !== "eng" && !ENGLISH_FALLBACKS.has(gameT.toLowerCase()) && gameT.toLowerCase() !== key) {
+      return gameT;
+    }
     const uiKey = SECTION_LABEL_MAP[key];
     if (uiKey) return t(uiKey, lang);
     return key.charAt(0).toUpperCase() + key.slice(1);
   };
-  const sectionDesc = (key: string) => translations.section_descs?.[key] ?? FALLBACK_DESCS[key] ?? "";
+  const sectionDesc = (key: string) => {
+    const gameDesc = translations.section_descs?.[key];
+    if (gameDesc) return gameDesc;
+    // Use our UI translations for description if available, otherwise English fallback
+    const uiKey = SECTION_LABEL_MAP[key];
+    if (uiKey && lang !== "eng") {
+      return `${t(uiKey, lang)} — Spire Codex`;
+    }
+    return FALLBACK_DESCS[key] ?? "";
+  };
 
   const sections = [
     {
