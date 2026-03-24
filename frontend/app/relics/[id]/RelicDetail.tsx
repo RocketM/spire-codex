@@ -57,7 +57,16 @@ const [relic, setRelic] = useState<Relic | null>(null);
     if (!id) return;
     setLoading(true);
     cachedFetch<Relic>(`${API}/api/relics/${id}?lang=${lang}`)
-      .then((data) => setRelic(data))
+      .then((data) => {
+        setRelic(data);
+        if (data.image_variants) {
+          const first = Object.entries(data.image_variants)[0];
+          if (first) {
+            setSelectedVariant(first[1]);
+            setSelectedChar(first[0]);
+          }
+        }
+      })
       .catch(() => setNotFound(true))
       .finally(() => setLoading(false));
   }, [id, lang]);
@@ -110,16 +119,6 @@ const [relic, setRelic] = useState<Relic | null>(null);
             />
             {relic.image_variants && Object.keys(relic.image_variants).length > 0 && (
               <div className="flex gap-1.5 mt-3">
-                <button
-                  onClick={() => { setSelectedVariant(null); setSelectedChar(null); }}
-                  className={`text-xs px-2 py-1 rounded border transition-colors ${
-                    !selectedVariant
-                      ? "border-[var(--accent-gold)]/50 text-[var(--accent-gold)] bg-[var(--accent-gold)]/10"
-                      : "border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--text-secondary)]"
-                  }`}
-                >
-                  Default
-                </button>
                 {Object.entries(relic.image_variants).map(([char, url]) => (
                   <button
                     key={char}
