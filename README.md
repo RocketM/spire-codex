@@ -18,7 +18,7 @@ Slay the Spire 2 is built with Godot 4 but all game logic lives in a C#/.NET 8 D
    - **Cards**: `base(cost, CardType, CardRarity, TargetType)` constructors + `DamageVar`, `BlockVar`, `PowerVar<T>` for stats
    - **Characters**: `StartingHp`, `StartingGold`, `MaxEnergy`, `StartingDeck`, `StartingRelics`
    - **Relics/Potions**: Rarity, pool, descriptions resolved from SmartFormat templates
-   - **Monsters**: HP ranges, ascension scaling via `AscensionHelper`, move state machines, damage values
+   - **Monsters**: HP ranges, ascension scaling via `AscensionHelper`, move state machines with per-move intents (Attack/Defend/Buff/Debuff/Status/Summon/Heal), damage values, powers applied per move (target + amount from `PowerCmd.Apply<T>`), block, healing, encounter context (act, room type)
    - **Enchantments**: Card type restrictions, stackability, Amount-based scaling
    - **Encounters**: Monster compositions, room type (Boss/Elite/Monster), act placement, tags
    - **Events**: Multi-page decision trees (56 of 66 events), choices with outcomes, act placement, `StringVar` model references resolved to display names
@@ -29,7 +29,7 @@ Slay the Spire 2 is built with Godot 4 but all game logic lives in a C#/.NET 8 D
    - **Afflictions**: Stackability, extra card text, descriptions
    - **Modifiers**: Run modifier descriptions
    - **Keywords**: Card keyword definitions (Exhaust, Ethereal, Innate, etc.)
-   - **Intents**: Monster intent descriptions
+   - **Intents**: Monster intent descriptions with icons
    - **Achievements**: Unlock conditions, descriptions
    - **Acts**: Boss discovery order, encounters, events, ancients, room counts
    - **Ascension Levels**: 11 levels (0–10) with descriptions from localization
@@ -84,15 +84,21 @@ spire-codex/
 │   │   │                       #   GlobalSearch, Navbar, Footer, LanguageSelector
 │   │   └── ...                 # Pages: cards, characters, relics, monsters, potions,
 │   │                           #   enchantments, encounters, events, powers, timeline,
-│   │                           #   reference, images, changelog, about
+│   │                           #   reference, images, changelog, about, merchant, compare
 │   │                           #   Detail pages: cards/[id], characters/[id], relics/[id],
 │   │                           #   monsters/[id], potions/[id], enchantments/[id],
-│   │                           #   encounters/[id], events/[id]
+│   │                           #   encounters/[id], events/[id], powers/[id], keywords/[id],
+│   │                           #   acts/[id], ascensions/[id], intents/[id], orbs/[id],
+│   │                           #   afflictions/[id], modifiers/[id], achievements/[id]
+│   │                           #   i18n: [lang]/... mirrors all routes for 13 languages
 │   ├── lib/
 │   │   ├── api.ts              # API client + TypeScript interfaces
 │   │   ├── fetch-cache.ts      # Client-side in-memory fetch cache (5min TTL)
 │   │   ├── seo.ts              # Shared SEO utilities (stripTags, SITE_URL, SITE_NAME)
-│   │   └── jsonld.ts           # JSON-LD schema builders (BreadcrumbList, CollectionPage, Article, WebSite)
+│   │   ├── jsonld.ts           # JSON-LD schema builders (BreadcrumbList, CollectionPage, Article, WebSite, FAQPage)
+│   │   ├── ui-translations.ts # UI string translations for 13 languages
+│   │   ├── languages.ts       # i18n config — 13 language codes, hreflang mappings
+│   │   └── use-lang-prefix.ts # Hook for language-aware URL construction
 │   └── Dockerfile
 ├── tools/
 │   ├── spine-renderer/         # Headless Spine skeleton renderer
@@ -130,7 +136,7 @@ spire-codex/
 | Relics | `/relics` | Filterable relic grid |
 | Relic Detail | `/relics/[id]` | Full relic info with rich text flavor |
 | Monsters | `/monsters` | Monster grid with HP, moves, Spine renders |
-| Monster Detail | `/monsters/[id]` | HP ranges, moves, damage values, ascension scaling |
+| Monster Detail | `/monsters/[id]` | HP, moves with intents/damage/powers/block, encounter links, power tooltips |
 | Potions | `/potions` | Filterable potion grid (rarity, character pool) |
 | Potion Detail | `/potions/[id]` | Full potion info |
 | Enchantments | `/enchantments` | Enchantment list with card type filters |
@@ -140,8 +146,23 @@ spire-codex/
 | Events | `/events` | Multi-page event trees with expandable choices |
 | Event Detail | `/events/[id]` | Full event pages, options, Ancient dialogue |
 | Powers | `/powers` | Buffs, debuffs, and neutral powers |
+| Power Detail | `/powers/[id]` | Power info with cards that apply this power |
+| Keywords | `/keywords` | Card keyword list |
+| Keyword Detail | `/keywords/[id]` | Keyword description with filterable card grid |
+| Merchant | `/merchant` | Card/relic/potion pricing, card removal costs, fake merchant |
+| Compare | `/compare` | Character comparison hub (10 pairs) |
+| Compare Detail | `/compare/[pair]` | Side-by-side character comparison |
+| Developers | `/developers` | API docs, widget docs, data exports |
+| Showcase | `/showcase` | Community project gallery |
 | Timeline | `/timeline` | Epoch progression with era grouping, unlock requirements |
-| Reference | `/reference` | Keywords, intents, orbs, afflictions, modifiers, achievements, acts, ascensions |
+| Act Detail | `/acts/[id]` | Bosses, encounters, events, ancients for an act |
+| Ascension Detail | `/ascensions/[id]` | Ascension level description with prev/next navigation |
+| Intent Detail | `/intents/[id]` | Intent icon, description |
+| Orb Detail | `/orbs/[id]` | Orb icon, passive/evoke description |
+| Affliction Detail | `/afflictions/[id]` | Affliction description, stackability |
+| Modifier Detail | `/modifiers/[id]` | Run modifier description |
+| Achievement Detail | `/achievements/[id]` | Achievement description |
+| Reference | `/reference` | All items clickable — acts, ascensions, keywords, orbs, afflictions, intents, modifiers, achievements |
 | Images | `/images` | Browsable game assets with ZIP download per category |
 | Changelog | `/changelog` | Data diffs between game updates |
 | About | `/about` | Project info, stats, pipeline visualization |
@@ -189,6 +210,7 @@ All data endpoints accept an optional `?lang=` query parameter (default: `eng`).
 | `GET /api/acts` | All acts | `lang` |
 | `GET /api/acts/{id}` | Single act | `lang` |
 | `GET /api/ascensions` | Ascension levels (0–10) | `lang` |
+| `GET /api/ascensions/{id}` | Single ascension level | `lang` |
 | `GET /api/stats` | Entity counts across all categories | `lang` |
 | `GET /api/languages` | Available languages with display names | — |
 | `GET /api/translations` | Translation maps for filter values and UI strings | `lang` |
@@ -497,10 +519,10 @@ Examples: `v1.0.0` = initial release, `v1.0.1` = our bug fixes, `v1.1.0` = first
 
 - **Structured data (JSON-LD)**: WebSite + VideoGame (home), CollectionPage + ItemList (list pages), Article + BreadcrumbList + FAQPage (detail pages), SoftwareApplication (developers)
 - **Title format**: `"Slay the Spire 2 [Topic] - [Descriptor] | Spire Codex"` — standardized across all pages
-- **Sitemap**: Flat XML at `/sitemap.xml` with `force-dynamic` (renders server-side, not build-time). ~1,500+ URLs including entity detail pages, browse matrix pages, and i18n landing pages
+- **Sitemap**: Flat XML at `/sitemap.xml` with `force-dynamic` (renders server-side, not build-time). ~20,000+ URLs including entity detail pages, browse matrix pages, and i18n detail pages for all entity types
 - **International SEO**: `/{lang}/` routes for 13 non-English languages with hreflang alternates
 - **Programmatic SEO**: 41 card browse pages at `/cards/browse/` (rare-attacks, ironclad-skills, etc.)
-- **Internal linking**: Powers ↔ cards, encounters → monsters, card keywords → keyword hub pages
+- **Internal linking**: Powers ↔ cards, encounters → monsters, card keywords → keyword hub pages, monster moves → power pages (with tooltips), act pages → encounters/events, every reference entity clickable
 - **Open Graph & Twitter Cards**: Per-entity OG images, `summary_large_image` Twitter cards
 - **Canonical URLs**: Every page declares a canonical URL
 

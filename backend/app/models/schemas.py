@@ -86,15 +86,40 @@ class Relic(BaseModel):
     compendium_order: int = 0
 
 
+class MonsterMovePower(BaseModel):
+    power_id: str
+    target: str
+    amount: int
+
+
+class MonsterMoveDamage(BaseModel):
+    normal: int
+    ascension: int | None = None
+    hit_count: int | None = None
+
+
 class MonsterMove(BaseModel):
     id: str
     name: str
+    intent: str | None = None
+    damage: MonsterMoveDamage | None = None
+    block: int | None = None
+    heal: int | None = None
+    powers: list[MonsterMovePower] | None = None
 
 
 class MonsterDamage(BaseModel):
     normal: int
     ascension: int | None = None
     hit_count: int | None = None
+
+
+class MonsterEncounter(BaseModel):
+    encounter_id: str
+    encounter_name: str
+    room_type: str
+    act: str | None = None
+    is_weak: bool = False
 
 
 class Monster(BaseModel):
@@ -108,6 +133,7 @@ class Monster(BaseModel):
     moves: list[MonsterMove] | None = None
     damage_values: dict[str, MonsterDamage] | None = None
     block_values: dict[str, int] | None = None
+    encounters: list[MonsterEncounter] | None = None
     image_url: str | None = None
 
 

@@ -80,6 +80,54 @@ export default function AboutPage() {
             and website. The goal is to provide the kind of detailed, searchable reference that the
             Spire community deserves.
           </p>
+          <p>
+            If you&apos;re wanting to get involved, feel free to open a PR on{" "}
+            <a
+              href="https://github.com/ptrlrd/spire-codex"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--accent-gold)] hover:underline"
+            >
+              GitHub
+            </a>
+            . This repo is downstream of where the project is hosted, so it may take a bit before
+            your PR gets fully merged. The project has an{" "}
+            <a href="/developers" className="text-[var(--accent-gold)] hover:underline">
+              open API
+            </a>
+            {" "}that is free to use and self-hostable. And if you&apos;re wanting to chat about the
+            project, come visit the{" "}
+            <a
+              href="https://discord.gg/xMsTBeh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--accent-gold)] hover:underline"
+            >
+              Discord
+            </a>
+            {" "}where I send updates and discuss the project.
+          </p>
+
+          <h2 className="text-xl font-semibold text-[var(--text-primary)] pt-4">
+            Thank You
+          </h2>
+          <p>
+            Just wanted to say thank you to everyone that has supported the project. Thanks to
+            those who&apos;ve been using the site, reporting bugs, and helping make it better.
+            This project wouldn&apos;t be where it is without the community. If you&apos;ve been
+            enjoying the project, please make sure to share it on social media!
+          </p>
+          <p>
+            A special thanks to the following:
+          </p>
+          <ul className="list-disc list-inside space-y-1">
+            <li>vesper-arch</li>
+            <li>terracubist</li>
+            <li>U77654</li>
+            <li>Purple Aspired Dreaming</li>
+            <li>Kobaru</li>
+            <li>Severi</li>
+          </ul>
         </div>
 
         {/* Stats */}
@@ -160,7 +208,7 @@ export default function AboutPage() {
             {[
               { label: "Backend", items: "Python, FastAPI, Pydantic" },
               { label: "Frontend", items: "Next.js, TypeScript, Tailwind" },
-              { label: "Rendering", items: "Node.js, Spine Canvas" },
+              { label: "Rendering", items: "Node.js, Playwright, spine-webgl" },
               { label: "Infra", items: "Docker, Forgejo CI" },
             ].map((t) => (
               <div key={t.label} className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-3">
@@ -169,65 +217,6 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Links */}
-        <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-6">
-          <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-4">
-            Get Involved
-          </h2>
-          <div className="flex flex-wrap gap-4 text-sm">
-            <a
-              href="https://github.com/ptrlrd/spire-codex"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[var(--accent-gold)] hover:underline"
-            >
-              GitHub
-            </a>
-            <span className="text-[var(--border-subtle)]">·</span>
-            <a
-              href="https://discord.gg/xMsTBeh"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[var(--accent-gold)] hover:underline"
-            >
-              Discord
-            </a>
-            <span className="text-[var(--border-subtle)]">·</span>
-            <a
-              href={`${API_BASE}/docs`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[var(--accent-gold)] hover:underline"
-            >
-              API Documentation
-            </a>
-          </div>
-          <p className="text-xs text-[var(--text-muted)] mt-4">
-            Found a bug or have a feature request? Use the Submit Feedback button in the footer,
-            or open an issue on GitHub.
-          </p>
-        </div>
-
-        {/* Thank You */}
-        <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-6">
-          <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-3">
-            Thank You
-          </h2>
-          <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-4">
-            Thanks to everyone who&apos;s been using the site, reporting bugs, and helping
-            make it better. This project wouldn&apos;t be where it is without the community.
-          </p>
-          <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-            Special thanks to{" "}
-            <span className="text-[var(--text-primary)] font-medium">vesper-arch</span>,{" "}
-            <span className="text-[var(--text-primary)] font-medium">terracubist</span>,{" "}
-            <span className="text-[var(--text-primary)] font-medium">U77654</span>,{" "}
-            <span className="text-[var(--text-primary)] font-medium">Purple Aspired Dreaming</span>, and{" "}
-            <span className="text-[var(--text-primary)] font-medium">Kobaru</span>{" "}
-            for QA testing, bug reports, and contributions.
-          </p>
         </div>
 
         {/* Disclaimer */}

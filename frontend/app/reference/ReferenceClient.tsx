@@ -82,17 +82,17 @@ function ReferenceSection<T extends { id: string }>({
         {filtered.map((item) => {
           const content = (
             <div
-              className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-4 hover:bg-[var(--bg-card-hover)] transition-all"
+              className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-4 hover:bg-[var(--bg-card-hover)] transition-all h-full"
             >
               {render(item)}
             </div>
           );
           return linkPrefix ? (
-            <Link key={item.id} href={`${linkPrefix}/${item.id.toLowerCase()}`} className="block">
+            <Link key={item.id} href={`${linkPrefix}/${item.id.toLowerCase()}`} className="block h-full">
               {content}
             </Link>
           ) : (
-            <div key={item.id}>{content}</div>
+            <div key={item.id} className="h-full">{content}</div>
           );
         })}
       </div>
@@ -116,6 +116,7 @@ export default function ReferenceClient({
         accent="text-emerald-400"
         initialData={initialData.acts}
         lang={lang}
+        linkPrefix={`${lp}/acts`}
         render={(act) => (
           <>
             <h3 className="font-semibold text-[var(--text-primary)] mb-2">
@@ -140,6 +141,7 @@ export default function ReferenceClient({
         accent="text-rose-400"
         initialData={initialData.ascensions}
         lang={lang}
+        linkPrefix={`${lp}/ascensions`}
         render={(asc) => (
           <>
             <div className="flex items-baseline gap-2 mb-1">
@@ -163,6 +165,7 @@ export default function ReferenceClient({
         accent="text-cyan-400"
         initialData={initialData.keywords}
         lang={lang}
+        linkPrefix={`${lp}/keywords`}
         render={(kw) => (
           <>
             <h3 className="font-semibold text-[var(--text-primary)] mb-1">
@@ -183,14 +186,24 @@ export default function ReferenceClient({
         lang={lang}
         linkPrefix={`${lp}/orbs`}
         render={(orb) => (
-          <>
-            <h3 className="font-semibold text-[var(--text-primary)] mb-1">
-              {orb.name}
-            </h3>
-            <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-              <RichDescription text={orb.description} />
-            </p>
-          </>
+          <div className="flex items-start gap-3">
+            {orb.image_url && (
+              <img
+                src={`${API}${orb.image_url}`}
+                alt={orb.name}
+                className="w-10 h-10 object-contain flex-shrink-0 mt-0.5"
+                crossOrigin="anonymous"
+              />
+            )}
+            <div>
+              <h3 className="font-semibold text-[var(--text-primary)] mb-1">
+                {orb.name}
+              </h3>
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+                <RichDescription text={orb.description} />
+              </p>
+            </div>
+          </div>
         )}
       />
 
@@ -233,14 +246,24 @@ export default function ReferenceClient({
         lang={lang}
         linkPrefix={`${lp}/intents`}
         render={(intent) => (
-          <>
-            <h3 className="font-semibold text-[var(--text-primary)] mb-1">
-              {intent.name}
-            </h3>
-            <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-              <RichDescription text={intent.description} />
-            </p>
-          </>
+          <div className="flex items-start gap-3">
+            {intent.image_url && (
+              <img
+                src={`${API}${intent.image_url}`}
+                alt={intent.name}
+                className="w-10 h-10 object-contain flex-shrink-0 mt-0.5"
+                crossOrigin="anonymous"
+              />
+            )}
+            <div>
+              <h3 className="font-semibold text-[var(--text-primary)] mb-1">
+                {intent.name}
+              </h3>
+              <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+                <RichDescription text={intent.description} />
+              </p>
+            </div>
+          </div>
         )}
       />
 

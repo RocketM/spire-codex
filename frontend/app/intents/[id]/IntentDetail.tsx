@@ -60,6 +60,17 @@ export default function IntentDetail() {
       </Link>
 
       <div className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-6">
+        {intent.image_url && (
+          <div className="flex justify-center mb-4">
+            <img
+              src={`${API}${intent.image_url}`}
+              alt={`${intent.name} - Slay the Spire 2 Intent`}
+              className="w-16 h-16 object-contain"
+              crossOrigin="anonymous"
+            />
+          </div>
+        )}
+
         <h1 className="text-2xl font-bold text-[var(--text-primary)] text-center mb-4">
           {intent.name}
         </h1>

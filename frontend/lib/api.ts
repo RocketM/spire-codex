@@ -84,6 +84,36 @@ export interface Relic {
   compendium_order: number;
 }
 
+export interface MonsterMovePower {
+  power_id: string;
+  target: string;
+  amount: number;
+}
+
+export interface MonsterMoveDamage {
+  normal: number;
+  ascension?: number;
+  hit_count?: number;
+}
+
+export interface MonsterMove {
+  id: string;
+  name: string;
+  intent: string | null;
+  damage: MonsterMoveDamage | null;
+  block: number | null;
+  heal: number | null;
+  powers: MonsterMovePower[] | null;
+}
+
+export interface MonsterEncounter {
+  encounter_id: string;
+  encounter_name: string;
+  room_type: string;
+  act: string | null;
+  is_weak: boolean;
+}
+
 export interface Monster {
   id: string;
   name: string;
@@ -92,9 +122,10 @@ export interface Monster {
   max_hp: number | null;
   min_hp_ascension: number | null;
   max_hp_ascension: number | null;
-  moves: { id: string; name: string }[] | null;
+  moves: MonsterMove[] | null;
   damage_values: Record<string, { normal: number; ascension?: number; hit_count?: number }> | null;
   block_values: Record<string, number> | null;
+  encounters: MonsterEncounter[] | null;
   image_url: string | null;
 }
 
@@ -206,6 +237,7 @@ export interface Intent {
   id: string;
   name: string;
   description: string;
+  image_url: string | null;
 }
 
 export interface Orb {
@@ -213,6 +245,7 @@ export interface Orb {
   name: string;
   description: string;
   description_raw: string | null;
+  image_url: string | null;
 }
 
 export interface Affliction {

@@ -60,6 +60,17 @@ export default function OrbDetail() {
       </Link>
 
       <div className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-6">
+        {orb.image_url && (
+          <div className="flex justify-center mb-4">
+            <img
+              src={`${API}${orb.image_url}`}
+              alt={`${orb.name} - Slay the Spire 2 Orb`}
+              className="w-16 h-16 object-contain"
+              crossOrigin="anonymous"
+            />
+          </div>
+        )}
+
         <h1 className="text-2xl font-bold text-[var(--text-primary)] text-center mb-4">
           {orb.name}
         </h1>
@@ -67,17 +78,6 @@ export default function OrbDetail() {
         <div className="text-[var(--text-secondary)] leading-relaxed mb-4">
           <RichDescription text={orb.description} />
         </div>
-
-        {orb.description_raw && (
-          <div className="mt-4 p-3 rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)]">
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">
-              Raw Description
-            </h3>
-            <p className="text-sm text-[var(--text-secondary)] leading-relaxed italic">
-              {orb.description_raw}
-            </p>
-          </div>
-        )}
 
         <div className="mt-6">
           <LocalizedNames entityType="orbs" entityId={id} />

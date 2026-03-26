@@ -1,6 +1,8 @@
 import { promises as fs } from "fs";
 import path from "path";
 
+export const dynamic = "force-dynamic";
+
 interface ShowcaseProject {
   id: string;
   name: string;
@@ -16,16 +18,24 @@ const CATEGORY_COLORS: Record<string, string> = {
   bot: "bg-blue-500/20 text-blue-400 border-blue-500/30",
   app: "bg-amber-500/20 text-amber-400 border-amber-500/30",
   tool: "bg-rose-500/20 text-rose-400 border-rose-500/30",
+  content: "bg-red-500/20 text-red-400 border-red-500/30",
 };
 
 async function getShowcaseData(): Promise<ShowcaseProject[]> {
-  const filePath = path.join(process.cwd(), "..", "data", "showcase.json");
-  try {
-    const raw = await fs.readFile(filePath, "utf-8");
-    return JSON.parse(raw);
-  } catch {
-    return [];
+  // Try /data (Docker mount) first, then relative path (local dev)
+  const paths = [
+    "/data/showcase.json",
+    path.join(process.cwd(), "..", "data", "showcase.json"),
+  ];
+  for (const filePath of paths) {
+    try {
+      const raw = await fs.readFile(filePath, "utf-8");
+      return JSON.parse(raw);
+    } catch {
+      continue;
+    }
   }
+  return [];
 }
 
 export default async function ShowcasePage() {
@@ -37,16 +47,16 @@ export default async function ShowcasePage() {
         Community Showcase
       </h1>
       <p className="text-[var(--text-secondary)] mb-8">
-        Projects and tools built with the Spire Codex API. Want to add yours?{" "}
+        Projects and tools built with the Spire Codex API. Want to add yours? Share it in the{" "}
         <a
-          href="https://github.com/ptrlrd/spire-codex"
+          href="https://discord.gg/xMsTBeh"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[var(--accent-gold)] hover:underline"
         >
-          Open a PR on GitHub
+          Discord
         </a>
-        .
+        {" "}and we&apos;ll get it listed here.
       </p>
 
       {projects.length === 0 ? (

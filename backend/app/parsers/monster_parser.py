@@ -16,6 +16,14 @@ def class_name_to_id(name: str) -> str:
     return s.upper()
 
 
+def power_class_to_id(name: str) -> str:
+    """Convert power class name like 'StrengthPower' to 'STRENGTH'."""
+    name = re.sub(r'Power$', '', name)
+    s = re.sub(r'(?<=[a-z0-9])(?=[A-Z])', '_', name)
+    s = re.sub(r'(?<=[A-Z])(?=[A-Z][a-z])', '_', s)
+    return s.upper()
+
+
 def load_localization(loc_dir: Path) -> dict:
     loc_file = loc_dir / "monsters.json"
     if loc_file.exists():
@@ -24,9 +32,45 @@ def load_localization(loc_dir: Path) -> dict:
     return {}
 
 
-def parse_encounter_types() -> dict[str, str]:
-    """Parse encounter files to map monster class names to types (Boss/Elite/Normal)."""
+def parse_encounter_data(data_dir: Path) -> tuple[dict[str, str], dict[str, list[dict]]]:
+    """Parse encounter data to map monsters to types and encounter details.
+
+    Uses already-parsed encounters.json for act/name data, falls back to C# for type mapping.
+    """
     monster_types: dict[str, str] = {}
+    monster_encounters: dict[str, list[dict]] = {}
+
+    # First, load parsed encounters.json for act/name data
+    encounters_file = data_dir / "encounters.json"
+    if encounters_file.exists():
+        with open(encounters_file, "r", encoding="utf-8") as f:
+            encounters = json.load(f)
+        for enc in encounters:
+            room_type = enc.get("room_type", "Monster")
+            mtype = "Boss" if room_type == "Boss" else "Elite" if room_type == "Elite" else "Normal"
+            for m in enc.get("monsters", []):
+                mid = m["id"]
+                # Convert ID back to class name for type lookup
+                # Boss/Elite takes priority
+                if mid not in monster_types or mtype in ("Boss", "Elite"):
+                    if mid in monster_types and monster_types[mid] == "Boss" and mtype == "Elite":
+                        continue
+                    monster_types[mid] = mtype
+
+                if mid not in monster_encounters:
+                    monster_encounters[mid] = []
+                # Deduplicate by encounter_id
+                enc_id = enc["id"]
+                if not any(e["encounter_id"] == enc_id for e in monster_encounters[mid]):
+                    monster_encounters[mid].append({
+                        "encounter_id": enc_id,
+                        "encounter_name": enc.get("name", enc_id),
+                        "room_type": room_type,
+                        "act": enc.get("act"),
+                        "is_weak": enc.get("is_weak", False),
+                    })
+
+    # Also parse C# encounter files for any monsters not in JSON
     for f in sorted(ENCOUNTERS_DIR.glob("*.cs")):
         if f.stem.startswith("Mock") or f.stem.startswith("Deprecated"):
             continue
@@ -35,23 +79,145 @@ def parse_encounter_types() -> dict[str, str]:
         if not room_match:
             continue
         room_type = room_match.group(1)
-        if room_type == "Boss":
-            mtype = "Boss"
-        elif room_type == "Elite":
-            mtype = "Elite"
-        else:
-            mtype = "Normal"
+        mtype = "Boss" if room_type == "Boss" else "Elite" if room_type == "Elite" else "Normal"
+
         for m in re.finditer(r'ModelDb\.Monster<(\w+)>', content):
-            monster_name = m.group(1)
-            # Boss/Elite takes priority over Normal
-            if monster_name not in monster_types or mtype in ("Boss", "Elite"):
-                if monster_name in monster_types and monster_types[monster_name] == "Boss" and mtype == "Elite":
-                    continue  # Don't downgrade Boss to Elite
-                monster_types[monster_name] = mtype
-    return monster_types
+            class_name = m.group(1)
+            mid = class_name_to_id(class_name)
+            if mid not in monster_types or mtype in ("Boss", "Elite"):
+                if mid in monster_types and monster_types[mid] == "Boss" and mtype == "Elite":
+                    continue
+                monster_types[mid] = mtype
+
+    # Convert class-name-keyed types to ID-keyed
+    # (the C# loop already uses class names, we need both)
+    types_by_class = {}
+    for f in sorted(ENCOUNTERS_DIR.glob("*.cs")):
+        if f.stem.startswith("Mock") or f.stem.startswith("Deprecated"):
+            continue
+        content = f.read_text(encoding="utf-8")
+        room_match = re.search(r'RoomType\s*=>\s*RoomType\.(\w+)', content)
+        if not room_match:
+            continue
+        room_type = room_match.group(1)
+        mtype = "Boss" if room_type == "Boss" else "Elite" if room_type == "Elite" else "Normal"
+        for m in re.finditer(r'ModelDb\.Monster<(\w+)>', content):
+            class_name = m.group(1)
+            if class_name not in types_by_class or mtype in ("Boss", "Elite"):
+                if class_name in types_by_class and types_by_class[class_name] == "Boss" and mtype == "Elite":
+                    continue
+                types_by_class[class_name] = mtype
+
+    return types_by_class, monster_encounters
 
 
-def parse_single_monster(filepath: Path, localization: dict, encounter_types: dict) -> dict | None:
+def extract_move_effects(content: str) -> dict[str, dict]:
+    """Extract per-move intents, powers applied, and block from C# source."""
+    move_effects: dict[str, dict] = {}
+
+    # Map move IDs to their method names
+    move_to_method: dict[str, str] = {}
+    for m in re.finditer(r'new MoveState\(\s*"(\w+)"\s*,\s*(\w+)', content):
+        move_id = m.group(1)
+        method_name = m.group(2)
+        move_to_method[move_id] = method_name
+
+    # Extract intents per move from MoveState constructor
+    # Use semicolon-terminated match to capture full constructor including all intents
+    for m in re.finditer(r'new MoveState\(\s*"(\w+)"[^;]*;', content, re.DOTALL):
+        text = m.group()
+        move_id_match = re.match(r'new MoveState\(\s*"(\w+)"', text)
+        if not move_id_match:
+            continue
+        move_id = move_id_match.group(1)
+        intent_types = re.findall(r'new (\w+Intent)', text)
+        move_effects[move_id] = {"intents": intent_types}
+
+    # Extract method bodies
+    method_pattern = re.compile(
+        r'(?:private|public)\s+async\s+Task\s+(\w+)\s*\([^)]*\)\s*\{(.*?)\n\t\}',
+        re.DOTALL
+    )
+    method_bodies: dict[str, str] = {}
+    for mm in method_pattern.finditer(content):
+        method_bodies[mm.group(1)] = mm.group(2)
+
+    # For each move, extract powers from its method body
+    for move_id, method_name in move_to_method.items():
+        if move_id not in move_effects:
+            move_effects[move_id] = {"intents": []}
+
+        body = method_bodies.get(method_name, "")
+        if not body:
+            continue
+
+        # Extract PowerCmd.Apply<PowerType>(target, amount, ...)
+        # target can be: targets, base.Creature, or a variable
+        powers = []
+        for pm in re.finditer(
+            r'PowerCmd\.Apply<(\w+)>\(\s*([\w.]+)\s*,\s*(\d+)m?',
+            body
+        ):
+            power_class = pm.group(1)
+            target_var = pm.group(2)
+            amount = int(pm.group(3))
+            target = "player" if target_var == "targets" else "self"
+            powers.append({
+                "power_id": power_class_to_id(power_class),
+                "target": target,
+                "amount": amount,
+            })
+
+        # Also check for PowerCmd.Apply with variable amounts
+        for pm in re.finditer(
+            r'PowerCmd\.Apply<(\w+)>\(\s*([\w.]+)\s*,\s*([A-Za-z_]\w*)\s*,',
+            body
+        ):
+            power_class = pm.group(1)
+            target_var = pm.group(2)
+            amount_var = pm.group(3)
+            target = "player" if target_var == "targets" else "self"
+            # Try to resolve the variable
+            var_match = re.search(
+                rf'{amount_var}\s*=>\s*(?:AscensionHelper\.GetValueIfAscension\(\w+\.\w+,\s*\d+,\s*(\d+)\)|(\d+))',
+                content
+            )
+            amount = None
+            if var_match:
+                amount = int(var_match.group(1) or var_match.group(2))
+            if not amount:
+                const_match = re.search(rf'const\s+int\s+\w*{amount_var}\w*\s*=\s*(\d+)', content, re.IGNORECASE)
+                if const_match:
+                    amount = int(const_match.group(1))
+            if amount is not None:
+                # Check if already captured
+                pid = power_class_to_id(power_class)
+                already = any(p["power_id"] == pid and p["target"] == target for p in powers)
+                if not already:
+                    powers.append({
+                        "power_id": pid,
+                        "target": target,
+                        "amount": amount,
+                    })
+
+        if powers:
+            move_effects[move_id]["powers"] = powers
+
+        # Extract block from move methods
+        block_match = re.search(r'GainBlock\(base\.Creature,\s*(\d+)m?', body)
+        if block_match:
+            move_effects[move_id]["block"] = int(block_match.group(1))
+
+        # Extract healing
+        heal_match = re.search(r'CreatureCmd\.Heal\(base\.Creature,\s*(\d+)', body)
+        if heal_match:
+            move_effects[move_id]["heal"] = int(heal_match.group(1))
+
+    return move_effects
+
+
+def parse_single_monster(filepath: Path, localization: dict, encounter_types: dict,
+                         monster_encounters: dict) -> dict | None:
     content = filepath.read_text(encoding="utf-8")
     class_name = filepath.stem
 
@@ -98,6 +264,9 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
     for m in re.finditer(r'new MoveState\(\s*"(\w+)"', content):
         move_name = m.group(1)
         moves.append(move_name)
+
+    # Extract move effects (intents, powers, block, heal)
+    move_effects = extract_move_effects(content)
 
     # Damage values from move methods
     damage_values = {}
@@ -148,8 +317,11 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
         name = bm.group(1) or "base"
         block_values[name] = int(bm.group(2))
 
-    # Monster type from encounter data
+    # Monster type from encounter data (keyed by class name)
     monster_type = encounter_types.get(class_name, "Normal")
+
+    # Encounter appearances (keyed by monster ID)
+    encounters = monster_encounters.get(monster_id, [])
 
     # Localization - get name and move names
     name = localization.get(f"{monster_id}.name", class_name)
@@ -159,14 +331,36 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
         loc_move = re.sub(r'_MOVE$', '', move)
         loc_key = f"{monster_id}.moves.{loc_move}.title"
         move_title = localization.get(loc_key, loc_move.replace("_", " ").title())
-        move_details.append({"id": loc_move, "name": move_title})
+
+        # Merge effects into move detail
+        effects = move_effects.get(move, {})
+        intents = effects.get("intents", [])
+        # Categorize the move
+        intent_label = _intent_label(intents)
+
+        move_entry: dict = {"id": loc_move, "name": move_title, "intent": intent_label}
+        if effects.get("powers"):
+            move_entry["powers"] = effects["powers"]
+        if effects.get("block"):
+            move_entry["block"] = effects["block"]
+        if effects.get("heal"):
+            move_entry["heal"] = effects["heal"]
+
+        # Link damage value if name matches
+        for dmg_name, dmg_val in damage_values.items():
+            # Match damage name to move (e.g., "HammerUppercut" matches "HAMMER_UPPERCUT_MOVE")
+            dmg_upper = class_name_to_id(dmg_name)
+            if dmg_upper in loc_move or loc_move.startswith(dmg_upper):
+                move_entry["damage"] = dmg_val
+                break
+
+        move_details.append(move_entry)
 
     # Skip monsters with no meaningful data (segments, stubs)
     if not min_hp and not move_details and not damage_values:
         return None
 
     # Image URL - check if a matching image exists
-    # Some monsters share sprites or have different filenames than their IDs
     IMAGE_ALIASES = {
         "CALCIFIED_CULTIST": "calcified_cultist",
         "DAMP_CULTIST": "damp_cultist",
@@ -203,16 +397,66 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
         "moves": move_details if move_details else None,
         "damage_values": damage_values if damage_values else None,
         "block_values": block_values if block_values else None,
+        "encounters": encounters if encounters else None,
         "image_url": image_url,
     }
 
 
-def parse_all_monsters(loc_dir: Path) -> list[dict]:
+def _intent_label(intents: list[str]) -> str:
+    """Convert a list of intent class names to a human-readable label."""
+    if not intents:
+        return "Unknown"
+    labels = []
+    for i in intents:
+        i_lower = i.lower()
+        if "attack" in i_lower:
+            labels.append("Attack")
+        elif "defend" in i_lower:
+            labels.append("Defend")
+        elif "debuff" in i_lower:
+            labels.append("Debuff")
+        elif "buff" in i_lower:
+            labels.append("Buff")
+        elif "status" in i_lower:
+            labels.append("Status")
+        elif "summon" in i_lower:
+            labels.append("Summon")
+        elif "heal" in i_lower:
+            labels.append("Heal")
+        elif "escape" in i_lower:
+            labels.append("Escape")
+        elif "sleep" in i_lower:
+            labels.append("Sleep")
+        elif "stun" in i_lower:
+            labels.append("Stun")
+        elif "hidden" in i_lower:
+            labels.append("Unknown")
+        elif "deathblow" in i_lower or "death_blow" in i_lower:
+            labels.append("Special")
+        elif "carddebuff" in i_lower or "card_debuff" in i_lower:
+            labels.append("Debuff")
+        elif "hex" in i_lower:
+            labels.append("Debuff")
+        elif "shriek" in i_lower:
+            labels.append("Debuff")
+        else:
+            labels.append("Unknown")
+    # Deduplicate while preserving order
+    seen = set()
+    unique = []
+    for lb in labels:
+        if lb not in seen:
+            seen.add(lb)
+            unique.append(lb)
+    return " + ".join(unique)
+
+
+def parse_all_monsters(loc_dir: Path, data_dir: Path) -> list[dict]:
     localization = load_localization(loc_dir)
-    encounter_types = parse_encounter_types()
+    encounter_types, monster_encounters = parse_encounter_data(data_dir)
     monsters = []
     for filepath in sorted(MONSTERS_DIR.glob("*.cs")):
-        monster = parse_single_monster(filepath, localization, encounter_types)
+        monster = parse_single_monster(filepath, localization, encounter_types, monster_encounters)
         if monster:
             monsters.append(monster)
     return monsters
@@ -222,7 +466,7 @@ def main(lang: str = "eng"):
     loc_dir = BASE / "extraction" / "raw" / "localization" / lang
     output_dir = BASE / "data" / lang
     output_dir.mkdir(parents=True, exist_ok=True)
-    monsters = parse_all_monsters(loc_dir)
+    monsters = parse_all_monsters(loc_dir, output_dir)
     with open(output_dir / "monsters.json", "w", encoding="utf-8") as f:
         json.dump(monsters, f, indent=2, ensure_ascii=False)
     print(f"Parsed {len(monsters)} monsters -> data/{lang}/monsters.json")
