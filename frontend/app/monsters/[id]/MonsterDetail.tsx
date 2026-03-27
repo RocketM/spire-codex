@@ -289,30 +289,17 @@ export default function MonsterDetail() {
 
       {/* Image */}
       {monster.image_url && (
-        <div className="mb-6 relative">
+        <div className="mb-6">
           <img
             src={`${API}${betaArt && monster.beta_image_url ? monster.beta_image_url : monster.image_url}`}
             alt={`${monster.name} - Slay the Spire 2 Monster`}
             className="mx-auto max-h-80 object-contain"
             crossOrigin="anonymous"
           />
-          {monster.beta_image_url && (
-            <button
-              onClick={() => setBetaArt(!betaArt)}
-              className={`absolute top-2 right-2 text-sm w-8 h-8 flex items-center justify-center rounded transition-colors ${
-                betaArt
-                  ? "bg-amber-950/60 border border-amber-700/50"
-                  : "bg-[var(--bg-primary)] border border-[var(--border-subtle)] opacity-50 hover:opacity-100"
-              }`}
-              title={betaArt ? "Show current art" : "Show concept art"}
-            >
-              ✏️
-            </button>
-          )}
         </div>
       )}
 
-      {/* Name + Badges */}
+      {/* Name + Badges + Beta Toggle */}
       <div className="flex flex-wrap items-center gap-3 mb-6">
         <h1 className="text-3xl font-bold text-[var(--text-primary)]">
           {monster.name}
@@ -332,6 +319,19 @@ export default function MonsterDetail() {
             {act}
           </span>
         ))}
+        {monster.beta_image_url && (
+          <button
+            onClick={() => setBetaArt(!betaArt)}
+            className={`ml-auto text-sm w-8 h-8 flex items-center justify-center rounded transition-colors ${
+              betaArt
+                ? "bg-amber-950/60 border border-amber-700/50"
+                : "bg-[var(--bg-primary)] border border-[var(--border-subtle)] opacity-50 hover:opacity-100"
+            }`}
+            title={betaArt ? "Show current art" : "Show concept art"}
+          >
+            ✏️
+          </button>
+        )}
       </div>
 
       {/* HP Section */}
