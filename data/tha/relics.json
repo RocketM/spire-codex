@@ -1861,7 +1861,7 @@
   {
     "id": "PAELS_CLAW",
     "name": "PaelsClaw",
-    "description": "เมื่อรับมา [gold]ร่ายมนตร์[/gold][gold]ป้องกัน[/gold]ทั้งหมดด้วย[purple][EnchantmentName][/purple]",
+    "description": "เมื่อรับมา [gold]ร่ายมนตร์[/gold][gold]ป้องกัน[/gold]ทั้งหมดด้วย[purple]มนตร์หนังเหนียว[/purple]",
     "description_raw": "เมื่อรับมา [gold]ร่ายมนตร์[/gold][gold]ป้องกัน[/gold]ทั้งหมดด้วย[purple]{EnchantmentName}[/purple]",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางเทพโบราณ",
@@ -1900,7 +1900,7 @@
   {
     "id": "PAELS_GROWTH",
     "name": "PaelsGrowth",
-    "description": "เมื่อรับมา [gold]ร่ายมนต์[/gold]การ์ด 1 ใบด้วย[purple][EnchantmentName][/purple]",
+    "description": "เมื่อรับมา [gold]ร่ายมนต์[/gold]การ์ด 1 ใบด้วย[purple]มนตร์โคลนนิ่ง[/purple]",
     "description_raw": "เมื่อรับมา [gold]ร่ายมนต์[/gold]การ์ด 1 ใบด้วย[purple]{EnchantmentName}[/purple]",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางเทพโบราณ",
@@ -2433,7 +2433,7 @@
   {
     "id": "ROYAL_STAMP",
     "name": "RoyalStamp",
-    "description": "เมื่อรับมา เลือกการ์ดโจมตีหรือทักษะ 1 ใบใน[gold]กองการ์ด[/gold]เพื่อ[gold]ร่ายมนตร์[/gold]ด้วย[purple][Enchantment][/purple]",
+    "description": "เมื่อรับมา เลือกการ์ดโจมตีหรือทักษะ 1 ใบใน[gold]กองการ์ด[/gold]เพื่อ[gold]ร่ายมนตร์[/gold]ด้วย[purple]มนตร์พระราชทาน[/purple]",
     "description_raw": "เมื่อรับมา เลือกการ์ดโจมตีหรือทักษะ 1 ใบใน[gold]กองการ์ด[/gold]เพื่อ[gold]ร่ายมนตร์[/gold]ด้วย[purple]{Enchantment}[/purple]",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางร้านค้า",

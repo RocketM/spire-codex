@@ -1770,7 +1770,7 @@
   {
     "id": "ROYAL_STAMP",
     "name": "Königlicher Stempel",
-    "description": "Wähle beim Aufheben einen Angriff oder eine Fertigkeit in deinem [gold]Deck[/gold], die du mit [purple][Enchantment][/purple] [gold]verzauberst[/gold].",
+    "description": "Wähle beim Aufheben einen Angriff oder eine Fertigkeit in deinem [gold]Deck[/gold], die du mit [purple]Königliche Zusage[/purple] [gold]verzauberst[/gold].",
     "description_raw": "Wähle beim Aufheben einen Angriff oder eine Fertigkeit in deinem [gold]Deck[/gold], die du mit [purple]{Enchantment}[/purple] [gold]verzauberst[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Laden-Relikt",
@@ -2309,7 +2309,7 @@
   {
     "id": "PAELS_CLAW",
     "name": "Paels Kralle",
-    "description": "[gold]Verzaubere[/gold] beim Aufheben alle [gold]Verteidigen[/gold] mit [purple][EnchantmentName][/purple].",
+    "description": "[gold]Verzaubere[/gold] beim Aufheben alle [gold]Verteidigen[/gold] mit [purple]Klebrig[/purple].",
     "description_raw": "[gold]Verzaubere[/gold] beim Aufheben alle [gold]Verteidigen[/gold] mit [purple]{EnchantmentName}[/purple].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
@@ -2348,7 +2348,7 @@
   {
     "id": "PAELS_GROWTH",
     "name": "Paels Wachstum",
-    "description": "[gold]Verzaubere[/gold] beim Aufheben eine Karte mit [purple][EnchantmentName][/purple].",
+    "description": "[gold]Verzaubere[/gold] beim Aufheben eine Karte mit [purple]Klon[/purple].",
     "description_raw": "[gold]Verzaubere[/gold] beim Aufheben eine Karte mit [purple]{EnchantmentName}[/purple].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",

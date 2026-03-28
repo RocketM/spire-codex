@@ -1588,7 +1588,7 @@
   {
     "id": "ROYAL_STAMP",
     "name": "Kraliyet Damgası",
-    "description": "Bu kalıntıyı aldığında, [purple][Enchantment][/purple] ile [gold]Büyülemek[/gold] için [gold]Deste[/gold]'nden bir Saldırı veya Beceri kartı seç.",
+    "description": "Bu kalıntıyı aldığında, [purple]Kraliyet Onaylı[/purple] ile [gold]Büyülemek[/gold] için [gold]Deste[/gold]'nden bir Saldırı veya Beceri kartı seç.",
     "description_raw": "Bu kalıntıyı aldığında, [purple]{Enchantment}[/purple] ile [gold]Büyülemek[/gold] için [gold]Deste[/gold]'nden bir Saldırı veya Beceri kartı seç.",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Dükkan Kalıntısı",
@@ -2465,7 +2465,7 @@
   {
     "id": "PAELS_GROWTH",
     "name": "Pael'in Oluşumu",
-    "description": "Bu kalıntıyı aldığında, bir kartı [purple][EnchantmentName][/purple] ile [gold]Büyüle[/gold].",
+    "description": "Bu kalıntıyı aldığında, bir kartı [purple]Klonla[/purple] ile [gold]Büyüle[/gold].",
     "description_raw": "Bu kalıntıyı aldığında, bir kartı [purple]{EnchantmentName}[/purple] ile [gold]Büyüle[/gold].",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Kadim Kalıntı",
@@ -2478,7 +2478,7 @@
   {
     "id": "PAELS_CLAW",
     "name": "Pael'in Pençesi",
-    "description": "Bu kalıntıyı aldığında tüm [gold]Savunma[/gold] kartlarını [purple][EnchantmentName][/purple] ile [gold]Büyüle[/gold].",
+    "description": "Bu kalıntıyı aldığında tüm [gold]Savunma[/gold] kartlarını [purple]Vıcık Vıcık[/purple] ile [gold]Büyüle[/gold].",
     "description_raw": "Bu kalıntıyı aldığında tüm [gold]Savunma[/gold] kartlarını [purple]{EnchantmentName}[/purple] ile [gold]Büyüle[/gold].",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Kadim Kalıntı",

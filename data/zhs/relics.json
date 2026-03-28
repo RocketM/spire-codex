@@ -184,7 +184,7 @@
   {
     "id": "PAELS_CLAW",
     "name": "佩尔之爪",
-    "description": "拾起时，为所有的“[gold]防御[/gold]”[gold]附魔[/gold]：[purple][EnchantmentName][/purple]。",
+    "description": "拾起时，为所有的“[gold]防御[/gold]”[gold]附魔[/gold]：[purple]黏糊[/purple]。",
     "description_raw": "拾起时，为所有的“[gold]防御[/gold]”[gold]附魔[/gold]：[purple]{EnchantmentName}[/purple]。",
     "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
     "rarity": "先古遗物",
@@ -275,7 +275,7 @@
   {
     "id": "PAELS_GROWTH",
     "name": "佩尔的增生组织",
-    "description": "拾起时，从[gold]牌组[/gold]中选择一张牌，为其[gold]附魔[/gold]：[purple][EnchantmentName][/purple]。",
+    "description": "拾起时，从[gold]牌组[/gold]中选择一张牌，为其[gold]附魔[/gold]：[purple]克隆[/purple]。",
     "description_raw": "拾起时，从[gold]牌组[/gold]中选择一张牌，为其[gold]附魔[/gold]：[purple]{EnchantmentName}[/purple]。",
     "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
     "rarity": "先古遗物",
@@ -2355,7 +2355,7 @@
   {
     "id": "ROYAL_STAMP",
     "name": "王室印章",
-    "description": "拾起时，从[gold]牌组[/gold]中选择一张攻击牌或技能牌，为它[gold]附魔[/gold]：[purple][Enchantment][/purple]。",
+    "description": "拾起时，从[gold]牌组[/gold]中选择一张攻击牌或技能牌，为它[gold]附魔[/gold]：[purple]皇室认证[/purple]。",
     "description_raw": "拾起时，从[gold]牌组[/gold]中选择一张攻击牌或技能牌，为它[gold]附魔[/gold]：[purple]{Enchantment}[/purple]。",
     "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
     "rarity": "商店遗物",

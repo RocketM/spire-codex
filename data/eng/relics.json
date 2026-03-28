@@ -2147,7 +2147,7 @@
   {
     "id": "PAELS_CLAW",
     "name": "Pael's Claw",
-    "description": "Upon pickup, [gold]Enchant[/gold] all [gold]Defends[/gold] with [purple][EnchantmentName][/purple].",
+    "description": "Upon pickup, [gold]Enchant[/gold] all [gold]Defends[/gold] with [purple]Goopy[/purple].",
     "description_raw": "Upon pickup, [gold]Enchant[/gold] all [gold]Defends[/gold] with [purple]{EnchantmentName}[/purple].",
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
@@ -2186,7 +2186,7 @@
   {
     "id": "PAELS_GROWTH",
     "name": "Pael's Growth",
-    "description": "Upon pickup, [gold]Enchant[/gold] a card with [purple][EnchantmentName][/purple].",
+    "description": "Upon pickup, [gold]Enchant[/gold] a card with [purple]Clone[/purple].",
     "description_raw": "Upon pickup, [gold]Enchant[/gold] a card with [purple]{EnchantmentName}[/purple].",
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
@@ -2758,7 +2758,7 @@
   {
     "id": "ROYAL_STAMP",
     "name": "Royal Stamp",
-    "description": "Upon pickup, choose an Attack or Skill in your [gold]Deck[/gold] to [gold]Enchant[/gold] with [purple][Enchantment][/purple].",
+    "description": "Upon pickup, choose an Attack or Skill in your [gold]Deck[/gold] to [gold]Enchant[/gold] with [purple]Royally Approved[/purple].",
     "description_raw": "Upon pickup, choose an Attack or Skill in your [gold]Deck[/gold] to [gold]Enchant[/gold] with [purple]{Enchantment}[/purple].",
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",

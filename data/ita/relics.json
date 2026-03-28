@@ -210,7 +210,7 @@
   {
     "id": "PAELS_CLAW",
     "name": "Artiglio di Pael",
-    "description": "Dopo aver ottenuto questa reliquia, [gold]incanti[/gold] tutte le carte [gold]Difendi[/gold] con [purple][EnchantmentName][/purple].",
+    "description": "Dopo aver ottenuto questa reliquia, [gold]incanti[/gold] tutte le carte [gold]Difendi[/gold] con [purple]Viscidume[/purple].",
     "description_raw": "Dopo aver ottenuto questa reliquia, [gold]incanti[/gold] tutte le carte [gold]Difendi[/gold] con [purple]{EnchantmentName}[/purple].",
     "flavor": "[red]I dettagli di questa reliquia verranno rivelati in futuro...[/red]",
     "rarity": "Reliquia antica",
@@ -918,7 +918,7 @@
   {
     "id": "PAELS_GROWTH",
     "name": "Crescita di Pael",
-    "description": "Dopo aver ottenuto questa reliquia, [gold]incanti[/gold] una carta con [purple][EnchantmentName][/purple].",
+    "description": "Dopo aver ottenuto questa reliquia, [gold]incanti[/gold] una carta con [purple]Clonazione[/purple].",
     "description_raw": "Dopo aver ottenuto questa reliquia, [gold]incanti[/gold] una carta con [purple]{EnchantmentName}[/purple].",
     "flavor": "[red]I dettagli di questa reliquia verranno rivelati in futuro...[/red]",
     "rarity": "Reliquia antica",
@@ -3336,7 +3336,7 @@
   {
     "id": "ROYAL_STAMP",
     "name": "Timbro Regale",
-    "description": "Dopo aver ottenuto questa reliquia, scegli una carta Attacco o Abilità nel tuo [gold]mazzo[/gold] da [gold]incantare[/gold] con [purple][Enchantment][/purple].",
+    "description": "Dopo aver ottenuto questa reliquia, scegli una carta Attacco o Abilità nel tuo [gold]mazzo[/gold] da [gold]incantare[/gold] con [purple]Approvazione Regale[/purple].",
     "description_raw": "Dopo aver ottenuto questa reliquia, scegli una carta Attacco o Abilità nel tuo [gold]mazzo[/gold] da [gold]incantare[/gold] con [purple]{Enchantment}[/purple].",
     "flavor": "[red]I dettagli di questa reliquia verranno rivelati in futuro...[/red]",
     "rarity": "Reliquia artigianale",

@@ -1646,7 +1646,7 @@
   {
     "id": "PAELS_CLAW",
     "name": "Garra de Pael",
-    "description": "Al recoger esta reliquia, [gold]Encanta[/gold] todos los [gold]Defender[/gold] con [purple][EnchantmentName][/purple].",
+    "description": "Al recoger esta reliquia, [gold]Encanta[/gold] todos los [gold]Defender[/gold] con [purple]Viscosidad[/purple].",
     "description_raw": "Al recoger esta reliquia, [gold]Encanta[/gold] todos los [gold]Defender[/gold] con [purple]{EnchantmentName}[/purple].",
     "flavor": "[red]Los detalles de esta reliquia serán revelados en el futuro...[/red]",
     "rarity": "Reliquia antigua",
@@ -3193,7 +3193,7 @@
   {
     "id": "ROYAL_STAMP",
     "name": "Sello real",
-    "description": "Al recoger esta reliquia, elige un Ataque o Habilidad de tu [gold]Mazo[/gold] y [gold]Encántalo[/gold] con [purple][Enchantment][/purple].",
+    "description": "Al recoger esta reliquia, elige un Ataque o Habilidad de tu [gold]Mazo[/gold] y [gold]Encántalo[/gold] con [purple]Sigilo real[/purple].",
     "description_raw": "Al recoger esta reliquia, elige un Ataque o Habilidad de tu [gold]Mazo[/gold] y [gold]Encántalo[/gold] con [purple]{Enchantment}[/purple].",
     "flavor": "[red]Los detalles de esta reliquia serán revelados en el futuro...[/red]",
     "rarity": "Tienda de reliquias",
@@ -3466,7 +3466,7 @@
   {
     "id": "PAELS_GROWTH",
     "name": "Tumor de Pael",
-    "description": "Al recoger esta reliquia, [gold]Encanta[/gold] una carta con [purple][EnchantmentName][/purple].",
+    "description": "Al recoger esta reliquia, [gold]Encanta[/gold] una carta con [purple]Clonable[/purple].",
     "description_raw": "Al recoger esta reliquia, [gold]Encanta[/gold] una carta con [purple]{EnchantmentName}[/purple].",
     "flavor": "[red]Los detalles de esta reliquia serán revelados en el futuro...[/red]",
     "rarity": "Reliquia antigua",

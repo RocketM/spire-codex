@@ -1042,7 +1042,7 @@
   {
     "id": "ROYAL_STAMP",
     "name": "Królewska pieczęć",
-    "description": "Przy podniesieniu wybierz kartę Ataku lub Umiejętności z [gold]talii[/gold] i rzuć na nią [gold]Zaklęcie[/gold] [purple][Enchantment][/purple].",
+    "description": "Przy podniesieniu wybierz kartę Ataku lub Umiejętności z [gold]talii[/gold] i rzuć na nią [gold]Zaklęcie[/gold] [purple]Aprobata[/purple].",
     "description_raw": "Przy podniesieniu wybierz kartę Ataku lub Umiejętności z [gold]talii[/gold] i rzuć na nią [gold]Zaklęcie[/gold] [purple]{Enchantment}[/purple].",
     "flavor": "[red]Szczegóły tego artefaktu zostaną ujawnione w przyszłości...[/red]",
     "rarity": "Zakupiony Artefakt",
@@ -1510,7 +1510,7 @@
   {
     "id": "PAELS_GROWTH",
     "name": "Narośl Paela",
-    "description": "Przy podniesieniu rzuć [gold]Zaklęcie[/gold] [purple][EnchantmentName][/purple] na kartę.",
+    "description": "Przy podniesieniu rzuć [gold]Zaklęcie[/gold] [purple]Duplikacja[/purple] na kartę.",
     "description_raw": "Przy podniesieniu rzuć [gold]Zaklęcie[/gold] [purple]{EnchantmentName}[/purple] na kartę.",
     "flavor": "[red]Szczegóły tego artefaktu zostaną ujawnione w przyszłości...[/red]",
     "rarity": "Starożytny Artefakt",
@@ -2933,7 +2933,7 @@
   {
     "id": "PAELS_CLAW",
     "name": "Szpona Paela",
-    "description": "Przy podniesieniu rzuć [gold]Zaklęcie[/gold] [purple][EnchantmentName][/purple] na wszystkie [gold]Obrony[/gold].",
+    "description": "Przy podniesieniu rzuć [gold]Zaklęcie[/gold] [purple]Maź[/purple] na wszystkie [gold]Obrony[/gold].",
     "description_raw": "Przy podniesieniu rzuć [gold]Zaklęcie[/gold] [purple]{EnchantmentName}[/purple] na wszystkie [gold]Obrony[/gold].",
     "flavor": "[red]Szczegóły tego artefaktu zostaną ujawnione w przyszłości...[/red]",
     "rarity": "Starożytny Artefakt",

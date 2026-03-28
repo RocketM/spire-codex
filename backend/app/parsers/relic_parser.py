@@ -72,7 +72,7 @@ def parse_relic_pools() -> dict[str, str]:
     return relic_to_pool
 
 
-def parse_single_relic(filepath: Path, localization: dict, relic_pools: dict) -> dict | None:
+def parse_single_relic(filepath: Path, localization: dict, relic_pools: dict, ench_loc: dict | None = None) -> dict | None:
     content = filepath.read_text(encoding="utf-8")
     class_name = filepath.stem
 
@@ -87,6 +87,19 @@ def parse_single_relic(filepath: Path, localization: dict, relic_pools: dict) ->
 
     # Extract variable values from source
     all_vars = extract_vars_from_source(content)
+
+    # Resolve StringVar references to enchantment names
+    # Pattern: StringVar("EnchantmentName", ModelDb.Enchantment<Goopy>().Title.GetFormattedText())
+    for sv in re.finditer(r'StringVar\(\s*"(\w+)"\s*,\s*ModelDb\.Enchantment<(\w+)>\(\)', content):
+        var_name = sv.group(1)
+        enchant_class = sv.group(2)
+        enchant_id = class_name_to_id(enchant_class)
+        enchant_name = re.sub(r'(?<=[a-z])(?=[A-Z])', ' ', enchant_class)
+        if ench_loc:
+            loc_name = ench_loc.get(f"{enchant_id}.title")
+            if loc_name:
+                enchant_name = loc_name
+        all_vars[var_name] = enchant_name
 
     # Localization
     title = localization.get(f"{relic_id}.title", class_name)
@@ -162,9 +175,15 @@ def parse_all_relics(loc_dir: Path) -> list[dict]:
     gameplay_ui = load_gameplay_ui(loc_dir)
     rarity_map = build_relic_rarity_map(gameplay_ui)
     rarity_index = {rarity_map.get(r, r): i for i, r in enumerate(RELIC_RARITY_ORDER)}
+    # Load enchantment localization for StringVar resolution
+    ench_loc_file = loc_dir / "enchantments.json"
+    ench_loc = {}
+    if ench_loc_file.exists():
+        with open(ench_loc_file, "r", encoding="utf-8") as f:
+            ench_loc = json.load(f)
     relics = []
     for filepath in sorted(RELICS_DIR.glob("*.cs")):
-        relic = parse_single_relic(filepath, localization, relic_pools)
+        relic = parse_single_relic(filepath, localization, relic_pools, ench_loc)
         if relic:
             relic["rarity_key"] = relic["rarity"]
             relic["rarity"] = rarity_map.get(relic["rarity"], relic["rarity"])

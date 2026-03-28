@@ -749,7 +749,7 @@
   {
     "id": "ROYAL_STAMP",
     "name": "Carimbo Real",
-    "description": "Ao coletar esta relíquia, escolha um Ataque ou uma Técnica no seu [gold]Baralho[/gold] para [gold]Encantar[/gold] com [purple][Enchantment][/purple].",
+    "description": "Ao coletar esta relíquia, escolha um Ataque ou uma Técnica no seu [gold]Baralho[/gold] para [gold]Encantar[/gold] com [purple]Aprovação Real[/purple].",
     "description_raw": "Ao coletar esta relíquia, escolha um Ataque ou uma Técnica no seu [gold]Baralho[/gold] para [gold]Encantar[/gold] com [purple]{Enchantment}[/purple].",
     "flavor": "[red]Detalhes sobre esta relíquia serão revelados no futuro...[/red]",
     "rarity": "Relíquia de Loja",
@@ -1776,7 +1776,7 @@
   {
     "id": "PAELS_CLAW",
     "name": "Garra de Pael",
-    "description": "Ao coletar esta relíquia, [gold]Encante[/gold] todas as [gold]Defesas[/gold] com [purple][EnchantmentName][/purple].",
+    "description": "Ao coletar esta relíquia, [gold]Encante[/gold] todas as [gold]Defesas[/gold] com [purple]Gosmenta[/purple].",
     "description_raw": "Ao coletar esta relíquia, [gold]Encante[/gold] todas as [gold]Defesas[/gold] com [purple]{EnchantmentName}[/purple].",
     "flavor": "[red]Detalhes sobre esta relíquia serão revelados no futuro...[/red]",
     "rarity": "Relíquia Ancestral",
@@ -3570,7 +3570,7 @@
   {
     "id": "PAELS_GROWTH",
     "name": "Tumor de Pael",
-    "description": "Ao coletar esta relíquia, [gold]Encante[/gold] uma carta com [purple][EnchantmentName][/purple].",
+    "description": "Ao coletar esta relíquia, [gold]Encante[/gold] uma carta com [purple]Clone[/purple].",
     "description_raw": "Ao coletar esta relíquia, [gold]Encante[/gold] uma carta com [purple]{EnchantmentName}[/purple].",
     "flavor": "[red]Detalhes sobre esta relíquia serão revelados no futuro...[/red]",
     "rarity": "Relíquia Ancestral",

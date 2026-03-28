@@ -2218,7 +2218,7 @@
   {
     "id": "ROYAL_STAMP",
     "name": "왕실 도장",
-    "description": "획득 시, [gold]덱[/gold]에 있는 공격이나 스킬 카드 중 1장을 선택해 [purple][Enchantment][/purple]을 [gold]인챈트[/gold]합니다.",
+    "description": "획득 시, [gold]덱[/gold]에 있는 공격이나 스킬 카드 중 1장을 선택해 [purple]왕실 인증[/purple]을 [gold]인챈트[/gold]합니다.",
     "description_raw": "획득 시, [gold]덱[/gold]에 있는 공격이나 스킬 카드 중 1장을 선택해 [purple]{Enchantment}[/purple]을 [gold]인챈트[/gold]합니다.",
     "flavor": "[red]이 유물에 관한 자세한 내용은 추후 공개될 예정입니다...[/red]",
     "rarity": "상점 유물",
@@ -3232,7 +3232,7 @@
   {
     "id": "PAELS_CLAW",
     "name": "파엘의 발톱",
-    "description": "획득 시, 모든 [gold]수비[/gold]에 [purple][EnchantmentName][/purple]을 [gold]인챈트[/gold]합니다.",
+    "description": "획득 시, 모든 [gold]수비[/gold]에 [purple]점착[/purple]을 [gold]인챈트[/gold]합니다.",
     "description_raw": "획득 시, 모든 [gold]수비[/gold]에 [purple]{EnchantmentName}[/purple]을 [gold]인챈트[/gold]합니다.",
     "flavor": "[red]이 유물에 관한 자세한 내용은 추후 공개될 예정입니다...[/red]",
     "rarity": "고대 유물",
@@ -3284,7 +3284,7 @@
   {
     "id": "PAELS_GROWTH",
     "name": "파엘의 종양",
-    "description": "획득 시, 카드 1장에 [purple][EnchantmentName][/purple]를 [gold]인챈트[/gold]합니다.",
+    "description": "획득 시, 카드 1장에 [purple]복제[/purple]를 [gold]인챈트[/gold]합니다.",
     "description_raw": "획득 시, 카드 1장에 [purple]{EnchantmentName}[/purple]를 [gold]인챈트[/gold]합니다.",
     "flavor": "[red]이 유물에 관한 자세한 내용은 추후 공개될 예정입니다...[/red]",
     "rarity": "고대 유물",

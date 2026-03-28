@@ -1009,7 +1009,7 @@
   {
     "id": "PAELS_CLAW",
     "name": "パエルの爪",
-    "description": "取得時、すべての[gold]防御[/gold]に、[purple][EnchantmentName][/purple]を[gold]エンチャント[/gold]する",
+    "description": "取得時、すべての[gold]防御[/gold]に、[purple]べとべと[/purple]を[gold]エンチャント[/gold]する",
     "description_raw": "取得時、すべての[gold]防御[/gold]に、[purple]{EnchantmentName}[/purple]を[gold]エンチャント[/gold]する",
     "flavor": "[red]このレリックの詳細は今後明かされるはずだ……[/red]",
     "rarity": "レリック（エンシェント）",
@@ -1061,7 +1061,7 @@
   {
     "id": "PAELS_GROWTH",
     "name": "パエルの膿",
-    "description": "取得時、カード1枚に[purple][EnchantmentName][/purple]を[gold]エンチャント[/gold]する",
+    "description": "取得時、カード1枚に[purple]クローン[/purple]を[gold]エンチャント[/gold]する",
     "description_raw": "取得時、カード1枚に[purple]{EnchantmentName}[/purple]を[gold]エンチャント[/gold]する",
     "flavor": "[red]このレリックの詳細は今後明かされるはずだ……[/red]",
     "rarity": "レリック（エンシェント）",
@@ -2790,7 +2790,7 @@
   {
     "id": "ROYAL_STAMP",
     "name": "王家の刻印",
-    "description": "取得時、[gold]デッキ[/gold]にあるアタックかスキルを1枚選び、[purple][Enchantment][/purple]を[gold]エンチャント[/gold]する",
+    "description": "取得時、[gold]デッキ[/gold]にあるアタックかスキルを1枚選び、[purple]王室認可[/purple]を[gold]エンチャント[/gold]する",
     "description_raw": "取得時、[gold]デッキ[/gold]にあるアタックかスキルを1枚選び、[purple]{Enchantment}[/purple]を[gold]エンチャント[/gold]する",
     "flavor": "[red]このレリックの詳細は今後明かされるはずだ……[/red]",
     "rarity": "レリック（ショップ）",

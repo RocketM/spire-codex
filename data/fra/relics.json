@@ -1217,7 +1217,7 @@
   {
     "id": "PAELS_GROWTH",
     "name": "Excroissance de Pael",
-    "description": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] une carte avec [purple][EnchantmentName][/purple].",
+    "description": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] une carte avec [purple]Clonage[/purple].",
     "description_raw": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] une carte avec [purple]{EnchantmentName}[/purple].",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique d'Ancien",
@@ -1555,7 +1555,7 @@
   {
     "id": "PAELS_CLAW",
     "name": "Griffe de Pael",
-    "description": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] toutes vos [gold]Défenses[/gold] avec [purple][EnchantmentName][/purple].",
+    "description": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] toutes vos [gold]Défenses[/gold] avec [purple]Viscosité[/purple].",
     "description_raw": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] toutes vos [gold]Défenses[/gold] avec [purple]{EnchantmentName}[/purple].",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique d'Ancien",
@@ -3141,7 +3141,7 @@
   {
     "id": "ROYAL_STAMP",
     "name": "Sceau royal",
-    "description": "Lorsque vous obtenez cette relique, choisissez une Attaque ou une Compétence dans votre [gold]Deck[/gold] à [gold]Envoûter[/gold] avec [purple][Enchantment][/purple].",
+    "description": "Lorsque vous obtenez cette relique, choisissez une Attaque ou une Compétence dans votre [gold]Deck[/gold] à [gold]Envoûter[/gold] avec [purple]Sceau royal[/purple].",
     "description_raw": "Lorsque vous obtenez cette relique, choisissez une Attaque ou une Compétence dans votre [gold]Deck[/gold] à [gold]Envoûter[/gold] avec [purple]{Enchantment}[/purple].",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique du Marchand",
