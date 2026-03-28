@@ -27,6 +27,7 @@ const roomTypeOptions = [
   { label: "Monster", value: "Monster" },
   { label: "Elite", value: "Elite" },
   { label: "Boss", value: "Boss" },
+  { label: "Weak", value: "Weak" },
 ];
 
 const actOptions = [
@@ -54,7 +55,7 @@ const [encounters, setEncounters] = useState<Encounter[]>(initialEncounters);
       }
     }
     const params = new URLSearchParams();
-    if (roomType) params.set("room_type", roomType);
+    if (roomType && roomType !== "Weak") params.set("room_type", roomType);
     if (act) params.set("act", act);
     if (search) params.set("search", search);
     params.set("lang", lang);
@@ -62,13 +63,17 @@ const [encounters, setEncounters] = useState<Encounter[]>(initialEncounters);
       .then(setEncounters);
   }, [roomType, act, search, lang]);
 
+  const filtered = roomType === "Weak"
+    ? encounters.filter((e) => e.is_weak)
+    : encounters;
+
   return (
     <>
       <SearchFilter
         search={search}
         onSearchChange={setSearch}
         placeholder="Search encounters..."
-        resultCount={encounters.length}
+        resultCount={filtered.length}
         filters={[
           {
             label: "All Types",
@@ -86,7 +91,7 @@ const [encounters, setEncounters] = useState<Encounter[]>(initialEncounters);
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-        {encounters.map((enc) => (
+        {filtered.map((enc) => (
           <Link
             key={enc.id}
             href={`${lp}/encounters/${enc.id.toLowerCase()}`}
