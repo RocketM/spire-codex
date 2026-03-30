@@ -23,10 +23,12 @@ async def submit_run_endpoint(request: Request, username: str | None = None):
     except Exception:
         raise HTTPException(status_code=400, detail="Invalid JSON body")
 
-    # Sanitize username
+    # Sanitize username — alphanumeric, underscores, hyphens, spaces only
     clean_username = None
     if username:
-        clean_username = username.strip()[:25] or None
+        import re
+        sanitized = re.sub(r'[^a-zA-Z0-9_\- ]', '', username.strip())[:25].strip()
+        clean_username = sanitized or None
 
     result = submit_run(data, username=clean_username)
     if result.get("error"):
