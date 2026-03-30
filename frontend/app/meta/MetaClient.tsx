@@ -356,7 +356,7 @@ export default function MetaClient() {
                   <YAxis type="category" dataKey="name" width={120} tick={{ fontSize: 10, fill: "#9ca3af" }} />
                   <Tooltip
                     contentStyle={{ background: "#1a1a2e", border: "1px solid #333", borderRadius: 8, fontSize: 12 }}
-                    formatter={(value: number, name: string) => [`${value}%`, "Pick Rate"]}
+                    formatter={(value) => [`${value}%`, "Pick Rate"]}
                   />
                   <Bar dataKey="pick_rate" fill={CHART_COLORS.gold} radius={[0, 4, 4, 0]} />
                 </BarChart>
