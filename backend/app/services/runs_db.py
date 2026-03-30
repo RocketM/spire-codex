@@ -92,6 +92,17 @@ def init_db():
             CREATE INDEX IF NOT EXISTS idx_run_relics_relic ON run_relics(relic_id);
             CREATE INDEX IF NOT EXISTS idx_run_choices_card ON run_card_choices(card_id);
             CREATE INDEX IF NOT EXISTS idx_run_choices_run ON run_card_choices(run_id);
+
+            CREATE TABLE IF NOT EXISTS run_potions (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                run_id INTEGER NOT NULL REFERENCES runs(id),
+                potion_id TEXT NOT NULL,
+                was_picked INTEGER NOT NULL,
+                was_used INTEGER NOT NULL DEFAULT 0
+            );
+
+            CREATE INDEX IF NOT EXISTS idx_run_potions_potion ON run_potions(potion_id);
+            CREATE INDEX IF NOT EXISTS idx_run_potions_run ON run_potions(run_id);
         """)
 
         # Migrations — add columns to existing tables
@@ -189,7 +200,9 @@ def submit_run(data: dict, username: str | None = None) -> dict:
                 (run_id, relic_id, floor_added),
             )
 
-        # Insert card choices from floor history
+        # Insert card choices and potion data from floor history
+        potion_used_set: set[str] = set()
+        potion_seen: dict[str, bool] = {}  # potion_id -> was_picked
         for act_idx, act_floors in enumerate(data.get("map_point_history", [])):
             for floor_idx, floor in enumerate(act_floors):
                 floor_num = floor_idx + 1
@@ -201,6 +214,25 @@ def submit_run(data: dict, username: str | None = None) -> dict:
                             "INSERT INTO run_card_choices (run_id, card_id, was_picked, floor) VALUES (?, ?, ?, ?)",
                             (run_id, card_id, was_picked, floor_num),
                         )
+                    # Potion choices
+                    for pc in ps.get("potion_choices", []):
+                        pid = clean_id(pc.get("choice", ""))
+                        if pid:
+                            picked = int(pc.get("was_picked", False))
+                            potion_seen[pid] = potion_seen.get(pid, False) or bool(picked)
+                    # Potions used
+                    for pu in ps.get("potion_used", []):
+                        pid = clean_id(pu)
+                        if pid:
+                            potion_used_set.add(pid)
+
+        # Insert potion records
+        for pid, was_picked in potion_seen.items():
+            was_used = 1 if pid in potion_used_set else 0
+            conn.execute(
+                "INSERT INTO run_potions (run_id, potion_id, was_picked, was_used) VALUES (?, ?, ?, ?)",
+                (run_id, pid, int(was_picked), was_used),
+            )
 
     # Save full run JSON for sharing
     runs_dir = _data_dir / "runs"
@@ -342,6 +374,22 @@ def get_stats(character: str | None = None, win: str | None = None,
         win_card_map = {r["card_id"]: r["count"] for r in win_cards}
         loss_card_map = {r["card_id"]: r["count"] for r in loss_cards}
 
+        # Potion stats (filtered)
+        try:
+            potion_stats = conn.execute(f"""
+                SELECT rp.potion_id,
+                       SUM(rp.was_picked) as picked,
+                       COUNT(*) as offered,
+                       SUM(rp.was_used) as used,
+                       COUNT(DISTINCT rp.run_id) as total_runs_with,
+                       COUNT(DISTINCT CASE WHEN r.win = 1 THEN rp.run_id END) as win_runs
+                FROM run_potions rp JOIN runs r ON rp.run_id = r.id
+                {where}
+                GROUP BY rp.potion_id ORDER BY offered DESC
+            """, params).fetchall()
+        except Exception:
+            potion_stats = []
+
         return {
             "total_runs": total,
             "total_wins": wins,
@@ -371,6 +419,12 @@ def get_stats(character: str | None = None, win: str | None = None,
             "top_relics": [{"relic_id": r["relic_id"], "count": r["count"],
                            "total_runs_with": r["total_runs_with"], "win_runs": r["win_runs"]}
                           for r in top_relics],
+            "top_potions": [
+                {"potion_id": r["potion_id"], "offered": r["offered"], "picked": r["picked"],
+                 "used": r["used"], "total_runs_with": r["total_runs_with"], "win_runs": r["win_runs"],
+                 "pick_rate": round(r["picked"] / r["offered"] * 100, 1) if r["offered"] > 0 else 0}
+                for r in potion_stats
+            ],
             "deadliest": [{"encounter": r["killed_by"], "count": r["count"]} for r in deaths],
         }
 

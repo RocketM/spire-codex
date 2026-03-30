@@ -50,6 +50,14 @@ interface RelicInfo {
   image_url: string | null;
 }
 
+interface PotionInfo {
+  id: string;
+  name: string;
+  description: string;
+  rarity: string;
+  image_url: string | null;
+}
+
 interface CommunityStats {
   total_runs: number;
   total_wins: number;
@@ -61,6 +69,7 @@ interface CommunityStats {
   top_cards: { card_id: string; count: number; in_wins: number; in_losses: number; win_runs: number; total_runs_with: number }[];
   pick_rates: { card_id: string; offered: number; picked: number; pick_rate: number }[];
   top_relics: { relic_id: string; count: number; total_runs_with: number; win_runs: number }[];
+  top_potions: { potion_id: string; offered: number; picked: number; used: number; total_runs_with: number; win_runs: number; pick_rate: number }[];
   deadliest: { encounter: string; count: number }[];
 }
 
@@ -121,6 +130,32 @@ function RelicPill({ relicId, relicData, lp, className, children }: {
   );
 }
 
+function PotionPill({ potionId, potionData, lp, className }: {
+  potionId: string; potionData: Record<string, PotionInfo>; lp: string; className?: string;
+}) {
+  const [show, setShow] = useState(false);
+  const info = potionData[potionId];
+  return (
+    <Link href={`${lp}/potions/${potionId.toLowerCase()}`} className={`relative ${className || ""}`}
+      onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
+      {info?.name || displayName(`POTION.${potionId}`)}
+      {show && info && (
+        <div className="absolute z-50 bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-3 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-card)] shadow-xl pointer-events-none">
+          <div className="flex items-start gap-2 mb-1.5">
+            {info.image_url && <img src={`${API}${info.image_url}`} alt="" className="w-8 h-8 object-contain" crossOrigin="anonymous" />}
+            <div className="min-w-0">
+              <div className="font-semibold text-xs text-[var(--text-primary)] truncate">{info.name}</div>
+              <div className="text-[10px] text-[var(--text-muted)]">{info.rarity}</div>
+            </div>
+          </div>
+          <div className="text-[10px] text-[var(--text-secondary)] leading-relaxed"><RichDescription text={info.description} /></div>
+          <div className="absolute left-1/2 -translate-x-1/2 top-full w-2 h-2 bg-[var(--bg-card)] border-r border-b border-[var(--border-subtle)] rotate-45 -mt-1" />
+        </div>
+      )}
+    </Link>
+  );
+}
+
 type SortKey = "pick_rate" | "offered" | "in_decks" | "win_pct" | "name";
 
 export default function MetaClient() {
@@ -128,6 +163,7 @@ export default function MetaClient() {
   const [stats, setStats] = useState<CommunityStats | null>(null);
   const [cardData, setCardData] = useState<Record<string, CardInfo>>({});
   const [relicData, setRelicData] = useState<Record<string, RelicInfo>>({});
+  const [potionData, setPotionData] = useState<Record<string, PotionInfo>>({});
   const [loading, setLoading] = useState(true);
   const [character, setCharacter] = useState("");
   const [winFilter, setWinFilter] = useState("");
@@ -151,6 +187,11 @@ export default function MetaClient() {
       const rm: Record<string, RelicInfo> = {};
       for (const r of relics) rm[r.id] = r;
       setRelicData(rm);
+    });
+    cachedFetch<PotionInfo[]>(`${API}/api/potions`).then((potions) => {
+      const pm: Record<string, PotionInfo> = {};
+      for (const p of potions) pm[p.id] = p;
+      setPotionData(pm);
     });
   }, []);
 
@@ -531,6 +572,48 @@ export default function MetaClient() {
               </div>
             );
           })()}
+
+          {/* Potion Stats */}
+          {stats.top_potions && stats.top_potions.length > 0 && (
+            <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-5">
+              <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-3">Potion Stats ({stats.top_potions.length})</h2>
+              <div className="overflow-x-auto">
+                <table className="w-full text-xs">
+                  <thead>
+                    <tr className="text-[var(--text-muted)] border-b border-[var(--border-subtle)]">
+                      <th className="text-left py-1.5 font-medium">Potion</th>
+                      <th className="text-right py-1.5 font-medium w-16">Offered</th>
+                      <th className="text-right py-1.5 font-medium w-16">Picked</th>
+                      <th className="text-right py-1.5 font-medium w-16">Pick %</th>
+                      <th className="text-right py-1.5 font-medium w-16">Used</th>
+                      <th className="text-right py-1.5 font-medium w-16">Win %</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {stats.top_potions.map((p) => {
+                      const winPct = p.total_runs_with > 0 ? Math.round(p.win_runs / p.total_runs_with * 100 * 10) / 10 : 0;
+                      return (
+                        <tr key={p.potion_id} className="border-b border-[var(--border-subtle)] last:border-0 hover:bg-[var(--bg-primary)]/50">
+                          <td className="py-1.5">
+                            <PotionPill potionId={p.potion_id} potionData={potionData} lp={lp} className="text-[var(--text-secondary)] hover:text-[var(--accent-gold)]" />
+                          </td>
+                          <td className="text-right text-[var(--text-muted)]">{p.offered}</td>
+                          <td className="text-right text-[var(--text-muted)]">{p.picked}</td>
+                          <td className={`text-right font-medium ${p.pick_rate >= 75 ? "text-[var(--color-silent)]" : p.pick_rate >= 50 ? "text-[var(--text-secondary)]" : "text-[var(--text-muted)]"}`}>
+                            {p.offered > 0 ? `${p.pick_rate}%` : "—"}
+                          </td>
+                          <td className="text-right text-[var(--accent-teal)]">{p.used || "—"}</td>
+                          <td className={`text-right font-medium ${winPct >= 50 ? "text-[var(--color-silent)]" : winPct > 0 ? "text-[var(--text-secondary)]" : "text-[var(--text-muted)]"}`}>
+                            {p.total_runs_with > 0 ? `${winPct}%` : "—"}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
 
           {/* Deadliest Encounters */}
           {stats.deadliest && stats.deadliest.length > 0 && (
