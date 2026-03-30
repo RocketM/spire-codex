@@ -136,6 +136,7 @@ export default function MetaClient() {
   const [playerMode, setPlayerMode] = useState("");
   const [cardSort, setCardSort] = useState<SortKey>("pick_rate");
   const [showAllCards, setShowAllCards] = useState(false);
+  const [cardView, setCardView] = useState<"chart" | "table">("chart");
 
   useEffect(() => {
     cachedFetch<CardInfo[]>(`${API}/api/cards`).then((cards) => {
@@ -338,41 +339,54 @@ export default function MetaClient() {
             )}
           </div>
 
-          {/* Pick Rate Chart */}
-          {cardTable.length > 0 && (
-            <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-5">
-              <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-3">Top 15 Card Pick Rates</h2>
-              <ResponsiveContainer width="100%" height={Math.min(cardTable.filter((r) => r.offered > 0).length, 15) * 28 + 30}>
-                <BarChart
-                  layout="vertical"
-                  data={cardTable.filter((r) => r.offered > 0).slice(0, 15).map((r) => ({
-                    name: r.name.length > 20 ? r.name.slice(0, 18) + "…" : r.name,
-                    pick_rate: r.pick_rate,
-                    offered: r.offered,
-                  }))}
-                  margin={{ left: 10, right: 20 }}
-                >
-                  <XAxis type="number" domain={[0, 100]} tick={{ fontSize: 10, fill: "#9ca3af" }} unit="%" />
-                  <YAxis type="category" dataKey="name" width={120} tick={{ fontSize: 10, fill: "#9ca3af" }} />
-                  <Tooltip
-                    contentStyle={{ background: "#1a1a2e", border: "1px solid #333", borderRadius: 8, fontSize: 12 }}
-                    formatter={(value) => [`${value}%`, "Pick Rate"]}
-                  />
-                  <Bar dataKey="pick_rate" fill={CHART_COLORS.gold} radius={[0, 4, 4, 0]} />
-                </BarChart>
-              </ResponsiveContainer>
-            </div>
-          )}
-
-          {/* Card Table */}
+          {/* Card Stats */}
           {cardTable.length > 0 && (
             <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-5">
               <div className="flex items-center justify-between mb-3">
                 <h2 className="text-lg font-semibold text-[var(--text-primary)]">Card Stats ({cardTable.length})</h2>
-                <button onClick={() => setShowAllCards(!showAllCards)} className="text-xs text-[var(--accent-gold)] hover:underline">
-                  {showAllCards ? "Show Top 20" : "Show All"}
-                </button>
+                <div className="flex items-center gap-2">
+                  {cardView === "table" && (
+                    <button onClick={() => setShowAllCards(!showAllCards)} className="text-xs text-[var(--accent-gold)] hover:underline">
+                      {showAllCards ? "Top 20" : "Show All"}
+                    </button>
+                  )}
+                  <div className="flex rounded-lg border border-[var(--border-subtle)] overflow-hidden">
+                    <button onClick={() => setCardView("chart")}
+                      className={`text-xs px-2.5 py-1 transition-colors ${cardView === "chart" ? "bg-[var(--accent-gold)]/10 text-[var(--accent-gold)]" : "text-[var(--text-muted)] hover:text-[var(--text-secondary)]"}`}>
+                      Chart
+                    </button>
+                    <button onClick={() => setCardView("table")}
+                      className={`text-xs px-2.5 py-1 border-l border-[var(--border-subtle)] transition-colors ${cardView === "table" ? "bg-[var(--accent-gold)]/10 text-[var(--accent-gold)]" : "text-[var(--text-muted)] hover:text-[var(--text-secondary)]"}`}>
+                      Table
+                    </button>
+                  </div>
+                </div>
               </div>
+
+              {cardView === "chart" && (
+                <ResponsiveContainer width="100%" height={Math.min(cardTable.filter((r) => r.offered > 0).length, 15) * 28 + 30}>
+                  <BarChart
+                    layout="vertical"
+                    data={cardTable.filter((r) => r.offered > 0).slice(0, 15).map((r) => ({
+                      name: r.name.length > 20 ? r.name.slice(0, 18) + "…" : r.name,
+                      pick_rate: r.pick_rate,
+                      offered: r.offered,
+                    }))}
+                    margin={{ left: 10, right: 20 }}
+                  >
+                    <XAxis type="number" domain={[0, 100]} tick={{ fontSize: 10, fill: "#9ca3af" }} unit="%" />
+                    <YAxis type="category" dataKey="name" width={120} tick={{ fontSize: 10, fill: "#9ca3af" }} />
+                    <Tooltip
+                      contentStyle={{ background: "#1a1a2e", border: "1px solid #333", borderRadius: 8, fontSize: 12 }}
+                      formatter={(value) => [`${value}%`, "Pick Rate"]}
+                    />
+                    <Bar dataKey="pick_rate" fill={CHART_COLORS.gold} radius={[0, 4, 4, 0]} />
+                  </BarChart>
+                </ResponsiveContainer>
+              )}
+
+              {cardView === "table" && (
+                <>
 
               {/* Sort buttons */}
               <div className="flex gap-1 mb-3">
@@ -418,6 +432,8 @@ export default function MetaClient() {
                   </tbody>
                 </table>
               </div>
+              </>
+              )}
             </div>
           )}
 
