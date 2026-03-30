@@ -1,10 +1,126 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useLangPrefix } from "@/lib/use-lang-prefix";
+import { cachedFetch } from "@/lib/fetch-cache";
+import RichDescription from "../components/RichDescription";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+
+interface CardInfo {
+  id: string;
+  name: string;
+  description: string;
+  type: string;
+  rarity: string;
+  cost: number;
+  image_url: string | null;
+}
+
+interface RelicInfo {
+  id: string;
+  name: string;
+  description: string;
+  rarity: string;
+  image_url: string | null;
+}
+
+function CardPill({
+  cardId,
+  upgraded,
+  enchantment,
+  cardData,
+  lp,
+  className,
+  children,
+}: {
+  cardId: string;
+  upgraded?: boolean;
+  enchantment?: string;
+  cardData: Record<string, CardInfo>;
+  lp: string;
+  className?: string;
+  children?: React.ReactNode;
+}) {
+  const [show, setShow] = useState(false);
+  const info = cardData[cardId];
+
+  return (
+    <Link
+      href={`${lp}/cards/${cardId.toLowerCase()}`}
+      className={`relative ${className || ""}`}
+      onMouseEnter={() => setShow(true)}
+      onMouseLeave={() => setShow(false)}
+    >
+      {children || displayName(`CARD.${cardId}`)}
+      {upgraded && "+"}
+      {enchantment && <span className="text-purple-400 ml-1">[{displayName(`ENCHANTMENT.${enchantment}`)}]</span>}
+      {show && info && (
+        <div className="absolute z-50 bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-3 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-card)] shadow-xl pointer-events-none">
+          <div className="flex items-start gap-2 mb-1.5">
+            {info.image_url && (
+              <img src={`${API}${info.image_url}`} alt="" className="w-10 h-10 object-cover rounded" crossOrigin="anonymous" />
+            )}
+            <div className="min-w-0">
+              <div className="font-semibold text-xs text-[var(--text-primary)] truncate">{info.name}</div>
+              <div className="text-[10px] text-[var(--text-muted)]">{info.type} · {info.rarity} · {info.cost}</div>
+            </div>
+          </div>
+          <div className="text-[10px] text-[var(--text-secondary)] leading-relaxed">
+            <RichDescription text={info.description} />
+          </div>
+          <div className="absolute left-1/2 -translate-x-1/2 top-full w-2 h-2 bg-[var(--bg-card)] border-r border-b border-[var(--border-subtle)] rotate-45 -mt-1" />
+        </div>
+      )}
+    </Link>
+  );
+}
+
+function RelicPill({
+  relicId,
+  relicData,
+  lp,
+  className,
+  children,
+}: {
+  relicId: string;
+  relicData: Record<string, RelicInfo>;
+  lp: string;
+  className?: string;
+  children?: React.ReactNode;
+}) {
+  const [show, setShow] = useState(false);
+  const info = relicData[relicId];
+
+  return (
+    <Link
+      href={`${lp}/relics/${relicId.toLowerCase()}`}
+      className={`relative ${className || ""}`}
+      onMouseEnter={() => setShow(true)}
+      onMouseLeave={() => setShow(false)}
+    >
+      {children || displayName(`RELIC.${relicId}`)}
+      {show && info && (
+        <div className="absolute z-50 bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-3 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-card)] shadow-xl pointer-events-none">
+          <div className="flex items-start gap-2 mb-1.5">
+            {info.image_url && (
+              <img src={`${API}${info.image_url}`} alt="" className="w-8 h-8 object-contain" crossOrigin="anonymous" />
+            )}
+            <div className="min-w-0">
+              <div className="font-semibold text-xs text-[var(--text-primary)] truncate">{info.name}</div>
+              <div className="text-[10px] text-[var(--text-muted)]">{info.rarity}</div>
+            </div>
+          </div>
+          <div className="text-[10px] text-[var(--text-secondary)] leading-relaxed">
+            <RichDescription text={info.description} />
+          </div>
+          <div className="absolute left-1/2 -translate-x-1/2 top-full w-2 h-2 bg-[var(--bg-card)] border-r border-b border-[var(--border-subtle)] rotate-45 -mt-1" />
+        </div>
+      )}
+    </Link>
+  );
+}
 
 interface RunCard {
   id: string;
@@ -91,8 +207,24 @@ function displayName(id: string): string {
 
 function RunOverview({ run }: { run: RunData }) {
   const lp = useLangPrefix();
+  const [cardData, setCardData] = useState<Record<string, CardInfo>>({});
+  const [relicData, setRelicData] = useState<Record<string, RelicInfo>>({});
   const player = run.players[0];
   const charId = cleanId(player.character);
+
+  // Load card and relic data for tooltips
+  useEffect(() => {
+    cachedFetch<CardInfo[]>(`${API}/api/cards`).then((cards) => {
+      const map: Record<string, CardInfo> = {};
+      for (const c of cards) map[c.id] = c;
+      setCardData(map);
+    });
+    cachedFetch<RelicInfo[]>(`${API}/api/relics`).then((relics) => {
+      const map: Record<string, RelicInfo> = {};
+      for (const r of relics) map[r.id] = r;
+      setRelicData(map);
+    });
+  }, []);
   const charName = displayName(player.character);
 
   // Count non-starter cards
@@ -165,23 +297,19 @@ function RunOverview({ run }: { run: RunData }) {
             .map((card, i) => {
               const cid = cleanId(card.id);
               return (
-                <Link
+                <CardPill
                   key={`${cid}-${i}`}
-                  href={`${lp}/cards/${cid.toLowerCase()}`}
+                  cardId={cid}
+                  upgraded={!!card.current_upgrade_level}
+                  enchantment={card.enchantment ? cleanId(card.enchantment.id) : undefined}
+                  cardData={cardData}
+                  lp={lp}
                   className={`text-xs px-2 py-1 rounded border transition-colors hover:bg-[var(--bg-card-hover)] ${
                     card.current_upgrade_level
                       ? "bg-emerald-950/30 border-emerald-800/30 text-emerald-300"
                       : "bg-[var(--bg-primary)] border-[var(--border-subtle)] text-[var(--text-secondary)]"
                   }`}
-                >
-                  {displayName(card.id)}
-                  {card.current_upgrade_level ? "+" : ""}
-                  {card.enchantment && (
-                    <span className="text-purple-400 ml-1">
-                      [{displayName(card.enchantment.id)}]
-                    </span>
-                  )}
-                </Link>
+                />
               );
             })}
         </div>
@@ -196,14 +324,16 @@ function RunOverview({ run }: { run: RunData }) {
           {player.relics.map((relic, i) => {
             const rid = cleanId(relic.id);
             return (
-              <Link
+              <RelicPill
                 key={`${rid}-${i}`}
-                href={`${lp}/relics/${rid.toLowerCase()}`}
+                relicId={rid}
+                relicData={relicData}
+                lp={lp}
                 className="text-xs px-2 py-1 rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--accent-gold)] hover:bg-[var(--bg-card-hover)] transition-colors"
               >
                 {displayName(relic.id)}
                 <span className="text-[var(--text-muted)] ml-1">F{relic.floor_added_to_deck}</span>
-              </Link>
+              </RelicPill>
             );
           })}
         </div>
