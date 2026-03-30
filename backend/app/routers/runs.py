@@ -31,6 +31,31 @@ async def submit_run_endpoint(request: Request):
     return result
 
 
+@router.get("/list", tags=["Runs"])
+def list_runs(request: Request, character: str | None = None, win: str | None = None, limit: int = 50):
+    """List submitted runs with optional filters."""
+    from ..services.runs_db import get_conn
+    with get_conn() as conn:
+        conditions = []
+        params: list = []
+        if character:
+            conditions.append("character = ?")
+            params.append(character.upper())
+        if win == "true":
+            conditions.append("win = 1")
+        elif win == "false":
+            conditions.append("win = 0 AND was_abandoned = 0")
+        where = ("WHERE " + " AND ".join(conditions)) if conditions else ""
+        params.append(min(limit, 100))
+        rows = conn.execute(f"""
+            SELECT run_hash, character, win, was_abandoned, ascension, game_mode,
+                   run_time, floors_reached, deck_size, relic_count, killed_by, submitted_at
+            FROM runs {where}
+            ORDER BY submitted_at DESC LIMIT ?
+        """, params).fetchall()
+        return [dict(r) for r in rows]
+
+
 @router.get("/shared/{run_hash}", tags=["Runs"])
 def get_shared_run(run_hash: str, request: Request):
     """Retrieve a shared run by its hash."""

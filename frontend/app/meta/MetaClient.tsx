@@ -58,7 +58,7 @@ interface CommunityStats {
   filters: { character: string | null; win: string | null; ascension: string | null; game_mode: string | null; players: string | null };
   characters: { character: string; total: number; wins: number; win_rate: number }[];
   ascensions: { level: number; total: number; wins: number; win_rate: number }[];
-  top_cards: { card_id: string; count: number; in_wins: number; in_losses: number }[];
+  top_cards: { card_id: string; count: number; in_wins: number; in_losses: number; win_runs: number; total_runs_with: number }[];
   pick_rates: { card_id: string; offered: number; picked: number; pick_rate: number }[];
   top_relics: { relic_id: string; count: number }[];
   deadliest: { encounter: string; count: number }[];
@@ -121,7 +121,7 @@ function RelicPill({ relicId, relicData, lp, className, children }: {
   );
 }
 
-type SortKey = "pick_rate" | "offered" | "in_decks" | "in_wins" | "name";
+type SortKey = "pick_rate" | "offered" | "in_decks" | "win_pct" | "name";
 
 export default function MetaClient() {
   const lp = useLangPrefix();
@@ -136,7 +136,8 @@ export default function MetaClient() {
   const [playerMode, setPlayerMode] = useState("");
   const [cardSort, setCardSort] = useState<SortKey>("pick_rate");
   const [showAllCards, setShowAllCards] = useState(false);
-  const [cardView, setCardView] = useState<"chart" | "table">("chart");
+  const [cardView, setCardView] = useState<"chart" | "table">("table");
+  const [relicView, setRelicView] = useState<"chart" | "list">("list");
 
   useEffect(() => {
     cachedFetch<CardInfo[]>(`${API}/api/cards`).then((cards) => {
@@ -174,6 +175,9 @@ export default function MetaClient() {
     const rows = [...allIds].map((id) => {
       const pick = pickMap.get(id);
       const deck = deckMap.get(id);
+      const winRuns = deck?.win_runs || 0;
+      const totalRunsWith = deck?.total_runs_with || 0;
+      const winPct = totalRunsWith > 0 ? Math.round(winRuns / totalRunsWith * 100 * 10) / 10 : 0;
       return {
         card_id: id,
         name: cardData[id]?.name || displayName(`CARD.${id}`),
@@ -181,8 +185,9 @@ export default function MetaClient() {
         picked: pick?.picked || 0,
         pick_rate: pick?.pick_rate || 0,
         in_decks: deck?.count || 0,
-        in_wins: deck?.in_wins || 0,
-        in_losses: deck?.in_losses || 0,
+        win_runs: winRuns,
+        total_runs_with: totalRunsWith,
+        win_pct: winPct,
       };
     });
     rows.sort((a, b) => {
@@ -190,7 +195,7 @@ export default function MetaClient() {
       if (cardSort === "pick_rate") return b.pick_rate - a.pick_rate || b.offered - a.offered;
       if (cardSort === "offered") return b.offered - a.offered;
       if (cardSort === "in_decks") return b.in_decks - a.in_decks;
-      if (cardSort === "in_wins") return b.in_wins - a.in_wins;
+      if (cardSort === "win_pct") return b.win_pct - a.win_pct || b.win_runs - a.win_runs;
       return 0;
     });
     return rows;
@@ -303,7 +308,7 @@ export default function MetaClient() {
 
                 {/* Character Win Rate Bar */}
                 <div>
-                  <h2 className="text-sm font-semibold text-[var(--text-muted)] uppercase tracking-wide mb-2">Win Rate by Character</h2>
+                  <h2 className="text-sm font-semibold text-[var(--text-muted)] uppercase tracking-wide mb-2">Games by Character</h2>
                   <ResponsiveContainer width="100%" height={200}>
                     <BarChart data={stats.characters.map((c) => ({
                       name: displayName(`CHARACTER.${c.character}`),
@@ -390,7 +395,7 @@ export default function MetaClient() {
 
               {/* Sort buttons */}
               <div className="flex gap-1 mb-3">
-                {([["pick_rate", "Pick Rate"], ["offered", "Offered"], ["in_decks", "In Decks"], ["in_wins", "In Wins"], ["name", "Name"]] as [SortKey, string][]).map(([key, label]) => (
+                {([["pick_rate", "Pick Rate"], ["offered", "Offered"], ["in_decks", "In Decks"], ["win_pct", "Win %"], ["name", "Name"]] as [SortKey, string][]).map(([key, label]) => (
                   <button key={key} onClick={() => setCardSort(key)}
                     className={`text-[10px] px-2 py-0.5 rounded border transition-colors ${
                       cardSort === key ? "border-[var(--accent-gold)]/40 text-[var(--accent-gold)] bg-[var(--accent-gold)]/5" : "border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--text-secondary)]"
@@ -408,8 +413,8 @@ export default function MetaClient() {
                       <th className="text-right py-1.5 font-medium w-16">Offered</th>
                       <th className="text-right py-1.5 font-medium w-16">Picked</th>
                       <th className="text-right py-1.5 font-medium w-16">Pick %</th>
-                      <th className="text-right py-1.5 font-medium w-16">In Decks</th>
-                      <th className="text-right py-1.5 font-medium w-16">In Wins</th>
+                      <th className="text-right py-1.5 font-medium w-16">Runs</th>
+                      <th className="text-right py-1.5 font-medium w-16">Win %</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -423,9 +428,9 @@ export default function MetaClient() {
                         <td className={`text-right font-medium ${row.pick_rate >= 75 ? "text-emerald-400" : row.pick_rate >= 50 ? "text-[var(--text-secondary)]" : "text-[var(--text-muted)]"}`}>
                           {row.offered > 0 ? `${row.pick_rate}%` : "—"}
                         </td>
-                        <td className="text-right text-[var(--text-muted)]">{row.in_decks || "—"}</td>
-                        <td className={`text-right ${row.in_wins > 0 ? "text-emerald-400" : "text-[var(--text-muted)]"}`}>
-                          {row.in_wins || "—"}
+                        <td className="text-right text-[var(--text-muted)]">{row.total_runs_with || "—"}</td>
+                        <td className={`text-right font-medium ${row.win_pct >= 50 ? "text-[var(--color-silent)]" : row.win_pct > 0 ? "text-[var(--text-secondary)]" : "text-[var(--text-muted)]"}`}>
+                          {row.total_runs_with > 0 ? `${row.win_pct}%` : "—"}
                         </td>
                       </tr>
                     ))}
@@ -440,15 +445,48 @@ export default function MetaClient() {
           {/* Top Relics */}
           {stats.top_relics && stats.top_relics.length > 0 && (
             <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-5">
-              <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-3">Most Common Relics</h2>
-              <div className="flex flex-wrap gap-1.5">
-                {stats.top_relics.map((r) => (
-                  <RelicPill key={r.relic_id} relicId={r.relic_id} relicData={relicData} lp={lp}
-                    className="text-xs px-2 py-1 rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--accent-gold)] hover:bg-[var(--bg-card-hover)]">
-                    {relicData[r.relic_id]?.name || displayName(`RELIC.${r.relic_id}`)} <span className="text-[var(--text-muted)]">({r.count})</span>
-                  </RelicPill>
-                ))}
+              <div className="flex items-center justify-between mb-3">
+                <h2 className="text-lg font-semibold text-[var(--text-primary)]">Most Common Relics</h2>
+                <div className="flex rounded-lg border border-[var(--border-subtle)] overflow-hidden">
+                  <button onClick={() => setRelicView("chart")}
+                    className={`text-xs px-2.5 py-1 transition-colors ${relicView === "chart" ? "bg-[var(--accent-gold)]/10 text-[var(--accent-gold)]" : "text-[var(--text-muted)] hover:text-[var(--text-secondary)]"}`}>
+                    Chart
+                  </button>
+                  <button onClick={() => setRelicView("list")}
+                    className={`text-xs px-2.5 py-1 border-l border-[var(--border-subtle)] transition-colors ${relicView === "list" ? "bg-[var(--accent-gold)]/10 text-[var(--accent-gold)]" : "text-[var(--text-muted)] hover:text-[var(--text-secondary)]"}`}>
+                    List
+                  </button>
+                </div>
               </div>
+
+              {relicView === "chart" && (
+                <ResponsiveContainer width="100%" height={Math.min(stats.top_relics.length, 15) * 28 + 30}>
+                  <BarChart
+                    layout="vertical"
+                    data={stats.top_relics.slice(0, 15).map((r) => ({
+                      name: (relicData[r.relic_id]?.name || displayName(`RELIC.${r.relic_id}`)).slice(0, 20),
+                      count: r.count,
+                    }))}
+                    margin={{ left: 10, right: 20 }}
+                  >
+                    <XAxis type="number" tick={{ fontSize: 10, fill: "#9ca3af" }} />
+                    <YAxis type="category" dataKey="name" width={120} tick={{ fontSize: 10, fill: "#9ca3af" }} />
+                    <Tooltip contentStyle={{ background: "#1a1a2e", border: "1px solid #333", borderRadius: 8, fontSize: 12 }} />
+                    <Bar dataKey="count" fill={CHART_COLORS.gold} radius={[0, 4, 4, 0]} />
+                  </BarChart>
+                </ResponsiveContainer>
+              )}
+
+              {relicView === "list" && (
+                <div className="flex flex-wrap gap-1.5">
+                  {stats.top_relics.map((r) => (
+                    <RelicPill key={r.relic_id} relicId={r.relic_id} relicData={relicData} lp={lp}
+                      className="text-xs px-2 py-1 rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--accent-gold)] hover:bg-[var(--bg-card-hover)]">
+                      {relicData[r.relic_id]?.name || displayName(`RELIC.${r.relic_id}`)} <span className="text-[var(--text-muted)]">({r.count})</span>
+                    </RelicPill>
+                  ))}
+                </div>
+              )}
             </div>
           )}
 

@@ -398,6 +398,10 @@ export default function RunsClient() {
   const [relicData, setRelicData] = useState<Record<string, RelicInfo>>({});
   const [runHash, setRunHash] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
+  const [tab, setTab] = useState<"submit" | "browse">("submit");
+  const [runList, setRunList] = useState<any[]>([]);
+  const [browseChar, setBrowseChar] = useState("");
+  const [browseWin, setBrowseWin] = useState("");
 
   // Load card/relic data for tooltips
   useEffect(() => {
@@ -412,6 +416,18 @@ export default function RunsClient() {
       setRelicData(map);
     });
   }, []);
+
+  // Load run list for browse tab
+  useEffect(() => {
+    if (tab !== "browse") return;
+    const params = new URLSearchParams();
+    if (browseChar) params.set("character", browseChar);
+    if (browseWin) params.set("win", browseWin);
+    fetch(`${API}/api/runs/list?${params}`)
+      .then((r) => r.ok ? r.json() : [])
+      .then(setRunList)
+      .catch(() => {});
+  }, [tab, browseChar, browseWin]);
 
   function parseRun() {
     setError("");
@@ -441,16 +457,37 @@ export default function RunsClient() {
     }
   }
 
+  const lp = useLangPrefix();
+
+  function formatTimeShort(s: number) {
+    const m = Math.floor(s / 60);
+    return `${m}m`;
+  }
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h1 className="text-3xl font-bold text-[var(--text-primary)] mb-2">
-        Run Viewer
-      </h1>
-      <p className="text-[var(--text-secondary)] mb-6">
-        Paste your run history JSON to see a detailed breakdown of your run.
+      <h1 className="text-3xl font-bold text-[var(--text-primary)] mb-2">Runs</h1>
+      <p className="text-[var(--text-secondary)] mb-4">
+        Submit your run data or browse community-submitted runs.
       </p>
 
-      {!run ? (
+      {/* Tabs */}
+      {!run && (
+        <div className="flex gap-1 mb-6 border-b border-[var(--border-subtle)]">
+          <button onClick={() => setTab("submit")}
+            className={`px-4 py-2 text-sm font-medium transition-colors border-b-2 -mb-px ${tab === "submit" ? "border-[var(--accent-gold)] text-[var(--accent-gold)]" : "border-transparent text-[var(--text-muted)] hover:text-[var(--text-secondary)]"}`}>
+            Submit a Run
+          </button>
+          <button onClick={() => setTab("browse")}
+            className={`px-4 py-2 text-sm font-medium transition-colors border-b-2 -mb-px ${tab === "browse" ? "border-[var(--accent-gold)] text-[var(--accent-gold)]" : "border-transparent text-[var(--text-muted)] hover:text-[var(--text-secondary)]"}`}>
+            Browse Runs
+            {runList.length > 0 && <span className="ml-1.5 text-xs text-[var(--text-muted)]">({runList.length})</span>}
+          </button>
+        </div>
+      )}
+
+      {/* Submit Tab */}
+      {tab === "submit" && !run && (
         <div className="space-y-3">
           <p className="text-xs text-[var(--text-muted)]">
             Run files are located at <code className="bg-[var(--bg-primary)] px-1 py-0.5 rounded">%appdata%/Roaming/SlayTheSpire2/steam/&lt;steamid&gt;/profile#/saves/</code> — open the <code>.run</code> file in a text editor and paste the contents below.
@@ -462,7 +499,7 @@ export default function RunsClient() {
             rows={10}
             className="w-full px-4 py-3 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] text-sm font-mono focus:outline-none focus:border-[var(--accent-gold)] resize-none"
           />
-          {error && <p className="text-red-400 text-sm">{error}</p>}
+          {error && <p className="text-[var(--color-ironclad)] text-sm">{error}</p>}
           <button
             onClick={parseRun}
             disabled={!jsonInput.trim()}
@@ -471,14 +508,65 @@ export default function RunsClient() {
             Analyze Run
           </button>
         </div>
-      ) : (
+      )}
+
+      {/* Browse Tab */}
+      {tab === "browse" && !run && (
+        <div>
+          <div className="flex flex-wrap gap-2 mb-4">
+            <select value={browseChar} onChange={(e) => setBrowseChar(e.target.value)}
+              className="text-sm px-3 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)]">
+              <option value="">All Characters</option>
+              <option value="IRONCLAD">Ironclad</option>
+              <option value="SILENT">Silent</option>
+              <option value="DEFECT">Defect</option>
+              <option value="NECROBINDER">Necrobinder</option>
+              <option value="REGENT">Regent</option>
+            </select>
+            <select value={browseWin} onChange={(e) => setBrowseWin(e.target.value)}
+              className="text-sm px-3 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)]">
+              <option value="">All Runs</option>
+              <option value="true">Wins</option>
+              <option value="false">Losses</option>
+            </select>
+          </div>
+
+          {runList.length === 0 ? (
+            <p className="text-center py-8 text-[var(--text-muted)]">No runs found.</p>
+          ) : (
+            <div className="space-y-2">
+              {runList.map((r) => (
+                <Link key={r.run_hash} href={`${lp}/runs/${r.run_hash}`}
+                  className="flex items-center justify-between bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] px-4 py-3 hover:bg-[var(--bg-card-hover)] transition-colors">
+                  <div className="flex items-center gap-3">
+                    <span className={`text-sm font-medium ${r.win ? "text-[var(--color-silent)]" : "text-[var(--color-ironclad)]"}`}>
+                      {r.win ? "W" : r.was_abandoned ? "A" : "L"}
+                    </span>
+                    <span className="text-sm text-[var(--text-primary)]">{displayName(`CHARACTER.${r.character}`)}</span>
+                    <span className="text-xs text-[var(--text-muted)]">A{r.ascension}</span>
+                  </div>
+                  <div className="flex items-center gap-4 text-xs text-[var(--text-muted)]">
+                    <span>{r.deck_size} cards</span>
+                    <span>{r.relic_count} relics</span>
+                    <span>{r.floors_reached} floors</span>
+                    <span>{formatTimeShort(r.run_time)}</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Run Detail View */}
+      {run && (
         <div>
           <div className="flex items-center justify-between mb-4">
             <button
               onClick={() => { setRun(null); setJsonInput(""); setRunHash(null); setCopied(false); window.history.replaceState(null, "", "/runs"); }}
               className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors"
             >
-              &larr; Analyze another run
+              &larr; Back
             </button>
             {runHash && (
               <button

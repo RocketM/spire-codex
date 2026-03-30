@@ -310,7 +310,24 @@ def get_stats(character: str | None = None, win: str | None = None,
             FROM runs r {where} GROUP BY r.ascension ORDER BY r.ascension
         """, params).fetchall()
 
-        # Build win/loss card maps for comparison
+        # Win runs per card (distinct runs, not copies)
+        win_runs_query = conn.execute(f"""
+            SELECT rc.card_id, COUNT(DISTINCT rc.run_id) as run_count
+            FROM run_cards rc JOIN runs r ON rc.run_id = r.id
+            {win_where}
+            GROUP BY rc.card_id
+        """, win_params).fetchall()
+        win_runs_map = {r["card_id"]: r["run_count"] for r in win_runs_query}
+
+        # Total runs per card (distinct)
+        all_runs_query = conn.execute(f"""
+            SELECT rc.card_id, COUNT(DISTINCT rc.run_id) as run_count
+            FROM run_cards rc JOIN runs r ON rc.run_id = r.id
+            {where}
+            GROUP BY rc.card_id
+        """, params).fetchall()
+        all_runs_map = {r["card_id"]: r["run_count"] for r in all_runs_query}
+
         win_card_map = {r["card_id"]: r["count"] for r in win_cards}
         loss_card_map = {r["card_id"]: r["count"] for r in loss_cards}
 
@@ -332,7 +349,9 @@ def get_stats(character: str | None = None, win: str | None = None,
             ],
             "top_cards": [{"card_id": r["card_id"], "count": r["count"],
                            "in_wins": win_card_map.get(r["card_id"], 0),
-                           "in_losses": loss_card_map.get(r["card_id"], 0)}
+                           "in_losses": loss_card_map.get(r["card_id"], 0),
+                           "win_runs": win_runs_map.get(r["card_id"], 0),
+                           "total_runs_with": all_runs_map.get(r["card_id"], 0)}
                           for r in all_cards],
             "pick_rates": [
                 {"card_id": r["card_id"], "offered": r["offered"], "picked": r["picked"], "pick_rate": r["pick_rate"]}

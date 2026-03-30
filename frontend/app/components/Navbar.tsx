@@ -40,7 +40,7 @@ const NAV_GROUPS: NavGroup[] = [
       { href: "/keywords", label: "Keywords" },
       { href: "/compare", label: "Compare" },
       { href: "/modifiers", label: "Custom Mode" },
-      { href: "/runs", label: "Run Viewer" },
+      { href: "/runs", label: "Runs" },
       { href: "/meta", label: "Meta" },
     ],
   },
