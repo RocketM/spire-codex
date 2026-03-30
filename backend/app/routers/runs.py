@@ -1,6 +1,11 @@
 """Run submission and community stats API endpoints."""
+import json
+import os
+from pathlib import Path
 from fastapi import APIRouter, HTTPException, Request
 from ..services.runs_db import submit_run, get_stats
+
+_data_dir = Path(os.environ.get("DATA_DIR", Path(__file__).resolve().parents[3] / "data"))
 
 router = APIRouter(prefix="/api/runs", tags=["Runs"])
 
@@ -24,6 +29,16 @@ async def submit_run_endpoint(request: Request):
             raise HTTPException(status_code=409, detail=result["error"])
         raise HTTPException(status_code=400, detail=result["error"])
     return result
+
+
+@router.get("/shared/{run_hash}", tags=["Runs"])
+def get_shared_run(run_hash: str, request: Request):
+    """Retrieve a shared run by its hash."""
+    run_file = _data_dir / "runs" / f"{run_hash}.json"
+    if not run_file.exists():
+        raise HTTPException(status_code=404, detail="Run not found")
+    with open(run_file, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
 @router.get("/stats", tags=["Runs"])

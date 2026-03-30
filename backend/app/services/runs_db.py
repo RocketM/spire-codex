@@ -187,6 +187,12 @@ def submit_run(data: dict) -> dict:
                             (run_id, card_id, was_picked, floor_num),
                         )
 
+    # Save full run JSON for sharing
+    runs_dir = _data_dir / "runs"
+    runs_dir.mkdir(parents=True, exist_ok=True)
+    with open(runs_dir / f"{run_hash}.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False)
+
     return {"success": True, "run_id": run_id, "run_hash": run_hash}
 
 

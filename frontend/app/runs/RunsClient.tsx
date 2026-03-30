@@ -55,7 +55,7 @@ function CardPill({
     >
       {children || displayName(`CARD.${cardId}`)}
       {upgraded && "+"}
-      {enchantment && <span className="text-purple-400 ml-1">[{displayName(`ENCHANTMENT.${enchantment}`)}]</span>}
+      {enchantment && <span className="text-[var(--color-necrobinder)] ml-1">[{displayName(`ENCHANTMENT.${enchantment}`)}]</span>}
       {show && info && (
         <div className="absolute z-50 bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-3 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-card)] shadow-xl pointer-events-none">
           <div className="flex items-start gap-2 mb-1.5">
@@ -221,10 +221,10 @@ function RunOverview({ run, cardData, relicData }: { run: RunData; cardData: Rec
   return (
     <div className="space-y-4">
       {/* Header */}
-      <div className={`rounded-xl border p-5 ${run.win ? "bg-emerald-950/20 border-emerald-700/30" : "bg-red-950/20 border-red-700/30"}`}>
+      <div className={`rounded-xl border p-5 ${run.win ? "bg-[var(--color-silent)]/10 border-[var(--color-silent)]/30" : "bg-[var(--color-ironclad)]/10 border-[var(--color-ironclad)]/30"}`}>
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-3">
-            <span className={`text-2xl font-bold ${run.win ? "text-emerald-400" : "text-red-400"}`}>
+            <span className={`text-2xl font-bold ${run.win ? "text-[var(--color-silent)]" : "text-[var(--color-ironclad)]"}`}>
               {run.win ? "Victory" : run.was_abandoned ? "Abandoned" : "Defeat"}
             </span>
             <Link href={`${lp}/characters/${charId.toLowerCase()}`} className="text-lg text-[var(--accent-gold)] hover:underline">
@@ -257,9 +257,9 @@ function RunOverview({ run, cardData, relicData }: { run: RunData; cardData: Rec
         </div>
 
         {!run.win && run.killed_by_encounter && (
-          <div className="mt-3 text-sm text-red-300">
+          <div className="mt-3 text-sm text-[var(--color-ironclad)]">
             Killed by{" "}
-            <Link href={`${lp}/encounters/${cleanId(run.killed_by_encounter).toLowerCase()}`} className="text-red-200 hover:underline font-medium">
+            <Link href={`${lp}/encounters/${cleanId(run.killed_by_encounter).toLowerCase()}`} className="hover:underline font-medium">
               {displayName(run.killed_by_encounter)}
             </Link>
           </div>
@@ -290,7 +290,7 @@ function RunOverview({ run, cardData, relicData }: { run: RunData; cardData: Rec
                   lp={lp}
                   className={`text-xs px-2 py-1 rounded border transition-colors hover:bg-[var(--bg-card-hover)] ${
                     card.current_upgrade_level
-                      ? "bg-emerald-950/30 border-emerald-800/30 text-emerald-300"
+                      ? "bg-[var(--color-silent)]/10 border-[var(--color-silent)]/30 text-[var(--color-silent)]"
                       : "bg-[var(--bg-primary)] border-[var(--border-subtle)] text-[var(--text-secondary)]"
                   }`}
                 />
@@ -342,10 +342,10 @@ function RunOverview({ run, cardData, relicData }: { run: RunData; cardData: Rec
                 const roomTypeColors: Record<string, string> = {
                   monster: "text-gray-300",
                   elite: "text-amber-400",
-                  boss: "text-red-400",
-                  rest: "text-emerald-400",
+                  boss: "text-[var(--color-ironclad)]",
+                  rest: "text-[var(--color-silent)]",
                   shop: "text-cyan-400",
-                  event: "text-purple-400",
+                  event: "text-[var(--color-necrobinder)]",
                   treasure: "text-yellow-400",
                 };
 
@@ -366,7 +366,7 @@ function RunOverview({ run, cardData, relicData }: { run: RunData; cardData: Rec
                         <span className="text-[var(--text-muted)] ml-1">({room.turns_taken}T)</span>
                       )}
                       {picked.length > 0 && (
-                        <span className="text-emerald-400 ml-2">+{picked.join(", ")}</span>
+                        <span className="text-[var(--color-silent)] ml-2">+{picked.join(", ")}</span>
                       )}
                       {skipped.length > 0 && (
                         <span className="text-[var(--text-muted)] ml-1 line-through">{skipped.join(", ")}</span>
@@ -374,8 +374,8 @@ function RunOverview({ run, cardData, relicData }: { run: RunData; cardData: Rec
                     </div>
                     {ps && (
                       <div className="flex items-center gap-2 flex-shrink-0 text-[var(--text-muted)]">
-                        {ps.damage_taken > 0 && <span className="text-red-400">-{ps.damage_taken}</span>}
-                        {ps.hp_healed > 0 && <span className="text-emerald-400">+{ps.hp_healed}</span>}
+                        {ps.damage_taken > 0 && <span className="text-[var(--color-ironclad)]">-{ps.damage_taken}</span>}
+                        {ps.hp_healed > 0 && <span className="text-[var(--color-silent)]">+{ps.hp_healed}</span>}
                         <span>{ps.current_hp}/{ps.max_hp}</span>
                       </div>
                     )}
@@ -396,6 +396,8 @@ export default function RunsClient() {
   const [error, setError] = useState("");
   const [cardData, setCardData] = useState<Record<string, CardInfo>>({});
   const [relicData, setRelicData] = useState<Record<string, RelicInfo>>({});
+  const [runHash, setRunHash] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
 
   // Load card/relic data for tooltips
   useEffect(() => {
@@ -421,12 +423,14 @@ export default function RunsClient() {
         return;
       }
       setRun(data);
-      // Auto-submit to community stats (fire-and-forget)
+      // Auto-submit to community stats and get share hash
       fetch(`${API}/api/runs`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: jsonInput,
-      }).catch(() => {});
+      }).then((r) => r.ok ? r.json() : null)
+        .then((d) => { if (d?.run_hash) setRunHash(d.run_hash); })
+        .catch(() => {});
     } catch {
       setError("Invalid JSON. Make sure you pasted the full contents of the .run file.");
     }
@@ -464,12 +468,26 @@ export default function RunsClient() {
         </div>
       ) : (
         <div>
-          <button
-            onClick={() => { setRun(null); setJsonInput(""); }}
-            className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-4 inline-block"
-          >
-            &larr; Analyze another run
-          </button>
+          <div className="flex items-center justify-between mb-4">
+            <button
+              onClick={() => { setRun(null); setJsonInput(""); setRunHash(null); setCopied(false); }}
+              className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors"
+            >
+              &larr; Analyze another run
+            </button>
+            {runHash && (
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(`${window.location.origin}/runs/${runHash}`);
+                  setCopied(true);
+                  setTimeout(() => setCopied(false), 2000);
+                }}
+                className="text-xs px-3 py-1.5 rounded-lg border border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--text-primary)] hover:border-[var(--border-accent)] transition-colors"
+              >
+                {copied ? "Copied!" : "Share Run"}
+              </button>
+            )}
+          </div>
           <RunOverview run={run} cardData={cardData} relicData={relicData} />
         </div>
       )}
