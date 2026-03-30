@@ -138,7 +138,7 @@ def submit_run(data: dict) -> dict:
         # Check for duplicate
         existing = conn.execute("SELECT id FROM runs WHERE run_hash = ?", (run_hash,)).fetchone()
         if existing:
-            return {"error": "This run has already been submitted", "duplicate": True}
+            return {"error": "This run has already been submitted", "duplicate": True, "run_hash": run_hash}
 
         # Insert run
         cursor = conn.execute("""

@@ -428,7 +428,7 @@ export default function RunsClient() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: jsonInput,
-      }).then((r) => r.ok ? r.json() : null)
+      }).then((r) => r.json().catch(() => null))
         .then((d) => { if (d?.run_hash) setRunHash(d.run_hash); })
         .catch(() => {});
     } catch {

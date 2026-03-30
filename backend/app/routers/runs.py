@@ -26,7 +26,7 @@ async def submit_run_endpoint(request: Request):
     result = submit_run(data)
     if result.get("error"):
         if result.get("duplicate"):
-            raise HTTPException(status_code=409, detail=result["error"])
+            return {"success": True, "duplicate": True, "run_hash": result.get("run_hash")}
         raise HTTPException(status_code=400, detail=result["error"])
     return result
 
