@@ -24,11 +24,11 @@ const CHART_COLORS = {
 };
 
 const CHAR_COLORS: Record<string, string> = {
-  IRONCLAD: "#dc2626",
-  SILENT: "#16a34a",
-  DEFECT: "#2563eb",
-  NECROBINDER: "#9333ea",
-  REGENT: "#ea580c",
+  IRONCLAD: "#d53b27",
+  SILENT: "#23935b",
+  DEFECT: "#3873a9",
+  NECROBINDER: "#bf5a85",
+  REGENT: "#f07c1e",
 };
 
 interface CardInfo {

@@ -11,19 +11,19 @@ const CHARACTERS = [
 ];
 
 const colorBorder: Record<string, string> = {
-  red: "border-red-700/40",
-  green: "border-green-700/40",
-  blue: "border-blue-700/40",
-  purple: "border-purple-700/40",
-  orange: "border-orange-700/40",
+  red: "border-[var(--color-ironclad)]/40",
+  green: "border-[var(--color-silent)]/40",
+  blue: "border-[var(--color-defect)]/40",
+  purple: "border-[var(--color-necrobinder)]/40",
+  orange: "border-[var(--color-regent)]/40",
 };
 
 const colorText: Record<string, string> = {
-  red: "text-red-400",
-  green: "text-green-400",
-  blue: "text-blue-400",
-  purple: "text-purple-400",
-  orange: "text-orange-400",
+  red: "text-[var(--color-ironclad)]",
+  green: "text-[var(--color-silent)]",
+  blue: "text-[var(--color-defect)]",
+  purple: "text-[var(--color-necrobinder)]",
+  orange: "text-[var(--color-regent)]",
 };
 
 function generatePairs() {

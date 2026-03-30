@@ -8,13 +8,13 @@ import { useLangPrefix } from "@/lib/use-lang-prefix";
 const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
 const colorMap: Record<string, string> = {
-  ironclad: "border-red-800/60 hover:border-red-600",
-  silent: "border-green-800/60 hover:border-green-600",
-  defect: "border-blue-800/60 hover:border-blue-600",
-  necrobinder: "border-purple-800/60 hover:border-purple-600",
-  regent: "border-orange-800/60 hover:border-orange-500",
-  colorless: "border-gray-600/60 hover:border-gray-400",
-  curse: "border-red-950/60 hover:border-red-800",
+  ironclad: "border-[var(--color-ironclad)]/60 hover:border-[var(--color-ironclad)]",
+  silent: "border-[var(--color-silent)]/60 hover:border-[var(--color-silent)]",
+  defect: "border-[var(--color-defect)]/60 hover:border-[var(--color-defect)]",
+  necrobinder: "border-[var(--color-necrobinder)]/60 hover:border-[var(--color-necrobinder)]",
+  regent: "border-[var(--color-regent)]/60 hover:border-[var(--color-regent)]",
+  colorless: "border-[var(--color-colorless)]/60 hover:border-[var(--color-colorless)]",
+  curse: "border-[var(--color-curse)]/60 hover:border-[var(--color-curse)]",
   status: "border-gray-700/60 hover:border-gray-500",
 };
 

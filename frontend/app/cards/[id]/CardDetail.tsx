@@ -17,13 +17,13 @@ import { useLangPrefix } from "@/lib/use-lang-prefix";
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
 const colorMapSolid: Record<string, string> = {
-  ironclad: "border-red-700",
-  silent: "border-green-700",
-  defect: "border-blue-700",
-  necrobinder: "border-purple-700",
-  regent: "border-orange-600",
-  colorless: "border-gray-500",
-  curse: "border-red-900",
+  ironclad: "border-[var(--color-ironclad)]",
+  silent: "border-[var(--color-silent)]",
+  defect: "border-[var(--color-defect)]",
+  necrobinder: "border-[var(--color-necrobinder)]",
+  regent: "border-[var(--color-regent)]",
+  colorless: "border-[var(--color-colorless)]",
+  curse: "border-[var(--color-curse)]",
   status: "border-gray-600",
 };
 

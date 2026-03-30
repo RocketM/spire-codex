@@ -25,19 +25,19 @@ const CHAR_COLORS: Record<string, string> = {
 };
 
 const colorTextClass: Record<string, string> = {
-  red: "text-red-400",
-  green: "text-green-400",
-  blue: "text-blue-400",
-  purple: "text-purple-400",
-  orange: "text-orange-400",
+  red: "text-[var(--color-ironclad)]",
+  green: "text-[var(--color-silent)]",
+  blue: "text-[var(--color-defect)]",
+  purple: "text-[var(--color-necrobinder)]",
+  orange: "text-[var(--color-regent)]",
 };
 
 const colorBgClass: Record<string, string> = {
-  red: "bg-red-900/20 border-red-700/40",
-  green: "bg-green-900/20 border-green-700/40",
-  blue: "bg-blue-900/20 border-blue-700/40",
-  purple: "bg-purple-900/20 border-purple-700/40",
-  orange: "bg-orange-900/20 border-orange-700/40",
+  red: "bg-[var(--color-ironclad)]/20 border-[var(--color-ironclad)]/40",
+  green: "bg-[var(--color-silent)]/20 border-[var(--color-silent)]/40",
+  blue: "bg-[var(--color-defect)]/20 border-[var(--color-defect)]/40",
+  purple: "bg-[var(--color-necrobinder)]/20 border-[var(--color-necrobinder)]/40",
+  orange: "bg-[var(--color-regent)]/20 border-[var(--color-regent)]/40",
 };
 
 const KEYWORDS = ["Exhaust", "Ethereal", "Innate", "Retain", "Sly", "Eternal", "Unplayable"];
