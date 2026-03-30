@@ -5,8 +5,31 @@ import Link from "next/link";
 import { useLangPrefix } from "@/lib/use-lang-prefix";
 import { cachedFetch } from "@/lib/fetch-cache";
 import RichDescription from "../components/RichDescription";
+import {
+  BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer,
+  PieChart, Pie, Cell, Legend,
+} from "recharts";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+
+const CHART_COLORS = {
+  gold: "#d4a843",
+  green: "#34d399",
+  red: "#f87171",
+  blue: "#60a5fa",
+  purple: "#a78bfa",
+  orange: "#fb923c",
+  cyan: "#22d3ee",
+  muted: "#6b7280",
+};
+
+const CHAR_COLORS: Record<string, string> = {
+  IRONCLAD: "#dc2626",
+  SILENT: "#16a34a",
+  DEFECT: "#2563eb",
+  NECROBINDER: "#9333ea",
+  REGENT: "#ea580c",
+};
 
 interface CardInfo {
   id: string;
@@ -250,24 +273,96 @@ export default function MetaClient() {
               </div>
             </div>
 
+            {/* Win/Loss Pie + Character Bar side by side */}
             {!character && stats.characters && stats.characters.length > 0 && (
-              <>
-                <h2 className="text-sm font-semibold text-[var(--text-muted)] uppercase tracking-wide mb-2">Win Rate by Character</h2>
-                <div className="space-y-1.5">
-                  {stats.characters.map((c) => (
-                    <button key={c.character} onClick={() => setCharacter(c.character)}
-                      className="flex items-center justify-between text-sm w-full text-left hover:bg-[var(--bg-primary)] rounded px-2 py-1 transition-colors">
-                      <span className="text-[var(--text-secondary)]">{displayName(`CHARACTER.${c.character}`)}</span>
-                      <div className="flex items-center gap-3 text-xs">
-                        <span className="text-[var(--text-muted)]">{c.wins}W / {c.total - c.wins}L</span>
-                        <span className={`font-medium ${c.win_rate > 50 ? "text-emerald-400" : c.win_rate > 0 ? "text-[var(--text-secondary)]" : "text-red-400"}`}>{c.win_rate}%</span>
-                      </div>
-                    </button>
-                  ))}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                {/* Win/Loss Pie */}
+                <div>
+                  <h2 className="text-sm font-semibold text-[var(--text-muted)] uppercase tracking-wide mb-2">Win / Loss</h2>
+                  <ResponsiveContainer width="100%" height={200}>
+                    <PieChart>
+                      <Pie
+                        data={[
+                          { name: "Wins", value: stats.total_wins || 0 },
+                          { name: "Losses", value: (stats.total_runs || 0) - (stats.total_wins || 0) - (stats.total_abandoned || 0) },
+                          ...(stats.total_abandoned ? [{ name: "Abandoned", value: stats.total_abandoned }] : []),
+                        ]}
+                        cx="50%" cy="50%" innerRadius={50} outerRadius={80}
+                        dataKey="value" stroke="none"
+                      >
+                        <Cell fill={CHART_COLORS.green} />
+                        <Cell fill={CHART_COLORS.red} />
+                        {stats.total_abandoned ? <Cell fill={CHART_COLORS.muted} /> : null}
+                      </Pie>
+                      <Tooltip contentStyle={{ background: "#1a1a2e", border: "1px solid #333", borderRadius: 8, fontSize: 12 }} />
+                      <Legend wrapperStyle={{ fontSize: 11 }} />
+                    </PieChart>
+                  </ResponsiveContainer>
                 </div>
-              </>
+
+                {/* Character Win Rate Bar */}
+                <div>
+                  <h2 className="text-sm font-semibold text-[var(--text-muted)] uppercase tracking-wide mb-2">Win Rate by Character</h2>
+                  <ResponsiveContainer width="100%" height={200}>
+                    <BarChart data={stats.characters.map((c) => ({
+                      name: displayName(`CHARACTER.${c.character}`),
+                      wins: c.wins,
+                      losses: c.total - c.wins,
+                      fill: CHAR_COLORS[c.character] || CHART_COLORS.muted,
+                    }))}>
+                      <XAxis dataKey="name" tick={{ fontSize: 10, fill: "#9ca3af" }} />
+                      <YAxis tick={{ fontSize: 10, fill: "#9ca3af" }} />
+                      <Tooltip contentStyle={{ background: "#1a1a2e", border: "1px solid #333", borderRadius: 8, fontSize: 12 }} />
+                      <Bar dataKey="wins" stackId="a" fill={CHART_COLORS.green} name="Wins" />
+                      <Bar dataKey="losses" stackId="a" fill={CHART_COLORS.red} name="Losses" radius={[4, 4, 0, 0]} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </div>
+              </div>
+            )}
+
+            {/* Character list (clickable) */}
+            {!character && stats.characters && stats.characters.length > 0 && (
+              <div className="space-y-1.5 mt-3">
+                {stats.characters.map((c) => (
+                  <button key={c.character} onClick={() => setCharacter(c.character)}
+                    className="flex items-center justify-between text-sm w-full text-left hover:bg-[var(--bg-primary)] rounded px-2 py-1 transition-colors">
+                    <span className="text-[var(--text-secondary)]">{displayName(`CHARACTER.${c.character}`)}</span>
+                    <div className="flex items-center gap-3 text-xs">
+                      <span className="text-[var(--text-muted)]">{c.wins}W / {c.total - c.wins}L</span>
+                      <span className={`font-medium ${c.win_rate > 50 ? "text-emerald-400" : c.win_rate > 0 ? "text-[var(--text-secondary)]" : "text-red-400"}`}>{c.win_rate}%</span>
+                    </div>
+                  </button>
+                ))}
+              </div>
             )}
           </div>
+
+          {/* Pick Rate Chart */}
+          {cardTable.length > 0 && (
+            <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-5">
+              <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-3">Top 15 Card Pick Rates</h2>
+              <ResponsiveContainer width="100%" height={Math.min(cardTable.filter((r) => r.offered > 0).length, 15) * 28 + 30}>
+                <BarChart
+                  layout="vertical"
+                  data={cardTable.filter((r) => r.offered > 0).slice(0, 15).map((r) => ({
+                    name: r.name.length > 20 ? r.name.slice(0, 18) + "…" : r.name,
+                    pick_rate: r.pick_rate,
+                    offered: r.offered,
+                  }))}
+                  margin={{ left: 10, right: 20 }}
+                >
+                  <XAxis type="number" domain={[0, 100]} tick={{ fontSize: 10, fill: "#9ca3af" }} unit="%" />
+                  <YAxis type="category" dataKey="name" width={120} tick={{ fontSize: 10, fill: "#9ca3af" }} />
+                  <Tooltip
+                    contentStyle={{ background: "#1a1a2e", border: "1px solid #333", borderRadius: 8, fontSize: 12 }}
+                    formatter={(value: number, name: string) => [`${value}%`, "Pick Rate"]}
+                  />
+                  <Bar dataKey="pick_rate" fill={CHART_COLORS.gold} radius={[0, 4, 4, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          )}
 
           {/* Card Table */}
           {cardTable.length > 0 && (
@@ -362,7 +457,20 @@ export default function MetaClient() {
           {stats.ascensions && stats.ascensions.length > 1 && (
             <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-5">
               <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-3">Ascension Distribution</h2>
-              <div className="space-y-1">
+              <ResponsiveContainer width="100%" height={200}>
+                <BarChart data={stats.ascensions.map((a) => ({
+                  name: `A${a.level}`,
+                  wins: a.wins || 0,
+                  losses: a.total - (a.wins || 0),
+                }))}>
+                  <XAxis dataKey="name" tick={{ fontSize: 10, fill: "#9ca3af" }} />
+                  <YAxis tick={{ fontSize: 10, fill: "#9ca3af" }} />
+                  <Tooltip contentStyle={{ background: "#1a1a2e", border: "1px solid #333", borderRadius: 8, fontSize: 12 }} />
+                  <Bar dataKey="wins" stackId="a" fill={CHART_COLORS.green} name="Wins" />
+                  <Bar dataKey="losses" stackId="a" fill={CHART_COLORS.red} name="Losses" radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+              <div className="space-y-1 mt-3">
                 {stats.ascensions.map((a) => (
                   <div key={a.level} className="flex items-center justify-between text-sm py-1 border-b border-[var(--border-subtle)] last:border-0">
                     <span className="text-[var(--text-secondary)]">Ascension {a.level}</span>
