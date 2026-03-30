@@ -123,8 +123,11 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict, even
     if damage is None and "OstyDamage" in all_vars:
         damage = all_vars["OstyDamage"]
         all_vars["Damage"] = damage
-    # CalculatedDamage for cards like Ashen Strike (base + extra * multiplier)
-    if damage is None and "CalculatedDamage" in all_vars:
+    # CalculatedDamage cards (e.g. Ashen Strike) — use CalculationBase as the displayed damage
+    # CalculatedDamage = base + extra * runtime_multiplier, which is misleading as a flat stat
+    if damage is None and "CalculationBase" in all_vars:
+        damage = all_vars["CalculationBase"]
+    elif damage is None and "CalculatedDamage" in all_vars:
         damage = all_vars["CalculatedDamage"]
 
     # Star cost: CanonicalStarCost => N means the card costs stars

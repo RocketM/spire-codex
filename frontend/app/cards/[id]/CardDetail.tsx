@@ -104,13 +104,9 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
 
     for (const [key, upVal] of Object.entries(u)) {
       if (upVal == null) continue;
-      let varKey = Object.keys(vars).find(
+      const varKey = Object.keys(vars).find(
         (k) => k.toLowerCase() === key.toLowerCase()
       );
-      // Fallback: "damage" can map to "CalculatedDamage" for computed damage cards
-      if (!varKey && key.toLowerCase() === "damage" && vars["CalculatedDamage"] != null) {
-        varKey = "CalculatedDamage";
-      }
       if (varKey && vars[varKey] != null) {
         const base = vars[varKey];
         const upgradedVal = getUpgradedValue(base, upVal);
