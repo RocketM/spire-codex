@@ -107,8 +107,14 @@ def init_db():
 
 
 def compute_run_hash(data: dict) -> str:
-    """Compute a unique hash for deduplication based on seed + character + start_time."""
-    key = f"{data.get('seed', '')}:{data['players'][0]['character']}:{data.get('start_time', '')}"
+    """Compute a unique hash for deduplication."""
+    seed = data.get("seed", "")
+    char = data["players"][0]["character"]
+    start = data.get("start_time", "")
+    run_time = data.get("run_time", 0)
+    deck_size = len(data["players"][0].get("deck", []))
+    # Use multiple fields to avoid collisions when seed is empty
+    key = f"{seed}:{char}:{start}:{run_time}:{deck_size}"
     return hashlib.sha256(key.encode()).hexdigest()[:16]
 
 
