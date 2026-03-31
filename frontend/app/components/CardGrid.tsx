@@ -257,30 +257,6 @@ function CardItem({ card }: { card: Card }) {
         </span>
       </div>
 
-      {/* Stats */}
-      {(dmg || blk) && (
-        <div className="flex gap-3 mb-3">
-          {dmg && (
-            <span className={`text-xs px-2 py-0.5 rounded border ${
-              isUpgraded && u?.damage ? "bg-emerald-950/40 text-emerald-300 border-emerald-900/30" : "bg-red-950/50 text-red-300 border-red-900/30"
-            }`}>
-              {dmg}
-              {card.hit_count && card.hit_count > 1
-                ? ` x${card.hit_count}`
-                : ""}{" "}
-              DMG
-            </span>
-          )}
-          {blk && (
-            <span className={`text-xs px-2 py-0.5 rounded border ${
-              isUpgraded && u?.block ? "bg-emerald-950/40 text-emerald-300 border-emerald-900/30" : "bg-blue-950/50 text-blue-300 border-blue-900/30"
-            }`}>
-              {blk} BLK
-            </span>
-          )}
-        </div>
-      )}
-
       {/* Description */}
       <p className="text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-3">
         {renderDescription(card, upgraded)}
