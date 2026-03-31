@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import type { Monster, MonsterMove, MonsterMovePower, Power } from "@/lib/api";
 import { cachedFetch } from "@/lib/fetch-cache";
@@ -194,6 +194,7 @@ function MoveCard({
 
 export default function MonsterDetail() {
   const { id } = useParams<{ id: string }>();
+  const router = useRouter();
   const { lang } = useLanguage();
   const lp = useLangPrefix();
   const [monster, setMonster] = useState<Monster | null>(null);
@@ -280,12 +281,12 @@ export default function MonsterDetail() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <Link
-        href={`${lp}/monsters`}
-        className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6 inline-block"
+      <button
+        onClick={() => router.back()}
+        className="inline-flex items-center gap-1 text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6"
       >
         &larr; Back to Monsters
-      </Link>
+      </button>
 
       {/* Image */}
       {monster.image_url && (

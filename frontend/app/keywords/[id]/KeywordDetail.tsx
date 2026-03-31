@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import type { Card } from "@/lib/api";
 import CardGrid from "@/app/components/CardGrid";
@@ -30,6 +30,7 @@ const colorOptions = [
 export default function KeywordDetail() {
   const params = useParams();
   const id = params.id as string;
+  const router = useRouter();
   const { lang } = useLanguage();
 
   const [keyword, setKeyword] = useState<Keyword | null>(null);
@@ -83,9 +84,9 @@ export default function KeywordDetail() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <Link href="/keywords" className="inline-flex items-center gap-1 text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6">
+      <button onClick={() => router.back()} className="inline-flex items-center gap-1 text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6">
         &larr; Back to Keywords
-      </Link>
+      </button>
 
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-[var(--text-primary)] mb-2">

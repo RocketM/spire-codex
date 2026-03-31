@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import type { Act } from "@/lib/api";
 import { cachedFetch } from "@/lib/fetch-cache";
@@ -14,6 +14,7 @@ const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
 export default function ActDetail() {
   const { id } = useParams<{ id: string }>();
+  const router = useRouter();
   const { lang } = useLanguage();
   const lp = useLangPrefix();
   const [act, setAct] = useState<Act | null>(null);
@@ -50,12 +51,12 @@ export default function ActDetail() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
-      <Link
-        href={`${lp}/reference`}
-        className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6 inline-block"
+      <button
+        onClick={() => router.back()}
+        className="inline-flex items-center gap-1 text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6"
       >
         &larr; Back to Reference
-      </Link>
+      </button>
 
       <div className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-6">
         <h1 className="text-3xl font-bold text-[var(--text-primary)] mb-2">

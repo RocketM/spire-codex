@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import type { Enchantment } from "@/lib/api";
 import RichDescription from "@/app/components/RichDescription";
@@ -24,6 +24,7 @@ type Tab = "overview" | "info";
 
 export default function EnchantmentDetail() {
   const { id } = useParams<{ id: string }>();
+  const router = useRouter();
   const { lang } = useLanguage();
   const lp = useLangPrefix();
   const [enchantment, setEnchantment] = useState<Enchantment | null>(null);
@@ -66,12 +67,12 @@ export default function EnchantmentDetail() {
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
-      <Link
-        href={`${lp}/enchantments`}
-        className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6 inline-block"
+      <button
+        onClick={() => router.back()}
+        className="inline-flex items-center gap-1 text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6"
       >
         &larr; {t("Back to", lang)} {t("Enchantments", lang)}
-      </Link>
+      </button>
 
       <div className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-6">
         {enchantment.image_url && (

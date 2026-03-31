@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import type { Relic } from "@/lib/api";
 import RichDescription from "@/app/components/RichDescription";
@@ -44,6 +44,7 @@ type Tab = "overview" | "details" | "info";
 
 export default function RelicDetail() {
   const { id } = useParams<{ id: string }>();
+  const router = useRouter();
   const { lang } = useLanguage();
     const lp = useLangPrefix();
 const [relic, setRelic] = useState<Relic | null>(null);
@@ -101,12 +102,12 @@ const [relic, setRelic] = useState<Relic | null>(null);
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
-      <Link
-        href={`${lp}/relics`}
-        className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6 inline-block"
+      <button
+        onClick={() => router.back()}
+        className="inline-flex items-center gap-1 text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6"
       >
         &larr; {t("Back to", lang)} {t("Relics", lang)}
-      </Link>
+      </button>
 
       <div className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-6">
         {relic.image_url && (

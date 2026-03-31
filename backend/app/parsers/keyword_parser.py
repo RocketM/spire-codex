@@ -265,6 +265,74 @@ def parse_achievements(loc_dir: Path) -> list[dict]:
     return achievements
 
 
+# --- Glossary (Static Hover Tips) ---
+SKIP_GLOSSARY = {
+    "BOSS", "DOUBLE_BOSS", "NETWORK_PROBLEM_CLIENT", "NETWORK_PROBLEM_HOST",
+    "SETTINGS", "COMPENDIUM", "REPLAY_DYNAMIC", "SUMMON_DYNAMIC",
+    "ENERGY_COUNT", "STAR_COUNT", "END_TURN", "TURN_NUMBER", "MAP", "FLOOR",
+    "ROOM_UNKNOWN_ELITE", "ROOM_UNKNOWN_ENEMY", "ROOM_UNKNOWN_EVENT",
+    "ROOM_UNKNOWN_MERCHANT", "ROOM_UNKNOWN_TREASURE", "ROOM_MAP",
+}
+
+RENAME_GLOSSARY = {
+    "REPLAY_STATIC": "REPLAY",
+    "SUMMON_STATIC": "SUMMON",
+}
+
+GLOSSARY_CATEGORIES = {
+    "BLOCK": "combat", "ENERGY": "combat", "STUN": "combat", "FATAL": "combat",
+    "CHANNELING": "combat", "EVOKE": "combat",
+    "FORGE": "mechanics", "REPLAY": "mechanics", "SUMMON": "mechanics",
+    "TRANSFORM": "mechanics", "COOK": "mechanics",
+    "DISCARD_PILE": "zones", "DRAW_PILE": "zones", "EXHAUST_PILE": "zones", "DECK": "zones",
+    "CARD_REWARD": "progression", "LINKED_REWARDS": "progression",
+    "POTION_SLOT": "progression", "HIT_POINTS": "progression", "MONEY_POUCH": "progression",
+    "ROOM_ANCIENT": "rooms", "ROOM_BOSS": "rooms", "ROOM_ELITE": "rooms",
+    "ROOM_ENEMY": "rooms", "ROOM_EVENT": "rooms", "ROOM_MERCHANT": "rooms",
+    "ROOM_REST": "rooms", "ROOM_TREASURE": "rooms",
+}
+
+
+def parse_glossary(loc_dir: Path) -> list[dict]:
+    loc_file = loc_dir / "static_hover_tips.json"
+    if not loc_file.exists():
+        return []
+    with open(loc_file, "r", encoding="utf-8") as f:
+        loc = json.load(f)
+
+    # Collect unique IDs
+    ids = set()
+    for key in loc:
+        ids.add(key.split(".")[0])
+
+    glossary = []
+    for raw_id in sorted(ids):
+        if raw_id in SKIP_GLOSSARY:
+            continue
+        title = loc.get(f"{raw_id}.title")
+        desc = loc.get(f"{raw_id}.description")
+        if not title or not desc:
+            continue
+        # Strip keyboard shortcut hints like "(D)", "(ESC)"
+        title = re.sub(r'\s*\([A-Z]+\)\s*$', '', title)
+        desc = clean_description(desc)
+        # Clean unresolvable template variables
+        desc = re.sub(r'\{[^}]+\}', '', desc).strip()
+        # Normalize whitespace
+        desc = re.sub(r'  +', ' ', desc)
+
+        term_id = RENAME_GLOSSARY.get(raw_id, raw_id)
+        category = GLOSSARY_CATEGORIES.get(term_id, "other")
+
+        glossary.append({
+            "id": term_id,
+            "name": title,
+            "description": desc,
+            "category": category,
+        })
+    return glossary
+
+
 def main(lang: str = "eng"):
     loc_dir = BASE / "extraction" / "raw" / "localization" / lang
     output_dir = BASE / "data" / lang
@@ -299,6 +367,11 @@ def main(lang: str = "eng"):
     with open(output_dir / "achievements.json", "w", encoding="utf-8") as f:
         json.dump(achievements, f, indent=2, ensure_ascii=False)
     print(f"Parsed {len(achievements)} achievements -> data/{lang}/achievements.json")
+
+    glossary = parse_glossary(loc_dir)
+    with open(output_dir / "glossary.json", "w", encoding="utf-8") as f:
+        json.dump(glossary, f, indent=2, ensure_ascii=False)
+    print(f"Parsed {len(glossary)} glossary terms -> data/{lang}/glossary.json")
 
 
 if __name__ == "__main__":

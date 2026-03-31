@@ -62,16 +62,24 @@ function renderDescription(card: Card, upgraded: boolean): React.ReactNode {
 
   let text = desc;
   if (u) {
+    const replacements: { base: string; upgraded: string; varKey: string }[] = [];
+
     for (const [key, upVal] of Object.entries(u)) {
       if (upVal == null) continue;
+      if (key.toLowerCase() === "repeat" && vars["Repeat"] != null) {
+        const base = vars["Repeat"];
+        const upgradedVal = getUpgradedValue(base, upVal);
+        if (upgradedVal !== null && upgradedVal !== base) {
+          text = text.replace(new RegExp(`\\b${base}\\b(\\s*times)`, "i"), `[green]${upgradedVal}[/green]$1`);
+        }
+        continue;
+      }
       const varKey = Object.keys(vars).find(k => k.toLowerCase() === key.toLowerCase());
       if (varKey && vars[varKey] != null) {
         const base = vars[varKey];
         const upgradedVal = getUpgradedValue(base, upVal);
         if (upgradedVal !== null && upgradedVal !== base) {
-          const baseStr = String(base);
-          const upgradedStr = String(upgradedVal);
-          text = text.replace(new RegExp(`\\b${baseStr}\\b`), upgradedStr);
+          replacements.push({ base: String(base), upgraded: String(upgradedVal), varKey });
         }
       }
       if (key.toLowerCase() === "energy") {
@@ -80,10 +88,48 @@ function renderDescription(card: Card, upgraded: boolean): React.ReactNode {
         text = text.replace(/\[energy:(\d+)\]/, `[energy:${upEnergy}]`);
       }
     }
+
+    if (replacements.length > 0) {
+      const occurrences = new Map<string, number>();
+      for (const r of replacements) {
+        const count = (text.match(new RegExp(`\\b${r.base}\\b`, "g")) || []).length;
+        occurrences.set(r.base, Math.max(occurrences.get(r.base) || 0, count));
+      }
+
+      // Single-pass for unambiguous values
+      const unambiguous = replacements.filter(r => (occurrences.get(r.base) || 0) === 1);
+      if (unambiguous.length > 0) {
+        const replMap = new Map(unambiguous.map(r => [r.base, r.upgraded]));
+        const pattern = unambiguous.map(r => r.base).sort((a, b) => b.length - a.length).map(s => `\\b${s}\\b`).join("|");
+        const used = new Set<string>();
+        text = text.replace(new RegExp(pattern, "g"), (match) => {
+          if (used.has(match)) return match;
+          used.add(match);
+          const repl = replMap.get(match);
+          return repl ? `[green]${repl}[/green]` : match;
+        });
+      }
+
+      // Contextual replacement for ambiguous values
+      for (const r of replacements) {
+        if ((occurrences.get(r.base) || 0) <= 1) continue;
+        const context = r.varKey.toLowerCase().replace(/s$/, "");
+        const fwd = new RegExp(`\\b${r.base}\\b(\\s+${context})(s?)`, "i");
+        if (fwd.test(text)) {
+          const plural = parseInt(r.upgraded) === 1 ? "" : "s";
+          text = text.replace(fwd, `[green]${r.upgraded}[/green]$1${plural}`);
+          continue;
+        }
+        const bwd = new RegExp(`(${context}\\s+)\\b${r.base}\\b`, "i");
+        if (bwd.test(text)) {
+          text = text.replace(bwd, `$1[green]${r.upgraded}[/green]`);
+        }
+      }
+    }
   }
 
   const parts: React.ReactNode[] = [];
-  const regex = /(\[gold\].*?\[\/gold\]|\[energy:(\d+)\]|\[star:(\d+)\])/g;
+  const regex = /(\[gold\].*?\[\/gold\]|\[green\].*?\[\/green\]|\[energy:(\d+)\]|\[star:(\d+)\])/g;
   let lastIndex = 0;
   let matchArr: RegExpExecArray | null;
 
@@ -96,6 +142,9 @@ function renderDescription(card: Card, upgraded: boolean): React.ReactNode {
     if (segment.startsWith("[gold]")) {
       const inner = segment.replace(/\[gold\]/g, "").replace(/\[\/gold\]/g, "");
       parts.push(<span key={matchArr.index} className="text-[var(--accent-gold)]">{inner}</span>);
+    } else if (segment.startsWith("[green]")) {
+      const inner = segment.replace(/\[green\]/g, "").replace(/\[\/green\]/g, "");
+      parts.push(<span key={matchArr.index} className="text-emerald-400">{inner}</span>);
     } else if (segment.startsWith("[energy:")) {
       const count = parseInt(matchArr[2]);
       const iconName = energyIconMap[card.color] || "colorless";
@@ -196,7 +245,7 @@ function CardItem({ card }: { card: Card }) {
       {/* Type + Rarity */}
       <div className="flex items-center gap-2 mb-3 text-xs">
         <span className="text-[var(--text-secondary)]">
-          {typeIcons[card.type] || ""} {card.type}
+          {card.type}
         </span>
         <span className="text-[var(--text-muted)]">·</span>
         <span className={rarityColors[card.rarity] || "text-gray-400"}>

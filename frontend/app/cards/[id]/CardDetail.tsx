@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import type { Card } from "@/lib/api";
 import RichDescription from "@/app/components/RichDescription";
@@ -63,6 +63,7 @@ function buildInteractiveWords(
   card: Card,
   powerData: Record<string, { id: string; name: string; description: string; type: string; image_url: string | null }>,
   keywordData: Record<string, { id: string; name: string; description: string }>,
+  glossaryData: Record<string, { id: string; name: string; description: string }>,
   lp: string,
 ): Record<string, { tooltip: string; href: string }> {
   const words: Record<string, { tooltip: string; href: string }> = {};
@@ -77,6 +78,12 @@ function buildInteractiveWords(
   // Add power names from [gold] tagged text (Dexterity, Thorns, Block, Strength, etc.)
   for (const [name, data] of Object.entries(powerData)) {
     words[data.name] = { tooltip: data.description, href: `${lp}/powers/${data.id.toLowerCase()}` };
+  }
+  // Add glossary terms (Block, Discard Pile, Draw Pile, Fatal, Forge, etc.)
+  for (const [name, data] of Object.entries(glossaryData)) {
+    if (!words[data.name]) {
+      words[data.name] = { tooltip: data.description.replace(/\n/g, " "), href: `${lp}/keywords#${data.id.toLowerCase()}` };
+    }
   }
   return words;
 }
@@ -152,7 +159,7 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
 
   if (u) {
     // Collect all replacements first to avoid cascading (e.g. Spur: 3→5 then 5→7)
-    const replacements: { base: string; upgraded: string }[] = [];
+    const replacements: { base: string; upgraded: string; varKey: string }[] = [];
 
     for (const [key, upVal] of Object.entries(u)) {
       if (upVal == null) continue;
@@ -161,7 +168,7 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
         const base = vars["Repeat"];
         const upgraded = getUpgradedValue(base, upVal);
         if (upgraded !== null && upgraded !== base) {
-          desc = desc.replace(new RegExp(`\\b${base}\\b(\\s*times)`, "i"), `${upgraded}$1`);
+          desc = desc.replace(new RegExp(`\\b${base}\\b(\\s*times)`, "i"), `[green]${upgraded}[/green]$1`);
         }
         continue;
       }
@@ -172,7 +179,7 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
         const base = vars[varKey];
         const upgradedVal = getUpgradedValue(base, upVal);
         if (upgradedVal !== null && upgradedVal !== base) {
-          replacements.push({ base: String(base), upgraded: String(upgradedVal) });
+          replacements.push({ base: String(base), upgraded: String(upgradedVal), varKey });
         }
       }
       if (key.toLowerCase() === "energy") {
@@ -200,8 +207,26 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
         if (used.has(match)) return match;
         if ((occurrences.get(match) || 0) > 1) return match;
         used.add(match);
-        return replMap.get(match) ?? match;
+        const repl = replMap.get(match);
+        return repl ? `[green]${repl}[/green]` : match;
       });
+
+      // Contextual replacement for ambiguous values (e.g. Coolheaded: "Channel 1 Frost. Draw 1 card." → only "Draw" changes)
+      for (const r of replacements) {
+        if ((occurrences.get(r.base) || 0) <= 1) continue;
+        if (used.has(r.base)) continue;
+        const context = r.varKey.toLowerCase().replace(/s$/, "");
+        const fwd = new RegExp(`\\b${r.base}\\b(\\s+${context})(s?)`, "i");
+        if (fwd.test(desc)) {
+          const plural = parseInt(r.upgraded) === 1 ? "" : "s";
+          desc = desc.replace(fwd, `[green]${r.upgraded}[/green]$1${plural}`);
+          continue;
+        }
+        const bwd = new RegExp(`(${context}\\s+)\\b${r.base}\\b`, "i");
+        if (bwd.test(desc)) {
+          desc = desc.replace(bwd, `$1[green]${r.upgraded}[/green]`);
+        }
+      }
     }
   }
 
@@ -212,6 +237,7 @@ type Tab = "overview" | "details" | "info";
 
 export default function CardDetail() {
   const params = useParams();
+  const router = useRouter();
   const id = params.id as string;
   const { lang } = useLanguage();
 
@@ -226,6 +252,7 @@ const [card, setCard] = useState<Card | null>(null);
   const [tab, setTab] = useState<Tab>("overview");
   const [powerData, setPowerData] = useState<Record<string, { id: string; name: string; description: string; type: string; image_url: string | null }>>({});
   const [keywordData, setKeywordData] = useState<Record<string, { id: string; name: string; description: string }>>({});
+  const [glossaryData, setGlossaryData] = useState<Record<string, { id: string; name: string; description: string }>>({});
 
   useEffect(() => {
     if (!id) return;
@@ -248,7 +275,7 @@ const [card, setCard] = useState<Card | null>(null);
       .finally(() => setLoading(false));
   }, [id, lang]);
 
-  // Load powers and keywords for inline tooltips
+  // Load powers, keywords, and glossary for inline tooltips
   useEffect(() => {
     cachedFetch<{ id: string; name: string; description: string; type: string; image_url: string | null }[]>(`${API}/api/powers?lang=${lang}`)
       .then((powers) => {
@@ -261,6 +288,12 @@ const [card, setCard] = useState<Card | null>(null);
         const m: Record<string, typeof kws[0]> = {};
         for (const k of kws) m[k.name.toLowerCase()] = k;
         setKeywordData(m);
+      });
+    cachedFetch<{ id: string; name: string; description: string }[]>(`${API}/api/glossary?lang=${lang}`)
+      .then((terms) => {
+        const m: Record<string, typeof terms[0]> = {};
+        for (const t of terms) m[t.name.toLowerCase()] = t;
+        setGlossaryData(m);
       });
   }, [lang]);
 
@@ -326,23 +359,23 @@ const [card, setCard] = useState<Card | null>(null);
 
   return (
     <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <Link
-        href={`${lp}/cards`}
+      <button
+        onClick={() => router.back()}
         className="inline-flex items-center gap-1 text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6"
       >
         &larr; {t("Back to", lang)} {t("Cards", lang)}
-      </Link>
+      </button>
 
       <div
         className={`bg-[var(--bg-card)] rounded-2xl border-2 ${
           isUpgraded
             ? "border-emerald-600"
             : colorMapSolid[card.color] || "border-[var(--border-subtle)]"
-        } shadow-2xl shadow-black/50 overflow-hidden`}
+        } shadow-2xl shadow-black/50`}
       >
         {/* Image */}
         {imgUrl && (
-          <div className="bg-black/40">
+          <div className="bg-black/40 rounded-t-2xl overflow-hidden">
             <img
               src={`${API}${imgUrl}`}
               alt={`${card.name} - Slay the Spire 2 Card`}
@@ -520,7 +553,7 @@ const [card, setCard] = useState<Card | null>(null);
               ) : (
                 <div className="text-sm text-[var(--text-secondary)] leading-relaxed mb-5">
                   <RichDescription
-                    text={descText + (card.keywords && card.keywords.length > 0 ? "\n" + card.keywords.filter((kw) => !(isUpgraded && u?.remove_exhaust && kw === "Exhaust")).map((kw) => `[gold]${kw}[/gold]`).join(". ") + "." : "") + (isUpgraded && u?.add_innate && !card.keywords?.includes("Innate") ? "\n[gold]Innate[/gold]." : "")}
+                    text={descText + (card.keywords && card.keywords.length > 0 ? "\n" + card.keywords.filter((kw) => !(isUpgraded && u?.remove_exhaust && kw === "Exhaust")).map((kw) => `[gold]${kw}[/gold]`).join(". ") + "." : "") + (isUpgraded && u?.add_innate && !card.keywords?.includes("Innate") ? "\n[green]Innate[/green]." : "")}
                     energyIcon={energyIcon}
                     relatedCards={spawnedCards.map((sc): RelatedCard => ({
                       id: sc.id,
@@ -530,7 +563,7 @@ const [card, setCard] = useState<Card | null>(null);
                       rarity: sc.rarity,
                       cost: sc.cost,
                     }))}
-                    interactiveWords={buildInteractiveWords(card, powerData, keywordData, lp)}
+                    interactiveWords={buildInteractiveWords(card, powerData, keywordData, glossaryData, lp)}
                   />
                 </div>
               )}

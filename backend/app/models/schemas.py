@@ -265,6 +265,13 @@ class Keyword(BaseModel):
     description: str
 
 
+class GlossaryTerm(BaseModel):
+    id: str
+    name: str
+    description: str
+    category: str
+
+
 class Intent(BaseModel):
     id: str
     name: str

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import type { Power, Card } from "@/lib/api";
 import RichDescription from "@/app/components/RichDescription";
@@ -21,6 +21,7 @@ const typeColors: Record<string, string> = {
 
 export default function PowerDetail() {
   const { id } = useParams<{ id: string }>();
+  const router = useRouter();
   const { lang } = useLanguage();
     const lp = useLangPrefix();
 const [power, setPower] = useState<Power | null>(null);
@@ -74,12 +75,12 @@ const [power, setPower] = useState<Power | null>(null);
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
-      <Link
-        href={`${lp}/powers`}
-        className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6 inline-block"
+      <button
+        onClick={() => router.back()}
+        className="inline-flex items-center gap-1 text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6"
       >
         &larr; Back to Powers
-      </Link>
+      </button>
 
       <div className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-6">
         {power.image_url && (
