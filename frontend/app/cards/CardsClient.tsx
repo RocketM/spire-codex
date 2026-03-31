@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useRef, useMemo, useCallback } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import type { Card } from "@/lib/api";
 import { cachedFetch } from "@/lib/fetch-cache";
 import CardGrid from "../components/CardGrid";
@@ -54,15 +55,36 @@ const keywordOptions = [
 ];
 
 export default function CardsClient({ initialCards }: { initialCards: Card[] }) {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
   const [cards, setCards] = useState<Card[]>(initialCards);
-  const [search, setSearch] = useState("");
-  const [color, setColor] = useState("");
-  const [type, setType] = useState("");
-  const [rarity, setRarity] = useState("");
-  const [keyword, setKeyword] = useState("");
-  const [sort, setSort] = useState("az");
+  const [search, setSearch] = useState(searchParams.get("search") || "");
+  const [color, setColor] = useState(searchParams.get("color") || "");
+  const [type, setType] = useState(searchParams.get("type") || "");
+  const [rarity, setRarity] = useState(searchParams.get("rarity") || "");
+  const [keyword, setKeyword] = useState(searchParams.get("keyword") || "");
+  const [sort, setSort] = useState(searchParams.get("sort") || "az");
   const { lang } = useLanguage();
   const initialRender = useRef(true);
+
+  // Sync filter state to URL search params
+  const updateUrl = useCallback((newState: Record<string, string>) => {
+    const params = new URLSearchParams();
+    for (const [k, v] of Object.entries(newState)) {
+      if (v && v !== "az") params.set(k, v);
+    }
+    const qs = params.toString();
+    router.replace(`/cards${qs ? `?${qs}` : ""}`, { scroll: false });
+  }, [router]);
+
+  // Wrap setters to also update URL
+  const setFilterAndUrl = useCallback((key: string, value: string, setter: (v: string) => void) => {
+    setter(value);
+    const current: Record<string, string> = { search, color, type, rarity, keyword, sort };
+    current[key] = value;
+    updateUrl(current);
+  }, [search, color, type, rarity, keyword, sort, updateUrl]);
 
   useEffect(() => {
     // Skip the first fetch if we have server data and lang is English with no filters
@@ -95,36 +117,36 @@ export default function CardsClient({ initialCards }: { initialCards: Card[] }) 
     <>
       <SearchFilter
         search={search}
-        onSearchChange={setSearch}
+        onSearchChange={(v) => setFilterAndUrl("search", v, setSearch)}
         placeholder="Search cards..."
         resultCount={sortedCards.length}
         sortOptions={sortOptions}
         sortValue={sort}
-        onSortChange={setSort}
+        onSortChange={(v) => setFilterAndUrl("sort", v, setSort)}
         filters={[
           {
             label: "All Colors",
             value: color,
             options: colorOptions,
-            onChange: setColor,
+            onChange: (v) => setFilterAndUrl("color", v, setColor),
           },
           {
             label: "All Types",
             value: type,
             options: typeOptions,
-            onChange: setType,
+            onChange: (v) => setFilterAndUrl("type", v, setType),
           },
           {
             label: "All Rarities",
             value: rarity,
             options: rarityOptions,
-            onChange: setRarity,
+            onChange: (v) => setFilterAndUrl("rarity", v, setRarity),
           },
           {
             label: "All Keywords",
             value: keyword,
             options: keywordOptions,
-            onChange: setKeyword,
+            onChange: (v) => setFilterAndUrl("keyword", v, setKeyword),
           },
         ]}
       />

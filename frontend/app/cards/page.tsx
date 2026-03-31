@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Card } from "@/lib/api";
 import JsonLd from "@/app/components/JsonLd";
 import { buildCollectionPageJsonLd, buildBreadcrumbJsonLd } from "@/lib/jsonld";
@@ -35,7 +36,9 @@ export default async function CardsPage() {
         Browse every card across Ironclad, Silent, Defect, Necrobinder, and Regent. Filter by character, type, rarity, and keywords.
       </p>
 
-      <CardsClient initialCards={cards} />
+      <Suspense>
+        <CardsClient initialCards={cards} />
+      </Suspense>
     </div>
   );
 }
