@@ -117,16 +117,6 @@ def init_db():
             pass
 
 
-def compute_run_hash(data: dict) -> str:
-    """Compute a unique hash for deduplication."""
-    seed = data.get("seed", "")
-    char = data["players"][0]["character"]
-    start = data.get("start_time", "")
-    run_time = data.get("run_time", 0)
-    deck_size = len(data["players"][0].get("deck", []))
-    # Use multiple fields to avoid collisions when seed is empty
-    key = f"{seed}:{char}:{start}:{run_time}:{deck_size}"
-    return hashlib.sha256(key.encode()).hexdigest()[:16]
 
 
 def clean_id(raw_id: str) -> str:
@@ -143,30 +133,55 @@ def submit_run(data: dict, username: str | None = None) -> dict:
     if not data.get("players") or not data.get("map_point_history") or not isinstance(data.get("acts"), list):
         return {"error": "Invalid run data — missing required fields"}
 
-    run_hash = compute_run_hash(data)
-    player = data["players"][0]
-    character = clean_id(player["character"])
     was_abandoned = int(data.get("was_abandoned", False))
-
     total_floors = sum(len(act) for act in data.get("map_point_history", []))
     killed_by_raw = data.get("killed_by_encounter", "")
     killed_by = clean_id(killed_by_raw) if killed_by_raw and killed_by_raw != "NONE.NONE" else None
     player_count = len(data.get("players", []))
 
-    with get_conn() as conn:
-        # Check for duplicate
-        existing = conn.execute("SELECT id FROM runs WHERE run_hash = ?", (run_hash,)).fetchone()
-        if existing:
-            # Ensure JSON file exists for sharing even on duplicates
+    # Process each player as a separate run entry (multiplayer support)
+    results = []
+    for player_idx, player in enumerate(data["players"]):
+        result = _submit_player_run(data, player, player_idx, was_abandoned, total_floors,
+                                     killed_by, player_count, username)
+        results.append(result)
+
+    # Save full run JSON for sharing (once, using first player's hash)
+    first_result = results[0]
+    if first_result.get("success") or first_result.get("duplicate"):
+        run_hash = first_result.get("run_hash", "")
+        if run_hash:
             runs_dir = _data_dir / "runs"
             runs_dir.mkdir(parents=True, exist_ok=True)
             run_file = runs_dir / f"{run_hash}.json"
             if not run_file.exists():
                 with open(run_file, "w", encoding="utf-8") as f:
                     json.dump(data, f, ensure_ascii=False)
+
+    # Return first player's result (for hash/sharing)
+    return first_result
+
+
+def _submit_player_run(data: dict, player: dict, player_idx: int,
+                        was_abandoned: int, total_floors: int, killed_by: str | None,
+                        player_count: int, username: str | None) -> dict:
+    """Submit a single player's data from a run."""
+    # Hash includes player index for multiplayer dedup
+    seed = data.get("seed", "")
+    char = player["character"]
+    start = data.get("start_time", "")
+    run_time = data.get("run_time", 0)
+    deck_size = len(player.get("deck", []))
+    key = f"{seed}:{char}:{start}:{run_time}:{deck_size}:{player_idx}"
+    run_hash = hashlib.sha256(key.encode()).hexdigest()[:16]
+
+    character = clean_id(player["character"])
+
+    with get_conn() as conn:
+        existing = conn.execute("SELECT id FROM runs WHERE run_hash = ?", (run_hash,)).fetchone()
+        if existing:
             return {"error": "This run has already been submitted", "duplicate": True, "run_hash": run_hash}
 
-        # Insert run
         cursor = conn.execute("""
             INSERT INTO runs (run_hash, seed, character, win, was_abandoned, ascension, game_mode,
                               player_count, run_time, floors_reached, acts_completed, killed_by,
@@ -200,13 +215,17 @@ def submit_run(data: dict, username: str | None = None) -> dict:
                 (run_id, relic_id, floor_added),
             )
 
-        # Insert card choices and potion data from floor history
+        # Insert card choices and potion data — match player_id to this player
         potion_used_set: set[str] = set()
-        potion_seen: dict[str, bool] = {}  # potion_id -> was_picked
+        potion_seen: dict[str, bool] = {}
+        player_id = player.get("id", player_idx + 1)
         for act_idx, act_floors in enumerate(data.get("map_point_history", [])):
             for floor_idx, floor in enumerate(act_floors):
                 floor_num = floor_idx + 1
                 for ps in floor.get("player_stats", []):
+                    # Only process stats for this player
+                    if ps.get("player_id") and ps["player_id"] != player_id:
+                        continue
                     for choice in ps.get("card_choices", []):
                         card_id = clean_id(choice["card"]["id"])
                         was_picked = int(choice.get("was_picked", False))
@@ -214,31 +233,22 @@ def submit_run(data: dict, username: str | None = None) -> dict:
                             "INSERT INTO run_card_choices (run_id, card_id, was_picked, floor) VALUES (?, ?, ?, ?)",
                             (run_id, card_id, was_picked, floor_num),
                         )
-                    # Potion choices
                     for pc in ps.get("potion_choices", []):
                         pid = clean_id(pc.get("choice", ""))
                         if pid:
                             picked = int(pc.get("was_picked", False))
                             potion_seen[pid] = potion_seen.get(pid, False) or bool(picked)
-                    # Potions used
                     for pu in ps.get("potion_used", []):
                         pid = clean_id(pu)
                         if pid:
                             potion_used_set.add(pid)
 
-        # Insert potion records
         for pid, was_picked in potion_seen.items():
             was_used = 1 if pid in potion_used_set else 0
             conn.execute(
                 "INSERT INTO run_potions (run_id, potion_id, was_picked, was_used) VALUES (?, ?, ?, ?)",
                 (run_id, pid, int(was_picked), was_used),
             )
-
-    # Save full run JSON for sharing
-    runs_dir = _data_dir / "runs"
-    runs_dir.mkdir(parents=True, exist_ok=True)
-    with open(runs_dir / f"{run_hash}.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False)
 
     return {"success": True, "run_id": run_id, "run_hash": run_hash}
 
