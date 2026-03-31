@@ -3814,11 +3814,219 @@
   {
     "id": "THE_ARCHITECT",
     "name": "The Architect",
-    "type": "Shared",
+    "type": "Ancient",
     "act": null,
-    "description": null,
+    "description": "So the arch demon’s thrall has arrived?",
     "options": null,
-    "pages": null
+    "pages": null,
+    "dialogue": {
+      "Defect": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "What are you doing here?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "<random garbled lines>"
+        },
+        {
+          "order": "0-2r",
+          "speaker": "ancient",
+          "text": "Repair you? Make me."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "You’re back? Didn’t I dismantle you?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "<random garbled lines>"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "Fix you? Fix your friend? Ridiculous."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "How do you keep coming back? Is this Neow’s doing?"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "<random garbled lines>"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Foolish"
+        }
+      ],
+      "Ironclad": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "So the arch demon’s thrall has arrived?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "Enemy...\nKill..."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Cursed to fight forever, aren’t you?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "Architect... arch... enemy!!"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "Do you even know your name?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "I pity you."
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "Kill..."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Return to the bottom, Ironclad."
+        }
+      ],
+      "Necrobinder": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "ARCHITECT! You killed my parents. You killed my friend. You killed my LIFE! ...and now I will kill YOU!"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "Vengeance is it? No thank you."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "ARCHITECT! You killed my parents. You killed my friend. You killed my-"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "You cannot change the past with anger."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "ARCHITECT! You killed my parents. You killed my friend. You killed my LIFE-"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "I did what I must to maintain order."
+        },
+        {
+          "order": "3-0r",
+          "speaker": "character",
+          "text": "ARCHITECT! You killed my parents. You killed my friend. You killed my-"
+        },
+        {
+          "order": "3-1r",
+          "speaker": "ancient",
+          "text": "Life"
+        },
+        {
+          "order": "3-2r",
+          "speaker": "character",
+          "text": "What...?! Die, monster!"
+        }
+      ],
+      "Regent": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "I’ve arrived! You there, commoner! Is this the top?"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "I need quiet..."
+        },
+        {
+          "order": "0-2",
+          "speaker": "character",
+          "text": "I’ll teach you some manners!"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "I’ve arrived again!"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "The loud fool returns?"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "character",
+          "text": "I’m neither loud nor a fool! Face me!"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "I’ve had enough of your poor manners!"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "Something we can both agree on."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "character",
+          "text": "Let’s dance!"
+        }
+      ],
+      "Silent": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Not even an introduction?"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Where did you come from?\nWhat are you after?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "[jitter]Hrrgh![/jitter]\n[jitter][red]DIE!![/red][/jitter]"
+        },
+        {
+          "order": "3-0r",
+          "speaker": "ancient",
+          "text": "Annoying wretch!\n[jitter]BE GONE!![/jitter]"
+        }
+      ]
+    },
+    "image_url": "/static/images/monsters/architect.png"
   },
   {
     "id": "THE_FUTURE_OF_POTIONS",
@@ -4042,7 +4250,7 @@
           {
             "id": "SAPPING",
             "title": "Sapping",
-            "description": "Apply [blue][SappingWeak][/blue] [gold]Weak[/gold]. Apply [blue][SappingVulnerable][/blue] [gold]Vulnerable[/gold]."
+            "description": "Apply [blue]2[/blue] [gold]Weak[/gold]. Apply [blue]2[/blue] [gold]Vulnerable[/gold]."
           },
           {
             "id": "VIOLENCE",
@@ -4052,7 +4260,7 @@
           {
             "id": "CHOKING",
             "title": "Choking",
-            "description": "Whenever you play a card this turn, the enemy loses [blue][ChokingDamage][/blue] HP."
+            "description": "Whenever you play a card this turn, the enemy loses [blue]6[/blue] HP."
           },
           {
             "id": "ENERGIZED",
@@ -4072,7 +4280,7 @@
           {
             "id": "EXPERTISE",
             "title": "Expertise",
-            "description": "Gain [blue][ExpertiseStrength][/blue] [gold]Strength[/gold]. Gain [blue][ExpertiseDexterity][/blue] [gold]Dexterity[/gold]."
+            "description": "Gain [blue]2[/blue] [gold]Strength[/gold]. Gain [blue]2[/blue] [gold]Dexterity[/gold]."
           },
           {
             "id": "CURIOUS",

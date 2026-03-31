@@ -1730,11 +1730,12 @@
   {
     "id": "THE_ARCHITECT",
     "name": "TheArchitect",
-    "type": "Shared",
+    "type": "Ancient",
     "act": null,
     "description": null,
     "options": null,
-    "pages": null
+    "pages": null,
+    "image_url": "/static/images/monsters/architect.png"
   },
   {
     "id": "THE_FUTURE_OF_POTIONS",
@@ -1876,7 +1877,7 @@
           {
             "id": "SAPPING",
             "title": "SAPPING",
-            "description": "สร้าง [blue][SappingWeak][/blue] [gold]ความอ่อนแอ[/gold] สร้าง [blue][SappingVulnerable][/blue] [gold]จุดอ่อน[/gold]"
+            "description": "สร้าง [blue]2[/blue] [gold]ความอ่อนแอ[/gold] สร้าง [blue]2[/blue] [gold]จุดอ่อน[/gold]"
           },
           {
             "id": "VIOLENCE",
@@ -1886,7 +1887,7 @@
           {
             "id": "CHOKING",
             "title": "CHOKING",
-            "description": "ทุกครั้งที่คุณเล่นการ์ดในเทิร์นนี้ ศัตรูเสีย [blue][ChokingDamage][/blue] HP"
+            "description": "ทุกครั้งที่คุณเล่นการ์ดในเทิร์นนี้ ศัตรูเสีย [blue]6[/blue] HP"
           },
           {
             "id": "ENERGIZED",
@@ -1906,7 +1907,7 @@
           {
             "id": "EXPERTISE",
             "title": "ความช่ำชอง",
-            "description": "ได้รับ [blue][ExpertiseStrength][/blue] [gold]ความแข็งแรง[/gold] ได้รับ [blue][ExpertiseDexterity][/blue] [gold]ความชำนาญ[/gold]"
+            "description": "ได้รับ [blue]2[/blue] [gold]ความแข็งแรง[/gold] ได้รับ [blue]2[/blue] [gold]ความชำนาญ[/gold]"
           },
           {
             "id": "CURIOUS",

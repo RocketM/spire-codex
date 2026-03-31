@@ -3814,11 +3814,219 @@
   {
     "id": "THE_ARCHITECT",
     "name": "Mimar",
-    "type": "Shared",
+    "type": "Ancient",
     "act": null,
-    "description": null,
+    "description": "Demek baş iblisin kölesi ayağıma geldi, öyle mi?",
     "options": null,
-    "pages": null
+    "pages": null,
+    "dialogue": {
+      "Defect": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Burada ne yapıyorsun sen?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "<rastgele bozuk sesler>"
+        },
+        {
+          "order": "0-2r",
+          "speaker": "ancient",
+          "text": "Seni tamir etmek mi? Ettirt de görelim."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Geri mi döndün? Seni parçalarına ayırmamış mıydım?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "<rastgele bozuk sesler>"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "Seni tamir etmek mi? Arkadaşını tamir etmek mi? Aptalca."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "Nasıl oluyor da geri dönüp duruyorsun? Bu Neow'un işi mi?"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "<rastgele bozuk sesler>"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Aptalca"
+        }
+      ],
+      "Ironclad": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Demek baş iblisin kölesi ayağıma geldi, öyle mi?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "Düşman...\nÖldür..."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Sonsuza dek savaşmaya lanetlisin, değil mi?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "Mimar... baş... düşman!!"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "İsmini dahi biliyor musun ki?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "Sana acıyorum."
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "Öldür..."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "En aşağıya geri dön, Demirkaplı."
+        }
+      ],
+      "Necrobinder": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "MİMAR! Ebeveynlerimi öldürdün. Arkadaşımı öldürdün. YAŞAMIMI öldürdün! ...ve şimdi ben de SENİ öldüreceğim!"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "İntikam mı? Yok, almayayım."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "MİMAR! Ebeveynlerimi öldürdün. Arkadaşımı öldürdün. YAŞAMIMI-"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "Geçmişini öfkeyle değiştiremezsin."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "MİMAR! Ebeveynlerimi öldürdün. Arkadaşımı öldürdün. YAŞAMIMI öldür-"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "Düzeni devam ettirmek için yapmam gerekeni yaptım."
+        },
+        {
+          "order": "3-0r",
+          "speaker": "character",
+          "text": "MİMAR! Ebeveynlerimi öldürdün. Arkadaşımı öldürdün-"
+        },
+        {
+          "order": "3-1r",
+          "speaker": "ancient",
+          "text": "Yaşamını öldürdüm."
+        },
+        {
+          "order": "3-2r",
+          "speaker": "character",
+          "text": "Ne?.. Seni canavar! Geber!"
+        }
+      ],
+      "Regent": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "Vardım! Hey sen, köylü! Burası en üst kat mı?"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "Sessizliğe ihtiyacım var..."
+        },
+        {
+          "order": "0-2",
+          "speaker": "character",
+          "text": "Sana biraz terbiye vereyim!"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "Tekrar geldim!"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "Gürültücü aptal geri mi döndü?"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "character",
+          "text": "Ben ne gürültücüyüm ne de aptal! Benimle yüzleş!"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "Senin terbiyesizliğinden bıktım!"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "Sonunda ikimizin de hemfikir olduğu bir konu."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "character",
+          "text": "Haydi dans edelim!"
+        }
+      ],
+      "Silent": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Kendini tanıtmayacak mısın bari?"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Nereden geldin?\nNeyin peşindesin?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "[jitter]Aaaah![/jitter]\n[jitter][red]GEBER!![/red][/jitter]"
+        },
+        {
+          "order": "3-0r",
+          "speaker": "ancient",
+          "text": "Seni sefil şey!\n[jitter]DEFOL!![/jitter]"
+        }
+      ]
+    },
+    "image_url": "/static/images/monsters/architect.png"
   },
   {
     "id": "THE_FUTURE_OF_POTIONS",
@@ -4042,7 +4250,7 @@
           {
             "id": "SAPPING",
             "title": "Zayıflatma",
-            "description": "[blue][SappingWeak][/blue] [gold]Zayıf[/gold] uygula. [blue][SappingVulnerable][/blue] [gold]Savunmasız[/gold] uygula."
+            "description": "[blue]2[/blue] [gold]Zayıf[/gold] uygula. [blue]2[/blue] [gold]Savunmasız[/gold] uygula."
           },
           {
             "id": "VIOLENCE",
@@ -4052,7 +4260,7 @@
           {
             "id": "CHOKING",
             "title": "Boğucu",
-            "description": "Bu tur her kart oynadığında düşman [blue][ChokingDamage][/blue] CP kaybeder."
+            "description": "Bu tur her kart oynadığında düşman [blue]6[/blue] CP kaybeder."
           },
           {
             "id": "ENERGIZED",
@@ -4072,7 +4280,7 @@
           {
             "id": "EXPERTISE",
             "title": "Uzmanlık",
-            "description": "[blue][ExpertiseStrength][/blue] [gold]Kuvvet[/gold] elde et. [blue][ExpertiseDexterity][/blue] [gold]Çeviklik[/gold] elde et."
+            "description": "[blue]2[/blue] [gold]Kuvvet[/gold] elde et. [blue]2[/blue] [gold]Çeviklik[/gold] elde et."
           },
           {
             "id": "CURIOUS",

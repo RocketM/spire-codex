@@ -3814,11 +3814,219 @@
   {
     "id": "THE_ARCHITECT",
     "name": "El Artífice",
-    "type": "Shared",
+    "type": "Ancient",
     "act": null,
-    "description": null,
+    "description": "Conque nos visita el esclavo del archidemonio...",
     "options": null,
-    "pages": null
+    "pages": null,
+    "dialogue": {
+      "Defect": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "¿Qué haces aquí?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "<líneas ilegibles al azar>"
+        },
+        {
+          "order": "0-2r",
+          "speaker": "ancient",
+          "text": "¿Arreglarte? Ja, oblígame."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "¿Regresaste? ¿Acaso no te había desmantelado?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "<líneas ilegibles al azar>"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "¿Arreglarte? ¿Arreglar a tu mascota? Qué rídiculez."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "¿Por qué sigues regresando? ¿Acaso esto es obra de Neow?"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "<líneas ilegibles al azar>"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Qué inocente."
+        }
+      ],
+      "Ironclad": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Conque nos visita el esclavo del archidemonio..."
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "Enemigo...\nMatar..."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Te maldijeron para luchar por siempre, ¿verdad?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "Artífice... ¡Archi... enemigo!"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "¿Sabes siquiera tu nombre?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "Me das lástima."
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "Matar..."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Regresa al inicio, Blindado."
+        }
+      ],
+      "Necrobinder": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "¡ARTÍFICE! Mataste a mis padres, a mis amistades. ¡Destruiste MI VIDA! ¡Seré yo quien acabe con TU VIDA ahora!"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "¿Por venganza? No, gracias."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "¡ARTÍFICE! Mataste a mis padres, a mis amistades. Destruiste mi..."
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "No puedes cambiar el pasado con tu cólera."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "¡ARTÍFICE! Mataste a mis padres, a mis amistades. Destruiste MI VIDA..."
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "Hice lo necesario para mantener el orden."
+        },
+        {
+          "order": "3-0r",
+          "speaker": "character",
+          "text": "¡ARTÍFICE! Mataste a mis padres, a mis amistades. Destruiste mi..."
+        },
+        {
+          "order": "3-1r",
+          "speaker": "ancient",
+          "text": "Vida..."
+        },
+        {
+          "order": "3-2r",
+          "speaker": "character",
+          "text": "¿Qué? ¡Muere, monstruo!"
+        }
+      ],
+      "Regent": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "¡El Monarca está aquí! Tú, plebeyo, ¿esta es la cima?"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "Necesito silencio..."
+        },
+        {
+          "order": "0-2",
+          "speaker": "character",
+          "text": "¡Te enseñaré buenos modales!"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "¡El Monarca llegó de nuevo!"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "¿Otra vez el idiota ruidoso?"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "character",
+          "text": "¡No soy ruidoso ni idiota! ¡Enfréntame!"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "¡Me cansé de tus malos modales!"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "Al fin estamos de acuerdo en algo."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "character",
+          "text": "¡A bailar!"
+        }
+      ],
+      "Silent": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "¿Ni siquiera vas a presentarte?"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "¿De dónde vienes?\n¿Qué es lo que buscas?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "[jitter]¡Arrg![/jitter]\n[jitter][red]¡¡MUERE!![/red][/jitter]"
+        },
+        {
+          "order": "3-0r",
+          "speaker": "ancient",
+          "text": "¡Miserable infeliz!\n[jitter]¡¡DESAPARECE!![/jitter]"
+        }
+      ]
+    },
+    "image_url": "/static/images/monsters/architect.png"
   },
   {
     "id": "THE_FUTURE_OF_POTIONS",
@@ -4042,7 +4250,7 @@
           {
             "id": "SAPPING",
             "title": "Chupavidas",
-            "description": "Aplicas [blue][SappingWeak][/blue] de [gold]debilitamiento[/gold]. Aplicas [blue][SappingVulnerable][/blue] de [gold]vulnerabilidad[/gold]."
+            "description": "Aplicas [blue]2[/blue] de [gold]debilitamiento[/gold]. Aplicas [blue]2[/blue] de [gold]vulnerabilidad[/gold]."
           },
           {
             "id": "VIOLENCE",
@@ -4052,7 +4260,7 @@
           {
             "id": "CHOKING",
             "title": "Asfixia",
-            "description": "Siempre que juegues una carta este turno, el enemigo perderá [blue][ChokingDamage][/blue] PV."
+            "description": "Siempre que juegues una carta este turno, el enemigo perderá [blue]6[/blue] PV."
           },
           {
             "id": "ENERGIZED",
@@ -4072,7 +4280,7 @@
           {
             "id": "EXPERTISE",
             "title": "Pericia",
-            "description": "Obtienes [blue][ExpertiseStrength][/blue] de [gold]fuerza[/gold]. Obtienes [blue][ExpertiseDexterity][/blue] de [gold]destreza[/gold]."
+            "description": "Obtienes [blue]2[/blue] de [gold]fuerza[/gold]. Obtienes [blue]2[/blue] de [gold]destreza[/gold]."
           },
           {
             "id": "CURIOUS",

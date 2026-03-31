@@ -3810,11 +3810,219 @@
   {
     "id": "THE_ARCHITECT",
     "name": "Архитектор",
-    "type": "Shared",
+    "type": "Ancient",
     "act": null,
-    "description": null,
+    "description": "А вот и цепной пес архидемона.",
     "options": null,
-    "pages": null
+    "pages": null,
+    "dialogue": {
+      "Defect": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Что ты здесь делаешь?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "<Неразборчивые помехи>"
+        },
+        {
+          "order": "0-2r",
+          "speaker": "ancient",
+          "text": "Починить? Вот еще!"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Ты снова здесь? Разве я тебя не разобрал?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "<Неразборчивые помехи>"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "Починить тебя? Починить твоего друга? Бессмыслица."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "Почему ты снова здесь? Это что, проделки Ньяу?"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "<Неразборчивые помехи>"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Какая глупость."
+        }
+      ],
+      "Ironclad": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "А вот и цепной пес архидемона."
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "Жертва…\nРасправа…"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Обречен убивать и не можешь умереть, да?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "Архитектор… Арх… В прах!"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "Ты хотя бы имя свое знаешь?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "Мне тебя жаль."
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "Расправа…"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Возвращайся вниз, Латоносец."
+        }
+      ],
+      "Necrobinder": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "АРХИТЕКТОР! Ты отнял у меня родителей. Ты отнял у меня друга. Ты отнял у меня ЖИЗНЬ. Настал час ВОЗМЕЗДИЯ!"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "Месть? Спасибо, я пас."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "АРХИТЕКТОР! Ты отнял у меня родителей. Ты отнял у меня друга. Ты отнял у меня…"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "Гневом прошлого не изменить."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "АРХИТЕКТОР! Ты отнял у меня родителей. Ты отнял у меня друга. Ты отнял у меня ЖИЗНЬ…"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "Я обязан сохранять порядок."
+        },
+        {
+          "order": "3-0r",
+          "speaker": "character",
+          "text": "АРХИТЕКТОР! Ты отнял у меня родителей. Ты отнял у меня друга. Ты отнял у меня…"
+        },
+        {
+          "order": "3-1r",
+          "speaker": "ancient",
+          "text": "Жизнь."
+        },
+        {
+          "order": "3-2r",
+          "speaker": "character",
+          "text": "Что?! Умри, чудовище!"
+        }
+      ],
+      "Regent": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "Король прибыл! Эй ты, холоп! Вершина тут?"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "Мне нужна тишина…"
+        },
+        {
+          "order": "0-2",
+          "speaker": "character",
+          "text": "Да как ты… Я научу тебя манерам!"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "Король прибыл! Снова!"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "Шут гороховый пожаловал?"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "character",
+          "text": "Я не шут и не гороховый! Защищайся!"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "Хватит с меня твоей неотесанности!"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "Взаимно."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "character",
+          "text": "Потанцуем!"
+        }
+      ],
+      "Silent": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Даже не представишься?"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Откуда ты?\nЧего желаешь?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "[jitter]!!![/jitter]\n[jitter][red]УМРИ![/red][/jitter]"
+        },
+        {
+          "order": "3-0r",
+          "speaker": "ancient",
+          "text": "Настырная бестия!\n[jitter]ПРОЧЬ![/jitter]"
+        }
+      ]
+    },
+    "image_url": "/static/images/monsters/architect.png"
   },
   {
     "id": "THE_FUTURE_OF_POTIONS",
@@ -4038,7 +4246,7 @@
           {
             "id": "SAPPING",
             "title": "Истощение",
-            "description": "Накладывает [blue][SappingWeak][/blue] [gold]слабости[/gold] и [blue][SappingVulnerable][/blue] [gold]уязвимости[/gold]."
+            "description": "Накладывает [blue]2[/blue] [gold]слабости[/gold] и [blue]2[/blue] [gold]уязвимости[/gold]."
           },
           {
             "id": "VIOLENCE",
@@ -4048,7 +4256,7 @@
           {
             "id": "CHOKING",
             "title": "Удушение",
-            "description": "Враг теряет [blue][ChokingDamage][/blue] ОЗ каждый раз, когда вы разыгрываете карту в этом ходу."
+            "description": "Враг теряет [blue]6[/blue] ОЗ каждый раз, когда вы разыгрываете карту в этом ходу."
           },
           {
             "id": "ENERGIZED",
@@ -4068,7 +4276,7 @@
           {
             "id": "EXPERTISE",
             "title": "Знания",
-            "description": "Дает [blue][ExpertiseStrength][/blue] [gold]силы[/gold] и [blue][ExpertiseDexterity][/blue] [gold]ловкости[/gold]."
+            "description": "Дает [blue]2[/blue] [gold]силы[/gold] и [blue]2[/blue] [gold]ловкости[/gold]."
           },
           {
             "id": "CURIOUS",
@@ -4703,15 +4911,15 @@
     "pages": [
       {
         "id": "AFTER_BUY",
-        "description": "«Благодарим вас за невероятную щедрость. Примите от нас [blue]0[/blue] [gold]Вонго-балла|баллов[/gold]. А если вы заработаете еще [blue]0[/blue], то получите уникальный [gold]значок лучшего покупателя от «Вонго»[/gold]. Приятного вечера».\n\nВы понятия не имеете, о чем речь. В «Вонго» вы больше ни ногой."
+        "description": "«Благодарим вас за невероятную щедрость. Примите от нас [blue]0[/blue] [gold]Вонго-балла[/gold]. А если вы заработаете еще [blue]0[/blue], то получите уникальный [gold]значок лучшего покупателя от «Вонго»[/gold]. Приятного вечера».\n\nВы понятия не имеете, о чем речь. В «Вонго» вы больше ни ногой."
       },
       {
         "id": "AFTER_BUY_BADGE_COUNTER",
-        "description": "«Благодарим вас за невероятную щедрость. Примите от нас [blue]0[/blue] [gold]Вонго-балла|баллов[/gold]. А если вы заработаете еще [blue]0[/blue], то получите уникальный [gold]значок лучшего покупателя от «Вонго»[/gold]. Приятного вечера».\n\nУ вас уже и так полно таких значков, целых [blue]0[/blue]! В «Вонго» вы больше ни ногой."
+        "description": "«Благодарим вас за невероятную щедрость. Примите от нас [blue]0[/blue] [gold]Вонго-балла[/gold]. А если вы заработаете еще [blue]0[/blue], то получите уникальный [gold]значок лучшего покупателя от «Вонго»[/gold]. Приятного вечера».\n\nУ вас уже и так полно таких значков, целых [blue]0[/blue]! В «Вонго» вы больше ни ногой."
       },
       {
         "id": "AFTER_BUY_RECEIVE_BADGE",
-        "description": "«Благодарим вас за невероятную щедрость. Вы заработали уже [blue]0[/blue] [gold]Вонго-балла|баллов[/gold]. За это вам полагается [gold]значок лучшего покупателя от «Вонго»[/gold]. Приятного вечера».\nПродавец протягивает вам дешевый значок.\n\nУ вас уже и так полно таких значков, целых [blue]0[/blue]! В «Вонго» вы больше ни ногой."
+        "description": "«Благодарим вас за невероятную щедрость. Вы заработали уже [blue]0[/blue] [gold]Вонго-балла[/gold]. За это вам полагается [gold]значок лучшего покупателя от «Вонго»[/gold]. Приятного вечера».\nПродавец протягивает вам дешевый значок.\n\nУ вас уже и так полно таких значков, целых [blue]0[/blue]! В «Вонго» вы больше ни ногой."
       },
       {
         "id": "INITIAL",

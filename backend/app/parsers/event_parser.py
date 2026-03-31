@@ -344,8 +344,8 @@ def parse_all_pages(event_id: str, localization: dict, vars_dict: dict, relic_de
 
 
 def is_ancient_event(content: str) -> bool:
-    """Check if the event extends AncientEventModel."""
-    return "AncientEventModel" in content
+    """Check if the event extends AncientEventModel or uses ancients loc table."""
+    return "AncientEventModel" in content or 'LocTable => "ancients"' in content
 
 
 CHARACTERS = ["IRONCLAD", "SILENT", "DEFECT", "NECROBINDER", "REGENT"]
@@ -472,11 +472,17 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict, ti
         if dialogue:
             result["dialogue"] = dialogue
 
-        # Image URL
+        # Image URL — check ancients dir first, then monsters
         img_name = event_id.lower()
         image_file = IMAGES_DIR / f"{img_name}.png"
         if image_file.exists():
             result["image_url"] = f"/static/images/misc/ancients/{img_name}.png"
+        else:
+            # Fall back to monster sprite (e.g. The Architect)
+            monster_name = img_name.replace("the_", "")
+            monster_file = BASE / "backend" / "static" / "images" / "monsters" / f"{monster_name}.png"
+            if monster_file.exists():
+                result["image_url"] = f"/static/images/monsters/{monster_name}.png"
 
         # Relic offerings
         relics = extract_ancient_relics(content)
@@ -488,6 +494,13 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict, ti
             first_visit = localization.get(f"{event_id}.talk.firstVisitEver.0-0.ancient", "")
             if first_visit:
                 result["description"] = strip_rich_tags(first_visit)
+            else:
+                # Try character-specific first dialogue (e.g. The Architect)
+                for char in CHARACTERS:
+                    line = localization.get(f"{event_id}.talk.{char}.0-0.ancient") or localization.get(f"{event_id}.talk.{char}.0-0r.ancient") or localization.get(f"{event_id}.talk.{char}.0-0.char")
+                    if line:
+                        result["description"] = strip_rich_tags(line)
+                        break
 
     return result
 

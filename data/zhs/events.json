@@ -3814,11 +3814,219 @@
   {
     "id": "THE_ARCHITECT",
     "name": "建筑师",
-    "type": "Shared",
+    "type": "Ancient",
     "act": null,
-    "description": null,
+    "description": "是大恶魔的走狗来了么？",
     "options": null,
-    "pages": null
+    "pages": null,
+    "dialogue": {
+      "Defect": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "你在这里做什么？"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "<随机混乱的词句>"
+        },
+        {
+          "order": "0-2r",
+          "speaker": "ancient",
+          "text": "修好你？凭什么。"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "你回来了？我不是把你拆解了吗？"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "<随机混乱的词句>"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "修好你？还要修好你的朋友？胡言乱语。"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "你怎么还能一直回来？这是涅奥做的么？"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "<随机混乱的词句>"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "愚蠢"
+        }
+      ],
+      "Ironclad": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "是大恶魔的走狗来了么？"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "敌人……\n杀戮……"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "你被诅咒必须永远战斗，是吧？"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "建筑师……最大……敌人！！"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "你是不是连自己的名字都不记得了？"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "我怜悯你。"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "杀戮……"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "回塔底去吧，铁甲战士。"
+        }
+      ],
+      "Necrobinder": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "建筑师！你杀死了我的父母，你杀死了我的朋友，你杀死了我的[b]生命[/b]！……所以现在，我要杀死[b]你[/b]！"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "复仇是么？敬谢不敏。"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "建筑师！你杀死了我的父母，你杀死了我的朋友，你杀死了我的——"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "你无法用愤怒改变过去。"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "建筑师！你杀死了我的父母，你杀死了我的朋友，你杀死了我的[b]生命[/b]——"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "我只是为了维持秩序，做了我必须做的事情。"
+        },
+        {
+          "order": "3-0r",
+          "speaker": "character",
+          "text": "建筑师！你杀死了我的父母，你杀死了我的朋友，你杀死了我的——"
+        },
+        {
+          "order": "3-1r",
+          "speaker": "ancient",
+          "text": "生命"
+        },
+        {
+          "order": "3-2r",
+          "speaker": "character",
+          "text": "哈……？！死吧，怪物！"
+        }
+      ],
+      "Regent": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "我终于到达了！喂，那边的平民！这里就是塔顶么？"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "我需要安静……"
+        },
+        {
+          "order": "0-2",
+          "speaker": "character",
+          "text": "看来我需要教你一点礼数！"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "我又到这里了！"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "聒噪的愚者又来了么？"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "character",
+          "text": "我既不聒噪，也不是愚者！你快来面对着我！"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "我已经受够了你的无礼了！"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "这一点，我们倒是意见一致。"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "character",
+          "text": "来起舞吧！"
+        }
+      ],
+      "Silent": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "甚至都没有一句自我介绍么？"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "你从何而来？\n所寻何物？"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "[jitter]呵啊！[/jitter]\n[jitter][red]死吧！！[/red][/jitter]"
+        },
+        {
+          "order": "3-0r",
+          "speaker": "ancient",
+          "text": "烦人的混蛋！\n[jitter]消失吧！！[/jitter]"
+        }
+      ]
+    },
+    "image_url": "/static/images/monsters/architect.png"
   },
   {
     "id": "THE_FUTURE_OF_POTIONS",
@@ -4042,7 +4250,7 @@
           {
             "id": "SAPPING",
             "title": "削弱",
-            "description": "给予[blue][SappingWeak][/blue]层[gold]虚弱[/gold]。给予[blue][SappingVulnerable][/blue]层[gold]易伤[/gold]。"
+            "description": "给予[blue]2[/blue]层[gold]虚弱[/gold]。给予[blue]2[/blue]层[gold]易伤[/gold]。"
           },
           {
             "id": "VIOLENCE",
@@ -4052,7 +4260,7 @@
           {
             "id": "CHOKING",
             "title": "扼杀",
-            "description": "本回合，你每打出一张牌，该敌人失去[blue][ChokingDamage][/blue]点生命。"
+            "description": "本回合，你每打出一张牌，该敌人失去[blue]6[/blue]点生命。"
           },
           {
             "id": "ENERGIZED",
@@ -4072,7 +4280,7 @@
           {
             "id": "EXPERTISE",
             "title": "专长",
-            "description": "获得[blue][ExpertiseStrength][/blue]点[gold]力量[/gold]。获得[blue][ExpertiseDexterity][/blue]点[gold]敏捷[/gold]。"
+            "description": "获得[blue]2[/blue]点[gold]力量[/gold]。获得[blue]2[/blue]点[gold]敏捷[/gold]。"
           },
           {
             "id": "CURIOUS",

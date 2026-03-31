@@ -3542,7 +3542,7 @@
       {
         "id": "BONE_TEA",
         "title": "뼈다귀 차",
-        "description": "[gold]골드[/gold]를 [red]50[/red] 지불합니다. 다음 [blue][[/blue]번의] 전투 시작 시, 손에 있는 모든 카드를 [gold]강화[/gold]합니다."
+        "description": "[gold]골드[/gold]를 [red]50[/red] 지불합니다. 다음 전투 시작 시, 손에 있는 모든 카드를 [gold]강화[/gold]합니다."
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3552,7 +3552,7 @@
       {
         "id": "EMBER_TEA",
         "title": "잉걸불 차",
-        "description": "[gold]골드[/gold]를 [red]150[/red] 지불합니다. 다음 [blue][[/blue]번의] 전투 시작 시, [gold]힘[/gold]을 [blue]2[/blue] 얻습니다."
+        "description": "[gold]골드[/gold]를 [red]150[/red] 지불합니다. 다음 전투 시작 시, [gold]힘[/gold]을 [blue]2[/blue] 얻습니다."
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3577,7 +3577,7 @@
           {
             "id": "BONE_TEA",
             "title": "뼈다귀 차",
-            "description": "[gold]골드[/gold]를 [red]50[/red] 지불합니다. 다음 [blue][[/blue]번의] 전투 시작 시, 손에 있는 모든 카드를 [gold]강화[/gold]합니다."
+            "description": "[gold]골드[/gold]를 [red]50[/red] 지불합니다. 다음 전투 시작 시, 손에 있는 모든 카드를 [gold]강화[/gold]합니다."
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3587,7 +3587,7 @@
           {
             "id": "EMBER_TEA",
             "title": "잉걸불 차",
-            "description": "[gold]골드[/gold]를 [red]150[/red] 지불합니다. 다음 [blue][[/blue]번의] 전투 시작 시, [gold]힘[/gold]을 [blue]2[/blue] 얻습니다."
+            "description": "[gold]골드[/gold]를 [red]150[/red] 지불합니다. 다음 전투 시작 시, [gold]힘[/gold]을 [blue]2[/blue] 얻습니다."
           },
           {
             "id": "EMBER_TEA_LOCKED",
@@ -3814,11 +3814,219 @@
   {
     "id": "THE_ARCHITECT",
     "name": "아키텍트",
-    "type": "Shared",
+    "type": "Ancient",
     "act": null,
-    "description": null,
+    "description": "대악마의 노예가 드디어 행차하신 건가?",
     "options": null,
-    "pages": null
+    "pages": null,
+    "dialogue": {
+      "Defect": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "여기서 뭘 하고 있는 거지?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "<알아듣기 힘든 무작위 문장>"
+        },
+        {
+          "order": "0-2r",
+          "speaker": "ancient",
+          "text": "널 수리하라고? 그럴 마음이 들게 해봐."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "돌아온 건가? 분해해 버린 줄 알았는데?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "<알아듣기 힘든 무작위 문장>"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "너를 고쳐? 네 친구를 고치라고? 웃기는 소리군."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "어떻게 계속 돌아오는 거지? 니오우의 짓인가?"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "<알아듣기 힘든 무작위 문장>"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "멍청하군."
+        }
+      ],
+      "Ironclad": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "대악마의 노예가 드디어 행차하신 건가?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "적...\n죽인다..."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "끊임없이 싸우는 저주라도 받은 건가?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "아키텍트... 나의... 원수!!"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "네 이름은 알고 있긴 한 거냐?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "불쌍한 것."
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "죽인다..."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "밑바닥으로 돌아가라, 아이언클래드."
+        }
+      ],
+      "Necrobinder": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "아키텍트! 너는 내 부모를 죽였다. 내 친구를 죽였다. 내 목숨도 앗아갔지! ...이젠 내가 널 죽여주마!"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "복수라는 건가? 사양하도록 하지."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "아키텍트! 너는 내 부모를 죽였다. 내 친구를 죽였다. 내 목숨도-"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "분노로는 과거를 바꿀 수 없다."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "아키텍트! 너는 내 부모를 죽였다. 내 친구를 죽였다. 내 목숨도 앗아갔지-"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "질서를 유지하기 위해 내가 해야 할 일을 했을 뿐이다."
+        },
+        {
+          "order": "3-0r",
+          "speaker": "character",
+          "text": "아키텍트! 너는 내 부모를 죽였다. 내 친구를 죽였다. 심지어-"
+        },
+        {
+          "order": "3-1r",
+          "speaker": "ancient",
+          "text": "내 목숨도 앗아갔지"
+        },
+        {
+          "order": "3-2r",
+          "speaker": "character",
+          "text": "뭐라고...?! 죽어라, 괴물아!"
+        }
+      ],
+      "Regent": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "이몸이 왔노라! 이봐, 거기 평민! 여기가 정상인가?"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "조용히 해라..."
+        },
+        {
+          "order": "0-2",
+          "speaker": "character",
+          "text": "예절을 좀 가르쳐줘야겠군!"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "다시 찾아왔노라!"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "시끄러운 멍청이가 돌아왔나?"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "character",
+          "text": "이몸은 시끄럽지도, 멍청하지도 않다! 이몸과 싸워라!"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "네 무례한 태도는 이제 지긋지긋하다!"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "그것만큼은 우리 생각이 같군."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "character",
+          "text": "싸워 보자고!"
+        }
+      ],
+      "Silent": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "소개조차 하지 않는 건가?"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "어디서 왔지?\n대체 목적이 뭐냐?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "[jitter]으으윽![/jitter]\n[jitter][red]죽어라!![/red][/jitter]"
+        },
+        {
+          "order": "3-0r",
+          "speaker": "ancient",
+          "text": "성가신 자식!\n[jitter]썩 꺼져라!![/jitter]"
+        }
+      ]
+    },
+    "image_url": "/static/images/monsters/architect.png"
   },
   {
     "id": "THE_FUTURE_OF_POTIONS",
@@ -4042,7 +4250,7 @@
           {
             "id": "SAPPING",
             "title": "탈력",
-            "description": "[gold]약화[/gold]를 [blue][SappingWeak][/blue] 부여합니다. [gold]취약[/gold]을 [blue][SappingVulnerable][/blue] 부여합니다."
+            "description": "[gold]약화[/gold]를 [blue]2[/blue] 부여합니다. [gold]취약[/gold]을 [blue]2[/blue] 부여합니다."
           },
           {
             "id": "VIOLENCE",
@@ -4052,7 +4260,7 @@
           {
             "id": "CHOKING",
             "title": "질식",
-            "description": "이번 턴에 카드를 사용할 때마다, 대상 적이 체력을 [blue][ChokingDamage][/blue] 잃습니다."
+            "description": "이번 턴에 카드를 사용할 때마다, 대상 적이 체력을 [blue]6[/blue] 잃습니다."
           },
           {
             "id": "ENERGIZED",
@@ -4072,7 +4280,7 @@
           {
             "id": "EXPERTISE",
             "title": "전문성",
-            "description": "[gold]힘[/gold]을 [blue][ExpertiseStrength][/blue] 얻습니다. [gold]민첩[/gold]을 [blue][ExpertiseDexterity][/blue] 얻습니다."
+            "description": "[gold]힘[/gold]을 [blue]2[/blue] 얻습니다. [gold]민첩[/gold]을 [blue]2[/blue] 얻습니다."
           },
           {
             "id": "CURIOUS",

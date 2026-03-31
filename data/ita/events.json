@@ -1775,11 +1775,219 @@
   {
     "id": "THE_ARCHITECT",
     "name": "L'ARCHITETTO",
-    "type": "Shared",
+    "type": "Ancient",
     "act": null,
-    "description": null,
+    "description": "Quindi è arrivato lo schiavo dell'arcidemone?",
     "options": null,
-    "pages": null
+    "pages": null,
+    "dialogue": {
+      "Defect": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Cosa ci fai qui?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "<messagi casuali>"
+        },
+        {
+          "order": "0-2r",
+          "speaker": "ancient",
+          "text": "Ripararti? Creami."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Hai fatto ritorno? Non ti avevo smontato?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "<frasi casuali>"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "Ripararti? Riparare il tuo amico? Ridicolo."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "Come fai a tornare? È opera di Neow?"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "<frasi casuali>"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Che schiocchezza"
+        }
+      ],
+      "Ironclad": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Quindi è arrivato lo schiavo dell'arcidemone?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "Nemico...\nUccidi..."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Sei maledetto a combattere per sempre, eh?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "Architetto... arci... nemico!"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "Quantomeno conosci il tuo nome?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "Provo pietà per te."
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "Uccidi..."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Torna in basso, Ironclad."
+        }
+      ],
+      "Necrobinder": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "ARCHITETTO! Hai ucciso i miei genitori. Hai ucciso il mio amico. Hai ucciso la mia vita! ... E ora sarò io a UCCIDERTI!"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "Vendetta? No, grazie."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "ARCHITETTO! Hai ucciso i miei genitori. Hai uccico il mio amico. Hai ucciso il mio..."
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "Non puoi cambiare il passato con la rabbia."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "ARCHITETTO! Hai ucciso i miei genitori. Hai ucciso il mio amico. Hai ucciso la mia VITA!"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "Ho fatto ciò che dovevo per mantenere l'ordine."
+        },
+        {
+          "order": "3-0r",
+          "speaker": "character",
+          "text": "ARCHITETTO! Hai ucciso i miei genitori. Hai ucciso il mio amico. Hai ucciso il mio..."
+        },
+        {
+          "order": "3-1r",
+          "speaker": "ancient",
+          "text": "Vita"
+        },
+        {
+          "order": "3-2r",
+          "speaker": "character",
+          "text": "Cosa...? Muori, mostro!"
+        }
+      ],
+      "Regent": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "Sono arrivato! Ehi, plebeo! Questa è la vetta?"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "Ho bisogno di pace..."
+        },
+        {
+          "order": "0-2",
+          "speaker": "character",
+          "text": "Ti insegnerò le buone maniere!"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "Sono tornato!"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "Il rumoroso idiota è tornato?"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "character",
+          "text": "Non sono né rumoroso né stupido! Affrontami!"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "Ne ho abbastanza della tua maleducazione!"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "Su questo sono d'accordo con te."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "character",
+          "text": "Apriamo le danze!"
+        }
+      ],
+      "Silent": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Non ti presenti nemmeno?"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Da dove vieni?\nCosa cerchi?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "[jitter]Hrrgh![/jitter]\n[jitter][red]MUORI![/red][/jitter]"
+        },
+        {
+          "order": "3-0r",
+          "speaker": "ancient",
+          "text": "Insolente!\n[jitter]SPARISCI![/jitter]"
+        }
+      ]
+    },
+    "image_url": "/static/images/monsters/architect.png"
   },
   {
     "id": "THE_FUTURE_OF_POTIONS",

@@ -1330,7 +1330,7 @@
     "name": "Abenteuer im Dschungellabyrinth",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "Auf einer Lichtung stößt du auf eine [green]bunt gemischte Abenteuergruppe[/green], die auf ein [purple]riesiges Labyrinth[/purple] herabschauen und dorthin gestikulieren.\n\nSie bieten an, sich mit dir für eine [b]epische Quest[/b] zusammenzutun, um die Schätze dieses Labyrinths zu plündern. Als erfahrener Abenteurer ist dir klar, dass dieses Labyrinth voller [red][jitter]tödlicher Fallen[/jitter][/red] und [orange][sine]Wächter[/sine][/orange] ist.\n\nEs wäre einfacher, wenn ihr zusammenarbeitet, aber dann müsstet ihr die Beute aufteilen.",
+    "description": "Auf einer Lichtung stößt du auf eine [green]bunt gemischte Abenteuergruppe[/green], die auf ein [purple]riesiges Labyrinth[/purple] herabschauen und dorthin gestikulieren.\n\nSie bieten an, sich mit dir für eine [b]epische Quest[/b] zusammenzutun, um die Schätze dieses Labyrinths zu plündern. Als erfahrene Abenteurerin ist dir klar, dass dieses Labyrinth voller [red][jitter]tödlicher Fallen[/jitter][/red] und [orange][sine]Wächter[/sine][/orange] ist.\n\nEs wäre einfacher, wenn ihr zusammenarbeitet, aber dann müsstet ihr die Beute aufteilen.",
     "options": [
       {
         "id": "SOLO_QUEST",
@@ -1346,7 +1346,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Auf einer Lichtung stößt du auf eine [green]bunt gemischte Abenteuergruppe[/green], die auf ein [purple]riesiges Labyrinth[/purple] herabschauen und dorthin gestikulieren.\n\nSie bieten an, sich mit dir für eine [b]epische Quest[/b] zusammenzutun, um die Schätze dieses Labyrinths zu plündern. Als erfahrener Abenteurer ist dir klar, dass dieses Labyrinth voller [red][jitter]tödlicher Fallen[/jitter][/red] und [orange][sine]Wächter[/sine][/orange] ist.\n\nEs wäre einfacher, wenn ihr zusammenarbeitet, aber dann müsstet ihr die Beute aufteilen.",
+        "description": "Auf einer Lichtung stößt du auf eine [green]bunt gemischte Abenteuergruppe[/green], die auf ein [purple]riesiges Labyrinth[/purple] herabschauen und dorthin gestikulieren.\n\nSie bieten an, sich mit dir für eine [b]epische Quest[/b] zusammenzutun, um die Schätze dieses Labyrinths zu plündern. Als erfahrene Abenteurerin ist dir klar, dass dieses Labyrinth voller [red][jitter]tödlicher Fallen[/jitter][/red] und [orange][sine]Wächter[/sine][/orange] ist.\n\nEs wäre einfacher, wenn ihr zusammenarbeitet, aber dann müsstet ihr die Beute aufteilen.",
         "options": [
           {
             "id": "SOLO_QUEST",
@@ -1396,7 +1396,7 @@
     "pages": [
       {
         "id": "CLAIM",
-        "description": "Vorsichtig näherst du dich dem [orange]Irrlicht[/orange]...\nJe näher du kommst, desto stärker reagiert es auf deine Anwesenheit.\n\nSobald du in Reichweite bist, greifst du das [orange]Irrlicht[/orange], aber du [red][jitter]verbrennst dich an einem Strahl aus heißem Dampf und Flammen![/jitter][/red]\n\nDennoch [jitter]tastest und rangelst[/jitter] du mit der Kreatur, um sie zu unterwerfen. Schließlich gibt das [orange]Irrlicht[/orange] auf und erkennt dich als seinen neuen Besitzer an."
+        "description": "Vorsichtig näherst du dich dem [orange]Irrlicht[/orange]...\nJe näher du kommst, desto stärker reagiert es auf deine Anwesenheit.\n\nSobald du in Reichweite bist, greifst du das [orange]Irrlicht[/orange], aber du [red][jitter]verbrennst dich an einem Strahl aus heißem Dampf und Flammen![/jitter][/red]\n\nDennoch [jitter]tastest und rangelst[/jitter] du mit der Kreatur, um sie zu unterwerfen. Schließlich gibt das [orange]Irrlicht[/orange] auf und erkennt dich als seine neue Besitzerin an."
       },
       {
         "id": "INITIAL",
@@ -3814,11 +3814,219 @@
   {
     "id": "THE_ARCHITECT",
     "name": "Der Architekt",
-    "type": "Shared",
+    "type": "Ancient",
     "act": null,
-    "description": null,
+    "description": "Der Knecht des Erzdämonen ist also angekommen?",
     "options": null,
-    "pages": null
+    "pages": null,
+    "dialogue": {
+      "Defect": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Was machst du hier?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "<zufällige verzerrte Zeilen>"
+        },
+        {
+          "order": "0-2r",
+          "speaker": "ancient",
+          "text": "Dich reparieren? Zwing mich."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Du bist zurück? Hatte ich dich nicht auseinandergenommen?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "<zufällige verzerrte Zeilen>"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "Dich in Ordnung bringen? Deinen Freund auch? Lächerlich."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "Wie kommst du immer wieder zurück? Steckt da Neow dahinter?"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "<zufällige verzerrte Zeilen>"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Töricht"
+        }
+      ],
+      "Ironclad": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Der Knecht des Erzdämonen ist also angekommen?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "Gegner...\nTöten..."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Verflucht zum ewigen Kämpfen, nicht wahr?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "Architekt... Erz... feind!!"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "Kennst du überhaupt deinen Namen?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "Ich bemitleide dich."
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "Töten..."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Zurück an den Boden, Eiserner."
+        }
+      ],
+      "Necrobinder": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "ARCHITEKT! Du hast meine Eltern getötet. Hast meinen Freund getötet. Mein LEBEN getötet! ...und jetzt werde ich DICH töten!"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "Rache? Nein danke."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "ARCHITEKT! Du hast meine Eltern getötet. Hast meinen Freund getötet. Mein–"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "Du kannst die Vergangenheit nicht mit Wut verändern."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "ARCHITEKT! Du hast meine Eltern getötet. Hast meinen Freund getötet. Mein LEBEN getötet–"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "Ich tat, was ich musste, um Ordnung zu wahren."
+        },
+        {
+          "order": "3-0r",
+          "speaker": "character",
+          "text": "ARCHITEKT! Du hast meine Eltern getötet. Hast meinen Freund getötet. Mein–"
+        },
+        {
+          "order": "3-1r",
+          "speaker": "ancient",
+          "text": "Leben"
+        },
+        {
+          "order": "3-2r",
+          "speaker": "character",
+          "text": "Was...?! Stirb, Monster!"
+        }
+      ],
+      "Regent": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "Ich bin angekommen! Du da, Prolet! Ist das die Spitze?"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "Ich brauche Ruhe..."
+        },
+        {
+          "order": "0-2",
+          "speaker": "character",
+          "text": "Ich werde dir etwas Manieren beibringen!"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "Ich bin wieder angekommen!"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "Der laute Idiot kehrt zurück?"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "character",
+          "text": "Ich bin weder laut noch ein Idiot! Stelle dich mir!"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "Mir reicht's mit deinen schlechten Manieren!"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "Darin stimmen wir beide überein."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "character",
+          "text": "Auf zum Tanz!"
+        }
+      ],
+      "Silent": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Nicht mal eine Vorstellung?"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Woher bist du gekommen?\nWohinter bist du her?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "[jitter]Hrrrg![/jitter]\n[jitter][red]STIRB!![/red][/jitter]"
+        },
+        {
+          "order": "3-0r",
+          "speaker": "ancient",
+          "text": "Nerfiger Schuft!\n[jitter]WEG MIT DIR!![/jitter]"
+        }
+      ]
+    },
+    "image_url": "/static/images/monsters/architect.png"
   },
   {
     "id": "THE_FUTURE_OF_POTIONS",
@@ -3829,8 +4037,8 @@
     "options": [
       {
         "id": "POTION",
-        "title": "choose(Ereignisen Trank} einfüllen",
-        "description": "Verliere [gold]a Potion[/gold]. Erhalte choose(Attack):einen [gold]verbesserten[/gold] [gold]CommoneSkill| {}}[/gold]."
+        "title": "Ereignis-Trank einfüllen",
+        "description": "Verliere [gold]a Potion[/gold]. Erhalte einen [gold]verbesserten[/gold] [gold]Commonen {}[/gold]."
       }
     ],
     "pages": [
@@ -3844,8 +4052,8 @@
         "options": [
           {
             "id": "POTION",
-            "title": "choose(Ereignisen Trank} einfüllen",
-            "description": "Verliere [gold]a Potion[/gold]. Erhalte choose(Attack):einen [gold]verbesserten[/gold] [gold]CommoneSkill| {}}[/gold]."
+            "title": "Ereignis-Trank einfüllen",
+            "description": "Verliere [gold]a Potion[/gold]. Erhalte einen [gold]verbesserten[/gold] [gold]Commonen {}[/gold]."
           }
         ]
       }
@@ -4005,7 +4213,7 @@
     "name": "Bastelstunde",
     "type": "Event",
     "act": "Act 3 - Glory",
-    "description": "Als du ein [red][sine]endloses Meer von Leichen[/sine][/red] durchquerst, findest du eine [orange]verrückte Forscherin[/orange], die nach diversem verwertbarem Schrott sucht.\n\n“Ja. Hey, hallo! Du siehst aus wie ein guter Kämpfer... Ich brauche eine Testperson für mein nächstes [green]Gräuelgerät[/green]! Wie wär's?”",
+    "description": "Als du ein [red][sine]endloses Meer von Leichen[/sine][/red] durchquerst, findest du eine [orange]verrückte Forscherin[/orange], die nach diversem verwertbarem Schrott sucht.\n\n“Ja. Hey, hallo! Du siehst aus wie eine gute Kämpferin... Ich brauche eine Testperson für mein nächstes [green]Gräuelgerät[/green]! Wie wär's?”",
     "options": [
       {
         "id": "CHOOSE_CARD_TYPE",
@@ -4042,7 +4250,7 @@
           {
             "id": "SAPPING",
             "title": "Schwächend",
-            "description": "Wende [blue][SappingWeak][/blue] [gold]Schwach[/gold] an. Wende [blue][SappingVulnerable][/blue] [gold]Verwundbar[/gold] an."
+            "description": "Wende [blue]2[/blue] [gold]Schwach[/gold] an. Wende [blue]2[/blue] [gold]Verwundbar[/gold] an."
           },
           {
             "id": "VIOLENCE",
@@ -4052,7 +4260,7 @@
           {
             "id": "CHOKING",
             "title": "Würgend",
-            "description": "Immer wenn du in diesem Zug eine Karte spielst, verliert der Gegner [blue][ChokingDamage][/blue] TP."
+            "description": "Immer wenn du in diesem Zug eine Karte spielst, verliert der Gegner [blue]6[/blue] TP."
           },
           {
             "id": "ENERGIZED",
@@ -4072,7 +4280,7 @@
           {
             "id": "EXPERTISE",
             "title": "Expertise",
-            "description": "Erhalte [blue][ExpertiseStrength][/blue] [gold]Stärke[/gold]. Erhalte [blue][ExpertiseDexterity][/blue] [gold]Geschicklichkeit[/gold]."
+            "description": "Erhalte [blue]2[/blue] [gold]Stärke[/gold]. Erhalte [blue]2[/blue] [gold]Geschicklichkeit[/gold]."
           },
           {
             "id": "CURIOUS",
@@ -4092,7 +4300,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "Als du ein [red][sine]endloses Meer von Leichen[/sine][/red] durchquerst, findest du eine [orange]verrückte Forscherin[/orange], die nach diversem verwertbarem Schrott sucht.\n\n“Ja. Hey, hallo! Du siehst aus wie ein guter Kämpfer... Ich brauche eine Testperson für mein nächstes [green]Gräuelgerät[/green]! Wie wär's?”",
+        "description": "Als du ein [red][sine]endloses Meer von Leichen[/sine][/red] durchquerst, findest du eine [orange]verrückte Forscherin[/orange], die nach diversem verwertbarem Schrott sucht.\n\n“Ja. Hey, hallo! Du siehst aus wie eine gute Kämpferin... Ich brauche eine Testperson für mein nächstes [green]Gräuelgerät[/green]! Wie wär's?”",
         "options": [
           {
             "id": "CHOOSE_CARD_TYPE",
@@ -4707,15 +4915,15 @@
     "pages": [
       {
         "id": "AFTER_BUY",
-        "description": "“Deine Großzügigkeit finden wir wongobar... Großartiger Kunde, jetzt hast du [blue]0[/blue] [gold]Wongo-Punkte[/gold]. Mit nur [blue]0[/blue] mehr Punkten wirst du unser exklusives [gold]Wongo-Kunden-Würdigungs-Abzeichen[/gold] erhalten. Einen wongtastischen Tag noch.”\n\nDu hast keine Ahnung, wovon hier die Rede ist und schwörst, nie wieder in einen Wongo zu gehen."
+        "description": "“Deine Großzügigkeit finden wir wongobar... Großartige Kundin, jetzt hast du [blue]0[/blue] [gold]Wongo-Punkte[/gold]. Mit nur [blue]0[/blue] mehr Punkten wirst du unser exklusives [gold]Wongo-Kunden-Würdigungs-Abzeichen[/gold] erhalten. Einen wongtastischen Tag noch.”\n\nDu hast keine Ahnung, wovon hier die Rede ist und schwörst, nie wieder in einen Wongo zu gehen."
       },
       {
         "id": "AFTER_BUY_BADGE_COUNTER",
-        "description": "“Deine Großzügigkeit finden wir wongobar... Großartiger Kunde, jetzt hast du [blue]0[/blue] [gold]Wongo-Punkte[/gold]. Mit nur [blue]0[/blue] mehr Punkten wirst du unser exklusives [gold]Wongo-Kunden-Würdigungs-Abzeichen[/gold] erhalten. Einen wongtastischen Tag noch.”\n\nDu hast schon [blue]0[/blue] von diesen wertlosen Abzeichen. Du schwörst, nie wieder in einen Wongo zu gehen."
+        "description": "“Deine Großzügigkeit finden wir wongobar... Großartige Kundin, jetzt hast du [blue]0[/blue] [gold]Wongo-Punkte[/gold]. Mit nur [blue]0[/blue] mehr Punkten wirst du unser exklusives [gold]Wongo-Kunden-Würdigungs-Abzeichen[/gold] erhalten. Einen wongtastischen Tag noch.”\n\nDu hast schon [blue]0[/blue] von diesen wertlosen Abzeichen. Du schwörst, nie wieder in einen Wongo zu gehen."
       },
       {
         "id": "AFTER_BUY_RECEIVE_BADGE",
-        "description": "“Deine Großzügigkeit finden wir wongobar... Großartiger Kunde, jetzt hast du [blue]0[/blue] [gold]Wongo-Punkte[/gold]. Mit deinen Punkten hast du ein [gold]Wongo-Kunden-Würdigungs-Abzeichen[/gold] verdient.”\nDer Verkäufer reicht dir ein billig gemachtes Abzeichen. “Einen wongtastischen Tag noch.”\n\nDu hast jetzt [blue]0[/blue] Abzeichen. Du schwörst, nie wieder in einen Wongo zu gehen."
+        "description": "“Deine Großzügigkeit finden wir wongobar... Großartige Kundin, jetzt hast du [blue]0[/blue] [gold]Wongo-Punkte[/gold]. Mit deinen Punkten hast du ein [gold]Wongo-Kunden-Würdigungs-Abzeichen[/gold] verdient.”\nDer Verkäufer reicht dir ein billig gemachtes Abzeichen. “Einen wongtastischen Tag noch.”\n\nDu hast jetzt [blue]0[/blue] Abzeichen. Du schwörst, nie wieder in einen Wongo zu gehen."
       },
       {
         "id": "INITIAL",

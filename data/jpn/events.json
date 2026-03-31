@@ -3814,11 +3814,219 @@
   {
     "id": "THE_ARCHITECT",
     "name": "アーキテクト",
-    "type": "Shared",
+    "type": "Ancient",
     "act": null,
-    "description": null,
+    "description": "大悪魔の奴隷が来たというわけか？",
     "options": null,
-    "pages": null
+    "pages": null,
+    "dialogue": {
+      "Defect": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "ここで何をしている？"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "<ランダムな文字化けしたセリフ>"
+        },
+        {
+          "order": "0-2r",
+          "speaker": "ancient",
+          "text": "お前を直せだと？ 命令するな。"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "戻ってきたのか？ 解体したはずだが。"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "<ランダムな文字化けしたセリフ>"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "お前を直せ？ お前の友を直せだと？ くだらん。"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "なぜ何度も戻ってくる？ ネオーの仕業か？"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "<ランダムな文字化けしたセリフ>"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "愚かな。"
+        }
+      ],
+      "Ironclad": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "大悪魔の奴隷が来たというわけか？"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "敵……\n殺す……"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "永遠に戦い続ける呪いか。 そうだろう？"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "アーキテクト…… 最大の…… 敵！！"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "自分の名前すら分からないのか？"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "哀れだな。"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "殺す……"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "底へと帰れ、アイアンクラッド。"
+        }
+      ],
+      "Necrobinder": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "アーキテクト！ 貴様は私の両親を殺した。 友を殺した。 私の“すべて”を殺した！…… 次は私が貴様を殺す番だ！"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "復讐だと？ 遠慮しておこう。"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "アーキテクト！ お前は私の両親を殺した。 私の友を殺した。 私の――"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "怒りで過去を変えることはできん。"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "アーキテクト！ お前は私の両親を殺した。 私の友を殺した。 私の“すべて”を――"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "私は秩序を保つために必要なことをしたまでだ。"
+        },
+        {
+          "order": "3-0r",
+          "speaker": "character",
+          "text": "アーキテクト！ お前は私の両親を殺した。 私の友を殺した。 私の――"
+        },
+        {
+          "order": "3-1r",
+          "speaker": "ancient",
+          "text": "すべて、か"
+        },
+        {
+          "order": "3-2r",
+          "speaker": "character",
+          "text": "何だと……！？ 死ね、化け物め！"
+        }
+      ],
+      "Regent": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "到着したぞ！ そこの平民！ ここが頂上か？"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "静かにしてほしいな……"
+        },
+        {
+          "order": "0-2",
+          "speaker": "character",
+          "text": "余が礼儀というものを教えてやろう！"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "また到着したぞ！"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "騒々しい愚か者が戻ってきたか。"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "character",
+          "text": "余は騒々しくも愚かでもない！ 勝負しろ！"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "貴様の無礼な態度にはもううんざりだ！"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "それについては、意見が合ったな。"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "character",
+          "text": "さあ、始めようか！"
+        }
+      ],
+      "Silent": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "挨拶もなしか？"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "どこから来た？\n何が狙いだ？"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "[jitter]ぐあっ！ [/jitter]\n[jitter][red]死ね！！ [/red][/jitter]"
+        },
+        {
+          "order": "3-0r",
+          "speaker": "ancient",
+          "text": "鬱陶しいクズめ！\n[jitter]消え失せろ！！ [/jitter]"
+        }
+      ]
+    },
+    "image_url": "/static/images/monsters/architect.png"
   },
   {
     "id": "THE_FUTURE_OF_POTIONS",
@@ -4042,7 +4250,7 @@
           {
             "id": "SAPPING",
             "title": "虚弱",
-            "description": "[gold]脱力[/gold][blue][SappingWeak][/blue]を付与する。 [gold]弱体[/gold][blue][SappingVulnerable][/blue]を付与する。"
+            "description": "[gold]脱力[/gold][blue]2[/blue]を付与する。 [gold]弱体[/gold][blue]2[/blue]を付与する。"
           },
           {
             "id": "VIOLENCE",
@@ -4052,7 +4260,7 @@
           {
             "id": "CHOKING",
             "title": "窒息",
-            "description": "このターン、カードをプレイするたび、敵はHPを[blue][ChokingDamage][/blue]失う。"
+            "description": "このターン、カードをプレイするたび、敵はHPを[blue]6[/blue]失う。"
           },
           {
             "id": "ENERGIZED",
@@ -4072,7 +4280,7 @@
           {
             "id": "EXPERTISE",
             "title": "専門家",
-            "description": "[gold]筋力[/gold][blue][ExpertiseStrength][/blue]を得る。 [gold]敏捷[/gold][blue][ExpertiseDexterity][/blue]を得る。"
+            "description": "[gold]筋力[/gold][blue]2[/blue]を得る。 [gold]敏捷[/gold][blue]2[/blue]を得る。"
           },
           {
             "id": "CURIOUS",

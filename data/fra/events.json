@@ -534,7 +534,7 @@
       },
       {
         "id": "REACH_DEEPER_2",
-        "description": "Les picotements laissent place à une [jitter][red]faiblesse lancinante[/red][/jitter] à mesure que vous forcez le passage...\n\n[purple]Cette fleur cherche à me manger. Pourquoi m’y suis-je engagé ?[/purple]",
+        "description": "Les picotements laissent place à une [jitter][red]faiblesse lancinante[/red][/jitter] à mesure que vous forcez le passage...\n\n[purple]Cette fleur cherche à me manger. Pourquoi m’y suis-je engagée ?[/purple]",
         "options": [
           {
             "id": "EXTRACT_INSTEAD",
@@ -810,7 +810,7 @@
     "name": "Végétation dense",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "Après avoir emprunté le mauvais chemin depuis un bon moment, vous vous trouvez dans une épaisse jungle de [green]fougères[/green], de [green]buissons[/green] et de [green]lianes[/green]. Surtout de [green]lianes[/green]. L’épuisement vous gagne, et une pensée sombre vous vient à l’esprit :\n\n[sine][purple]« Tu es perdu, pris au dépourvu, et la mort approche inexorablement. »[/purple][/sine]\n\nQue faites-vous ?",
+    "description": "Après avoir emprunté le mauvais chemin depuis un bon moment, vous vous trouvez dans une épaisse jungle de [green]fougères[/green], de [green]buissons[/green] et de [green]lianes[/green]. Surtout de [green]lianes[/green]. L’épuisement vous gagne, et une pensée sombre vous vient à l’esprit :\n\n[sine][purple]« Tu es perdue, prise au dépourvu, et la mort approche inexorablement. »[/purple][/sine]\n\nQue faites-vous ?",
     "options": [
       {
         "id": "TRUDGE_ON",
@@ -826,7 +826,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Après avoir emprunté le mauvais chemin depuis un bon moment, vous vous trouvez dans une épaisse jungle de [green]fougères[/green], de [green]buissons[/green] et de [green]lianes[/green]. Surtout de [green]lianes[/green]. L’épuisement vous gagne, et une pensée sombre vous vient à l’esprit :\n\n[sine][purple]« Tu es perdu, pris au dépourvu, et la mort approche inexorablement. »[/purple][/sine]\n\nQue faites-vous ?",
+        "description": "Après avoir emprunté le mauvais chemin depuis un bon moment, vous vous trouvez dans une épaisse jungle de [green]fougères[/green], de [green]buissons[/green] et de [green]lianes[/green]. Surtout de [green]lianes[/green]. L’épuisement vous gagne, et une pensée sombre vous vient à l’esprit :\n\n[sine][purple]« Tu es perdue, prise au dépourvu, et la mort approche inexorablement. »[/purple][/sine]\n\nQue faites-vous ?",
         "options": [
           {
             "id": "TRUDGE_ON",
@@ -842,7 +842,7 @@
       },
       {
         "id": "REST",
-        "description": "Au bord de l’effondrement, vous décidez de faire une sieste...\n\n...mais êtes brusquement réveillé par la sensation de [gold][jitter]quelque chose qui se tortille[/jitter][/gold] sur vous !\",",
+        "description": "Au bord de l’effondrement, vous décidez de faire une sieste...\n\n...mais êtes brusquement réveillée par la sensation de [gold][jitter]quelque chose qui se tortille[/jitter][/gold] sur vous !\",",
         "options": [
           {
             "id": "FIGHT",
@@ -883,7 +883,7 @@
     "pages": [
       {
         "id": "DAUGHTER_OF_WIND",
-        "description": "[blue]« Tu devrais être content que je t’aie choisi ! »[/blue]\ns’exclame triomphalement la poupée."
+        "description": "[blue]« Tu devrais être content que je t’aie choisie ! »[/blue]\ns’exclame triomphalement la poupée."
       },
       {
         "id": "EXAMINE",
@@ -1005,7 +1005,7 @@
       },
       {
         "id": "CLIMB",
-        "description": "Bien que désarçonné par l’enfoncement constant du phare, vous vous hissez jusqu’à son sommet.\n\nUne fois la [gold]salle de la lanterne[/gold] atteinte, vous vous mettez à détacher la lentille tandis que l’[purple]anti-lumière[/purple] [jitter][red]draine votre énergie[/red][/jitter] !\n\nVous arrivez enfin à l’arracher ; le phare cesse de couler."
+        "description": "Bien que désarçonnée par l’enfoncement constant du phare, vous vous hissez jusqu’à son sommet.\n\nUne fois la [gold]salle de la lanterne[/gold] atteinte, vous vous mettez à détacher la lentille tandis que l’[purple]anti-lumière[/purple] [jitter][red]draine votre énergie[/red][/jitter] !\n\nVous arrivez enfin à l’arracher ; le phare cesse de couler."
       },
       {
         "id": "INITIAL",
@@ -1152,7 +1152,7 @@
     "pages": [
       {
         "id": "ENTER_YOUR_HOLE",
-        "description": "Le trou est un peu étroit, mais vous parvenez à vous y glisser...\n\nPlus vous vous y engagez, [sine][purple]plus le trou devient sombre[/purple][/sine].\nVous apercevez finalement une [gold]faible lueur[/gold] qui s’intensifie progressivement jusqu’à révéler l’autre côté.\n\nVous en ressortez inchangé, mais avec une compréhension accrue des [green]secrets intimes de la vie[/green]."
+        "description": "Le trou est un peu étroit, mais vous parvenez à vous y glisser...\n\nPlus vous vous y engagez, [sine][purple]plus le trou devient sombre[/purple][/sine].\nVous apercevez finalement une [gold]faible lueur[/gold] qui s’intensifie progressivement jusqu’à révéler l’autre côté.\n\nVous en ressortez inchangée, mais avec une compréhension accrue des [green]secrets intimes de la vie[/green]."
       },
       {
         "id": "INITIAL",
@@ -1321,7 +1321,7 @@
       },
       {
         "id": "TOUCH_CORE",
-        "description": "Vous avez à peine posé votre main sur le [aqua]cœur[/aqua] du robot que vous subissez une [jitter]décharge d’[gold]électricité[/gold][/jitter].\n\nVous détalez en catastrophe, vous sentant [sine][purple]changé[/purple][/sine] par cette expérience."
+        "description": "Vous avez à peine posé votre main sur le [aqua]cœur[/aqua] du robot que vous subissez une [jitter]décharge d’[gold]électricité[/gold][/jitter].\n\nVous détalez en catastrophe, vous sentant [sine][purple]changée[/purple][/sine] par cette expérience."
       }
     ]
   },
@@ -1330,7 +1330,7 @@
     "name": "Aventure dans le labyrinthe de la jungle",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "Dans une clairière, vous tombez sur une [green]Bande d’aventuriers hétéroclite[/green]. L’air démoralisés, ils vous indiquent un [purple]labyrinthe géant[/purple].\n\nIls vous proposent d’unir vos forces aux leurs pour vous embarquer dans une [b]Quête épique[/b], dans le but de piller les trésors de ce labyrinthe. Étant vous-même un aventurier expérimenté, vous ne vous faites pas d’illusions sur les [red][jitter]pièges mortels[/jitter][/red] et les [orange][sine]gardiens redoutables[/sine][/orange] dont est sûrement rempli ce labyrinthe.\n\nCe serait plus simple si vous travailliez ensemble, mais il faudra alors partager le butin.",
+    "description": "Dans une clairière, vous tombez sur une [green]Bande d’aventuriers hétéroclite[/green]. L’air démoralisés, ils vous indiquent un [purple]labyrinthe géant[/purple].\n\nIls vous proposent d’unir vos forces aux leurs pour vous embarquer dans une [b]Quête épique[/b], dans le but de piller les trésors de ce labyrinthe. Étant vous-même une aventurière expérimentée, vous ne vous faites pas d’illusions sur les [red][jitter]pièges mortels[/jitter][/red] et les [orange][sine]gardiens redoutables[/sine][/orange] dont est sûrement rempli ce labyrinthe.\n\nCe serait plus simple si vous travailliez ensemble, mais il faudra alors partager le butin.",
     "options": [
       {
         "id": "SOLO_QUEST",
@@ -1346,7 +1346,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Dans une clairière, vous tombez sur une [green]Bande d’aventuriers hétéroclite[/green]. L’air démoralisés, ils vous indiquent un [purple]labyrinthe géant[/purple].\n\nIls vous proposent d’unir vos forces aux leurs pour vous embarquer dans une [b]Quête épique[/b], dans le but de piller les trésors de ce labyrinthe. Étant vous-même un aventurier expérimenté, vous ne vous faites pas d’illusions sur les [red][jitter]pièges mortels[/jitter][/red] et les [orange][sine]gardiens redoutables[/sine][/orange] dont est sûrement rempli ce labyrinthe.\n\nCe serait plus simple si vous travailliez ensemble, mais il faudra alors partager le butin.",
+        "description": "Dans une clairière, vous tombez sur une [green]Bande d’aventuriers hétéroclite[/green]. L’air démoralisés, ils vous indiquent un [purple]labyrinthe géant[/purple].\n\nIls vous proposent d’unir vos forces aux leurs pour vous embarquer dans une [b]Quête épique[/b], dans le but de piller les trésors de ce labyrinthe. Étant vous-même une aventurière expérimentée, vous ne vous faites pas d’illusions sur les [red][jitter]pièges mortels[/jitter][/red] et les [orange][sine]gardiens redoutables[/sine][/orange] dont est sûrement rempli ce labyrinthe.\n\nCe serait plus simple si vous travailliez ensemble, mais il faudra alors partager le butin.",
         "options": [
           {
             "id": "SOLO_QUEST",
@@ -2363,7 +2363,7 @@
     "name": "Ranwid l’Aîné",
     "type": "Shared",
     "act": null,
-    "description": "Vous êtes approché par [purple]la personne la plus âgée que vous ayez jamais vue[/purple].\n[sine] « Nous nous rencontrons à nouveau... c’est moi, Ranwid ! »[/sine]\n\nVous ne connaissez pas cet homme.",
+    "description": "Vous êtes approchée par [purple]la personne la plus âgée que vous ayez jamais vue[/purple].\n[sine] « Nous nous rencontrons à nouveau... c’est moi, Ranwid ! »[/sine]\n\nVous ne connaissez pas cet homme.",
     "options": [
       {
         "id": "POTION",
@@ -2398,7 +2398,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "Vous êtes approché par [purple]la personne la plus âgée que vous ayez jamais vue[/purple].\n[sine] « Nous nous rencontrons à nouveau... c’est moi, Ranwid ! »[/sine]\n\nVous ne connaissez pas cet homme.",
+        "description": "Vous êtes approchée par [purple]la personne la plus âgée que vous ayez jamais vue[/purple].\n[sine] « Nous nous rencontrons à nouveau... c’est moi, Ranwid ! »[/sine]\n\nVous ne connaissez pas cet homme.",
         "options": [
           {
             "id": "POTION",
@@ -2478,7 +2478,7 @@
       },
       {
         "id": "TOUCH_A_MIRROR",
-        "description": "Vous vous avancez et vous fondez dans le reflet en face de vous.\n[sine]Lequel des deux suis-je ?[/sine]"
+        "description": "Vous vous avancez et vous fondez dans le reflet en face de vous.\n[sine]Laquelle des deux suis-je ?[/sine]"
       }
     ]
   },
@@ -2583,7 +2583,7 @@
     "name": "Le thé de la table ronde",
     "type": "Event",
     "act": "Act 3 - Glory",
-    "description": "Vous trouvez par hasard une [orange]invitation[/orange] à une collation postméridienne destinée à un certain [blue]« Monseigneur Galalot »[/blue] ; vous décidez de vous y rendre à sa place.\n\nAprès être entré à l’intérieur d’une rotonde sans prétention, vous vous retrouvez parmi un groupe de [gold]commandants[/gold], de [aqua]généraux[/aqua], de [red]seigneurs de guerre[/red] et de [blue]mercenaires[/blue] en train de prendre... le thé ?\nUn gigantesque chevalier portant sur la tête une [gold]couronne dorée[/gold] prend la parole.\n\n[jitter]« C’est à cette heure tardive que vous vous manifestez pour prendre le [b]Thé[/b] ?! »[/jitter]",
+    "description": "Vous trouvez par hasard une [orange]invitation[/orange] à une collation postméridienne destinée à un certain [blue]« Monseigneur Galalot »[/blue] ; vous décidez de vous y rendre à sa place.\n\nAprès être entrée à l’intérieur d’une rotonde sans prétention, vous vous retrouvez parmi un groupe de [gold]commandants[/gold], de [aqua]généraux[/aqua], de [red]seigneurs de guerre[/red] et de [blue]mercenaires[/blue] en train de prendre... le thé ?\nUn gigantesque chevalier portant sur la tête une [gold]couronne dorée[/gold] prend la parole.\n\n[jitter]« C’est à cette heure tardive que vous vous manifestez pour prendre le [b]Thé[/b] ?! »[/jitter]",
     "options": [
       {
         "id": "ENJOY_TEA",
@@ -2607,7 +2607,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "Vous trouvez par hasard une [orange]invitation[/orange] à une collation postméridienne destinée à un certain [blue]« Monseigneur Galalot »[/blue] ; vous décidez de vous y rendre à sa place.\n\nAprès être entré à l’intérieur d’une rotonde sans prétention, vous vous retrouvez parmi un groupe de [gold]commandants[/gold], de [aqua]généraux[/aqua], de [red]seigneurs de guerre[/red] et de [blue]mercenaires[/blue] en train de prendre... le thé ?\nUn gigantesque chevalier portant sur la tête une [gold]couronne dorée[/gold] prend la parole.\n\n[jitter]« C’est à cette heure tardive que vous vous manifestez pour prendre le [b]Thé[/b] ?! »[/jitter]",
+        "description": "Vous trouvez par hasard une [orange]invitation[/orange] à une collation postméridienne destinée à un certain [blue]« Monseigneur Galalot »[/blue] ; vous décidez de vous y rendre à sa place.\n\nAprès être entrée à l’intérieur d’une rotonde sans prétention, vous vous retrouvez parmi un groupe de [gold]commandants[/gold], de [aqua]généraux[/aqua], de [red]seigneurs de guerre[/red] et de [blue]mercenaires[/blue] en train de prendre... le thé ?\nUn gigantesque chevalier portant sur la tête une [gold]couronne dorée[/gold] prend la parole.\n\n[jitter]« C’est à cette heure tardive que vous vous manifestez pour prendre le [b]Thé[/b] ?! »[/jitter]",
         "options": [
           {
             "id": "ENJOY_TEA",
@@ -3011,7 +3011,7 @@
       },
       {
         "id": "LET_IT_IN",
-        "description": "L’[orange]Esprit greffeur[/orange] fusionne avec vous. Désormais votre âme sœur, elle vous [green]soigne[/green].\n\nVous êtes [blue]réincarné[/blue]."
+        "description": "L’[orange]Esprit greffeur[/orange] fusionne avec vous. Désormais votre âme sœur, elle vous [green]soigne[/green].\n\nVous êtes [blue]réincarnée[/blue]."
       },
       {
         "id": "REJECTION",
@@ -3272,7 +3272,7 @@
       },
       {
         "id": "DECIPHER_2",
-        "description": "Après tant de lecture, vous êtes au bord de la syncope !\n\n[purple][sine]Un héros ne devrait pas avoir à lire autant... [/sine][/purple]",
+        "description": "Après tant de lecture, vous êtes au bord de la syncope !\n\n[purple][sine]Une héroïne ne devrait pas avoir à lire autant... [/sine][/purple]",
         "options": [
           {
             "id": "DECIPHER",
@@ -3814,11 +3814,219 @@
   {
     "id": "THE_ARCHITECT",
     "name": "L'Architecte",
-    "type": "Shared",
+    "type": "Ancient",
     "act": null,
-    "description": null,
+    "description": "L'esclave de l'archidémon arrive enfin ?",
     "options": null,
-    "pages": null
+    "pages": null,
+    "dialogue": {
+      "Defect": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Qu'est-ce que tu fais ici ?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "<messages brouillés>"
+        },
+        {
+          "order": "0-2r",
+          "speaker": "ancient",
+          "text": "Te réparer ? Et puis quoi encore."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Tu es de retour ? Je croyais t'avoir démonté."
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "<messages brouillés>"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "Te réparer ? Toi et ton ami ? Pathétique."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "Comment se fait-il que tu reviennes sans cesse ? Neow, c'est ça ?"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "<messages brouillés>"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Insensé"
+        }
+      ],
+      "Ironclad": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "L'esclave de l'archidémon arrive enfin ?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "Ennemi...\nTuer..."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Maudit à combattre pour l'éternité ?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "Architecte... ennemi... juré !!"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "Connais-tu seulement ton propre nom ?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "Tu me fais pitié."
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "Tuer..."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Redescends tout en bas, Soldat de Fer."
+        }
+      ],
+      "Necrobinder": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "ARCHITECTE ! Tu as tué mes parents. Tu as assassiné mon ami. Tu as détruit ma VIE ! ...et maintenant, c'est TOI que je vais détruire !"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "La vengeance ? Non, pas pour moi."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "ARCHITECTE ! Tu as tué mes parents. Tu as assassiné mon ami. Tu as détruit ma-"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "Ta colère ne changera rien au passé."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "ARCHITECTE ! Tu as tué mes parents. Tu as assassiné mon ami. Tu as détruit ma VIE-"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "J'ai fait ce qu'il fallait pour maintenir l'ordre."
+        },
+        {
+          "order": "3-0r",
+          "speaker": "character",
+          "text": "ARCHITECTE ! Tu as tué mes parents. Tu as assassiné mon ami. Tu as détruit ma-"
+        },
+        {
+          "order": "3-1r",
+          "speaker": "ancient",
+          "text": "Vie"
+        },
+        {
+          "order": "3-2r",
+          "speaker": "character",
+          "text": "Quoi...?! Meurs, monstre !"
+        }
+      ],
+      "Regent": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "Je suis arrivé ! Toi, là, plébéien ! Est-ce bien le sommet ici ?"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "Silence..."
+        },
+        {
+          "order": "0-2",
+          "speaker": "character",
+          "text": "Voilà qui t'apprendra la politesse !"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "Je suis arrivé — une fois de plus !"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "Le retour du bruyant bouffon..."
+        },
+        {
+          "order": "1-2r",
+          "speaker": "character",
+          "text": "Je ne suis ni bruyant, ni bouffon ! Affronte-moi !"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "J'en ai assez de ta grossièreté !"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "C'est réciproque."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "character",
+          "text": "Dansons !"
+        }
+      ],
+      "Silent": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "On saute les présentations ?"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "D'où viens-tu ?\nQu'est-ce que tu veux ?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "[jitter]Hrrgh![/jitter]\n[jitter][red]MEURS !![/red][/jitter]"
+        },
+        {
+          "order": "3-0r",
+          "speaker": "ancient",
+          "text": "Misérable !\n[jitter]HORS DE MA VUE !![/jitter]"
+        }
+      ]
+    },
+    "image_url": "/static/images/monsters/architect.png"
   },
   {
     "id": "THE_FUTURE_OF_POTIONS",
@@ -4042,7 +4250,7 @@
           {
             "id": "SAPPING",
             "title": "Abattement",
-            "description": "Appliquez [blue][SappingWeak][/blue] [gold]Faible[/gold]. Appliquez [blue][SappingVulnerable][/blue] [gold]Vulnérable[/gold]."
+            "description": "Appliquez [blue]2[/blue] [gold]Faible[/gold]. Appliquez [blue]2[/blue] [gold]Vulnérable[/gold]."
           },
           {
             "id": "VIOLENCE",
@@ -4052,7 +4260,7 @@
           {
             "id": "CHOKING",
             "title": "Étranglement",
-            "description": "Lorsque vous jouez une carte pendant ce tour, l’ennemi perd [blue][ChokingDamage][/blue] PV."
+            "description": "Lorsque vous jouez une carte pendant ce tour, l’ennemi perd [blue]6[/blue] PV."
           },
           {
             "id": "ENERGIZED",
@@ -4072,7 +4280,7 @@
           {
             "id": "EXPERTISE",
             "title": "Expertise",
-            "description": "Gagnez [blue][ExpertiseStrength][/blue] [gold]Force[/gold]. Gagnez [blue][ExpertiseDexterity][/blue] [gold]Dextérité[/gold]."
+            "description": "Gagnez [blue]2[/blue] [gold]Force[/gold]. Gagnez [blue]2[/blue] [gold]Dextérité[/gold]."
           },
           {
             "id": "CURIOUS",
@@ -4153,12 +4361,12 @@
     "name": "Le procès",
     "type": "Event",
     "act": "Act 3 - Glory",
-    "description": "Vous vous joignez à une file de personnes en train d’entrer dans un énorme bâtiment.\n\nTandis que vous passez sous une [gold]arche dorée[/gold], un beuglement de cors se fait entendre, des [jitter]confettis jaillissent[/jitter], et des [sine]banderoles se déploient[/sine] du plafond !\n\n« Citoyen [blue][EntrantNumber][/blue], vous êtes [green]LE DÉCIDEUR[/green] pour le [gold]Procès[/gold] d’aujourd’hui. »",
+    "description": "Vous vous joignez à une file de personnes en train d’entrer dans un énorme bâtiment.\n\nTandis que vous passez sous une [gold]arche dorée[/gold], un beuglement de cors se fait entendre, des [jitter]confettis jaillissent[/jitter], et des [sine]banderoles se déploient[/sine] du plafond !\n\n« Citoyenne [blue][EntrantNumber][/blue], vous êtes [green]LA DÉCIDEUSE[/green] pour le [gold]Procès[/gold] d’aujourd’hui. »",
     "options": [
       {
         "id": "ACCEPT",
         "title": "Accepter",
-        "description": "Remplissez le rôle de Décideur."
+        "description": "Remplissez le rôle de Décideuse."
       },
       {
         "id": "REJECT",
@@ -4169,12 +4377,12 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Vous vous joignez à une file de personnes en train d’entrer dans un énorme bâtiment.\n\nTandis que vous passez sous une [gold]arche dorée[/gold], un beuglement de cors se fait entendre, des [jitter]confettis jaillissent[/jitter], et des [sine]banderoles se déploient[/sine] du plafond !\n\n« Citoyen [blue][EntrantNumber][/blue], vous êtes [green]LE DÉCIDEUR[/green] pour le [gold]Procès[/gold] d’aujourd’hui. »",
+        "description": "Vous vous joignez à une file de personnes en train d’entrer dans un énorme bâtiment.\n\nTandis que vous passez sous une [gold]arche dorée[/gold], un beuglement de cors se fait entendre, des [jitter]confettis jaillissent[/jitter], et des [sine]banderoles se déploient[/sine] du plafond !\n\n« Citoyenne [blue][EntrantNumber][/blue], vous êtes [green]LA DÉCIDEUSE[/green] pour le [gold]Procès[/gold] d’aujourd’hui. »",
         "options": [
           {
             "id": "ACCEPT",
             "title": "Accepter",
-            "description": "Remplissez le rôle de Décideur."
+            "description": "Remplissez le rôle de Décideuse."
           },
           {
             "id": "REJECT",
@@ -4229,7 +4437,7 @@
       },
       {
         "id": "NOBLE_INNOCENT",
-        "description": "Vous ne pouvez pas être [sine][purple]absolument[/purple][/sine] certain qu’il est coupable... Voilà, c’est ça !\nSon [gold]pot-de-vin[/gold] n’a rien à voir avec votre verdict ici. Non non."
+        "description": "Vous ne pouvez pas être [sine][purple]absolument[/purple][/sine] certaine qu’il est coupable... Voilà, c’est ça !\nSon [gold]pot-de-vin[/gold] n’a rien à voir avec votre verdict ici. Non non."
       },
       {
         "id": "NONDESCRIPT",
@@ -4249,11 +4457,11 @@
       },
       {
         "id": "NONDESCRIPT_GUILTY",
-        "description": "Vous n’êtes pas entièrement sûr de vous, mais vous trouvez les preuves suffisamment concluantes.\nAvez-vous fait le bon choix ?"
+        "description": "Vous n’êtes pas entièrement sûre de vous, mais vous trouvez les preuves suffisamment concluantes.\nAvez-vous fait le bon choix ?"
       },
       {
         "id": "NONDESCRIPT_INNOCENT",
-        "description": "Vous n’êtes pas entièrement sûr de vous, mais vous trouvez que les preuves ne dissipent pas tout doute raisonnable.\nVous ne savez pas si vous avez fait le bon choix, mais votre jugement vous paraît avoir été le plus prudent."
+        "description": "Vous n’êtes pas entièrement sûre de vous, mais vous trouvez que les preuves ne dissipent pas tout doute raisonnable.\nVous ne savez pas si vous avez fait le bon choix, mais votre jugement vous paraît avoir été le plus prudent."
       },
       {
         "id": "REJECT",
@@ -4262,7 +4470,7 @@
           {
             "id": "ACCEPT",
             "title": "Accepter",
-            "description": "Cédez. Remplissez votre rôle de Décideur."
+            "description": "Cédez. Remplissez votre rôle de Décideuse."
           },
           {
             "id": "DOUBLE_DOWN",
@@ -4310,11 +4518,11 @@
       },
       {
         "id": "KILL",
-        "description": "Ces arbres sont [purple]clairement maléfiques[/purple], aussi vous décidez de vous en débarrasser.\nPlusieurs jours passent, et vous êtes encore recouvert de [red]cendres[/red] et [purple]de sève visqueuse[/purple].\n\nUne gigantesque nuée d’esprits d’oizillons jaillit des arbres abattus et déposent un [gold]petit coffret[/gold] à vos pieds\n[green]« Merci de nous avoir libérés de ces arbres... [sine]cui cui[/sine] ! »[/green]\n\nVous devriez vraiment dormir plus."
+        "description": "Ces arbres sont [purple]clairement maléfiques[/purple], aussi vous décidez de vous en débarrasser.\nPlusieurs jours passent, et vous êtes encore recouverte de [red]cendres[/red] et [purple]de sève visqueuse[/purple].\n\nUne gigantesque nuée d’esprits d’oizillons jaillit des arbres abattus et déposent un [gold]petit coffret[/gold] à vos pieds\n[green]« Merci de nous avoir libérés de ces arbres... [sine]cui cui[/sine] ! »[/green]\n\nVous devriez vraiment dormir plus."
       },
       {
         "id": "REST",
-        "description": "Toutes ces aventures vous ont épuisé, et, malgré les anomalies des alentours, vous décidez de dormir.\n\nVous vous agitez sans arrêt pendant votre sommeil tandis que le [orange]feu[/orange] crépite et gronde. Les [purple]arbres répugnants[/purple] diffusent une odeur putride par le biais de leur sève noire comme la nuit.\n\nVous vous réveillez un peu reposé, mais pas complètement revigoré."
+        "description": "Toutes ces aventures vous ont épuisée, et, malgré les anomalies des alentours, vous décidez de dormir.\n\nVous vous agitez sans arrêt pendant votre sommeil tandis que le [orange]feu[/orange] crépite et gronde. Les [purple]arbres répugnants[/purple] diffusent une odeur putride par le biais de leur sève noire comme la nuit.\n\nVous vous réveillez un peu reposée, mais pas complètement revigorée."
       }
     ]
   },
@@ -4587,7 +4795,7 @@
     "name": "Scriptorium englouti",
     "type": "Event",
     "act": "Underdocks",
-    "description": "Tandis que vous faites votre chemin à travers les passages embourbés, vous tombez sur une [aqua]silhouette émaciée[/aqua] qui tient une petite boutique. Sur les nombreuses étagères sont [sine]tassées[/sine] des liasses de vélins et parchemins humides.\n\nRemarquant qu’un client est entré, le [aqua]scribe-commerçant[/aqua] accourt pour vous servir puis vous indique le [gold]matériel[/gold] exposé sur le bureau.",
+    "description": "Tandis que vous faites votre chemin à travers les passages embourbés, vous tombez sur une [aqua]silhouette émaciée[/aqua] qui tient une petite boutique. Sur les nombreuses étagères sont [sine]tassées[/sine] des liasses de vélins et parchemins humides.\n\nRemarquant qu’une cliente est entrée, le [aqua]scribe-commerçant[/aqua] accourt pour vous servir puis vous indique le [gold]matériel[/gold] exposé sur le bureau.",
     "options": [
       {
         "id": "BLOODY_INK",
@@ -4622,7 +4830,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "Tandis que vous faites votre chemin à travers les passages embourbés, vous tombez sur une [aqua]silhouette émaciée[/aqua] qui tient une petite boutique. Sur les nombreuses étagères sont [sine]tassées[/sine] des liasses de vélins et parchemins humides.\n\nRemarquant qu’un client est entré, le [aqua]scribe-commerçant[/aqua] accourt pour vous servir puis vous indique le [gold]matériel[/gold] exposé sur le bureau.",
+        "description": "Tandis que vous faites votre chemin à travers les passages embourbés, vous tombez sur une [aqua]silhouette émaciée[/aqua] qui tient une petite boutique. Sur les nombreuses étagères sont [sine]tassées[/sine] des liasses de vélins et parchemins humides.\n\nRemarquant qu’une cliente est entrée, le [aqua]scribe-commerçant[/aqua] accourt pour vous servir puis vous indique le [gold]matériel[/gold] exposé sur le bureau.",
         "options": [
           {
             "id": "BLOODY_INK",
@@ -4707,15 +4915,15 @@
     "pages": [
       {
         "id": "AFTER_BUY",
-        "description": "« Nous sommes Wong’-honorés par votre générosité. Merveilleux client, vous avez accumulé [blue]0[/blue] [gold]Points Wongo[/gold]. Il ne vous reste que [blue]0[/blue] points avant de gagner notre [gold]Pin’s Exclusif de Fidélité Wongo[/gold]. Nous vous souhaitons une journée Wongtastique. »\n\nVous ne comprenez absolument pas de quoi elle parle et vous jurez de ne jamais retourner dans un Wongo’s."
+        "description": "« Nous sommes Wong’-honorés par votre générosité. Merveilleuse cliente, vous avez accumulé [blue]0[/blue] [gold]Points Wongo[/gold]. Il ne vous reste que [blue]0[/blue] points avant de gagner notre [gold]Pin’s Exclusif de Fidélité Wongo[/gold]. Nous vous souhaitons une journée Wongtastique. »\n\nVous ne comprenez absolument pas de quoi elle parle et vous jurez de ne jamais retourner dans un Wongo’s."
       },
       {
         "id": "AFTER_BUY_BADGE_COUNTER",
-        "description": "Nous sommes Wong’-honorés par votre générosité... Merveilleux client, vous avez accumulé [blue]0[/blue] [gold]Points Wongo[/gold]. Il ne vous reste que [blue]0[/blue] points avant de gagner notre [gold]Pin’s Exclusif de Fidélité Wongo[/gold]. Nous vous souhaitons une journée Wongtastique. »\n\nVous avez déjà gagné [blue]0[/blue] de ces pin’s complètement inutiles. Vous jurez de ne jamais retourner dans un Wongo’s."
+        "description": "Nous sommes Wong’-honorés par votre générosité... Merveilleuse cliente, vous avez accumulé [blue]0[/blue] [gold]Points Wongo[/gold]. Il ne vous reste que [blue]0[/blue] points avant de gagner notre [gold]Pin’s Exclusif de Fidélité Wongo[/gold]. Nous vous souhaitons une journée Wongtastique. »\n\nVous avez déjà gagné [blue]0[/blue] de ces pin’s complètement inutiles. Vous jurez de ne jamais retourner dans un Wongo’s."
       },
       {
         "id": "AFTER_BUY_RECEIVE_BADGE",
-        "description": "« Nous sommes Wong’-honorés par votre générosité... Merveilleux client, vous avez accumulé [blue]0[/blue] [gold]Points Wongo[/gold]. Grâce à vos points, vous gagnez un [gold]Pin’s Exclusif de Fidélité Wongo[/gold]. »\nLe vendeur vous tend un badge de pacotille. « Passez une journée Wongtastique. »\n\nVous avez gagné au total [blue]0[/blue] pin’s. Vous jurez de ne jamais retourner dans un Wongo’s."
+        "description": "« Nous sommes Wong’-honorés par votre générosité... Merveilleuse cliente, vous avez accumulé [blue]0[/blue] [gold]Points Wongo[/gold]. Grâce à vos points, vous gagnez un [gold]Pin’s Exclusif de Fidélité Wongo[/gold]. »\nLe vendeur vous tend un badge de pacotille. « Passez une journée Wongtastique. »\n\nVous avez gagné au total [blue]0[/blue] pin’s. Vous jurez de ne jamais retourner dans un Wongo’s."
       },
       {
         "id": "INITIAL",
@@ -4760,7 +4968,7 @@
       },
       {
         "id": "LEAVE",
-        "description": "« Euh... excusez-moi mais vous ne pouvez pas simplement partir sans avoir acheté quelque chose chez Wongo’s, » dit le vendeur d’un ton irrité.\n\nVous vous engagez dans une dispute [jitter][red]houleuse[/red][/jitter] sur les droits des consommateurs qui vous laisse [sine][purple]mentalement épuisé [/purple][/sine]."
+        "description": "« Euh... excusez-moi mais vous ne pouvez pas simplement partir sans avoir acheté quelque chose chez Wongo’s, » dit le vendeur d’un ton irrité.\n\nVous vous engagez dans une dispute [jitter][red]houleuse[/red][/jitter] sur les droits des consommateurs qui vous laisse [sine][purple]mentalement épuisé e[/purple][/sine]."
       }
     ]
   },
@@ -4769,7 +4977,7 @@
     "name": "Source mystique",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "Vous suivez un [jitter]bruit de clapotis[/jitter] jusqu’à sa source et vous trouvez captivé par un bassin paisible. À la surface de l’eau [sine][aqua]vert émeraude[/aqua][/sine] flottent des [sine][gold]granules lumineux[/gold][/sine].\n\nVous avez envie de vous baigner. Quel est le pire qui puisse arriver ?",
+    "description": "Vous suivez un [jitter]bruit de clapotis[/jitter] jusqu’à sa source et vous trouvez captivée par un bassin paisible. À la surface de l’eau [sine][aqua]vert émeraude[/aqua][/sine] flottent des [sine][gold]granules lumineux[/gold][/sine].\n\nVous avez envie de vous baigner. Quel est le pire qui puisse arriver ?",
     "options": [
       {
         "id": "BOTTLE",
@@ -4785,7 +4993,7 @@
     "pages": [
       {
         "id": "BATHE",
-        "description": "Vous émergez du bassin avec une légère [red][sine]sensation de malaise[/sine][/red].\n\nMalgré cela, vous vous sentez étonnamment revigoré."
+        "description": "Vous émergez du bassin avec une légère [red][sine]sensation de malaise[/sine][/red].\n\nMalgré cela, vous vous sentez étonnamment revigorée."
       },
       {
         "id": "BOTTLE",
@@ -4793,7 +5001,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "Vous suivez un [jitter]bruit de clapotis[/jitter] jusqu’à sa source et vous trouvez captivé par un bassin paisible. À la surface de l’eau [sine][aqua]vert émeraude[/aqua][/sine] flottent des [sine][gold]granules lumineux[/gold][/sine].\n\nVous avez envie de vous baigner. Quel est le pire qui puisse arriver ?",
+        "description": "Vous suivez un [jitter]bruit de clapotis[/jitter] jusqu’à sa source et vous trouvez captivée par un bassin paisible. À la surface de l’eau [sine][aqua]vert émeraude[/aqua][/sine] flottent des [sine][gold]granules lumineux[/gold][/sine].\n\nVous avez envie de vous baigner. Quel est le pire qui puisse arriver ?",
         "options": [
           {
             "id": "BOTTLE",
@@ -4919,7 +5127,7 @@
       },
       {
         "id": "TORUS",
-        "description": "Vous posez le tore gravé sur le piédestal, et son VENTRE S’ILLUMINE pendant que la figurine tout entière se transforme en sucrerie frite, encore toute chaude. Une faim insatiable vous gagne et vous dévorez le beignet tout entier.\n\nVous vous sentez plus robuste, mais plus lent"
+        "description": "Vous posez le tore gravé sur le piédestal, et son VENTRE S’ILLUMINE pendant que la figurine tout entière se transforme en sucrerie frite, encore toute chaude. Une faim insatiable vous gagne et vous dévorez le beignet tout entier.\n\nVous vous sentez plus robuste, mais plus lente"
       }
     ]
   },

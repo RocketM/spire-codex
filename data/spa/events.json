@@ -3810,11 +3810,219 @@
   {
     "id": "THE_ARCHITECT",
     "name": "El Arquitecto",
-    "type": "Shared",
+    "type": "Ancient",
     "act": null,
-    "description": null,
+    "description": "¿Así que el esclavo del archidemonio ha llegado?",
     "options": null,
-    "pages": null
+    "pages": null,
+    "dialogue": {
+      "Defect": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "¿Que estás haciendo aquí?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "<frases ilegibles y aleatorias>"
+        },
+        {
+          "order": "0-2r",
+          "speaker": "ancient",
+          "text": "¿Repararte? Oblígame."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "¿Estás de vuelta? ¿No te había convertido en chatarra?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "<frases ilegibles y aleatorias>"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "¿Que quieres que os repare, a ti y a tu amigo? Ridículo."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "¿Cómo es que sigues viniendo? ¿Es cosa de Neow?"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "<frases ilegibles y aleatorias>"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Insensato."
+        }
+      ],
+      "Ironclad": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "¿Así que el esclavo del archidemonio ha llegado?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "Enemigo...\nMatar..."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Estás condenado a luchar por toda la eternidad, ¿verdad?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "Arquitecto... ¡¡archi... enemigo!!"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "¿Acaso recuerdas tu propio nombre?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "Me das lástima."
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "Matar..."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Vuelve al principio, Blindado."
+        }
+      ],
+      "Necrobinder": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "¡ARQUITECTO! Mataste a mi padres. Mataste a mi amigo. ¡Me arruinaste la VIDA! ¡Y ahora lo pagarás con la TUYA!"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "¿Venganza? Eso está muy visto."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "¡ARQUITECTO! Mataste a mi padres. Mataste a mi amigo. ¡Me arruinaste la...!"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "Tanta ira no va a cambiar el pasado."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "¡ARQUITECTO! Mataste a mi padres. Mataste a mi amigo. ¡Me arruinaste la VIDA...!"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "Hice lo que tuve que hacer para mantener el orden."
+        },
+        {
+          "order": "3-0r",
+          "speaker": "character",
+          "text": "¡ARQUITECTO! Mataste a mi padres. Mataste a mi amigo. ¡Me arruinaste la...!"
+        },
+        {
+          "order": "3-1r",
+          "speaker": "ancient",
+          "text": "Vida."
+        },
+        {
+          "order": "3-2r",
+          "speaker": "character",
+          "text": "¡¿Qué...?! ¡Muere, monstruo!"
+        }
+      ],
+      "Regent": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "¡He llegado! ¡Eh, plebeyo! ¿Esta es la cima?"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "Silencio, insensato."
+        },
+        {
+          "order": "0-2",
+          "speaker": "character",
+          "text": "¡Te voy a enseñar modales!"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "¡He llegado, otra vez!"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "¿Otra vez el tarado ruidoso?"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "character",
+          "text": "¡Ni estoy tarado ni soy ruidoso! ¡Hazme frente!"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "¡Me he hartado de tus malos modales!"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "Mira, en eso estamos de acuerdo."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "character",
+          "text": "¡Bailemos!"
+        }
+      ],
+      "Silent": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "¿Ni siquiera vas a presentarte?"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "¿De dónde has salido?\n¿Qué es lo que buscas?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "[jitter]¡Arrgh![/jitter]\n[jitter][red]¡¡MUERE!![/red][/jitter]"
+        },
+        {
+          "order": "3-0r",
+          "speaker": "ancient",
+          "text": "¡Miserable infeliz!\n[jitter]¡¡LARGO DE AQUÍ!![/jitter]"
+        }
+      ]
+    },
+    "image_url": "/static/images/monsters/architect.png"
   },
   {
     "id": "THE_FUTURE_OF_POTIONS",
@@ -4038,7 +4246,7 @@
           {
             "id": "SAPPING",
             "title": "Desgaste",
-            "description": "Aplica [blue][SappingWeak][/blue] de [gold]Debilidad[/gold]. Aplica [blue][SappingVulnerable][/blue] de [gold]Vulnerabilidad[/gold]."
+            "description": "Aplica [blue]2[/blue] de [gold]Debilidad[/gold]. Aplica [blue]2[/blue] de [gold]Vulnerabilidad[/gold]."
           },
           {
             "id": "VIOLENCE",
@@ -4048,7 +4256,7 @@
           {
             "id": "CHOKING",
             "title": "Asfixia",
-            "description": "Cuando juegues una carta este turno, el enemigo pierde [blue][ChokingDamage][/blue] PV."
+            "description": "Cuando juegues una carta este turno, el enemigo pierde [blue]6[/blue] PV."
           },
           {
             "id": "ENERGIZED",
@@ -4068,7 +4276,7 @@
           {
             "id": "EXPERTISE",
             "title": "Maestría",
-            "description": "Gana [blue][ExpertiseStrength][/blue] de [gold]Fuerza[/gold]. Gana [blue][ExpertiseDexterity][/blue] de [gold]Destreza[/gold]."
+            "description": "Gana [blue]2[/blue] de [gold]Fuerza[/gold]. Gana [blue]2[/blue] de [gold]Destreza[/gold]."
           },
           {
             "id": "CURIOUS",

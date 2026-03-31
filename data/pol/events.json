@@ -3534,7 +3534,7 @@
       {
         "id": "BONE_TEA",
         "title": "Herbata z kości",
-        "description": "Pay [red]50[/red] [gold]Gold[/gold]. Na początku [blue][[/blue] następnych walk] wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold]."
+        "description": "Pay [red]50[/red] [gold]Gold[/gold]. Na początku [blue]{}[/blue] następnych walk wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold]."
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3544,7 +3544,7 @@
       {
         "id": "EMBER_TEA",
         "title": "Piekielnie gorąca herbata",
-        "description": "Zapłać [red]150[/red] szt. [gold]Złota[/gold]. Na początku [blue][[/blue] następnych walk] zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold]."
+        "description": "Zapłać [red]150[/red] szt. [gold]Złota[/gold]. Na początku [blue]{}[/blue] następnych walk zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold]."
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3569,7 +3569,7 @@
           {
             "id": "BONE_TEA",
             "title": "Herbata z kości",
-            "description": "Pay [red]50[/red] [gold]Gold[/gold]. Na początku [blue][[/blue] następnych walk] wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold]."
+            "description": "Pay [red]50[/red] [gold]Gold[/gold]. Na początku [blue]{}[/blue] następnych walk wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold]."
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3579,7 +3579,7 @@
           {
             "id": "EMBER_TEA",
             "title": "Piekielnie gorąca herbata",
-            "description": "Zapłać [red]150[/red] szt. [gold]Złota[/gold]. Na początku [blue][[/blue] następnych walk] zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold]."
+            "description": "Zapłać [red]150[/red] szt. [gold]Złota[/gold]. Na początku [blue]{}[/blue] następnych walk zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold]."
           },
           {
             "id": "EMBER_TEA_LOCKED",
@@ -3806,11 +3806,219 @@
   {
     "id": "THE_ARCHITECT",
     "name": "Architekt",
-    "type": "Shared",
+    "type": "Ancient",
     "act": null,
-    "description": null,
+    "description": "Proszę, proszę, czy to sam niewolnik arcydemona?",
     "options": null,
-    "pages": null
+    "pages": null,
+    "dialogue": {
+      "Defect": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Co ty tu robisz?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "<chaotycznie wygenerowany tekst>"
+        },
+        {
+          "order": "0-2r",
+          "speaker": "ancient",
+          "text": "Naprawić cię? Nie rozśmieszaj mnie."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Wróciłeś? Czy ja cię nie zdemontowałem?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "<chaotyczna sekwencja poleceń>"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "Naprawić cię? I twojego przyjaciela też? Absurd."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "Jakim cudem ciągle tu wracasz? Czy to sprawka Neow?"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "<chaotyczna sekwencja poleceń>"
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Niedorzeczne."
+        }
+      ],
+      "Ironclad": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Proszę, proszę, czy to sam niewolnik arcydemona?"
+        },
+        {
+          "order": "0-1r",
+          "speaker": "character",
+          "text": "Wróg...\nZabiję..."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Zdajesz sobie sprawę, że jesteś skazany na wieczną walkę?"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "character",
+          "text": "Architekt... arcy.... wróg!!"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "ancient",
+          "text": "Czy ty w ogóle pamiętasz, jak się nazywasz?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "Żałosne."
+        },
+        {
+          "order": "2-1r",
+          "speaker": "character",
+          "text": "Zabij..."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "ancient",
+          "text": "Wracaj na dół, Pancerniku."
+        }
+      ],
+      "Necrobinder": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "ARCHITEKCIE! Zabiłeś moich rodziców. Zabiłeś moich przyjaciół. Zabiłeś moje ŻYCIE! ...a teraz to ja zabiję CIEBIE!"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "A więc chodzi o zemstę? Podziękuję."
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "ARCHITEKCIE! Zabiłeś moich rodziców. Zabiłeś mojego przyjaciela. Zabiłeś moje-"
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "Gniew nie zmieni przeszłości."
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "ARCHITEKCIE! Zabiłeś moich rodziców. Zabiłeś mojego przyjaciela. Zabiłeś moje-"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "Zrobiłem to, co było konieczne do utrzymania porządku."
+        },
+        {
+          "order": "3-0r",
+          "speaker": "character",
+          "text": "ARCHITEKCIE! Zabiłeś moich rodziców. Zabiłeś mojego przyjaciela. Zabiłeś moje-"
+        },
+        {
+          "order": "3-1r",
+          "speaker": "ancient",
+          "text": "Życie."
+        },
+        {
+          "order": "3-2r",
+          "speaker": "character",
+          "text": "Co...?! Giń, potworze!"
+        }
+      ],
+      "Regent": [
+        {
+          "order": "0-0",
+          "speaker": "character",
+          "text": "Oto jestem! Hej ty, plebsie! Czy to już szczyt?"
+        },
+        {
+          "order": "0-1",
+          "speaker": "ancient",
+          "text": "Potrzebuję ciszy..."
+        },
+        {
+          "order": "0-2",
+          "speaker": "character",
+          "text": "Już ja cię nauczę dobrych manier!"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "character",
+          "text": "Oto jestem! Znowu."
+        },
+        {
+          "order": "1-1r",
+          "speaker": "ancient",
+          "text": "Ten głośny idiota powrócił?"
+        },
+        {
+          "order": "1-2r",
+          "speaker": "character",
+          "text": "Żaden ze mnie idiota! I nie jestem głośny!! Zmierz się ze mną!"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "character",
+          "text": "Mam już dosyć twoich kiepskich manier!"
+        },
+        {
+          "order": "2-1r",
+          "speaker": "ancient",
+          "text": "Wreszcie się zgadzamy."
+        },
+        {
+          "order": "2-2r",
+          "speaker": "character",
+          "text": "Zatańczmy!"
+        }
+      ],
+      "Silent": [
+        {
+          "order": "0-0r",
+          "speaker": "ancient",
+          "text": "Nawet się nie przedstawisz?"
+        },
+        {
+          "order": "1-0r",
+          "speaker": "ancient",
+          "text": "Skąd się tu wzięłaś?\nCzego chcesz?"
+        },
+        {
+          "order": "2-0r",
+          "speaker": "ancient",
+          "text": "[jitter]Grrr![/jitter]\n[jitter][red]GIŃ!![/red][/jitter]"
+        },
+        {
+          "order": "3-0r",
+          "speaker": "ancient",
+          "text": "Przeklęty łotr!\n[jitter]ZNIKAJ STĄD!![/jitter]"
+        }
+      ]
+    },
+    "image_url": "/static/images/monsters/architect.png"
   },
   {
     "id": "THE_FUTURE_OF_POTIONS",
@@ -3821,8 +4029,8 @@
     "options": [
       {
         "id": "POTION",
-        "title": "Umieść choose(Pospolita Miksturę.",
-        "description": "Utrać Miksturę: [gold]a Potion[/gold]. Otrzymaj [gold]Ulepszoną[/gold] [gold]choose(Pospolita kartę choose(Atak[/gold]."
+        "title": "Umieść pospolitą Miksturę.",
+        "description": "Utrać Miksturę: [gold]a Potion[/gold]. Otrzymaj [gold]Ulepszoną[/gold] [gold]pospolitą kartę Ataku[/gold]."
       }
     ],
     "pages": [
@@ -3836,8 +4044,8 @@
         "options": [
           {
             "id": "POTION",
-            "title": "Umieść choose(Pospolita Miksturę.",
-            "description": "Utrać Miksturę: [gold]a Potion[/gold]. Otrzymaj [gold]Ulepszoną[/gold] [gold]choose(Pospolita kartę choose(Atak[/gold]."
+            "title": "Umieść pospolitą Miksturę.",
+            "description": "Utrać Miksturę: [gold]a Potion[/gold]. Otrzymaj [gold]Ulepszoną[/gold] [gold]pospolitą kartę Ataku[/gold]."
           }
         ]
       }
@@ -4034,7 +4242,7 @@
           {
             "id": "SAPPING",
             "title": "Osłabienie",
-            "description": "Nałóż [blue][SappingWeak][/blue] pkt. [gold]Słabości[/gold]. Nałóż [blue][SappingVulnerable][/blue] pkt. [gold]Wrażliwości[/gold]."
+            "description": "Nałóż [blue]2[/blue] pkt. [gold]Słabości[/gold]. Nałóż [blue]2[/blue] pkt. [gold]Wrażliwości[/gold]."
           },
           {
             "id": "VIOLENCE",
@@ -4044,7 +4252,7 @@
           {
             "id": "CHOKING",
             "title": "Duszenie",
-            "description": "Kiedykolwiek zagrasz kartę w tej turze, przeciwnik traci [blue][ChokingDamage][/blue] PŻ."
+            "description": "Kiedykolwiek zagrasz kartę w tej turze, przeciwnik traci [blue]6[/blue] PŻ."
           },
           {
             "id": "ENERGIZED",
@@ -4064,7 +4272,7 @@
           {
             "id": "EXPERTISE",
             "title": "Ekspertyza",
-            "description": "Zyskaj [blue][ExpertiseStrength][/blue] pkt. [gold]Siły[/gold]. Zyskaj [blue][ExpertiseDexterity][/blue] pkt. [gold]Zręczności[/gold]."
+            "description": "Zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold]. Zyskaj [blue]2[/blue] pkt. [gold]Zręczności[/gold]."
           },
           {
             "id": "CURIOUS",
