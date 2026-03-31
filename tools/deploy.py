@@ -167,7 +167,7 @@ def main():
         build_and_push(
             image=FRONTEND_IMAGE,
             context=str(ROOT / "frontend"),
-            dockerfile=str(ROOT / "frontend" / "Dockerfile"),
+            dockerfile=str(ROOT / "frontend" / ("Dockerfile.mac" if cross else "Dockerfile")),
             tags=tags,
             push=push,
             cross=cross,
