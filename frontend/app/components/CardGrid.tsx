@@ -56,7 +56,7 @@ const energyIconMap: Record<string, string> = {
 };
 
 function renderDescription(card: Card, upgraded: boolean): React.ReactNode {
-  const desc = (card.description || "").replace(/\n/g, " ");
+  const desc = (upgraded && card.upgrade_description ? card.upgrade_description : card.description || "").replace(/\n/g, " ");
   const u = upgraded && card.upgrade ? card.upgrade : null;
   const vars = card.vars || {};
 
@@ -86,6 +86,16 @@ function renderDescription(card: Card, upgraded: boolean): React.ReactNode {
         const baseEnergy = vars["Energy"] ?? 1;
         const upEnergy = getUpgradedValue(baseEnergy, upVal) ?? baseEnergy;
         text = text.replace(/\[energy:(\d+)\]/, `[energy:${upEnergy}]`);
+      }
+      // Handle star icon upgrades — replace [star:N] tags directly like energy
+      if (key.toLowerCase() === "stars" || key.toLowerCase() === "starnextturnpower") {
+        const starVar = key.toLowerCase() === "stars" ? "Stars" : "StarNextTurnPower";
+        const baseStar = vars[starVar] ?? 1;
+        const upStar = getUpgradedValue(baseStar, upVal) ?? baseStar;
+        if (upStar !== baseStar) {
+          text = text.replace(`[star:${baseStar}]`, `[star:${upStar}]`);
+        }
+        continue;
       }
     }
 

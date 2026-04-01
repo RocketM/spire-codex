@@ -188,6 +188,16 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
         const upEnergy = getUpgradedValue(baseEnergy, upVal) ?? baseEnergy;
         desc = desc.replace(/\[energy:(\d+)\]/, `[energy:${upEnergy}]`);
       }
+      // Handle star icon upgrades — replace [star:N] tags directly like energy
+      if (key.toLowerCase() === "stars" || key.toLowerCase() === "starnextturnpower") {
+        const starVar = key.toLowerCase() === "stars" ? "Stars" : "StarNextTurnPower";
+        const baseStar = vars[starVar] ?? 1;
+        const upStar = getUpgradedValue(baseStar, upVal) ?? baseStar;
+        if (upStar !== baseStar) {
+          desc = desc.replace(`[star:${baseStar}]`, `[star:${upStar}]`);
+        }
+        continue;
+      }
     }
 
     // Apply replacements in a single pass — skip ambiguous values (same number appears multiple times)
