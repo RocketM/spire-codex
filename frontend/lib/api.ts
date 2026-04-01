@@ -49,6 +49,7 @@ export interface Card {
   spawns_cards: string[] | null;
   vars: Record<string, number> | null;
   upgrade: Record<string, string | number | null> | null;
+  upgrade_description: string | null;
   image_url: string | null;
   beta_image_url: string | null;
   type_variants: Record<string, CardTypeVariant> | null;

@@ -153,7 +153,8 @@ function getUpgradedValue(
 }
 
 function getUpgradedDescription(card: Card, upgraded: boolean): string {
-  let desc = (card.description || "").replace(/\n/g, " ");
+  // Use upgrade_description as base text when upgraded (handles text-based upgrades like "X+1", "ALL cards", etc.)
+  let desc = (upgraded && card.upgrade_description ? card.upgrade_description : card.description || "").replace(/\n/g, " ");
   const u = upgraded && card.upgrade ? card.upgrade : null;
   const vars = card.vars || {};
 

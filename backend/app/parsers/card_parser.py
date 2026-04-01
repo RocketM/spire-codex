@@ -254,6 +254,13 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict, even
     resolve_vars = {**all_vars, "CardType": card_type}
     desc_rendered = shared_resolve_description(description, resolve_vars)
 
+    # Generate upgraded description for cards with text-based upgrade changes
+    upgrade_description = None
+    if "{IfUpgraded:show:" in description:
+        upgrade_description = shared_resolve_description(description, resolve_vars, is_upgraded=True)
+        if upgrade_description == desc_rendered:
+            upgrade_description = None
+
     # Generate type variants for cards with choose() conditionals (e.g. Mad Science)
     # Mad Science has 9 variants: 3 types × 3 riders per type
     type_variants = None
@@ -326,6 +333,7 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict, even
             else (type_variants[card_type.lower()].get("image_url") if type_variants and card_type.lower() in type_variants else None),
         "beta_image_url": f"/static/images/cards/beta/{card_id.lower()}.png" if (STATIC_IMAGES / "beta" / f"{card_id.lower()}.png").exists() else None,
         "type_variants": type_variants,
+        "upgrade_description": upgrade_description,
     }
 
     if upgrade_damage:
@@ -368,7 +376,10 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict, even
             card["upgrade"][f"remove_{km.group(1).lower()}"] = True
 
     if not card["upgrade"]:
-        card["upgrade"] = None
+        if upgrade_description:
+            card["upgrade"] = {"description_changed": True}
+        else:
+            card["upgrade"] = None
 
     return card
 

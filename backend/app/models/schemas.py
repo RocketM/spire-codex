@@ -51,6 +51,7 @@ class Card(BaseModel):
     spawns_cards: list[str] | None = None
     vars: dict[str, int] | None = None
     upgrade: dict[str, str | int | None] | None = None
+    upgrade_description: str | None = None
     image_url: str | None = None
     beta_image_url: str | None = None
     type_variants: dict[str, CardTypeVariant] | None = None
