@@ -10,12 +10,23 @@
     "moves": [
       {
         "id": "NOTHING",
-        "name": "Nada"
+        "name": "Nada",
+        "intent": "Unknown"
       }
     ],
     "damage_values": null,
     "block_values": null,
-    "image_url": "/static/images/monsters/architect.png"
+    "encounters": [
+      {
+        "encounter_id": "THE_ARCHITECT_EVENT_ENCOUNTER",
+        "encounter_name": "El Artífice",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/architect.png",
+    "beta_image_url": null
   },
   {
     "id": "ASSASSIN_RUBY_RAIDER",
@@ -28,7 +39,12 @@
     "moves": [
       {
         "id": "KILLSHOT",
-        "name": "Ejecutor"
+        "name": "Ejecutor",
+        "intent": "Attack",
+        "damage": {
+          "normal": 11,
+          "ascension": 12
+        }
       }
     ],
     "damage_values": {
@@ -38,7 +54,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/assassin_ruby_raider.png"
+    "encounters": [
+      {
+        "encounter_id": "RUBY_RAIDERS_NORMAL",
+        "encounter_name": "atacantes rubí",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/assassin_ruby_raider.png",
+    "beta_image_url": null
   },
   {
     "id": "AXE_RUBY_RAIDER",
@@ -51,15 +77,32 @@
     "moves": [
       {
         "id": "SWING_1",
-        "name": "Swing 1"
+        "name": "Swing 1",
+        "intent": "Attack + Defend",
+        "block": 5,
+        "damage": {
+          "normal": 5,
+          "ascension": 6
+        }
       },
       {
         "id": "SWING_2",
-        "name": "Swing 2"
+        "name": "Swing 2",
+        "intent": "Attack + Defend",
+        "block": 5,
+        "damage": {
+          "normal": 5,
+          "ascension": 6
+        }
       },
       {
         "id": "BIG_SWING",
-        "name": "Gran cruzado"
+        "name": "Gran cruzado",
+        "intent": "Attack",
+        "damage": {
+          "normal": 12,
+          "ascension": 13
+        }
       }
     ],
     "damage_values": {
@@ -73,7 +116,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/axe_ruby_raider.png"
+    "encounters": [
+      {
+        "encounter_id": "RUBY_RAIDERS_NORMAL",
+        "encounter_name": "atacantes rubí",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/axe_ruby_raider.png",
+    "beta_image_url": null
   },
   {
     "id": "AXEBOT",
@@ -86,19 +139,59 @@
     "moves": [
       {
         "id": "BOOT_UP",
-        "name": "Reinicio"
+        "name": "Reinicio",
+        "intent": "Defend + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 1
+          }
+        ],
+        "block": 10
       },
       {
         "id": "ONE_TWO",
-        "name": "Un, dos..."
+        "name": "Un, dos...",
+        "intent": "Attack",
+        "damage": {
+          "normal": 5,
+          "ascension": 6,
+          "hit_count": 2
+        }
       },
       {
         "id": "SHARPEN",
-        "name": "Afilar"
+        "name": "Afilar",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 4
+          }
+        ]
       },
       {
         "id": "HAMMER_UPPERCUT",
-        "name": "Gancho contundente"
+        "name": "Gancho contundente",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 1
+          },
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 10
+        }
       }
     ],
     "damage_values": {
@@ -115,7 +208,17 @@
     "block_values": {
       "bootUp": 10
     },
-    "image_url": "/static/images/monsters/axebot.png"
+    "encounters": [
+      {
+        "encounter_id": "AXEBOTS_NORMAL",
+        "encounter_name": "compabots",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/axebot.png",
+    "beta_image_url": null
   },
   {
     "id": "BATTLE_FRIEND_V1",
@@ -128,12 +231,23 @@
     "moves": [
       {
         "id": "NOTHING",
-        "name": "Nada"
+        "name": "Nada",
+        "intent": "Unknown"
       }
     ],
     "damage_values": null,
     "block_values": null,
-    "image_url": "/static/images/monsters/battle_friend_v1.png"
+    "encounters": [
+      {
+        "encounter_id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
+        "encounter_name": "muñeco de entrenamiento maltrecho",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/battle_friend_v1.png",
+    "beta_image_url": null
   },
   {
     "id": "BATTLE_FRIEND_V2",
@@ -146,12 +260,23 @@
     "moves": [
       {
         "id": "NOTHING",
-        "name": "Nada"
+        "name": "Nada",
+        "intent": "Unknown"
       }
     ],
     "damage_values": null,
     "block_values": null,
-    "image_url": "/static/images/monsters/battle_friend_v2.png"
+    "encounters": [
+      {
+        "encounter_id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
+        "encounter_name": "muñeco de entrenamiento maltrecho",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/battle_friend_v2.png",
+    "beta_image_url": null
   },
   {
     "id": "BATTLE_FRIEND_V3",
@@ -164,12 +289,23 @@
     "moves": [
       {
         "id": "NOTHING",
-        "name": "Nada"
+        "name": "Nada",
+        "intent": "Unknown"
       }
     ],
     "damage_values": null,
     "block_values": null,
-    "image_url": "/static/images/monsters/battle_friend_v3.png"
+    "encounters": [
+      {
+        "encounter_id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
+        "encounter_name": "muñeco de entrenamiento maltrecho",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/battle_friend_v3.png",
+    "beta_image_url": null
   },
   {
     "id": "BOWLBUG_EGG",
@@ -182,7 +318,13 @@
     "moves": [
       {
         "id": "BITE",
-        "name": "Mordida"
+        "name": "Mordida",
+        "intent": "Attack + Defend",
+        "block": 7,
+        "damage": {
+          "normal": 7,
+          "ascension": 8
+        }
       }
     ],
     "damage_values": {
@@ -192,7 +334,31 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/bowlbug_egg.png"
+    "encounters": [
+      {
+        "encounter_id": "BOWLBUGS_NORMAL",
+        "encounter_name": "enjambre de bichobols",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "BOWLBUGS_WEAK",
+        "encounter_name": "bichobols",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "TUNNELER_NORMAL",
+        "encounter_name": "excavante y compañía",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/bowlbug_egg.png",
+    "beta_image_url": null
   },
   {
     "id": "BOWLBUG_NECTAR",
@@ -205,15 +371,31 @@
     "moves": [
       {
         "id": "THRASH",
-        "name": "Despedazar"
+        "name": "Despedazar",
+        "intent": "Attack",
+        "damage": {
+          "normal": 3
+        }
       },
       {
         "id": "BUFF",
-        "name": "Mejora"
+        "name": "Mejora",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 15
+          }
+        ]
       },
       {
         "id": "THRASH2",
-        "name": "Despedazar"
+        "name": "Despedazar",
+        "intent": "Attack",
+        "damage": {
+          "normal": 3
+        }
       }
     ],
     "damage_values": {
@@ -222,7 +404,24 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/bowlbug_nectar.png"
+    "encounters": [
+      {
+        "encounter_id": "BOWLBUGS_NORMAL",
+        "encounter_name": "enjambre de bichobols",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "BOWLBUGS_WEAK",
+        "encounter_name": "bichobols",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      }
+    ],
+    "image_url": "/static/images/monsters/bowlbug_nectar.png",
+    "beta_image_url": null
   },
   {
     "id": "BOWLBUG_ROCK",
@@ -235,11 +434,17 @@
     "moves": [
       {
         "id": "HEADBUTT",
-        "name": "Cabezazo"
+        "name": "Cabezazo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 15,
+          "ascension": 16
+        }
       },
       {
         "id": "DIZZY",
-        "name": "Dizzy"
+        "name": "Dizzy",
+        "intent": "Stun"
       }
     ],
     "damage_values": {
@@ -249,7 +454,31 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/bowlbug_rock.png"
+    "encounters": [
+      {
+        "encounter_id": "BOWLBUGS_NORMAL",
+        "encounter_name": "enjambre de bichobols",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "BOWLBUGS_WEAK",
+        "encounter_name": "bichobols",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "SLUMBERING_BEETLE_NORMAL",
+        "encounter_name": "fiesta de escaramorfeos",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/bowlbug_rock.png",
+    "beta_image_url": null
   },
   {
     "id": "BOWLBUG_SILK",
@@ -262,11 +491,25 @@
     "moves": [
       {
         "id": "TRASH",
-        "name": "Trash"
+        "name": "Trash",
+        "intent": "Attack",
+        "damage": {
+          "normal": 4,
+          "ascension": 5,
+          "hit_count": 2
+        }
       },
       {
         "id": "TOXIC_SPIT",
-        "name": "Toxic Spit"
+        "name": "Toxic Spit",
+        "intent": "Debuff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 1
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -277,7 +520,31 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/bowlbug_silk.png"
+    "encounters": [
+      {
+        "encounter_id": "BOWLBUGS_NORMAL",
+        "encounter_name": "enjambre de bichobols",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLUMBERING_BEETLE_NORMAL",
+        "encounter_name": "fiesta de escaramorfeos",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "TUNNELER_NORMAL",
+        "encounter_name": "excavante y compañía",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/bowlbug_silk.png",
+    "beta_image_url": null
   },
   {
     "id": "BRUTE_RUBY_RAIDER",
@@ -290,11 +557,24 @@
     "moves": [
       {
         "id": "BEAT",
-        "name": "Golpe"
+        "name": "Golpe",
+        "intent": "Attack",
+        "damage": {
+          "normal": 7,
+          "ascension": 8
+        }
       },
       {
         "id": "ROAR",
-        "name": "Roar"
+        "name": "Roar",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 3
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -304,7 +584,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/brute_ruby_raider.png"
+    "encounters": [
+      {
+        "encounter_id": "RUBY_RAIDERS_NORMAL",
+        "encounter_name": "atacantes rubí",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/brute_ruby_raider.png",
+    "beta_image_url": null
   },
   {
     "id": "BYGONE_EFFIGY",
@@ -317,19 +607,34 @@
     "moves": [
       {
         "id": "INITIAL_SLEEP",
-        "name": "Initial Sleep"
+        "name": "Initial Sleep",
+        "intent": "Sleep"
       },
       {
         "id": "WAKE",
-        "name": "Wake"
+        "name": "Wake",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 10
+          }
+        ]
       },
       {
         "id": "SLEEP",
-        "name": "Letargo"
+        "name": "Letargo",
+        "intent": "Sleep"
       },
       {
         "id": "SLASHES",
-        "name": "Siega"
+        "name": "Siega",
+        "intent": "Attack",
+        "damage": {
+          "normal": 15,
+          "ascension": 17
+        }
       }
     ],
     "damage_values": {
@@ -339,7 +644,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/bygone_effigy.png"
+    "encounters": [
+      {
+        "encounter_id": "BYGONE_EFFIGY_ELITE",
+        "encounter_name": "efigie olvidada",
+        "room_type": "Elite",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/bygone_effigy.png",
+    "beta_image_url": null
   },
   {
     "id": "BYRDONIS",
@@ -352,11 +667,21 @@
     "moves": [
       {
         "id": "PECK",
-        "name": "Picotazo"
+        "name": "Picotazo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "ascension": 4
+        }
       },
       {
         "id": "SWOOP",
-        "name": "Swoop"
+        "name": "Swoop",
+        "intent": "Attack",
+        "damage": {
+          "normal": 16,
+          "ascension": 18
+        }
       }
     ],
     "damage_values": {
@@ -371,7 +696,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/byrdonis.png"
+    "encounters": [
+      {
+        "encounter_id": "BYRDONIS_ELITE",
+        "encounter_name": "japaronis",
+        "room_type": "Elite",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/byrdonis.png",
+    "beta_image_url": null
   },
   {
     "id": "BYRDPIP",
@@ -384,12 +719,15 @@
     "moves": [
       {
         "id": "NOTHING",
-        "name": "Nada"
+        "name": "Nada",
+        "intent": "Unknown"
       }
     ],
     "damage_values": null,
     "block_values": null,
-    "image_url": "/static/images/monsters/byrdpip.png"
+    "encounters": null,
+    "image_url": "/static/images/monsters/byrdpip.png",
+    "beta_image_url": null
   },
   {
     "id": "CALCIFIED_CULTIST",
@@ -402,11 +740,24 @@
     "moves": [
       {
         "id": "INCANTATION",
-        "name": "Encantamiento"
+        "name": "Encantamiento",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "RITUAL",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       },
       {
         "id": "DARK_STRIKE",
-        "name": "Golpe tenebroso"
+        "name": "Golpe tenebroso",
+        "intent": "Attack",
+        "damage": {
+          "normal": 9,
+          "ascension": 11
+        }
       }
     ],
     "damage_values": {
@@ -416,7 +767,24 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/calcified_cultist.png"
+    "encounters": [
+      {
+        "encounter_id": "CULTISTS_NORMAL",
+        "encounter_name": "sectarios",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "TOADPOLES_NORMAL",
+        "encounter_name": "fauna de Muelles Funestos",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/calcified_cultist.png",
+    "beta_image_url": null
   },
   {
     "id": "CEREMONIAL_BEAST",
@@ -429,27 +797,73 @@
     "moves": [
       {
         "id": "STAMP",
-        "name": "Pisada"
+        "name": "Pisada",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "PLOW",
+            "target": "self",
+            "amount": 150
+          }
+        ]
       },
       {
         "id": "PLOW",
-        "name": "Cornada"
+        "name": "Cornada",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 18,
+          "ascension": 20
+        }
       },
       {
         "id": "STUN",
-        "name": "Stun"
+        "name": "Stun",
+        "intent": "Stun"
       },
       {
         "id": "BEAST_CRY",
-        "name": "Grito bestial"
+        "name": "Grito bestial",
+        "intent": "Debuff",
+        "powers": [
+          {
+            "power_id": "RINGING",
+            "target": "player",
+            "amount": 1
+          }
+        ]
       },
       {
         "id": "STOMP",
-        "name": "Pisotón"
+        "name": "Pisotón",
+        "intent": "Attack",
+        "damage": {
+          "normal": 15,
+          "ascension": 17
+        }
       },
       {
         "id": "CRUSH",
-        "name": "Aplastar"
+        "name": "Aplastar",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 3
+          }
+        ],
+        "damage": {
+          "normal": 17,
+          "ascension": 19
+        }
       }
     ],
     "damage_values": {
@@ -467,7 +881,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/ceremonial_beast.png"
+    "encounters": [
+      {
+        "encounter_id": "CEREMONIAL_BEAST_BOSS",
+        "encounter_name": "Bestia solemne",
+        "room_type": "Boss",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/ceremonial_beast.png",
+    "beta_image_url": null
   },
   {
     "id": "CHOMPER",
@@ -480,11 +904,18 @@
     "moves": [
       {
         "id": "CLAMP",
-        "name": "Pinza"
+        "name": "Pinza",
+        "intent": "Attack",
+        "damage": {
+          "normal": 8,
+          "ascension": 9,
+          "hit_count": 2
+        }
       },
       {
         "id": "SCREECH",
-        "name": "Chillido"
+        "name": "Chillido",
+        "intent": "Status"
       }
     ],
     "damage_values": {
@@ -495,7 +926,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/chomper.png"
+    "encounters": [
+      {
+        "encounter_id": "CHOMPERS_NORMAL",
+        "encounter_name": "Un par de mordebots",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/chomper.png",
+    "beta_image_url": null
   },
   {
     "id": "CORPSE_SLUG",
@@ -508,15 +949,33 @@
     "moves": [
       {
         "id": "WHIP_SLAP",
-        "name": "Bofetada"
+        "name": "Bofetada",
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "hit_count": 2
+        }
       },
       {
         "id": "GLOMP",
-        "name": "Glomp"
+        "name": "Glomp",
+        "intent": "Attack",
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       },
       {
         "id": "GOOP",
-        "name": "Goop"
+        "name": "Goop",
+        "intent": "Debuff",
+        "powers": [
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 2
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -530,7 +989,24 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/corpse_slug.png"
+    "encounters": [
+      {
+        "encounter_id": "CORPSE_SLUGS_NORMAL",
+        "encounter_name": "Muchas putribabosas",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "CORPSE_SLUGS_WEAK",
+        "encounter_name": "Putribabosas",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": true
+      }
+    ],
+    "image_url": "/static/images/monsters/corpse_slug.png",
+    "beta_image_url": null
   },
   {
     "id": "CROSSBOW_RUBY_RAIDER",
@@ -543,11 +1019,18 @@
     "moves": [
       {
         "id": "FIRE",
-        "name": "¡Disparen!"
+        "name": "¡Disparen!",
+        "intent": "Attack",
+        "damage": {
+          "normal": 14,
+          "ascension": 16
+        }
       },
       {
         "id": "RELOAD",
-        "name": "Recarga"
+        "name": "Recarga",
+        "intent": "Defend",
+        "block": 3
       }
     ],
     "damage_values": {
@@ -557,7 +1040,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/crossbow_ruby_raider.png"
+    "encounters": [
+      {
+        "encounter_id": "RUBY_RAIDERS_NORMAL",
+        "encounter_name": "atacantes rubí",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/crossbow_ruby_raider.png",
+    "beta_image_url": null
   },
   {
     "id": "CRUSHER",
@@ -570,23 +1063,65 @@
     "moves": [
       {
         "id": "THRASH",
-        "name": "Despedazar"
+        "name": "Despedazar",
+        "intent": "Attack",
+        "damage": {
+          "normal": 12,
+          "ascension": 14
+        }
       },
       {
         "id": "ENLARGING_STRIKE",
-        "name": "Golpe creciente"
+        "name": "Golpe creciente",
+        "intent": "Attack",
+        "damage": {
+          "normal": 4,
+          "ascension": 4
+        }
       },
       {
         "id": "BUG_STING",
-        "name": "Picadura"
+        "name": "Picadura",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 2
+          },
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 6,
+          "ascension": 7,
+          "hit_count": 2
+        }
       },
       {
         "id": "ADAPT",
-        "name": "Adaptación"
+        "name": "Adaptación",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       },
       {
         "id": "GUARDED_STRIKE",
-        "name": "Golpe defensivo"
+        "name": "Golpe defensivo",
+        "intent": "Attack + Defend",
+        "block": 18,
+        "damage": {
+          "normal": 12,
+          "ascension": 14
+        }
       }
     ],
     "damage_values": {
@@ -609,7 +1144,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/crusher.png"
+    "encounters": [
+      {
+        "encounter_id": "KAISER_CRAB_BOSS",
+        "encounter_name": "Cangrejo káiser",
+        "room_type": "Boss",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/crusher.png",
+    "beta_image_url": null
   },
   {
     "id": "CUBEX_CONSTRUCT",
@@ -622,23 +1167,63 @@
     "moves": [
       {
         "id": "CHARGE_UP",
-        "name": "Acometida"
+        "name": "Acometida",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       },
       {
         "id": "REPEATER",
-        "name": "Repeater"
+        "name": "Repeater",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 7,
+          "ascension": 8
+        }
       },
       {
         "id": "REPEATER_MOVE_2",
-        "name": "Repeater Move 2"
+        "name": "Repeater Move 2",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 7,
+          "ascension": 8
+        }
       },
       {
         "id": "EXPEL_BLAST",
-        "name": "Expel Blast"
+        "name": "Expel Blast",
+        "intent": "Attack",
+        "damage": {
+          "normal": 5,
+          "ascension": 6,
+          "hit_count": 2
+        }
       },
       {
         "id": "SUBMERGE",
-        "name": "Inmersión"
+        "name": "Inmersión",
+        "intent": "Defend",
+        "block": 15
       }
     ],
     "damage_values": {
@@ -653,7 +1238,24 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/cubex_construct.png"
+    "encounters": [
+      {
+        "encounter_id": "CONSTRUCT_MENAGERIE_NORMAL",
+        "encounter_name": "colección de constructos",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "CUBEX_CONSTRUCT_NORMAL",
+        "encounter_name": "constructo cúbico",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/cubex_construct.png",
+    "beta_image_url": null
   },
   {
     "id": "DAMP_CULTIST",
@@ -666,11 +1268,24 @@
     "moves": [
       {
         "id": "INCANTATION",
-        "name": "Encantamiento"
+        "name": "Encantamiento",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "RITUAL",
+            "target": "self",
+            "amount": 5
+          }
+        ]
       },
       {
         "id": "DARK_STRIKE",
-        "name": "Golpe tenebroso"
+        "name": "Golpe tenebroso",
+        "intent": "Attack",
+        "damage": {
+          "normal": 1,
+          "ascension": 3
+        }
       }
     ],
     "damage_values": {
@@ -680,12 +1295,22 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/damp_cultist.png"
+    "encounters": [
+      {
+        "encounter_id": "CULTISTS_NORMAL",
+        "encounter_name": "sectarios",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/damp_cultist.png",
+    "beta_image_url": null
   },
   {
     "id": "DECIMILLIPEDE_SEGMENT",
     "name": "Decimilpiés",
-    "type": "Normal",
+    "type": "Elite",
     "min_hp": 42,
     "max_hp": 48,
     "min_hp_ascension": 48,
@@ -693,23 +1318,55 @@
     "moves": [
       {
         "id": "WRITHE",
-        "name": "Retorcimiento"
+        "name": "Retorcimiento",
+        "intent": "Attack",
+        "damage": {
+          "normal": 5,
+          "ascension": 6,
+          "hit_count": 2
+        }
       },
       {
         "id": "BULK",
-        "name": "Corpulencia"
+        "name": "Corpulencia",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 6,
+          "ascension": 7
+        }
       },
       {
         "id": "CONSTRICT",
-        "name": "Constrict"
+        "name": "Constrict",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       },
       {
         "id": "DEAD",
-        "name": "Muerte"
+        "name": "Muerte",
+        "intent": "Unknown"
       },
       {
         "id": "REATTACH",
-        "name": "Reconectar"
+        "name": "Reconectar",
+        "intent": "Heal"
       }
     ],
     "damage_values": {
@@ -728,7 +1385,9 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/decimillipede.png"
+    "encounters": null,
+    "image_url": "/static/images/monsters/decimillipede.png",
+    "beta_image_url": null
   },
   {
     "id": "DEVOTED_SCULPTOR",
@@ -741,11 +1400,17 @@
     "moves": [
       {
         "id": "FORBIDDEN_INCANTATION",
-        "name": "Forbidden Incantation"
+        "name": "Forbidden Incantation",
+        "intent": "Buff"
       },
       {
         "id": "SAVAGE",
-        "name": "Savage"
+        "name": "Savage",
+        "intent": "Attack",
+        "damage": {
+          "normal": 12,
+          "ascension": 15
+        }
       }
     ],
     "damage_values": {
@@ -755,7 +1420,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/devoted_sculptor.png"
+    "encounters": [
+      {
+        "encounter_id": "DEVOTED_SCULPTOR_WEAK",
+        "encounter_name": "escultor devoto",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": true
+      }
+    ],
+    "image_url": "/static/images/monsters/devoted_sculptor.png",
+    "beta_image_url": null
   },
   {
     "id": "DOOR",
@@ -768,19 +1443,42 @@
     "moves": [
       {
         "id": "DRAMATIC_OPEN",
-        "name": "Dramatic Open"
+        "name": "Dramatic Open",
+        "intent": "Attack",
+        "damage": {
+          "normal": 25,
+          "ascension": 28
+        }
       },
       {
         "id": "ENFORCE",
-        "name": "Enforce"
+        "name": "Enforce",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 3
+          }
+        ],
+        "damage": {
+          "normal": 20
+        }
       },
       {
         "id": "DOOR_SLAM",
-        "name": "Door Slam"
+        "name": "Door Slam",
+        "intent": "Attack",
+        "damage": {
+          "normal": 15,
+          "ascension": 15,
+          "hit_count": 2
+        }
       },
       {
         "id": "DEAD",
-        "name": "Dead"
+        "name": "Dead",
+        "intent": "Unknown"
       }
     ],
     "damage_values": {
@@ -798,7 +1496,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/door.png"
+    "encounters": [
+      {
+        "encounter_id": "DOORMAKER_BOSS",
+        "encounter_name": "Portalero",
+        "room_type": "Boss",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/door.png",
+    "beta_image_url": "/static/images/monsters/beta/door.png"
   },
   {
     "id": "DOORMAKER",
@@ -811,15 +1519,33 @@
     "moves": [
       {
         "id": "WHAT_IS_IT",
-        "name": "What Is It"
+        "name": "What Is It",
+        "intent": "Stun"
       },
       {
         "id": "BEAM",
-        "name": "Beam"
+        "name": "Beam",
+        "intent": "Attack",
+        "damage": {
+          "normal": 31,
+          "ascension": 34
+        }
       },
       {
         "id": "GET_BACK_IN",
-        "name": "Get Back In"
+        "name": "Get Back In",
+        "intent": "Attack + Buff + Escape",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 5
+          }
+        ],
+        "damage": {
+          "normal": 40,
+          "ascension": 45
+        }
       }
     ],
     "damage_values": {
@@ -833,7 +1559,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/doormaker.png"
+    "encounters": [
+      {
+        "encounter_id": "DOORMAKER_BOSS",
+        "encounter_name": "Portalero",
+        "room_type": "Boss",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/doormaker.png",
+    "beta_image_url": "/static/images/monsters/beta/door_maker_placeholder_2.png"
   },
   {
     "id": "ENTOMANCER",
@@ -846,15 +1582,43 @@
     "moves": [
       {
         "id": "PHEROMONE_SPIT",
-        "name": "Disparo de feromonas"
+        "name": "Disparo de feromonas",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "PERSONAL_HIVE",
+            "target": "self",
+            "amount": 1
+          },
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 1
+          },
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       },
       {
         "id": "BEES",
-        "name": "¡Abeeeejas!"
+        "name": "¡Abeeeejas!",
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "ascension": 3
+        }
       },
       {
         "id": "SPEAR",
-        "name": "¡Lanza!"
+        "name": "¡Lanza!",
+        "intent": "Attack",
+        "damage": {
+          "normal": 18,
+          "ascension": 20
+        }
       }
     ],
     "damage_values": {
@@ -869,7 +1633,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/entomancer.png"
+    "encounters": [
+      {
+        "encounter_id": "ENTOMANCER_ELITE",
+        "encounter_name": "entomante",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/entomancer.png",
+    "beta_image_url": null
   },
   {
     "id": "EXOSKELETON",
@@ -882,15 +1656,32 @@
     "moves": [
       {
         "id": "SKITTER",
-        "name": "Escabullirse"
+        "name": "Escabullirse",
+        "intent": "Attack",
+        "damage": {
+          "normal": 1
+        }
       },
       {
         "id": "MANDIBLE",
-        "name": "Mandible"
+        "name": "Mandible",
+        "intent": "Attack",
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       },
       {
         "id": "ENRAGE",
-        "name": "Cólera"
+        "name": "Cólera",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -903,7 +1694,24 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/exoskeleton.png"
+    "encounters": [
+      {
+        "encounter_id": "EXOSKELETONS_NORMAL",
+        "encounter_name": "Muchos exoesquebichos",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "EXOSKELETONS_WEAK",
+        "encounter_name": "exoesquebichos",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      }
+    ],
+    "image_url": "/static/images/monsters/exoskeleton.png",
+    "beta_image_url": null
   },
   {
     "id": "EYE_WITH_TEETH",
@@ -916,12 +1724,23 @@
     "moves": [
       {
         "id": "DISTRACT",
-        "name": "Distracción"
+        "name": "Distracción",
+        "intent": "Status"
       }
     ],
     "damage_values": null,
     "block_values": null,
-    "image_url": "/static/images/monsters/eye_with_teeth.png"
+    "encounters": [
+      {
+        "encounter_id": "FOGMOG_NORMAL",
+        "encounter_name": "micobruma",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/eye_with_teeth.png",
+    "beta_image_url": null
   },
   {
     "id": "FABRICATOR",
@@ -934,15 +1753,26 @@
     "moves": [
       {
         "id": "FABRICATE",
-        "name": "Fabricar"
+        "name": "Fabricar",
+        "intent": "Summon"
       },
       {
         "id": "FABRICATING_STRIKE",
-        "name": "Fabricating Strike"
+        "name": "Fabricating Strike",
+        "intent": "Attack + Summon",
+        "damage": {
+          "normal": 18,
+          "ascension": 21
+        }
       },
       {
         "id": "DISINTEGRATE",
-        "name": "Desintegrar"
+        "name": "Desintegrar",
+        "intent": "Attack",
+        "damage": {
+          "normal": 11,
+          "ascension": 13
+        }
       }
     ],
     "damage_values": {
@@ -956,7 +1786,98 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/fabricator.png"
+    "encounters": [
+      {
+        "encounter_id": "FABRICATOR_NORMAL",
+        "encounter_name": "mecafabricante",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/fabricator.png",
+    "beta_image_url": null
+  },
+  {
+    "id": "FAKE_MERCHANT_MONSTER",
+    "name": "¡¿el Comerciante?!",
+    "type": "Normal",
+    "min_hp": 165,
+    "max_hp": 165,
+    "min_hp_ascension": 175,
+    "max_hp_ascension": 175,
+    "moves": [
+      {
+        "id": "SWIPE",
+        "name": "Robo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 13,
+          "ascension": 15
+        }
+      },
+      {
+        "id": "SPEW_COINS",
+        "name": "Lanzar monedas",
+        "intent": "Attack",
+        "damage": {
+          "normal": 2
+        }
+      },
+      {
+        "id": "THROW_RELIC",
+        "name": "Arrojar reliquia",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 13,
+          "ascension": 15
+        }
+      },
+      {
+        "id": "ENRAGE",
+        "name": "Cólera",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "damage_values": {
+      "Swipe": {
+        "normal": 13,
+        "ascension": 15
+      },
+      "ThrowRelic": {
+        "normal": 9,
+        "ascension": 10
+      },
+      "spewCoins": {
+        "normal": 2
+      }
+    },
+    "block_values": null,
+    "encounters": [
+      {
+        "encounter_id": "FAKE_MERCHANT_EVENT_ENCOUNTER",
+        "encounter_name": "¡¿el Comerciante?!",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/fake_merchant.png",
+    "beta_image_url": null
   },
   {
     "id": "FAT_GREMLIN",
@@ -969,16 +1890,28 @@
     "moves": [
       {
         "id": "SPAWNED",
-        "name": "Spawned"
+        "name": "Spawned",
+        "intent": "Stun"
       },
       {
         "id": "FLEE",
-        "name": "Fuga"
+        "name": "Fuga",
+        "intent": "Escape"
       }
     ],
     "damage_values": null,
     "block_values": null,
-    "image_url": "/static/images/monsters/fat_gremlin.png"
+    "encounters": [
+      {
+        "encounter_id": "GREMLIN_MERC_NORMAL",
+        "encounter_name": "Dos gremlins en una gabardina",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/fat_gremlin.png",
+    "beta_image_url": null
   },
   {
     "id": "FLAIL_KNIGHT",
@@ -991,15 +1924,34 @@
     "moves": [
       {
         "id": "WAR_CHANT",
-        "name": "War Chant"
+        "name": "War Chant",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 3
+          }
+        ]
       },
       {
         "id": "FLAIL",
-        "name": "Flagelo"
+        "name": "Flagelo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 9,
+          "ascension": 10,
+          "hit_count": 2
+        }
       },
       {
         "id": "RAM",
-        "name": "Embestir"
+        "name": "Embestir",
+        "intent": "Attack",
+        "damage": {
+          "normal": 15,
+          "ascension": 17
+        }
       }
     ],
     "damage_values": {
@@ -1014,7 +1966,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/flail_knight.png"
+    "encounters": [
+      {
+        "encounter_id": "KNIGHTS_ELITE",
+        "encounter_name": "pandilla de caballeros",
+        "room_type": "Elite",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/flail_knight.png",
+    "beta_image_url": null
   },
   {
     "id": "FLYCONID",
@@ -1027,15 +1989,44 @@
     "moves": [
       {
         "id": "VULNERABLE_SPORES",
-        "name": "Vulnerable Spores"
+        "name": "Vulnerable Spores",
+        "intent": "Debuff",
+        "powers": [
+          {
+            "power_id": "VULNERABLE",
+            "target": "player",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       },
       {
         "id": "FRAIL_SPORES",
-        "name": "Esporas extenuantes"
+        "name": "Esporas extenuantes",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       },
       {
         "id": "SMASH",
-        "name": "Remate"
+        "name": "Remate",
+        "intent": "Attack",
+        "damage": {
+          "normal": 11,
+          "ascension": 12
+        }
       }
     ],
     "damage_values": {
@@ -1049,7 +2040,24 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/flyconid.png"
+    "encounters": [
+      {
+        "encounter_id": "FLYCONID_NORMAL",
+        "encounter_name": "Hongo y baba",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SNAPPING_JAXFRUIT_NORMAL",
+        "encounter_name": "flora enorme",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/flyconid.png",
+    "beta_image_url": null
   },
   {
     "id": "FOGMOG",
@@ -1062,19 +2070,49 @@
     "moves": [
       {
         "id": "ILLUSION",
-        "name": "Illusion"
+        "name": "Illusion",
+        "intent": "Summon"
       },
       {
         "id": "SWIPE",
-        "name": "Swipe"
+        "name": "Swipe",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       },
       {
         "id": "SWIPE_RANDOM",
-        "name": "Swipe Random"
+        "name": "Swipe Random",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       },
       {
         "id": "HEADBUTT",
-        "name": "Headbutt"
+        "name": "Headbutt",
+        "intent": "Attack",
+        "damage": {
+          "normal": 14,
+          "ascension": 16
+        }
       }
     ],
     "damage_values": {
@@ -1088,7 +2126,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/fogmog.png"
+    "encounters": [
+      {
+        "encounter_id": "FOGMOG_NORMAL",
+        "encounter_name": "micobruma",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/fogmog.png",
+    "beta_image_url": null
   },
   {
     "id": "FOSSIL_STALKER",
@@ -1101,15 +2149,38 @@
     "moves": [
       {
         "id": "TACKLE",
-        "name": "Embestida"
+        "name": "Embestida",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 9,
+          "ascension": 11
+        }
       },
       {
         "id": "LATCH",
-        "name": "Aferrarse"
+        "name": "Aferrarse",
+        "intent": "Attack",
+        "damage": {
+          "normal": 12,
+          "ascension": 14
+        }
       },
       {
         "id": "LASH",
-        "name": "Latigazo"
+        "name": "Latigazo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "ascension": 4,
+          "hit_count": 2
+        }
       }
     ],
     "damage_values": {
@@ -1128,7 +2199,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/fossil_stalker.png"
+    "encounters": [
+      {
+        "encounter_id": "FOSSIL_STALKER_NORMAL",
+        "encounter_name": "acechafósil",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/fossil_stalker.png",
+    "beta_image_url": null
   },
   {
     "id": "FROG_KNIGHT",
@@ -1141,19 +2222,49 @@
     "moves": [
       {
         "id": "FOR_THE_QUEEN",
-        "name": "Por la reina"
+        "name": "Por la reina",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 5
+          }
+        ]
       },
       {
         "id": "STRIKE_DOWN_EVIL",
-        "name": "Expiar el mal"
+        "name": "Expiar el mal",
+        "intent": "Attack",
+        "damage": {
+          "normal": 21,
+          "ascension": 23
+        }
       },
       {
         "id": "TONGUE_LASH",
-        "name": "Látigo lengua"
+        "name": "Látigo lengua",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 13,
+          "ascension": 14
+        }
       },
       {
         "id": "BEETLE_CHARGE",
-        "name": "Carga de escarabajo"
+        "name": "Carga de escarabajo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 35,
+          "ascension": 40
+        }
       }
     ],
     "damage_values": {
@@ -1171,7 +2282,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/frog_knight.png"
+    "encounters": [
+      {
+        "encounter_id": "FROG_KNIGHT_NORMAL",
+        "encounter_name": "rana caballerosa",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/frog_knight.png",
+    "beta_image_url": null
   },
   {
     "id": "FUZZY_WURM_CRAWLER",
@@ -1184,15 +2305,33 @@
     "moves": [
       {
         "id": "FIRST_ACID_GOOP",
-        "name": "First Acid Goop"
+        "name": "First Acid Goop",
+        "intent": "Attack",
+        "damage": {
+          "normal": 4,
+          "ascension": 6
+        }
       },
       {
         "id": "ACID_GOOP",
-        "name": "Ácido viscoso"
+        "name": "Ácido viscoso",
+        "intent": "Attack",
+        "damage": {
+          "normal": 4,
+          "ascension": 6
+        }
       },
       {
         "id": "INHALE",
-        "name": "Inhale"
+        "name": "Inhale",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 7
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -1202,7 +2341,24 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/fuzzy_wurm_crawler.png"
+    "encounters": [
+      {
+        "encounter_id": "FUZZY_WURM_CRAWLER_WEAK",
+        "encounter_name": "pelubosa",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "OVERGROWTH_CRAWLERS",
+        "encounter_name": "insectos enormes",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/fuzzy_wurm_crawler.png",
+    "beta_image_url": null
   },
   {
     "id": "GAS_BOMB",
@@ -1215,7 +2371,12 @@
     "moves": [
       {
         "id": "EXPLODE",
-        "name": "Explosión"
+        "name": "Explosión",
+        "intent": "Special",
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       }
     ],
     "damage_values": {
@@ -1225,7 +2386,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/gas_bomb.png"
+    "encounters": [
+      {
+        "encounter_id": "LIVING_FOG_NORMAL",
+        "encounter_name": "gas malvado",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/gas_bomb.png",
+    "beta_image_url": null
   },
   {
     "id": "GLOBE_HEAD",
@@ -1238,15 +2409,45 @@
     "moves": [
       {
         "id": "THUNDER_STRIKE",
-        "name": "Thunder Strike"
+        "name": "Thunder Strike",
+        "intent": "Attack",
+        "damage": {
+          "normal": 6,
+          "ascension": 7,
+          "hit_count": 3
+        }
       },
       {
         "id": "SHOCKING_SLAP",
-        "name": "Golpe electrizante"
+        "name": "Golpe electrizante",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 13,
+          "ascension": 14
+        }
       },
       {
         "id": "GALVANIC_BURST",
-        "name": "Galvanic Burst"
+        "name": "Galvanic Burst",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 16,
+          "ascension": 17
+        }
       }
     ],
     "damage_values": {
@@ -1265,7 +2466,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/orb_head.png"
+    "encounters": [
+      {
+        "encounter_id": "GLOBE_HEAD_NORMAL",
+        "encounter_name": "globicéfalo solitario",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/orb_head.png",
+    "beta_image_url": null
   },
   {
     "id": "GREMLIN_MERC",
@@ -1278,15 +2489,46 @@
     "moves": [
       {
         "id": "GIMME",
-        "name": "Dame"
+        "name": "Dame",
+        "intent": "Attack",
+        "damage": {
+          "normal": 7,
+          "ascension": 8,
+          "hit_count": 2
+        }
       },
       {
         "id": "DOUBLE_SMASH",
-        "name": "Doble remate"
+        "name": "Doble remate",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 6,
+          "ascension": 7,
+          "hit_count": 2
+        }
       },
       {
         "id": "HEHE",
-        "name": "Jeje"
+        "name": "Jeje",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       }
     ],
     "damage_values": {
@@ -1306,7 +2548,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/gremlin_merc.png"
+    "encounters": [
+      {
+        "encounter_id": "GREMLIN_MERC_NORMAL",
+        "encounter_name": "Dos gremlins en una gabardina",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/gremlin_merc.png",
+    "beta_image_url": null
   },
   {
     "id": "GUARDBOT",
@@ -1319,12 +2571,16 @@
     "moves": [
       {
         "id": "GUARD",
-        "name": "Guardia"
+        "name": "Guardia",
+        "intent": "Defend",
+        "block": 15
       }
     ],
     "damage_values": null,
     "block_values": null,
-    "image_url": "/static/images/monsters/guardbot.png"
+    "encounters": null,
+    "image_url": "/static/images/monsters/guardbot.png",
+    "beta_image_url": null
   },
   {
     "id": "HAUNTED_SHIP",
@@ -1337,19 +2593,53 @@
     "moves": [
       {
         "id": "RAMMING_SPEED",
-        "name": "Embestida rápida"
+        "name": "Embestida rápida",
+        "intent": "Attack + Status",
+        "damage": {
+          "normal": 10,
+          "ascension": 11
+        }
       },
       {
         "id": "SWIPE",
-        "name": "Robo"
+        "name": "Robo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 13,
+          "ascension": 14
+        }
       },
       {
         "id": "STOMP",
-        "name": "Pisotón"
+        "name": "Pisotón",
+        "intent": "Attack",
+        "damage": {
+          "normal": 4,
+          "ascension": 5,
+          "hit_count": 3
+        }
       },
       {
         "id": "HAUNT",
-        "name": "Aparición"
+        "name": "Aparición",
+        "intent": "Debuff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 2
+          },
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 2
+          },
+          {
+            "power_id": "VULNERABLE",
+            "target": "player",
+            "amount": 2
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -1368,7 +2658,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/haunted_ship.png"
+    "encounters": [
+      {
+        "encounter_id": "HAUNTED_SHIP_NORMAL",
+        "encounter_name": "barco embrujado",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/haunted_ship.png",
+    "beta_image_url": null
   },
   {
     "id": "HUNTER_KILLER",
@@ -1381,15 +2681,34 @@
     "moves": [
       {
         "id": "TENDERIZING_GOOP",
-        "name": "Jugo de descomposición"
+        "name": "Jugo de descomposición",
+        "intent": "Debuff",
+        "powers": [
+          {
+            "power_id": "TENDER",
+            "target": "player",
+            "amount": 1
+          }
+        ]
       },
       {
         "id": "BITE",
-        "name": "Mordida"
+        "name": "Mordida",
+        "intent": "Attack",
+        "damage": {
+          "normal": 17,
+          "ascension": 19
+        }
       },
       {
         "id": "PUNCTURE",
-        "name": "Perforación"
+        "name": "Perforación",
+        "intent": "Attack",
+        "damage": {
+          "normal": 7,
+          "ascension": 8,
+          "hit_count": 3
+        }
       }
     ],
     "damage_values": {
@@ -1404,7 +2723,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/hunter_killer.png"
+    "encounters": [
+      {
+        "encounter_id": "HUNTER_KILLER_NORMAL",
+        "encounter_name": "mortívoro",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/hunter_killer.png",
+    "beta_image_url": null
   },
   {
     "id": "INFESTED_PRISM",
@@ -1417,19 +2746,45 @@
     "moves": [
       {
         "id": "JAB",
-        "name": "Golpe recto"
+        "name": "Golpe recto",
+        "intent": "Attack",
+        "damage": {
+          "normal": 22,
+          "ascension": 24
+        }
       },
       {
         "id": "RADIATE",
-        "name": "Radiación"
+        "name": "Radiación",
+        "intent": "Attack + Defend",
+        "block": 16,
+        "damage": {
+          "normal": 16,
+          "ascension": 18
+        }
       },
       {
         "id": "WHIRLWIND",
-        "name": "Vórtice"
+        "name": "Vórtice",
+        "intent": "Attack",
+        "damage": {
+          "normal": 9,
+          "ascension": 10,
+          "hit_count": 3
+        }
       },
       {
         "id": "PULSATE",
-        "name": "Pulso"
+        "name": "Pulso",
+        "intent": "Buff + Defend",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 4
+          }
+        ],
+        "block": 20
       }
     ],
     "damage_values": {
@@ -1448,7 +2803,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/infested_prism.png"
+    "encounters": [
+      {
+        "encounter_id": "INFESTED_PRISMS_ELITE",
+        "encounter_name": "prisma infestado",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/infested_prism.png",
+    "beta_image_url": null
   },
   {
     "id": "INKLET",
@@ -1461,15 +2826,31 @@
     "moves": [
       {
         "id": "JAB",
-        "name": "Golpe recto"
+        "name": "Golpe recto",
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "ascension": 4
+        }
       },
       {
         "id": "WHIRLWIND",
-        "name": "Whirlwind"
+        "name": "Whirlwind",
+        "intent": "Attack",
+        "damage": {
+          "normal": 2,
+          "ascension": 3,
+          "hit_count": 3
+        }
       },
       {
         "id": "PIERCING_GAZE",
-        "name": "Mirada penetrante"
+        "name": "Mirada penetrante",
+        "intent": "Attack",
+        "damage": {
+          "normal": 10,
+          "ascension": 11
+        }
       }
     ],
     "damage_values": {
@@ -1488,7 +2869,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/inklet.png"
+    "encounters": [
+      {
+        "encounter_id": "INKLETS_NORMAL",
+        "encounter_name": "tintamorfos",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/inklet.png",
+    "beta_image_url": null
   },
   {
     "id": "KIN_FOLLOWER",
@@ -1501,15 +2892,34 @@
     "moves": [
       {
         "id": "QUICK_SLASH",
-        "name": "Quick Slash"
+        "name": "Quick Slash",
+        "intent": "Attack",
+        "damage": {
+          "normal": 5,
+          "ascension": 5
+        }
       },
       {
         "id": "BOOMERANG",
-        "name": "Boomerang"
+        "name": "Boomerang",
+        "intent": "Attack",
+        "damage": {
+          "normal": 2,
+          "ascension": 2,
+          "hit_count": 2
+        }
       },
       {
         "id": "POWER_DANCE",
-        "name": "Power Dance"
+        "name": "Power Dance",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -1524,7 +2934,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/kin_follower.png"
+    "encounters": [
+      {
+        "encounter_id": "THE_KIN_BOSS",
+        "encounter_name": "El Familiar",
+        "room_type": "Boss",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/kin_follower.png",
+    "beta_image_url": null
   },
   {
     "id": "KIN_PRIEST",
@@ -1537,19 +2957,57 @@
     "moves": [
       {
         "id": "ORB_OF_FRAILTY",
-        "name": "Orb Of Frailty"
+        "name": "Orb Of Frailty",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       },
       {
         "id": "ORB_OF_WEAKNESS",
-        "name": "Orb Of Weakness"
+        "name": "Orb Of Weakness",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       },
       {
         "id": "BEAM",
-        "name": "Beam"
+        "name": "Beam",
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "ascension": 3,
+          "hit_count": 3
+        }
       },
       {
         "id": "RITUAL",
-        "name": "Ritual"
+        "name": "Ritual",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -1568,7 +3026,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/kin_priest.png"
+    "encounters": [
+      {
+        "encounter_id": "THE_KIN_BOSS",
+        "encounter_name": "El Familiar",
+        "room_type": "Boss",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/kin_priest.png",
+    "beta_image_url": null
   },
   {
     "id": "KNOWLEDGE_DEMON",
@@ -1581,19 +3049,44 @@
     "moves": [
       {
         "id": "CURSE_OF_KNOWLEDGE",
-        "name": "Maldición del saber"
+        "name": "Maldición del saber",
+        "intent": "Debuff"
       },
       {
         "id": "SLAP",
-        "name": "Slap"
+        "name": "Slap",
+        "intent": "Attack",
+        "damage": {
+          "normal": 17,
+          "ascension": 18
+        }
       },
       {
         "id": "KNOWLEDGE_OVERWHELMING",
-        "name": "Conocimiento abrumador"
+        "name": "Conocimiento abrumador",
+        "intent": "Attack",
+        "damage": {
+          "normal": 8,
+          "ascension": 9,
+          "hit_count": 3
+        }
       },
       {
         "id": "PONDER",
-        "name": "Reflexión"
+        "name": "Reflexión",
+        "intent": "Attack + Heal + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "heal": 30,
+        "damage": {
+          "normal": 11,
+          "ascension": 13
+        }
       }
     ],
     "damage_values": {
@@ -1612,7 +3105,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/knowledge_demon.png"
+    "encounters": [
+      {
+        "encounter_id": "KNOWLEDGE_DEMON_BOSS",
+        "encounter_name": "Demonio del saber",
+        "room_type": "Boss",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/knowledge_demon.png",
+    "beta_image_url": null
   },
   {
     "id": "LAGAVULIN_MATRIARCH",
@@ -1625,23 +3128,49 @@
     "moves": [
       {
         "id": "SLEEP",
-        "name": "Letargo"
+        "name": "Letargo",
+        "intent": "Sleep"
       },
       {
         "id": "SLASH",
-        "name": "Corte"
+        "name": "Corte",
+        "intent": "Attack",
+        "damage": {
+          "normal": 19,
+          "ascension": 21
+        }
       },
       {
         "id": "SLASH2",
-        "name": "Slash2"
+        "name": "Slash2",
+        "intent": "Attack + Defend",
+        "block": 12,
+        "damage": {
+          "normal": 12,
+          "ascension": 14
+        }
       },
       {
         "id": "DISEMBOWEL",
-        "name": "Destripar"
+        "name": "Destripar",
+        "intent": "Attack",
+        "damage": {
+          "normal": 9,
+          "ascension": 10,
+          "hit_count": 2
+        }
       },
       {
         "id": "SOUL_SIPHON",
-        "name": "Sinfonía anímica"
+        "name": "Sinfonía anímica",
+        "intent": "Debuff + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -1660,7 +3189,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/lagavulin_matriarch.png"
+    "encounters": [
+      {
+        "encounter_id": "LAGAVULIN_MATRIARCH_BOSS",
+        "encounter_name": "Matriarca lagavulín",
+        "room_type": "Boss",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/lagavulin_matriarch.png",
+    "beta_image_url": null
   },
   {
     "id": "LEAF_SLIME_M",
@@ -1673,11 +3212,17 @@
     "moves": [
       {
         "id": "CLUMP_SHOT",
-        "name": "Disparo grupal"
+        "name": "Disparo grupal",
+        "intent": "Attack",
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       },
       {
         "id": "STICKY_SHOT",
-        "name": "Disparo pegajoso"
+        "name": "Disparo pegajoso",
+        "intent": "Status"
       }
     ],
     "damage_values": {
@@ -1687,7 +3232,38 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/leaf_slime_m.png"
+    "encounters": [
+      {
+        "encounter_id": "FLYCONID_NORMAL",
+        "encounter_name": "Hongo y baba",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_NORMAL",
+        "encounter_name": "enjambre de babas",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_WEAK",
+        "encounter_name": "grupo de babas",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "estrangulador y sus colegas",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/leaf_slime_m.png",
+    "beta_image_url": null
   },
   {
     "id": "LEAF_SLIME_S",
@@ -1700,11 +3276,17 @@
     "moves": [
       {
         "id": "BUTT",
-        "name": "Butt"
+        "name": "Butt",
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "ascension": 4
+        }
       },
       {
         "id": "GOOP",
-        "name": "Viscosidad"
+        "name": "Viscosidad",
+        "intent": "Status"
       }
     ],
     "damage_values": {
@@ -1714,7 +3296,31 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/leaf_slime_s.png"
+    "encounters": [
+      {
+        "encounter_id": "SLIMES_NORMAL",
+        "encounter_name": "enjambre de babas",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_WEAK",
+        "encounter_name": "grupo de babas",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "estrangulador y sus colegas",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/leaf_slime_s.png",
+    "beta_image_url": null
   },
   {
     "id": "LIVING_FOG",
@@ -1727,15 +3333,37 @@
     "moves": [
       {
         "id": "ADVANCED_GAS",
-        "name": "Advanced Gas"
+        "name": "Advanced Gas",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "SMOGGY",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       },
       {
         "id": "BLOAT",
-        "name": "Hinchazón"
+        "name": "Hinchazón",
+        "intent": "Attack + Summon",
+        "damage": {
+          "normal": 5,
+          "ascension": 6
+        }
       },
       {
         "id": "SUPER_GAS_BLAST",
-        "name": "Super Gas Blast"
+        "name": "Super Gas Blast",
+        "intent": "Attack",
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       }
     ],
     "damage_values": {
@@ -1753,7 +3381,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/living_smog.png"
+    "encounters": [
+      {
+        "encounter_id": "LIVING_FOG_NORMAL",
+        "encounter_name": "gas malvado",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/living_smog.png",
+    "beta_image_url": null
   },
   {
     "id": "LIVING_SHIELD",
@@ -1766,11 +3404,27 @@
     "moves": [
       {
         "id": "SHIELD_SLAM",
-        "name": "Escudazo"
+        "name": "Escudazo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 6
+        }
       },
       {
         "id": "SMASH",
-        "name": "Smash"
+        "name": "Smash",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 3
+          }
+        ],
+        "damage": {
+          "normal": 16,
+          "ascension": 18
+        }
       }
     ],
     "damage_values": {
@@ -1783,7 +3437,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/living_shield.png"
+    "encounters": [
+      {
+        "encounter_id": "TURRET_OPERATOR_WEAK",
+        "encounter_name": "operatorreta",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": true
+      }
+    ],
+    "image_url": "/static/images/monsters/living_shield.png",
+    "beta_image_url": null
   },
   {
     "id": "LOUSE_PROGENITOR",
@@ -1796,15 +3460,41 @@
     "moves": [
       {
         "id": "WEB_CANNON",
-        "name": "Cañón de telaraña"
+        "name": "Cañón de telaraña",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 9,
+          "ascension": 10
+        }
       },
       {
         "id": "POUNCE",
-        "name": "Pounce"
+        "name": "Pounce",
+        "intent": "Attack",
+        "damage": {
+          "normal": 14,
+          "ascension": 16
+        }
       },
       {
         "id": "CURL_AND_GROW",
-        "name": "Retirada fortificante"
+        "name": "Retirada fortificante",
+        "intent": "Defend + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 5
+          }
+        ],
+        "block": 14
       }
     ],
     "damage_values": {
@@ -1818,7 +3508,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/louse_progenitor.png"
+    "encounters": [
+      {
+        "encounter_id": "LOUSE_PROGENITOR_NORMAL",
+        "encounter_name": "piojo progenitor",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/louse_progenitor.png",
+    "beta_image_url": null
   },
   {
     "id": "MAGI_KNIGHT",
@@ -1831,23 +3531,42 @@
     "moves": [
       {
         "id": "FIRST_POWER_SHIELD",
-        "name": "First Power Shield"
+        "name": "First Power Shield",
+        "intent": "Attack + Defend",
+        "block": 5,
+        "damage": {
+          "normal": 6,
+          "ascension": 7
+        }
       },
       {
         "id": "DAMPEN",
-        "name": "Dampen"
+        "name": "Dampen",
+        "intent": "Debuff"
       },
       {
         "id": "PREP",
-        "name": "Prep"
+        "name": "Prep",
+        "intent": "Defend",
+        "block": 5
       },
       {
         "id": "MAGIC_BOMB",
-        "name": "Bomba mágica"
+        "name": "Bomba mágica",
+        "intent": "Attack",
+        "damage": {
+          "normal": 35,
+          "ascension": 40
+        }
       },
       {
         "id": "RAM",
-        "name": "Embestir"
+        "name": "Embestir",
+        "intent": "Attack",
+        "damage": {
+          "normal": 10,
+          "ascension": 11
+        }
       }
     ],
     "damage_values": {
@@ -1865,7 +3584,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/magi_knight.png"
+    "encounters": [
+      {
+        "encounter_id": "KNIGHTS_ELITE",
+        "encounter_name": "pandilla de caballeros",
+        "room_type": "Elite",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/magi_knight.png",
+    "beta_image_url": null
   },
   {
     "id": "MAWLER",
@@ -1878,15 +3607,34 @@
     "moves": [
       {
         "id": "RIP_AND_TEAR",
-        "name": "Desgarrar"
+        "name": "Desgarrar",
+        "intent": "Attack",
+        "damage": {
+          "normal": 14,
+          "ascension": 16
+        }
       },
       {
         "id": "ROAR",
-        "name": "Rugido"
+        "name": "Rugido",
+        "intent": "Debuff",
+        "powers": [
+          {
+            "power_id": "VULNERABLE",
+            "target": "player",
+            "amount": 3
+          }
+        ]
       },
       {
         "id": "CLAW",
-        "name": "Garras"
+        "name": "Garras",
+        "intent": "Attack",
+        "damage": {
+          "normal": 4,
+          "ascension": 5,
+          "hit_count": 2
+        }
       }
     ],
     "damage_values": {
@@ -1901,7 +3649,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/mawler.png"
+    "encounters": [
+      {
+        "encounter_id": "MAWLER_NORMAL",
+        "encounter_name": "desollador",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/mawler.png",
+    "beta_image_url": null
   },
   {
     "id": "MECHA_KNIGHT",
@@ -1914,19 +3672,39 @@
     "moves": [
       {
         "id": "CHARGE",
-        "name": "Carga"
+        "name": "Carga",
+        "intent": "Attack",
+        "damage": {
+          "normal": 25,
+          "ascension": 30
+        }
       },
       {
         "id": "FLAMETHROWER",
-        "name": "Lanzallamas"
+        "name": "Lanzallamas",
+        "intent": "Status"
       },
       {
         "id": "WINDUP",
-        "name": "Dar cuerda"
+        "name": "Dar cuerda",
+        "intent": "Defend + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 5
+          }
+        ],
+        "block": 15
       },
       {
         "id": "HEAVY_CLEAVE",
-        "name": "Tajo pesado"
+        "name": "Tajo pesado",
+        "intent": "Attack",
+        "damage": {
+          "normal": 35,
+          "ascension": 40
+        }
       }
     ],
     "damage_values": {
@@ -1942,7 +3720,17 @@
     "block_values": {
       "windup": 15
     },
-    "image_url": "/static/images/monsters/mecha_knight.png"
+    "encounters": [
+      {
+        "encounter_id": "MECHA_KNIGHT_ELITE",
+        "encounter_name": "cibercaballero",
+        "room_type": "Elite",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/mecha_knight.png",
+    "beta_image_url": null
   },
   {
     "id": "MYTE",
@@ -1955,15 +3743,33 @@
     "moves": [
       {
         "id": "TOXIC",
-        "name": "Cornada tóxica"
+        "name": "Cornada tóxica",
+        "intent": "Status"
       },
       {
         "id": "BITE",
-        "name": "Mordida"
+        "name": "Mordida",
+        "intent": "Attack",
+        "damage": {
+          "normal": 13,
+          "ascension": 15
+        }
       },
       {
         "id": "SUCK",
-        "name": "Succión"
+        "name": "Succión",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 4,
+          "ascension": 6
+        }
       }
     ],
     "damage_values": {
@@ -1977,7 +3783,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/myte.png"
+    "encounters": [
+      {
+        "encounter_id": "MYTES_NORMAL",
+        "encounter_name": "enjambre de ácaros",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/myte.png",
+    "beta_image_url": null
   },
   {
     "id": "NIBBIT",
@@ -1990,15 +3806,34 @@
     "moves": [
       {
         "id": "BUTT",
-        "name": "Golpetazo"
+        "name": "Golpetazo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 12,
+          "ascension": 13
+        }
       },
       {
         "id": "SLICE",
-        "name": "Slice"
+        "name": "Slice",
+        "intent": "Attack + Defend",
+        "block": 5,
+        "damage": {
+          "normal": 6,
+          "ascension": 6
+        }
       },
       {
         "id": "HISS",
-        "name": "Bufar"
+        "name": "Bufar",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -2012,7 +3847,24 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/nibbit.png"
+    "encounters": [
+      {
+        "encounter_id": "NIBBITS_NORMAL",
+        "encounter_name": "Dos lagartiscos",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "NIBBITS_WEAK",
+        "encounter_name": "Un lagartisco solitario",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      }
+    ],
+    "image_url": "/static/images/monsters/nibbit.png",
+    "beta_image_url": null
   },
   {
     "id": "NOISEBOT",
@@ -2025,12 +3877,15 @@
     "moves": [
       {
         "id": "NOISE",
-        "name": "Ruido"
+        "name": "Ruido",
+        "intent": "Status"
       }
     ],
     "damage_values": null,
     "block_values": null,
-    "image_url": "/static/images/monsters/noisebot.png"
+    "encounters": null,
+    "image_url": "/static/images/monsters/noisebot.png",
+    "beta_image_url": null
   },
   {
     "id": "OSTY",
@@ -2043,12 +3898,15 @@
     "moves": [
       {
         "id": "NOTHING",
-        "name": "Nothing"
+        "name": "Nothing",
+        "intent": "Unknown"
       }
     ],
     "damage_values": null,
     "block_values": null,
-    "image_url": "/static/images/monsters/osty.png"
+    "encounters": null,
+    "image_url": "/static/images/monsters/osty.png",
+    "beta_image_url": null
   },
   {
     "id": "OVICOPTER",
@@ -2061,19 +3919,45 @@
     "moves": [
       {
         "id": "LAY_EGGS",
-        "name": "Desovar"
+        "name": "Desovar",
+        "intent": "Summon"
       },
       {
         "id": "SMASH",
-        "name": "Remate"
+        "name": "Remate",
+        "intent": "Attack",
+        "damage": {
+          "normal": 16,
+          "ascension": 17
+        }
       },
       {
         "id": "TENDERIZER",
-        "name": "Ablandador"
+        "name": "Ablandador",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "VULNERABLE",
+            "target": "player",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 7,
+          "ascension": 8
+        }
       },
       {
         "id": "NUTRITIONAL_PASTE",
-        "name": "Pasta nutritiva"
+        "name": "Pasta nutritiva",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 3
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -2087,7 +3971,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/ovicopter.png"
+    "encounters": [
+      {
+        "encounter_id": "OVICOPTER_NORMAL",
+        "encounter_name": "ovicóptero",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/ovicopter.png",
+    "beta_image_url": null
   },
   {
     "id": "OWL_MAGISTRATE",
@@ -2100,19 +3994,50 @@
     "moves": [
       {
         "id": "MAGISTRATE_SCRUTINY",
-        "name": "Escrutinio del juez"
+        "name": "Escrutinio del juez",
+        "intent": "Attack",
+        "damage": {
+          "normal": 16,
+          "ascension": 17
+        }
       },
       {
         "id": "PECK_ASSAULT",
-        "name": "Picotazo furioso"
+        "name": "Picotazo furioso",
+        "intent": "Attack",
+        "damage": {
+          "normal": 4,
+          "ascension": 4,
+          "hit_count": 6
+        }
       },
       {
         "id": "JUDICIAL_FLIGHT",
-        "name": "Vuelo judicial"
+        "name": "Vuelo judicial",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "SOAR",
+            "target": "self",
+            "amount": 1
+          }
+        ]
       },
       {
         "id": "VERDICT",
-        "name": "Veredicto"
+        "name": "Veredicto",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "VULNERABLE",
+            "target": "player",
+            "amount": 4
+          }
+        ],
+        "damage": {
+          "normal": 33,
+          "ascension": 36
+        }
       }
     ],
     "damage_values": {
@@ -2131,7 +4056,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/owl_magistrate.png"
+    "encounters": [
+      {
+        "encounter_id": "OWL_MAGISTRATE_NORMAL",
+        "encounter_name": "juez búho",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/owl_magistrate.png",
+    "beta_image_url": null
   },
   {
     "id": "PAELS_LEGION",
@@ -2144,12 +4079,15 @@
     "moves": [
       {
         "id": "NOTHING",
-        "name": "Nada"
+        "name": "Nada",
+        "intent": "Unknown"
       }
     ],
     "damage_values": null,
     "block_values": null,
-    "image_url": "/static/images/monsters/paels_legion.png"
+    "encounters": null,
+    "image_url": "/static/images/monsters/paels_legion.png",
+    "beta_image_url": "/static/images/monsters/beta/paels_legion.png"
   },
   {
     "id": "PARAFRIGHT",
@@ -2162,7 +4100,12 @@
     "moves": [
       {
         "id": "SLAM",
-        "name": "Golpazo"
+        "name": "Golpazo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 16,
+          "ascension": 17
+        }
       }
     ],
     "damage_values": {
@@ -2172,7 +4115,9 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/parafright.png"
+    "encounters": null,
+    "image_url": "/static/images/monsters/parafright.png",
+    "beta_image_url": null
   },
   {
     "id": "PHANTASMAL_GARDENER",
@@ -2185,19 +4130,41 @@
     "moves": [
       {
         "id": "BITE",
-        "name": "Mordida"
+        "name": "Mordida",
+        "intent": "Attack",
+        "damage": {
+          "normal": 5,
+          "ascension": 5
+        }
       },
       {
         "id": "LASH",
-        "name": "Latigazo"
+        "name": "Latigazo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 7,
+          "ascension": 7
+        }
       },
       {
         "id": "FLAIL",
-        "name": "Flagelo"
+        "name": "Flagelo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 1
+        }
       },
       {
         "id": "ENLARGE",
-        "name": "Crecimiento"
+        "name": "Crecimiento",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -2215,7 +4182,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/phantasmal_gardener.png"
+    "encounters": [
+      {
+        "encounter_id": "PHANTASMAL_GARDENERS_ELITE",
+        "encounter_name": "anguila espectral",
+        "room_type": "Elite",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/phantasmal_gardener.png",
+    "beta_image_url": null
   },
   {
     "id": "PHROG_PARASITE",
@@ -2228,11 +4205,18 @@
     "moves": [
       {
         "id": "INFECT",
-        "name": "Infección"
+        "name": "Infección",
+        "intent": "Status"
       },
       {
         "id": "LASH",
-        "name": "Latigazo"
+        "name": "Latigazo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 4,
+          "ascension": 5,
+          "hit_count": 4
+        }
       }
     ],
     "damage_values": {
@@ -2243,7 +4227,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/phrog_parasite.png"
+    "encounters": [
+      {
+        "encounter_id": "PHROG_PARASITE_ELITE",
+        "encounter_name": "parásito engusanado",
+        "room_type": "Elite",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/phrog_parasite.png",
+    "beta_image_url": null
   },
   {
     "id": "PUNCH_CONSTRUCT",
@@ -2256,15 +4250,35 @@
     "moves": [
       {
         "id": "READY",
-        "name": "LISTO"
+        "name": "LISTO",
+        "intent": "Defend",
+        "block": 10
       },
       {
         "id": "STRONG_PUNCH",
-        "name": "Puño potente"
+        "name": "Puño potente",
+        "intent": "Attack",
+        "damage": {
+          "normal": 14,
+          "ascension": 16
+        }
       },
       {
         "id": "FAST_PUNCH",
-        "name": "Puño rápido"
+        "name": "Puño rápido",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 5,
+          "ascension": 6,
+          "hit_count": 2
+        }
       }
     ],
     "damage_values": {
@@ -2279,7 +4293,31 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/punch_construct.png"
+    "encounters": [
+      {
+        "encounter_id": "CONSTRUCT_MENAGERIE_NORMAL",
+        "encounter_name": "colección de constructos",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "PUNCH_CONSTRUCT_NORMAL",
+        "encounter_name": "constructo pugilista",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "PUNCH_OFF_EVENT_ENCOUNTER",
+        "encounter_name": "constructos pugilistas",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/punch_construct.png",
+    "beta_image_url": null
   },
   {
     "id": "QUEEN",
@@ -2292,27 +4330,74 @@
     "moves": [
       {
         "id": "PUPPET_STRINGS",
-        "name": "Puppet Strings"
+        "name": "Puppet Strings",
+        "intent": "Debuff",
+        "powers": [
+          {
+            "power_id": "CHAINS_OF_BINDING",
+            "target": "player",
+            "amount": 3
+          }
+        ]
       },
       {
         "id": "YOUR_MINE",
-        "name": "Your Mine"
+        "name": "Your Mine",
+        "intent": "Debuff",
+        "powers": [
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 99
+          },
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 99
+          },
+          {
+            "power_id": "VULNERABLE",
+            "target": "player",
+            "amount": 99
+          }
+        ]
       },
       {
         "id": "BURN_BRIGHT_FOR_ME",
-        "name": "Llama regia"
+        "name": "Llama regia",
+        "intent": "Buff + Defend",
+        "block": 20
       },
       {
         "id": "OFF_WITH_YOUR_HEAD",
-        "name": "¡Córtenle la cabeza!"
+        "name": "¡Córtenle la cabeza!",
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "ascension": 4,
+          "hit_count": 5
+        }
       },
       {
         "id": "EXECUTION",
-        "name": "Ejecución"
+        "name": "Ejecución",
+        "intent": "Attack",
+        "damage": {
+          "normal": 15,
+          "ascension": 18
+        }
       },
       {
         "id": "ENRAGE",
-        "name": "Enrage"
+        "name": "Enrage",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -2327,7 +4412,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/queen.png"
+    "encounters": [
+      {
+        "encounter_id": "QUEEN_BOSS",
+        "encounter_name": "Reina funesta",
+        "room_type": "Boss",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/queen.png",
+    "beta_image_url": null
   },
   {
     "id": "ROCKET",
@@ -2340,23 +4435,47 @@
     "moves": [
       {
         "id": "TARGETING_RETICLE",
-        "name": "Mira"
+        "name": "Mira",
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "ascension": 4
+        }
       },
       {
         "id": "PRECISION_BEAM",
-        "name": "Rayo preciso"
+        "name": "Rayo preciso",
+        "intent": "Attack",
+        "damage": {
+          "normal": 18,
+          "ascension": 20
+        }
       },
       {
         "id": "CHARGE_UP",
-        "name": "Acometida"
+        "name": "Acometida",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       },
       {
         "id": "LASER",
-        "name": "Láser"
+        "name": "Láser",
+        "intent": "Attack",
+        "damage": {
+          "normal": 31,
+          "ascension": 35
+        }
       },
       {
         "id": "RECHARGE",
-        "name": "Recarga"
+        "name": "Recarga",
+        "intent": "Sleep"
       }
     ],
     "damage_values": {
@@ -2374,7 +4493,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/rocket.png"
+    "encounters": [
+      {
+        "encounter_id": "KAISER_CRAB_BOSS",
+        "encounter_name": "Cangrejo káiser",
+        "room_type": "Boss",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/rocket.png",
+    "beta_image_url": null
   },
   {
     "id": "SCROLL_OF_BITING",
@@ -2387,15 +4516,34 @@
     "moves": [
       {
         "id": "CHOMP",
-        "name": "Mordida"
+        "name": "Mordida",
+        "intent": "Attack",
+        "damage": {
+          "normal": 14,
+          "ascension": 16
+        }
       },
       {
         "id": "CHEW",
-        "name": "Mordedura"
+        "name": "Mordedura",
+        "intent": "Attack",
+        "damage": {
+          "normal": 5,
+          "ascension": 6,
+          "hit_count": 2
+        }
       },
       {
         "id": "MORE_TEETH",
-        "name": "Dientes infinitos"
+        "name": "Dientes infinitos",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -2410,7 +4558,24 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/scroll_of_biting.png"
+    "encounters": [
+      {
+        "encounter_id": "SCROLLS_OF_BITING_NORMAL",
+        "encounter_name": "Muchos pergaminos dentados",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SCROLLS_OF_BITING_WEAK",
+        "encounter_name": "pergaminos dentados",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": true
+      }
+    ],
+    "image_url": "/static/images/monsters/scroll_of_biting.png",
+    "beta_image_url": null
   },
   {
     "id": "SEAPUNK",
@@ -2423,15 +4588,34 @@
     "moves": [
       {
         "id": "SEA_KICK",
-        "name": "Patada marina"
+        "name": "Patada marina",
+        "intent": "Attack",
+        "damage": {
+          "normal": 11,
+          "ascension": 12
+        }
       },
       {
         "id": "SPINNING_KICK",
-        "name": "Patada giratoria"
+        "name": "Patada giratoria",
+        "intent": "Attack",
+        "damage": {
+          "normal": 2,
+          "hit_count": 4
+        }
       },
       {
         "id": "BUBBLE_BURP",
-        "name": "Lanzaburbujas"
+        "name": "Lanzaburbujas",
+        "intent": "Buff + Defend",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 1
+          }
+        ],
+        "block": 7
       }
     ],
     "damage_values": {
@@ -2445,7 +4629,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/seapunk.png"
+    "encounters": [
+      {
+        "encounter_id": "SEAPUNK_WEAK",
+        "encounter_name": "rufián marino",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": true
+      }
+    ],
+    "image_url": "/static/images/monsters/seapunk.png",
+    "beta_image_url": null
   },
   {
     "id": "SEWER_CLAM",
@@ -2458,11 +4652,24 @@
     "moves": [
       {
         "id": "PRESSURIZE",
-        "name": "Presurizar"
+        "name": "Presurizar",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 4
+          }
+        ]
       },
       {
         "id": "JET",
-        "name": "Chorro"
+        "name": "Chorro",
+        "intent": "Attack",
+        "damage": {
+          "normal": 10,
+          "ascension": 11
+        }
       }
     ],
     "damage_values": {
@@ -2472,7 +4679,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/sewer_clam.png"
+    "encounters": [
+      {
+        "encounter_id": "SEWER_CLAM_NORMAL",
+        "encounter_name": "cloacalmeja",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/sewer_clam.png",
+    "beta_image_url": null
   },
   {
     "id": "SHRINKER_BEETLE",
@@ -2485,15 +4702,26 @@
     "moves": [
       {
         "id": "SHRINKER",
-        "name": "Decrecimiento"
+        "name": "Decrecimiento",
+        "intent": "Debuff"
       },
       {
         "id": "CHOMP",
-        "name": "Mordida"
+        "name": "Mordida",
+        "intent": "Attack",
+        "damage": {
+          "normal": 7,
+          "ascension": 8
+        }
       },
       {
         "id": "STOMP",
-        "name": "Pisotón"
+        "name": "Pisotón",
+        "intent": "Attack",
+        "damage": {
+          "normal": 13,
+          "ascension": 14
+        }
       }
     ],
     "damage_values": {
@@ -2507,7 +4735,24 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/shrinker_beetle.png"
+    "encounters": [
+      {
+        "encounter_id": "OVERGROWTH_CRAWLERS",
+        "encounter_name": "insectos enormes",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SHRINKER_BEETLE_WEAK",
+        "encounter_name": "escaramín",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      }
+    ],
+    "image_url": "/static/images/monsters/shrinker_beetle.png",
+    "beta_image_url": null
   },
   {
     "id": "SKULKING_COLONY",
@@ -2520,19 +4765,44 @@
     "moves": [
       {
         "id": "INERTIA",
-        "name": "Inercia"
+        "name": "Inercia",
+        "intent": "Defend + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 3
+          }
+        ],
+        "block": 10
       },
       {
         "id": "ZOOM",
-        "name": "Zoom"
+        "name": "Zoom",
+        "intent": "Attack",
+        "damage": {
+          "normal": 16,
+          "ascension": 17
+        }
       },
       {
         "id": "SUPER_CRAB",
-        "name": "Supercangrejo"
+        "name": "Supercangrejo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 6,
+          "ascension": 7,
+          "hit_count": 2
+        }
       },
       {
         "id": "SMASH",
-        "name": "Smash"
+        "name": "Smash",
+        "intent": "Attack + Status",
+        "damage": {
+          "normal": 9,
+          "ascension": 11
+        }
       }
     ],
     "damage_values": {
@@ -2551,7 +4821,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/skulkling_colomy.png"
+    "encounters": [
+      {
+        "encounter_id": "SKULKING_COLONY_ELITE",
+        "encounter_name": "colonia furtiva",
+        "room_type": "Elite",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/skulkling_colomy.png",
+    "beta_image_url": null
   },
   {
     "id": "SLIMED_BERSERKER",
@@ -2564,19 +4844,44 @@
     "moves": [
       {
         "id": "VOMIT_ICHOR",
-        "name": "Vomit Ichor"
+        "name": "Vomit Ichor",
+        "intent": "Status"
       },
       {
         "id": "LEECHING_HUG",
-        "name": "Leeching Hug"
+        "name": "Leeching Hug",
+        "intent": "Debuff + Buff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 3
+          },
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 3
+          }
+        ]
       },
       {
         "id": "SMOTHER",
-        "name": "Smother"
+        "name": "Smother",
+        "intent": "Attack",
+        "damage": {
+          "normal": 30,
+          "ascension": 33
+        }
       },
       {
         "id": "FURIOUS_PUMMELING",
-        "name": "Furious Pummeling"
+        "name": "Furious Pummeling",
+        "intent": "Attack",
+        "damage": {
+          "normal": 4,
+          "ascension": 5,
+          "hit_count": 4
+        }
       }
     ],
     "damage_values": {
@@ -2591,7 +4896,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/slimed_berserker.png"
+    "encounters": [
+      {
+        "encounter_id": "SLIMED_BERSERKER_NORMAL",
+        "encounter_name": "viscoberseker",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/slimed_berserker.png",
+    "beta_image_url": null
   },
   {
     "id": "SLITHERING_STRANGLER",
@@ -2604,15 +4919,34 @@
     "moves": [
       {
         "id": "CONSTRICT",
-        "name": "Constricción"
+        "name": "Constricción",
+        "intent": "Debuff",
+        "powers": [
+          {
+            "power_id": "CONSTRICT",
+            "target": "player",
+            "amount": 3
+          }
+        ]
       },
       {
         "id": "TWACK",
-        "name": "Twack"
+        "name": "Twack",
+        "intent": "Attack + Defend",
+        "block": 5,
+        "damage": {
+          "normal": 7,
+          "ascension": 8
+        }
       },
       {
         "id": "LASH",
-        "name": "Latigazo"
+        "name": "Latigazo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 12,
+          "ascension": 13
+        }
       }
     ],
     "damage_values": {
@@ -2626,7 +4960,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/slithering_strangler.png"
+    "encounters": [
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "estrangulador y sus colegas",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/slithering_strangler.png",
+    "beta_image_url": null
   },
   {
     "id": "SLUDGE_SPINNER",
@@ -2639,15 +4983,44 @@
     "moves": [
       {
         "id": "OIL_SPRAY",
-        "name": "Aerosol oleoso"
+        "name": "Aerosol oleoso",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       },
       {
         "id": "SLAM",
-        "name": "Golpazo"
+        "name": "Golpazo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 11,
+          "ascension": 12
+        }
       },
       {
         "id": "RAGE",
-        "name": "Furia"
+        "name": "Furia",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 3
+          }
+        ],
+        "damage": {
+          "normal": 6,
+          "ascension": 7
+        }
       }
     ],
     "damage_values": {
@@ -2665,7 +5038,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/sludge_spinner.png"
+    "encounters": [
+      {
+        "encounter_id": "SLUDGE_SPINNER_WEAK",
+        "encounter_name": "caracofango",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": true
+      }
+    ],
+    "image_url": "/static/images/monsters/sludge_spinner.png",
+    "beta_image_url": null
   },
   {
     "id": "SLUMBERING_BEETLE",
@@ -2678,11 +5061,24 @@
     "moves": [
       {
         "id": "SNORE",
-        "name": "Ronquido"
+        "name": "Ronquido",
+        "intent": "Sleep"
       },
       {
         "id": "ROLL_OUT",
-        "name": "Desenrollar"
+        "name": "Desenrollar",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 16,
+          "ascension": 18
+        }
       }
     ],
     "damage_values": {
@@ -2692,7 +5088,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/slumbering_beetle.png"
+    "encounters": [
+      {
+        "encounter_id": "SLUMBERING_BEETLE_NORMAL",
+        "encounter_name": "fiesta de escaramorfeos",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/slumbering_beetle.png",
+    "beta_image_url": null
   },
   {
     "id": "SNAPPING_JAXFRUIT",
@@ -2705,7 +5111,19 @@
     "moves": [
       {
         "id": "ENERGY_ORB",
-        "name": "Orbe de energía"
+        "name": "Orbe de energía",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 3,
+          "ascension": 4
+        }
       }
     ],
     "damage_values": {
@@ -2715,7 +5133,24 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/snapping_jaxfruit.png"
+    "encounters": [
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "estrangulador y sus colegas",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SNAPPING_JAXFRUIT_NORMAL",
+        "encounter_name": "flora enorme",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/snapping_jaxfruit.png",
+    "beta_image_url": null
   },
   {
     "id": "SNEAKY_GREMLIN",
@@ -2728,11 +5163,17 @@
     "moves": [
       {
         "id": "SPAWNED",
-        "name": "Spawned"
+        "name": "Spawned",
+        "intent": "Stun"
       },
       {
         "id": "TACKLE",
-        "name": "Embestida"
+        "name": "Embestida",
+        "intent": "Attack",
+        "damage": {
+          "normal": 9,
+          "ascension": 10
+        }
       }
     ],
     "damage_values": {
@@ -2742,7 +5183,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/sneaky_gremlin.png"
+    "encounters": [
+      {
+        "encounter_id": "GREMLIN_MERC_NORMAL",
+        "encounter_name": "Dos gremlins en una gabardina",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/sneaky_gremlin.png",
+    "beta_image_url": null
   },
   {
     "id": "SOUL_FYSH",
@@ -2755,23 +5206,54 @@
     "moves": [
       {
         "id": "BECKON",
-        "name": "Beckon"
+        "name": "Beckon",
+        "intent": "Status"
       },
       {
         "id": "DE_GAS",
-        "name": "Fuga de gas"
+        "name": "Fuga de gas",
+        "intent": "Attack",
+        "damage": {
+          "normal": 16,
+          "ascension": 17
+        }
       },
       {
         "id": "GAZE",
-        "name": "Gaze"
+        "name": "Gaze",
+        "intent": "Attack + Status",
+        "damage": {
+          "normal": 7,
+          "ascension": 8
+        }
       },
       {
         "id": "FADE",
-        "name": "Fade"
+        "name": "Fade",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "INTANGIBLE",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       },
       {
         "id": "SCREAM",
-        "name": "Grito"
+        "name": "Grito",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "VULNERABLE",
+            "target": "player",
+            "amount": 3
+          }
+        ],
+        "damage": {
+          "normal": 11,
+          "ascension": 12
+        }
       }
     ],
     "damage_values": {
@@ -2789,7 +5271,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/soul_fysh.png"
+    "encounters": [
+      {
+        "encounter_id": "SOUL_FYSH_BOSS",
+        "encounter_name": "Phezánima",
+        "room_type": "Boss",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/soul_fysh.png",
+    "beta_image_url": null
   },
   {
     "id": "SOUL_NEXUS",
@@ -2802,15 +5294,42 @@
     "moves": [
       {
         "id": "SOUL_BURN",
-        "name": "Quemadura de alma"
+        "name": "Quemadura de alma",
+        "intent": "Attack",
+        "damage": {
+          "normal": 29,
+          "ascension": 31
+        }
       },
       {
         "id": "MAELSTROM",
-        "name": "Torbellino"
+        "name": "Torbellino",
+        "intent": "Attack",
+        "damage": {
+          "normal": 6,
+          "ascension": 7
+        }
       },
       {
         "id": "DRAIN_LIFE",
-        "name": "Drenaje vital"
+        "name": "Drenaje vital",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "VULNERABLE",
+            "target": "player",
+            "amount": 2
+          },
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 18,
+          "ascension": 19
+        }
       }
     ],
     "damage_values": {
@@ -2829,7 +5348,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/soul_nexus.png"
+    "encounters": [
+      {
+        "encounter_id": "SOUL_NEXUS_ELITE",
+        "encounter_name": "nexo del alma",
+        "room_type": "Elite",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/soul_nexus.png",
+    "beta_image_url": null
   },
   {
     "id": "SPECTRAL_KNIGHT",
@@ -2842,15 +5371,34 @@
     "moves": [
       {
         "id": "HEX",
-        "name": "Maleficio"
+        "name": "Maleficio",
+        "intent": "Debuff",
+        "powers": [
+          {
+            "power_id": "HEX",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       },
       {
         "id": "SOUL_SLASH",
-        "name": "Corte espiritual"
+        "name": "Corte espiritual",
+        "intent": "Attack",
+        "damage": {
+          "normal": 15,
+          "ascension": 17
+        }
       },
       {
         "id": "SOUL_FLAME",
-        "name": "Llama espiritual"
+        "name": "Llama espiritual",
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "ascension": 4,
+          "hit_count": 3
+        }
       }
     ],
     "damage_values": {
@@ -2865,7 +5413,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/spectral_knight.png"
+    "encounters": [
+      {
+        "encounter_id": "KNIGHTS_ELITE",
+        "encounter_name": "pandilla de caballeros",
+        "room_type": "Elite",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/spectral_knight.png",
+    "beta_image_url": null
   },
   {
     "id": "SPINY_TOAD",
@@ -2878,15 +5436,33 @@
     "moves": [
       {
         "id": "PROTRUDING_SPIKES",
-        "name": "Púas protuberantes"
+        "name": "Púas protuberantes",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "THORNS",
+            "target": "self",
+            "amount": 5
+          }
+        ]
       },
       {
         "id": "SPIKE_EXPLOSION",
-        "name": "Explosión espinosa"
+        "name": "Explosión espinosa",
+        "intent": "Attack",
+        "damage": {
+          "normal": 23,
+          "ascension": 25
+        }
       },
       {
         "id": "TONGUE_LASH",
-        "name": "Látigo lengua"
+        "name": "Látigo lengua",
+        "intent": "Attack",
+        "damage": {
+          "normal": 17,
+          "ascension": 19
+        }
       }
     ],
     "damage_values": {
@@ -2900,7 +5476,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/spiny_toad.png"
+    "encounters": [
+      {
+        "encounter_id": "SPINY_TOAD_NORMAL",
+        "encounter_name": "sapo espinoso",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/spiny_toad.png",
+    "beta_image_url": null
   },
   {
     "id": "STABBOT",
@@ -2913,7 +5499,19 @@
     "moves": [
       {
         "id": "STAB",
-        "name": "Puñalada"
+        "name": "Puñalada",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 11,
+          "ascension": 12
+        }
       }
     ],
     "damage_values": {
@@ -2923,7 +5521,9 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/stabbot.png"
+    "encounters": null,
+    "image_url": "/static/images/monsters/stabbot.png",
+    "beta_image_url": null
   },
   {
     "id": "TERROR_EEL",
@@ -2936,19 +5536,46 @@
     "moves": [
       {
         "id": "CRASH",
-        "name": "Crash"
+        "name": "Crash",
+        "intent": "Attack",
+        "damage": {
+          "normal": 17,
+          "ascension": 19
+        }
       },
       {
         "id": "ThrashMove",
-        "name": "Thrashmove"
+        "name": "Thrashmove",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "VIGOR",
+            "target": "self",
+            "amount": 7
+          }
+        ],
+        "damage": {
+          "normal": 3,
+          "ascension": 4,
+          "hit_count": 3
+        }
       },
       {
         "id": "STUN",
-        "name": "Stun"
+        "name": "Stun",
+        "intent": "Stun"
       },
       {
         "id": "TERROR",
-        "name": "Terror"
+        "name": "Terror",
+        "intent": "Debuff",
+        "powers": [
+          {
+            "power_id": "VULNERABLE",
+            "target": "player",
+            "amount": 99
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -2963,7 +5590,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/terror_eel.png"
+    "encounters": [
+      {
+        "encounter_id": "TERROR_EEL_ELITE",
+        "encounter_name": "anguila ominosa",
+        "room_type": "Elite",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/terror_eel.png",
+    "beta_image_url": null
   },
   {
     "id": "TEST_SUBJECT",
@@ -2976,35 +5613,93 @@
     "moves": [
       {
         "id": "RESPAWN",
-        "name": "Respawn"
+        "name": "Respawn",
+        "intent": "Heal + Buff",
+        "powers": [
+          {
+            "power_id": "PAINFUL_STABS",
+            "target": "self",
+            "amount": 1
+          },
+          {
+            "power_id": "NEMESIS",
+            "target": "self",
+            "amount": 1
+          }
+        ]
       },
       {
         "id": "BITE",
-        "name": "Bite"
+        "name": "Bite",
+        "intent": "Attack",
+        "damage": {
+          "normal": 20,
+          "ascension": 22
+        }
       },
       {
         "id": "SKULL_BASH",
-        "name": "Skull Bash"
+        "name": "Skull Bash",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "VULNERABLE",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 14,
+          "ascension": 16
+        }
       },
       {
         "id": "POUNCE",
-        "name": "Pounce"
+        "name": "Pounce",
+        "intent": "Attack",
+        "damage": {
+          "normal": 30,
+          "ascension": 32
+        }
       },
       {
         "id": "MULTI_CLAW",
-        "name": "Multi Claw"
+        "name": "Multi Claw",
+        "intent": "Attack",
+        "damage": {
+          "normal": 10,
+          "ascension": 11
+        }
       },
       {
         "id": "PHASE3_LACERATE",
-        "name": "Phase3 Lacerate"
+        "name": "Phase3 Lacerate",
+        "intent": "Attack",
+        "damage": {
+          "normal": 10,
+          "ascension": 11,
+          "hit_count": 3
+        }
       },
       {
         "id": "BIG_POUNCE",
-        "name": "Big Pounce"
+        "name": "Big Pounce",
+        "intent": "Attack",
+        "damage": {
+          "normal": 45
+        }
       },
       {
         "id": "BURNING_GROWL",
-        "name": "Burning Growl"
+        "name": "Burning Growl",
+        "intent": "Status + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -3034,7 +5729,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/test_subject.png"
+    "encounters": [
+      {
+        "encounter_id": "TEST_SUBJECT_BOSS",
+        "encounter_name": "Sujeto de prueba",
+        "room_type": "Boss",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/test_subject.png",
+    "beta_image_url": null
   },
   {
     "id": "THE_ADVERSARY_MK_ONE",
@@ -3047,15 +5752,35 @@
     "moves": [
       {
         "id": "SMASH",
-        "name": "Remate"
+        "name": "Remate",
+        "intent": "Attack",
+        "damage": {
+          "normal": 12
+        }
       },
       {
         "id": "BEAM",
-        "name": "Rayo"
+        "name": "Rayo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 15
+        }
       },
       {
         "id": "BARRAGE",
-        "name": "Descarga"
+        "name": "Descarga",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "hit_count": 2
+        }
       }
     ],
     "damage_values": {
@@ -3071,7 +5796,9 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/the_adversary_placeholder.png"
+    "encounters": null,
+    "image_url": "/static/images/monsters/the_adversary_placeholder.png",
+    "beta_image_url": null
   },
   {
     "id": "THE_ADVERSARY_MK_THREE",
@@ -3084,15 +5811,35 @@
     "moves": [
       {
         "id": "CRASH",
-        "name": "Colisión"
+        "name": "Colisión",
+        "intent": "Attack",
+        "damage": {
+          "normal": 15
+        }
       },
       {
         "id": "FLAME_BEAM",
-        "name": "Rayo ígneo"
+        "name": "Rayo ígneo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 18
+        }
       },
       {
         "id": "BARRAGE",
-        "name": "Descarga"
+        "name": "Descarga",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 4
+          }
+        ],
+        "damage": {
+          "normal": 10,
+          "hit_count": 2
+        }
       }
     ],
     "damage_values": {
@@ -3108,7 +5855,9 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/the_adversary_placeholder.png"
+    "encounters": null,
+    "image_url": "/static/images/monsters/the_adversary_placeholder.png",
+    "beta_image_url": null
   },
   {
     "id": "THE_ADVERSARY_MK_TWO",
@@ -3121,15 +5870,35 @@
     "moves": [
       {
         "id": "BASH",
-        "name": "Mazazo"
+        "name": "Mazazo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 13
+        }
       },
       {
         "id": "FLAME_BEAM",
-        "name": "Rayo ígneo"
+        "name": "Rayo ígneo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 16
+        }
       },
       {
         "id": "BARRAGE",
-        "name": "Descarga"
+        "name": "Descarga",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 3
+          }
+        ],
+        "damage": {
+          "normal": 9,
+          "hit_count": 2
+        }
       }
     ],
     "damage_values": {
@@ -3145,7 +5914,9 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/the_adversary_placeholder.png"
+    "encounters": null,
+    "image_url": "/static/images/monsters/the_adversary_placeholder.png",
+    "beta_image_url": null
   },
   {
     "id": "THE_FORGOTTEN",
@@ -3158,11 +5929,25 @@
     "moves": [
       {
         "id": "MIASMA",
-        "name": "Miasma"
+        "name": "Miasma",
+        "intent": "Debuff + Defend + Buff",
+        "powers": [
+          {
+            "power_id": "DEXTERITY",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "block": 8
       },
       {
         "id": "DREAD",
-        "name": "Pavor"
+        "name": "Pavor",
+        "intent": "Attack",
+        "damage": {
+          "normal": 15,
+          "ascension": 17
+        }
       }
     ],
     "damage_values": {
@@ -3172,7 +5957,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/the_forgotten.png"
+    "encounters": [
+      {
+        "encounter_id": "THE_LOST_AND_FORGOTTEN_NORMAL",
+        "encounter_name": "El Perdido y el Olvidado",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/the_forgotten.png",
+    "beta_image_url": null
   },
   {
     "id": "THE_INSATIABLE",
@@ -3185,23 +5980,49 @@
     "moves": [
       {
         "id": "LIQUIFY_GROUND",
-        "name": "Licuar el suelo"
+        "name": "Licuar el suelo",
+        "intent": "Buff + Status"
       },
       {
         "id": "THRASH_MOVE_1",
-        "name": "Thrash Move 1"
+        "name": "Thrash Move 1",
+        "intent": "Attack",
+        "damage": {
+          "normal": 8,
+          "ascension": 9,
+          "hit_count": 2
+        }
       },
       {
         "id": "THRASH_MOVE_2",
-        "name": "Thrash Move 2"
+        "name": "Thrash Move 2",
+        "intent": "Attack",
+        "damage": {
+          "normal": 8,
+          "ascension": 9,
+          "hit_count": 2
+        }
       },
       {
         "id": "LUNGING_BITE",
-        "name": "Mordida brusca"
+        "name": "Mordida brusca",
+        "intent": "Attack",
+        "damage": {
+          "normal": 28,
+          "ascension": 31
+        }
       },
       {
         "id": "SALIVATE",
-        "name": "Salivar"
+        "name": "Salivar",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -3216,7 +6037,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/the_insatiable.png"
+    "encounters": [
+      {
+        "encounter_id": "THE_INSATIABLE_BOSS",
+        "encounter_name": "El Insaciable",
+        "room_type": "Boss",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/the_insatiable.png",
+    "beta_image_url": null
   },
   {
     "id": "THE_LOST",
@@ -3229,11 +6060,25 @@
     "moves": [
       {
         "id": "DEBILITATING_SMOG",
-        "name": "Niebla debilitante"
+        "name": "Niebla debilitante",
+        "intent": "Debuff + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       },
       {
         "id": "EYE_LASERS",
-        "name": "Láser ocular"
+        "name": "Láser ocular",
+        "intent": "Attack",
+        "damage": {
+          "normal": 4,
+          "ascension": 5,
+          "hit_count": 2
+        }
       }
     ],
     "damage_values": {
@@ -3244,7 +6089,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/the_lost.png"
+    "encounters": [
+      {
+        "encounter_id": "THE_LOST_AND_FORGOTTEN_NORMAL",
+        "encounter_name": "El Perdido y el Olvidado",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/the_lost.png",
+    "beta_image_url": null
   },
   {
     "id": "THE_OBSCURA",
@@ -3257,19 +6112,32 @@
     "moves": [
       {
         "id": "ILLUSION",
-        "name": "Ilusión"
+        "name": "Ilusión",
+        "intent": "Summon"
       },
       {
         "id": "PIERCING_GAZE",
-        "name": "Mirada penetrante"
+        "name": "Mirada penetrante",
+        "intent": "Attack",
+        "damage": {
+          "normal": 10,
+          "ascension": 11
+        }
       },
       {
         "id": "SAIL",
-        "name": "Sail"
+        "name": "Sail",
+        "intent": "Buff"
       },
       {
         "id": "HARDENING_STRIKE",
-        "name": "Golpe endurecedor"
+        "name": "Golpe endurecedor",
+        "intent": "Attack + Defend",
+        "block": 6,
+        "damage": {
+          "normal": 6,
+          "ascension": 7
+        }
       }
     ],
     "damage_values": {
@@ -3283,7 +6151,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/the_obscura.png"
+    "encounters": [
+      {
+        "encounter_id": "THE_OBSCURA_NORMAL",
+        "encounter_name": "La Oscura",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/the_obscura.png",
+    "beta_image_url": null
   },
   {
     "id": "THIEVING_HOPPER",
@@ -3296,23 +6174,47 @@
     "moves": [
       {
         "id": "THIEVERY",
-        "name": "Hurto"
+        "name": "Hurto",
+        "intent": "Attack + Debuff",
+        "damage": {
+          "normal": 17,
+          "ascension": 19
+        }
       },
       {
         "id": "NAB",
-        "name": "Robo"
+        "name": "Robo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 14,
+          "ascension": 16
+        }
       },
       {
         "id": "HAT_TRICK",
-        "name": "Triplete"
+        "name": "Triplete",
+        "intent": "Attack",
+        "damage": {
+          "normal": 21,
+          "ascension": 23
+        }
       },
       {
         "id": "FLUTTER",
-        "name": "Aleteo"
+        "name": "Aleteo",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "FLUTTER",
+            "target": "self",
+            "amount": 5
+          }
+        ]
       },
       {
         "id": "ESCAPE",
-        "name": "Escape"
+        "name": "Escape",
+        "intent": "Escape"
       }
     ],
     "damage_values": {
@@ -3330,7 +6232,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/thieving_hopper.png"
+    "encounters": [
+      {
+        "encounter_id": "THIEVING_HOPPER_WEAK",
+        "encounter_name": "asaltamontes",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      }
+    ],
+    "image_url": "/static/images/monsters/thieving_hopper.png",
+    "beta_image_url": null
   },
   {
     "id": "TOADPOLE",
@@ -3343,15 +6255,34 @@
     "moves": [
       {
         "id": "SPIKE_SPIT",
-        "name": "Ráfaga espinosa"
+        "name": "Ráfaga espinosa",
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "ascension": 4,
+          "hit_count": 3
+        }
       },
       {
         "id": "WHIRL",
-        "name": "Remolino"
+        "name": "Remolino",
+        "intent": "Attack",
+        "damage": {
+          "normal": 7,
+          "ascension": 8
+        }
       },
       {
         "id": "SPIKEN",
-        "name": "Espina"
+        "name": "Espina",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "THORNS",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -3366,7 +6297,24 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/toadpole.png"
+    "encounters": [
+      {
+        "encounter_id": "TOADPOLES_NORMAL",
+        "encounter_name": "fauna de Muelles Funestos",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "TOADPOLES_WEAK",
+        "encounter_name": "ranacuajos",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": true
+      }
+    ],
+    "image_url": "/static/images/monsters/toadpole.png",
+    "beta_image_url": null
   },
   {
     "id": "TORCH_HEAD_AMALGAM",
@@ -3379,23 +6327,49 @@
     "moves": [
       {
         "id": "TACKLE_1",
-        "name": "Tackle 1"
+        "name": "Tackle 1",
+        "intent": "Attack",
+        "damage": {
+          "normal": 18,
+          "ascension": 19
+        }
       },
       {
         "id": "TACKLE_2",
-        "name": "Tackle 2"
+        "name": "Tackle 2",
+        "intent": "Attack",
+        "damage": {
+          "normal": 18,
+          "ascension": 19
+        }
       },
       {
         "id": "BEAM",
-        "name": "Beam"
+        "name": "Beam",
+        "intent": "Attack",
+        "damage": {
+          "normal": 8,
+          "ascension": 8,
+          "hit_count": 3
+        }
       },
       {
         "id": "TACKLE_3",
-        "name": "Tackle 3"
+        "name": "Tackle 3",
+        "intent": "Attack",
+        "damage": {
+          "normal": 14,
+          "ascension": 15
+        }
       },
       {
         "id": "TACKLE_4",
-        "name": "Tackle 4"
+        "name": "Tackle 4",
+        "intent": "Attack",
+        "damage": {
+          "normal": 14,
+          "ascension": 15
+        }
       }
     ],
     "damage_values": {
@@ -3414,7 +6388,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/amalgam.png"
+    "encounters": [
+      {
+        "encounter_id": "QUEEN_BOSS",
+        "encounter_name": "Reina funesta",
+        "room_type": "Boss",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/amalgam.png",
+    "beta_image_url": null
   },
   {
     "id": "TOUGH_EGG",
@@ -3427,11 +6411,17 @@
     "moves": [
       {
         "id": "HATCH",
-        "name": "ECLOSIÓN"
+        "name": "ECLOSIÓN",
+        "intent": "Summon"
       },
       {
         "id": "NIBBLE",
-        "name": "Nibble"
+        "name": "Nibble",
+        "intent": "Attack",
+        "damage": {
+          "normal": 4,
+          "ascension": 5
+        }
       }
     ],
     "damage_values": {
@@ -3441,7 +6431,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/tough_egg.png"
+    "encounters": [
+      {
+        "encounter_id": "OVICOPTER_NORMAL",
+        "encounter_name": "ovicóptero",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/tough_egg.png",
+    "beta_image_url": null
   },
   {
     "id": "TRACKER_RUBY_RAIDER",
@@ -3454,11 +6454,24 @@
     "moves": [
       {
         "id": "TRACK",
-        "name": "Rastrear"
+        "name": "Rastrear",
+        "intent": "Debuff",
+        "powers": [
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 2
+          }
+        ]
       },
       {
         "id": "HOUNDS",
-        "name": "Soltar sabuesos"
+        "name": "Soltar sabuesos",
+        "intent": "Attack",
+        "damage": {
+          "normal": 1,
+          "ascension": 1
+        }
       }
     ],
     "damage_values": {
@@ -3469,7 +6482,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/tracker_ruby_raider.png"
+    "encounters": [
+      {
+        "encounter_id": "RUBY_RAIDERS_NORMAL",
+        "encounter_name": "atacantes rubí",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/tracker_ruby_raider.png",
+    "beta_image_url": null
   },
   {
     "id": "TUNNELER",
@@ -3482,19 +6505,39 @@
     "moves": [
       {
         "id": "BITE",
-        "name": "Mordida"
+        "name": "Mordida",
+        "intent": "Attack",
+        "damage": {
+          "normal": 13,
+          "ascension": 15
+        }
       },
       {
         "id": "BURROW",
-        "name": "Madriguera"
+        "name": "Madriguera",
+        "intent": "Buff + Defend",
+        "powers": [
+          {
+            "power_id": "BURROWED",
+            "target": "self",
+            "amount": 1
+          }
+        ],
+        "block": 32
       },
       {
         "id": "BELOW_MOVE_1",
-        "name": "Below Move 1"
+        "name": "Below Move 1",
+        "intent": "Attack",
+        "damage": {
+          "normal": 23,
+          "ascension": 26
+        }
       },
       {
         "id": "DIZZY",
-        "name": "Dizzy"
+        "name": "Dizzy",
+        "intent": "Stun"
       }
     ],
     "damage_values": {
@@ -3508,7 +6551,24 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/tunneler.png"
+    "encounters": [
+      {
+        "encounter_id": "TUNNELER_NORMAL",
+        "encounter_name": "excavante y compañía",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "TUNNELER_WEAK",
+        "encounter_name": "excavante",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      }
+    ],
+    "image_url": "/static/images/monsters/tunneler.png",
+    "beta_image_url": null
   },
   {
     "id": "TURRET_OPERATOR",
@@ -3521,15 +6581,35 @@
     "moves": [
       {
         "id": "UNLOAD_MOVE_1",
-        "name": "Unload Move 1"
+        "name": "Unload Move 1",
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "ascension": 4,
+          "hit_count": 5
+        }
       },
       {
         "id": "UNLOAD_MOVE_2",
-        "name": "Unload Move 2"
+        "name": "Unload Move 2",
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "ascension": 4,
+          "hit_count": 5
+        }
       },
       {
         "id": "RELOAD",
-        "name": "Reload"
+        "name": "Reload",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 1
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -3540,7 +6620,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/turret_operator.png"
+    "encounters": [
+      {
+        "encounter_id": "TURRET_OPERATOR_WEAK",
+        "encounter_name": "operatorreta",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": true
+      }
+    ],
+    "image_url": "/static/images/monsters/turret_operator.png",
+    "beta_image_url": null
   },
   {
     "id": "TWIG_SLIME_M",
@@ -3553,11 +6643,17 @@
     "moves": [
       {
         "id": "CLUMP_SHOT",
-        "name": "Clump Shot"
+        "name": "Clump Shot",
+        "intent": "Attack",
+        "damage": {
+          "normal": 11,
+          "ascension": 12
+        }
       },
       {
         "id": "STICKY_SHOT",
-        "name": "Disparo pegajoso"
+        "name": "Disparo pegajoso",
+        "intent": "Status"
       }
     ],
     "damage_values": {
@@ -3567,7 +6663,38 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/twig_slime_m.png"
+    "encounters": [
+      {
+        "encounter_id": "FLYCONID_NORMAL",
+        "encounter_name": "Hongo y baba",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_NORMAL",
+        "encounter_name": "enjambre de babas",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_WEAK",
+        "encounter_name": "grupo de babas",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "estrangulador y sus colegas",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/twig_slime_m.png",
+    "beta_image_url": null
   },
   {
     "id": "TWIG_SLIME_S",
@@ -3580,7 +6707,12 @@
     "moves": [
       {
         "id": "BUTT",
-        "name": "Butt"
+        "name": "Butt",
+        "intent": "Attack",
+        "damage": {
+          "normal": 4,
+          "ascension": 5
+        }
       }
     ],
     "damage_values": {
@@ -3590,7 +6722,31 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/twig_slime_s.png"
+    "encounters": [
+      {
+        "encounter_id": "SLIMES_NORMAL",
+        "encounter_name": "enjambre de babas",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_WEAK",
+        "encounter_name": "grupo de babas",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "estrangulador y sus colegas",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/twig_slime_s.png",
+    "beta_image_url": null
   },
   {
     "id": "TWO_TAILED_RAT",
@@ -3603,19 +6759,38 @@
     "moves": [
       {
         "id": "SCRATCH",
-        "name": "Arañazo"
+        "name": "Arañazo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       },
       {
         "id": "DISEASE_BITE",
-        "name": "Mordida infectada"
+        "name": "Mordida infectada",
+        "intent": "Attack",
+        "damage": {
+          "normal": 6,
+          "ascension": 7
+        }
       },
       {
         "id": "SCREECH",
-        "name": "Chillido"
+        "name": "Chillido",
+        "intent": "Debuff",
+        "powers": [
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 1
+          }
+        ]
       },
       {
         "id": "CALL_FOR_BACKUP",
-        "name": "Refuerzos"
+        "name": "Refuerzos",
+        "intent": "Summon"
       }
     ],
     "damage_values": {
@@ -3629,7 +6804,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/two_tailed_rat.png"
+    "encounters": [
+      {
+        "encounter_id": "TWO_TAILED_RATS_NORMAL",
+        "encounter_name": "ratas bicola",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/two_tailed_rat.png",
+    "beta_image_url": null
   },
   {
     "id": "VANTOM",
@@ -3642,19 +6827,43 @@
     "moves": [
       {
         "id": "INK_BLOT",
-        "name": "Mancha"
+        "name": "Mancha",
+        "intent": "Attack",
+        "damage": {
+          "normal": 7,
+          "ascension": 8
+        }
       },
       {
         "id": "INKY_LANCE",
-        "name": "Lanza de tinta"
+        "name": "Lanza de tinta",
+        "intent": "Attack",
+        "damage": {
+          "normal": 6,
+          "ascension": 7,
+          "hit_count": 2
+        }
       },
       {
         "id": "DISMEMBER",
-        "name": "Desmembrar"
+        "name": "Desmembrar",
+        "intent": "Attack + Status",
+        "damage": {
+          "normal": 27,
+          "ascension": 30
+        }
       },
       {
         "id": "PREPARE",
-        "name": "Preparación"
+        "name": "Preparación",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       }
     ],
     "damage_values": {
@@ -3673,7 +6882,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/vantom.png"
+    "encounters": [
+      {
+        "encounter_id": "VANTOM_BOSS",
+        "encounter_name": "Vantasma",
+        "room_type": "Boss",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/vantom.png",
+    "beta_image_url": null
   },
   {
     "id": "VINE_SHAMBLER",
@@ -3686,15 +6905,38 @@
     "moves": [
       {
         "id": "GRASPING_VINES",
-        "name": "Lianas inmovilizantes"
+        "name": "Lianas inmovilizantes",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "TANGLED",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       },
       {
         "id": "SWIPE",
-        "name": "Robo"
+        "name": "Robo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 6,
+          "ascension": 7,
+          "hit_count": 2
+        }
       },
       {
         "id": "CHOMP",
-        "name": "Mordida"
+        "name": "Mordida",
+        "intent": "Attack",
+        "damage": {
+          "normal": 16,
+          "ascension": 18
+        }
       }
     ],
     "damage_values": {
@@ -3713,7 +6955,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/vine_shambler.png"
+    "encounters": [
+      {
+        "encounter_id": "VINE_SHAMBLER_NORMAL",
+        "encounter_name": "enredabestia",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/vine_shambler.png",
+    "beta_image_url": null
   },
   {
     "id": "WATERFALL_GIANT",
@@ -3726,35 +6978,102 @@
     "moves": [
       {
         "id": "PRESSURIZE",
-        "name": "Presurizar"
+        "name": "Presurizar",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STEAM_ERUPTION",
+            "target": "self",
+            "amount": 15
+          }
+        ]
       },
       {
         "id": "STOMP",
-        "name": "Pisotón"
+        "name": "Pisotón",
+        "intent": "Attack + Debuff + Buff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 1
+          },
+          {
+            "power_id": "STEAM_ERUPTION",
+            "target": "self",
+            "amount": 3
+          }
+        ],
+        "damage": {
+          "normal": 15,
+          "ascension": 16
+        }
       },
       {
         "id": "RAM",
-        "name": "Embestir"
+        "name": "Embestir",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STEAM_ERUPTION",
+            "target": "self",
+            "amount": 3
+          }
+        ],
+        "damage": {
+          "normal": 10,
+          "ascension": 11
+        }
       },
       {
         "id": "SIPHON",
-        "name": "Sifón"
+        "name": "Sifón",
+        "intent": "Heal + Buff",
+        "powers": [
+          {
+            "power_id": "STEAM_ERUPTION",
+            "target": "self",
+            "amount": 3
+          }
+        ]
       },
       {
         "id": "PRESSURE_GUN",
-        "name": "Pistola a presión"
+        "name": "Pistola a presión",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STEAM_ERUPTION",
+            "target": "self",
+            "amount": 3
+          }
+        ]
       },
       {
         "id": "PRESSURE_UP",
-        "name": "Pressure Up"
+        "name": "Pressure Up",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STEAM_ERUPTION",
+            "target": "self",
+            "amount": 3
+          }
+        ],
+        "damage": {
+          "normal": 13,
+          "ascension": 14
+        }
       },
       {
         "id": "ABOUT_TO_BLOW",
-        "name": "About To Blow"
+        "name": "About To Blow",
+        "intent": "Stun"
       },
       {
         "id": "EXPLODE",
-        "name": "Explode"
+        "name": "Explode",
+        "intent": "Special"
       }
     ],
     "damage_values": {
@@ -3776,7 +7095,17 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/waterfall_giant.png"
+    "encounters": [
+      {
+        "encounter_id": "WATERFALL_GIANT_BOSS",
+        "encounter_name": "Titán cascadoso",
+        "room_type": "Boss",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/waterfall_giant.png",
+    "beta_image_url": null
   },
   {
     "id": "WRIGGLER",
@@ -3789,15 +7118,29 @@
     "moves": [
       {
         "id": "NASTY_BITE",
-        "name": "Nasty Bite"
+        "name": "Nasty Bite",
+        "intent": "Attack",
+        "damage": {
+          "normal": 6,
+          "ascension": 7
+        }
       },
       {
         "id": "WRIGGLE",
-        "name": "Wriggle"
+        "name": "Wriggle",
+        "intent": "Buff + Status",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
       },
       {
         "id": "SPAWNED",
-        "name": "Spawned"
+        "name": "Spawned",
+        "intent": "Stun"
       }
     ],
     "damage_values": {
@@ -3807,7 +7150,24 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/wriggler.png"
+    "encounters": [
+      {
+        "encounter_id": "DENSE_VEGETATION_EVENT_ENCOUNTER",
+        "encounter_name": "Sanguilarvas",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      },
+      {
+        "encounter_id": "PHROG_PARASITE_ELITE",
+        "encounter_name": "parásito engusanado",
+        "room_type": "Elite",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/wriggler.png",
+    "beta_image_url": null
   },
   {
     "id": "ZAPBOT",
@@ -3820,7 +7180,12 @@
     "moves": [
       {
         "id": "ZAP",
-        "name": "Chispa"
+        "name": "Chispa",
+        "intent": "Attack",
+        "damage": {
+          "normal": 14,
+          "ascension": 15
+        }
       }
     ],
     "damage_values": {
@@ -3830,6 +7195,349 @@
       }
     },
     "block_values": null,
-    "image_url": "/static/images/monsters/zapbot.png"
+    "encounters": null,
+    "image_url": "/static/images/monsters/zapbot.png",
+    "beta_image_url": null
+  },
+  {
+    "id": "DECIMILLIPEDE_SEGMENT_BACK",
+    "name": "Decimillipede Segment (Back)",
+    "type": "Elite",
+    "min_hp": 42,
+    "max_hp": 48,
+    "min_hp_ascension": 48,
+    "max_hp_ascension": 56,
+    "moves": [
+      {
+        "id": "WRITHE",
+        "name": "Retorcimiento",
+        "intent": "Attack",
+        "damage": {
+          "normal": 5,
+          "ascension": 6,
+          "hit_count": 2
+        }
+      },
+      {
+        "id": "BULK",
+        "name": "Corpulencia",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 6,
+          "ascension": 7
+        }
+      },
+      {
+        "id": "CONSTRICT",
+        "name": "Constrict",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
+      },
+      {
+        "id": "DEAD",
+        "name": "Muerte",
+        "intent": "Unknown"
+      },
+      {
+        "id": "REATTACH",
+        "name": "Reconectar",
+        "intent": "Heal"
+      }
+    ],
+    "damage_values": {
+      "Writhe": {
+        "normal": 5,
+        "ascension": 6,
+        "hit_count": 2
+      },
+      "Constrict": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "Bulk": {
+        "normal": 6,
+        "ascension": 7
+      }
+    },
+    "block_values": null,
+    "encounters": [
+      {
+        "encounter_id": "DECIMILLIPEDE_ELITE",
+        "encounter_name": "decimilpiés",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/decimillipede_segment_back.png"
+  },
+  {
+    "id": "DECIMILLIPEDE_SEGMENT_FRONT",
+    "name": "Decimillipede Segment (Front)",
+    "type": "Elite",
+    "min_hp": 42,
+    "max_hp": 48,
+    "min_hp_ascension": 48,
+    "max_hp_ascension": 56,
+    "moves": [
+      {
+        "id": "WRITHE",
+        "name": "Retorcimiento",
+        "intent": "Attack",
+        "damage": {
+          "normal": 5,
+          "ascension": 6,
+          "hit_count": 2
+        }
+      },
+      {
+        "id": "BULK",
+        "name": "Corpulencia",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 6,
+          "ascension": 7
+        }
+      },
+      {
+        "id": "CONSTRICT",
+        "name": "Constrict",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
+      },
+      {
+        "id": "DEAD",
+        "name": "Muerte",
+        "intent": "Unknown"
+      },
+      {
+        "id": "REATTACH",
+        "name": "Reconectar",
+        "intent": "Heal"
+      }
+    ],
+    "damage_values": {
+      "Writhe": {
+        "normal": 5,
+        "ascension": 6,
+        "hit_count": 2
+      },
+      "Constrict": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "Bulk": {
+        "normal": 6,
+        "ascension": 7
+      }
+    },
+    "block_values": null,
+    "encounters": [
+      {
+        "encounter_id": "DECIMILLIPEDE_ELITE",
+        "encounter_name": "decimilpiés",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/decimillipede_segment_front.png"
+  },
+  {
+    "id": "DECIMILLIPEDE_SEGMENT_MIDDLE",
+    "name": "Decimillipede Segment (Middle)",
+    "type": "Elite",
+    "min_hp": 42,
+    "max_hp": 48,
+    "min_hp_ascension": 48,
+    "max_hp_ascension": 56,
+    "moves": [
+      {
+        "id": "WRITHE",
+        "name": "Retorcimiento",
+        "intent": "Attack",
+        "damage": {
+          "normal": 5,
+          "ascension": 6,
+          "hit_count": 2
+        }
+      },
+      {
+        "id": "BULK",
+        "name": "Corpulencia",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 6,
+          "ascension": 7
+        }
+      },
+      {
+        "id": "CONSTRICT",
+        "name": "Constrict",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
+      },
+      {
+        "id": "DEAD",
+        "name": "Muerte",
+        "intent": "Unknown"
+      },
+      {
+        "id": "REATTACH",
+        "name": "Reconectar",
+        "intent": "Heal"
+      }
+    ],
+    "damage_values": {
+      "Writhe": {
+        "normal": 5,
+        "ascension": 6,
+        "hit_count": 2
+      },
+      "Constrict": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "Bulk": {
+        "normal": 6,
+        "ascension": 7
+      }
+    },
+    "block_values": null,
+    "encounters": [
+      {
+        "encounter_id": "DECIMILLIPEDE_ELITE",
+        "encounter_name": "decimilpiés",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/decimillipede_segment_middle.png"
+  },
+  {
+    "id": "MYSTERIOUS_KNIGHT",
+    "name": "Caballero enigma",
+    "type": "Normal",
+    "min_hp": 101,
+    "max_hp": null,
+    "min_hp_ascension": 108,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "WAR_CHANT",
+        "name": "War Chant",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "id": "FLAIL",
+        "name": "Flagelo",
+        "intent": "Attack",
+        "damage": {
+          "normal": 9,
+          "ascension": 10,
+          "hit_count": 2
+        }
+      },
+      {
+        "id": "RAM",
+        "name": "Embestir",
+        "intent": "Attack",
+        "damage": {
+          "normal": 15,
+          "ascension": 17
+        }
+      }
+    ],
+    "damage_values": {
+      "Flail": {
+        "normal": 9,
+        "ascension": 10,
+        "hit_count": 2
+      },
+      "Ram": {
+        "normal": 15,
+        "ascension": 17
+      }
+    },
+    "block_values": null,
+    "encounters": [
+      {
+        "encounter_id": "MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER",
+        "encounter_name": "caballero enigma",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/flail_knight.png",
+    "innate_powers": [
+      {
+        "power_id": "STRENGTH",
+        "amount": 6
+      },
+      {
+        "power_id": "PLATING",
+        "amount": 6
+      }
+    ]
   }
 ]

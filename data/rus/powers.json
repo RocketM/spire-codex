@@ -642,7 +642,7 @@
   {
     "id": "DRUM_OF_BATTLE",
     "name": "Ритм битвы",
-    "description": "[gold]Сжигает[/gold] [blue][[/blue] карты|[blue]{][/blue] карт} на верху [gold]стопки добора[/gold] в начале хода.",
+    "description": "[gold]Сжигает[/gold] [blue]{}[/blue] карты на верху [gold]стопки добора[/gold] в начале хода.",
     "description_raw": "[gold]Сжигает[/gold] {Amount:plural(ru):карту|[blue]{}[/blue] карты|[blue]{}[/blue] карт} на верху [gold]стопки добора[/gold] в начале хода.",
     "type": "Buff",
     "stack_type": "Counter",
@@ -1242,7 +1242,7 @@
   {
     "id": "KNOCKDOWN",
     "name": "Наповал",
-    "description": "Это существо получает [blue]в [Amount] раза|раз[/blue] больше урона от других игроков в этом ходу.",
+    "description": "Это существо получает [blue]в [Amount] раза[/blue] больше урона от других игроков в этом ходу.",
     "description_raw": "Это существо получает [blue]в {Amount} {Amount:plural(ru):раз|раза|раз}[/blue] больше урона от других игроков в этом ходу.",
     "type": "Debuff",
     "stack_type": "Counter",

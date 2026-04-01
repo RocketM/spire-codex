@@ -1,6 +1,7 @@
 [
   {
     "id": "COLORLESS1_EPOCH",
+    "slug": "",
     "title": "Преон",
     "era": "Prehistoria0",
     "era_name": "Доисторическая эпоха",
@@ -26,6 +27,7 @@
   },
   {
     "id": "RELIC1_EPOCH",
+    "slug": "",
     "title": "Каракули",
     "era": "Prehistoria1",
     "era_name": null,
@@ -47,6 +49,7 @@
   },
   {
     "id": "COLORLESS2_EPOCH",
+    "slug": "",
     "title": "Архитектор",
     "era": "Prehistoria2",
     "era_name": null,
@@ -68,6 +71,7 @@
   },
   {
     "id": "SILENT6_EPOCH",
+    "slug": "",
     "title": "Немезис",
     "era": "Prehistoria2",
     "era_name": null,
@@ -89,6 +93,7 @@
   },
   {
     "id": "CUSTOM_AND_SEEDS_EPOCH",
+    "slug": "",
     "title": "Семена",
     "era": "Seeds0",
     "era_name": "Семена",
@@ -106,6 +111,7 @@
   },
   {
     "id": "ACT3_B_EPOCH",
+    "slug": "",
     "title": "Там-то",
     "era": "Seeds0",
     "era_name": "Семена",
@@ -123,6 +129,7 @@
   },
   {
     "id": "RELIC2_EPOCH",
+    "slug": "",
     "title": "Древние",
     "era": "Seeds1",
     "era_name": null,
@@ -144,6 +151,7 @@
   },
   {
     "id": "COLORLESS3_EPOCH",
+    "slug": "",
     "title": "Предатели",
     "era": "Seeds2",
     "era_name": null,
@@ -165,6 +173,7 @@
   },
   {
     "id": "IRONCLAD4_EPOCH",
+    "slug": "",
     "title": "Сделка",
     "era": "Seeds2",
     "era_name": null,
@@ -186,6 +195,7 @@
   },
   {
     "id": "IRONCLAD3_EPOCH",
+    "slug": "",
     "title": "Разрушения",
     "era": "Seeds3",
     "era_name": null,
@@ -207,6 +217,7 @@
   },
   {
     "id": "ACT2_B_EPOCH",
+    "slug": "",
     "title": "Где-то",
     "era": "Seeds3",
     "era_name": null,
@@ -224,6 +235,7 @@
   },
   {
     "id": "COLORLESS4_EPOCH",
+    "slug": "",
     "title": "Сон",
     "era": "Seeds3",
     "era_name": null,
@@ -245,6 +257,7 @@
   },
   {
     "id": "RELIC4_EPOCH",
+    "slug": "",
     "title": "Последствия",
     "era": "Blight0",
     "era_name": "Заражение",
@@ -270,6 +283,7 @@
   },
   {
     "id": "EVENT3_EPOCH",
+    "slug": "",
     "title": "Шпиль",
     "era": "Blight1",
     "era_name": null,
@@ -287,6 +301,7 @@
   },
   {
     "id": "IRONCLAD2_EPOCH",
+    "slug": "",
     "title": "Латоносец",
     "era": "Blight1",
     "era_name": null,
@@ -308,6 +323,7 @@
   },
   {
     "id": "COLORLESS5_EPOCH",
+    "slug": "",
     "title": "Налетай-покупай!",
     "era": "Blight1",
     "era_name": null,
@@ -329,6 +345,7 @@
   },
   {
     "id": "SILENT4_EPOCH",
+    "slug": "",
     "title": "Трофеи",
     "era": "Blight1",
     "era_name": null,
@@ -350,6 +367,7 @@
   },
   {
     "id": "SILENT5_EPOCH",
+    "slug": "",
     "title": "Отравитель",
     "era": "Blight2",
     "era_name": null,
@@ -371,6 +389,7 @@
   },
   {
     "id": "DEFECT6_EPOCH",
+    "slug": "",
     "title": "Лазеры",
     "era": "Blight2",
     "era_name": null,
@@ -392,6 +411,7 @@
   },
   {
     "id": "IRONCLAD5_EPOCH",
+    "slug": "",
     "title": "Воспылавший",
     "era": "Blight2",
     "era_name": null,
@@ -413,6 +433,7 @@
   },
   {
     "id": "POTION2_EPOCH",
+    "slug": "",
     "title": "Покой",
     "era": "Flourish0",
     "era_name": "Процветание",
@@ -438,6 +459,7 @@
   },
   {
     "id": "SILENT2_EPOCH",
+    "slug": "",
     "title": "Добыча покрупнее",
     "era": "Flourish0",
     "era_name": "Процветание",
@@ -459,6 +481,7 @@
   },
   {
     "id": "OROBAS_EPOCH",
+    "slug": "",
     "title": "Оробас",
     "era": "Flourish0",
     "era_name": "Процветание",
@@ -476,6 +499,7 @@
   },
   {
     "id": "EVENT1_EPOCH",
+    "slug": "",
     "title": "Культисты",
     "era": "Flourish1",
     "era_name": null,
@@ -493,6 +517,7 @@
   },
   {
     "id": "RELIC5_EPOCH",
+    "slug": "",
     "title": "Воспрянь",
     "era": "Flourish1",
     "era_name": null,
@@ -517,6 +542,7 @@
   },
   {
     "id": "REGENT6_EPOCH",
+    "slug": "",
     "title": "Недовольство",
     "era": "Flourish1",
     "era_name": null,
@@ -538,6 +564,7 @@
   },
   {
     "id": "DEFECT3_EPOCH",
+    "slug": "",
     "title": "Привет! Привет!",
     "era": "Flourish1",
     "era_name": null,
@@ -559,6 +586,7 @@
   },
   {
     "id": "RELIC3_EPOCH",
+    "slug": "",
     "title": "Цивилизация",
     "era": "Flourish1",
     "era_name": null,
@@ -584,6 +612,7 @@
   },
   {
     "id": "DEFECT4_EPOCH",
+    "slug": "",
     "title": "Ловля жучков",
     "era": "Flourish2",
     "era_name": null,
@@ -605,6 +634,7 @@
   },
   {
     "id": "REGENT1_EPOCH",
+    "slug": "",
     "title": "Аномальная планета",
     "era": "Flourish2",
     "era_name": null,
@@ -630,6 +660,7 @@
   },
   {
     "id": "SILENT3_EPOCH",
+    "slug": "",
     "title": "Хворь",
     "era": "Flourish3",
     "era_name": null,
@@ -651,6 +682,7 @@
   },
   {
     "id": "IRONCLAD6_EPOCH",
+    "slug": "",
     "title": "Потухший",
     "era": "Flourish3",
     "era_name": null,
@@ -672,6 +704,7 @@
   },
   {
     "id": "REGENT5_EPOCH",
+    "slug": "",
     "title": "Друзья",
     "era": "Flourish3",
     "era_name": null,
@@ -693,6 +726,7 @@
   },
   {
     "id": "DEFECT5_EPOCH",
+    "slug": "",
     "title": "Противостояние",
     "era": "Flourish3",
     "era_name": null,
@@ -714,6 +748,7 @@
   },
   {
     "id": "POTION1_EPOCH",
+    "slug": "",
     "title": "Двери раскрыты",
     "era": "Invitation0",
     "era_name": "Двери",
@@ -735,6 +770,7 @@
   },
   {
     "id": "NEOW_EPOCH",
+    "slug": "",
     "title": "Ньяу",
     "era": "Invitation0",
     "era_name": "Двери",
@@ -765,6 +801,7 @@
   },
   {
     "id": "NECROBINDER2_EPOCH",
+    "slug": "",
     "title": "Дюжина",
     "era": "Invitation0",
     "era_name": "Двери",
@@ -786,6 +823,7 @@
   },
   {
     "id": "SILENT1_EPOCH",
+    "slug": "",
     "title": "Туман опускается",
     "era": "Invitation0",
     "era_name": "Двери",
@@ -811,6 +849,7 @@
   },
   {
     "id": "REGENT2_EPOCH",
+    "slug": "",
     "title": "Я прибыл",
     "era": "Invitation1",
     "era_name": null,
@@ -832,6 +871,7 @@
   },
   {
     "id": "EVENT2_EPOCH",
+    "slug": "",
     "title": "Возвращение",
     "era": "Invitation1",
     "era_name": null,
@@ -849,6 +889,7 @@
   },
   {
     "id": "DEFECT1_EPOCH",
+    "slug": "",
     "title": "Перезапуск",
     "era": "Invitation1",
     "era_name": null,
@@ -873,6 +914,7 @@
   },
   {
     "id": "NECROBINDER3_EPOCH",
+    "slug": "",
     "title": "Безнадежность",
     "era": "Invitation1",
     "era_name": null,
@@ -894,6 +936,7 @@
   },
   {
     "id": "UNDERDOCKS_EPOCH",
+    "slug": "",
     "title": "Пристань",
     "era": "Invitation1",
     "era_name": null,
@@ -915,6 +958,7 @@
   },
   {
     "id": "REGENT3_EPOCH",
+    "slug": "",
     "title": "Нам нужен герой!",
     "era": "Invitation2",
     "era_name": null,
@@ -936,6 +980,7 @@
   },
   {
     "id": "DEFECT2_EPOCH",
+    "slug": "",
     "title": "Обманутый",
     "era": "Invitation2",
     "era_name": null,
@@ -957,6 +1002,7 @@
   },
   {
     "id": "NECROBINDER4_EPOCH",
+    "slug": "",
     "title": "Шпилерожденная",
     "era": "Invitation2",
     "era_name": null,
@@ -978,6 +1024,7 @@
   },
   {
     "id": "REGENT4_EPOCH",
+    "slug": "",
     "title": "Великая стратегия",
     "era": "Invitation3",
     "era_name": null,
@@ -999,6 +1046,7 @@
   },
   {
     "id": "NECROBINDER5_EPOCH",
+    "slug": "",
     "title": "Гигант",
     "era": "Invitation3",
     "era_name": null,
@@ -1020,6 +1068,7 @@
   },
   {
     "id": "NECROBINDER6_EPOCH",
+    "slug": "",
     "title": "Аннигиляция",
     "era": "Invitation4",
     "era_name": null,
@@ -1041,6 +1090,7 @@
   },
   {
     "id": "DARV_EPOCH",
+    "slug": "",
     "title": "Дарв",
     "era": "Invitation4",
     "era_name": null,
@@ -1058,6 +1108,7 @@
   },
   {
     "id": "NECROBINDER1_EPOCH",
+    "slug": "",
     "title": "Жизнь и смерть",
     "era": "Invitation5",
     "era_name": null,
@@ -1083,6 +1134,7 @@
   },
   {
     "id": "REGENT7_EPOCH",
+    "slug": "",
     "title": "Маленький король",
     "era": "Invitation5",
     "era_name": null,
@@ -1104,6 +1156,7 @@
   },
   {
     "id": "IRONCLAD7_EPOCH",
+    "slug": "",
     "title": "Мое лицо",
     "era": "Invitation5",
     "era_name": null,
@@ -1125,6 +1178,7 @@
   },
   {
     "id": "SILENT7_EPOCH",
+    "slug": "",
     "title": "Суп",
     "era": "Invitation5",
     "era_name": null,
@@ -1146,6 +1200,7 @@
   },
   {
     "id": "DAILY_RUN_EPOCH",
+    "slug": "",
     "title": "Повседневность",
     "era": "Invitation6",
     "era_name": null,
@@ -1163,6 +1218,7 @@
   },
   {
     "id": "DEFECT7_EPOCH",
+    "slug": "",
     "title": "О, блестяшка!",
     "era": "Invitation6",
     "era_name": null,
@@ -1184,6 +1240,7 @@
   },
   {
     "id": "NECROBINDER7_EPOCH",
+    "slug": "",
     "title": "Убить",
     "era": "Invitation7",
     "era_name": null,

@@ -309,6 +309,7 @@ class Achievement(BaseModel):
 
 class Epoch(BaseModel):
     id: str
+    slug: str | None = None
     title: str
     description: str | None = None
     era: str

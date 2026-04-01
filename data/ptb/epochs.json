@@ -1,6 +1,7 @@
 [
   {
     "id": "COLORLESS1_EPOCH",
+    "slug": "pr-on",
     "title": "Préon",
     "era": "Prehistoria0",
     "era_name": "Pré-História",
@@ -26,6 +27,7 @@
   },
   {
     "id": "RELIC1_EPOCH",
+    "slug": "rabiscos",
     "title": "Rabiscos",
     "era": "Prehistoria1",
     "era_name": null,
@@ -47,6 +49,7 @@
   },
   {
     "id": "COLORLESS2_EPOCH",
+    "slug": "o-arquiteto",
     "title": "O Arquiteto",
     "era": "Prehistoria2",
     "era_name": null,
@@ -68,6 +71,7 @@
   },
   {
     "id": "SILENT6_EPOCH",
+    "slug": "n-mesis",
     "title": "Nêmesis",
     "era": "Prehistoria2",
     "era_name": null,
@@ -89,6 +93,7 @@
   },
   {
     "id": "CUSTOM_AND_SEEDS_EPOCH",
+    "slug": "sementes",
     "title": "Sementes",
     "era": "Seeds0",
     "era_name": "Sementes",
@@ -106,6 +111,7 @@
   },
   {
     "id": "ACT3_B_EPOCH",
+    "slug": "outro-lugar",
     "title": "Outro Lugar",
     "era": "Seeds0",
     "era_name": "Sementes",
@@ -123,6 +129,7 @@
   },
   {
     "id": "RELIC2_EPOCH",
+    "slug": "ancestrais",
     "title": "Ancestrais",
     "era": "Seeds1",
     "era_name": null,
@@ -144,6 +151,7 @@
   },
   {
     "id": "COLORLESS3_EPOCH",
+    "slug": "traidores",
     "title": "Traidores",
     "era": "Seeds2",
     "era_name": null,
@@ -165,6 +173,7 @@
   },
   {
     "id": "IRONCLAD4_EPOCH",
+    "slug": "o-pacto",
     "title": "O Pacto",
     "era": "Seeds2",
     "era_name": null,
@@ -186,6 +195,7 @@
   },
   {
     "id": "IRONCLAD3_EPOCH",
+    "slug": "devasta-o",
     "title": "Devastação",
     "era": "Seeds3",
     "era_name": null,
@@ -207,6 +217,7 @@
   },
   {
     "id": "ACT2_B_EPOCH",
+    "slug": "algum-lugar",
     "title": "Algum Lugar",
     "era": "Seeds3",
     "era_name": null,
@@ -224,6 +235,7 @@
   },
   {
     "id": "COLORLESS4_EPOCH",
+    "slug": "sono-profundo",
     "title": "Sono Profundo",
     "era": "Seeds3",
     "era_name": null,
@@ -245,6 +257,7 @@
   },
   {
     "id": "RELIC4_EPOCH",
+    "slug": "consequ-ncias",
     "title": "Consequências",
     "era": "Blight0",
     "era_name": "Infestação",
@@ -270,6 +283,7 @@
   },
   {
     "id": "EVENT3_EPOCH",
+    "slug": "o-pin-culo",
     "title": "O Pináculo",
     "era": "Blight1",
     "era_name": null,
@@ -287,6 +301,7 @@
   },
   {
     "id": "IRONCLAD2_EPOCH",
+    "slug": "o-r-gido",
     "title": "O Rígido",
     "era": "Blight1",
     "era_name": null,
@@ -308,6 +323,7 @@
   },
   {
     "id": "COLORLESS5_EPOCH",
+    "slug": "compre-algo",
     "title": "Compre Algo!",
     "era": "Blight1",
     "era_name": null,
@@ -329,6 +345,7 @@
   },
   {
     "id": "SILENT4_EPOCH",
+    "slug": "trof-us",
     "title": "Troféus",
     "era": "Blight1",
     "era_name": null,
@@ -350,6 +367,7 @@
   },
   {
     "id": "SILENT5_EPOCH",
+    "slug": "venenosa",
     "title": "Venenosa",
     "era": "Blight2",
     "era_name": null,
@@ -371,6 +389,7 @@
   },
   {
     "id": "DEFECT6_EPOCH",
+    "slug": "raios-laser",
     "title": "Raios Laser",
     "era": "Blight2",
     "era_name": null,
@@ -392,6 +411,7 @@
   },
   {
     "id": "IRONCLAD5_EPOCH",
+    "slug": "em-chamas",
     "title": "Em Chamas",
     "era": "Blight2",
     "era_name": null,
@@ -413,6 +433,7 @@
   },
   {
     "id": "POTION2_EPOCH",
+    "slug": "a-calmaria",
     "title": "A Calmaria",
     "era": "Flourish0",
     "era_name": "Prosperar",
@@ -438,6 +459,7 @@
   },
   {
     "id": "SILENT2_EPOCH",
+    "slug": "presas-maiores",
     "title": "Presas Maiores",
     "era": "Flourish0",
     "era_name": "Prosperar",
@@ -459,6 +481,7 @@
   },
   {
     "id": "OROBAS_EPOCH",
+    "slug": "orobas",
     "title": "Orobas",
     "era": "Flourish0",
     "era_name": "Prosperar",
@@ -476,6 +499,7 @@
   },
   {
     "id": "EVENT1_EPOCH",
+    "slug": "cultistas",
     "title": "Cultistas",
     "era": "Flourish1",
     "era_name": null,
@@ -493,6 +517,7 @@
   },
   {
     "id": "RELIC5_EPOCH",
+    "slug": "despertar",
     "title": "Despertar",
     "era": "Flourish1",
     "era_name": null,
@@ -517,6 +542,7 @@
   },
   {
     "id": "REGENT6_EPOCH",
+    "slug": "descontentamento",
     "title": "Descontentamento",
     "era": "Flourish1",
     "era_name": null,
@@ -538,6 +564,7 @@
   },
   {
     "id": "DEFECT3_EPOCH",
+    "slug": "ol-ol",
     "title": "Olá! Olá!",
     "era": "Flourish1",
     "era_name": null,
@@ -559,6 +586,7 @@
   },
   {
     "id": "RELIC3_EPOCH",
+    "slug": "civiliza-o",
     "title": "Civilização",
     "era": "Flourish1",
     "era_name": null,
@@ -584,6 +612,7 @@
   },
   {
     "id": "DEFECT4_EPOCH",
+    "slug": "depura-o",
     "title": "Depuração",
     "era": "Flourish2",
     "era_name": null,
@@ -605,6 +634,7 @@
   },
   {
     "id": "REGENT1_EPOCH",
+    "slug": "planeta-an-malo",
     "title": "Planeta Anômalo",
     "era": "Flourish2",
     "era_name": null,
@@ -630,6 +660,7 @@
   },
   {
     "id": "SILENT3_EPOCH",
+    "slug": "enfermidade",
     "title": "Enfermidade",
     "era": "Flourish3",
     "era_name": null,
@@ -651,6 +682,7 @@
   },
   {
     "id": "IRONCLAD6_EPOCH",
+    "slug": "apag-o",
     "title": "Apagão",
     "era": "Flourish3",
     "era_name": null,
@@ -672,6 +704,7 @@
   },
   {
     "id": "REGENT5_EPOCH",
+    "slug": "amizades",
     "title": "Amizades",
     "era": "Flourish3",
     "era_name": null,
@@ -693,6 +726,7 @@
   },
   {
     "id": "DEFECT5_EPOCH",
+    "slug": "confronto",
     "title": "Confronto",
     "era": "Flourish3",
     "era_name": null,
@@ -714,6 +748,7 @@
   },
   {
     "id": "POTION1_EPOCH",
+    "slug": "abertura",
     "title": "Abertura",
     "era": "Invitation0",
     "era_name": "Portas",
@@ -735,6 +770,7 @@
   },
   {
     "id": "NEOW_EPOCH",
+    "slug": "neow",
     "title": "Neow",
     "era": "Invitation0",
     "era_name": "Portas",
@@ -765,6 +801,7 @@
   },
   {
     "id": "NECROBINDER2_EPOCH",
+    "slug": "os-doze",
     "title": "Os Doze",
     "era": "Invitation0",
     "era_name": "Portas",
@@ -786,6 +823,7 @@
   },
   {
     "id": "SILENT1_EPOCH",
+    "slug": "a-n-voa-retorna",
     "title": "A Névoa Retorna",
     "era": "Invitation0",
     "era_name": "Portas",
@@ -811,6 +849,7 @@
   },
   {
     "id": "REGENT2_EPOCH",
+    "slug": "aqui-estou",
     "title": "Aqui Estou",
     "era": "Invitation1",
     "era_name": null,
@@ -832,6 +871,7 @@
   },
   {
     "id": "EVENT2_EPOCH",
+    "slug": "o-retorno",
     "title": "O Retorno",
     "era": "Invitation1",
     "era_name": null,
@@ -849,6 +889,7 @@
   },
   {
     "id": "DEFECT1_EPOCH",
+    "slug": "reinicializa-o",
     "title": "Reinicialização",
     "era": "Invitation1",
     "era_name": null,
@@ -873,6 +914,7 @@
   },
   {
     "id": "NECROBINDER3_EPOCH",
+    "slug": "futilidade",
     "title": "Futilidade",
     "era": "Invitation1",
     "era_name": null,
@@ -894,6 +936,7 @@
   },
   {
     "id": "UNDERDOCKS_EPOCH",
+    "slug": "docas-subterr-neas",
     "title": "Docas Subterrâneas",
     "era": "Invitation1",
     "era_name": null,
@@ -915,6 +958,7 @@
   },
   {
     "id": "REGENT3_EPOCH",
+    "slug": "necessitamos-de-um-her-i",
     "title": "Necessitamos de um Herói!",
     "era": "Invitation2",
     "era_name": null,
@@ -936,6 +980,7 @@
   },
   {
     "id": "DEFECT2_EPOCH",
+    "slug": "enganado",
     "title": "Enganado",
     "era": "Invitation2",
     "era_name": null,
@@ -957,6 +1002,7 @@
   },
   {
     "id": "NECROBINDER4_EPOCH",
+    "slug": "prole-do-pin-culo",
     "title": "Prole do Pináculo",
     "era": "Invitation2",
     "era_name": null,
@@ -978,6 +1024,7 @@
   },
   {
     "id": "REGENT4_EPOCH",
+    "slug": "estrat-gia-suprema",
     "title": "Estratégia Suprema",
     "era": "Invitation3",
     "era_name": null,
@@ -999,6 +1046,7 @@
   },
   {
     "id": "NECROBINDER5_EPOCH",
+    "slug": "o-gigante",
     "title": "O Gigante",
     "era": "Invitation3",
     "era_name": null,
@@ -1020,6 +1068,7 @@
   },
   {
     "id": "NECROBINDER6_EPOCH",
+    "slug": "aniquila-o",
     "title": "Aniquilação",
     "era": "Invitation4",
     "era_name": null,
@@ -1041,6 +1090,7 @@
   },
   {
     "id": "DARV_EPOCH",
+    "slug": "darv",
     "title": "Darv",
     "era": "Invitation4",
     "era_name": null,
@@ -1058,6 +1108,7 @@
   },
   {
     "id": "NECROBINDER1_EPOCH",
+    "slug": "vida-e-morte",
     "title": "Vida e Morte",
     "era": "Invitation5",
     "era_name": null,
@@ -1083,6 +1134,7 @@
   },
   {
     "id": "REGENT7_EPOCH",
+    "slug": "pequeno-rei",
     "title": "Pequeno Rei",
     "era": "Invitation5",
     "era_name": null,
@@ -1104,6 +1156,7 @@
   },
   {
     "id": "IRONCLAD7_EPOCH",
+    "slug": "meu-rosto",
     "title": "Meu Rosto",
     "era": "Invitation5",
     "era_name": null,
@@ -1125,6 +1178,7 @@
   },
   {
     "id": "SILENT7_EPOCH",
+    "slug": "sopa",
     "title": "Sopa",
     "era": "Invitation5",
     "era_name": null,
@@ -1146,6 +1200,7 @@
   },
   {
     "id": "DAILY_RUN_EPOCH",
+    "slug": "exerc-cio-di-rio",
     "title": "Exercício Diário",
     "era": "Invitation6",
     "era_name": null,
@@ -1163,6 +1218,7 @@
   },
   {
     "id": "DEFECT7_EPOCH",
+    "slug": "ooh-coisas-brilhantes",
     "title": "Ooh, Coisas Brilhantes!",
     "era": "Invitation6",
     "era_name": null,
@@ -1184,6 +1240,7 @@
   },
   {
     "id": "NECROBINDER7_EPOCH",
+    "slug": "morte",
     "title": "Morte",
     "era": "Invitation7",
     "era_name": null,

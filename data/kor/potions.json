@@ -112,7 +112,7 @@
   {
     "id": "BEETLE_JUICE",
     "name": "딱정벌레 주스",
-    "description": "choose(1):다음 턴에[/blue]턴 동안} 적이 가하는 공격의 피해량이 [blue]30%[/blue] 감소합니다.",
+    "description": "다음 턴에 적이 가하는 공격의 피해량이 [blue]30%[/blue] 감소합니다.",
     "description_raw": "{Repeat:choose(1):다음 턴에|다음 [blue]{}[/blue]턴 동안} 적이 가하는 공격의 피해량이 [blue]{DamageDecrease}%[/blue] 감소합니다.",
     "rarity": "희귀",
     "image_url": "/static/images/potions/beetle_juice.png",
@@ -134,7 +134,7 @@
   {
     "id": "CLARITY",
     "name": "명확성 추출물",
-    "description": "카드를 [blue]1[/blue]장 뽑습니다. 다음 choose(1):턴[/blue]턴} 시작 시, 카드를 추가로 [blue]1[/blue]장 뽑습니다.",
+    "description": "카드를 [blue]1[/blue]장 뽑습니다. 다음 턴 시작 시, 카드를 추가로 [blue]1[/blue]장 뽑습니다.",
     "description_raw": "카드를 [blue]{Cards}[/blue]장 뽑습니다. 다음 {ClarityPower:choose(1):턴|[blue]{}[/blue]턴} 시작 시, 카드를 추가로 [blue]1[/blue]장 뽑습니다.",
     "rarity": "고급",
     "image_url": "/static/images/potions/clarity.png",

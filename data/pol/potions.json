@@ -541,7 +541,7 @@
   {
     "id": "RADIANT_TINCTURE",
     "name": "Promieniująca nalewka",
-    "description": "Zyskaj [energy:1]. Na początku plural(en):następnej tury[/blue] następnych tur} zyskaj dodatkowy [energy:1].",
+    "description": "Zyskaj [energy:1]. Na początku plural(en):następnej tury zyskaj dodatkowy [energy:1].",
     "description_raw": "Zyskaj {Energy:energyIcons()}. Na początku {RadiancePower:plural(en):następnej tury|[blue]{RadiancePower}[/blue] następnych tur} zyskaj dodatkowy {energyPrefix:energyIcons(1)}.",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/radiant_tincture.png",

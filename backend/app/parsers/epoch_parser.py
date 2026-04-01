@@ -221,8 +221,11 @@ def parse_single_epoch(filepath: Path, localization: dict, title_map: dict[str, 
     era_value = ERA_VALUES.get(era, 0) if era else 0
     sort_order = era_value * 100 + (era_position if era_position is not None else 0)
 
+    slug = re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-') if title else epoch_id.lower()
+
     result = {
         "id": epoch_id,
+        "slug": slug,
         "title": title,
         "era": era,
         "era_name": None,
