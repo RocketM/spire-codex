@@ -61,6 +61,7 @@ const DYNAMIC_ROUTES = [
   { endpoint: "/api/afflictions", prefix: "/afflictions", priority: 0.5 },
   { endpoint: "/api/modifiers", prefix: "/modifiers", priority: 0.5 },
   { endpoint: "/api/achievements", prefix: "/achievements", priority: 0.5 },
+  { endpoint: "/api/epochs", prefix: "/timeline", priority: 0.5 },
 ];
 
 async function fetchEntities(endpoint: string): Promise<EntityWithImage[]> {

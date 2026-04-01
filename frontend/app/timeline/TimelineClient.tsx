@@ -310,7 +310,9 @@ export default function TimelineClient({
                               </span>
                               <div>
                                 <h3 className="font-semibold text-[var(--text-primary)]">
-                                  {epoch.title}
+                                  <Link href={`/timeline/${epoch.id.toLowerCase()}`} className="hover:text-[var(--accent-gold)] transition-colors" onClick={(e) => e.stopPropagation()}>
+                                    {epoch.title}
+                                  </Link>
                                 </h3>
                                 <p className="text-[10px] text-[var(--text-muted)]">
                                   {epoch.era.replace(/(\d+)$/, " $1")}
