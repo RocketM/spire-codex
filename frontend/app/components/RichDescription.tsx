@@ -451,22 +451,9 @@ export default function RichDescription({
       return renderNode(node, energyIcon, relatedCards);
     }
 
-    if (node.text !== undefined && interactiveWords && Object.keys(interactiveWords).length > 0) {
-      const segments = splitWithInteractiveWords(node.text, interactiveWords);
-      if (segments.some((s) => s.info)) {
-        return (
-          <React.Fragment key={key}>
-            {segments.map((seg, i) =>
-              seg.info ? (
-                <WordTooltip key={i} word={seg.word!} info={seg.info}>{seg.text}</WordTooltip>
-              ) : (
-                <React.Fragment key={i}>{seg.text}</React.Fragment>
-              )
-            )}
-          </React.Fragment>
-        );
-      }
-      // Also check related cards
+    if (node.text !== undefined) {
+      // Check card refs first — card names take priority over interactive words
+      // (e.g. "Minion Strikes" should link to the card, not match "Minion" power)
       if (relatedCards?.length) {
         const cardSegs = splitWithCardRefs(node.text, relatedCards);
         if (cardSegs.some((s) => s.card)) {
@@ -479,17 +466,18 @@ export default function RichDescription({
           );
         }
       }
-      return node.text;
-    }
-
-    if (node.text !== undefined) {
-      if (relatedCards?.length) {
-        const segments = splitWithCardRefs(node.text, relatedCards);
-        if (segments.some((s) => s.card)) {
+      // Then check interactive words (powers, keywords, glossary)
+      if (interactiveWords && Object.keys(interactiveWords).length > 0) {
+        const segments = splitWithInteractiveWords(node.text, interactiveWords);
+        if (segments.some((s) => s.info)) {
           return (
             <React.Fragment key={key}>
               {segments.map((seg, i) =>
-                seg.card ? <CardHoverTip key={i} card={seg.card} isUpgraded={seg.isUpgraded}>{seg.text}</CardHoverTip> : <React.Fragment key={i}>{seg.text}</React.Fragment>
+                seg.info ? (
+                  <WordTooltip key={i} word={seg.word!} info={seg.info}>{seg.text}</WordTooltip>
+                ) : (
+                  <React.Fragment key={i}>{seg.text}</React.Fragment>
+                )
               )}
             </React.Fragment>
           );
