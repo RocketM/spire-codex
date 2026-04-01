@@ -12,7 +12,7 @@
         "name": "Рубот"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] расчленили {characterObject}."
+    "loss_text": "[gold]Товарищи руботы[/gold] расчленили {characterObject}."
   },
   {
     "id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
@@ -35,7 +35,7 @@
         "name": "Боевой тренажер 3.0"
       }
     ],
-    "loss_text": "{characterObject} загадочным образом победил [gold]{encounter}[/gold] ."
+    "loss_text": "{characterObject} загадочным образом победил [gold]Потрепанный манекен[/gold] ."
   },
   {
     "id": "BOWLBUGS_NORMAL",
@@ -64,7 +64,7 @@
         "name": "Полый рогач (с шелком)"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):попался|попался|попалась} под ноги [gold]полчищу рогачей[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):попался|попался|попалась} под ноги [gold]полчищу рогачей[/gold]."
   },
   {
     "id": "BOWLBUGS_WEAK",
@@ -89,7 +89,7 @@
         "name": "Полый рогач (с камнем)"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):помешал|помешал|помешала} [gold]нескольким рогачам[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):помешал|помешал|помешала} [gold]нескольким рогачам[/gold]."
   },
   {
     "id": "BYGONE_EFFIGY_ELITE",
@@ -104,7 +104,7 @@
         "name": "Античный истукан"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] располовинил {characterObject}."
+    "loss_text": "[gold]Античный истукан[/gold] располовинил {characterObject}."
   },
   {
     "id": "BYRDONIS_ELITE",
@@ -119,7 +119,7 @@
         "name": "Птахоклюй"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] отогнал {characterObject} от своего потомства."
+    "loss_text": "[gold]Птахоклюй[/gold] отогнал {characterObject} от своего потомства."
   },
   {
     "id": "CEREMONIAL_BEAST_BOSS",
@@ -134,7 +134,7 @@
         "name": "Хранитель обряда"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):был упокоен|был упокоен|была упокоена} [gold]Хранителем обряда[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):был упокоен|был упокоен|была упокоена} [gold]Хранителем обряда[/gold]."
   },
   {
     "id": "CHOMPERS_NORMAL",
@@ -151,7 +151,7 @@
         "name": "Зубастик"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] загрызла {characterObject}."
+    "loss_text": "[gold]Парочка автоматонов[/gold] загрызла {characterObject}."
   },
   {
     "id": "CONSTRUCT_MENAGERIE_NORMAL",
@@ -170,7 +170,7 @@
         "name": "Бойкий агрегат"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] растер в порошок {characterObject}."
+    "loss_text": "[gold]Зоопарк конструкций[/gold] растер в порошок {characterObject}."
   },
   {
     "id": "CORPSE_SLUGS_NORMAL",
@@ -187,7 +187,7 @@
         "name": "Слизень-падальщик"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):пошел|пошел|пошла} на корм [gold]слизням-падальщикам[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):пошел|пошел|пошла} на корм [gold]слизням-падальщикам[/gold]."
   },
   {
     "id": "CORPSE_SLUGS_WEAK",
@@ -204,7 +204,7 @@
         "name": "Слизень-падальщик"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):пошел|пошел|пошла} на корм [gold]слизням-падальщикам[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):пошел|пошел|пошла} на корм [gold]слизням-падальщикам[/gold]."
   },
   {
     "id": "CUBEX_CONSTRUCT_NORMAL",
@@ -219,7 +219,7 @@
         "name": "Кубический агрегат"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] расстрелял лазером {characterObject}."
+    "loss_text": "[gold]Кубический агрегат[/gold] расстрелял лазером {characterObject}."
   },
   {
     "id": "CULTISTS_NORMAL",
@@ -238,7 +238,7 @@
         "name": "Промокший культист"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):пал|пал|пала} от рук [gold]культистов[/gold]. [sine]Кар-р-р[/sine]..."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):пал|пал|пала} от рук [gold]культистов[/gold]. [sine]Кар-р-р[/sine]..."
   },
   {
     "id": "DECIMILLIPEDE_ELITE",
@@ -261,7 +261,7 @@
         "name": "Decimillipede Segment Middle"
       }
     ],
-    "loss_text": "{character} не {characterGender:choose(neutral|masculine|feminine):пережил|пережил|пережила} встречу с [gold]скольконожкой[/gold]."
+    "loss_text": "The adventurer не {characterGender:choose(neutral|masculine|feminine):пережил|пережил|пережила} встречу с [gold]скольконожкой[/gold]."
   },
   {
     "id": "DENSE_VEGETATION_EVENT_ENCOUNTER",
@@ -276,7 +276,7 @@
         "name": "Ерзун"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):был заражен|был заражен|была заражена} [gold]Ерзунами[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):был заражен|был заражен|была заражена} [gold]Ерзунами[/gold]."
   },
   {
     "id": "DEVOTED_SCULPTOR_WEAK",
@@ -291,7 +291,7 @@
         "name": "Одержимый скульптор"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] разбил {characterObject} на кусочки."
+    "loss_text": "[gold]Одержимый скульптор[/gold] разбил {characterObject} на кусочки."
   },
   {
     "id": "DOORMAKER_BOSS",
@@ -310,7 +310,7 @@
         "name": "Привратник"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] поставил {characterObject} на место."
+    "loss_text": "[gold]Привратник[/gold] поставил {characterObject} на место."
   },
   {
     "id": "ENTOMANCER_ELITE",
@@ -325,7 +325,7 @@
         "name": "Энтомант"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] зажалил до смерти {characterObject}."
+    "loss_text": "[gold]Энтомант[/gold] зажалил до смерти {characterObject}."
   },
   {
     "id": "EXOSKELETONS_NORMAL",
@@ -415,7 +415,7 @@
         "name": "Сучковый слизень (средний)"
       }
     ],
-    "loss_text": "{characterObject} поглотили [gold]{encounter}[/gold] ."
+    "loss_text": "{characterObject} поглотили [gold]Гриб и слизь[/gold] ."
   },
   {
     "id": "FOGMOG_NORMAL",
@@ -449,7 +449,7 @@
         "name": "Хвостолов-отшельник"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):попал|попал|попала} в засаду [gold]хвостолова[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):попал|попал|попала} в засаду [gold]хвостолова[/gold]."
   },
   {
     "id": "FROG_KNIGHT_NORMAL",
@@ -464,7 +464,7 @@
         "name": "Сэр Лягушка"
       }
     ],
-    "loss_text": "Бравый [gold]{encounter}[/gold] доблестно победил {characterObject}."
+    "loss_text": "Бравый [gold]Сэр лягушка[/gold] доблестно победил {characterObject}."
   },
   {
     "id": "FUZZY_WURM_CRAWLER_WEAK",
@@ -481,7 +481,7 @@
         "name": "Пышный червогрив"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] наплевал на {characterObject}."
+    "loss_text": "[gold]Пышный червогрив[/gold] наплевал на {characterObject}."
   },
   {
     "id": "GLOBE_HEAD_NORMAL",
@@ -496,7 +496,7 @@
         "name": "Шароголовый"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] распылил {characterObject}."
+    "loss_text": "[gold]Одинокий Шароголовый[/gold] распылил {characterObject}."
   },
   {
     "id": "GREMLIN_MERC_NORMAL",
@@ -519,7 +519,7 @@
         "name": "Коварный гремлин"
       }
     ],
-    "loss_text": "{characterObject} ограбили [gold]{encounter}[/gold]."
+    "loss_text": "{characterObject} ограбили [gold]Два гремлина в пальто[/gold]."
   },
   {
     "id": "HAUNTED_SHIP_NORMAL",
@@ -534,7 +534,7 @@
         "name": "Проклятое судно"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] растоптало {characterObject}."
+    "loss_text": "[gold]Проклятое судно[/gold] растоптало {characterObject}."
   },
   {
     "id": "HUNTER_KILLER_NORMAL",
@@ -549,7 +549,7 @@
         "name": "Убийца охотников"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):был выпотрошен|был выпотрошен|была выпотрошена} [gold]убийцей охотников[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):был выпотрошен|был выпотрошен|была выпотрошена} [gold]убийцей охотников[/gold]."
   },
   {
     "id": "INFESTED_PRISMS_ELITE",
@@ -564,7 +564,7 @@
         "name": "Зараженная призма"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] остановила {characterObject}."
+    "loss_text": "[gold]Зараженная призма[/gold] остановила {characterObject}."
   },
   {
     "id": "INKLETS_NORMAL",
@@ -579,7 +579,7 @@
         "name": "Чернильник"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] не пропустили {characterObject}."
+    "loss_text": "[gold]Чернильники[/gold] не пропустили {characterObject}."
   },
   {
     "id": "KAISER_CRAB_BOSS",
@@ -598,7 +598,7 @@
         "name": "Ракета"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] поразил {characterObject} со всех сторон."
+    "loss_text": "[gold]Царь-краб[/gold] поразил {characterObject} со всех сторон."
   },
   {
     "id": "KNIGHTS_ELITE",
@@ -623,7 +623,7 @@
         "name": "Призрачный рыцарь"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] сразила {characterObject}."
+    "loss_text": "[gold]Банда рыцарей[/gold] сразила {characterObject}."
   },
   {
     "id": "KNOWLEDGE_DEMON_BOSS",
@@ -638,7 +638,7 @@
         "name": "Всезнающий демон"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] наделил {characterObject} невыносимыми знаниями."
+    "loss_text": "[gold]Всезнающий демон[/gold] наделил {characterObject} невыносимыми знаниями."
   },
   {
     "id": "LAGAVULIN_MATRIARCH_BOSS",
@@ -653,7 +653,7 @@
         "name": "Праматерь лагавулинов"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] разорвала {characterObject} пополам."
+    "loss_text": "[gold]Праматерь лагавулинов[/gold] разорвала {characterObject} пополам."
   },
   {
     "id": "LIVING_FOG_NORMAL",
@@ -672,7 +672,7 @@
         "name": "Живой туман"
       }
     ],
-    "loss_text": "{character} не {characterGender:choose(neutral|masculine|feminine):выдержал|выдержал|выдержала} вони от [gold]недоброго газа[/gold]."
+    "loss_text": "The adventurer не {characterGender:choose(neutral|masculine|feminine):выдержал|выдержал|выдержала} вони от [gold]недоброго газа[/gold]."
   },
   {
     "id": "LOUSE_PROGENITOR_NORMAL",
@@ -687,7 +687,7 @@
         "name": "Королевская вошь"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] парализовала {characterObject}."
+    "loss_text": "[gold]Королевская вошь[/gold] парализовала {characterObject}."
   },
   {
     "id": "MAWLER_NORMAL",
@@ -702,7 +702,7 @@
         "name": "Клыкозавр"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):попал|попал|попала} на зубок [gold]клыкозавру[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):попал|попал|попала} на зубок [gold]клыкозавру[/gold]."
   },
   {
     "id": "MECHA_KNIGHT_ELITE",
@@ -717,7 +717,7 @@
         "name": "Механический рыцарь"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] нанизал и зажарил {characterObject}."
+    "loss_text": "[gold]Механический рыцарь[/gold] нанизал и зажарил {characterObject}."
   },
   {
     "id": "MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER",
@@ -732,7 +732,7 @@
         "name": "Таинственный рыцарь"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):попытался|попытался|попыталась} присвоить ключ [gold]таинственного рыцаря[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):попытался|попытался|попыталась} присвоить ключ [gold]таинственного рыцаря[/gold]."
   },
   {
     "id": "MYTES_NORMAL",
@@ -747,7 +747,7 @@
         "name": "Кровожор"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] опустошил {characterObject}."
+    "loss_text": "[gold]Сброд кровожоров[/gold] опустошил {characterObject}."
   },
   {
     "id": "NIBBITS_NORMAL",
@@ -762,7 +762,7 @@
         "name": "Кусака"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] избила {characterObject}."
+    "loss_text": "[gold]Пара кусак[/gold] избила {characterObject}."
   },
   {
     "id": "NIBBITS_WEAK",
@@ -779,7 +779,7 @@
         "name": "Кусака"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] надрал задницу {characterObject}."
+    "loss_text": "[gold]Одинокий кусака[/gold] надрал задницу {characterObject}."
   },
   {
     "id": "OVERGROWTH_CRAWLERS",
@@ -801,7 +801,7 @@
         "name": "Жук-ужиматель"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):пошел|пошел|пошла} на корм [gold]живности из зарослей[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):пошел|пошел|пошла} на корм [gold]живности из зарослей[/gold]."
   },
   {
     "id": "OVICOPTER_NORMAL",
@@ -820,7 +820,7 @@
         "name": "Крепкое яйцо"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] скормил {characterObject} своему потомству."
+    "loss_text": "[gold]Овикоптер[/gold] скормил {characterObject} своему потомству."
   },
   {
     "id": "OWL_MAGISTRATE_NORMAL",
@@ -835,7 +835,7 @@
         "name": "Сова юстициарий"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] приговорил {characterObject} к смерти."
+    "loss_text": "[gold]Сова юстициарий[/gold] приговорил {characterObject} к смерти."
   },
   {
     "id": "PHANTASMAL_GARDENERS_ELITE",
@@ -850,7 +850,7 @@
         "name": "Фантомный альгочист"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):был упокоен|был упокоен|была упокоена} [gold]Фантомными альгочистами[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):был упокоен|был упокоен|была упокоена} [gold]Фантомными альгочистами[/gold]."
   },
   {
     "id": "PHROG_PARASITE_ELITE",
@@ -869,7 +869,7 @@
         "name": "Ерзун"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] заселился в {characterObject}."
+    "loss_text": "[gold]Лягуш-паразит[/gold] заселился в {characterObject}."
   },
   {
     "id": "PUNCH_CONSTRUCT_NORMAL",
@@ -884,7 +884,7 @@
         "name": "Бойкий агрегат"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):ввязался|ввязался|ввязалась} в потасовку с [gold]бойким агрегатом[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):ввязался|ввязался|ввязалась} в потасовку с [gold]бойким агрегатом[/gold]."
   },
   {
     "id": "PUNCH_OFF_EVENT_ENCOUNTER",
@@ -899,7 +899,7 @@
         "name": "Бойкий агрегат"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):оказался|оказался|оказалась} третьим лишним в драке [gold]бойких агрегатов[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):оказался|оказался|оказалась} третьим лишним в драке [gold]бойких агрегатов[/gold]."
   },
   {
     "id": "QUEEN_BOSS",
@@ -918,7 +918,7 @@
         "name": "Огненная фаланга"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):занял|занял|заняла} свое место в коллекции [gold]королевы[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):занял|занял|заняла} свое место в коллекции [gold]королевы[/gold]."
   },
   {
     "id": "RUBY_RAIDERS_NORMAL",
@@ -949,7 +949,7 @@
         "name": "Мародер-следопыт"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] налетели на {characterObject}."
+    "loss_text": "[gold]Рубиновые налетчики[/gold] налетели на {characterObject}."
   },
   {
     "id": "SCROLLS_OF_BITING_NORMAL",
@@ -966,7 +966,7 @@
         "name": "Зубастый свиток"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] разорвали {characterObject} в клочья."
+    "loss_text": "[gold]Много зубастых свитков[/gold] разорвали {characterObject} в клочья."
   },
   {
     "id": "SCROLLS_OF_BITING_WEAK",
@@ -983,7 +983,7 @@
         "name": "Зубастый свиток"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] разорвали {characterObject} в клочья."
+    "loss_text": "[gold]Зубастые свитки[/gold] разорвали {characterObject} в клочья."
   },
   {
     "id": "SEAPUNK_WEAK",
@@ -1000,7 +1000,7 @@
         "name": "Зламинария"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] забила {characterObject}."
+    "loss_text": "[gold]Зламинария[/gold] забила {characterObject}."
   },
   {
     "id": "SEWER_CLAM_NORMAL",
@@ -1015,7 +1015,7 @@
         "name": "Сточный моллюск"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] заглотил {characterObject}."
+    "loss_text": "[gold]Сточный моллюск[/gold] заглотил {characterObject}."
   },
   {
     "id": "SHRINKER_BEETLE_WEAK",
@@ -1032,7 +1032,7 @@
         "name": "Жук-ужиматель"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] оставил {characterObject} на закуску."
+    "loss_text": "[gold]Жук-ужиматель[/gold] оставил {characterObject} на закуску."
   },
   {
     "id": "SKULKING_COLONY_ELITE",
@@ -1047,7 +1047,7 @@
         "name": "Копотливая колония"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] поглотила {characterObject}."
+    "loss_text": "[gold]Копотливая колония[/gold] поглотила {characterObject}."
   },
   {
     "id": "SLIMED_BERSERKER_NORMAL",
@@ -1062,7 +1062,7 @@
         "name": "Ослизненный берсерк"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] поглотил {characterObject}."
+    "loss_text": "[gold]Ослизненный берсерк[/gold] поглотил {characterObject}."
   },
   {
     "id": "SLIMES_NORMAL",
@@ -1091,7 +1091,7 @@
         "name": "Сучковый слизень (маленький)"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] сразило {characterObject}."
+    "loss_text": "[gold]Полчище слизней[/gold] сразило {characterObject}."
   },
   {
     "id": "SLIMES_WEAK",
@@ -1120,7 +1120,7 @@
         "name": "Сучковый слизень (маленький)"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] сразила {characterObject}."
+    "loss_text": "[gold]Группа слизней[/gold] сразила {characterObject}."
   },
   {
     "id": "SLITHERING_STRANGLER_NORMAL",
@@ -1155,7 +1155,7 @@
         "name": "Сучковый слизень (маленький)"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] задушили {characterObject}."
+    "loss_text": "[gold]Горлодав и его приятель[/gold] задушили {characterObject}."
   },
   {
     "id": "SLUDGE_SPINNER_WEAK",
@@ -1170,7 +1170,7 @@
         "name": "Грязевой вертоплюй"
       }
     ],
-    "loss_text": "{character} не {characterGender:choose(neutral|masculine|feminine):сумел|сумел|сумела} одолеть [gold]грязевого вертоплюя[/gold]."
+    "loss_text": "The adventurer не {characterGender:choose(neutral|masculine|feminine):сумел|сумел|сумела} одолеть [gold]грязевого вертоплюя[/gold]."
   },
   {
     "id": "SLUMBERING_BEETLE_NORMAL",
@@ -1195,7 +1195,7 @@
         "name": "Дремучий жук"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):помешал|помешал|помешала} [gold]жучиной ночевке[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):помешал|помешал|помешала} [gold]жучиной ночевке[/gold]."
   },
   {
     "id": "SNAPPING_JAXFRUIT_NORMAL",
@@ -1216,7 +1216,7 @@
         "name": "Зрелый джаксфрут"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):перешел|перешел|перешла} дорогу [gold]флоре зарослей[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):перешел|перешел|перешла} дорогу [gold]флоре зарослей[/gold]."
   },
   {
     "id": "SOUL_FYSH_BOSS",
@@ -1231,7 +1231,7 @@
         "name": "Призрачный рыб"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] приворожил {characterObject}."
+    "loss_text": "[gold]Призрачный рыб[/gold] приворожил {characterObject}."
   },
   {
     "id": "SOUL_NEXUS_ELITE",
@@ -1246,7 +1246,7 @@
         "name": "Чистилище душ"
       }
     ],
-    "loss_text": "На давно забытом поле битвы, {character} {characterGender:choose(neutral|masculine|feminine):уступил|уступил|уступила} [gold]чистилищу душ[/gold] ."
+    "loss_text": "На давно забытом поле битвы, The adventurer {characterGender:choose(neutral|masculine|feminine):уступил|уступил|уступила} [gold]чистилищу душ[/gold] ."
   },
   {
     "id": "SPINY_TOAD_NORMAL",
@@ -1261,7 +1261,7 @@
         "name": "Ежовая жаба"
       }
     ],
-    "loss_text": "{character} не {characterGender:choose(neutral|masculine|feminine):смог|смог|смогла} пробиться сквозь шипы [gold]ежовой жабы[/gold]."
+    "loss_text": "The adventurer не {characterGender:choose(neutral|masculine|feminine):смог|смог|смогла} пробиться сквозь шипы [gold]ежовой жабы[/gold]."
   },
   {
     "id": "TERROR_EEL_ELITE",
@@ -1276,7 +1276,7 @@
         "name": "Испугорь"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] напугал {characterObject} до смерти."
+    "loss_text": "[gold]Испугорь[/gold] напугал {characterObject} до смерти."
   },
   {
     "id": "TEST_SUBJECT_BOSS",
@@ -1291,7 +1291,7 @@
         "name": "Подопытный №{Count}"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] отогнал {characterObject} от чертогов своих хозяев."
+    "loss_text": "[gold]Подопытный[/gold] отогнал {characterObject} от чертогов своих хозяев."
   },
   {
     "id": "THE_ARCHITECT_EVENT_ENCOUNTER",
@@ -1321,7 +1321,7 @@
         "name": "Проглот"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] сожрал {characterObject}. Ему все еще мало..."
+    "loss_text": "[gold]Проглот[/gold] сожрал {characterObject}. Ему все еще мало..."
   },
   {
     "id": "THE_KIN_BOSS",
@@ -1340,7 +1340,7 @@
         "name": "Пастырь стаи"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):был|был|была} разгромлена совершенной стратегией [gold]стаи[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):был|был|была} разгромлена совершенной стратегией [gold]стаи[/gold]."
   },
   {
     "id": "THE_LOST_AND_FORGOTTEN_NORMAL",
@@ -1359,7 +1359,7 @@
         "name": "Пропащий"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] лишили {characterObject} жажды жизни."
+    "loss_text": "[gold]Пропащий и Забытый[/gold] лишили {characterObject} жажды жизни."
   },
   {
     "id": "THE_OBSCURA_NORMAL",
@@ -1374,7 +1374,7 @@
         "name": "Обскура"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] и ее иллюзия сокрушили {character}."
+    "loss_text": "[gold]Обскура[/gold] и ее иллюзия сокрушили The adventurer."
   },
   {
     "id": "THIEVING_HOPPER_WEAK",
@@ -1391,7 +1391,7 @@
         "name": "Загребущая цикрада"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] обобрала {character}."
+    "loss_text": "[gold]Загребущая цикада[/gold] обобрала The adventurer."
   },
   {
     "id": "TOADPOLES_NORMAL",
@@ -1410,7 +1410,7 @@
         "name": "Головастик"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] победила {characterObject}."
+    "loss_text": "[gold]Живность Пристани[/gold] победила {characterObject}."
   },
   {
     "id": "TOADPOLES_WEAK",
@@ -1425,7 +1425,7 @@
         "name": "Головастик"
       }
     ],
-    "loss_text": "{character} не {characterGender:choose(neutral|masculine|feminine):справился|справился|справилась} c [gold]головастиками[/gold]."
+    "loss_text": "The adventurer не {characterGender:choose(neutral|masculine|feminine):справился|справился|справилась} c [gold]головастиками[/gold]."
   },
   {
     "id": "TUNNELER_NORMAL",
@@ -1451,7 +1451,7 @@
         "name": "Разрыхлитель"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] закопала {character}."
+    "loss_text": "[gold]Команда копателей[/gold] закопала The adventurer."
   },
   {
     "id": "TUNNELER_WEAK",
@@ -1468,7 +1468,7 @@
         "name": "Разрыхлитель"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] прихлопнул {character}."
+    "loss_text": "[gold]Разрыхлитель[/gold] прихлопнул The adventurer."
   },
   {
     "id": "TURRET_OPERATOR_WEAK",
@@ -1487,7 +1487,7 @@
         "name": "Наводчик"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] превратил {characterObject} в швейцарский сыр."
+    "loss_text": "[gold]Наводчик[/gold] превратил {characterObject} в швейцарский сыр."
   },
   {
     "id": "TWO_TAILED_RATS_NORMAL",
@@ -1502,7 +1502,7 @@
         "name": "Двухвостая крыса"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] теперь кишат внутри {characterObject}."
+    "loss_text": "[gold]Двухвостые крысы[/gold] теперь кишат внутри {characterObject}."
   },
   {
     "id": "VANTOM_BOSS",
@@ -1517,7 +1517,7 @@
         "name": "Вантом"
       }
     ],
-    "loss_text": "{character} {characterGender:choose(neutral|masculine|feminine):был превращен|был превращен|была превращена} в чернильника [gold]Вантомом[/gold]."
+    "loss_text": "The adventurer {characterGender:choose(neutral|masculine|feminine):был превращен|был превращен|была превращена} в чернильника [gold]Вантомом[/gold]."
   },
   {
     "id": "VINE_SHAMBLER_NORMAL",
@@ -1532,7 +1532,7 @@
         "name": "Заросший скиталец"
       }
     ],
-    "loss_text": "{character} не {characterGender:choose(neutral|masculine|feminine):сумел|сумел|сумела} вырваться из объятий [gold]заросшего скитальца[/gold]."
+    "loss_text": "The adventurer не {characterGender:choose(neutral|masculine|feminine):сумел|сумел|сумела} вырваться из объятий [gold]заросшего скитальца[/gold]."
   },
   {
     "id": "WATERFALL_GIANT_BOSS",
@@ -1547,6 +1547,6 @@
         "name": "Рифовый великан"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] убрал {characterObject} с Пристани."
+    "loss_text": "[gold]Рифовый великан[/gold] убрал {characterObject} с Пристани."
   }
 ]

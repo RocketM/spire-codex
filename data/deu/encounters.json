@@ -12,7 +12,7 @@
         "name": "Axtbot"
       }
     ],
-    "loss_text": "{character} wurde von ein paar [gold]Bot-Kumpeln[/gold] verstümmelt."
+    "loss_text": "The adventurer wurde von ein paar [gold]Bot-Kumpeln[/gold] verstümmelt."
   },
   {
     "id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
@@ -35,7 +35,7 @@
         "name": "Kampffreund V3.0"
       }
     ],
-    "loss_text": "Irgendwie wurde {character} von einem [gold]Kampferprobten Dummy[/gold] getötet???"
+    "loss_text": "Irgendwie wurde The adventurer von einem [gold]Kampferprobten Dummy[/gold] getötet???"
   },
   {
     "id": "BOWLBUGS_NORMAL",
@@ -64,7 +64,7 @@
         "name": "Schalenkäfer (Seide)"
       }
     ],
-    "loss_text": "{character} kam einem geschäftigen [gold]{encounter}[/gold] in den Weg."
+    "loss_text": "The adventurer kam einem geschäftigen [gold]Schalenkäfer-Schwarm[/gold] in den Weg."
   },
   {
     "id": "BOWLBUGS_WEAK",
@@ -89,7 +89,7 @@
         "name": "Schalenkäfer (Stein)"
       }
     ],
-    "loss_text": "{character} kam einigen geschäftigen [gold]Schalenkäfern[/gold] in den Weg."
+    "loss_text": "The adventurer kam einigen geschäftigen [gold]Schalenkäfern[/gold] in den Weg."
   },
   {
     "id": "BYGONE_EFFIGY_ELITE",
@@ -104,7 +104,7 @@
         "name": "Vergessenes Bildnis"
       }
     ],
-    "loss_text": "{character} wurde von einem [gold]Vergessenen Bildnis[/gold] entzwei geschlitzt."
+    "loss_text": "The adventurer wurde von einem [gold]Vergessenen Bildnis[/gold] entzwei geschlitzt."
   },
   {
     "id": "BYRDONIS_ELITE",
@@ -134,7 +134,7 @@
         "name": "Zeremonienbiest"
       }
     ],
-    "loss_text": "{character} wurde vom [gold]{encounter}[/gold] zur Ruhe gelegt."
+    "loss_text": "The adventurer wurde vom [gold]Zeremonientier[/gold] zur Ruhe gelegt."
   },
   {
     "id": "CHOMPERS_NORMAL",
@@ -151,7 +151,7 @@
         "name": "Mampfer"
       }
     ],
-    "loss_text": "{character} wurde von [gold]einem Paar Automatons[/gold] zermampft."
+    "loss_text": "The adventurer wurde von [gold]einem Paar Automatons[/gold] zermampft."
   },
   {
     "id": "CONSTRUCT_MENAGERIE_NORMAL",
@@ -170,7 +170,7 @@
         "name": "Boxer-Konstrukt"
       }
     ],
-    "loss_text": "Die [gold]{encounter}[/gold] vernichtete {characterObject}."
+    "loss_text": "Die [gold]Konstrukt-Menagerie[/gold] vernichtete {characterObject}."
   },
   {
     "id": "CORPSE_SLUGS_NORMAL",
@@ -187,7 +187,7 @@
         "name": "Leichenschnecke"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] verspeisten {characterObject}."
+    "loss_text": "[gold]Viele Leichenschnecken[/gold] verspeisten {characterObject}."
   },
   {
     "id": "CORPSE_SLUGS_WEAK",
@@ -204,7 +204,7 @@
         "name": "Leichenschnecke"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] verspeisten {characterObject}."
+    "loss_text": "[gold]Leichenschnecken[/gold] verspeisten {characterObject}."
   },
   {
     "id": "CUBEX_CONSTRUCT_NORMAL",
@@ -219,7 +219,7 @@
         "name": "Kubex-Konstrukt"
       }
     ],
-    "loss_text": "{character} wurde von einem [gold]{encounter}[/gold] totgelasert."
+    "loss_text": "The adventurer wurde von einem [gold]Kubex-Konstrukt[/gold] totgelasert."
   },
   {
     "id": "CULTISTS_NORMAL",
@@ -238,7 +238,7 @@
         "name": "Nasser Kultist"
       }
     ],
-    "loss_text": "{character} wurde von einigen [gold]{encounter}[/gold] bezwungen. [sine]Kaaaah[/sine]..."
+    "loss_text": "The adventurer wurde von einigen [gold]Kultisten[/gold] bezwungen. [sine]Kaaaah[/sine]..."
   },
   {
     "id": "DECIMILLIPEDE_ELITE",
@@ -261,7 +261,7 @@
         "name": "Decimillipede Segment Middle"
       }
     ],
-    "loss_text": "{character} konnte nicht das Revier des [gold]{encounter}s[/gold] überleben."
+    "loss_text": "The adventurer konnte nicht das Revier des [gold]Zigtausendfüßers[/gold] überleben."
   },
   {
     "id": "DENSE_VEGETATION_EVENT_ENCOUNTER",
@@ -276,7 +276,7 @@
         "name": "Schlängler"
       }
     ],
-    "loss_text": "{character} wurde von [gold]Schlänglern[/gold] befallen."
+    "loss_text": "The adventurer wurde von [gold]Schlänglern[/gold] befallen."
   },
   {
     "id": "DEVOTED_SCULPTOR_WEAK",
@@ -291,7 +291,7 @@
         "name": "Eifriger Bildhauer"
       }
     ],
-    "loss_text": "{character} wurde vom [gold]Eifrigen Bildhauer[/gold] in Kleinteile zerhauen."
+    "loss_text": "The adventurer wurde vom [gold]Eifrigen Bildhauer[/gold] in Kleinteile zerhauen."
   },
   {
     "id": "DOORMAKER_BOSS",
@@ -310,7 +310,7 @@
         "name": "Türmacher"
       }
     ],
-    "loss_text": "{character} hat eine Ruhestörung beim [gold]Türmacher[/gold] provoziert."
+    "loss_text": "The adventurer hat eine Ruhestörung beim [gold]Türmacher[/gold] provoziert."
   },
   {
     "id": "ENTOMANCER_ELITE",
@@ -325,7 +325,7 @@
         "name": "Entomant"
       }
     ],
-    "loss_text": "{character} wurde von einem [gold]Entomanten[/gold] zu Tode gestochen."
+    "loss_text": "The adventurer wurde von einem [gold]Entomanten[/gold] zu Tode gestochen."
   },
   {
     "id": "EXOSKELETONS_NORMAL",
@@ -342,7 +342,7 @@
         "name": "Exoskelett"
       }
     ],
-    "loss_text": "{character} wurde von [gold]Exoskeletten[/gold] ausgeweidet."
+    "loss_text": "The adventurer wurde von [gold]Exoskeletten[/gold] ausgeweidet."
   },
   {
     "id": "EXOSKELETONS_WEAK",
@@ -359,7 +359,7 @@
         "name": "Exoskelett"
       }
     ],
-    "loss_text": "{character} wurde von ein paar [gold]Exoskeletten[/gold] ausgeweidet."
+    "loss_text": "The adventurer wurde von ein paar [gold]Exoskeletten[/gold] ausgeweidet."
   },
   {
     "id": "FABRICATOR_NORMAL",
@@ -374,7 +374,7 @@
         "name": "Fabrikateur"
       }
     ],
-    "loss_text": "{character} wurde von den Bots eines [gold]Fabrikateurs[/gold] erschossen."
+    "loss_text": "The adventurer wurde von den Bots eines [gold]Fabrikateurs[/gold] erschossen."
   },
   {
     "id": "FAKE_MERCHANT_EVENT_ENCOUNTER",
@@ -389,7 +389,7 @@
         "name": "Der Händler???"
       }
     ],
-    "loss_text": "{character} hat den Zorn [gold]des Händlers???[/gold] auf sich gezogen."
+    "loss_text": "The adventurer hat den Zorn [gold]des Händlers???[/gold] auf sich gezogen."
   },
   {
     "id": "FLYCONID_NORMAL",
@@ -415,7 +415,7 @@
         "name": "Zweigschleim (mi.)"
       }
     ],
-    "loss_text": "{character} wurde von einem [gold]{encounter}[/gold] absorbiert."
+    "loss_text": "The adventurer wurde von einem [gold]Pilz und Schleim[/gold] absorbiert."
   },
   {
     "id": "FOGMOG_NORMAL",
@@ -434,7 +434,7 @@
         "name": "Fogmog"
       }
     ],
-    "loss_text": "{character} wurde von den Illusionen eines [gold]{encounter}s[/gold] abgelenkt."
+    "loss_text": "The adventurer wurde von den Illusionen eines [gold]Fogmogs[/gold] abgelenkt."
   },
   {
     "id": "FOSSIL_STALKER_NORMAL",
@@ -449,7 +449,7 @@
         "name": "Fossil-Pirscher"
       }
     ],
-    "loss_text": "{character} wurde von einem [gold]{encounter}[/gold] überfallen."
+    "loss_text": "The adventurer wurde von einem [gold]Fossil-Pirscher[/gold] überfallen."
   },
   {
     "id": "FROG_KNIGHT_NORMAL",
@@ -464,7 +464,7 @@
         "name": "Froschritter"
       }
     ],
-    "loss_text": "Ein wackerer [gold]{encounter}[/gold] triumphierte über {characterObject}."
+    "loss_text": "Ein wackerer [gold]Froschritter[/gold] triumphierte über {characterObject}."
   },
   {
     "id": "FUZZY_WURM_CRAWLER_WEAK",
@@ -481,7 +481,7 @@
         "name": "Flaumiger Wurmkrabbler"
       }
     ],
-    "loss_text": "Ein [gold]{encounter}[/gold] spuckte auf {characterObject}."
+    "loss_text": "Ein [gold]Flaumiger Wurmkrabbler[/gold] spuckte auf {characterObject}."
   },
   {
     "id": "GLOBE_HEAD_NORMAL",
@@ -496,7 +496,7 @@
         "name": "Kugelkopf"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] gab {characterObject} einen Stromschlag."
+    "loss_text": "[gold]Ein einsamer Kugelkopf[/gold] gab {characterObject} einen Stromschlag."
   },
   {
     "id": "GREMLIN_MERC_NORMAL",
@@ -519,7 +519,7 @@
         "name": "Schleichender Gremlin"
       }
     ],
-    "loss_text": "{character} wurde von [gold]{encounter}[/gold] überfallen."
+    "loss_text": "The adventurer wurde von [gold]Zwei Gremlins in einem Mantel[/gold] überfallen."
   },
   {
     "id": "HAUNTED_SHIP_NORMAL",
@@ -534,7 +534,7 @@
         "name": "Spukschiff"
       }
     ],
-    "loss_text": "Ein [gold]{encounter}[/gold] zermalmte {characterObject}."
+    "loss_text": "Ein [gold]Spukschiff[/gold] zermalmte {characterObject}."
   },
   {
     "id": "HUNTER_KILLER_NORMAL",
@@ -549,7 +549,7 @@
         "name": "Mörder der Jäger"
       }
     ],
-    "loss_text": "{characterObject} wurde von einem [gold]{encounter}[/gold] der Bauch aufgeschlitzt."
+    "loss_text": "{characterObject} wurde von einem [gold]Mörder der Jäger[/gold] der Bauch aufgeschlitzt."
   },
   {
     "id": "INFESTED_PRISMS_ELITE",
@@ -564,7 +564,7 @@
         "name": "Befallenes Prisma"
       }
     ],
-    "loss_text": "{character} wurde von einem [gold]Befallenen Prisma[/gold] aufgehalten."
+    "loss_text": "The adventurer wurde von einem [gold]Befallenen Prisma[/gold] aufgehalten."
   },
   {
     "id": "INKLETS_NORMAL",
@@ -579,7 +579,7 @@
         "name": "Tintchen"
       }
     ],
-    "loss_text": "Ein paar [gold]{encounter}[/gold] wollten {characterObject} nicht vorbeilassen."
+    "loss_text": "Ein paar [gold]Tintchen[/gold] wollten {characterObject} nicht vorbeilassen."
   },
   {
     "id": "KAISER_CRAB_BOSS",
@@ -623,7 +623,7 @@
         "name": "Spektral-Ritter"
       }
     ],
-    "loss_text": "{character} wurde von einer [gold]{encounter}[/gold] bezwungen."
+    "loss_text": "The adventurer wurde von einer [gold]Ritterbande[/gold] bezwungen."
   },
   {
     "id": "KNOWLEDGE_DEMON_BOSS",
@@ -638,7 +638,7 @@
         "name": "Wissensdämon"
       }
     ],
-    "loss_text": "Der [gold]{encounter}[/gold] verfluchte {characterObject} mit überwältigendem Wissen."
+    "loss_text": "Der [gold]Wissensdämon[/gold] verfluchte {characterObject} mit überwältigendem Wissen."
   },
   {
     "id": "LAGAVULIN_MATRIARCH_BOSS",
@@ -653,7 +653,7 @@
         "name": "Lagavulin-Matriarchin"
       }
     ],
-    "loss_text": "{character} wurde von der [gold]{encounter}[/gold] entzwei geschnitten."
+    "loss_text": "The adventurer wurde von der [gold]Lagavulin-Matriarchin[/gold] entzwei geschnitten."
   },
   {
     "id": "LIVING_FOG_NORMAL",
@@ -672,7 +672,7 @@
         "name": "Lebender Nebel"
       }
     ],
-    "loss_text": "{character} wurde vom Gestank des [gold]Üblen Gases[/gold] überwältigt."
+    "loss_text": "The adventurer wurde vom Gestank des [gold]Üblen Gases[/gold] überwältigt."
   },
   {
     "id": "LOUSE_PROGENITOR_NORMAL",
@@ -687,7 +687,7 @@
         "name": "Laus-Stammvater"
       }
     ],
-    "loss_text": "{character} wurde von einem [gold]{encounter}[/gold] lahmgelegt."
+    "loss_text": "The adventurer wurde von einem [gold]Laus-Stammvater[/gold] lahmgelegt."
   },
   {
     "id": "MAWLER_NORMAL",
@@ -702,7 +702,7 @@
         "name": "Mauler"
       }
     ],
-    "loss_text": "{character} wurde ein köstliches Mahl für einen [gold]{encounter}[/gold]."
+    "loss_text": "The adventurer wurde ein köstliches Mahl für einen [gold]Mauler[/gold]."
   },
   {
     "id": "MECHA_KNIGHT_ELITE",
@@ -717,7 +717,7 @@
         "name": "Mecha-Ritter"
       }
     ],
-    "loss_text": "{character} wurde von einem [gold]{encounter}[/gold] erstochen und verbrannt."
+    "loss_text": "The adventurer wurde von einem [gold]Mecha-Ritter[/gold] erstochen und verbrannt."
   },
   {
     "id": "MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER",
@@ -732,7 +732,7 @@
         "name": "Geheimnisvoller Ritter"
       }
     ],
-    "loss_text": "{character} versuchte, an den Schlüssel eines [gold]Geheimnisvollen Ritters[/gold] zu kommen."
+    "loss_text": "The adventurer versuchte, an den Schlüssel eines [gold]Geheimnisvollen Ritters[/gold] zu kommen."
   },
   {
     "id": "MYTES_NORMAL",
@@ -747,7 +747,7 @@
         "name": "Myte"
       }
     ],
-    "loss_text": "{character} wurde von [gold]Einer Menge Myten[/gold] umschwärmt."
+    "loss_text": "The adventurer wurde von [gold]Einer Menge Myten[/gold] umschwärmt."
   },
   {
     "id": "NIBBITS_NORMAL",
@@ -762,7 +762,7 @@
         "name": "Mümmel"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] hat {characterObject} zusammengeschlagen."
+    "loss_text": "[gold]Ein Paar Mümmel[/gold] hat {characterObject} zusammengeschlagen."
   },
   {
     "id": "NIBBITS_WEAK",
@@ -779,7 +779,7 @@
         "name": "Mümmel"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] hat {character} zusammengeschlagen."
+    "loss_text": "[gold]Ein einzelnes Mümmel[/gold] hat The adventurer zusammengeschlagen."
   },
   {
     "id": "OVERGROWTH_CRAWLERS",
@@ -801,7 +801,7 @@
         "name": "Schrumpfkäfer"
       }
     ],
-    "loss_text": "Einige [gold]{encounter}[/gold] verspeisten {characterObject}."
+    "loss_text": "Einige [gold]Überwuchs-Krabbler[/gold] verspeisten {characterObject}."
   },
   {
     "id": "OVICOPTER_NORMAL",
@@ -820,7 +820,7 @@
         "name": "Robustes Ei"
       }
     ],
-    "loss_text": "{character} wurde zum Fressen für die Kinder eines [gold]{encounter}s[/gold]."
+    "loss_text": "The adventurer wurde zum Fressen für die Kinder eines [gold]Ovikopters[/gold]."
   },
   {
     "id": "OWL_MAGISTRATE_NORMAL",
@@ -835,7 +835,7 @@
         "name": "Eulenmagistratin"
       }
     ],
-    "loss_text": "{character} bekam das Todesurteil einer [gold]{encounter}[/gold]."
+    "loss_text": "The adventurer bekam das Todesurteil einer [gold]Eulenmagistratin[/gold]."
   },
   {
     "id": "PHANTASMAL_GARDENERS_ELITE",
@@ -850,7 +850,7 @@
         "name": "Trügerischer Gärtner"
       }
     ],
-    "loss_text": "{character} wurde von den [gold]Trügerischen Gärtnern[/gold] zur Ruhe gelegt."
+    "loss_text": "The adventurer wurde von den [gold]Trügerischen Gärtnern[/gold] zur Ruhe gelegt."
   },
   {
     "id": "PHROG_PARASITE_ELITE",
@@ -869,7 +869,7 @@
         "name": "Schlängler"
       }
     ],
-    "loss_text": "Ein [gold]{encounter}[/gold] verbreitete seine Kolonie auf {characterObject}."
+    "loss_text": "Ein [gold]Phroschparasit[/gold] verbreitete seine Kolonie auf {characterObject}."
   },
   {
     "id": "PUNCH_CONSTRUCT_NORMAL",
@@ -884,7 +884,7 @@
         "name": "Boxer-Konstrukt"
       }
     ],
-    "loss_text": "{character} ließ sich auf einen Faustkampf mit einem [gold]{encounter}[/gold] ein."
+    "loss_text": "The adventurer ließ sich auf einen Faustkampf mit einem [gold]Boxer-Konstrukt[/gold] ein."
   },
   {
     "id": "PUNCH_OFF_EVENT_ENCOUNTER",
@@ -899,7 +899,7 @@
         "name": "Boxer-Konstrukt"
       }
     ],
-    "loss_text": "{character} unterbrach eine Boxrunde zwischen zwei [gold]{encounter}n[/gold]."
+    "loss_text": "The adventurer unterbrach eine Boxrunde zwischen zwei [gold]Boxer-Konstrukten[/gold]."
   },
   {
     "id": "QUEEN_BOSS",
@@ -918,7 +918,7 @@
         "name": "Fackelkopf-Amalgam"
       }
     ],
-    "loss_text": "Die [gold]{encounter}[/gold] hat ihrer Sammlung ein Stück von {characterObject} hinzugefügt."
+    "loss_text": "Die [gold]Königin[/gold] hat ihrer Sammlung ein Stück von {characterObject} hinzugefügt."
   },
   {
     "id": "RUBY_RAIDERS_NORMAL",
@@ -949,7 +949,7 @@
         "name": "Fährtenplünderer"
       }
     ],
-    "loss_text": "{character} wurde von einer Gruppe [gold]{encounter}[/gold] überrascht."
+    "loss_text": "The adventurer wurde von einer Gruppe [gold]Rubinplünderer[/gold] überrascht."
   },
   {
     "id": "SCROLLS_OF_BITING_NORMAL",
@@ -966,7 +966,7 @@
         "name": "Pergament des Beißens"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] rissen {characterObject} in Schnipsel."
+    "loss_text": "[gold]Viele Pergamente des Beißens[/gold] rissen {characterObject} in Schnipsel."
   },
   {
     "id": "SCROLLS_OF_BITING_WEAK",
@@ -983,7 +983,7 @@
         "name": "Pergament des Beißens"
       }
     ],
-    "loss_text": "Ein paar [gold]{encounter}[/gold] rissen {characterObject} in Schnipsel."
+    "loss_text": "Ein paar [gold]Pergamente des Beißens[/gold] rissen {characterObject} in Schnipsel."
   },
   {
     "id": "SEAPUNK_WEAK",
@@ -1000,7 +1000,7 @@
         "name": "Meerespunk"
       }
     ],
-    "loss_text": "Ein [gold]{encounter}[/gold] verprügelte {characterObject}."
+    "loss_text": "Ein [gold]Meerespunk[/gold] verprügelte {characterObject}."
   },
   {
     "id": "SEWER_CLAM_NORMAL",
@@ -1015,7 +1015,7 @@
         "name": "Kloakenmuschel"
       }
     ],
-    "loss_text": "{character} wurde von einer [gold]{encounter}[/gold] verschluckt."
+    "loss_text": "The adventurer wurde von einer [gold]Kloakenmuschel[/gold] verschluckt."
   },
   {
     "id": "SHRINKER_BEETLE_WEAK",
@@ -1032,7 +1032,7 @@
         "name": "Schrumpfkäfer"
       }
     ],
-    "loss_text": "Ein [gold]{encounter}[/gold] vernaschte {characterObject}."
+    "loss_text": "Ein [gold]Schrumpfkäfer[/gold] vernaschte {characterObject}."
   },
   {
     "id": "SKULKING_COLONY_ELITE",
@@ -1047,7 +1047,7 @@
         "name": "Versteckte Kolonie"
       }
     ],
-    "loss_text": "{character} wurde von einer [gold]Versteckten Kolonie[/gold] absorbiert."
+    "loss_text": "The adventurer wurde von einer [gold]Versteckten Kolonie[/gold] absorbiert."
   },
   {
     "id": "SLIMED_BERSERKER_NORMAL",
@@ -1062,7 +1062,7 @@
         "name": "Schleimiger Berserker"
       }
     ],
-    "loss_text": "{character} wurde in einen [gold]Schleimigen Berserker[/gold] absorbiert."
+    "loss_text": "The adventurer wurde in einen [gold]Schleimigen Berserker[/gold] absorbiert."
   },
   {
     "id": "SLIMES_NORMAL",
@@ -1091,7 +1091,7 @@
         "name": "Zweigschleim (kl.)"
       }
     ],
-    "loss_text": "{character} wurde von einem [gold]{encounter}[/gold] niedergestreckt."
+    "loss_text": "The adventurer wurde von einem [gold]Schwarm Schleime[/gold] niedergestreckt."
   },
   {
     "id": "SLIMES_WEAK",
@@ -1120,7 +1120,7 @@
         "name": "Zweigschleim (kl.)"
       }
     ],
-    "loss_text": "{character} wurde von einer [gold]{encounter}[/gold] niedergestreckt."
+    "loss_text": "The adventurer wurde von einer [gold]Gruppe Schleime[/gold] niedergestreckt."
   },
   {
     "id": "SLITHERING_STRANGLER_NORMAL",
@@ -1155,7 +1155,7 @@
         "name": "Zweigschleim (kl.)"
       }
     ],
-    "loss_text": "{character} wurde von einem [gold]{encounter}[/gold] erstickt."
+    "loss_text": "The adventurer wurde von einem [gold]Würger und Freund[/gold] erstickt."
   },
   {
     "id": "SLUDGE_SPINNER_WEAK",
@@ -1170,7 +1170,7 @@
         "name": "Schlickschleuder"
       }
     ],
-    "loss_text": "{character} konnte eine [gold]{encounter}[/gold] nicht besiegen."
+    "loss_text": "The adventurer konnte eine [gold]Schlickschleuder[/gold] nicht besiegen."
   },
   {
     "id": "SLUMBERING_BEETLE_NORMAL",
@@ -1195,7 +1195,7 @@
         "name": "Schlummernder Käfer"
       }
     ],
-    "loss_text": "{character} hat eine [gold]{encounter}[/gold] gestört."
+    "loss_text": "The adventurer hat eine [gold]Schlummergruppe[/gold] gestört."
   },
   {
     "id": "SNAPPING_JAXFRUIT_NORMAL",
@@ -1216,7 +1216,7 @@
         "name": "Schnappende Jaxfrucht"
       }
     ],
-    "loss_text": "{character} hat sich in einiger [gold]{encounter}[/gold] verheddert."
+    "loss_text": "The adventurer hat sich in einiger [gold]Überwuchs-Flora[/gold] verheddert."
   },
   {
     "id": "SOUL_FYSH_BOSS",
@@ -1231,7 +1231,7 @@
         "name": "Seelenfysch"
       }
     ],
-    "loss_text": "Ein [gold]{encounter}[/gold] lockte {characterObject} ins Verderben."
+    "loss_text": "Ein [gold]Seelenfysch[/gold] lockte {characterObject} ins Verderben."
   },
   {
     "id": "SOUL_NEXUS_ELITE",
@@ -1246,7 +1246,7 @@
         "name": "Seelennexus"
       }
     ],
-    "loss_text": "{character} starb durch einen [gold]{encounter}[/gold] auf einem vergessenen Kampfplatz."
+    "loss_text": "The adventurer starb durch einen [gold]Seelennexus[/gold] auf einem vergessenen Kampfplatz."
   },
   {
     "id": "SPINY_TOAD_NORMAL",
@@ -1261,7 +1261,7 @@
         "name": "Stachlige Kröte"
       }
     ],
-    "loss_text": "{character} wurde von der [gold]Stachligen Kröte[/gold] durchbohrt."
+    "loss_text": "The adventurer wurde von der [gold]Stachligen Kröte[/gold] durchbohrt."
   },
   {
     "id": "TERROR_EEL_ELITE",
@@ -1276,7 +1276,7 @@
         "name": "Furcht-Aal"
       }
     ],
-    "loss_text": "Ein [gold]{encounter}[/gold] war zu fürchterlich für {characterObject}."
+    "loss_text": "Ein [gold]Furcht-Aal[/gold] war zu fürchterlich für {characterObject}."
   },
   {
     "id": "TEST_SUBJECT_BOSS",
@@ -1291,7 +1291,7 @@
         "name": "Testsubjekt #C{Count}"
       }
     ],
-    "loss_text": "Ein [gold]{encounter}[/gold] beschützte seine Meister loyal gegen {character}."
+    "loss_text": "Ein [gold]Testsubjekt[/gold] beschützte seine Meister loyal gegen The adventurer."
   },
   {
     "id": "THE_ARCHITECT_EVENT_ENCOUNTER",
@@ -1321,7 +1321,7 @@
         "name": "Der Nimmersatt"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] verzehrte {characterObject}. Und doch ist er weiter hungrig..."
+    "loss_text": "[gold]Der Nimmersatt[/gold] verzehrte {characterObject}. Und doch ist er weiter hungrig..."
   },
   {
     "id": "THE_KIN_BOSS",
@@ -1340,7 +1340,7 @@
         "name": "Sippen-Priester"
       }
     ],
-    "loss_text": "{character} wurde durch die überlegene Strategie [gold]Der Sippe[/gold] ausgetilgt."
+    "loss_text": "The adventurer wurde durch die überlegene Strategie [gold]Der Sippe[/gold] ausgetilgt."
   },
   {
     "id": "THE_LOST_AND_FORGOTTEN_NORMAL",
@@ -1359,7 +1359,7 @@
         "name": "Die Verlassene"
       }
     ],
-    "loss_text": "Die [gold]{encounter}[/gold] beraubten {characterObject} des Lebenswillens."
+    "loss_text": "Die [gold]Verlassene und Vergessene[/gold] beraubten {characterObject} des Lebenswillens."
   },
   {
     "id": "THE_OBSCURA_NORMAL",
@@ -1374,7 +1374,7 @@
         "name": "Die Obscura"
       }
     ],
-    "loss_text": "[gold]{encounter}[/gold] und ihre Illusion zerschmetterten {character}."
+    "loss_text": "[gold]Die Obscura[/gold] und ihre Illusion zerschmetterten The adventurer."
   },
   {
     "id": "THIEVING_HOPPER_WEAK",
@@ -1391,7 +1391,7 @@
         "name": "Diebischer Hüpfer"
       }
     ],
-    "loss_text": "Ein [gold]{encounter}[/gold] raubte {characterObject} aus."
+    "loss_text": "Ein [gold]Diebischer Hüpfer[/gold] raubte {characterObject} aus."
   },
   {
     "id": "TOADPOLES_NORMAL",
@@ -1410,7 +1410,7 @@
         "name": "Krötling"
       }
     ],
-    "loss_text": "{character} wurde von einigen [gold]{encounter}n[/gold] besiegt."
+    "loss_text": "The adventurer wurde von einigen [gold]Unterdocks-Wildtieren[/gold] besiegt."
   },
   {
     "id": "TOADPOLES_WEAK",
@@ -1425,7 +1425,7 @@
         "name": "Krötling"
       }
     ],
-    "loss_text": "{character} konnte nicht mit ein paar [gold]{encounter}n[/gold] umgehen."
+    "loss_text": "The adventurer konnte nicht mit ein paar [gold]Krötlingen[/gold] umgehen."
   },
   {
     "id": "TUNNELER_NORMAL",
@@ -1451,7 +1451,7 @@
         "name": "Tunnler"
       }
     ],
-    "loss_text": "Ein [gold]{encounter}[/gold] hat {characterObject} erledigt."
+    "loss_text": "Ein [gold]Grabendes Pärchen[/gold] hat {characterObject} erledigt."
   },
   {
     "id": "TUNNELER_WEAK",
@@ -1468,7 +1468,7 @@
         "name": "Tunnler"
       }
     ],
-    "loss_text": "{character} wurde von einem [gold]{encounter}[/gold] verhauen."
+    "loss_text": "The adventurer wurde von einem [gold]Tunnler[/gold] verhauen."
   },
   {
     "id": "TURRET_OPERATOR_WEAK",
@@ -1487,7 +1487,7 @@
         "name": "Geschütz-Operateur"
       }
     ],
-    "loss_text": "Ein [gold]{encounter}[/gold] hat {characterObject} völlig zerlöchert."
+    "loss_text": "Ein [gold]Geschütz-Operateur[/gold] hat {characterObject} völlig zerlöchert."
   },
   {
     "id": "TWO_TAILED_RATS_NORMAL",
@@ -1502,7 +1502,7 @@
         "name": "Zweischwänzige Ratte"
       }
     ],
-    "loss_text": "{character} wurde von einigen [gold]Zweischwänzigen Ratten[/gold] umschwärmt."
+    "loss_text": "The adventurer wurde von einigen [gold]Zweischwänzigen Ratten[/gold] umschwärmt."
   },
   {
     "id": "VANTOM_BOSS",
@@ -1517,7 +1517,7 @@
         "name": "Vantom"
       }
     ],
-    "loss_text": "{character} wurde vom [gold]{encounter}[/gold] zu einem Tintchen gemacht."
+    "loss_text": "The adventurer wurde vom [gold]Vantom[/gold] zu einem Tintchen gemacht."
   },
   {
     "id": "VINE_SHAMBLER_NORMAL",
@@ -1532,7 +1532,7 @@
         "name": "Ranken-Schlurfer"
       }
     ],
-    "loss_text": "{character} konnte einem [gold]{encounter}[/gold] nicht entkommen."
+    "loss_text": "The adventurer konnte einem [gold]Ranken-Schlurfer[/gold] nicht entkommen."
   },
   {
     "id": "WATERFALL_GIANT_BOSS",
@@ -1547,6 +1547,6 @@
         "name": "Wasserfall-Riese"
       }
     ],
-    "loss_text": "Der [gold]{encounter}[/gold] säuberte {characterObject} aus den Unterdocks."
+    "loss_text": "Der [gold]Wasserfall-Riese[/gold] säuberte {characterObject} aus den Unterdocks."
   }
 ]
