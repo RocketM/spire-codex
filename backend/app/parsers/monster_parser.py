@@ -243,13 +243,18 @@ def extract_move_effects(content: str) -> dict[str, dict]:
                     move_effects[move_id]["damage"]["hit_count"] = int(hit_val)
                 else:
                     # Resolve hit count variable
-                    hc_match = re.search(rf'{hit_val}\s*=>\s*(\d+)', content)
-                    if hc_match:
-                        move_effects[move_id]["damage"]["hit_count"] = int(hc_match.group(1))
+                    hc_asc = re.search(rf'{hit_val}\s*=>\s*AscensionHelper\.GetValueIfAscension\(\w+\.\w+,\s*(\d+),\s*(\d+)\)', content)
+                    if hc_asc:
+                        move_effects[move_id]["damage"]["hit_count"] = int(hc_asc.group(2))
+                        move_effects[move_id]["damage"]["hit_count_ascension"] = int(hc_asc.group(1))
                     else:
-                        hc_const = re.search(rf'const\s+int\s+\w*{hit_val}\w*\s*=\s*(\d+)', content, re.IGNORECASE)
-                        if hc_const:
-                            move_effects[move_id]["damage"]["hit_count"] = int(hc_const.group(1))
+                        hc_match = re.search(rf'{hit_val}\s*=>\s*(\d+)', content)
+                        if hc_match:
+                            move_effects[move_id]["damage"]["hit_count"] = int(hc_match.group(1))
+                        else:
+                            hc_const = re.search(rf'const\s+int\s+\w*{hit_val}\w*\s*=\s*(\d+)', content, re.IGNORECASE)
+                            if hc_const:
+                                move_effects[move_id]["damage"]["hit_count"] = int(hc_const.group(1))
 
         # Extract block from move methods — support both literal and variable references
         block_match = re.search(r'GainBlock\([\w.]+,\s*(\w+)', body)
@@ -427,6 +432,26 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
 
         move_details.append(move_entry)
 
+    # Innate powers — applied in AfterAddedToRoom or constructor
+    innate_powers = []
+    init_block = ""
+    init_match = re.search(r'AfterAddedToRoom\(\)\s*\{', content)
+    if init_match:
+        start = init_match.end()
+        depth = 1
+        i = start
+        while i < len(content) and depth > 0:
+            if content[i] == '{':
+                depth += 1
+            elif content[i] == '}':
+                depth -= 1
+            i += 1
+        init_block = content[start:i - 1]
+    for pm in re.finditer(r'PowerCmd\.Apply<(\w+)>\([\w.]+\s*,\s*(\d+)m?', init_block):
+        power_name = pm.group(1).replace("Power", "")
+        amount = int(pm.group(2))
+        innate_powers.append({"power_id": class_name_to_id(power_name), "amount": amount})
+
     # Skip monsters with no meaningful data (segments, stubs)
     if not min_hp and not move_details and not damage_values:
         return None
@@ -484,6 +509,7 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
         "damage_values": damage_values if damage_values else None,
         "block_values": block_values if block_values else None,
         "encounters": encounters if encounters else None,
+        "innate_powers": innate_powers if innate_powers else None,
         "image_url": image_url,
         "beta_image_url": beta_image_url,
     }
