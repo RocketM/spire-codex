@@ -1175,7 +1175,7 @@
     "description": "Es una diadema.",
     "description_raw": "Es una diadema.",
     "flavor": "Una reliquia de lo más curiosa que aparece cuando hay problemas en la [gold]Torre[/gold] o no hay más reliquias que descubrir.",
-    "rarity": "None",
+    "rarity": "Reliquia",
     "pool": "shared",
     "image_url": "/static/images/relics/circlet.png",
     "image_variants": null,
@@ -3479,7 +3479,7 @@
   {
     "id": "EMBER_TEA",
     "name": "Té de ascuas",
-    "description": "Al comienzo de los siguientes [blue]2[/blue] combates, gana [blue]2[/blue] de [gold]Fuerza[/gold].",
+    "description": "Al comienzo de los siguientes [blue]5[/blue] combates, gana [blue]2[/blue] de [gold]Fuerza[/gold].",
     "description_raw": "Al comienzo {Combats:plural:del siguiente combate|de los siguientes [blue]{}[/blue] combates}, gana [blue]{StrengthPower}[/blue] de [gold]Fuerza[/gold].",
     "flavor": "[red]Los detalles de esta reliquia serán revelados en el futuro...[/red]",
     "rarity": "Reliquia de evento",
@@ -3492,7 +3492,7 @@
   {
     "id": "BONE_TEA",
     "name": "Té de huesos",
-    "description": "Al comienzo de los siguientes [blue]2[/blue] combates, [gold]Mejora[/gold] tu mano inicial.",
+    "description": "Al comienzo del siguiente combate, [gold]Mejora[/gold] tu mano inicial.",
     "description_raw": "Al comienzo de{Combats:plural:l siguiente combate| los siguientes [blue]{}[/blue] combates}, [gold]Mejora[/gold] tu mano inicial.",
     "flavor": "[red]Los detalles de esta reliquia serán revelados en el futuro...[/red]",
     "rarity": "Reliquia de evento",
@@ -3527,19 +3527,6 @@
     "image_variants": null,
     "rarity_key": "Common",
     "compendium_order": 38
-  },
-  {
-    "id": "VAKUU_CARD_SELECTOR",
-    "name": "VakuuCardSelector",
-    "description": "",
-    "description_raw": "",
-    "flavor": "",
-    "rarity": "Unknown",
-    "pool": "shared",
-    "image_url": null,
-    "image_variants": null,
-    "rarity_key": "Unknown",
-    "compendium_order": 288
   },
   {
     "id": "PUMPKIN_CANDLE",

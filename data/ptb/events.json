@@ -3650,7 +3650,7 @@
       {
         "id": "BONE_TEA",
         "title": "Chá de Ossos",
-        "description": "Pague [red]50[/red] de [gold]Ouro[/gold]. No início dos próximos [blue]2[/blue] combates, [gold]Aprimore[/gold] a sua [gold]Mão[/gold] inicial."
+        "description": "Pague [red]50[/red] de [gold]Ouro[/gold]. No início do próximo combate, [gold]Aprimore[/gold] a sua [gold]Mão[/gold] inicial."
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3660,7 +3660,7 @@
       {
         "id": "EMBER_TEA",
         "title": "Chá Ígneo",
-        "description": "Pague [red]150[/red] de [gold]Ouro[/gold]. No início dos próximos [blue]2[/blue] combates, receba [blue]2[/blue] de [gold]Força[/gold]."
+        "description": "Pague [red]150[/red] de [gold]Ouro[/gold]. No início dos próximos [blue]5[/blue] combates, receba [blue]2[/blue] de [gold]Força[/gold]."
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3685,7 +3685,7 @@
           {
             "id": "BONE_TEA",
             "title": "Chá de Ossos",
-            "description": "Pague [red]50[/red] de [gold]Ouro[/gold]. No início dos próximos [blue]2[/blue] combates, [gold]Aprimore[/gold] a sua [gold]Mão[/gold] inicial."
+            "description": "Pague [red]50[/red] de [gold]Ouro[/gold]. No início do próximo combate, [gold]Aprimore[/gold] a sua [gold]Mão[/gold] inicial."
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3695,7 +3695,7 @@
           {
             "id": "EMBER_TEA",
             "title": "Chá Ígneo",
-            "description": "Pague [red]150[/red] de [gold]Ouro[/gold]. No início dos próximos [blue]2[/blue] combates, receba [blue]2[/blue] de [gold]Força[/gold]."
+            "description": "Pague [red]150[/red] de [gold]Ouro[/gold]. No início dos próximos [blue]5[/blue] combates, receba [blue]2[/blue] de [gold]Força[/gold]."
           },
           {
             "id": "EMBER_TEA_LOCKED",

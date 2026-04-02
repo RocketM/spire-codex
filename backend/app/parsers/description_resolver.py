@@ -314,6 +314,17 @@ def extract_vars_from_source(content: str) -> dict[str, int]:
         val = int(m.group(2))
         all_vars[name] = val
 
+    # Pattern: new DynamicVar("Name", PropertyName) — named vars with property reference
+    # e.g. new DynamicVar("Combats", CombatsLeft) with private int _combatsLeft = 5
+    for m in re.finditer(r'new\s+DynamicVar\(\s*"(\w+)"\s*,\s*([A-Z]\w+)\)', content):
+        name = m.group(1)
+        prop_name = m.group(2)
+        if name not in all_vars:
+            field_name = '_' + prop_name[0].lower() + prop_name[1:]
+            field_match = re.search(rf'private\s+int\s+{re.escape(field_name)}\s*=\s*(\d+)', content)
+            if field_match:
+                all_vars[name] = int(field_match.group(1))
+
     # Pattern: new EnergyVar("Name", N) — named energy vars
     for m in re.finditer(r'new\s+EnergyVar\(\s*"(\w+)"\s*,\s*(\d+)\)', content):
         name = m.group(1)

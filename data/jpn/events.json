@@ -3650,7 +3650,7 @@
       {
         "id": "BONE_TEA",
         "title": "骨茶",
-        "description": "[red]50[/red][gold]ゴールド[/gold]を支払う。 次の [blue][Combats][/blue] combats, 開始時、最初の手札をすべて[gold]アップグレード[/gold]する"
+        "description": "[red]50[/red][gold]ゴールド[/gold]を支払う。 次の [blue]1[/blue] combats, 開始時、最初の手札をすべて[gold]アップグレード[/gold]する"
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3660,7 +3660,7 @@
       {
         "id": "EMBER_TEA",
         "title": "燃え殻茶",
-        "description": "[red]150[/red][gold]ゴールド[/gold]を支払う。 次の[blue][Combats][/blue]回の戦闘開始時、[gold]筋力[/gold][blue]2[/blue]を得る"
+        "description": "[red]150[/red][gold]ゴールド[/gold]を支払う。 次の[blue]5[/blue]回の戦闘開始時、[gold]筋力[/gold][blue]2[/blue]を得る"
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3685,7 +3685,7 @@
           {
             "id": "BONE_TEA",
             "title": "骨茶",
-            "description": "[red]50[/red][gold]ゴールド[/gold]を支払う。 次の [blue][Combats][/blue] combats, 開始時、最初の手札をすべて[gold]アップグレード[/gold]する"
+            "description": "[red]50[/red][gold]ゴールド[/gold]を支払う。 次の [blue]1[/blue] combats, 開始時、最初の手札をすべて[gold]アップグレード[/gold]する"
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3695,7 +3695,7 @@
           {
             "id": "EMBER_TEA",
             "title": "燃え殻茶",
-            "description": "[red]150[/red][gold]ゴールド[/gold]を支払う。 次の[blue][Combats][/blue]回の戦闘開始時、[gold]筋力[/gold][blue]2[/blue]を得る"
+            "description": "[red]150[/red][gold]ゴールド[/gold]を支払う。 次の[blue]5[/blue]回の戦闘開始時、[gold]筋力[/gold][blue]2[/blue]を得る"
           },
           {
             "id": "EMBER_TEA_LOCKED",

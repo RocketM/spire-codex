@@ -1097,7 +1097,7 @@
     "description": "C'est un diadème.",
     "description_raw": "C'est un diadème.",
     "flavor": "Une curieuse relique qui apparaît lorsqu'il y a un problème dans la [gold]Tour[/gold] ou qu'il n'y a plus de reliques à découvrir.",
-    "rarity": "None",
+    "rarity": "Relique",
     "pool": "shared",
     "image_url": "/static/images/relics/circlet.png",
     "image_variants": null,
@@ -3323,7 +3323,7 @@
   {
     "id": "BONE_TEA",
     "name": "Thé d'os",
-    "description": "Au début des [blue]2[/blue] prochains combats, [gold]Améliorez[/gold] votre main de départ.",
+    "description": "Au début du prochain combat, [gold]Améliorez[/gold] votre main de départ.",
     "description_raw": "Au début {Combats:plural:du prochain combat|des [blue]{}[/blue] prochains combats}, [gold]Améliorez[/gold] votre main de départ.",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique d'événement",
@@ -3336,7 +3336,7 @@
   {
     "id": "EMBER_TEA",
     "name": "Thé de braises",
-    "description": "Au début des [blue]2[/blue] prochains combats, gagnez [blue]2[/blue] de [gold]Force[/gold].",
+    "description": "Au début des [blue]5[/blue] prochains combats, gagnez [blue]2[/blue] de [gold]Force[/gold].",
     "description_raw": "Au début {Combats:plural:du prochain combat|des [blue]{}[/blue] prochains combats}, gagnez [blue]{StrengthPower}[/blue] de [gold]Force[/gold].",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique d'événement",
@@ -3501,19 +3501,6 @@
     "image_variants": null,
     "rarity_key": "Common",
     "compendium_order": 38
-  },
-  {
-    "id": "VAKUU_CARD_SELECTOR",
-    "name": "VakuuCardSelector",
-    "description": "",
-    "description_raw": "",
-    "flavor": "",
-    "rarity": "Unknown",
-    "pool": "shared",
-    "image_url": null,
-    "image_variants": null,
-    "rarity_key": "Unknown",
-    "compendium_order": 288
   },
   {
     "id": "SEA_GLASS",

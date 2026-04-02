@@ -713,7 +713,7 @@
     "description": "È un cerchietto.",
     "description_raw": "È un cerchietto.",
     "flavor": "Una reliquia stravagante che appare quando c'è un problema nella [gold]Guglia[/gold] o quando non ci sono altre reliquie da scorpire.",
-    "rarity": "None",
+    "rarity": "Reliquia",
     "pool": "shared",
     "image_url": "/static/images/relics/circlet.png",
     "image_variants": null,
@@ -3453,7 +3453,7 @@
   {
     "id": "EMBER_TEA",
     "name": "Tè Cinereo",
-    "description": "All'inizio dei successivi [blue]2[/blue] combattimenti, ottieni [blue]2[/blue] di [gold]Forza[/gold].",
+    "description": "All'inizio dei successivi [blue]5[/blue] combattimenti, ottieni [blue]2[/blue] di [gold]Forza[/gold].",
     "description_raw": "All'inizio {Combats:plural:del successivo combattimento|dei successivi [blue]{}[/blue] combattimenti}, ottieni [blue]{StrengthPower}[/blue] di [gold]Forza[/gold].",
     "flavor": "[red]I dettagli di questa reliquia verranno rivelati in futuro...[/red]",
     "rarity": "Reliquia evento",
@@ -3466,7 +3466,7 @@
   {
     "id": "BONE_TEA",
     "name": "Tè d'Ossa",
-    "description": "All'inizio dei prossimi [blue]2[/blue] combattimenti, [gold]potenzi[/gold] la tua mano iniziale.",
+    "description": "All'inizio del prossimo combattimento, [gold]potenzi[/gold] la tua mano iniziale.",
     "description_raw": "All'inizio {Combats:plural:del prossimo combattimento|dei prossimi [blue]{}[/blue] combattimenti}, [gold]potenzi[/gold] la tua mano iniziale.",
     "flavor": "[red]I dettagli di questa reliquia verranno rivelati in futuro...[/red]",
     "rarity": "Reliquia evento",
@@ -3579,19 +3579,6 @@
     "image_variants": null,
     "rarity_key": "Common",
     "compendium_order": 38
-  },
-  {
-    "id": "VAKUU_CARD_SELECTOR",
-    "name": "VakuuCardSelector",
-    "description": "",
-    "description_raw": "",
-    "flavor": "",
-    "rarity": "Unknown",
-    "pool": "shared",
-    "image_url": null,
-    "image_variants": null,
-    "rarity_key": "Unknown",
-    "compendium_order": 288
   },
   {
     "id": "VAMBRACE",

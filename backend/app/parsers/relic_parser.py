@@ -79,6 +79,10 @@ def parse_single_relic(filepath: Path, localization: dict, relic_pools: dict, en
     if class_name.startswith("Deprecated") or class_name.startswith("Mock"):
         return None
 
+    # Skip non-relic classes that happen to live in the Relics directory
+    if not re.search(r'class\s+\w+\s*:\s*RelicModel\b', content):
+        return None
+
     relic_id = class_name_to_id(class_name)
 
     # Rarity
@@ -162,6 +166,7 @@ def build_relic_rarity_map(gameplay_ui: dict) -> dict[str, str]:
         "Ancient": gameplay_ui.get("RELIC_RARITY.ANCIENT", "Ancient"),
         "Event": gameplay_ui.get("RELIC_RARITY.EVENT", "Event"),
         "Shop": gameplay_ui.get("RELIC_RARITY.SHOP", "Shop"),
+        "None": gameplay_ui.get("RELIC_RARITY.NONE", "Relic"),
     }
 
 

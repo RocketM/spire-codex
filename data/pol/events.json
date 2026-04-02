@@ -3642,7 +3642,7 @@
       {
         "id": "BONE_TEA",
         "title": "Herbata z kości",
-        "description": "Pay [red]50[/red] [gold]Gold[/gold]. Na początku [blue]{}[/blue] następnych walk wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold]."
+        "description": "Pay [red]50[/red] [gold]Gold[/gold]. Na początku plural(en):następnej walki wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold]."
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3652,7 +3652,7 @@
       {
         "id": "EMBER_TEA",
         "title": "Piekielnie gorąca herbata",
-        "description": "Zapłać [red]150[/red] szt. [gold]Złota[/gold]. Na początku [blue]{}[/blue] następnych walk zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold]."
+        "description": "Zapłać [red]150[/red] szt. [gold]Złota[/gold]. Na początku plural(en):następnej walki zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold]."
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3677,7 +3677,7 @@
           {
             "id": "BONE_TEA",
             "title": "Herbata z kości",
-            "description": "Pay [red]50[/red] [gold]Gold[/gold]. Na początku [blue]{}[/blue] następnych walk wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold]."
+            "description": "Pay [red]50[/red] [gold]Gold[/gold]. Na początku plural(en):następnej walki wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold]."
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3687,7 +3687,7 @@
           {
             "id": "EMBER_TEA",
             "title": "Piekielnie gorąca herbata",
-            "description": "Zapłać [red]150[/red] szt. [gold]Złota[/gold]. Na początku [blue]{}[/blue] następnych walk zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold]."
+            "description": "Zapłać [red]150[/red] szt. [gold]Złota[/gold]. Na początku plural(en):następnej walki zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold]."
           },
           {
             "id": "EMBER_TEA_LOCKED",

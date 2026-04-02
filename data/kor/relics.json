@@ -1,18 +1,5 @@
 [
   {
-    "id": "VAKUU_CARD_SELECTOR",
-    "name": "VakuuCardSelector",
-    "description": "",
-    "description_raw": "",
-    "flavor": "",
-    "rarity": "Unknown",
-    "pool": "shared",
-    "image_url": null,
-    "image_variants": null,
-    "rarity_key": "Unknown",
-    "compendium_order": 287
-  },
-  {
     "id": "CAULDRON",
     "name": "가마솥",
     "description": "획득 시, 무작위 포션을 [blue]5[/blue]개 생성합니다.",
@@ -1610,12 +1597,12 @@
     "description": "서클렛입니다.",
     "description_raw": "서클렛입니다.",
     "flavor": "[gold]첨탑[/gold]에 뭔가 문제가 있거나, 발견할 유물이 더 이상 남아있지 않을 때 모습을 드러내는 기이한 유물입니다.",
-    "rarity": "None",
+    "rarity": "유물",
     "pool": "shared",
     "image_url": "/static/images/relics/circlet.png",
     "image_variants": null,
     "rarity_key": "None",
-    "compendium_order": 288
+    "compendium_order": 287
   },
   {
     "id": "STONE_HUMIDIFIER",

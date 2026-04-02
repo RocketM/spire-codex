@@ -3650,7 +3650,7 @@
       {
         "id": "BONE_TEA",
         "title": "Thé d’os",
-        "description": "Payez [red]50[/red] [gold]Pièces d’or[/gold]. Au début des [blue]2[/blue] prochains combats, [gold]Améliorez[/gold] votre main de départ."
+        "description": "Payez [red]50[/red] [gold]Pièces d’or[/gold]. Au début du prochain combat, [gold]Améliorez[/gold] votre main de départ."
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3660,7 +3660,7 @@
       {
         "id": "EMBER_TEA",
         "title": "Thé de braises",
-        "description": "Payez [red]150[/red] [gold]Pièces d’or[/gold]. Au début des [blue]2[/blue] prochains combats, gagnez [blue]2[/blue] de [gold]Force[/gold]."
+        "description": "Payez [red]150[/red] [gold]Pièces d’or[/gold]. Au début des [blue]5[/blue] prochains combats, gagnez [blue]2[/blue] de [gold]Force[/gold]."
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3685,7 +3685,7 @@
           {
             "id": "BONE_TEA",
             "title": "Thé d’os",
-            "description": "Payez [red]50[/red] [gold]Pièces d’or[/gold]. Au début des [blue]2[/blue] prochains combats, [gold]Améliorez[/gold] votre main de départ."
+            "description": "Payez [red]50[/red] [gold]Pièces d’or[/gold]. Au début du prochain combat, [gold]Améliorez[/gold] votre main de départ."
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3695,7 +3695,7 @@
           {
             "id": "EMBER_TEA",
             "title": "Thé de braises",
-            "description": "Payez [red]150[/red] [gold]Pièces d’or[/gold]. Au début des [blue]2[/blue] prochains combats, gagnez [blue]2[/blue] de [gold]Force[/gold]."
+            "description": "Payez [red]150[/red] [gold]Pièces d’or[/gold]. Au début des [blue]5[/blue] prochains combats, gagnez [blue]2[/blue] de [gold]Force[/gold]."
           },
           {
             "id": "EMBER_TEA_LOCKED",

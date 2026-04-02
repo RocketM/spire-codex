@@ -382,7 +382,7 @@
     "description": "To jest diadem.",
     "description_raw": "To jest diadem.",
     "flavor": "Pojawia się, gdy coś jest nie tak w [gold]Iglicy[/gold] lub kiedy nie ma już artefaktów do znalezienia.",
-    "rarity": "None",
+    "rarity": "Artefakt",
     "pool": "shared",
     "image_url": "/static/images/relics/circlet.png",
     "image_variants": null,
@@ -665,7 +665,7 @@
   {
     "id": "BONE_TEA",
     "name": "Herbata z kości",
-    "description": "Na początku [blue]{}[/blue] następnych walk wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold].",
+    "description": "Na początku plural(en):następnej walki wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold].",
     "description_raw": "Na początku {Combats:plural(en):następnej walki|[blue]{}[/blue] następnych walk} wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold].",
     "flavor": "[red]Szczegóły tego artefaktu zostaną ujawnione w przyszłości...[/red]",
     "rarity": "Specjalny Artefakt",
@@ -1965,7 +1965,7 @@
   {
     "id": "EMBER_TEA",
     "name": "Piekielnie gorąca herbata",
-    "description": "Na początku [blue]{}[/blue] następnych walk zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold].",
+    "description": "Na początku plural(en):następnej walki zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold].",
     "description_raw": "Na początku {Combats:plural(en):następnej walki|[blue]{}[/blue] następnych walk} zyskaj [blue]{StrengthPower}[/blue] pkt. [gold]Siły[/gold].",
     "flavor": "[red]Szczegóły tego artefaktu zostaną ujawnione w przyszłości...[/red]",
     "rarity": "Specjalny Artefakt",
@@ -3189,19 +3189,6 @@
     "image_variants": null,
     "rarity_key": "Shop",
     "compendium_order": 155
-  },
-  {
-    "id": "VAKUU_CARD_SELECTOR",
-    "name": "VakuuCardSelector",
-    "description": "",
-    "description_raw": "",
-    "flavor": "",
-    "rarity": "Unknown",
-    "pool": "shared",
-    "image_url": null,
-    "image_variants": null,
-    "rarity_key": "Unknown",
-    "compendium_order": 288
   },
   {
     "id": "PENDULUM",

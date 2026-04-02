@@ -3650,7 +3650,7 @@
       {
         "id": "BONE_TEA",
         "title": "Bone Tea",
-        "description": "Pay [red]50[/red] [gold]Gold[/gold]. At the start of the next [blue]2[/blue] combats, [gold]Upgrade[/gold] your starting hand."
+        "description": "Pay [red]50[/red] [gold]Gold[/gold]. At the start of the next combat, [gold]Upgrade[/gold] your starting hand."
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3660,7 +3660,7 @@
       {
         "id": "EMBER_TEA",
         "title": "Ember Tea",
-        "description": "Pay [red]150[/red] [gold]Gold[/gold]. At the start of the next [blue]2[/blue] combats, gain [blue]2[/blue] [gold]Strength[/gold]."
+        "description": "Pay [red]150[/red] [gold]Gold[/gold]. At the start of the next [blue]5[/blue] combats, gain [blue]2[/blue] [gold]Strength[/gold]."
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3685,7 +3685,7 @@
           {
             "id": "BONE_TEA",
             "title": "Bone Tea",
-            "description": "Pay [red]50[/red] [gold]Gold[/gold]. At the start of the next [blue]2[/blue] combats, [gold]Upgrade[/gold] your starting hand."
+            "description": "Pay [red]50[/red] [gold]Gold[/gold]. At the start of the next combat, [gold]Upgrade[/gold] your starting hand."
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3695,7 +3695,7 @@
           {
             "id": "EMBER_TEA",
             "title": "Ember Tea",
-            "description": "Pay [red]150[/red] [gold]Gold[/gold]. At the start of the next [blue]2[/blue] combats, gain [blue]2[/blue] [gold]Strength[/gold]."
+            "description": "Pay [red]150[/red] [gold]Gold[/gold]. At the start of the next [blue]5[/blue] combats, gain [blue]2[/blue] [gold]Strength[/gold]."
           },
           {
             "id": "EMBER_TEA_LOCKED",

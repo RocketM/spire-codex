@@ -1224,7 +1224,7 @@
   {
     "id": "EMBER_TEA",
     "name": "Glut-Tee",
-    "description": "Erhalte zu Beginn der nächsten [blue]2[/blue] Kämpfe [blue]2[/blue] [gold]Stärke[/gold].",
+    "description": "Erhalte zu Beginn der nächsten [blue]5[/blue] Kämpfe [blue]2[/blue] [gold]Stärke[/gold].",
     "description_raw": "Erhalte zu Beginn {Combats:plural:des nächsten Kampfes|der nächsten [blue]{}[/blue] Kämpfe} [blue]{StrengthPower}[/blue] [gold]Stärke[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ereignis-Relikt",
@@ -1627,7 +1627,7 @@
   {
     "id": "BONE_TEA",
     "name": "Knochentee",
-    "description": "[gold]Verbessere[/gold] deine Starthand zu Beginn der nächsten [blue]2[/blue] Kämpfe.",
+    "description": "[gold]Verbessere[/gold] deine Starthand zu Beginn des nächsten Kampfes.",
     "description_raw": "[gold]Verbessere[/gold] deine Starthand zu Beginn {Combats:plural:des nächsten Kampfes|der nächsten [blue]{}[/blue] Kämpfe}.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ereignis-Relikt",
@@ -2598,7 +2598,7 @@
     "description": "Es ist ein Reif.",
     "description_raw": "Es ist ein Reif.",
     "flavor": "Ein merkwürdiges Relikt, das auftaucht, wenn es ein Problem im [gold]Spire[/gold] gibt oder keine Relikte mehr zu entdecken sind.",
-    "rarity": "None",
+    "rarity": "Relikt",
     "pool": "shared",
     "image_url": "/static/images/relics/circlet.png",
     "image_variants": null,
@@ -3462,19 +3462,6 @@
     "image_variants": null,
     "rarity_key": "Common",
     "compendium_order": 37
-  },
-  {
-    "id": "VAKUU_CARD_SELECTOR",
-    "name": "VakuuCardSelector",
-    "description": "",
-    "description_raw": "",
-    "flavor": "",
-    "rarity": "Unknown",
-    "pool": "shared",
-    "image_url": null,
-    "image_variants": null,
-    "rarity_key": "Unknown",
-    "compendium_order": 288
   },
   {
     "id": "CURSED_PEARL",

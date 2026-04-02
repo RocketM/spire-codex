@@ -1,18 +1,5 @@
 [
   {
-    "id": "VAKUU_CARD_SELECTOR",
-    "name": "VakuuCardSelector",
-    "description": "",
-    "description_raw": "",
-    "flavor": "",
-    "rarity": "Unknown",
-    "pool": "shared",
-    "image_url": null,
-    "image_variants": null,
-    "rarity_key": "Unknown",
-    "compendium_order": 287
-  },
-  {
     "id": "MEMBERSHIP_CARD",
     "name": "Абонемент",
     "description": "Скидка [blue]50%[/blue] на все товары!",
@@ -2117,12 +2104,12 @@
     "description": "Это обруч.",
     "description_raw": "Это обруч.",
     "flavor": "Любопытная реликвия, которая встречается, если в [gold]Шпиле[/gold] что-то пошло не так, либо все возможные реликвии уже найдены.",
-    "rarity": "None",
+    "rarity": "Реликвия",
     "pool": "shared",
     "image_url": "/static/images/relics/circlet.png",
     "image_variants": null,
     "rarity_key": "None",
-    "compendium_order": 288
+    "compendium_order": 287
   },
   {
     "id": "PETRIFIED_TOAD",

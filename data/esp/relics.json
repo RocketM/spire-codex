@@ -967,7 +967,7 @@
     "description": "Es una coronilla.",
     "description_raw": "Es una coronilla.",
     "flavor": "Una reliquia curiosa que aparece cuando hay un problema dentro de la [gold]Torre[/gold] o cuando no hay más reliquias por descubrir.",
-    "rarity": "None",
+    "rarity": "Reliquia",
     "pool": "shared",
     "image_url": "/static/images/relics/circlet.png",
     "image_variants": null,
@@ -3414,7 +3414,7 @@
   {
     "id": "EMBER_TEA",
     "name": "Té de brasas",
-    "description": "Al inicio de los próximos [blue]2[/blue] combates, obtienes [blue]2[/blue] de [gold]fuerza[/gold].",
+    "description": "Al inicio de los próximos [blue]5[/blue] combates, obtienes [blue]2[/blue] de [gold]fuerza[/gold].",
     "description_raw": "Al inicio {Combats:plural:del próximo combate|de los próximos [blue]{}[/blue] combates}, obtienes [blue]{StrengthPower}[/blue] de [gold]fuerza[/gold].",
     "flavor": "[red]Los detalles de esta reliquia se revelarán en el futuro...[/red]",
     "rarity": "Reliquia de eventos",
@@ -3427,7 +3427,7 @@
   {
     "id": "BONE_TEA",
     "name": "Té de huesos",
-    "description": "Al inicio de los próximos [blue]2[/blue] combates, [gold]mejoras[/gold] la mano inicial.",
+    "description": "Al inicio del próximo combate, [gold]mejoras[/gold] la mano inicial.",
     "description_raw": "Al inicio {Combats:plural:del próximo combate|de los próximos [blue]{}[/blue] combates}, [gold]mejoras[/gold] la mano inicial.",
     "flavor": "[red]Los detalles de esta reliquia se revelarán en el futuro...[/red]",
     "rarity": "Reliquia de eventos",
@@ -3462,19 +3462,6 @@
     "image_variants": null,
     "rarity_key": "Common",
     "compendium_order": 38
-  },
-  {
-    "id": "VAKUU_CARD_SELECTOR",
-    "name": "VakuuCardSelector",
-    "description": "",
-    "description_raw": "",
-    "flavor": "",
-    "rarity": "Unknown",
-    "pool": "shared",
-    "image_url": null,
-    "image_variants": null,
-    "rarity_key": "Unknown",
-    "compendium_order": 288
   },
   {
     "id": "TUNGSTEN_ROD",

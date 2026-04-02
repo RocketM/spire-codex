@@ -3650,7 +3650,7 @@
       {
         "id": "BONE_TEA",
         "title": "Knochentee",
-        "description": "Zahle [red]50[/red] [gold]Gold[/gold]. [gold]Verbessere[/gold] deine Starthand zu Beginn der nächsten [blue]2[/blue] Kämpfe."
+        "description": "Zahle [red]50[/red] [gold]Gold[/gold]. [gold]Verbessere[/gold] deine Starthand zu Beginn des nächsten Kampfes."
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3660,7 +3660,7 @@
       {
         "id": "EMBER_TEA",
         "title": "Glut-Tee",
-        "description": "Zahle [red]150[/red] [gold]Gold[/gold]. Erhalte zu Beginn der nächsten [blue]2[/blue] Kämpfe [blue]2[/blue] [gold]Stärke[/gold]."
+        "description": "Zahle [red]150[/red] [gold]Gold[/gold]. Erhalte zu Beginn der nächsten [blue]5[/blue] Kämpfe [blue]2[/blue] [gold]Stärke[/gold]."
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3685,7 +3685,7 @@
           {
             "id": "BONE_TEA",
             "title": "Knochentee",
-            "description": "Zahle [red]50[/red] [gold]Gold[/gold]. [gold]Verbessere[/gold] deine Starthand zu Beginn der nächsten [blue]2[/blue] Kämpfe."
+            "description": "Zahle [red]50[/red] [gold]Gold[/gold]. [gold]Verbessere[/gold] deine Starthand zu Beginn des nächsten Kampfes."
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3695,7 +3695,7 @@
           {
             "id": "EMBER_TEA",
             "title": "Glut-Tee",
-            "description": "Zahle [red]150[/red] [gold]Gold[/gold]. Erhalte zu Beginn der nächsten [blue]2[/blue] Kämpfe [blue]2[/blue] [gold]Stärke[/gold]."
+            "description": "Zahle [red]150[/red] [gold]Gold[/gold]. Erhalte zu Beginn der nächsten [blue]5[/blue] Kämpfe [blue]2[/blue] [gold]Stärke[/gold]."
           },
           {
             "id": "EMBER_TEA_LOCKED",

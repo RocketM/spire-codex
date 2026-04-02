@@ -3646,7 +3646,7 @@
       {
         "id": "BONE_TEA",
         "title": "Té de huesos",
-        "description": "Paga [red]50[/red] de [gold]Oro[/gold]. Al comienzo de los siguientes [blue]2[/blue] combates, [gold]Mejora[/gold] tu mano inicial."
+        "description": "Paga [red]50[/red] de [gold]Oro[/gold]. Al comienzo del siguiente combate, [gold]Mejora[/gold] tu mano inicial."
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3656,7 +3656,7 @@
       {
         "id": "EMBER_TEA",
         "title": "Té de ascuas",
-        "description": "Paga [red]150[/red] de [gold]Oro[/gold]. Al comienzo de los siguientes [blue]2[/blue] combates, gana [blue]2[/blue] de [gold]Fuerza[/gold]."
+        "description": "Paga [red]150[/red] de [gold]Oro[/gold]. Al comienzo de los siguientes [blue]5[/blue] combates, gana [blue]2[/blue] de [gold]Fuerza[/gold]."
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3681,7 +3681,7 @@
           {
             "id": "BONE_TEA",
             "title": "Té de huesos",
-            "description": "Paga [red]50[/red] de [gold]Oro[/gold]. Al comienzo de los siguientes [blue]2[/blue] combates, [gold]Mejora[/gold] tu mano inicial."
+            "description": "Paga [red]50[/red] de [gold]Oro[/gold]. Al comienzo del siguiente combate, [gold]Mejora[/gold] tu mano inicial."
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3691,7 +3691,7 @@
           {
             "id": "EMBER_TEA",
             "title": "Té de ascuas",
-            "description": "Paga [red]150[/red] de [gold]Oro[/gold]. Al comienzo de los siguientes [blue]2[/blue] combates, gana [blue]2[/blue] de [gold]Fuerza[/gold]."
+            "description": "Paga [red]150[/red] de [gold]Oro[/gold]. Al comienzo de los siguientes [blue]5[/blue] combates, gana [blue]2[/blue] de [gold]Fuerza[/gold]."
           },
           {
             "id": "EMBER_TEA_LOCKED",

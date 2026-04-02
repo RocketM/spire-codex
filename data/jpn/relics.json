@@ -1,18 +1,5 @@
 [
   {
-    "id": "VAKUU_CARD_SELECTOR",
-    "name": "VakuuCardSelector",
-    "description": "",
-    "description_raw": "",
-    "flavor": "",
-    "rarity": "Unknown",
-    "pool": "shared",
-    "image_url": null,
-    "image_variants": null,
-    "rarity_key": "Unknown",
-    "compendium_order": 287
-  },
-  {
     "id": "TOASTY_MITTENS",
     "name": "あったか手袋",
     "description": "ターン開始時、[gold]山札[/gold]の一番上のカードを[gold]廃棄[/gold]し、[gold]筋力[/gold][blue]1[/blue]を得る",
@@ -596,12 +583,12 @@
     "description": "これは、サークレットです",
     "description_raw": "これは、サークレットです",
     "flavor": "奇妙なレリック。[gold]スパイア[/gold]の内部で問題が発生したか、これ以上発見できるレリックがない場合に現れる",
-    "rarity": "None",
+    "rarity": "レリック",
     "pool": "shared",
     "image_url": "/static/images/relics/circlet.png",
     "image_variants": null,
     "rarity_key": "None",
-    "compendium_order": 288
+    "compendium_order": 287
   },
   {
     "id": "THE_BOOT",
@@ -2725,7 +2712,7 @@
   {
     "id": "EMBER_TEA",
     "name": "炭火茶",
-    "description": "次の[blue][Combats][/blue]回の戦闘開始時、[gold]筋力[/gold][blue]2[/blue]を得る",
+    "description": "次の[blue]5[/blue]回の戦闘開始時、[gold]筋力[/gold][blue]2[/blue]を得る",
     "description_raw": "次の[blue]{Combats}[/blue]回の戦闘開始時、[gold]筋力[/gold][blue]{StrengthPower}[/blue]を得る",
     "flavor": "[red]このレリックの詳細は今後明かされるはずだ……[/red]",
     "rarity": "レリック（イベント）",
@@ -3674,7 +3661,7 @@
   {
     "id": "BONE_TEA",
     "name": "骨茶",
-    "description": "次の [blue][Combats][/blue] combats, 開始時、最初の手札をすべて[gold]アップグレード[/gold]する",
+    "description": "次の [blue]1[/blue] combats, 開始時、最初の手札をすべて[gold]アップグレード[/gold]する",
     "description_raw": "次の [blue]{Combats}[/blue] combats, 開始時、最初の手札をすべて[gold]アップグレード[/gold]する",
     "flavor": "[red]このレリックの詳細は今後明かされるはずだ……[/red]",
     "rarity": "レリック（イベント）",

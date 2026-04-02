@@ -957,7 +957,7 @@
   {
     "id": "BONE_TEA",
     "name": "Chá de Ossos",
-    "description": "No início dos próximos [blue]2[/blue] combates, [gold]Aprimore[/gold] a sua [gold]Mão[/gold] inicial.",
+    "description": "No início do próximo combate, [gold]Aprimore[/gold] a sua [gold]Mão[/gold] inicial.",
     "description_raw": "No início {Combats:plural:do próximo combate|dos próximos [blue]{}[/blue] combates}, [gold]Aprimore[/gold] a sua [gold]Mão[/gold] inicial.",
     "flavor": "[red]Detalhes sobre esta relíquia serão revelados no futuro...[/red]",
     "rarity": "Relíquia de Evento",
@@ -970,7 +970,7 @@
   {
     "id": "EMBER_TEA",
     "name": "Chá Ígneo",
-    "description": "No início dos próximos [blue]2[/blue] combates, receba [blue]2[/blue] de [gold]Força[/gold].",
+    "description": "No início dos próximos [blue]5[/blue] combates, receba [blue]2[/blue] de [gold]Força[/gold].",
     "description_raw": "No início {Combats:plural:do próximo combate|dos próximos [blue]{}[/blue] combates}, receba [blue]{StrengthPower}[/blue] de [gold]Força[/gold].",
     "flavor": "[red]Detalhes sobre esta relíquia serão revelados no futuro...[/red]",
     "rarity": "Relíquia de Evento",
@@ -3456,7 +3456,7 @@
     "description": "É uma tiara.",
     "description_raw": "É uma tiara.",
     "flavor": "Uma relíquia misteriosa que aparece quando há um problema dentro do [gold]Pináculo[/gold] ou quando não há mais relíquias para descobrir.",
-    "rarity": "None",
+    "rarity": "Relíquia",
     "pool": "shared",
     "image_url": "/static/images/relics/circlet.png",
     "image_variants": null,
@@ -3605,19 +3605,6 @@
     "image_variants": null,
     "rarity_key": "Common",
     "compendium_order": 37
-  },
-  {
-    "id": "VAKUU_CARD_SELECTOR",
-    "name": "VakuuCardSelector",
-    "description": "",
-    "description_raw": "",
-    "flavor": "",
-    "rarity": "Unknown",
-    "pool": "shared",
-    "image_url": null,
-    "image_variants": null,
-    "rarity_key": "Unknown",
-    "compendium_order": 288
   },
   {
     "id": "PUMPKIN_CANDLE",
