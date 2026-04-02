@@ -692,7 +692,7 @@
       {
         "id": "UNCOVER_FUTURE",
         "title": "Descubrir el futuro",
-        "description": "Paga [red]50[/red] de [gold]Oro[/gold]. [purple]Adivina[/purple] [blue]3[/blue] veces."
+        "description": "Paga [red]51-99[/red] de [gold]Oro[/gold]. [purple]Adivina[/purple] [blue]3[/blue] veces."
       },
       {
         "id": "PAYMENT_PLAN",
@@ -712,7 +712,7 @@
           {
             "id": "UNCOVER_FUTURE",
             "title": "Descubrir el futuro",
-            "description": "Paga [red]50[/red] de [gold]Oro[/gold]. [purple]Adivina[/purple] [blue]3[/blue] veces."
+            "description": "Paga [red]51-99[/red] de [gold]Oro[/gold]. [purple]Adivina[/purple] [blue]3[/blue] veces."
           },
           {
             "id": "PAYMENT_PLAN",
@@ -1467,12 +1467,12 @@
       {
         "id": "SOLO_QUEST",
         "title": "Entrar por tu cuenta",
-        "description": "Gana [blue]150[/blue] de [gold]Oro[/gold]. Pierde [red]18[/red] PV."
+        "description": "Gana [blue]135-165[/blue] de [gold]Oro[/gold]. Pierde [red]18[/red] PV."
       },
       {
         "id": "JOIN_FORCES",
         "title": "Unirse a ellos",
-        "description": "Gana [blue]50[/blue] de [gold]Oro[/gold]."
+        "description": "Gana [blue]35-65[/blue] de [gold]Oro[/gold]."
       }
     ],
     "pages": [
@@ -1483,12 +1483,12 @@
           {
             "id": "SOLO_QUEST",
             "title": "Entrar por tu cuenta",
-            "description": "Gana [blue]150[/blue] de [gold]Oro[/gold]. Pierde [red]18[/red] PV."
+            "description": "Gana [blue]135-165[/blue] de [gold]Oro[/gold]. Pierde [red]18[/red] PV."
           },
           {
             "id": "JOIN_FORCES",
             "title": "Unirse a ellos",
-            "description": "Gana [blue]50[/blue] de [gold]Oro[/gold]."
+            "description": "Gana [blue]35-65[/blue] de [gold]Oro[/gold]."
           }
         ]
       },
@@ -1517,7 +1517,7 @@
       {
         "id": "SEARCH",
         "title": "Explorar la zona",
-        "description": "Gana [blue]60[/blue] de [gold]Oro[/gold]."
+        "description": "Gana [blue]45-75[/blue] de [gold]Oro[/gold]."
       },
       {
         "id": "CLAIM_LOCKED",
@@ -1542,7 +1542,7 @@
           {
             "id": "SEARCH",
             "title": "Explorar la zona",
-            "description": "Gana [blue]60[/blue] de [gold]Oro[/gold]."
+            "description": "Gana [blue]45-75[/blue] de [gold]Oro[/gold]."
           },
           {
             "id": "CLAIM_LOCKED",
@@ -1572,12 +1572,12 @@
       {
         "id": "OFFER_TRIBUTE",
         "title": "Ofrecer tributo",
-        "description": "Paga [red]149[/red] de [gold]Oro[/gold]. Obtén una [gold]Reliquia[/gold] aleatoria."
+        "description": "Paga [red]100-149[/red] de [gold]Oro[/gold]. Obtén una [gold]Reliquia[/gold] aleatoria."
       },
       {
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "Bloqueado",
-        "description": "Necesitas [blue]149[/blue] de [gold]Oro[/gold]."
+        "description": "Necesitas [blue]100-149[/blue] de [gold]Oro[/gold]."
       }
     ],
     "pages": [
@@ -1593,12 +1593,12 @@
           {
             "id": "OFFER_TRIBUTE",
             "title": "Ofrecer tributo",
-            "description": "Paga [red]149[/red] de [gold]Oro[/gold]. Obtén una [gold]Reliquia[/gold] aleatoria."
+            "description": "Paga [red]100-149[/red] de [gold]Oro[/gold]. Obtén una [gold]Reliquia[/gold] aleatoria."
           },
           {
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "Bloqueado",
-            "description": "Necesitas [blue]149[/blue] de [gold]Oro[/gold]."
+            "description": "Necesitas [blue]100-149[/blue] de [gold]Oro[/gold]."
           }
         ]
       },
@@ -3227,7 +3227,7 @@
       {
         "id": "DIVE_INTO_WATER",
         "title": "Sumergirse en el estanque",
-        "description": "Gana [blue]111[/blue] de [gold]Oro[/gold]. Pierdes [red]7[/red] PV."
+        "description": "Gana [blue]101-121[/blue] de [gold]Oro[/gold]. Pierdes [red]7[/red] PV."
       }
     ],
     "pages": [
@@ -3251,7 +3251,7 @@
           {
             "id": "DIVE_INTO_WATER",
             "title": "Sumergirse en el estanque",
-            "description": "Gana [blue]111[/blue] de [gold]Oro[/gold]. Pierdes [red]7[/red] PV."
+            "description": "Gana [blue]101-121[/blue] de [gold]Oro[/gold]. Pierdes [red]7[/red] PV."
           }
         ]
       }
@@ -3267,12 +3267,12 @@
       {
         "id": "FIRST_CHEST",
         "title": "Primer cofre",
-        "description": "Ganas [blue]60[/blue] de [gold]Oro[/gold]."
+        "description": "Ganas [blue]52-67[/blue] de [gold]Oro[/gold]."
       },
       {
         "id": "SECOND_CHEST",
         "title": "Segundo cofre",
-        "description": "Ganas [blue]333[/blue] de [gold]Oro[/gold]. Recibes [red]Codicia[/red]."
+        "description": "Ganas [blue]303-363[/blue] de [gold]Oro[/gold]. Recibes [red]Codicia[/red]."
       }
     ],
     "pages": [
@@ -3287,12 +3287,12 @@
           {
             "id": "FIRST_CHEST",
             "title": "Primer cofre",
-            "description": "Ganas [blue]60[/blue] de [gold]Oro[/gold]."
+            "description": "Ganas [blue]52-67[/blue] de [gold]Oro[/gold]."
           },
           {
             "id": "SECOND_CHEST",
             "title": "Segundo cofre",
-            "description": "Ganas [blue]333[/blue] de [gold]Oro[/gold]. Recibes [red]Codicia[/red]."
+            "description": "Ganas [blue]303-363[/blue] de [gold]Oro[/gold]. Recibes [red]Codicia[/red]."
           }
         ]
       },
@@ -4301,7 +4301,7 @@
       {
         "id": "PLAIN",
         "title": "Izquierda",
-        "description": "Pierde [red]6[/red] PV. Gana [blue]41-69[/blue] de [gold]Oro[/gold]."
+        "description": "Pierde [red]6[/red] PV. Gana [blue]41-68[/blue] de [gold]Oro[/gold]."
       },
       {
         "id": "ORNATE",
@@ -4317,7 +4317,7 @@
           {
             "id": "PLAIN",
             "title": "Izquierda",
-            "description": "Pierde [red]6[/red] PV. Gana [blue]41-69[/blue] de [gold]Oro[/gold]."
+            "description": "Pierde [red]6[/red] PV. Gana [blue]41-68[/blue] de [gold]Oro[/gold]."
           },
           {
             "id": "ORNATE",

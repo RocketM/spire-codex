@@ -692,7 +692,7 @@
       {
         "id": "UNCOVER_FUTURE",
         "title": "Uncover Future",
-        "description": "Pay [red]50[/red] [gold]Gold[/gold]. [purple]Divine[/purple] [blue]3[/blue] times."
+        "description": "Pay [red]51-99[/red] [gold]Gold[/gold]. [purple]Divine[/purple] [blue]3[/blue] times."
       },
       {
         "id": "PAYMENT_PLAN",
@@ -712,7 +712,7 @@
           {
             "id": "UNCOVER_FUTURE",
             "title": "Uncover Future",
-            "description": "Pay [red]50[/red] [gold]Gold[/gold]. [purple]Divine[/purple] [blue]3[/blue] times."
+            "description": "Pay [red]51-99[/red] [gold]Gold[/gold]. [purple]Divine[/purple] [blue]3[/blue] times."
           },
           {
             "id": "PAYMENT_PLAN",
@@ -1467,12 +1467,12 @@
       {
         "id": "SOLO_QUEST",
         "title": "Solo Quest",
-        "description": "Gain [blue]150[/blue] [gold]Gold[/gold]. Lose [red]18[/red] HP."
+        "description": "Gain [blue]135-165[/blue] [gold]Gold[/gold]. Lose [red]18[/red] HP."
       },
       {
         "id": "JOIN_FORCES",
         "title": "Join Forces",
-        "description": "Gain [blue]50[/blue] [gold]Gold[/gold]."
+        "description": "Gain [blue]35-65[/blue] [gold]Gold[/gold]."
       }
     ],
     "pages": [
@@ -1483,12 +1483,12 @@
           {
             "id": "SOLO_QUEST",
             "title": "Solo Quest",
-            "description": "Gain [blue]150[/blue] [gold]Gold[/gold]. Lose [red]18[/red] HP."
+            "description": "Gain [blue]135-165[/blue] [gold]Gold[/gold]. Lose [red]18[/red] HP."
           },
           {
             "id": "JOIN_FORCES",
             "title": "Join Forces",
-            "description": "Gain [blue]50[/blue] [gold]Gold[/gold]."
+            "description": "Gain [blue]35-65[/blue] [gold]Gold[/gold]."
           }
         ]
       },
@@ -1517,7 +1517,7 @@
       {
         "id": "SEARCH",
         "title": "Search the Nearby Area",
-        "description": "Gain [blue]60[/blue] [gold]Gold[/gold]."
+        "description": "Gain [blue]45-75[/blue] [gold]Gold[/gold]."
       },
       {
         "id": "CLAIM_LOCKED",
@@ -1542,7 +1542,7 @@
           {
             "id": "SEARCH",
             "title": "Search the Nearby Area",
-            "description": "Gain [blue]60[/blue] [gold]Gold[/gold]."
+            "description": "Gain [blue]45-75[/blue] [gold]Gold[/gold]."
           },
           {
             "id": "CLAIM_LOCKED",
@@ -1572,12 +1572,12 @@
       {
         "id": "OFFER_TRIBUTE",
         "title": "Offer Tribute",
-        "description": "Pay [red]149[/red] [gold]Gold[/gold]. Obtain a random [gold]Relic[/gold]."
+        "description": "Pay [red]100-149[/red] [gold]Gold[/gold]. Obtain a random [gold]Relic[/gold]."
       },
       {
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "Locked",
-        "description": "Requires [blue]149[/blue] [gold]Gold[/gold]."
+        "description": "Requires [blue]100-149[/blue] [gold]Gold[/gold]."
       }
     ],
     "pages": [
@@ -1593,12 +1593,12 @@
           {
             "id": "OFFER_TRIBUTE",
             "title": "Offer Tribute",
-            "description": "Pay [red]149[/red] [gold]Gold[/gold]. Obtain a random [gold]Relic[/gold]."
+            "description": "Pay [red]100-149[/red] [gold]Gold[/gold]. Obtain a random [gold]Relic[/gold]."
           },
           {
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "Locked",
-            "description": "Requires [blue]149[/blue] [gold]Gold[/gold]."
+            "description": "Requires [blue]100-149[/blue] [gold]Gold[/gold]."
           }
         ]
       },
@@ -3231,7 +3231,7 @@
       {
         "id": "DIVE_INTO_WATER",
         "title": "Dive into the Water",
-        "description": "Gain [blue]111[/blue] [gold]Gold[/gold]. Lose [red]7[/red] HP."
+        "description": "Gain [blue]101-121[/blue] [gold]Gold[/gold]. Lose [red]7[/red] HP."
       }
     ],
     "pages": [
@@ -3255,7 +3255,7 @@
           {
             "id": "DIVE_INTO_WATER",
             "title": "Dive into the Water",
-            "description": "Gain [blue]111[/blue] [gold]Gold[/gold]. Lose [red]7[/red] HP."
+            "description": "Gain [blue]101-121[/blue] [gold]Gold[/gold]. Lose [red]7[/red] HP."
           }
         ]
       }
@@ -3271,12 +3271,12 @@
       {
         "id": "FIRST_CHEST",
         "title": "First Chest",
-        "description": "Gain [blue]60[/blue] [gold]Gold[/gold]."
+        "description": "Gain [blue]52-67[/blue] [gold]Gold[/gold]."
       },
       {
         "id": "SECOND_CHEST",
         "title": "Second Chest",
-        "description": "Gain [blue]333[/blue] [gold]Gold[/gold]. Receive [red]Greed[/red]."
+        "description": "Gain [blue]303-363[/blue] [gold]Gold[/gold]. Receive [red]Greed[/red]."
       }
     ],
     "pages": [
@@ -3291,12 +3291,12 @@
           {
             "id": "FIRST_CHEST",
             "title": "First Chest",
-            "description": "Gain [blue]60[/blue] [gold]Gold[/gold]."
+            "description": "Gain [blue]52-67[/blue] [gold]Gold[/gold]."
           },
           {
             "id": "SECOND_CHEST",
             "title": "Second Chest",
-            "description": "Gain [blue]333[/blue] [gold]Gold[/gold]. Receive [red]Greed[/red]."
+            "description": "Gain [blue]303-363[/blue] [gold]Gold[/gold]. Receive [red]Greed[/red]."
           }
         ]
       },
@@ -4305,7 +4305,7 @@
       {
         "id": "PLAIN",
         "title": "This",
-        "description": "Lose [red]6[/red] HP. Gain [blue]41-69[/blue] [gold]Gold[/gold]."
+        "description": "Lose [red]6[/red] HP. Gain [blue]41-68[/blue] [gold]Gold[/gold]."
       },
       {
         "id": "ORNATE",
@@ -4321,7 +4321,7 @@
           {
             "id": "PLAIN",
             "title": "This",
-            "description": "Lose [red]6[/red] HP. Gain [blue]41-69[/blue] [gold]Gold[/gold]."
+            "description": "Lose [red]6[/red] HP. Gain [blue]41-68[/blue] [gold]Gold[/gold]."
           },
           {
             "id": "ORNATE",

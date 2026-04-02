@@ -692,7 +692,7 @@
       {
         "id": "UNCOVER_FUTURE",
         "title": "Zukunft enthüllen",
-        "description": "Zahle [red]50[/red] [gold]Gold[/gold]. [purple]Weissage[/purple] [blue]3[/blue] Mal."
+        "description": "Zahle [red]51-99[/red] [gold]Gold[/gold]. [purple]Weissage[/purple] [blue]3[/blue] Mal."
       },
       {
         "id": "PAYMENT_PLAN",
@@ -712,7 +712,7 @@
           {
             "id": "UNCOVER_FUTURE",
             "title": "Zukunft enthüllen",
-            "description": "Zahle [red]50[/red] [gold]Gold[/gold]. [purple]Weissage[/purple] [blue]3[/blue] Mal."
+            "description": "Zahle [red]51-99[/red] [gold]Gold[/gold]. [purple]Weissage[/purple] [blue]3[/blue] Mal."
           },
           {
             "id": "PAYMENT_PLAN",
@@ -1467,12 +1467,12 @@
       {
         "id": "SOLO_QUEST",
         "title": "Solo-Quest",
-        "description": "Erhalte [blue]150[/blue] [gold]Gold[/gold]. Verliere [red]18[/red] TP."
+        "description": "Erhalte [blue]135-165[/blue] [gold]Gold[/gold]. Verliere [red]18[/red] TP."
       },
       {
         "id": "JOIN_FORCES",
         "title": "Zusammenschließen",
-        "description": "Erhalte [blue]50[/blue] [gold]Gold[/gold]."
+        "description": "Erhalte [blue]35-65[/blue] [gold]Gold[/gold]."
       }
     ],
     "pages": [
@@ -1483,12 +1483,12 @@
           {
             "id": "SOLO_QUEST",
             "title": "Solo-Quest",
-            "description": "Erhalte [blue]150[/blue] [gold]Gold[/gold]. Verliere [red]18[/red] TP."
+            "description": "Erhalte [blue]135-165[/blue] [gold]Gold[/gold]. Verliere [red]18[/red] TP."
           },
           {
             "id": "JOIN_FORCES",
             "title": "Zusammenschließen",
-            "description": "Erhalte [blue]50[/blue] [gold]Gold[/gold]."
+            "description": "Erhalte [blue]35-65[/blue] [gold]Gold[/gold]."
           }
         ]
       },
@@ -1517,7 +1517,7 @@
       {
         "id": "SEARCH",
         "title": "Die Umgebung durchsuchen",
-        "description": "Erhalte [blue]60[/blue] [gold]Gold[/gold]."
+        "description": "Erhalte [blue]45-75[/blue] [gold]Gold[/gold]."
       },
       {
         "id": "CLAIM_LOCKED",
@@ -1542,7 +1542,7 @@
           {
             "id": "SEARCH",
             "title": "Die Umgebung durchsuchen",
-            "description": "Erhalte [blue]60[/blue] [gold]Gold[/gold]."
+            "description": "Erhalte [blue]45-75[/blue] [gold]Gold[/gold]."
           },
           {
             "id": "CLAIM_LOCKED",
@@ -1572,12 +1572,12 @@
       {
         "id": "OFFER_TRIBUTE",
         "title": "Tribut darbieten",
-        "description": "Zahle [red]149[/red] [gold]Gold[/gold]. Erhalte ein zufälliges [gold]Relikt[/gold]."
+        "description": "Zahle [red]100-149[/red] [gold]Gold[/gold]. Erhalte ein zufälliges [gold]Relikt[/gold]."
       },
       {
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "Gesperrt",
-        "description": "Benötigt [blue]149[/blue] [gold]Gold[/gold]."
+        "description": "Benötigt [blue]100-149[/blue] [gold]Gold[/gold]."
       }
     ],
     "pages": [
@@ -1593,12 +1593,12 @@
           {
             "id": "OFFER_TRIBUTE",
             "title": "Tribut darbieten",
-            "description": "Zahle [red]149[/red] [gold]Gold[/gold]. Erhalte ein zufälliges [gold]Relikt[/gold]."
+            "description": "Zahle [red]100-149[/red] [gold]Gold[/gold]. Erhalte ein zufälliges [gold]Relikt[/gold]."
           },
           {
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "Gesperrt",
-            "description": "Benötigt [blue]149[/blue] [gold]Gold[/gold]."
+            "description": "Benötigt [blue]100-149[/blue] [gold]Gold[/gold]."
           }
         ]
       },
@@ -3231,7 +3231,7 @@
       {
         "id": "DIVE_INTO_WATER",
         "title": "Ins Wasser tauchen",
-        "description": "Erhalte [blue]111[/blue] [gold]Gold[/gold]. Verliere [red]7[/red] TP."
+        "description": "Erhalte [blue]101-121[/blue] [gold]Gold[/gold]. Verliere [red]7[/red] TP."
       }
     ],
     "pages": [
@@ -3255,7 +3255,7 @@
           {
             "id": "DIVE_INTO_WATER",
             "title": "Ins Wasser tauchen",
-            "description": "Erhalte [blue]111[/blue] [gold]Gold[/gold]. Verliere [red]7[/red] TP."
+            "description": "Erhalte [blue]101-121[/blue] [gold]Gold[/gold]. Verliere [red]7[/red] TP."
           }
         ]
       }
@@ -3271,12 +3271,12 @@
       {
         "id": "FIRST_CHEST",
         "title": "Erste Truhe",
-        "description": "Erhalte [blue]60[/blue] [gold]Gold[/gold]."
+        "description": "Erhalte [blue]52-67[/blue] [gold]Gold[/gold]."
       },
       {
         "id": "SECOND_CHEST",
         "title": "Zweite Truhe",
-        "description": "Erhalte [blue]333[/blue] [gold]Gold[/gold]. Erhalte [red]Gier[/red]."
+        "description": "Erhalte [blue]303-363[/blue] [gold]Gold[/gold]. Erhalte [red]Gier[/red]."
       }
     ],
     "pages": [
@@ -3291,12 +3291,12 @@
           {
             "id": "FIRST_CHEST",
             "title": "Erste Truhe",
-            "description": "Erhalte [blue]60[/blue] [gold]Gold[/gold]."
+            "description": "Erhalte [blue]52-67[/blue] [gold]Gold[/gold]."
           },
           {
             "id": "SECOND_CHEST",
             "title": "Zweite Truhe",
-            "description": "Erhalte [blue]333[/blue] [gold]Gold[/gold]. Erhalte [red]Gier[/red]."
+            "description": "Erhalte [blue]303-363[/blue] [gold]Gold[/gold]. Erhalte [red]Gier[/red]."
           }
         ]
       },
@@ -4305,7 +4305,7 @@
       {
         "id": "PLAIN",
         "title": "Dies",
-        "description": "Verliere [red]6[/red] TP. Erhalte [blue]41-69[/blue] [gold]Gold[/gold]."
+        "description": "Verliere [red]6[/red] TP. Erhalte [blue]41-68[/blue] [gold]Gold[/gold]."
       },
       {
         "id": "ORNATE",
@@ -4321,7 +4321,7 @@
           {
             "id": "PLAIN",
             "title": "Dies",
-            "description": "Verliere [red]6[/red] TP. Erhalte [blue]41-69[/blue] [gold]Gold[/gold]."
+            "description": "Verliere [red]6[/red] TP. Erhalte [blue]41-68[/blue] [gold]Gold[/gold]."
           },
           {
             "id": "ORNATE",

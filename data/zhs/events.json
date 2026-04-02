@@ -692,7 +692,7 @@
       {
         "id": "UNCOVER_FUTURE",
         "title": "揭幕未来",
-        "description": "支付[red]50[/red][gold]金币[/gold]。[purple]占卜[/purple][blue]3[/blue]次。"
+        "description": "支付[red]51-99[/red][gold]金币[/gold]。[purple]占卜[/purple][blue]3[/blue]次。"
       },
       {
         "id": "PAYMENT_PLAN",
@@ -712,7 +712,7 @@
           {
             "id": "UNCOVER_FUTURE",
             "title": "揭幕未来",
-            "description": "支付[red]50[/red][gold]金币[/gold]。[purple]占卜[/purple][blue]3[/blue]次。"
+            "description": "支付[red]51-99[/red][gold]金币[/gold]。[purple]占卜[/purple][blue]3[/blue]次。"
           },
           {
             "id": "PAYMENT_PLAN",
@@ -1467,12 +1467,12 @@
       {
         "id": "SOLO_QUEST",
         "title": "独自挑战",
-        "description": "获得[blue]150[/blue][gold]金币[/gold]。失去[red]18[/red]点生命。"
+        "description": "获得[blue]135-165[/blue][gold]金币[/gold]。失去[red]18[/red]点生命。"
       },
       {
         "id": "JOIN_FORCES",
         "title": "结伴同行",
-        "description": "获得[blue]50[/blue][gold]金币[/gold]。"
+        "description": "获得[blue]35-65[/blue][gold]金币[/gold]。"
       }
     ],
     "pages": [
@@ -1483,12 +1483,12 @@
           {
             "id": "SOLO_QUEST",
             "title": "独自挑战",
-            "description": "获得[blue]150[/blue][gold]金币[/gold]。失去[red]18[/red]点生命。"
+            "description": "获得[blue]135-165[/blue][gold]金币[/gold]。失去[red]18[/red]点生命。"
           },
           {
             "id": "JOIN_FORCES",
             "title": "结伴同行",
-            "description": "获得[blue]50[/blue][gold]金币[/gold]。"
+            "description": "获得[blue]35-65[/blue][gold]金币[/gold]。"
           }
         ]
       },
@@ -1517,7 +1517,7 @@
       {
         "id": "SEARCH",
         "title": "搜索附近的区域",
-        "description": "获得[blue]60[/blue][gold]金币[/gold]。"
+        "description": "获得[blue]45-75[/blue][gold]金币[/gold]。"
       },
       {
         "id": "CLAIM_LOCKED",
@@ -1542,7 +1542,7 @@
           {
             "id": "SEARCH",
             "title": "搜索附近的区域",
-            "description": "获得[blue]60[/blue][gold]金币[/gold]。"
+            "description": "获得[blue]45-75[/blue][gold]金币[/gold]。"
           },
           {
             "id": "CLAIM_LOCKED",
@@ -1572,12 +1572,12 @@
       {
         "id": "OFFER_TRIBUTE",
         "title": "供奉",
-        "description": "支付[red]149[/red][gold]金币[/gold]。获取一件随机[gold]遗物[/gold]。"
+        "description": "支付[red]100-149[/red][gold]金币[/gold]。获取一件随机[gold]遗物[/gold]。"
       },
       {
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "已锁定",
-        "description": "需要[blue]149[/blue][gold]金币[/gold]。"
+        "description": "需要[blue]100-149[/blue][gold]金币[/gold]。"
       }
     ],
     "pages": [
@@ -1593,12 +1593,12 @@
           {
             "id": "OFFER_TRIBUTE",
             "title": "供奉",
-            "description": "支付[red]149[/red][gold]金币[/gold]。获取一件随机[gold]遗物[/gold]。"
+            "description": "支付[red]100-149[/red][gold]金币[/gold]。获取一件随机[gold]遗物[/gold]。"
           },
           {
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "已锁定",
-            "description": "需要[blue]149[/blue][gold]金币[/gold]。"
+            "description": "需要[blue]100-149[/blue][gold]金币[/gold]。"
           }
         ]
       },
@@ -3231,7 +3231,7 @@
       {
         "id": "DIVE_INTO_WATER",
         "title": "潜水",
-        "description": "获得[blue]111[/blue][gold]金币[/gold]。失去[red]7[/red]点生命."
+        "description": "获得[blue]101-121[/blue][gold]金币[/gold]。失去[red]7[/red]点生命."
       }
     ],
     "pages": [
@@ -3255,7 +3255,7 @@
           {
             "id": "DIVE_INTO_WATER",
             "title": "潜水",
-            "description": "获得[blue]111[/blue][gold]金币[/gold]。失去[red]7[/red]点生命."
+            "description": "获得[blue]101-121[/blue][gold]金币[/gold]。失去[red]7[/red]点生命."
           }
         ]
       }
@@ -3271,12 +3271,12 @@
       {
         "id": "FIRST_CHEST",
         "title": "第一个箱子",
-        "description": "获得[blue]60[/blue][gold]金币[/gold]。"
+        "description": "获得[blue]52-67[/blue][gold]金币[/gold]。"
       },
       {
         "id": "SECOND_CHEST",
         "title": "第二个箱子",
-        "description": "获得[blue]333[/blue][gold]金币[/gold]。得到[red]贪婪[/red]。"
+        "description": "获得[blue]303-363[/blue][gold]金币[/gold]。得到[red]贪婪[/red]。"
       }
     ],
     "pages": [
@@ -3291,12 +3291,12 @@
           {
             "id": "FIRST_CHEST",
             "title": "第一个箱子",
-            "description": "获得[blue]60[/blue][gold]金币[/gold]。"
+            "description": "获得[blue]52-67[/blue][gold]金币[/gold]。"
           },
           {
             "id": "SECOND_CHEST",
             "title": "第二个箱子",
-            "description": "获得[blue]333[/blue][gold]金币[/gold]。得到[red]贪婪[/red]。"
+            "description": "获得[blue]303-363[/blue][gold]金币[/gold]。得到[red]贪婪[/red]。"
           }
         ]
       },
@@ -4305,7 +4305,7 @@
       {
         "id": "PLAIN",
         "title": "这个",
-        "description": "失去[red]6[/red]点生命。获得[blue]41-69[/blue][gold]金币[/gold]。"
+        "description": "失去[red]6[/red]点生命。获得[blue]41-68[/blue][gold]金币[/gold]。"
       },
       {
         "id": "ORNATE",
@@ -4321,7 +4321,7 @@
           {
             "id": "PLAIN",
             "title": "这个",
-            "description": "失去[red]6[/red]点生命。获得[blue]41-69[/blue][gold]金币[/gold]。"
+            "description": "失去[red]6[/red]点生命。获得[blue]41-68[/blue][gold]金币[/gold]。"
           },
           {
             "id": "ORNATE",

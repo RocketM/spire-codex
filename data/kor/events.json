@@ -692,7 +692,7 @@
       {
         "id": "UNCOVER_FUTURE",
         "title": "미래를 알아본다",
-        "description": "[gold]골드[/gold]를 [red]50[/red] 지불합니다. [blue]3[/blue]번 [purple]점을 칩니다[/purple]."
+        "description": "[gold]골드[/gold]를 [red]51-99[/red] 지불합니다. [blue]3[/blue]번 [purple]점을 칩니다[/purple]."
       },
       {
         "id": "PAYMENT_PLAN",
@@ -712,7 +712,7 @@
           {
             "id": "UNCOVER_FUTURE",
             "title": "미래를 알아본다",
-            "description": "[gold]골드[/gold]를 [red]50[/red] 지불합니다. [blue]3[/blue]번 [purple]점을 칩니다[/purple]."
+            "description": "[gold]골드[/gold]를 [red]51-99[/red] 지불합니다. [blue]3[/blue]번 [purple]점을 칩니다[/purple]."
           },
           {
             "id": "PAYMENT_PLAN",
@@ -1467,12 +1467,12 @@
       {
         "id": "SOLO_QUEST",
         "title": "홀로 탐색한다",
-        "description": "[gold]골드[/gold]를 [blue]150[/blue] 얻습니다. 체력을 [red]18[/red] 잃습니다."
+        "description": "[gold]골드[/gold]를 [blue]135-165[/blue] 얻습니다. 체력을 [red]18[/red] 잃습니다."
       },
       {
         "id": "JOIN_FORCES",
         "title": "협력한다",
-        "description": "[gold]골드[/gold]를 [blue]50[/blue] 얻습니다."
+        "description": "[gold]골드[/gold]를 [blue]35-65[/blue] 얻습니다."
       }
     ],
     "pages": [
@@ -1483,12 +1483,12 @@
           {
             "id": "SOLO_QUEST",
             "title": "홀로 탐색한다",
-            "description": "[gold]골드[/gold]를 [blue]150[/blue] 얻습니다. 체력을 [red]18[/red] 잃습니다."
+            "description": "[gold]골드[/gold]를 [blue]135-165[/blue] 얻습니다. 체력을 [red]18[/red] 잃습니다."
           },
           {
             "id": "JOIN_FORCES",
             "title": "협력한다",
-            "description": "[gold]골드[/gold]를 [blue]50[/blue] 얻습니다."
+            "description": "[gold]골드[/gold]를 [blue]35-65[/blue] 얻습니다."
           }
         ]
       },
@@ -1517,7 +1517,7 @@
       {
         "id": "SEARCH",
         "title": "주변을 탐색한다",
-        "description": "[gold]골드[/gold]를 [blue]60[/blue] 얻습니다."
+        "description": "[gold]골드[/gold]를 [blue]45-75[/blue] 얻습니다."
       },
       {
         "id": "CLAIM_LOCKED",
@@ -1542,7 +1542,7 @@
           {
             "id": "SEARCH",
             "title": "주변을 탐색한다",
-            "description": "[gold]골드[/gold]를 [blue]60[/blue] 얻습니다."
+            "description": "[gold]골드[/gold]를 [blue]45-75[/blue] 얻습니다."
           },
           {
             "id": "CLAIM_LOCKED",
@@ -1572,12 +1572,12 @@
       {
         "id": "OFFER_TRIBUTE",
         "title": "공물을 바친다",
-        "description": "[gold]골드[/gold]를 [red]149[/red] 지불합니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
+        "description": "[gold]골드[/gold]를 [red]100-149[/red] 지불합니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
       },
       {
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "잠김",
-        "description": "[gold]골드[/gold]가 [blue]149[/blue] 필요합니다."
+        "description": "[gold]골드[/gold]가 [blue]100-149[/blue] 필요합니다."
       }
     ],
     "pages": [
@@ -1593,12 +1593,12 @@
           {
             "id": "OFFER_TRIBUTE",
             "title": "공물을 바친다",
-            "description": "[gold]골드[/gold]를 [red]149[/red] 지불합니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
+            "description": "[gold]골드[/gold]를 [red]100-149[/red] 지불합니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
           },
           {
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "잠김",
-            "description": "[gold]골드[/gold]가 [blue]149[/blue] 필요합니다."
+            "description": "[gold]골드[/gold]가 [blue]100-149[/blue] 필요합니다."
           }
         ]
       },
@@ -3231,7 +3231,7 @@
       {
         "id": "DIVE_INTO_WATER",
         "title": "물로 뛰어든다",
-        "description": "[gold]골드[/gold]를 [blue]111[/blue] 얻습니다. 체력을 [red]7[/red] 잃습니다."
+        "description": "[gold]골드[/gold]를 [blue]101-121[/blue] 얻습니다. 체력을 [red]7[/red] 잃습니다."
       }
     ],
     "pages": [
@@ -3255,7 +3255,7 @@
           {
             "id": "DIVE_INTO_WATER",
             "title": "물로 뛰어든다",
-            "description": "[gold]골드[/gold]를 [blue]111[/blue] 얻습니다. 체력을 [red]7[/red] 잃습니다."
+            "description": "[gold]골드[/gold]를 [blue]101-121[/blue] 얻습니다. 체력을 [red]7[/red] 잃습니다."
           }
         ]
       }
@@ -3271,12 +3271,12 @@
       {
         "id": "FIRST_CHEST",
         "title": "첫 번째 상자",
-        "description": "[gold]골드[/gold]를 [blue]60[/blue] 얻습니다."
+        "description": "[gold]골드[/gold]를 [blue]52-67[/blue] 얻습니다."
       },
       {
         "id": "SECOND_CHEST",
         "title": "두 번째 상자",
-        "description": "[gold]골드[/gold]를 [blue]333[/blue] 얻습니다. [red]탐욕[/red]을 얻습니다."
+        "description": "[gold]골드[/gold]를 [blue]303-363[/blue] 얻습니다. [red]탐욕[/red]을 얻습니다."
       }
     ],
     "pages": [
@@ -3291,12 +3291,12 @@
           {
             "id": "FIRST_CHEST",
             "title": "첫 번째 상자",
-            "description": "[gold]골드[/gold]를 [blue]60[/blue] 얻습니다."
+            "description": "[gold]골드[/gold]를 [blue]52-67[/blue] 얻습니다."
           },
           {
             "id": "SECOND_CHEST",
             "title": "두 번째 상자",
-            "description": "[gold]골드[/gold]를 [blue]333[/blue] 얻습니다. [red]탐욕[/red]을 얻습니다."
+            "description": "[gold]골드[/gold]를 [blue]303-363[/blue] 얻습니다. [red]탐욕[/red]을 얻습니다."
           }
         ]
       },
@@ -4305,7 +4305,7 @@
       {
         "id": "PLAIN",
         "title": "이거",
-        "description": "체력을 [red]6[/red] 잃습니다. [gold]골드[/gold]를 [blue]41-69[/blue] 얻습니다."
+        "description": "체력을 [red]6[/red] 잃습니다. [gold]골드[/gold]를 [blue]41-68[/blue] 얻습니다."
       },
       {
         "id": "ORNATE",
@@ -4321,7 +4321,7 @@
           {
             "id": "PLAIN",
             "title": "이거",
-            "description": "체력을 [red]6[/red] 잃습니다. [gold]골드[/gold]를 [blue]41-69[/blue] 얻습니다."
+            "description": "체력을 [red]6[/red] 잃습니다. [gold]골드[/gold]를 [blue]41-68[/blue] 얻습니다."
           },
           {
             "id": "ORNATE",

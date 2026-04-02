@@ -692,7 +692,7 @@
       {
         "id": "UNCOVER_FUTURE",
         "title": "Revelar el futuro",
-        "description": "Pagas [red]50[/red] de [gold]oro[/gold]. Puedes [purple]adivinar[/purple] [blue]3[/blue] veces."
+        "description": "Pagas [red]51-99[/red] de [gold]oro[/gold]. Puedes [purple]adivinar[/purple] [blue]3[/blue] veces."
       },
       {
         "id": "PAYMENT_PLAN",
@@ -712,7 +712,7 @@
           {
             "id": "UNCOVER_FUTURE",
             "title": "Revelar el futuro",
-            "description": "Pagas [red]50[/red] de [gold]oro[/gold]. Puedes [purple]adivinar[/purple] [blue]3[/blue] veces."
+            "description": "Pagas [red]51-99[/red] de [gold]oro[/gold]. Puedes [purple]adivinar[/purple] [blue]3[/blue] veces."
           },
           {
             "id": "PAYMENT_PLAN",
@@ -1467,12 +1467,12 @@
       {
         "id": "SOLO_QUEST",
         "title": "Ir por tu cuenta",
-        "description": "Obtienes [blue]150[/blue] de [gold]oro[/gold]. Pierdes [red]18[/red] PV."
+        "description": "Obtienes [blue]135-165[/blue] de [gold]oro[/gold]. Pierdes [red]18[/red] PV."
       },
       {
         "id": "JOIN_FORCES",
         "title": "Unir fuerzas",
-        "description": "Obtienes [blue]50[/blue] de [gold]oro[/gold]."
+        "description": "Obtienes [blue]35-65[/blue] de [gold]oro[/gold]."
       }
     ],
     "pages": [
@@ -1483,12 +1483,12 @@
           {
             "id": "SOLO_QUEST",
             "title": "Ir por tu cuenta",
-            "description": "Obtienes [blue]150[/blue] de [gold]oro[/gold]. Pierdes [red]18[/red] PV."
+            "description": "Obtienes [blue]135-165[/blue] de [gold]oro[/gold]. Pierdes [red]18[/red] PV."
           },
           {
             "id": "JOIN_FORCES",
             "title": "Unir fuerzas",
-            "description": "Obtienes [blue]50[/blue] de [gold]oro[/gold]."
+            "description": "Obtienes [blue]35-65[/blue] de [gold]oro[/gold]."
           }
         ]
       },
@@ -1517,7 +1517,7 @@
       {
         "id": "SEARCH",
         "title": "Explorar las cercanías",
-        "description": "Obtienes [blue]60[/blue] de [gold]oro[/gold]."
+        "description": "Obtienes [blue]45-75[/blue] de [gold]oro[/gold]."
       },
       {
         "id": "CLAIM_LOCKED",
@@ -1542,7 +1542,7 @@
           {
             "id": "SEARCH",
             "title": "Explorar las cercanías",
-            "description": "Obtienes [blue]60[/blue] de [gold]oro[/gold]."
+            "description": "Obtienes [blue]45-75[/blue] de [gold]oro[/gold]."
           },
           {
             "id": "CLAIM_LOCKED",
@@ -1572,12 +1572,12 @@
       {
         "id": "OFFER_TRIBUTE",
         "title": "Ofrecer tributo",
-        "description": "Pagas [red]149[/red] de [gold]oro[/gold]. Obtienes una [gold]reliquia[/gold] al azar."
+        "description": "Pagas [red]100-149[/red] de [gold]oro[/gold]. Obtienes una [gold]reliquia[/gold] al azar."
       },
       {
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "Sin desbloquear",
-        "description": "Necesitas [blue]149[/blue] de [gold]oro[/gold]."
+        "description": "Necesitas [blue]100-149[/blue] de [gold]oro[/gold]."
       }
     ],
     "pages": [
@@ -1593,12 +1593,12 @@
           {
             "id": "OFFER_TRIBUTE",
             "title": "Ofrecer tributo",
-            "description": "Pagas [red]149[/red] de [gold]oro[/gold]. Obtienes una [gold]reliquia[/gold] al azar."
+            "description": "Pagas [red]100-149[/red] de [gold]oro[/gold]. Obtienes una [gold]reliquia[/gold] al azar."
           },
           {
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "Sin desbloquear",
-            "description": "Necesitas [blue]149[/blue] de [gold]oro[/gold]."
+            "description": "Necesitas [blue]100-149[/blue] de [gold]oro[/gold]."
           }
         ]
       },
@@ -3231,7 +3231,7 @@
       {
         "id": "DIVE_INTO_WATER",
         "title": "Sumergirse en el agua",
-        "description": "Obtienes [blue]111[/blue] de [gold]oro[/gold]. Pierdes [red]7[/red] PV."
+        "description": "Obtienes [blue]101-121[/blue] de [gold]oro[/gold]. Pierdes [red]7[/red] PV."
       }
     ],
     "pages": [
@@ -3255,7 +3255,7 @@
           {
             "id": "DIVE_INTO_WATER",
             "title": "Sumergirse en el agua",
-            "description": "Obtienes [blue]111[/blue] de [gold]oro[/gold]. Pierdes [red]7[/red] PV."
+            "description": "Obtienes [blue]101-121[/blue] de [gold]oro[/gold]. Pierdes [red]7[/red] PV."
           }
         ]
       }
@@ -3271,12 +3271,12 @@
       {
         "id": "FIRST_CHEST",
         "title": "Primer cofre",
-        "description": "Obtienes [blue]60[/blue] de [gold]oro[/gold]."
+        "description": "Obtienes [blue]52-67[/blue] de [gold]oro[/gold]."
       },
       {
         "id": "SECOND_CHEST",
         "title": "Segundo cofre",
-        "description": "Obtienes [blue]333[/blue] de [gold]oro[/gold]. Recibes [red]avaricia[/red]."
+        "description": "Obtienes [blue]303-363[/blue] de [gold]oro[/gold]. Recibes [red]avaricia[/red]."
       }
     ],
     "pages": [
@@ -3291,12 +3291,12 @@
           {
             "id": "FIRST_CHEST",
             "title": "Primer cofre",
-            "description": "Obtienes [blue]60[/blue] de [gold]oro[/gold]."
+            "description": "Obtienes [blue]52-67[/blue] de [gold]oro[/gold]."
           },
           {
             "id": "SECOND_CHEST",
             "title": "Segundo cofre",
-            "description": "Obtienes [blue]333[/blue] de [gold]oro[/gold]. Recibes [red]avaricia[/red]."
+            "description": "Obtienes [blue]303-363[/blue] de [gold]oro[/gold]. Recibes [red]avaricia[/red]."
           }
         ]
       },
@@ -4305,7 +4305,7 @@
       {
         "id": "PLAIN",
         "title": "Izquierda",
-        "description": "Pierdes [red]6[/red] PV. Obtienes [blue]41-69[/blue] de [gold]oro[/gold]."
+        "description": "Pierdes [red]6[/red] PV. Obtienes [blue]41-68[/blue] de [gold]oro[/gold]."
       },
       {
         "id": "ORNATE",
@@ -4321,7 +4321,7 @@
           {
             "id": "PLAIN",
             "title": "Izquierda",
-            "description": "Pierdes [red]6[/red] PV. Obtienes [blue]41-69[/blue] de [gold]oro[/gold]."
+            "description": "Pierdes [red]6[/red] PV. Obtienes [blue]41-68[/blue] de [gold]oro[/gold]."
           },
           {
             "id": "ORNATE",

@@ -732,12 +732,12 @@
       {
         "id": "SOLO_QUEST",
         "title": "SOLO_QUEST",
-        "description": "ได้รับ [blue]150[/blue] [gold]ทอง[/gold] เสีย [red]18[/red] HP"
+        "description": "ได้รับ [blue]135-165[/blue] [gold]ทอง[/gold] เสีย [red]18[/red] HP"
       },
       {
         "id": "JOIN_FORCES",
         "title": "JOIN_FORCES",
-        "description": "ได้รับ [blue]50[/blue] [gold]ทอง[/gold]"
+        "description": "ได้รับ [blue]35-65[/blue] [gold]ทอง[/gold]"
       }
     ],
     "pages": null
@@ -757,7 +757,7 @@
       {
         "id": "SEARCH",
         "title": "ค้นหาบริเวณรอบข้าง",
-        "description": "ได้รับ [blue]60[/blue] [gold]ทอง[/gold]"
+        "description": "ได้รับ [blue]45-75[/blue] [gold]ทอง[/gold]"
       },
       {
         "id": "CLAIM_LOCKED",
@@ -782,12 +782,12 @@
       {
         "id": "OFFER_TRIBUTE",
         "title": "OFFER_TRIBUTE",
-        "description": "จ่าย [red]149[/red] [gold]ทอง[/gold] ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
+        "description": "จ่าย [red]100-149[/red] [gold]ทอง[/gold] ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
       },
       {
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "ล็อก",
-        "description": "ต้องการ [blue]149[/blue] [gold]ทอง[/gold]"
+        "description": "ต้องการ [blue]100-149[/blue] [gold]ทอง[/gold]"
       }
     ],
     "pages": null
@@ -1485,7 +1485,7 @@
       {
         "id": "DIVE_INTO_WATER",
         "title": "DIVE_INTO_WATER",
-        "description": "ได้รับ [blue]111[/blue] [gold]ทอง[/gold] เสีย [red]7[/red] HP"
+        "description": "ได้รับ [blue]101-121[/blue] [gold]ทอง[/gold] เสีย [red]7[/red] HP"
       }
     ],
     "pages": null
@@ -1500,12 +1500,12 @@
       {
         "id": "FIRST_CHEST",
         "title": "กล่องสมบัติใบแรก",
-        "description": "ได้รับ [blue]60[/blue] [gold]ทอง[/gold]"
+        "description": "ได้รับ [blue]52-67[/blue] [gold]ทอง[/gold]"
       },
       {
         "id": "SECOND_CHEST",
         "title": "กล่องสมบัติใบที่ 2",
-        "description": "ได้รับ [blue]333[/blue] [gold]ทอง[/gold] ได้รับ[red]Greed[/red]"
+        "description": "ได้รับ [blue]303-363[/blue] [gold]ทอง[/gold] ได้รับ[red]Greed[/red]"
       }
     ],
     "pages": [
@@ -1520,12 +1520,12 @@
           {
             "id": "FIRST_CHEST",
             "title": "กล่องสมบัติใบแรก",
-            "description": "ได้รับ [blue]60[/blue] [gold]ทอง[/gold]"
+            "description": "ได้รับ [blue]52-67[/blue] [gold]ทอง[/gold]"
           },
           {
             "id": "SECOND_CHEST",
             "title": "กล่องสมบัติใบที่ 2",
-            "description": "ได้รับ [blue]333[/blue] [gold]ทอง[/gold] ได้รับ[red]Greed[/red]"
+            "description": "ได้รับ [blue]303-363[/blue] [gold]ทอง[/gold] ได้รับ[red]Greed[/red]"
           }
         ]
       }
@@ -1825,7 +1825,7 @@
       {
         "id": "PLAIN",
         "title": "อันนี้",
-        "description": "เสีย [red]6[/red] HP ได้รับ [blue]41-69[/blue] [gold]ทอง[/gold]"
+        "description": "เสีย [red]6[/red] HP ได้รับ [blue]41-68[/blue] [gold]ทอง[/gold]"
       },
       {
         "id": "ORNATE",

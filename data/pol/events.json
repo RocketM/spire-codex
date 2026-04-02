@@ -692,7 +692,7 @@
       {
         "id": "UNCOVER_FUTURE",
         "title": "Odkryj przyszłość",
-        "description": "Zapłać [red]50[/red] szt. [gold]Złota[/gold]. Zyskaj [purple]Wróżenie[/purple] [blue]3[/blue] razy."
+        "description": "Zapłać [red]51-99[/red] szt. [gold]Złota[/gold]. Zyskaj [purple]Wróżenie[/purple] [blue]3[/blue] razy."
       },
       {
         "id": "PAYMENT_PLAN",
@@ -712,7 +712,7 @@
           {
             "id": "UNCOVER_FUTURE",
             "title": "Odkryj przyszłość",
-            "description": "Zapłać [red]50[/red] szt. [gold]Złota[/gold]. Zyskaj [purple]Wróżenie[/purple] [blue]3[/blue] razy."
+            "description": "Zapłać [red]51-99[/red] szt. [gold]Złota[/gold]. Zyskaj [purple]Wróżenie[/purple] [blue]3[/blue] razy."
           },
           {
             "id": "PAYMENT_PLAN",
@@ -1467,12 +1467,12 @@
       {
         "id": "SOLO_QUEST",
         "title": "Samotna misja",
-        "description": "Zyskaj [blue]150[/blue] szt. [gold]Złota[/gold]. Utrać [red]18[/red] PŻ."
+        "description": "Zyskaj [blue]135-165[/blue] szt. [gold]Złota[/gold]. Utrać [red]18[/red] PŻ."
       },
       {
         "id": "JOIN_FORCES",
         "title": "Połącz siły",
-        "description": "Zyskaj [blue]50[/blue] szt. [gold]Złota[/gold]."
+        "description": "Zyskaj [blue]35-65[/blue] szt. [gold]Złota[/gold]."
       }
     ],
     "pages": [
@@ -1483,12 +1483,12 @@
           {
             "id": "SOLO_QUEST",
             "title": "Samotna misja",
-            "description": "Zyskaj [blue]150[/blue] szt. [gold]Złota[/gold]. Utrać [red]18[/red] PŻ."
+            "description": "Zyskaj [blue]135-165[/blue] szt. [gold]Złota[/gold]. Utrać [red]18[/red] PŻ."
           },
           {
             "id": "JOIN_FORCES",
             "title": "Połącz siły",
-            "description": "Zyskaj [blue]50[/blue] szt. [gold]Złota[/gold]."
+            "description": "Zyskaj [blue]35-65[/blue] szt. [gold]Złota[/gold]."
           }
         ]
       },
@@ -1517,7 +1517,7 @@
       {
         "id": "SEARCH",
         "title": "Przeszukaj obszar",
-        "description": "Zyskaj [blue]60[/blue] szt. [gold]Złota[/gold]."
+        "description": "Zyskaj [blue]45-75[/blue] szt. [gold]Złota[/gold]."
       },
       {
         "id": "CLAIM_LOCKED",
@@ -1542,7 +1542,7 @@
           {
             "id": "SEARCH",
             "title": "Przeszukaj obszar",
-            "description": "Zyskaj [blue]60[/blue] szt. [gold]Złota[/gold]."
+            "description": "Zyskaj [blue]45-75[/blue] szt. [gold]Złota[/gold]."
           },
           {
             "id": "CLAIM_LOCKED",
@@ -1572,12 +1572,12 @@
       {
         "id": "OFFER_TRIBUTE",
         "title": "Złóż hołd",
-        "description": "Zapłać [red]149[/red] szt. [gold]Złota[/gold]. Otrzymaj losowy [gold]Artefakt[/gold]."
+        "description": "Zapłać [red]100-149[/red] szt. [gold]Złota[/gold]. Otrzymaj losowy [gold]Artefakt[/gold]."
       },
       {
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "Zablokowane",
-        "description": "Wymaga [blue]149[/blue] szt. [gold]Złota[/gold]."
+        "description": "Wymaga [blue]100-149[/blue] szt. [gold]Złota[/gold]."
       }
     ],
     "pages": [
@@ -1593,12 +1593,12 @@
           {
             "id": "OFFER_TRIBUTE",
             "title": "Złóż hołd",
-            "description": "Zapłać [red]149[/red] szt. [gold]Złota[/gold]. Otrzymaj losowy [gold]Artefakt[/gold]."
+            "description": "Zapłać [red]100-149[/red] szt. [gold]Złota[/gold]. Otrzymaj losowy [gold]Artefakt[/gold]."
           },
           {
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "Zablokowane",
-            "description": "Wymaga [blue]149[/blue] szt. [gold]Złota[/gold]."
+            "description": "Wymaga [blue]100-149[/blue] szt. [gold]Złota[/gold]."
           }
         ]
       },
@@ -3223,7 +3223,7 @@
       {
         "id": "DIVE_INTO_WATER",
         "title": "Skocz do wody",
-        "description": "Zyskaj [blue]111[/blue] szt. [gold]Złota[/gold]. Utrać [red]7[/red] PŻ."
+        "description": "Zyskaj [blue]101-121[/blue] szt. [gold]Złota[/gold]. Utrać [red]7[/red] PŻ."
       }
     ],
     "pages": [
@@ -3247,7 +3247,7 @@
           {
             "id": "DIVE_INTO_WATER",
             "title": "Skocz do wody",
-            "description": "Zyskaj [blue]111[/blue] szt. [gold]Złota[/gold]. Utrać [red]7[/red] PŻ."
+            "description": "Zyskaj [blue]101-121[/blue] szt. [gold]Złota[/gold]. Utrać [red]7[/red] PŻ."
           }
         ]
       }
@@ -3263,12 +3263,12 @@
       {
         "id": "FIRST_CHEST",
         "title": "Pierwsza skrzynia",
-        "description": "Zyskaj [blue]60[/blue] szt. [gold]Złota[/gold]."
+        "description": "Zyskaj [blue]52-67[/blue] szt. [gold]Złota[/gold]."
       },
       {
         "id": "SECOND_CHEST",
         "title": "Druga skrzynia",
-        "description": "Zyskaj [blue]333[/blue] szt. [gold]Złota[/gold]. Otrzymaj [red]Chciwość[/red]."
+        "description": "Zyskaj [blue]303-363[/blue] szt. [gold]Złota[/gold]. Otrzymaj [red]Chciwość[/red]."
       }
     ],
     "pages": [
@@ -3283,12 +3283,12 @@
           {
             "id": "FIRST_CHEST",
             "title": "Pierwsza skrzynia",
-            "description": "Zyskaj [blue]60[/blue] szt. [gold]Złota[/gold]."
+            "description": "Zyskaj [blue]52-67[/blue] szt. [gold]Złota[/gold]."
           },
           {
             "id": "SECOND_CHEST",
             "title": "Druga skrzynia",
-            "description": "Zyskaj [blue]333[/blue] szt. [gold]Złota[/gold]. Otrzymaj [red]Chciwość[/red]."
+            "description": "Zyskaj [blue]303-363[/blue] szt. [gold]Złota[/gold]. Otrzymaj [red]Chciwość[/red]."
           }
         ]
       },
@@ -4297,7 +4297,7 @@
       {
         "id": "PLAIN",
         "title": "Tamto",
-        "description": "Utrać [red]6[/red] PŻ. Zyskaj [blue]41-69[/blue] szt. [gold]Złota[/gold]."
+        "description": "Utrać [red]6[/red] PŻ. Zyskaj [blue]41-68[/blue] szt. [gold]Złota[/gold]."
       },
       {
         "id": "ORNATE",
@@ -4313,7 +4313,7 @@
           {
             "id": "PLAIN",
             "title": "Tamto",
-            "description": "Utrać [red]6[/red] PŻ. Zyskaj [blue]41-69[/blue] szt. [gold]Złota[/gold]."
+            "description": "Utrać [red]6[/red] PŻ. Zyskaj [blue]41-68[/blue] szt. [gold]Złota[/gold]."
           },
           {
             "id": "ORNATE",

@@ -692,7 +692,7 @@
       {
         "id": "UNCOVER_FUTURE",
         "title": "Geleceğini Ortaya Çıkar",
-        "description": "[red]50[/red] [gold]Altın[/gold] öde. [blue]3[/blue] kez [purple]Kehanetini Ortaya Çıkar[/purple]."
+        "description": "[red]51-99[/red] [gold]Altın[/gold] öde. [blue]3[/blue] kez [purple]Kehanetini Ortaya Çıkar[/purple]."
       },
       {
         "id": "PAYMENT_PLAN",
@@ -712,7 +712,7 @@
           {
             "id": "UNCOVER_FUTURE",
             "title": "Geleceğini Ortaya Çıkar",
-            "description": "[red]50[/red] [gold]Altın[/gold] öde. [blue]3[/blue] kez [purple]Kehanetini Ortaya Çıkar[/purple]."
+            "description": "[red]51-99[/red] [gold]Altın[/gold] öde. [blue]3[/blue] kez [purple]Kehanetini Ortaya Çıkar[/purple]."
           },
           {
             "id": "PAYMENT_PLAN",
@@ -1467,12 +1467,12 @@
       {
         "id": "SOLO_QUEST",
         "title": "Tek Kişilik Görev",
-        "description": "[blue]150[/blue] [gold]Altın[/gold] elde et. [red]18[/red] CP kaybet."
+        "description": "[blue]135-165[/blue] [gold]Altın[/gold] elde et. [red]18[/red] CP kaybet."
       },
       {
         "id": "JOIN_FORCES",
         "title": "Güçlerinizi Birleştirin",
-        "description": "[blue]50[/blue] [gold]Altın[/gold] elde et."
+        "description": "[blue]35-65[/blue] [gold]Altın[/gold] elde et."
       }
     ],
     "pages": [
@@ -1483,12 +1483,12 @@
           {
             "id": "SOLO_QUEST",
             "title": "Tek Kişilik Görev",
-            "description": "[blue]150[/blue] [gold]Altın[/gold] elde et. [red]18[/red] CP kaybet."
+            "description": "[blue]135-165[/blue] [gold]Altın[/gold] elde et. [red]18[/red] CP kaybet."
           },
           {
             "id": "JOIN_FORCES",
             "title": "Güçlerinizi Birleştirin",
-            "description": "[blue]50[/blue] [gold]Altın[/gold] elde et."
+            "description": "[blue]35-65[/blue] [gold]Altın[/gold] elde et."
           }
         ]
       },
@@ -1517,7 +1517,7 @@
       {
         "id": "SEARCH",
         "title": "Etrafı Araştır",
-        "description": "[blue]60[/blue] [gold]Altın[/gold] elde et."
+        "description": "[blue]45-75[/blue] [gold]Altın[/gold] elde et."
       },
       {
         "id": "CLAIM_LOCKED",
@@ -1542,7 +1542,7 @@
           {
             "id": "SEARCH",
             "title": "Etrafı Araştır",
-            "description": "[blue]60[/blue] [gold]Altın[/gold] elde et."
+            "description": "[blue]45-75[/blue] [gold]Altın[/gold] elde et."
           },
           {
             "id": "CLAIM_LOCKED",
@@ -1572,12 +1572,12 @@
       {
         "id": "OFFER_TRIBUTE",
         "title": "Adak Sun",
-        "description": "[red]149[/red] [gold]Altın[/gold] öde. Rastgele bir [gold]Kalıntı[/gold] elde et."
+        "description": "[red]100-149[/red] [gold]Altın[/gold] öde. Rastgele bir [gold]Kalıntı[/gold] elde et."
       },
       {
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "Kilitli",
-        "description": "[blue]149[/blue] [gold]Altın[/gold] gerektirir."
+        "description": "[blue]100-149[/blue] [gold]Altın[/gold] gerektirir."
       }
     ],
     "pages": [
@@ -1593,12 +1593,12 @@
           {
             "id": "OFFER_TRIBUTE",
             "title": "Adak Sun",
-            "description": "[red]149[/red] [gold]Altın[/gold] öde. Rastgele bir [gold]Kalıntı[/gold] elde et."
+            "description": "[red]100-149[/red] [gold]Altın[/gold] öde. Rastgele bir [gold]Kalıntı[/gold] elde et."
           },
           {
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "Kilitli",
-            "description": "[blue]149[/blue] [gold]Altın[/gold] gerektirir."
+            "description": "[blue]100-149[/blue] [gold]Altın[/gold] gerektirir."
           }
         ]
       },
@@ -3231,7 +3231,7 @@
       {
         "id": "DIVE_INTO_WATER",
         "title": "Suya Dal",
-        "description": "[blue]111[/blue] [gold]Altın[/gold] elde et. [red]7[/red] CP kaybet."
+        "description": "[blue]101-121[/blue] [gold]Altın[/gold] elde et. [red]7[/red] CP kaybet."
       }
     ],
     "pages": [
@@ -3255,7 +3255,7 @@
           {
             "id": "DIVE_INTO_WATER",
             "title": "Suya Dal",
-            "description": "[blue]111[/blue] [gold]Altın[/gold] elde et. [red]7[/red] CP kaybet."
+            "description": "[blue]101-121[/blue] [gold]Altın[/gold] elde et. [red]7[/red] CP kaybet."
           }
         ]
       }
@@ -3271,12 +3271,12 @@
       {
         "id": "FIRST_CHEST",
         "title": "Birinci Sandık",
-        "description": "[blue]60[/blue] [gold]Altın[/gold] elde et."
+        "description": "[blue]52-67[/blue] [gold]Altın[/gold] elde et."
       },
       {
         "id": "SECOND_CHEST",
         "title": "İkinci Sandık",
-        "description": "[blue]333[/blue] [gold]Altın[/gold] ve [red]Açgözlülük[/red] elde et."
+        "description": "[blue]303-363[/blue] [gold]Altın[/gold] ve [red]Açgözlülük[/red] elde et."
       }
     ],
     "pages": [
@@ -3291,12 +3291,12 @@
           {
             "id": "FIRST_CHEST",
             "title": "Birinci Sandık",
-            "description": "[blue]60[/blue] [gold]Altın[/gold] elde et."
+            "description": "[blue]52-67[/blue] [gold]Altın[/gold] elde et."
           },
           {
             "id": "SECOND_CHEST",
             "title": "İkinci Sandık",
-            "description": "[blue]333[/blue] [gold]Altın[/gold] ve [red]Açgözlülük[/red] elde et."
+            "description": "[blue]303-363[/blue] [gold]Altın[/gold] ve [red]Açgözlülük[/red] elde et."
           }
         ]
       },
@@ -4305,7 +4305,7 @@
       {
         "id": "PLAIN",
         "title": "Bu",
-        "description": "[red]6[/red] CP kaybet. [blue]41-69[/blue] [gold]Altın[/gold] elde et."
+        "description": "[red]6[/red] CP kaybet. [blue]41-68[/blue] [gold]Altın[/gold] elde et."
       },
       {
         "id": "ORNATE",
@@ -4321,7 +4321,7 @@
           {
             "id": "PLAIN",
             "title": "Bu",
-            "description": "[red]6[/red] CP kaybet. [blue]41-69[/blue] [gold]Altın[/gold] elde et."
+            "description": "[red]6[/red] CP kaybet. [blue]41-68[/blue] [gold]Altın[/gold] elde et."
           },
           {
             "id": "ORNATE",

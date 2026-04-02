@@ -692,7 +692,7 @@
       {
         "id": "UNCOVER_FUTURE",
         "title": "Desvendar Futuro",
-        "description": "Pague [red]50[/red] de [gold]Ouro[/gold]. [purple]Adivinhe[/purple] [blue]3[/blue] vezes."
+        "description": "Pague [red]51-99[/red] de [gold]Ouro[/gold]. [purple]Adivinhe[/purple] [blue]3[/blue] vezes."
       },
       {
         "id": "PAYMENT_PLAN",
@@ -712,7 +712,7 @@
           {
             "id": "UNCOVER_FUTURE",
             "title": "Desvendar Futuro",
-            "description": "Pague [red]50[/red] de [gold]Ouro[/gold]. [purple]Adivinhe[/purple] [blue]3[/blue] vezes."
+            "description": "Pague [red]51-99[/red] de [gold]Ouro[/gold]. [purple]Adivinhe[/purple] [blue]3[/blue] vezes."
           },
           {
             "id": "PAYMENT_PLAN",
@@ -1467,12 +1467,12 @@
       {
         "id": "SOLO_QUEST",
         "title": "Recusar Oferta",
-        "description": "Receba [blue]150[/blue] de [gold]Ouro[/gold]. Perca [red]18[/red] PV."
+        "description": "Receba [blue]135-165[/blue] de [gold]Ouro[/gold]. Perca [red]18[/red] PV."
       },
       {
         "id": "JOIN_FORCES",
         "title": "Unir Forças",
-        "description": "Receba [blue]50[/blue] de [gold]Ouro[/gold]."
+        "description": "Receba [blue]35-65[/blue] de [gold]Ouro[/gold]."
       }
     ],
     "pages": [
@@ -1483,12 +1483,12 @@
           {
             "id": "SOLO_QUEST",
             "title": "Recusar Oferta",
-            "description": "Receba [blue]150[/blue] de [gold]Ouro[/gold]. Perca [red]18[/red] PV."
+            "description": "Receba [blue]135-165[/blue] de [gold]Ouro[/gold]. Perca [red]18[/red] PV."
           },
           {
             "id": "JOIN_FORCES",
             "title": "Unir Forças",
-            "description": "Receba [blue]50[/blue] de [gold]Ouro[/gold]."
+            "description": "Receba [blue]35-65[/blue] de [gold]Ouro[/gold]."
           }
         ]
       },
@@ -1517,7 +1517,7 @@
       {
         "id": "SEARCH",
         "title": "Explore as Redondezas",
-        "description": "Receba [blue]60[/blue] de [gold]Ouro[/gold]."
+        "description": "Receba [blue]45-75[/blue] de [gold]Ouro[/gold]."
       },
       {
         "id": "CLAIM_LOCKED",
@@ -1542,7 +1542,7 @@
           {
             "id": "SEARCH",
             "title": "Explore as Redondezas",
-            "description": "Receba [blue]60[/blue] de [gold]Ouro[/gold]."
+            "description": "Receba [blue]45-75[/blue] de [gold]Ouro[/gold]."
           },
           {
             "id": "CLAIM_LOCKED",
@@ -1572,12 +1572,12 @@
       {
         "id": "OFFER_TRIBUTE",
         "title": "Oferecer Tributo",
-        "description": "Pague [red]149[/red] de [gold]Ouro[/gold]. Receba uma [gold]Relíquia[/gold] aleatória."
+        "description": "Pague [red]100-149[/red] de [gold]Ouro[/gold]. Receba uma [gold]Relíquia[/gold] aleatória."
       },
       {
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "Bloqueado",
-        "description": "Requer [blue]149[/blue] de [gold]Ouro[/gold]."
+        "description": "Requer [blue]100-149[/blue] de [gold]Ouro[/gold]."
       }
     ],
     "pages": [
@@ -1593,12 +1593,12 @@
           {
             "id": "OFFER_TRIBUTE",
             "title": "Oferecer Tributo",
-            "description": "Pague [red]149[/red] de [gold]Ouro[/gold]. Receba uma [gold]Relíquia[/gold] aleatória."
+            "description": "Pague [red]100-149[/red] de [gold]Ouro[/gold]. Receba uma [gold]Relíquia[/gold] aleatória."
           },
           {
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "Bloqueado",
-            "description": "Requer [blue]149[/blue] de [gold]Ouro[/gold]."
+            "description": "Requer [blue]100-149[/blue] de [gold]Ouro[/gold]."
           }
         ]
       },
@@ -3231,7 +3231,7 @@
       {
         "id": "DIVE_INTO_WATER",
         "title": "Mergulhar na Lagoa",
-        "description": "Receba [blue]111[/blue] de [gold]Ouro[/gold]. Perca [red]7[/red] PV."
+        "description": "Receba [blue]101-121[/blue] de [gold]Ouro[/gold]. Perca [red]7[/red] PV."
       }
     ],
     "pages": [
@@ -3255,7 +3255,7 @@
           {
             "id": "DIVE_INTO_WATER",
             "title": "Mergulhar na Lagoa",
-            "description": "Receba [blue]111[/blue] de [gold]Ouro[/gold]. Perca [red]7[/red] PV."
+            "description": "Receba [blue]101-121[/blue] de [gold]Ouro[/gold]. Perca [red]7[/red] PV."
           }
         ]
       }
@@ -3271,12 +3271,12 @@
       {
         "id": "FIRST_CHEST",
         "title": "Primeiro Baú",
-        "description": "Receba [blue]60[/blue] de [gold]Ouro[/gold]."
+        "description": "Receba [blue]52-67[/blue] de [gold]Ouro[/gold]."
       },
       {
         "id": "SECOND_CHEST",
         "title": "Segundo Baú",
-        "description": "Receba [blue]333[/blue] de [gold]Ouro[/gold]. Receba [red]Ganância[/red]."
+        "description": "Receba [blue]303-363[/blue] de [gold]Ouro[/gold]. Receba [red]Ganância[/red]."
       }
     ],
     "pages": [
@@ -3291,12 +3291,12 @@
           {
             "id": "FIRST_CHEST",
             "title": "Primeiro Baú",
-            "description": "Receba [blue]60[/blue] de [gold]Ouro[/gold]."
+            "description": "Receba [blue]52-67[/blue] de [gold]Ouro[/gold]."
           },
           {
             "id": "SECOND_CHEST",
             "title": "Segundo Baú",
-            "description": "Receba [blue]333[/blue] de [gold]Ouro[/gold]. Receba [red]Ganância[/red]."
+            "description": "Receba [blue]303-363[/blue] de [gold]Ouro[/gold]. Receba [red]Ganância[/red]."
           }
         ]
       },
@@ -4305,7 +4305,7 @@
       {
         "id": "PLAIN",
         "title": "Isto",
-        "description": "Perca [red]6[/red] PV. Receba [blue]41-69[/blue] de [gold]Ouro[/gold]."
+        "description": "Perca [red]6[/red] PV. Receba [blue]41-68[/blue] de [gold]Ouro[/gold]."
       },
       {
         "id": "ORNATE",
@@ -4321,7 +4321,7 @@
           {
             "id": "PLAIN",
             "title": "Isto",
-            "description": "Perca [red]6[/red] PV. Receba [blue]41-69[/blue] de [gold]Ouro[/gold]."
+            "description": "Perca [red]6[/red] PV. Receba [blue]41-68[/blue] de [gold]Ouro[/gold]."
           },
           {
             "id": "ORNATE",

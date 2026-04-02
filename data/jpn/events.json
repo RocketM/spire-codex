@@ -692,7 +692,7 @@
       {
         "id": "UNCOVER_FUTURE",
         "title": "未来を明らかにする",
-        "description": "[red]50[/red][gold]ゴールド[/gold]を支払う。 [blue]3[/blue]回[purple]占う[/purple]"
+        "description": "[red]51-99[/red][gold]ゴールド[/gold]を支払う。 [blue]3[/blue]回[purple]占う[/purple]"
       },
       {
         "id": "PAYMENT_PLAN",
@@ -712,7 +712,7 @@
           {
             "id": "UNCOVER_FUTURE",
             "title": "未来を明らかにする",
-            "description": "[red]50[/red][gold]ゴールド[/gold]を支払う。 [blue]3[/blue]回[purple]占う[/purple]"
+            "description": "[red]51-99[/red][gold]ゴールド[/gold]を支払う。 [blue]3[/blue]回[purple]占う[/purple]"
           },
           {
             "id": "PAYMENT_PLAN",
@@ -1467,12 +1467,12 @@
       {
         "id": "SOLO_QUEST",
         "title": "ソロプレイを貫く",
-        "description": "[blue]150[/blue][gold]ゴールド[/gold]を獲得。 HPを[red]18[/red]失う。"
+        "description": "[blue]135-165[/blue][gold]ゴールド[/gold]を獲得。 HPを[red]18[/red]失う。"
       },
       {
         "id": "JOIN_FORCES",
         "title": "パーティーを組む",
-        "description": "[blue]50[/blue][gold]ゴールド[/gold]を獲得。"
+        "description": "[blue]35-65[/blue][gold]ゴールド[/gold]を獲得。"
       }
     ],
     "pages": [
@@ -1483,12 +1483,12 @@
           {
             "id": "SOLO_QUEST",
             "title": "ソロプレイを貫く",
-            "description": "[blue]150[/blue][gold]ゴールド[/gold]を獲得。 HPを[red]18[/red]失う。"
+            "description": "[blue]135-165[/blue][gold]ゴールド[/gold]を獲得。 HPを[red]18[/red]失う。"
           },
           {
             "id": "JOIN_FORCES",
             "title": "パーティーを組む",
-            "description": "[blue]50[/blue][gold]ゴールド[/gold]を獲得。"
+            "description": "[blue]35-65[/blue][gold]ゴールド[/gold]を獲得。"
           }
         ]
       },
@@ -1517,7 +1517,7 @@
       {
         "id": "SEARCH",
         "title": "周辺を探索する",
-        "description": "[blue]60[/blue][gold]ゴールド[/gold]を獲得。"
+        "description": "[blue]45-75[/blue][gold]ゴールド[/gold]を獲得。"
       },
       {
         "id": "CLAIM_LOCKED",
@@ -1542,7 +1542,7 @@
           {
             "id": "SEARCH",
             "title": "周辺を探索する",
-            "description": "[blue]60[/blue][gold]ゴールド[/gold]を獲得。"
+            "description": "[blue]45-75[/blue][gold]ゴールド[/gold]を獲得。"
           },
           {
             "id": "CLAIM_LOCKED",
@@ -1572,12 +1572,12 @@
       {
         "id": "OFFER_TRIBUTE",
         "title": "貢物を捧げる",
-        "description": "[red]149[/red][gold]ゴールド[/gold]を支払う。 ランダムな[gold]レリック[/gold]を1個獲得する。"
+        "description": "[red]100-149[/red][gold]ゴールド[/gold]を支払う。 ランダムな[gold]レリック[/gold]を1個獲得する。"
       },
       {
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "ロック中",
-        "description": "[blue]149[/blue][gold]ゴールド[/gold]が必要。"
+        "description": "[blue]100-149[/blue][gold]ゴールド[/gold]が必要。"
       }
     ],
     "pages": [
@@ -1593,12 +1593,12 @@
           {
             "id": "OFFER_TRIBUTE",
             "title": "貢物を捧げる",
-            "description": "[red]149[/red][gold]ゴールド[/gold]を支払う。 ランダムな[gold]レリック[/gold]を1個獲得する。"
+            "description": "[red]100-149[/red][gold]ゴールド[/gold]を支払う。 ランダムな[gold]レリック[/gold]を1個獲得する。"
           },
           {
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "ロック中",
-            "description": "[blue]149[/blue][gold]ゴールド[/gold]が必要。"
+            "description": "[blue]100-149[/blue][gold]ゴールド[/gold]が必要。"
           }
         ]
       },
@@ -3231,7 +3231,7 @@
       {
         "id": "DIVE_INTO_WATER",
         "title": "池に飛び込む",
-        "description": "[blue]111[/blue][gold]ゴールド[/gold]を獲得。 HPを[red]7[/red]失う。"
+        "description": "[blue]101-121[/blue][gold]ゴールド[/gold]を獲得。 HPを[red]7[/red]失う。"
       }
     ],
     "pages": [
@@ -3255,7 +3255,7 @@
           {
             "id": "DIVE_INTO_WATER",
             "title": "池に飛び込む",
-            "description": "[blue]111[/blue][gold]ゴールド[/gold]を獲得。 HPを[red]7[/red]失う。"
+            "description": "[blue]101-121[/blue][gold]ゴールド[/gold]を獲得。 HPを[red]7[/red]失う。"
           }
         ]
       }
@@ -3271,12 +3271,12 @@
       {
         "id": "FIRST_CHEST",
         "title": "1つ目の宝箱",
-        "description": "[blue]60[/blue][gold]ゴールド[/gold]を獲得。"
+        "description": "[blue]52-67[/blue][gold]ゴールド[/gold]を獲得。"
       },
       {
         "id": "SECOND_CHEST",
         "title": "2つ目の宝箱",
-        "description": "[blue]333[/blue][gold]ゴールド[/gold]を獲得。 [red]強欲[/red]を受け取る。"
+        "description": "[blue]303-363[/blue][gold]ゴールド[/gold]を獲得。 [red]強欲[/red]を受け取る。"
       }
     ],
     "pages": [
@@ -3291,12 +3291,12 @@
           {
             "id": "FIRST_CHEST",
             "title": "1つ目の宝箱",
-            "description": "[blue]60[/blue][gold]ゴールド[/gold]を獲得。"
+            "description": "[blue]52-67[/blue][gold]ゴールド[/gold]を獲得。"
           },
           {
             "id": "SECOND_CHEST",
             "title": "2つ目の宝箱",
-            "description": "[blue]333[/blue][gold]ゴールド[/gold]を獲得。 [red]強欲[/red]を受け取る。"
+            "description": "[blue]303-363[/blue][gold]ゴールド[/gold]を獲得。 [red]強欲[/red]を受け取る。"
           }
         ]
       },
@@ -4305,7 +4305,7 @@
       {
         "id": "PLAIN",
         "title": "こっち",
-        "description": "HPを[red]6[/red]失う。 [blue]41-69[/blue][gold]ゴールド[/gold]を獲得。"
+        "description": "HPを[red]6[/red]失う。 [blue]41-68[/blue][gold]ゴールド[/gold]を獲得。"
       },
       {
         "id": "ORNATE",
@@ -4321,7 +4321,7 @@
           {
             "id": "PLAIN",
             "title": "こっち",
-            "description": "HPを[red]6[/red]失う。 [blue]41-69[/blue][gold]ゴールド[/gold]を獲得。"
+            "description": "HPを[red]6[/red]失う。 [blue]41-68[/blue][gold]ゴールド[/gold]を獲得。"
           },
           {
             "id": "ORNATE",

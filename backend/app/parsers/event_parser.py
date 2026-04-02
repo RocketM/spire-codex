@@ -94,6 +94,13 @@ def extract_event_vars(content: str, title_map: dict[str, str], relic_descs: dic
     for m in re.finditer(r'new\s+\w+Var\(\s*"(\w+)"\s*,\s*(\d+)m?\s*(?:,\s*[^)]+)?\)', content):
         vars_dict[m.group(1)] = int(m.group(2))
 
+    # Unnamed typed vars: new GoldVar(60m), new HealVar(10m), new MaxHpVar(2m), new DamageVar(3m, ...)
+    for m in re.finditer(r'new\s+(\w+)Var\((\d+)m?\s*(?:,\s*[^)]+)?\)', content):
+        var_type = m.group(1)  # Gold, Heal, MaxHp, Damage, HpLoss, etc.
+        var_val = int(m.group(2))
+        if var_type not in vars_dict:
+            vars_dict[var_type] = var_val
+
     # Typed vars with array references: new GoldVar(_prizeKeys[N], _prizeCosts[N])
     # First extract the arrays, then resolve the references
     arrays: dict[str, list] = {}
@@ -120,16 +127,50 @@ def extract_event_vars(content: str, title_map: dict[str, str], relic_descs: dic
     calc_match = re.search(r'CalculateVars\(\)\s*\{(.*?)\n\s*\}', content, re.DOTALL)
     if calc_match:
         calc_body = calc_match.group(1)
-        # Gold randomization: DynamicVars.Gold.BaseValue = base.Rng.NextInt(41, 69)
-        for rm in re.finditer(r'DynamicVars\.(\w+)\.BaseValue\s*=\s*(?:base\.)?Rng\.NextInt\((\d+),\s*(\d+)\)', calc_body):
-            var_name = rm.group(1)
-            low, high = int(rm.group(2)), int(rm.group(3))
+        # Helper regex fragment: matches DynamicVars.Foo or DynamicVars["Foo"]
+        _dv = r'(?:base\.)?DynamicVars(?:\["(\w+)"\]|\.(\w+))'
+
+        # Direct assignment: DynamicVars.Gold.BaseValue = Rng.NextInt(41, 69)
+        for rm in re.finditer(_dv + r'\.BaseValue\s*=\s*(?:base\.)?Rng\.NextInt\((-?\d+),\s*(-?\d+)\)', calc_body):
+            var_name = rm.group(1) or rm.group(2)
+            low, high = int(rm.group(3)), int(rm.group(4)) - 1  # NextInt upper is exclusive
             vars_dict[var_name] = f"{low}-{high}"
+        # += with NextInt(min, max): BaseValue += (decimal)Rng.NextInt(min, max)
+        for rm in re.finditer(_dv + r'\.BaseValue\s*\+=\s*\(decimal\)\s*(?:base\.)?Rng\.NextInt\((-?\d+),\s*(-?\d+)\)', calc_body):
+            var_name = rm.group(1) or rm.group(2)
+            base = vars_dict.get(var_name, 0)
+            if isinstance(base, (int, float)):
+                low, high = int(rm.group(3)), int(rm.group(4)) - 1
+                vars_dict[var_name] = f"{int(base + low)}-{int(base + high)}"
+        # += with NextInt(max) - offset: BaseValue += (decimal)(Rng.NextInt(range) - offset)
+        for rm in re.finditer(_dv + r'\.BaseValue\s*\+=\s*\(decimal\)\s*\(\s*(?:base\.)?Rng\.NextInt\((\d+)\)\s*-\s*(\d+)\s*\)', calc_body):
+            var_name = rm.group(1) or rm.group(2)
+            base = vars_dict.get(var_name, 0)
+            if isinstance(base, (int, float)):
+                rng_max, offset = int(rm.group(3)), int(rm.group(4))
+                vars_dict[var_name] = f"{int(base - offset)}-{int(base + rng_max - offset - 1)}"
+        # += with NextFloat: BaseValue += (decimal)Rng.NextFloat(-N, N)
+        for rm in re.finditer(_dv + r'\.BaseValue\s*\+=\s*\(decimal\)\s*(?:base\.)?Rng\.NextFloat\((-?[\d.]+)f?,\s*(-?[\d.]+)f?\)', calc_body):
+            var_name = rm.group(1) or rm.group(2)
+            base = vars_dict.get(var_name, 0)
+            if isinstance(base, (int, float)):
+                low, high = float(rm.group(3)), float(rm.group(4))
+                vars_dict[var_name] = f"{int(base + low)}-{int(base + high)}"
+        # -= with NextInt: BaseValue -= (decimal)Rng.NextInt(min, max)
+        for rm in re.finditer(_dv + r'\.BaseValue\s*-=\s*\(decimal\)\s*(?:base\.)?Rng\.NextInt\((-?\d+),\s*(-?\d+)\)', calc_body):
+            var_name = rm.group(1) or rm.group(2)
+            base = vars_dict.get(var_name, 0)
+            if isinstance(base, (int, float)):
+                low, high = int(rm.group(3)), int(rm.group(4)) - 1
+                vars_dict[var_name] = f"{int(base - high)}-{int(base - low)}"
         # Percentage of max HP: DynamicVars.Heal.BaseValue = ... MaxHp * 0.33m
         for rm in re.finditer(r'DynamicVars\.(\w+)\.BaseValue\s*=.*?MaxHp\s*\*\s*(\d+(?:\.\d+)?)m', calc_body):
             var_name = rm.group(1)
             pct = float(rm.group(2))
             vars_dict[var_name] = f"{int(pct * 100)}% Max"
+        # Heal to full: MaxHp - CurrentHp
+        if re.search(r'Heal\.BaseValue\s*=.*MaxHp\s*-.*CurrentHp', calc_body):
+            vars_dict['Heal'] = "Full"
 
     # Also check for HealRestSiteOption.GetHealAmount pattern (30% Max HP)
     if 'HealRestSiteOption.GetHealAmount' in content:
@@ -142,6 +183,10 @@ def extract_event_vars(content: str, title_map: dict[str, str], relic_descs: dic
         base_val = int(rm.group(2))
         if var_name not in vars_dict or vars_dict.get(var_name) == 0:
             vars_dict[var_name] = f"{base_val}+"
+
+    # Trial: EntrantNumber placeholder — replace -1 with empty (cosmetic flavor)
+    if vars_dict.get('EntrantNumber') == -1:
+        vars_dict['EntrantNumber'] = "???"
 
     # StringVar with DynamicDescription from relics:
     # e.g. new StringVar("BoneTeaDescription", ModelDb.Relic<BoneTea>().DynamicDescription.GetFormattedText())

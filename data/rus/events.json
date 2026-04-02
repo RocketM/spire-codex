@@ -692,7 +692,7 @@
       {
         "id": "UNCOVER_FUTURE",
         "title": "Узнать будущее",
-        "description": "Заплатить [red]50[/red] [gold]золота[/gold] и получить [blue]3[/blue] [purple]plural(ru):предсказание[/purple]."
+        "description": "Заплатить [red]51-99[/red] [gold]золота[/gold] и получить [blue]3[/blue] [purple]plural(ru):предсказание[/purple]."
       },
       {
         "id": "PAYMENT_PLAN",
@@ -712,7 +712,7 @@
           {
             "id": "UNCOVER_FUTURE",
             "title": "Узнать будущее",
-            "description": "Заплатить [red]50[/red] [gold]золота[/gold] и получить [blue]3[/blue] [purple]plural(ru):предсказание[/purple]."
+            "description": "Заплатить [red]51-99[/red] [gold]золота[/gold] и получить [blue]3[/blue] [purple]plural(ru):предсказание[/purple]."
           },
           {
             "id": "PAYMENT_PLAN",
@@ -1467,12 +1467,12 @@
       {
         "id": "SOLO_QUEST",
         "title": "Пойти в лабиринт без них",
-        "description": "Получить [blue]150[/blue] [gold]золота[/gold] и потерять [red]18[/red] ОЗ."
+        "description": "Получить [blue]135-165[/blue] [gold]золота[/gold] и потерять [red]18[/red] ОЗ."
       },
       {
         "id": "JOIN_FORCES",
         "title": "Объединить силы",
-        "description": "Получить [blue]50[/blue] [gold]золота[/gold]."
+        "description": "Получить [blue]35-65[/blue] [gold]золота[/gold]."
       }
     ],
     "pages": [
@@ -1483,12 +1483,12 @@
           {
             "id": "SOLO_QUEST",
             "title": "Пойти в лабиринт без них",
-            "description": "Получить [blue]150[/blue] [gold]золота[/gold] и потерять [red]18[/red] ОЗ."
+            "description": "Получить [blue]135-165[/blue] [gold]золота[/gold] и потерять [red]18[/red] ОЗ."
           },
           {
             "id": "JOIN_FORCES",
             "title": "Объединить силы",
-            "description": "Получить [blue]50[/blue] [gold]золота[/gold]."
+            "description": "Получить [blue]35-65[/blue] [gold]золота[/gold]."
           }
         ]
       },
@@ -1517,7 +1517,7 @@
       {
         "id": "SEARCH",
         "title": "Осмотреться",
-        "description": "Получить [blue]60[/blue] [gold]золота[/gold]."
+        "description": "Получить [blue]45-75[/blue] [gold]золота[/gold]."
       },
       {
         "id": "CLAIM_LOCKED",
@@ -1542,7 +1542,7 @@
           {
             "id": "SEARCH",
             "title": "Осмотреться",
-            "description": "Получить [blue]60[/blue] [gold]золота[/gold]."
+            "description": "Получить [blue]45-75[/blue] [gold]золота[/gold]."
           },
           {
             "id": "CLAIM_LOCKED",
@@ -1572,12 +1572,12 @@
       {
         "id": "OFFER_TRIBUTE",
         "title": "Сделать подношение",
-        "description": "Заплатить [red]149[/red] [gold]золота[/gold] и получить случайную [gold]реликвию[/gold]."
+        "description": "Заплатить [red]100-149[/red] [gold]золота[/gold] и получить случайную [gold]реликвию[/gold]."
       },
       {
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "Недоступно",
-        "description": "Нужно [blue]149[/blue] [gold]золота[/gold]."
+        "description": "Нужно [blue]100-149[/blue] [gold]золота[/gold]."
       }
     ],
     "pages": [
@@ -1593,12 +1593,12 @@
           {
             "id": "OFFER_TRIBUTE",
             "title": "Сделать подношение",
-            "description": "Заплатить [red]149[/red] [gold]золота[/gold] и получить случайную [gold]реликвию[/gold]."
+            "description": "Заплатить [red]100-149[/red] [gold]золота[/gold] и получить случайную [gold]реликвию[/gold]."
           },
           {
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "Недоступно",
-            "description": "Нужно [blue]149[/blue] [gold]золота[/gold]."
+            "description": "Нужно [blue]100-149[/blue] [gold]золота[/gold]."
           }
         ]
       },
@@ -3227,7 +3227,7 @@
       {
         "id": "DIVE_INTO_WATER",
         "title": "Нырнуть в пруд",
-        "description": "Получить [blue]111[/blue] [gold]золота[/gold] и потерять [red]7[/red] ОЗ."
+        "description": "Получить [blue]101-121[/blue] [gold]золота[/gold] и потерять [red]7[/red] ОЗ."
       }
     ],
     "pages": [
@@ -3251,7 +3251,7 @@
           {
             "id": "DIVE_INTO_WATER",
             "title": "Нырнуть в пруд",
-            "description": "Получить [blue]111[/blue] [gold]золота[/gold] и потерять [red]7[/red] ОЗ."
+            "description": "Получить [blue]101-121[/blue] [gold]золота[/gold] и потерять [red]7[/red] ОЗ."
           }
         ]
       }
@@ -3267,12 +3267,12 @@
       {
         "id": "FIRST_CHEST",
         "title": "Открыть первый сундук",
-        "description": "Получить [blue]60[/blue] [gold]золота[/gold]."
+        "description": "Получить [blue]52-67[/blue] [gold]золота[/gold]."
       },
       {
         "id": "SECOND_CHEST",
         "title": "Открыть второй сундук",
-        "description": "Получить [blue]333[/blue] [gold]золота[/gold] и [red]«Алчность»[/red]."
+        "description": "Получить [blue]303-363[/blue] [gold]золота[/gold] и [red]«Алчность»[/red]."
       }
     ],
     "pages": [
@@ -3287,12 +3287,12 @@
           {
             "id": "FIRST_CHEST",
             "title": "Открыть первый сундук",
-            "description": "Получить [blue]60[/blue] [gold]золота[/gold]."
+            "description": "Получить [blue]52-67[/blue] [gold]золота[/gold]."
           },
           {
             "id": "SECOND_CHEST",
             "title": "Открыть второй сундук",
-            "description": "Получить [blue]333[/blue] [gold]золота[/gold] и [red]«Алчность»[/red]."
+            "description": "Получить [blue]303-363[/blue] [gold]золота[/gold] и [red]«Алчность»[/red]."
           }
         ]
       },
@@ -4301,7 +4301,7 @@
       {
         "id": "PLAIN",
         "title": "Первое",
-        "description": "Потерять [red]6[/red] ОЗ и получить [blue]41-69[/blue] [gold]золота[/gold]."
+        "description": "Потерять [red]6[/red] ОЗ и получить [blue]41-68[/blue] [gold]золота[/gold]."
       },
       {
         "id": "ORNATE",
@@ -4317,7 +4317,7 @@
           {
             "id": "PLAIN",
             "title": "Первое",
-            "description": "Потерять [red]6[/red] ОЗ и получить [blue]41-69[/blue] [gold]золота[/gold]."
+            "description": "Потерять [red]6[/red] ОЗ и получить [blue]41-68[/blue] [gold]золота[/gold]."
           },
           {
             "id": "ORNATE",

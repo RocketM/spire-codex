@@ -692,7 +692,7 @@
       {
         "id": "UNCOVER_FUTURE",
         "title": "Dévoiler l’avenir",
-        "description": "Payez [red]50[/red] [gold]Pièces d’or[/gold]. Effectuez [blue]3[/blue] [purple]révélations[/purple]."
+        "description": "Payez [red]51-99[/red] [gold]Pièces d’or[/gold]. Effectuez [blue]3[/blue] [purple]révélations[/purple]."
       },
       {
         "id": "PAYMENT_PLAN",
@@ -712,7 +712,7 @@
           {
             "id": "UNCOVER_FUTURE",
             "title": "Dévoiler l’avenir",
-            "description": "Payez [red]50[/red] [gold]Pièces d’or[/gold]. Effectuez [blue]3[/blue] [purple]révélations[/purple]."
+            "description": "Payez [red]51-99[/red] [gold]Pièces d’or[/gold]. Effectuez [blue]3[/blue] [purple]révélations[/purple]."
           },
           {
             "id": "PAYMENT_PLAN",
@@ -1467,12 +1467,12 @@
       {
         "id": "SOLO_QUEST",
         "title": "Quête solo",
-        "description": "Recevez [blue]150[/blue] [gold]Pièces d’or[/gold]. Perdez [red]18[/red] PV."
+        "description": "Recevez [blue]135-165[/blue] [gold]Pièces d’or[/gold]. Perdez [red]18[/red] PV."
       },
       {
         "id": "JOIN_FORCES",
         "title": "Unir vos forces",
-        "description": "Recevez [blue]50[/blue] [gold]Pièces d’or[/gold]."
+        "description": "Recevez [blue]35-65[/blue] [gold]Pièces d’or[/gold]."
       }
     ],
     "pages": [
@@ -1483,12 +1483,12 @@
           {
             "id": "SOLO_QUEST",
             "title": "Quête solo",
-            "description": "Recevez [blue]150[/blue] [gold]Pièces d’or[/gold]. Perdez [red]18[/red] PV."
+            "description": "Recevez [blue]135-165[/blue] [gold]Pièces d’or[/gold]. Perdez [red]18[/red] PV."
           },
           {
             "id": "JOIN_FORCES",
             "title": "Unir vos forces",
-            "description": "Recevez [blue]50[/blue] [gold]Pièces d’or[/gold]."
+            "description": "Recevez [blue]35-65[/blue] [gold]Pièces d’or[/gold]."
           }
         ]
       },
@@ -1517,7 +1517,7 @@
       {
         "id": "SEARCH",
         "title": "Fouiller les environs",
-        "description": "Obtenez [blue]60[/blue] [gold]Pièces d’or[/gold]."
+        "description": "Obtenez [blue]45-75[/blue] [gold]Pièces d’or[/gold]."
       },
       {
         "id": "CLAIM_LOCKED",
@@ -1542,7 +1542,7 @@
           {
             "id": "SEARCH",
             "title": "Fouiller les environs",
-            "description": "Obtenez [blue]60[/blue] [gold]Pièces d’or[/gold]."
+            "description": "Obtenez [blue]45-75[/blue] [gold]Pièces d’or[/gold]."
           },
           {
             "id": "CLAIM_LOCKED",
@@ -1572,12 +1572,12 @@
       {
         "id": "OFFER_TRIBUTE",
         "title": "Offrir un tribut",
-        "description": "Payez [red]149[/red] [gold]Pièces d’or[/gold]. Obtenez une [gold]Relique[/gold] aléatoire."
+        "description": "Payez [red]100-149[/red] [gold]Pièces d’or[/gold]. Obtenez une [gold]Relique[/gold] aléatoire."
       },
       {
         "id": "OFFER_TRIBUTE_LOCKED",
         "title": "Verrouillé",
-        "description": "Nécessite [blue]149[/blue] [gold]Pièces d’or[/gold]."
+        "description": "Nécessite [blue]100-149[/blue] [gold]Pièces d’or[/gold]."
       }
     ],
     "pages": [
@@ -1593,12 +1593,12 @@
           {
             "id": "OFFER_TRIBUTE",
             "title": "Offrir un tribut",
-            "description": "Payez [red]149[/red] [gold]Pièces d’or[/gold]. Obtenez une [gold]Relique[/gold] aléatoire."
+            "description": "Payez [red]100-149[/red] [gold]Pièces d’or[/gold]. Obtenez une [gold]Relique[/gold] aléatoire."
           },
           {
             "id": "OFFER_TRIBUTE_LOCKED",
             "title": "Verrouillé",
-            "description": "Nécessite [blue]149[/blue] [gold]Pièces d’or[/gold]."
+            "description": "Nécessite [blue]100-149[/blue] [gold]Pièces d’or[/gold]."
           }
         ]
       },
@@ -3231,7 +3231,7 @@
       {
         "id": "DIVE_INTO_WATER",
         "title": "Plonger dans l’eau",
-        "description": "Obtenez [blue]111[/blue] [gold]Pièces d’or[/gold]. Perdez [red]7[/red] PV."
+        "description": "Obtenez [blue]101-121[/blue] [gold]Pièces d’or[/gold]. Perdez [red]7[/red] PV."
       }
     ],
     "pages": [
@@ -3255,7 +3255,7 @@
           {
             "id": "DIVE_INTO_WATER",
             "title": "Plonger dans l’eau",
-            "description": "Obtenez [blue]111[/blue] [gold]Pièces d’or[/gold]. Perdez [red]7[/red] PV."
+            "description": "Obtenez [blue]101-121[/blue] [gold]Pièces d’or[/gold]. Perdez [red]7[/red] PV."
           }
         ]
       }
@@ -3271,12 +3271,12 @@
       {
         "id": "FIRST_CHEST",
         "title": "Premier coffre",
-        "description": "Récupérez [blue]60[/blue] [gold]Pièces d’or[/gold]."
+        "description": "Récupérez [blue]52-67[/blue] [gold]Pièces d’or[/gold]."
       },
       {
         "id": "SECOND_CHEST",
         "title": "Deuxième coffre",
-        "description": "Récupérez [blue]333[/blue] [gold]Pièces d’or[/gold]. Recevez [red]Cupidité[/red]."
+        "description": "Récupérez [blue]303-363[/blue] [gold]Pièces d’or[/gold]. Recevez [red]Cupidité[/red]."
       }
     ],
     "pages": [
@@ -3291,12 +3291,12 @@
           {
             "id": "FIRST_CHEST",
             "title": "Premier coffre",
-            "description": "Récupérez [blue]60[/blue] [gold]Pièces d’or[/gold]."
+            "description": "Récupérez [blue]52-67[/blue] [gold]Pièces d’or[/gold]."
           },
           {
             "id": "SECOND_CHEST",
             "title": "Deuxième coffre",
-            "description": "Récupérez [blue]333[/blue] [gold]Pièces d’or[/gold]. Recevez [red]Cupidité[/red]."
+            "description": "Récupérez [blue]303-363[/blue] [gold]Pièces d’or[/gold]. Recevez [red]Cupidité[/red]."
           }
         ]
       },
@@ -4305,7 +4305,7 @@
       {
         "id": "PLAIN",
         "title": "Ceci",
-        "description": "Perdez [red]6[/red] PV. Recevez [blue]41-69[/blue] [gold]Pièces d’or[/gold]."
+        "description": "Perdez [red]6[/red] PV. Recevez [blue]41-68[/blue] [gold]Pièces d’or[/gold]."
       },
       {
         "id": "ORNATE",
@@ -4321,7 +4321,7 @@
           {
             "id": "PLAIN",
             "title": "Ceci",
-            "description": "Perdez [red]6[/red] PV. Recevez [blue]41-69[/blue] [gold]Pièces d’or[/gold]."
+            "description": "Perdez [red]6[/red] PV. Recevez [blue]41-68[/blue] [gold]Pièces d’or[/gold]."
           },
           {
             "id": "ORNATE",
