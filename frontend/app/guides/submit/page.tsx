@@ -45,12 +45,25 @@ export default function SubmitGuidePage() {
   const [twitter, setTwitter] = useState("");
   const [twitch, setTwitch] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const validateUrl = (url: string, label: string): string | null => {
+    if (!url.trim()) return null;
+    if (!url.startsWith("http://") && !url.startsWith("https://")) {
+      return `${label} must start with http:// or https://`;
+    }
+    return null;
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!title.trim() || !content.trim() || !authorName.trim() || !contact.trim()) return;
 
+    const urlError = validateUrl(website, "Website");
+    if (urlError) { setErrorMsg(urlError); setStatus("error"); return; }
+
     setStatus("sending");
+    setErrorMsg("");
     try {
       const res = await fetch(`${API}/api/guides`, {
         method: "POST",
@@ -71,9 +84,13 @@ export default function SubmitGuidePage() {
           twitch: twitch.trim() || null,
         }),
       });
-      if (!res.ok) throw new Error();
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        throw new Error(data?.detail || "Failed to submit guide");
+      }
       setStatus("success");
-    } catch {
+    } catch (err) {
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong. Please try again.");
       setStatus("error");
     }
   };
@@ -156,7 +173,7 @@ export default function SubmitGuidePage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className={labelClass}>Website <span className="text-[var(--text-muted)] font-normal">(optional)</span></label>
-            <input type="url" value={website} onChange={(e) => setWebsite(e.target.value)} className={inputClass} placeholder="https://yoursite.com" />
+            <input type="url" value={website} onChange={(e) => setWebsite(e.target.value)} className={inputClass} placeholder="https://yoursite.com" pattern="https?://.*" title="Must start with http:// or https://" />
           </div>
           <div>
             <label className={labelClass}>Bluesky <span className="text-[var(--text-muted)] font-normal">(optional)</span></label>
@@ -182,8 +199,8 @@ export default function SubmitGuidePage() {
           <textarea value={content} onChange={(e) => setContent(e.target.value)} className={`${inputClass} font-mono`} rows={15} placeholder="Write your guide here. Use ## for headings, **bold** for emphasis, - for lists..." maxLength={50000} required />
         </div>
 
-        {status === "error" && (
-          <p className="text-sm text-red-400">Something went wrong. Please try again.</p>
+        {status === "error" && errorMsg && (
+          <p className="text-sm text-red-400">{errorMsg}</p>
         )}
 
         <button
