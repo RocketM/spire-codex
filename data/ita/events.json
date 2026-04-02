@@ -24,7 +24,7 @@
           {
             "id": "LINGER",
             "title": "Rimani",
-            "description": "Ottieni [green]2[/green] PV massimi. Subisci [red]3[/red] di danno."
+            "description": "Gain [green]2[/green] Max HP. Take damage ([red]4[/red], [red]5[/red], [red]6[/red]... increases by [red]+1[/red] each time)."
           },
           {
             "id": "EXIT_BATHS",

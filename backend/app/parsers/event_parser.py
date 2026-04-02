@@ -506,17 +506,20 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict, ti
 
 
 def _fix_abyssal_baths(event: dict) -> dict:
-    """Fix Abyssal Baths — damage increases by 1 each Linger (3, 4, 5, 6...)."""
+    """Fix Abyssal Baths — damage increases by 1 each Linger (3, 4, 5, ...)."""
     if event["id"] != "ABYSSAL_BATHS":
         return event
+    # The damage var starts at 3 and increments by 1 after each immerse/linger.
+    # In-game {Damage} updates dynamically. We show all steps explicitly.
+    # Step 1 (Immerse) = 3 dmg, Step 2 (Linger 1) = 4, Step 3 = 5, ... Step 9 = 11, Step 10 = 12
     for page in (event.get("pages") or []):
+        page_id = page.get("id", "")
         for opt in (page.get("options") or []):
             if opt.get("id") == "LINGER":
-                opt["description"] = re.sub(
-                    r'Take \[red\]\d+\[/red\] damage\.',
-                    'Take [red]3[/red] damage. (increases by [red]+1[/red] each time)',
-                    opt["description"]
-                )
+                opt["description"] = "Gain [green]2[/green] Max HP. Take damage ([red]4[/red], [red]5[/red], [red]6[/red]... increases by [red]+1[/red] each time)."
+            elif opt.get("id") == "IMMERSE" and page_id == "INITIAL":
+                # First immerse is always 3
+                opt["description"] = "Gain [green]2[/green] Max HP. Take [red]3[/red] damage."
     return event
 
 
