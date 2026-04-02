@@ -316,6 +316,28 @@ export interface Story {
   epochs: string[];
 }
 
+export interface GuideSummary {
+  id: string;
+  slug: string;
+  title: string;
+  author: string;
+  date: string;
+  updated: string | null;
+  category: string;
+  tags: string[];
+  summary: string;
+  difficulty: string;
+  character: string | null;
+  website: string | null;
+  bluesky: string | null;
+  twitter: string | null;
+  twitch: string | null;
+}
+
+export interface Guide extends GuideSummary {
+  content: string;
+}
+
 export interface Stats {
   cards: number;
   characters: number;

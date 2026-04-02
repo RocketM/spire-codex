@@ -5,3 +5,4 @@ aiosqlite==0.22.1
 pydantic==2.12.5
 slowapi==0.1.9
 httpx==0.28.1
+python-frontmatter==1.1.0

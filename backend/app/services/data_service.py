@@ -98,6 +98,19 @@ def load_ascensions(lang: str = DEFAULT_LANG) -> list[dict]:
     return _load_json(lang, "ascensions")
 
 
+@lru_cache(maxsize=1)
+def _load_guides() -> list[dict]:
+    filepath = DATA_DIR / "guides.json"
+    if not filepath.exists():
+        return []
+    with open(filepath, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_guides() -> list[dict]:
+    return _load_guides()
+
+
 @lru_cache(maxsize=16)
 def load_translation_maps(lang: str = DEFAULT_LANG) -> dict:
     """Load translation maps for filter values (English -> localized)."""

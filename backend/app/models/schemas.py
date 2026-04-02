@@ -333,6 +333,28 @@ class Story(BaseModel):
     epochs: list[str]
 
 
+class GuideSummary(BaseModel):
+    id: str
+    slug: str
+    title: str
+    author: str
+    date: str
+    updated: str | None = None
+    category: str
+    tags: list[str]
+    summary: str
+    difficulty: str
+    character: str | None = None
+    website: str | None = None
+    bluesky: str | None = None
+    twitter: str | None = None
+    twitch: str | None = None
+
+
+class Guide(GuideSummary):
+    content: str
+
+
 class StatsResponse(BaseModel):
     cards: int
     characters: int

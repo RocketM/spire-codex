@@ -11,6 +11,7 @@ services:
     environment:
       - DATA_DIR=/data
       - FEEDBACK_WEBHOOK_URL=${FEEDBACK_WEBHOOK_URL:-}
+      - GUIDE_WEBHOOK_URL=${GUIDE_WEBHOOK_URL:-}
 
   frontend:
     build:

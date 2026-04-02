@@ -58,4 +58,8 @@ if __name__ == "__main__":
     for lang in languages:
         print(f"\n--- Language: {lang} ---")
         parse_language(lang)
+    # Guides are language-independent
+    from guide_parser import main as parse_guides
+    parse_guides()
+
     print("\n=== Done! ===")
