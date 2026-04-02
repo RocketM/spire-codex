@@ -505,38 +505,41 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict, ti
     return result
 
 
-def _fix_abyssal_baths(event: dict) -> dict:
+def _fix_abyssal_baths(event: dict, localization: dict) -> dict:
     """Fix Abyssal Baths — damage starts at 3 and increases by 1 after each immerse."""
     if event["id"] != "ABYSSAL_BATHS":
         return event
     # Immerse = 3 dmg, then OnImmerse increments damage by 1.
     # LINGER1 = 4, LINGER2 = 5, ... LINGER9 = 12
-    # The ALL page has a single Linger option reused across all LINGER pages,
-    # so we duplicate it into each LINGER page with the correct damage value.
-    pages = event.get("pages") or []
-    all_page = next((p for p in pages if p.get("id") == "ALL"), None)
-    if not all_page:
-        return event
+    # Use the localized template with resolved vars for each step.
+    linger_template = localization.get("ABYSSAL_BATHS.pages.ALL.options.LINGER.description", "")
+    linger_title = localization.get("ABYSSAL_BATHS.pages.ALL.options.LINGER.title", "Linger")
+    exit_title = localization.get("ABYSSAL_BATHS.pages.ALL.options.EXIT_BATHS.title", "Exit Baths")
+    exit_desc = localization.get("ABYSSAL_BATHS.pages.ALL.options.EXIT_BATHS.description", "")
+    death_desc = localization.get("ABYSSAL_BATHS.pages.DEATH_WARNING.description", "")
 
+    def resolve_linger(damage: int) -> str:
+        return resolve_description(linger_template, {"MaxHp": 2, "Damage": damage})
+
+    pages = event.get("pages") or []
     for page in pages:
         page_id = page.get("id", "")
         if page_id.startswith("LINGER") and page_id[6:].isdigit():
-            step = int(page_id[6:])  # LINGER1=1, LINGER2=2, ...
-            dmg = 3 + step  # damage after step immersions
+            step = int(page_id[6:])
+            dmg = 3 + step + 1  # after step+1 immersions
             page["options"] = [
-                {"id": "LINGER", "title": "Linger", "description": f"Gain [green]2[/green] Max HP. Take [red]{dmg + 1}[/red] damage."},
-                {"id": "EXIT_BATHS", "title": "Exit Baths", "description": ""},
+                {"id": "LINGER", "title": linger_title, "description": resolve_linger(dmg)},
+                {"id": "EXIT_BATHS", "title": exit_title, "description": exit_desc},
             ]
         elif page_id == "DEATH_WARNING":
             page["options"] = [
-                {"id": "LINGER", "title": "Linger", "description": "Gain [green]2[/green] Max HP. This will kill you."},
-                {"id": "EXIT_BATHS", "title": "Exit Baths", "description": ""},
+                {"id": "LINGER", "title": linger_title, "description": death_desc},
+                {"id": "EXIT_BATHS", "title": exit_title, "description": exit_desc},
             ]
         elif page_id == "IMMERSE":
-            # After first immerse, damage is now 4 for next linger
             page["options"] = [
-                {"id": "LINGER", "title": "Linger", "description": "Gain [green]2[/green] Max HP. Take [red]4[/red] damage."},
-                {"id": "EXIT_BATHS", "title": "Exit Baths", "description": ""},
+                {"id": "LINGER", "title": linger_title, "description": resolve_linger(4)},
+                {"id": "EXIT_BATHS", "title": exit_title, "description": exit_desc},
             ]
 
     return event
@@ -571,7 +574,7 @@ def parse_all_events(loc_dir: Path, data_dir: Path) -> list[dict]:
         event = parse_single_event(filepath, localization, act_mapping, title_map, relic_descs)
         if event:
             event = _fix_tablet_of_truth(event)
-            event = _fix_abyssal_baths(event)
+            event = _fix_abyssal_baths(event, localization)
             events.append(event)
     return events
 

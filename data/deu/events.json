@@ -44,12 +44,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. This will kill you."
+            "title": "Bleiben",
+            "description": "[sine][red]Wenn du nur einen Moment länger badest, wirst du sterben.[/red][/sine]"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Bad verlassen",
             "description": ""
           }
         ]
@@ -64,12 +64,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]4[/red] damage."
+            "title": "Bleiben",
+            "description": "Erhalte [green]2[/green] max. TP. Nimm [red]4[/red] Schaden."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Bad verlassen",
             "description": ""
           }
         ]
@@ -96,12 +96,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]5[/red] damage."
+            "title": "Bleiben",
+            "description": "Erhalte [green]2[/green] max. TP. Nimm [red]5[/red] Schaden."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Bad verlassen",
             "description": ""
           }
         ]
@@ -112,12 +112,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]6[/red] damage."
+            "title": "Bleiben",
+            "description": "Erhalte [green]2[/green] max. TP. Nimm [red]6[/red] Schaden."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Bad verlassen",
             "description": ""
           }
         ]
@@ -128,12 +128,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]7[/red] damage."
+            "title": "Bleiben",
+            "description": "Erhalte [green]2[/green] max. TP. Nimm [red]7[/red] Schaden."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Bad verlassen",
             "description": ""
           }
         ]
@@ -144,12 +144,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]8[/red] damage."
+            "title": "Bleiben",
+            "description": "Erhalte [green]2[/green] max. TP. Nimm [red]8[/red] Schaden."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Bad verlassen",
             "description": ""
           }
         ]
@@ -160,12 +160,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]9[/red] damage."
+            "title": "Bleiben",
+            "description": "Erhalte [green]2[/green] max. TP. Nimm [red]9[/red] Schaden."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Bad verlassen",
             "description": ""
           }
         ]
@@ -176,12 +176,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]10[/red] damage."
+            "title": "Bleiben",
+            "description": "Erhalte [green]2[/green] max. TP. Nimm [red]10[/red] Schaden."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Bad verlassen",
             "description": ""
           }
         ]
@@ -192,12 +192,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]11[/red] damage."
+            "title": "Bleiben",
+            "description": "Erhalte [green]2[/green] max. TP. Nimm [red]11[/red] Schaden."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Bad verlassen",
             "description": ""
           }
         ]
@@ -208,12 +208,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]12[/red] damage."
+            "title": "Bleiben",
+            "description": "Erhalte [green]2[/green] max. TP. Nimm [red]12[/red] Schaden."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Bad verlassen",
             "description": ""
           }
         ]
@@ -224,12 +224,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]13[/red] damage."
+            "title": "Bleiben",
+            "description": "Erhalte [green]2[/green] max. TP. Nimm [red]13[/red] Schaden."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Bad verlassen",
             "description": ""
           }
         ]

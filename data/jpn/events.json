@@ -44,12 +44,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. This will kill you."
+            "title": "長風呂する",
+            "description": "[sine][red]これ以上つかれば、命の保証はない。 [/red][/sine]"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "浴場を出る。",
             "description": ""
           }
         ]
@@ -64,12 +64,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]4[/red] damage."
+            "title": "長風呂する",
+            "description": "最大HPが[green]2[/green]増加。 [red]4[/red]ダメージを受ける。"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "浴場を出る。",
             "description": ""
           }
         ]
@@ -96,12 +96,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]5[/red] damage."
+            "title": "長風呂する",
+            "description": "最大HPが[green]2[/green]増加。 [red]5[/red]ダメージを受ける。"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "浴場を出る。",
             "description": ""
           }
         ]
@@ -112,12 +112,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]6[/red] damage."
+            "title": "長風呂する",
+            "description": "最大HPが[green]2[/green]増加。 [red]6[/red]ダメージを受ける。"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "浴場を出る。",
             "description": ""
           }
         ]
@@ -128,12 +128,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]7[/red] damage."
+            "title": "長風呂する",
+            "description": "最大HPが[green]2[/green]増加。 [red]7[/red]ダメージを受ける。"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "浴場を出る。",
             "description": ""
           }
         ]
@@ -144,12 +144,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]8[/red] damage."
+            "title": "長風呂する",
+            "description": "最大HPが[green]2[/green]増加。 [red]8[/red]ダメージを受ける。"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "浴場を出る。",
             "description": ""
           }
         ]
@@ -160,12 +160,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]9[/red] damage."
+            "title": "長風呂する",
+            "description": "最大HPが[green]2[/green]増加。 [red]9[/red]ダメージを受ける。"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "浴場を出る。",
             "description": ""
           }
         ]
@@ -176,12 +176,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]10[/red] damage."
+            "title": "長風呂する",
+            "description": "最大HPが[green]2[/green]増加。 [red]10[/red]ダメージを受ける。"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "浴場を出る。",
             "description": ""
           }
         ]
@@ -192,12 +192,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]11[/red] damage."
+            "title": "長風呂する",
+            "description": "最大HPが[green]2[/green]増加。 [red]11[/red]ダメージを受ける。"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "浴場を出る。",
             "description": ""
           }
         ]
@@ -208,12 +208,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]12[/red] damage."
+            "title": "長風呂する",
+            "description": "最大HPが[green]2[/green]増加。 [red]12[/red]ダメージを受ける。"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "浴場を出る。",
             "description": ""
           }
         ]
@@ -224,12 +224,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]13[/red] damage."
+            "title": "長風呂する",
+            "description": "最大HPが[green]2[/green]増加。 [red]13[/red]ダメージを受ける。"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "浴場を出る。",
             "description": ""
           }
         ]

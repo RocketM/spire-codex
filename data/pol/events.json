@@ -44,12 +44,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. This will kill you."
+            "title": "Pozostań",
+            "description": "[sine][red]Umrzesz, jeżeli nie wyjdziesz z wody.[/red][/sine]"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Wyjdź z wody",
             "description": ""
           }
         ]
@@ -64,12 +64,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]4[/red] damage."
+            "title": "Pozostań",
+            "description": "Zyskaj [green]2[/green] maks. PŻ. Otrzymaj [red]4[/red] pkt. obrażeń."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Wyjdź z wody",
             "description": ""
           }
         ]
@@ -96,12 +96,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]5[/red] damage."
+            "title": "Pozostań",
+            "description": "Zyskaj [green]2[/green] maks. PŻ. Otrzymaj [red]5[/red] pkt. obrażeń."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Wyjdź z wody",
             "description": ""
           }
         ]
@@ -112,12 +112,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]6[/red] damage."
+            "title": "Pozostań",
+            "description": "Zyskaj [green]2[/green] maks. PŻ. Otrzymaj [red]6[/red] pkt. obrażeń."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Wyjdź z wody",
             "description": ""
           }
         ]
@@ -128,12 +128,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]7[/red] damage."
+            "title": "Pozostań",
+            "description": "Zyskaj [green]2[/green] maks. PŻ. Otrzymaj [red]7[/red] pkt. obrażeń."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Wyjdź z wody",
             "description": ""
           }
         ]
@@ -144,12 +144,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]8[/red] damage."
+            "title": "Pozostań",
+            "description": "Zyskaj [green]2[/green] maks. PŻ. Otrzymaj [red]8[/red] pkt. obrażeń."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Wyjdź z wody",
             "description": ""
           }
         ]
@@ -160,12 +160,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]9[/red] damage."
+            "title": "Pozostań",
+            "description": "Zyskaj [green]2[/green] maks. PŻ. Otrzymaj [red]9[/red] pkt. obrażeń."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Wyjdź z wody",
             "description": ""
           }
         ]
@@ -176,12 +176,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]10[/red] damage."
+            "title": "Pozostań",
+            "description": "Zyskaj [green]2[/green] maks. PŻ. Otrzymaj [red]10[/red] pkt. obrażeń."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Wyjdź z wody",
             "description": ""
           }
         ]
@@ -192,12 +192,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]11[/red] damage."
+            "title": "Pozostań",
+            "description": "Zyskaj [green]2[/green] maks. PŻ. Otrzymaj [red]11[/red] pkt. obrażeń."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Wyjdź z wody",
             "description": ""
           }
         ]
@@ -208,12 +208,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]12[/red] damage."
+            "title": "Pozostań",
+            "description": "Zyskaj [green]2[/green] maks. PŻ. Otrzymaj [red]12[/red] pkt. obrażeń."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Wyjdź z wody",
             "description": ""
           }
         ]
@@ -224,12 +224,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]13[/red] damage."
+            "title": "Pozostań",
+            "description": "Zyskaj [green]2[/green] maks. PŻ. Otrzymaj [red]13[/red] pkt. obrażeń."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Wyjdź z wody",
             "description": ""
           }
         ]

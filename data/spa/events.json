@@ -44,12 +44,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. This will kill you."
+            "title": "Quedarse",
+            "description": "[sine][red]Si te quedas un rato más en la poza, morirás.[/red][/sine]"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Salir de la poza",
             "description": ""
           }
         ]
@@ -64,12 +64,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]4[/red] damage."
+            "title": "Quedarse",
+            "description": "Gana [green]2[/green] PV máx. Recibe [red]4[/red] de daño."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Salir de la poza",
             "description": ""
           }
         ]
@@ -96,12 +96,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]5[/red] damage."
+            "title": "Quedarse",
+            "description": "Gana [green]2[/green] PV máx. Recibe [red]5[/red] de daño."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Salir de la poza",
             "description": ""
           }
         ]
@@ -112,12 +112,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]6[/red] damage."
+            "title": "Quedarse",
+            "description": "Gana [green]2[/green] PV máx. Recibe [red]6[/red] de daño."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Salir de la poza",
             "description": ""
           }
         ]
@@ -128,12 +128,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]7[/red] damage."
+            "title": "Quedarse",
+            "description": "Gana [green]2[/green] PV máx. Recibe [red]7[/red] de daño."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Salir de la poza",
             "description": ""
           }
         ]
@@ -144,12 +144,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]8[/red] damage."
+            "title": "Quedarse",
+            "description": "Gana [green]2[/green] PV máx. Recibe [red]8[/red] de daño."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Salir de la poza",
             "description": ""
           }
         ]
@@ -160,12 +160,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]9[/red] damage."
+            "title": "Quedarse",
+            "description": "Gana [green]2[/green] PV máx. Recibe [red]9[/red] de daño."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Salir de la poza",
             "description": ""
           }
         ]
@@ -176,12 +176,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]10[/red] damage."
+            "title": "Quedarse",
+            "description": "Gana [green]2[/green] PV máx. Recibe [red]10[/red] de daño."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Salir de la poza",
             "description": ""
           }
         ]
@@ -192,12 +192,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]11[/red] damage."
+            "title": "Quedarse",
+            "description": "Gana [green]2[/green] PV máx. Recibe [red]11[/red] de daño."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Salir de la poza",
             "description": ""
           }
         ]
@@ -208,12 +208,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]12[/red] damage."
+            "title": "Quedarse",
+            "description": "Gana [green]2[/green] PV máx. Recibe [red]12[/red] de daño."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Salir de la poza",
             "description": ""
           }
         ]
@@ -224,12 +224,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]13[/red] damage."
+            "title": "Quedarse",
+            "description": "Gana [green]2[/green] PV máx. Recibe [red]13[/red] de daño."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Salir de la poza",
             "description": ""
           }
         ]

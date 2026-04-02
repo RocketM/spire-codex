@@ -44,12 +44,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. This will kill you."
+            "title": "Biraz Daha Kal",
+            "description": "[sine][red]Eğer havuzda daha fazla kalırsan öleceksin.[/red][/sine]"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Havuzlardan Ayrıl",
             "description": ""
           }
         ]
@@ -64,12 +64,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]4[/red] damage."
+            "title": "Biraz Daha Kal",
+            "description": "[green]2[/green] Maksimum CP elde et. [red]4[/red] hasar al."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Havuzlardan Ayrıl",
             "description": ""
           }
         ]
@@ -96,12 +96,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]5[/red] damage."
+            "title": "Biraz Daha Kal",
+            "description": "[green]2[/green] Maksimum CP elde et. [red]5[/red] hasar al."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Havuzlardan Ayrıl",
             "description": ""
           }
         ]
@@ -112,12 +112,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]6[/red] damage."
+            "title": "Biraz Daha Kal",
+            "description": "[green]2[/green] Maksimum CP elde et. [red]6[/red] hasar al."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Havuzlardan Ayrıl",
             "description": ""
           }
         ]
@@ -128,12 +128,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]7[/red] damage."
+            "title": "Biraz Daha Kal",
+            "description": "[green]2[/green] Maksimum CP elde et. [red]7[/red] hasar al."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Havuzlardan Ayrıl",
             "description": ""
           }
         ]
@@ -144,12 +144,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]8[/red] damage."
+            "title": "Biraz Daha Kal",
+            "description": "[green]2[/green] Maksimum CP elde et. [red]8[/red] hasar al."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Havuzlardan Ayrıl",
             "description": ""
           }
         ]
@@ -160,12 +160,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]9[/red] damage."
+            "title": "Biraz Daha Kal",
+            "description": "[green]2[/green] Maksimum CP elde et. [red]9[/red] hasar al."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Havuzlardan Ayrıl",
             "description": ""
           }
         ]
@@ -176,12 +176,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]10[/red] damage."
+            "title": "Biraz Daha Kal",
+            "description": "[green]2[/green] Maksimum CP elde et. [red]10[/red] hasar al."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Havuzlardan Ayrıl",
             "description": ""
           }
         ]
@@ -192,12 +192,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]11[/red] damage."
+            "title": "Biraz Daha Kal",
+            "description": "[green]2[/green] Maksimum CP elde et. [red]11[/red] hasar al."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Havuzlardan Ayrıl",
             "description": ""
           }
         ]
@@ -208,12 +208,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]12[/red] damage."
+            "title": "Biraz Daha Kal",
+            "description": "[green]2[/green] Maksimum CP elde et. [red]12[/red] hasar al."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Havuzlardan Ayrıl",
             "description": ""
           }
         ]
@@ -224,12 +224,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]13[/red] damage."
+            "title": "Biraz Daha Kal",
+            "description": "[green]2[/green] Maksimum CP elde et. [red]13[/red] hasar al."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Havuzlardan Ayrıl",
             "description": ""
           }
         ]

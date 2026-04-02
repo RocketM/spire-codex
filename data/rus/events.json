@@ -44,12 +44,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. This will kill you."
+            "title": "Остаться",
+            "description": "[sine][red]Если вы не выйдете из воды, вы погибнете.[/red][/sine]"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Выйти",
             "description": ""
           }
         ]
@@ -64,12 +64,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]4[/red] damage."
+            "title": "Остаться",
+            "description": "Повысить макс. ОЗ на [green]2[/green] и получить [red]4[/red] урона."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Выйти",
             "description": ""
           }
         ]
@@ -96,12 +96,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]5[/red] damage."
+            "title": "Остаться",
+            "description": "Повысить макс. ОЗ на [green]2[/green] и получить [red]5[/red] урона."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Выйти",
             "description": ""
           }
         ]
@@ -112,12 +112,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]6[/red] damage."
+            "title": "Остаться",
+            "description": "Повысить макс. ОЗ на [green]2[/green] и получить [red]6[/red] урона."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Выйти",
             "description": ""
           }
         ]
@@ -128,12 +128,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]7[/red] damage."
+            "title": "Остаться",
+            "description": "Повысить макс. ОЗ на [green]2[/green] и получить [red]7[/red] урона."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Выйти",
             "description": ""
           }
         ]
@@ -144,12 +144,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]8[/red] damage."
+            "title": "Остаться",
+            "description": "Повысить макс. ОЗ на [green]2[/green] и получить [red]8[/red] урона."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Выйти",
             "description": ""
           }
         ]
@@ -160,12 +160,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]9[/red] damage."
+            "title": "Остаться",
+            "description": "Повысить макс. ОЗ на [green]2[/green] и получить [red]9[/red] урона."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Выйти",
             "description": ""
           }
         ]
@@ -176,12 +176,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]10[/red] damage."
+            "title": "Остаться",
+            "description": "Повысить макс. ОЗ на [green]2[/green] и получить [red]10[/red] урона."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Выйти",
             "description": ""
           }
         ]
@@ -192,12 +192,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]11[/red] damage."
+            "title": "Остаться",
+            "description": "Повысить макс. ОЗ на [green]2[/green] и получить [red]11[/red] урона."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Выйти",
             "description": ""
           }
         ]
@@ -208,12 +208,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]12[/red] damage."
+            "title": "Остаться",
+            "description": "Повысить макс. ОЗ на [green]2[/green] и получить [red]12[/red] урона."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Выйти",
             "description": ""
           }
         ]
@@ -224,12 +224,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]13[/red] damage."
+            "title": "Остаться",
+            "description": "Повысить макс. ОЗ на [green]2[/green] и получить [red]13[/red] урона."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Выйти",
             "description": ""
           }
         ]

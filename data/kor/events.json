@@ -44,12 +44,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. This will kill you."
+            "title": "좀 더 머문다",
+            "description": "[sine][red]이 이상 목욕 시 죽게 될 것입니다.[/red][/sine]"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "탕에서 나간다",
             "description": ""
           }
         ]
@@ -64,12 +64,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]4[/red] damage."
+            "title": "좀 더 머문다",
+            "description": "최대 체력을 [green]2[/green] 얻습니다. 피해를 [red]4[/red] 받습니다."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "탕에서 나간다",
             "description": ""
           }
         ]
@@ -96,12 +96,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]5[/red] damage."
+            "title": "좀 더 머문다",
+            "description": "최대 체력을 [green]2[/green] 얻습니다. 피해를 [red]5[/red] 받습니다."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "탕에서 나간다",
             "description": ""
           }
         ]
@@ -112,12 +112,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]6[/red] damage."
+            "title": "좀 더 머문다",
+            "description": "최대 체력을 [green]2[/green] 얻습니다. 피해를 [red]6[/red] 받습니다."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "탕에서 나간다",
             "description": ""
           }
         ]
@@ -128,12 +128,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]7[/red] damage."
+            "title": "좀 더 머문다",
+            "description": "최대 체력을 [green]2[/green] 얻습니다. 피해를 [red]7[/red] 받습니다."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "탕에서 나간다",
             "description": ""
           }
         ]
@@ -144,12 +144,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]8[/red] damage."
+            "title": "좀 더 머문다",
+            "description": "최대 체력을 [green]2[/green] 얻습니다. 피해를 [red]8[/red] 받습니다."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "탕에서 나간다",
             "description": ""
           }
         ]
@@ -160,12 +160,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]9[/red] damage."
+            "title": "좀 더 머문다",
+            "description": "최대 체력을 [green]2[/green] 얻습니다. 피해를 [red]9[/red] 받습니다."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "탕에서 나간다",
             "description": ""
           }
         ]
@@ -176,12 +176,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]10[/red] damage."
+            "title": "좀 더 머문다",
+            "description": "최대 체력을 [green]2[/green] 얻습니다. 피해를 [red]10[/red] 받습니다."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "탕에서 나간다",
             "description": ""
           }
         ]
@@ -192,12 +192,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]11[/red] damage."
+            "title": "좀 더 머문다",
+            "description": "최대 체력을 [green]2[/green] 얻습니다. 피해를 [red]11[/red] 받습니다."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "탕에서 나간다",
             "description": ""
           }
         ]
@@ -208,12 +208,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]12[/red] damage."
+            "title": "좀 더 머문다",
+            "description": "최대 체력을 [green]2[/green] 얻습니다. 피해를 [red]12[/red] 받습니다."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "탕에서 나간다",
             "description": ""
           }
         ]
@@ -224,12 +224,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]13[/red] damage."
+            "title": "좀 더 머문다",
+            "description": "최대 체력을 [green]2[/green] 얻습니다. 피해를 [red]13[/red] 받습니다."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "탕에서 나간다",
             "description": ""
           }
         ]

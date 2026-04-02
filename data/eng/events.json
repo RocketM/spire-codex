@@ -45,7 +45,7 @@
           {
             "id": "LINGER",
             "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. This will kill you."
+            "description": "[sine][red]If you bathe any longer you will die.[/red][/sine]"
           },
           {
             "id": "EXIT_BATHS",

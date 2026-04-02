@@ -39,12 +39,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. This will kill you."
+            "title": "Rimani",
+            "description": "[sine][red]Se resti ancora nell'acqua, morirai.[/red][/sine]"
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Esci dalle terme",
             "description": ""
           }
         ]
@@ -59,12 +59,12 @@
         "options": [
           {
             "id": "LINGER",
-            "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]4[/red] damage."
+            "title": "Rimani",
+            "description": "Ottieni [green]2[/green] PV massimi. Subisci [red]4[/red] di danno."
           },
           {
             "id": "EXIT_BATHS",
-            "title": "Exit Baths",
+            "title": "Esci dalle terme",
             "description": ""
           }
         ]
