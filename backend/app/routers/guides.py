@@ -1,5 +1,9 @@
 """Guides API — community strategy guides."""
+import json as _json
 import os
+import re
+from datetime import date
+
 import httpx
 from fastapi import APIRouter, HTTPException, Request
 from pydantic import BaseModel
@@ -73,7 +77,6 @@ MAX_FIELD = 200
 
 def _sanitize(text: str, max_len: int = MAX_FIELD) -> str:
     """Strip HTML tags and control chars, truncate."""
-    import re
     text = re.sub(r'<[^>]+>', '', text)  # strip HTML tags
     text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', text)  # strip control chars
     return text.strip()[:max_len]
@@ -87,7 +90,6 @@ def _validate_url(url: str | None) -> str | None:
     if url.startswith(("http://", "https://")):
         return url
     # Treat as username — alphanumeric, dots, underscores, hyphens only
-    import re
     if re.match(r'^[\w.\-]+$', url):
         return url
     return None
@@ -128,7 +130,7 @@ async def submit_guide(request: Request, body: GuideSubmission):
         f'title: "{title}"',
         f'slug: "{slug}"',
         f'author: "{author}"',
-        f'date: "{__import__("datetime").date.today().isoformat()}"',
+        f'date: "{date.today().isoformat()}"',
         f'category: "{category}"',
         'tags: [{}]'.format(", ".join(f'"{t.strip()}"' for t in tags.split(",") if t.strip())) if tags else 'tags: []',
         f'summary: "{summary}"',
@@ -169,7 +171,6 @@ async def submit_guide(request: Request, body: GuideSubmission):
         }],
     }
 
-    import json as _json
     async with httpx.AsyncClient() as client:
         # Send embed + .md file attachment via multipart
         resp = await client.post(
