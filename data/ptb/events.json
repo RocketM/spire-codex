@@ -336,17 +336,17 @@
       {
         "id": "SETTING_1",
         "title": "Nível 1",
-        "description": "Lute contra um manequim com [blue][Setting1Hp][/blue] PV. Receba [blue]1[/blue] [gold]Poção[/gold] aleatória."
+        "description": "Lute contra um manequim com [blue]75[/blue] PV. Receba [blue]1[/blue] [gold]Poção[/gold] aleatória."
       },
       {
         "id": "SETTING_2",
         "title": "Nível 2",
-        "description": "Lute contra um manequim com [blue][Setting2Hp][/blue] PV. [gold]Aprimore[/gold] [blue]2[/blue] cartas aleatórias."
+        "description": "Lute contra um manequim com [blue]150[/blue] PV. [gold]Aprimore[/gold] [blue]2[/blue] cartas aleatórias."
       },
       {
         "id": "SETTING_3",
         "title": "Nível 3",
-        "description": "Lute contra um manequim com [blue][Setting3Hp][/blue] PV. Receba uma [gold]Relíquia[/gold] aleatória."
+        "description": "Lute contra um manequim com [blue]300[/blue] PV. Receba uma [gold]Relíquia[/gold] aleatória."
       }
     ],
     "pages": [
@@ -361,17 +361,17 @@
           {
             "id": "SETTING_1",
             "title": "Nível 1",
-            "description": "Lute contra um manequim com [blue][Setting1Hp][/blue] PV. Receba [blue]1[/blue] [gold]Poção[/gold] aleatória."
+            "description": "Lute contra um manequim com [blue]75[/blue] PV. Receba [blue]1[/blue] [gold]Poção[/gold] aleatória."
           },
           {
             "id": "SETTING_2",
             "title": "Nível 2",
-            "description": "Lute contra um manequim com [blue][Setting2Hp][/blue] PV. [gold]Aprimore[/gold] [blue]2[/blue] cartas aleatórias."
+            "description": "Lute contra um manequim com [blue]150[/blue] PV. [gold]Aprimore[/gold] [blue]2[/blue] cartas aleatórias."
           },
           {
             "id": "SETTING_3",
             "title": "Nível 3",
-            "description": "Lute contra um manequim com [blue][Setting3Hp][/blue] PV. Receba uma [gold]Relíquia[/gold] aleatória."
+            "description": "Lute contra um manequim com [blue]300[/blue] PV. Receba uma [gold]Relíquia[/gold] aleatória."
           }
         ]
       },
@@ -533,11 +533,6 @@
         "description": "Receba [blue]3[/blue] cartas do Defeituoso."
       },
       {
-        "id": "EQUALITY",
-        "title": "Igualdade",
-        "description": "Receba [gold]Fragmento Prismático[/gold]."
-      },
-      {
         "id": "IRONCLAD",
         "title": "Vermelho",
         "description": "Receba [blue]3[/blue] cartas do Rígido."
@@ -571,11 +566,6 @@
             "id": "DEFECT",
             "title": "Azul",
             "description": "Receba [blue]3[/blue] cartas do Defeituoso."
-          },
-          {
-            "id": "EQUALITY",
-            "title": "Igualdade",
-            "description": "Receba [gold]Fragmento Prismático[/gold]."
           },
           {
             "id": "IRONCLAD",
@@ -2933,7 +2923,7 @@
       {
         "id": "HOLD_ON_0",
         "title": "Manter o Equilíbrio",
-        "description": "Perca [red]3+[/red] PV. Troca aleatoriamente a carta da opção acima."
+        "description": "Perca [red]3[/red] PV. Troca aleatoriamente a carta da opção acima."
       }
     ],
     "pages": [
@@ -2944,7 +2934,7 @@
           {
             "id": "HOLD_ON_1",
             "title": "Manter o Equilíbrio",
-            "description": "Perca [red]3+[/red] PV. Troca aleatoriamente a carta da opção acima."
+            "description": "Perca [red]4[/red] PV. Troca aleatoriamente a carta da opção acima."
           }
         ]
       },
@@ -2955,7 +2945,7 @@
           {
             "id": "HOLD_ON_2",
             "title": "Manter o Equilíbrio",
-            "description": "Perca [red]3+[/red] PV. Troca aleatoriamente a carta da opção acima."
+            "description": "Perca [red]5[/red] PV. Troca aleatoriamente a carta da opção acima."
           }
         ]
       },
@@ -2966,7 +2956,7 @@
           {
             "id": "HOLD_ON_3",
             "title": "Manter o Equilíbrio",
-            "description": "Perca [red]3+[/red] PV. Troca aleatoriamente a carta da opção acima."
+            "description": "Perca [red]6[/red] PV. Troca aleatoriamente a carta da opção acima."
           }
         ]
       },
@@ -2977,7 +2967,7 @@
           {
             "id": "HOLD_ON_4",
             "title": "Manter o Equilíbrio",
-            "description": "Perca [red]3+[/red] PV. Troca aleatoriamente a carta da opção acima."
+            "description": "Perca [red]7[/red] PV. Troca aleatoriamente a carta da opção acima."
           }
         ]
       },
@@ -2988,7 +2978,7 @@
           {
             "id": "HOLD_ON_5",
             "title": "Manter o Equilíbrio",
-            "description": "Perca [red]3+[/red] PV. Troca aleatoriamente a carta da opção acima."
+            "description": "Perca [red]8[/red] PV. Troca aleatoriamente a carta da opção acima."
           }
         ]
       },
@@ -2999,7 +2989,7 @@
           {
             "id": "HOLD_ON_6",
             "title": "Manter o Equilíbrio",
-            "description": "Perca [red]3+[/red] PV. Troca aleatoriamente a carta da opção acima."
+            "description": "Perca [red]9[/red] PV. Troca aleatoriamente a carta da opção acima."
           }
         ]
       },
@@ -3010,7 +3000,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Manter o Equilíbrio",
-            "description": "Perca [red]3+[/red] PV. Troca aleatoriamente a carta da opção acima."
+            "description": "Perca [red]10[/red] PV. Troca aleatoriamente a carta da opção acima."
           }
         ]
       },
@@ -3021,7 +3011,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Manter o Equilíbrio",
-            "description": "Perca [red]3+[/red] PV. Troca aleatoriamente a carta da opção acima."
+            "description": "Perca [red]11+[/red] PV. Troca aleatoriamente a carta da opção acima."
           }
         ]
       },
@@ -3037,7 +3027,7 @@
           {
             "id": "HOLD_ON_0",
             "title": "Manter o Equilíbrio",
-            "description": "Perca [red]3+[/red] PV. Troca aleatoriamente a carta da opção acima."
+            "description": "Perca [red]3[/red] PV. Troca aleatoriamente a carta da opção acima."
           }
         ]
       },
@@ -3063,11 +3053,6 @@
         "id": "DRINK",
         "title": "Beber",
         "description": "Cure [green]33% Max[/green] PV."
-      },
-      {
-        "id": "REACH_IN",
-        "title": "Tocar o Fundo",
-        "description": "Receba uma [gold]Relíquia[/gold] aleatória. Adicione [red]Torção[/red] ao seu [gold]Baralho[/gold]."
       }
     ],
     "pages": [
@@ -3088,21 +3073,12 @@
             "id": "DRINK",
             "title": "Beber",
             "description": "Cure [green]33% Max[/green] PV."
-          },
-          {
-            "id": "REACH_IN",
-            "title": "Tocar o Fundo",
-            "description": "Receba uma [gold]Relíquia[/gold] aleatória. Adicione [red]Torção[/red] ao seu [gold]Baralho[/gold]."
           }
         ]
       },
       {
         "id": "OBSERVE",
         "description": "[sine][purple]...ah-   tão belo.....\nGirando... e girando. Sim...\nOh! Aquilo foi..... um respingo...?\n....claro que sim. Você também merece se divertir um pouco, [/purple][aqua]Sr. Espiral[/aqua][purple]... haha...\n... .......   ...[/purple][/sine]\n\nHora de ir.\nVocê sussurra algo ao se despedir.\n\n[gold]“Muito obrigado, Espiral.”[/gold]"
-      },
-      {
-        "id": "REACH_IN",
-        "description": "Sem pensar nas consequências, você mergulha seu braço no centro do [aqua][sine]Redemoinho Aquático[/sine][/aqua], perturbando o equilíbrio. A água se torna [blue][jitter]frígida[/jitter][/blue] e se agarra a você, marcando [jitter][red]Espirais Invisíveis[/red][/jitter] no seu braço.\n\nSeus dedos encostam em algo sólido, e você agarra e puxa dolorosamente uma [gold]Relíquia[/gold] para fora do redemoinho!"
       }
     ]
   },

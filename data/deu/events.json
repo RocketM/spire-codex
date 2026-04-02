@@ -336,17 +336,17 @@
       {
         "id": "SETTING_1",
         "title": "Einstellung 1",
-        "description": "Bekämpfe einen [blue][Setting1Hp][/blue]-TP-Dummy. Beschaffe [blue]1[/blue] zufälligen [gold]Trank[/gold]."
+        "description": "Bekämpfe einen [blue]75[/blue]-TP-Dummy. Beschaffe [blue]1[/blue] zufälligen [gold]Trank[/gold]."
       },
       {
         "id": "SETTING_2",
         "title": "Einstellung 2",
-        "description": "Bekämpfe einen [blue][Setting2Hp][/blue]-TP-Dummy. [gold]Verbessere[/gold] [blue]2[/blue] zufällige Karten."
+        "description": "Bekämpfe einen [blue]150[/blue]-TP-Dummy. [gold]Verbessere[/gold] [blue]2[/blue] zufällige Karten."
       },
       {
         "id": "SETTING_3",
         "title": "Einstellung 3",
-        "description": "Bekämpfe einen [blue][Setting3Hp][/blue]-TP-Dummy. Erhalte ein zufälliges [gold]Relikt[/gold]."
+        "description": "Bekämpfe einen [blue]300[/blue]-TP-Dummy. Erhalte ein zufälliges [gold]Relikt[/gold]."
       }
     ],
     "pages": [
@@ -361,17 +361,17 @@
           {
             "id": "SETTING_1",
             "title": "Einstellung 1",
-            "description": "Bekämpfe einen [blue][Setting1Hp][/blue]-TP-Dummy. Beschaffe [blue]1[/blue] zufälligen [gold]Trank[/gold]."
+            "description": "Bekämpfe einen [blue]75[/blue]-TP-Dummy. Beschaffe [blue]1[/blue] zufälligen [gold]Trank[/gold]."
           },
           {
             "id": "SETTING_2",
             "title": "Einstellung 2",
-            "description": "Bekämpfe einen [blue][Setting2Hp][/blue]-TP-Dummy. [gold]Verbessere[/gold] [blue]2[/blue] zufällige Karten."
+            "description": "Bekämpfe einen [blue]150[/blue]-TP-Dummy. [gold]Verbessere[/gold] [blue]2[/blue] zufällige Karten."
           },
           {
             "id": "SETTING_3",
             "title": "Einstellung 3",
-            "description": "Bekämpfe einen [blue][Setting3Hp][/blue]-TP-Dummy. Erhalte ein zufälliges [gold]Relikt[/gold]."
+            "description": "Bekämpfe einen [blue]300[/blue]-TP-Dummy. Erhalte ein zufälliges [gold]Relikt[/gold]."
           }
         ]
       },
@@ -533,11 +533,6 @@
         "description": "Erhalte [blue]3[/blue] Defekte-Karten."
       },
       {
-        "id": "EQUALITY",
-        "title": "Ebenbürtigkeit",
-        "description": "Erhalte die [gold]Prisma-Scherbe[/gold]."
-      },
-      {
         "id": "IRONCLAD",
         "title": "Rot",
         "description": "Erhalte [blue]3[/blue] Eisernen-Karten."
@@ -571,11 +566,6 @@
             "id": "DEFECT",
             "title": "Blau",
             "description": "Erhalte [blue]3[/blue] Defekte-Karten."
-          },
-          {
-            "id": "EQUALITY",
-            "title": "Ebenbürtigkeit",
-            "description": "Erhalte die [gold]Prisma-Scherbe[/gold]."
           },
           {
             "id": "IRONCLAD",
@@ -2933,7 +2923,7 @@
       {
         "id": "HOLD_ON_0",
         "title": "Festhalten",
-        "description": "Verliere [red]3+[/red] TP. Die Karte in der oberen Option wird geändert."
+        "description": "Verliere [red]3[/red] TP. Die Karte in der oberen Option wird geändert."
       }
     ],
     "pages": [
@@ -2944,7 +2934,7 @@
           {
             "id": "HOLD_ON_1",
             "title": "Festhalten",
-            "description": "Verliere [red]3+[/red] TP. Die Karte in der oberen Option wird geändert."
+            "description": "Verliere [red]4[/red] TP. Die Karte in der oberen Option wird geändert."
           }
         ]
       },
@@ -2955,7 +2945,7 @@
           {
             "id": "HOLD_ON_2",
             "title": "Festhalten",
-            "description": "Verliere [red]3+[/red] TP. Die Karte in der oberen Option wird geändert."
+            "description": "Verliere [red]5[/red] TP. Die Karte in der oberen Option wird geändert."
           }
         ]
       },
@@ -2966,7 +2956,7 @@
           {
             "id": "HOLD_ON_3",
             "title": "Festhalten",
-            "description": "Verliere [red]3+[/red] TP. Die Karte in der oberen Option wird geändert."
+            "description": "Verliere [red]6[/red] TP. Die Karte in der oberen Option wird geändert."
           }
         ]
       },
@@ -2977,7 +2967,7 @@
           {
             "id": "HOLD_ON_4",
             "title": "Festhalten",
-            "description": "Verliere [red]3+[/red] TP. Die Karte in der oberen Option wird geändert."
+            "description": "Verliere [red]7[/red] TP. Die Karte in der oberen Option wird geändert."
           }
         ]
       },
@@ -2988,7 +2978,7 @@
           {
             "id": "HOLD_ON_5",
             "title": "Festhalten",
-            "description": "Verliere [red]3+[/red] TP. Die Karte in der oberen Option wird geändert."
+            "description": "Verliere [red]8[/red] TP. Die Karte in der oberen Option wird geändert."
           }
         ]
       },
@@ -2999,7 +2989,7 @@
           {
             "id": "HOLD_ON_6",
             "title": "Festhalten",
-            "description": "Verliere [red]3+[/red] TP. Die Karte in der oberen Option wird geändert."
+            "description": "Verliere [red]9[/red] TP. Die Karte in der oberen Option wird geändert."
           }
         ]
       },
@@ -3010,7 +3000,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Festhalten",
-            "description": "Verliere [red]3+[/red] TP. Die Karte in der oberen Option wird geändert."
+            "description": "Verliere [red]10[/red] TP. Die Karte in der oberen Option wird geändert."
           }
         ]
       },
@@ -3021,7 +3011,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Festhalten",
-            "description": "Verliere [red]3+[/red] TP. Die Karte in der oberen Option wird geändert."
+            "description": "Verliere [red]11+[/red] TP. Die Karte in der oberen Option wird geändert."
           }
         ]
       },
@@ -3037,7 +3027,7 @@
           {
             "id": "HOLD_ON_0",
             "title": "Festhalten",
-            "description": "Verliere [red]3+[/red] TP. Die Karte in der oberen Option wird geändert."
+            "description": "Verliere [red]3[/red] TP. Die Karte in der oberen Option wird geändert."
           }
         ]
       },
@@ -3063,11 +3053,6 @@
         "id": "DRINK",
         "title": "Trinken",
         "description": "Heile [green]33% Max[/green] TP."
-      },
-      {
-        "id": "REACH_IN",
-        "title": "Hineinfassen",
-        "description": "Erhalte ein zufälliges [gold]Relikt[/gold]. Erhalte [red]Leid[/red] in dein [gold]Deck[/gold]."
       }
     ],
     "pages": [
@@ -3088,21 +3073,12 @@
             "id": "DRINK",
             "title": "Trinken",
             "description": "Heile [green]33% Max[/green] TP."
-          },
-          {
-            "id": "REACH_IN",
-            "title": "Hineinfassen",
-            "description": "Erhalte ein zufälliges [gold]Relikt[/gold]. Erhalte [red]Leid[/red] in dein [gold]Deck[/gold]."
           }
         ]
       },
       {
         "id": "OBSERVE",
         "description": "[sine][purple]...ah–   so schön.....\nSo dreht er sich... dreht sich weiter rundherum. Ja...\nOh! War das..... ein kleiner Spritzer...?\n....natürlich. Du hast auch etwas Spaß verdient,[/purple] [aqua]Frau Spirale[/aqua][purple]... haha...\n... .......   ...[/purple][/sine]\n\nJetzt ist es Zeit, zu gehen.\nDu flüsterst etwas zum Abschied.\n\n[gold]“Danke, Spirale.”[/gold]"
-      },
-      {
-        "id": "REACH_IN",
-        "description": "Törichterweise tauchst du deinen Arm in die Mitte des [aqua][sine]Wasserstrudels[/sine][/aqua], was ihn aus dem Gleichgewicht bringt. Das Wasser wird [blue][jitter]kalt[/jitter][/blue] und greift nach dir, es ritzt dir [jitter][red]Unsichtbare Spiralen[/red][/jitter] in den Arm.\n\nDeine Finger streifen über etwas festes und du versuchst schmerzerfüllt, es zu fassen zu bekommen. Endlich rangelst du ein [gold]Relikt[/gold] da raus!"
       }
     ]
   },

@@ -336,17 +336,17 @@
       {
         "id": "SETTING_1",
         "title": "レベル1",
-        "description": "HP[blue][Setting1Hp][/blue]の訓練人形と戦闘。 ランダムな[gold]ポーション[/gold]を[blue]1[/blue]個獲得。"
+        "description": "HP[blue]75[/blue]の訓練人形と戦闘。 ランダムな[gold]ポーション[/gold]を[blue]1[/blue]個獲得。"
       },
       {
         "id": "SETTING_2",
         "title": "レベル2",
-        "description": "HP[blue][Setting2Hp][/blue]の訓練人形と戦闘。 ランダムなカードを[blue]2[/blue]枚[gold]アップグレード[/gold]。"
+        "description": "HP[blue]150[/blue]の訓練人形と戦闘。 ランダムなカードを[blue]2[/blue]枚[gold]アップグレード[/gold]。"
       },
       {
         "id": "SETTING_3",
         "title": "レベル3",
-        "description": "HP[blue][Setting3Hp][/blue]の訓練人形と戦闘。 ランダムな[gold]レリック[/gold]を1個獲得。"
+        "description": "HP[blue]300[/blue]の訓練人形と戦闘。 ランダムな[gold]レリック[/gold]を1個獲得。"
       }
     ],
     "pages": [
@@ -361,17 +361,17 @@
           {
             "id": "SETTING_1",
             "title": "レベル1",
-            "description": "HP[blue][Setting1Hp][/blue]の訓練人形と戦闘。 ランダムな[gold]ポーション[/gold]を[blue]1[/blue]個獲得。"
+            "description": "HP[blue]75[/blue]の訓練人形と戦闘。 ランダムな[gold]ポーション[/gold]を[blue]1[/blue]個獲得。"
           },
           {
             "id": "SETTING_2",
             "title": "レベル2",
-            "description": "HP[blue][Setting2Hp][/blue]の訓練人形と戦闘。 ランダムなカードを[blue]2[/blue]枚[gold]アップグレード[/gold]。"
+            "description": "HP[blue]150[/blue]の訓練人形と戦闘。 ランダムなカードを[blue]2[/blue]枚[gold]アップグレード[/gold]。"
           },
           {
             "id": "SETTING_3",
             "title": "レベル3",
-            "description": "HP[blue][Setting3Hp][/blue]の訓練人形と戦闘。 ランダムな[gold]レリック[/gold]を1個獲得。"
+            "description": "HP[blue]300[/blue]の訓練人形と戦闘。 ランダムな[gold]レリック[/gold]を1個獲得。"
           }
         ]
       },
@@ -533,11 +533,6 @@
         "description": "ディフェクトのカードを[blue]3[/blue]枚獲得する。"
       },
       {
-        "id": "EQUALITY",
-        "title": "どれも同じ",
-        "description": "[gold]プリズムジェム[/gold]を獲得。"
-      },
-      {
         "id": "IRONCLAD",
         "title": "赤",
         "description": "アイアンクラッドのカードを[blue]3[/blue]枚獲得する。"
@@ -571,11 +566,6 @@
             "id": "DEFECT",
             "title": "青",
             "description": "ディフェクトのカードを[blue]3[/blue]枚獲得する。"
-          },
-          {
-            "id": "EQUALITY",
-            "title": "どれも同じ",
-            "description": "[gold]プリズムジェム[/gold]を獲得。"
           },
           {
             "id": "IRONCLAD",
@@ -2933,7 +2923,7 @@
       {
         "id": "HOLD_ON_0",
         "title": "しがみつく",
-        "description": "HPを[red]3+[/red]失う。 上の選択肢のカードがランダムに変わる。"
+        "description": "HPを[red]3[/red]失う。 上の選択肢のカードがランダムに変わる。"
       }
     ],
     "pages": [
@@ -2944,7 +2934,7 @@
           {
             "id": "HOLD_ON_1",
             "title": "しがみつく",
-            "description": "HPを[red]3+[/red]失う。 上の選択肢のカードがランダムに変わる。"
+            "description": "HPを[red]4[/red]失う。 上の選択肢のカードがランダムに変わる。"
           }
         ]
       },
@@ -2955,7 +2945,7 @@
           {
             "id": "HOLD_ON_2",
             "title": "しがみつく",
-            "description": "HPを[red]3+[/red]失う。 上の選択肢のカードがランダムに変わる。"
+            "description": "HPを[red]5[/red]失う。 上の選択肢のカードがランダムに変わる。"
           }
         ]
       },
@@ -2966,7 +2956,7 @@
           {
             "id": "HOLD_ON_3",
             "title": "しがみつく",
-            "description": "HPを[red]3+[/red]失う。 上の選択肢のカードがランダムに変わる。"
+            "description": "HPを[red]6[/red]失う。 上の選択肢のカードがランダムに変わる。"
           }
         ]
       },
@@ -2977,7 +2967,7 @@
           {
             "id": "HOLD_ON_4",
             "title": "しがみつく",
-            "description": "HPを[red]3+[/red]失う。 上の選択肢のカードがランダムに変わる。"
+            "description": "HPを[red]7[/red]失う。 上の選択肢のカードがランダムに変わる。"
           }
         ]
       },
@@ -2988,7 +2978,7 @@
           {
             "id": "HOLD_ON_5",
             "title": "しがみつく",
-            "description": "HPを[red]3+[/red]失う。 上の選択肢のカードがランダムに変わる。"
+            "description": "HPを[red]8[/red]失う。 上の選択肢のカードがランダムに変わる。"
           }
         ]
       },
@@ -2999,7 +2989,7 @@
           {
             "id": "HOLD_ON_6",
             "title": "しがみつく",
-            "description": "HPを[red]3+[/red]失う。 上の選択肢のカードがランダムに変わる。"
+            "description": "HPを[red]9[/red]失う。 上の選択肢のカードがランダムに変わる。"
           }
         ]
       },
@@ -3010,7 +3000,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "しがみつく",
-            "description": "HPを[red]3+[/red]失う。 上の選択肢のカードがランダムに変わる。"
+            "description": "HPを[red]10[/red]失う。 上の選択肢のカードがランダムに変わる。"
           }
         ]
       },
@@ -3021,7 +3011,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "しがみつく",
-            "description": "HPを[red]3+[/red]失う。 上の選択肢のカードがランダムに変わる。"
+            "description": "HPを[red]11+[/red]失う。 上の選択肢のカードがランダムに変わる。"
           }
         ]
       },
@@ -3037,7 +3027,7 @@
           {
             "id": "HOLD_ON_0",
             "title": "しがみつく",
-            "description": "HPを[red]3+[/red]失う。 上の選択肢のカードがランダムに変わる。"
+            "description": "HPを[red]3[/red]失う。 上の選択肢のカードがランダムに変わる。"
           }
         ]
       },
@@ -3063,11 +3053,6 @@
         "id": "DRINK",
         "title": "飲む",
         "description": "HPを[green]33% Max[/green]回復する。"
-      },
-      {
-        "id": "REACH_IN",
-        "title": "手を突っ込む",
-        "description": "ランダムな[gold]レリック[/gold]を1個獲得する。 [red]身悶え[/red]を[gold]デッキ[/gold]に追加。"
       }
     ],
     "pages": [
@@ -3088,21 +3073,12 @@
             "id": "DRINK",
             "title": "飲む",
             "description": "HPを[green]33% Max[/green]回復する。"
-          },
-          {
-            "id": "REACH_IN",
-            "title": "手を突っ込む",
-            "description": "ランダムな[gold]レリック[/gold]を1個獲得する。 [red]身悶え[/red]を[gold]デッキ[/gold]に追加。"
           }
         ]
       },
       {
         "id": "OBSERVE",
         "description": "[sine][purple]…… ああ…… なんて美しい……\n回っている…… ずっとぐるぐると回っている。 ああ……\nおや？ 今のは…… ちょっとした水しぶきか……？\n…… そうだな。 君だって遊びたいよな、[/purple][aqua]らせんさん[/aqua][purple]…… ハハッ……\n…… ………   …… [/purple][/sine]\n\nそろそろ行かなければ。\n立ち去る間際、あなたはぽつりと呟いた。\n\n[gold]「ありがとう、らせんさん」[/gold]"
-      },
-      {
-        "id": "REACH_IN",
-        "description": "愚かにも、あなたは[aqua][sine]らせんの渦巻き[/sine][/aqua]の中心に腕を突っ込み、その均衡を乱す。 [blue][jitter]極寒[/jitter][/blue]の冷たさとなった水はあなたを掴み、腕に[jitter][red]見えない螺旋[/red][/jitter]を刻み込む。\n\n指先が何か硬いものに触れた。 痛みに耐えながらそれをつかみ取り、力づくで[gold]レリック[/gold]を引きずり出した！"
       }
     ]
   },

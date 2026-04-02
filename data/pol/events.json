@@ -336,17 +336,17 @@
       {
         "id": "SETTING_1",
         "title": "Łatwy",
-        "description": "Walcz z Drewnobotem z [blue][Setting1Hp][/blue] PŻ. Otrzymaj [blue]1[/blue] losową [gold]Miksturę[/gold]."
+        "description": "Walcz z Drewnobotem z [blue]75[/blue] PŻ. Otrzymaj [blue]1[/blue] losową [gold]Miksturę[/gold]."
       },
       {
         "id": "SETTING_2",
         "title": "Średni",
-        "description": "Walcz z Drewnobotem z [blue][Setting2Hp][/blue] PŻ. [gold]Ulepsz[/gold] [blue]2[/blue] losowe karty."
+        "description": "Walcz z Drewnobotem z [blue]150[/blue] PŻ. [gold]Ulepsz[/gold] [blue]2[/blue] losowe karty."
       },
       {
         "id": "SETTING_3",
         "title": "Trudny",
-        "description": "Walcz z Drewnobotem z [blue][Setting3Hp][/blue] PŻ. Otrzymaj losowy [gold]Artefakt[/gold]."
+        "description": "Walcz z Drewnobotem z [blue]300[/blue] PŻ. Otrzymaj losowy [gold]Artefakt[/gold]."
       }
     ],
     "pages": [
@@ -361,17 +361,17 @@
           {
             "id": "SETTING_1",
             "title": "Łatwy",
-            "description": "Walcz z Drewnobotem z [blue][Setting1Hp][/blue] PŻ. Otrzymaj [blue]1[/blue] losową [gold]Miksturę[/gold]."
+            "description": "Walcz z Drewnobotem z [blue]75[/blue] PŻ. Otrzymaj [blue]1[/blue] losową [gold]Miksturę[/gold]."
           },
           {
             "id": "SETTING_2",
             "title": "Średni",
-            "description": "Walcz z Drewnobotem z [blue][Setting2Hp][/blue] PŻ. [gold]Ulepsz[/gold] [blue]2[/blue] losowe karty."
+            "description": "Walcz z Drewnobotem z [blue]150[/blue] PŻ. [gold]Ulepsz[/gold] [blue]2[/blue] losowe karty."
           },
           {
             "id": "SETTING_3",
             "title": "Trudny",
-            "description": "Walcz z Drewnobotem z [blue][Setting3Hp][/blue] PŻ. Otrzymaj losowy [gold]Artefakt[/gold]."
+            "description": "Walcz z Drewnobotem z [blue]300[/blue] PŻ. Otrzymaj losowy [gold]Artefakt[/gold]."
           }
         ]
       },
@@ -533,11 +533,6 @@
         "description": ""
       },
       {
-        "id": "EQUALITY",
-        "title": "Równość",
-        "description": "Otrzymaj [gold]Pryzmatyczny odłamek[/gold]."
-      },
-      {
         "id": "IRONCLAD",
         "title": "Czerwony",
         "description": ""
@@ -571,11 +566,6 @@
             "id": "DEFECT",
             "title": "Niebieski",
             "description": ""
-          },
-          {
-            "id": "EQUALITY",
-            "title": "Równość",
-            "description": "Otrzymaj [gold]Pryzmatyczny odłamek[/gold]."
           },
           {
             "id": "IRONCLAD",
@@ -2925,7 +2915,7 @@
       {
         "id": "HOLD_ON_0",
         "title": "Trzymaj się",
-        "description": "Utrać [red]3+[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
+        "description": "Utrać [red]3[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
       }
     ],
     "pages": [
@@ -2936,7 +2926,7 @@
           {
             "id": "HOLD_ON_1",
             "title": "Trzymaj się",
-            "description": "Utrać [red]3+[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
+            "description": "Utrać [red]4[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
           }
         ]
       },
@@ -2947,7 +2937,7 @@
           {
             "id": "HOLD_ON_2",
             "title": "Trzymaj się",
-            "description": "Utrać [red]3+[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
+            "description": "Utrać [red]5[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
           }
         ]
       },
@@ -2958,7 +2948,7 @@
           {
             "id": "HOLD_ON_3",
             "title": "Trzymaj się",
-            "description": "Utrać [red]3+[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
+            "description": "Utrać [red]6[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
           }
         ]
       },
@@ -2969,7 +2959,7 @@
           {
             "id": "HOLD_ON_4",
             "title": "Trzymaj się",
-            "description": "Utrać [red]3+[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
+            "description": "Utrać [red]7[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
           }
         ]
       },
@@ -2980,7 +2970,7 @@
           {
             "id": "HOLD_ON_5",
             "title": "Trzymaj się",
-            "description": "Utrać [red]3+[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
+            "description": "Utrać [red]8[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
           }
         ]
       },
@@ -2991,7 +2981,7 @@
           {
             "id": "HOLD_ON_6",
             "title": "Trzymaj się",
-            "description": "Utrać [red]3+[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
+            "description": "Utrać [red]9[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
           }
         ]
       },
@@ -3002,7 +2992,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Trzymaj się",
-            "description": "Utrać [red]3+[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
+            "description": "Utrać [red]10[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
           }
         ]
       },
@@ -3013,7 +3003,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Trzymaj się",
-            "description": "Utrać [red]3+[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
+            "description": "Utrać [red]11+[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
           }
         ]
       },
@@ -3029,7 +3019,7 @@
           {
             "id": "HOLD_ON_0",
             "title": "Trzymaj się",
-            "description": "Utrać [red]3+[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
+            "description": "Utrać [red]3[/red] PŻ. Karta w opcji powyżej zostanie ponownie wylosowana."
           }
         ]
       },
@@ -3055,11 +3045,6 @@
         "id": "DRINK",
         "title": "Wypij",
         "description": "Przywróć [green]33% Max[/green] PŻ."
-      },
-      {
-        "id": "REACH_IN",
-        "title": "Sięgnij",
-        "description": "Otrzymaj losowy [gold]Artefakt[/gold]. Dodaj [red]Zwijanie z bólu[/red] do [gold]talii[/gold]."
       }
     ],
     "pages": [
@@ -3080,21 +3065,12 @@
             "id": "DRINK",
             "title": "Wypij",
             "description": "Przywróć [green]33% Max[/green] PŻ."
-          },
-          {
-            "id": "REACH_IN",
-            "title": "Sięgnij",
-            "description": "Otrzymaj losowy [gold]Artefakt[/gold]. Dodaj [red]Zwijanie z bólu[/red] do [gold]talii[/gold]."
           }
         ]
       },
       {
         "id": "OBSERVE",
         "description": "[sine][purple]...ah-   so beautiful.....\nSo it spins... still spinning around. Yes...\nOh! Was that..... a little splash...?\n....of course. You deserve some fun, too[/purple] [aqua]Mr. Spiral[/aqua][purple]... haha...\n... .......   ...[/purple][/sine]\n\nIt's time to go now.\nYou whisper something as you take your leave.\n\n[gold]“Thank you, Spiral.”[/gold]"
-      },
-      {
-        "id": "REACH_IN",
-        "description": "Foolishly, you plunge your arm into the center of the [aqua][sine]Spiraling Whirlpool[/sine][/aqua], disrupting the equilibrium. The water becomes [blue][jitter]frigid[/jitter][/blue] and grasps you, carving [jitter][red]Invisible Spirals[/red][/jitter] into your arm.\n\nYour fingers brush against something solid, and you grasp around in pain to finally wrestle a [gold]Relic[/gold] out of there!"
       }
     ]
   },

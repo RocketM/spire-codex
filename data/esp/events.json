@@ -336,17 +336,17 @@
       {
         "id": "SETTING_1",
         "title": "Opción 1",
-        "description": "Luchas contra un muñeco con [blue][Setting1Hp][/blue] PV. Obtienes [blue]1[/blue] [gold]poción[/gold] al azar."
+        "description": "Luchas contra un muñeco con [blue]75[/blue] PV. Obtienes [blue]1[/blue] [gold]poción[/gold] al azar."
       },
       {
         "id": "SETTING_2",
         "title": "Opción 2",
-        "description": "Luchas contra un muñeco con [blue][Setting2Hp][/blue] PV. [gold]Mejoras[/gold] [blue]2[/blue] cartas al azar."
+        "description": "Luchas contra un muñeco con [blue]150[/blue] PV. [gold]Mejoras[/gold] [blue]2[/blue] cartas al azar."
       },
       {
         "id": "SETTING_3",
         "title": "Opción 3",
-        "description": "Luchas contra un muñeco con [blue][Setting3Hp][/blue] PV. Obtienes una [gold]reliquia[/gold] al azar."
+        "description": "Luchas contra un muñeco con [blue]300[/blue] PV. Obtienes una [gold]reliquia[/gold] al azar."
       }
     ],
     "pages": [
@@ -361,17 +361,17 @@
           {
             "id": "SETTING_1",
             "title": "Opción 1",
-            "description": "Luchas contra un muñeco con [blue][Setting1Hp][/blue] PV. Obtienes [blue]1[/blue] [gold]poción[/gold] al azar."
+            "description": "Luchas contra un muñeco con [blue]75[/blue] PV. Obtienes [blue]1[/blue] [gold]poción[/gold] al azar."
           },
           {
             "id": "SETTING_2",
             "title": "Opción 2",
-            "description": "Luchas contra un muñeco con [blue][Setting2Hp][/blue] PV. [gold]Mejoras[/gold] [blue]2[/blue] cartas al azar."
+            "description": "Luchas contra un muñeco con [blue]150[/blue] PV. [gold]Mejoras[/gold] [blue]2[/blue] cartas al azar."
           },
           {
             "id": "SETTING_3",
             "title": "Opción 3",
-            "description": "Luchas contra un muñeco con [blue][Setting3Hp][/blue] PV. Obtienes una [gold]reliquia[/gold] al azar."
+            "description": "Luchas contra un muñeco con [blue]300[/blue] PV. Obtienes una [gold]reliquia[/gold] al azar."
           }
         ]
       },
@@ -533,11 +533,6 @@
         "description": "Obtienes [blue]3[/blue] cartas de El Defectuoso."
       },
       {
-        "id": "EQUALITY",
-        "title": "Igualdad",
-        "description": "Obtienes [gold]Fragmento prismático[/gold]."
-      },
-      {
         "id": "IRONCLAD",
         "title": "El mejor color es el rojo",
         "description": "Obtienes [blue]3[/blue] cartas de El Blindado."
@@ -571,11 +566,6 @@
             "id": "DEFECT",
             "title": "El mejor color es el azul",
             "description": "Obtienes [blue]3[/blue] cartas de El Defectuoso."
-          },
-          {
-            "id": "EQUALITY",
-            "title": "Igualdad",
-            "description": "Obtienes [gold]Fragmento prismático[/gold]."
           },
           {
             "id": "IRONCLAD",
@@ -2933,7 +2923,7 @@
       {
         "id": "HOLD_ON_0",
         "title": "Aguantar",
-        "description": "Pierdes [red]3+[/red] PV. La carta en la opción anterior se establece al azar."
+        "description": "Pierdes [red]3[/red] PV. La carta en la opción anterior se establece al azar."
       }
     ],
     "pages": [
@@ -2944,7 +2934,7 @@
           {
             "id": "HOLD_ON_1",
             "title": "Aguantar",
-            "description": "Pierdes [red]3+[/red] PV. La carta en la opción anterior se establece al azar."
+            "description": "Pierdes [red]4[/red] PV. La carta en la opción anterior se establece al azar."
           }
         ]
       },
@@ -2955,7 +2945,7 @@
           {
             "id": "HOLD_ON_2",
             "title": "Aguantar",
-            "description": "Pierdes [red]3+[/red] PV. La carta en la opción anterior se establece al azar."
+            "description": "Pierdes [red]5[/red] PV. La carta en la opción anterior se establece al azar."
           }
         ]
       },
@@ -2966,7 +2956,7 @@
           {
             "id": "HOLD_ON_3",
             "title": "Aguantar",
-            "description": "Pierdes [red]3+[/red] PV. La carta en la opción anterior se establece al azar."
+            "description": "Pierdes [red]6[/red] PV. La carta en la opción anterior se establece al azar."
           }
         ]
       },
@@ -2977,7 +2967,7 @@
           {
             "id": "HOLD_ON_4",
             "title": "Aguantar",
-            "description": "Pierdes [red]3+[/red] PV. La carta en la opción anterior se establece al azar."
+            "description": "Pierdes [red]7[/red] PV. La carta en la opción anterior se establece al azar."
           }
         ]
       },
@@ -2988,7 +2978,7 @@
           {
             "id": "HOLD_ON_5",
             "title": "Aguantar",
-            "description": "Pierdes [red]3+[/red] PV. La carta en la opción anterior se establece al azar."
+            "description": "Pierdes [red]8[/red] PV. La carta en la opción anterior se establece al azar."
           }
         ]
       },
@@ -2999,7 +2989,7 @@
           {
             "id": "HOLD_ON_6",
             "title": "Aguantar",
-            "description": "Pierdes [red]3+[/red] PV. La carta en la opción anterior se establece al azar."
+            "description": "Pierdes [red]9[/red] PV. La carta en la opción anterior se establece al azar."
           }
         ]
       },
@@ -3010,7 +3000,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Aguantar",
-            "description": "Pierdes [red]3+[/red] PV. La carta en la opción anterior se establece al azar."
+            "description": "Pierdes [red]10[/red] PV. La carta en la opción anterior se establece al azar."
           }
         ]
       },
@@ -3021,7 +3011,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Aguantar",
-            "description": "Pierdes [red]3+[/red] PV. La carta en la opción anterior se establece al azar."
+            "description": "Pierdes [red]11+[/red] PV. La carta en la opción anterior se establece al azar."
           }
         ]
       },
@@ -3037,7 +3027,7 @@
           {
             "id": "HOLD_ON_0",
             "title": "Aguantar",
-            "description": "Pierdes [red]3+[/red] PV. La carta en la opción anterior se establece al azar."
+            "description": "Pierdes [red]3[/red] PV. La carta en la opción anterior se establece al azar."
           }
         ]
       },
@@ -3063,11 +3053,6 @@
         "id": "DRINK",
         "title": "Beber",
         "description": "Recuperas [green]33% Max[/green] PV."
-      },
-      {
-        "id": "REACH_IN",
-        "title": "Tocar",
-        "description": "Obtienes una [gold]reliquia[/gold] al azar. Agregas [red]Retorcimiento[/red] al [gold]mazo[/gold]."
       }
     ],
     "pages": [
@@ -3088,21 +3073,12 @@
             "id": "DRINK",
             "title": "Beber",
             "description": "Recuperas [green]33% Max[/green] PV."
-          },
-          {
-            "id": "REACH_IN",
-            "title": "Tocar",
-            "description": "Obtienes una [gold]reliquia[/gold] al azar. Agregas [red]Retorcimiento[/red] al [gold]mazo[/gold]."
           }
         ]
       },
       {
         "id": "OBSERVE",
         "description": "[sine][purple]... Ah, qué hermoso...\nAsí que gira... sigue girando. Sí...\n¡Oh! Eso fue... ¿un pequeño chapoteo?\nClaro... Tú también mereces divertirte,[/purple] [aqua]Sr. Espiral[/aqua][purple]... Ja, ja...\n... ... ... ...[/purple][/sine]\n\nHay que continuar.\nSusurras algo mientras te despides.\n\n[gold]—Gracias, Espiral.[/gold]"
-      },
-      {
-        "id": "REACH_IN",
-        "description": "Por tu insensatez, hundes el brazo en el centro del [aqua][sine]remolino voraginoso[/sine][/aqua] y alteras el equilibrio. El agua se vuelve [blue][jitter]glacial[/jitter][/blue], te agarra y graba [jitter][red]espirales invisibles[/red][/jitter] en tu brazo.\n\nRozas algo sólido con los dedos y lo agarras con dolor para, al final, sacar una [gold]reliquia[/gold] de ahí."
       }
     ]
   },

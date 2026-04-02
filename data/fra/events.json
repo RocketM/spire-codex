@@ -336,17 +336,17 @@
       {
         "id": "SETTING_1",
         "title": "Niveau 1",
-        "description": "Affrontez un mannequin avec [blue][Setting1Hp][/blue] PV. Récupérez [blue]1[/blue] [gold]Potion[/gold] aléatoire."
+        "description": "Affrontez un mannequin avec [blue]75[/blue] PV. Récupérez [blue]1[/blue] [gold]Potion[/gold] aléatoire."
       },
       {
         "id": "SETTING_2",
         "title": "Niveau 2",
-        "description": "Affrontez un mannequin d'entraînement avec [blue][Setting2Hp][/blue] PV. [gold]Améliorez[/gold] [blue]2[/blue] cartes au hasard."
+        "description": "Affrontez un mannequin d'entraînement avec [blue]150[/blue] PV. [gold]Améliorez[/gold] [blue]2[/blue] cartes au hasard."
       },
       {
         "id": "SETTING_3",
         "title": "Niveau 3",
-        "description": "Affrontez un mannequin avec [blue][Setting3Hp][/blue] PV. Obtenez une [gold]Relique[/gold] aléatoire."
+        "description": "Affrontez un mannequin avec [blue]300[/blue] PV. Obtenez une [gold]Relique[/gold] aléatoire."
       }
     ],
     "pages": [
@@ -361,17 +361,17 @@
           {
             "id": "SETTING_1",
             "title": "Niveau 1",
-            "description": "Affrontez un mannequin avec [blue][Setting1Hp][/blue] PV. Récupérez [blue]1[/blue] [gold]Potion[/gold] aléatoire."
+            "description": "Affrontez un mannequin avec [blue]75[/blue] PV. Récupérez [blue]1[/blue] [gold]Potion[/gold] aléatoire."
           },
           {
             "id": "SETTING_2",
             "title": "Niveau 2",
-            "description": "Affrontez un mannequin d'entraînement avec [blue][Setting2Hp][/blue] PV. [gold]Améliorez[/gold] [blue]2[/blue] cartes au hasard."
+            "description": "Affrontez un mannequin d'entraînement avec [blue]150[/blue] PV. [gold]Améliorez[/gold] [blue]2[/blue] cartes au hasard."
           },
           {
             "id": "SETTING_3",
             "title": "Niveau 3",
-            "description": "Affrontez un mannequin avec [blue][Setting3Hp][/blue] PV. Obtenez une [gold]Relique[/gold] aléatoire."
+            "description": "Affrontez un mannequin avec [blue]300[/blue] PV. Obtenez une [gold]Relique[/gold] aléatoire."
           }
         ]
       },
@@ -533,11 +533,6 @@
         "description": "Obtenez [blue]3[/blue] cartes du Défectueux."
       },
       {
-        "id": "EQUALITY",
-        "title": "Égalité",
-        "description": "Obtenez [gold]Éclat prismatique[/gold]."
-      },
-      {
         "id": "IRONCLAD",
         "title": "Rouge",
         "description": "Obtenez [blue]3[/blue] cartes du Soldat de Fer."
@@ -571,11 +566,6 @@
             "id": "DEFECT",
             "title": "Bleu",
             "description": "Obtenez [blue]3[/blue] cartes du Défectueux."
-          },
-          {
-            "id": "EQUALITY",
-            "title": "Égalité",
-            "description": "Obtenez [gold]Éclat prismatique[/gold]."
           },
           {
             "id": "IRONCLAD",
@@ -2933,7 +2923,7 @@
       {
         "id": "HOLD_ON_0",
         "title": "Tenir bon",
-        "description": "Perdez [red]3+[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
+        "description": "Perdez [red]3[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
       }
     ],
     "pages": [
@@ -2944,7 +2934,7 @@
           {
             "id": "HOLD_ON_1",
             "title": "Tenir bon",
-            "description": "Perdez [red]3+[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
+            "description": "Perdez [red]4[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
           }
         ]
       },
@@ -2955,7 +2945,7 @@
           {
             "id": "HOLD_ON_2",
             "title": "Tenir bon",
-            "description": "Perdez [red]3+[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
+            "description": "Perdez [red]5[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
           }
         ]
       },
@@ -2966,7 +2956,7 @@
           {
             "id": "HOLD_ON_3",
             "title": "Tenir bon",
-            "description": "Perdez [red]3+[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
+            "description": "Perdez [red]6[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
           }
         ]
       },
@@ -2977,7 +2967,7 @@
           {
             "id": "HOLD_ON_4",
             "title": "Tenir bon",
-            "description": "Perdez [red]3+[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
+            "description": "Perdez [red]7[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
           }
         ]
       },
@@ -2988,7 +2978,7 @@
           {
             "id": "HOLD_ON_5",
             "title": "Tenir bon",
-            "description": "Perdez [red]3+[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
+            "description": "Perdez [red]8[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
           }
         ]
       },
@@ -2999,7 +2989,7 @@
           {
             "id": "HOLD_ON_6",
             "title": "Tenir bon",
-            "description": "Perdez [red]3+[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
+            "description": "Perdez [red]9[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
           }
         ]
       },
@@ -3010,7 +3000,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Tenir bon",
-            "description": "Perdez [red]3+[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
+            "description": "Perdez [red]10[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
           }
         ]
       },
@@ -3021,7 +3011,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Tenir bon",
-            "description": "Perdez [red]3+[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
+            "description": "Perdez [red]11+[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
           }
         ]
       },
@@ -3037,7 +3027,7 @@
           {
             "id": "HOLD_ON_0",
             "title": "Tenir bon",
-            "description": "Perdez [red]3+[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
+            "description": "Perdez [red]3[/red] PV. La carte ci-dessus est resélectionnée aléatoirement."
           }
         ]
       },
@@ -3063,11 +3053,6 @@
         "id": "DRINK",
         "title": "Boire l’eau",
         "description": "Récupérez [green]33% Max[/green] PV."
-      },
-      {
-        "id": "REACH_IN",
-        "title": "Plonger le bras",
-        "description": "Obtenez une [gold]Relique[/gold] aléatoire. Ajoutez [red]Souffrance[/red] à votre [gold]Deck[/gold]."
       }
     ],
     "pages": [
@@ -3088,21 +3073,12 @@
             "id": "DRINK",
             "title": "Boire l’eau",
             "description": "Récupérez [green]33% Max[/green] PV."
-          },
-          {
-            "id": "REACH_IN",
-            "title": "Plonger le bras",
-            "description": "Obtenez une [gold]Relique[/gold] aléatoire. Ajoutez [red]Souffrance[/red] à votre [gold]Deck[/gold]."
           }
         ]
       },
       {
         "id": "OBSERVE",
         "description": "[sine][purple]...ah — quelle splendeur.....\nEncore et encore... elle tourne et elle tourne. Oui...\nOh ! Un petit..... clapotis... ?\n....bien sûr. Toi aussi, [/purple][aqua]Monsieur Spirale[/aqua][purple], tu as besoin de t’amuser... haha...\n... .......   ...[/purple][/sine]\n\nIl est l’heure de partir.\nVous murmurez quelque chose en poursuivant votre chemin\n\n[gold]« Merci, Spirale. »[/gold]"
-      },
-      {
-        "id": "REACH_IN",
-        "description": "Vous plongez imprudemment votre bras au centre du [aqua][sine]Tourbillon aquatique[/sine][/aqua], perturbant son équilibre. L’eau devient [blue][jitter]glacée[/jitter][/blue] et vous saisit, gravant sur votre bras des [jitter][red]Spirales invisibles[/red][/jitter].\n\nVos doigts frôlent quelque chose de solide, et vous vous débattez douloureusement avant de parvenir à extraire une [gold]Relic[/gold] !"
       }
     ]
   },

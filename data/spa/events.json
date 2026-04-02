@@ -336,17 +336,17 @@
       {
         "id": "SETTING_1",
         "title": "Dificultad 1",
-        "description": "Pelea contra un muñeco de entrenamiento con [blue][Setting1Hp][/blue] PV. Consigue [blue]1[/blue] [gold]Poción[/gold] aleatoria."
+        "description": "Pelea contra un muñeco de entrenamiento con [blue]75[/blue] PV. Consigue [blue]1[/blue] [gold]Poción[/gold] aleatoria."
       },
       {
         "id": "SETTING_2",
         "title": "Dificultad 2",
-        "description": "Pelea contra un muñeco de entrenamiento con [blue][Setting2Hp][/blue] PV. [gold]Mejora[/gold] [blue]2[/blue] cartas aleatorias."
+        "description": "Pelea contra un muñeco de entrenamiento con [blue]150[/blue] PV. [gold]Mejora[/gold] [blue]2[/blue] cartas aleatorias."
       },
       {
         "id": "SETTING_3",
         "title": "Dificultad 3",
-        "description": "Pelea contra un muñeco de entrenamiento con [blue][Setting3Hp][/blue] PV. Consigue una [gold]Reliquia[/gold] aleatoria."
+        "description": "Pelea contra un muñeco de entrenamiento con [blue]300[/blue] PV. Consigue una [gold]Reliquia[/gold] aleatoria."
       }
     ],
     "pages": [
@@ -361,17 +361,17 @@
           {
             "id": "SETTING_1",
             "title": "Dificultad 1",
-            "description": "Pelea contra un muñeco de entrenamiento con [blue][Setting1Hp][/blue] PV. Consigue [blue]1[/blue] [gold]Poción[/gold] aleatoria."
+            "description": "Pelea contra un muñeco de entrenamiento con [blue]75[/blue] PV. Consigue [blue]1[/blue] [gold]Poción[/gold] aleatoria."
           },
           {
             "id": "SETTING_2",
             "title": "Dificultad 2",
-            "description": "Pelea contra un muñeco de entrenamiento con [blue][Setting2Hp][/blue] PV. [gold]Mejora[/gold] [blue]2[/blue] cartas aleatorias."
+            "description": "Pelea contra un muñeco de entrenamiento con [blue]150[/blue] PV. [gold]Mejora[/gold] [blue]2[/blue] cartas aleatorias."
           },
           {
             "id": "SETTING_3",
             "title": "Dificultad 3",
-            "description": "Pelea contra un muñeco de entrenamiento con [blue][Setting3Hp][/blue] PV. Consigue una [gold]Reliquia[/gold] aleatoria."
+            "description": "Pelea contra un muñeco de entrenamiento con [blue]300[/blue] PV. Consigue una [gold]Reliquia[/gold] aleatoria."
           }
         ]
       },
@@ -533,11 +533,6 @@
         "description": "Obtienes [blue]3[/blue] cartas del Defectuoso."
       },
       {
-        "id": "EQUALITY",
-        "title": "Igualdad",
-        "description": "Obtienes un [gold]Fragmento prismático[/gold]."
-      },
-      {
         "id": "IRONCLAD",
         "title": "Rojo",
         "description": "Obtienes [blue]3[/blue] cartas del Blindado."
@@ -571,11 +566,6 @@
             "id": "DEFECT",
             "title": "Azul",
             "description": "Obtienes [blue]3[/blue] cartas del Defectuoso."
-          },
-          {
-            "id": "EQUALITY",
-            "title": "Igualdad",
-            "description": "Obtienes un [gold]Fragmento prismático[/gold]."
           },
           {
             "id": "IRONCLAD",
@@ -2929,7 +2919,7 @@
       {
         "id": "HOLD_ON_0",
         "title": "Resistir",
-        "description": "Pierdes [red]3+[/red] PV. Aleatoriza la carta de la opción superior."
+        "description": "Pierdes [red]3[/red] PV. Aleatoriza la carta de la opción superior."
       }
     ],
     "pages": [
@@ -2940,7 +2930,7 @@
           {
             "id": "HOLD_ON_1",
             "title": "Resistir",
-            "description": "Pierdes [red]3+[/red] PV. Aleatoriza la carta de la opción superior."
+            "description": "Pierdes [red]4[/red] PV. Aleatoriza la carta de la opción superior."
           }
         ]
       },
@@ -2951,7 +2941,7 @@
           {
             "id": "HOLD_ON_2",
             "title": "Resistir",
-            "description": "Pierdes [red]3+[/red] PV. Aleatoriza la carta de la opción superior."
+            "description": "Pierdes [red]5[/red] PV. Aleatoriza la carta de la opción superior."
           }
         ]
       },
@@ -2962,7 +2952,7 @@
           {
             "id": "HOLD_ON_3",
             "title": "Resistir",
-            "description": "Pierdes [red]3+[/red] PV. Aleatoriza la carta de la opción superior."
+            "description": "Pierdes [red]6[/red] PV. Aleatoriza la carta de la opción superior."
           }
         ]
       },
@@ -2973,7 +2963,7 @@
           {
             "id": "HOLD_ON_4",
             "title": "Resistir",
-            "description": "Pierdes [red]3+[/red] PV. Aleatoriza la carta de la opción superior."
+            "description": "Pierdes [red]7[/red] PV. Aleatoriza la carta de la opción superior."
           }
         ]
       },
@@ -2984,7 +2974,7 @@
           {
             "id": "HOLD_ON_5",
             "title": "Resistir",
-            "description": "Pierdes [red]3+[/red] PV. Aleatoriza la carta de la opción superior."
+            "description": "Pierdes [red]8[/red] PV. Aleatoriza la carta de la opción superior."
           }
         ]
       },
@@ -2995,7 +2985,7 @@
           {
             "id": "HOLD_ON_6",
             "title": "Resistir",
-            "description": "Pierdes [red]3+[/red] PV. Aleatoriza la carta de la opción superior."
+            "description": "Pierdes [red]9[/red] PV. Aleatoriza la carta de la opción superior."
           }
         ]
       },
@@ -3006,7 +2996,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Resistir",
-            "description": "Pierdes [red]3+[/red] PV. Aleatoriza la carta de la opción superior."
+            "description": "Pierdes [red]10[/red] PV. Aleatoriza la carta de la opción superior."
           }
         ]
       },
@@ -3017,7 +3007,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Resistir",
-            "description": "Pierdes [red]3+[/red] PV. Aleatoriza la carta de la opción superior."
+            "description": "Pierdes [red]11+[/red] PV. Aleatoriza la carta de la opción superior."
           }
         ]
       },
@@ -3033,7 +3023,7 @@
           {
             "id": "HOLD_ON_0",
             "title": "Resistir",
-            "description": "Pierdes [red]3+[/red] PV. Aleatoriza la carta de la opción superior."
+            "description": "Pierdes [red]3[/red] PV. Aleatoriza la carta de la opción superior."
           }
         ]
       },
@@ -3059,11 +3049,6 @@
         "id": "DRINK",
         "title": "Beber",
         "description": "Restaura [green]33% Max[/green] PV."
-      },
-      {
-        "id": "REACH_IN",
-        "title": "Meter el brazo",
-        "description": "Obtén una [gold]Reliquia[/gold] aleatoria. Añade [red]Retorcimiento[/red] a tu [gold]Mazo[/gold]."
       }
     ],
     "pages": [
@@ -3084,21 +3069,12 @@
             "id": "DRINK",
             "title": "Beber",
             "description": "Restaura [green]33% Max[/green] PV."
-          },
-          {
-            "id": "REACH_IN",
-            "title": "Meter el brazo",
-            "description": "Obtén una [gold]Reliquia[/gold] aleatoria. Añade [red]Retorcimiento[/red] a tu [gold]Mazo[/gold]."
           }
         ]
       },
       {
         "id": "OBSERVE",
         "description": "[sine][purple]... Ah... Qué hermoso...\nVueltas... y más vueltas. Eso es...\n¡Oh! ¿Eso ha sido... un pequeño chapoteo?\nPues claro. Tu también te mereces algo de diversión,[/purple] [aqua]Sr. Espiral[/aqua][purple]... ja, ja...\n... ...  ...[/purple][/sine]\n\nEs hora de irse.\nSusurras algo mientras te preparas para partir:\n\n[gold]«Gracias, Espiral».[/gold]"
-      },
-      {
-        "id": "REACH_IN",
-        "description": "En un alarde de insensatez, metes el brazo en el [aqua][sine]remolino turbulento[/sine][/aqua], alterando el equilibrio. El agua se vuelve [blue][jitter]increíblemente fría[/jitter][/blue] y te agarra, marcando tu brazo con [jitter][red]espirales invisibles[/red][/jitter].\n\nRozas algo sólido con los dedos. Pese al dolor, consigues agarrarlo y tras forcejear un poco, ¡sacas una [gold]Reliquia[/gold] del remolino!"
       }
     ]
   },

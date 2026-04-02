@@ -336,17 +336,17 @@
       {
         "id": "SETTING_1",
         "title": "Setting 1",
-        "description": "Fight a [blue][Setting1Hp][/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
+        "description": "Fight a [blue]75[/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
       },
       {
         "id": "SETTING_2",
         "title": "Setting 2",
-        "description": "Fight a [blue][Setting2Hp][/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
+        "description": "Fight a [blue]150[/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
       },
       {
         "id": "SETTING_3",
         "title": "Setting 3",
-        "description": "Fight a [blue][Setting3Hp][/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
+        "description": "Fight a [blue]300[/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
       }
     ],
     "pages": [
@@ -361,17 +361,17 @@
           {
             "id": "SETTING_1",
             "title": "Setting 1",
-            "description": "Fight a [blue][Setting1Hp][/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
+            "description": "Fight a [blue]75[/blue] HP dummy. Procure [blue]1[/blue] random [gold]Potion[/gold]."
           },
           {
             "id": "SETTING_2",
             "title": "Setting 2",
-            "description": "Fight a [blue][Setting2Hp][/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
+            "description": "Fight a [blue]150[/blue] HP dummy. [gold]Upgrade[/gold] [blue]2[/blue] random cards."
           },
           {
             "id": "SETTING_3",
             "title": "Setting 3",
-            "description": "Fight a [blue][Setting3Hp][/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
+            "description": "Fight a [blue]300[/blue] HP dummy. Obtain a random [gold]Relic[/gold]."
           }
         ]
       },
@@ -533,11 +533,6 @@
         "description": "Obtain [blue]3[/blue] Defect cards."
       },
       {
-        "id": "EQUALITY",
-        "title": "Equality",
-        "description": "Obtain [gold]Prismatic Shard[/gold]."
-      },
-      {
         "id": "IRONCLAD",
         "title": "Red",
         "description": "Obtain [blue]3[/blue] Ironclad cards."
@@ -571,11 +566,6 @@
             "id": "DEFECT",
             "title": "Blue",
             "description": "Obtain [blue]3[/blue] Defect cards."
-          },
-          {
-            "id": "EQUALITY",
-            "title": "Equality",
-            "description": "Obtain [gold]Prismatic Shard[/gold]."
           },
           {
             "id": "IRONCLAD",
@@ -2933,7 +2923,7 @@
       {
         "id": "HOLD_ON_0",
         "title": "Hold On",
-        "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
+        "description": "Lose [red]3[/red] HP. The card in the above option is randomized."
       }
     ],
     "pages": [
@@ -2944,7 +2934,7 @@
           {
             "id": "HOLD_ON_1",
             "title": "Hold On",
-            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]4[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -2955,7 +2945,7 @@
           {
             "id": "HOLD_ON_2",
             "title": "Hold On",
-            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]5[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -2966,7 +2956,7 @@
           {
             "id": "HOLD_ON_3",
             "title": "Hold On",
-            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]6[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -2977,7 +2967,7 @@
           {
             "id": "HOLD_ON_4",
             "title": "Hold On",
-            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]7[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -2988,7 +2978,7 @@
           {
             "id": "HOLD_ON_5",
             "title": "Hold On",
-            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]8[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -2999,7 +2989,7 @@
           {
             "id": "HOLD_ON_6",
             "title": "Hold On",
-            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]9[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -3010,7 +3000,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Hold On",
-            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]10[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -3021,7 +3011,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Hold On",
-            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]11+[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -3037,7 +3027,7 @@
           {
             "id": "HOLD_ON_0",
             "title": "Hold On",
-            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]3[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -3063,11 +3053,6 @@
         "id": "DRINK",
         "title": "Drink",
         "description": "Heal [green]33% Max[/green] HP."
-      },
-      {
-        "id": "REACH_IN",
-        "title": "Reach In",
-        "description": "Obtain a random [gold]Relic[/gold]. Add [red]Writhe[/red] to your [gold]Deck[/gold]."
       }
     ],
     "pages": [
@@ -3088,21 +3073,12 @@
             "id": "DRINK",
             "title": "Drink",
             "description": "Heal [green]33% Max[/green] HP."
-          },
-          {
-            "id": "REACH_IN",
-            "title": "Reach In",
-            "description": "Obtain a random [gold]Relic[/gold]. Add [red]Writhe[/red] to your [gold]Deck[/gold]."
           }
         ]
       },
       {
         "id": "OBSERVE",
         "description": "[sine][purple]...ah-   so beautiful.....\nSo it spins... still spinning around. Yes...\nOh! Was that..... a little splash...?\n....of course. You deserve some fun, too[/purple] [aqua]Mr. Spiral[/aqua][purple]... haha...\n... .......   ...[/purple][/sine]\n\nIt's time to go now.\nYou whisper something as you take your leave.\n\n[gold]“Thank you, Spiral.”[/gold]"
-      },
-      {
-        "id": "REACH_IN",
-        "description": "Foolishly, you plunge your arm into the center of the [aqua][sine]Spiraling Whirlpool[/sine][/aqua], disrupting the equilibrium. The water becomes [blue][jitter]frigid[/jitter][/blue] and grasps you, carving [jitter][red]Invisible Spirals[/red][/jitter] into your arm.\n\nYour fingers brush against something solid, and you grasp around in pain to finally wrestle a [gold]Relic[/gold] out of there!"
       }
     ]
   },

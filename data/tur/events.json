@@ -336,17 +336,17 @@
       {
         "id": "SETTING_1",
         "title": "1. Ayar",
-        "description": "[blue][Setting1Hp][/blue] CP olan bir mankenle savaş. Rastgele [blue]1[/blue] [gold]İksir[/gold] elde et."
+        "description": "[blue]75[/blue] CP olan bir mankenle savaş. Rastgele [blue]1[/blue] [gold]İksir[/gold] elde et."
       },
       {
         "id": "SETTING_2",
         "title": "2. Ayar",
-        "description": "[blue][Setting2Hp][/blue] CP olan bir mankenle savaş. Rastgele [blue]2[/blue] kartı [gold]Geliştir[/gold]."
+        "description": "[blue]150[/blue] CP olan bir mankenle savaş. Rastgele [blue]2[/blue] kartı [gold]Geliştir[/gold]."
       },
       {
         "id": "SETTING_3",
         "title": "3. Ayar",
-        "description": "[blue][Setting3Hp][/blue] CP olan bir mankenle savaş. Rastgele bir [gold]Kalıntı[/gold] elde et."
+        "description": "[blue]300[/blue] CP olan bir mankenle savaş. Rastgele bir [gold]Kalıntı[/gold] elde et."
       }
     ],
     "pages": [
@@ -361,17 +361,17 @@
           {
             "id": "SETTING_1",
             "title": "1. Ayar",
-            "description": "[blue][Setting1Hp][/blue] CP olan bir mankenle savaş. Rastgele [blue]1[/blue] [gold]İksir[/gold] elde et."
+            "description": "[blue]75[/blue] CP olan bir mankenle savaş. Rastgele [blue]1[/blue] [gold]İksir[/gold] elde et."
           },
           {
             "id": "SETTING_2",
             "title": "2. Ayar",
-            "description": "[blue][Setting2Hp][/blue] CP olan bir mankenle savaş. Rastgele [blue]2[/blue] kartı [gold]Geliştir[/gold]."
+            "description": "[blue]150[/blue] CP olan bir mankenle savaş. Rastgele [blue]2[/blue] kartı [gold]Geliştir[/gold]."
           },
           {
             "id": "SETTING_3",
             "title": "3. Ayar",
-            "description": "[blue][Setting3Hp][/blue] CP olan bir mankenle savaş. Rastgele bir [gold]Kalıntı[/gold] elde et."
+            "description": "[blue]300[/blue] CP olan bir mankenle savaş. Rastgele bir [gold]Kalıntı[/gold] elde et."
           }
         ]
       },
@@ -533,11 +533,6 @@
         "description": "[blue]3[/blue] Arıza kartı elde et."
       },
       {
-        "id": "EQUALITY",
-        "title": "Eşitlik",
-        "description": "[gold]Prizmatik Cam Parçası[/gold]'nı elde et."
-      },
-      {
         "id": "IRONCLAD",
         "title": "Kırmızı",
         "description": "[blue]3[/blue] Demirkaplı kartı elde et."
@@ -571,11 +566,6 @@
             "id": "DEFECT",
             "title": "Mavi",
             "description": "[blue]3[/blue] Arıza kartı elde et."
-          },
-          {
-            "id": "EQUALITY",
-            "title": "Eşitlik",
-            "description": "[gold]Prizmatik Cam Parçası[/gold]'nı elde et."
           },
           {
             "id": "IRONCLAD",
@@ -2933,7 +2923,7 @@
       {
         "id": "HOLD_ON_0",
         "title": "Tutun",
-        "description": "[red]3+[/red] CP kaybet. Üstteki seçenekteki kart değişir."
+        "description": "[red]3[/red] CP kaybet. Üstteki seçenekteki kart değişir."
       }
     ],
     "pages": [
@@ -2944,7 +2934,7 @@
           {
             "id": "HOLD_ON_1",
             "title": "Tutun",
-            "description": "[red]3+[/red] CP kaybet. Üstteki seçenekteki kart değişir."
+            "description": "[red]4[/red] CP kaybet. Üstteki seçenekteki kart değişir."
           }
         ]
       },
@@ -2955,7 +2945,7 @@
           {
             "id": "HOLD_ON_2",
             "title": "Tutun",
-            "description": "[red]3+[/red] CP kaybet. Üstteki seçenekteki kart değişir."
+            "description": "[red]5[/red] CP kaybet. Üstteki seçenekteki kart değişir."
           }
         ]
       },
@@ -2966,7 +2956,7 @@
           {
             "id": "HOLD_ON_3",
             "title": "Tutun",
-            "description": "[red]3+[/red] CP kaybet. Üstteki seçenekteki kart değişir."
+            "description": "[red]6[/red] CP kaybet. Üstteki seçenekteki kart değişir."
           }
         ]
       },
@@ -2977,7 +2967,7 @@
           {
             "id": "HOLD_ON_4",
             "title": "Tutun",
-            "description": "[red]3+[/red] CP kaybet. Üstteki seçenekteki kart değişir."
+            "description": "[red]7[/red] CP kaybet. Üstteki seçenekteki kart değişir."
           }
         ]
       },
@@ -2988,7 +2978,7 @@
           {
             "id": "HOLD_ON_5",
             "title": "Tutun",
-            "description": "[red]3+[/red] CP kaybet. Üstteki seçenekteki kart değişir."
+            "description": "[red]8[/red] CP kaybet. Üstteki seçenekteki kart değişir."
           }
         ]
       },
@@ -2999,7 +2989,7 @@
           {
             "id": "HOLD_ON_6",
             "title": "Tutun",
-            "description": "[red]3+[/red] CP kaybet. Üstteki seçenekteki kart değişir."
+            "description": "[red]9[/red] CP kaybet. Üstteki seçenekteki kart değişir."
           }
         ]
       },
@@ -3010,7 +3000,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Tutun",
-            "description": "[red]3+[/red] CP kaybet. Üstteki seçenekteki kart değişir."
+            "description": "[red]10[/red] CP kaybet. Üstteki seçenekteki kart değişir."
           }
         ]
       },
@@ -3021,7 +3011,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Tutun",
-            "description": "[red]3+[/red] CP kaybet. Üstteki seçenekteki kart değişir."
+            "description": "[red]11+[/red] CP kaybet. Üstteki seçenekteki kart değişir."
           }
         ]
       },
@@ -3037,7 +3027,7 @@
           {
             "id": "HOLD_ON_0",
             "title": "Tutun",
-            "description": "[red]3+[/red] CP kaybet. Üstteki seçenekteki kart değişir."
+            "description": "[red]3[/red] CP kaybet. Üstteki seçenekteki kart değişir."
           }
         ]
       },
@@ -3063,11 +3053,6 @@
         "id": "DRINK",
         "title": "İç",
         "description": "[green]33% Max[/green] CP iyileştir."
-      },
-      {
-        "id": "REACH_IN",
-        "title": "Uzan",
-        "description": "Rastgele bir [gold]Kalıntı[/gold] elde et. [gold]Deste[/gold]'ne bir [red]Kıvranma[/red] ekle."
       }
     ],
     "pages": [
@@ -3088,21 +3073,12 @@
             "id": "DRINK",
             "title": "İç",
             "description": "[green]33% Max[/green] CP iyileştir."
-          },
-          {
-            "id": "REACH_IN",
-            "title": "Uzan",
-            "description": "Rastgele bir [gold]Kalıntı[/gold] elde et. [gold]Deste[/gold]'ne bir [red]Kıvranma[/red] ekle."
           }
         ]
       },
       {
         "id": "OBSERVE",
         "description": "[sine][purple]...ah ne kadar da güzel.....\nDönüyor... hâlâ dönüyor. Evet...\nAh! Bu da neydi? Küçük bir sıçrama mı?\nElbette. Sen de biraz eğlenceyi hak ediyorsun[/purple] [aqua]Bay Sarmal[/aqua][purple]... haha...\n... ......... ...[/purple][/sine]\n\nArtık gitme vakti.\nAyrılırken fısıldarsın:\n\n[gold]“Teşekkür ederim Sarmal.”[/gold]"
-      },
-      {
-        "id": "REACH_IN",
-        "description": "Aptalca bir hamleyle kolunu [aqua][sine]Sarmal Girdap[/sine][/aqua]'ın merkezine daldırır, dengeyi bozarsın. Su [blue][jitter]buz gibi[/jitter][/blue] olur ve seni kavrayarak koluna [jitter][red]Görünmez Spiraller[/red][/jitter] oyar.\n\nParmakların sert bir şeye sürtünür; acı içinde etrafı yoklar ve sonunda oradan bir [gold]Kalıntı[/gold] söküp çıkarırsın!"
       }
     ]
   },

@@ -336,17 +336,17 @@
       {
         "id": "SETTING_1",
         "title": "1로 설정",
-        "description": "체력이 [blue][Setting1Hp][/blue]인 훈련 인형과 싸웁니다. 무작위 [gold]포션[/gold]을 [blue]1[/blue]개 생성합니다."
+        "description": "체력이 [blue]75[/blue]인 훈련 인형과 싸웁니다. 무작위 [gold]포션[/gold]을 [blue]1[/blue]개 생성합니다."
       },
       {
         "id": "SETTING_2",
         "title": "2로 설정",
-        "description": "체력이 [blue][Setting2Hp][/blue]인 훈련 인형과 싸웁니다. 무작위 카드를 [blue]2[/blue]장 [gold]강화[/gold]합니다."
+        "description": "체력이 [blue]150[/blue]인 훈련 인형과 싸웁니다. 무작위 카드를 [blue]2[/blue]장 [gold]강화[/gold]합니다."
       },
       {
         "id": "SETTING_3",
         "title": "3으로 설정",
-        "description": "체력이 [blue][Setting3Hp][/blue]인 훈련 인형과 싸웁니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
+        "description": "체력이 [blue]300[/blue]인 훈련 인형과 싸웁니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
       }
     ],
     "pages": [
@@ -361,17 +361,17 @@
           {
             "id": "SETTING_1",
             "title": "1로 설정",
-            "description": "체력이 [blue][Setting1Hp][/blue]인 훈련 인형과 싸웁니다. 무작위 [gold]포션[/gold]을 [blue]1[/blue]개 생성합니다."
+            "description": "체력이 [blue]75[/blue]인 훈련 인형과 싸웁니다. 무작위 [gold]포션[/gold]을 [blue]1[/blue]개 생성합니다."
           },
           {
             "id": "SETTING_2",
             "title": "2로 설정",
-            "description": "체력이 [blue][Setting2Hp][/blue]인 훈련 인형과 싸웁니다. 무작위 카드를 [blue]2[/blue]장 [gold]강화[/gold]합니다."
+            "description": "체력이 [blue]150[/blue]인 훈련 인형과 싸웁니다. 무작위 카드를 [blue]2[/blue]장 [gold]강화[/gold]합니다."
           },
           {
             "id": "SETTING_3",
             "title": "3으로 설정",
-            "description": "체력이 [blue][Setting3Hp][/blue]인 훈련 인형과 싸웁니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
+            "description": "체력이 [blue]300[/blue]인 훈련 인형과 싸웁니다. 무작위 [gold]유물[/gold]을 1개 얻습니다."
           }
         ]
       },
@@ -533,11 +533,6 @@
         "description": "디펙트 카드를 [blue]3[/blue]장 얻습니다."
       },
       {
-        "id": "EQUALITY",
-        "title": "평등",
-        "description": "[gold]프리즘 조각[/gold]을 얻습니다."
-      },
-      {
         "id": "IRONCLAD",
         "title": "빨간색",
         "description": "아이언클래드 카드를 [blue]3[/blue]장 얻습니다."
@@ -571,11 +566,6 @@
             "id": "DEFECT",
             "title": "파란색",
             "description": "디펙트 카드를 [blue]3[/blue]장 얻습니다."
-          },
-          {
-            "id": "EQUALITY",
-            "title": "평등",
-            "description": "[gold]프리즘 조각[/gold]을 얻습니다."
           },
           {
             "id": "IRONCLAD",
@@ -2933,7 +2923,7 @@
       {
         "id": "HOLD_ON_0",
         "title": "버틴다",
-        "description": "체력을 [red]3+[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
+        "description": "체력을 [red]3[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
       }
     ],
     "pages": [
@@ -2944,7 +2934,7 @@
           {
             "id": "HOLD_ON_1",
             "title": "버틴다",
-            "description": "체력을 [red]3+[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
+            "description": "체력을 [red]4[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
           }
         ]
       },
@@ -2955,7 +2945,7 @@
           {
             "id": "HOLD_ON_2",
             "title": "버틴다",
-            "description": "체력을 [red]3+[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
+            "description": "체력을 [red]5[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
           }
         ]
       },
@@ -2966,7 +2956,7 @@
           {
             "id": "HOLD_ON_3",
             "title": "버틴다",
-            "description": "체력을 [red]3+[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
+            "description": "체력을 [red]6[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
           }
         ]
       },
@@ -2977,7 +2967,7 @@
           {
             "id": "HOLD_ON_4",
             "title": "버틴다",
-            "description": "체력을 [red]3+[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
+            "description": "체력을 [red]7[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
           }
         ]
       },
@@ -2988,7 +2978,7 @@
           {
             "id": "HOLD_ON_5",
             "title": "버틴다",
-            "description": "체력을 [red]3+[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
+            "description": "체력을 [red]8[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
           }
         ]
       },
@@ -2999,7 +2989,7 @@
           {
             "id": "HOLD_ON_6",
             "title": "버틴다",
-            "description": "체력을 [red]3+[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
+            "description": "체력을 [red]9[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
           }
         ]
       },
@@ -3010,7 +3000,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "버틴다",
-            "description": "체력을 [red]3+[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
+            "description": "체력을 [red]10[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
           }
         ]
       },
@@ -3021,7 +3011,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "버틴다",
-            "description": "체력을 [red]3+[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
+            "description": "체력을 [red]11+[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
           }
         ]
       },
@@ -3037,7 +3027,7 @@
           {
             "id": "HOLD_ON_0",
             "title": "버틴다",
-            "description": "체력을 [red]3+[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
+            "description": "체력을 [red]3[/red] 잃습니다. 상단 선택지의 카드가 무작위로 변경됩니다."
           }
         ]
       },
@@ -3063,11 +3053,6 @@
         "id": "DRINK",
         "title": "마신다",
         "description": "체력을 [green]33% Max[/green] 회복합니다."
-      },
-      {
-        "id": "REACH_IN",
-        "title": "손을 뻗는다",
-        "description": "무작위 [gold]유물[/gold]을 1개 얻습니다. [gold]덱[/gold]에 [red]몸부림[/red]을 추가합니다."
       }
     ],
     "pages": [
@@ -3088,21 +3073,12 @@
             "id": "DRINK",
             "title": "마신다",
             "description": "체력을 [green]33% Max[/green] 회복합니다."
-          },
-          {
-            "id": "REACH_IN",
-            "title": "손을 뻗는다",
-            "description": "무작위 [gold]유물[/gold]을 1개 얻습니다. [gold]덱[/gold]에 [red]몸부림[/red]을 추가합니다."
           }
         ]
       },
       {
         "id": "OBSERVE",
         "description": "[sine][purple]...아아, 정말 아름답네요.....\n소용돌이는 돌고... 계속 돌고 있습니다. 그래요...\n오! 방금..... 물이 튄 거였나요...?\n...당연하죠. 당신도 함께 놀 자격이 있답니다,[/purple] [aqua]소용돌이 씨[/aqua][purple]...하하...\n... ....... ...[/purple][/sine]\n\n이제 가야 할 시간입니다.\n당신은 자리를 떠나며 무언가 중얼거립니다.\n\n[gold]“고마워요, 소용돌이.”[/gold]"
-      },
-      {
-        "id": "REACH_IN",
-        "description": "당신은 어리석게도, [aqua][sine]나선형 소용돌이[/sine][/aqua]의 중심부에 팔을 넣어 소용돌이의 균형을 깨뜨립니다. 물은 [blue][jitter]얼어붙듯[/jitter][/blue] 차가워지며 당신을 붙잡고, [jitter][red]보이지 않는 소용돌이[/red][/jitter]를 당신의 팔에 새깁니다.\n\n손가락 끝이 무언가 단단한 것에 닿자, 당신은 괴롭게 손을 움직여가며 마침내 물속에서 [gold]유물[/gold]을 끄집어냈습니다!"
       }
     ]
   },

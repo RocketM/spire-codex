@@ -550,6 +550,98 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict, ti
     return result
 
 
+def _fix_battleworn_dummy(event: dict, localization: dict) -> dict:
+    """Fix Battleworn Dummy — resolve Setting HP values from BattleFriend monster models."""
+    if event["id"] != "BATTLEWORN_DUMMY":
+        return event
+    # HP values from BattleFriendV1/V2/V3.MinInitialHp (single-player base values)
+    hp_vars = {"Setting1Hp": 75, "Setting2Hp": 150, "Setting3Hp": 300}
+
+    def resolve_opt(page_id: str, opt_id: str) -> str | None:
+        key = f"BATTLEWORN_DUMMY.pages.{page_id}.options.{opt_id}.description"
+        template = localization.get(key, "")
+        if not template:
+            return None
+        return strip_rich_tags(resolve_description(template, hp_vars))
+
+    for opt in (event.get("options") or []):
+        desc = resolve_opt("INITIAL", opt["id"])
+        if desc:
+            opt["description"] = desc
+    for page in (event.get("pages") or []):
+        for opt in (page.get("options") or []):
+            desc = resolve_opt(page.get("id", ""), opt["id"])
+            if desc:
+                opt["description"] = desc
+    return event
+
+
+def _fix_spiraling_whirlpool(event: dict) -> dict:
+    """Remove ghost REACH_IN option — removed from C# but still in localization."""
+    if event["id"] != "SPIRALING_WHIRLPOOL":
+        return event
+    valid_options = {"OBSERVE", "DRINK"}
+    if event.get("options"):
+        event["options"] = [o for o in event["options"] if o["id"] in valid_options]
+    for page in (event.get("pages") or []):
+        if page.get("options"):
+            page["options"] = [o for o in page["options"] if o["id"] in valid_options]
+    # Remove the REACH_IN result page
+    if event.get("pages"):
+        event["pages"] = [p for p in event["pages"] if p["id"] != "REACH_IN"]
+        if len(event["pages"]) <= 1:
+            event["pages"] = None
+    return event
+
+
+def _fix_colorful_philosophers(event: dict) -> dict:
+    """Remove ghost EQUALITY option — removed from C# but still in localization."""
+    if event["id"] != "COLORFUL_PHILOSOPHERS":
+        return event
+    if event.get("options"):
+        event["options"] = [o for o in event["options"] if o["id"] != "EQUALITY"]
+    for page in (event.get("pages") or []):
+        if page.get("options"):
+            page["options"] = [o for o in page["options"] if o["id"] != "EQUALITY"]
+    return event
+
+
+def _fix_slippery_bridge(event: dict, localization: dict) -> dict:
+    """Fix Slippery Bridge — HP loss starts at 3 and increases by 1 per Hold On."""
+    if event["id"] != "SLIPPERY_BRIDGE":
+        return event
+    # Damage = 3 + NumberOfHoldOns. The option on each page shows the NEXT step's damage.
+    # INITIAL → HOLD_ON_0 costs 3, HOLD_ON_0 page → HOLD_ON_1 costs 4, etc.
+    page_damage = {
+        "INITIAL": 3, "HOLD_ON_0": 4, "HOLD_ON_1": 5, "HOLD_ON_2": 6,
+        "HOLD_ON_3": 7, "HOLD_ON_4": 8, "HOLD_ON_5": 9, "HOLD_ON_6": 10,
+        "HOLD_ON_LOOP": 11,
+    }
+
+    def resolve_hold_on(page_id: str, opt_id: str) -> str | None:
+        key = f"SLIPPERY_BRIDGE.pages.{page_id}.options.{opt_id}.description"
+        template = localization.get(key, "")
+        if not template:
+            return None
+        dmg = page_damage.get(page_id, 11)
+        suffix = "+" if dmg >= 11 else ""
+        return strip_rich_tags(resolve_description(template, {"HpLoss": f"{dmg}{suffix}"}))
+
+    for opt in (event.get("options") or []):
+        if opt["id"].startswith("HOLD_ON"):
+            desc = resolve_hold_on("INITIAL", opt["id"])
+            if desc:
+                opt["description"] = desc
+    for page in (event.get("pages") or []):
+        page_id = page.get("id", "")
+        for opt in (page.get("options") or []):
+            if opt["id"].startswith("HOLD_ON"):
+                desc = resolve_hold_on(page_id, opt["id"])
+                if desc:
+                    opt["description"] = desc
+    return event
+
+
 def _fix_abyssal_baths(event: dict, localization: dict) -> dict:
     """Fix Abyssal Baths — damage starts at 3 and increases by 1 after each immerse."""
     if event["id"] != "ABYSSAL_BATHS":
@@ -620,6 +712,10 @@ def parse_all_events(loc_dir: Path, data_dir: Path) -> list[dict]:
         if event:
             event = _fix_tablet_of_truth(event)
             event = _fix_abyssal_baths(event, localization)
+            event = _fix_battleworn_dummy(event, localization)
+            event = _fix_spiraling_whirlpool(event)
+            event = _fix_colorful_philosophers(event)
+            event = _fix_slippery_bridge(event, localization)
             events.append(event)
     return events
 

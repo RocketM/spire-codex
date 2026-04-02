@@ -336,17 +336,17 @@
       {
         "id": "SETTING_1",
         "title": "第1档",
-        "description": "与一个[blue][Setting1Hp][/blue]点生命值的假人战斗。随机获取[blue]1[/blue]瓶[gold]药水[/gold]。"
+        "description": "与一个[blue]75[/blue]点生命值的假人战斗。随机获取[blue]1[/blue]瓶[gold]药水[/gold]。"
       },
       {
         "id": "SETTING_2",
         "title": "第2档",
-        "description": "与一个[blue][Setting2Hp][/blue]点生命值的假人战斗。随机[gold]升级[/gold][blue]2[/blue]张牌。"
+        "description": "与一个[blue]150[/blue]点生命值的假人战斗。随机[gold]升级[/gold][blue]2[/blue]张牌。"
       },
       {
         "id": "SETTING_3",
         "title": "第3档",
-        "description": "与一个[blue][Setting3Hp][/blue]点生命值的假人战斗。获取一件随机[gold]遗物[/gold]。"
+        "description": "与一个[blue]300[/blue]点生命值的假人战斗。获取一件随机[gold]遗物[/gold]。"
       }
     ],
     "pages": [
@@ -361,17 +361,17 @@
           {
             "id": "SETTING_1",
             "title": "第1档",
-            "description": "与一个[blue][Setting1Hp][/blue]点生命值的假人战斗。随机获取[blue]1[/blue]瓶[gold]药水[/gold]。"
+            "description": "与一个[blue]75[/blue]点生命值的假人战斗。随机获取[blue]1[/blue]瓶[gold]药水[/gold]。"
           },
           {
             "id": "SETTING_2",
             "title": "第2档",
-            "description": "与一个[blue][Setting2Hp][/blue]点生命值的假人战斗。随机[gold]升级[/gold][blue]2[/blue]张牌。"
+            "description": "与一个[blue]150[/blue]点生命值的假人战斗。随机[gold]升级[/gold][blue]2[/blue]张牌。"
           },
           {
             "id": "SETTING_3",
             "title": "第3档",
-            "description": "与一个[blue][Setting3Hp][/blue]点生命值的假人战斗。获取一件随机[gold]遗物[/gold]。"
+            "description": "与一个[blue]300[/blue]点生命值的假人战斗。获取一件随机[gold]遗物[/gold]。"
           }
         ]
       },
@@ -533,11 +533,6 @@
         "description": "获得[blue]3[/blue]张故障机器人的卡牌。"
       },
       {
-        "id": "EQUALITY",
-        "title": "平等",
-        "description": "获得[gold]棱镜碎片[/gold]。"
-      },
-      {
         "id": "IRONCLAD",
         "title": "红色",
         "description": "获得[blue]3[/blue]张铁甲战士的卡牌。"
@@ -571,11 +566,6 @@
             "id": "DEFECT",
             "title": "蓝色",
             "description": "获得[blue]3[/blue]张故障机器人的卡牌。"
-          },
-          {
-            "id": "EQUALITY",
-            "title": "平等",
-            "description": "获得[gold]棱镜碎片[/gold]。"
           },
           {
             "id": "IRONCLAD",
@@ -2933,7 +2923,7 @@
       {
         "id": "HOLD_ON_0",
         "title": "再撑一会",
-        "description": "失去[red]3+[/red]点生命。重新随机上方选项中的卡牌。"
+        "description": "失去[red]3[/red]点生命。重新随机上方选项中的卡牌。"
       }
     ],
     "pages": [
@@ -2944,7 +2934,7 @@
           {
             "id": "HOLD_ON_1",
             "title": "再撑一会",
-            "description": "失去[red]3+[/red]点生命。重新随机上方选项中的卡牌。"
+            "description": "失去[red]4[/red]点生命。重新随机上方选项中的卡牌。"
           }
         ]
       },
@@ -2955,7 +2945,7 @@
           {
             "id": "HOLD_ON_2",
             "title": "再撑一会",
-            "description": "失去[red]3+[/red]点生命。重新随机上方选项中的卡牌。"
+            "description": "失去[red]5[/red]点生命。重新随机上方选项中的卡牌。"
           }
         ]
       },
@@ -2966,7 +2956,7 @@
           {
             "id": "HOLD_ON_3",
             "title": "再撑一会",
-            "description": "失去[red]3+[/red]点生命。重新随机上方选项中的卡牌。"
+            "description": "失去[red]6[/red]点生命。重新随机上方选项中的卡牌。"
           }
         ]
       },
@@ -2977,7 +2967,7 @@
           {
             "id": "HOLD_ON_4",
             "title": "再撑一会",
-            "description": "失去[red]3+[/red]点生命。重新随机上方选项中的卡牌。"
+            "description": "失去[red]7[/red]点生命。重新随机上方选项中的卡牌。"
           }
         ]
       },
@@ -2988,7 +2978,7 @@
           {
             "id": "HOLD_ON_5",
             "title": "再撑一会",
-            "description": "失去[red]3+[/red]点生命。重新随机上方选项中的卡牌。"
+            "description": "失去[red]8[/red]点生命。重新随机上方选项中的卡牌。"
           }
         ]
       },
@@ -2999,7 +2989,7 @@
           {
             "id": "HOLD_ON_6",
             "title": "再撑一会",
-            "description": "失去[red]3+[/red]点生命。重新随机上方选项中的卡牌。"
+            "description": "失去[red]9[/red]点生命。重新随机上方选项中的卡牌。"
           }
         ]
       },
@@ -3010,7 +3000,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "再撑一会",
-            "description": "失去[red]3+[/red]点生命。重新随机上方选项中的卡牌。"
+            "description": "失去[red]10[/red]点生命。重新随机上方选项中的卡牌。"
           }
         ]
       },
@@ -3021,7 +3011,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "再撑一会",
-            "description": "失去[red]3+[/red]点生命。重新随机上方选项中的卡牌。"
+            "description": "失去[red]11+[/red]点生命。重新随机上方选项中的卡牌。"
           }
         ]
       },
@@ -3037,7 +3027,7 @@
           {
             "id": "HOLD_ON_0",
             "title": "再撑一会",
-            "description": "失去[red]3+[/red]点生命。重新随机上方选项中的卡牌。"
+            "description": "失去[red]3[/red]点生命。重新随机上方选项中的卡牌。"
           }
         ]
       },
@@ -3063,11 +3053,6 @@
         "id": "DRINK",
         "title": "饮用",
         "description": "回复[green]33% Max[/green]点生命。"
-      },
-      {
-        "id": "REACH_IN",
-        "title": "Reach In",
-        "description": "获得一件随机[gold]遗物[/gold]。 Add [red]Writhe[/red]到你的[gold]牌组[/gold]。"
       }
     ],
     "pages": [
@@ -3088,21 +3073,12 @@
             "id": "DRINK",
             "title": "饮用",
             "description": "回复[green]33% Max[/green]点生命。"
-          },
-          {
-            "id": "REACH_IN",
-            "title": "Reach In",
-            "description": "获得一件随机[gold]遗物[/gold]。 Add [red]Writhe[/red]到你的[gold]牌组[/gold]。"
           }
         ]
       },
       {
         "id": "OBSERVE",
         "description": "[sine][purple]…啊~ 如此美丽…\n它在旋转…不停地旋转。是啊……\n噢！刚才那是…一点小水花吗…？\n…这也正常。你也要寻点乐子，对吧，[aqua]涡旋先生[/aqua]…哈哈…\n... .......   ...[/purple][/sine]\n\n是时候离开了。\n你低声呢喃，转身离去。\n\n[gold]“谢谢你，涡旋。”[/gold]"
-      },
-      {
-        "id": "REACH_IN",
-        "description": "你愚蠢地将手臂探入[aqua][sine]螺旋漩涡[/sine][/aqua]的中心，打破了这里的平衡。\n泉水瞬间变得[blue][jitter]冰冷刺骨[/jitter][/blue]并将你死死攫住，在你手臂上凿刻出[jitter][red]无形涡旋[/red][/jitter]。\n指尖触碰到了某种硬物，你在剧痛中一阵摸索，总算从中拽出了一件[gold]遗物[/gold]！"
       }
     ]
   },

@@ -92,17 +92,17 @@
       {
         "id": "SETTING_1",
         "title": "การตั้งค่า 1",
-        "description": "ต่อสู้กับหุ่นฝึกซ้อม [blue][Setting1Hp][/blue] HP จัดหา[gold]ขวดยา[/gold] [blue]1[/blue] ขวดแบบสุ่ม"
+        "description": "ต่อสู้กับหุ่นฝึกซ้อม [blue]75[/blue] HP จัดหา[gold]ขวดยา[/gold] [blue]1[/blue] ขวดแบบสุ่ม"
       },
       {
         "id": "SETTING_2",
         "title": "การตั้งค่า 2",
-        "description": "ต่อสู้กับหุ่นฝึกซ้อม [blue][Setting2Hp][/blue] HP พัฒนาการ์ด [blue]2[/blue] ใบแบบสุ่ม"
+        "description": "ต่อสู้กับหุ่นฝึกซ้อม [blue]150[/blue] HP พัฒนาการ์ด [blue]2[/blue] ใบแบบสุ่ม"
       },
       {
         "id": "SETTING_3",
         "title": "การตั้งค่า 3",
-        "description": "ต่อสู้กับหุ่นฝึกซ้อม [blue][Setting3Hp][/blue] HP ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
+        "description": "ต่อสู้กับหุ่นฝึกซ้อม [blue]300[/blue] HP ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
       }
     ],
     "pages": [
@@ -117,17 +117,17 @@
           {
             "id": "SETTING_1",
             "title": "การตั้งค่า 1",
-            "description": "ต่อสู้กับหุ่นฝึกซ้อม [blue][Setting1Hp][/blue] HP จัดหา[gold]ขวดยา[/gold] [blue]1[/blue] ขวดแบบสุ่ม"
+            "description": "ต่อสู้กับหุ่นฝึกซ้อม [blue]75[/blue] HP จัดหา[gold]ขวดยา[/gold] [blue]1[/blue] ขวดแบบสุ่ม"
           },
           {
             "id": "SETTING_2",
             "title": "การตั้งค่า 2",
-            "description": "ต่อสู้กับหุ่นฝึกซ้อม [blue][Setting2Hp][/blue] HP พัฒนาการ์ด [blue]2[/blue] ใบแบบสุ่ม"
+            "description": "ต่อสู้กับหุ่นฝึกซ้อม [blue]150[/blue] HP พัฒนาการ์ด [blue]2[/blue] ใบแบบสุ่ม"
           },
           {
             "id": "SETTING_3",
             "title": "การตั้งค่า 3",
-            "description": "ต่อสู้กับหุ่นฝึกซ้อม [blue][Setting3Hp][/blue] HP ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
+            "description": "ต่อสู้กับหุ่นฝึกซ้อม [blue]300[/blue] HP ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
           }
         ]
       },
@@ -289,11 +289,6 @@
         "description": "ได้รับการ์ดนักเวทแปรพักตร์ [blue]3[/blue] ใบ"
       },
       {
-        "id": "EQUALITY",
-        "title": "เท่าเทียมกัน",
-        "description": ""
-      },
-      {
         "id": "IRONCLAD",
         "title": "แดง",
         "description": "ได้รับการ์ดนักรบเกราะเหล็ก [blue]3[/blue] ใบ"
@@ -327,11 +322,6 @@
             "id": "DEFECT",
             "title": "ฟ้า",
             "description": "ได้รับการ์ดนักเวทแปรพักตร์ [blue]3[/blue] ใบ"
-          },
-          {
-            "id": "EQUALITY",
-            "title": "เท่าเทียมกัน",
-            "description": ""
           },
           {
             "id": "IRONCLAD",
@@ -1281,7 +1271,7 @@
       {
         "id": "HOLD_ON_0",
         "title": "จับไว้",
-        "description": "เสีย [red]3+[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
+        "description": "เสีย [red]3[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
       }
     ],
     "pages": [
@@ -1292,7 +1282,7 @@
           {
             "id": "HOLD_ON_1",
             "title": "จับไว้",
-            "description": "เสีย [red]3+[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
+            "description": "เสีย [red]4[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
           }
         ]
       },
@@ -1303,7 +1293,7 @@
           {
             "id": "HOLD_ON_2",
             "title": "จับไว้",
-            "description": "เสีย [red]3+[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
+            "description": "เสีย [red]5[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
           }
         ]
       },
@@ -1314,7 +1304,7 @@
           {
             "id": "HOLD_ON_3",
             "title": "จับไว้",
-            "description": "เสีย [red]3+[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
+            "description": "เสีย [red]6[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
           }
         ]
       },
@@ -1325,7 +1315,7 @@
           {
             "id": "HOLD_ON_4",
             "title": "จับไว้",
-            "description": "เสีย [red]3+[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
+            "description": "เสีย [red]7[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
           }
         ]
       },
@@ -1336,7 +1326,7 @@
           {
             "id": "HOLD_ON_5",
             "title": "จับไว้",
-            "description": "เสีย [red]3+[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
+            "description": "เสีย [red]8[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
           }
         ]
       },
@@ -1347,7 +1337,7 @@
           {
             "id": "HOLD_ON_6",
             "title": "จับไว้",
-            "description": "เสีย [red]3+[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
+            "description": "เสีย [red]9[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
           }
         ]
       },
@@ -1358,7 +1348,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "จับไว้",
-            "description": "เสีย [red]3+[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
+            "description": "เสีย [red]10[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
           }
         ]
       },
@@ -1369,7 +1359,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "จับไว้",
-            "description": "เสีย [red]3+[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
+            "description": "เสีย [red]11+[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
           }
         ]
       },
@@ -1385,7 +1375,7 @@
           {
             "id": "HOLD_ON_0",
             "title": "จับไว้",
-            "description": "เสีย [red]3+[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
+            "description": "เสีย [red]3[/red] HP สุ่มการ์ดในตัวเลือกด้านบน"
           }
         ]
       },
@@ -1411,11 +1401,6 @@
         "id": "DRINK",
         "title": "ดื่ม",
         "description": "ฟื้นฟู [green]33% Max[/green] HP"
-      },
-      {
-        "id": "REACH_IN",
-        "title": "REACH_IN",
-        "description": "ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม เพิ่ม[red]อาการชัก[/red]เข้า[gold]กองการ์ด[/gold]"
       }
     ],
     "pages": null
