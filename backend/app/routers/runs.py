@@ -83,10 +83,32 @@ def list_runs(request: Request, character: str | None = None, win: str | None = 
 def get_shared_run(run_hash: str, request: Request):
     """Retrieve a shared run by its hash."""
     run_file = _data_dir / "runs" / f"{run_hash}.json"
-    if not run_file.exists():
-        raise HTTPException(status_code=404, detail="Run not found")
-    with open(run_file, "r", encoding="utf-8") as f:
-        return json.load(f)
+    if run_file.exists():
+        with open(run_file, "r", encoding="utf-8") as f:
+            return json.load(f)
+
+    # Fallback for multiplayer: find the run in DB, get its seed/start_time,
+    # then look for any sibling player's file with the same seed
+    from ..services.runs_db import get_conn
+    with get_conn() as conn:
+        row = conn.execute("SELECT seed, character FROM runs WHERE run_hash = ?", (run_hash,)).fetchone()
+        if not row:
+            raise HTTPException(status_code=404, detail="Run not found")
+        # Find sibling hashes from the same seed
+        siblings = conn.execute(
+            "SELECT run_hash FROM runs WHERE seed = ? AND run_hash != ?",
+            (row["seed"], run_hash)
+        ).fetchall()
+        for sib in siblings:
+            sib_file = _data_dir / "runs" / f"{sib['run_hash']}.json"
+            if sib_file.exists():
+                # Copy for future lookups
+                import shutil
+                shutil.copy2(sib_file, run_file)
+                with open(run_file, "r", encoding="utf-8") as f:
+                    return json.load(f)
+
+    raise HTTPException(status_code=404, detail="Run data not available")
 
 
 @router.get("/stats", tags=["Runs"])

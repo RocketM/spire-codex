@@ -146,20 +146,23 @@ def submit_run(data: dict, username: str | None = None) -> dict:
                                      killed_by, player_count, username)
         results.append(result)
 
-    # Save full run JSON for sharing (once, using first player's hash)
-    first_result = results[0]
-    if first_result.get("success") or first_result.get("duplicate"):
-        run_hash = first_result.get("run_hash", "")
-        if run_hash:
-            runs_dir = _data_dir / "runs"
-            runs_dir.mkdir(parents=True, exist_ok=True)
-            run_file = runs_dir / f"{run_hash}.json"
-            if not run_file.exists():
-                with open(run_file, "w", encoding="utf-8") as f:
-                    json.dump(data, f, ensure_ascii=False)
+    # Save full run JSON for sharing (for every player's hash, so multiplayer detail pages work)
+    runs_dir = _data_dir / "runs"
+    runs_dir.mkdir(parents=True, exist_ok=True)
+    for result in results:
+        if result.get("success") or result.get("duplicate"):
+            run_hash = result.get("run_hash", "")
+            if run_hash:
+                run_file = runs_dir / f"{run_hash}.json"
+                if not run_file.exists():
+                    try:
+                        with open(run_file, "w", encoding="utf-8") as f:
+                            json.dump(data, f, ensure_ascii=False)
+                    except Exception as e:
+                        print(f"Warning: failed to save run {run_hash}: {e}")
 
     # Return first player's result (for hash/sharing)
-    return first_result
+    return results[0]
 
 
 def _submit_player_run(data: dict, player: dict, player_idx: int,
