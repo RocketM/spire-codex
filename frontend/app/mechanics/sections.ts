@@ -17,7 +17,7 @@ export const MECHANIC_SECTIONS: MechanicSection[] = [
   { slug: "combat-mechanics", title: "Combat Mechanics", description: "Hand size (5 draw, 10 max), energy (3 base), block decay, damage formulas — Strength, Dexterity, Vulnerable, Weak, Frail.", category: "mechanics" },
   { slug: "character-stats", title: "Character Starting Stats", description: "Starting HP, gold, deck size, and orb slots for Ironclad, Silent, Defect, Necrobinder, and Regent.", category: "mechanics" },
   { slug: "orb-mechanics", title: "Orb Mechanics", description: "Defect orb system — Lightning, Frost, Dark, and Plasma passive and evoke values. 3 starting slots, 10 max.", category: "mechanics" },
-  { slug: "campfire-options", title: "Campfire Options", description: "Rest site choices — Rest (heal 30% max HP), Smith (upgrade 1 card), Dig (relic with Shovel), Lift (Strength with Girya).", category: "mechanics" },
+  { slug: "campfire-options", title: "Campfire Options", description: "All 8 rest site choices — Rest, Smith, Dig, Lift, Cook, Clone, Hatch, and Mend. Some require specific relics or cards.", category: "mechanics" },
   { slug: "neow", title: "Neow Offerings", description: "Starting Ancient Neow offers 3 relics — 2 positive and 1 curse. Full relic pools and conflict prevention rules.", category: "mechanics" },
   { slug: "ascension-modifiers", title: "Ascension Modifiers", description: "All 10 ascension levels and their effects — from Swarming Elites (A1) to Double Boss (A10).", category: "mechanics" },
   { slug: "score-formula", title: "Score Formula", description: "How your run score is calculated — 10 points per room, act multipliers, win bonus, and ascension scaling.", category: "mechanics" },

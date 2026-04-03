@@ -333,7 +333,11 @@ export default function MechanicContent({ slug }: { slug: string }) {
             <tr className={tr}><td className={td}>Rest</td><td className={tdr}>Heal 30% of max HP</td></tr>
             <tr className={tr}><td className={td}>Smith</td><td className={tdr}>Upgrade 1 card</td></tr>
             <tr className={tr}><td className={td}>Dig</td><td className={tdr}>Obtain a random relic (requires Shovel)</td></tr>
-            <tr><td className={td}>Lift</td><td className={tdr}>Gain 1 Strength (requires Girya, max 3)</td></tr>
+            <tr className={tr}><td className={td}>Lift</td><td className={tdr}>Gain 1 Strength (requires Girya, max 3)</td></tr>
+            <tr className={tr}><td className={td}>Cook</td><td className={tdr}>Remove 2 cards, gain 9 Max HP (requires Meal Kit)</td></tr>
+            <tr className={tr}><td className={td}>Clone</td><td className={tdr}>Enchant a card with Clone (requires Pael&apos;s Growth)</td></tr>
+            <tr className={tr}><td className={td}>Hatch</td><td className={tdr}>Hatch Byrdonis Egg into Byrdpip pet (requires Byrdonis Egg)</td></tr>
+            <tr><td className={td}>Mend</td><td className={tdr}>Heal an ally for 30% of their max HP (multiplayer only)</td></tr>
           </tbody></table>
         </div>
       );
