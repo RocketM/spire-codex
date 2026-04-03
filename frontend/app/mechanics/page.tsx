@@ -73,6 +73,8 @@ export default function DropRatesPage() {
         <a href="#campfire" className="text-[var(--accent-gold)] hover:underline">Campfires</a>
         <a href="#neow" className="text-[var(--accent-gold)] hover:underline">Neow</a>
         <a href="#ascension" className="text-[var(--accent-gold)] hover:underline">Ascension</a>
+        <a href="#score" className="text-[var(--accent-gold)] hover:underline">Score</a>
+        <a href="#secrets" className="text-[var(--accent-gold)] hover:underline">Secrets</a>
       </nav>
 
       {/* ═══════════ CARD RARITY ═══════════ */}
@@ -431,8 +433,116 @@ export default function DropRatesPage() {
         </tbody></table>
       </div>
 
+      {/* ═══════════ SCORE ═══════════ */}
+      <h2 id="score" className={h2}>Score Formula</h2>
+      <div className={card}>
+        <table className={tbl}><thead><tr className={thr}><th className={th}>Component</th><th className={thr2}>Value</th></tr></thead><tbody>
+          <tr className={tr}><td className={td}>Rooms visited</td><td className={tdr}>10 pts per room per act (x1/x2/x3)</td></tr>
+          <tr className={tr}><td className={td}>Win bonus</td><td className={gold}>+300</td></tr>
+          <tr className={tr}><td className={td}>Act 3 death</td><td className={tdr}>+200</td></tr>
+          <tr className={tr}><td className={td}>Act 2 death</td><td className={tdr}>+100</td></tr>
+          <tr className={tr}><td className={td}>Act 1 death</td><td className={tdr}>+0</td></tr>
+          <tr><td className={td}>Ascension multiplier</td><td className={gold}>x(1 + ascension x 0.1)</td></tr>
+        </tbody></table>
+        <p className={note}>At Ascension 10, your score is doubled. The final boss scene uses your score to determine the visual damage numbers.</p>
+      </div>
+
+      {/* ═══════════ SECRETS & TRIVIA ═══════════ */}
+      <h2 id="secrets" className={h2}>Secrets &amp; Trivia</h2>
+
+      <div className="space-y-4">
+        <div className={card}>
+          <h3 className={h3}>The Foul Potion Has 3 Uses</h3>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+            The Foul Potion is the most context-sensitive item in the game. <strong className={bold}>In combat</strong>, it deals 12 damage to all enemies. <strong className={bold}>At a real merchant</strong>, throw it at the shopkeeper to receive 100 gold (with a slime impact VFX). <strong className={bold}>At the Fake Merchant</strong>, throwing it reveals the impostor and triggers a boss fight against the Fake Merchant Monster (165-175 HP). Beat it to earn the Fake Merchant&apos;s Rug relic and all unpurchased fake relics.
+          </p>
+        </div>
+
+        <div className={card}>
+          <h3 className={h3}>Wongo&apos;s Loyalty Points Persist Across Runs</h3>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+            The Welcome to Wongo&apos;s event (Act 2) has a hidden cross-run loyalty system. Each purchase earns Wongo Points that accumulate across ALL runs. At <strong className={bold}>2,000 points</strong>, you earn a Wongo Customer Appreciation Badge relic. But beware: <strong className={bold}>leaving without buying anything downgrades a random upgraded card</strong> in your deck.
+          </p>
+          <table className={`${tbl} mt-3`}><thead><tr className={thr}><th className={th}>Purchase</th><th className={thr2}>Cost</th><th className={thr2}>Points</th></tr></thead><tbody>
+            <tr className={tr}><td className={td}>Bargain Bin (Common relic)</td><td className={tdr}>100g</td><td className={gold}>32 pts</td></tr>
+            <tr className={tr}><td className={td}>Featured Item (Rare relic)</td><td className={tdr}>200g</td><td className={gold}>16 pts</td></tr>
+            <tr><td className={td}>Mystery Box (3 relics after 5 fights)</td><td className={tdr}>300g</td><td className={gold}>8 pts</td></tr>
+          </tbody></table>
+        </div>
+
+        <div className={card}>
+          <h3 className={h3}>Crystal Sphere Is a Minesweeper Minigame</h3>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+            The Crystal Sphere event isn&apos;t just a simple choice &mdash; it&apos;s a hidden-object game on an <strong className={bold}>11x11 grid</strong>. You get 3 divinations (or 6 if you take on Debt curses), each revealing cells using a &quot;Big&quot; (3x3) or &quot;Small&quot; (single cell) tool. The grid contains a relic, 3 potions, 3 card rewards of increasing rarity, gold piles (10g and 30g), and a hidden Doubt curse occupying a 2x2 area.
+          </p>
+        </div>
+
+        <div className={card}>
+          <h3 className={h3}>The Fake Merchant Sells STS1 Relics</h3>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+            The 9 counterfeit relics sold by the Fake Merchant are all references to beloved Slay the Spire 1 relics: Fake Anchor, Fake Blood Vial, Fake Happy Flower, Fake Lee&apos;s Waffle, Fake Mango, Fake Orichalcum, Fake Snecko Eye, Fake Strike Dummy, and Fake Venerable Tea Set. The Fake Snecko Eye actually works &mdash; it gives you the Confused power, randomizing your card costs. Only 6 of the 9 are shown per visit.
+          </p>
+        </div>
+
+        <div className={card}>
+          <h3 className={h3}>The Reflections Event Can Double Your Deck</h3>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+            The Reflections event (Act 3) offers a &quot;Shatter&quot; option that <strong className={bold}>clones every card in your deck 1:1</strong>, doubling its size. The catch: you also receive a Bad Luck curse. The safer &quot;Touch a Mirror&quot; option downgrades 2 random upgraded cards but upgrades 4 random upgradable ones.
+          </p>
+        </div>
+
+        <div className={card}>
+          <h3 className={h3}>The Architect Can&apos;t Fight You</h3>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+            The final encounter with The Architect has <strong className={bold}>9,999 HP</strong> but its only move is &quot;NOTHING&quot; with a hidden intent. The ending is a dialogue scene, not a fight. Each character has unique conversations that change based on how many times you&apos;ve visited. Your run score determines the visual damage numbers in the finale &mdash; one hit is intentionally made 2-3x larger for dramatic effect.
+          </p>
+        </div>
+
+        <div className={card}>
+          <h3 className={h3}>Orobas Has a 33% Chance to Offer a Game-Changing Relic</h3>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+            When visiting the Ancient Orobas in Act 2, there&apos;s a <strong className={bold}>33.3% chance</strong> of being offered the <strong className={bold}>Prismatic Gem</strong>. This relic makes card rewards include cards from ALL character pools, not just your own. Orobas also offers starter relic upgrades: Burning Blood becomes Black Blood, Ring of the Snake becomes Ring of the Drake, and so on.
+          </p>
+        </div>
+
+        <div className={card}>
+          <h3 className={h3}>Byrdpip Is Invincible and Does Nothing</h3>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+            Hatch a Byrdonis Egg at a rest site to get the Byrdpip relic, which spawns a pet in every combat. Byrdpip has <strong className={bold}>9,999 HP</strong>, a hidden health bar, and its only move is literally called <code className="bg-[var(--bg-primary)] px-1 rounded text-xs text-[var(--accent-gold)]">NOTHING_MOVE</code>. It has 4 random skin variants and converts all egg cards into Byrd Swoop (0-cost, 14 damage). Only one pet per player.
+          </p>
+        </div>
+
+        <div className={card}>
+          <h3 className={h3}>Two Relics Are Permanently Banned From Shops</h3>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+            <strong className={bold}>The Courier</strong> and <strong className={bold}>Old Coin</strong> are hardcoded into the merchant relic blacklist and can never appear in shops. Both would break the shop economy.
+          </p>
+        </div>
+
+        <div className={card}>
+          <h3 className={h3}>The Game Has a Built-In AI Player</h3>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+            AutoSlay is a full automated player used for CI testing. It picks a random character, plays through up to floor 49 with a 25-minute timeout, handles every room type, always rests at campfires, and reports results to Sentry. It runs in &quot;Fast Mode&quot; with tutorials disabled.
+          </p>
+        </div>
+
+        <div className={card}>
+          <h3 className={h3}>Dev Console God Mode</h3>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+            The developer console has 39 commands including <code className="bg-[var(--bg-primary)] px-1 rounded text-xs text-[var(--accent-gold)]">godmode</code> (9,999 Strength + Buffer + Regen), <code className="bg-[var(--bg-primary)] px-1 rounded text-xs text-[var(--accent-gold)]">die</code> (instant death), <code className="bg-[var(--bg-primary)] px-1 rounded text-xs text-[var(--accent-gold)]">win</code> (kill all enemies), and <code className="bg-[var(--bg-primary)] px-1 rounded text-xs text-[var(--accent-gold)]">trailer</code> (toggle UI for capturing footage). The test dummy monster uses the Defect&apos;s sprite.
+          </p>
+        </div>
+
+        <div className={card}>
+          <h3 className={h3}>The Deprived: A Hidden Test Character</h3>
+          <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+            A debug-only character called &quot;The Deprived&quot; exists in the code with <strong className={bold}>1,000 HP</strong>, <strong className={bold}>100 energy</strong> per turn, an empty starting deck, no relics, and neutral gender. It uses a purple color scheme and has zero animation delays. Not accessible through normal play.
+          </p>
+        </div>
+      </div>
+
       <p className="text-xs text-[var(--text-muted)] text-center mt-8 mb-4">
-        All values extracted from decompiled C# source &mdash; CardRarityOdds.cs, PotionRewardOdds.cs, RelicFactory.cs, MerchantInventory.cs, StandardActMap.cs, UnknownMapPointOdds.cs, AscensionLevel.cs, and more.
+        All values extracted from decompiled C# source &mdash; CardRarityOdds.cs, PotionRewardOdds.cs, RelicFactory.cs, MerchantInventory.cs, StandardActMap.cs, UnknownMapPointOdds.cs, AscensionLevel.cs, ScoreUtility.cs, and more.
       </p>
     </div>
   );
