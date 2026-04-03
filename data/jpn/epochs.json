@@ -1226,7 +1226,7 @@
     "era_position": 1,
     "story_id": "Defect",
     "sort_order": 273901,
-    "description": "[blue]ディフェクト[/blue]が足を踏み入れたのは、[gold]財宝[/gold]、[green]小物類[/green]、[red]武器[/red]、[blue]珍しい動物[/blue]、[orange]美術品[/orange]、[purple]書物[/purple]、そしてありとあらゆる[sine]ガラクタやよくわからない物[/rainbow][/sine]が散乱する無秩序な空間だった。\n\nその情報量と乱雑さは、哀れな[blue]ディフェクト[/blue]の処理コアに負荷をかける。\n\n[jitter]「そこをどきな！」[/jitter] 脅威レベル9の爬虫類に跨った大型の獣人が叫ぶが、不意に彼は足を止め、[sine]不敵な笑み[/sine]を浮かべて[blue]ディフェクト[/blue]の方を振り返る。\n\n「お前にぴったりのものがあるぜ！」",
+    "description": "[blue]ディフェクト[/blue]が足を踏み入れたのは、[gold]財宝[/gold]、[green]小物類[/green]、[red]武器[/red]、[blue]珍しい動物[/blue]、[orange]美術品[/orange]、[purple]書物[/purple]、そしてありとあらゆる[sine]ガラクタやよくわからない物[/sine]が散乱する無秩序な空間だった。\n\nその情報量と乱雑さは、哀れな[blue]ディフェクト[/blue]の処理コアに負荷をかける。\n\n[jitter]「そこをどきな！」[/jitter] 脅威レベル9の爬虫類に跨った大型の獣人が叫ぶが、不意に彼は足を止め、[sine]不敵な笑み[/sine]を浮かべて[blue]ディフェクト[/blue]の方を振り返る。\n\n「お前にぴったりのものがあるぜ！」",
     "unlock_info": "[blue]ディフェクト[/blue]で[red]アセンション[/red][blue]1[/blue]をクリアすると、この断章が明らかになる。",
     "unlock_text": null,
     "unlocks_cards": [

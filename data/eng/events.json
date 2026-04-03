@@ -286,7 +286,7 @@
     "name": "Aroma of Chaos",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "Upon trudging through a thick underbrush and making it into a clearing, you're hit with an unplaceable nostalgia.\n\nA mix of [purple]floral scents[/purple], [green]putrid decay[/green], and [orange]something else entirely[/orange]. The scent grows stronger with each step, and you feel as though the world around you is [sine]warping and twisting[/sine].\n\nOvercome with a sense of [sine]shifting chaos[/rainbow][/sine], you begin to lose your sense of self.",
+    "description": "Upon trudging through a thick underbrush and making it into a clearing, you're hit with an unplaceable nostalgia.\n\nA mix of [purple]floral scents[/purple], [green]putrid decay[/green], and [orange]something else entirely[/orange]. The scent grows stronger with each step, and you feel as though the world around you is [sine]warping and twisting[/sine].\n\nOvercome with a sense of [sine]shifting chaos[/sine], you begin to lose your sense of self.",
     "options": [
       {
         "id": "LET_GO",
@@ -302,7 +302,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Upon trudging through a thick underbrush and making it into a clearing, you're hit with an unplaceable nostalgia.\n\nA mix of [purple]floral scents[/purple], [green]putrid decay[/green], and [orange]something else entirely[/orange]. The scent grows stronger with each step, and you feel as though the world around you is [sine]warping and twisting[/sine].\n\nOvercome with a sense of [sine]shifting chaos[/rainbow][/sine], you begin to lose your sense of self.",
+        "description": "Upon trudging through a thick underbrush and making it into a clearing, you're hit with an unplaceable nostalgia.\n\nA mix of [purple]floral scents[/purple], [green]putrid decay[/green], and [orange]something else entirely[/orange]. The scent grows stronger with each step, and you feel as though the world around you is [sine]warping and twisting[/sine].\n\nOvercome with a sense of [sine]shifting chaos[/sine], you begin to lose your sense of self.",
         "options": [
           {
             "id": "LET_GO",
@@ -596,7 +596,7 @@
     "name": "Colossal Flower",
     "type": "Event",
     "act": "Act 2 - Hive",
-    "description": "There is a [green]colossal flower[/green] growing atop a [red][jitter]mountain of bones[/jitter][/red].\n\nAs its [sine]color-shifting petals[/rainbow][/sine] pulsate, you sense there is a [aqua]Powerful Cluster of Pollen[/aqua] in the center but the undulating petals are [red]razor sharp[/red] and unpredictable.\n\nYou could grab some of the [gold]golden nectar[/gold], but reaching the prize in the center is so tempting...",
+    "description": "There is a [green]colossal flower[/green] growing atop a [red][jitter]mountain of bones[/jitter][/red].\n\nAs its [sine]color-shifting petals[/sine] pulsate, you sense there is a [aqua]Powerful Cluster of Pollen[/aqua] in the center but the undulating petals are [red]razor sharp[/red] and unpredictable.\n\nYou could grab some of the [gold]golden nectar[/gold], but reaching the prize in the center is so tempting...",
     "options": [
       {
         "id": "EXTRACT_CURRENT_PRIZE_1",
@@ -620,7 +620,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "There is a [green]colossal flower[/green] growing atop a [red][jitter]mountain of bones[/jitter][/red].\n\nAs its [sine]color-shifting petals[/rainbow][/sine] pulsate, you sense there is a [aqua]Powerful Cluster of Pollen[/aqua] in the center but the undulating petals are [red]razor sharp[/red] and unpredictable.\n\nYou could grab some of the [gold]golden nectar[/gold], but reaching the prize in the center is so tempting...",
+        "description": "There is a [green]colossal flower[/green] growing atop a [red][jitter]mountain of bones[/jitter][/red].\n\nAs its [sine]color-shifting petals[/sine] pulsate, you sense there is a [aqua]Powerful Cluster of Pollen[/aqua] in the center but the undulating petals are [red]razor sharp[/red] and unpredictable.\n\nYou could grab some of the [gold]golden nectar[/gold], but reaching the prize in the center is so tempting...",
         "options": [
           {
             "id": "EXTRACT_CURRENT_PRIZE_1",

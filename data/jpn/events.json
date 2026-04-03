@@ -286,7 +286,7 @@
     "name": "混沌の香り",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "うっそうとした茂みをかき分け、開けた場所に出ると、どこからともなく郷愁の念に駆られた。\n\n[purple]花の香り[/purple]、[green]腐敗臭[/green]、そして[orange]全く別の何か[/orange]が混ざり合っている。 一歩進むごとに香りは強くなり、周囲の世界が[sine]歪み、ねじ曲がっている[/sine]ように感じられる。\n\n[sine]うつろう混沌[/rainbow][/sine]の感覚に圧倒され、あなたは自我を失い始めた。",
+    "description": "うっそうとした茂みをかき分け、開けた場所に出ると、どこからともなく郷愁の念に駆られた。\n\n[purple]花の香り[/purple]、[green]腐敗臭[/green]、そして[orange]全く別の何か[/orange]が混ざり合っている。 一歩進むごとに香りは強くなり、周囲の世界が[sine]歪み、ねじ曲がっている[/sine]ように感じられる。\n\n[sine]うつろう混沌[/sine]の感覚に圧倒され、あなたは自我を失い始めた。",
     "options": [
       {
         "id": "LET_GO",
@@ -302,7 +302,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "うっそうとした茂みをかき分け、開けた場所に出ると、どこからともなく郷愁の念に駆られた。\n\n[purple]花の香り[/purple]、[green]腐敗臭[/green]、そして[orange]全く別の何か[/orange]が混ざり合っている。 一歩進むごとに香りは強くなり、周囲の世界が[sine]歪み、ねじ曲がっている[/sine]ように感じられる。\n\n[sine]うつろう混沌[/rainbow][/sine]の感覚に圧倒され、あなたは自我を失い始めた。",
+        "description": "うっそうとした茂みをかき分け、開けた場所に出ると、どこからともなく郷愁の念に駆られた。\n\n[purple]花の香り[/purple]、[green]腐敗臭[/green]、そして[orange]全く別の何か[/orange]が混ざり合っている。 一歩進むごとに香りは強くなり、周囲の世界が[sine]歪み、ねじ曲がっている[/sine]ように感じられる。\n\n[sine]うつろう混沌[/sine]の感覚に圧倒され、あなたは自我を失い始めた。",
         "options": [
           {
             "id": "LET_GO",
@@ -596,7 +596,7 @@
     "name": "巨大な花",
     "type": "Event",
     "act": "Act 2 - Hive",
-    "description": "[red][jitter]骨の山[/jitter][/red]の上に、[green]巨大な花[/green]が咲き誇っている。\n\n[sine]さまざまに色を変える花びら[/rainbow][/sine]が脈動し、あなたはその中心部に[aqua]強大な力を持つ花粉の塊[/aqua]があるのを感じ取った。 だが、うねる花びらは[red]カミソリのように鋭く[/red]、動きが読めない。\n\n[gold]黄金の蜜[/gold]を採取するだけで良しとすべきだろう。 だが、中心にあるお宝にも心を惹かれる……",
+    "description": "[red][jitter]骨の山[/jitter][/red]の上に、[green]巨大な花[/green]が咲き誇っている。\n\n[sine]さまざまに色を変える花びら[/sine]が脈動し、あなたはその中心部に[aqua]強大な力を持つ花粉の塊[/aqua]があるのを感じ取った。 だが、うねる花びらは[red]カミソリのように鋭く[/red]、動きが読めない。\n\n[gold]黄金の蜜[/gold]を採取するだけで良しとすべきだろう。 だが、中心にあるお宝にも心を惹かれる……",
     "options": [
       {
         "id": "EXTRACT_CURRENT_PRIZE_1",
@@ -620,7 +620,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "[red][jitter]骨の山[/jitter][/red]の上に、[green]巨大な花[/green]が咲き誇っている。\n\n[sine]さまざまに色を変える花びら[/rainbow][/sine]が脈動し、あなたはその中心部に[aqua]強大な力を持つ花粉の塊[/aqua]があるのを感じ取った。 だが、うねる花びらは[red]カミソリのように鋭く[/red]、動きが読めない。\n\n[gold]黄金の蜜[/gold]を採取するだけで良しとすべきだろう。 だが、中心にあるお宝にも心を惹かれる……",
+        "description": "[red][jitter]骨の山[/jitter][/red]の上に、[green]巨大な花[/green]が咲き誇っている。\n\n[sine]さまざまに色を変える花びら[/sine]が脈動し、あなたはその中心部に[aqua]強大な力を持つ花粉の塊[/aqua]があるのを感じ取った。 だが、うねる花びらは[red]カミソリのように鋭く[/red]、動きが読めない。\n\n[gold]黄金の蜜[/gold]を採取するだけで良しとすべきだろう。 だが、中心にあるお宝にも心を惹かれる……",
         "options": [
           {
             "id": "EXTRACT_CURRENT_PRIZE_1",

@@ -286,7 +286,7 @@
     "name": "Geruch des Chaos",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "Als du durch dichtes Unterholz stampfst und eine Lichtung erreichst, trifft dich eine unbestimmte Nostalgie.\n\nEine Mischung aus [purple]blumigen Düften[/purple], [green]fauliger Verwesung[/green] und [orange]etwas völlig anderem[/orange]. Der Duft wird mit jedem Schritt stärker und du fühlst dich, als würde sich die Welt um dich herum [sine]krümmen und verdrehen[/sine].\n\nDu bist so überwältigt von einem Gefühl des [sine]verschiebenden Chaos[/rainbow][/sine], dass du anfängst, dein Selbstgefühl zu verlieren.",
+    "description": "Als du durch dichtes Unterholz stampfst und eine Lichtung erreichst, trifft dich eine unbestimmte Nostalgie.\n\nEine Mischung aus [purple]blumigen Düften[/purple], [green]fauliger Verwesung[/green] und [orange]etwas völlig anderem[/orange]. Der Duft wird mit jedem Schritt stärker und du fühlst dich, als würde sich die Welt um dich herum [sine]krümmen und verdrehen[/sine].\n\nDu bist so überwältigt von einem Gefühl des [sine]verschiebenden Chaos[/sine], dass du anfängst, dein Selbstgefühl zu verlieren.",
     "options": [
       {
         "id": "LET_GO",
@@ -302,7 +302,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Als du durch dichtes Unterholz stampfst und eine Lichtung erreichst, trifft dich eine unbestimmte Nostalgie.\n\nEine Mischung aus [purple]blumigen Düften[/purple], [green]fauliger Verwesung[/green] und [orange]etwas völlig anderem[/orange]. Der Duft wird mit jedem Schritt stärker und du fühlst dich, als würde sich die Welt um dich herum [sine]krümmen und verdrehen[/sine].\n\nDu bist so überwältigt von einem Gefühl des [sine]verschiebenden Chaos[/rainbow][/sine], dass du anfängst, dein Selbstgefühl zu verlieren.",
+        "description": "Als du durch dichtes Unterholz stampfst und eine Lichtung erreichst, trifft dich eine unbestimmte Nostalgie.\n\nEine Mischung aus [purple]blumigen Düften[/purple], [green]fauliger Verwesung[/green] und [orange]etwas völlig anderem[/orange]. Der Duft wird mit jedem Schritt stärker und du fühlst dich, als würde sich die Welt um dich herum [sine]krümmen und verdrehen[/sine].\n\nDu bist so überwältigt von einem Gefühl des [sine]verschiebenden Chaos[/sine], dass du anfängst, dein Selbstgefühl zu verlieren.",
         "options": [
           {
             "id": "LET_GO",
@@ -596,7 +596,7 @@
     "name": "Riesige Blume",
     "type": "Event",
     "act": "Act 2 - Hive",
-    "description": "Da ist eine [green]riesige Blume[/green], die auf einem [red][jitter]Berg aus Knochen[/jitter][/red] wächst.\n\nIhre [sine]farbwechselnden Blütenblätter[/rainbow][/sine] pulsieren und du ahnst, dass in der Mitte ein [aqua]Machtvoller Pollenklumpen[/aqua] ist, aber die wiegenden Blätter sind [red]messerscharf[/red] und unvorhersehbar.\n\nDu könntest ein wenig von dem [gold]goldenen Nektar[/gold] nehmen, aber bist verlockt, den Preis in der Mitte zu erreichen...",
+    "description": "Da ist eine [green]riesige Blume[/green], die auf einem [red][jitter]Berg aus Knochen[/jitter][/red] wächst.\n\nIhre [sine]farbwechselnden Blütenblätter[/sine] pulsieren und du ahnst, dass in der Mitte ein [aqua]Machtvoller Pollenklumpen[/aqua] ist, aber die wiegenden Blätter sind [red]messerscharf[/red] und unvorhersehbar.\n\nDu könntest ein wenig von dem [gold]goldenen Nektar[/gold] nehmen, aber bist verlockt, den Preis in der Mitte zu erreichen...",
     "options": [
       {
         "id": "EXTRACT_CURRENT_PRIZE_1",
@@ -620,7 +620,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "Da ist eine [green]riesige Blume[/green], die auf einem [red][jitter]Berg aus Knochen[/jitter][/red] wächst.\n\nIhre [sine]farbwechselnden Blütenblätter[/rainbow][/sine] pulsieren und du ahnst, dass in der Mitte ein [aqua]Machtvoller Pollenklumpen[/aqua] ist, aber die wiegenden Blätter sind [red]messerscharf[/red] und unvorhersehbar.\n\nDu könntest ein wenig von dem [gold]goldenen Nektar[/gold] nehmen, aber bist verlockt, den Preis in der Mitte zu erreichen...",
+        "description": "Da ist eine [green]riesige Blume[/green], die auf einem [red][jitter]Berg aus Knochen[/jitter][/red] wächst.\n\nIhre [sine]farbwechselnden Blütenblätter[/sine] pulsieren und du ahnst, dass in der Mitte ein [aqua]Machtvoller Pollenklumpen[/aqua] ist, aber die wiegenden Blätter sind [red]messerscharf[/red] und unvorhersehbar.\n\nDu könntest ein wenig von dem [gold]goldenen Nektar[/gold] nehmen, aber bist verlockt, den Preis in der Mitte zu erreichen...",
         "options": [
           {
             "id": "EXTRACT_CURRENT_PRIZE_1",

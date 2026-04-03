@@ -286,7 +286,7 @@
     "name": "El aroma del Caos",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "Tras atravesar a duras penas una zona repleta de arbustos y llegar a un claro, una extraña sensación de nostalgia te envuelve.\n\nHueles una mezcla de [purple]aromas florales[/purple], [green]algo en descomposición[/green] y [orange]algo totalmente distinto[/orange]. El olor se intensifica con cada paso y sientes que el mundo empieza a [sine]girar y a retorcerse[/sine].\n\nLa energía del [sine]caos cambiante[/rainbow][/sine] te invade y empiezas a olvidar tu identidad.",
+    "description": "Tras atravesar a duras penas una zona repleta de arbustos y llegar a un claro, una extraña sensación de nostalgia te envuelve.\n\nHueles una mezcla de [purple]aromas florales[/purple], [green]algo en descomposición[/green] y [orange]algo totalmente distinto[/orange]. El olor se intensifica con cada paso y sientes que el mundo empieza a [sine]girar y a retorcerse[/sine].\n\nLa energía del [sine]caos cambiante[/sine] te invade y empiezas a olvidar tu identidad.",
     "options": [
       {
         "id": "LET_GO",
@@ -302,7 +302,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Tras atravesar a duras penas una zona repleta de arbustos y llegar a un claro, una extraña sensación de nostalgia te envuelve.\n\nHueles una mezcla de [purple]aromas florales[/purple], [green]algo en descomposición[/green] y [orange]algo totalmente distinto[/orange]. El olor se intensifica con cada paso y sientes que el mundo empieza a [sine]girar y a retorcerse[/sine].\n\nLa energía del [sine]caos cambiante[/rainbow][/sine] te invade y empiezas a olvidar tu identidad.",
+        "description": "Tras atravesar a duras penas una zona repleta de arbustos y llegar a un claro, una extraña sensación de nostalgia te envuelve.\n\nHueles una mezcla de [purple]aromas florales[/purple], [green]algo en descomposición[/green] y [orange]algo totalmente distinto[/orange]. El olor se intensifica con cada paso y sientes que el mundo empieza a [sine]girar y a retorcerse[/sine].\n\nLa energía del [sine]caos cambiante[/sine] te invade y empiezas a olvidar tu identidad.",
         "options": [
           {
             "id": "LET_GO",
@@ -596,7 +596,7 @@
     "name": "Flor gigantesca",
     "type": "Event",
     "act": "Act 2 - Hive",
-    "description": "Ves una [green]flor gigantesca[/green] creciendo en una [red][jitter]montaña de huesos[/jitter][/red].\n\nSus [sine]pétalos, que cambian de color[/rainbow][/sine], empiezan a vibrar, y sientes que hay un [aqua]gran cúmulo de polen[/aqua] en el centro, pero los pétalos son [red]afilados como cuchillas[/red] y totalmente impredecibles.\n\nPodrías hacerte con un poco de [gold]néctar dorado[/gold], pero conseguir el premio gordo que hay en el centro es tan tentador...",
+    "description": "Ves una [green]flor gigantesca[/green] creciendo en una [red][jitter]montaña de huesos[/jitter][/red].\n\nSus [sine]pétalos, que cambian de color[/sine], empiezan a vibrar, y sientes que hay un [aqua]gran cúmulo de polen[/aqua] en el centro, pero los pétalos son [red]afilados como cuchillas[/red] y totalmente impredecibles.\n\nPodrías hacerte con un poco de [gold]néctar dorado[/gold], pero conseguir el premio gordo que hay en el centro es tan tentador...",
     "options": [
       {
         "id": "EXTRACT_CURRENT_PRIZE_1",
@@ -620,7 +620,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "Ves una [green]flor gigantesca[/green] creciendo en una [red][jitter]montaña de huesos[/jitter][/red].\n\nSus [sine]pétalos, que cambian de color[/rainbow][/sine], empiezan a vibrar, y sientes que hay un [aqua]gran cúmulo de polen[/aqua] en el centro, pero los pétalos son [red]afilados como cuchillas[/red] y totalmente impredecibles.\n\nPodrías hacerte con un poco de [gold]néctar dorado[/gold], pero conseguir el premio gordo que hay en el centro es tan tentador...",
+        "description": "Ves una [green]flor gigantesca[/green] creciendo en una [red][jitter]montaña de huesos[/jitter][/red].\n\nSus [sine]pétalos, que cambian de color[/sine], empiezan a vibrar, y sientes que hay un [aqua]gran cúmulo de polen[/aqua] en el centro, pero los pétalos son [red]afilados como cuchillas[/red] y totalmente impredecibles.\n\nPodrías hacerte con un poco de [gold]néctar dorado[/gold], pero conseguir el premio gordo que hay en el centro es tan tentador...",
         "options": [
           {
             "id": "EXTRACT_CURRENT_PRIZE_1",

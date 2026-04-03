@@ -286,7 +286,7 @@
     "name": "Arôme du chaos",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "Après vous être frayé un chemin à travers un sous-bois dense, vous débouchez dans une clairière. Une nostalgie, impossible à situer, vous frappe de plein fouet.\n\nUn mélange de [purple]parfums de fleurs[/purple], de [green]pourriture fétide[/green], et [orange]autre chose, quelque chose d’indéfinissable[/orange]. L’odeur s’intensifie à chacun de vos pas, et vous avez l’impression que le monde autour de vous [sine]se tord et se déforme[/sine].\n\nSubmergé(e) par une sensation de [sine]chaos mouvant[/rainbow][/sine], vous commencez à en perdre toute notion de vous-même.",
+    "description": "Après vous être frayé un chemin à travers un sous-bois dense, vous débouchez dans une clairière. Une nostalgie, impossible à situer, vous frappe de plein fouet.\n\nUn mélange de [purple]parfums de fleurs[/purple], de [green]pourriture fétide[/green], et [orange]autre chose, quelque chose d’indéfinissable[/orange]. L’odeur s’intensifie à chacun de vos pas, et vous avez l’impression que le monde autour de vous [sine]se tord et se déforme[/sine].\n\nSubmergé(e) par une sensation de [sine]chaos mouvant[/sine], vous commencez à en perdre toute notion de vous-même.",
     "options": [
       {
         "id": "LET_GO",
@@ -302,7 +302,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Après vous être frayé un chemin à travers un sous-bois dense, vous débouchez dans une clairière. Une nostalgie, impossible à situer, vous frappe de plein fouet.\n\nUn mélange de [purple]parfums de fleurs[/purple], de [green]pourriture fétide[/green], et [orange]autre chose, quelque chose d’indéfinissable[/orange]. L’odeur s’intensifie à chacun de vos pas, et vous avez l’impression que le monde autour de vous [sine]se tord et se déforme[/sine].\n\nSubmergé(e) par une sensation de [sine]chaos mouvant[/rainbow][/sine], vous commencez à en perdre toute notion de vous-même.",
+        "description": "Après vous être frayé un chemin à travers un sous-bois dense, vous débouchez dans une clairière. Une nostalgie, impossible à situer, vous frappe de plein fouet.\n\nUn mélange de [purple]parfums de fleurs[/purple], de [green]pourriture fétide[/green], et [orange]autre chose, quelque chose d’indéfinissable[/orange]. L’odeur s’intensifie à chacun de vos pas, et vous avez l’impression que le monde autour de vous [sine]se tord et se déforme[/sine].\n\nSubmergé(e) par une sensation de [sine]chaos mouvant[/sine], vous commencez à en perdre toute notion de vous-même.",
         "options": [
           {
             "id": "LET_GO",
@@ -596,7 +596,7 @@
     "name": "Fleur colossale",
     "type": "Event",
     "act": "Act 2 - Hive",
-    "description": "Une [green]fleur colossale[/green] pousse au sommet d’un [red][jitter]monticule d’ossements[/jitter][/red].\n\nAu rythme des pulsations de ses [sine]pétales aux couleurs changeantes[/rainbow][/sine], vous gagnez la sensation qu’un [aqua]Puissant amas de pollen[/aqua] niche en son centre ; mais les pétales ondoyantes sont [red]aussi tranchants que des lames de rasoir[/red], et leurs mouvements imprévisibles.\n\nVous pourriez vous contenter d’un peu de [gold]nectar doré[/gold], mais la tentation du trésor au centre est extrêmement forte...",
+    "description": "Une [green]fleur colossale[/green] pousse au sommet d’un [red][jitter]monticule d’ossements[/jitter][/red].\n\nAu rythme des pulsations de ses [sine]pétales aux couleurs changeantes[/sine], vous gagnez la sensation qu’un [aqua]Puissant amas de pollen[/aqua] niche en son centre ; mais les pétales ondoyantes sont [red]aussi tranchants que des lames de rasoir[/red], et leurs mouvements imprévisibles.\n\nVous pourriez vous contenter d’un peu de [gold]nectar doré[/gold], mais la tentation du trésor au centre est extrêmement forte...",
     "options": [
       {
         "id": "EXTRACT_CURRENT_PRIZE_1",
@@ -620,7 +620,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "Une [green]fleur colossale[/green] pousse au sommet d’un [red][jitter]monticule d’ossements[/jitter][/red].\n\nAu rythme des pulsations de ses [sine]pétales aux couleurs changeantes[/rainbow][/sine], vous gagnez la sensation qu’un [aqua]Puissant amas de pollen[/aqua] niche en son centre ; mais les pétales ondoyantes sont [red]aussi tranchants que des lames de rasoir[/red], et leurs mouvements imprévisibles.\n\nVous pourriez vous contenter d’un peu de [gold]nectar doré[/gold], mais la tentation du trésor au centre est extrêmement forte...",
+        "description": "Une [green]fleur colossale[/green] pousse au sommet d’un [red][jitter]monticule d’ossements[/jitter][/red].\n\nAu rythme des pulsations de ses [sine]pétales aux couleurs changeantes[/sine], vous gagnez la sensation qu’un [aqua]Puissant amas de pollen[/aqua] niche en son centre ; mais les pétales ondoyantes sont [red]aussi tranchants que des lames de rasoir[/red], et leurs mouvements imprévisibles.\n\nVous pourriez vous contenter d’un peu de [gold]nectar doré[/gold], mais la tentation du trésor au centre est extrêmement forte...",
         "options": [
           {
             "id": "EXTRACT_CURRENT_PRIZE_1",

@@ -286,7 +286,7 @@
     "name": "Aroma del caos",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "Tras avanzar con afán entre una maleza espesa y llegar a un claro, te invade una nostalgia indescriptible.\n\nHay una mezcla de [purple]aromas florales[/purple], [green]descomposición pútrida[/green] y [orange]algo completamente diferente[/orange]. El olor se intensifica con cada paso y sientes como si el mundo a tu alrededor se estuviera [sine]deformando y retorciendo[/sine].\n\nTe abruma una sensación de [sine]caos cambiante[/rainbow][/sine] y empiezas a perder la noción de quién eres.",
+    "description": "Tras avanzar con afán entre una maleza espesa y llegar a un claro, te invade una nostalgia indescriptible.\n\nHay una mezcla de [purple]aromas florales[/purple], [green]descomposición pútrida[/green] y [orange]algo completamente diferente[/orange]. El olor se intensifica con cada paso y sientes como si el mundo a tu alrededor se estuviera [sine]deformando y retorciendo[/sine].\n\nTe abruma una sensación de [sine]caos cambiante[/sine] y empiezas a perder la noción de quién eres.",
     "options": [
       {
         "id": "LET_GO",
@@ -302,7 +302,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Tras avanzar con afán entre una maleza espesa y llegar a un claro, te invade una nostalgia indescriptible.\n\nHay una mezcla de [purple]aromas florales[/purple], [green]descomposición pútrida[/green] y [orange]algo completamente diferente[/orange]. El olor se intensifica con cada paso y sientes como si el mundo a tu alrededor se estuviera [sine]deformando y retorciendo[/sine].\n\nTe abruma una sensación de [sine]caos cambiante[/rainbow][/sine] y empiezas a perder la noción de quién eres.",
+        "description": "Tras avanzar con afán entre una maleza espesa y llegar a un claro, te invade una nostalgia indescriptible.\n\nHay una mezcla de [purple]aromas florales[/purple], [green]descomposición pútrida[/green] y [orange]algo completamente diferente[/orange]. El olor se intensifica con cada paso y sientes como si el mundo a tu alrededor se estuviera [sine]deformando y retorciendo[/sine].\n\nTe abruma una sensación de [sine]caos cambiante[/sine] y empiezas a perder la noción de quién eres.",
         "options": [
           {
             "id": "LET_GO",
@@ -596,7 +596,7 @@
     "name": "Flor colosal",
     "type": "Event",
     "act": "Act 2 - Hive",
-    "description": "Una [green]flor colosal[/green] crece sobre una [red][jitter]montaña de huesos[/jitter][/red].\n\nMientras sus [sine]pétalos de color cambiante[/rainbow][/sine] palpitan, percibes que en el centro hay un [aqua]núcleo de polen poderoso[/aqua], pero los pétalos ondulantes son [red]afilados[/red] e impredecibles.\n\nPodrías tomar un poco del [gold]néctar dorado[/gold] que se escurre, pero alcanzar el premio en el centro es muy tentador.",
+    "description": "Una [green]flor colosal[/green] crece sobre una [red][jitter]montaña de huesos[/jitter][/red].\n\nMientras sus [sine]pétalos de color cambiante[/sine] palpitan, percibes que en el centro hay un [aqua]núcleo de polen poderoso[/aqua], pero los pétalos ondulantes son [red]afilados[/red] e impredecibles.\n\nPodrías tomar un poco del [gold]néctar dorado[/gold] que se escurre, pero alcanzar el premio en el centro es muy tentador.",
     "options": [
       {
         "id": "EXTRACT_CURRENT_PRIZE_1",
@@ -620,7 +620,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "Una [green]flor colosal[/green] crece sobre una [red][jitter]montaña de huesos[/jitter][/red].\n\nMientras sus [sine]pétalos de color cambiante[/rainbow][/sine] palpitan, percibes que en el centro hay un [aqua]núcleo de polen poderoso[/aqua], pero los pétalos ondulantes son [red]afilados[/red] e impredecibles.\n\nPodrías tomar un poco del [gold]néctar dorado[/gold] que se escurre, pero alcanzar el premio en el centro es muy tentador.",
+        "description": "Una [green]flor colosal[/green] crece sobre una [red][jitter]montaña de huesos[/jitter][/red].\n\nMientras sus [sine]pétalos de color cambiante[/sine] palpitan, percibes que en el centro hay un [aqua]núcleo de polen poderoso[/aqua], pero los pétalos ondulantes son [red]afilados[/red] e impredecibles.\n\nPodrías tomar un poco del [gold]néctar dorado[/gold] que se escurre, pero alcanzar el premio en el centro es muy tentador.",
         "options": [
           {
             "id": "EXTRACT_CURRENT_PRIZE_1",

@@ -68,7 +68,7 @@ def load_eras_localization(loc_dir: Path) -> dict:
 def strip_rich_tags(text: str) -> str:
     text = re.sub(r'\[rainbow[^\]]*\]', '', text)
     text = re.sub(r'\[font_size=\d+\]', '', text)
-    text = re.sub(r'\[/?(?:thinky_dots|i|font_size)\]', '', text)
+    text = re.sub(r'\[/?(?:thinky_dots|i|font_size|rainbow)\]', '', text)
     return text
 
 

@@ -286,7 +286,7 @@
     "name": "混沌芳香",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "费力地穿过一片厚密的灌木丛并来到空地后，一种莫名的怀旧感突然向你袭来。\n\n那是[purple]花朵的芬芳[/purple]、[green]腐烂的恶臭[/green]以及[orange]某种无法言说的气息[/orange]的混合体。每前进一步，这股气味都变得愈发浓烈。与此同时，你感受到周围的世界正开始[sine]扭曲，旋转[/sine]。\n\n一股[sine]变幻莫测的混沌[/rainbow][/sine]将你淹没，你开始慢慢地丧失了对自我的感知。",
+    "description": "费力地穿过一片厚密的灌木丛并来到空地后，一种莫名的怀旧感突然向你袭来。\n\n那是[purple]花朵的芬芳[/purple]、[green]腐烂的恶臭[/green]以及[orange]某种无法言说的气息[/orange]的混合体。每前进一步，这股气味都变得愈发浓烈。与此同时，你感受到周围的世界正开始[sine]扭曲，旋转[/sine]。\n\n一股[sine]变幻莫测的混沌[/sine]将你淹没，你开始慢慢地丧失了对自我的感知。",
     "options": [
       {
         "id": "LET_GO",
@@ -302,7 +302,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "费力地穿过一片厚密的灌木丛并来到空地后，一种莫名的怀旧感突然向你袭来。\n\n那是[purple]花朵的芬芳[/purple]、[green]腐烂的恶臭[/green]以及[orange]某种无法言说的气息[/orange]的混合体。每前进一步，这股气味都变得愈发浓烈。与此同时，你感受到周围的世界正开始[sine]扭曲，旋转[/sine]。\n\n一股[sine]变幻莫测的混沌[/rainbow][/sine]将你淹没，你开始慢慢地丧失了对自我的感知。",
+        "description": "费力地穿过一片厚密的灌木丛并来到空地后，一种莫名的怀旧感突然向你袭来。\n\n那是[purple]花朵的芬芳[/purple]、[green]腐烂的恶臭[/green]以及[orange]某种无法言说的气息[/orange]的混合体。每前进一步，这股气味都变得愈发浓烈。与此同时，你感受到周围的世界正开始[sine]扭曲，旋转[/sine]。\n\n一股[sine]变幻莫测的混沌[/sine]将你淹没，你开始慢慢地丧失了对自我的感知。",
         "options": [
           {
             "id": "LET_GO",
@@ -596,7 +596,7 @@
     "name": "巨大花卉",
     "type": "Event",
     "act": "Act 2 - Hive",
-    "description": "一朵[green]巨型花卉[/green]正生长在一座[red][jitter]骸骨堆积而成的山[/jitter][/red]上。\n\n随着它那[sine]变换色彩的花瓣[/rainbow][/sine]不断搏动，你感觉到中心处一定有[aqua]一团强力花粉[/aqua]，但那起伏的花瓣[red]如刀锋般锋利[/red]且捉摸不定。\n\n你本可以只采集一些[gold]金色花蜜[/gold]，但中心处的那个奖赏实在是太诱人了…",
+    "description": "一朵[green]巨型花卉[/green]正生长在一座[red][jitter]骸骨堆积而成的山[/jitter][/red]上。\n\n随着它那[sine]变换色彩的花瓣[/sine]不断搏动，你感觉到中心处一定有[aqua]一团强力花粉[/aqua]，但那起伏的花瓣[red]如刀锋般锋利[/red]且捉摸不定。\n\n你本可以只采集一些[gold]金色花蜜[/gold]，但中心处的那个奖赏实在是太诱人了…",
     "options": [
       {
         "id": "EXTRACT_CURRENT_PRIZE_1",
@@ -620,7 +620,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "一朵[green]巨型花卉[/green]正生长在一座[red][jitter]骸骨堆积而成的山[/jitter][/red]上。\n\n随着它那[sine]变换色彩的花瓣[/rainbow][/sine]不断搏动，你感觉到中心处一定有[aqua]一团强力花粉[/aqua]，但那起伏的花瓣[red]如刀锋般锋利[/red]且捉摸不定。\n\n你本可以只采集一些[gold]金色花蜜[/gold]，但中心处的那个奖赏实在是太诱人了…",
+        "description": "一朵[green]巨型花卉[/green]正生长在一座[red][jitter]骸骨堆积而成的山[/jitter][/red]上。\n\n随着它那[sine]变换色彩的花瓣[/sine]不断搏动，你感觉到中心处一定有[aqua]一团强力花粉[/aqua]，但那起伏的花瓣[red]如刀锋般锋利[/red]且捉摸不定。\n\n你本可以只采集一些[gold]金色花蜜[/gold]，但中心处的那个奖赏实在是太诱人了…",
         "options": [
           {
             "id": "EXTRACT_CURRENT_PRIZE_1",

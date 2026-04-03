@@ -286,7 +286,7 @@
     "name": "Aroma do Caos",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "Após uma árdua caminhada através de um denso matagal, uma estranha sensação de nostalgia envolve você.\n\nUma mistura de [purple]aromas florais[/purple], [green]decomposição pútrida[/green] e [orange]algo completamente único[/orange]. O aroma se intensifica a cada passo, e você sente como se o mundo ao seu redor começasse a [sine]girar e se contorcer[/sine].\n\nUma sensação de [sine]caos mutável[/rainbow][/sine] toma conta, e você começa a perder a noção da sua própria existência.",
+    "description": "Após uma árdua caminhada através de um denso matagal, uma estranha sensação de nostalgia envolve você.\n\nUma mistura de [purple]aromas florais[/purple], [green]decomposição pútrida[/green] e [orange]algo completamente único[/orange]. O aroma se intensifica a cada passo, e você sente como se o mundo ao seu redor começasse a [sine]girar e se contorcer[/sine].\n\nUma sensação de [sine]caos mutável[/sine] toma conta, e você começa a perder a noção da sua própria existência.",
     "options": [
       {
         "id": "LET_GO",
@@ -302,7 +302,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Após uma árdua caminhada através de um denso matagal, uma estranha sensação de nostalgia envolve você.\n\nUma mistura de [purple]aromas florais[/purple], [green]decomposição pútrida[/green] e [orange]algo completamente único[/orange]. O aroma se intensifica a cada passo, e você sente como se o mundo ao seu redor começasse a [sine]girar e se contorcer[/sine].\n\nUma sensação de [sine]caos mutável[/rainbow][/sine] toma conta, e você começa a perder a noção da sua própria existência.",
+        "description": "Após uma árdua caminhada através de um denso matagal, uma estranha sensação de nostalgia envolve você.\n\nUma mistura de [purple]aromas florais[/purple], [green]decomposição pútrida[/green] e [orange]algo completamente único[/orange]. O aroma se intensifica a cada passo, e você sente como se o mundo ao seu redor começasse a [sine]girar e se contorcer[/sine].\n\nUma sensação de [sine]caos mutável[/sine] toma conta, e você começa a perder a noção da sua própria existência.",
         "options": [
           {
             "id": "LET_GO",
@@ -596,7 +596,7 @@
     "name": "Flor Colossal",
     "type": "Event",
     "act": "Act 2 - Hive",
-    "description": "Você avista uma [green]flor colossal[/green] crescendo no topo de uma [red][jitter]montanha de ossos[/jitter][/red].\n\nConforme suas [sine]pétalas de cores oscilantes[/rainbow][/sine] pulsam, você nota um [aqua]Poderoso Aglomerado de Pólen[/aqua] localizado no centro da flor, mas as pétalas ondulantes parecem [red]extremamente afiadas[/red] e imprevisíveis.\n\nVocê poderia pegar apenas um pouco de [gold]néctar dourado[/gold], mas alcançar o prêmio no centro da flor é tão tentador...",
+    "description": "Você avista uma [green]flor colossal[/green] crescendo no topo de uma [red][jitter]montanha de ossos[/jitter][/red].\n\nConforme suas [sine]pétalas de cores oscilantes[/sine] pulsam, você nota um [aqua]Poderoso Aglomerado de Pólen[/aqua] localizado no centro da flor, mas as pétalas ondulantes parecem [red]extremamente afiadas[/red] e imprevisíveis.\n\nVocê poderia pegar apenas um pouco de [gold]néctar dourado[/gold], mas alcançar o prêmio no centro da flor é tão tentador...",
     "options": [
       {
         "id": "EXTRACT_CURRENT_PRIZE_1",
@@ -620,7 +620,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "Você avista uma [green]flor colossal[/green] crescendo no topo de uma [red][jitter]montanha de ossos[/jitter][/red].\n\nConforme suas [sine]pétalas de cores oscilantes[/rainbow][/sine] pulsam, você nota um [aqua]Poderoso Aglomerado de Pólen[/aqua] localizado no centro da flor, mas as pétalas ondulantes parecem [red]extremamente afiadas[/red] e imprevisíveis.\n\nVocê poderia pegar apenas um pouco de [gold]néctar dourado[/gold], mas alcançar o prêmio no centro da flor é tão tentador...",
+        "description": "Você avista uma [green]flor colossal[/green] crescendo no topo de uma [red][jitter]montanha de ossos[/jitter][/red].\n\nConforme suas [sine]pétalas de cores oscilantes[/sine] pulsam, você nota um [aqua]Poderoso Aglomerado de Pólen[/aqua] localizado no centro da flor, mas as pétalas ondulantes parecem [red]extremamente afiadas[/red] e imprevisíveis.\n\nVocê poderia pegar apenas um pouco de [gold]néctar dourado[/gold], mas alcançar o prêmio no centro da flor é tão tentador...",
         "options": [
           {
             "id": "EXTRACT_CURRENT_PRIZE_1",

@@ -34,7 +34,7 @@ def strip_rich_tags(text: str) -> str:
     text = re.sub(r'\[font_size=\d+\]', '', text)
     # Strip only non-renderable tags — keep colors (gold, blue, red, green, purple, orange, pink, aqua)
     # and effects (sine, jitter, b) for frontend rendering
-    text = re.sub(r'\[/?(?:thinky_dots|i|font_size)\]', '', text)
+    text = re.sub(r'\[/?(?:thinky_dots|i|font_size|rainbow)\]', '', text)
     return text
 
 

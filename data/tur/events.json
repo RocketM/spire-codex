@@ -286,7 +286,7 @@
     "name": "Kaos'un Aroması",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "Sık bir çalılığın arasından güçlükle ilerleyip bir açıklığa çıktığında adını koyamadığın bir nostalji duygusu seni sarar.\n\n[purple]Çiçeksi kokuların[/purple], [green]iğrenç bir çürümenin[/green] ve [orange]tamamen farklı bir şeyin[/orange] karışımı... Attığın her adımda koku daha da yoğunlaşır ve çevrendeki dünyanın [sine]eğilip büküldüğünü[/sine] hissedersin.\n\n[sine]Değişken bir kaos[/rainbow][/sine] hissiyle kuşatıldığında benlik duygunu yavaş yavaş kaybetmeye başlarsın.",
+    "description": "Sık bir çalılığın arasından güçlükle ilerleyip bir açıklığa çıktığında adını koyamadığın bir nostalji duygusu seni sarar.\n\n[purple]Çiçeksi kokuların[/purple], [green]iğrenç bir çürümenin[/green] ve [orange]tamamen farklı bir şeyin[/orange] karışımı... Attığın her adımda koku daha da yoğunlaşır ve çevrendeki dünyanın [sine]eğilip büküldüğünü[/sine] hissedersin.\n\n[sine]Değişken bir kaos[/sine] hissiyle kuşatıldığında benlik duygunu yavaş yavaş kaybetmeye başlarsın.",
     "options": [
       {
         "id": "LET_GO",
@@ -302,7 +302,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Sık bir çalılığın arasından güçlükle ilerleyip bir açıklığa çıktığında adını koyamadığın bir nostalji duygusu seni sarar.\n\n[purple]Çiçeksi kokuların[/purple], [green]iğrenç bir çürümenin[/green] ve [orange]tamamen farklı bir şeyin[/orange] karışımı... Attığın her adımda koku daha da yoğunlaşır ve çevrendeki dünyanın [sine]eğilip büküldüğünü[/sine] hissedersin.\n\n[sine]Değişken bir kaos[/rainbow][/sine] hissiyle kuşatıldığında benlik duygunu yavaş yavaş kaybetmeye başlarsın.",
+        "description": "Sık bir çalılığın arasından güçlükle ilerleyip bir açıklığa çıktığında adını koyamadığın bir nostalji duygusu seni sarar.\n\n[purple]Çiçeksi kokuların[/purple], [green]iğrenç bir çürümenin[/green] ve [orange]tamamen farklı bir şeyin[/orange] karışımı... Attığın her adımda koku daha da yoğunlaşır ve çevrendeki dünyanın [sine]eğilip büküldüğünü[/sine] hissedersin.\n\n[sine]Değişken bir kaos[/sine] hissiyle kuşatıldığında benlik duygunu yavaş yavaş kaybetmeye başlarsın.",
         "options": [
           {
             "id": "LET_GO",
@@ -596,7 +596,7 @@
     "name": "Devasa Çiçek",
     "type": "Event",
     "act": "Act 2 - Hive",
-    "description": "[red][jitter]Kemiklerden oluşan bir dağın[/jitter][/red] tepesinde [green]devasa bir çiçek[/green] büyümektedir.\n\n[sine]Renk değiştiren taç yaprakları[/rainbow][/sine] nabız gibi atarken, merkezinde [aqua]Güçlü Bir Polen Kümesi[/aqua] olduğunu sezersin; ancak dalgalanan yapraklar [red]ustura keskinliğindedir[/red] ve son derece öngörülemezdir.\n\nBiraz [gold]altın nektar[/gold] alabilirsin... ama merkezdeki ödüle uzanmak da fazlasıyla cezbedicidir.",
+    "description": "[red][jitter]Kemiklerden oluşan bir dağın[/jitter][/red] tepesinde [green]devasa bir çiçek[/green] büyümektedir.\n\n[sine]Renk değiştiren taç yaprakları[/sine] nabız gibi atarken, merkezinde [aqua]Güçlü Bir Polen Kümesi[/aqua] olduğunu sezersin; ancak dalgalanan yapraklar [red]ustura keskinliğindedir[/red] ve son derece öngörülemezdir.\n\nBiraz [gold]altın nektar[/gold] alabilirsin... ama merkezdeki ödüle uzanmak da fazlasıyla cezbedicidir.",
     "options": [
       {
         "id": "EXTRACT_CURRENT_PRIZE_1",
@@ -620,7 +620,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "[red][jitter]Kemiklerden oluşan bir dağın[/jitter][/red] tepesinde [green]devasa bir çiçek[/green] büyümektedir.\n\n[sine]Renk değiştiren taç yaprakları[/rainbow][/sine] nabız gibi atarken, merkezinde [aqua]Güçlü Bir Polen Kümesi[/aqua] olduğunu sezersin; ancak dalgalanan yapraklar [red]ustura keskinliğindedir[/red] ve son derece öngörülemezdir.\n\nBiraz [gold]altın nektar[/gold] alabilirsin... ama merkezdeki ödüle uzanmak da fazlasıyla cezbedicidir.",
+        "description": "[red][jitter]Kemiklerden oluşan bir dağın[/jitter][/red] tepesinde [green]devasa bir çiçek[/green] büyümektedir.\n\n[sine]Renk değiştiren taç yaprakları[/sine] nabız gibi atarken, merkezinde [aqua]Güçlü Bir Polen Kümesi[/aqua] olduğunu sezersin; ancak dalgalanan yapraklar [red]ustura keskinliğindedir[/red] ve son derece öngörülemezdir.\n\nBiraz [gold]altın nektar[/gold] alabilirsin... ama merkezdeki ödüle uzanmak da fazlasıyla cezbedicidir.",
         "options": [
           {
             "id": "EXTRACT_CURRENT_PRIZE_1",

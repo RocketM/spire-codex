@@ -286,7 +286,7 @@
     "name": "Woń chaosu",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "Z trudem przechodzisz przez grube poszycie, gdy po dotarciu na polanę dopada cię nagle fala nostalgii.\n\nCzujesz mieszaninę [purple]zapachu kwiatów[/purple], [green]fetoru zgnilizny[/green] i jeszcze [orange]czegoś innego[/orange]. Z każdym krokiem zapach robi się coraz bardziej intensywny i masz wrażenie, że wszystko dookoła ciebie zaczyna się [sine]zniekształcać[/sine].\n\nPogrążając się w [sine]zmiennym chaosie[/rainbow][/sine], tracisz poczucie tożsamości.",
+    "description": "Z trudem przechodzisz przez grube poszycie, gdy po dotarciu na polanę dopada cię nagle fala nostalgii.\n\nCzujesz mieszaninę [purple]zapachu kwiatów[/purple], [green]fetoru zgnilizny[/green] i jeszcze [orange]czegoś innego[/orange]. Z każdym krokiem zapach robi się coraz bardziej intensywny i masz wrażenie, że wszystko dookoła ciebie zaczyna się [sine]zniekształcać[/sine].\n\nPogrążając się w [sine]zmiennym chaosie[/sine], tracisz poczucie tożsamości.",
     "options": [
       {
         "id": "LET_GO",
@@ -302,7 +302,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Z trudem przechodzisz przez grube poszycie, gdy po dotarciu na polanę dopada cię nagle fala nostalgii.\n\nCzujesz mieszaninę [purple]zapachu kwiatów[/purple], [green]fetoru zgnilizny[/green] i jeszcze [orange]czegoś innego[/orange]. Z każdym krokiem zapach robi się coraz bardziej intensywny i masz wrażenie, że wszystko dookoła ciebie zaczyna się [sine]zniekształcać[/sine].\n\nPogrążając się w [sine]zmiennym chaosie[/rainbow][/sine], tracisz poczucie tożsamości.",
+        "description": "Z trudem przechodzisz przez grube poszycie, gdy po dotarciu na polanę dopada cię nagle fala nostalgii.\n\nCzujesz mieszaninę [purple]zapachu kwiatów[/purple], [green]fetoru zgnilizny[/green] i jeszcze [orange]czegoś innego[/orange]. Z każdym krokiem zapach robi się coraz bardziej intensywny i masz wrażenie, że wszystko dookoła ciebie zaczyna się [sine]zniekształcać[/sine].\n\nPogrążając się w [sine]zmiennym chaosie[/sine], tracisz poczucie tożsamości.",
         "options": [
           {
             "id": "LET_GO",
@@ -596,7 +596,7 @@
     "name": "Kolosalny kwiat",
     "type": "Event",
     "act": "Act 2 - Hive",
-    "description": "[green]Kolosalny kwiat[/green] wyrasta ze [red][jitter]gigantycznej sterty kości[/jitter][/red].\n\nJego [sine]kolorowe płatki[/rainbow][/sine] pulsują. Wyczuwasz, że w środku znajduje się [aqua]Potężny Zapylony Rdzeń[/aqua], lecz otaczające go faliste płatki są [red]ostre jak brzytwa[/red].\n\nWystarczyło by zebrać trochę [gold]złotego nektaru[/gold], ale sięgniecie po sam rdzeń wydaje się niezwykle kuszące...",
+    "description": "[green]Kolosalny kwiat[/green] wyrasta ze [red][jitter]gigantycznej sterty kości[/jitter][/red].\n\nJego [sine]kolorowe płatki[/sine] pulsują. Wyczuwasz, że w środku znajduje się [aqua]Potężny Zapylony Rdzeń[/aqua], lecz otaczające go faliste płatki są [red]ostre jak brzytwa[/red].\n\nWystarczyło by zebrać trochę [gold]złotego nektaru[/gold], ale sięgniecie po sam rdzeń wydaje się niezwykle kuszące...",
     "options": [
       {
         "id": "EXTRACT_CURRENT_PRIZE_1",
@@ -620,7 +620,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "[green]Kolosalny kwiat[/green] wyrasta ze [red][jitter]gigantycznej sterty kości[/jitter][/red].\n\nJego [sine]kolorowe płatki[/rainbow][/sine] pulsują. Wyczuwasz, że w środku znajduje się [aqua]Potężny Zapylony Rdzeń[/aqua], lecz otaczające go faliste płatki są [red]ostre jak brzytwa[/red].\n\nWystarczyło by zebrać trochę [gold]złotego nektaru[/gold], ale sięgniecie po sam rdzeń wydaje się niezwykle kuszące...",
+        "description": "[green]Kolosalny kwiat[/green] wyrasta ze [red][jitter]gigantycznej sterty kości[/jitter][/red].\n\nJego [sine]kolorowe płatki[/sine] pulsują. Wyczuwasz, że w środku znajduje się [aqua]Potężny Zapylony Rdzeń[/aqua], lecz otaczające go faliste płatki są [red]ostre jak brzytwa[/red].\n\nWystarczyło by zebrać trochę [gold]złotego nektaru[/gold], ale sięgniecie po sam rdzeń wydaje się niezwykle kuszące...",
         "options": [
           {
             "id": "EXTRACT_CURRENT_PRIZE_1",
