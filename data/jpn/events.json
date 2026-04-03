@@ -244,14 +244,14 @@
     "description": "[b][jitter]ガァン！ ガァン！！！ [/jitter][/b]\n\n壁の向こうから、金属が激しくぶつかり合う音が響いてくる……\n\n様子をうかがおうと壁に耳を当てた途端、壁が開き、せわしなく働く[orange]六本腕を持つ巨人[/orange]が姿を現した。\nその「顔」の部分には、[gold][sine]発光する印の渦[/sine][/gold]がうごめいている。\n\n「[aqua]高みへと昇る[/aqua]志を持つ者よ、我が工房を見つけおったか。 さあ、[jitter]融合[/jitter]の時間だ！」",
     "options": [
       {
-        "id": "COMBINE_DEFENDS",
-        "title": "防御を融合",
-        "description": "[gold]防御[/gold]を[blue]2[/blue]枚削除。 [gold]デッキ[/gold]に[gold]究極の防御[/gold]を追加。"
-      },
-      {
         "id": "COMBINE_STRIKES",
         "title": "ストライクを融合",
         "description": "[gold]ストライク[/gold]を[blue]2[/blue]枚削除。 [gold]デッキ[/gold]に[gold]究極のストライク[/gold]を追加。"
+      },
+      {
+        "id": "COMBINE_DEFENDS",
+        "title": "防御を融合",
+        "description": "[gold]防御[/gold]を[blue]2[/blue]枚削除。 [gold]デッキ[/gold]に[gold]究極の防御[/gold]を追加。"
       }
     ],
     "pages": [
@@ -268,14 +268,14 @@
         "description": "[b][jitter]ガァン！ ガァン！！！ [/jitter][/b]\n\n壁の向こうから、金属が激しくぶつかり合う音が響いてくる……\n\n様子をうかがおうと壁に耳を当てた途端、壁が開き、せわしなく働く[orange]六本腕を持つ巨人[/orange]が姿を現した。\nその「顔」の部分には、[gold][sine]発光する印の渦[/sine][/gold]がうごめいている。\n\n「[aqua]高みへと昇る[/aqua]志を持つ者よ、我が工房を見つけおったか。 さあ、[jitter]融合[/jitter]の時間だ！」",
         "options": [
           {
-            "id": "COMBINE_DEFENDS",
-            "title": "防御を融合",
-            "description": "[gold]防御[/gold]を[blue]2[/blue]枚削除。 [gold]デッキ[/gold]に[gold]究極の防御[/gold]を追加。"
-          },
-          {
             "id": "COMBINE_STRIKES",
             "title": "ストライクを融合",
             "description": "[gold]ストライク[/gold]を[blue]2[/blue]枚削除。 [gold]デッキ[/gold]に[gold]究極のストライク[/gold]を追加。"
+          },
+          {
+            "id": "COMBINE_DEFENDS",
+            "title": "防御を融合",
+            "description": "[gold]防御[/gold]を[blue]2[/blue]枚削除。 [gold]デッキ[/gold]に[gold]究極の防御[/gold]を追加。"
           }
         ]
       }
@@ -1508,11 +1508,6 @@
         "id": "SEARCH",
         "title": "周辺を探索する",
         "description": "[blue]45-75[/blue][gold]ゴールド[/gold]を獲得。"
-      },
-      {
-        "id": "CLAIM_LOCKED",
-        "title": "ロック中",
-        "description": "最大HPが低すぎる。"
       }
     ],
     "pages": [
@@ -1533,11 +1528,6 @@
             "id": "SEARCH",
             "title": "周辺を探索する",
             "description": "[blue]45-75[/blue][gold]ゴールド[/gold]を獲得。"
-          },
-          {
-            "id": "CLAIM_LOCKED",
-            "title": "ロック中",
-            "description": "最大HPが低すぎる。"
           }
         ]
       },
@@ -1651,7 +1641,7 @@
     "id": "NEOW",
     "name": "ネオー",
     "type": "Ancient",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "[sine]私が…… お前を…… “作り直し”た……\n…… 行け…… 上へ………… [/sine]",
     "options": null,
     "pages": null,
@@ -2493,11 +2483,6 @@
         "description": "ランダムな[gold]レリック[/gold]を1個獲得する。"
       },
       {
-        "id": "RELIC",
-        "title": "Relicを渡す",
-        "description": "ランダムな[gold]レリック[/gold]を[blue]2[/blue]個入手する。"
-      },
-      {
         "id": "POTION_LOCKED",
         "title": "ロック中",
         "description": "渡せるポーションが1つもない。"
@@ -2506,6 +2491,11 @@
         "id": "GOLD",
         "title": "100ゴールドを渡す",
         "description": "ランダムな[gold]レリック[/gold]を1個獲得する。"
+      },
+      {
+        "id": "RELIC",
+        "title": "Relicを渡す",
+        "description": "ランダムな[gold]レリック[/gold]を[blue]2[/blue]個入手する。"
       },
       {
         "id": "RELIC_LOCKED",
@@ -2528,11 +2518,6 @@
             "description": "ランダムな[gold]レリック[/gold]を1個獲得する。"
           },
           {
-            "id": "RELIC",
-            "title": "Relicを渡す",
-            "description": "ランダムな[gold]レリック[/gold]を[blue]2[/blue]個入手する。"
-          },
-          {
             "id": "POTION_LOCKED",
             "title": "ロック中",
             "description": "渡せるポーションが1つもない。"
@@ -2541,6 +2526,11 @@
             "id": "GOLD",
             "title": "100ゴールドを渡す",
             "description": "ランダムな[gold]レリック[/gold]を1個獲得する。"
+          },
+          {
+            "id": "RELIC",
+            "title": "Relicを渡す",
+            "description": "ランダムな[gold]レリック[/gold]を[blue]2[/blue]個入手する。"
           },
           {
             "id": "RELIC_LOCKED",
@@ -3196,7 +3186,7 @@
     "id": "SUNKEN_STATUE",
     "name": "沈んだ像",
     "type": "Event",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "池に半ば沈みかけた古い石像を見つけた。 その手は[blue]石の剣[/blue]の上に静かに添えられている。\n\n池の底では、何かが[gold][sine]きらきらと光って[/sine][/gold]いる。\nお供え物だろうか？\n\n切実にゴールドを必要としているんだが……",
     "options": [
       {
@@ -5178,9 +5168,9 @@
     "description": "ほこりまみれの箱を開けると、中には精巧な3つの木彫りが入っていた。\n\n鳥、ヘビ、そして…… ドーナツ型？\n\nすぐそばにある台座には、木彫りの底の形とぴったり合うくぼみが空いている。 どの木彫りを台座に置こうか？",
     "options": [
       {
-        "id": "SNAKE_LOCKED",
-        "title": "ロック中",
-        "description": "[purple]スリザー[/purple]をエンチャントできるカードがない。"
+        "id": "BIRD",
+        "title": "鳥",
+        "description": "スターターカードを[blue]1[/blue]枚選び、[gold]ついばみ[/gold]に[gold]変化[/gold]させる。"
       },
       {
         "id": "SNAKE",
@@ -5188,9 +5178,9 @@
         "description": "カードを[blue]1[/blue]枚選び、[purple]スリザー[/purple]を[gold]エンチャント[/gold]する。"
       },
       {
-        "id": "BIRD",
-        "title": "鳥",
-        "description": "スターターカードを[blue]1[/blue]枚選び、[gold]ついばみ[/gold]に[gold]変化[/gold]させる。"
+        "id": "SNAKE_LOCKED",
+        "title": "ロック中",
+        "description": "[purple]スリザー[/purple]をエンチャントできるカードがない。"
       },
       {
         "id": "TORUS",
@@ -5208,9 +5198,9 @@
         "description": "ほこりまみれの箱を開けると、中には精巧な3つの木彫りが入っていた。\n\n鳥、ヘビ、そして…… ドーナツ型？\n\nすぐそばにある台座には、木彫りの底の形とぴったり合うくぼみが空いている。 どの木彫りを台座に置こうか？",
         "options": [
           {
-            "id": "SNAKE_LOCKED",
-            "title": "ロック中",
-            "description": "[purple]スリザー[/purple]をエンチャントできるカードがない。"
+            "id": "BIRD",
+            "title": "鳥",
+            "description": "スターターカードを[blue]1[/blue]枚選び、[gold]ついばみ[/gold]に[gold]変化[/gold]させる。"
           },
           {
             "id": "SNAKE",
@@ -5218,9 +5208,9 @@
             "description": "カードを[blue]1[/blue]枚選び、[purple]スリザー[/purple]を[gold]エンチャント[/gold]する。"
           },
           {
-            "id": "BIRD",
-            "title": "鳥",
-            "description": "スターターカードを[blue]1[/blue]枚選び、[gold]ついばみ[/gold]に[gold]変化[/gold]させる。"
+            "id": "SNAKE_LOCKED",
+            "title": "ロック中",
+            "description": "[purple]スリザー[/purple]をエンチャントできるカードがない。"
           },
           {
             "id": "TORUS",

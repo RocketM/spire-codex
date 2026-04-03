@@ -39,8 +39,11 @@ def strip_rich_tags(text: str) -> str:
 
 
 def build_act_mapping() -> dict[str, str]:
-    """Map event class names to act names."""
-    event_to_act = {}
+    """Map event class names to act names.
+
+    Events appearing in multiple act files get a combined label (e.g. "Act 1 / Underdocks").
+    """
+    event_to_acts: dict[str, list[str]] = {}
     act_map = {
         "Overgrowth.cs": "Act 1 - Overgrowth",
         "Hive.cs": "Act 2 - Hive",
@@ -54,11 +57,16 @@ def build_act_mapping() -> dict[str, str]:
         content = filepath.read_text(encoding="utf-8")
         # Regular events
         for m in re.finditer(r'ModelDb\.Event<(\w+)>\(\)', content):
-            event_to_act[m.group(1)] = act_name
+            event_to_acts.setdefault(m.group(1), [])
+            if act_name not in event_to_acts[m.group(1)]:
+                event_to_acts[m.group(1)].append(act_name)
         # Ancient events
         for m in re.finditer(r'ModelDb\.AncientEvent<(\w+)>\(\)', content):
-            event_to_act[m.group(1)] = act_name
-    return event_to_act
+            event_to_acts.setdefault(m.group(1), [])
+            if act_name not in event_to_acts[m.group(1)]:
+                event_to_acts[m.group(1)].append(act_name)
+    # Combine multi-act entries into a single string
+    return {k: " / ".join(v) for k, v in event_to_acts.items()}
 
 
 def load_all_titles(loc_dir: Path) -> dict[str, str]:
@@ -701,6 +709,57 @@ def _fix_tablet_of_truth(event: dict) -> dict:
     return event
 
 
+def _fix_option_order(event: dict, correct_order: list[str]) -> dict:
+    """Reorder INITIAL options to match the C# runtime order."""
+
+    def _reorder(options: list[dict]) -> list[dict]:
+        by_id = {o["id"]: o for o in options}
+        ordered = [by_id[oid] for oid in correct_order if oid in by_id]
+        # Append any remaining options not in the explicit order
+        ordered += [o for o in options if o["id"] not in correct_order]
+        return ordered
+
+    if event.get("options"):
+        event["options"] = _reorder(event["options"])
+    for page in (event.get("pages") or []):
+        if page.get("id") == "INITIAL" and page.get("options"):
+            page["options"] = _reorder(page["options"])
+    return event
+
+
+def _fix_amalgamator(event: dict) -> dict:
+    """Fix Amalgamator option order — C# has Strikes before Defends."""
+    if event["id"] != "AMALGAMATOR":
+        return event
+    return _fix_option_order(event, ["COMBINE_STRIKES", "COMBINE_DEFENDS"])
+
+
+def _fix_wood_carvings(event: dict) -> dict:
+    """Fix Wood Carvings option order — C# array is [BIRD, SNAKE/SNAKE_LOCKED, TORUS]."""
+    if event["id"] != "WOOD_CARVINGS":
+        return event
+    return _fix_option_order(event, ["BIRD", "SNAKE", "SNAKE_LOCKED", "TORUS"])
+
+
+def _fix_ranwid_the_elder(event: dict) -> dict:
+    """Fix Ranwid option order — C# builds [POTION/LOCKED, GOLD, RELIC/LOCKED]."""
+    if event["id"] != "RANWID_THE_ELDER":
+        return event
+    return _fix_option_order(event, ["POTION", "POTION_LOCKED", "GOLD", "RELIC", "RELIC_LOCKED"])
+
+
+def _fix_lost_wisp(event: dict) -> dict:
+    """Remove ghost CLAIM_LOCKED option — not in C# source, only in localization."""
+    if event["id"] != "LOST_WISP":
+        return event
+    if event.get("options"):
+        event["options"] = [o for o in event["options"] if o["id"] != "CLAIM_LOCKED"]
+    for page in (event.get("pages") or []):
+        if page.get("options"):
+            page["options"] = [o for o in page["options"] if o["id"] != "CLAIM_LOCKED"]
+    return event
+
+
 def parse_all_events(loc_dir: Path, data_dir: Path) -> list[dict]:
     localization = load_localization(loc_dir)
     act_mapping = build_act_mapping()
@@ -716,6 +775,10 @@ def parse_all_events(loc_dir: Path, data_dir: Path) -> list[dict]:
             event = _fix_spiraling_whirlpool(event)
             event = _fix_colorful_philosophers(event)
             event = _fix_slippery_bridge(event, localization)
+            event = _fix_amalgamator(event)
+            event = _fix_wood_carvings(event)
+            event = _fix_ranwid_the_elder(event)
+            event = _fix_lost_wisp(event)
             events.append(event)
     return events
 

@@ -244,14 +244,14 @@
     "description": "[b][jitter]깡! 깡!!![/jitter][/b]\n\n벽 건너편에서 금속과 금속이 부딪히는 소리가 울려 퍼집니다...\n\n당신이 벽에 머리를 기대고 귀를 기울이려는 찰나—벽이 갈라지듯 열렸고, [orange]여섯 개의 팔을 지닌 거구의 인물[/orange]이 작업에 몰두하고 있는 광경이 드러납니다.\n그의 “얼굴”이라 불릴 만한 곳에는, [gold][sine]빛나는 문양들이 뒤엉켜 소용돌이[/sine][/gold]치고 있습니다.\n\n“[aqua]승천하는 영혼[/aqua]을 지닌 자가 내 공방에 찾아온 건가? 좋아, [jitter]결합이다[/jitter]!”",
     "options": [
       {
-        "id": "COMBINE_DEFENDS",
-        "title": "수비를 합친다",
-        "description": "[gold]수비[/gold]를 [blue]2[/blue]장 제거합니다. [gold]궁극의 수비[/gold]를 [gold]덱[/gold]에 추가합니다."
-      },
-      {
         "id": "COMBINE_STRIKES",
         "title": "타격을 합친다",
         "description": "[gold]타격[/gold]을 [blue]2[/blue]장 제거합니다. [gold]궁극의 타격[/gold]을 [gold]덱[/gold]에 추가합니다."
+      },
+      {
+        "id": "COMBINE_DEFENDS",
+        "title": "수비를 합친다",
+        "description": "[gold]수비[/gold]를 [blue]2[/blue]장 제거합니다. [gold]궁극의 수비[/gold]를 [gold]덱[/gold]에 추가합니다."
       }
     ],
     "pages": [
@@ -268,14 +268,14 @@
         "description": "[b][jitter]깡! 깡!!![/jitter][/b]\n\n벽 건너편에서 금속과 금속이 부딪히는 소리가 울려 퍼집니다...\n\n당신이 벽에 머리를 기대고 귀를 기울이려는 찰나—벽이 갈라지듯 열렸고, [orange]여섯 개의 팔을 지닌 거구의 인물[/orange]이 작업에 몰두하고 있는 광경이 드러납니다.\n그의 “얼굴”이라 불릴 만한 곳에는, [gold][sine]빛나는 문양들이 뒤엉켜 소용돌이[/sine][/gold]치고 있습니다.\n\n“[aqua]승천하는 영혼[/aqua]을 지닌 자가 내 공방에 찾아온 건가? 좋아, [jitter]결합이다[/jitter]!”",
         "options": [
           {
-            "id": "COMBINE_DEFENDS",
-            "title": "수비를 합친다",
-            "description": "[gold]수비[/gold]를 [blue]2[/blue]장 제거합니다. [gold]궁극의 수비[/gold]를 [gold]덱[/gold]에 추가합니다."
-          },
-          {
             "id": "COMBINE_STRIKES",
             "title": "타격을 합친다",
             "description": "[gold]타격[/gold]을 [blue]2[/blue]장 제거합니다. [gold]궁극의 타격[/gold]을 [gold]덱[/gold]에 추가합니다."
+          },
+          {
+            "id": "COMBINE_DEFENDS",
+            "title": "수비를 합친다",
+            "description": "[gold]수비[/gold]를 [blue]2[/blue]장 제거합니다. [gold]궁극의 수비[/gold]를 [gold]덱[/gold]에 추가합니다."
           }
         ]
       }
@@ -1508,11 +1508,6 @@
         "id": "SEARCH",
         "title": "주변을 탐색한다",
         "description": "[gold]골드[/gold]를 [blue]45-75[/blue] 얻습니다."
-      },
-      {
-        "id": "CLAIM_LOCKED",
-        "title": "잠김",
-        "description": "최대 체력이 너무 낮습니다."
       }
     ],
     "pages": [
@@ -1533,11 +1528,6 @@
             "id": "SEARCH",
             "title": "주변을 탐색한다",
             "description": "[gold]골드[/gold]를 [blue]45-75[/blue] 얻습니다."
-          },
-          {
-            "id": "CLAIM_LOCKED",
-            "title": "잠김",
-            "description": "최대 체력이 너무 낮습니다."
           }
         ]
       },
@@ -1651,7 +1641,7 @@
     "id": "NEOW",
     "name": "니오우",
     "type": "Ancient",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "[sine]내가 너를... 다시 빚어냈다....\n...위로... ..올라가라.....[/sine]",
     "options": null,
     "pages": null,
@@ -2493,11 +2483,6 @@
         "description": "무작위 [gold]유물[/gold]을 1개 얻습니다."
       },
       {
-        "id": "RELIC",
-        "title": "Relic을(를) 준다",
-        "description": "무작위 [gold]유물[/gold]을 [blue]2[/blue]개 얻습니다."
-      },
-      {
         "id": "POTION_LOCKED",
         "title": "잠김",
         "description": "줄 수 있는 포션이 없습니다."
@@ -2506,6 +2491,11 @@
         "id": "GOLD",
         "title": "골드를 100 준다",
         "description": "무작위 [gold]유물[/gold]을 1개 얻습니다."
+      },
+      {
+        "id": "RELIC",
+        "title": "Relic을(를) 준다",
+        "description": "무작위 [gold]유물[/gold]을 [blue]2[/blue]개 얻습니다."
       },
       {
         "id": "RELIC_LOCKED",
@@ -2528,11 +2518,6 @@
             "description": "무작위 [gold]유물[/gold]을 1개 얻습니다."
           },
           {
-            "id": "RELIC",
-            "title": "Relic을(를) 준다",
-            "description": "무작위 [gold]유물[/gold]을 [blue]2[/blue]개 얻습니다."
-          },
-          {
             "id": "POTION_LOCKED",
             "title": "잠김",
             "description": "줄 수 있는 포션이 없습니다."
@@ -2541,6 +2526,11 @@
             "id": "GOLD",
             "title": "골드를 100 준다",
             "description": "무작위 [gold]유물[/gold]을 1개 얻습니다."
+          },
+          {
+            "id": "RELIC",
+            "title": "Relic을(를) 준다",
+            "description": "무작위 [gold]유물[/gold]을 [blue]2[/blue]개 얻습니다."
           },
           {
             "id": "RELIC_LOCKED",
@@ -3196,7 +3186,7 @@
     "id": "SUNKEN_STATUE",
     "name": "침몰한 조각상",
     "type": "Event",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "당신은 연못에 반쯤 잠겨 있는 오래된 석상을 발견했습니다. 석상의 두 손은 [blue]돌 검[/blue] 위에 조심스레 얹혀 있습니다.\n\n연못 바닥에는 무언가가 [gold][sine]반짝거리고[/sine][/gold] 있습니다.\n누군가에게 바치기 위한 것들일까요?\n\n저 돈들은 꽤나 도움이 될 것 같습니다...",
     "options": [
       {
@@ -5178,9 +5168,9 @@
     "description": "당신은 먼지가 쌓인 상자를 열고, 정교한 형태의 나무 조각 3개를 발견했습니다:\n\n새, 뱀, 그리고... 고리?\n\n근처에 있던 받침대에는 조각의 바닥 부분과 일치하는 움푹 들어간 흔적이 있습니다. 받침대 위에 어떤 조각을 올려놓을까요?",
     "options": [
       {
-        "id": "SNAKE_LOCKED",
-        "title": "잠김",
-        "description": "[purple]미끈거림[/purple]을 인챈트할 수 있는 카드가 없습니다."
+        "id": "BIRD",
+        "title": "새",
+        "description": "시작 카드를 [blue]1[/blue]장 선택해 [gold]쪼기[/gold]로 [gold]변화[/gold]시킵니다."
       },
       {
         "id": "SNAKE",
@@ -5188,9 +5178,9 @@
         "description": "카드 [blue]1[/blue]장에 [purple]스르륵[/purple]을 [gold]인챈트[/gold]합니다."
       },
       {
-        "id": "BIRD",
-        "title": "새",
-        "description": "시작 카드를 [blue]1[/blue]장 선택해 [gold]쪼기[/gold]로 [gold]변화[/gold]시킵니다."
+        "id": "SNAKE_LOCKED",
+        "title": "잠김",
+        "description": "[purple]미끈거림[/purple]을 인챈트할 수 있는 카드가 없습니다."
       },
       {
         "id": "TORUS",
@@ -5208,9 +5198,9 @@
         "description": "당신은 먼지가 쌓인 상자를 열고, 정교한 형태의 나무 조각 3개를 발견했습니다:\n\n새, 뱀, 그리고... 고리?\n\n근처에 있던 받침대에는 조각의 바닥 부분과 일치하는 움푹 들어간 흔적이 있습니다. 받침대 위에 어떤 조각을 올려놓을까요?",
         "options": [
           {
-            "id": "SNAKE_LOCKED",
-            "title": "잠김",
-            "description": "[purple]미끈거림[/purple]을 인챈트할 수 있는 카드가 없습니다."
+            "id": "BIRD",
+            "title": "새",
+            "description": "시작 카드를 [blue]1[/blue]장 선택해 [gold]쪼기[/gold]로 [gold]변화[/gold]시킵니다."
           },
           {
             "id": "SNAKE",
@@ -5218,9 +5208,9 @@
             "description": "카드 [blue]1[/blue]장에 [purple]스르륵[/purple]을 [gold]인챈트[/gold]합니다."
           },
           {
-            "id": "BIRD",
-            "title": "새",
-            "description": "시작 카드를 [blue]1[/blue]장 선택해 [gold]쪼기[/gold]로 [gold]변화[/gold]시킵니다."
+            "id": "SNAKE_LOCKED",
+            "title": "잠김",
+            "description": "[purple]미끈거림[/purple]을 인챈트할 수 있는 카드가 없습니다."
           },
           {
             "id": "TORUS",

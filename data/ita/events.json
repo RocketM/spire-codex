@@ -499,7 +499,7 @@
     "id": "NEOW",
     "name": "Neow",
     "type": "Ancient",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "[sine]Ti... ho... ridato... la... vita...\n...alzati...[/sine]",
     "options": null,
     "pages": null,
@@ -1352,7 +1352,7 @@
     "id": "SUNKEN_STATUE",
     "name": "SunkenStatue",
     "type": "Event",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": null,
     "options": null,
     "pages": null

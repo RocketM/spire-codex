@@ -244,14 +244,14 @@
     "description": "[b][jitter]¡CLANG! ¡¡¡CLANG!!![/jitter][/b]\n\nOyes ecos de metal contra metal al otro lado de una pared.\n\nAl apoyar la cabeza contra la pared para escuchar, esta se abre y revela a una [orange]imponente figura de seis brazos[/orange], la cual trabaja sin descanso.\nSu «cara» es un [gold][sine]vórtice giratorio de sigilos brillantes[/sine][/gold] que se mueven.\n\n—¿Alguien con un [aqua]espíritu ascendente[/aqua] encontró mi taller? ¡A [jitter]COMBINAR[/jitter]!",
     "options": [
       {
-        "id": "COMBINE_DEFENDS",
-        "title": "Combinar cartas Defensa",
-        "description": "Eliminas [blue]2[/blue] cartas [gold]Defensa[/gold]. Agregas [gold]Defensa definitiva[/gold] al [gold]mazo[/gold]."
-      },
-      {
         "id": "COMBINE_STRIKES",
         "title": "Combinar cartas Golpe",
         "description": "Eliminas [blue]2[/blue] cartas [gold]Golpe[/gold]. Agregas [gold]Golpe definitivo[/gold] al [gold]mazo[/gold]."
+      },
+      {
+        "id": "COMBINE_DEFENDS",
+        "title": "Combinar cartas Defensa",
+        "description": "Eliminas [blue]2[/blue] cartas [gold]Defensa[/gold]. Agregas [gold]Defensa definitiva[/gold] al [gold]mazo[/gold]."
       }
     ],
     "pages": [
@@ -268,14 +268,14 @@
         "description": "[b][jitter]¡CLANG! ¡¡¡CLANG!!![/jitter][/b]\n\nOyes ecos de metal contra metal al otro lado de una pared.\n\nAl apoyar la cabeza contra la pared para escuchar, esta se abre y revela a una [orange]imponente figura de seis brazos[/orange], la cual trabaja sin descanso.\nSu «cara» es un [gold][sine]vórtice giratorio de sigilos brillantes[/sine][/gold] que se mueven.\n\n—¿Alguien con un [aqua]espíritu ascendente[/aqua] encontró mi taller? ¡A [jitter]COMBINAR[/jitter]!",
         "options": [
           {
-            "id": "COMBINE_DEFENDS",
-            "title": "Combinar cartas Defensa",
-            "description": "Eliminas [blue]2[/blue] cartas [gold]Defensa[/gold]. Agregas [gold]Defensa definitiva[/gold] al [gold]mazo[/gold]."
-          },
-          {
             "id": "COMBINE_STRIKES",
             "title": "Combinar cartas Golpe",
             "description": "Eliminas [blue]2[/blue] cartas [gold]Golpe[/gold]. Agregas [gold]Golpe definitivo[/gold] al [gold]mazo[/gold]."
+          },
+          {
+            "id": "COMBINE_DEFENDS",
+            "title": "Combinar cartas Defensa",
+            "description": "Eliminas [blue]2[/blue] cartas [gold]Defensa[/gold]. Agregas [gold]Defensa definitiva[/gold] al [gold]mazo[/gold]."
           }
         ]
       }
@@ -1508,11 +1508,6 @@
         "id": "SEARCH",
         "title": "Explorar las cercanías",
         "description": "Obtienes [blue]45-75[/blue] de [gold]oro[/gold]."
-      },
-      {
-        "id": "CLAIM_LOCKED",
-        "title": "Sin desbloquear",
-        "description": "Tus PV máx. son demasiado bajos."
       }
     ],
     "pages": [
@@ -1533,11 +1528,6 @@
             "id": "SEARCH",
             "title": "Explorar las cercanías",
             "description": "Obtienes [blue]45-75[/blue] de [gold]oro[/gold]."
-          },
-          {
-            "id": "CLAIM_LOCKED",
-            "title": "Sin desbloquear",
-            "description": "Tus PV máx. son demasiado bajos."
           }
         ]
       },
@@ -1651,7 +1641,7 @@
     "id": "NEOW",
     "name": "Neow",
     "type": "Ancient",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "[sine]Te ... traje ... de vuelta ...\nAdelante ... Sube ...[/sine]",
     "options": null,
     "pages": null,
@@ -2493,11 +2483,6 @@
         "description": "Obtienes una [gold]reliquia[/gold] al azar."
       },
       {
-        "id": "RELIC",
-        "title": "Darle Relic",
-        "description": "Obtienes [blue]2[/blue] [gold]reliquias[/gold] al azar."
-      },
-      {
         "id": "POTION_LOCKED",
         "title": "Sin desbloquear",
         "description": "No tienes ninguna poción que puedas entregar."
@@ -2506,6 +2491,11 @@
         "id": "GOLD",
         "title": "Darle 100 de oro",
         "description": "Obtienes una [gold]reliquia[/gold] al azar."
+      },
+      {
+        "id": "RELIC",
+        "title": "Darle Relic",
+        "description": "Obtienes [blue]2[/blue] [gold]reliquias[/gold] al azar."
       },
       {
         "id": "RELIC_LOCKED",
@@ -2528,11 +2518,6 @@
             "description": "Obtienes una [gold]reliquia[/gold] al azar."
           },
           {
-            "id": "RELIC",
-            "title": "Darle Relic",
-            "description": "Obtienes [blue]2[/blue] [gold]reliquias[/gold] al azar."
-          },
-          {
             "id": "POTION_LOCKED",
             "title": "Sin desbloquear",
             "description": "No tienes ninguna poción que puedas entregar."
@@ -2541,6 +2526,11 @@
             "id": "GOLD",
             "title": "Darle 100 de oro",
             "description": "Obtienes una [gold]reliquia[/gold] al azar."
+          },
+          {
+            "id": "RELIC",
+            "title": "Darle Relic",
+            "description": "Obtienes [blue]2[/blue] [gold]reliquias[/gold] al azar."
           },
           {
             "id": "RELIC_LOCKED",
@@ -3196,7 +3186,7 @@
     "id": "SUNKEN_STATUE",
     "name": "La estatua sumergida",
     "type": "Event",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "Ves una estatua antigua medio sumergida en un estanque; sus manos descansan con cuidado sobre una [blue]espada pétrea[/blue].\n\nAlgo también [gold][sine]resplandece[/sine][/gold] en el fondo del estanque.\n¿Serán ofrendas votivas, quizás?\n\nTe vendría bien algo de dinero.",
     "options": [
       {
@@ -5178,9 +5168,9 @@
     "description": "Abres una caja polvorienta y encuentras un conjunto de tres elaboradas esculturas de madera:\n\nUn pájaro, una serpiente y... ¿un toro?\n\nUn pedestal cercano tiene hendiduras que coinciden con la base de las esculturas. ¿Cuál colocarás en el pedestal?",
     "options": [
       {
-        "id": "SNAKE_LOCKED",
-        "title": "Sin desbloquear",
-        "description": "No puedes encantar ninguna de tus cartas con [purple]Serpenteo[/purple]."
+        "id": "BIRD",
+        "title": "Colocar el pájaro",
+        "description": "Eliges [blue]1[/blue] carta básica para [gold]transformarla[/gold] en [gold]Picotazo[/gold]."
       },
       {
         "id": "SNAKE",
@@ -5188,9 +5178,9 @@
         "description": "[gold]Encantas[/gold] [blue]1[/blue] carta con [purple]Serpentino[/purple]."
       },
       {
-        "id": "BIRD",
-        "title": "Colocar el pájaro",
-        "description": "Eliges [blue]1[/blue] carta básica para [gold]transformarla[/gold] en [gold]Picotazo[/gold]."
+        "id": "SNAKE_LOCKED",
+        "title": "Sin desbloquear",
+        "description": "No puedes encantar ninguna de tus cartas con [purple]Serpenteo[/purple]."
       },
       {
         "id": "TORUS",
@@ -5208,9 +5198,9 @@
         "description": "Abres una caja polvorienta y encuentras un conjunto de tres elaboradas esculturas de madera:\n\nUn pájaro, una serpiente y... ¿un toro?\n\nUn pedestal cercano tiene hendiduras que coinciden con la base de las esculturas. ¿Cuál colocarás en el pedestal?",
         "options": [
           {
-            "id": "SNAKE_LOCKED",
-            "title": "Sin desbloquear",
-            "description": "No puedes encantar ninguna de tus cartas con [purple]Serpenteo[/purple]."
+            "id": "BIRD",
+            "title": "Colocar el pájaro",
+            "description": "Eliges [blue]1[/blue] carta básica para [gold]transformarla[/gold] en [gold]Picotazo[/gold]."
           },
           {
             "id": "SNAKE",
@@ -5218,9 +5208,9 @@
             "description": "[gold]Encantas[/gold] [blue]1[/blue] carta con [purple]Serpentino[/purple]."
           },
           {
-            "id": "BIRD",
-            "title": "Colocar el pájaro",
-            "description": "Eliges [blue]1[/blue] carta básica para [gold]transformarla[/gold] en [gold]Picotazo[/gold]."
+            "id": "SNAKE_LOCKED",
+            "title": "Sin desbloquear",
+            "description": "No puedes encantar ninguna de tus cartas con [purple]Serpenteo[/purple]."
           },
           {
             "id": "TORUS",

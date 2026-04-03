@@ -244,14 +244,14 @@
     "description": "[b][jitter]BANG ! BANG !!![/jitter][/b]\n\nVous entendez les échos du métal battant le métal de l’autre côté d’un mur...\n\nVous collez l’oreille contre la paroi, quand celle-ci s’ouvre soudain, révélant une [orange]énorme silhouette à six bras[/orange] attelée à son ouvrage.\nSon « visage » est un [gold][sine]tourbillon de glyphes lumineux[/sine][/gold] qui dansent en cercle.\n\n« Un être doté d’un [aqua]Esprit Ascendant[/aqua] a trouvé mon atelier ? Le moment est venu de réaliser quelque [jitter]ALLIAGE[/jitter] ! »",
     "options": [
       {
-        "id": "COMBINE_DEFENDS",
-        "title": "Alliage de Défenses",
-        "description": "Retirez [blue]2[/blue] [gold]Défenses[/gold]. Ajoutez [gold]Défense ultime[/gold] à votre [gold]Deck[/gold]."
-      },
-      {
         "id": "COMBINE_STRIKES",
         "title": "Alliage de Frappes",
         "description": "Retirez [blue]2[/blue] [gold]Frappes[/gold]. Ajoutez [gold]Frappe ultime[/gold] à votre [gold]Deck[/gold]."
+      },
+      {
+        "id": "COMBINE_DEFENDS",
+        "title": "Alliage de Défenses",
+        "description": "Retirez [blue]2[/blue] [gold]Défenses[/gold]. Ajoutez [gold]Défense ultime[/gold] à votre [gold]Deck[/gold]."
       }
     ],
     "pages": [
@@ -268,14 +268,14 @@
         "description": "[b][jitter]BANG ! BANG !!![/jitter][/b]\n\nVous entendez les échos du métal battant le métal de l’autre côté d’un mur...\n\nVous collez l’oreille contre la paroi, quand celle-ci s’ouvre soudain, révélant une [orange]énorme silhouette à six bras[/orange] attelée à son ouvrage.\nSon « visage » est un [gold][sine]tourbillon de glyphes lumineux[/sine][/gold] qui dansent en cercle.\n\n« Un être doté d’un [aqua]Esprit Ascendant[/aqua] a trouvé mon atelier ? Le moment est venu de réaliser quelque [jitter]ALLIAGE[/jitter] ! »",
         "options": [
           {
-            "id": "COMBINE_DEFENDS",
-            "title": "Alliage de Défenses",
-            "description": "Retirez [blue]2[/blue] [gold]Défenses[/gold]. Ajoutez [gold]Défense ultime[/gold] à votre [gold]Deck[/gold]."
-          },
-          {
             "id": "COMBINE_STRIKES",
             "title": "Alliage de Frappes",
             "description": "Retirez [blue]2[/blue] [gold]Frappes[/gold]. Ajoutez [gold]Frappe ultime[/gold] à votre [gold]Deck[/gold]."
+          },
+          {
+            "id": "COMBINE_DEFENDS",
+            "title": "Alliage de Défenses",
+            "description": "Retirez [blue]2[/blue] [gold]Défenses[/gold]. Ajoutez [gold]Défense ultime[/gold] à votre [gold]Deck[/gold]."
           }
         ]
       }
@@ -1508,11 +1508,6 @@
         "id": "SEARCH",
         "title": "Fouiller les environs",
         "description": "Obtenez [blue]45-75[/blue] [gold]Pièces d’or[/gold]."
-      },
-      {
-        "id": "CLAIM_LOCKED",
-        "title": "Verrouillé",
-        "description": "Vous n’avez pas assez de PV Max."
       }
     ],
     "pages": [
@@ -1533,11 +1528,6 @@
             "id": "SEARCH",
             "title": "Fouiller les environs",
             "description": "Obtenez [blue]45-75[/blue] [gold]Pièces d’or[/gold]."
-          },
-          {
-            "id": "CLAIM_LOCKED",
-            "title": "Verrouillé",
-            "description": "Vous n’avez pas assez de PV Max."
           }
         ]
       },
@@ -1651,7 +1641,7 @@
     "id": "NEOW",
     "name": "Neow",
     "type": "Ancient",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "[sine]Je t'ai... reconstitué....\n...va... ..monte.....[/sine]",
     "options": null,
     "pages": null,
@@ -2493,11 +2483,6 @@
         "description": "Obtenez une [gold]Relique[/gold] aléatoire."
       },
       {
-        "id": "RELIC",
-        "title": "Offrir Relic",
-        "description": "Obtenez [blue]2[/blue] [gold]Reliques[/gold] aléatoires."
-      },
-      {
         "id": "POTION_LOCKED",
         "title": "Verrouillé",
         "description": "Vous n'avez pas de potions à offrir."
@@ -2506,6 +2491,11 @@
         "id": "GOLD",
         "title": "Offrir 100 pièces d’or",
         "description": "Obtenez une [gold]Relique[/gold] aléatoire."
+      },
+      {
+        "id": "RELIC",
+        "title": "Offrir Relic",
+        "description": "Obtenez [blue]2[/blue] [gold]Reliques[/gold] aléatoires."
       },
       {
         "id": "RELIC_LOCKED",
@@ -2528,11 +2518,6 @@
             "description": "Obtenez une [gold]Relique[/gold] aléatoire."
           },
           {
-            "id": "RELIC",
-            "title": "Offrir Relic",
-            "description": "Obtenez [blue]2[/blue] [gold]Reliques[/gold] aléatoires."
-          },
-          {
             "id": "POTION_LOCKED",
             "title": "Verrouillé",
             "description": "Vous n'avez pas de potions à offrir."
@@ -2541,6 +2526,11 @@
             "id": "GOLD",
             "title": "Offrir 100 pièces d’or",
             "description": "Obtenez une [gold]Relique[/gold] aléatoire."
+          },
+          {
+            "id": "RELIC",
+            "title": "Offrir Relic",
+            "description": "Obtenez [blue]2[/blue] [gold]Reliques[/gold] aléatoires."
           },
           {
             "id": "RELIC_LOCKED",
@@ -3196,7 +3186,7 @@
     "id": "SUNKEN_STATUE",
     "name": "La statue engloutie",
     "type": "Event",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "Vous apercevez une statue érodée par le temps, à moitié immergée dans un bassin ; ses mains agrippent une [blue]épée en pierre[/blue].\n\nPar ailleurs, vous remarquez que quelque chose [gold][sine]scintille[/sine][/gold] au fond du lac.\nDes offrandes votives ?\n\nVous ne diriez pas non à un peu d’argent...",
     "options": [
       {
@@ -5178,9 +5168,9 @@
     "description": "Vous ouvrez une petite boîte poussiéreuse et y trouvez 3 minutieuses figurines en bois gravées :\n\nUn oiseau, un serpent, et... un tore ?\n\nUn piédestal à proximité est muni d’emplacements qui correspondent au bas des figurines. Laquelle des figurines placez-vous sur le piédestal ?",
     "options": [
       {
-        "id": "SNAKE_LOCKED",
-        "title": "Verrouillé",
-        "description": "Aucune de vos cartes ne peut être envoûtée avec [purple]Serpentin[/purple]."
+        "id": "BIRD",
+        "title": "Oiseau",
+        "description": "Choisissez [blue]1[/blue] carte de départ à [gold]Transformer[/gold] en [gold]Picpic[/gold]."
       },
       {
         "id": "SNAKE",
@@ -5188,9 +5178,9 @@
         "description": "[gold]Envoûtez[/gold] [blue]1[/blue] carte avec [purple]Serpentin[/purple]."
       },
       {
-        "id": "BIRD",
-        "title": "Oiseau",
-        "description": "Choisissez [blue]1[/blue] carte de départ à [gold]Transformer[/gold] en [gold]Picpic[/gold]."
+        "id": "SNAKE_LOCKED",
+        "title": "Verrouillé",
+        "description": "Aucune de vos cartes ne peut être envoûtée avec [purple]Serpentin[/purple]."
       },
       {
         "id": "TORUS",
@@ -5208,9 +5198,9 @@
         "description": "Vous ouvrez une petite boîte poussiéreuse et y trouvez 3 minutieuses figurines en bois gravées :\n\nUn oiseau, un serpent, et... un tore ?\n\nUn piédestal à proximité est muni d’emplacements qui correspondent au bas des figurines. Laquelle des figurines placez-vous sur le piédestal ?",
         "options": [
           {
-            "id": "SNAKE_LOCKED",
-            "title": "Verrouillé",
-            "description": "Aucune de vos cartes ne peut être envoûtée avec [purple]Serpentin[/purple]."
+            "id": "BIRD",
+            "title": "Oiseau",
+            "description": "Choisissez [blue]1[/blue] carte de départ à [gold]Transformer[/gold] en [gold]Picpic[/gold]."
           },
           {
             "id": "SNAKE",
@@ -5218,9 +5208,9 @@
             "description": "[gold]Envoûtez[/gold] [blue]1[/blue] carte avec [purple]Serpentin[/purple]."
           },
           {
-            "id": "BIRD",
-            "title": "Oiseau",
-            "description": "Choisissez [blue]1[/blue] carte de départ à [gold]Transformer[/gold] en [gold]Picpic[/gold]."
+            "id": "SNAKE_LOCKED",
+            "title": "Verrouillé",
+            "description": "Aucune de vos cartes ne peut être envoûtée avec [purple]Serpentin[/purple]."
           },
           {
             "id": "TORUS",

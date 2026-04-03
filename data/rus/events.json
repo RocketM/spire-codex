@@ -244,14 +244,14 @@
     "description": "[b][jitter]БАХ! БАХ![/jitter][/b]\n\nВы слышите гулкий стук металла за стеной.\n\nСтоит вам приложить ухо к стене, как она открывается, и перед вами предстает [orange]оранжевый шестирукий гигант[/orange].\nЕго «лицо» покрыто [gold][sine]кружащей спиралью из печатей[/sine][/gold].\n\n«Неужто ко мне в мастерскую пожаловали [aqua]гости[/aqua]?! [jitter]Смеситель[/jitter] к вашим услугам!»",
     "options": [
       {
-        "id": "COMBINE_DEFENDS",
-        "title": "Смешать 2 «Обороны»",
-        "description": "Удалить [blue]2[/blue] [gold]«Обороны»[/gold]. В [gold]колоду[/gold] добавится карта [gold]«Превосходная оборона»[/gold]."
-      },
-      {
         "id": "COMBINE_STRIKES",
         "title": "Смешать 2 «Удара»",
         "description": "Удалить [blue]2[/blue] [gold]«Удара»[/gold]. В [gold]колоду[/gold] добавится карта [gold]«Превосходный удар»[/gold]."
+      },
+      {
+        "id": "COMBINE_DEFENDS",
+        "title": "Смешать 2 «Обороны»",
+        "description": "Удалить [blue]2[/blue] [gold]«Обороны»[/gold]. В [gold]колоду[/gold] добавится карта [gold]«Превосходная оборона»[/gold]."
       }
     ],
     "pages": [
@@ -268,14 +268,14 @@
         "description": "[b][jitter]БАХ! БАХ![/jitter][/b]\n\nВы слышите гулкий стук металла за стеной.\n\nСтоит вам приложить ухо к стене, как она открывается, и перед вами предстает [orange]оранжевый шестирукий гигант[/orange].\nЕго «лицо» покрыто [gold][sine]кружащей спиралью из печатей[/sine][/gold].\n\n«Неужто ко мне в мастерскую пожаловали [aqua]гости[/aqua]?! [jitter]Смеситель[/jitter] к вашим услугам!»",
         "options": [
           {
-            "id": "COMBINE_DEFENDS",
-            "title": "Смешать 2 «Обороны»",
-            "description": "Удалить [blue]2[/blue] [gold]«Обороны»[/gold]. В [gold]колоду[/gold] добавится карта [gold]«Превосходная оборона»[/gold]."
-          },
-          {
             "id": "COMBINE_STRIKES",
             "title": "Смешать 2 «Удара»",
             "description": "Удалить [blue]2[/blue] [gold]«Удара»[/gold]. В [gold]колоду[/gold] добавится карта [gold]«Превосходный удар»[/gold]."
+          },
+          {
+            "id": "COMBINE_DEFENDS",
+            "title": "Смешать 2 «Обороны»",
+            "description": "Удалить [blue]2[/blue] [gold]«Обороны»[/gold]. В [gold]колоду[/gold] добавится карта [gold]«Превосходная оборона»[/gold]."
           }
         ]
       }
@@ -1508,11 +1508,6 @@
         "id": "SEARCH",
         "title": "Осмотреться",
         "description": "Получить [blue]45-75[/blue] [gold]золота[/gold]."
-      },
-      {
-        "id": "CLAIM_LOCKED",
-        "title": "Недоступно",
-        "description": "У вас слишком мало ОЗ."
       }
     ],
     "pages": [
@@ -1533,11 +1528,6 @@
             "id": "SEARCH",
             "title": "Осмотреться",
             "description": "Получить [blue]45-75[/blue] [gold]золота[/gold]."
-          },
-          {
-            "id": "CLAIM_LOCKED",
-            "title": "Недоступно",
-            "description": "У вас слишком мало ОЗ."
           }
         ]
       },
@@ -1651,7 +1641,7 @@
     "id": "NEOW",
     "name": "Ньяу",
     "type": "Ancient",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "[sine]…я… …исправила… …тебя…\n…ступай… …наверх…[/sine]",
     "options": null,
     "pages": null,
@@ -2493,11 +2483,6 @@
         "description": "Получить случайную [gold]реликвию[/gold]."
       },
       {
-        "id": "RELIC",
-        "title": "Relic ему нужнее",
-        "description": "Получить [blue]2[/blue] случайные [gold]реликвии[/gold]."
-      },
-      {
         "id": "POTION_LOCKED",
         "title": "Недоступно",
         "description": "У вас нет зелий, которыми вы могли бы пожертвовать."
@@ -2506,6 +2491,11 @@
         "id": "GOLD",
         "title": "Можно дать ему 100 золота",
         "description": "Получить случайную [gold]реликвию[/gold]."
+      },
+      {
+        "id": "RELIC",
+        "title": "Relic ему нужнее",
+        "description": "Получить [blue]2[/blue] случайные [gold]реликвии[/gold]."
       },
       {
         "id": "RELIC_LOCKED",
@@ -2528,11 +2518,6 @@
             "description": "Получить случайную [gold]реликвию[/gold]."
           },
           {
-            "id": "RELIC",
-            "title": "Relic ему нужнее",
-            "description": "Получить [blue]2[/blue] случайные [gold]реликвии[/gold]."
-          },
-          {
             "id": "POTION_LOCKED",
             "title": "Недоступно",
             "description": "У вас нет зелий, которыми вы могли бы пожертвовать."
@@ -2541,6 +2526,11 @@
             "id": "GOLD",
             "title": "Можно дать ему 100 золота",
             "description": "Получить случайную [gold]реликвию[/gold]."
+          },
+          {
+            "id": "RELIC",
+            "title": "Relic ему нужнее",
+            "description": "Получить [blue]2[/blue] случайные [gold]реликвии[/gold]."
           },
           {
             "id": "RELIC_LOCKED",
@@ -3192,7 +3182,7 @@
     "id": "SUNKEN_STATUE",
     "name": "Тонущая статуя",
     "type": "Event",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "Вы замечаете в пруду статую, по пояс погруженную в воду. Ее ладони покоятся на рукоятке [blue]каменного меча[/blue].\n\nНа дне пруда что-то [gold][sine]блещет[/sine][/gold].\nМожет, это чье-то подношение?\n\nДеньги бы вам сейчас не помешали…",
     "options": [
       {
@@ -5174,9 +5164,9 @@
     "description": "Вам попадается пыльная коробка. Внутри — три деревянные фигурки с замысловатой резьбой.\n\nПтица, змея и… торус?\n\nРядом вы видите пьедестал с выемкой, в которую можно поместить одну из фигурок. Какая подойдет лучше всего?",
     "options": [
       {
-        "id": "SNAKE_LOCKED",
-        "title": "Недоступно",
-        "description": "У вас нет карт, на которые можно наложить чары [purple]«Зигзаг»[/purple]."
+        "id": "BIRD",
+        "title": "Птица",
+        "description": "[gold]Преобразовать[/gold] [blue]1[/blue] начальную карту в карту [gold]«Клюв»[/gold]."
       },
       {
         "id": "SNAKE",
@@ -5184,9 +5174,9 @@
         "description": "Наложить на [blue]1[/blue] карту [gold]чары[/gold] [purple]«Зигзаг»[/purple]."
       },
       {
-        "id": "BIRD",
-        "title": "Птица",
-        "description": "[gold]Преобразовать[/gold] [blue]1[/blue] начальную карту в карту [gold]«Клюв»[/gold]."
+        "id": "SNAKE_LOCKED",
+        "title": "Недоступно",
+        "description": "У вас нет карт, на которые можно наложить чары [purple]«Зигзаг»[/purple]."
       },
       {
         "id": "TORUS",
@@ -5204,9 +5194,9 @@
         "description": "Вам попадается пыльная коробка. Внутри — три деревянные фигурки с замысловатой резьбой.\n\nПтица, змея и… торус?\n\nРядом вы видите пьедестал с выемкой, в которую можно поместить одну из фигурок. Какая подойдет лучше всего?",
         "options": [
           {
-            "id": "SNAKE_LOCKED",
-            "title": "Недоступно",
-            "description": "У вас нет карт, на которые можно наложить чары [purple]«Зигзаг»[/purple]."
+            "id": "BIRD",
+            "title": "Птица",
+            "description": "[gold]Преобразовать[/gold] [blue]1[/blue] начальную карту в карту [gold]«Клюв»[/gold]."
           },
           {
             "id": "SNAKE",
@@ -5214,9 +5204,9 @@
             "description": "Наложить на [blue]1[/blue] карту [gold]чары[/gold] [purple]«Зигзаг»[/purple]."
           },
           {
-            "id": "BIRD",
-            "title": "Птица",
-            "description": "[gold]Преобразовать[/gold] [blue]1[/blue] начальную карту в карту [gold]«Клюв»[/gold]."
+            "id": "SNAKE_LOCKED",
+            "title": "Недоступно",
+            "description": "У вас нет карт, на которые можно наложить чары [purple]«Зигзаг»[/purple]."
           },
           {
             "id": "TORUS",

@@ -244,14 +244,14 @@
     "description": "[b][jitter]铿！铿！！锵！！！[/jitter][/b]\n\n墙壁的另一侧传来了阵阵金属交击声的回响…\n\n当你把头贴在墙上准备探听一番时——墙壁轰然开启，露出了一个正在埋头苦干的[orange]魁梧六臂身影[/orange]。\n它的“脸部”是一团由[gold][sine]发光符文构成的流转旋涡[/sine][/gold]，正在不断变幻交织。\n\n“一个拥有[aqua]进阶之魂[/aqua]的人竟然找到了我的工坊？那就让我们开始[jitter]融合[/jitter]吧！”",
     "options": [
       {
-        "id": "COMBINE_DEFENDS",
-        "title": "融合防御",
-        "description": "移除[blue]2[/blue]张[gold]防御[/gold]。并将一张[gold]究极防御[/gold]添加至你的[gold]牌组[/gold]。"
-      },
-      {
         "id": "COMBINE_STRIKES",
         "title": "融合打击",
         "description": "移除[blue]2[/blue]张[gold]打击[/gold]。并将一张[gold]究极打击[/gold]添加至你的[gold]牌组[/gold]。"
+      },
+      {
+        "id": "COMBINE_DEFENDS",
+        "title": "融合防御",
+        "description": "移除[blue]2[/blue]张[gold]防御[/gold]。并将一张[gold]究极防御[/gold]添加至你的[gold]牌组[/gold]。"
       }
     ],
     "pages": [
@@ -268,14 +268,14 @@
         "description": "[b][jitter]铿！铿！！锵！！！[/jitter][/b]\n\n墙壁的另一侧传来了阵阵金属交击声的回响…\n\n当你把头贴在墙上准备探听一番时——墙壁轰然开启，露出了一个正在埋头苦干的[orange]魁梧六臂身影[/orange]。\n它的“脸部”是一团由[gold][sine]发光符文构成的流转旋涡[/sine][/gold]，正在不断变幻交织。\n\n“一个拥有[aqua]进阶之魂[/aqua]的人竟然找到了我的工坊？那就让我们开始[jitter]融合[/jitter]吧！”",
         "options": [
           {
-            "id": "COMBINE_DEFENDS",
-            "title": "融合防御",
-            "description": "移除[blue]2[/blue]张[gold]防御[/gold]。并将一张[gold]究极防御[/gold]添加至你的[gold]牌组[/gold]。"
-          },
-          {
             "id": "COMBINE_STRIKES",
             "title": "融合打击",
             "description": "移除[blue]2[/blue]张[gold]打击[/gold]。并将一张[gold]究极打击[/gold]添加至你的[gold]牌组[/gold]。"
+          },
+          {
+            "id": "COMBINE_DEFENDS",
+            "title": "融合防御",
+            "description": "移除[blue]2[/blue]张[gold]防御[/gold]。并将一张[gold]究极防御[/gold]添加至你的[gold]牌组[/gold]。"
           }
         ]
       }
@@ -1508,11 +1508,6 @@
         "id": "SEARCH",
         "title": "搜索附近的区域",
         "description": "获得[blue]45-75[/blue][gold]金币[/gold]。"
-      },
-      {
-        "id": "CLAIM_LOCKED",
-        "title": "已锁定",
-        "description": "你的最大生命值太低了。"
       }
     ],
     "pages": [
@@ -1533,11 +1528,6 @@
             "id": "SEARCH",
             "title": "搜索附近的区域",
             "description": "获得[blue]45-75[/blue][gold]金币[/gold]。"
-          },
-          {
-            "id": "CLAIM_LOCKED",
-            "title": "已锁定",
-            "description": "你的最大生命值太低了。"
           }
         ]
       },
@@ -1651,7 +1641,7 @@
     "id": "NEOW",
     "name": "涅奥",
     "type": "Ancient",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "[sine]我又... 重铸了你....\n...上... ..去吧.....[/sine]",
     "options": null,
     "pages": null,
@@ -2493,11 +2483,6 @@
         "description": "获得一件随机[gold]遗物[/gold]。"
       },
       {
-        "id": "RELIC",
-        "title": "给他Relic",
-        "description": "获得[blue]2[/blue]件随机[gold]遗物[/gold]。"
-      },
-      {
         "id": "POTION_LOCKED",
         "title": "锁定",
         "description": "你没有任何可以给他的药水。"
@@ -2506,6 +2491,11 @@
         "id": "GOLD",
         "title": "给他100金币",
         "description": "获得一件随机[gold]遗物[/gold]。"
+      },
+      {
+        "id": "RELIC",
+        "title": "给他Relic",
+        "description": "获得[blue]2[/blue]件随机[gold]遗物[/gold]。"
       },
       {
         "id": "RELIC_LOCKED",
@@ -2528,11 +2518,6 @@
             "description": "获得一件随机[gold]遗物[/gold]。"
           },
           {
-            "id": "RELIC",
-            "title": "给他Relic",
-            "description": "获得[blue]2[/blue]件随机[gold]遗物[/gold]。"
-          },
-          {
             "id": "POTION_LOCKED",
             "title": "锁定",
             "description": "你没有任何可以给他的药水。"
@@ -2541,6 +2526,11 @@
             "id": "GOLD",
             "title": "给他100金币",
             "description": "获得一件随机[gold]遗物[/gold]。"
+          },
+          {
+            "id": "RELIC",
+            "title": "给他Relic",
+            "description": "获得[blue]2[/blue]件随机[gold]遗物[/gold]。"
           },
           {
             "id": "RELIC_LOCKED",
@@ -3196,7 +3186,7 @@
     "id": "SUNKEN_STATUE",
     "name": "沉没雕像",
     "type": "Event",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "你看见一尊古老的雕像，一半沉没在池塘的水中。雕像的手放在一把[blue]石剑[/blue]之上。\n\n同时你还看见，池塘的水底似乎有一些东西在[gold][sine]闪烁[/sine][/gold]着光芒。\n或许是人们祈愿投下的金币？\n\n钱可是个好东西……",
     "options": [
       {
@@ -3650,7 +3640,7 @@
       {
         "id": "BONE_TEA",
         "title": "骨茶",
-        "description": "支付[red]50[/red][gold]金币[/gold]。在你接下来的[blue][Combats][/blue]场战斗开始时，[gold]升级[/gold]你的初始手牌。"
+        "description": "支付[red]50[/red][gold]金币[/gold]。在你接下来的[blue]1[/blue]场战斗开始时，[gold]升级[/gold]你的初始手牌。"
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3660,7 +3650,7 @@
       {
         "id": "EMBER_TEA",
         "title": "余烬茶",
-        "description": "支付[red]150[/red][gold]金币[/gold]。在接下来的[blue][Combats][/blue]场战斗开始时，获得[blue]2[/blue]点[gold]力量[/gold]。"
+        "description": "支付[red]150[/red][gold]金币[/gold]。在接下来的[blue]5[/blue]场战斗开始时，获得[blue]2[/blue]点[gold]力量[/gold]。"
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3685,7 +3675,7 @@
           {
             "id": "BONE_TEA",
             "title": "骨茶",
-            "description": "支付[red]50[/red][gold]金币[/gold]。在你接下来的[blue][Combats][/blue]场战斗开始时，[gold]升级[/gold]你的初始手牌。"
+            "description": "支付[red]50[/red][gold]金币[/gold]。在你接下来的[blue]1[/blue]场战斗开始时，[gold]升级[/gold]你的初始手牌。"
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3695,7 +3685,7 @@
           {
             "id": "EMBER_TEA",
             "title": "余烬茶",
-            "description": "支付[red]150[/red][gold]金币[/gold]。在接下来的[blue][Combats][/blue]场战斗开始时，获得[blue]2[/blue]点[gold]力量[/gold]。"
+            "description": "支付[red]150[/red][gold]金币[/gold]。在接下来的[blue]5[/blue]场战斗开始时，获得[blue]2[/blue]点[gold]力量[/gold]。"
           },
           {
             "id": "EMBER_TEA_LOCKED",
@@ -5178,9 +5168,9 @@
     "description": "你打开一个尘封的盒子，发现里面有一组3个相当精细的木雕：\n\n一只鸟、一条蛇、还有……一个圆环？\n\n附近有一个基座，上面的凹陷痕迹正与这些木雕底部的形状吻合。你要把哪个木雕放在基座上呢？",
     "options": [
       {
-        "id": "SNAKE_LOCKED",
-        "title": "锁定",
-        "description": "你没有任何牌可以添加附魔：[purple]蛇行[/purple]。"
+        "id": "BIRD",
+        "title": "鸟",
+        "description": "选择[blue]1[/blue]张初始牌[gold]变化[/gold]为[gold]啄击[/gold]。"
       },
       {
         "id": "SNAKE",
@@ -5188,9 +5178,9 @@
         "description": "给[blue]1[/blue]张牌[gold]附魔[/gold]：[purple]蛇行[/purple]。"
       },
       {
-        "id": "BIRD",
-        "title": "鸟",
-        "description": "选择[blue]1[/blue]张初始牌[gold]变化[/gold]为[gold]啄击[/gold]。"
+        "id": "SNAKE_LOCKED",
+        "title": "锁定",
+        "description": "你没有任何牌可以添加附魔：[purple]蛇行[/purple]。"
       },
       {
         "id": "TORUS",
@@ -5208,9 +5198,9 @@
         "description": "你打开一个尘封的盒子，发现里面有一组3个相当精细的木雕：\n\n一只鸟、一条蛇、还有……一个圆环？\n\n附近有一个基座，上面的凹陷痕迹正与这些木雕底部的形状吻合。你要把哪个木雕放在基座上呢？",
         "options": [
           {
-            "id": "SNAKE_LOCKED",
-            "title": "锁定",
-            "description": "你没有任何牌可以添加附魔：[purple]蛇行[/purple]。"
+            "id": "BIRD",
+            "title": "鸟",
+            "description": "选择[blue]1[/blue]张初始牌[gold]变化[/gold]为[gold]啄击[/gold]。"
           },
           {
             "id": "SNAKE",
@@ -5218,9 +5208,9 @@
             "description": "给[blue]1[/blue]张牌[gold]附魔[/gold]：[purple]蛇行[/purple]。"
           },
           {
-            "id": "BIRD",
-            "title": "鸟",
-            "description": "选择[blue]1[/blue]张初始牌[gold]变化[/gold]为[gold]啄击[/gold]。"
+            "id": "SNAKE_LOCKED",
+            "title": "锁定",
+            "description": "你没有任何牌可以添加附魔：[purple]蛇行[/purple]。"
           },
           {
             "id": "TORUS",

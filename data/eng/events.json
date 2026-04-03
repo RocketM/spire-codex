@@ -244,14 +244,14 @@
     "description": "[b][jitter]CLANG! CLANG!!![/jitter][/b]\n\nYou hear the echoes of metal upon metal on the otherside of a wall...\n\nAs you press your head against the wall to listen in—the wall opens up, revealing a [orange]hulking six-armed figure[/orange] toiling away.\nIts “face” is a [gold][sine]swirling vortex of glowing sigils[/sine][/gold] that shift about.\n\n“One with an [aqua]Ascending Spirit[/aqua] has found my workshop? Let's get [jitter]COMBINING[/jitter]!”",
     "options": [
       {
-        "id": "COMBINE_DEFENDS",
-        "title": "Combine Defends",
-        "description": "Remove [blue]2[/blue] [gold]Defends[/gold]. Add [gold]Ultimate Defend[/gold] to your [gold]Deck[/gold]."
-      },
-      {
         "id": "COMBINE_STRIKES",
         "title": "Combine Strikes",
         "description": "Remove [blue]2[/blue] [gold]Strikes[/gold]. Add [gold]Ultimate Strike[/gold] to your [gold]Deck[/gold]."
+      },
+      {
+        "id": "COMBINE_DEFENDS",
+        "title": "Combine Defends",
+        "description": "Remove [blue]2[/blue] [gold]Defends[/gold]. Add [gold]Ultimate Defend[/gold] to your [gold]Deck[/gold]."
       }
     ],
     "pages": [
@@ -268,14 +268,14 @@
         "description": "[b][jitter]CLANG! CLANG!!![/jitter][/b]\n\nYou hear the echoes of metal upon metal on the otherside of a wall...\n\nAs you press your head against the wall to listen in—the wall opens up, revealing a [orange]hulking six-armed figure[/orange] toiling away.\nIts “face” is a [gold][sine]swirling vortex of glowing sigils[/sine][/gold] that shift about.\n\n“One with an [aqua]Ascending Spirit[/aqua] has found my workshop? Let's get [jitter]COMBINING[/jitter]!”",
         "options": [
           {
-            "id": "COMBINE_DEFENDS",
-            "title": "Combine Defends",
-            "description": "Remove [blue]2[/blue] [gold]Defends[/gold]. Add [gold]Ultimate Defend[/gold] to your [gold]Deck[/gold]."
-          },
-          {
             "id": "COMBINE_STRIKES",
             "title": "Combine Strikes",
             "description": "Remove [blue]2[/blue] [gold]Strikes[/gold]. Add [gold]Ultimate Strike[/gold] to your [gold]Deck[/gold]."
+          },
+          {
+            "id": "COMBINE_DEFENDS",
+            "title": "Combine Defends",
+            "description": "Remove [blue]2[/blue] [gold]Defends[/gold]. Add [gold]Ultimate Defend[/gold] to your [gold]Deck[/gold]."
           }
         ]
       }
@@ -1508,11 +1508,6 @@
         "id": "SEARCH",
         "title": "Search the Nearby Area",
         "description": "Gain [blue]45-75[/blue] [gold]Gold[/gold]."
-      },
-      {
-        "id": "CLAIM_LOCKED",
-        "title": "Locked",
-        "description": "Your Max HP is too low."
       }
     ],
     "pages": [
@@ -1533,11 +1528,6 @@
             "id": "SEARCH",
             "title": "Search the Nearby Area",
             "description": "Gain [blue]45-75[/blue] [gold]Gold[/gold]."
-          },
-          {
-            "id": "CLAIM_LOCKED",
-            "title": "Locked",
-            "description": "Your Max HP is too low."
           }
         ]
       },
@@ -1651,7 +1641,7 @@
     "id": "NEOW",
     "name": "Neow",
     "type": "Ancient",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "[sine]I’ve... remade you....\n...go... ..up.....[/sine]",
     "options": null,
     "pages": null,
@@ -2493,11 +2483,6 @@
         "description": "Obtain a random [gold]Relic[/gold]."
       },
       {
-        "id": "RELIC",
-        "title": "Give Relic",
-        "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold]."
-      },
-      {
         "id": "POTION_LOCKED",
         "title": "Locked",
         "description": "You don't have any Potions that can be given."
@@ -2506,6 +2491,11 @@
         "id": "GOLD",
         "title": "Give 100 Gold",
         "description": "Obtain a random [gold]Relic[/gold]."
+      },
+      {
+        "id": "RELIC",
+        "title": "Give Relic",
+        "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold]."
       },
       {
         "id": "RELIC_LOCKED",
@@ -2528,11 +2518,6 @@
             "description": "Obtain a random [gold]Relic[/gold]."
           },
           {
-            "id": "RELIC",
-            "title": "Give Relic",
-            "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold]."
-          },
-          {
             "id": "POTION_LOCKED",
             "title": "Locked",
             "description": "You don't have any Potions that can be given."
@@ -2541,6 +2526,11 @@
             "id": "GOLD",
             "title": "Give 100 Gold",
             "description": "Obtain a random [gold]Relic[/gold]."
+          },
+          {
+            "id": "RELIC",
+            "title": "Give Relic",
+            "description": "Obtain [blue]2[/blue] random [gold]Relics[/gold]."
           },
           {
             "id": "RELIC_LOCKED",
@@ -3196,7 +3186,7 @@
     "id": "SUNKEN_STATUE",
     "name": "The Sunken Statue",
     "type": "Event",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "You spot an aged statue half submerged in a pond; its hands gently rest atop a [blue]stone sword[/blue].\n\nSomething is also [gold][sine]glittering[/sine][/gold] at the bottom of the pond.\nVotive offerings perhaps?\n\nYou could really use some money...",
     "options": [
       {
@@ -5178,9 +5168,9 @@
     "description": "You open a dusty box to find a set of 3 elaborate wood carvings:\n\nA bird, snake, and... a torus?\n\nA nearby pedestal has indentations which match the bottom of the carvings. Which carving will you place on the pedestal?",
     "options": [
       {
-        "id": "SNAKE_LOCKED",
-        "title": "Locked",
-        "description": "None of your cards can be Enchanted with [purple]Slither[/purple]."
+        "id": "BIRD",
+        "title": "Bird",
+        "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]Peck[/gold]."
       },
       {
         "id": "SNAKE",
@@ -5188,9 +5178,9 @@
         "description": "[gold]Enchant[/gold] [blue]1[/blue] card with [purple]Slither[/purple]."
       },
       {
-        "id": "BIRD",
-        "title": "Bird",
-        "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]Peck[/gold]."
+        "id": "SNAKE_LOCKED",
+        "title": "Locked",
+        "description": "None of your cards can be Enchanted with [purple]Slither[/purple]."
       },
       {
         "id": "TORUS",
@@ -5208,9 +5198,9 @@
         "description": "You open a dusty box to find a set of 3 elaborate wood carvings:\n\nA bird, snake, and... a torus?\n\nA nearby pedestal has indentations which match the bottom of the carvings. Which carving will you place on the pedestal?",
         "options": [
           {
-            "id": "SNAKE_LOCKED",
-            "title": "Locked",
-            "description": "None of your cards can be Enchanted with [purple]Slither[/purple]."
+            "id": "BIRD",
+            "title": "Bird",
+            "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]Peck[/gold]."
           },
           {
             "id": "SNAKE",
@@ -5218,9 +5208,9 @@
             "description": "[gold]Enchant[/gold] [blue]1[/blue] card with [purple]Slither[/purple]."
           },
           {
-            "id": "BIRD",
-            "title": "Bird",
-            "description": "Choose [blue]1[/blue] starter card to [gold]Transform[/gold] into [gold]Peck[/gold]."
+            "id": "SNAKE_LOCKED",
+            "title": "Locked",
+            "description": "None of your cards can be Enchanted with [purple]Slither[/purple]."
           },
           {
             "id": "TORUS",

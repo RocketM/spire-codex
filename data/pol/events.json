@@ -244,14 +244,14 @@
     "description": "[b][jitter]BRZDĘK! BRZDĘK!!![/jitter][/b]\n\nPo drugiej stronie ściany słychać odgłosy wykuwania metalu...\n\nPróbujesz ich podsłuchać, przykładając głowę do ściany, która nagle otwiera się i ujawnia [orange]kolosalną, sześcioręczną postać[/orange] skupioną na pracy.\n Jej „twarz” to [gold][sine]symbole jarzące się[/sine][/gold] w płomiennym wirze.\n\n„[aqua]Wyniesiony[/aqua] odnalazł mój warsztat? Czas na [jitter]SPAWANIE[/jitter]!”",
     "options": [
       {
-        "id": "COMBINE_DEFENDS",
-        "title": "Spawaj Obrony",
-        "description": "Usuń [blue]2[/blue] [gold]Obrony[/gold]. Dodaj [gold]Ultra Obrona[/gold] do [gold]talii[/gold]."
-      },
-      {
         "id": "COMBINE_STRIKES",
         "title": "Spawaj Uderzenia",
         "description": "Usuń [blue]2[/blue] [gold]Uderzenia[/gold]. Dodaj [gold]Ultra Uderzenie[/gold] do [gold]talii[/gold]."
+      },
+      {
+        "id": "COMBINE_DEFENDS",
+        "title": "Spawaj Obrony",
+        "description": "Usuń [blue]2[/blue] [gold]Obrony[/gold]. Dodaj [gold]Ultra Obrona[/gold] do [gold]talii[/gold]."
       }
     ],
     "pages": [
@@ -268,14 +268,14 @@
         "description": "[b][jitter]BRZDĘK! BRZDĘK!!![/jitter][/b]\n\nPo drugiej stronie ściany słychać odgłosy wykuwania metalu...\n\nPróbujesz ich podsłuchać, przykładając głowę do ściany, która nagle otwiera się i ujawnia [orange]kolosalną, sześcioręczną postać[/orange] skupioną na pracy.\n Jej „twarz” to [gold][sine]symbole jarzące się[/sine][/gold] w płomiennym wirze.\n\n„[aqua]Wyniesiony[/aqua] odnalazł mój warsztat? Czas na [jitter]SPAWANIE[/jitter]!”",
         "options": [
           {
-            "id": "COMBINE_DEFENDS",
-            "title": "Spawaj Obrony",
-            "description": "Usuń [blue]2[/blue] [gold]Obrony[/gold]. Dodaj [gold]Ultra Obrona[/gold] do [gold]talii[/gold]."
-          },
-          {
             "id": "COMBINE_STRIKES",
             "title": "Spawaj Uderzenia",
             "description": "Usuń [blue]2[/blue] [gold]Uderzenia[/gold]. Dodaj [gold]Ultra Uderzenie[/gold] do [gold]talii[/gold]."
+          },
+          {
+            "id": "COMBINE_DEFENDS",
+            "title": "Spawaj Obrony",
+            "description": "Usuń [blue]2[/blue] [gold]Obrony[/gold]. Dodaj [gold]Ultra Obrona[/gold] do [gold]talii[/gold]."
           }
         ]
       }
@@ -1508,11 +1508,6 @@
         "id": "SEARCH",
         "title": "Przeszukaj obszar",
         "description": "Zyskaj [blue]45-75[/blue] szt. [gold]Złota[/gold]."
-      },
-      {
-        "id": "CLAIM_LOCKED",
-        "title": "Zablokowane",
-        "description": "Masz za mało maks. PŻ."
       }
     ],
     "pages": [
@@ -1533,11 +1528,6 @@
             "id": "SEARCH",
             "title": "Przeszukaj obszar",
             "description": "Zyskaj [blue]45-75[/blue] szt. [gold]Złota[/gold]."
-          },
-          {
-            "id": "CLAIM_LOCKED",
-            "title": "Zablokowane",
-            "description": "Masz za mało maks. PŻ."
           }
         ]
       },
@@ -1651,7 +1641,7 @@
     "id": "NEOW",
     "name": "Neow",
     "type": "Ancient",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "[sine]Odnowiłam... cię....\n...idź... ..na górę.....[/sine]",
     "options": null,
     "pages": null,
@@ -2493,11 +2483,6 @@
         "description": "Otrzymaj losowy [gold]Artefakt[/gold]."
       },
       {
-        "id": "RELIC",
-        "title": "Podaruj Artefakt: Relic",
-        "description": "Otrzymaj [blue]2[/blue] losowe [gold]Artefakty[/gold]."
-      },
-      {
         "id": "POTION_LOCKED",
         "title": "Zablokowane",
         "description": "Nie masz żadnych Mikstur do podarowania."
@@ -2506,6 +2491,11 @@
         "id": "GOLD",
         "title": "Podaruj 100 szt. Złota.",
         "description": "Otrzymaj losowy [gold]Artefakt[/gold]."
+      },
+      {
+        "id": "RELIC",
+        "title": "Podaruj Artefakt: Relic",
+        "description": "Otrzymaj [blue]2[/blue] losowe [gold]Artefakty[/gold]."
       },
       {
         "id": "RELIC_LOCKED",
@@ -2528,11 +2518,6 @@
             "description": "Otrzymaj losowy [gold]Artefakt[/gold]."
           },
           {
-            "id": "RELIC",
-            "title": "Podaruj Artefakt: Relic",
-            "description": "Otrzymaj [blue]2[/blue] losowe [gold]Artefakty[/gold]."
-          },
-          {
             "id": "POTION_LOCKED",
             "title": "Zablokowane",
             "description": "Nie masz żadnych Mikstur do podarowania."
@@ -2541,6 +2526,11 @@
             "id": "GOLD",
             "title": "Podaruj 100 szt. Złota.",
             "description": "Otrzymaj losowy [gold]Artefakt[/gold]."
+          },
+          {
+            "id": "RELIC",
+            "title": "Podaruj Artefakt: Relic",
+            "description": "Otrzymaj [blue]2[/blue] losowe [gold]Artefakty[/gold]."
           },
           {
             "id": "RELIC_LOCKED",
@@ -3188,7 +3178,7 @@
     "id": "SUNKEN_STATUE",
     "name": "Zatopiony posąg",
     "type": "Event",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "You spot an aged statue half submerged in a pond; its hands gently rest atop a [blue]stone sword[/blue].\n\nSomething is also [gold][sine]glittering[/sine][/gold] at the bottom of the pond.\nVotive offerings perhaps?\n\nYou could really use some money...",
     "options": [
       {
@@ -5166,9 +5156,9 @@
     "description": "You open a dusty box to find a set of 3 elaborate wood carvings:\n\nA bird, snake, and... a torus?\n\nA nearby pedestal has indentations which match the bottom of the carvings. Which carving will you place on the pedestal?",
     "options": [
       {
-        "id": "SNAKE_LOCKED",
-        "title": "Zablokowane",
-        "description": "Nie można rzucić Zaklęcia [purple]Ślizg[/purple] na żadną kartę."
+        "id": "BIRD",
+        "title": "Ptak",
+        "description": "Wybierz [blue]1[/blue] kartę startową i [gold]Zmień[/gold] ją w [gold]Dziobanie[/gold]."
       },
       {
         "id": "SNAKE",
@@ -5176,9 +5166,9 @@
         "description": "Rzuć [gold]Zaklęcie[/gold][purple]Ślizg[/purple] na [blue]1[/blue] kartę."
       },
       {
-        "id": "BIRD",
-        "title": "Ptak",
-        "description": "Wybierz [blue]1[/blue] kartę startową i [gold]Zmień[/gold] ją w [gold]Dziobanie[/gold]."
+        "id": "SNAKE_LOCKED",
+        "title": "Zablokowane",
+        "description": "Nie można rzucić Zaklęcia [purple]Ślizg[/purple] na żadną kartę."
       },
       {
         "id": "TORUS",
@@ -5196,9 +5186,9 @@
         "description": "You open a dusty box to find a set of 3 elaborate wood carvings:\n\nA bird, snake, and... a torus?\n\nA nearby pedestal has indentations which match the bottom of the carvings. Which carving will you place on the pedestal?",
         "options": [
           {
-            "id": "SNAKE_LOCKED",
-            "title": "Zablokowane",
-            "description": "Nie można rzucić Zaklęcia [purple]Ślizg[/purple] na żadną kartę."
+            "id": "BIRD",
+            "title": "Ptak",
+            "description": "Wybierz [blue]1[/blue] kartę startową i [gold]Zmień[/gold] ją w [gold]Dziobanie[/gold]."
           },
           {
             "id": "SNAKE",
@@ -5206,9 +5196,9 @@
             "description": "Rzuć [gold]Zaklęcie[/gold][purple]Ślizg[/purple] na [blue]1[/blue] kartę."
           },
           {
-            "id": "BIRD",
-            "title": "Ptak",
-            "description": "Wybierz [blue]1[/blue] kartę startową i [gold]Zmień[/gold] ją w [gold]Dziobanie[/gold]."
+            "id": "SNAKE_LOCKED",
+            "title": "Zablokowane",
+            "description": "Nie można rzucić Zaklęcia [purple]Ślizg[/purple] na żadną kartę."
           },
           {
             "id": "TORUS",

@@ -244,14 +244,14 @@
     "description": "[b][jitter]KLONG! KLONG!!![/jitter][/b]\n\nDu hörst das Echo von Metall auf Metall auf der anderen Seite einer Mauer...\n\nDu drückst deinen Kopf gegen die Mauer, um zu lauschen—da öffnet sich die Wand und offenbart eine [orange]klobige sechsarmige Figur[/orange], die sich abplagt.\nIhr “Gesicht” ist ein [gold][sine]wirbelnder Strudel aus leuchtenden Siegeln[/sine][/gold], die sich umstellen.\n\n“Jemand mit [aqua]Aufstiegsgeist[/aqua] hat meine Werkstatt gefunden? Fangen wir an, zu [jitter]KOMBINIEREN[/jitter]!”",
     "options": [
       {
-        "id": "COMBINE_DEFENDS",
-        "title": "Verteidigen kombinieren",
-        "description": "Entferne [blue]2[/blue] [gold]Verteidigen[/gold]. Erhalte [gold]Ultimatives Verteidigen[/gold] in dein [gold]Deck[/gold]."
-      },
-      {
         "id": "COMBINE_STRIKES",
         "title": "Schläge kombinieren",
         "description": "Entferne [blue]2[/blue] [gold]Schläge[/gold]. Erhalte [gold]Ultimativer Schlag[/gold] in dein [gold]Deck[/gold]."
+      },
+      {
+        "id": "COMBINE_DEFENDS",
+        "title": "Verteidigen kombinieren",
+        "description": "Entferne [blue]2[/blue] [gold]Verteidigen[/gold]. Erhalte [gold]Ultimatives Verteidigen[/gold] in dein [gold]Deck[/gold]."
       }
     ],
     "pages": [
@@ -268,14 +268,14 @@
         "description": "[b][jitter]KLONG! KLONG!!![/jitter][/b]\n\nDu hörst das Echo von Metall auf Metall auf der anderen Seite einer Mauer...\n\nDu drückst deinen Kopf gegen die Mauer, um zu lauschen—da öffnet sich die Wand und offenbart eine [orange]klobige sechsarmige Figur[/orange], die sich abplagt.\nIhr “Gesicht” ist ein [gold][sine]wirbelnder Strudel aus leuchtenden Siegeln[/sine][/gold], die sich umstellen.\n\n“Jemand mit [aqua]Aufstiegsgeist[/aqua] hat meine Werkstatt gefunden? Fangen wir an, zu [jitter]KOMBINIEREN[/jitter]!”",
         "options": [
           {
-            "id": "COMBINE_DEFENDS",
-            "title": "Verteidigen kombinieren",
-            "description": "Entferne [blue]2[/blue] [gold]Verteidigen[/gold]. Erhalte [gold]Ultimatives Verteidigen[/gold] in dein [gold]Deck[/gold]."
-          },
-          {
             "id": "COMBINE_STRIKES",
             "title": "Schläge kombinieren",
             "description": "Entferne [blue]2[/blue] [gold]Schläge[/gold]. Erhalte [gold]Ultimativer Schlag[/gold] in dein [gold]Deck[/gold]."
+          },
+          {
+            "id": "COMBINE_DEFENDS",
+            "title": "Verteidigen kombinieren",
+            "description": "Entferne [blue]2[/blue] [gold]Verteidigen[/gold]. Erhalte [gold]Ultimatives Verteidigen[/gold] in dein [gold]Deck[/gold]."
           }
         ]
       }
@@ -1508,11 +1508,6 @@
         "id": "SEARCH",
         "title": "Die Umgebung durchsuchen",
         "description": "Erhalte [blue]45-75[/blue] [gold]Gold[/gold]."
-      },
-      {
-        "id": "CLAIM_LOCKED",
-        "title": "Gesperrt",
-        "description": "Deine max. TP sind zu niedrig."
       }
     ],
     "pages": [
@@ -1533,11 +1528,6 @@
             "id": "SEARCH",
             "title": "Die Umgebung durchsuchen",
             "description": "Erhalte [blue]45-75[/blue] [gold]Gold[/gold]."
-          },
-          {
-            "id": "CLAIM_LOCKED",
-            "title": "Gesperrt",
-            "description": "Deine max. TP sind zu niedrig."
           }
         ]
       },
@@ -1651,7 +1641,7 @@
     "id": "NEOW",
     "name": "Neow",
     "type": "Ancient",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "[sine]Ich habe dich... neu gemacht....\n...geh... ..hoch.....[/sine]",
     "options": null,
     "pages": null,
@@ -2493,11 +2483,6 @@
         "description": "Erhalte ein zufälliges [gold]Relikt[/gold]."
       },
       {
-        "id": "RELIC",
-        "title": "Relic geben",
-        "description": "Erhalte [blue]2[/blue] zufällige [gold]Relikte[/gold]."
-      },
-      {
         "id": "POTION_LOCKED",
         "title": "Gesperrt",
         "description": "Du hast keine Tränke, die du abgeben könntest."
@@ -2506,6 +2491,11 @@
         "id": "GOLD",
         "title": "100 Gold geben",
         "description": "Erhalte ein zufälliges [gold]Relikt[/gold]."
+      },
+      {
+        "id": "RELIC",
+        "title": "Relic geben",
+        "description": "Erhalte [blue]2[/blue] zufällige [gold]Relikte[/gold]."
       },
       {
         "id": "RELIC_LOCKED",
@@ -2528,11 +2518,6 @@
             "description": "Erhalte ein zufälliges [gold]Relikt[/gold]."
           },
           {
-            "id": "RELIC",
-            "title": "Relic geben",
-            "description": "Erhalte [blue]2[/blue] zufällige [gold]Relikte[/gold]."
-          },
-          {
             "id": "POTION_LOCKED",
             "title": "Gesperrt",
             "description": "Du hast keine Tränke, die du abgeben könntest."
@@ -2541,6 +2526,11 @@
             "id": "GOLD",
             "title": "100 Gold geben",
             "description": "Erhalte ein zufälliges [gold]Relikt[/gold]."
+          },
+          {
+            "id": "RELIC",
+            "title": "Relic geben",
+            "description": "Erhalte [blue]2[/blue] zufällige [gold]Relikte[/gold]."
           },
           {
             "id": "RELIC_LOCKED",
@@ -3196,7 +3186,7 @@
     "id": "SUNKEN_STATUE",
     "name": "Die Versunkene Statue",
     "type": "Event",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "Du sichtest eine alte Statue, die halb in einem Teich versunken ist; ihre Hände ruhen friedlich auf einem [blue]Steinschwert[/blue].\n\nAußerdem [gold][sine]glitzert[/sine][/gold] etwas an Boden des Teiches.\nVielleicht Opferspenden?\n\nDu könntest wirklich etwas Geld gebrauchen...",
     "options": [
       {
@@ -5178,9 +5168,9 @@
     "description": "Du öffnest eine verstaubte Schachtel. Darin ist ein Satz mit 3 kunstvollen Holzschnitzereien:\n\nEin Vogel, eine Schlange und... ein Torus?\n\nEin Podest in der Nähe hat Vertiefungen, die zum Fuß der Schnitzereien passen. Welche Schnitzerei stellst du auf das Podest?",
     "options": [
       {
-        "id": "SNAKE_LOCKED",
-        "title": "Gesperrt",
-        "description": "Keine deiner Karten kann mit [purple]Schlängeln[/purple] verzaubert werden."
+        "id": "BIRD",
+        "title": "Vogel",
+        "description": "Wähle [blue]1[/blue] Startkarte, die du zu [gold]Picken[/gold] [gold]Transformierst[/gold]."
       },
       {
         "id": "SNAKE",
@@ -5188,9 +5178,9 @@
         "description": "[gold]Verzaubere[/gold] [blue]1[/blue] Karte mit [purple]Schlängeln[/purple]."
       },
       {
-        "id": "BIRD",
-        "title": "Vogel",
-        "description": "Wähle [blue]1[/blue] Startkarte, die du zu [gold]Picken[/gold] [gold]Transformierst[/gold]."
+        "id": "SNAKE_LOCKED",
+        "title": "Gesperrt",
+        "description": "Keine deiner Karten kann mit [purple]Schlängeln[/purple] verzaubert werden."
       },
       {
         "id": "TORUS",
@@ -5208,9 +5198,9 @@
         "description": "Du öffnest eine verstaubte Schachtel. Darin ist ein Satz mit 3 kunstvollen Holzschnitzereien:\n\nEin Vogel, eine Schlange und... ein Torus?\n\nEin Podest in der Nähe hat Vertiefungen, die zum Fuß der Schnitzereien passen. Welche Schnitzerei stellst du auf das Podest?",
         "options": [
           {
-            "id": "SNAKE_LOCKED",
-            "title": "Gesperrt",
-            "description": "Keine deiner Karten kann mit [purple]Schlängeln[/purple] verzaubert werden."
+            "id": "BIRD",
+            "title": "Vogel",
+            "description": "Wähle [blue]1[/blue] Startkarte, die du zu [gold]Picken[/gold] [gold]Transformierst[/gold]."
           },
           {
             "id": "SNAKE",
@@ -5218,9 +5208,9 @@
             "description": "[gold]Verzaubere[/gold] [blue]1[/blue] Karte mit [purple]Schlängeln[/purple]."
           },
           {
-            "id": "BIRD",
-            "title": "Vogel",
-            "description": "Wähle [blue]1[/blue] Startkarte, die du zu [gold]Picken[/gold] [gold]Transformierst[/gold]."
+            "id": "SNAKE_LOCKED",
+            "title": "Gesperrt",
+            "description": "Keine deiner Karten kann mit [purple]Schlängeln[/purple] verzaubert werden."
           },
           {
             "id": "TORUS",

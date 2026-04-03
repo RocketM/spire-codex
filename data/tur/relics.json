@@ -1419,7 +1419,7 @@
   {
     "id": "BONE_TEA",
     "name": "Kemik Çayı",
-    "description": "Sonraki [blue]2[/blue] savaşının başında, eline gelen ilk kartları [gold]Geliştir[/gold].",
+    "description": "Sonraki savaşının başında, eline gelen ilk kartları [gold]Geliştir[/gold].",
     "description_raw": "Sonraki {Combats:plural:savaşının|[blue]{}[/blue] savaşının} başında, eline gelen ilk kartları [gold]Geliştir[/gold].",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Etkinlik Kalıntısı",
@@ -1757,7 +1757,7 @@
   {
     "id": "EMBER_TEA",
     "name": "Köz Çayı",
-    "description": "Sonraki [blue]2[/blue] savaşının başında [blue]2[/blue] [gold]Kuvvet[/gold] elde et.",
+    "description": "Sonraki [blue]5[/blue] savaşının başında [blue]2[/blue] [gold]Kuvvet[/gold] elde et.",
     "description_raw": "Sonraki {Combats:plural:savaşının|[blue]{}[/blue] savaşının} başında [blue]{StrengthPower}[/blue] [gold]Kuvvet[/gold] elde et.",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Etkinlik Kalıntısı",
@@ -3105,7 +3105,7 @@
     "description": "Bu bir taç.",
     "description_raw": "Bu bir taç.",
     "flavor": "[gold]Spire[/gold]'ın içinde bir sorun olduğunda ya da keşfedilecek başka kalıntı kalmadığında ortaya çıkan merak uyandırıcı bir kalıntı.",
-    "rarity": "None",
+    "rarity": "Kalıntı",
     "pool": "shared",
     "image_url": "/static/images/relics/circlet.png",
     "image_variants": null,
@@ -3306,19 +3306,6 @@
     "image_variants": null,
     "rarity_key": "Common",
     "compendium_order": 34
-  },
-  {
-    "id": "VAKUU_CARD_SELECTOR",
-    "name": "VakuuCardSelector",
-    "description": "",
-    "description_raw": "",
-    "flavor": "",
-    "rarity": "Unknown",
-    "pool": "shared",
-    "image_url": null,
-    "image_variants": null,
-    "rarity_key": "Unknown",
-    "compendium_order": 288
   },
   {
     "id": "DATA_DISK",

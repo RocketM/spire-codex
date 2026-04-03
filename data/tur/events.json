@@ -244,14 +244,14 @@
     "description": "[b][jitter]ÇIN! ÇIN!!![/jitter][/b]\n\nBir duvarın öte yanında, metalin metalle temasının yankılarını duyarsın...\n\nDinlemek için başını duvara yasladığında duvar açılır ve içeride, harıl harıl çalışan [orange]iri, altı kollu bir figür[/orange] ortaya çıkar.\n[gold][sine]Parıldayan mühürlerden oluşan ve dönüp duran bir girdabı[/sine][/gold] andıran \"yüzü,\" sürekli şekil değiştiriyordu.\n\n“[aqua]Yükselen Ruh[/aqua]’a sahip biri atölyemi mi buldu? Hadi [jitter]KAYNAŞTIRALIM[/jitter]!”",
     "options": [
       {
-        "id": "COMBINE_DEFENDS",
-        "title": "Savunmaları Birleştir",
-        "description": "[blue]2[/blue] [gold]Savunma[/gold] kartını kaldır. [gold]Deste[/gold]'ne [gold]Nihai Savunma[/gold] ekle."
-      },
-      {
         "id": "COMBINE_STRIKES",
         "title": "Saldırıları Birleştir",
         "description": "[blue]2[/blue] [gold]Saldırı[/gold] kartını kaldır. [gold]Deste[/gold]'ne [gold]Nihai Saldırı[/gold] ekle."
+      },
+      {
+        "id": "COMBINE_DEFENDS",
+        "title": "Savunmaları Birleştir",
+        "description": "[blue]2[/blue] [gold]Savunma[/gold] kartını kaldır. [gold]Deste[/gold]'ne [gold]Nihai Savunma[/gold] ekle."
       }
     ],
     "pages": [
@@ -268,14 +268,14 @@
         "description": "[b][jitter]ÇIN! ÇIN!!![/jitter][/b]\n\nBir duvarın öte yanında, metalin metalle temasının yankılarını duyarsın...\n\nDinlemek için başını duvara yasladığında duvar açılır ve içeride, harıl harıl çalışan [orange]iri, altı kollu bir figür[/orange] ortaya çıkar.\n[gold][sine]Parıldayan mühürlerden oluşan ve dönüp duran bir girdabı[/sine][/gold] andıran \"yüzü,\" sürekli şekil değiştiriyordu.\n\n“[aqua]Yükselen Ruh[/aqua]’a sahip biri atölyemi mi buldu? Hadi [jitter]KAYNAŞTIRALIM[/jitter]!”",
         "options": [
           {
-            "id": "COMBINE_DEFENDS",
-            "title": "Savunmaları Birleştir",
-            "description": "[blue]2[/blue] [gold]Savunma[/gold] kartını kaldır. [gold]Deste[/gold]'ne [gold]Nihai Savunma[/gold] ekle."
-          },
-          {
             "id": "COMBINE_STRIKES",
             "title": "Saldırıları Birleştir",
             "description": "[blue]2[/blue] [gold]Saldırı[/gold] kartını kaldır. [gold]Deste[/gold]'ne [gold]Nihai Saldırı[/gold] ekle."
+          },
+          {
+            "id": "COMBINE_DEFENDS",
+            "title": "Savunmaları Birleştir",
+            "description": "[blue]2[/blue] [gold]Savunma[/gold] kartını kaldır. [gold]Deste[/gold]'ne [gold]Nihai Savunma[/gold] ekle."
           }
         ]
       }
@@ -1508,11 +1508,6 @@
         "id": "SEARCH",
         "title": "Etrafı Araştır",
         "description": "[blue]45-75[/blue] [gold]Altın[/gold] elde et."
-      },
-      {
-        "id": "CLAIM_LOCKED",
-        "title": "Kilitli",
-        "description": "Sahip olduğun maksimum CP çok düşük."
       }
     ],
     "pages": [
@@ -1533,11 +1528,6 @@
             "id": "SEARCH",
             "title": "Etrafı Araştır",
             "description": "[blue]45-75[/blue] [gold]Altın[/gold] elde et."
-          },
-          {
-            "id": "CLAIM_LOCKED",
-            "title": "Kilitli",
-            "description": "Sahip olduğun maksimum CP çok düşük."
           }
         ]
       },
@@ -1651,7 +1641,7 @@
     "id": "NEOW",
     "name": "Neow",
     "type": "Ancient",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "[sine]Seni... yeniden... yarattım....\n...tırman.....[/sine]",
     "options": null,
     "pages": null,
@@ -2493,11 +2483,6 @@
         "description": "Rastgele bir [gold]Kalıntı[/gold] elde et."
       },
       {
-        "id": "RELIC",
-        "title": "Kalıntı'yı Ver: Relic",
-        "description": "Rastgele [blue]2[/blue] [gold]Kalıntı[/gold] elde et."
-      },
-      {
         "id": "POTION_LOCKED",
         "title": "Kilitli",
         "description": "Verebileceğin hiçbir İksir yok."
@@ -2506,6 +2491,11 @@
         "id": "GOLD",
         "title": "100 Altın ver.",
         "description": "Rastgele bir [gold]Kalıntı[/gold] elde et."
+      },
+      {
+        "id": "RELIC",
+        "title": "Kalıntı'yı Ver: Relic",
+        "description": "Rastgele [blue]2[/blue] [gold]Kalıntı[/gold] elde et."
       },
       {
         "id": "RELIC_LOCKED",
@@ -2528,11 +2518,6 @@
             "description": "Rastgele bir [gold]Kalıntı[/gold] elde et."
           },
           {
-            "id": "RELIC",
-            "title": "Kalıntı'yı Ver: Relic",
-            "description": "Rastgele [blue]2[/blue] [gold]Kalıntı[/gold] elde et."
-          },
-          {
             "id": "POTION_LOCKED",
             "title": "Kilitli",
             "description": "Verebileceğin hiçbir İksir yok."
@@ -2541,6 +2526,11 @@
             "id": "GOLD",
             "title": "100 Altın ver.",
             "description": "Rastgele bir [gold]Kalıntı[/gold] elde et."
+          },
+          {
+            "id": "RELIC",
+            "title": "Kalıntı'yı Ver: Relic",
+            "description": "Rastgele [blue]2[/blue] [gold]Kalıntı[/gold] elde et."
           },
           {
             "id": "RELIC_LOCKED",
@@ -3196,7 +3186,7 @@
     "id": "SUNKEN_STATUE",
     "name": "Batık Heykel",
     "type": "Event",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "Bir göletin içinde yarı yarıya batmış eski bir heykel fark edersin. Elleri nazikçe [blue]taş bir kılıcın[/blue] üzerinde durmaktadır.\n\nAyrıca göletin dibinde [gold][sine]parıldayan[/sine][/gold] bir şey de gözüne çarpar.\nBunlar para mı acaba?\n\nGerçekten de biraz paraya ihtiyacın vardı...",
     "options": [
       {
@@ -3650,7 +3640,7 @@
       {
         "id": "BONE_TEA",
         "title": "Kemik Çayı",
-        "description": "[red]50[/red] [gold]Altın[/gold] öde. Sonraki [blue]2[/blue] savaşının başında, eline gelen ilk kartları [gold]Geliştir[/gold]."
+        "description": "[red]50[/red] [gold]Altın[/gold] öde. Sonraki savaşının başında, eline gelen ilk kartları [gold]Geliştir[/gold]."
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3660,7 +3650,7 @@
       {
         "id": "EMBER_TEA",
         "title": "Köz Çayı",
-        "description": "[red]150[/red] [gold]Altın[/gold] öde. Sonraki [blue]2[/blue] savaşının başında [blue]2[/blue] [gold]Kuvvet[/gold] elde et."
+        "description": "[red]150[/red] [gold]Altın[/gold] öde. Sonraki [blue]5[/blue] savaşının başında [blue]2[/blue] [gold]Kuvvet[/gold] elde et."
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3685,7 +3675,7 @@
           {
             "id": "BONE_TEA",
             "title": "Kemik Çayı",
-            "description": "[red]50[/red] [gold]Altın[/gold] öde. Sonraki [blue]2[/blue] savaşının başında, eline gelen ilk kartları [gold]Geliştir[/gold]."
+            "description": "[red]50[/red] [gold]Altın[/gold] öde. Sonraki savaşının başında, eline gelen ilk kartları [gold]Geliştir[/gold]."
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3695,7 +3685,7 @@
           {
             "id": "EMBER_TEA",
             "title": "Köz Çayı",
-            "description": "[red]150[/red] [gold]Altın[/gold] öde. Sonraki [blue]2[/blue] savaşının başında [blue]2[/blue] [gold]Kuvvet[/gold] elde et."
+            "description": "[red]150[/red] [gold]Altın[/gold] öde. Sonraki [blue]5[/blue] savaşının başında [blue]2[/blue] [gold]Kuvvet[/gold] elde et."
           },
           {
             "id": "EMBER_TEA_LOCKED",
@@ -5178,9 +5168,9 @@
     "description": "Tozlu bir sandığı açtığında üç adet özenle oyulmuş ahşap figürle karşılaşırsın:\n\nBir kuş, bir yılan ve... galiba bir simit.\n\nYakındaki bir kaidede, oymaların tabanlarıyla birebir uyuşan girintiler vardır. Kaideye hangisini yerleştireceksin?",
     "options": [
       {
-        "id": "SNAKE_LOCKED",
-        "title": "Kilitli",
-        "description": "Kartlarından hiçbiri [purple]Sürüngen[/purple] ile Büyülenemiyor."
+        "id": "BIRD",
+        "title": "Kuş",
+        "description": "[gold]Gagala[/gold] kartına [gold]Dönüştürmek[/gold] için başlangıç kartlarından [blue]1[/blue] tanesini seç."
       },
       {
         "id": "SNAKE",
@@ -5188,9 +5178,9 @@
         "description": "[blue]1[/blue] kartı [purple]Sürüngen[/purple] ile [gold]Büyüle[/gold]."
       },
       {
-        "id": "BIRD",
-        "title": "Kuş",
-        "description": "[gold]Gagala[/gold] kartına [gold]Dönüştürmek[/gold] için başlangıç kartlarından [blue]1[/blue] tanesini seç."
+        "id": "SNAKE_LOCKED",
+        "title": "Kilitli",
+        "description": "Kartlarından hiçbiri [purple]Sürüngen[/purple] ile Büyülenemiyor."
       },
       {
         "id": "TORUS",
@@ -5208,9 +5198,9 @@
         "description": "Tozlu bir sandığı açtığında üç adet özenle oyulmuş ahşap figürle karşılaşırsın:\n\nBir kuş, bir yılan ve... galiba bir simit.\n\nYakındaki bir kaidede, oymaların tabanlarıyla birebir uyuşan girintiler vardır. Kaideye hangisini yerleştireceksin?",
         "options": [
           {
-            "id": "SNAKE_LOCKED",
-            "title": "Kilitli",
-            "description": "Kartlarından hiçbiri [purple]Sürüngen[/purple] ile Büyülenemiyor."
+            "id": "BIRD",
+            "title": "Kuş",
+            "description": "[gold]Gagala[/gold] kartına [gold]Dönüştürmek[/gold] için başlangıç kartlarından [blue]1[/blue] tanesini seç."
           },
           {
             "id": "SNAKE",
@@ -5218,9 +5208,9 @@
             "description": "[blue]1[/blue] kartı [purple]Sürüngen[/purple] ile [gold]Büyüle[/gold]."
           },
           {
-            "id": "BIRD",
-            "title": "Kuş",
-            "description": "[gold]Gagala[/gold] kartına [gold]Dönüştürmek[/gold] için başlangıç kartlarından [blue]1[/blue] tanesini seç."
+            "id": "SNAKE_LOCKED",
+            "title": "Kilitli",
+            "description": "Kartlarından hiçbiri [purple]Sürüngen[/purple] ile Büyülenemiyor."
           },
           {
             "id": "TORUS",

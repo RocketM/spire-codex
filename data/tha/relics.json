@@ -301,7 +301,7 @@
   {
     "id": "BONE_TEA",
     "name": "BoneTea",
-    "description": "ตอนเริ่มต้นการต่อสู้ในอีก [blue][Combats][/blue] ครั้ง [gold]พัฒนา[/gold]มือเริ่มต้น",
+    "description": "ตอนเริ่มต้นการต่อสู้ในอีก [blue]1[/blue] ครั้ง [gold]พัฒนา[/gold]มือเริ่มต้น",
     "description_raw": "ตอนเริ่มต้นการต่อสู้ในอีก [blue]{Combats}[/blue] ครั้ง [gold]พัฒนา[/gold]มือเริ่มต้น",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางเหตุการณ์",
@@ -769,7 +769,7 @@
   {
     "id": "EMBER_TEA",
     "name": "EmberTea",
-    "description": "ตอนเริ่มต้นอีก [blue]2[/blue] การต่อสู้ ได้รับ [blue]2[/blue] [gold]ความแข็งแรง[/gold]",
+    "description": "ตอนเริ่มต้นอีก [blue]5[/blue] การต่อสู้ ได้รับ [blue]2[/blue] [gold]ความแข็งแรง[/gold]",
     "description_raw": "ตอนเริ่มต้นอีก {Combats:plural:1|[blue]{}[/blue]} การต่อสู้ ได้รับ [blue]{StrengthPower}[/blue] [gold]ความแข็งแรง[/gold]",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางเหตุการณ์",
@@ -3081,19 +3081,6 @@
     "compendium_order": 118
   },
   {
-    "id": "VAKUU_CARD_SELECTOR",
-    "name": "VakuuCardSelector",
-    "description": "",
-    "description_raw": "",
-    "flavor": "",
-    "rarity": "Unknown",
-    "pool": "shared",
-    "image_url": null,
-    "image_variants": null,
-    "rarity_key": "Unknown",
-    "compendium_order": 287
-  },
-  {
     "id": "VAMBRACE",
     "name": "Vambrace",
     "description": "ครั้งแรกที่คุณได้รับ[gold]บล็อก[/gold]จากการ์ดในการต่อสู้ จะได้รับเป็น 2 เท่า",
@@ -3573,12 +3560,12 @@
     "description": "มันคือรัดเกล้า",
     "description_raw": "มันคือรัดเกล้า",
     "flavor": "",
-    "rarity": "None",
+    "rarity": "Relic",
     "pool": "shared",
     "image_url": "/static/images/relics/circlet.png",
     "image_variants": null,
     "rarity_key": "None",
-    "compendium_order": 288
+    "compendium_order": 287
   },
   {
     "id": "VAJRA",

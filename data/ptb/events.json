@@ -244,14 +244,14 @@
     "description": "[b][jitter]CLANC! CLANC!!![/jitter][/b]\n\nVocê ouve o eco de metal se chocando contra metal, vindo do outro lado de uma parede...\n\nAssim que você apoia sua cabeça contra a parede para ouvir melhor — a parede se abre, revelando uma [orange]imponente figura com seis braços[/orange] muito focada em sua atividade.\nSua “face” é um [gold][sine]vórtex rodopiante de glifos luminosos[/sine][/gold] em constante movimento.\n\n“Alguém com um [aqua]Espírito de Ascensão[/aqua] encontrou a minha oficina? Hora da [jitter]COMBINAÇÃO[/jitter]!”",
     "options": [
       {
-        "id": "COMBINE_DEFENDS",
-        "title": "Combinar Defesas",
-        "description": "Remova [blue]2[/blue] [gold]Defesas[/gold]. Adicione [gold]Defesa Suprema[/gold] ao seu [gold]Baralho[/gold]."
-      },
-      {
         "id": "COMBINE_STRIKES",
         "title": "Combinar Golpes",
         "description": "Remova [blue]2[/blue] [gold]Golpes[/gold]. Adicione [gold]Golpe Supremo[/gold] ao seu [gold]Baralho[/gold]."
+      },
+      {
+        "id": "COMBINE_DEFENDS",
+        "title": "Combinar Defesas",
+        "description": "Remova [blue]2[/blue] [gold]Defesas[/gold]. Adicione [gold]Defesa Suprema[/gold] ao seu [gold]Baralho[/gold]."
       }
     ],
     "pages": [
@@ -268,14 +268,14 @@
         "description": "[b][jitter]CLANC! CLANC!!![/jitter][/b]\n\nVocê ouve o eco de metal se chocando contra metal, vindo do outro lado de uma parede...\n\nAssim que você apoia sua cabeça contra a parede para ouvir melhor — a parede se abre, revelando uma [orange]imponente figura com seis braços[/orange] muito focada em sua atividade.\nSua “face” é um [gold][sine]vórtex rodopiante de glifos luminosos[/sine][/gold] em constante movimento.\n\n“Alguém com um [aqua]Espírito de Ascensão[/aqua] encontrou a minha oficina? Hora da [jitter]COMBINAÇÃO[/jitter]!”",
         "options": [
           {
-            "id": "COMBINE_DEFENDS",
-            "title": "Combinar Defesas",
-            "description": "Remova [blue]2[/blue] [gold]Defesas[/gold]. Adicione [gold]Defesa Suprema[/gold] ao seu [gold]Baralho[/gold]."
-          },
-          {
             "id": "COMBINE_STRIKES",
             "title": "Combinar Golpes",
             "description": "Remova [blue]2[/blue] [gold]Golpes[/gold]. Adicione [gold]Golpe Supremo[/gold] ao seu [gold]Baralho[/gold]."
+          },
+          {
+            "id": "COMBINE_DEFENDS",
+            "title": "Combinar Defesas",
+            "description": "Remova [blue]2[/blue] [gold]Defesas[/gold]. Adicione [gold]Defesa Suprema[/gold] ao seu [gold]Baralho[/gold]."
           }
         ]
       }
@@ -1508,11 +1508,6 @@
         "id": "SEARCH",
         "title": "Explore as Redondezas",
         "description": "Receba [blue]45-75[/blue] de [gold]Ouro[/gold]."
-      },
-      {
-        "id": "CLAIM_LOCKED",
-        "title": "Bloqueado",
-        "description": "Seus PV Máximos são insuficientes."
       }
     ],
     "pages": [
@@ -1533,11 +1528,6 @@
             "id": "SEARCH",
             "title": "Explore as Redondezas",
             "description": "Receba [blue]45-75[/blue] de [gold]Ouro[/gold]."
-          },
-          {
-            "id": "CLAIM_LOCKED",
-            "title": "Bloqueado",
-            "description": "Seus PV Máximos são insuficientes."
           }
         ]
       },
@@ -1651,7 +1641,7 @@
     "id": "NEOW",
     "name": "Neow",
     "type": "Ancient",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "[sine]Eu... reconstruí você....\n...vá... ..suba.....[/sine]",
     "options": null,
     "pages": null,
@@ -2493,11 +2483,6 @@
         "description": "Receba uma [gold]Relíquia[/gold] aleatória."
       },
       {
-        "id": "RELIC",
-        "title": "Doar Relic",
-        "description": "Receba [blue]2[/blue] [gold]Relíquias[/gold] aleatórias."
-      },
-      {
         "id": "POTION_LOCKED",
         "title": "Bloqueado",
         "description": "Você não possui nenhuma poção que possa entregar."
@@ -2506,6 +2491,11 @@
         "id": "GOLD",
         "title": "Doar 100 de Ouro",
         "description": "Receba uma [gold]Relíquia[/gold] aleatória."
+      },
+      {
+        "id": "RELIC",
+        "title": "Doar Relic",
+        "description": "Receba [blue]2[/blue] [gold]Relíquias[/gold] aleatórias."
       },
       {
         "id": "RELIC_LOCKED",
@@ -2528,11 +2518,6 @@
             "description": "Receba uma [gold]Relíquia[/gold] aleatória."
           },
           {
-            "id": "RELIC",
-            "title": "Doar Relic",
-            "description": "Receba [blue]2[/blue] [gold]Relíquias[/gold] aleatórias."
-          },
-          {
             "id": "POTION_LOCKED",
             "title": "Bloqueado",
             "description": "Você não possui nenhuma poção que possa entregar."
@@ -2541,6 +2526,11 @@
             "id": "GOLD",
             "title": "Doar 100 de Ouro",
             "description": "Receba uma [gold]Relíquia[/gold] aleatória."
+          },
+          {
+            "id": "RELIC",
+            "title": "Doar Relic",
+            "description": "Receba [blue]2[/blue] [gold]Relíquias[/gold] aleatórias."
           },
           {
             "id": "RELIC_LOCKED",
@@ -3196,7 +3186,7 @@
     "id": "SUNKEN_STATUE",
     "name": "A Estátua Submersa",
     "type": "Event",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": "Você encontra uma antiga estátua submersa até a metade em uma lagoa, suas mãos repousam gentilmente sobre uma [blue]espada de pedra[/blue].\n\nVocê também nota algo [gold][sine]reluzindo[/sine][/gold] no fundo da lagoa.\nOferendas, talvez?\n\nUm pouco de dinheiro seria bastante útil agora...",
     "options": [
       {
@@ -5178,9 +5168,9 @@
     "description": "Você abre uma caixa empoeirada e encontra um conjunto de 3 elaboradas esculturas de madeira:\n\nUm pássaro, uma serpente e... um toro?\n\nUm pedestal próximo tem ranhuras que parecem coincidir com a base das esculturas. Qual escultura você coloca no pedestal?",
     "options": [
       {
-        "id": "SNAKE_LOCKED",
-        "title": "Bloqueado",
-        "description": "Você não possui cartas que possam ser Encantadas com [purple]Rastejante[/purple]."
+        "id": "BIRD",
+        "title": "Pássaro",
+        "description": "Escolha [blue]1[/blue] carta inicial para [gold]Transforma-la[/gold] em [gold]Bicada[/gold]."
       },
       {
         "id": "SNAKE",
@@ -5188,9 +5178,9 @@
         "description": "[gold]Encante[/gold] [blue]1[/blue] carta com [purple]Rastejante[/purple]."
       },
       {
-        "id": "BIRD",
-        "title": "Pássaro",
-        "description": "Escolha [blue]1[/blue] carta inicial para [gold]Transforma-la[/gold] em [gold]Bicada[/gold]."
+        "id": "SNAKE_LOCKED",
+        "title": "Bloqueado",
+        "description": "Você não possui cartas que possam ser Encantadas com [purple]Rastejante[/purple]."
       },
       {
         "id": "TORUS",
@@ -5208,9 +5198,9 @@
         "description": "Você abre uma caixa empoeirada e encontra um conjunto de 3 elaboradas esculturas de madeira:\n\nUm pássaro, uma serpente e... um toro?\n\nUm pedestal próximo tem ranhuras que parecem coincidir com a base das esculturas. Qual escultura você coloca no pedestal?",
         "options": [
           {
-            "id": "SNAKE_LOCKED",
-            "title": "Bloqueado",
-            "description": "Você não possui cartas que possam ser Encantadas com [purple]Rastejante[/purple]."
+            "id": "BIRD",
+            "title": "Pássaro",
+            "description": "Escolha [blue]1[/blue] carta inicial para [gold]Transforma-la[/gold] em [gold]Bicada[/gold]."
           },
           {
             "id": "SNAKE",
@@ -5218,9 +5208,9 @@
             "description": "[gold]Encante[/gold] [blue]1[/blue] carta com [purple]Rastejante[/purple]."
           },
           {
-            "id": "BIRD",
-            "title": "Pássaro",
-            "description": "Escolha [blue]1[/blue] carta inicial para [gold]Transforma-la[/gold] em [gold]Bicada[/gold]."
+            "id": "SNAKE_LOCKED",
+            "title": "Bloqueado",
+            "description": "Você não possui cartas que possam ser Encantadas com [purple]Rastejante[/purple]."
           },
           {
             "id": "TORUS",

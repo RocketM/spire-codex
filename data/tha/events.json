@@ -55,14 +55,14 @@
     "description": null,
     "options": [
       {
-        "id": "COMBINE_DEFENDS",
-        "title": "COMBINE_DEFENDS",
-        "description": "กำจัด[gold]ป้องกัน[/gold] [blue]2[/blue] ใบ เพิ่ม[gold]UltimateDefend[/gold]เข้า[gold]กองการ์ด[/gold]"
-      },
-      {
         "id": "COMBINE_STRIKES",
         "title": "COMBINE_STRIKES",
         "description": "กำจัด[gold]จู่โจม[/gold] [blue]2[/blue] ใบ เพิ่ม[gold]UltimateStrike[/gold]เข้า[gold]กองการ์ด[/gold]"
+      },
+      {
+        "id": "COMBINE_DEFENDS",
+        "title": "COMBINE_DEFENDS",
+        "description": "กำจัด[gold]ป้องกัน[/gold] [blue]2[/blue] ใบ เพิ่ม[gold]UltimateDefend[/gold]เข้า[gold]กองการ์ด[/gold]"
       }
     ],
     "pages": null
@@ -748,11 +748,6 @@
         "id": "SEARCH",
         "title": "ค้นหาบริเวณรอบข้าง",
         "description": "ได้รับ [blue]45-75[/blue] [gold]ทอง[/gold]"
-      },
-      {
-        "id": "CLAIM_LOCKED",
-        "title": "ล็อก",
-        "description": "HP สูงสุดของคุณต่ำเกินไป"
       }
     ],
     "pages": null
@@ -806,7 +801,7 @@
     "id": "NEOW",
     "name": "Neow",
     "type": "Ancient",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": null,
     "options": null,
     "pages": null,
@@ -1005,11 +1000,6 @@
         "description": "ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
       },
       {
-        "id": "RELIC",
-        "title": "ให้Relic",
-        "description": "ได้รับ[gold]เครื่องราง[/gold] [blue]2[/blue] ชิ้นแบบสุ่ม"
-      },
-      {
         "id": "POTION_LOCKED",
         "title": "ล็อก",
         "description": "คุณไม่เหลือขวดยาที่สามารถมอบให้ได้"
@@ -1018,6 +1008,11 @@
         "id": "GOLD",
         "title": "ให้ 100 ทอง",
         "description": "ได้รับ[gold]เครื่องราง[/gold] 1 ชิ้นแบบสุ่ม"
+      },
+      {
+        "id": "RELIC",
+        "title": "ให้Relic",
+        "description": "ได้รับ[gold]เครื่องราง[/gold] [blue]2[/blue] ชิ้นแบบสุ่ม"
       },
       {
         "id": "RELIC_LOCKED",
@@ -1459,7 +1454,7 @@
     "id": "SUNKEN_STATUE",
     "name": "SunkenStatue",
     "type": "Event",
-    "act": "Underdocks",
+    "act": "Act 1 - Overgrowth / Underdocks",
     "description": null,
     "options": [
       {
@@ -1665,7 +1660,7 @@
       {
         "id": "BONE_TEA",
         "title": "BONE_TEA",
-        "description": "จ่าย [red]50[/red] [gold]ทอง[/gold] ตอนเริ่มต้นการต่อสู้ในอีก [blue][Combats][/blue] ครั้ง [gold]พัฒนา[/gold]มือเริ่มต้น"
+        "description": "จ่าย [red]50[/red] [gold]ทอง[/gold] ตอนเริ่มต้นการต่อสู้ในอีก [blue]1[/blue] ครั้ง [gold]พัฒนา[/gold]มือเริ่มต้น"
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -1675,7 +1670,7 @@
       {
         "id": "EMBER_TEA",
         "title": "EMBER_TEA",
-        "description": "จ่าย [red]150[/red] [gold]ทอง[/gold] ตอนเริ่มต้นอีก [blue]2[/blue] การต่อสู้ ได้รับ [blue]2[/blue] [gold]ความแข็งแรง[/gold]"
+        "description": "จ่าย [red]150[/red] [gold]ทอง[/gold] ตอนเริ่มต้นอีก [blue]5[/blue] การต่อสู้ ได้รับ [blue]2[/blue] [gold]ความแข็งแรง[/gold]"
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -2193,9 +2188,9 @@
     "description": null,
     "options": [
       {
-        "id": "SNAKE_LOCKED",
-        "title": "ล็อก",
-        "description": ""
+        "id": "BIRD",
+        "title": "นก",
+        "description": "เลือกการ์ดเริ่มต้น [blue]1[/blue] ใบเพื่อ[gold]แปรสภาพ[/gold]ให้เป็น[gold]Peck[/gold]"
       },
       {
         "id": "SNAKE",
@@ -2203,9 +2198,9 @@
         "description": "[gold]ร่ายมนตร์[/gold]การ์ด [blue]1[/blue] ใบด้วย[purple]มนตร์อสรพิษ[/purple]"
       },
       {
-        "id": "BIRD",
-        "title": "นก",
-        "description": "เลือกการ์ดเริ่มต้น [blue]1[/blue] ใบเพื่อ[gold]แปรสภาพ[/gold]ให้เป็น[gold]Peck[/gold]"
+        "id": "SNAKE_LOCKED",
+        "title": "ล็อก",
+        "description": ""
       },
       {
         "id": "TORUS",
