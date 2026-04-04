@@ -142,10 +142,10 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict, even
     # Upgrade info
     upgrade_damage = None
     upgrade_block = None
-    dmg_up = re.search(r'Damage\.UpgradeValueBy\((\d+)m\)', content)
+    dmg_up = re.search(r'(?<!\w)Damage\.UpgradeValueBy\((\d+)m\)', content)
     if dmg_up:
         upgrade_damage = int(dmg_up.group(1))
-    blk_up = re.search(r'Block\.UpgradeValueBy\((\d+)m\)', content)
+    blk_up = re.search(r'(?<!\w)Block\.UpgradeValueBy\((\d+)m\)', content)
     if blk_up:
         upgrade_block = int(blk_up.group(1))
 

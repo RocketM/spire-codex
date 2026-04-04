@@ -1414,7 +1414,6 @@
       "CalculatedDamage": 25
     },
     "upgrade": {
-      "damage": "+1",
       "calculationbase": "+5",
       "extradamage": "+1"
     },
@@ -2571,7 +2570,6 @@
       "Damage": 3
     },
     "upgrade": {
-      "damage": "+3",
       "ostydamage": "+3"
     },
     "image_url": "/static/images/cards/fetch.png",
@@ -3466,7 +3464,6 @@
       "CalculatedDamage": 4
     },
     "upgrade": {
-      "damage": "+1",
       "extradamage": "+1"
     },
     "image_url": "/static/images/cards/bully.png",
@@ -4207,7 +4204,6 @@
       "Damage": 7
     },
     "upgrade": {
-      "damage": "+3",
       "ostydamage": "+3"
     },
     "image_url": "/static/images/cards/snap.png",
@@ -4300,7 +4296,6 @@
       "Damage": 11
     },
     "upgrade": {
-      "damage": "+2",
       "ostydamage": "+2",
       "vulnerable": "+1"
     },
@@ -4700,7 +4695,6 @@
       "CalculatedDamage": 8
     },
     "upgrade": {
-      "damage": "+1",
       "calculationbase": "+1",
       "extradamage": "+1"
     },
@@ -6517,7 +6511,6 @@
       "CalculatedDamage": 15
     },
     "upgrade": {
-      "damage": "+3",
       "extradamage": "+3",
       "calculationbase": "+3"
     },
@@ -7386,7 +7379,6 @@
       "Damage": 12
     },
     "upgrade": {
-      "damage": "+4",
       "ostydamage": "+4"
     },
     "image_url": "/static/images/cards/flatten.png",
@@ -10252,7 +10244,6 @@
       "Damage": 9
     },
     "upgrade": {
-      "damage": "+3",
       "block": "+3",
       "ostydamage": "+3"
     },
@@ -11241,7 +11232,6 @@
       "CalculatedDamage": 6
     },
     "upgrade": {
-      "damage": "+1",
       "extradamage": "+1"
     },
     "image_url": "/static/images/cards/ashen_strike.png",
@@ -11563,7 +11553,6 @@
       "CalculatedDamage": 6
     },
     "upgrade": {
-      "damage": "+1",
       "extradamage": "+1"
     },
     "image_url": "/static/images/cards/perfected_strike.png",
@@ -13555,7 +13544,6 @@
       "StarCost": 1
     },
     "upgrade": {
-      "damage": "+1",
       "extradamage": "+1"
     },
     "image_url": "/static/images/cards/crescent_spear.png",
@@ -14493,7 +14481,6 @@
       "Damage": 4
     },
     "upgrade": {
-      "damage": "+2",
       "ostydamage": "+2"
     },
     "image_url": "/static/images/cards/right_hand_hand.png",
@@ -14700,7 +14687,6 @@
       "CalculatedDamage": 8
     },
     "upgrade": {
-      "damage": "+1",
       "calculationbase": "+1",
       "extradamage": "+1"
     },
@@ -14901,7 +14887,6 @@
       "CalculatedDamage": 8
     },
     "upgrade": {
-      "damage": "+1",
       "calculationbase": "+2",
       "extradamage": "+1"
     },
@@ -15069,7 +15054,6 @@
       "Damage": 10
     },
     "upgrade": {
-      "damage": "+5",
       "ostydamage": "+5"
     },
     "image_url": "/static/images/cards/sweeping_gaze.png",
@@ -16396,7 +16380,6 @@
       "CalculatedDamage": 5
     },
     "upgrade": {
-      "damage": "+2",
       "extradamage": "+2"
     },
     "image_url": "/static/images/cards/gang_up.png",
@@ -20856,7 +20839,6 @@
       "CalculatedDamage": 5
     },
     "upgrade": {
-      "damage": "+1",
       "extradamage": "+1"
     },
     "image_url": "/static/images/cards/supermassive.png",
@@ -21754,7 +21736,6 @@
       "Damage": 6
     },
     "upgrade": {
-      "damage": "+3",
       "ostydamage": "+3"
     },
     "image_url": "/static/images/cards/poke.png",
@@ -21840,7 +21821,6 @@
       "CalculatedDamage": 9
     },
     "upgrade": {
-      "damage": "+1",
       "extradamage": "+1"
     },
     "image_url": "/static/images/cards/soul_storm.png",
@@ -22158,7 +22138,6 @@
       "Damage": 7
     },
     "upgrade": {
-      "damage": "+2",
       "ostydamage": "+2"
     },
     "image_url": "/static/images/cards/rattle.png",
@@ -23056,7 +23035,6 @@
       "Damage": 5
     },
     "upgrade": {
-      "damage": "+1",
       "ostydamage": "+1",
       "sicempower": "+1"
     },

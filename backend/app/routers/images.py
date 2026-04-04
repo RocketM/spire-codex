@@ -28,6 +28,17 @@ CATEGORIES: dict[str, tuple[str, str, bool, list[str] | None]] = {
     "relics-beta": ("Relics (Beta Art)", "relics/beta", False, None),
     "monsters-beta": ("Monsters (Beta Art)", "monsters/beta", False, None),
     "backgrounds": ("Backgrounds", "misc", False, ["main_menu.png", "main_menu_bg.png", "sts2_logo.png", "neow.png", "tezcatara.png", "merchant.png"]),
+    "ui-icons": ("UI Icons", "ui/icons", False, None),
+    "ui-energy": ("Energy Icons", "ui/energy", False, None),
+    "ui-boss": ("Boss Icons", "ui/boss", False, None),
+    "ui-characters": ("Character Icons", "ui/characters", False, None),
+    "ui-combat": ("Combat UI", "ui/combat", False, None),
+    "ui-rewards": ("Reward Icons", "ui/rewards", False, None),
+    "ui-map": ("Map Icons", "ui/map", False, None),
+    "ui-menu": ("Menu Icons", "ui/menu", False, None),
+    "ui-cursors": ("Cursors", "ui/cursors", False, None),
+    "ui-crystal-sphere": ("Crystal Sphere", "ui/crystal_sphere", False, None),
+    "ui-misc": ("Misc UI", "ui/misc", False, None),
 }
 
 
