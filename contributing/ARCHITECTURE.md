@@ -108,7 +108,10 @@ Filter parameters always use English values regardless of language.
 
 Monster sprites are Spine skeletal animations (.skel + .atlas + .png), not static images.
 
-- **WebGL renderer** (`tools/spine-renderer/render_webgl.mjs`) — Playwright + spine-webgl via headless Chrome
-- **Batch renderer** (`tools/spine-renderer/render_all_webgl.mjs`) — all 138 skeletons
+- **WebGL renderer** (`tools/spine-renderer/render_webgl.mjs`) — Playwright + spine-webgl via headless Chrome, single frame
+- **Batch renderer** (`tools/spine-renderer/render_all_webgl.mjs`) — all 138 skeletons as static PNGs
+- **Animation renderer** (`tools/spine-renderer/render_gif.mjs`) — animated WebP/GIF/APNG with skin variant and animation selection support. Streams frames to disk for WebP/APNG to avoid OOM.
 - Hidden slots: `smoketex`, `smoke_placeholder`, `megatail`, `megablade`, `shadow_v2`
-- Output: 512×512 transparent PNGs
+- Static output: 512×512 transparent PNGs
+- Animation output: 209 lossless animated WebPs (characters at 512×512, monsters at 256×256)
+- Skin variants: 13 monsters need `--skin=` flag (bowlbug, cubex_construct, cultists, etc.)

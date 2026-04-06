@@ -45,6 +45,12 @@ CATEGORIES: dict[str, tuple[str, str, bool, list[str] | None]] = {
     "ui-top-bar": ("Top Bar Icons", "ui/top_bar", False, None),
     "ui-animations": ("Idle Animations", "ui/animations", True, None),
     "ui-animations-attack": ("Attack Animations", "ui/animations/monsters_attack", False, None),
+    "ui-card-library": ("Card Library UI", "ui/card_library", False, None),
+    "ui-achievements": ("Achievement Icons", "ui/achievements", False, None),
+    "ui-modifiers": ("Custom Mode Modifiers", "ui/modifiers", False, None),
+    "ui-stats": ("Statistics Screen", "ui/stats", False, None),
+    "ui-map-backgrounds": ("Map Backgrounds", "ui/map_backgrounds", False, None),
+    "ui-run-history": ("Run History Icons", "ui/run_history", False, None),
     "ui-misc": ("Misc UI", "ui/misc", False, None),
 }
 
@@ -64,9 +70,9 @@ def _get_images_for_category(category_id: str) -> list[dict[str, str]]:
         # Only specific files from the directory
         png_files = [dir_path / f for f in explicit_files if (dir_path / f).exists()]
     elif recursive:
-        png_files = sorted([f for ext in ("*.png", "*.gif") for f in dir_path.rglob(ext)])
+        png_files = sorted([f for ext in ("*.png", "*.gif", "*.webp") for f in dir_path.rglob(ext)])
     else:
-        png_files = sorted([f for ext in ("*.png", "*.gif") for f in dir_path.glob(ext)])
+        png_files = sorted([f for ext in ("*.png", "*.gif", "*.webp") for f in dir_path.glob(ext)])
 
     images = []
     for f in png_files:

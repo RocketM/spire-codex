@@ -80,11 +80,26 @@ async function main() {
   const browser = await chromium.launch({ headless: true, channel: "chrome" });
   const page = await browser.newPage();
 
+  // For WebP/APNG: stream frames to disk to avoid OOM
+  const isStreamFormat = outputPath.endsWith(".webp") || outputPath.endsWith(".apng");
+  const framesDir = outputPath + "_frames";
+  if (isStreamFormat) {
+    fs.mkdirSync(framesDir, { recursive: true });
+    await page.exposeFunction("__saveFrame", (idx, pixels) => {
+      const pngCanvas = createCanvas(outputSize, outputSize);
+      const pCtx = pngCanvas.getContext("2d");
+      const imgData = pCtx.createImageData(outputSize, outputSize);
+      imgData.data.set(new Uint8ClampedArray(pixels));
+      pCtx.putImageData(imgData, 0, 0);
+      fs.writeFileSync(path.join(framesDir, `frame_${String(idx).padStart(4, "0")}.png`), pngCanvas.toBuffer("image/png"));
+    });
+  }
+
   const spineCorePath = path.join(__dirname, "node_modules/@esotericsoftware/spine-webgl/dist/iife/spine-webgl.js");
   const spineCoreCode = fs.readFileSync(spineCorePath, "utf-8");
 
   const result = await page.evaluate(async (params) => {
-    const { skelB64, atlasB64, textureData, outputSize, fps, idleNames, shadowNames, hiddenSlots, whiteMode, skinName, animOverride, spineCoreCode } = params;
+    const { skelB64, atlasB64, textureData, outputSize, fps, streamFrames, idleNames, shadowNames, hiddenSlots, whiteMode, skinName, animOverride, spineCoreCode } = params;
 
     eval(spineCoreCode.replace(/^"use strict";\s*var spine\s*=/, "window.spine ="));
     const spine = window.spine;
@@ -246,46 +261,55 @@ async function main() {
         }
       }
 
-      frames.push(Array.from(flipped));
+      if (streamFrames) {
+        // Stream mode: write frame to disk via exposed function, don't hold in memory
+        await window.__saveFrame(f, Array.from(flipped));
+      } else {
+        frames.push(Array.from(flipped));
+      }
     }
 
-    return { frames, frameCount, duration };
+    return { frames: streamFrames ? [] : frames, frameCount, duration };
   }, {
     skelB64, atlasB64, textureData, outputSize, fps,
+    streamFrames: outputPath.endsWith(".webp") || outputPath.endsWith(".apng"),
     idleNames: IDLE_NAMES, shadowNames: SHADOW_NAMES, hiddenSlots: HIDDEN_SLOTS,
     whiteMode, skinName, animOverride, spineCoreCode,
   });
 
   await browser.close();
 
-  const isApng = outputPath.endsWith(".apng") || outputPath.endsWith(".png") && process.argv.includes("--apng");
+  const isWebP = outputPath.endsWith(".webp");
+  const isApng = !isWebP && (outputPath.endsWith(".apng") || outputPath.endsWith(".png") && process.argv.includes("--apng"));
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 
-  if (isApng) {
-    // Save individual frame PNGs to temp dir, then assemble via Python
-    const tmpDir = outputPath + "_frames";
-    fs.mkdirSync(tmpDir, { recursive: true });
-    const pngCanvas = createCanvas(outputSize, outputSize);
-    const pCtx = pngCanvas.getContext("2d");
-    for (let f = 0; f < result.frameCount; f++) {
-      const imgData = pCtx.createImageData(outputSize, outputSize);
-      imgData.data.set(new Uint8ClampedArray(result.frames[f]));
-      pCtx.putImageData(imgData, 0, 0);
-      fs.writeFileSync(path.join(tmpDir, `frame_${String(f).padStart(4, "0")}.png`), pngCanvas.toBuffer("image/png"));
+  if (isWebP || isApng) {
+    // Frames already saved to disk via streaming (or need to be saved now for GIF-to-WebP conversion)
+    const tmpDir = framesDir;
+    if (!isStreamFormat) {
+      // Fallback: save frames from memory
+      fs.mkdirSync(tmpDir, { recursive: true });
+      const pngCanvas2 = createCanvas(outputSize, outputSize);
+      const pCtx2 = pngCanvas2.getContext("2d");
+      for (let f = 0; f < result.frameCount; f++) {
+        const imgData = pCtx2.createImageData(outputSize, outputSize);
+        imgData.data.set(new Uint8ClampedArray(result.frames[f]));
+        pCtx2.putImageData(imgData, 0, 0);
+        fs.writeFileSync(path.join(tmpDir, `frame_${String(f).padStart(4, "0")}.png`), pngCanvas2.toBuffer("image/png"));
+      }
     }
-    // Assemble APNG via Python
+    // Assemble via Python
     const { execSync } = await import("child_process");
     const delay = Math.round(1000 / fps);
+    const saveArgs = isWebP ? `lossless=True` : `disposal=2`;
     execSync(`arch -arm64 python3 -c "
 from PIL import Image
 from pathlib import Path
-import sys
-frames_dir = Path('${tmpDir}')
-frames = sorted(frames_dir.glob('frame_*.png'))
+frames = sorted(Path('${tmpDir}').glob('frame_*.png'))
 imgs = [Image.open(f).convert('RGBA') for f in frames]
-imgs[0].save('${outputPath}', save_all=True, append_images=imgs[1:], duration=${delay}, loop=0, disposal=2)
+imgs[0].save('${outputPath}', save_all=True, append_images=imgs[1:], duration=${delay}, loop=0, ${saveArgs})
 "`, { stdio: "inherit" });
-    // Cleanup temp frames
+    // Cleanup
     for (const f of fs.readdirSync(tmpDir)) fs.unlinkSync(path.join(tmpDir, f));
     fs.rmdirSync(tmpDir);
   } else {
