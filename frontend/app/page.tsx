@@ -74,7 +74,7 @@ export default async function Home() {
                 ? "Preview of upcoming Slay the Spire 2 content"
                 : "The complete database for Slay the Spire 2"}
             </p>
-            {total > 0 && (
+            {IS_BETA && total > 0 && (
               <p className="text-sm text-[var(--text-muted)]">
                 {total.toLocaleString()} entities across cards, relics, monsters, potions, and more
               </p>
