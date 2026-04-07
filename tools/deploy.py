@@ -167,7 +167,8 @@ def main():
         print(f"\n{'='*60}")
         print(f"  Building {FRONTEND_IMAGE}")
         print(f"{'='*60}")
-        build_args = [f"NEXT_PUBLIC_API_URL={args.api_url}"]
+        site_url = "https://beta.spire-codex.com" if args.beta else "https://spire-codex.com"
+        build_args = [f"NEXT_PUBLIC_API_URL={args.api_url}", f"NEXT_PUBLIC_SITE_URL={site_url}"]
         build_and_push(
             image=FRONTEND_IMAGE,
             context=str(ROOT / "frontend"),
