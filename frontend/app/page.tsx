@@ -44,11 +44,7 @@ export default async function Home() {
     fetchJSON<Translations>(`${API}/api/translations?lang=eng`),
   ]);
 
-  const total = stats
-    ? Object.entries(stats)
-        .filter(([k]) => k !== "images")
-        .reduce((sum, [, v]) => sum + (typeof v === "number" ? v : 0), 0)
-    : 0;
+
 
   return (
     <div className="min-h-screen">
@@ -74,11 +70,6 @@ export default async function Home() {
                 ? "Preview of upcoming Slay the Spire 2 content"
                 : "The complete database for Slay the Spire 2"}
             </p>
-            {IS_BETA && total > 0 && (
-              <p className="text-sm text-[var(--text-muted)]">
-                {total.toLocaleString()} entities across cards, relics, monsters, potions, and more
-              </p>
-            )}
           </div>
         </div>
       </section>
