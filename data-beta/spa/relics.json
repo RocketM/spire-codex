@@ -3354,7 +3354,7 @@
     "flavor": "[red]Los detalles de esta reliquia serán revelados en el futuro...[/red]",
     "rarity": "Reliquia antigua",
     "pool": "shared",
-    "image_url": null,
+    "image_url": "/static/images/relics/hefty_tablet.png",
     "image_variants": null,
     "rarity_key": "Ancient",
     "compendium_order": 244
@@ -3380,7 +3380,7 @@
     "flavor": "[red]Los detalles de esta reliquia serán revelados en el futuro...[/red]",
     "rarity": "Reliquia antigua",
     "pool": "shared",
-    "image_url": null,
+    "image_url": "/static/images/relics/neows_talisman.png",
     "image_variants": null,
     "rarity_key": "Ancient",
     "compendium_order": 245

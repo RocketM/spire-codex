@@ -932,7 +932,7 @@
     "encounters": [
       {
         "encounter_id": "CEREMONIAL_BEAST_BOSS",
-        "encounter_name": "Leśny Stróż",
+        "encounter_name": "Leśnym Stróżem",
         "room_type": "Boss",
         "act": "Act 1 - Overgrowth",
         "is_weak": false
@@ -1204,7 +1204,7 @@
     "encounters": [
       {
         "encounter_id": "KAISER_CRAB_BOSS",
-        "encounter_name": "Krab Cesarski",
+        "encounter_name": "Krabem Cesarskim",
         "room_type": "Boss",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -1580,7 +1580,7 @@
     "encounters": [
       {
         "encounter_id": "DOORMAKER_BOSS",
-        "encounter_name": "Drzwiarz",
+        "encounter_name": "Drzwiarzem",
         "room_type": "Boss",
         "act": "Act 3 - Glory",
         "is_weak": false
@@ -1649,7 +1649,7 @@
     "encounters": [
       {
         "encounter_id": "DOORMAKER_BOSS",
-        "encounter_name": "Drzwiarz",
+        "encounter_name": "Drzwiarzem",
         "room_type": "Boss",
         "act": "Act 3 - Glory",
         "is_weak": false
@@ -3094,7 +3094,7 @@
     "encounters": [
       {
         "encounter_id": "THE_KIN_BOSS",
-        "encounter_name": "Kapłan",
+        "encounter_name": "Kapłanem",
         "room_type": "Boss",
         "act": "Act 1 - Overgrowth",
         "is_weak": false
@@ -3192,7 +3192,7 @@
     "encounters": [
       {
         "encounter_id": "THE_KIN_BOSS",
-        "encounter_name": "Kapłan",
+        "encounter_name": "Kapłanem",
         "room_type": "Boss",
         "act": "Act 1 - Overgrowth",
         "is_weak": false
@@ -3272,7 +3272,7 @@
     "encounters": [
       {
         "encounter_id": "KNOWLEDGE_DEMON_BOSS",
-        "encounter_name": "Demon Wiedzy",
+        "encounter_name": "Demonem Wiedzy",
         "room_type": "Boss",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -3357,7 +3357,7 @@
     "encounters": [
       {
         "encounter_id": "LAGAVULIN_MATRIARCH_BOSS",
-        "encounter_name": "Królowa Lagavulinów",
+        "encounter_name": "Królową Lagavulinów",
         "room_type": "Boss",
         "act": "Underdocks",
         "is_weak": false
@@ -4636,7 +4636,7 @@
     "encounters": [
       {
         "encounter_id": "QUEEN_BOSS",
-        "encounter_name": "Królowa",
+        "encounter_name": "Królową",
         "room_type": "Boss",
         "act": "Act 3 - Glory",
         "is_weak": false
@@ -4718,7 +4718,7 @@
     "encounters": [
       {
         "encounter_id": "KAISER_CRAB_BOSS",
-        "encounter_name": "Krab Cesarski",
+        "encounter_name": "Krabem Cesarskim",
         "room_type": "Boss",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -5532,7 +5532,7 @@
     "encounters": [
       {
         "encounter_id": "SOUL_FYSH_BOSS",
-        "encounter_name": "Dusza Rypki",
+        "encounter_name": "Duszą Rypki",
         "room_type": "Boss",
         "act": "Underdocks",
         "is_weak": false
@@ -5998,7 +5998,7 @@
     "encounters": [
       {
         "encounter_id": "TEST_SUBJECT_BOSS",
-        "encounter_name": "Eksperyment",
+        "encounter_name": "Eksperymentem",
         "room_type": "Boss",
         "act": "Act 3 - Glory",
         "is_weak": false
@@ -6336,7 +6336,7 @@
     "encounters": [
       {
         "encounter_id": "THE_INSATIABLE_BOSS",
-        "encounter_name": "Nienasycony",
+        "encounter_name": "Nienasyconym",
         "room_type": "Boss",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -6702,7 +6702,7 @@
     "encounters": [
       {
         "encounter_id": "QUEEN_BOSS",
-        "encounter_name": "Królowa",
+        "encounter_name": "Królową",
         "room_type": "Boss",
         "act": "Act 3 - Glory",
         "is_weak": false
@@ -7211,7 +7211,7 @@
     "encounters": [
       {
         "encounter_id": "VANTOM_BOSS",
-        "encounter_name": "Fantom",
+        "encounter_name": "Fantomem",
         "room_type": "Boss",
         "act": "Act 1 - Overgrowth",
         "is_weak": false
@@ -7431,7 +7431,7 @@
     "encounters": [
       {
         "encounter_id": "WATERFALL_GIANT_BOSS",
-        "encounter_name": "Kaskadowy Olbrzym",
+        "encounter_name": "Kaskadowym Olbrzymem",
         "room_type": "Boss",
         "act": "Underdocks",
         "is_weak": false

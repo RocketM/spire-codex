@@ -817,7 +817,7 @@
     "encounters": [
       {
         "encounter_id": "CULTISTS_NORMAL",
-        "encounter_name": "Cultisti",
+        "encounter_name": "Accoliti",
         "room_type": "Monster",
         "act": "Underdocks",
         "is_weak": false
@@ -1371,7 +1371,7 @@
     "encounters": [
       {
         "encounter_id": "CULTISTS_NORMAL",
-        "encounter_name": "Cultisti",
+        "encounter_name": "Accoliti",
         "room_type": "Monster",
         "act": "Underdocks",
         "is_weak": false

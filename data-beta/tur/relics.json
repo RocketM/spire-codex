@@ -215,7 +215,7 @@
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Kadim Kalıntı",
     "pool": "shared",
-    "image_url": null,
+    "image_url": "/static/images/relics/hefty_tablet.png",
     "image_variants": null,
     "rarity_key": "Ancient",
     "compendium_order": 165
@@ -2288,7 +2288,7 @@
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Kadim Kalıntı",
     "pool": "shared",
-    "image_url": null,
+    "image_url": "/static/images/relics/neows_talisman.png",
     "image_variants": null,
     "rarity_key": "Ancient",
     "compendium_order": 212

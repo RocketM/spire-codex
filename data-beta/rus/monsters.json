@@ -16,7 +16,15 @@
     ],
     "damage_values": null,
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THE_ARCHITECT_EVENT_ENCOUNTER",
+        "encounter_name": "Архитектор",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/architect.png",
     "beta_image_url": null
@@ -47,7 +55,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "RUBY_RAIDERS_NORMAL",
+        "encounter_name": "Рубиновые налетчики",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/assassin_ruby_raider.png",
     "beta_image_url": null
@@ -102,7 +118,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "RUBY_RAIDERS_NORMAL",
+        "encounter_name": "Рубиновые налетчики",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/axe_ruby_raider.png",
     "beta_image_url": null
@@ -187,7 +211,15 @@
     "block_values": {
       "bootUp": 10
     },
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "AXEBOTS_NORMAL",
+        "encounter_name": "Товарищи руботы",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/axebot.png",
     "beta_image_url": null
@@ -209,7 +241,15 @@
     ],
     "damage_values": null,
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
+        "encounter_name": "Потрепанный манекен",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "BATTLEWORN_DUMMY_TIME_LIMIT",
@@ -236,7 +276,15 @@
     ],
     "damage_values": null,
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
+        "encounter_name": "Потрепанный манекен",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "BATTLEWORN_DUMMY_TIME_LIMIT",
@@ -263,7 +311,15 @@
     ],
     "damage_values": null,
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
+        "encounter_name": "Потрепанный манекен",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "BATTLEWORN_DUMMY_TIME_LIMIT",
@@ -300,7 +356,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BOWLBUGS_NORMAL",
+        "encounter_name": "Полчище рогачей",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "BOWLBUGS_WEAK",
+        "encounter_name": "Рогачи",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/bowlbug_egg.png",
     "beta_image_url": null
@@ -349,7 +420,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BOWLBUGS_NORMAL",
+        "encounter_name": "Полчище рогачей",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "BOWLBUGS_WEAK",
+        "encounter_name": "Рогачи",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/bowlbug_nectar.png",
     "beta_image_url": null
@@ -385,7 +471,29 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BOWLBUGS_NORMAL",
+        "encounter_name": "Полчище рогачей",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "BOWLBUGS_WEAK",
+        "encounter_name": "Рогачи",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "SLUMBERING_BEETLE_NORMAL",
+        "encounter_name": "Жучиная ночевка",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "IMBALANCED",
@@ -435,7 +543,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BOWLBUGS_NORMAL",
+        "encounter_name": "Полчище рогачей",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLUMBERING_BEETLE_NORMAL",
+        "encounter_name": "Жучиная ночевка",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/bowlbug_silk.png",
     "beta_image_url": null
@@ -478,7 +601,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "RUBY_RAIDERS_NORMAL",
+        "encounter_name": "Рубиновые налетчики",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/brute_ruby_raider.png",
     "beta_image_url": null
@@ -531,7 +662,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BYGONE_EFFIGY_ELITE",
+        "encounter_name": "Античный истукан",
+        "room_type": "Elite",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "SLOW",
@@ -583,7 +722,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BYRDONIS_ELITE",
+        "encounter_name": "Птахоклюй",
+        "room_type": "Elite",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "TERRITORIAL",
@@ -653,7 +800,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "CULTISTS_NORMAL",
+        "encounter_name": "Культисты",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SEAPUNK_NORMAL",
+        "encounter_name": "Живность Пристани",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/calcified_cultist.png",
     "beta_image_url": null
@@ -753,7 +915,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "CEREMONIAL_BEAST_BOSS",
+        "encounter_name": "Хранитель обряда",
+        "room_type": "Boss",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/ceremonial_beast.png",
     "beta_image_url": null
@@ -791,7 +961,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "CHOMPERS_NORMAL",
+        "encounter_name": "Парочка автоматонов",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "TUNNELER_NORMAL",
+        "encounter_name": "Команда копателей",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "ARTIFACT",
@@ -852,7 +1037,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "CORPSE_SLUGS_NORMAL",
+        "encounter_name": "Много слизней-падальщиков",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "CORPSE_SLUGS_WEAK",
+        "encounter_name": "Слизни-падальщики",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/corpse_slug.png",
     "beta_image_url": null
@@ -889,7 +1089,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "RUBY_RAIDERS_NORMAL",
+        "encounter_name": "Рубиновые налетчики",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/crossbow_ruby_raider.png",
     "beta_image_url": null
@@ -986,7 +1194,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "KAISER_CRAB_BOSS",
+        "encounter_name": "Царь-краб",
+        "room_type": "Boss",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "BACK_ATTACK_LEFT",
@@ -1082,7 +1298,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "CONSTRUCT_MENAGERIE_NORMAL",
+        "encounter_name": "Зоопарк конструкций",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "CUBEX_CONSTRUCT_NORMAL",
+        "encounter_name": "Кубический агрегат",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "ARTIFACT",
@@ -1130,7 +1361,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "CULTISTS_NORMAL",
+        "encounter_name": "Культисты",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/damp_cultist.png",
     "beta_image_url": null
@@ -1254,7 +1493,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "DEVOTED_SCULPTOR_WEAK",
+        "encounter_name": "Одержимый скульптор",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/devoted_sculptor.png",
     "beta_image_url": null
@@ -1325,7 +1572,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "DOORMAKER_BOSS",
+        "encounter_name": "Привратник",
+        "room_type": "Boss",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/doormaker.png",
     "beta_image_url": "/static/images/monsters/beta/door_maker_placeholder_2.png"
@@ -1394,7 +1649,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "ENTOMANCER_ELITE",
+        "encounter_name": "Энтомант",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "PERSONAL_HIVE",
@@ -1455,7 +1718,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "EXOSKELETONS_NORMAL",
+        "encounter_name": "Множество экзоскелетов",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "EXOSKELETONS_WEAK",
+        "encounter_name": "Экзоскелеты",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "HARD_TO_KILL",
@@ -1482,7 +1760,15 @@
     ],
     "damage_values": null,
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FOGMOG_NORMAL",
+        "encounter_name": "Грибодуй",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "ILLUSION",
@@ -1536,7 +1822,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FABRICATOR_NORMAL",
+        "encounter_name": "Сборщик",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/fabricator.png",
     "beta_image_url": null
@@ -1610,7 +1904,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FAKE_MERCHANT_EVENT_ENCOUNTER",
+        "encounter_name": "Торговец?!",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/fake_merchant.png",
     "beta_image_url": null
@@ -1637,7 +1939,15 @@
     ],
     "damage_values": null,
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "GREMLIN_MERC_NORMAL",
+        "encounter_name": "Два гремлина в пальто",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/fat_gremlin.png",
     "beta_image_url": null
@@ -1695,7 +2005,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "KNIGHTS_ELITE",
+        "encounter_name": "Банда рыцарей",
+        "room_type": "Elite",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/flail_knight.png",
     "beta_image_url": null
@@ -1762,7 +2080,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FLYCONID_NORMAL",
+        "encounter_name": "Гриб и слизь",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SNAPPING_JAXFRUIT_NORMAL",
+        "encounter_name": "Флора зарослей",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/flyconid.png",
     "beta_image_url": null
@@ -1834,7 +2167,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FOGMOG_NORMAL",
+        "encounter_name": "Грибодуй",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/fogmog.png",
     "beta_image_url": null
@@ -1900,7 +2241,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FOSSIL_STALKER_NORMAL",
+        "encounter_name": "Хвостолов-отшельник",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "SUCK",
@@ -1981,7 +2330,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FROG_KNIGHT_NORMAL",
+        "encounter_name": "Сэр лягушка",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/frog_knight.png",
     "beta_image_url": null
@@ -2033,7 +2390,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FUZZY_WURM_CRAWLER_WEAK",
+        "encounter_name": "Пышный червогрив",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "OVERGROWTH_CRAWLERS",
+        "encounter_name": "Ползуны из зарослей",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/fuzzy_wurm_crawler.png",
     "beta_image_url": null
@@ -2064,7 +2436,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "LIVING_FOG_NORMAL",
+        "encounter_name": "Недобрый газ",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "MINION",
@@ -2142,7 +2522,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "GLOBE_HEAD_NORMAL",
+        "encounter_name": "Одинокий Шароголовый",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "GALVANIC",
@@ -2222,7 +2610,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "GREMLIN_MERC_NORMAL",
+        "encounter_name": "Два гремлина в пальто",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "SURPRISE",
@@ -2321,7 +2717,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "HAUNTED_SHIP_NORMAL",
+        "encounter_name": "Проклятое судно",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/haunted_ship.png",
     "beta_image_url": null
@@ -2379,7 +2783,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "HUNTER_KILLER_NORMAL",
+        "encounter_name": "Убийца охотников",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/hunter_killer.png",
     "beta_image_url": null
@@ -2452,7 +2864,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "INFESTED_PRISMS_ELITE",
+        "encounter_name": "Зараженная призма",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "VITAL_SPARK",
@@ -2516,7 +2936,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "INKLETS_NORMAL",
+        "encounter_name": "Чернильники",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "SLIPPERY",
@@ -2579,7 +3007,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THE_KIN_BOSS",
+        "encounter_name": "Стая",
+        "room_type": "Boss",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "MINION",
@@ -2669,7 +3105,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THE_KIN_BOSS",
+        "encounter_name": "Стая",
+        "room_type": "Boss",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/kin_priest.png",
     "beta_image_url": null
@@ -2741,7 +3185,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "KNOWLEDGE_DEMON_BOSS",
+        "encounter_name": "Всезнающий демон",
+        "room_type": "Boss",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/knowledge_demon.png",
     "beta_image_url": null
@@ -2818,7 +3270,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "LAGAVULIN_MATRIARCH_BOSS",
+        "encounter_name": "Праматерь лагавулинов",
+        "room_type": "Boss",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "PLATING",
@@ -2863,7 +3323,36 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FLYCONID_NORMAL",
+        "encounter_name": "Гриб и слизь",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_NORMAL",
+        "encounter_name": "Полчище слизней",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_WEAK",
+        "encounter_name": "Группа слизней",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "Горлодав и его приятель",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/leaf_slime_m.png",
     "beta_image_url": null
@@ -2899,7 +3388,29 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SLIMES_NORMAL",
+        "encounter_name": "Полчище слизней",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_WEAK",
+        "encounter_name": "Группа слизней",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "Горлодав и его приятель",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/leaf_slime_s.png",
     "beta_image_url": null
@@ -2963,7 +3474,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "LIVING_FOG_NORMAL",
+        "encounter_name": "Недобрый газ",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/living_smog.png",
     "beta_image_url": null
@@ -3012,7 +3531,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "TURRET_OPERATOR_WEAK",
+        "encounter_name": "Наводчик",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": true
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "RAMPART",
@@ -3081,7 +3608,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "LOUSE_PROGENITOR_NORMAL",
+        "encounter_name": "Королевская вошь",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/louse_progenitor.png",
     "beta_image_url": null
@@ -3150,7 +3685,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "KNIGHTS_ELITE",
+        "encounter_name": "Банда рыцарей",
+        "room_type": "Elite",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/magi_knight.png",
     "beta_image_url": null
@@ -3208,7 +3751,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "MAWLER_NORMAL",
+        "encounter_name": "Клыкозавр",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/mawler.png",
     "beta_image_url": null
@@ -3272,7 +3823,15 @@
     "block_values": {
       "windup": 15
     },
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "MECHA_KNIGHT_ELITE",
+        "encounter_name": "Механический рыцарь",
+        "room_type": "Elite",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "ARTIFACT",
@@ -3333,7 +3892,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "MYTES_NORMAL",
+        "encounter_name": "Сброд кровожоров",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/myte.png",
     "beta_image_url": null
@@ -3390,7 +3957,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "NIBBITS_NORMAL",
+        "encounter_name": "Пара кусак",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "NIBBITS_WEAK",
+        "encounter_name": "Одинокий кусака",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/nibbit.png",
     "beta_image_url": null
@@ -3502,7 +4084,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "OVICOPTER_NORMAL",
+        "encounter_name": "Овикоптер",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/ovicopter.png",
     "beta_image_url": null
@@ -3580,7 +4170,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "OWL_MAGISTRATE_NORMAL",
+        "encounter_name": "Сова юстициарий",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/owl_magistrate.png",
     "beta_image_url": null
@@ -3708,7 +4306,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "PHANTASMAL_GARDENERS_ELITE",
+        "encounter_name": "Фантомные альгочисты",
+        "room_type": "Elite",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/phantasmal_gardener.png",
     "beta_image_url": null
@@ -3746,7 +4352,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "PHROG_PARASITE_ELITE",
+        "encounter_name": "Лягуш-паразит",
+        "room_type": "Elite",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "INFESTED",
@@ -3810,7 +4424,29 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "CONSTRUCT_MENAGERIE_NORMAL",
+        "encounter_name": "Зоопарк конструкций",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "PUNCH_CONSTRUCT_NORMAL",
+        "encounter_name": "Бойкий агрегат",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "PUNCH_OFF_EVENT_ENCOUNTER",
+        "encounter_name": "Бойкие агрегаты",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "ARTIFACT",
@@ -3913,7 +4549,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "QUEEN_BOSS",
+        "encounter_name": "Королева",
+        "room_type": "Boss",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/queen.png",
     "beta_image_url": null
@@ -3987,7 +4631,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "KAISER_CRAB_BOSS",
+        "encounter_name": "Царь-краб",
+        "room_type": "Boss",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "BACK_ATTACK_RIGHT",
@@ -4054,7 +4706,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SCROLLS_OF_BITING_NORMAL",
+        "encounter_name": "Много зубастых свитков",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SCROLLS_OF_BITING_WEAK",
+        "encounter_name": "Зубастые свитки",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": true
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "PAPER_CUTS",
@@ -4116,7 +4783,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SEAPUNK_NORMAL",
+        "encounter_name": "Живность Пристани",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SEAPUNK_WEAK",
+        "encounter_name": "Зламинария",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/seapunk.png",
     "beta_image_url": null
@@ -4159,7 +4841,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SEWER_CLAM_NORMAL",
+        "encounter_name": "Сточный моллюск",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/sewer_clam.png",
     "beta_image_url": null
@@ -4208,7 +4898,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "OVERGROWTH_CRAWLERS",
+        "encounter_name": "Ползуны из зарослей",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SHRINKER_BEETLE_WEAK",
+        "encounter_name": "Жук-ужиматель",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/shrinker_beetle.png",
     "beta_image_url": null
@@ -4288,7 +4993,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SKULKING_COLONY_ELITE",
+        "encounter_name": "Копотливая колония",
+        "room_type": "Elite",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "HARDENED_SHELL",
@@ -4361,7 +5074,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SLIMED_BERSERKER_NORMAL",
+        "encounter_name": "Ослизненный берсерк",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/slimed_berserker.png",
     "beta_image_url": null
@@ -4418,7 +5139,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "Горлодав и его приятель",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/slithering_strangler.png",
     "beta_image_url": null
@@ -4489,7 +5218,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SLUDGE_SPINNER_WEAK",
+        "encounter_name": "Грязевой вертоплюй",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/sludge_spinner.png",
     "beta_image_url": null
@@ -4532,7 +5269,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SLUMBERING_BEETLE_NORMAL",
+        "encounter_name": "Жучиная ночевка",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "SLUMBER",
@@ -4575,7 +5320,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "Горлодав и его приятель",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SNAPPING_JAXFRUIT_NORMAL",
+        "encounter_name": "Флора зарослей",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/snapping_jaxfruit.png",
     "beta_image_url": null
@@ -4611,7 +5371,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "GREMLIN_MERC_NORMAL",
+        "encounter_name": "Два гремлина в пальто",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/sneaky_gremlin.png",
     "beta_image_url": null
@@ -4692,7 +5460,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SOUL_FYSH_BOSS",
+        "encounter_name": "Призрачный рыб",
+        "room_type": "Boss",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/soul_fysh.png",
     "beta_image_url": null
@@ -4764,7 +5540,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SOUL_NEXUS_ELITE",
+        "encounter_name": "Чистилище душ",
+        "room_type": "Elite",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/soul_nexus.png",
     "beta_image_url": null
@@ -4822,7 +5606,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "KNIGHTS_ELITE",
+        "encounter_name": "Банда рыцарей",
+        "room_type": "Elite",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/spectral_knight.png",
     "beta_image_url": null
@@ -4878,7 +5670,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SPINY_TOAD_NORMAL",
+        "encounter_name": "Ежовая жаба",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/spiny_toad.png",
     "beta_image_url": null
@@ -4986,7 +5786,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "TERROR_EEL_ELITE",
+        "encounter_name": "Испугорь",
+        "room_type": "Elite",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/terror_eel.png",
     "beta_image_url": null
@@ -5105,7 +5913,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "TEST_SUBJECT_BOSS",
+        "encounter_name": "Подопытный",
+        "room_type": "Boss",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "ADAPTABLE",
@@ -5340,7 +6156,15 @@
     ],
     "damage_values": null,
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THE_LOST_AND_FORGOTTEN_NORMAL",
+        "encounter_name": "Пропащий и Забытый",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "POSSESS_SPEED",
@@ -5418,7 +6242,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THE_INSATIABLE_BOSS",
+        "encounter_name": "Проглот",
+        "room_type": "Boss",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/the_insatiable.png",
     "beta_image_url": null
@@ -5463,7 +6295,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THE_LOST_AND_FORGOTTEN_NORMAL",
+        "encounter_name": "Пропащий и Забытый",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "POSSESS_STRENGTH",
@@ -5523,7 +6363,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THE_OBSCURA_NORMAL",
+        "encounter_name": "Обскура",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/the_obscura.png",
     "beta_image_url": null
@@ -5597,7 +6445,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THIEVING_HOPPER_WEAK",
+        "encounter_name": "Загребущая цикада",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "ESCAPE_ARTIST",
@@ -5660,7 +6516,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "TOADPOLES_WEAK",
+        "encounter_name": "Головастики",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/toadpole.png",
     "beta_image_url": null
@@ -5737,7 +6601,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "QUEEN_BOSS",
+        "encounter_name": "Королева",
+        "room_type": "Boss",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "MINION",
@@ -5778,7 +6650,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "OVICOPTER_NORMAL",
+        "encounter_name": "Овикоптер",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/tough_egg.png",
     "beta_image_url": null
@@ -5824,7 +6704,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "RUBY_RAIDERS_NORMAL",
+        "encounter_name": "Рубиновые налетчики",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/tracker_ruby_raider.png",
     "beta_image_url": null
@@ -5886,7 +6774,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "TUNNELER_NORMAL",
+        "encounter_name": "Команда копателей",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "TUNNELER_WEAK",
+        "encounter_name": "Разрыхлитель",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/tunneler.png",
     "beta_image_url": null
@@ -5941,7 +6844,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "TURRET_OPERATOR_WEAK",
+        "encounter_name": "Наводчик",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/turret_operator.png",
     "beta_image_url": null
@@ -5977,7 +6888,36 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FLYCONID_NORMAL",
+        "encounter_name": "Гриб и слизь",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_NORMAL",
+        "encounter_name": "Полчище слизней",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_WEAK",
+        "encounter_name": "Группа слизней",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "Горлодав и его приятель",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/twig_slime_m.png",
     "beta_image_url": null
@@ -6008,7 +6948,29 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SLIMES_NORMAL",
+        "encounter_name": "Полчище слизней",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_WEAK",
+        "encounter_name": "Группа слизней",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "Горлодав и его приятель",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/twig_slime_s.png",
     "beta_image_url": null
@@ -6069,7 +7031,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "TWO_TAILED_RATS_NORMAL",
+        "encounter_name": "Двухвостые крысы",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/two_tailed_rat.png",
     "beta_image_url": null
@@ -6140,7 +7110,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "VANTOM_BOSS",
+        "encounter_name": "Вантом",
+        "room_type": "Boss",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "SLIPPERY",
@@ -6211,7 +7189,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "VINE_SHAMBLER_NORMAL",
+        "encounter_name": "Заросший скиталец",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/vine_shambler.png",
     "beta_image_url": null
@@ -6344,7 +7330,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "WATERFALL_GIANT_BOSS",
+        "encounter_name": "Рифовый великан",
+        "room_type": "Boss",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/waterfall_giant.png",
     "beta_image_url": null
@@ -6392,7 +7386,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "DENSE_VEGETATION_EVENT_ENCOUNTER",
+        "encounter_name": "Ерзуны",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      },
+      {
+        "encounter_id": "PHROG_PARASITE_ELITE",
+        "encounter_name": "Лягуш-паразит",
+        "room_type": "Elite",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "image_url": "/static/images/monsters/wriggler.png",
     "beta_image_url": null
@@ -6511,7 +7520,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "DECIMILLIPEDE_ELITE",
+        "encounter_name": "Скольконожка",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "image_url": "/static/images/monsters/decimillipede_segment_back.png"
   },
   {
@@ -6592,7 +7609,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "DECIMILLIPEDE_ELITE",
+        "encounter_name": "Скольконожка",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "image_url": "/static/images/monsters/decimillipede_segment_front.png"
   },
   {
@@ -6673,7 +7698,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "DECIMILLIPEDE_ELITE",
+        "encounter_name": "Скольконожка",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "image_url": "/static/images/monsters/decimillipede_segment_middle.png"
   },
   {
@@ -6729,7 +7762,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER",
+        "encounter_name": "Таинственный рыцарь",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "image_url": "/static/images/monsters/flail_knight.png",
     "innate_powers": [
       {

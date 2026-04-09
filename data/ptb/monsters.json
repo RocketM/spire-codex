@@ -1204,7 +1204,7 @@
     "encounters": [
       {
         "encounter_id": "KAISER_CRAB_BOSS",
-        "encounter_name": "Imperador Caranguejo",
+        "encounter_name": "Caranguejo Imperador",
         "room_type": "Boss",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -4718,7 +4718,7 @@
     "encounters": [
       {
         "encounter_id": "KAISER_CRAB_BOSS",
-        "encounter_name": "Imperador Caranguejo",
+        "encounter_name": "Caranguejo Imperador",
         "room_type": "Boss",
         "act": "Act 2 - Hive",
         "is_weak": false

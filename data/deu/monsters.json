@@ -1837,7 +1837,7 @@
     "encounters": [
       {
         "encounter_id": "FOGMOG_NORMAL",
-        "encounter_name": "Fogmog",
+        "encounter_name": "Schwummschwamm",
         "room_type": "Monster",
         "act": "Act 1 - Overgrowth",
         "is_weak": false
@@ -2244,7 +2244,7 @@
     "encounters": [
       {
         "encounter_id": "FOGMOG_NORMAL",
-        "encounter_name": "Fogmog",
+        "encounter_name": "Schwummschwamm",
         "room_type": "Monster",
         "act": "Act 1 - Overgrowth",
         "is_weak": false

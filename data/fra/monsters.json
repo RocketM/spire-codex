@@ -1726,7 +1726,7 @@
     "encounters": [
       {
         "encounter_id": "ENTOMANCER_ELITE",
-        "encounter_name": "Entomancien",
+        "encounter_name": "Apicultueur",
         "room_type": "Elite",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -7211,7 +7211,7 @@
     "encounters": [
       {
         "encounter_id": "VANTOM_BOSS",
-        "encounter_name": "Vantome",
+        "encounter_name": "Vantôme",
         "room_type": "Boss",
         "act": "Act 1 - Overgrowth",
         "is_weak": false

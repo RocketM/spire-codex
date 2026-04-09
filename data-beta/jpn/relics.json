@@ -897,7 +897,7 @@
     "flavor": "[red]このレリックの詳細は今後明かされるはずだ……[/red]",
     "rarity": "レリック（エンシェント）",
     "pool": "shared",
-    "image_url": null,
+    "image_url": "/static/images/relics/neows_talisman.png",
     "image_variants": null,
     "rarity_key": "Ancient",
     "compendium_order": 181
@@ -3458,7 +3458,7 @@
     "flavor": "[red]このレリックの詳細は今後明かされるはずだ……[/red]",
     "rarity": "レリック（エンシェント）",
     "pool": "shared",
-    "image_url": null,
+    "image_url": "/static/images/relics/hefty_tablet.png",
     "image_variants": null,
     "rarity_key": "Ancient",
     "compendium_order": 243
