@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const desc = stripTags(card.description || "");
     const color = (card.color || "").replace(/^\w/, (c: string) => c.toUpperCase());
     const title = `Slay the Spire 2 Card - ${card.name} - ${card.rarity} ${card.type} | Spire Codex`;
-    const metaDesc = `${card.name} is a ${card.cost ?? "X"} cost ${card.rarity} ${card.type} used by ${color}: ${desc}`;
+    const metaDesc = `${card.name} is a ${card.cost ?? "X"} cost ${card.rarity} ${card.type} used by ${color}.\n${desc}`;
     return {
       title,
       description: metaDesc,
