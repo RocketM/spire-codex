@@ -62,9 +62,13 @@ export function BetaVersionProvider({ children }: { children: ReactNode }) {
       if (stored && stored !== "latest") {
         setVersionState(stored);
         setBetaVersion(stored);
+        // Re-add version to URL so links are always shareable
+        const params = new URLSearchParams(searchParams.toString());
+        params.set("version", stored);
+        router.replace(`${pathname}?${params.toString()}`, { scroll: false });
       }
     }
-  }, [searchParams]);
+  }, [searchParams, pathname]);
 
   const setVersion = (v: string | null) => {
     setVersionState(v);
