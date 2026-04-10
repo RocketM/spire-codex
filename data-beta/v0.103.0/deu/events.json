@@ -21,7 +21,7 @@
     "pages": [
       {
         "id": "ABSTAIN",
-        "description": "Du widerstehst der Versuchung des Wassers und sammelst stattdessen Salzkristalle, die an den Rändern entstanden sind. Während du sie auf deine Haut aufträgst, strudeln und schäumen die Becken wild. Die Umgebungstemparatur sinkt merklich und für einen Moment zeigen alle Spiegelflächen im Raum ein Bild von dir, das hohläugig und geschrumpft wirkt. Du wirst das Gefühl nicht los, etwas erneuerndes verpasst zu haben."
+        "description": "Du widerstehst der Versuchung des Wassers und sammelst stattdessen Salzkristalle, die an den Rändern entstanden sind. Während du sie auf deine Haut aufträgst, strudeln und schäumen die Becken wild. Die Umgebungstemparatur sinkt merklich und für einen Moment zeigen alle Spiegelflächen im Raum ein Bild von dir, das hohläugig und geschrumpft wirkt. Du wirst das Gefühl nicht los, etwas Erneuerndes verpasst zu haben."
       },
       {
         "id": "ALL",
@@ -961,7 +961,7 @@
       {
         "id": "TRUDGE_ON",
         "title": "Dich weiterschleppen",
-        "description": "Erhalte [blue]61-99[/blue][gold]Gold[/gold]. Verliere [red]8[/red] TP."
+        "description": "Erhalte [blue]61-99[/blue] [gold]Gold[/gold]. Verliere [red]8[/red] TP."
       },
       {
         "id": "REST",
@@ -977,7 +977,7 @@
           {
             "id": "TRUDGE_ON",
             "title": "Dich weiterschleppen",
-            "description": "Erhalte [blue]61-99[/blue][gold]Gold[/gold]. Verliere [red]8[/red] TP."
+            "description": "Erhalte [blue]61-99[/blue] [gold]Gold[/gold]. Verliere [red]8[/red] TP."
           },
           {
             "id": "REST",
@@ -1887,12 +1887,13 @@
       "NEOWS_TORMENT",
       "NEW_LEAF",
       "PRECISE_SCISSORS",
-      "LAVA_ROCK",
+      "PHIAL_HOLSTER",
+      "WINGED_BOOTS",
       "MASSIVE_SCROLL",
+      "LAVA_ROCK",
       "NEOWS_TALISMAN",
       "NUTRITIOUS_OYSTER",
       "POMANDER",
-      "SILVER_CRUCIBLE",
       "SMALL_CAPSULE",
       "STONE_HUMIDIFIER",
       "CURSED_PEARL",
@@ -1900,6 +1901,8 @@
       "LARGE_CAPSULE",
       "LEAFY_POULTICE",
       "PRECARIOUS_SHEARS",
+      "SILVER_CRUCIBLE",
+      "NEOWS_BONES",
       "SCROLL_BOXES"
     ]
   },
@@ -3118,7 +3121,7 @@
       {
         "id": "OBSERVE",
         "title": "Betrachten",
-        "description": "[gold]Verzaubere[/gold] einen [gold]Schlag[/gold] oder ein [gold]Verteidigen[/gold] mit [purple]Spirale[/purple]."
+        "description": "[gold]Verzaubere[/gold] einen Start-[gold]Schlag[/gold] oder -[gold]Verteidigen[/gold] mit [purple]Spirale[/purple]."
       },
       {
         "id": "DRINK",
@@ -3138,7 +3141,7 @@
           {
             "id": "OBSERVE",
             "title": "Betrachten",
-            "description": "[gold]Verzaubere[/gold] einen [gold]Schlag[/gold] oder ein [gold]Verteidigen[/gold] mit [purple]Spirale[/purple]."
+            "description": "[gold]Verzaubere[/gold] einen Start-[gold]Schlag[/gold] oder -[gold]Verteidigen[/gold] mit [purple]Spirale[/purple]."
           },
           {
             "id": "DRINK",
@@ -4236,7 +4239,7 @@
       {
         "id": "POTION",
         "title": "Ereignis-Trank einfüllen",
-        "description": "Verliere [gold]a Potion[/gold]. Erhalte einen [gold]verbesserten[/gold] [gold]Commonen {}[/gold]."
+        "description": "Verliere [gold]a Potion[/gold]. Erhalte einen [gold]Verbesserten[/gold] [gold]Commonen {}[/gold]."
       }
     ],
     "pages": [
@@ -4251,7 +4254,7 @@
           {
             "id": "POTION",
             "title": "Ereignis-Trank einfüllen",
-            "description": "Verliere [gold]a Potion[/gold]. Erhalte einen [gold]verbesserten[/gold] [gold]Commonen {}[/gold]."
+            "description": "Verliere [gold]a Potion[/gold]. Erhalte einen [gold]Verbesserten[/gold] [gold]Commonen {}[/gold]."
           }
         ]
       }
@@ -4501,7 +4504,7 @@
       },
       {
         "id": "DONE",
-        "description": "“Puh! Alles fertig. Das ist für dich! Und jetzt geh nach da draußen und [red][jitter]schlachte[/jitter][/red]!!”\n\nWas du nicht wusstest, diese [orange]Forscherin[/orange] fuhr damit fort, hunderte Waffen zu erschaffen, was zu einigen Tausend Toden im Spire führte."
+        "description": "“Puh! Alles fertig. Das ist für dich! Und jetzt geh nach da draußen und [red][jitter]schlachte[/jitter][/red]!!”\n\nDu konntest nicht ahnen, dass diese [orange]Forscherin[/orange] weitermachte und hunderte Waffen erschuf, was zu einigen Tausend Toden im Spire führte."
       },
       {
         "id": "INITIAL",
@@ -4773,7 +4776,7 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "Findest du es merkwürdig, dass deine Konstrukt-Kameraden dich tot sehen wollen?"
+          "text": "Wundert es dich, dass deine Konstrukt-Kameraden dich tot sehen wollen?"
         },
         {
           "order": "2-0",

@@ -792,7 +792,7 @@
   {
     "id": "FLANKING",
     "name": "夹击",
-    "description": "其他盟友在本回合对这名敌人造成[blue]2倍[/blue]伤害。",
+    "description": "其他盟友在本回合对这名敌人造成[blue]2倍[/blue]攻击伤害。",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -951,9 +951,9 @@
   },
   {
     "id": "GRAPPLE",
-    "name": "擒拿",
-    "description": "本回合，每当你获得[gold]格挡[/gold]时，对[gold]this creature[/gold]造成[blue][Amount][/blue]点伤害。",
-    "description_raw": "本回合，每当你获得[gold]格挡[/gold]时，对[gold]{OwnerName}[/gold]造成[blue]{Amount}[/blue]点伤害。",
+    "name": "GrapplePower",
+    "description": "",
+    "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1222,7 +1222,7 @@
   {
     "id": "ITERATION",
     "name": "迭代",
-    "description": "每回合你第一次抽到[gold]状态[/gold]牌时，抽更多牌。",
+    "description": "每回合你第一次抽到状态牌时，抽更多牌。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",

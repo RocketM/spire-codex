@@ -792,7 +792,7 @@
   {
     "id": "FLANKING",
     "name": "Flanking",
-    "description": "Other allies deal [blue]2x[/blue] more damage to this enemy this turn.",
+    "description": "Other allies deal [blue]2x[/blue] more attack damage to this enemy this turn.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -951,9 +951,9 @@
   },
   {
     "id": "GRAPPLE",
-    "name": "Grapple",
-    "description": "Whenever you gain [gold]Block[/gold] this turn, deal [blue][Amount][/blue] damage to [gold]this creature[/gold].",
-    "description_raw": "Whenever you gain [gold]Block[/gold] this turn, deal [blue]{Amount}[/blue] damage to [gold]{OwnerName}[/gold].",
+    "name": "GrapplePower",
+    "description": "",
+    "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1222,7 +1222,7 @@
   {
     "id": "ITERATION",
     "name": "Iteration",
-    "description": "The first time you draw a [gold]Status[/gold] card each turn, draw more cards.",
+    "description": "The first time you draw a Status each turn, draw more cards.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",

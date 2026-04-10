@@ -1299,12 +1299,13 @@
       "NEOWS_TORMENT",
       "NEW_LEAF",
       "PRECISE_SCISSORS",
-      "LAVA_ROCK",
+      "PHIAL_HOLSTER",
+      "WINGED_BOOTS",
       "MASSIVE_SCROLL",
+      "LAVA_ROCK",
       "NEOWS_TALISMAN",
       "NUTRITIOUS_OYSTER",
       "POMANDER",
-      "SILVER_CRUCIBLE",
       "SMALL_CAPSULE",
       "STONE_HUMIDIFIER",
       "CURSED_PEARL",
@@ -1312,6 +1313,8 @@
       "LARGE_CAPSULE",
       "LEAFY_POULTICE",
       "PRECARIOUS_SHEARS",
+      "SILVER_CRUCIBLE",
+      "NEOWS_BONES",
       "SCROLL_BOXES"
     ]
   },
@@ -1733,28 +1736,53 @@
     "name": "เมล็ดไพลิน",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": null,
+    "description": "คุณเกือบจะเหยียบอะไรคมๆ สว่างๆ เข้าให้แล้ว... เมล็ดงั้นเหรอ? ดูจากสีแล้ว ต้องเป็น[aqua]เมล็ดไพลิน[/aqua]ไม่ผิดแน่! เหลือเชื่อ! เมล็ดพวกนี้น่าจะสูญพันธุ์ไปแล้วไม่ใช่เหรอ!?\n\nตำนานเล่าว่า หากกินเข้าไปจะช่วย[gold]เสริมความทนทาน[/gold]อย่างมาก แต่ถ้าเราเอาไปปลูกและดูแลมันแทนล่ะ?",
     "preconditions": null,
     "options": [
       {
         "id": "EAT",
-        "title": "EAT",
+        "title": "กิน",
         "description": "ฟื้นฟู [green]9[/green] HP [gold]พัฒนา[/gold]การ์ด 1 ใบใน[gold]กองการ์ด[/gold]"
       },
       {
         "id": "PLANT",
-        "title": "PLANT",
+        "title": "ปลูกและดูแล",
         "description": "[gold]ร่ายมนตร์[/gold]ใส่การ์ด 1 ใบด้วย[purple]มนตร์หว่านเมล็ด[/purple]"
       }
     ],
-    "pages": null
+    "pages": [
+      {
+        "id": "EAT",
+        "description": "คุณนำ[aqua]เมล็ดไพลิน[/aqua]เข้าปาก และทันใดนั้นเองก็รู้สึกว่า[blue]แขนขาของคุณคล่องตัวมากขึ้น[/blue] [gold]สีสันคมชัดขึ้น[/gold] และคุณ[purple][sine]สัมผัสวิญญาณศัตรูรอบข้างได้[/sine][/purple]\n\nดีนะที่ไม่เผลอเหยียบมันเข้าให้"
+      },
+      {
+        "id": "INITIAL",
+        "description": "คุณเกือบจะเหยียบอะไรคมๆ สว่างๆ เข้าให้แล้ว... เมล็ดงั้นเหรอ? ดูจากสีแล้ว ต้องเป็น[aqua]เมล็ดไพลิน[/aqua]ไม่ผิดแน่! เหลือเชื่อ! เมล็ดพวกนี้น่าจะสูญพันธุ์ไปแล้วไม่ใช่เหรอ!?\n\nตำนานเล่าว่า หากกินเข้าไปจะช่วย[gold]เสริมความทนทาน[/gold]อย่างมาก แต่ถ้าเราเอาไปปลูกและดูแลมันแทนล่ะ?",
+        "options": [
+          {
+            "id": "EAT",
+            "title": "กิน",
+            "description": "ฟื้นฟู [green]9[/green] HP [gold]พัฒนา[/gold]การ์ด 1 ใบใน[gold]กองการ์ด[/gold]"
+          },
+          {
+            "id": "PLANT",
+            "title": "ปลูกและดูแล",
+            "description": "[gold]ร่ายมนตร์[/gold]ใส่การ์ด 1 ใบด้วย[purple]มนตร์หว่านเมล็ด[/purple]"
+          }
+        ]
+      },
+      {
+        "id": "PLANT",
+        "description": "คุณเสาะหาในดินแดน[green]รกชัฏ[/green]และเจอกระถางที่[blue]ระบายอากาศได้ดี[/blue] จากนั้นคุณก็ออกสำรวจและค้นพบบริเวณที่ปลอดภัยและมี[orange]แสงลอดผ่านรอยแตกของกำแพง[/orange] คุณบรรจงนำเปลือกไม้และเถาวัลย์มาเสริมอย่างระมัดระวังเพื่อ[green]พราง[/green]กระถาง จากนั้นใส่ดินร่วนที่อุดมด้วยสารอาหาร และกด[aqua]เมล็ด[/aqua]ลงไปใต้ผิวดินเล็กน้อย\n\nสุดท้าย คุณรวบรวมน้ำค้างจากพืชบริเวณนั้นแล้วรดน้ำลงดิน\n\n[sine]โตไวๆ นะ เจ้าเมล็ดน้อย...[/sine]\n[aqua]เมล็ดไพลิน[/aqua]เชื่อมต่อกับคุณทางจิตวิญญาณโดยไม่รู้ตัว\nมันซาบซึ้งในความพยายามอย่างหนักของคุณ"
+      }
+    ]
   },
   {
     "id": "SELF_HELP_BOOK",
     "name": "หนังสือพัฒนาตัวเอง",
     "type": "Shared",
     "act": null,
-    "description": null,
+    "description": "พบหนังสืออยู่ที่พื้น\n“3 สุดยอดวิธีพิชิตสไปร์”\n\nหนังสือ[red]มีเลือดท่วม[/red] คุณจึงรู้สึกว่ามันน่าสงสัยมาก\n\nจะอ่านไหม?",
     "preconditions": null,
     "options": [
       {
@@ -1796,7 +1824,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": null,
+        "description": "พบหนังสืออยู่ที่พื้น\n“3 สุดยอดวิธีพิชิตสไปร์”\n\nหนังสือ[red]มีเลือดท่วม[/red] คุณจึงรู้สึกว่ามันน่าสงสัยมาก\n\nจะอ่านไหม?",
         "options": [
           {
             "id": "READ_THE_BACK",
@@ -1858,7 +1886,7 @@
     "name": "สะพานลื่น",
     "type": "Shared",
     "act": null,
-    "description": null,
+    "description": "ขณะกำลังข้ามสะพานไม้โยกเยก จู่ๆ ก็มี[blue][jitter]ฝนตกหนัก[/jitter][/blue] [purple][sine]ลมกระโชกแรง[/sine][/purple]ซัดใส่คุณราวกับขู่เข็ญให้คุณยุติการเดินทาง",
     "preconditions": [
       "Floor 7+",
       "Requires removable cards in deck"
@@ -1966,7 +1994,7 @@
       },
       {
         "id": "INITIAL",
-        "description": null,
+        "description": "ขณะกำลังข้ามสะพานไม้โยกเยก จู่ๆ ก็มี[blue][jitter]ฝนตกหนัก[/jitter][/blue] [purple][sine]ลมกระโชกแรง[/sine][/purple]ซัดใส่คุณราวกับขู่เข็ญให้คุณยุติการเดินทาง",
         "options": [
           {
             "id": "OVERCOME",

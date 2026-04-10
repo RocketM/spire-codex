@@ -142,7 +142,7 @@
   {
     "id": "BEACON_OF_HOPE",
     "name": "Faro de la esperanza",
-    "description": "Al obtener [gold]bloqueo[/gold] en el turno, las demás personas obtienen la mitad de esos puntos de [gold]bloqueo[/gold]",
+    "description": "Al obtener [gold]bloqueo[/gold] en el turno, otros jugadores obtienen la mitad de esos puntos de [gold]bloqueo[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -792,7 +792,7 @@
   {
     "id": "FLANKING",
     "name": "Flanquear",
-    "description": "Tus camaradas infligen [blue]el doble[/blue] de daño a este enemigo durante este turno.",
+    "description": "Tus camaradas infligen [blue]el doble[/blue] de daño con cartas de ataque a este enemigo durante este turno.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -951,9 +951,9 @@
   },
   {
     "id": "GRAPPLE",
-    "name": "Agarre",
-    "description": "Al obtener [gold]bloqueo[/gold] en este turno, provoca [blue][Amount][/blue] de daño a [gold]this creature[/gold].",
-    "description_raw": "Al obtener [gold]bloqueo[/gold] en este turno, provoca [blue]{Amount}[/blue] de daño a [gold]{OwnerName}[/gold].",
+    "name": "GrapplePower",
+    "description": "",
+    "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -961,8 +961,8 @@
   },
   {
     "id": "GRASP",
-    "name": "Sujetar",
-    "description": "Cuando juegues una carta, pierdes [blue]1[/blue] de energía.",
+    "name": "Agarre",
+    "description": "Al jugar una carta, se quita [blue]1[/blue] de energía.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -1131,8 +1131,8 @@
   },
   {
     "id": "HUNGER",
-    "name": "Hambre",
-    "description": "Cuando juegues un ataque o una habilidad se [gold]agotará[/gold].",
+    "name": "Hambruna",
+    "description": "Al jugar una carta de ataque o habilidad, se [gold]agotará[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -1222,7 +1222,7 @@
   {
     "id": "ITERATION",
     "name": "Iteración",
-    "description": "La primera vez que robas una carta de [gold]estado[/gold] en cada turno, robas más cartas.",
+    "description": "La primera vez que robas una carta de estado en cada turno, robas más cartas.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",

@@ -28,6 +28,13 @@
     "image_url": "/static/images/orbs/lightning_orb.png"
   },
   {
+    "id": "MOCK_COMBAT_CLEANUP_ORB",
+    "name": "Mock Combat Cleanup",
+    "description": "",
+    "description_raw": null,
+    "image_url": null
+  },
+  {
     "id": "PLASMA_ORB",
     "name": "Plasma",
     "description": "[gold]Passiva:[/gold] No início do turno,\nreceba [energy:1].\n[gold]Evocar:[/gold] Receba [energy:2].\nPlasma não é afetado por [gold]Foco[/gold].",

@@ -1430,7 +1430,7 @@
     "name": "Grabendes Pärchen",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Act 2 - Hive",
+    "act": null,
     "tags": [
       "Burrower",
       "Chomper"

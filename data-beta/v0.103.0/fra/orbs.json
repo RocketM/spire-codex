@@ -28,6 +28,13 @@
     "image_url": "/static/images/orbs/lightning_orb.png"
   },
   {
+    "id": "MOCK_COMBAT_CLEANUP_ORB",
+    "name": "Mock Combat Cleanup",
+    "description": "",
+    "description_raw": null,
+    "image_url": null
+  },
+  {
     "id": "PLASMA_ORB",
     "name": "Orbe Plasmique",
     "description": "[gold]Passif :[/gold] Au début de votre tour,\ngagnez [energy:1].\n[gold]Activation :[/gold] Gagnez [energy:2].\nN'est pas affecté par la [gold]Focalisation[/gold].",

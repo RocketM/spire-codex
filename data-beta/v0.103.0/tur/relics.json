@@ -223,8 +223,8 @@
   {
     "id": "ODDLY_SMOOTH_STONE",
     "name": "Aşırı Pürüzsüz Taş",
-    "description": "Her savaşa [blue]1[/blue] [gold]Çeviklik[/gold] ile başla.",
-    "description_raw": "Her savaşa [blue]{DexterityPower}[/blue] [gold]Çeviklik[/gold] ile başla.",
+    "description": "Her savaşa [blue]1[/blue] [gold]Beceriklilik[/gold] ile başla.",
+    "description_raw": "Her savaşa [blue]{DexterityPower}[/blue] [gold]Beceriklilik[/gold] ile başla.",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Yaygın Kalıntı",
     "pool": "shared",
@@ -257,13 +257,13 @@
     "image_url": "/static/images/relics/mr_struggles.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 254
+    "compendium_order": 257
   },
   {
     "id": "NUTRITIOUS_SOUP",
     "name": "Besleyici Çorba",
-    "description": "Bu kalıntıyı aldığında, [gold]Deste[/gold]'ndeki tüm başlangıç [gold]Saldırı[/gold]'larını [purple]Tezcatara'nın Koru[/purple] ile [gold]Büyüle[/gold].",
-    "description_raw": "Bu kalıntıyı aldığında, [gold]Deste[/gold]'ndeki tüm başlangıç [gold]Saldırı[/gold]'larını [purple]Tezcatara'nın Koru[/purple] ile [gold]Büyüle[/gold].",
+    "description": "Bu kalıntıyı aldığında, [gold]Deste[/gold]'ndeki tüm başlangıç [gold]Saldırılarını[/gold] [purple]Tezcatara'nın Koru[/purple] ile [gold]Büyüle[/gold].",
+    "description_raw": "Bu kalıntıyı aldığında, [gold]Deste[/gold]'ndeki tüm başlangıç [gold]Saldırılarını[/gold] [purple]Tezcatara'nın Koru[/purple] ile [gold]Büyüle[/gold].",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Kadim Kalıntı",
     "pool": "shared",
@@ -361,7 +361,7 @@
     "image_url": "/static/images/relics/bing_bong.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 255
+    "compendium_order": 258
   },
   {
     "id": "GORGET",
@@ -426,7 +426,7 @@
     "image_url": "/static/images/relics/big_mushroom.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 256
+    "compendium_order": 259
   },
   {
     "id": "BIG_HAT",
@@ -790,7 +790,7 @@
     "image_url": "/static/images/relics/hand_drill.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 257
+    "compendium_order": 260
   },
   {
     "id": "ELECTRIC_SHRYMP",
@@ -946,7 +946,7 @@
     "image_url": "/static/images/relics/fresnel_lens.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 258
+    "compendium_order": 261
   },
   {
     "id": "THROWING_AXE",
@@ -1024,13 +1024,13 @@
     "image_url": "/static/images/relics/byrdpip.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 259
+    "compendium_order": 262
   },
   {
     "id": "RAINBOW_RING",
     "name": "Gökkuşağı Yüzüğü",
-    "description": "İlk kez aynı turda Saldırı, Beceri ve Güç kartlarını oynadığında [blue]1[/blue] [gold]Kuvvet[/gold] ve [blue]1[/blue] [gold]Çeviklik[/gold] elde et.",
-    "description_raw": "İlk kez aynı turda Saldırı, Beceri ve Güç kartlarını oynadığında [blue]{StrengthPower}[/blue] [gold]Kuvvet[/gold] ve [blue]{DexterityPower}[/blue] [gold]Çeviklik[/gold] elde et.",
+    "description": "İlk kez aynı turda Saldırı, Beceri ve Güç kartlarını oynadığında [blue]1[/blue] [gold]Kuvvet[/gold] ve [blue]1[/blue] [gold]Beceriklilik[/gold] elde et.",
+    "description_raw": "İlk kez aynı turda Saldırı, Beceri ve Güç kartlarını oynadığında [blue]{StrengthPower}[/blue] [gold]Kuvvet[/gold] ve [blue]{DexterityPower}[/blue] [gold]Beceriklilik[/gold] elde et.",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Nadir Kalıntı",
     "pool": "shared",
@@ -1094,8 +1094,8 @@
   {
     "id": "GHOST_SEED",
     "name": "Hayalet Tohum",
-    "description": "[gold]Saldırılar[/gold] ve [gold]Savunmalar[/gold] [gold]Ruhani[/gold] elde eder.",
-    "description_raw": "[gold]Saldırılar[/gold] ve [gold]Savunmalar[/gold] [gold]Ruhani[/gold] elde eder.",
+    "description": "Başlangıç [gold]Saldırıları[/gold] ve [gold]Savunmalar[/gold] [gold]Ruhani[/gold] elde eder.",
+    "description_raw": "Başlangıç [gold]Saldırıları[/gold] ve [gold]Savunmalar[/gold] [gold]Ruhani[/gold] elde eder.",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Dükkan Kalıntısı",
     "pool": "shared",
@@ -1146,8 +1146,8 @@
   {
     "id": "SPARKLING_ROUGE",
     "name": "Işıltılı Ruj",
-    "description": "[blue]3.[/blue] turunun başında [blue]1[/blue] [gold]Kuvvet[/gold] ve [blue]1[/blue] [gold]Çeviklik[/gold] elde et.",
-    "description_raw": "[blue]3.[/blue] turunun başında [blue]{StrengthPower}[/blue] [gold]Kuvvet[/gold] ve [blue]{DexterityPower}[/blue] [gold]Çeviklik[/gold] elde et.",
+    "description": "[blue]3.[/blue] turunun başında [blue]1[/blue] [gold]Kuvvet[/gold] ve [blue]1[/blue] [gold]Beceriklilik[/gold] elde et.",
+    "description_raw": "[blue]3.[/blue] turunun başında [blue]{StrengthPower}[/blue] [gold]Kuvvet[/gold] ve [blue]{DexterityPower}[/blue] [gold]Beceriklilik[/gold] elde et.",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Az Yaygın Kalıntı",
     "pool": "shared",
@@ -1232,7 +1232,7 @@
     "image_url": "/static/images/relics/fake_blood_vial.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 260
+    "compendium_order": 263
   },
   {
     "id": "BLOOD_SOAKED_ROSE",
@@ -1297,7 +1297,7 @@
     "image_url": "/static/images/relics/darkstone_periapt.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 261
+    "compendium_order": 264
   },
   {
     "id": "PUNCH_DAGGER",
@@ -1336,7 +1336,7 @@
     "image_url": "/static/images/relics/lost_wisp.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 262
+    "compendium_order": 265
   },
   {
     "id": "LOST_COFFER",
@@ -1406,8 +1406,8 @@
   {
     "id": "BELT_BUCKLE",
     "name": "Kemer Tokası",
-    "description": "Hiç iksirin yokken fazladan [blue]2[/blue] [gold]Çeviklik[/gold]'e sahip olursun.",
-    "description_raw": "Hiç iksirin yokken fazladan [blue]{DexterityPower}[/blue] [gold]Çeviklik[/gold]'e sahip olursun.",
+    "description": "Hiç iksirin yokken fazladan [blue]2[/blue] [gold]Beceriklilik[/gold]'e sahip olursun.",
+    "description_raw": "Hiç iksirin yokken fazladan [blue]{DexterityPower}[/blue] [gold]Beceriklilik[/gold]'e sahip olursun.",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Dükkan Kalıntısı",
     "pool": "shared",
@@ -1440,7 +1440,7 @@
     "image_url": "/static/images/relics/bone_tea.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 263
+    "compendium_order": 266
   },
   {
     "id": "MEAT_ON_THE_BONE",
@@ -1471,8 +1471,8 @@
   {
     "id": "LIZARD_TAIL",
     "name": "Kertenkele Kuyruğu",
-    "description": "Bir defaya mahsus, sahip olduğun CP [blue]0[/blue]'a indiğinde Maksimum CP'nin [blue]%50[/blue] kadarına iyileş.",
-    "description_raw": "Bir defaya mahsus, sahip olduğun CP [blue]0[/blue]'a indiğinde Maksimum CP'nin [blue]%{Heal}[/blue] kadarına iyileş.",
+    "description": "Bir defaya mahsus, sahip olduğun CP [blue]0[/blue]'a indiğinde Maksimum CP'nin [green]%50[/green] kadarına iyileş.",
+    "description_raw": "Bir defaya mahsus, sahip olduğun CP [blue]0[/blue]'a indiğinde Maksimum CP'nin [green]%{Heal}[/green] kadarına iyileş.",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Nadir Kalıntı",
     "pool": "shared",
@@ -1557,7 +1557,7 @@
     "image_url": "/static/images/relics/fragrant_mushroom.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 264
+    "compendium_order": 267
   },
   {
     "id": "VAMBRACE",
@@ -1635,7 +1635,7 @@
     "image_url": "/static/images/relics/royal_poison.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 265
+    "compendium_order": 268
   },
   {
     "id": "GAMBLING_CHIP",
@@ -1666,8 +1666,8 @@
   {
     "id": "KUNAI",
     "name": "Kunai",
-    "description": "Tek turda her [blue]3[/blue] Saldırı kartı oynadığında [blue]1[/blue] [gold]Çeviklik[/gold] elde et.",
-    "description_raw": "Tek turda her [blue]{Cards}[/blue] Saldırı kartı oynadığında [blue]{DexterityPower}[/blue] [gold]Çeviklik[/gold] elde et.",
+    "description": "Tek turda her [blue]3[/blue] Saldırı kartı oynadığında [blue]1[/blue] [gold]Beceriklilik[/gold] elde et.",
+    "description_raw": "Tek turda her [blue]{Cards}[/blue] Saldırı kartı oynadığında [blue]{DexterityPower}[/blue] [gold]Beceriklilik[/gold] elde et.",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Nadir Kalıntı",
     "pool": "shared",
@@ -1778,7 +1778,7 @@
     "image_url": "/static/images/relics/ember_tea.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 266
+    "compendium_order": 269
   },
   {
     "id": "BRIMSTONE",
@@ -1908,7 +1908,7 @@
     "image_url": "/static/images/relics/fake_venerable_tea_set.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 267
+    "compendium_order": 270
   },
   {
     "id": "CURSED_PEARL",
@@ -1973,7 +1973,7 @@
     "image_url": "/static/images/relics/fake_lees_waffle.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 268
+    "compendium_order": 271
   },
   {
     "id": "YUMMY_COOKIE",
@@ -2044,7 +2044,7 @@
     "image_url": "/static/images/relics/fake_mango.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 269
+    "compendium_order": 272
   },
   {
     "id": "BOWLER_HAT",
@@ -2174,7 +2174,7 @@
     "image_url": "/static/images/relics/fake_happy_flower.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 270
+    "compendium_order": 273
   },
   {
     "id": "JEWELRY_BOX",
@@ -2294,6 +2294,19 @@
     "compendium_order": 212
   },
   {
+    "id": "NEOWS_BONES",
+    "name": "NeowsBones",
+    "description": "",
+    "description_raw": "",
+    "flavor": "",
+    "rarity": "Kadim Kalıntı",
+    "pool": "shared",
+    "image_url": null,
+    "image_variants": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 213
+  },
+  {
     "id": "TEA_OF_DISCOURTESY",
     "name": "Nezaketsizlik Çayı",
     "description": "Bir sonraki savaşın başında, [gold]Çekme Deste[/gold]'ne [blue]2[/blue] [gold]Sersemlemiş[/gold] karıştır.",
@@ -2304,7 +2317,7 @@
     "image_url": "/static/images/relics/tea_of_discourtesy.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 271
+    "compendium_order": 274
   },
   {
     "id": "NINJA_SCROLL",
@@ -2356,7 +2369,7 @@
     "image_url": "/static/images/relics/fake_orichalcum.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 272
+    "compendium_order": 275
   },
   {
     "id": "TOUCH_OF_OROBAS",
@@ -2369,7 +2382,7 @@
     "image_url": "/static/images/relics/touch_of_orobas.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 213
+    "compendium_order": 214
   },
   {
     "id": "GAME_PIECE",
@@ -2395,7 +2408,7 @@
     "image_url": "/static/images/relics/toy_box.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 214
+    "compendium_order": 215
   },
   {
     "id": "PAELS_FLESH",
@@ -2408,7 +2421,7 @@
     "image_url": "/static/images/relics/paels_flesh.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 215
+    "compendium_order": 216
   },
   {
     "id": "PAELS_HORN",
@@ -2421,20 +2434,20 @@
     "image_url": "/static/images/relics/paels_horn.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 216
+    "compendium_order": 217
   },
   {
     "id": "PAELS_TOOTH",
     "name": "Pael'in Dişi",
     "description": "Bu kalıntıyı aldığında, [gold]Deste[/gold]'nden [blue]5[/blue] kartı çıkar. Her savaştan sonra rastgele [blue]1[/blue] tanesini [gold]Geliştirerek[/gold] geri ekle.",
-    "description_raw": "Bu kalıntıyı aldığında, [gold]Deste[/gold]'nden [blue]{Cards}[/blue] {Cards:plural:kartı|kartı} çıkar. Her savaştan sonra rastgele [blue]1[/blue] tanesini [gold]Geliştirerek[/gold] geri ekle.{CardTitles.StringValue:cond:\n\nÇıkarılan kartlar:\n{}|}",
+    "description_raw": "Bu kalıntıyı aldığında, [gold]Deste[/gold]'nden [blue]{Cards}[/blue] {Cards:plural:kartı|kartı} çıkar. Her savaştan sonra rastgele [blue]1[/blue] tanesini [gold]Geliştirerek[/gold] geri ekle.{CardTitles.StringValue:cond:\n\nYutulan kartlar:\n{}|}",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Kadim Kalıntı",
     "pool": "shared",
     "image_url": "/static/images/relics/paels_tooth.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 217
+    "compendium_order": 218
   },
   {
     "id": "PAELS_TEARS",
@@ -2447,7 +2460,7 @@
     "image_url": "/static/images/relics/paels_tears.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 218
+    "compendium_order": 219
   },
   {
     "id": "PAELS_EYE",
@@ -2460,7 +2473,7 @@
     "image_url": "/static/images/relics/paels_eye.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 219
+    "compendium_order": 220
   },
   {
     "id": "PAELS_WING",
@@ -2473,7 +2486,7 @@
     "image_url": "/static/images/relics/paels_wing.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 220
+    "compendium_order": 221
   },
   {
     "id": "PAELS_BLOOD",
@@ -2486,7 +2499,7 @@
     "image_url": "/static/images/relics/paels_blood.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 221
+    "compendium_order": 222
   },
   {
     "id": "PAELS_GROWTH",
@@ -2499,7 +2512,7 @@
     "image_url": "/static/images/relics/paels_growth.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 222
+    "compendium_order": 223
   },
   {
     "id": "PAELS_CLAW",
@@ -2512,7 +2525,7 @@
     "image_url": "/static/images/relics/paels_claw.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 223
+    "compendium_order": 224
   },
   {
     "id": "PAELS_LEGION",
@@ -2525,20 +2538,20 @@
     "image_url": "/static/images/relics/paels_legion.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 224
+    "compendium_order": 225
   },
   {
     "id": "PANDORAS_BOX",
     "name": "Pandora'nın Kutusu",
-    "description": "TÜM başlangıç [gold]Saldırı[/gold]'larını ve [gold]Savunma[/gold]'larını [gold]Dönüştür[/gold].",
-    "description_raw": "TÜM başlangıç [gold]Saldırı[/gold]'larını ve [gold]Savunma[/gold]'larını [gold]Dönüştür[/gold].",
+    "description": "TÜM başlangıç [gold]Saldırılarını[/gold] ve [gold]Savunmalarını[/gold] [gold]Dönüştür[/gold].",
+    "description_raw": "TÜM başlangıç [gold]Saldırılarını[/gold] ve [gold]Savunmalarını[/gold] [gold]Dönüştür[/gold].",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Kadim Kalıntı",
     "pool": "shared",
     "image_url": "/static/images/relics/pandoras_box.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 225
+    "compendium_order": 226
   },
   {
     "id": "PANTOGRAPH",
@@ -2564,7 +2577,7 @@
     "image_url": "/static/images/relics/pomander.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 226
+    "compendium_order": 227
   },
   {
     "id": "SCROLL_BOXES",
@@ -2577,7 +2590,7 @@
     "image_url": "/static/images/relics/scroll_boxes.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 227
+    "compendium_order": 228
   },
   {
     "id": "DINGY_RUG",
@@ -2616,7 +2629,7 @@
     "image_url": "/static/images/relics/claws.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 228
+    "compendium_order": 229
   },
   {
     "id": "PLANISPHERE",
@@ -2642,7 +2655,7 @@
     "image_url": "/static/images/relics/pollinous_core.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 273
+    "compendium_order": 276
   },
   {
     "id": "PRISMATIC_GEM",
@@ -2655,7 +2668,7 @@
     "image_url": "/static/images/relics/prismatic_gem.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 229
+    "compendium_order": 230
   },
   {
     "id": "REGALITE",
@@ -2694,7 +2707,7 @@
     "image_url": "/static/images/relics/runic_pyramid.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 230
+    "compendium_order": 231
   },
   {
     "id": "DREAM_CATCHER",
@@ -2707,7 +2720,7 @@
     "image_url": "/static/images/relics/dream_catcher.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 274
+    "compendium_order": 277
   },
   {
     "id": "DAUGHTER_OF_THE_WIND",
@@ -2720,7 +2733,7 @@
     "image_url": "/static/images/relics/daughter_of_the_wind.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 275
+    "compendium_order": 278
   },
   {
     "id": "SAI",
@@ -2733,7 +2746,7 @@
     "image_url": "/static/images/relics/sai.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 231
+    "compendium_order": 232
   },
   {
     "id": "STRIKE_DUMMY",
@@ -2759,7 +2772,7 @@
     "image_url": "/static/images/relics/fake_strike_dummy.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 276
+    "compendium_order": 279
   },
   {
     "id": "PENDULUM",
@@ -2777,8 +2790,8 @@
   {
     "id": "HELICAL_DART",
     "name": "Sarmal Dart",
-    "description": "Her [gold]Kama[/gold] oynadığında bu tur için [blue]1[/blue] [gold]Çeviklik[/gold] elde et.",
-    "description_raw": "Her [gold]Kama[/gold] oynadığında bu tur için [blue]{DexterityPower}[/blue] [gold]Çeviklik[/gold] elde et.",
+    "description": "Her [gold]Kama[/gold] oynadığında bu tur için [blue]1[/blue] [gold]Beceriklilik[/gold] elde et.",
+    "description_raw": "Her [gold]Kama[/gold] oynadığında bu tur için [blue]{DexterityPower}[/blue] [gold]Beceriklilik[/gold] elde et.",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Nadir Kalıntı",
     "pool": "silent",
@@ -2798,7 +2811,7 @@
     "image_url": "/static/images/relics/meat_cleaver.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 232
+    "compendium_order": 233
   },
   {
     "id": "WAR_PAINT",
@@ -2837,7 +2850,7 @@
     "image_url": "/static/images/relics/war_hammer.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 233
+    "compendium_order": 234
   },
   {
     "id": "PARRYING_SHIELD",
@@ -2889,7 +2902,7 @@
     "image_url": "/static/images/relics/chosen_cheese.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 277
+    "compendium_order": 280
   },
   {
     "id": "CHOICES_PARADOX",
@@ -2902,7 +2915,7 @@
     "image_url": "/static/images/relics/choices_paradox.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 234
+    "compendium_order": 235
   },
   {
     "id": "SHURIKEN",
@@ -2928,7 +2941,7 @@
     "image_url": "/static/images/relics/glitter.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 235
+    "compendium_order": 236
   },
   {
     "id": "SYMBIOTIC_VIRUS",
@@ -2954,7 +2967,7 @@
     "image_url": "/static/images/relics/alchemical_coffer.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 236
+    "compendium_order": 237
   },
   {
     "id": "VEXING_PUZZLEBOX",
@@ -2993,7 +3006,7 @@
     "image_url": "/static/images/relics/fake_snecko_eye.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 278
+    "compendium_order": 281
   },
   {
     "id": "SNECKO_EYE",
@@ -3006,7 +3019,7 @@
     "image_url": "/static/images/relics/snecko_eye.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 237
+    "compendium_order": 238
   },
   {
     "id": "SNECKO_SKULL",
@@ -3045,7 +3058,7 @@
     "image_url": "/static/images/relics/sozu.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 238
+    "compendium_order": 239
   },
   {
     "id": "DRIFTWOOD",
@@ -3058,7 +3071,7 @@
     "image_url": "/static/images/relics/driftwood.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 239
+    "compendium_order": 240
   },
   {
     "id": "REPTILE_TRINKET",
@@ -3097,7 +3110,7 @@
     "image_url": "/static/images/relics/toasty_mittens.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 240
+    "compendium_order": 241
   },
   {
     "id": "TANXS_WHISTLE",
@@ -3110,7 +3123,7 @@
     "image_url": "/static/images/relics/tanxs_whistle.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 241
+    "compendium_order": 242
   },
   {
     "id": "HISTORY_COURSE",
@@ -3123,7 +3136,7 @@
     "image_url": "/static/images/relics/history_course.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 279
+    "compendium_order": 282
   },
   {
     "id": "CIRCLET",
@@ -3136,7 +3149,7 @@
     "image_url": "/static/images/relics/circlet.png",
     "image_variants": null,
     "rarity_key": "None",
-    "compendium_order": 289
+    "compendium_order": 292
   },
   {
     "id": "SWORD_OF_STONE",
@@ -3149,7 +3162,7 @@
     "image_url": "/static/images/relics/sword_of_stone.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 280
+    "compendium_order": 283
   },
   {
     "id": "STONE_CRACKER",
@@ -3175,7 +3188,7 @@
     "image_url": "/static/images/relics/stone_humidifier.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 242
+    "compendium_order": 243
   },
   {
     "id": "STONE_CALENDAR",
@@ -3214,7 +3227,7 @@
     "image_url": "/static/images/relics/precarious_shears.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 243
+    "compendium_order": 244
   },
   {
     "id": "TINGSHA",
@@ -3240,7 +3253,7 @@
     "image_url": "/static/images/relics/dusty_tome.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 244
+    "compendium_order": 245
   },
   {
     "id": "TUNGSTEN_ROD",
@@ -3279,7 +3292,7 @@
     "image_url": "/static/images/relics/fake_merchants_rug.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 281
+    "compendium_order": 284
   },
   {
     "id": "JOSS_PAPER",
@@ -3305,7 +3318,7 @@
     "image_url": "/static/images/relics/forgotten_soul.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 282
+    "compendium_order": 285
   },
   {
     "id": "ASTROLABE",
@@ -3318,7 +3331,7 @@
     "image_url": "/static/images/relics/astrolabe.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 245
+    "compendium_order": 246
   },
   {
     "id": "VAJRA",
@@ -3360,6 +3373,19 @@
     "compendium_order": 155
   },
   {
+    "id": "WINGED_BOOTS",
+    "name": "WingedBoots",
+    "description": "",
+    "description_raw": "",
+    "flavor": "",
+    "rarity": "Kadim Kalıntı",
+    "pool": "shared",
+    "image_url": null,
+    "image_variants": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 247
+  },
+  {
     "id": "WONGO_CUSTOMER_APPRECIATION_BADGE",
     "name": "Wongo Müşteri Takdir Rozeti",
     "description": "Hiçbir işe yaramaz.",
@@ -3370,7 +3396,7 @@
     "image_url": "/static/images/relics/wongo_customer_appreciation_badge.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 283
+    "compendium_order": 286
   },
   {
     "id": "WONGOS_MYSTERY_TICKET",
@@ -3383,7 +3409,7 @@
     "image_url": "/static/images/relics/wongos_mystery_ticket.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 284
+    "compendium_order": 287
   },
   {
     "id": "BURNING_BLOOD",
@@ -3422,20 +3448,20 @@
     "image_url": "/static/images/relics/booming_conch.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 246
+    "compendium_order": 248
   },
   {
     "id": "LEAFY_POULTICE",
     "name": "Yapraklı Merhem",
-    "description": "Bu kalıntıyı aldığında [gold]Saldırı[/gold] kartlarından [blue]1[/blue] tanesini ve [gold]Savunma[/gold] kartlarından [blue]1[/blue] tanesini [gold]Dönüştür[/gold]. [blue]12[/blue] Maksimum CP kaybet.",
-    "description_raw": "Bu kalıntıyı aldığında [gold]Saldırı[/gold] kartlarından [blue]1[/blue] tanesini ve [gold]Savunma[/gold] kartlarından [blue]1[/blue] tanesini [gold]Dönüştür[/gold]. [blue]{MaxHp}[/blue] Maksimum CP kaybet.",
+    "description": "Bu kalıntıyı aldığında [blue]1[/blue] başlangıç [gold]Saldırı[/gold]'nı ve [blue]1[/blue] [gold]Savunma[/gold]'nı [gold]Dönüştür[/gold]. [blue]12[/blue] Maksimum CP kaybet.",
+    "description_raw": "Bu kalıntıyı aldığında [blue]1[/blue] başlangıç [gold]Saldırı[/gold]'nı ve [blue]1[/blue] [gold]Savunma[/gold]'nı [gold]Dönüştür[/gold]. [blue]{MaxHp}[/blue] Maksimum CP kaybet.",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Kadim Kalıntı",
     "pool": "shared",
     "image_url": "/static/images/relics/leafy_poultice.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 247
+    "compendium_order": 249
   },
   {
     "id": "MEAL_TICKET",
@@ -3461,7 +3487,7 @@
     "image_url": "/static/images/relics/new_leaf.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 248
+    "compendium_order": 250
   },
   {
     "id": "RING_OF_THE_SNAKE",
@@ -3500,7 +3526,7 @@
     "image_url": "/static/images/relics/beautiful_bracelet.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 249
+    "compendium_order": 251
   },
   {
     "id": "TOXIC_EGG",
@@ -3526,7 +3552,7 @@
     "image_url": "/static/images/relics/sword_of_jade.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 285
+    "compendium_order": 288
   },
   {
     "id": "ANCHOR",
@@ -3552,7 +3578,7 @@
     "image_url": "/static/images/relics/fake_anchor.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 286
+    "compendium_order": 289
   },
   {
     "id": "CRACKED_CORE",
@@ -3578,7 +3604,7 @@
     "image_url": "/static/images/relics/calling_bell.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 250
+    "compendium_order": 252
   },
   {
     "id": "MAW_BANK",
@@ -3591,7 +3617,7 @@
     "image_url": "/static/images/relics/maw_bank.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 287
+    "compendium_order": 290
   },
   {
     "id": "STRAWBERRY",
@@ -3617,7 +3643,7 @@
     "image_url": "/static/images/relics/the_boot.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 288
+    "compendium_order": 291
   },
   {
     "id": "RINGING_TRIANGLE",
@@ -3669,7 +3695,7 @@
     "image_url": "/static/images/relics/tri_boomerang.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 251
+    "compendium_order": 253
   },
   {
     "id": "POTION_BELT",
@@ -3683,6 +3709,19 @@
     "image_variants": null,
     "rarity_key": "Common",
     "compendium_order": 39
+  },
+  {
+    "id": "PHIAL_HOLSTER",
+    "name": "İksir Kılıfı",
+    "description": "Bu kalıntıyı aldığında [blue]1[/blue] iksir yuvası ve rastgele [blue]2[/blue] iksir elde et.",
+    "description_raw": "Bu kalıntıyı aldığında [blue]{PotionSlots}[/blue] iksir {PotionSlots:plural:yuvası|yuvası} ve rastgele [blue]{Potions}[/blue] {Potions:plural:iksir|iksir} elde et.",
+    "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
+    "rarity": "Kadim Kalıntı",
+    "pool": "shared",
+    "image_url": null,
+    "image_variants": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 254
   },
   {
     "id": "DIVINE_RIGHT",
@@ -3721,7 +3760,7 @@
     "image_url": "/static/images/relics/archaic_tooth.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 252
+    "compendium_order": 255
   },
   {
     "id": "LARGE_CAPSULE",
@@ -3734,7 +3773,7 @@
     "image_url": "/static/images/relics/large_capsule.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 253
+    "compendium_order": 256
   },
   {
     "id": "CANDELABRA",

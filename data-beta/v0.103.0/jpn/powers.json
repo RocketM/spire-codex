@@ -191,8 +191,8 @@
   },
   {
     "id": "BORROWED_TIME",
-    "name": "BorrowedTimePower",
-    "description": "",
+    "name": "借り物の時間",
+    "description": "このターン、カードのコストが増加する。",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -771,7 +771,7 @@
   },
   {
     "id": "FERAL",
-    "name": "野生",
+    "name": "野性",
     "description": "毎ターン、コスト0[energy:1]のアタックを初めてプレイした時、そのカードを[gold]手札[/gold]に戻す。",
     "description_raw": "毎ターン、コスト0{energyPrefix:energyIcons(1)}のアタックを初めてプレイした時、そのカードを[gold]手札[/gold]に戻す。",
     "type": "Buff",
@@ -792,7 +792,7 @@
   {
     "id": "FLANKING",
     "name": "挟撃",
-    "description": "このターン、他の味方はこの敵に[blue]2[/blue]倍のダメージを与える。",
+    "description": "このターン、他の味方はこの敵に[blue]2[/blue]倍のアタックダメージを与える。",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -951,9 +951,9 @@
   },
   {
     "id": "GRAPPLE",
-    "name": "グラップル",
-    "description": "このターン、[gold]ブロック[/gold]を得るたび、[gold]this creature[/gold]に[blue][Amount][/blue]ダメージを与える。",
-    "description_raw": "このターン、[gold]ブロック[/gold]を得るたび、[gold]{OwnerName}[/gold]に[blue]{Amount}[/blue]ダメージを与える。",
+    "name": "GrapplePower",
+    "description": "",
+    "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -962,8 +962,8 @@
   {
     "id": "GRASP",
     "name": "掌握",
-    "description": "毎ターン、最初にプレイするカードのコストが [blue]1[/blue][energy:1]増加する。",
-    "description_raw": "毎ターン、最初にプレイするカードのコストが [blue]1[/blue]{energyPrefix:energyIcons(1)}増加する。",
+    "description": "カードをプレイするたび、エナジーを[blue]1[/blue]失う。",
+    "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
     "allow_negative": null,
@@ -1222,7 +1222,7 @@
   {
     "id": "ITERATION",
     "name": "反復",
-    "description": "毎ターン、最初に[gold]状態異常[/gold]を引いた時、さらにカードを引く。",
+    "description": "毎ターン、最初に状態異常を引いた時、さらにカードを引く。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",

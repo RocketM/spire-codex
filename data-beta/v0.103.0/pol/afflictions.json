@@ -47,5 +47,12 @@
     "description": "W tej turze nie możesz już zagrać [gold]Umiejętności[/gold]. Znika pod koniec tury.",
     "extra_card_text": null,
     "is_stackable": false
+  },
+  {
+    "id": "WEIGHTED",
+    "name": "Obciążenie",
+    "description": "Utrać [energy:1] po zagraniu tej karty.",
+    "extra_card_text": "Utrać [energy:1].",
+    "is_stackable": false
   }
 ]

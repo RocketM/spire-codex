@@ -951,9 +951,9 @@
   },
   {
     "id": "GRAPPLE",
-    "name": "Avviluppo",
-    "description": "Ogni volta che ottieni [gold]Blocco[/gold] in questo turno, infliggi [blue][Amount][/blue] di danno a [gold]this creature[/gold].",
-    "description_raw": "Ogni volta che ottieni [gold]Blocco[/gold] in questo turno, infliggi [blue]{Amount}[/blue] di danno a [gold]{OwnerName}[/gold].",
+    "name": "GrapplePower",
+    "description": "",
+    "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1222,7 +1222,7 @@
   {
     "id": "ITERATION",
     "name": "Iterazione",
-    "description": "La prima volta che peschi una carta [gold]Stato[/gold] in ogni turno, peschi altre carte.",
+    "description": "La prima volta che peschi una carta Stato in ogni turno, peschi altre carte.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",

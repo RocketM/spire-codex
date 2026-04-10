@@ -79,7 +79,7 @@
   {
     "id": "INSTINCT",
     "name": "Инстинкт",
-    "description": "Урон, наносимый этой картой напрямую, удвоен.",
+    "description": "Эта карта наносит двойной урон.",
     "description_raw": null,
     "extra_card_text": null,
     "card_type": "Attack",

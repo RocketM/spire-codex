@@ -28,6 +28,13 @@
     "image_url": "/static/images/orbs/lightning_orb.png"
   },
   {
+    "id": "MOCK_COMBAT_CLEANUP_ORB",
+    "name": "Resumen de combate provisional",
+    "description": "",
+    "description_raw": null,
+    "image_url": null
+  },
+  {
     "id": "PLASMA_ORB",
     "name": "Plasma",
     "description": "[gold]Pasiva:[/gold] al comienzo del turno,\nobtienes [energy:1].\n[gold]Descarga:[/gold] obtienes [energy:2].\nEl plasma no se ve afectado por [gold]concentración[/gold].",

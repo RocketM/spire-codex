@@ -1887,12 +1887,13 @@
       "NEOWS_TORMENT",
       "NEW_LEAF",
       "PRECISE_SCISSORS",
-      "LAVA_ROCK",
+      "PHIAL_HOLSTER",
+      "WINGED_BOOTS",
       "MASSIVE_SCROLL",
+      "LAVA_ROCK",
       "NEOWS_TALISMAN",
       "NUTRITIOUS_OYSTER",
       "POMANDER",
-      "SILVER_CRUCIBLE",
       "SMALL_CAPSULE",
       "STONE_HUMIDIFIER",
       "CURSED_PEARL",
@@ -1900,6 +1901,8 @@
       "LARGE_CAPSULE",
       "LEAFY_POULTICE",
       "PRECARIOUS_SHEARS",
+      "SILVER_CRUCIBLE",
+      "NEOWS_BONES",
       "SCROLL_BOXES"
     ]
   },
@@ -3118,7 +3121,7 @@
       {
         "id": "OBSERVE",
         "title": "Observar",
-        "description": "[gold]Encante[/gold] um [gold]Golpe[/gold] ou uma [gold]Defesa[/gold] com [purple]Espiral[/purple]."
+        "description": "[gold]Encante[/gold] um [gold]Golpe[/gold] ou uma [gold]Defesa[/gold] iniciais com [purple]Espiral[/purple]."
       },
       {
         "id": "DRINK",
@@ -3138,7 +3141,7 @@
           {
             "id": "OBSERVE",
             "title": "Observar",
-            "description": "[gold]Encante[/gold] um [gold]Golpe[/gold] ou uma [gold]Defesa[/gold] com [purple]Espiral[/purple]."
+            "description": "[gold]Encante[/gold] um [gold]Golpe[/gold] ou uma [gold]Defesa[/gold] iniciais com [purple]Espiral[/purple]."
           },
           {
             "id": "DRINK",
@@ -5242,7 +5245,7 @@
     "name": "Ravina Sussurrante",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "Atravessando uma [red]ravina de árvores secas[/red] você se depara com uma única árvore branca como osso. Enfeites de cerâmica pendem de seus galhos, que se curvam para dentro como costelas.\n\nMas que [purple]árvore tenebrosa[/purple]. Ela sussurra.\n\n[sine][blue]...realizar troca.....[/blue][/sine]",
+    "description": "Atravessando uma [red]ravina de árvores secas[/red] você se depara com uma única árvore, branca como osso. Enfeites de cerâmica pendem de seus galhos, que se curvam para dentro como costelas.\n\nMas que [purple]árvore tenebrosa[/purple]. Ela sussurra.\n\n[sine][blue]...realizar troca.....[/blue][/sine]",
     "preconditions": [
       "Requires 44+ gold"
     ],
@@ -5269,7 +5272,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "Atravessando uma [red]ravina de árvores secas[/red] você se depara com uma única árvore branca como osso. Enfeites de cerâmica pendem de seus galhos, que se curvam para dentro como costelas.\n\nMas que [purple]árvore tenebrosa[/purple]. Ela sussurra.\n\n[sine][blue]...realizar troca.....[/blue][/sine]",
+        "description": "Atravessando uma [red]ravina de árvores secas[/red] você se depara com uma única árvore, branca como osso. Enfeites de cerâmica pendem de seus galhos, que se curvam para dentro como costelas.\n\nMas que [purple]árvore tenebrosa[/purple]. Ela sussurra.\n\n[sine][blue]...realizar troca.....[/blue][/sine]",
         "options": [
           {
             "id": "GOLD",

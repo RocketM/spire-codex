@@ -803,7 +803,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "ทักษะ",
-    "rarity": "หายาก",
+    "rarity": "ไม่ธรรมดา",
     "target": "Self",
     "color": "ironclad",
     "damage": null,
@@ -828,7 +828,7 @@
     "type_variants": null,
     "upgrade_description": "ได้รับ 8 [gold]บล็อก[/gold]\nในเทิร์นนี้ คุณจะได้รับความเสียหายน้อยลง 50% จากศัตรูที่มี[gold]จุดอ่อน[/gold]",
     "type_key": "Skill",
-    "rarity_key": "Rare",
+    "rarity_key": "Uncommon",
     "compendium_order": 18
   },
   {
@@ -2299,8 +2299,8 @@
   {
     "id": "ETERNAL_ARMOR",
     "name": "EternalArmor",
-    "description": "ได้รับ 9 [gold]Plating[/gold]",
-    "description_raw": "ได้รับ {PlatingPower:diff()} [gold]Plating[/gold]",
+    "description": "ได้รับ 9 [gold]เกราะโลหะ[/gold]",
+    "description_raw": "ได้รับ {PlatingPower:diff()} [gold]เกราะโลหะ[/gold]",
     "cost": 3,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -2314,7 +2314,7 @@
     "hit_count": null,
     "powers_applied": [
       {
-        "power": "Plating",
+        "power": "เกราะโลหะ",
         "amount": 9,
         "power_key": "Plating"
       }
@@ -2335,7 +2335,7 @@
     "image_url": "/static/images/cards/eternal_armor.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "ได้รับ 12 [gold]Plating[/gold]",
+    "upgrade_description": "ได้รับ 12 [gold]เกราะโลหะ[/gold]",
     "type_key": "Power",
     "rarity_key": "Rare",
     "compendium_order": 454
@@ -3476,8 +3476,8 @@
   {
     "id": "GRAPPLE",
     "name": "Grapple",
-    "description": "สร้างความเสียหาย 7\nและทุกครั้งที่คุณได้รับ[gold]บล็อก[/gold]ในเทิร์นนี้ สร้างความเสียหาย 5 ใส่ศัตรูตัวนั้น",
-    "description_raw": "สร้างความเสียหาย {Damage:diff()}\nและทุกครั้งที่คุณได้รับ[gold]บล็อก[/gold]ในเทิร์นนี้ สร้างความเสียหาย {GrapplePower:diff()} ใส่ศัตรูตัวนั้น",
+    "description": "",
+    "description_raw": "",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -3485,7 +3485,7 @@
     "type": "โจมตี",
     "rarity": "ไม่ธรรมดา",
     "target": "AnyEnemy",
-    "color": "ironclad",
+    "color": "unknown",
     "damage": 7,
     "block": null,
     "hit_count": null,
@@ -3514,10 +3514,10 @@
     "image_url": "/static/images/cards/grapple.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 9\nและทุกครั้งที่คุณได้รับ[gold]บล็อก[/gold]ในเทิร์นนี้ สร้างความเสียหาย 7 ใส่ศัตรูตัวนั้น",
+    "upgrade_description": null,
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 38
+    "compendium_order": 576
   },
   {
     "id": "GRAVE_WARDEN",
@@ -4316,7 +4316,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 50
+    "compendium_order": 49
   },
   {
     "id": "KINGLY_KICK",
@@ -4984,7 +4984,7 @@
     "upgrade_description": "สร้างความเสียหาย 20\nศัตรูเสีย 15 [gold]ความแข็งแรง[/gold]ในเทิร์นนี้",
     "type_key": "Attack",
     "rarity_key": "Rare",
-    "compendium_order": 51
+    "compendium_order": 50
   },
   {
     "id": "MANIFEST_AUTHORITY",
@@ -5103,7 +5103,7 @@
   {
     "id": "MEMENTO_MORI",
     "name": "MementoMori",
-    "description": "สร้างความเสียหาย 8\nสร้างความเสียหายเพิ่ม 4 ตามจำนวนการ์ดที่เคยถูกทิ้งในเทิร์นนี้",
+    "description": "สร้างความเสียหาย 9\nสร้างความเสียหายเพิ่ม 4 ตามจำนวนการ์ดที่เคยถูกทิ้งในเทิร์นนี้",
     "description_raw": "สร้างความเสียหาย {CalculatedDamage:diff()}\nสร้างความเสียหายเพิ่ม {ExtraDamage:diff()} ตามจำนวนการ์ดที่เคยถูกทิ้งในเทิร์นนี้",
     "cost": 1,
     "is_x_cost": null,
@@ -5113,7 +5113,7 @@
     "rarity": "ไม่ธรรมดา",
     "target": "AnyEnemy",
     "color": "silent",
-    "damage": 8,
+    "damage": 9,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -5124,9 +5124,9 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "CalculationBase": 8,
+      "CalculationBase": 9,
       "ExtraDamage": 4,
-      "CalculatedDamage": 8
+      "CalculatedDamage": 9
     },
     "upgrade": {
       "calculationbase": "+2",
@@ -5135,7 +5135,7 @@
     "image_url": "/static/images/cards/memento_mori.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 8\nสร้างความเสียหายเพิ่ม 5 ตามจำนวนการ์ดที่เคยถูกทิ้งในเทิร์นนี้",
+    "upgrade_description": "สร้างความเสียหาย 9\nสร้างความเสียหายเพิ่ม 5 ตามจำนวนการ์ดที่เคยถูกทิ้งในเทิร์นนี้",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 136
@@ -5298,7 +5298,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 52
+    "compendium_order": 51
   },
   {
     "id": "MONARCHS_GAZE",
@@ -5589,8 +5589,8 @@
   {
     "id": "NEUTRON_AEGIS",
     "name": "NeutronAegis",
-    "description": "ได้รับ 8 [gold]Plating[/gold]",
-    "description_raw": "ได้รับ {PlatingPower:diff()} [gold]Plating[/gold]",
+    "description": "ได้รับ 8 [gold]เกราะโลหะ[/gold]",
+    "description_raw": "ได้รับ {PlatingPower:diff()} [gold]เกราะโลหะ[/gold]",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -5604,7 +5604,7 @@
     "hit_count": null,
     "powers_applied": [
       {
-        "power": "Plating",
+        "power": "เกราะโลหะ",
         "amount": 8,
         "power_key": "Plating"
       }
@@ -5626,7 +5626,7 @@
     "image_url": "/static/images/cards/neutron_aegis.png",
     "beta_image_url": "/static/images/cards/beta/neutron_aegis.png",
     "type_variants": null,
-    "upgrade_description": "ได้รับ 11 [gold]Plating[/gold]",
+    "upgrade_description": "ได้รับ 11 [gold]เกราะโลหะ[/gold]",
     "type_key": "Power",
     "rarity_key": "Rare",
     "compendium_order": 229
@@ -5704,6 +5704,48 @@
     "type_key": "Power",
     "rarity_key": "Rare",
     "compendium_order": 474
+  },
+  {
+    "id": "NOT_YET",
+    "name": "NotYet",
+    "description": "",
+    "description_raw": "",
+    "cost": 2,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "ทักษะ",
+    "rarity": "หายาก",
+    "target": "Self",
+    "color": "ironclad",
+    "damage": null,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": [
+      "สลาย"
+    ],
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Heal": 10
+    },
+    "upgrade": {
+      "heal": "+3"
+    },
+    "image_url": null,
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
+    "compendium_order": 52
   },
   {
     "id": "NULL",
@@ -7233,41 +7275,6 @@
       "Retain"
     ],
     "compendium_order": 323
-  },
-  {
-    "id": "REAPER_FORM",
-    "name": "ReaperForm",
-    "description": "ทุกครั้งที่การ์ดโจมตีสร้างความเสียหาย สร้าง[gold]อายุขัย[/gold]ตามจำนวนนั้นด้วย",
-    "description_raw": "ทุกครั้งที่การ์ดโจมตีสร้างความเสียหาย สร้าง[gold]อายุขัย[/gold]ตามจำนวนนั้นด้วย",
-    "cost": 3,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "พลัง",
-    "rarity": "หายาก",
-    "target": "Self",
-    "color": "necrobinder",
-    "damage": null,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": null,
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": null,
-    "upgrade": {
-      "add_retain": true
-    },
-    "image_url": "/static/images/cards/reaper_form.png",
-    "beta_image_url": "/static/images/cards/beta/reaper_form.png",
-    "type_variants": null,
-    "upgrade_description": null,
-    "type_key": "Power",
-    "rarity_key": "Rare",
-    "compendium_order": 324
   },
   {
     "id": "REAVE",
@@ -9473,8 +9480,8 @@
   {
     "id": "STONE_ARMOR",
     "name": "StoneArmor",
-    "description": "ได้รับ 4 [gold]Plating[/gold]",
-    "description_raw": "ได้รับ {PlatingPower:diff()} [gold]Plating[/gold]",
+    "description": "ได้รับ 4 [gold]เกราะโลหะ[/gold]",
+    "description_raw": "ได้รับ {PlatingPower:diff()} [gold]เกราะโลหะ[/gold]",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -9488,7 +9495,7 @@
     "hit_count": null,
     "powers_applied": [
       {
-        "power": "Plating",
+        "power": "เกราะโลหะ",
         "amount": 4,
         "power_key": "Plating"
       }
@@ -9509,7 +9516,7 @@
     "image_url": "/static/images/cards/stone_armor.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "ได้รับ 6 [gold]Plating[/gold]",
+    "upgrade_description": "ได้รับ 6 [gold]เกราะโลหะ[/gold]",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 71
@@ -11482,26 +11489,20 @@
   {
     "id": "FOLLOW_THROUGH",
     "name": "กระบวนท่าส่งต่อ",
-    "description": "สร้างความเสียหาย 6 ใส่ศัตรูทั้งหมด\nถ้าการ์ดใบล่าสุดที่คุณเล่นในเทิร์นนี้เป็นการ์ดทักษะ สร้าง 1 [gold]ความอ่อนแอ[/gold] ใส่ศัตรูทั้งหมด",
-    "description_raw": "สร้างความเสียหาย {Damage:diff()} ใส่ศัตรูทั้งหมด\nถ้าการ์ดใบล่าสุดที่คุณเล่นในเทิร์นนี้เป็นการ์ดทักษะ สร้าง {WeakPower:diff()} [gold]ความอ่อนแอ[/gold] ใส่ศัตรูทั้งหมด",
+    "description": "",
+    "description_raw": "",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "โจมตี",
-    "rarity": "ไม่ธรรมดา",
-    "target": "AllEnemies",
+    "rarity": "ธรรมดา",
+    "target": "AnyEnemy",
     "color": "silent",
-    "damage": 6,
+    "damage": 7,
     "block": null,
     "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "ความอ่อนแอ",
-        "amount": 1,
-        "power_key": "Weak"
-      }
-    ],
+    "powers_applied": null,
     "cards_draw": null,
     "energy_gain": null,
     "hp_loss": null,
@@ -11509,20 +11510,18 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "Damage": 6,
-      "WeakPower": 1,
-      "Weak": 1
+      "CardCount": 5,
+      "Damage": 7
     },
     "upgrade": {
-      "damage": "+2",
-      "weak": "+1"
+      "damage": "+2"
     },
     "image_url": "/static/images/cards/follow_through.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 8 ใส่ศัตรูทั้งหมด\nถ้าการ์ดใบล่าสุดที่คุณเล่นในเทิร์นนี้เป็นการ์ดทักษะ สร้าง 1 [gold]ความอ่อนแอ[/gold] ใส่ศัตรูทั้งหมด",
+    "upgrade_description": null,
     "type_key": "Attack",
-    "rarity_key": "Uncommon",
+    "rarity_key": "Common",
     "compendium_order": 124
   },
   {
@@ -12151,7 +12150,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "ทักษะ",
-    "rarity": "ธรรมดา",
+    "rarity": "ไม่ธรรมดา",
     "target": "Self",
     "color": "silent",
     "damage": null,
@@ -12175,7 +12174,7 @@
     "type_variants": null,
     "upgrade_description": "จั่ว 4 การ์ด\nทิ้ง 1 การ์ด",
     "type_key": "Skill",
-    "rarity_key": "Common",
+    "rarity_key": "Uncommon",
     "compendium_order": 90
   },
   {
@@ -12220,7 +12219,7 @@
     "upgrade_description": "ทุกครั้งที่ได้รับ[gold]บล็อก[/gold] สร้างความเสียหาย 7 ใส่ศัตรู 1 ตัวแบบสุ่ม",
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 49
+    "compendium_order": 48
   },
   {
     "id": "FLAME_BARRIER",
@@ -12815,7 +12814,7 @@
     "upgrade_description": "ได้รับ 7 [gold]บล็อก[/gold]\nสร้างความเสียหาย 7",
     "type_key": "Attack",
     "rarity_key": "Common",
-    "compendium_order": 48
+    "compendium_order": 47
   },
   {
     "id": "ASTRAL_PULSE",
@@ -13766,7 +13765,7 @@
     "upgrade_description": "เสีย 2 HP\nสร้างความเสียหาย 20",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 42
+    "compendium_order": 41
   },
   {
     "id": "PIERCING_WAIL",
@@ -14461,7 +14460,7 @@
     "upgrade_description": "ได้รับ 3 [gold]ความแข็งแรง[/gold]",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 47
+    "compendium_order": 46
   },
   {
     "id": "STRIKE_IRONCLAD",
@@ -15726,7 +15725,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 45
+    "compendium_order": 44
   },
   {
     "id": "POOR_SLEEP",
@@ -15845,7 +15844,7 @@
     "upgrade_description": null,
     "type_key": "Skill",
     "rarity_key": "Common",
-    "compendium_order": 39
+    "compendium_order": 38
   },
   {
     "id": "BALL_LIGHTNING",
@@ -16279,7 +16278,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 41
+    "compendium_order": 40
   },
   {
     "id": "CREATIVE_AI",
@@ -16670,7 +16669,7 @@
   {
     "id": "SPEEDSTER",
     "name": "ผู้ใช้ความเร็ว",
-    "description": "ทุกครั้งที่คุณจั่วการ์ดในเทิร์นของคุณ สร้างความเสียหาย 1 ใส่ศัตรูทั้งหมด",
+    "description": "ทุกครั้งที่คุณจั่วการ์ดในเทิร์นของคุณ สร้างความเสียหาย 2 ใส่ศัตรูทั้งหมด",
     "description_raw": "ทุกครั้งที่คุณจั่วการ์ดในเทิร์นของคุณ สร้างความเสียหาย {SpeedsterPower:diff()} ใส่ศัตรูทั้งหมด",
     "cost": 2,
     "is_x_cost": null,
@@ -16686,7 +16685,7 @@
     "powers_applied": [
       {
         "power": "ผู้ใช้ความเร็ว",
-        "amount": 1,
+        "amount": 2,
         "power_key": "Speedster"
       }
     ],
@@ -16697,16 +16696,16 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "SpeedsterPower": 1,
-      "Speedster": 1
+      "SpeedsterPower": 2,
+      "Speedster": 2
     },
     "upgrade": {
-      "speedsterpower": "+1"
+      "add_innate": true
     },
     "image_url": "/static/images/cards/speedster.png",
     "beta_image_url": "/static/images/cards/beta/speedster.png",
     "type_variants": null,
-    "upgrade_description": "ทุกครั้งที่คุณจั่วการ์ดในเทิร์นของคุณ สร้างความเสียหาย 2 ใส่ศัตรูทั้งหมด",
+    "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 160
@@ -17532,7 +17531,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 44
+    "compendium_order": 43
   },
   {
     "id": "THUNDER",
@@ -18976,6 +18975,41 @@
     "type_key": "Power",
     "rarity_key": "Ancient",
     "compendium_order": 174
+  },
+  {
+    "id": "REAPER_FORM",
+    "name": "ร่างยมทูต",
+    "description": "ทุกครั้งที่การ์ดโจมตีสร้างความเสียหาย สร้าง[gold]อายุขัย[/gold]ตามจำนวนนั้นด้วย",
+    "description_raw": "ทุกครั้งที่การ์ดโจมตีสร้างความเสียหาย สร้าง[gold]อายุขัย[/gold]ตามจำนวนนั้นด้วย",
+    "cost": 3,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "พลัง",
+    "rarity": "หายาก",
+    "target": "Self",
+    "color": "necrobinder",
+    "damage": null,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": null,
+    "upgrade": {
+      "add_retain": true
+    },
+    "image_url": "/static/images/cards/reaper_form.png",
+    "beta_image_url": "/static/images/cards/beta/reaper_form.png",
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
+    "compendium_order": 324
   },
   {
     "id": "VOID_FORM",
@@ -22173,7 +22207,7 @@
     "upgrade_description": "ตอนเริ่มต้นเทิร์น เสีย 1 HP\nทุกครั้งที่คุณเสีย HP ในเทิร์นของคุณ สร้างความเสียหาย 9 ใส่ศัตรูทั้งหมด",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 46
+    "compendium_order": 45
   },
   {
     "id": "SLIMED",
@@ -22566,7 +22600,7 @@
     "upgrade_description": "สร้างความเสียหาย 21 ใส่ศัตรูทั้งหมด\nตอนเริ่มต้นเทิร์น เล่นจาก[gold]กองสลาย[/gold]",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 43
+    "compendium_order": 42
   },
   {
     "id": "ABRASIVE",
@@ -22975,7 +23009,7 @@
     "upgrade_description": "สร้างความเสียหาย 12\nนำการ์ด 1 ใบจาก[gold]กองทิ้ง[/gold]ไปวางไว้บนสุดของ[gold]กองจั่ว[/gold]",
     "type_key": "Attack",
     "rarity_key": "Common",
-    "compendium_order": 40
+    "compendium_order": 39
   },
   {
     "id": "FLANKING",

@@ -28,6 +28,13 @@
     "image_url": "/static/images/orbs/lightning_orb.png"
   },
   {
+    "id": "MOCK_COMBAT_CLEANUP_ORB",
+    "name": "Mock Combat Cleanup",
+    "description": "",
+    "description_raw": null,
+    "image_url": null
+  },
+  {
     "id": "PLASMA_ORB",
     "name": "Сфера плазмы",
     "description": "[gold]Пассивный эффект:[/gold] дает [energy:1] в начале хода.\n[gold]Разрядка:[/gold] дает [energy:2] независимо от [gold]фокуса[/gold].",

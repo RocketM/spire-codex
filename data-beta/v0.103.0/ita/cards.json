@@ -243,7 +243,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "Abilità",
-    "rarity": "Comune",
+    "rarity": "Non comune",
     "target": "Self",
     "color": "silent",
     "damage": null,
@@ -267,7 +267,7 @@
     "type_variants": null,
     "upgrade_description": "Peschi 4 carte.\nScarti 1 carta.",
     "type_key": "Skill",
-    "rarity_key": "Common",
+    "rarity_key": "Uncommon",
     "compendium_order": 90
   },
   {
@@ -903,7 +903,7 @@
     "upgrade_description": "Ottieni 3 di [gold]Forza[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 47
+    "compendium_order": 46
   },
   {
     "id": "END_OF_DAYS",
@@ -1911,52 +1911,6 @@
     "compendium_order": 512
   },
   {
-    "id": "GRAPPLE",
-    "name": "Avviluppo",
-    "description": "Infliggi 7 di danno.\nOgni volta che ottieni [gold]Blocco[/gold] in questo turno, infliggi 5 di danno al nemico.",
-    "description_raw": "Infliggi {Damage:diff()} di danno.\nOgni volta che ottieni [gold]Blocco[/gold] in questo turno, infliggi {GrapplePower:diff()} di danno al nemico.",
-    "cost": 1,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "Attacco",
-    "rarity": "Non comune",
-    "target": "AnyEnemy",
-    "color": "ironclad",
-    "damage": 7,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "Avviluppo",
-        "amount": 5,
-        "power_key": "Grapple"
-      }
-    ],
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Damage": 7,
-      "GrapplePower": 5,
-      "Grapple": 5
-    },
-    "upgrade": {
-      "damage": "+2",
-      "grapplepower": "+2"
-    },
-    "image_url": "/static/images/cards/grapple.png",
-    "beta_image_url": null,
-    "type_variants": null,
-    "upgrade_description": "Infliggi 9 di danno.\nOgni volta che ottieni [gold]Blocco[/gold] in questo turno, infliggi 7 di danno al nemico.",
-    "type_key": "Attack",
-    "rarity_key": "Uncommon",
-    "compendium_order": 38
-  },
-  {
     "id": "WASTE_AWAY",
     "name": "Avvizzimento",
     "description": "Ottieni 1 [energy:1] in meno per turno.",
@@ -2187,7 +2141,7 @@
     "upgrade_description": null,
     "type_key": "Skill",
     "rarity_key": "Common",
-    "compendium_order": 39
+    "compendium_order": 38
   },
   {
     "id": "BARRICADE",
@@ -3128,8 +3082,8 @@
   {
     "id": "FLAK_CANNON",
     "name": "Cannone Antiaereo",
-    "description": "[gold]Esaurisci[/gold] TUTTE le tue carte [gold]Stato[/gold].\nInfliggi 8 di danno a un nemico casuale per ogni carta [gold]esaurita[/gold].",
-    "description_raw": "[gold]Esaurisci[/gold] TUTTE le tue carte [gold]Stato[/gold].\nInfliggi {Damage:diff()} di danno a un nemico casuale per ogni carta [gold]esaurita[/gold].{InCombat:\n(Colpisce {CalculatedHits:diff()} {CalculatedHits:plural:volta|volte})|}",
+    "description": "[gold]Esaurisci[/gold] TUTTE le tue carte Stato.\nInfliggi 8 di danno a un nemico casuale per ogni carta [gold]esaurita[/gold].",
+    "description_raw": "[gold]Esaurisci[/gold] TUTTE le tue carte Stato.\nInfliggi {Damage:diff()} di danno a un nemico casuale per ogni carta [gold]esaurita[/gold].{InCombat:\n(Colpisce {CalculatedHits:diff()} {CalculatedHits:plural:volta|volte})|}",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -3159,7 +3113,7 @@
     "image_url": "/static/images/cards/flak_cannon.png",
     "beta_image_url": "/static/images/cards/beta/flak_cannon.png",
     "type_variants": null,
-    "upgrade_description": "[gold]Esaurisci[/gold] TUTTE le tue carte [gold]Stato[/gold].\nInfliggi 11 di danno a un nemico casuale per ogni carta [gold]esaurita[/gold].",
+    "upgrade_description": "[gold]Esaurisci[/gold] TUTTE le tue carte Stato.\nInfliggi 11 di danno a un nemico casuale per ogni carta [gold]esaurita[/gold].",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 382
@@ -3718,7 +3672,7 @@
     "upgrade_description": "Ogni volta che ottieni [gold]Blocco[/gold], infliggi 7 di danno a un nemico casuale.",
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 49
+    "compendium_order": 48
   },
   {
     "id": "GUILTY",
@@ -7047,7 +7001,7 @@
     "upgrade_description": "Perdi 2 PV.\nInfliggi 20 di danno.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 42
+    "compendium_order": 41
   },
   {
     "id": "DOUBLE_ENERGY",
@@ -9504,7 +9458,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "Abilità",
-    "rarity": "Rara",
+    "rarity": "Non comune",
     "target": "Self",
     "color": "ironclad",
     "damage": null,
@@ -9529,7 +9483,7 @@
     "type_variants": null,
     "upgrade_description": "Ottieni 8 di [gold]Blocco[/gold].\nSubisci il 50% di danno in meno dai nemici con [gold]Vulnerabilità[/gold] in questo turno.",
     "type_key": "Skill",
-    "rarity_key": "Rare",
+    "rarity_key": "Uncommon",
     "compendium_order": 18
   },
   {
@@ -9609,7 +9563,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 50
+    "compendium_order": 49
   },
   {
     "id": "SCRAPE",
@@ -9730,6 +9684,52 @@
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 391
+  },
+  {
+    "id": "GRAPPLE",
+    "name": "Grapple",
+    "description": "",
+    "description_raw": "",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Attacco",
+    "rarity": "Non comune",
+    "target": "AnyEnemy",
+    "color": "unknown",
+    "damage": 7,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Grapple",
+        "amount": 5,
+        "power_key": "Grapple"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 7,
+      "GrapplePower": 5,
+      "Grapple": 5
+    },
+    "upgrade": {
+      "damage": "+2",
+      "grapplepower": "+2"
+    },
+    "image_url": "/static/images/cards/grapple.png",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 576
   },
   {
     "id": "FORBIDDEN_GRIMOIRE",
@@ -10276,7 +10276,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 44
+    "compendium_order": 43
   },
   {
     "id": "HANG",
@@ -10733,7 +10733,7 @@
     "upgrade_description": "All'inizio del tuo turno, perdi 1 PV\nOgni volta che perdi PV nel tuo turno, infliggi 9 di danno a TUTTI i nemici.",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 46
+    "compendium_order": 45
   },
   {
     "id": "INFECTION",
@@ -11204,7 +11204,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 41
+    "compendium_order": 40
   },
   {
     "id": "ITERATION",
@@ -11538,7 +11538,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 45
+    "compendium_order": 44
   },
   {
     "id": "BLADE_OF_INK",
@@ -12984,7 +12984,7 @@
   {
     "id": "MEMENTO_MORI",
     "name": "Memento Mori",
-    "description": "Infliggi 8 di danno.\nInfliggi 4 di danno extra per ogni carta scartata in questo turno.",
+    "description": "Infliggi 9 di danno.\nInfliggi 4 di danno extra per ogni carta scartata in questo turno.",
     "description_raw": "Infliggi {CalculatedDamage:diff()} di danno.\nInfliggi {ExtraDamage:diff()} di danno extra per ogni carta scartata in questo turno.",
     "cost": 1,
     "is_x_cost": null,
@@ -12994,7 +12994,7 @@
     "rarity": "Non comune",
     "target": "AnyEnemy",
     "color": "silent",
-    "damage": 8,
+    "damage": 9,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -13005,9 +13005,9 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "CalculationBase": 8,
+      "CalculationBase": 9,
       "ExtraDamage": 4,
-      "CalculatedDamage": 8
+      "CalculatedDamage": 9
     },
     "upgrade": {
       "calculationbase": "+2",
@@ -13016,7 +13016,7 @@
     "image_url": "/static/images/cards/memento_mori.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infliggi 8 di danno.\nInfliggi 5 di danno extra per ogni carta scartata in questo turno.",
+    "upgrade_description": "Infliggi 9 di danno.\nInfliggi 5 di danno extra per ogni carta scartata in questo turno.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 136
@@ -13575,7 +13575,7 @@
     "upgrade_description": "Infliggi 20 di danno.\nIl nemico perde 15 di [gold]Forza[/gold] in questo turno.",
     "type_key": "Attack",
     "rarity_key": "Rare",
-    "compendium_order": 51
+    "compendium_order": 50
   },
   {
     "id": "NECRO_MASTERY",
@@ -13742,6 +13742,48 @@
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 139
+  },
+  {
+    "id": "NOT_YET",
+    "name": "Non Ancora",
+    "description": "Recuperi 10 PV.",
+    "description_raw": "Recuperi {Heal:diff()} PV.",
+    "cost": 2,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Abilità",
+    "rarity": "Rara",
+    "target": "Self",
+    "color": "ironclad",
+    "damage": null,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": [
+      "Esaurimento"
+    ],
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Heal": 10
+    },
+    "upgrade": {
+      "heal": "+3"
+    },
+    "image_url": null,
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": "Recuperi 13 PV.",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
+    "compendium_order": 52
   },
   {
     "id": "UNDEATH",
@@ -14298,7 +14340,7 @@
     "upgrade_description": "Ottieni 7 di [gold]Blocco[/gold].\nInfliggi 7 di danno.",
     "type_key": "Attack",
     "rarity_key": "Common",
-    "compendium_order": 48
+    "compendium_order": 47
   },
   {
     "id": "ORBIT",
@@ -14759,26 +14801,20 @@
   {
     "id": "FOLLOW_THROUGH",
     "name": "Perseveranza",
-    "description": "Infliggi 6 di danno a TUTTI i nemici,\nSe l'ultima carta che hai giocato in questo turno era una carta Abilità, applichi 1 di [gold]Debolezza[/gold] a TUTTI i nemici.",
-    "description_raw": "Infliggi {Damage:diff()} di danno a TUTTI i nemici,\nSe l'ultima carta che hai giocato in questo turno era una carta Abilità, applichi {WeakPower:diff()} di [gold]Debolezza[/gold] a TUTTI i nemici.",
+    "description": "",
+    "description_raw": "",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "Attacco",
-    "rarity": "Non comune",
-    "target": "AllEnemies",
+    "rarity": "Comune",
+    "target": "AnyEnemy",
     "color": "silent",
-    "damage": 6,
+    "damage": 7,
     "block": null,
     "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "Debolezza",
-        "amount": 1,
-        "power_key": "Weak"
-      }
-    ],
+    "powers_applied": null,
     "cards_draw": null,
     "energy_gain": null,
     "hp_loss": null,
@@ -14786,27 +14822,25 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "Damage": 6,
-      "WeakPower": 1,
-      "Weak": 1
+      "CardCount": 5,
+      "Damage": 7
     },
     "upgrade": {
-      "damage": "+2",
-      "weak": "+1"
+      "damage": "+2"
     },
     "image_url": "/static/images/cards/follow_through.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infliggi 8 di danno a TUTTI i nemici,\nSe l'ultima carta che hai giocato in questo turno era una carta Abilità, applichi 1 di [gold]Debolezza[/gold] a TUTTI i nemici.",
+    "upgrade_description": null,
     "type_key": "Attack",
-    "rarity_key": "Uncommon",
+    "rarity_key": "Common",
     "compendium_order": 124
   },
   {
     "id": "FIGHT_THROUGH",
     "name": "Perseveranza",
-    "description": "Ottieni 13 di [gold]Blocco[/gold].\nAggiungi 2 [gold]Ferite[/gold] alla tua [gold]pila degli scarti[/gold].",
-    "description_raw": "Ottieni {Block:diff()} di [gold]Blocco[/gold].\nAggiungi 2 [gold]Ferite[/gold] alla tua [gold]pila degli scarti[/gold].",
+    "description": "Ottieni 13 di [gold]Blocco[/gold].\nAggiungi 2 carte [gold]Ferita[/gold] alla tua [gold]pila degli scarti[/gold].",
+    "description_raw": "Ottieni {Block:diff()} di [gold]Blocco[/gold].\nAggiungi 2 carte [gold]Ferita[/gold] alla tua [gold]pila degli scarti[/gold].",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -14836,7 +14870,7 @@
     "image_url": "/static/images/cards/fight_through.png",
     "beta_image_url": "/static/images/cards/beta/fight_through.png",
     "type_variants": null,
-    "upgrade_description": "Ottieni 17 di [gold]Blocco[/gold].\nAggiungi 2 [gold]Ferite[/gold] alla tua [gold]pila degli scarti[/gold].",
+    "upgrade_description": "Ottieni 17 di [gold]Blocco[/gold].\nAggiungi 2 carte [gold]Ferita[/gold] alla tua [gold]pila degli scarti[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 381
@@ -16069,8 +16103,8 @@
   {
     "id": "SHIV",
     "name": "Pugnale",
-    "description": "Infliggi 4 di danno a TUTTI i nemici.",
-    "description_raw": "Infliggi {Damage:diff()} di danno{TargetType:choose(AllEnemies): a TUTTI i nemici|}.",
+    "description": "Infliggi 4 di danno  a TUTTI i nemici.",
+    "description_raw": "Infliggi {Damage:diff()} di danno {TargetType:choose(AllEnemies): a TUTTI i nemici|}.",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -16102,7 +16136,7 @@
     "image_url": "/static/images/cards/shiv.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infliggi 6 di danno a TUTTI i nemici.",
+    "upgrade_description": "Infliggi 6 di danno  a TUTTI i nemici.",
     "type_key": "Attack",
     "rarity_key": "Token",
     "keywords_key": [
@@ -16268,13 +16302,13 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 52
+    "compendium_order": 51
   },
   {
     "id": "ROCKET_PUNCH",
     "name": "Pugno Razzo",
-    "description": "Infliggi 13 di danno.\nPeschi 1 carta.\nQuando crei una carta Stato, riduci il costo di questa carta a 0 [energy:1] finché non viene giocata.",
-    "description_raw": "Infliggi {Damage:diff()} di danno.\nPeschi {Cards:diff()} {Cards:plural:carta|carte}.\nQuando crei una carta Stato, riduci il costo di questa carta a 0 {energyPrefix:energyIcons(1)} finché non viene giocata.",
+    "description": "Infliggi 13 di danno.\nPeschi 1 carta.\nOgni volta che crei una carta Stato, riduci il costo di questa carta a 0 [energy:1] finché non viene giocata.",
+    "description_raw": "Infliggi {Damage:diff()} di danno.\nPeschi {Cards:diff()} {Cards:plural:carta|carte}.\nOgni volta che crei una carta Stato, riduci il costo di questa carta a 0 {energyPrefix:energyIcons(1)} finché non viene giocata.",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -16304,7 +16338,7 @@
     "image_url": "/static/images/cards/rocket_punch.png",
     "beta_image_url": "/static/images/cards/beta/rocket_punch.png",
     "type_variants": null,
-    "upgrade_description": "Infliggi 14 di danno.\nPeschi 2 carte.\nQuando crei una carta Stato, riduci il costo di questa carta a 0 [energy:1] finché non viene giocata.",
+    "upgrade_description": "Infliggi 14 di danno.\nPeschi 2 carte.\nOgni volta che crei una carta Stato, riduci il costo di questa carta a 0 [energy:1] finché non viene giocata.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 413
@@ -18866,7 +18900,7 @@
           {
             "id": "EXPERTISE",
             "name": "Competenza",
-            "description": "Ottieni [blue]2[/blue] di [gold]Forza[/gold]. Ottieni [blue]2[/blue] di [gold]Forza[/gold]."
+            "description": "Ottieni [blue]2[/blue] di [gold]Forza[/gold]. Ottieni [blue]2[/blue] di [gold]Destrezza[/gold]."
           },
           {
             "id": "CURIOUS",
@@ -21909,7 +21943,7 @@
     "upgrade_description": "Infliggi 12 di danno.\nMetti una carta dalla tua [gold]pila degli scarti[/gold] in cima al tuo [gold]mazzo di pesca[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
-    "compendium_order": 40
+    "compendium_order": 39
   },
   {
     "id": "SHADOW_SHIELD",
@@ -22774,7 +22808,7 @@
     "upgrade_description": "Infliggi 21 di danno a TUTTI i nemici.\nAll'inizio del tuo turno, se questa carta è nella tua [gold]pila delle carte esaurite[/gold], giocala.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 43
+    "compendium_order": 42
   },
   {
     "id": "BANSHEES_CRY",
@@ -23073,7 +23107,7 @@
   {
     "id": "SPEEDSTER",
     "name": "Velocista",
-    "description": "Ogni volta che peschi una carta durante il tuo turno, infliggi 1 di danno a TUTTI i nemici.",
+    "description": "Ogni volta che peschi una carta durante il tuo turno, infliggi 2 di danno a TUTTI i nemici.",
     "description_raw": "Ogni volta che peschi una carta durante il tuo turno, infliggi {SpeedsterPower:diff()} di danno a TUTTI i nemici.",
     "cost": 2,
     "is_x_cost": null,
@@ -23089,7 +23123,7 @@
     "powers_applied": [
       {
         "power": "Velocista",
-        "amount": 1,
+        "amount": 2,
         "power_key": "Speedster"
       }
     ],
@@ -23100,16 +23134,16 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "SpeedsterPower": 1,
-      "Speedster": 1
+      "SpeedsterPower": 2,
+      "Speedster": 2
     },
     "upgrade": {
-      "speedsterpower": "+1"
+      "add_innate": true
     },
     "image_url": "/static/images/cards/speedster.png",
     "beta_image_url": "/static/images/cards/beta/speedster.png",
     "type_variants": null,
-    "upgrade_description": "Ogni volta che peschi una carta durante il tuo turno, infliggi 2 di danno a TUTTI i nemici.",
+    "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 160

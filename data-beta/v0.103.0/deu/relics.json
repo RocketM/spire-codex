@@ -88,7 +88,7 @@
     "image_url": "/static/images/relics/fake_anchor.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 254
+    "compendium_order": 257
   },
   {
     "id": "ARCHAIC_TOOTH",
@@ -218,7 +218,7 @@
     "image_url": "/static/images/relics/bing_bong.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 255
+    "compendium_order": 258
   },
   {
     "id": "PEAR",
@@ -309,7 +309,7 @@
     "image_url": "/static/images/relics/fake_blood_vial.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 256
+    "compendium_order": 259
   },
   {
     "id": "LEAFY_POULTICE",
@@ -517,7 +517,7 @@
     "image_url": "/static/images/relics/the_boot.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 257
+    "compendium_order": 260
   },
   {
     "id": "CHOSEN_CHEESE",
@@ -530,7 +530,7 @@
     "image_url": "/static/images/relics/chosen_cheese.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 258
+    "compendium_order": 261
   },
   {
     "id": "DIAMOND_DIADEM",
@@ -647,7 +647,7 @@
     "image_url": "/static/images/relics/fragrant_mushroom.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 259
+    "compendium_order": 262
   },
   {
     "id": "DARKSTONE_PERIAPT",
@@ -660,7 +660,7 @@
     "image_url": "/static/images/relics/darkstone_periapt.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 260
+    "compendium_order": 263
   },
   {
     "id": "DEMON_TONGUE",
@@ -972,7 +972,7 @@
     "image_url": "/static/images/relics/byrdpip.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 261
+    "compendium_order": 264
   },
   {
     "id": "FRESNEL_LENS",
@@ -985,7 +985,7 @@
     "image_url": "/static/images/relics/fresnel_lens.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 262
+    "compendium_order": 265
   },
   {
     "id": "HAPPY_FLOWER",
@@ -1011,11 +1011,11 @@
     "image_url": "/static/images/relics/fake_happy_flower.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 263
+    "compendium_order": 266
   },
   {
     "id": "SPARKLING_ROUGE",
-    "name": "Funkelndes Rouge",
+    "name": "Funkelndes Rot",
     "description": "Erhalte zu Beginn deines [blue]3.[/blue] Zuges [blue]1[/blue] [gold]Stärke[/gold] und [blue]1[/blue] [gold]Geschicklichkeit[/gold].",
     "description_raw": "Erhalte zu Beginn deines [blue]3.[/blue] Zuges [blue]{StrengthPower}[/blue] [gold]Stärke[/gold] und [blue]{DexterityPower}[/blue] [gold]Geschicklichkeit[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
@@ -1077,6 +1077,19 @@
     "image_variants": null,
     "rarity_key": "Rare",
     "compendium_order": 93
+  },
+  {
+    "id": "WINGED_BOOTS",
+    "name": "Geflügelte Schuhe",
+    "description": "Du kannst [blue]3[/blue] Mal vom Pfad abweichen, wenn du entscheidest, zu welchem Raum du reist.",
+    "description_raw": "Du kannst [blue]{Rooms}[/blue] Mal vom Pfad abweichen, wenn du entscheidest, zu welchem Raum du reist.",
+    "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
+    "rarity": "Ahnen-Relikt",
+    "pool": "shared",
+    "image_url": null,
+    "image_variants": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 186
   },
   {
     "id": "FROZEN_EGG",
@@ -1141,7 +1154,7 @@
     "image_url": "/static/images/relics/history_course.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 264
+    "compendium_order": 267
   },
   {
     "id": "MOLTEN_EGG",
@@ -1167,7 +1180,7 @@
     "image_url": "/static/images/relics/blessed_antler.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 186
+    "compendium_order": 187
   },
   {
     "id": "CRACKED_CORE",
@@ -1206,7 +1219,7 @@
     "image_url": "/static/images/relics/glass_eye.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 187
+    "compendium_order": 188
   },
   {
     "id": "GLITTER",
@@ -1219,7 +1232,7 @@
     "image_url": "/static/images/relics/glitter.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 188
+    "compendium_order": 189
   },
   {
     "id": "EMBER_TEA",
@@ -1232,7 +1245,7 @@
     "image_url": "/static/images/relics/ember_tea.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 265
+    "compendium_order": 268
   },
   {
     "id": "LUCKY_FYSH",
@@ -1271,7 +1284,7 @@
     "image_url": "/static/images/relics/golden_pearl.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 189
+    "compendium_order": 190
   },
   {
     "id": "GOLDEN_COMPASS",
@@ -1284,7 +1297,7 @@
     "image_url": "/static/images/relics/golden_compass.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 190
+    "compendium_order": 191
   },
   {
     "id": "JOSS_PAPER",
@@ -1310,7 +1323,7 @@
     "image_url": "/static/images/relics/seal_of_gold.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 191
+    "compendium_order": 192
   },
   {
     "id": "GREMLIN_HORN",
@@ -1336,7 +1349,7 @@
     "image_url": "/static/images/relics/large_capsule.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 192
+    "compendium_order": 193
   },
   {
     "id": "BIG_HAT",
@@ -1362,7 +1375,7 @@
     "image_url": "/static/images/relics/big_mushroom.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 266
+    "compendium_order": 269
   },
   {
     "id": "DIVINE_RIGHT",
@@ -1427,7 +1440,7 @@
     "image_url": "/static/images/relics/hand_drill.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 267
+    "compendium_order": 270
   },
   {
     "id": "TOUGH_BANDAGES",
@@ -1453,7 +1466,7 @@
     "image_url": "/static/images/relics/precarious_shears.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 193
+    "compendium_order": 194
   },
   {
     "id": "HORN_CLEAT",
@@ -1479,7 +1492,7 @@
     "image_url": "/static/images/relics/beautiful_bracelet.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 194
+    "compendium_order": 195
   },
   {
     "id": "UNCEASING_TOP",
@@ -1505,7 +1518,7 @@
     "image_url": "/static/images/relics/jeweled_mask.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 195
+    "compendium_order": 196
   },
   {
     "id": "JUZU_BRACELET",
@@ -1570,7 +1583,7 @@
     "image_url": "/static/images/relics/scroll_boxes.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 196
+    "compendium_order": 197
   },
   {
     "id": "CLAWS",
@@ -1583,7 +1596,7 @@
     "image_url": "/static/images/relics/claws.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 197
+    "compendium_order": 198
   },
   {
     "id": "SMALL_CAPSULE",
@@ -1596,7 +1609,7 @@
     "image_url": "/static/images/relics/small_capsule.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 198
+    "compendium_order": 199
   },
   {
     "id": "RINGING_TRIANGLE",
@@ -1622,7 +1635,7 @@
     "image_url": "/static/images/relics/hefty_tablet.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 199
+    "compendium_order": 200
   },
   {
     "id": "BONE_FLUTE",
@@ -1648,7 +1661,7 @@
     "image_url": "/static/images/relics/bone_tea.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 268
+    "compendium_order": 271
   },
   {
     "id": "GNARLED_HAMMER",
@@ -1726,7 +1739,7 @@
     "image_url": "/static/images/relics/war_hammer.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 200
+    "compendium_order": 201
   },
   {
     "id": "CHANDELIER",
@@ -1804,7 +1817,7 @@
     "image_url": "/static/images/relics/royal_poison.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 269
+    "compendium_order": 272
   },
   {
     "id": "PUMPKIN_CANDLE",
@@ -1817,7 +1830,7 @@
     "image_url": "/static/images/relics/pumpkin_candle.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 201
+    "compendium_order": 202
   },
   {
     "id": "LANTERN",
@@ -1856,7 +1869,7 @@
     "image_url": "/static/images/relics/lava_rock.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 202
+    "compendium_order": 203
   },
   {
     "id": "YUMMY_COOKIE",
@@ -1875,7 +1888,7 @@
       "Regent": "/static/images/relics/yummy_cookie_regent.png"
     },
     "rarity_key": "Ancient",
-    "compendium_order": 203
+    "compendium_order": 204
   },
   {
     "id": "EMPTY_CAGE",
@@ -1888,7 +1901,7 @@
     "image_url": "/static/images/relics/empty_cage.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 204
+    "compendium_order": 205
   },
   {
     "id": "LEES_WAFFLE",
@@ -1914,7 +1927,7 @@
     "image_url": "/static/images/relics/fake_lees_waffle.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 270
+    "compendium_order": 273
   },
   {
     "id": "BOOKMARK",
@@ -1966,7 +1979,7 @@
     "image_url": "/static/images/relics/fake_mango.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 271
+    "compendium_order": 274
   },
   {
     "id": "CLOAK_CLASP",
@@ -1992,7 +2005,7 @@
     "image_url": "/static/images/relics/sea_glass.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 205
+    "compendium_order": 206
   },
   {
     "id": "BOWLER_HAT",
@@ -2083,7 +2096,7 @@
     "image_url": "/static/images/relics/mr_struggles.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 272
+    "compendium_order": 275
   },
   {
     "id": "MUMMIFIED_HAND",
@@ -2135,7 +2148,7 @@
     "image_url": "/static/images/relics/storybook.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 206
+    "compendium_order": 207
   },
   {
     "id": "NUTRITIOUS_OYSTER",
@@ -2148,7 +2161,7 @@
     "image_url": "/static/images/relics/nutritious_oyster.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 207
+    "compendium_order": 208
   },
   {
     "id": "NUTRITIOUS_SOUP",
@@ -2161,7 +2174,7 @@
     "image_url": "/static/images/relics/nutritious_soup.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 208
+    "compendium_order": 209
   },
   {
     "id": "NEOWS_TORMENT",
@@ -2174,7 +2187,20 @@
     "image_url": "/static/images/relics/neows_torment.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 209
+    "compendium_order": 210
+  },
+  {
+    "id": "NEOWS_BONES",
+    "name": "Neows Knochen",
+    "description": "Erhalte beim Aufheben [blue]2[/blue] [gold]zufällige Neow-Relikte[/gold]. Nimm [blue]1[/blue] [red]zufälligen [red]Fluch[/red][/red] in dein [gold]Deck[/gold].",
+    "description_raw": "Erhalte beim Aufheben [blue]{Relics}[/blue] [gold]{Relics:plural:zufälliges Neow-Relikt|zufällige Neow-Relikte}[/gold]. Nimm [blue]{Curses}[/blue] [red]{Curses:plural:zufälligen [red]Fluch[/red]|zufällige [red]Flüche[/red]}[/red] in dein [gold]Deck[/gold].",
+    "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
+    "rarity": "Ahnen-Relikt",
+    "pool": "shared",
+    "image_url": null,
+    "image_variants": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 211
   },
   {
     "id": "NEOWS_TALISMAN",
@@ -2187,7 +2213,7 @@
     "image_url": "/static/images/relics/neows_talisman.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 210
+    "compendium_order": 212
   },
   {
     "id": "NEW_LEAF",
@@ -2200,7 +2226,7 @@
     "image_url": "/static/images/relics/new_leaf.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 211
+    "compendium_order": 213
   },
   {
     "id": "NINJA_SCROLL",
@@ -2265,7 +2291,7 @@
     "image_url": "/static/images/relics/fake_orichalcum.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 273
+    "compendium_order": 276
   },
   {
     "id": "PAELS_EYE",
@@ -2278,7 +2304,7 @@
     "image_url": "/static/images/relics/paels_eye.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 212
+    "compendium_order": 214
   },
   {
     "id": "PAELS_BLOOD",
@@ -2291,7 +2317,7 @@
     "image_url": "/static/images/relics/paels_blood.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 213
+    "compendium_order": 215
   },
   {
     "id": "PAELS_FLESH",
@@ -2304,7 +2330,7 @@
     "image_url": "/static/images/relics/paels_flesh.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 214
+    "compendium_order": 216
   },
   {
     "id": "PAELS_WING",
@@ -2317,7 +2343,7 @@
     "image_url": "/static/images/relics/paels_wing.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 215
+    "compendium_order": 217
   },
   {
     "id": "PAELS_HORN",
@@ -2330,7 +2356,7 @@
     "image_url": "/static/images/relics/paels_horn.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 216
+    "compendium_order": 218
   },
   {
     "id": "PAELS_CLAW",
@@ -2343,7 +2369,7 @@
     "image_url": "/static/images/relics/paels_claw.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 217
+    "compendium_order": 219
   },
   {
     "id": "PAELS_LEGION",
@@ -2356,7 +2382,7 @@
     "image_url": "/static/images/relics/paels_legion.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 218
+    "compendium_order": 220
   },
   {
     "id": "PAELS_TEARS",
@@ -2369,7 +2395,7 @@
     "image_url": "/static/images/relics/paels_tears.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 219
+    "compendium_order": 221
   },
   {
     "id": "PAELS_GROWTH",
@@ -2382,20 +2408,20 @@
     "image_url": "/static/images/relics/paels_growth.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 220
+    "compendium_order": 222
   },
   {
     "id": "PAELS_TOOTH",
     "name": "Paels Zahn",
     "description": "Entferne beim Aufheben [blue]5[/blue] Karten aus deinem [gold]Deck[/gold]. Nach jedem Kampf nimmst du zufällig [blue]1[/blue] [gold]Verbessert[/gold] wieder zurück.",
-    "description_raw": "Entferne beim Aufheben [blue]{Cards}[/blue] {Cards:plural:Karte|Karten} aus deinem [gold]Deck[/gold]. Nach jedem Kampf nimmst du zufällig [blue]1[/blue] [gold]Verbessert[/gold] wieder zurück.{CardTitles.StringValue:cond:\n\nRestliche Karten:\n{}|}",
+    "description_raw": "Entferne beim Aufheben [blue]{Cards}[/blue] {Cards:plural:Karte|Karten} aus deinem [gold]Deck[/gold]. Nach jedem Kampf nimmst du zufällig [blue]1[/blue] [gold]Verbessert[/gold] wieder zurück.{CardTitles.StringValue:cond:\n\nVerzehrte Karten:\n{}|}",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "image_url": "/static/images/relics/paels_tooth.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 221
+    "compendium_order": 223
   },
   {
     "id": "PANTOGRAPH",
@@ -2460,7 +2486,7 @@
     "image_url": "/static/images/relics/fur_coat.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 222
+    "compendium_order": 224
   },
   {
     "id": "PENDULUM",
@@ -2487,6 +2513,19 @@
     "image_variants": null,
     "rarity_key": "Uncommon",
     "compendium_order": 67
+  },
+  {
+    "id": "PHIAL_HOLSTER",
+    "name": "Phiolenholster",
+    "description": "Erhalte beim Aufheben [blue]1[/blue] Trank-Slot und beschaffe [blue]2[/blue] zufällige Tränke.",
+    "description_raw": "Erhalte beim Aufheben [blue]{PotionSlots}[/blue] Trank-{PotionSlots:plural:Slot|Slots} und beschaffe [blue]{Potions}[/blue] {Potions:plural:zufälligen Trank|zufällige Tränke}.",
+    "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
+    "rarity": "Ahnen-Relikt",
+    "pool": "shared",
+    "image_url": null,
+    "image_variants": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 225
   },
   {
     "id": "ORRERY",
@@ -2538,7 +2577,7 @@
     "image_url": "/static/images/relics/pollinous_core.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 274
+    "compendium_order": 277
   },
   {
     "id": "PRISMATIC_GEM",
@@ -2551,7 +2590,7 @@
     "image_url": "/static/images/relics/prismatic_gem.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 223
+    "compendium_order": 226
   },
   {
     "id": "PRECISE_SCISSORS",
@@ -2564,7 +2603,7 @@
     "image_url": "/static/images/relics/precise_scissors.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 224
+    "compendium_order": 227
   },
   {
     "id": "MERCURY_HOURGLASS",
@@ -2595,8 +2634,8 @@
   {
     "id": "REGALITE",
     "name": "Regalit",
-    "description": "Immer wenn du eine Farblose Karte erzeugst, erhalte [blue]2[/blue] [gold]Block[/gold].",
-    "description_raw": "Immer wenn du eine Farblose Karte erzeugst, erhalte [blue]{Block}[/blue] [gold]Block[/gold].",
+    "description": "Immer wenn du eine Karte erzeugst, erhalte [blue]2[/blue] [gold]Block[/gold].",
+    "description_raw": "Immer wenn du eine Karte erzeugst, erhalte [blue]{Block}[/blue] [gold]Block[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ungewöhnliches Relikt",
     "pool": "regent",
@@ -2629,7 +2668,7 @@
     "image_url": "/static/images/relics/circlet.png",
     "image_variants": null,
     "rarity_key": "None",
-    "compendium_order": 289
+    "compendium_order": 292
   },
   {
     "id": "REPTILE_TRINKET",
@@ -2694,7 +2733,7 @@
     "image_url": "/static/images/relics/calling_bell.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 225
+    "compendium_order": 228
   },
   {
     "id": "RUNIC_PYRAMID",
@@ -2707,7 +2746,7 @@
     "image_url": "/static/images/relics/runic_pyramid.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 226
+    "compendium_order": 229
   },
   {
     "id": "RUNIC_CAPACITOR",
@@ -2746,7 +2785,7 @@
     "image_url": "/static/images/relics/sai.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 227
+    "compendium_order": 230
   },
   {
     "id": "VELVET_CHOKER",
@@ -2759,7 +2798,7 @@
     "image_url": "/static/images/relics/velvet_choker.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 228
+    "compendium_order": 231
   },
   {
     "id": "SAND_CASTLE",
@@ -2772,7 +2811,7 @@
     "image_url": "/static/images/relics/sand_castle.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 229
+    "compendium_order": 232
   },
   {
     "id": "SHOVEL",
@@ -2811,7 +2850,7 @@
     "image_url": "/static/images/relics/fake_strike_dummy.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 275
+    "compendium_order": 278
   },
   {
     "id": "RING_OF_THE_SNAKE",
@@ -2863,7 +2902,7 @@
     "image_url": "/static/images/relics/jewelry_box.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 230
+    "compendium_order": 233
   },
   {
     "id": "PEN_NIB",
@@ -2889,7 +2928,7 @@
     "image_url": "/static/images/relics/black_star.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 231
+    "compendium_order": 234
   },
   {
     "id": "BLACK_BLOOD",
@@ -2928,7 +2967,7 @@
     "image_url": "/static/images/relics/sword_of_jade.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 276
+    "compendium_order": 279
   },
   {
     "id": "SWORD_OF_STONE",
@@ -2941,7 +2980,7 @@
     "image_url": "/static/images/relics/sword_of_stone.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 277
+    "compendium_order": 280
   },
   {
     "id": "DINGY_RUG",
@@ -3019,7 +3058,7 @@
     "image_url": "/static/images/relics/signet_ring.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 232
+    "compendium_order": 235
   },
   {
     "id": "SILVER_CRUCIBLE",
@@ -3032,7 +3071,7 @@
     "image_url": "/static/images/relics/silver_crucible.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 233
+    "compendium_order": 236
   },
   {
     "id": "SNECKO_EYE",
@@ -3045,7 +3084,7 @@
     "image_url": "/static/images/relics/snecko_eye.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 234
+    "compendium_order": 237
   },
   {
     "id": "FAKE_SNECKO_EYE",
@@ -3058,7 +3097,7 @@
     "image_url": "/static/images/relics/fake_snecko_eye.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 278
+    "compendium_order": 281
   },
   {
     "id": "SNECKO_SKULL",
@@ -3084,7 +3123,7 @@
     "image_url": "/static/images/relics/sozu.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 235
+    "compendium_order": 238
   },
   {
     "id": "MAW_BANK",
@@ -3097,7 +3136,7 @@
     "image_url": "/static/images/relics/maw_bank.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 279
+    "compendium_order": 282
   },
   {
     "id": "GAMBLING_CHIP",
@@ -3136,7 +3175,7 @@
     "image_url": "/static/images/relics/music_box.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 236
+    "compendium_order": 239
   },
   {
     "id": "TOY_BOX",
@@ -3149,7 +3188,7 @@
     "image_url": "/static/images/relics/toy_box.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 237
+    "compendium_order": 240
   },
   {
     "id": "LOOMING_FRUIT",
@@ -3162,7 +3201,7 @@
     "image_url": "/static/images/relics/looming_fruit.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 238
+    "compendium_order": 241
   },
   {
     "id": "SPIKED_GAUNTLETS",
@@ -3175,7 +3214,7 @@
     "image_url": "/static/images/relics/spiked_gauntlets.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 239
+    "compendium_order": 242
   },
   {
     "id": "DUSTY_TOME",
@@ -3188,7 +3227,7 @@
     "image_url": "/static/images/relics/dusty_tome.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 240
+    "compendium_order": 243
   },
   {
     "id": "PHILOSOPHERS_STONE",
@@ -3201,7 +3240,7 @@
     "image_url": "/static/images/relics/philosophers_stone.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 241
+    "compendium_order": 244
   },
   {
     "id": "STONE_CRACKER",
@@ -3227,7 +3266,7 @@
     "image_url": "/static/images/relics/stone_humidifier.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 242
+    "compendium_order": 245
   },
   {
     "id": "STONE_CALENDAR",
@@ -3279,7 +3318,7 @@
     "image_url": "/static/images/relics/radiant_pearl.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 243
+    "compendium_order": 246
   },
   {
     "id": "POWER_CELL",
@@ -3318,7 +3357,7 @@
     "image_url": "/static/images/relics/tanxs_whistle.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 244
+    "compendium_order": 247
   },
   {
     "id": "BAG_OF_PREPARATION",
@@ -3357,7 +3396,7 @@
     "image_url": "/static/images/relics/tea_of_discourtesy.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 280
+    "compendium_order": 283
   },
   {
     "id": "FAKE_MERCHANTS_RUG",
@@ -3370,7 +3409,7 @@
     "image_url": "/static/images/relics/fake_merchants_rug.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 281
+    "compendium_order": 284
   },
   {
     "id": "TINGSHA",
@@ -3396,7 +3435,7 @@
     "image_url": "/static/images/relics/daughter_of_the_wind.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 282
+    "compendium_order": 285
   },
   {
     "id": "TOXIC_EGG",
@@ -3435,7 +3474,7 @@
     "image_url": "/static/images/relics/dream_catcher.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 283
+    "compendium_order": 286
   },
   {
     "id": "DRIFTWOOD",
@@ -3448,7 +3487,7 @@
     "image_url": "/static/images/relics/driftwood.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 245
+    "compendium_order": 248
   },
   {
     "id": "TRI_BOOMERANG",
@@ -3461,7 +3500,7 @@
     "image_url": "/static/images/relics/tri_boomerang.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 246
+    "compendium_order": 249
   },
   {
     "id": "VENERABLE_TEA_SET",
@@ -3487,7 +3526,7 @@
     "image_url": "/static/images/relics/fake_venerable_tea_set.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 284
+    "compendium_order": 287
   },
   {
     "id": "VAJRA",
@@ -3513,7 +3552,7 @@
     "image_url": "/static/images/relics/cursed_pearl.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 247
+    "compendium_order": 250
   },
   {
     "id": "FORGOTTEN_SOUL",
@@ -3526,7 +3565,7 @@
     "image_url": "/static/images/relics/forgotten_soul.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 285
+    "compendium_order": 288
   },
   {
     "id": "LOST_COFFER",
@@ -3539,7 +3578,7 @@
     "image_url": "/static/images/relics/lost_coffer.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 248
+    "compendium_order": 251
   },
   {
     "id": "LOST_WISP",
@@ -3552,7 +3591,7 @@
     "image_url": "/static/images/relics/lost_wisp.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 286
+    "compendium_order": 289
   },
   {
     "id": "PETRIFIED_TOAD",
@@ -3617,7 +3656,7 @@
     "image_url": "/static/images/relics/distinguished_cape.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 249
+    "compendium_order": 252
   },
   {
     "id": "WHITE_BEAST_STATUE",
@@ -3695,7 +3734,7 @@
     "image_url": "/static/images/relics/wongo_customer_appreciation_badge.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 287
+    "compendium_order": 290
   },
   {
     "id": "WONGOS_MYSTERY_TICKET",
@@ -3708,7 +3747,7 @@
     "image_url": "/static/images/relics/wongos_mystery_ticket.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 288
+    "compendium_order": 291
   },
   {
     "id": "MASSIVE_SCROLL",
@@ -3721,7 +3760,7 @@
     "image_url": "/static/images/relics/massive_scroll.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 250
+    "compendium_order": 253
   },
   {
     "id": "THROWING_AXE",
@@ -3734,7 +3773,7 @@
     "image_url": "/static/images/relics/throwing_axe.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 251
+    "compendium_order": 254
   },
   {
     "id": "TOASTY_MITTENS",
@@ -3747,7 +3786,7 @@
     "image_url": "/static/images/relics/toasty_mittens.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 252
+    "compendium_order": 255
   },
   {
     "id": "CENTENNIAL_PUZZLE",
@@ -3773,6 +3812,6 @@
     "image_url": "/static/images/relics/very_hot_cocoa.png",
     "image_variants": null,
     "rarity_key": "Ancient",
-    "compendium_order": 253
+    "compendium_order": 256
   }
 ]

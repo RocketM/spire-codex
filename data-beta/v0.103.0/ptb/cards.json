@@ -346,7 +346,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "Técnica",
-    "rarity": "Comum",
+    "rarity": "Incomum",
     "target": "Self",
     "color": "silent",
     "damage": null,
@@ -370,7 +370,7 @@
     "type_variants": null,
     "upgrade_description": "Compre 4 cartas.\nDescarte 1 carta.",
     "type_key": "Skill",
-    "rarity_key": "Common",
+    "rarity_key": "Uncommon",
     "compendium_order": 90
   },
   {
@@ -532,52 +532,6 @@
     "compendium_order": 419
   },
   {
-    "id": "GRAPPLE",
-    "name": "Agarrão",
-    "description": "Cause 7 de dano.\nSempre que você receber [gold]Proteção[/gold] neste turno, cause 5 de dano ao inimigo.",
-    "description_raw": "Cause {Damage:diff()} de dano.\nSempre que você receber [gold]Proteção[/gold] neste turno, cause {GrapplePower:diff()} de dano ao inimigo.",
-    "cost": 1,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "Ataque",
-    "rarity": "Incomum",
-    "target": "AnyEnemy",
-    "color": "ironclad",
-    "damage": 7,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "Agarrão",
-        "amount": 5,
-        "power_key": "Grapple"
-      }
-    ],
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Damage": 7,
-      "GrapplePower": 5,
-      "Grapple": 5
-    },
-    "upgrade": {
-      "damage": "+2",
-      "grapplepower": "+2"
-    },
-    "image_url": "/static/images/cards/grapple.png",
-    "beta_image_url": null,
-    "type_variants": null,
-    "upgrade_description": "Cause 9 de dano.\nSempre que você receber [gold]Proteção[/gold] neste turno, cause 7 de dano ao inimigo.",
-    "type_key": "Attack",
-    "rarity_key": "Uncommon",
-    "compendium_order": 38
-  },
-  {
     "id": "BULLY",
     "name": "Agredir",
     "description": "Cause 4 de dano.\nCausa 2 de dano adicional por cada [gold]Vulnerável[/gold] no inimigo.",
@@ -650,6 +604,48 @@
     "type_key": "Power",
     "rarity_key": "Rare",
     "compendium_order": 0
+  },
+  {
+    "id": "NOT_YET",
+    "name": "Ainda Não",
+    "description": "Cure 10 PV.",
+    "description_raw": "Cure {Heal:diff()} PV.",
+    "cost": 2,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Técnica",
+    "rarity": "Rara",
+    "target": "Self",
+    "color": "ironclad",
+    "damage": null,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": [
+      "Exaurir"
+    ],
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Heal": 10
+    },
+    "upgrade": {
+      "heal": "+3"
+    },
+    "image_url": null,
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": "Cure 13 PV.",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
+    "compendium_order": 52
   },
   {
     "id": "HOTFIX",
@@ -1951,8 +1947,8 @@
   {
     "id": "FLAK_CANNON",
     "name": "Artilharia Antiaérea",
-    "description": "[gold]Exaure[/gold] TODAS as suas cartas de [gold]Condição[/gold].\nCause 8 de dano a um inimigo aleatório por cada carta [gold]Exaurida[/gold].",
-    "description_raw": "[gold]Exaure[/gold] TODAS as suas cartas de [gold]Condição[/gold].\nCause {Damage:diff()} de dano a um inimigo aleatório por cada carta [gold]Exaurida[/gold].{InCombat:\n(Golpeie {CalculatedHits:diff()} {CalculatedHits:plural:vez|vezes})|}",
+    "description": "[gold]Exaure[/gold] TODAS as suas cartas de Condição.\nCause 8 de dano a um inimigo aleatório por cada carta [gold]Exaurida[/gold].",
+    "description_raw": "[gold]Exaure[/gold] TODAS as suas cartas de Condição.\nCause {Damage:diff()} de dano a um inimigo aleatório por cada carta [gold]Exaurida[/gold].{InCombat:\n(Golpeie {CalculatedHits:diff()} {CalculatedHits:plural:vez|vezes})|}",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -1982,7 +1978,7 @@
     "image_url": "/static/images/cards/flak_cannon.png",
     "beta_image_url": "/static/images/cards/beta/flak_cannon.png",
     "type_variants": null,
-    "upgrade_description": "[gold]Exaure[/gold] TODAS as suas cartas de [gold]Condição[/gold].\nCause 11 de dano a um inimigo aleatório por cada carta [gold]Exaurida[/gold].",
+    "upgrade_description": "[gold]Exaure[/gold] TODAS as suas cartas de Condição.\nCause 11 de dano a um inimigo aleatório por cada carta [gold]Exaurida[/gold].",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 382
@@ -3043,7 +3039,7 @@
     "upgrade_description": "Cause 12 de dano.\nColoque uma carta da sua [gold]Pilha de Descarte[/gold] no topo da sua [gold]Pilha de Compra[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
-    "compendium_order": 40
+    "compendium_order": 39
   },
   {
     "id": "CALAMITY",
@@ -4065,7 +4061,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "Técnica",
-    "rarity": "Rara",
+    "rarity": "Incomum",
     "target": "Self",
     "color": "ironclad",
     "damage": null,
@@ -4090,7 +4086,7 @@
     "type_variants": null,
     "upgrade_description": "Receba 8 de [gold]Proteção[/gold].\nVocê sofre 50% menos dano de inimigos [gold]Vulneráveis[/gold] neste turno.",
     "type_key": "Skill",
-    "rarity_key": "Rare",
+    "rarity_key": "Uncommon",
     "compendium_order": 18
   },
   {
@@ -6048,7 +6044,7 @@
     "upgrade_description": "Cause 20 de dano.\nO inimigo perde 15 de [gold]Força[/gold] neste turno.",
     "type_key": "Attack",
     "rarity_key": "Rare",
-    "compendium_order": 51
+    "compendium_order": 50
   },
   {
     "id": "DAZED",
@@ -6206,7 +6202,7 @@
     "upgrade_description": null,
     "type_key": "Skill",
     "rarity_key": "Common",
-    "compendium_order": 39
+    "compendium_order": 38
   },
   {
     "id": "SEVERANCE",
@@ -9322,8 +9318,8 @@
   {
     "id": "FLANKING",
     "name": "Flanquear",
-    "description": "O inimigo sofre o dobro de dano de outros jogadores neste turno.",
-    "description_raw": "O inimigo sofre o dobro de dano de outros jogadores neste turno.",
+    "description": "O inimigo sofre o dobro de dano dos ataques de outros jogadores neste turno.",
+    "description_raw": "O inimigo sofre o dobro de dano dos ataques de outros jogadores neste turno.",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -11596,6 +11592,52 @@
     "compendium_order": 185
   },
   {
+    "id": "GRAPPLE",
+    "name": "Grapple",
+    "description": "",
+    "description_raw": "",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Ataque",
+    "rarity": "Incomum",
+    "target": "AnyEnemy",
+    "color": "unknown",
+    "damage": 7,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Grapple",
+        "amount": 5,
+        "power_key": "Grapple"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 7,
+      "GrapplePower": 5,
+      "Grapple": 5
+    },
+    "upgrade": {
+      "damage": "+2",
+      "grapplepower": "+2"
+    },
+    "image_url": "/static/images/cards/grapple.png",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 576
+  },
+  {
     "id": "DARK_SHACKLES",
     "name": "Grilhões Sombrios",
     "description": "O inimigo perde 9 de [gold]Força[/gold] neste turno.",
@@ -11944,7 +11986,7 @@
     "upgrade_description": "Perca 2 PV.\nCause 20 de dano.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 42
+    "compendium_order": 41
   },
   {
     "id": "HYPERBEAM",
@@ -12354,7 +12396,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 44
+    "compendium_order": 43
   },
   {
     "id": "UNRELENTING",
@@ -12623,7 +12665,7 @@
     "upgrade_description": "No início do seu turno, perca 1 PV.\nSempre que você perder PV no seu turno, cause 9 de dano a TODOS os inimigos.",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 46
+    "compendium_order": 45
   },
   {
     "id": "INFECTION",
@@ -12707,7 +12749,7 @@
     "upgrade_description": "Receba 3 de [gold]Força[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 47
+    "compendium_order": 46
   },
   {
     "id": "RESTLESSNESS",
@@ -12786,7 +12828,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 41
+    "compendium_order": 40
   },
   {
     "id": "BECKON",
@@ -13746,7 +13788,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 45
+    "compendium_order": 44
   },
   {
     "id": "BLADE_OF_INK",
@@ -14016,7 +14058,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 50
+    "compendium_order": 49
   },
   {
     "id": "CURSE_OF_THE_BELL",
@@ -14509,7 +14551,7 @@
   {
     "id": "MEMENTO_MORI",
     "name": "Memento Mori",
-    "description": "Cause 8 de dano.\nCausa 4 de dano adicional por cada carta descartada neste turno.",
+    "description": "Cause 9 de dano.\nCausa 4 de dano adicional por cada carta descartada neste turno.",
     "description_raw": "Cause {CalculatedDamage:diff()} de dano.\nCausa {ExtraDamage:diff()} de dano adicional por cada carta descartada neste turno.",
     "cost": 1,
     "is_x_cost": null,
@@ -14519,7 +14561,7 @@
     "rarity": "Incomum",
     "target": "AnyEnemy",
     "color": "silent",
-    "damage": 8,
+    "damage": 9,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -14530,9 +14572,9 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "CalculationBase": 8,
+      "CalculationBase": 9,
       "ExtraDamage": 4,
-      "CalculatedDamage": 8
+      "CalculatedDamage": 9
     },
     "upgrade": {
       "calculationbase": "+2",
@@ -14541,7 +14583,7 @@
     "image_url": "/static/images/cards/memento_mori.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Cause 8 de dano.\nCausa 5 de dano adicional por cada carta descartada neste turno.",
+    "upgrade_description": "Cause 9 de dano.\nCausa 5 de dano adicional por cada carta descartada neste turno.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 136
@@ -16168,7 +16210,7 @@
     "upgrade_description": "Receba 7 de [gold]Proteção[/gold].\nCause 7 de dano.",
     "type_key": "Attack",
     "rarity_key": "Common",
-    "compendium_order": 48
+    "compendium_order": 47
   },
   {
     "id": "SHOCKWAVE",
@@ -17924,7 +17966,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 52
+    "compendium_order": 51
   },
   {
     "id": "PURITY",
@@ -20591,26 +20633,20 @@
   {
     "id": "FOLLOW_THROUGH",
     "name": "Sequência Ofensiva",
-    "description": "Cause 6 de dano a TODOS os inimigos.\nSe sua última carta jogada neste turno foi uma Técnica, aplique 1 de [gold]Fraqueza[/gold] a TODOS os inimigos.",
-    "description_raw": "Cause {Damage:diff()} de dano a TODOS os inimigos.\nSe sua última carta jogada neste turno foi uma Técnica, aplique {WeakPower:diff()} de [gold]Fraqueza[/gold] a TODOS os inimigos.",
+    "description": "Cause 7 de dano.\nSe você possuir 5 outras cartas ou mais na sua [gold]Mão[/gold], golpeie uma vez adicional.",
+    "description_raw": "Cause {Damage:diff()} de dano.\nSe você possuir {CardCount} {CardCount:plural:outra carta|outras cartas} ou mais na sua [gold]Mão[/gold], golpeie uma vez adicional.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "Ataque",
-    "rarity": "Incomum",
-    "target": "AllEnemies",
+    "rarity": "Comum",
+    "target": "AnyEnemy",
     "color": "silent",
-    "damage": 6,
+    "damage": 7,
     "block": null,
     "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "Fraqueza",
-        "amount": 1,
-        "power_key": "Weak"
-      }
-    ],
+    "powers_applied": null,
     "cards_draw": null,
     "energy_gain": null,
     "hp_loss": null,
@@ -20618,20 +20654,18 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "Damage": 6,
-      "WeakPower": 1,
-      "Weak": 1
+      "CardCount": 5,
+      "Damage": 7
     },
     "upgrade": {
-      "damage": "+2",
-      "weak": "+1"
+      "damage": "+2"
     },
     "image_url": "/static/images/cards/follow_through.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Cause 8 de dano a TODOS os inimigos.\nSe sua última carta jogada neste turno foi uma Técnica, aplique 1 de [gold]Fraqueza[/gold] a TODOS os inimigos.",
+    "upgrade_description": "Cause 9 de dano.\nSe você possuir 5 outras cartas ou mais na sua [gold]Mão[/gold], golpeie uma vez adicional.",
     "type_key": "Attack",
-    "rarity_key": "Uncommon",
+    "rarity_key": "Common",
     "compendium_order": 124
   },
   {
@@ -22203,7 +22237,7 @@
     "upgrade_description": "Sempre que você receber [gold]Proteção[/gold], cause 7 de dano a um inimigo aleatório.",
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 49
+    "compendium_order": 48
   },
   {
     "id": "HIGH_FIVE",
@@ -22728,7 +22762,7 @@
     "upgrade_description": "Cause 21 de dano a TODOS os inimigos.\nNo início do seu turno, esta carta é jogada se estiver na sua pilha de [gold]Cartas Exauridas[/gold].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 43
+    "compendium_order": 42
   },
   {
     "id": "OUTMANEUVER",
@@ -22817,7 +22851,7 @@
   {
     "id": "SPEEDSTER",
     "name": "Velocista",
-    "description": "Sempre que você comprar uma carta durante o seu turno, cause 1 de dano a TODOS os inimigos.",
+    "description": "Sempre que você comprar uma carta durante o seu turno, cause 2 de dano a TODOS os inimigos.",
     "description_raw": "Sempre que você comprar uma carta durante o seu turno, cause {SpeedsterPower:diff()} de dano a TODOS os inimigos.",
     "cost": 2,
     "is_x_cost": null,
@@ -22833,7 +22867,7 @@
     "powers_applied": [
       {
         "power": "Velocista",
-        "amount": 1,
+        "amount": 2,
         "power_key": "Speedster"
       }
     ],
@@ -22844,16 +22878,16 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "SpeedsterPower": 1,
-      "Speedster": 1
+      "SpeedsterPower": 2,
+      "Speedster": 2
     },
     "upgrade": {
-      "speedsterpower": "+1"
+      "add_innate": true
     },
     "image_url": "/static/images/cards/speedster.png",
     "beta_image_url": "/static/images/cards/beta/speedster.png",
     "type_variants": null,
-    "upgrade_description": "Sempre que você comprar uma carta durante o seu turno, cause 2 de dano a TODOS os inimigos.",
+    "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 160

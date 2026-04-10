@@ -148,7 +148,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "Skill",
-    "rarity": "Common",
+    "rarity": "Uncommon",
     "target": "Self",
     "color": "silent",
     "damage": null,
@@ -172,8 +172,8 @@
     "type_variants": null,
     "upgrade_description": "Draw 4 cards.\nDiscard 1 card.",
     "type_key": "Skill",
-    "rarity_key": "Common",
-    "compendium_order": 91
+    "rarity_key": "Uncommon",
+    "compendium_order": 112
   },
   {
     "id": "ADAPTIVE_STRIKE",
@@ -612,7 +612,7 @@
     "upgrade_description": null,
     "type_key": "Skill",
     "rarity_key": "Common",
-    "compendium_order": 92
+    "compendium_order": 91
   },
   {
     "id": "APOTHEOSIS",
@@ -1072,7 +1072,7 @@
     "upgrade_description": "Gain 8 [gold]Block[/gold].\nDraw 2 cards.",
     "type_key": "Skill",
     "rarity_key": "Common",
-    "compendium_order": 93
+    "compendium_order": 92
   },
   {
     "id": "BACKSTAB",
@@ -1116,7 +1116,7 @@
       "Exhaust",
       "Innate"
     ],
-    "compendium_order": 112
+    "compendium_order": 113
   },
   {
     "id": "BAD_LUCK",
@@ -1805,7 +1805,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 94
+    "compendium_order": 93
   },
   {
     "id": "BLADE_OF_INK",
@@ -2034,7 +2034,7 @@
     "upgrade_description": "Gain 8 [gold]Block[/gold].\n[gold]Block[/gold] is not removed at the start of your next turn.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
-    "compendium_order": 113
+    "compendium_order": 114
   },
   {
     "id": "BODY_SLAM",
@@ -2397,7 +2397,7 @@
     "upgrade_description": "Apply 3 [gold]Poison[/gold] to a random enemy 4 times.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
-    "compendium_order": 114
+    "compendium_order": 115
   },
   {
     "id": "BRAND",
@@ -2610,7 +2610,7 @@
     "upgrade_description": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
-    "compendium_order": 115
+    "compendium_order": 116
   },
   {
     "id": "BUFFER",
@@ -3246,7 +3246,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 116
+    "compendium_order": 117
   },
   {
     "id": "CALL_OF_THE_VOID",
@@ -3857,7 +3857,7 @@
     "upgrade_description": "Gain 6 [gold]Block[/gold].\nAdd 2 [gold]Shivs[/gold] into your [gold]Hand[/gold].",
     "type_key": "Skill",
     "rarity_key": "Common",
-    "compendium_order": 95
+    "compendium_order": 94
   },
   {
     "id": "CLOAK_OF_STARS",
@@ -4023,7 +4023,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "Skill",
-    "rarity": "Rare",
+    "rarity": "Uncommon",
     "target": "Self",
     "color": "ironclad",
     "damage": null,
@@ -4048,8 +4048,8 @@
     "type_variants": null,
     "upgrade_description": "Gain 8 [gold]Block[/gold].\nYou receive 50% less damage from [gold]Vulnerable[/gold] enemies this turn.",
     "type_key": "Skill",
-    "rarity_key": "Rare",
-    "compendium_order": 63
+    "rarity_key": "Uncommon",
+    "compendium_order": 28
   },
   {
     "id": "COMET",
@@ -4220,7 +4220,7 @@
     "upgrade_description": "Deal 8 damage to ALL enemies.\nDeals 3 additional damage for each other Attack you've played this turn.",
     "type_key": "Attack",
     "rarity_key": "Rare",
-    "compendium_order": 64
+    "compendium_order": 63
   },
   {
     "id": "CONQUEROR",
@@ -4780,7 +4780,7 @@
     "upgrade_description": "At the start of your turn, lose 1 HP and gain 10 [gold]Block[/gold].",
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 65
+    "compendium_order": 64
   },
   {
     "id": "CRUELTY",
@@ -4824,7 +4824,7 @@
     "upgrade_description": "[gold]Vulnerable[/gold] enemies take an additional 50% damage.",
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 66
+    "compendium_order": 65
   },
   {
     "id": "CRUSH_UNDER",
@@ -4940,7 +4940,7 @@
     "upgrade_description": "Deal 6 damage to ALL enemies twice.",
     "type_key": "Attack",
     "rarity_key": "Common",
-    "compendium_order": 96
+    "compendium_order": 95
   },
   {
     "id": "DAGGER_THROW",
@@ -4977,7 +4977,7 @@
     "upgrade_description": "Deal 12 damage.\nDraw 1 card.\nDiscard 1 card.",
     "type_key": "Attack",
     "rarity_key": "Common",
-    "compendium_order": 97
+    "compendium_order": 96
   },
   {
     "id": "DANSE_MACABRE",
@@ -5057,7 +5057,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 67
+    "compendium_order": 66
   },
   {
     "id": "DARK_SHACKLES",
@@ -5173,7 +5173,7 @@
     "upgrade_description": "Gain 13 [gold]Block[/gold].\nDeal 13 damage.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 117
+    "compendium_order": 118
   },
   {
     "id": "DAZED",
@@ -5257,7 +5257,7 @@
     "upgrade_description": null,
     "type_key": "Skill",
     "rarity_key": "Common",
-    "compendium_order": 98
+    "compendium_order": 97
   },
   {
     "id": "DEATH_MARCH",
@@ -5868,7 +5868,7 @@
     "upgrade_description": "Gain 7 [gold]Block[/gold].",
     "type_key": "Skill",
     "rarity_key": "Common",
-    "compendium_order": 99
+    "compendium_order": 98
   },
   {
     "id": "DEFRAGMENT",
@@ -6088,7 +6088,7 @@
     "upgrade_description": "At the start of your turn, gain 3 [gold]Strength[/gold].",
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 68
+    "compendium_order": 67
   },
   {
     "id": "DEMONIC_SHIELD",
@@ -6132,7 +6132,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 28
+    "compendium_order": 29
   },
   {
     "id": "DEVASTATE",
@@ -6379,7 +6379,7 @@
     "upgrade_description": "Deal 10 damage.\nIf the enemy is [gold]Vulnerable[/gold], hits twice.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 29
+    "compendium_order": 30
   },
   {
     "id": "DISTRACTION",
@@ -6456,7 +6456,7 @@
     "upgrade_description": "Gain 6 [gold]Block[/gold].\nNext turn, gain 6 [gold]Block[/gold].",
     "type_key": "Skill",
     "rarity_key": "Common",
-    "compendium_order": 100
+    "compendium_order": 99
   },
   {
     "id": "DOMINATE",
@@ -6506,7 +6506,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 30
+    "compendium_order": 31
   },
   {
     "id": "DOUBLE_ENERGY",
@@ -6763,7 +6763,7 @@
     "upgrade_description": "Draw 3 cards.\nAt the start of your turn, [gold]Exhaust[/gold] the top card of your [gold]Draw Pile[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 31
+    "compendium_order": 32
   },
   {
     "id": "DUAL_WIELD",
@@ -7435,7 +7435,7 @@
     "upgrade_description": "Draw 1 card.\nIf you draw a Skill, gain 5 [gold]Block[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
-    "compendium_order": 118
+    "compendium_order": 119
   },
   {
     "id": "ETERNAL_ARMOR",
@@ -7516,7 +7516,7 @@
     "upgrade_description": "Gain 11 [gold]Block[/gold].\nGain another 11 [gold]Block[/gold] if you have [gold]Exhausted[/gold] a card this turn.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
-    "compendium_order": 32
+    "compendium_order": 33
   },
   {
     "id": "EXPECT_A_FIGHT",
@@ -7555,7 +7555,7 @@
     "upgrade_description": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
-    "compendium_order": 33
+    "compendium_order": 34
   },
   {
     "id": "EXPERTISE",
@@ -7592,7 +7592,7 @@
     "upgrade_description": "Draw cards until you have 7 in your [gold]Hand[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
-    "compendium_order": 119
+    "compendium_order": 120
   },
   {
     "id": "EXPOSE",
@@ -7634,7 +7634,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 120
+    "compendium_order": 121
   },
   {
     "id": "EXTERMINATE",
@@ -7938,7 +7938,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 69
+    "compendium_order": 68
   },
   {
     "id": "FEEDING_FRENZY",
@@ -8019,7 +8019,7 @@
     "upgrade_description": "Whenever a card is [gold]Exhausted[/gold], gain 4 [gold]Block[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 34
+    "compendium_order": 35
   },
   {
     "id": "FERAL",
@@ -8146,7 +8146,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 70
+    "compendium_order": 69
   },
   {
     "id": "FIGHT_ME",
@@ -8194,7 +8194,7 @@
     "upgrade_description": "Deal 6 damage twice.\nGain 3 [gold]Strength[/gold].\nThe enemy gains 1 [gold]Strength[/gold].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 35
+    "compendium_order": 36
   },
   {
     "id": "FIGHT_THROUGH",
@@ -8310,7 +8310,7 @@
     "upgrade_description": "Deal 8 damage for each Attack already played this turn.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 121
+    "compendium_order": 122
   },
   {
     "id": "FISTICUFFS",
@@ -8352,8 +8352,8 @@
   {
     "id": "FLAK_CANNON",
     "name": "Flak Cannon",
-    "description": "[gold]Exhaust[/gold] ALL your [gold]Status[/gold] cards.\nDeal 8 damage to a random enemy for each card [gold]Exhausted[/gold].",
-    "description_raw": "[gold]Exhaust[/gold] ALL your [gold]Status[/gold] cards.\nDeal {Damage:diff()} damage to a random enemy for each card [gold]Exhausted[/gold].{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
+    "description": "[gold]Exhaust[/gold] ALL your Status cards.\nDeal 8 damage to a random enemy for each card [gold]Exhausted[/gold].",
+    "description_raw": "[gold]Exhaust[/gold] ALL your Status cards.\nDeal {Damage:diff()} damage to a random enemy for each card [gold]Exhausted[/gold].{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -8383,7 +8383,7 @@
     "image_url": "/static/images/cards/flak_cannon.png",
     "beta_image_url": "/static/images/cards/beta/flak_cannon.png",
     "type_variants": null,
-    "upgrade_description": "[gold]Exhaust[/gold] ALL your [gold]Status[/gold] cards.\nDeal 11 damage to a random enemy for each card [gold]Exhausted[/gold].",
+    "upgrade_description": "[gold]Exhaust[/gold] ALL your Status cards.\nDeal 11 damage to a random enemy for each card [gold]Exhausted[/gold].",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 419
@@ -8425,13 +8425,13 @@
     "upgrade_description": "Gain 16 [gold]Block[/gold].\nWhenever you are attacked this turn, deal 6 damage back.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
-    "compendium_order": 36
+    "compendium_order": 37
   },
   {
     "id": "FLANKING",
     "name": "Flanking",
-    "description": "The enemy takes double damage from other players this turn.",
-    "description_raw": "The enemy takes double damage from other players this turn.",
+    "description": "The enemy takes double attack damage from other players this turn.",
+    "description_raw": "The enemy takes double attack damage from other players this turn.",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -8460,7 +8460,7 @@
     "upgrade_description": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
-    "compendium_order": 122
+    "compendium_order": 123
   },
   {
     "id": "FLASH_OF_STEEL",
@@ -8577,7 +8577,7 @@
     "upgrade_description": "Deal 7 damage for each Skill in your [gold]Hand[/gold].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 123
+    "compendium_order": 124
   },
   {
     "id": "FLICK_FLACK",
@@ -8619,7 +8619,7 @@
     "keywords_key": [
       "Sly"
     ],
-    "compendium_order": 101
+    "compendium_order": 100
   },
   {
     "id": "FOCUSED_STRIKE",
@@ -8672,26 +8672,20 @@
   {
     "id": "FOLLOW_THROUGH",
     "name": "Follow Through",
-    "description": "Deal 6 damage to ALL enemies.\nIf the last card you played this turn was a Skill, apply 1 [gold]Weak[/gold] to ALL enemies.",
-    "description_raw": "Deal {Damage:diff()} damage to ALL enemies.\nIf the last card you played this turn was a Skill, apply {WeakPower:diff()} [gold]Weak[/gold] to ALL enemies.",
+    "description": "Deal 7 damage.\nIf you have 5 or more other cards in your [gold]Hand[/gold], hits an additional time.",
+    "description_raw": "Deal {Damage:diff()} damage.\nIf you have {CardCount} or more other {CardCount:plural:card|cards} in your [gold]Hand[/gold], hits an additional time.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "Attack",
-    "rarity": "Uncommon",
-    "target": "AllEnemies",
+    "rarity": "Common",
+    "target": "AnyEnemy",
     "color": "silent",
-    "damage": 6,
+    "damage": 7,
     "block": null,
     "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "Weak",
-        "amount": 1,
-        "power_key": "Weak"
-      }
-    ],
+    "powers_applied": null,
     "cards_draw": null,
     "energy_gain": null,
     "hp_loss": null,
@@ -8699,21 +8693,19 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "Damage": 6,
-      "WeakPower": 1,
-      "Weak": 1
+      "CardCount": 5,
+      "Damage": 7
     },
     "upgrade": {
-      "damage": "+2",
-      "weak": "+1"
+      "damage": "+2"
     },
     "image_url": "/static/images/cards/follow_through.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 8 damage to ALL enemies.\nIf the last card you played this turn was a Skill, apply 1 [gold]Weak[/gold] to ALL enemies.",
+    "upgrade_description": "Deal 9 damage.\nIf you have 5 or more other cards in your [gold]Hand[/gold], hits an additional time.",
     "type_key": "Attack",
-    "rarity_key": "Uncommon",
-    "compendium_order": 124
+    "rarity_key": "Common",
+    "compendium_order": 101
   },
   {
     "id": "FOLLY",
@@ -8920,7 +8912,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 37
+    "compendium_order": 38
   },
   {
     "id": "FRANTIC_ESCAPE",
@@ -9762,8 +9754,8 @@
   {
     "id": "GRAPPLE",
     "name": "Grapple",
-    "description": "Deal 7 damage.\nWhenever you gain [gold]Block[/gold] this turn, deal 5 damage to the enemy.",
-    "description_raw": "Deal {Damage:diff()} damage.\nWhenever you gain [gold]Block[/gold] this turn, deal {GrapplePower:diff()} damage to the enemy.",
+    "description": "",
+    "description_raw": "",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -9771,7 +9763,7 @@
     "type": "Attack",
     "rarity": "Uncommon",
     "target": "AnyEnemy",
-    "color": "ironclad",
+    "color": "unknown",
     "damage": 7,
     "block": null,
     "hit_count": null,
@@ -9800,10 +9792,10 @@
     "image_url": "/static/images/cards/grapple.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 9 damage.\nWhenever you gain [gold]Block[/gold] this turn, deal 7 damage to the enemy.",
+    "upgrade_description": null,
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 38
+    "compendium_order": 576
   },
   {
     "id": "GRAVE_WARDEN",
@@ -10622,7 +10614,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 71
+    "compendium_order": 70
   },
   {
     "id": "HEMOKINESIS",
@@ -11241,7 +11233,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 72
+    "compendium_order": 71
   },
   {
     "id": "INFECTION",
@@ -11604,8 +11596,8 @@
   {
     "id": "ITERATION",
     "name": "Iteration",
-    "description": "The first time you draw a Status card each turn, draw 2 cards.",
-    "description_raw": "The first time you draw a Status card each turn, draw {IterationPower:diff()} {IterationPower:plural:card|cards}.",
+    "description": "The first time you draw a Status each turn, draw 2 cards.",
+    "description_raw": "The first time you draw a Status each turn, draw {IterationPower:diff()} {IterationPower:plural:card|cards}.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -11640,7 +11632,7 @@
     "image_url": "/static/images/cards/iteration.png",
     "beta_image_url": "/static/images/cards/beta/iteration.png",
     "type_variants": null,
-    "upgrade_description": "The first time you draw a Status card each turn, draw 3 cards.",
+    "upgrade_description": "The first time you draw a Status each turn, draw 3 cards.",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 391
@@ -11767,7 +11759,7 @@
     "upgrade_description": "Whenever you gain [gold]Block[/gold], deal 7 damage to a random enemy.",
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 73
+    "compendium_order": 72
   },
   {
     "id": "JUGGLING",
@@ -12823,7 +12815,7 @@
     "upgrade_description": "Deal 20 damage.\nEnemy loses 15 [gold]Strength[/gold] this turn.",
     "type_key": "Attack",
     "rarity_key": "Rare",
-    "compendium_order": 74
+    "compendium_order": 73
   },
   {
     "id": "MANIFEST_AUTHORITY",
@@ -13054,7 +13046,7 @@
   {
     "id": "MEMENTO_MORI",
     "name": "Memento Mori",
-    "description": "Deal 8 damage.\nDeals 4 additional damage for each card discarded this turn.",
+    "description": "Deal 9 damage.\nDeals 4 additional damage for each card discarded this turn.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card discarded this turn.",
     "cost": 1,
     "is_x_cost": null,
@@ -13064,7 +13056,7 @@
     "rarity": "Uncommon",
     "target": "AnyEnemy",
     "color": "silent",
-    "damage": 8,
+    "damage": 9,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -13075,9 +13067,9 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "CalculationBase": 8,
+      "CalculationBase": 9,
       "ExtraDamage": 4,
-      "CalculatedDamage": 8
+      "CalculatedDamage": 9
     },
     "upgrade": {
       "calculationbase": "+2",
@@ -13086,7 +13078,7 @@
     "image_url": "/static/images/cards/memento_mori.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 8 damage.\nDeals 5 additional damage for each card discarded this turn.",
+    "upgrade_description": "Deal 9 damage.\nDeals 5 additional damage for each card discarded this turn.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 131
@@ -14254,6 +14246,48 @@
     "type_key": "Power",
     "rarity_key": "Rare",
     "compendium_order": 494
+  },
+  {
+    "id": "NOT_YET",
+    "name": "Not Yet",
+    "description": "Heal 10 HP.",
+    "description_raw": "Heal {Heal:diff()} HP.",
+    "cost": 2,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Skill",
+    "rarity": "Rare",
+    "target": "Self",
+    "color": "ironclad",
+    "damage": null,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": [
+      "Exhaust"
+    ],
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Heal": 10
+    },
+    "upgrade": {
+      "heal": "+3"
+    },
+    "image_url": null,
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": "Heal 13 HP.",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
+    "compendium_order": 74
   },
   {
     "id": "NOXIOUS_FUMES",
@@ -17192,8 +17226,8 @@
   {
     "id": "ROCKET_PUNCH",
     "name": "Rocket Punch",
-    "description": "Deal 13 damage.\nDraw 1 card.\nWhen you create a Status card, reduce this card's cost to 0 [energy:1] until played.",
-    "description_raw": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nWhen you create a Status card, reduce this card's cost to 0 {energyPrefix:energyIcons(1)} until played.",
+    "description": "Deal 13 damage.\nDraw 1 card.\nWhenever you create a Status, reduce this card's cost to 0 [energy:1] until played.",
+    "description_raw": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nWhenever you create a Status, reduce this card's cost to 0 {energyPrefix:energyIcons(1)} until played.",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -17223,7 +17257,7 @@
     "image_url": "/static/images/cards/rocket_punch.png",
     "beta_image_url": "/static/images/cards/beta/rocket_punch.png",
     "type_variants": null,
-    "upgrade_description": "Deal 14 damage.\nDraw 2 cards.\nWhen you create a Status card, reduce this card's cost to 0 [energy:1] until played.",
+    "upgrade_description": "Deal 14 damage.\nDraw 2 cards.\nWhenever you create a Status, reduce this card's cost to 0 [energy:1] until played.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 396
@@ -19368,7 +19402,7 @@
   {
     "id": "SPEEDSTER",
     "name": "Speedster",
-    "description": "Whenever you draw a card during your turn, deal 1 damage to ALL enemies.",
+    "description": "Whenever you draw a card during your turn, deal 2 damage to ALL enemies.",
     "description_raw": "Whenever you draw a card during your turn, deal {SpeedsterPower:diff()} damage to ALL enemies.",
     "cost": 2,
     "is_x_cost": null,
@@ -19384,7 +19418,7 @@
     "powers_applied": [
       {
         "power": "Speedster",
-        "amount": 1,
+        "amount": 2,
         "power_key": "Speedster"
       }
     ],
@@ -19395,16 +19429,16 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "SpeedsterPower": 1,
-      "Speedster": 1
+      "SpeedsterPower": 2,
+      "Speedster": 2
     },
     "upgrade": {
-      "speedsterpower": "+1"
+      "add_innate": true
     },
     "image_url": "/static/images/cards/speedster.png",
     "beta_image_url": "/static/images/cards/beta/speedster.png",
     "type_variants": null,
-    "upgrade_description": "Whenever you draw a card during your turn, deal 2 damage to ALL enemies.",
+    "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 142
@@ -22005,8 +22039,8 @@
   {
     "id": "TRASH_TO_TREASURE",
     "name": "Trash to Treasure",
-    "description": "Whenever you create a Status card, [gold]Channel[/gold] 1 random Orb.",
-    "description_raw": "Whenever you create a Status card, [gold]Channel[/gold] 1 random Orb.",
+    "description": "Whenever you create a Status, [gold]Channel[/gold] 1 random Orb.",
+    "description_raw": "Whenever you create a Status, [gold]Channel[/gold] 1 random Orb.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,

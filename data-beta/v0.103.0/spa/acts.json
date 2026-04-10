@@ -1,5 +1,14 @@
 [
   {
+    "id": "DEPRECATED_ACT",
+    "name": "DeprecatedAct",
+    "num_rooms": 0,
+    "bosses": [],
+    "ancients": [],
+    "events": [],
+    "encounters": []
+  },
+  {
     "id": "GLORY",
     "name": "La Gloria",
     "num_rooms": 13,
@@ -90,7 +99,6 @@
       "THE_INSATIABLE_BOSS",
       "THE_OBSCURA_NORMAL",
       "THIEVING_HOPPER_WEAK",
-      "TUNNELER_NORMAL",
       "TUNNELER_WEAK"
     ]
   },

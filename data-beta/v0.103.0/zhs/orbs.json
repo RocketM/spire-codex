@@ -28,6 +28,13 @@
     "image_url": "/static/images/orbs/lightning_orb.png"
   },
   {
+    "id": "MOCK_COMBAT_CLEANUP_ORB",
+    "name": "Mock Combat Cleanup",
+    "description": "",
+    "description_raw": null,
+    "image_url": null
+  },
+  {
     "id": "PLASMA_ORB",
     "name": "等离子",
     "description": "[gold]被动：[/gold]回合开始时，\n获得[energy:1]。\n[gold]激发：[/gold]获得[energy:2]。\n等离子充能球不受[gold]集中[/gold]影响。",

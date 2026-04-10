@@ -668,7 +668,7 @@
         "name": "Living Fog"
       }
     ],
-    "loss_text": "[b]The Adventurer[/b]ทนกลิ่นของ[gold]Living Fog Normal[/gold]ไม่ไหว"
+    "loss_text": null
   },
   {
     "id": "LOUSE_PROGENITOR_NORMAL",
@@ -1430,7 +1430,7 @@
     "name": "Tunneler Normal",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Act 2 - Hive",
+    "act": null,
     "tags": [
       "Burrower",
       "Chomper"

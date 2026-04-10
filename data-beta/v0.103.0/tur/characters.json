@@ -205,7 +205,7 @@
           {
             "order": 2,
             "speaker": "ancient",
-            "text": "Mimar seni tamir etti?"
+            "text": "Mimar seni tamir eder?"
           }
         ]
       },
@@ -441,6 +441,24 @@
       }
     ],
     "image_url": "/static/images/characters/char_select_defect.png"
+  },
+  {
+    "id": "DEPRECATED_CHARACTER",
+    "name": "Kaldırılmış Karakter",
+    "description": "",
+    "starting_hp": 1000,
+    "starting_gold": 99,
+    "max_energy": 100,
+    "orb_slots": null,
+    "starting_deck": [],
+    "starting_relics": [],
+    "unlocks_after": null,
+    "gender": "Neutral",
+    "color": "gold",
+    "dialogue_color": null,
+    "quotes": null,
+    "dialogues": null,
+    "image_url": "/static/images/characters/char_select_deprecated_character.png"
   },
   {
     "id": "IRONCLAD",

@@ -443,6 +443,24 @@
     "image_url": "/static/images/characters/char_select_defect.png"
   },
   {
+    "id": "DEPRECATED_CHARACTER",
+    "name": "Убранный из игры персонаж",
+    "description": "",
+    "starting_hp": 1000,
+    "starting_gold": 99,
+    "max_energy": 100,
+    "orb_slots": null,
+    "starting_deck": [],
+    "starting_relics": [],
+    "unlocks_after": null,
+    "gender": "Neutral",
+    "color": "gold",
+    "dialogue_color": null,
+    "quotes": null,
+    "dialogues": null,
+    "image_url": "/static/images/characters/char_select_deprecated_character.png"
+  },
+  {
     "id": "IRONCLAD",
     "name": "Латоносец",
     "description": "Последний воин Латоносцев.\nСокрушает врагов мечом и пламенем, пускай и не по своей воле.",
@@ -2122,7 +2140,7 @@
           {
             "order": 0,
             "speaker": "ancient",
-            "text": "[thinky_dots]Ты отравила меня? Что со мной…[/thinky_dots]\n[i][font_size=22]Паэль тут же захрапел.[/font_size][/i]"
+            "text": "[thinky_dots]Ты отравила меня…\nЧто еще за… Хр-р-р…[/thinky_dots]"
           }
         ]
       },

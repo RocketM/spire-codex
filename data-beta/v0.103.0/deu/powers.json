@@ -792,7 +792,7 @@
   {
     "id": "FLANKING",
     "name": "Flankieren",
-    "description": "Andere Verbündete fügen diesem Gegner in diesem Zug [blue]2x[/blue] soviel Schaden zu.",
+    "description": "Andere Verbündete fügen diesem Gegner in diesem Zug [blue]2x[/blue] mehr Angriffsschaden zu.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -951,9 +951,9 @@
   },
   {
     "id": "GRAPPLE",
-    "name": "Ringen",
-    "description": "Wenn du in diesem Zug [gold]Block[/gold] erhältst, füge [gold]this creature[/gold] [blue][Amount][/blue] Schaden zu.",
-    "description_raw": "Wenn du in diesem Zug [gold]Block[/gold] erhältst, füge [gold]{OwnerName}[/gold] [blue]{Amount}[/blue] Schaden zu.",
+    "name": "GrapplePower",
+    "description": "",
+    "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1222,7 +1222,7 @@
   {
     "id": "ITERATION",
     "name": "Iteration",
-    "description": "Wenn du zum ersten Mal in einem Zug eine [gold]Status[/gold]-Karte ziehst, ziehe mehr Karten.",
+    "description": "Wenn du zum ersten Mal in einem Zug einen Status ziehst, ziehe mehr Karten.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",

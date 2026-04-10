@@ -792,7 +792,7 @@
   {
     "id": "FLANKING",
     "name": "Flanquear",
-    "description": "Durante este turno, tus aliados infligen [blue]el doble[/blue] de daño a este enemigo.",
+    "description": "Durante este turno, los ataques de tus aliados infligen [blue]el doble[/blue] de daño a este enemigo.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -951,9 +951,9 @@
   },
   {
     "id": "GRAPPLE",
-    "name": "Agarrón",
-    "description": "Cuando ganes [gold]Bloqueo[/gold] este turno, inflige [blue][Amount][/blue] de daño a [gold]this creature[/gold].",
-    "description_raw": "Cuando ganes [gold]Bloqueo[/gold] este turno, inflige [blue]{Amount}[/blue] de daño a [gold]{OwnerName}[/gold].",
+    "name": "GrapplePower",
+    "description": "",
+    "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1222,7 +1222,7 @@
   {
     "id": "ITERATION",
     "name": "Iteración",
-    "description": "La primera vez que robes una carta de [gold]Estado[/gold] cada turno, roba más cartas.",
+    "description": "La primera vez que robes una carta de Estado cada turno, roba más cartas.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",

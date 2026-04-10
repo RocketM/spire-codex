@@ -28,6 +28,13 @@
     "image_url": "/static/images/orbs/lightning_orb.png"
   },
   {
+    "id": "MOCK_COMBAT_CLEANUP_ORB",
+    "name": "Test Kampf-Aufräumen",
+    "description": "",
+    "description_raw": null,
+    "image_url": null
+  },
+  {
     "id": "PLASMA_ORB",
     "name": "Plasma",
     "description": "[gold]Passiv:[/gold] Erhalte zu Beginn deines Zuges [energy:1].\n[gold]Entladen:[/gold] Erhalte [energy:2].\nPlasma wird durch [gold]Focus[/gold] nicht beeinflusst.",

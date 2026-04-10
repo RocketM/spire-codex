@@ -1887,12 +1887,13 @@
       "NEOWS_TORMENT",
       "NEW_LEAF",
       "PRECISE_SCISSORS",
-      "LAVA_ROCK",
+      "PHIAL_HOLSTER",
+      "WINGED_BOOTS",
       "MASSIVE_SCROLL",
+      "LAVA_ROCK",
       "NEOWS_TALISMAN",
       "NUTRITIOUS_OYSTER",
       "POMANDER",
-      "SILVER_CRUCIBLE",
       "SMALL_CAPSULE",
       "STONE_HUMIDIFIER",
       "CURSED_PEARL",
@@ -1900,6 +1901,8 @@
       "LARGE_CAPSULE",
       "LEAFY_POULTICE",
       "PRECARIOUS_SHEARS",
+      "SILVER_CRUCIBLE",
+      "NEOWS_BONES",
       "SCROLL_BOXES"
     ]
   },
@@ -3118,7 +3121,7 @@
       {
         "id": "OBSERVE",
         "title": "观察",
-        "description": "为一张“[gold]打击[/gold]”或“[gold]防御[/gold]”[gold]附魔[/gold]：[purple]涡旋[/purple]。"
+        "description": "为一张基础“[gold]打击[/gold]”或“[gold]防御[/gold]”[gold]附魔[/gold]：[purple]涡旋[/purple]。"
       },
       {
         "id": "DRINK",
@@ -3138,7 +3141,7 @@
           {
             "id": "OBSERVE",
             "title": "观察",
-            "description": "为一张“[gold]打击[/gold]”或“[gold]防御[/gold]”[gold]附魔[/gold]：[purple]涡旋[/purple]。"
+            "description": "为一张基础“[gold]打击[/gold]”或“[gold]防御[/gold]”[gold]附魔[/gold]：[purple]涡旋[/purple]。"
           },
           {
             "id": "DRINK",

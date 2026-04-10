@@ -251,7 +251,7 @@
       {
         "id": "COMBINE_STRIKES",
         "title": "Saldırıları Birleştir",
-        "description": "[blue]2[/blue] [gold]Saldırı[/gold] kartını kaldır. [gold]Deste[/gold]'ne [gold]Nihai Saldırı[/gold] ekle."
+        "description": "[blue]2[/blue] başlangıç [gold]Saldırı[/gold]'nı kaldır. [gold]Deste[/gold]'ne [gold]Nihai Saldırı[/gold] ekle."
       },
       {
         "id": "COMBINE_DEFENDS",
@@ -275,7 +275,7 @@
           {
             "id": "COMBINE_STRIKES",
             "title": "Saldırıları Birleştir",
-            "description": "[blue]2[/blue] [gold]Saldırı[/gold] kartını kaldır. [gold]Deste[/gold]'ne [gold]Nihai Saldırı[/gold] ekle."
+            "description": "[blue]2[/blue] başlangıç [gold]Saldırı[/gold]'nı kaldır. [gold]Deste[/gold]'ne [gold]Nihai Saldırı[/gold] ekle."
           },
           {
             "id": "COMBINE_DEFENDS",
@@ -1490,7 +1490,7 @@
   },
   {
     "id": "JUNGLE_MAZE_ADVENTURE",
-    "name": "Vahşi Orman Labirentinde Macera",
+    "name": "Vahşi Orman Labirenti Macerası",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
     "description": "Bir açıklıkta, bakışlarını aşağıya dikmiş ve [purple]devasa bir labirenti[/purple] işaret eden [green]derme çatma bir maceracı grubuyla[/green] karşılaşırsın.\n\nLabirentin zenginliklerini yağmalamak için seni [b]Destansı bir Göreve[/b] birlikte atılmaya davet ederler. Deneyimli bir maceracı olarak bu labirentin [red][jitter]ölümcül tuzaklarla[/jitter][/red] ve [orange][sine]muhafızlarla[/sine][/orange] dolu olduğu gerçeği, senin için apaçıktır.\n\nBirlikte çalışmak işleri kolaylaştırırdı... ama öyle yaparsan ganimeti paylaşmak zorunda kalırsın.",
@@ -1887,12 +1887,13 @@
       "NEOWS_TORMENT",
       "NEW_LEAF",
       "PRECISE_SCISSORS",
-      "LAVA_ROCK",
+      "PHIAL_HOLSTER",
+      "WINGED_BOOTS",
       "MASSIVE_SCROLL",
+      "LAVA_ROCK",
       "NEOWS_TALISMAN",
       "NUTRITIOUS_OYSTER",
       "POMANDER",
-      "SILVER_CRUCIBLE",
       "SMALL_CAPSULE",
       "STONE_HUMIDIFIER",
       "CURSED_PEARL",
@@ -1900,6 +1901,8 @@
       "LARGE_CAPSULE",
       "LEAFY_POULTICE",
       "PRECARIOUS_SHEARS",
+      "SILVER_CRUCIBLE",
+      "NEOWS_BONES",
       "SCROLL_BOXES"
     ]
   },
@@ -2125,7 +2128,7 @@
         {
           "order": "2-2",
           "speaker": "ancient",
-          "text": "Mimar seni tamir etti?"
+          "text": "Mimar seni tamir eder?"
         }
       ],
       "Ironclad": [
@@ -4485,7 +4488,7 @@
           {
             "id": "EXPERTISE",
             "title": "Uzmanlık",
-            "description": "[blue]2[/blue] [gold]Kuvvet[/gold] elde et. [blue]2[/blue] [gold]Çeviklik[/gold] elde et."
+            "description": "[blue]2[/blue] [gold]Kuvvet[/gold] elde et. [blue]2[/blue] [gold]Beceriklilik[/gold] elde et."
           },
           {
             "id": "CURIOUS",

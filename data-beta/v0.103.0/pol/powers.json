@@ -191,8 +191,8 @@
   },
   {
     "id": "BORROWED_TIME",
-    "name": "BorrowedTimePower",
-    "description": "",
+    "name": "Życie na krawędzi",
+    "description": "Karty kosztują dodatkowy pkt. Energii w tej turze.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -602,8 +602,8 @@
   {
     "id": "DOOM",
     "name": "Zagłada",
-    "description": "Przeciwnik umiera pod koniec swojej tury, jeżeli jego pkt. Zagłady są równe jego PŻ lub większe.",
-    "description_raw": null,
+    "description": "[gold]this creature[/gold] umiera pod koniec swojej tury, jeżeli ma [blue][Amount][/blue] PŻ lub mniej.",
+    "description_raw": "[gold]{OwnerName}[/gold] umiera pod koniec {OnPlayer:twojej|swojej} tury, jeżeli ma [blue]{Amount}[/blue] PŻ lub mniej.",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -792,7 +792,7 @@
   {
     "id": "FLANKING",
     "name": "Oskrzydlenie",
-    "description": "W tej turze pozostali sojusznicy zadają temu przeciwnikowi [blue]2x[/blue] więcej obrażeń.",
+    "description": "W tej turze pozostali sojusznicy zadają temu przeciwnikowi [blue]2x[/blue] więcej obrażeń od Ataków.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -951,9 +951,9 @@
   },
   {
     "id": "GRAPPLE",
-    "name": "Chwyt",
-    "description": "Kiedykolwiek zyskasz [gold]Blok[/gold] w tej turze, [gold]this creature[/gold] otrzymuje [blue][Amount][/blue] pkt. obrażeń.",
-    "description_raw": "Kiedykolwiek zyskasz [gold]Blok[/gold] w tej turze, [gold]{OwnerName}[/gold] otrzymuje [blue]{Amount}[/blue] pkt. obrażeń.",
+    "name": "GrapplePower",
+    "description": "",
+    "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -962,8 +962,8 @@
   {
     "id": "GRASP",
     "name": "Uścisk",
-    "description": "W każdej turze pierwsza zagrana karta kosztuje dodatkowo [blue]1[/blue] [energy:1].",
-    "description_raw": "W każdej turze pierwsza zagrana karta kosztuje dodatkowo [blue]1[/blue] {energyPrefix:energyIcons(1)}.",
+    "description": "Kiedykolwiek zagrasz kartę, utrać [blue]1[/blue] pkt. Energii.",
+    "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
     "allow_negative": null,
@@ -1222,7 +1222,7 @@
   {
     "id": "ITERATION",
     "name": "Nowa wersja",
-    "description": "Gdy dobierzesz kartę [gold]Stanu[/gold] po raz pierwszy w tej turze, dobierz więcej kart.",
+    "description": "Gdy dobierzesz kartę Stanu po raz pierwszy w tej turze, dobierz więcej kart.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",

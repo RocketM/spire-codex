@@ -50,8 +50,8 @@
   },
   {
     "id": "WEIGHTED",
-    "name": "Утяжеленная",
-    "description": "Вы потеряете [energy:1] если разыграете эту карту.",
+    "name": "Тяжесть",
+    "description": "Вы потеряете [energy:1], если разыграете эту карту.",
     "extra_card_text": "Вы потеряете [energy:1].",
     "is_stackable": false
   }

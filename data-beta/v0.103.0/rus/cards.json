@@ -1,5 +1,51 @@
 [
   {
+    "id": "GRAPPLE",
+    "name": "Grapple",
+    "description": "",
+    "description_raw": "",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Атака",
+    "rarity": "Необычная",
+    "target": "AnyEnemy",
+    "color": "unknown",
+    "damage": 7,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Grapple",
+        "amount": 5,
+        "power_key": "Grapple"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 7,
+      "GrapplePower": 5,
+      "Grapple": 5
+    },
+    "upgrade": {
+      "damage": "+2",
+      "grapplepower": "+2"
+    },
+    "image_url": "/static/images/cards/grapple.png",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 576
+  },
+  {
     "id": "AUTOMATION",
     "name": "Автоматизация",
     "description": "Дает [energy:1] за каждые 10 добираемых карт.",
@@ -191,7 +237,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 45
+    "compendium_order": 44
   },
   {
     "id": "FIEND_FIRE",
@@ -283,7 +329,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "Навык",
-    "rarity": "Обычная",
+    "rarity": "Необычная",
     "target": "Self",
     "color": "silent",
     "damage": null,
@@ -307,7 +353,7 @@
     "type_variants": null,
     "upgrade_description": "Вы добираете 4 plural(ru):карту,\nзатем сбрасываете 1 карту.",
     "type_key": "Skill",
-    "rarity_key": "Common",
+    "rarity_key": "Uncommon",
     "compendium_order": 90
   },
   {
@@ -671,8 +717,8 @@
   {
     "id": "ARSENAL",
     "name": "Арсенал",
-    "description": "Дает 1 [gold]силы[/gold], когда вы создаете бесцветную карту.",
-    "description_raw": "Дает {ArsenalPower:diff()} [gold]силы[/gold], когда вы создаете бесцветную карту.",
+    "description": "Дает 1 [gold]силы[/gold], когда создается карта.",
+    "description_raw": "Дает {ArsenalPower:diff()} [gold]силы[/gold], когда создается карта.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -2007,8 +2053,8 @@
   {
     "id": "CHARGE",
     "name": "В АТАКУ!",
-    "description": "[gold]Преобразует[/gold] 2 plural(ru):карту в [gold]стопке добора[/gold]\nв [gold]plural(ru):«Слугу-бомбочку»[/gold].",
-    "description_raw": "[gold]Преобразует[/gold] {Cards:diff()} {Cards:plural(ru):карту|карты|карт} в [gold]стопке добора[/gold]\nв [gold]{Cards:plural(ru):{IfUpgraded:show:«Слугу-бомбочку+»|«Слугу-бомбочку»}[/gold]|{IfUpgraded:show:«Слуг-бомбочек+»|«Слуг-бомбочек»}[/gold]|{IfUpgraded:show:«Слуг-бомбочек+»|«Слуг-бомбочек»}[/gold]}.",
+    "description": "[gold]Преобразует[/gold] 2 plural(ru):карту в [gold]стопке добора[/gold] в [gold]plural(ru):«Слугу-бомбочку»[/gold].",
+    "description_raw": "[gold]Преобразует[/gold] {Cards:diff()} {Cards:plural(ru):карту|карты|карт} в [gold]стопке добора[/gold] в [gold]{Cards:plural(ru):{IfUpgraded:show:«Слугу-бомбочку+»|«Слугу-бомбочку»}[/gold]|{IfUpgraded:show:«Слуг-бомбочек+»|«Слуг-бомбочек»}[/gold]|{IfUpgraded:show:«Слуг-бомбочек+»|«Слуг-бомбочек»}[/gold]}.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -2038,7 +2084,7 @@
     "image_url": "/static/images/cards/charge.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]Преобразует[/gold] 2 plural(ru):карту в [gold]стопке добора[/gold]\nв [gold]plural(ru):«Слугу-бомбочку+»[/gold].",
+    "upgrade_description": "[gold]Преобразует[/gold] 2 plural(ru):карту в [gold]стопке добора[/gold] в [gold]plural(ru):«Слугу-бомбочку+»[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 186
@@ -2742,7 +2788,7 @@
     "upgrade_description": "Дает 3 [gold]силы[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 47
+    "compendium_order": 46
   },
   {
     "id": "TIMES_UP",
@@ -2865,8 +2911,8 @@
   {
     "id": "PREPARED",
     "name": "Все схвачено",
-    "description": "Вы добираете 1 plural(ru):карту,\nзатем сбрасываете 1 plural(ru):карту.",
-    "description_raw": "Вы добираете {Cards:diff()} {Cards:plural(ru):карту|карты|карт},\nзатем сбрасываете {Cards:diff()} {Cards:plural(ru):карту|карты|карт}.",
+    "description": "Вы добираете 1 plural(ru):карту, затем сбрасываете 1 plural(ru):карту.",
+    "description_raw": "Вы добираете {Cards:diff()} {Cards:plural(ru):карту|карты|карт}, затем сбрасываете {Cards:diff()} {Cards:plural(ru):карту|карты|карт}.",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -2894,7 +2940,7 @@
     "image_url": "/static/images/cards/prepared.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Вы добираете 2 plural(ru):карту,\nзатем сбрасываете 2 plural(ru):карту.",
+    "upgrade_description": "Вы добираете 2 plural(ru):карту, затем сбрасываете 2 plural(ru):карту.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 150
@@ -3423,7 +3469,7 @@
     "upgrade_description": "Вы теряете 2 ОЗ.\nНаносит 20 урона.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 42
+    "compendium_order": 41
   },
   {
     "id": "GENETIC_ALGORITHM",
@@ -3639,7 +3685,7 @@
   {
     "id": "SPEEDSTER",
     "name": "Гонщик",
-    "description": "Наносит 1 урона ВСЕМ врагам, когда вы добираете карту в свой ход.",
+    "description": "Наносит 2 урона ВСЕМ врагам, когда вы добираете карту в свой ход.",
     "description_raw": "Наносит {SpeedsterPower:diff()} урона ВСЕМ врагам, когда вы добираете карту в свой ход.",
     "cost": 2,
     "is_x_cost": null,
@@ -3655,7 +3701,7 @@
     "powers_applied": [
       {
         "power": "Гонка",
-        "amount": 1,
+        "amount": 2,
         "power_key": "Speedster"
       }
     ],
@@ -3666,16 +3712,16 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "SpeedsterPower": 1,
-      "Speedster": 1
+      "SpeedsterPower": 2,
+      "Speedster": 2
     },
     "upgrade": {
-      "speedsterpower": "+1"
+      "add_innate": true
     },
     "image_url": "/static/images/cards/speedster.png",
     "beta_image_url": "/static/images/cards/beta/speedster.png",
     "type_variants": null,
-    "upgrade_description": "Наносит 2 урона ВСЕМ врагам, когда вы добираете карту в свой ход.",
+    "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 160
@@ -4255,7 +4301,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 41
+    "compendium_order": 40
   },
   {
     "id": "DEMONIC_SHIELD",
@@ -4564,26 +4610,20 @@
   {
     "id": "FOLLOW_THROUGH",
     "name": "До конца",
-    "description": "Наносит 6 урона ВСЕМ врагам.\nНакладывает 1 [gold]слабости[/gold] на ВСЕХ врагов, если последняя разыгранная карта — Навык.",
-    "description_raw": "Наносит {Damage:diff()} урона ВСЕМ врагам.\nНакладывает {WeakPower:diff()} [gold]слабости[/gold] на ВСЕХ врагов, если последняя разыгранная карта — Навык.",
+    "description": "Наносит 7 урона.\nНаносит урон еще раз, если в [gold]руке[/gold] не менее 5 plural(ru):другой карты.",
+    "description_raw": "Наносит {Damage:diff()} урона.\nНаносит урон еще раз, если в [gold]руке[/gold] не менее {CardCount} {CardCount:plural(ru):другой карты|других карт|других карт}.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "Атака",
-    "rarity": "Необычная",
-    "target": "AllEnemies",
+    "rarity": "Обычная",
+    "target": "AnyEnemy",
     "color": "silent",
-    "damage": 6,
+    "damage": 7,
     "block": null,
     "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "Слабость",
-        "amount": 1,
-        "power_key": "Weak"
-      }
-    ],
+    "powers_applied": null,
     "cards_draw": null,
     "energy_gain": null,
     "hp_loss": null,
@@ -4591,20 +4631,18 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "Damage": 6,
-      "WeakPower": 1,
-      "Weak": 1
+      "CardCount": 5,
+      "Damage": 7
     },
     "upgrade": {
-      "damage": "+2",
-      "weak": "+1"
+      "damage": "+2"
     },
     "image_url": "/static/images/cards/follow_through.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Наносит 8 урона ВСЕМ врагам.\nНакладывает 1 [gold]слабости[/gold] на ВСЕХ врагов, если последняя разыгранная карта — Навык.",
+    "upgrade_description": "Наносит 9 урона.\nНаносит урон еще раз, если в [gold]руке[/gold] не менее 5 plural(ru):другой карты.",
     "type_key": "Attack",
-    "rarity_key": "Uncommon",
+    "rarity_key": "Common",
     "compendium_order": 124
   },
   {
@@ -5145,6 +5183,48 @@
     "compendium_order": 66
   },
   {
+    "id": "NOT_YET",
+    "name": "Еще не время",
+    "description": "Восполняет 10 ОЗ.",
+    "description_raw": "Восполняет {Heal:diff()} ОЗ.",
+    "cost": 2,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Навык",
+    "rarity": "Редкая",
+    "target": "Self",
+    "color": "ironclad",
+    "damage": null,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": [
+      "Сжигается"
+    ],
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Heal": 10
+    },
+    "upgrade": {
+      "heal": "+3"
+    },
+    "image_url": null,
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": "Восполняет 13 ОЗ.",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
+    "compendium_order": 52
+  },
+  {
     "id": "SEEKING_EDGE",
     "name": "Жаждущий клинок",
     "description": "[gold]Закаляет[/gold] 7.\n[gold]Клинок монарха[/gold] наносит урон ВСЕМ врагам.",
@@ -5532,7 +5612,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 50
+    "compendium_order": 49
   },
   {
     "id": "OBLIVION",
@@ -6256,56 +6336,10 @@
     "compendium_order": 172
   },
   {
-    "id": "GRAPPLE",
-    "name": "Захват",
-    "description": "Наносит 7 урона.\nНаносит врагу 5 урона, когда вы получаете [gold]защиту[/gold] в этом ходу.",
-    "description_raw": "Наносит {Damage:diff()} урона.\nНаносит врагу {GrapplePower:diff()} урона, когда вы получаете [gold]защиту[/gold] в этом ходу.",
-    "cost": 1,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "Атака",
-    "rarity": "Необычная",
-    "target": "AnyEnemy",
-    "color": "ironclad",
-    "damage": 7,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "Захват",
-        "amount": 5,
-        "power_key": "Grapple"
-      }
-    ],
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Damage": 7,
-      "GrapplePower": 5,
-      "Grapple": 5
-    },
-    "upgrade": {
-      "damage": "+2",
-      "grapplepower": "+2"
-    },
-    "image_url": "/static/images/cards/grapple.png",
-    "beta_image_url": null,
-    "type_variants": null,
-    "upgrade_description": "Наносит 9 урона.\nНаносит врагу 7 урона, когда вы получаете [gold]защиту[/gold] в этом ходу.",
-    "type_key": "Attack",
-    "rarity_key": "Uncommon",
-    "compendium_order": 38
-  },
-  {
     "id": "FLANKING",
     "name": "Заход с фланга",
-    "description": "В этом ходу враг получает в 2 раза больше урона от других игроков.",
-    "description_raw": "В этом ходу враг получает в 2 раза больше урона от других игроков.",
+    "description": "В этом ходу враг получает в 2 раза больше урона от атак других игроков.",
+    "description_raw": "В этом ходу враг получает в 2 раза больше урона от атак других игроков.",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -6494,8 +6528,8 @@
   {
     "id": "FLAK_CANNON",
     "name": "Зенитная пушка",
-    "description": "[gold]Сжигает[/gold] ВСЕ [gold]Статусы[/gold].\nНаносит по 8 урона случайному врагу за каждый.",
-    "description_raw": "[gold]Сжигает[/gold] ВСЕ [gold]Статусы[/gold].\nНаносит по {Damage:diff()} урона случайному врагу за каждый.{InCombat:\n(Наносит урон {CalculatedHits:diff()} {CalculatedHits:plural(ru):раз|раза|раз})|}",
+    "description": "[gold]Сжигает[/gold] ВСЕ Статусы.\nНаносит по 8 урона случайному врагу за каждый.",
+    "description_raw": "[gold]Сжигает[/gold] ВСЕ Статусы.\nНаносит по {Damage:diff()} урона случайному врагу за каждый.{InCombat:\n(Наносит урон {CalculatedHits:diff()} {CalculatedHits:plural(ru):раз|раза|раз})|}",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -6525,7 +6559,7 @@
     "image_url": "/static/images/cards/flak_cannon.png",
     "beta_image_url": "/static/images/cards/beta/flak_cannon.png",
     "type_variants": null,
-    "upgrade_description": "[gold]Сжигает[/gold] ВСЕ [gold]Статусы[/gold].\nНаносит по 11 урона случайному врагу за каждый.",
+    "upgrade_description": "[gold]Сжигает[/gold] ВСЕ Статусы.\nНаносит по 11 урона случайному врагу за каждый.",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 382
@@ -7912,7 +7946,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "Навык",
-    "rarity": "Редкая",
+    "rarity": "Необычная",
     "target": "Self",
     "color": "ironclad",
     "damage": null,
@@ -7937,7 +7971,7 @@
     "type_variants": null,
     "upgrade_description": "Дает 8 [gold]защиты[/gold].\nВ этом ходу вы получаете на 50% меньше урона от [gold]уязвимых[/gold] врагов.",
     "type_key": "Skill",
-    "rarity_key": "Rare",
+    "rarity_key": "Uncommon",
     "compendium_order": 18
   },
   {
@@ -8783,7 +8817,7 @@
     "upgrade_description": "Вы теряете 1 ОЗ в начале хода.\nНаносит 9 урона ВСЕМ врагам, когда вы теряете ОЗ в свой ход.",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 46
+    "compendium_order": 45
   },
   {
     "id": "THE_SMITH",
@@ -9661,7 +9695,7 @@
     "upgrade_description": "Наносит 7 урона случайному врагу, когда вы получаете [gold]защиту[/gold].",
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 49
+    "compendium_order": 48
   },
   {
     "id": "MACHINE_LEARNING",
@@ -9741,7 +9775,7 @@
   {
     "id": "MEMENTO_MORI",
     "name": "Мементо мори",
-    "description": "Наносит 8 урона.\nНаносит на 4 урона больше за каждую сброшенную в этом ходу карту.",
+    "description": "Наносит 9 урона.\nНаносит на 4 урона больше за каждую сброшенную в этом ходу карту.",
     "description_raw": "Наносит {CalculatedDamage:diff()} урона.\nНаносит на {ExtraDamage:diff()} урона больше за каждую сброшенную в этом ходу карту.",
     "cost": 1,
     "is_x_cost": null,
@@ -9751,7 +9785,7 @@
     "rarity": "Необычная",
     "target": "AnyEnemy",
     "color": "silent",
-    "damage": 8,
+    "damage": 9,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -9762,9 +9796,9 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "CalculationBase": 8,
+      "CalculationBase": 9,
       "ExtraDamage": 4,
-      "CalculatedDamage": 8
+      "CalculatedDamage": 9
     },
     "upgrade": {
       "calculationbase": "+2",
@@ -9773,7 +9807,7 @@
     "image_url": "/static/images/cards/memento_mori.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Наносит 8 урона.\nНаносит на 5 урона больше за каждую сброшенную в этом ходу карту.",
+    "upgrade_description": "Наносит 9 урона.\nНаносит на 5 урона больше за каждую сброшенную в этом ходу карту.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 136
@@ -11301,7 +11335,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 44
+    "compendium_order": 43
   },
   {
     "id": "DARKNESS",
@@ -13006,7 +13040,7 @@
     "upgrade_description": null,
     "type_key": "Skill",
     "rarity_key": "Common",
-    "compendium_order": 39
+    "compendium_order": 38
   },
   {
     "id": "ORBIT",
@@ -15219,7 +15253,7 @@
     "upgrade_description": "Наносит 21 урона ВСЕМ врагам.\nРазыгрывается в начале хода, если находится в [gold]стопке пепла[/gold].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 43
+    "compendium_order": 42
   },
   {
     "id": "DEATH_MARCH",
@@ -17020,7 +17054,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 52
+    "compendium_order": 51
   },
   {
     "id": "THUNDERCLAP",
@@ -17524,8 +17558,8 @@
   {
     "id": "GUARDS",
     "name": "СТРАЖА!!!",
-    "description": "[gold]Преобразует[/gold] выбранное количество карт в [gold]руке[/gold] в [gold]«Слуг-щиты»[/gold].",
-    "description_raw": "[gold]Преобразует[/gold] выбранное количество карт в [gold]руке[/gold] в [gold]{IfUpgraded:show:«Слуг-щиты+»|«Слуг-щиты»}[/gold].",
+    "description": "[gold]Преобразует[/gold] выбранное количество карт в [gold]руке[/gold] в [gold]«Слуг-защитников»[/gold].",
+    "description_raw": "[gold]Преобразует[/gold] выбранное количество карт в [gold]руке[/gold] в [gold]{IfUpgraded:show:«Слуг-защитников+»|«Слуг-защитников»}[/gold].",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -17555,7 +17589,7 @@
     "image_url": "/static/images/cards/guards.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]Преобразует[/gold] выбранное количество карт в [gold]руке[/gold] в [gold]«Слуг-щиты+»[/gold].",
+    "upgrade_description": "[gold]Преобразует[/gold] выбранное количество карт в [gold]руке[/gold] в [gold]«Слуг-защитников+»[/gold].",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "keywords_key": [
@@ -17723,8 +17757,8 @@
   {
     "id": "BORROWED_TIME",
     "name": "Сверхурочные",
-    "description": "",
-    "description_raw": "",
+    "description": "Дает [energy:4].\nКарты стоят на [energy:1] больше в этом ходу.",
+    "description_raw": "Дает {Energy:energyIcons()}.\nКарты стоят на {ExtraCost:energyIcons()} больше в этом ходу.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -17753,7 +17787,7 @@
     "image_url": "/static/images/cards/borrowed_time.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Дает [energy:6].\nКарты стоят на [energy:1] больше в этом ходу.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 268
@@ -18854,7 +18888,7 @@
   },
   {
     "id": "MINION_SACRIFICE",
-    "name": "Слуга-щит",
+    "name": "Слуга-защитник",
     "description": "Дает 9 [gold]защиты[/gold].",
     "description_raw": "Дает {Block:diff()} [gold]защиты[/gold].",
     "cost": 0,
@@ -19505,7 +19539,7 @@
     "upgrade_description": "Дает 7 [gold]защиты[/gold].\nНаносит 7 урона.",
     "type_key": "Attack",
     "rarity_key": "Common",
-    "compendium_order": 48
+    "compendium_order": 47
   },
   {
     "id": "STACK",
@@ -20254,7 +20288,7 @@
     "upgrade_description": "Наносит 12 урона.\nВы перекладываете карту из [gold]стопки сброса[/gold] на верх [gold]стопки добора[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
-    "compendium_order": 40
+    "compendium_order": 39
   },
   {
     "id": "BODYGUARD",
@@ -21035,7 +21069,7 @@
     "upgrade_description": "Наносит 20 урона.\nОтнимает у врага 15 [gold]силы[/gold] на этот ход.",
     "type_key": "Attack",
     "rarity_key": "Rare",
-    "compendium_order": 51
+    "compendium_order": 50
   },
   {
     "id": "DODGE_AND_ROLL",
@@ -22598,8 +22632,8 @@
   {
     "id": "BLADE_OF_INK",
     "name": "Чернильный клинок",
-    "description": "Добавляет в [gold]руку[/gold] 2 [purple]Чернильных[/purple] [gold]plural(ru):«Заточку»[/gold].",
-    "description_raw": "Добавляет в [gold]руку[/gold] {Cards:diff()} [purple]Чернильных[/purple] [gold]{Cards:plural(ru):«Заточку»|«Заточки»|«Заточек»}[/gold].",
+    "description": "Добавляет в [gold]руку[/gold] 2 [purple]чернильных[/purple] [gold]plural(ru):«Заточку»[/gold].",
+    "description_raw": "Добавляет в [gold]руку[/gold] {Cards:diff()} [purple]чернильных[/purple] [gold]{Cards:plural(ru):«Заточку»|«Заточки»|«Заточек»}[/gold].",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -22629,7 +22663,7 @@
     "image_url": "/static/images/cards/blade_of_ink.png",
     "beta_image_url": "/static/images/cards/beta/blade_of_ink.png",
     "type_variants": null,
-    "upgrade_description": "Добавляет в [gold]руку[/gold] 3 [purple]Чернильных[/purple] [gold]plural(ru):«Заточку»[/gold].",
+    "upgrade_description": "Добавляет в [gold]руку[/gold] 3 [purple]чернильных[/purple] [gold]plural(ru):«Заточку»[/gold].",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 98

@@ -629,8 +629,8 @@
   {
     "id": "HEART_OF_IRON",
     "name": "หัวใจดุจเหล็ก",
-    "description": "ได้รับ [blue]7[/blue] [gold]Plating[/gold]",
-    "description_raw": "ได้รับ [blue]{PlatingPower}[/blue] [gold]Plating[/gold]",
+    "description": "ได้รับ [blue]7[/blue] [gold]เกราะโลหะ[/gold]",
+    "description_raw": "ได้รับ [blue]{PlatingPower}[/blue] [gold]เกราะโลหะ[/gold]",
     "rarity": "ไม่ธรรมดา",
     "image_url": "/static/images/potions/heart_of_iron.png",
     "rarity_key": "Uncommon",

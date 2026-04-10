@@ -1887,12 +1887,13 @@
       "NEOWS_TORMENT",
       "NEW_LEAF",
       "PRECISE_SCISSORS",
-      "LAVA_ROCK",
+      "PHIAL_HOLSTER",
+      "WINGED_BOOTS",
       "MASSIVE_SCROLL",
+      "LAVA_ROCK",
       "NEOWS_TALISMAN",
       "NUTRITIOUS_OYSTER",
       "POMANDER",
-      "SILVER_CRUCIBLE",
       "SMALL_CAPSULE",
       "STONE_HUMIDIFIER",
       "CURSED_PEARL",
@@ -1900,6 +1901,8 @@
       "LARGE_CAPSULE",
       "LEAFY_POULTICE",
       "PRECARIOUS_SHEARS",
+      "SILVER_CRUCIBLE",
+      "NEOWS_BONES",
       "SCROLL_BOXES"
     ]
   },
@@ -3118,7 +3121,7 @@
       {
         "id": "OBSERVE",
         "title": "관찰한다",
-        "description": "[gold]타격[/gold]이나 [gold]수비[/gold] 1장에 [purple]소용돌이[/purple]를 [gold]인챈트[/gold]합니다."
+        "description": "기본 [gold]타격[/gold]이나 [gold]수비[/gold] 1장에 [purple]소용돌이[/purple]를 [gold]인챈트[/gold]합니다."
       },
       {
         "id": "DRINK",
@@ -3138,7 +3141,7 @@
           {
             "id": "OBSERVE",
             "title": "관찰한다",
-            "description": "[gold]타격[/gold]이나 [gold]수비[/gold] 1장에 [purple]소용돌이[/purple]를 [gold]인챈트[/gold]합니다."
+            "description": "기본 [gold]타격[/gold]이나 [gold]수비[/gold] 1장에 [purple]소용돌이[/purple]를 [gold]인챈트[/gold]합니다."
           },
           {
             "id": "DRINK",

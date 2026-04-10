@@ -28,6 +28,13 @@
     "image_url": "/static/images/orbs/lightning_orb.png"
   },
   {
+    "id": "MOCK_COMBAT_CLEANUP_ORB",
+    "name": "가짜 전투 정리",
+    "description": "",
+    "description_raw": null,
+    "image_url": null
+  },
+  {
     "id": "PLASMA_ORB",
     "name": "플라즈마",
     "description": "[gold]지속:[/gold] 턴 시작 시,\n[energy:1]를 얻습니다.\n[gold]발현:[/gold] [energy:2]를 얻습니다.\n플라즈마는 [gold]밀집[/gold]의 영향을 받지 않습니다.",

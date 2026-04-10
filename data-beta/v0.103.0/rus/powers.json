@@ -42,7 +42,7 @@
   {
     "id": "AGGRESSION",
     "name": "Агрессия",
-    "description": "Вы берете случайную Атаку из [gold]стопки cброса[/gold], она [gold]улучшается[/gold] до конца боя.",
+    "description": "В начале хода вы берете случайную Атаку из [gold]стопки cброса[/gold], она [gold]улучшается[/gold] до конца боя.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -792,7 +792,7 @@
   {
     "id": "FLANKING",
     "name": "Заход с фланга",
-    "description": "Напарники наносят врагу [blue]в 2 раза[/blue] больше урона в этом ходу.",
+    "description": "Напарники наносят врагу [blue]в 2 раза[/blue] больше урона от атак в этом ходу.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -951,9 +951,9 @@
   },
   {
     "id": "GRAPPLE",
-    "name": "Захват",
-    "description": "[gold]this creature[/gold] получает [blue][Amount][/blue] урона, когда вы получаете [gold]защиту[/gold] в этом ходу.",
-    "description_raw": "[gold]{OwnerName}[/gold] получает [blue]{Amount}[/blue] урона, когда вы получаете [gold]защиту[/gold] в этом ходу.",
+    "name": "GrapplePower",
+    "description": "",
+    "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -962,7 +962,7 @@
   {
     "id": "GRASP",
     "name": "Хватка",
-    "description": "При розыгрыше любой карты, вы теряете [blue]1[/blue] энергию.",
+    "description": "При розыгрыше любой карты вы теряете [blue]1[/blue] энергию.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -1222,7 +1222,7 @@
   {
     "id": "ITERATION",
     "name": "Пробы и ошибки",
-    "description": "Вы добираете карты, когда добираете [gold]Статус[/gold] первый раз за ход.",
+    "description": "Вы добираете карты, когда добираете Статус первый раз за ход.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",

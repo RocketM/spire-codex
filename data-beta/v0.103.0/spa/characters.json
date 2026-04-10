@@ -443,6 +443,24 @@
     "image_url": "/static/images/characters/char_select_defect.png"
   },
   {
+    "id": "DEPRECATED_CHARACTER",
+    "name": "DeprecatedCharacter",
+    "description": "",
+    "starting_hp": 1000,
+    "starting_gold": 99,
+    "max_energy": 100,
+    "orb_slots": null,
+    "starting_deck": [],
+    "starting_relics": [],
+    "unlocks_after": null,
+    "gender": "Neutral",
+    "color": "gold",
+    "dialogue_color": null,
+    "quotes": null,
+    "dialogues": null,
+    "image_url": "/static/images/characters/char_select_deprecated_character.png"
+  },
+  {
     "id": "IRONCLAD",
     "name": "El Blindado",
     "description": "El último soldado de los Blindados.\nContra su voluntad, aniquila a sus enemigos con el poder del acero y la llama.",

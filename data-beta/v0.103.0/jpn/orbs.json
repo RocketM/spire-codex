@@ -28,6 +28,13 @@
     "image_url": "/static/images/orbs/lightning_orb.png"
   },
   {
+    "id": "MOCK_COMBAT_CLEANUP_ORB",
+    "name": "テスト用戦闘クリーンナップ",
+    "description": "",
+    "description_raw": null,
+    "image_url": null
+  },
+  {
     "id": "PLASMA_ORB",
     "name": "プラズマ",
     "description": "[gold]自動効果:[/gold] ターン開始時、\n[energy:1]を得る。\n[gold]解放:[/gold] [energy:2]を得る。\nプラズマは[gold]集中力[/gold]の影響を受けない。",

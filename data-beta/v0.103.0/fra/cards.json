@@ -139,7 +139,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "Compétence",
-    "rarity": "Commun",
+    "rarity": "Inhabituel",
     "target": "Self",
     "color": "silent",
     "damage": null,
@@ -163,7 +163,7 @@
     "type_variants": null,
     "upgrade_description": "Piochez 4 cartes.\nDéfaussez 1 carte.",
     "type_key": "Skill",
-    "rarity_key": "Common",
+    "rarity_key": "Uncommon",
     "compendium_order": 114
   },
   {
@@ -1109,7 +1109,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 10
+    "compendium_order": 9
   },
   {
     "id": "RAINBOW",
@@ -1986,7 +1986,7 @@
     "upgrade_description": "Gagnez 16 d'[gold]Armure[/gold].\nLorsque vous vous faites attaquer pendant ce tour, infligez 6 dégâts en retour.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
-    "compendium_order": 50
+    "compendium_order": 51
   },
   {
     "id": "BIASED_COGNITION",
@@ -2432,7 +2432,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 42
+    "compendium_order": 43
   },
   {
     "id": "SHADOW_SHIELD",
@@ -3127,8 +3127,8 @@
   {
     "id": "FLAK_CANNON",
     "name": "Canon anti-aérien",
-    "description": "[gold]Épuisez[/gold] TOUTES vos cartes [gold]Statut[/gold].\nInfligez 8 dégâts à un ennemi aléatoire pour chaque carte [gold]Épuisée[/gold].",
-    "description_raw": "[gold]Épuisez[/gold] TOUTES vos cartes [gold]Statut[/gold].\nInfligez {Damage:diff()} dégâts à un ennemi aléatoire pour chaque carte [gold]Épuisée[/gold].{InCombat:\n(Se déclenche {CalculatedHits:diff()} fois)|}",
+    "description": "[gold]Épuisez[/gold] TOUTES vos cartes Statut.\nInfligez 8 dégâts à un ennemi aléatoire pour chaque carte [gold]Épuisée[/gold].",
+    "description_raw": "[gold]Épuisez[/gold] TOUTES vos cartes Statut.\nInfligez {Damage:diff()} dégâts à un ennemi aléatoire pour chaque carte [gold]Épuisée[/gold].{InCombat:\n(Se déclenche {CalculatedHits:diff()} fois)|}",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -3158,7 +3158,7 @@
     "image_url": "/static/images/cards/flak_cannon.png",
     "beta_image_url": "/static/images/cards/beta/flak_cannon.png",
     "type_variants": null,
-    "upgrade_description": "[gold]Épuisez[/gold] TOUTES vos cartes [gold]Statut[/gold].\nInfligez 11 dégâts à un ennemi aléatoire pour chaque carte [gold]Épuisée[/gold].",
+    "upgrade_description": "[gold]Épuisez[/gold] TOUTES vos cartes Statut.\nInfligez 11 dégâts à un ennemi aléatoire pour chaque carte [gold]Épuisée[/gold].",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 359
@@ -3859,7 +3859,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "Compétence",
-    "rarity": "Rare",
+    "rarity": "Inhabituel",
     "target": "Self",
     "color": "ironclad",
     "damage": null,
@@ -3884,8 +3884,8 @@
     "type_variants": null,
     "upgrade_description": "Gagnez 8 d'[gold]Armure[/gold].\nVous subissez 50% de dégâts en moins des ennemis [gold]Vulnérables[/gold] pendant ce tour.",
     "type_key": "Skill",
-    "rarity_key": "Rare",
-    "compendium_order": 4
+    "rarity_key": "Uncommon",
+    "compendium_order": 40
   },
   {
     "id": "ANGER",
@@ -4450,7 +4450,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Ancient",
-    "compendium_order": 40
+    "compendium_order": 41
   },
   {
     "id": "SUCKER_PUNCH",
@@ -5054,7 +5054,7 @@
     "upgrade_description": "Les ennemis [gold]Vulnérables[/gold] subissent 50% de dégâts supplémentaires.",
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 7
+    "compendium_order": 6
   },
   {
     "id": "GUILTY",
@@ -5478,7 +5478,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 44
+    "compendium_order": 45
   },
   {
     "id": "DOUBT",
@@ -5926,7 +5926,7 @@
     "upgrade_description": "Gagnez 8 d'[gold]Armure[/gold].",
     "type_key": "Skill",
     "rarity_key": "Basic",
-    "compendium_order": 41
+    "compendium_order": 42
   },
   {
     "id": "DEFEND_SILENT",
@@ -6549,7 +6549,7 @@
     "upgrade_description": "Infligez 10 dégâts.\nSi l'ennemi est [gold]Vulnérable[/gold], infligez ces dégâts 2 fois.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 43
+    "compendium_order": 44
   },
   {
     "id": "WASTE_AWAY",
@@ -7031,8 +7031,8 @@
   {
     "id": "FLANKING",
     "name": "Encerclement",
-    "description": "L'ennemi subit le double des dégâts infligés par les autres joueurs jusqu'à la fin du tour.",
-    "description_raw": "L'ennemi subit le double des dégâts infligés par les autres joueurs jusqu'à la fin du tour.",
+    "description": "L'ennemi subit le double des dégâts d'attaque infligés par les autres joueurs jusqu'à la fin du tour.",
+    "description_raw": "L'ennemi subit le double des dégâts d'attaque infligés par les autres joueurs jusqu'à la fin du tour.",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -7581,7 +7581,7 @@
     "upgrade_description": "Infligez 20 dégâts.\nL'ennemi perd 15 de [gold]Force[/gold] jusqu'à la fin du tour.",
     "type_key": "Attack",
     "rarity_key": "Rare",
-    "compendium_order": 15
+    "compendium_order": 14
   },
   {
     "id": "REAVE",
@@ -7626,7 +7626,7 @@
   {
     "id": "SPEEDSTER",
     "name": "Excès de vitesse",
-    "description": "Lorsque vous piochez une carte pendant votre tour, infligez 1 dégâts à TOUS les ennemis.",
+    "description": "Lorsque vous piochez une carte pendant votre tour, infligez 2 dégâts à TOUS les ennemis.",
     "description_raw": "Lorsque vous piochez une carte pendant votre tour, infligez {SpeedsterPower:diff()} dégâts à TOUS les ennemis.",
     "cost": 2,
     "is_x_cost": null,
@@ -7642,7 +7642,7 @@
     "powers_applied": [
       {
         "power": "Excès de vitesse",
-        "amount": 1,
+        "amount": 2,
         "power_key": "Speedster"
       }
     ],
@@ -7653,16 +7653,16 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "SpeedsterPower": 1,
-      "Speedster": 1
+      "SpeedsterPower": 2,
+      "Speedster": 2
     },
     "upgrade": {
-      "speedsterpower": "+1"
+      "add_innate": true
     },
     "image_url": "/static/images/cards/speedster.png",
     "beta_image_url": "/static/images/cards/beta/speedster.png",
     "type_variants": null,
-    "upgrade_description": "Lorsque vous piochez une carte pendant votre tour, infligez 2 dégâts à TOUS les ennemis.",
+    "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 164
@@ -7860,7 +7860,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 11
+    "compendium_order": 10
   },
   {
     "id": "WISP",
@@ -7951,26 +7951,20 @@
   {
     "id": "FOLLOW_THROUGH",
     "name": "Fin du geste",
-    "description": "Infligez 6 dégâts à TOUS les ennemis.\nSi la dernière carte que vous avez jouée ce tour est une Compétence, appliquez [gold]Affaibli[/gold] (1) à TOUS les ennemis.",
-    "description_raw": "Infligez {Damage:diff()} dégâts à TOUS les ennemis.\nSi la dernière carte que vous avez jouée ce tour est une Compétence, appliquez [gold]Affaibli[/gold] ({WeakPower:diff()}) à TOUS les ennemis.",
+    "description": "",
+    "description_raw": "",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "Attaque",
-    "rarity": "Inhabituel",
-    "target": "AllEnemies",
+    "rarity": "Commun",
+    "target": "AnyEnemy",
     "color": "silent",
-    "damage": 6,
+    "damage": 7,
     "block": null,
     "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "Affaibli",
-        "amount": 1,
-        "power_key": "Weak"
-      }
-    ],
+    "powers_applied": null,
     "cards_draw": null,
     "energy_gain": null,
     "hp_loss": null,
@@ -7978,20 +7972,18 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "Damage": 6,
-      "WeakPower": 1,
-      "Weak": 1
+      "CardCount": 5,
+      "Damage": 7
     },
     "upgrade": {
-      "damage": "+2",
-      "weak": "+1"
+      "damage": "+2"
     },
     "image_url": "/static/images/cards/follow_through.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 8 dégâts à TOUS les ennemis.\nSi la dernière carte que vous avez jouée ce tour est une Compétence, appliquez [gold]Affaibli[/gold] (1) à TOUS les ennemis.",
+    "upgrade_description": null,
     "type_key": "Attack",
-    "rarity_key": "Uncommon",
+    "rarity_key": "Common",
     "compendium_order": 138
   },
   {
@@ -8524,7 +8516,7 @@
     "upgrade_description": "Au début de votre tour, gagnez 3 de [gold]Force[/gold].",
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 9
+    "compendium_order": 8
   },
   {
     "id": "ECHO_FORM",
@@ -10174,6 +10166,52 @@
     "compendium_order": 102
   },
   {
+    "id": "GRAPPLE",
+    "name": "Grapple",
+    "description": "",
+    "description_raw": "",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Attaque",
+    "rarity": "Inhabituel",
+    "target": "AnyEnemy",
+    "color": "unknown",
+    "damage": 7,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Grapple",
+        "amount": 5,
+        "power_key": "Grapple"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 7,
+      "GrapplePower": 5,
+      "Grapple": 5
+    },
+    "upgrade": {
+      "damage": "+2",
+      "grapplepower": "+2"
+    },
+    "image_url": "/static/images/cards/grapple.png",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 576
+  },
+  {
     "id": "SCRAWL",
     "name": "Griffonage",
     "description": "Piochez des cartes jusqu'à remplir votre [gold]Main[/gold].",
@@ -11058,7 +11096,7 @@
     "upgrade_description": "Lorsqu'une carte est [gold]Épuisée[/gold], gagnez 4 d'[gold]Armure[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 48
+    "compendium_order": 49
   },
   {
     "id": "ENLIGHTENMENT",
@@ -11262,7 +11300,7 @@
     "upgrade_description": "Infligez 8 dégâts à TOUS les ennemis.\nInflige 3 dégâts supplémentaires pour chaque autre Attaque que vous avez jouée ce tour.",
     "type_key": "Attack",
     "rarity_key": "Rare",
-    "compendium_order": 5
+    "compendium_order": 4
   },
   {
     "id": "COSMIC_INDIFFERENCE",
@@ -11462,7 +11500,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 13
+    "compendium_order": 12
   },
   {
     "id": "POOR_SLEEP",
@@ -12065,7 +12103,7 @@
     "upgrade_description": "Lorsque vous gagnez de l'[gold]Armure[/gold], infligez 7 dégâts à un ennemi aléatoire.",
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 14
+    "compendium_order": 13
   },
   {
     "id": "HAMMER_TIME",
@@ -13412,7 +13450,7 @@
     "upgrade_description": "Au début de votre tour, perdez 1 PV et gagnez 10 d'[gold]Armure[/gold].",
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 6
+    "compendium_order": 5
   },
   {
     "id": "DEATH_MARCH",
@@ -13572,7 +13610,7 @@
     "upgrade_description": "Gagnez 11 d'[gold]Armure[/gold].\nGagnez 11 d'[gold]Armure[/gold] de nouveau si vous avez [gold]Épuisé[/gold] une carte pendant ce tour.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
-    "compendium_order": 46
+    "compendium_order": 47
   },
   {
     "id": "MASTER_OF_STRATEGY",
@@ -13656,7 +13694,7 @@
   {
     "id": "MEMENTO_MORI",
     "name": "Memento mori",
-    "description": "Infligez 8 dégâts.\nInflige 4 dégâts supplémentaires pour chaque carte défaussée ce tour.",
+    "description": "Infligez 9 dégâts.\nInflige 4 dégâts supplémentaires pour chaque carte défaussée ce tour.",
     "description_raw": "Infligez {CalculatedDamage:diff()} dégâts.\nInflige {ExtraDamage:diff()} dégâts supplémentaires pour chaque carte défaussée ce tour.",
     "cost": 1,
     "is_x_cost": null,
@@ -13666,7 +13704,7 @@
     "rarity": "Inhabituel",
     "target": "AnyEnemy",
     "color": "silent",
-    "damage": 8,
+    "damage": 9,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -13677,9 +13715,9 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "CalculationBase": 8,
+      "CalculationBase": 9,
       "ExtraDamage": 4,
-      "CalculatedDamage": 8
+      "CalculatedDamage": 9
     },
     "upgrade": {
       "calculationbase": "+2",
@@ -13688,7 +13726,7 @@
     "image_url": "/static/images/cards/memento_mori.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 8 dégâts.\nInflige 5 dégâts supplémentaires pour chaque carte défaussée ce tour.",
+    "upgrade_description": "Infligez 9 dégâts.\nInflige 5 dégâts supplémentaires pour chaque carte défaussée ce tour.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 146
@@ -15190,7 +15228,7 @@
     "upgrade_description": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
-    "compendium_order": 47
+    "compendium_order": 48
   },
   {
     "id": "SHADOW_STEP",
@@ -15228,6 +15266,48 @@
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 107
+  },
+  {
+    "id": "NOT_YET",
+    "name": "Pas encore",
+    "description": "Récupérez 10 PV.",
+    "description_raw": "Récupérez {Heal:diff()} PV.",
+    "cost": 2,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Compétence",
+    "rarity": "Rare",
+    "target": "Self",
+    "color": "ironclad",
+    "damage": null,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": [
+      "Épuisement"
+    ],
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Heal": 10
+    },
+    "upgrade": {
+      "heal": "+3"
+    },
+    "image_url": null,
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": "Récupérez 13 PV.",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
+    "compendium_order": 15
   },
   {
     "id": "BEAT_DOWN",
@@ -16716,52 +16796,6 @@
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 255
-  },
-  {
-    "id": "GRAPPLE",
-    "name": "Prise au sol",
-    "description": "Infligez 7 dégâts.\nLorsque vous gagnez de l'[gold]Armure[/gold] pendant ce tour, infligez 5 dégâts à l'ennemi.",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nLorsque vous gagnez de l'[gold]Armure[/gold] pendant ce tour, infligez {GrapplePower:diff()} dégâts à l'ennemi.",
-    "cost": 1,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "Attaque",
-    "rarity": "Inhabituel",
-    "target": "AnyEnemy",
-    "color": "ironclad",
-    "damage": 7,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "Prise au sol",
-        "amount": 5,
-        "power_key": "Grapple"
-      }
-    ],
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Damage": 7,
-      "GrapplePower": 5,
-      "Grapple": 5
-    },
-    "upgrade": {
-      "damage": "+2",
-      "grapplepower": "+2"
-    },
-    "image_url": "/static/images/cards/grapple.png",
-    "beta_image_url": null,
-    "type_variants": null,
-    "upgrade_description": "Infligez 9 dégâts.\nLorsque vous gagnez de l'[gold]Armure[/gold] pendant ce tour, infligez 7 dégâts à l'ennemi.",
-    "type_key": "Attack",
-    "rarity_key": "Uncommon",
-    "compendium_order": 52
   },
   {
     "id": "BULK_UP",
@@ -18344,7 +18378,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 51
+    "compendium_order": 52
   },
   {
     "id": "GIANT_ROCK",
@@ -19787,7 +19821,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 8
+    "compendium_order": 7
   },
   {
     "id": "WRITHE",
@@ -19862,7 +19896,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 12
+    "compendium_order": 11
   },
   {
     "id": "SUBROUTINE",
@@ -20584,7 +20618,7 @@
     "upgrade_description": "Piochez 3 cartes.\nAu début de votre tour, [gold]Épuisez[/gold] la carte du dessus de votre [gold]Pioche[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 45
+    "compendium_order": 46
   },
   {
     "id": "BUFFER",
@@ -22211,7 +22245,7 @@
     "upgrade_description": "Infligez 6 dégâts 2 fois.\nGagnez 3 de [gold]Force[/gold].\nL'ennemi gagne 1 de [gold]Force[/gold].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 49
+    "compendium_order": 50
   },
   {
     "id": "TRUE_GRIT",

@@ -1,5 +1,51 @@
 [
   {
+    "id": "GRAPPLE",
+    "name": "Grapple",
+    "description": "",
+    "description_raw": "",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "AnyEnemy",
+    "color": "unknown",
+    "damage": 7,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Grapple",
+        "amount": 5,
+        "power_key": "Grapple"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 7,
+      "GrapplePower": 5,
+      "Grapple": 5
+    },
+    "upgrade": {
+      "damage": "+2",
+      "grapplepower": "+2"
+    },
+    "image_url": "/static/images/cards/grapple.png",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 576
+  },
+  {
     "id": "SEVEN_STARS",
     "name": "七星",
     "description": "对所有敌人造成7点伤害7次。",
@@ -2409,7 +2455,7 @@
     "upgrade_description": "造成20点伤害。\n敌人在本回合失去15点[gold]力量[/gold]。",
     "type_key": "Attack",
     "rarity_key": "Rare",
-    "compendium_order": 51
+    "compendium_order": 50
   },
   {
     "id": "NORMALITY",
@@ -3310,7 +3356,7 @@
     "upgrade_description": "每当你获得[gold]格挡[/gold]时，对随机敌人造成7点伤害。",
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 49
+    "compendium_order": 48
   },
   {
     "id": "FASTEN",
@@ -4966,7 +5012,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 45
+    "compendium_order": 44
   },
   {
     "id": "HELLRAISER",
@@ -5001,7 +5047,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 41
+    "compendium_order": 40
   },
   {
     "id": "EQUILIBRIUM",
@@ -5859,13 +5905,13 @@
     "upgrade_description": "造成12点伤害。\n将你[gold]弃牌堆[/gold]中的一张牌放到[gold]抽牌堆[/gold]顶部。",
     "type_key": "Attack",
     "rarity_key": "Common",
-    "compendium_order": 40
+    "compendium_order": 39
   },
   {
     "id": "FLANKING",
     "name": "夹击",
-    "description": "一名敌人在本回合受到的来自其他玩家的伤害翻倍。",
-    "description_raw": "一名敌人在本回合受到的来自其他玩家的伤害翻倍。",
+    "description": "一名敌人在本回合受到的来自其他玩家的攻击伤害翻倍。",
+    "description_raw": "一名敌人在本回合受到的来自其他玩家的攻击伤害翻倍。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -6632,7 +6678,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 44
+    "compendium_order": 43
   },
   {
     "id": "VENERATE",
@@ -6681,7 +6727,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "技能",
-    "rarity": "稀有",
+    "rarity": "罕见",
     "target": "Self",
     "color": "ironclad",
     "damage": null,
@@ -6706,7 +6752,7 @@
     "type_variants": null,
     "upgrade_description": "获得8点[gold]格挡[/gold]。\n在本回合中，有[gold]易伤[/gold]状态的敌人对你造成的伤害降低50%。",
     "type_key": "Skill",
-    "rarity_key": "Rare",
+    "rarity_key": "Uncommon",
     "compendium_order": 18
   },
   {
@@ -7699,7 +7745,7 @@
     "upgrade_description": "对所有敌人造成21点伤害。\n在你的回合开始时，如果这张牌在你的[gold]消耗牌堆[/gold]中，则将其打出。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 43
+    "compendium_order": 42
   },
   {
     "id": "SUMMON_FORTH",
@@ -7854,7 +7900,7 @@
     "upgrade_description": "失去2点生命。\n造成20点伤害。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 42
+    "compendium_order": 41
   },
   {
     "id": "LOOP",
@@ -10595,52 +10641,6 @@
     "compendium_order": 339
   },
   {
-    "id": "GRAPPLE",
-    "name": "擒拿",
-    "description": "造成7点伤害。\n当你在本回合获得[gold]格挡[/gold]时，对该敌人造成5点伤害。",
-    "description_raw": "造成{Damage:diff()}点伤害。\n当你在本回合获得[gold]格挡[/gold]时，对该敌人造成{GrapplePower:diff()}点伤害。",
-    "cost": 1,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "攻击",
-    "rarity": "罕见",
-    "target": "AnyEnemy",
-    "color": "ironclad",
-    "damage": 7,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "擒拿",
-        "amount": 5,
-        "power_key": "Grapple"
-      }
-    ],
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Damage": 7,
-      "GrapplePower": 5,
-      "Grapple": 5
-    },
-    "upgrade": {
-      "damage": "+2",
-      "grapplepower": "+2"
-    },
-    "image_url": "/static/images/cards/grapple.png",
-    "beta_image_url": null,
-    "type_variants": null,
-    "upgrade_description": "造成9点伤害。\n当你在本回合获得[gold]格挡[/gold]时，对该敌人造成7点伤害。",
-    "type_key": "Attack",
-    "rarity_key": "Uncommon",
-    "compendium_order": 38
-  },
-  {
     "id": "REAP",
     "name": "收割",
     "description": "造成27点伤害。",
@@ -10807,8 +10807,8 @@
   {
     "id": "FLAK_CANNON",
     "name": "散射炮",
-    "description": "[gold]消耗[/gold]你所有的[gold]状态[/gold]牌。\n每有一张被[gold]消耗[/gold]的牌，就随机对敌人造成8点伤害。",
-    "description_raw": "[gold]消耗[/gold]你所有的[gold]状态[/gold]牌。\n每有一张被[gold]消耗[/gold]的牌，就随机对敌人造成{Damage:diff()}点伤害。{InCombat:\n（攻击{CalculatedHits:diff()}次）|}",
+    "description": "[gold]消耗[/gold]你所有的状态牌。\n每有一张被[gold]消耗[/gold]的牌，就随机对敌人造成8点伤害。",
+    "description_raw": "[gold]消耗[/gold]你所有的状态牌。\n每有一张被[gold]消耗[/gold]的牌，就随机对敌人造成{Damage:diff()}点伤害。{InCombat:\n（攻击{CalculatedHits:diff()}次）|}",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -10838,7 +10838,7 @@
     "image_url": "/static/images/cards/flak_cannon.png",
     "beta_image_url": "/static/images/cards/beta/flak_cannon.png",
     "type_variants": null,
-    "upgrade_description": "[gold]消耗[/gold]你所有的[gold]状态[/gold]牌。\n每有一张被[gold]消耗[/gold]的牌，就随机对敌人造成11点伤害。",
+    "upgrade_description": "[gold]消耗[/gold]你所有的状态牌。\n每有一张被[gold]消耗[/gold]的牌，就随机对敌人造成11点伤害。",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 382
@@ -11306,6 +11306,48 @@
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 150
+  },
+  {
+    "id": "NOT_YET",
+    "name": "时候未到",
+    "description": "回复10点生命。",
+    "description_raw": "回复{Heal:diff()}点生命。",
+    "cost": 2,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "技能",
+    "rarity": "稀有",
+    "target": "Self",
+    "color": "ironclad",
+    "damage": null,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": [
+      "消耗"
+    ],
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Heal": 10
+    },
+    "upgrade": {
+      "heal": "+3"
+    },
+    "image_url": null,
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": "回复13点生命。",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
+    "compendium_order": 52
   },
   {
     "id": "SHINING_STRIKE",
@@ -12158,7 +12200,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "技能",
-    "rarity": "普通",
+    "rarity": "罕见",
     "target": "Self",
     "color": "silent",
     "damage": null,
@@ -12182,7 +12224,7 @@
     "type_variants": null,
     "upgrade_description": "抽4张牌。\n丢弃1张牌。",
     "type_key": "Skill",
-    "rarity_key": "Common",
+    "rarity_key": "Uncommon",
     "compendium_order": 90
   },
   {
@@ -12218,7 +12260,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 50
+    "compendium_order": 49
   },
   {
     "id": "AFTERLIFE",
@@ -14550,7 +14592,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 52
+    "compendium_order": 51
   },
   {
     "id": "ENTROPY",
@@ -14674,7 +14716,7 @@
     "upgrade_description": "获得3点[gold]力量[/gold]。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 47
+    "compendium_order": 46
   },
   {
     "id": "BURNING_PACT",
@@ -15212,7 +15254,7 @@
     "upgrade_description": "在你的回合开始时，失去1点生命。\n每当你在你的回合内失去生命时，对所有敌人造成9点伤害。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 46
+    "compendium_order": 45
   },
   {
     "id": "PREDATOR",
@@ -16364,7 +16406,7 @@
     "upgrade_description": null,
     "type_key": "Skill",
     "rarity_key": "Common",
-    "compendium_order": 39
+    "compendium_order": 38
   },
   {
     "id": "DEBRIS",
@@ -20149,26 +20191,20 @@
   {
     "id": "FOLLOW_THROUGH",
     "name": "跟进",
-    "description": "对所有敌人造成6点伤害。\n如果在本回合，你打出的上一张牌是技能牌，则给予所有敌人1层[gold]虚弱[/gold]。",
-    "description_raw": "对所有敌人造成{Damage:diff()}点伤害。\n如果在本回合，你打出的上一张牌是技能牌，则给予所有敌人{WeakPower:diff()}层[gold]虚弱[/gold]。",
+    "description": "造成7点伤害。\n如果你的[gold]手牌[/gold]中还有至少5张其他牌，则额外命中一次。",
+    "description_raw": "造成{Damage:diff()}点伤害。\n如果你的[gold]手牌[/gold]中还有至少{CardCount}张其他{CardCount:plural:牌|牌}，则额外命中一次。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "攻击",
-    "rarity": "罕见",
-    "target": "AllEnemies",
+    "rarity": "普通",
+    "target": "AnyEnemy",
     "color": "silent",
-    "damage": 6,
+    "damage": 7,
     "block": null,
     "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "虚弱",
-        "amount": 1,
-        "power_key": "Weak"
-      }
-    ],
+    "powers_applied": null,
     "cards_draw": null,
     "energy_gain": null,
     "hp_loss": null,
@@ -20176,20 +20212,18 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "Damage": 6,
-      "WeakPower": 1,
-      "Weak": 1
+      "CardCount": 5,
+      "Damage": 7
     },
     "upgrade": {
-      "damage": "+2",
-      "weak": "+1"
+      "damage": "+2"
     },
     "image_url": "/static/images/cards/follow_through.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "对所有敌人造成8点伤害。\n如果在本回合，你打出的上一张牌是技能牌，则给予所有敌人1层[gold]虚弱[/gold]。",
+    "upgrade_description": "造成9点伤害。\n如果你的[gold]手牌[/gold]中还有至少5张其他牌，则额外命中一次。",
     "type_key": "Attack",
-    "rarity_key": "Uncommon",
+    "rarity_key": "Common",
     "compendium_order": 124
   },
   {
@@ -20806,7 +20840,7 @@
   {
     "id": "SPEEDSTER",
     "name": "速行者",
-    "description": "每当你在回合进行中抽到一张牌时，对所有敌人造成1点伤害。",
+    "description": "每当你在回合进行中抽到一张牌时，对所有敌人造成2点伤害。",
     "description_raw": "每当你在回合进行中抽到一张牌时，对所有敌人造成{SpeedsterPower:diff()}点伤害。",
     "cost": 2,
     "is_x_cost": null,
@@ -20822,7 +20856,7 @@
     "powers_applied": [
       {
         "power": "速行者",
-        "amount": 1,
+        "amount": 2,
         "power_key": "Speedster"
       }
     ],
@@ -20833,16 +20867,16 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "SpeedsterPower": 1,
-      "Speedster": 1
+      "SpeedsterPower": 2,
+      "Speedster": 2
     },
     "upgrade": {
-      "speedsterpower": "+1"
+      "add_innate": true
     },
     "image_url": "/static/images/cards/speedster.png",
     "beta_image_url": "/static/images/cards/beta/speedster.png",
     "type_variants": null,
-    "upgrade_description": "每当你在回合进行中抽到一张牌时，对所有敌人造成2点伤害。",
+    "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 160
@@ -21326,7 +21360,7 @@
     "upgrade_description": "获得7点[gold]格挡[/gold]。\n造成7点伤害。",
     "type_key": "Attack",
     "rarity_key": "Common",
-    "compendium_order": 48
+    "compendium_order": 47
   },
   {
     "id": "CALTROPS",
@@ -21415,7 +21449,7 @@
   {
     "id": "MEMENTO_MORI",
     "name": "铭记死亡",
-    "description": "造成8点伤害。\n本回合每丢弃过一张牌，则增加4点额外伤害。",
+    "description": "造成9点伤害。\n本回合每丢弃过一张牌，则增加4点额外伤害。",
     "description_raw": "造成{CalculatedDamage:diff()}点伤害。\n本回合每丢弃过一张牌，则增加{ExtraDamage:diff()}点额外伤害。",
     "cost": 1,
     "is_x_cost": null,
@@ -21425,7 +21459,7 @@
     "rarity": "罕见",
     "target": "AnyEnemy",
     "color": "silent",
-    "damage": 8,
+    "damage": 9,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -21436,9 +21470,9 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "CalculationBase": 8,
+      "CalculationBase": 9,
       "ExtraDamage": 4,
-      "CalculatedDamage": 8
+      "CalculatedDamage": 9
     },
     "upgrade": {
       "calculationbase": "+2",
@@ -21447,7 +21481,7 @@
     "image_url": "/static/images/cards/memento_mori.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "造成8点伤害。\n本回合每丢弃过一张牌，则增加5点额外伤害。",
+    "upgrade_description": "造成9点伤害。\n本回合每丢弃过一张牌，则增加5点额外伤害。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 136

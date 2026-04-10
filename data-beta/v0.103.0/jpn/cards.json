@@ -40,6 +40,52 @@
     "compendium_order": 384
   },
   {
+    "id": "GRAPPLE",
+    "name": "Grapple",
+    "description": "",
+    "description_raw": "",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "アタック",
+    "rarity": "アンコモン",
+    "target": "AnyEnemy",
+    "color": "unknown",
+    "damage": 7,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Grapple",
+        "amount": 5,
+        "power_key": "Grapple"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 7,
+      "GrapplePower": 5,
+      "Grapple": 5
+    },
+    "upgrade": {
+      "damage": "+2",
+      "grapplepower": "+2"
+    },
+    "image_url": "/static/images/cards/grapple.png",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 576
+  },
+  {
     "id": "BELIEVE_IN_YOU",
     "name": "お前を信じる",
     "description": "他のプレイヤーは[energy:2]を得る。",
@@ -640,7 +686,7 @@
     "upgrade_description": "7[gold]ブロック[/gold]を得る。\n7ダメージを与える。",
     "type_key": "Attack",
     "rarity_key": "Common",
-    "compendium_order": 48
+    "compendium_order": 47
   },
   {
     "id": "ICE_LANCE",
@@ -690,7 +736,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "スキル",
-    "rarity": "コモン",
+    "rarity": "アンコモン",
     "target": "Self",
     "color": "silent",
     "damage": null,
@@ -714,7 +760,7 @@
     "type_variants": null,
     "upgrade_description": "カードを4枚引く。\nカードを1枚捨てる。",
     "type_key": "Skill",
-    "rarity_key": "Common",
+    "rarity_key": "Uncommon",
     "compendium_order": 90
   },
   {
@@ -1079,7 +1125,7 @@
     "upgrade_description": "ターン開始時、HPを1失う。\n自身のターンにHPを失うたび、すべての敵に9ダメージを与える。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 46
+    "compendium_order": 45
   },
   {
     "id": "EVIL_EYE",
@@ -1872,52 +1918,6 @@
     "compendium_order": 372
   },
   {
-    "id": "GRAPPLE",
-    "name": "グラップル",
-    "description": "7ダメージを与える。\nこのターン、[gold]ブロック[/gold]を得るたび、対象の敵に5ダメージを与える。",
-    "description_raw": "{Damage:diff()}ダメージを与える。\nこのターン、[gold]ブロック[/gold]を得るたび、対象の敵に{GrapplePower:diff()}ダメージを与える。",
-    "cost": 1,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "アタック",
-    "rarity": "アンコモン",
-    "target": "AnyEnemy",
-    "color": "ironclad",
-    "damage": 7,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "グラップル",
-        "amount": 5,
-        "power_key": "Grapple"
-      }
-    ],
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Damage": 7,
-      "GrapplePower": 5,
-      "Grapple": 5
-    },
-    "upgrade": {
-      "damage": "+2",
-      "grapplepower": "+2"
-    },
-    "image_url": "/static/images/cards/grapple.png",
-    "beta_image_url": null,
-    "type_variants": null,
-    "upgrade_description": "9ダメージを与える。\nこのターン、[gold]ブロック[/gold]を得るたび、対象の敵に7ダメージを与える。",
-    "type_key": "Attack",
-    "rarity_key": "Uncommon",
-    "compendium_order": 38
-  },
-  {
     "id": "GRAND_FINALE",
     "name": "グランドフィナーレ",
     "description": "[gold]山札[/gold]にカードが1枚もない場合のみプレイできる。すべての敵に60ダメージを与える。",
@@ -2576,7 +2576,7 @@
     "upgrade_description": "[gold]ブロック[/gold]を得るたび、ランダムな敵に7ダメージを与える。",
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 49
+    "compendium_order": 48
   },
   {
     "id": "JUGGLING",
@@ -2611,7 +2611,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 50
+    "compendium_order": 49
   },
   {
     "id": "JACKPOT",
@@ -3095,7 +3095,7 @@
   {
     "id": "SPEEDSTER",
     "name": "スピードスター",
-    "description": "自分のターン中にカードを引くたび、すべての敵に1ダメージを与える。",
+    "description": "自分のターン中にカードを引くたび、すべての敵に2ダメージを与える。",
     "description_raw": "自分のターン中にカードを引くたび、すべての敵に{SpeedsterPower:diff()}ダメージを与える。",
     "cost": 2,
     "is_x_cost": null,
@@ -3111,7 +3111,7 @@
     "powers_applied": [
       {
         "power": "スピードスター",
-        "amount": 1,
+        "amount": 2,
         "power_key": "Speedster"
       }
     ],
@@ -3122,16 +3122,16 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "SpeedsterPower": 1,
-      "Speedster": 1
+      "SpeedsterPower": 2,
+      "Speedster": 2
     },
     "upgrade": {
-      "speedsterpower": "+1"
+      "add_innate": true
     },
     "image_url": "/static/images/cards/speedster.png",
     "beta_image_url": "/static/images/cards/beta/speedster.png",
     "type_variants": null,
-    "upgrade_description": "自分のターン中にカードを引くたび、すべての敵に2ダメージを与える。",
+    "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 160
@@ -4204,8 +4204,8 @@
   {
     "id": "SHIV",
     "name": "ナイフ",
-    "description": "",
-    "description_raw": "",
+    "description": "すべての敵に4ダメージを与える。",
+    "description_raw": "{TargetType:choose(AllEnemies):すべての敵に|}{Damage:diff()}ダメージを与える。",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -4237,7 +4237,7 @@
     "image_url": "/static/images/cards/shiv.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "すべての敵に6ダメージを与える。",
     "type_key": "Attack",
     "rarity_key": "Token",
     "keywords_key": [
@@ -5808,8 +5808,8 @@
   {
     "id": "FLAK_CANNON",
     "name": "フラックキャノン",
-    "description": "すべての[gold]状態異常[/gold]を[gold]廃棄[/gold]する。[gold]廃棄[/gold]したカード1枚につき、ランダムな敵に8ダメージを与える。",
-    "description_raw": "すべての[gold]状態異常[/gold]を[gold]廃棄[/gold]する。[gold]廃棄[/gold]したカード1枚につき、ランダムな敵に{Damage:diff()}ダメージを与える。{InCombat:\n(攻撃回数は{CalculatedHits:diff()}回)|}",
+    "description": "すべての状態異常を[gold]廃棄[/gold]する。[gold]廃棄[/gold]したカード1枚につき、ランダムな敵に8ダメージを与える。",
+    "description_raw": "すべての状態異常を[gold]廃棄[/gold]する。[gold]廃棄[/gold]したカード1枚につき、ランダムな敵に{Damage:diff()}ダメージを与える。{InCombat:\n(攻撃回数は{CalculatedHits:diff()}回)|}",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -5839,7 +5839,7 @@
     "image_url": "/static/images/cards/flak_cannon.png",
     "beta_image_url": "/static/images/cards/beta/flak_cannon.png",
     "type_variants": null,
-    "upgrade_description": "すべての[gold]状態異常[/gold]を[gold]廃棄[/gold]する。[gold]廃棄[/gold]したカード1枚につき、ランダムな敵に11ダメージを与える。",
+    "upgrade_description": "すべての状態異常を[gold]廃棄[/gold]する。[gold]廃棄[/gold]したカード1枚につき、ランダムな敵に11ダメージを与える。",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 382
@@ -6256,7 +6256,7 @@
     "upgrade_description": "12ダメージを与える。\n[gold]捨て札[/gold]のカードを1枚[gold]山札[/gold]の一番上に置く。",
     "type_key": "Attack",
     "rarity_key": "Common",
-    "compendium_order": 40
+    "compendium_order": 39
   },
   {
     "id": "GUNK_UP",
@@ -6334,7 +6334,7 @@
     "upgrade_description": "HPを2失う。\n20ダメージを与える。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 42
+    "compendium_order": 41
   },
   {
     "id": "HELLRAISER",
@@ -6369,7 +6369,7 @@
     "upgrade_description": null,
     "type_key": "Power",
     "rarity_key": "Rare",
-    "compendium_order": 41
+    "compendium_order": 40
   },
   {
     "id": "HEAVENLY_DRILL",
@@ -7258,7 +7258,7 @@
   {
     "id": "MEMENTO_MORI",
     "name": "メメント・モリ",
-    "description": "8ダメージを与える。\nこのターン、捨てたカード1枚につき、追加で4ダメージを与える。",
+    "description": "9ダメージを与える。\nこのターン、捨てたカード1枚につき、追加で4ダメージを与える。",
     "description_raw": "{CalculatedDamage:diff()}ダメージを与える。\nこのターン、捨てたカード1枚につき、追加で{ExtraDamage:diff()}ダメージを与える。",
     "cost": 1,
     "is_x_cost": null,
@@ -7268,7 +7268,7 @@
     "rarity": "アンコモン",
     "target": "AnyEnemy",
     "color": "silent",
-    "damage": 8,
+    "damage": 9,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -7279,9 +7279,9 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "CalculationBase": 8,
+      "CalculationBase": 9,
       "ExtraDamage": 4,
-      "CalculatedDamage": 8
+      "CalculatedDamage": 9
     },
     "upgrade": {
       "calculationbase": "+2",
@@ -7290,7 +7290,7 @@
     "image_url": "/static/images/cards/memento_mori.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "8ダメージを与える。\nこのターン、捨てたカード1枚につき、追加で5ダメージを与える。",
+    "upgrade_description": "9ダメージを与える。\nこのターン、捨てたカード1枚につき、追加で5ダメージを与える。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 136
@@ -7962,7 +7962,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 44
+    "compendium_order": 43
   },
   {
     "id": "UNTOUCHABLE",
@@ -8823,8 +8823,8 @@
   {
     "id": "BORROWED_TIME",
     "name": "借り物の時間",
-    "description": "",
-    "description_raw": "",
+    "description": "[energy:4]を得る。\nこのターン、カードのコストは[energy:1]増加する。",
+    "description_raw": "{Energy:energyIcons()}を得る。\nこのターン、カードのコストは{ExtraCost:energyIcons()}増加する。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -8853,7 +8853,7 @@
     "image_url": "/static/images/cards/borrowed_time.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "[energy:6]を得る。\nこのターン、カードのコストは[energy:1]増加する。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 268
@@ -9451,7 +9451,7 @@
     "upgrade_description": "20ダメージを与える。\nターン終了時まで敵は[gold]筋力[/gold]15を失う。",
     "type_key": "Attack",
     "rarity_key": "Rare",
-    "compendium_order": 51
+    "compendium_order": 50
   },
   {
     "id": "SUNDER",
@@ -10957,8 +10957,8 @@
   {
     "id": "BLADE_OF_INK",
     "name": "墨の刃",
-    "description": "",
-    "description_raw": "",
+    "description": "[purple]墨塗り[/purple]の[gold]ナイフ[/gold]を2枚、[gold]手札[/gold]に加える。",
+    "description_raw": "[purple]墨塗り[/purple]の[gold]ナイフ[/gold]を{Cards:diff()}枚、[gold]手札[/gold]に加える。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -10988,7 +10988,7 @@
     "image_url": "/static/images/cards/blade_of_ink.png",
     "beta_image_url": "/static/images/cards/beta/blade_of_ink.png",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "[purple]墨塗り[/purple]の[gold]ナイフ[/gold]を3枚、[gold]手札[/gold]に加える。",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 98
@@ -12120,7 +12120,7 @@
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "スキル",
-    "rarity": "レア",
+    "rarity": "アンコモン",
     "target": "Self",
     "color": "ironclad",
     "damage": null,
@@ -12145,7 +12145,7 @@
     "type_variants": null,
     "upgrade_description": "8[gold]ブロック[/gold]を得る。\nこのターン、[gold]弱体[/gold]中の敵から受けるダメージが50%減少する。",
     "type_key": "Skill",
-    "rarity_key": "Rare",
+    "rarity_key": "Uncommon",
     "compendium_order": 18
   },
   {
@@ -12752,7 +12752,7 @@
     "upgrade_description": "すべての敵に21ダメージを与える。\nターン開始時、これが[gold]廃棄札[/gold]にある場合、それをプレイする。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
-    "compendium_order": 43
+    "compendium_order": 42
   },
   {
     "id": "GLIMPSE_BEYOND",
@@ -14128,8 +14128,8 @@
   {
     "id": "FLANKING",
     "name": "挟撃",
-    "description": "このターン、敵は他のプレイヤーから受けるダメージが2倍になる。",
-    "description_raw": "このターン、敵は他のプレイヤーから受けるダメージが2倍になる。",
+    "description": "このターン、対象の敵は他のプレイヤーから受けるアタックダメージが2倍になる。",
+    "description_raw": "このターン、対象の敵は他のプレイヤーから受けるアタックダメージが2倍になる。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -14916,6 +14916,48 @@
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 141
+  },
+  {
+    "id": "NOT_YET",
+    "name": "未だ倒れず",
+    "description": "HPを10回復する。",
+    "description_raw": "HPを{Heal:diff()}回復する。",
+    "cost": 2,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "スキル",
+    "rarity": "レア",
+    "target": "Self",
+    "color": "ironclad",
+    "damage": null,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": [
+      "廃棄"
+    ],
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Heal": 10
+    },
+    "upgrade": {
+      "heal": "+3"
+    },
+    "image_url": null,
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": "HPを13回復する。",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
+    "compendium_order": 52
   },
   {
     "id": "AFTERLIFE",
@@ -16206,7 +16248,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 52
+    "compendium_order": 51
   },
   {
     "id": "FURNACE",
@@ -17687,7 +17729,7 @@
     "upgrade_description": "[gold]筋力[/gold]3を得る。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
-    "compendium_order": 47
+    "compendium_order": 46
   },
   {
     "id": "DISCOVERY",
@@ -19555,7 +19597,7 @@
     "upgrade_description": null,
     "type_key": "Skill",
     "rarity_key": "Common",
-    "compendium_order": 39
+    "compendium_order": 38
   },
   {
     "id": "SPORE_MIND",
@@ -21410,26 +21452,20 @@
   {
     "id": "FOLLOW_THROUGH",
     "name": "追打ち",
-    "description": "すべての敵に6ダメージを与える。このターン、直前にプレイしたカードがスキルだった場合、すべての敵に[gold]脱力[/gold]1を付与する。",
-    "description_raw": "すべての敵に{Damage:diff()}ダメージを与える。このターン、直前にプレイしたカードがスキルだった場合、すべての敵に[gold]脱力[/gold]{WeakPower:diff()}を付与する。",
+    "description": "7ダメージを与える。\n[gold]手札[/gold]に5以上のカードがある場合、攻撃回数が1回増える。",
+    "description_raw": "{Damage:diff()}ダメージを与える。\n[gold]手札[/gold]に{CardCount}以上のカードがある場合、攻撃回数が1回増える。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
     "star_cost": null,
     "type": "アタック",
-    "rarity": "アンコモン",
-    "target": "AllEnemies",
+    "rarity": "コモン",
+    "target": "AnyEnemy",
     "color": "silent",
-    "damage": 6,
+    "damage": 7,
     "block": null,
     "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "脱力",
-        "amount": 1,
-        "power_key": "Weak"
-      }
-    ],
+    "powers_applied": null,
     "cards_draw": null,
     "energy_gain": null,
     "hp_loss": null,
@@ -21437,20 +21473,18 @@
     "tags": null,
     "spawns_cards": null,
     "vars": {
-      "Damage": 6,
-      "WeakPower": 1,
-      "Weak": 1
+      "CardCount": 5,
+      "Damage": 7
     },
     "upgrade": {
-      "damage": "+2",
-      "weak": "+1"
+      "damage": "+2"
     },
     "image_url": "/static/images/cards/follow_through.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "すべての敵に8ダメージを与える。このターン、直前にプレイしたカードがスキルだった場合、すべての敵に[gold]脱力[/gold]1を付与する。",
+    "upgrade_description": "9ダメージを与える。\n[gold]手札[/gold]に5以上のカードがある場合、攻撃回数が1回増える。",
     "type_key": "Attack",
-    "rarity_key": "Uncommon",
+    "rarity_key": "Common",
     "compendium_order": 124
   },
   {
@@ -21815,7 +21849,7 @@
   },
   {
     "id": "FERAL",
-    "name": "野生",
+    "name": "野性",
     "description": "毎ターン、コスト0[energy:1]のアタックをプレイするたび、そのカードを[gold]手札[/gold]に戻す（1ターンにつき1枚まで）。",
     "description_raw": "毎ターン、コスト0{energyPrefix:energyIcons(1)}のアタックをプレイするたび、そのカードを[gold]手札[/gold]に戻す（1ターンにつき{FeralPower:diff()}枚まで）。",
     "cost": 2,
@@ -21831,7 +21865,7 @@
     "hit_count": null,
     "powers_applied": [
       {
-        "power": "野生",
+        "power": "野性",
         "amount": 1,
         "power_key": "Feral"
       }
@@ -22817,7 +22851,7 @@
     "keywords_key": [
       "Exhaust"
     ],
-    "compendium_order": 45
+    "compendium_order": 44
   },
   {
     "id": "DEMESNE",

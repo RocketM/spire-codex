@@ -28,6 +28,13 @@
     "image_url": "/static/images/orbs/lightning_orb.png"
   },
   {
+    "id": "MOCK_COMBAT_CLEANUP_ORB",
+    "name": "Mock Combat Cleanup",
+    "description": "",
+    "description_raw": null,
+    "image_url": null
+  },
+  {
     "id": "PLASMA_ORB",
     "name": "Plazma",
     "description": "[gold]Umiejętność pasywna:[/gold] Na początku tury\nzyskaj [energy:1].\n[gold]Wyładowanie:[/gold] Zyskaj [energy:2].\n[gold]Skupienie[/gold] nie wpływa na Plazmę.",

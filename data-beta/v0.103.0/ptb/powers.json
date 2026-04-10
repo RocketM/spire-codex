@@ -792,7 +792,7 @@
   {
     "id": "FLANKING",
     "name": "Flanquear",
-    "description": "Aliados causam [blue]2x[/blue] mais dano a este inimigo neste turno.",
+    "description": "Outros jogadores causam [blue]2x[/blue] mais dano de ataque a este inimigo neste turno.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -951,9 +951,9 @@
   },
   {
     "id": "GRAPPLE",
-    "name": "Agarrão",
-    "description": "Sempre que você receber [gold]Proteção[/gold] neste turno, [gold]this creature[/gold] sofre [blue][Amount][/blue] de dano.",
-    "description_raw": "Sempre que você receber [gold]Proteção[/gold] neste turno, [gold]{OwnerName}[/gold] sofre [blue]{Amount}[/blue] de dano.",
+    "name": "GrapplePower",
+    "description": "",
+    "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1222,7 +1222,7 @@
   {
     "id": "ITERATION",
     "name": "Iteração",
-    "description": "Na primeira vez que você comprar uma carta de [gold]Condição[/gold] a cada turno, compre duas cartas adicionais.",
+    "description": "Na primeira vez que você comprar uma carta de Condição a cada turno, compre duas cartas adicionais.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",

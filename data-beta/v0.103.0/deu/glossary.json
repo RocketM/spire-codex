@@ -56,7 +56,7 @@
   {
     "id": "EXHAUST_PILE",
     "name": "Erschöpfte Karten",
-    "description": "Klicke, um Karten zu siehen, die in diesem Kampf Erschöpft wurden.",
+    "description": "Klicke, um Karten zu sehen, die in diesem Kampf Erschöpft wurden.",
     "category": "zones"
   },
   {

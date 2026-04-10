@@ -46,7 +46,7 @@
   {
     "id": "GOOPY",
     "name": "Klebrig",
-    "description": "Diese Karte bekommt [gold]Erschöpft[/gold]. Wenn sie ausgespielt wird, erhöhe den [gold]Block[/gold] dieser Karte permanent um [blue]1[/blue].",
+    "description": "Diese Karte bekommt [gold]Erschöpft[/gold]. Erhöhe beim Ausspielen den [gold]Block[/gold] dieser Karte permanent um [blue]1[/blue].",
     "description_raw": null,
     "extra_card_text": "Erhöhe den [gold]Block[/gold] dieser Karte permanent um [blue]1[/blue].",
     "card_type": null,

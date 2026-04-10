@@ -695,7 +695,7 @@
     "name": "水晶玉",
     "type": "Shared",
     "act": null,
-    "description": "[sine][blue]「来ることは、視えておったぞ……！」[/blue][/sine]\n\n[purple]神秘的な小屋[/purple]に入ると、[jitter]しわがれた[/jitter]声が響いてきた。\n\n[sine][blue]「お主の運命がここへ導いたのじゃ。 お主の未来と運勢を明らかにせねばならん。 我らすべてを救うために！！」[/blue][/sine]\n「さあ、[gold]水晶占い[/gold]のコースを選んでおくれ。 この免責事項にもサインを頼むぞい」老婆はそう言って、ペンと羊皮紙を取り出した。",
+    "description": "[sine][blue]「ここに来ることは、すでに視えておったぞ……！」[/blue][/sine]\n\n[purple]神秘的な小屋[/purple]に入ると、[jitter]しわがれた[/jitter]声が響いてきた。\n\n[sine][blue]「運命がお主をここへと導いたのじゃ。 そして今、未来と運勢を明らかにせねばならぬ。 我らすべてを救うために！！」[/blue][/sine]\n「さあ、[gold]水晶占い[/gold]のコースを選んでおくれ。 この免責事項にもサインを頼むぞい」老婆はそう言って、ペンと羊皮紙を取り出した。",
     "preconditions": [
       "Requires 100+ gold",
       "Act 2+"
@@ -719,7 +719,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "[sine][blue]「来ることは、視えておったぞ……！」[/blue][/sine]\n\n[purple]神秘的な小屋[/purple]に入ると、[jitter]しわがれた[/jitter]声が響いてきた。\n\n[sine][blue]「お主の運命がここへ導いたのじゃ。 お主の未来と運勢を明らかにせねばならん。 我らすべてを救うために！！」[/blue][/sine]\n「さあ、[gold]水晶占い[/gold]のコースを選んでおくれ。 この免責事項にもサインを頼むぞい」老婆はそう言って、ペンと羊皮紙を取り出した。",
+        "description": "[sine][blue]「ここに来ることは、すでに視えておったぞ……！」[/blue][/sine]\n\n[purple]神秘的な小屋[/purple]に入ると、[jitter]しわがれた[/jitter]声が響いてきた。\n\n[sine][blue]「運命がお主をここへと導いたのじゃ。 そして今、未来と運勢を明らかにせねばならぬ。 我らすべてを救うために！！」[/blue][/sine]\n「さあ、[gold]水晶占い[/gold]のコースを選んでおくれ。 この免責事項にもサインを頼むぞい」老婆はそう言って、ペンと羊皮紙を取り出した。",
         "options": [
           {
             "id": "UNCOVER_FUTURE",
@@ -735,7 +735,7 @@
       },
       {
         "id": "PAYMENT_PLAN",
-        "description": "支払いプラン"
+        "description": "支払い方法"
       },
       {
         "id": "UNCOVER_FUTURE",
@@ -1887,12 +1887,13 @@
       "NEOWS_TORMENT",
       "NEW_LEAF",
       "PRECISE_SCISSORS",
-      "LAVA_ROCK",
+      "PHIAL_HOLSTER",
+      "WINGED_BOOTS",
       "MASSIVE_SCROLL",
+      "LAVA_ROCK",
       "NEOWS_TALISMAN",
       "NUTRITIOUS_OYSTER",
       "POMANDER",
-      "SILVER_CRUCIBLE",
       "SMALL_CAPSULE",
       "STONE_HUMIDIFIER",
       "CURSED_PEARL",
@@ -1900,6 +1901,8 @@
       "LARGE_CAPSULE",
       "LEAFY_POULTICE",
       "PRECARIOUS_SHEARS",
+      "SILVER_CRUCIBLE",
+      "NEOWS_BONES",
       "SCROLL_BOXES"
     ]
   },

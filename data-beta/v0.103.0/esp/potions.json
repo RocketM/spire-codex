@@ -376,8 +376,8 @@
   {
     "id": "FOUL_POTION",
     "name": "Poción fétida",
-    "description": "Infliges [blue]12[/blue] de daño A TODOS los enemigos y jugadores.\nPss... puedes arrojársela al [gold]Comerciante[/gold] por [blue]100[/blue] de [gold]oro[/gold].",
-    "description_raw": "Infliges [blue]{Damage}[/blue] de daño A TODOS los enemigos y jugadores.\nPss... puedes arrojársela al [gold]Comerciante[/gold] por [blue]{Gold}[/blue] de [gold]oro[/gold].",
+    "description": "Infliges [blue]12[/blue] de daño a TODOS los enemigos y jugadores.\nPsst... puedes arrojársela al [gold]Comerciante[/gold] por [blue]100[/blue] de [gold]oro[/gold].",
+    "description_raw": "Infliges [blue]{Damage}[/blue] de daño a TODOS los enemigos y jugadores.\nPsst... puedes arrojársela al [gold]Comerciante[/gold] por [blue]{Gold}[/blue] de [gold]oro[/gold].",
     "rarity": "De evento",
     "image_url": "/static/images/potions/foul_potion.png",
     "rarity_key": "Event",

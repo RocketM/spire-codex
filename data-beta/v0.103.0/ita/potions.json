@@ -618,8 +618,8 @@
   {
     "id": "FRUIT_JUICE",
     "name": "Succo di Frutta",
-    "description": "Ottieni [blue]5[/blue] PV massimi.",
-    "description_raw": "Ottieni [blue]{MaxHp}[/blue] PV massimi.",
+    "description": "Aumenti i PV massimi di [blue]5[/blue].",
+    "description_raw": "Aumenti i PV massimi di [blue]{MaxHp}[/blue].",
     "rarity": "Rara",
     "image_url": "/static/images/potions/fruit_juice.png",
     "rarity_key": "Rare",

@@ -52,7 +52,7 @@
   {
     "id": "ANTICIPATE",
     "name": "Temporary Dexterity",
-    "description": "Bu turun sonuna kadar [gold]Çeviklik[/gold] elde et.",
+    "description": "Bu turun sonuna kadar [gold]Beceriklilik[/gold] elde et.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -191,8 +191,8 @@
   },
   {
     "id": "BORROWED_TIME",
-    "name": "BorrowedTimePower",
-    "description": "",
+    "name": "Ödünç Zaman",
+    "description": "Kartların maliyeti bu turda fazladan 1 Enerji artar.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -561,8 +561,8 @@
   },
   {
     "id": "DEXTERITY",
-    "name": "Çeviklik",
-    "description": "Çeviklik, kartlardan elde edilen [gold]Blok[/gold]'u artırır.",
+    "name": "Beceriklilik",
+    "description": "Beceriklilik, kartlardan elde edilen [gold]Blok[/gold]'u artırır.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -792,7 +792,7 @@
   {
     "id": "FLANKING",
     "name": "Kuşatma",
-    "description": "Bu tur, diğer müttefikler bu düşmana [blue]2x[/blue] daha fazla hasar verir.",
+    "description": "Bu tur, diğer oyuncular bu düşmana [blue]2 kat[/blue] daha fazla hasar verir.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -951,9 +951,9 @@
   },
   {
     "id": "GRAPPLE",
-    "name": "Kavra",
-    "description": "Bu tur her [gold]Blok[/gold] elde ettiğinde [gold]this creature[/gold] [blue][Amount][/blue] hasar alır.",
-    "description_raw": "Bu tur her [gold]Blok[/gold] elde ettiğinde [gold]{OwnerName}[/gold] [blue]{Amount}[/blue] hasar alır.",
+    "name": "GrapplePower",
+    "description": "",
+    "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -962,8 +962,8 @@
   {
     "id": "GRASP",
     "name": "Kavrayış",
-    "description": "Her tur oynayacağın ilk kartın maliyeti [blue]1[/blue] [energy:1] fazla olur.",
-    "description_raw": "Her tur oynayacağın ilk kartın maliyeti [blue]1[/blue] {energyPrefix:energyIcons(1)} fazla olur.",
+    "description": "Her kart oynadığında [blue]1[/blue] Enerji kaybet.",
+    "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
     "allow_negative": null,
@@ -1072,7 +1072,7 @@
   {
     "id": "HELICAL_DART",
     "name": "Temporary Dexterity",
-    "description": "Bu turun sonuna kadar [gold]Çeviklik[/gold] elde et.",
+    "description": "Bu turun sonuna kadar [gold]Beceriklilik[/gold] elde et.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1222,7 +1222,7 @@
   {
     "id": "ITERATION",
     "name": "Yineleme",
-    "description": "Her tur ilk kez [gold]Durum[/gold] kartı çektiğinde, fazladan kart çekersin.",
+    "description": "Her tur ilk kez Durum kartı çektiğinde fazladan kart çekersin.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1242,7 +1242,7 @@
   {
     "id": "JUGGLING",
     "name": "Hokkabazlık",
-    "description": "Her turda oynadığın üçüncü Saldırı'nın bir kopyasını [gold]El[/gold]'ine ekle.",
+    "description": "Her turda oynadığın üçüncü Saldırı kartının bir kopyasını [gold]El[/gold]'ine ekle.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1661,8 +1661,8 @@
   },
   {
     "id": "POSSESS_SPEED",
-    "name": "Çeviklik Hırsızı",
-    "description": "Öldürüldüğünde, çalınan tüm [gold]Çeviklik[/gold] oyuncuya geri döner.",
+    "name": "Beceriklilik Hırsızı",
+    "description": "Öldürüldüğünde, çalınan tüm [gold]Beceriklilik[/gold] oyuncuya geri döner.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -2122,7 +2122,7 @@
   {
     "id": "SPEED_POTION",
     "name": "Temporary Dexterity",
-    "description": "Bu turun sonuna kadar [gold]Çeviklik[/gold] elde et.",
+    "description": "Bu turun sonuna kadar [gold]Beceriklilik[/gold] elde et.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2352,7 +2352,7 @@
   {
     "id": "TENDER",
     "name": "Hassas",
-    "description": "Her kart oynadığında, bu tur için [blue]1[/blue] [gold]Kuvvet[/gold] ve [blue]1[/blue] [gold]Çeviklik[/gold] kaybet.",
+    "description": "Her kart oynadığında, bu tur için [blue]1[/blue] [gold]Kuvvet[/gold] ve [blue]1[/blue] [gold]Beceriklilik[/gold] kaybet.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -2592,7 +2592,7 @@
   {
     "id": "WRAITH_FORM",
     "name": "Hayalet Formu",
-    "description": "Turunun başında [blue]1[/blue] [gold]Çeviklik[/gold] kaybet.",
+    "description": "Turunun başında [blue]1[/blue] [gold]Beceriklilik[/gold] kaybet.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",

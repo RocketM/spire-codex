@@ -792,7 +792,7 @@
   {
     "id": "FLANKING",
     "name": "Encerclement",
-    "description": "Les autres alliés infligent [blue]2x[/blue] plus de dégâts à cet ennemi pendant ce tour.",
+    "description": "Les autres alliés infligent [blue]2x[/blue] plus de dégâts d'attaque à cet ennemi pendant ce tour.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -951,9 +951,9 @@
   },
   {
     "id": "GRAPPLE",
-    "name": "Prise au sol",
-    "description": "Lorsque vous gagnez de l'[gold]Armure[/gold] pendant ce tour, infligez [blue][Amount][/blue] dégâts à [gold]this creature[/gold].",
-    "description_raw": "Lorsque vous gagnez de l'[gold]Armure[/gold] pendant ce tour, infligez [blue]{Amount}[/blue] dégâts à [gold]{OwnerName}[/gold].",
+    "name": "GrapplePower",
+    "description": "",
+    "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1222,7 +1222,7 @@
   {
     "id": "ITERATION",
     "name": "Itération",
-    "description": "La première fois que vous piochez une carte [gold]Statut[/gold] chaque tour, vous piochez plus de cartes.",
+    "description": "La première fois que vous piochez une carte Statut chaque tour, vous piochez plus de cartes.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",

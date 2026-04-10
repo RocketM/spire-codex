@@ -47,5 +47,12 @@
     "description": "このターン、これ以上[gold]スキル[/gold]をプレイできない。ターン終了時に解除される。",
     "extra_card_text": null,
     "is_stackable": false
+  },
+  {
+    "id": "WEIGHTED",
+    "name": "重荷",
+    "description": "このカードをプレイした時、[energy:1]を失う。",
+    "extra_card_text": "[energy:1]を失う。",
+    "is_stackable": false
   }
 ]
