@@ -853,7 +853,7 @@
   {
     "id": "BOWLER_HAT",
     "name": "Chapéu Coco",
-    "description": "Receba [blue]%[/blue] de [gold]Ouro[/gold] adicional.",
+    "description": "Receba [blue]25%[/blue] de [gold]Ouro[/gold] adicional.",
     "description_raw": "Receba [blue]{GoldIncrease:percentMore()}%[/blue] de [gold]Ouro[/gold] adicional.",
     "flavor": "[red]Detalhes sobre esta relíquia serão revelados no futuro...[/red]",
     "rarity": "Relíquia Incomum",

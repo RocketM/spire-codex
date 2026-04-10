@@ -5,6 +5,7 @@
     "type": "Event",
     "act": "Underdocks",
     "description": "Odkrywasz ustronną komnatę.\n\nPara unosi się z bulgoczących zbiorników gorącej cieczy, zmieniającej kolory w hipnotyzującym rytmie. Z sufitu wystaje zeskorupiała narośl, z której ocieka lepki płyn, sycząc z każdym skapnięciem. W gęstym powietrzu czuć zapach [blue]soli[/blue] oraz czegoś [green]ewidentnie organicznego[/green].\n\nZbliżasz się do brzegu największego zbiornika, a powierzchnia zebranej w nim cieczy zaczyna falować. Wody bulgoczą coraz mocniej, jakby oczekiwały twojego wejścia.",
+    "preconditions": null,
     "options": [
       {
         "id": "IMMERSE",
@@ -242,6 +243,10 @@
     "type": "Event",
     "act": "Act 2 - Hive",
     "description": "[b][jitter]BRZDĘK! BRZDĘK!!![/jitter][/b]\n\nPo drugiej stronie ściany słychać odgłosy wykuwania metalu...\n\nPróbujesz ich podsłuchać, przykładając głowę do ściany, która nagle otwiera się i ujawnia [orange]kolosalną, sześcioręczną postać[/orange] skupioną na pracy.\n Jej „twarz” to [gold][sine]symbole jarzące się[/sine][/gold] w płomiennym wirze.\n\n„[aqua]Wyniesiony[/aqua] odnalazł mój warsztat? Czas na [jitter]SPAWANIE[/jitter]!”",
+    "preconditions": [
+      "Requires 2+ Strikes in deck",
+      "Requires 2+ Defends in deck"
+    ],
     "options": [
       {
         "id": "COMBINE_STRIKES",
@@ -287,6 +292,7 @@
     "type": "Event",
     "act": "Act 1 - Overgrowth",
     "description": "Z trudem przechodzisz przez grube poszycie, gdy po dotarciu na polanę dopada cię nagle fala nostalgii.\n\nCzujesz mieszaninę [purple]zapachu kwiatów[/purple], [green]fetoru zgnilizny[/green] i jeszcze [orange]czegoś innego[/orange]. Z każdym krokiem zapach robi się coraz bardziej intensywny i masz wrażenie, że wszystko dookoła ciebie zaczyna się [sine]zniekształcać[/sine].\n\nPogrążając się w [sine]zmiennym chaosie[/sine], tracisz poczucie tożsamości.",
+    "preconditions": null,
     "options": [
       {
         "id": "LET_GO",
@@ -332,6 +338,7 @@
     "type": "Event",
     "act": "Act 3 - Glory",
     "description": "Ziemia zaczyna się trząść i wszędzie zapalają się światła!\n\n„[jitter]BZZZT![/jitter] CZAS NA TRENING!!! MASZ [blue]3 TURY[/blue] NA POKONANIE MNIE!\nWYBIERZ POZIOM TRUDNOŚCI ALBO PONIESIESZ [red]UPOKARZAJĄCĄ KLĘSKĘ[/red].\nOto dostępne opcje.”\n\nPo dostarczeniu tej mrożącej krew w żyłach wiadomości Drewnobot uważnie czyta podane instrukcje.\n\nKtóry poziom wybierasz?",
+    "preconditions": null,
     "options": [
       {
         "id": "SETTING_1",
@@ -387,6 +394,9 @@
     "type": "Shared",
     "act": null,
     "description": "[jitter]*łup*[/jitter]\n\nOdczuwasz przeszywający ból głowy i nagle przeszywa cię pewna myśl.\n\n[purple][sine]„CHCESZ WIEDZĘ???”[/sine][/purple]\n\nNie do końca wiesz, jak masz postąpić...",
+    "preconditions": [
+      "Act 1–2 only"
+    ],
     "options": [
       {
         "id": "SHARE_KNOWLEDGE",
@@ -432,6 +442,7 @@
     "type": "Event",
     "act": "Act 2 - Hive",
     "description": "Gdy próbujesz odeprzeć atak [jitter][red]agresywnych robali[/red][/jitter], nagle zauważasz, że [gold]potężny wojownik[/gold] walczył u twojego boku przez cały ten czas!\n\n Robale rozbiegają się, wyczuwając porażkę. Zwracasz się w stronę wojownika.\n„Czy potrzebujesz pomocy w walce z tymi szkodnikami?”\n\nJaki uprzejmy. Zgadzasz się na propozycję.",
+    "preconditions": null,
     "options": [
       {
         "id": "EXTERMINATION",
@@ -481,6 +492,9 @@
     "type": "Event",
     "act": "Act 1 - Overgrowth",
     "description": "Widzisz, że jakaś ogromna [jitter][red]pnączasta bestia[/red][/jitter] przegania rannego [green][sine]zielonego Ptaszora[/sine][/green].\n\nWe wnęce, z której uciekł, dostrzegasz [gold]porzucone jajo[/gold]. \n\n[sine]Burczy ci w brzuchu...[/sine]",
+    "preconditions": [
+      "Cannot have an event pet"
+    ],
     "options": [
       {
         "id": "EAT",
@@ -526,6 +540,7 @@
     "type": "Event",
     "act": "Act 2 - Hive",
     "description": "Przed tobą dość urzekający widok.\nWysokie posągi o 3 różnych kolorach prowadzą [jitter][red]gorącą debatę[/red][/jitter] o filozoficznych implikacjach koloru.\n\nPrzysłuchując się zażartej dyskusji, odnosisz wrażenie, że cały spór tak naprawdę toczy się o to, który kolor jest [gold]NAJLEPSZY[/gold].\n\nDorzucasz swoją opinię na ten temat.",
+    "preconditions": null,
     "options": [
       {
         "id": "DEFECT",
@@ -597,6 +612,9 @@
     "type": "Event",
     "act": "Act 2 - Hive",
     "description": "[green]Kolosalny kwiat[/green] wyrasta ze [red][jitter]gigantycznej sterty kości[/jitter][/red].\n\nJego [sine]kolorowe płatki[/sine] pulsują. Wyczuwasz, że w środku znajduje się [aqua]Potężny Zapylony Rdzeń[/aqua], lecz otaczające go faliste płatki są [red]ostre jak brzytwa[/red].\n\nWystarczyło by zebrać trochę [gold]złotego nektaru[/gold], ale sięgniecie po sam rdzeń wydaje się niezwykle kuszące...",
+    "preconditions": [
+      "Requires 19+ HP"
+    ],
     "options": [
       {
         "id": "EXTRACT_CURRENT_PRIZE_1",
@@ -678,6 +696,10 @@
     "type": "Shared",
     "act": null,
     "description": "[sine][blue]„Nasze spotkanie było zapisane w gwiazdach!”[/blue][/sine]\n\nPo wejściu do [purple]mistycznej chaty[/purple] słyszysz [jitter]chrapliwy[/jitter] głos.\n\n[sine][blue]„To musiało być przeznaczenie. Dziś odkryjemy twoją przyszłość! Z pewnością pomoże ci to URATOWAĆ NAS WSZYSTKICH!!”[/blue][/sine]\n„Przygotuj się na moc [gold]Kryształowej Kuli[/gold].” Po chwili dodaje: „Poproszę tylko wpisać tutaj dzisiejszą datę i podpis”, a następnie wyciąga pióro i pergamin.",
+    "preconditions": [
+      "Requires 100+ gold",
+      "Act 2+"
+    ],
     "options": [
       {
         "id": "UNCOVER_FUTURE",
@@ -727,6 +749,7 @@
     "type": "Ancient",
     "act": null,
     "description": "...gdzie ja to odłożyłem... O!\nChcesz zobaczyć moją kolekcję!? Przejrzyj tamtą stertę i wybierz sobie coś ładnego!",
+    "preconditions": null,
     "options": null,
     "pages": null,
     "epithet": "Zbieracz",
@@ -933,6 +956,7 @@
     "type": "Event",
     "act": "Act 1 - Overgrowth",
     "description": "Błądzisz już od jakiegoś czasu i nie możesz odnaleźć drogi w gęstej dżungli pełnej [green]paproci[/green], [green]zarośli[/green] oraz [green]pnączy[/green]. Zwłaszcza [green]pnączy[/green]. Dopada cię wyczerpanie, przez co nachodzi cię mroczna myśl:\n\n[sine][purple]„Nie wiem, co zrobić. Nawet nie wiem, gdzie jestem. Na pewno tu zaraz zginę.”[/purple][/sine]\n\nCo zamierzasz zrobić?",
+    "preconditions": null,
     "options": [
       {
         "id": "TRUDGE_ON",
@@ -985,6 +1009,9 @@
     "type": "Shared",
     "act": null,
     "description": "Wchodzisz do ukrytego pomieszczenia...\n\nJest wypełniony różnorodnymi lalkami. Każda jest jedyna w swoim rodzaju, a ich miny wyrażają przeróżne emocje, od [green]radości[/green] aż po [purple]smutek[/purple].\n\n[sine][blue]Szmery i szepty[/blue][/sine] robią się coraz głośniejsze, aż w końcu lalki zaczynają się [jitter][red]przekrzykiwać[/red][/jitter], wołając cię...\n\nMusisz wybrać jedną z nich i jak najszybciej stąd uciekać.",
+    "preconditions": [
+      "Act 2 only"
+    ],
     "options": [
       {
         "id": "RANDOM",
@@ -1063,6 +1090,7 @@
     "type": "Event",
     "act": "Underdocks",
     "description": "Przed tobą pojawiają się dwa połyskujące wejścia oraz [gold]elegancko ubrany stróż[/gold].\n„Nareszcie jakiś gość! Proszę, zapraszam! Proszę wybrać drzwi, dowolne drzwi!”\n\n[blue]Czy wciąż jesteśmy w Iglicy? Jakim cudem to miejsce jest takie czyste?[/blue]",
+    "preconditions": null,
     "options": [
       {
         "id": "LIGHT",
@@ -1108,6 +1136,7 @@
     "type": "Event",
     "act": "Underdocks",
     "description": "Mijasz oniryczny krajobraz olbrzymich skał oraz spokojnych wód i napotykasz się na [sine]tonącą latarnię[/sine], która emituje [purple]antyświatło[/purple].\n\nMożesz zaczerpnąć [aqua][sine]upiornie świecącej wody[/sine][/aqua], która się tam zgromadziła albo wspiąć się na zniszczoną budowlę, aby wyciągnąć z niej [gold]soczewkę[/gold].",
+    "preconditions": null,
     "options": [
       {
         "id": "BOTTLE",
@@ -1153,6 +1182,9 @@
     "type": "Event",
     "act": "Underdocks",
     "description": "Wchodzisz do chaty z jasnym, przekrzywionym napisem: \n[aqua]„NIEKOŃCZĄCA SIĘ UCZTA: PŁAĆ I JEDZ”[/aqua]\n\nW środku znajdujesz [orange]zwinnego kucharza o wielu ramionach[/orange], który wprawnie przyrządza [green]potrawy[/green] i umieszcza je na [sine]chitynowym taśmociągu[/sine].\n\nJedno z ramion kucharza pokazuje na znak:\n„[blue]40[/blue] szt. [gold]Złota[/gold] za kawałek”.",
+    "preconditions": [
+      "Requires 120+ gold"
+    ],
     "options": [
       {
         "id": "OBSERVE_CHEF",
@@ -1250,6 +1282,11 @@
     "type": "Shared",
     "act": null,
     "description": "Handlarz???",
+    "preconditions": [
+      "Act 2+",
+      "Single player only",
+      "Requires 100+ gold or a Foul Potion"
+    ],
     "options": null,
     "pages": null
   },
@@ -1259,6 +1296,7 @@
     "type": "Event",
     "act": "Act 2 - Hive",
     "description": "Zatrzymujesz się na widok ogromnego pola wypełnionego [jitter]wyżłobionymi konturami ludzkich ciał[/jitter].\n\nJeden z nich pasuje do ciebie.\n\n[sine][orange]Jest idealny...[/orange][/sine]",
+    "preconditions": null,
     "options": [
       {
         "id": "RESIST",
@@ -1304,6 +1342,7 @@
     "type": "Event",
     "act": "Act 3 - Glory",
     "description": "Widzisz pojedynczy grób z [jitter][aqua]falującym, błękitnym płomieniem[/aqua][/jitter]...\n\nDumny wojownik umarł w walce, ale jego dusza nadal nie może zaznać spokoju, ponieważ wciąż chce walczyć. Czujesz, że [sine]błaga[/sine] cię o to, żeby dołączyć do twojej podróży.\n\nMoże lepiej byłoby dla niego, gdyby spojrzał [red]prawdzie[/red] w oczy?",
+    "preconditions": null,
     "options": [
       {
         "id": "CONFRONT_LOCKED",
@@ -1359,6 +1398,7 @@
     "type": "Event",
     "act": "Act 3 - Glory",
     "description": "[sine]Umierasz z głodu. Już nie pamiętasz, ile minęło czasu od ostatniego posiłku.\n...Zaraz, zaraz, co to za cudowny zapach?[/sine]\n\nPodążając za zapachem, docierasz do przytulnego obozowiska, w którym są gotowane wszystkie rodzaje [green]smakowitych grzybów[/green]! Przez głód nie bierzesz pod uwagę tego, czy są w ogóle jadalne.\n(Nawet nie zauważasz martwego podróżnika w pobliżu)",
+    "preconditions": null,
     "options": [
       {
         "id": "BIG_MUSHROOM",
@@ -1408,6 +1448,7 @@
     "type": "Event",
     "act": "Act 2 - Hive",
     "description": "Wchodzisz do komnaty pełnej [red]martwych robotów[/red].\n\nW jednym automatonie wciąż świeci się [sine][aqua]rdzeń[/aqua][/sine], ale nie reaguje i jest pochłonięty groteskową, organiczną naroślą.",
+    "preconditions": null,
     "options": [
       {
         "id": "STUDY",
@@ -1453,6 +1494,7 @@
     "type": "Event",
     "act": "Act 1 - Overgrowth",
     "description": "Znajdujesz na przesieku [green]kolorową drużynę poszukiwaczy przygód[/green]. Wskazują ci na [purple]gigantyczny labirynt[/purple] pod wami.\n\nProponują połączyć siły w [b]epickiej misji[/b] zdobycia skarbów w tym labiryncie. Jako poszukiwacz przygód wiesz już z doświadczenia, że labirynt musi być wypełniony [red][jitter]śmiertelnymi pułapkami[/jitter][/red] i [orange][sine]strażnikami[/sine][/orange].\n\nByłoby łatwiej wyruszyć razem w drużynie, ale wtedy trzeba byłoby podzielić się znalezionymi skarbami.",
+    "preconditions": null,
     "options": [
       {
         "id": "SOLO_QUEST",
@@ -1498,6 +1540,7 @@
     "type": "Event",
     "act": "Act 2 - Hive",
     "description": "Dostrzegasz nietypowy widok w oddali. Widzisz stertę [sine][red]martwych owadów[/red][/sine] otaczającą [orange]mały, świecący ognik[/orange].\nPewnie musiał zwabić do siebie te wszystkie robale. Ognik nagle zapala się jasnym płomieniem!\n\nZ ciekawości podchodzisz bliżej.",
+    "preconditions": null,
     "options": [
       {
         "id": "CLAIM",
@@ -1543,6 +1586,9 @@
     "type": "Event",
     "act": "Act 1 - Overgrowth",
     "description": "Napotykasz się na ogromne grzyby, które emanują nienaturalną, niebieską poświatą. Pulsują bioluminescencją tak mocno, że ich kapelusze puchną i świecą się. Gdy podchodzisz bliżej, zaczynają wydawać z siebie [sine][purple]melodyjne dźwięki[/purple][/sine], które rozbrzmiewają w twojej głowie.\n\nWe wnętrzu największego grzyba zauważasz coś świecącego i [sine]pulsującego[/sine] w rytmie melodii.",
+    "preconditions": [
+      "Requires 100-149 gold"
+    ],
     "options": [
       {
         "id": "REACH_INTO_THE_FLESH",
@@ -1598,6 +1644,9 @@
     "type": "Event",
     "act": "Act 1 - Overgrowth",
     "description": "Wchodzisz do zagajnika z [green]krystalicznymi drzewami[/green], które zaczynają [jitter]drgać radośnie[/jitter]!\nSłyszysz falę [sine]serdecznych powitań[/sine] od całej grupy [aqua]Imitatorów[/aqua], którzy nagle [jitter]wyrastają[/jitter] z drzew.\n\nWidać, że jeden z nich wierci się niespokojnie gdzieś z boku, pewnie nie jest aż tak towarzyski jak reszta.\n\nDo kogo podejść? Do grupy czy do samotnika?",
+    "preconditions": [
+      "Requires 100+ gold"
+    ],
     "options": [
       {
         "id": "GROUP",
@@ -1643,6 +1692,7 @@
     "type": "Ancient",
     "act": "Act 1 - Overgrowth / Underdocks",
     "description": "[sine]Odnowiłam... cię....\n...idź... ..na górę.....[/sine]",
+    "preconditions": null,
     "options": null,
     "pages": null,
     "epithet": "Matka Wskrzeszenia (wygnana)",
@@ -1859,6 +1909,7 @@
     "type": "Ancient",
     "act": "Act 3 - Glory",
     "description": "Nie miałam gości przez całe tysiąclecie!\nWyglądasz ponuro, znajdziemy ci coś wspaniałego do ubrania.",
+    "preconditions": null,
     "options": null,
     "pages": null,
     "epithet": "Szczęście Wcielone",
@@ -2033,6 +2084,7 @@
     "type": "Ancient",
     "act": "Act 2 - Hive",
     "description": "Marionetka, marionetka!! Aż tak wysoko?! Weź to, weź, weź!",
+    "preconditions": null,
     "options": null,
     "pages": null,
     "epithet": "Żywa Tęcza",
@@ -2217,6 +2269,7 @@
     "type": "Ancient",
     "act": "Act 2 - Hive",
     "description": "Marionetka przybyła?\nSprawdzisz, co u Ojca? Jestem zbyt zmęczony...",
+    "preconditions": null,
     "options": null,
     "pages": null,
     "epithet": "Topniejący Smok",
@@ -2381,6 +2434,9 @@
     "type": "Shared",
     "act": null,
     "description": "Czujesz [sine]kwaśny[/sine] zapach, a chwilę później znajdujesz [gold]Dostawcę Mikstur[/gold] leżącego na ziemii.\nJest nieruchomy. Bez życia. [jitter]Martwy!?[/jitter]\nPomimo że już pewnie został okradziony ze wszystkich rzeczy, jest jeszcze porcja [green][sine]Paskudnie pachnących Mikstur[/sine][/green] z notatką: „Odbiorca: Handlarz”.",
+    "preconditions": [
+      "Act 2+"
+    ],
     "options": [
       {
         "id": "GRAB_POTIONS",
@@ -2426,6 +2482,7 @@
     "type": "Event",
     "act": "Underdocks",
     "description": "Widzisz dwóch bijących się [gold]Robokserów[/gold] oraz błyszczący skarb pomiędzy nimi...\n\nMoże cię nie zauważą, jak im go zabierzesz?",
+    "preconditions": null,
     "options": [
       {
         "id": "NAB",
@@ -2478,6 +2535,10 @@
     "type": "Shared",
     "act": null,
     "description": "Podchodzi do ciebie [purple]chyba najstarsza osoba w całej Iglicy[/purple].\n[sine]„Znów się spotykamy... to ja, Ranwid!”[/sine]\n\nNie masz bladego pojęcia, kim ten człowiek jest.",
+    "preconditions": [
+      "Act 2+",
+      "Requires at least one potion"
+    ],
     "options": [
       {
         "id": "POTION",
@@ -2549,6 +2610,7 @@
     "type": "Event",
     "act": "Act 3 - Glory",
     "description": "Co to za miejsce? Coś tu jest nie tak...\n[sine]...kat ein tsej ut śoC ?ecsjeim az ot oC[/sine]",
+    "preconditions": null,
     "options": [
       {
         "id": "TOUCH_A_MIRROR",
@@ -2594,6 +2656,10 @@
     "type": "Shared",
     "act": null,
     "description": "Znajdujesz za rogiem jakąś postać skrywającą się w cieniu, która zauważa cię od razu i obraca się w twoją stronę.\n\n„Witaj! Chcesz się powymieniać?”\nPostać ujawnia pod swoim płaszczem mnóstwo [sine][purple]podejrzanych towarów[/purple][/sine].",
+    "preconditions": [
+      "Act 2+",
+      "Requires 5+ tradeable relics"
+    ],
     "options": [
       {
         "id": "TOP",
@@ -2645,6 +2711,9 @@
     "type": "Shared",
     "act": null,
     "description": "Ile tu jest [b][jitter]sera!!![/jitter][/b]\n\nSprawdzasz, czy nie ma nigdzie pułapek w pobliżu... ale znajdujesz tylko więcej [b]sera[/b]. Chyba nawet świeczki są zrobione z [b]sera[/b]. Meble też są z [b]sera[/b].\nNagle słyszysz za sobą trzask drzwi.\n\nOczywiście również są zrobione z [b]sera[/b].",
+    "preconditions": [
+      "Act 1–2 only"
+    ],
     "options": [
       {
         "id": "GORGE",
@@ -2690,6 +2759,9 @@
     "type": "Event",
     "act": "Act 3 - Glory",
     "description": "Znajdujesz [orange]zaproszenie[/orange] na herbatę dla kogoś o tytule [blue]„Sir Galalot”[/blue], więc decydujesz się pójść w jego imieniu.\n\nPo wejściu do skromnej rotundy widzisz przeróżnych [gold]dowódców[/gold], [aqua]generałów[/aqua], [red]watażków[/red] i [blue]najemników[/blue] pijących... herbatę?\nOgromny rycerz ze [gold]złotą koroną[/gold] zwraca się do ciebie:\n\n[jitter]„Jakże mogliście spóźnić się na [b]herbatę[/b]?!”[/jitter]",
+    "preconditions": [
+      "Requires 12+ HP"
+    ],
     "options": [
       {
         "id": "ENJOY_TEA",
@@ -2750,6 +2822,7 @@
     "type": "Event",
     "act": "Act 1 - Overgrowth",
     "description": "O mały włos unikasz nadepnięcia na jasne, ostre... nasiono? Jego bardzo wyraźny kolor zdradza, że jest to [aqua]Szafirowe nasiono[/aqua]! Czy one przypadkiem nie wyginęły?!\n\nLegendy głoszą, że zjedzenie takiego nasiona [gold]zwiększy twoją wytrzymałość[/gold], ale może lepiej byłoby je zasiać?",
+    "preconditions": null,
     "options": [
       {
         "id": "EAT",
@@ -2795,6 +2868,7 @@
     "type": "Shared",
     "act": null,
     "description": "Na podłodze leży książka zatytułowana:\n„Najlepsze sposoby na podbicie Iglicy”.\n\nWydaję ci się dosyć podejrzana, bo jest cała [red]poplamiona krwią[/red].\n\nCzy chcesz ją przeczytać?",
+    "preconditions": null,
     "options": [
       {
         "id": "READ_THE_BACK",
@@ -2898,6 +2972,10 @@
     "type": "Shared",
     "act": null,
     "description": "Idziesz chwiejnym krokiem po drewnianym moście, gdy nagle spada na ciebie [blue][jitter]ogromna ulewa[/jitter][/blue]. Uderzają cię [purple][sine]potężne podmuchy wiatru[/sine][/purple], które mogą lada moment zakończyć twoją podróż.",
+    "preconditions": [
+      "Floor 7+",
+      "Requires removable cards in deck"
+    ],
     "options": [
       {
         "id": "OVERCOME",
@@ -3027,6 +3105,7 @@
     "type": "Event",
     "act": "Underdocks",
     "description": "Przypadkiem natrafiasz na [aqua][sine]potężny wir wody[/sine][/aqua], w którym woda wiruje z doskonałą precyzją, a otaczające ją ściany są ozdobione spiralnymi wzorami.\n\n[purple][sine]Kręci się tak w kółko i w kółko... i w kółko...\n....i w kółko.... cóż za widok......[/sine][/purple]\n\nCo zamierzasz zrobić?",
+    "preconditions": null,
     "options": [
       {
         "id": "OBSERVE",
@@ -3072,6 +3151,7 @@
     "type": "Event",
     "act": "Act 2 - Hive",
     "description": "Widzisz nad sobą kokon, który cały się [jitter]wierci i trzęsie[/jitter], jakby miał zaraz wybuchnąć!\n\n...Aż nagle przestaje się ruszać. [orange][sine]Chwilę później staje w płomieniach[/sine][/orange]! [jitter]Co się dzieje?[/jitter]\nPojawia się tylko błysk [gold]światła[/gold] i [red]płomieni[/red], a [orange]Łapacz Dusz[/orange] leci prosto na ciebie i zaraz się z tobą połączy, aby dokończyć swoją metamorfozę.",
+    "preconditions": null,
     "options": [
       {
         "id": "LET_IT_IN",
@@ -3117,6 +3197,10 @@
     "type": "Shared",
     "act": null,
     "description": "Ogromny głaz leży na samym środku porzuconego cmentarza.\n\nJest podpisany tabliczką:\n[gold][b]Głaz Wszech Czasów[/b][/gold].\n\nJego kształt i dekoracje wskazują na to, że cmentarz był zbudowany dookoła tego [blue]Głazu[/blue] i nikt go nigdy stamtąd nie przeniósł.",
+    "preconditions": [
+      "Act 2 only",
+      "Requires at least one potion"
+    ],
     "options": [
       {
         "id": "LIFT",
@@ -3178,6 +3262,7 @@
     "type": "Event",
     "act": "Act 1 - Overgrowth / Underdocks",
     "description": "Napotykasz się na starą, zanurzoną w wodzie statuę, której dłonie opierają się na [blue]kamiennym mieczu[/blue].\n\nPod taflą wody dostrzegasz coś [gold][sine]błyszczącego[/sine][/gold].\nByć może ktoś podarował ofiarę w złocie?\n\nPrzydałoby ci się trochę pieniędzy...",
+    "preconditions": null,
     "options": [
       {
         "id": "GRAB_SWORD",
@@ -3223,6 +3308,7 @@
     "type": "Event",
     "act": "Underdocks",
     "description": "Ścieżka prowadzi cię do częściowo zanurzonego skarbca.\nSą w nim [blue]2[/blue] [gold]skrzynie[/gold], ale tylko [blue]1[/blue] [jitter][purple]kruchy klucz[/purple][/jitter].\n\n[gold]Pierwsza skrzynia:[/gold] Trzęsiesz nią i słyszysz, że coś w niej pobrzękuje. Trochę złota.\n[gold]Druga skrzynia:[/gold] Jest ogromna, bogato zdobiona i ewidentnie [red]przeklęta[/red]. Mnóstwo złota!",
+    "preconditions": null,
     "options": [
       {
         "id": "FIRST_CHEST",
@@ -3268,6 +3354,9 @@
     "type": "Shared",
     "act": null,
     "description": "Podczas swojej wycieczki napotykasz się na mroczny, bezkształtny polip. Można wyczuć, że jest prastarym wcieleniem zła.\n\n[sine]Podejdź...[/sine]",
+    "preconditions": [
+      "Act 2+"
+    ],
     "options": [
       {
         "id": "APPROACH_LOCKED",
@@ -3323,6 +3412,7 @@
     "type": "Event",
     "act": "Act 1 - Overgrowth",
     "description": "Pokonujesz parę [blue]Strażników[/blue] i wchodzisz do chronionej przez nich krypty.\n\nW środku znajdujesz [purple][sine]tabliczkę ze znajomą ci inskrypcją[/sine][/purple]. Intuicja podpowiada ci się, że możesz łatwo rozszyfrować ten język... Jednak gdy zaczniesz czytać, będzie ci bardzo ciężko przestać.\n\nTabliczka wydaje z siebie kojącą energię, więc zamiast tego możesz ją rozwalić, aby wchłonąć jej [green]leczniczą moc[/green].",
+    "preconditions": null,
     "options": [
       {
         "id": "DECIPHER_1",
@@ -3427,6 +3517,7 @@
     "type": "Ancient",
     "act": "Act 3 - Glory",
     "description": "CO ZA MIĘCZAK! ACZKOLWIEK MASZ POTENCJAŁ!\nWEŹ TĘ BROŃ!!",
+    "preconditions": null,
     "options": null,
     "pages": null,
     "epithet": "Chimera Królewska",
@@ -3626,6 +3717,10 @@
     "type": "Shared",
     "act": null,
     "description": "Napotykasz się na słabo oświetloną chatę, w której panuje bardzo spokojna atmosfera.\n\nW środku mężczyzna prezentuje ci mnóstwo przeróżnych odmian [green]herbat[/green], a na każdej z nich widać [gold]wysoką cenę[/gold].",
+    "preconditions": [
+      "Requires 150+ gold",
+      "Act 1–2 only"
+    ],
     "options": [
       {
         "id": "BONE_TEA",
@@ -3701,6 +3796,7 @@
     "type": "Ancient",
     "act": "Act 2 - Hive",
     "description": "A kto mnie tu odwiedził? Wchodź, iskierko!\nCzego ci potrzeba od Tezcatary?",
+    "preconditions": null,
     "options": null,
     "pages": null,
     "epithet": "To, co karmi ogień",
@@ -3905,6 +4001,7 @@
     "type": "Ancient",
     "act": null,
     "description": "Proszę, proszę, czy to sam niewolnik arcydemona?",
+    "preconditions": null,
     "options": null,
     "pages": null,
     "dialogue": {
@@ -4122,6 +4219,7 @@
     "type": "Shared",
     "act": null,
     "description": "Słyszysz delikatne buczenie, gdy nagle za rogiem znajdujesz gigantyczne, wirujące urządzenie!\nZnajduje się w nim kilka miejsc na mikstury, które są w pewien sposób przetwarzane w jadalne tabliczki.\n\nPrzemiana napoju w małą porcję jedzenia nie brzmi zbyt apetycznie, ale może warto spróbować czegoś nowego?",
+    "preconditions": null,
     "options": [
       {
         "id": "POTION",
@@ -4153,6 +4251,7 @@
     "type": "Event",
     "act": "Act 2 - Hive",
     "description": "Natrafiasz na świecący się klucz i podnosisz go.\n\n„Szukałem tego klucza wszędzie! Jeżeli nie masz nic przeciwko...”\n\n Wygląda to trochę kłopotliwie, więc może lepiej nie ryzykować.",
+    "preconditions": null,
     "options": [
       {
         "id": "RETURN_THE_KEY",
@@ -4212,6 +4311,10 @@
     "type": "Shared",
     "act": null,
     "description": "Tuż po wejściu do ciemnej komnaty drzwi za tobą niespodziewanie się zamykają.\n\nŚwiatło przebija się z sufitu i oświetla przed tobą podium, na którym leży mapa. Czujesz, że musisz ją wziąć.\n\nPodejrzane.",
+    "preconditions": [
+      "Requires 10+ HP",
+      "Act 1 only"
+    ],
     "options": [
       {
         "id": "NAB_THE_MAP",
@@ -4257,6 +4360,7 @@
     "type": "Shared",
     "act": null,
     "description": "Z pobliskiej dziury wystają dwie ręce: jedna z nich trzyma [gold]podejrzaną torbę z bogactwami[/gold], a druga ma [purple]przeklęty artefakt[/purple].\n\nSłyszysz chrapliwy szept spod ziemi:\n[jitter][blue]„To... czy tamto?”[/blue][/jitter].",
+    "preconditions": null,
     "options": [
       {
         "id": "PLAIN",
@@ -4302,6 +4406,7 @@
     "type": "Event",
     "act": "Act 3 - Glory",
     "description": "Nawigując przez [red][sine]nieskończone morze trupów[/sine][/red], znajdujesz [orange]szalonego naukowca[/orange] grzebiącego w śmieciach.\n\n„Hej, witaj! Wyglądasz na zdolnego wojownika... Potrzebuję testera do mojego nowego [green]okrutniko-natora[/green]! Co ty na to?”",
+    "preconditions": null,
     "options": [
       {
         "id": "CHOOSE_CARD_TYPE",
@@ -4405,6 +4510,7 @@
     "type": "Event",
     "act": "Underdocks",
     "description": "Odkrywasz ogromną stertę [red][jitter]zepsutych broni[/jitter][/red], [orange]porzuconych błyskotek[/orange] i [purple][sine]innych dziwactw[/sine][/purple]. Masywna sterta przesuwa się i grzmi, jakby była rosła od środka...\n\nJeżeli przeszukasz ją z wierzchu, możesz znaleźć coś przydatnego. Ale jeżeli wejdziesz nawet głębiej, możesz znaleźć jakieś [gold]egzotyczne skarby[/gold].",
+    "preconditions": null,
     "options": [
       {
         "id": "DIVE_IN",
@@ -4450,6 +4556,7 @@
     "type": "Event",
     "act": "Act 3 - Glory",
     "description": "Stajesz w kolejce do masywnego budynku.\n\nPo przejściu pod [gold]złotą bramą[/gold] słyszysz głośne trąbienie rogów, a z sufitu spadają [jitter]konfetti[/jitter] i [sine]serpentyny[/sine]!\n\n„Gratulacje uczestniku nr [blue][EntrantNumber][/blue], właśnie zostałeś [green]Decydującym[/green] dzisiejszego [gold]Procesu[/gold].”",
+    "preconditions": null,
     "options": [
       {
         "id": "ACCEPT",
@@ -4575,6 +4682,9 @@
     "type": "Event",
     "act": "Act 1 - Overgrowth",
     "description": "Znajdujesz ustronne [gold]Obozowisko[/gold] i rozpalasz [orange]ognisko[/orange], aby trochę odpocząć.\nA przynajmniej taki był plan.\n\nRozpalony ogień zamiast się unosić, rozszerza się [sine]na boki[/sine] w kierunku [purple]drzew przesączonych olejem[/purple].\n\nCzy chcesz spróbować odpocząć mimo to?",
+    "preconditions": [
+      "Requires ≤70% HP"
+    ],
     "options": [
       {
         "id": "REST",
@@ -4620,6 +4730,7 @@
     "type": "Ancient",
     "act": "Act 3 - Glory",
     "description": "Wystarczy, że skusisz się na jedną umowę, a będziesz wszystkich paraliżować strachem tak jak ja.",
+    "preconditions": null,
     "options": null,
     "pages": null,
     "epithet": "Pierwszy Demon",
@@ -4839,6 +4950,7 @@
     "type": "Shared",
     "act": null,
     "description": "Widzisz Profesora Toperza uwięzionego w [purple]klatce[/purple] obok [gold]skrzyni ze skarbem[/gold].\n\nProfesor mamrocze coś o [sine][orange]„jednorazowych kluczach”[/orange][/sine] i z wściekłością wpisuje coś na pergaminie.\n\nWygląda na to, że możesz otworzyć albo [purple]klatkę[/purple], albo [gold]skrzynię[/gold].",
+    "preconditions": null,
     "options": [
       {
         "id": "UNLOCK_CAGE",
@@ -4884,6 +4996,9 @@
     "type": "Event",
     "act": "Underdocks",
     "description": "Starasz się przebrnąć przez mroczne przejścia, ale natrafiasz na [aqua]zwiędłą postać[/aqua] prowadzącą mały sklep. Mnóstwo półek jest [sine]wypełnione[/sine] wilgotnymi zwojami i pergaminami.\n\nNa widok klienta [aqua]sklepikarz-skryba[/aqua] nagle się ożywia i wskazuje na [gold]przyrządy[/gold] ułożone na ladzie.",
+    "preconditions": [
+      "Requires 55+ gold"
+    ],
     "options": [
       {
         "id": "BLOODY_INK",
@@ -4963,6 +5078,10 @@
     "type": "Shared",
     "act": null,
     "description": "„Witamy w Wongo's, codziennie Wongastyczne ceny”, mówi pozbawiony entuzjazmu sprzedawca.\n\n„Proszę zapoznać się z naszą ofertą i życzymy udanych zakupów”, mówi dalej bez spoglądania w górę.",
+    "preconditions": [
+      "Requires 100+ gold",
+      "Act 2 only"
+    ],
     "options": [
       {
         "id": "BARGAIN_BIN",
@@ -5066,6 +5185,7 @@
     "type": "Event",
     "act": "Act 1 - Overgrowth",
     "description": "You trace a [jitter]low rumble[/jitter] to its source and find yourself captivated by a tranquil wellspring. The water is an [sine][aqua]emerald green[/aqua][/sine] with clusters of [sine][gold]glowing motes[/gold][/sine].\n\nIt looks inviting. What can possibly go wrong?",
+    "preconditions": null,
     "options": [
       {
         "id": "BOTTLE",
@@ -5111,6 +5231,9 @@
     "type": "Event",
     "act": "Act 1 - Overgrowth",
     "description": "Making your way through a [red]hollow of dead trees[/red] you happen upon a single bone-white tree. Clay baubles hang off its branches, which curve inward like protective ribs.\n\nSuch a [purple]creepy tree[/purple]. It whispers.\n\n[sine][blue]...make exchange.....[/blue][/sine]",
+    "preconditions": [
+      "Requires 44+ gold"
+    ],
     "options": [
       {
         "id": "GOLD",
@@ -5156,6 +5279,9 @@
     "type": "Event",
     "act": "Act 1 - Overgrowth",
     "description": "You open a dusty box to find a set of 3 elaborate wood carvings:\n\nA bird, snake, and... a torus?\n\nA nearby pedestal has indentations which match the bottom of the carvings. Which carving will you place on the pedestal?",
+    "preconditions": [
+      "Requires a removable basic card"
+    ],
     "options": [
       {
         "id": "BIRD",
@@ -5225,6 +5351,9 @@
     "type": "Event",
     "act": "Act 2 - Hive",
     "description": "You walk through a spider web and [jitter][red]PANIC[/red][/jitter]!\nBut then, a [sine][blue]wave of calm[/blue][/sine] washes over you...\n\n[sine]“Calm down. I need you to quit fussing up my web.”[/sine]\n\nHow did you calm down so quickly?\nAn [orange]itsy bitsy[/orange] spider abseils down to meet you. It seems willing to impart some techniques for [gold]gold[/gold].",
+    "preconditions": [
+      "Requires 125+ gold"
+    ],
     "options": [
       {
         "id": "BREATHING_TECHNIQUES",

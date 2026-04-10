@@ -385,7 +385,7 @@
   {
     "id": "BOWLER_HAT",
     "name": "Bombetta",
-    "description": "Ottieni un [blue]%[/blue] di unità d'[gold]oro[/gold] extra.",
+    "description": "Ottieni un [blue]25%[/blue] di unità d'[gold]oro[/gold] extra.",
     "description_raw": "Ottieni un [blue]{GoldIncrease:percentMore()}%[/blue] di unità d'[gold]oro[/gold] extra.",
     "flavor": "[red]I dettagli di questa reliquia verranno rivelati in futuro...[/red]",
     "rarity": "Reliquia non comune",

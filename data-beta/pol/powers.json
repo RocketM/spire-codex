@@ -292,8 +292,8 @@
   {
     "id": "COLOSSUS",
     "name": "Kolos",
-    "description": "W tej turze otrzymujesz [blue]50%[/blue] mniej obrażeń od [gold]Wrażliwych[/gold] przeciwników.",
-    "description_raw": null,
+    "description": "Przez [blue]2[/blue] tury|Przez [blue]2[/blue] tur|Przez [blue]2[/blue] tur otrzymujesz [blue]50%[/blue] mniej obrażeń od [gold]Wrażliwych[/gold] przeciwników.",
+    "description_raw": "{Amount:plural:W tej turze|Przez [blue]{}[/blue] tury|Przez [blue]{}[/blue] tur|Przez [blue]{}[/blue] tur} otrzymujesz [blue]{DamageDecrease:percentLess()}%[/blue] mniej obrażeń od [gold]Wrażliwych[/gold] przeciwników.",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2552,8 +2552,8 @@
   {
     "id": "VULNERABLE",
     "name": "Wrażliwość",
-    "description": "Wrażliwe stworzenia otrzymują [blue]50%[/blue] więcej obrażeń od Ataków.",
-    "description_raw": null,
+    "description": "Otrzymuje [blue]50%[/blue] więcej obrażeń od Ataków przez [blue][Amount][/blue] tury|tur.",
+    "description_raw": "Otrzymuje [blue]{DamageIncrease:percentMore()}%[/blue] więcej obrażeń od Ataków przez [blue]{Amount}[/blue] {Amount:plural:turę|tury|tur}.",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,

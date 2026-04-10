@@ -2777,7 +2777,7 @@
   {
     "id": "BOWLER_HAT",
     "name": "중절모",
-    "description": "[gold]골드[/gold]를 [blue]%[/blue] 추가로 획득합니다.",
+    "description": "[gold]골드[/gold]를 [blue]25%[/blue] 추가로 획득합니다.",
     "description_raw": "[gold]골드[/gold]를 [blue]{GoldIncrease:percentMore()}%[/blue] 추가로 획득합니다.",
     "flavor": "[red]이 유물에 관한 자세한 내용은 추후 공개될 예정입니다...[/red]",
     "rarity": "고급 유물",

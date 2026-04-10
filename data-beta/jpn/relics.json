@@ -2153,7 +2153,7 @@
   {
     "id": "BOWLER_HAT",
     "name": "山高帽",
-    "description": "獲得[gold]ゴールド[/gold]が[blue]%[/blue]増加する。",
+    "description": "獲得[gold]ゴールド[/gold]が[blue]25%[/blue]増加する。",
     "description_raw": "獲得[gold]ゴールド[/gold]が[blue]{GoldIncrease:percentMore()}%[/blue]増加する。",
     "flavor": "[red]このレリックの詳細は今後明かされるはずだ……[/red]",
     "rarity": "レリック（アンコモン）",

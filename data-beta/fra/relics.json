@@ -730,7 +730,7 @@
   {
     "id": "BOWLER_HAT",
     "name": "Chapeau melon",
-    "description": "Recevez [blue] %[/blue] de [gold]Pièces d'or[/gold] supplémentaires.",
+    "description": "Recevez [blue]25 %[/blue] de [gold]Pièces d'or[/gold] supplémentaires.",
     "description_raw": "Recevez [blue]{GoldIncrease:percentMore()} %[/blue] de [gold]Pièces d'or[/gold] supplémentaires.",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique inhabituelle",

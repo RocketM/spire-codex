@@ -717,7 +717,7 @@
   {
     "id": "BOWLER_HAT",
     "name": "圆顶礼帽",
-    "description": "额外获得[blue]%[/blue]的[gold]金币[/gold]。",
+    "description": "额外获得[blue]25%[/blue]的[gold]金币[/gold]。",
     "description_raw": "额外获得[blue]{GoldIncrease:percentMore()}%[/blue]的[gold]金币[/gold]。",
     "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
     "rarity": "罕见遗物",

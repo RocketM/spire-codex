@@ -2049,7 +2049,7 @@
   {
     "id": "BOWLER_HAT",
     "name": "Melon Şapka",
-    "description": "[blue]%[/blue] daha fazla [gold]Altın[/gold] elde et.",
+    "description": "[blue]%25[/blue] daha fazla [gold]Altın[/gold] elde et.",
     "description_raw": "[blue]%{GoldIncrease:percentMore()}[/blue] daha fazla [gold]Altın[/gold] elde et.",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Az Yaygın Kalıntı",

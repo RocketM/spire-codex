@@ -1367,7 +1367,7 @@
   {
     "id": "BOWLER_HAT",
     "name": "Melonik",
-    "description": "Zyskujesz [blue]%[/blue] więcej [gold]Złota[/gold].",
+    "description": "Zyskujesz [blue]25%[/blue] więcej [gold]Złota[/gold].",
     "description_raw": "Zyskujesz [blue]{GoldIncrease:percentMore()}%[/blue] więcej [gold]Złota[/gold].",
     "flavor": "[red]Szczegóły tego artefaktu zostaną ujawnione w przyszłości...[/red]",
     "rarity": "Niepospolity Artefakt",

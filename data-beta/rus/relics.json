@@ -3622,7 +3622,7 @@
   {
     "id": "BOWLER_HAT",
     "name": "Шляпа-котелок",
-    "description": "Вы получаете на [blue]%[/blue] больше [gold]золота[/gold].",
+    "description": "Вы получаете на [blue]25%[/blue] больше [gold]золота[/gold].",
     "description_raw": "Вы получаете на [blue]{GoldIncrease:percentMore()}%[/blue] больше [gold]золота[/gold].",
     "flavor": "[red]Подробности об этой реликвии станут известны в будущем…[/red]",
     "rarity": "Необычная реликвия",

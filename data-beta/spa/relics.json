@@ -418,7 +418,7 @@
   {
     "id": "BOWLER_HAT",
     "name": "Bombín",
-    "description": "Gana un [blue] %[/blue] de [gold]Oro[/gold] adicional.",
+    "description": "Gana un [blue]25 %[/blue] de [gold]Oro[/gold] adicional.",
     "description_raw": "Gana un [blue]{GoldIncrease:percentMore()} %[/blue] de [gold]Oro[/gold] adicional.",
     "flavor": "[red]Los detalles de esta reliquia serán revelados en el futuro...[/red]",
     "rarity": "Reliquia poco común",
