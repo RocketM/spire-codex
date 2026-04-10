@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import CardDetail from "./CardDetail";
-import { stripTags } from "@/lib/seo";
+import { stripTags, stripTagsFlat } from "@/lib/seo";
 import JsonLd from "@/app/components/JsonLd";
 import { buildDetailPageJsonLd, buildFAQPageJsonLd } from "@/lib/jsonld";
 
@@ -18,7 +18,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const desc = stripTags(card.description || "");
     const color = (card.color || "").replace(/^\w/, (c: string) => c.toUpperCase());
     const title = `Slay the Spire 2 Card - ${card.name} - ${card.rarity} ${card.type} | Spire Codex`;
-    const metaDesc = `${card.name} is a ${card.cost ?? "X"} cost ${card.rarity} ${card.type} used by ${color}.\n${desc}`;
+    const descFlat = stripTagsFlat(card.description || "");
+    const keywords = card.keywords?.length ? ` ${card.keywords.join(". ")}.` : "";
+    const metaDesc = `${card.name} is a ${card.cost ?? "X"} cost ${card.rarity} ${card.type} used by ${color}.\n${descFlat}${keywords}`;
     return {
       title,
       description: metaDesc,

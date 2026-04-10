@@ -6,8 +6,15 @@ export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
 
 export function stripTags(text: string): string {
   return text
+    .replace(/\[energy:(\d+)\]/g, "$1 Energy")
+    .replace(/\[star:(\d+)\]/g, "$1 Star")
     .replace(/\[\/?\w+(?:[=:][^\]]+)?\]/g, "")
     .replace(/\{[^}]+\}/g, "")
     .replace(/\s{2,}/g, " ")
     .trim();
+}
+
+/** Strip tags and collapse all newlines into a single line for meta descriptions. */
+export function stripTagsFlat(text: string): string {
+  return stripTags(text).replace(/\n/g, " ").replace(/\s{2,}/g, " ").trim();
 }

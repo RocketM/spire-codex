@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import CardDetail from "@/app/cards/[id]/CardDetail";
-import { stripTags } from "@/lib/seo";
-import { SITE_URL } from "@/lib/seo";
+import { stripTags, stripTagsFlat, SITE_URL } from "@/lib/seo";
 import JsonLd from "@/app/components/JsonLd";
 import { buildDetailPageJsonLd, buildFAQPageJsonLd } from "@/lib/jsonld";
 import { isValidLang, LANG_HREFLANG, LANG_NAMES, LANG_GAME_NAME, SUPPORTED_LANGS, type LangCode } from "@/lib/languages";
@@ -25,7 +24,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const gameName = LANG_GAME_NAME[langCode];
     const color = (card.color || "").replace(/^\w/, (c: string) => c.toUpperCase());
     const title = `${gameName} Card - ${card.name} - ${card.rarity} ${card.type} | Spire Codex (${LANG_NAMES[langCode]})`;
-    const metaDesc = `${card.name} is a ${card.cost ?? "X"} cost ${card.rarity} ${card.type} used by ${color}.\n${desc}`;
+    const descFlat = stripTagsFlat(card.description || "");
+    const keywords = card.keywords?.length ? ` ${card.keywords.join(". ")}.` : "";
+    const metaDesc = `${card.name} is a ${card.cost ?? "X"} cost ${card.rarity} ${card.type} used by ${color}.\n${descFlat}${keywords}`;
     const languages: Record<string, string> = { "en": `${SITE_URL}/cards/${id}`, "x-default": `${SITE_URL}/cards/${id}` };
     for (const code of SUPPORTED_LANGS) languages[LANG_HREFLANG[code]] = `${SITE_URL}/${code}/cards/${id}`;
     return {
