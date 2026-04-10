@@ -63,9 +63,12 @@ export function BetaVersionProvider({ children }: { children: ReactNode }) {
     }
   };
 
+  // Key changes on version switch, forcing all children to remount and re-fetch
+  const versionKey = version || "latest";
+
   return (
     <BetaVersionContext.Provider value={{ version, versions, setVersion }}>
-      {children}
+      <div key={versionKey}>{children}</div>
     </BetaVersionContext.Provider>
   );
 }
