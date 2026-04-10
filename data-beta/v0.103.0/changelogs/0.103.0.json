@@ -8,7 +8,7 @@
   "from_ref": "data-beta/v0.102.0/eng",
   "to_ref": "data-beta/v0.103.0/eng",
   "summary": {
-    "added": 5,
+    "added": 4,
     "removed": 0,
     "changed": 150
   },
@@ -454,14 +454,14 @@
               "new": "[gold]Exhaust[/gold] ALL your Status cards.\nDeal 11 damage to a random enemy ..."
             },
             {
-              "field": "description_raw",
-              "old": "[gold]Exhaust[/gold] ALL your [gold]Status[/gold] cards.\nDeal {Damage:diff()}...",
-              "new": "[gold]Exhaust[/gold] ALL your Status cards.\nDeal {Damage:diff()} damage to a ..."
-            },
-            {
               "field": "description",
               "old": "[gold]Exhaust[/gold] ALL your [gold]Status[/gold] cards.\nDeal 8 damage to a r...",
               "new": "[gold]Exhaust[/gold] ALL your Status cards.\nDeal 8 damage to a random enemy f..."
+            },
+            {
+              "field": "description_raw",
+              "old": "[gold]Exhaust[/gold] ALL your [gold]Status[/gold] cards.\nDeal {Damage:diff()}...",
+              "new": "[gold]Exhaust[/gold] ALL your Status cards.\nDeal {Damage:diff()} damage to a ..."
             }
           ]
         },
@@ -481,9 +481,9 @@
           "name": "Flanking",
           "changes": [
             {
-              "field": "description_raw",
-              "old": "The enemy takes double damage from other players this turn.",
-              "new": "The enemy takes double attack damage from other players this turn."
+              "field": "compendium_order",
+              "old": "122",
+              "new": "123"
             },
             {
               "field": "description",
@@ -491,9 +491,9 @@
               "new": "The enemy takes double attack damage from other players this turn."
             },
             {
-              "field": "compendium_order",
-              "old": "122",
-              "new": "123"
+              "field": "description_raw",
+              "old": "The enemy takes double damage from other players this turn.",
+              "new": "The enemy takes double attack damage from other players this turn."
             }
           ]
         },
@@ -524,14 +524,9 @@
           "name": "Follow Through",
           "changes": [
             {
-              "field": "vars",
-              "old": "3 fields",
-              "new": "2 fields"
-            },
-            {
-              "field": "upgrade_description",
-              "old": "Deal 8 damage to ALL enemies.\nIf the last card you played this turn was a Ski...",
-              "new": "Deal 9 damage.\nIf you have 5 or more other cards in your [gold]Hand[/gold], h..."
+              "field": "damage",
+              "old": "6",
+              "new": "7"
             },
             {
               "field": "rarity",
@@ -539,34 +534,9 @@
               "new": "Common"
             },
             {
-              "field": "upgrade",
-              "old": "2 fields",
-              "new": "1 fields"
-            },
-            {
-              "field": "damage",
-              "old": "6",
-              "new": "7"
-            },
-            {
               "field": "rarity_key",
               "old": "Uncommon",
               "new": "Common"
-            },
-            {
-              "field": "target",
-              "old": "AllEnemies",
-              "new": "AnyEnemy"
-            },
-            {
-              "field": "description_raw",
-              "old": "Deal {Damage:diff()} damage to ALL enemies.\nIf the last card you played this ...",
-              "new": "Deal {Damage:diff()} damage.\nIf you have {CardCount} or more other {CardCount..."
-            },
-            {
-              "field": "description",
-              "old": "Deal 6 damage to ALL enemies.\nIf the last card you played this turn was a Ski...",
-              "new": "Deal 7 damage.\nIf you have 5 or more other cards in your [gold]Hand[/gold], h..."
             },
             {
               "field": "compendium_order",
@@ -574,9 +544,39 @@
               "new": "101"
             },
             {
+              "field": "upgrade_description",
+              "old": "Deal 8 damage to ALL enemies.\nIf the last card you played this turn was a Ski...",
+              "new": "Deal 9 damage.\nIf you have 5 or more other cards in your [gold]Hand[/gold], h..."
+            },
+            {
+              "field": "vars",
+              "old": "3 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "description",
+              "old": "Deal 6 damage to ALL enemies.\nIf the last card you played this turn was a Ski...",
+              "new": "Deal 7 damage.\nIf you have 5 or more other cards in your [gold]Hand[/gold], h..."
+            },
+            {
+              "field": "upgrade",
+              "old": "2 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "target",
+              "old": "AllEnemies",
+              "new": "AnyEnemy"
+            },
+            {
               "field": "powers_applied",
               "old": "{'power': 'Weak', 'amount': 1, 'power_key': 'Weak'}",
               "new": "none"
+            },
+            {
+              "field": "description_raw",
+              "old": "Deal {Damage:diff()} damage to ALL enemies.\nIf the last card you played this ...",
+              "new": "Deal {Damage:diff()} damage.\nIf you have {CardCount} or more other {CardCount..."
             }
           ]
         },
@@ -596,19 +596,14 @@
           "name": "Grapple",
           "changes": [
             {
+              "field": "compendium_order",
+              "old": "38",
+              "new": "576"
+            },
+            {
               "field": "upgrade_description",
               "old": "Deal 9 damage.\nWhenever you gain [gold]Block[/gold] this turn, deal 7 damage ...",
               "new": "none"
-            },
-            {
-              "field": "color",
-              "old": "ironclad",
-              "new": "unknown"
-            },
-            {
-              "field": "description_raw",
-              "old": "Deal {Damage:diff()} damage.\nWhenever you gain [gold]Block[/gold] this turn, ...",
-              "new": ""
             },
             {
               "field": "description",
@@ -616,9 +611,14 @@
               "new": ""
             },
             {
-              "field": "compendium_order",
-              "old": "38",
-              "new": "576"
+              "field": "description_raw",
+              "old": "Deal {Damage:diff()} damage.\nWhenever you gain [gold]Block[/gold] this turn, ...",
+              "new": ""
+            },
+            {
+              "field": "color",
+              "old": "ironclad",
+              "new": "unknown"
             }
           ]
         },
@@ -654,14 +654,14 @@
               "new": "The first time you draw a Status each turn, draw 3 cards."
             },
             {
-              "field": "description_raw",
-              "old": "The first time you draw a Status card each turn, draw {IterationPower:diff()}...",
-              "new": "The first time you draw a Status each turn, draw {IterationPower:diff()} {Ite..."
-            },
-            {
               "field": "description",
               "old": "The first time you draw a Status card each turn, draw 2 cards.",
               "new": "The first time you draw a Status each turn, draw 2 cards."
+            },
+            {
+              "field": "description_raw",
+              "old": "The first time you draw a Status card each turn, draw {IterationPower:diff()}...",
+              "new": "The first time you draw a Status each turn, draw {IterationPower:diff()} {Ite..."
             }
           ]
         },
@@ -692,9 +692,9 @@
           "name": "Memento Mori",
           "changes": [
             {
-              "field": "vars",
-              "old": "3 fields",
-              "new": "3 fields"
+              "field": "damage",
+              "old": "8",
+              "new": "9"
             },
             {
               "field": "upgrade_description",
@@ -702,9 +702,9 @@
               "new": "Deal 9 damage.\nDeals 5 additional damage for each card discarded this turn."
             },
             {
-              "field": "damage",
-              "old": "8",
-              "new": "9"
+              "field": "vars",
+              "old": "3 fields",
+              "new": "3 fields"
             },
             {
               "field": "description",
@@ -723,14 +723,14 @@
               "new": "Deal 14 damage.\nDraw 2 cards.\nWhenever you create a Status, reduce this card'..."
             },
             {
-              "field": "description_raw",
-              "old": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nW...",
-              "new": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nW..."
-            },
-            {
               "field": "description",
               "old": "Deal 13 damage.\nDraw 1 card.\nWhen you create a Status card, reduce this card'...",
               "new": "Deal 13 damage.\nDraw 1 card.\nWhenever you create a Status, reduce this card's..."
+            },
+            {
+              "field": "description_raw",
+              "old": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nW...",
+              "new": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nW..."
             }
           ]
         },
@@ -739,24 +739,24 @@
           "name": "Speedster",
           "changes": [
             {
-              "field": "vars",
-              "old": "2 fields",
-              "new": "2 fields"
-            },
-            {
               "field": "upgrade_description",
               "old": "Whenever you draw a card during your turn, deal 2 damage to ALL enemies.",
               "new": "none"
             },
             {
-              "field": "upgrade",
-              "old": "1 fields",
-              "new": "1 fields"
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
             },
             {
               "field": "description",
               "old": "Whenever you draw a card during your turn, deal 1 damage to ALL enemies.",
               "new": "Whenever you draw a card during your turn, deal 2 damage to ALL enemies."
+            },
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
             },
             {
               "field": "powers_applied",
@@ -770,12 +770,12 @@
           "name": "Trash to Treasure",
           "changes": [
             {
-              "field": "description_raw",
+              "field": "description",
               "old": "Whenever you create a Status card, [gold]Channel[/gold] 1 random Orb.",
               "new": "Whenever you create a Status, [gold]Channel[/gold] 1 random Orb."
             },
             {
-              "field": "description",
+              "field": "description_raw",
               "old": "Whenever you create a Status card, [gold]Channel[/gold] 1 random Orb.",
               "new": "Whenever you create a Status, [gold]Channel[/gold] 1 random Orb."
             }
@@ -811,14 +811,14 @@
           "name": "Archaic Tooth",
           "changes": [
             {
-              "field": "description_raw",
-              "old": "Upon pickup, [gold]Transform[/gold] {StarterCard.StringValue:cond:[gold]{Star...",
-              "new": "Upon pickup, [gold]Transform[/gold] {StarterCard.StringValue:cond:[gold]{Star..."
-            },
-            {
               "field": "description",
               "old": "Upon pickup, [gold]Transform[/gold] a starter card with an ancient version.",
               "new": "Upon pickup, [gold]Transform[/gold] a starter card into an ancient version."
+            },
+            {
+              "field": "description_raw",
+              "old": "Upon pickup, [gold]Transform[/gold] {StarterCard.StringValue:cond:[gold]{Star...",
+              "new": "Upon pickup, [gold]Transform[/gold] {StarterCard.StringValue:cond:[gold]{Star..."
             }
           ]
         },
@@ -1415,14 +1415,14 @@
           "name": "Regalite",
           "changes": [
             {
-              "field": "description_raw",
-              "old": "Whenever you create a Colorless card, gain [blue]{Block}[/blue] [gold]Block[/...",
-              "new": "Whenever you create a card, gain [blue]{Block}[/blue] [gold]Block[/gold]."
-            },
-            {
               "field": "description",
               "old": "Whenever you create a Colorless card, gain [blue]2[/blue] [gold]Block[/gold].",
               "new": "Whenever you create a card, gain [blue]2[/blue] [gold]Block[/gold]."
+            },
+            {
+              "field": "description_raw",
+              "old": "Whenever you create a Colorless card, gain [blue]{Block}[/blue] [gold]Block[/...",
+              "new": "Whenever you create a card, gain [blue]{Block}[/blue] [gold]Block[/gold]."
             }
           ]
         },
@@ -1802,17 +1802,12 @@
           "name": "Byrdonis",
           "changes": [
             {
-              "field": "min_hp_ascension",
+              "field": "max_hp_ascension",
               "old": "99",
               "new": "90"
             },
             {
-              "field": "min_hp",
-              "old": "91",
-              "new": "81"
-            },
-            {
-              "field": "max_hp_ascension",
+              "field": "min_hp_ascension",
               "old": "99",
               "new": "90"
             },
@@ -1820,6 +1815,11 @@
               "field": "max_hp",
               "old": "94",
               "new": "84"
+            },
+            {
+              "field": "min_hp",
+              "old": "91",
+              "new": "81"
             }
           ]
         },
@@ -1933,6 +1933,11 @@
           "name": "GrapplePower",
           "changes": [
             {
+              "field": "description",
+              "old": "Whenever you gain [gold]Block[/gold] this turn, deal [blue][Amount][/blue] da...",
+              "new": ""
+            },
+            {
               "field": "description_raw",
               "old": "Whenever you gain [gold]Block[/gold] this turn, deal [blue]{Amount}[/blue] da...",
               "new": "none"
@@ -1941,11 +1946,6 @@
               "field": "name",
               "old": "Grapple",
               "new": "GrapplePower"
-            },
-            {
-              "field": "description",
-              "old": "Whenever you gain [gold]Block[/gold] this turn, deal [blue][Amount][/blue] da...",
-              "new": ""
             }
           ]
         },
@@ -1959,18 +1959,6 @@
               "new": "The first time you draw a Status each turn, draw more cards."
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "orbs",
-      "name": "Orbs",
-      "old_count": 5,
-      "new_count": 6,
-      "added": [
-        {
-          "id": "MOCK_COMBAT_CLEANUP_ORB",
-          "name": "Mock Combat Cleanup"
         }
       ]
     }

@@ -98,7 +98,7 @@ def parse_orbs(loc_dir: Path) -> list[dict]:
     for key in loc:
         parts = key.split(".")
         orb_id = parts[0]
-        if orb_id in seen or orb_id == "EMPTY_SLOT":
+        if orb_id in seen or orb_id == "EMPTY_SLOT" or "MOCK" in orb_id:
             continue
         seen.add(orb_id)
 
