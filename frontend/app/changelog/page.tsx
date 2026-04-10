@@ -105,16 +105,24 @@ function CategorySection({ cat }: { cat: CategoryDiff }) {
               <h4 className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1.5">
                 Added ({cat.added.length})
               </h4>
-              <div className="flex flex-wrap gap-1.5">
-                {cat.added.map((e) => (
-                  <span
-                    key={e.id}
-                    className="text-xs px-2 py-0.5 rounded bg-emerald-950/30 text-emerald-300 border border-emerald-900/20"
-                  >
-                    {e.name}
-                  </span>
-                ))}
-              </div>
+              <ul className="list-disc list-inside space-y-1">
+                {cat.added.map((e) => {
+                  const details = Object.entries(e)
+                    .filter(([k]) => !["id", "name"].includes(k))
+                    .map(([, v]) => String(v))
+                    .join(", ");
+                  return (
+                    <li key={e.id} className="text-sm text-emerald-300">
+                      <span className="font-medium">{e.name}</span>
+                      {details && (
+                        <span className="text-emerald-400/60 ml-1.5">
+                          {details}
+                        </span>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
           )}
 
@@ -123,16 +131,13 @@ function CategorySection({ cat }: { cat: CategoryDiff }) {
               <h4 className="text-xs font-semibold text-red-400 uppercase tracking-wider mb-1.5">
                 Removed ({cat.removed.length})
               </h4>
-              <div className="flex flex-wrap gap-1.5">
+              <ul className="list-disc list-inside space-y-1">
                 {cat.removed.map((e) => (
-                  <span
-                    key={e.id}
-                    className="text-xs px-2 py-0.5 rounded bg-red-950/30 text-red-300 border border-red-900/20 line-through"
-                  >
+                  <li key={e.id} className="text-sm text-red-300 line-through">
                     {e.name}
-                  </span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           )}
 
