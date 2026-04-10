@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { IS_BETA } from "@/lib/seo";
+import { buildApiUrl } from "@/lib/fetch-cache";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -177,7 +178,7 @@ export default function ChangelogPage() {
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
-    fetch(`${API}/api/changelogs`)
+    fetch(buildApiUrl(`${API}/api/changelogs`))
       .then((r) => {
         if (!r.ok) return [];
         return r.json();
@@ -212,7 +213,7 @@ export default function ChangelogPage() {
 
   function loadVersionDirect(tag: string) {
     setSelected(null);
-    fetch(`${API}/api/changelogs/${tag}`)
+    fetch(buildApiUrl(`${API}/api/changelogs/${tag}`))
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => d && setSelected(d))
       .catch(() => {});
