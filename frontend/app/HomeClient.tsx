@@ -232,11 +232,13 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
                   className="absolute inset-0 opacity-60"
                   style={{ background: `linear-gradient(to top, ${char.cssColor}66, transparent)` }}
                 />
-                <div className="relative aspect-square flex items-end justify-center">
+                <div className="relative aspect-square flex items-end justify-center overflow-hidden">
                   <img
                     src={`${API}/static/images/characters/combat_${char.id}.png`}
                     alt={`${charName} - Slay the Spire 2 Character`}
-                    className="w-full h-full object-contain p-1 sm:p-2 group-hover:scale-105 transition-transform duration-300"
+                    className={`w-full h-full object-contain p-1 sm:p-2 group-hover:scale-105 transition-transform duration-300 ${
+                      char.id === "necrobinder" ? "scale-125 translate-y-2" : ""
+                    }`}
                     crossOrigin="anonymous"
                   />
                 </div>
