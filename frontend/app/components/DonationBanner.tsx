@@ -3,23 +3,34 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
+const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+
 function KofiBanner({ onDismiss }: { onDismiss: () => void }) {
   return (
     <div className="bg-emerald-900/40 border-b border-emerald-700/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-4">
-        <p className="text-sm text-emerald-200">
-          If you&apos;re enjoying Spire Codex and want to support it, please
-          consider{" "}
-          <a
-            href="https://ko-fi.com/yitsy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-emerald-100 underline hover:text-white transition-colors"
-          >
-            donating on Ko-Fi
-          </a>
-          . Thank you to Katie K and LeMerkur for supporting Spire Codex.
-        </p>
+        <div className="flex items-center gap-3">
+          <img
+            src={`${API}/static/images/misc/ancients/nonupeipe.png`}
+            alt="Nonupeipe"
+            className="w-8 h-8 object-contain flex-shrink-0 hidden sm:block"
+            crossOrigin="anonymous"
+          />
+          <p className="text-sm text-emerald-200 italic">
+            &ldquo;If you&apos;re enjoying Spire Codex and want to support it,
+            please consider{" "}
+            <a
+              href="https://ko-fi.com/yitsy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-emerald-100 underline hover:text-white transition-colors"
+            >
+              donating on Ko-Fi
+            </a>
+            . Thank you to Katie K and LeMerkur for supporting Spire
+            Codex.&rdquo;
+          </p>
+        </div>
         <button
           onClick={onDismiss}
           className="text-emerald-400 hover:text-emerald-200 transition-colors flex-shrink-0 text-lg leading-none"
@@ -36,25 +47,33 @@ function CommunityBanner({ onDismiss }: { onDismiss: () => void }) {
   return (
     <div className="bg-indigo-900/40 border-b border-indigo-700/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-4">
-        <p className="text-sm text-indigo-200">
-          Join the{" "}
-          <a
-            href="https://discord.gg/xMsTBeh"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-indigo-100 underline hover:text-white transition-colors"
-          >
-            Spire Codex Discord
-          </a>{" "}
-          or{" "}
-          <Link
-            href="/runs"
-            className="font-medium text-indigo-100 underline hover:text-white transition-colors"
-          >
-            upload your runs
-          </Link>{" "}
-          to contribute to the meta.
-        </p>
+        <div className="flex items-center gap-3">
+          <img
+            src={`${API}/static/images/misc/ancients/neow.png`}
+            alt="Neow"
+            className="w-8 h-8 object-contain flex-shrink-0 hidden sm:block"
+            crossOrigin="anonymous"
+          />
+          <p className="text-sm text-indigo-200 italic">
+            &ldquo;Join the{" "}
+            <a
+              href="https://discord.gg/xMsTBeh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-indigo-100 underline hover:text-white transition-colors"
+            >
+              Spire Codex Discord
+            </a>{" "}
+            or{" "}
+            <Link
+              href="/runs"
+              className="font-medium text-indigo-100 underline hover:text-white transition-colors"
+            >
+              upload your runs
+            </Link>{" "}
+            to contribute to the meta.&rdquo;
+          </p>
+        </div>
         <button
           onClick={onDismiss}
           className="text-indigo-400 hover:text-indigo-200 transition-colors flex-shrink-0 text-lg leading-none"
