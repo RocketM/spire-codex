@@ -30,7 +30,7 @@ def get_unlocks(request: Request, lang: str = Depends(get_lang)):
 
     result = {"characters": [], "cards": [], "relics": [], "potions": [], "events": []}
 
-    # Characters
+    # Characters (only those that require unlocking)
     for char_id, epoch_id in CHARACTER_UNLOCK_EPOCHS.items():
         epoch = epoch_map.get(epoch_id, {})
         char = chars_map.get(char_id, {})
@@ -41,6 +41,7 @@ def get_unlocks(request: Request, lang: str = Depends(get_lang)):
                 "epoch_id": epoch_id,
                 "epoch_title": epoch.get("title", ""),
                 "era": epoch.get("era_name", epoch.get("era", "")),
+                "unlock_info": epoch.get("unlock_info", ""),
                 "sort_order": epoch.get("sort_order", 0),
             })
 
@@ -51,6 +52,7 @@ def get_unlocks(request: Request, lang: str = Depends(get_lang)):
         era = epoch.get("era_name", epoch.get("era", ""))
         sort_order = epoch.get("sort_order", 0)
         story = epoch.get("story_id", "")
+        unlock_info = epoch.get("unlock_info", "")
 
         # Determine character association from story
         story_lower = story.lower() if story else ""
@@ -75,6 +77,7 @@ def get_unlocks(request: Request, lang: str = Depends(get_lang)):
                 "epoch_id": epoch_id,
                 "epoch_title": epoch_title,
                 "era": era,
+                "unlock_info": unlock_info,
                 "sort_order": sort_order,
             })
 
@@ -89,6 +92,7 @@ def get_unlocks(request: Request, lang: str = Depends(get_lang)):
                 "epoch_id": epoch_id,
                 "epoch_title": epoch_title,
                 "era": era,
+                "unlock_info": unlock_info,
                 "sort_order": sort_order,
             })
 
@@ -103,6 +107,7 @@ def get_unlocks(request: Request, lang: str = Depends(get_lang)):
                 "epoch_id": epoch_id,
                 "epoch_title": epoch_title,
                 "era": era,
+                "unlock_info": unlock_info,
                 "sort_order": sort_order,
             })
 
@@ -115,6 +120,7 @@ def get_unlocks(request: Request, lang: str = Depends(get_lang)):
                 "epoch_id": epoch_id,
                 "epoch_title": epoch_title,
                 "era": era,
+                "unlock_info": unlock_info,
                 "sort_order": sort_order,
             })
 

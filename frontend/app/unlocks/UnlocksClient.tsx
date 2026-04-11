@@ -5,6 +5,7 @@ import Link from "next/link";
 import { cachedFetch } from "@/lib/fetch-cache";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useLangPrefix } from "@/lib/use-lang-prefix";
+import RichDescription from "@/app/components/RichDescription";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -19,6 +20,7 @@ interface UnlockEntity {
   epoch_id: string;
   epoch_title: string;
   era: string;
+  unlock_info: string;
   sort_order: number;
 }
 
@@ -28,6 +30,7 @@ interface CharacterUnlock {
   epoch_id: string;
   epoch_title: string;
   era: string;
+  unlock_info: string;
   sort_order: number;
 }
 
@@ -78,10 +81,11 @@ function EntityCard({ entity, type, lp }: { entity: UnlockEntity; type: string; 
           <span>&middot;</span>
           <span style={{ color: charColor }}>{entity.character}</span>
         </div>
-      </div>
-      <div className="text-right flex-shrink-0 hidden sm:block">
-        <div className="text-[10px] text-[var(--text-muted)]">{entity.epoch_title}</div>
-        <div className="text-[10px] text-[var(--text-muted)] opacity-60">{entity.era}</div>
+        {entity.unlock_info && (
+          <div className="text-[11px] text-[var(--text-secondary)] mt-0.5">
+            <RichDescription text={entity.unlock_info} />
+          </div>
+        )}
       </div>
     </Link>
   );
@@ -211,9 +215,11 @@ export default function UnlocksClient() {
                   <div className="text-sm font-medium text-[var(--text-primary)] group-hover:text-[var(--accent-gold)] transition-colors">
                     {char.name}
                   </div>
-                  <div className="text-[11px] text-[var(--text-muted)]">
-                    {char.epoch_title} &middot; {char.era}
-                  </div>
+                  {char.unlock_info && (
+                    <div className="text-[11px] text-[var(--text-secondary)] mt-0.5">
+                      <RichDescription text={char.unlock_info} />
+                    </div>
+                  )}
                 </div>
               </Link>
             ))}
