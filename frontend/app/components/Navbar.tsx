@@ -45,6 +45,7 @@ const NAV_GROUPS: NavGroup[] = [
       { href: "/compare", label: "Compare" },
       { href: "/modifiers", label: "Custom Mode" },
       { href: "/runs", label: "Runs" },
+      { href: "/unlocks", label: "Unlocks" },
       { href: "/mechanics", label: "Mechanics" },
       { href: "/guides", label: "Guides" },
       { href: "/meta", label: "Meta" },
