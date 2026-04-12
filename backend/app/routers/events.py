@@ -2,7 +2,7 @@
 from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from ..models.schemas import Event
 from ..services.data_service import load_events
-from ..dependencies import get_lang
+from ..dependencies import get_lang, matches_search
 
 router = APIRouter(prefix="/api/events", tags=["Events"])
 
@@ -21,8 +21,7 @@ def get_events(
     if act:
         events = [e for e in events if e.get("act") and act.lower() in e["act"].lower()]
     if search:
-        q = search.lower()
-        events = [e for e in events if q in e["name"].lower() or q in e.get("description", "").lower() or q in e.get("type", "").lower() or q in e.get("act", "").lower()]
+        events = [e for e in events if matches_search(e, search, ["name", "description", "type", "act"])]
     return events
 
 

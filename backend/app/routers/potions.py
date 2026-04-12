@@ -2,7 +2,7 @@
 from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from ..models.schemas import Potion
 from ..services.data_service import load_potions, load_translation_maps
-from ..dependencies import get_lang
+from ..dependencies import get_lang, matches_search
 
 router = APIRouter(prefix="/api/potions", tags=["Potions"])
 
@@ -23,8 +23,7 @@ def get_potions(
     if pool:
         potions = [p for p in potions if p.get("pool", "").lower() == pool.lower()]
     if search:
-        q = search.lower()
-        potions = [p for p in potions if q in p["name"].lower() or q in p.get("description", "").lower() or q in p.get("rarity", "").lower() or q in p.get("pool", "").lower()]
+        potions = [p for p in potions if matches_search(p, search, ["name", "description", "rarity", "pool"])]
     return potions
 
 

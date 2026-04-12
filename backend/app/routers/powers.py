@@ -2,7 +2,7 @@
 from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from ..models.schemas import Power
 from ..services.data_service import load_powers
-from ..dependencies import get_lang
+from ..dependencies import get_lang, matches_search
 
 router = APIRouter(prefix="/api/powers", tags=["Powers"])
 
@@ -21,8 +21,7 @@ def get_powers(
     if stack_type:
         powers = [p for p in powers if p.get("stack_type", "").lower() == stack_type.lower()]
     if search:
-        q = search.lower()
-        powers = [p for p in powers if q in p["name"].lower() or q in p.get("description", "").lower()]
+        powers = [p for p in powers if matches_search(p, search, ["name", "description", "type"])]
     return powers
 
 

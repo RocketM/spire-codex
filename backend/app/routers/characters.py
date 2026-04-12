@@ -2,7 +2,7 @@
 from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from ..models.schemas import Character
 from ..services.data_service import load_characters
-from ..dependencies import get_lang
+from ..dependencies import get_lang, matches_search
 
 router = APIRouter(prefix="/api/characters", tags=["Characters"])
 
@@ -15,8 +15,7 @@ def get_characters(
 ):
     characters = load_characters(lang)
     if search:
-        q = search.lower()
-        characters = [c for c in characters if q in c["name"].lower() or q in c.get("description", "").lower()]
+        characters = [c for c in characters if matches_search(c, search, ["name", "description"])]
     return characters
 
 

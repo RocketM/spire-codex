@@ -2,7 +2,7 @@
 from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from ..models.schemas import Encounter
 from ..services.data_service import load_encounters
-from ..dependencies import get_lang
+from ..dependencies import get_lang, matches_search
 
 router = APIRouter(prefix="/api/encounters", tags=["Encounters"])
 
@@ -21,8 +21,7 @@ def get_encounters(
     if act:
         encounters = [e for e in encounters if e.get("act") and act.lower() in e["act"].lower()]
     if search:
-        q = search.lower()
-        encounters = [e for e in encounters if q in e["name"].lower() or q in e.get("room_type", "").lower() or any(q in m.get("name", "").lower() for m in (e.get("monsters") or []))]
+        encounters = [e for e in encounters if matches_search(e, search, ["name", "room_type"])]
     return encounters
 
 

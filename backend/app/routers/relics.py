@@ -2,7 +2,7 @@
 from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from ..models.schemas import Relic
 from ..services.data_service import load_relics, load_translation_maps
-from ..dependencies import get_lang
+from ..dependencies import get_lang, matches_search
 
 router = APIRouter(prefix="/api/relics", tags=["Relics"])
 
@@ -23,8 +23,7 @@ def get_relics(
     if pool:
         relics = [r for r in relics if r["pool"].lower() == pool.lower()]
     if search:
-        q = search.lower()
-        relics = [r for r in relics if q in r["name"].lower() or q in r.get("description", "").lower() or q in r.get("rarity", "").lower() or q in r.get("pool", "").lower()]
+        relics = [r for r in relics if matches_search(r, search, ["name", "description", "rarity", "pool"])]
     return relics
 
 

@@ -2,7 +2,7 @@
 from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from ..models.schemas import Card
 from ..services.data_service import load_cards, load_keywords, load_translation_maps
-from ..dependencies import get_lang
+from ..dependencies import get_lang, matches_search
 
 router = APIRouter(prefix="/api/cards", tags=["Cards"])
 
@@ -35,8 +35,7 @@ def get_cards(
     if tag:
         cards = [c for c in cards if c.get("tags") and tag in c["tags"]]
     if search:
-        q = search.lower()
-        cards = [c for c in cards if q in c["name"].lower() or q in c.get("description", "").lower() or q in c.get("upgrade_description", "").lower() or q in c.get("type", "").lower() or q in c.get("rarity", "").lower() or q in c.get("color", "").lower() or any(q in kw.lower() for kw in (c.get("keywords") or []))]
+        cards = [c for c in cards if matches_search(c, search, ["name", "description", "upgrade_description", "type", "rarity", "color", "keywords"])]
     return cards
 
 
