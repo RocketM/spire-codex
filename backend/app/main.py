@@ -50,6 +50,9 @@ from .routers import (
 )
 from .services.data_service import get_stats, load_translation_maps, current_version
 from .dependencies import get_lang, VALID_LANGUAGES, LANGUAGE_NAMES
+from prometheus_fastapi_instrumentator import Instrumentator
+
+from .metrics import api_errors
 
 # ── Structured logging ────────────────────────────────────────
 LOG_LEVEL = os.environ.get("LOG_LEVEL", "INFO").upper()
@@ -74,6 +77,8 @@ if SENTRY_DSN:
         logger.info("Sentry initialized")
     except ImportError:
         logger.warning("SENTRY_DSN set but sentry-sdk not installed")
+    except Exception as e:
+        logger.warning("Sentry init failed: %s", e)
 
 limiter = Limiter(key_func=get_remote_address, default_limits=["60/minute"])
 
@@ -123,20 +128,39 @@ class RequestLoggingMiddleware(BaseHTTPMiddleware):
 
     async def dispatch(self, request: Request, call_next):
         # Skip noisy paths
-        if request.url.path in ("/health", "/docs", "/openapi.json", "/favicon.ico"):
+        if request.url.path in (
+            "/health",
+            "/metrics",
+            "/docs",
+            "/openapi.json",
+            "/favicon.ico",
+        ):
             return await call_next(request)
 
         start = time.perf_counter()
         response = await call_next(request)
         elapsed_ms = (time.perf_counter() - start) * 1000
 
-        logger.info(
-            "%s %s %d %.0fms",
-            request.method,
-            request.url.path,
-            response.status_code,
-            elapsed_ms,
-        )
+        if response.status_code >= 400:
+            api_errors.labels(
+                status_code=str(response.status_code),
+                path=request.url.path,
+            ).inc()
+            logger.warning(
+                "%s %s %d %.0fms",
+                request.method,
+                request.url.path,
+                response.status_code,
+                elapsed_ms,
+            )
+        else:
+            logger.info(
+                "%s %s %d %.0fms",
+                request.method,
+                request.url.path,
+                response.status_code,
+                elapsed_ms,
+            )
         return response
 
 
@@ -150,6 +174,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# ── Prometheus metrics ────────────────────────────────────────
+Instrumentator(
+    excluded_handlers=["/health", "/metrics", "/docs", "/openapi.json"],
+).instrument(app).expose(app, endpoint="/metrics", include_in_schema=False)
 
 app.include_router(cards.router)
 app.include_router(characters.router)
