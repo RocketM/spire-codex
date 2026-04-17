@@ -3,8 +3,8 @@
   "game_version": "1.1.0",
   "build_id": "",
   "tag": "1.1.0",
-  "date": "2026-04-16",
-  "title": "Major Update #1 — beta content lands on stable (v0.103.2)",
+  "date": "2026-04-17",
+  "title": "Major Update #1 drops on stable — Badges, new /badges section, 14-language coverage for leaderboards and runs",
   "from_ref": "v1.0.20",
   "to_ref": "current",
   "summary": {
@@ -12,6 +12,25 @@
     "removed": 7,
     "changed": 367
   },
+  "features": [
+    "Data update for Mega Crit's Major Update #1 (game v0.103.2) — full rollup of beta content from v0.100.0 through v0.103.1 landing on stable: Ironclad gains Not Yet and deprecates Grapple, Neow offers 5 new relics (Hefty Tablet, Neow's Talisman, Neow's Bones, Phial Holster, Winged Boots), Doormaker reworked, Ascension 6 swapped from Gloom to Inflation, shop relics −25 gold across the board, Acrobatics shifted Common → Uncommon.",
+    "Badges: new /badges section (parser, API, list + detail pages, navbar entry, home-page tile) covering all 25 run-end badges from Major Update #1 with Bronze/Silver/Gold tier breakdowns, requires-win and multiplayer-only flags, and shader-free icon art. 14 languages parsed from localization/badges.json; Thai is empty upstream so it renders empty — matches Mega Crit's current state.",
+    "Localization pass for leaderboards, submit a run, stats, runs, and badges — ~40 new ui-translations keys across all 14 supported languages cover page headings, taglines, tabs, Victory/Defeat/Abandoned status, tier labels, and form placeholders.",
+    "New /[lang]/ mirror routes for /leaderboards, /leaderboards/submit, /leaderboards/stats, /runs, /runs/[hash], /badges, and /badges/[id] — users on a localized URL can now reach these pages without hitting 404. Full hreflang alternates, canonical URLs, and OG locale metadata plumbed through each wrapper.",
+    "Community showcase gains Spiredle — spiredle.net, a daily Wordle-style Slay the Spire 2 guessing game that pulls entity data from Spire Codex (reciprocal listing)."
+  ],
+  "fixes": [
+    "Biting Scroll monster renders now show the actual scroll body, teeth, and rune art. Previous builds only drew the shadow because our Spine renderer defaulted to the `default` skin while the visible parts live in `skin1` — added a `--skin=` flag to render_webgl.mjs and re-rendered the static sprite + idle + attack animations.",
+    "Soul Fysh attack animation no longer has a neon-pink triangle in the top-left corner. The skeleton's `soundwave` / `beckonwave` slots referenced a magenta 'Soundwave Here' placeholder the game replaces with a shader at runtime; those slots are now on the renderer's HIDDEN_SLOTS list.",
+    "/images gallery: Idle Animations category no longer double-counts entries from the sibling monsters_attack folder — the recursive walk now honors a per-category exclusion list.",
+    "Image search (/api/images/search) results now prefer the PNG sibling of each asset when available. Clicking through to a webp could render as symbols / garbled text in some browsers.",
+    "Badge images on /badges in production no longer point at http://localhost:8000. Root cause was `||` instead of `??` on the STATIC_BASE fallback — empty strings fell through to the localhost default. Switched to the `??` pattern used everywhere else."
+  ],
+  "api_changes": [
+    "New GET /api/badges — list all run-end badges, optional filters: tiered, multiplayer_only, requires_win, search. Returns 25 badges in every supported language except Thai (upstream loc file is empty).",
+    "New GET /api/badges/{id} — fetch a single badge with tier breakdown (Bronze / Silver / Gold title + description), requires_win flag, multiplayer_only flag, and icon image URL.",
+    "/api/stats now reports a `badges` count alongside the existing entity counts."
+  ],
   "categories": [
     {
       "id": "cards",
