@@ -106,9 +106,14 @@ export default function LeaderboardBrowseClient() {
     params.set("page", String(lbPage));
     params.set("limit", "20");
     fetch(`${API}/api/runs/leaderboard?${params}&_t=${Date.now()}`)
-      .then((r) => (r.ok ? r.json() : { entries: [], total: 0, total_pages: 0 }))
+      .then((r) => (r.ok ? r.json() : { runs: [], total: 0, total_pages: 0 }))
       .then((data) => {
-        setLbEntries(data.entries || []);
+        // Backend returns the rows under `runs`; rank is computed client-side
+        // from pagination offset so row N on page 2 shows as #21.
+        const rows = (data.runs || []) as Omit<LeaderboardEntry, "rank">[];
+        const pageSize = 20;
+        const offset = (Math.max(lbPage, 1) - 1) * pageSize;
+        setLbEntries(rows.map((r, i) => ({ ...r, rank: offset + i + 1 })));
         setLbTotal(data.total || 0);
         setLbTotalPages(data.total_pages || 0);
       })
