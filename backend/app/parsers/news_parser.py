@@ -110,7 +110,9 @@ def main(_lang: str | None = None) -> None:
         slim = [{k: v for k, v in i.items() if k != "contents"} for i in archive]
         json.dump(slim, f, indent=2, ensure_ascii=False)
 
-    print(f"  news: fetched {len(items)} from Steam, archive now {len(archive)} entries")
+    print(
+        f"  news: fetched {len(items)} from Steam, archive now {len(archive)} entries"
+    )
 
 
 if __name__ == "__main__":

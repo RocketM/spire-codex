@@ -41,7 +41,9 @@ def list_news(
         items = [i for i in items if i.get("feedname") == feedname]
     if tag:
         tag_l = tag.lower()
-        items = [i for i in items if any(t.lower() == tag_l for t in (i.get("tags") or []))]
+        items = [
+            i for i in items if any(t.lower() == tag_l for t in (i.get("tags") or []))
+        ]
     if since:
         items = [i for i in items if i.get("date", 0) >= since]
     if search:
