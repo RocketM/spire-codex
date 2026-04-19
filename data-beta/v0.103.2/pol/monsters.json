@@ -16,7 +16,15 @@
     ],
     "damage_values": null,
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THE_ARCHITECT_EVENT_ENCOUNTER",
+        "encounter_name": "Architekt",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -60,7 +68,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "RUBY_RAIDERS_NORMAL",
+        "encounter_name": "Banda Najeźdźców",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -128,7 +144,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "RUBY_RAIDERS_NORMAL",
+        "encounter_name": "Banda Najeźdźców",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -238,7 +262,15 @@
     "block_values": {
       "bootUp": 10
     },
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "AXEBOTS_NORMAL",
+        "encounter_name": "Siekieroboty",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -296,7 +328,15 @@
     ],
     "damage_values": null,
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
+        "encounter_name": "Drewnobot",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -331,7 +371,15 @@
     ],
     "damage_values": null,
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
+        "encounter_name": "Drewnobot",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -366,7 +414,15 @@
     ],
     "damage_values": null,
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
+        "encounter_name": "Drewnobot",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -411,7 +467,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BOWLBUGS_NORMAL",
+        "encounter_name": "Chmara Robali",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "BOWLBUGS_WEAK",
+        "encounter_name": "Chmara Robali",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -473,7 +544,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BOWLBUGS_NORMAL",
+        "encounter_name": "Chmara Robali",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "BOWLBUGS_WEAK",
+        "encounter_name": "Chmara Robali",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -534,7 +620,29 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BOWLBUGS_NORMAL",
+        "encounter_name": "Chmara Robali",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "BOWLBUGS_WEAK",
+        "encounter_name": "Chmara Robali",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "SLUMBERING_BEETLE_NORMAL",
+        "encounter_name": "Pidżama Party",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "conditional",
@@ -602,7 +710,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BOWLBUGS_NORMAL",
+        "encounter_name": "Chmara Robali",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLUMBERING_BEETLE_NORMAL",
+        "encounter_name": "Pidżama Party",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -662,7 +785,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "RUBY_RAIDERS_NORMAL",
+        "encounter_name": "Banda Najeźdźców",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -732,7 +863,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BYGONE_EFFIGY_ELITE",
+        "encounter_name": "Starodawna Figura",
+        "room_type": "Elite",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -810,7 +949,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "BYRDONIS_ELITE",
+        "encounter_name": "Ptaszor",
+        "room_type": "Elite",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -907,7 +1054,29 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "CULTISTS_NORMAL",
+        "encounter_name": "Kultyści",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SEAPUNK_NORMAL",
+        "encounter_name": "Kijanki",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "TOADPOLES_NORMAL",
+        "encounter_name": "Toadpoles Normal",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -1024,7 +1193,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "CEREMONIAL_BEAST_BOSS",
+        "encounter_name": "Leśny Stróż",
+        "room_type": "Boss",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -1106,7 +1283,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "CHOMPERS_NORMAL",
+        "encounter_name": "Para automatonów",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "TUNNELER_NORMAL",
+        "encounter_name": "Tunelowy duet",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -1179,7 +1371,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "CORPSE_SLUGS_NORMAL",
+        "encounter_name": "Dużo Ślimaków Trupojadów",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "CORPSE_SLUGS_WEAK",
+        "encounter_name": "Ślimaki Trupojady",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": true
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "RAVENOUS",
@@ -1247,7 +1454,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "RUBY_RAIDERS_NORMAL",
+        "encounter_name": "Banda Najeźdźców",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -1361,7 +1576,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "KAISER_CRAB_BOSS",
+        "encounter_name": "Krab Cesarski",
+        "room_type": "Boss",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -1485,7 +1708,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "CONSTRUCT_MENAGERIE_NORMAL",
+        "encounter_name": "Konstrukty",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "CUBEX_CONSTRUCT_NORMAL",
+        "encounter_name": "Promieniotron",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -1565,7 +1803,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "CULTISTS_NORMAL",
+        "encounter_name": "Kultyści",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -1744,7 +1990,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "DEVOTED_SCULPTOR_WEAK",
+        "encounter_name": "Zagorzały Rzeźbiarz",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -1925,7 +2179,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "DOORMAKER_BOSS",
+        "encounter_name": "Tytan Pustki",
+        "room_type": "Boss",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -2025,7 +2287,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "ENTOMANCER_ELITE",
+        "encounter_name": "Pszczelarz",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -2104,7 +2374,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "EXOSKELETONS_NORMAL",
+        "encounter_name": "Wiele Egzoszkieletów",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "EXOSKELETONS_WEAK",
+        "encounter_name": "Egzoszkielety",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "mixed",
@@ -2189,7 +2474,15 @@
     ],
     "damage_values": null,
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FOGMOG_NORMAL",
+        "encounter_name": "Grzybol",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -2251,7 +2544,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FABRICATOR_NORMAL",
+        "encounter_name": "Mechanik",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "mixed",
@@ -2380,7 +2681,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FAKE_MERCHANT_EVENT_ENCOUNTER",
+        "encounter_name": "Handlarz???",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -2448,7 +2757,15 @@
     ],
     "damage_values": null,
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "GREMLIN_MERC_NORMAL",
+        "encounter_name": "Dwóch Gremlinów w płaszczu",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -2523,7 +2840,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "KNIGHTS_ELITE",
+        "encounter_name": "Kompania Rycerska",
+        "room_type": "Elite",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -2625,7 +2950,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FLYCONID_NORMAL",
+        "encounter_name": "Grzyb i śluz",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SNAPPING_JAXFRUIT_NORMAL",
+        "encounter_name": "Flora Zarośli",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -2732,7 +3072,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FOGMOG_NORMAL",
+        "encounter_name": "Grzybol",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -2845,7 +3193,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FOSSIL_STALKER_NORMAL",
+        "encounter_name": "Skamieliniak",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -2956,7 +3312,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FROG_KNIGHT_NORMAL",
+        "encounter_name": "Żabi Rycerz",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "PLATING",
@@ -3059,7 +3423,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FUZZY_WURM_CRAWLER_WEAK",
+        "encounter_name": "Kędzierzawy Robok",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "OVERGROWTH_CRAWLERS",
+        "encounter_name": "Roboki",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -3113,7 +3492,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "LIVING_FOG_NORMAL",
+        "encounter_name": "Nieprzyjemny Gaz",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -3198,7 +3585,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "GLOBE_HEAD_NORMAL",
+        "encounter_name": "Plazmogłowy",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -3298,7 +3693,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "GREMLIN_MERC_NORMAL",
+        "encounter_name": "Dwóch Gremlinów w płaszczu",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -3430,7 +3833,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "HAUNTED_SHIP_NORMAL",
+        "encounter_name": "Nawiedzony Statek",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -3529,7 +3940,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "HUNTER_KILLER_NORMAL",
+        "encounter_name": "Zabójczy Łowca",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -3637,7 +4056,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "INFESTED_PRISMS_ELITE",
+        "encounter_name": "Zainfekowany Pryzmat",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -3727,7 +4154,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "INKLETS_NORMAL",
+        "encounter_name": "Kropelki",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -3848,7 +4283,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THE_KIN_BOSS",
+        "encounter_name": "Kapłan",
+        "room_type": "Boss",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -3958,7 +4401,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THE_KIN_BOSS",
+        "encounter_name": "Kapłan",
+        "room_type": "Boss",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -4061,7 +4512,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "KNOWLEDGE_DEMON_BOSS",
+        "encounter_name": "Demon Wiedzy",
+        "room_type": "Boss",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "conditional",
@@ -4183,7 +4642,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "LAGAVULIN_MATRIARCH_BOSS",
+        "encounter_name": "Matka Lagavulinów",
+        "room_type": "Boss",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "conditional",
@@ -4260,7 +4727,36 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FLYCONID_NORMAL",
+        "encounter_name": "Grzyb i śluz",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_NORMAL",
+        "encounter_name": "Masa Śluzaków",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_WEAK",
+        "encounter_name": "Grupka Śluzaków",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "Dusiciel i jego kumpel",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -4315,7 +4811,29 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SLIMES_NORMAL",
+        "encounter_name": "Masa Śluzaków",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_WEAK",
+        "encounter_name": "Grupka Śluzaków",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "Dusiciel i jego kumpel",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -4408,7 +4926,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "LIVING_FOG_NORMAL",
+        "encounter_name": "Nieprzyjemny Gaz",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -4482,7 +5008,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "TURRET_OPERATOR_WEAK",
+        "encounter_name": "Szczur z CKM-em",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "conditional",
@@ -4579,7 +5113,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "LOUSE_PROGENITOR_NORMAL",
+        "encounter_name": "Protowesz",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "CURL_UP",
@@ -4677,7 +5219,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "KNIGHTS_ELITE",
+        "encounter_name": "Kompania Rycerska",
+        "room_type": "Elite",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -4772,7 +5322,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "MAWLER_NORMAL",
+        "encounter_name": "Paszczur",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -4887,7 +5445,15 @@
     "block_values": {
       "windup": 15
     },
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "MECHA_KNIGHT_ELITE",
+        "encounter_name": "Mecha-Rycerz",
+        "room_type": "Elite",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -4974,7 +5540,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "MYTES_NORMAL",
+        "encounter_name": "Masa Roztyczy",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "conditional",
@@ -5070,7 +5644,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "NIBBITS_NORMAL",
+        "encounter_name": "Para Kumkaczy",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "NIBBITS_WEAK",
+        "encounter_name": "Kumkacz",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "conditional",
@@ -5251,7 +5840,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "OVICOPTER_NORMAL",
+        "encounter_name": "Jajokopter",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "conditional",
@@ -5374,7 +5971,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "OWL_MAGISTRATE_NORMAL",
+        "encounter_name": "Sędzia",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -5554,7 +6159,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "PHANTASMAL_GARDENERS_ELITE",
+        "encounter_name": "Węgorzówki",
+        "room_type": "Elite",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "SKITTISH",
@@ -5651,7 +6264,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "PHROG_PARASITE_ELITE",
+        "encounter_name": "Zainfekowana Żapka",
+        "room_type": "Elite",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -5734,7 +6355,29 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "CONSTRUCT_MENAGERIE_NORMAL",
+        "encounter_name": "Konstrukty",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "PUNCH_CONSTRUCT_NORMAL",
+        "encounter_name": "Robokser",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "PUNCH_OFF_EVENT_ENCOUNTER",
+        "encounter_name": "Robokserzy",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -5857,7 +6500,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "QUEEN_BOSS",
+        "encounter_name": "Królowa",
+        "room_type": "Boss",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "conditional",
@@ -6002,7 +6653,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "KAISER_CRAB_BOSS",
+        "encounter_name": "Krab Cesarski",
+        "room_type": "Boss",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -6097,7 +6756,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SCROLLS_OF_BITING_NORMAL",
+        "encounter_name": "Wiele Zgryźliwych Zwojów",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SCROLLS_OF_BITING_WEAK",
+        "encounter_name": "Zgryźliwe Zwoje",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -6184,7 +6858,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SEAPUNK_NORMAL",
+        "encounter_name": "Kijanki",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SEAPUNK_WEAK",
+        "encounter_name": "Gloniarz",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -6252,7 +6941,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SEWER_CLAM_NORMAL",
+        "encounter_name": "Małża Ściekowa",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -6318,7 +7015,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "OVERGROWTH_CRAWLERS",
+        "encounter_name": "Roboki",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SHRINKER_BEETLE_WEAK",
+        "encounter_name": "Żuczek Kurczyciel",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -6423,7 +7135,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SKULKING_COLONY_ELITE",
+        "encounter_name": "Żywa Rafa Koralowa",
+        "room_type": "Elite",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -6522,7 +7242,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SLIMED_BERSERKER_NORMAL",
+        "encounter_name": "Śluzak Berserker",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -6608,7 +7336,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "Dusiciel i jego kumpel",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -6714,7 +7450,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SLUDGE_SPINNER_WEAK",
+        "encounter_name": "Wirówka",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -6792,7 +7536,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SLUMBERING_BEETLE_NORMAL",
+        "encounter_name": "Pidżama Party",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "PLATING",
@@ -6859,7 +7611,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "Dusiciel i jego kumpel",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SNAPPING_JAXFRUIT_NORMAL",
+        "encounter_name": "Flora Zarośli",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -6908,7 +7675,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "GREMLIN_MERC_NORMAL",
+        "encounter_name": "Dwóch Gremlinów w płaszczu",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -7006,7 +7781,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SOUL_FYSH_BOSS",
+        "encounter_name": "Dusza Rypki",
+        "room_type": "Boss",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -7115,7 +7898,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SOUL_NEXUS_ELITE",
+        "encounter_name": "Spojenie Dusz",
+        "room_type": "Elite",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -7224,7 +8015,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "KNIGHTS_ELITE",
+        "encounter_name": "Kompania Rycerska",
+        "room_type": "Elite",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -7310,7 +8109,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SPINY_TOAD_NORMAL",
+        "encounter_name": "Kolczasta Ropucha",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -7456,7 +8263,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "TERROR_EEL_ELITE",
+        "encounter_name": "Węgorzor",
+        "room_type": "Elite",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "SHRIEK",
@@ -7612,7 +8427,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "TEST_SUBJECT_BOSS",
+        "encounter_name": "Eksperyment",
+        "room_type": "Boss",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": [
       {
         "power_id": "ENRAGE",
@@ -7972,7 +8795,15 @@
     ],
     "damage_values": null,
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THE_LOST_AND_FORGOTTEN_NORMAL",
+        "encounter_name": "Porzucony i Zapomniany",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -8062,7 +8893,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THE_INSATIABLE_BOSS",
+        "encounter_name": "Nienasycony",
+        "room_type": "Boss",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -8144,7 +8983,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THE_LOST_AND_FORGOTTEN_NORMAL",
+        "encounter_name": "Porzucony i Zapomniany",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -8216,7 +9063,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THE_OBSCURA_NORMAL",
+        "encounter_name": "Zasłona",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -8331,7 +9186,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "THIEVING_HOPPER_WEAK",
+        "encounter_name": "Złodziejski Skoczek",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -8426,7 +9289,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "TOADPOLES_NORMAL",
+        "encounter_name": "Toadpoles Normal",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      },
+      {
+        "encounter_id": "TOADPOLES_WEAK",
+        "encounter_name": "Kijanki",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "conditional",
@@ -8542,7 +9420,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "QUEEN_BOSS",
+        "encounter_name": "Królowa",
+        "room_type": "Boss",
+        "act": "Act 3 - Glory",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -8615,7 +9501,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "OVICOPTER_NORMAL",
+        "encounter_name": "Jajokopter",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -8678,7 +9572,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "RUBY_RAIDERS_NORMAL",
+        "encounter_name": "Banda Najeźdźców",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -8757,7 +9659,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "TUNNELER_NORMAL",
+        "encounter_name": "Tunelowy duet",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      },
+      {
+        "encounter_id": "TUNNELER_WEAK",
+        "encounter_name": "Tunelowiec",
+        "room_type": "Monster",
+        "act": "Act 2 - Hive",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -8843,7 +9760,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "TURRET_OPERATOR_WEAK",
+        "encounter_name": "Szczur z CKM-em",
+        "room_type": "Monster",
+        "act": "Act 3 - Glory",
+        "is_weak": true
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -8904,7 +9829,36 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "FLYCONID_NORMAL",
+        "encounter_name": "Grzyb i śluz",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_NORMAL",
+        "encounter_name": "Masa Śluzaków",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_WEAK",
+        "encounter_name": "Grupka Śluzaków",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "Dusiciel i jego kumpel",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -8964,7 +9918,29 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "SLIMES_NORMAL",
+        "encounter_name": "Masa Śluzaków",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "SLIMES_WEAK",
+        "encounter_name": "Grupka Śluzaków",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": true
+      },
+      {
+        "encounter_id": "SLITHERING_STRANGLER_NORMAL",
+        "encounter_name": "Dusiciel i jego kumpel",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -9038,7 +10014,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "TWO_TAILED_RATS_NORMAL",
+        "encounter_name": "Zmutowany Szczur",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "random",
@@ -9150,7 +10134,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "VANTOM_BOSS",
+        "encounter_name": "Fantom",
+        "room_type": "Boss",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -9247,7 +10239,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "VINE_SHAMBLER_NORMAL",
+        "encounter_name": "Pnączowór",
+        "room_type": "Monster",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -9405,7 +10405,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "WATERFALL_GIANT_BOSS",
+        "encounter_name": "Kaskadowy Olbrzym",
+        "room_type": "Boss",
+        "act": "Underdocks",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "cycle",
@@ -9509,7 +10517,22 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "DENSE_VEGETATION_EVENT_ENCOUNTER",
+        "encounter_name": "Pasożyty",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      },
+      {
+        "encounter_id": "PHROG_PARASITE_ELITE",
+        "encounter_name": "Zainfekowana Żapka",
+        "room_type": "Elite",
+        "act": "Act 1 - Overgrowth",
+        "is_weak": false
+      }
+    ],
     "innate_powers": null,
     "attack_pattern": {
       "type": "conditional",
@@ -9683,7 +10706,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "DECIMILLIPEDE_ELITE",
+        "encounter_name": "Wielonoga",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "image_url": "/static/images/monsters/decimillipede_segment_back.webp"
   },
   {
@@ -9764,7 +10795,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "DECIMILLIPEDE_ELITE",
+        "encounter_name": "Wielonoga",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "image_url": "/static/images/monsters/decimillipede_segment_front.webp"
   },
   {
@@ -9845,7 +10884,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "DECIMILLIPEDE_ELITE",
+        "encounter_name": "Wielonoga",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
     "image_url": "/static/images/monsters/decimillipede_segment_middle.webp"
   },
   {
@@ -9901,7 +10948,15 @@
       }
     },
     "block_values": null,
-    "encounters": null,
+    "encounters": [
+      {
+        "encounter_id": "MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER",
+        "encounter_name": "Tajemniczy Rycerz",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
     "image_url": "/static/images/monsters/flail_knight.webp",
     "innate_powers": [
       {
