@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import type { Stats } from "@/lib/api";
 import HomeClient from "./HomeClient";
 import HomeNewsSection from "./components/HomeNewsSection";
+import HomeGuidesSection from "./components/HomeGuidesSection";
+import HomeShowcaseSection from "./components/HomeShowcaseSection";
+import HomeLeaderboardSection from "./components/HomeLeaderboardSection";
+import HomeStatsSection from "./components/HomeStatsSection";
+import HomeFAQ from "./components/HomeFAQ";
 import JsonLd from "./components/JsonLd";
 import SearchTrigger from "./components/SearchTrigger";
 import { buildWebSiteJsonLd, buildVideoGameJsonLd } from "@/lib/jsonld";
@@ -85,6 +90,11 @@ export default async function Home() {
           mirroring the grid above. Server-rendered so search snippets
           and OG previews can pick up the headlines. */}
       <HomeNewsSection />
+      <HomeLeaderboardSection characterNames={translations?.character_names} />
+      <HomeStatsSection characterNames={translations?.character_names} />
+      <HomeGuidesSection />
+      <HomeShowcaseSection />
+      <HomeFAQ stats={stats} />
     </div>
   );
 }

@@ -153,8 +153,14 @@ function KofiBanner({ onDismiss }: { onDismiss: () => void }) {
             >
               donating on Ko-Fi
             </a>
-            . Servants! Fetch some tea for Katie K and LeMerkur — they have
-            supported us well.&rdquo;
+            . Servants! Fetch tea for{" "}
+            <Link
+              href="/about#thank-you"
+              className="font-medium text-emerald-100 underline hover:text-white transition-colors"
+            >
+              those who&apos;ve supported us
+            </Link>
+            .&rdquo;
           </p>
         </div>
         <button

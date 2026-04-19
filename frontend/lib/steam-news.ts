@@ -147,12 +147,13 @@ export function canonicalSteamUrl(gid: string, appid: number = 2868840): string 
   return `https://store.steampowered.com/news/app/${appid}/view/${gid}`;
 }
 
-/** Build the on-site path for a given article. URL-encodes the canonical
- * Steam URL into the path so a single `/news/{encoded-url}` route covers
- * Mega Crit announcements, press articles, and anything else Steam adds —
- * the source is visible right in the URL without us having to invent a slug. */
+/** Build the on-site path for a given article. The Steam `gid` is a
+ * stable globally-unique ID and works as a clean URL slug — no need to
+ * leak the full Steam URL into our path. The catchall route still
+ * accepts the older encoded-URL form and 308-redirects it here so old
+ * inbound links and search results converge on this shape. */
 export function newsSlugForArticle(gid: string, basePath: string = "/news"): string {
-  return `${basePath}/${encodeURIComponent(canonicalSteamUrl(gid))}`;
+  return `${basePath}/${gid}`;
 }
 
 /** Reverse-resolve any URL back to a Steam `gid`. Handles every URL pattern

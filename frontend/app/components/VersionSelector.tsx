@@ -36,7 +36,7 @@ export default function VersionSelector() {
       <button
         ref={buttonRef}
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-[var(--accent-gold)]/30 bg-[var(--accent-gold)]/10 text-sm text-[var(--accent-gold)] hover:bg-[var(--accent-gold)]/20 transition-colors"
+        className="inline-flex items-center gap-1.5 h-9 px-3 rounded-lg border border-[var(--accent-gold)]/30 bg-[var(--accent-gold)]/10 text-sm text-[var(--accent-gold)] hover:bg-[var(--accent-gold)]/20 transition-colors"
         aria-label="Select beta version"
       >
         <span className="text-xs font-medium">{displayLabel}</span>

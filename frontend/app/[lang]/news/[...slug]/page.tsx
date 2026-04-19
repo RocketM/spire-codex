@@ -84,14 +84,9 @@ export default async function LangNewsArticlePage({
   const gid = gidFromSlug(joined);
   if (!gid) notFound();
 
-  let decoded = joined;
-  try {
-    decoded = decodeURIComponent(joined);
-  } catch {
-    /* keep raw */
-  }
-  const onCanonicalPath = decoded.startsWith("https://store.steampowered.com/news/app/");
-  if (!onCanonicalPath) {
+  // Canonical shape is `/{lang}/news/{gid}`. Older encoded-URL inbound
+  // links 308-redirect here.
+  if (joined !== gid) {
     redirect(newsSlugForArticle(gid, `/${lang}/news`));
   }
 
