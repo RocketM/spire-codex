@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useLangPrefix } from "@/lib/use-lang-prefix";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import { t } from "@/lib/ui-translations";
@@ -68,11 +68,20 @@ interface BrowseRun {
 
 type Tab = "fastest" | "highest_ascension" | "browse";
 
+function tabFromParam(value: string | null): Tab {
+  if (value === "browse" || value === "highest_ascension") return value;
+  return "fastest";
+}
+
 export default function LeaderboardBrowseClient() {
   const lp = useLangPrefix();
   const { lang } = useLanguage();
   const router = useRouter();
-  const [tab, setTab] = useState<Tab>("fastest");
+  const searchParams = useSearchParams();
+  // Initialize from `?tab=` so deep links from the home page (e.g. the
+  // Recent Runs "View more →" pointing at `?tab=browse`) land on the
+  // right tab. Defaults to fastest when no/invalid value supplied.
+  const [tab, setTab] = useState<Tab>(() => tabFromParam(searchParams.get("tab")));
 
   // --- Leaderboard state ---
   const [lbChar, setLbChar] = useState("");

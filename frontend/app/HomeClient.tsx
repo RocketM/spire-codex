@@ -7,7 +7,6 @@ import type { Stats } from "@/lib/api";
 import { cachedFetch, getBetaVersion } from "@/lib/fetch-cache";
 import { useLanguage } from "./contexts/LanguageContext";
 import { t } from "@/lib/ui-translations";
-import { IS_BETA } from "@/lib/seo";
 
 const LANG_CODES = new Set(["deu", "esp", "fra", "ita", "jpn", "kor", "pol", "ptb", "rus", "spa", "tha", "tur", "zhs"]);
 
@@ -55,8 +54,6 @@ interface HomeClientProps {
 export default function HomeClient({ initialStats, initialTranslations }: HomeClientProps) {
   const [stats, setStats] = useState<Stats | null>(initialStats);
   const [translations, setTranslations] = useState<Translations>(initialTranslations);
-  const [guideCount, setGuideCount] = useState<number | null>(null);
-  const [runCount, setRunCount] = useState<number | null>(null);
   const { lang } = useLanguage();
   const initialRender = useRef(true);
   const pathname = usePathname();
@@ -73,15 +70,6 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
     cachedFetch<Translations>(`${API}/api/translations?lang=${lang}`)
       .then(setTranslations);
   }, [lang]);
-
-  useEffect(() => {
-    cachedFetch<{ slug: string }[]>(`${API}/api/guides`)
-      .then((g) => setGuideCount(g.length))
-      .catch(() => {});
-    cachedFetch<{ total: number }>(`${API}/api/runs/list?limit=1`)
-      .then((d) => setRunCount(d.total))
-      .catch(() => {});
-  }, []);
 
   // Section name: use game translations if actually translated, otherwise our UI translations
   const SECTION_LABEL_MAP: Record<string, string> = {
@@ -202,32 +190,6 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
       count: stats?.badges ?? "–",
       color: "#c5894a",  // bronze
     },
-    ...(!IS_BETA ? [
-      {
-        href: "/leaderboards",
-        key: "leaderboards",
-        count: null as number | string | null,
-        color: "#e8b830",  // gold
-      },
-      {
-        href: "/leaderboards/submit",
-        key: "submit",
-        count: runCount ?? "–",
-        color: "#d53b27",  // red
-      },
-      {
-        href: "/leaderboards/stats",
-        key: "stats",
-        count: null as number | string | null,
-        color: "#3873a9",  // defect blue
-      },
-      {
-        href: "/guides",
-        key: "guides",
-        count: guideCount ?? "–",
-        color: "#44CC44",  // guide green
-      },
-    ] : []),
   ];
 
   return (

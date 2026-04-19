@@ -156,14 +156,14 @@ export default function Navbar() {
             {IS_BETA ? (
               <a
                 href="https://spire-codex.com"
-                className="hidden sm:inline-flex items-center px-2 py-1 rounded text-xs font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/25 transition-colors"
+                className="hidden sm:inline-flex items-center h-9 px-3 rounded-lg text-xs font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/25 transition-colors"
               >
                 {t("View Stable Site", lang)}
               </a>
             ) : (
               <a
                 href="https://beta.spire-codex.com"
-                className="hidden sm:inline-flex items-center px-2 py-1 rounded text-xs font-semibold bg-[var(--accent-gold)]/15 text-[var(--accent-gold)] border border-[var(--accent-gold)]/30 hover:bg-[var(--accent-gold)]/25 transition-colors"
+                className="hidden sm:inline-flex items-center h-9 px-3 rounded-lg text-xs font-semibold bg-[var(--accent-gold)]/15 text-[var(--accent-gold)] border border-[var(--accent-gold)]/30 hover:bg-[var(--accent-gold)]/25 transition-colors"
               >
                 {t("View Beta Site", lang)}
               </a>
@@ -184,10 +184,10 @@ export default function Navbar() {
             <button
               ref={buttonRef}
               onClick={() => setOpen(!open)}
-              className="p-2 rounded-md text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-card)] transition-colors"
+              className="inline-flex items-center justify-center h-9 w-9 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-card)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--border-accent)] transition-colors"
               aria-label={t("Toggle menu", lang)}
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {open ? (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 ) : (

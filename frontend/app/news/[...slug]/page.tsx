@@ -35,20 +35,20 @@ async function fetchItem(gid: string): Promise<NewsArticle | null> {
 
 /** The slug catchall accepts a few shapes:
  *
- *   - `/news/{gid}`                  — legacy bare-gid route (still indexed)
- *   - `/news/{encoded canonical url}` — current canonical shape, mirrors
- *     the Steam article URL so the source is visible right in the path
+ *   - `/news/{gid}`                   — current canonical shape, clean
+ *     and shareable
+ *   - `/news/{encoded canonical url}` — older encoded-URL form, kept so
+ *     prior inbound links and search results still resolve
  *
  * Either way we pull the gid out, look up the archived article, and (if
- * the request came in on the legacy gid path) 308-redirect to the
- * canonical encoded-URL form so search engines and shares converge on
- * one canonical address.
+ * the request came in on the encoded-URL form) 308-redirect to the bare
+ * gid so search engines and shares converge on one canonical address.
  */
 function joinSlug(parts: string[]): string {
-  // Next.js splits the catchall on `/`. The encoded URL we generate
-  // doesn't contain unencoded slashes so a single segment is the common
-  // case, but Steam URLs sometimes leak through unencoded — rejoin
-  // defensively.
+  // Next.js splits the catchall on `/`. Bare gids are a single segment;
+  // the older encoded-URL form was also a single segment. Steam URLs
+  // occasionally leak through unencoded as multiple segments — rejoin
+  // defensively so `gidFromSlug()` can still pull the trailing digits.
   return parts.join("/");
 }
 
@@ -100,17 +100,11 @@ export default async function NewsArticlePage({
   const gid = gidFromSlug(joined);
   if (!gid) notFound();
 
-  // Decode incoming slug to detect whether the caller used the canonical
-  // encoded-URL form or the legacy bare-gid form. If they used a bare gid,
-  // 308-redirect to the canonical so links share consistently.
-  let decoded = joined;
-  try {
-    decoded = decodeURIComponent(joined);
-  } catch {
-    /* keep raw */
-  }
-  const onCanonicalPath = decoded.startsWith("https://store.steampowered.com/news/app/");
-  if (!onCanonicalPath) {
+  // The canonical shape is `/news/{gid}` — clean, shareable, and stable.
+  // If the caller used the older encoded-URL form (or anything else that
+  // happened to contain the gid), 308-redirect to the bare-gid path so
+  // every flavour of inbound link converges on the canonical address.
+  if (joined !== gid) {
     redirect(newsSlugForArticle(gid));
   }
 

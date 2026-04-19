@@ -39,7 +39,7 @@ export default function SearchTrigger({ variant, className = "", placeholder }: 
         type="button"
         onClick={openGlobalSearch}
         aria-label="Search"
-        className={`p-2 rounded-md text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-card)] transition-colors ${className}`}
+        className={`inline-flex items-center justify-center h-9 w-9 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-card)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--border-accent)] transition-colors ${className}`}
       >
         <SearchIcon className="w-5 h-5" />
       </button>
@@ -69,7 +69,7 @@ export default function SearchTrigger({ variant, className = "", placeholder }: 
     <button
       type="button"
       onClick={openGlobalSearch}
-      className={`group w-full flex items-center gap-2 px-3 py-1.5 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-card)] text-sm hover:border-[var(--border-accent)] hover:bg-[var(--bg-card-hover)] transition-colors ${className}`}
+      className={`group w-full inline-flex items-center gap-2 h-9 px-3 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-card)] text-sm hover:border-[var(--border-accent)] hover:bg-[var(--bg-card-hover)] transition-colors ${className}`}
     >
       <SearchIcon className="w-4 h-4 text-[var(--text-muted)] group-hover:text-[var(--accent-gold)] transition-colors shrink-0" />
       <span className="flex-1 text-left text-[var(--text-muted)] truncate">
