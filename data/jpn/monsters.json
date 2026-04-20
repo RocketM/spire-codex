@@ -1068,13 +1068,6 @@
         "room_type": "Monster",
         "act": "Underdocks",
         "is_weak": false
-      },
-      {
-        "encounter_id": "TOADPOLES_NORMAL",
-        "encounter_name": "Toadpoles Normal",
-        "room_type": "Monster",
-        "act": null,
-        "is_weak": false
       }
     ],
     "innate_powers": null,
@@ -9197,13 +9190,6 @@
     },
     "block_values": null,
     "encounters": [
-      {
-        "encounter_id": "TOADPOLES_NORMAL",
-        "encounter_name": "Toadpoles Normal",
-        "room_type": "Monster",
-        "act": null,
-        "is_weak": false
-      },
       {
         "encounter_id": "TOADPOLES_WEAK",
         "encounter_name": "ヒキジャクシ",

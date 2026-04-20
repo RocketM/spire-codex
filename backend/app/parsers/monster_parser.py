@@ -4,6 +4,7 @@ import json
 import re
 from pathlib import Path
 
+from orphan_filter import is_orphan
 from parser_paths import BASE, DECOMPILED, loc_dir as _loc_dir, data_dir as _data_dir
 
 MONSTERS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Monsters"
@@ -729,10 +730,17 @@ def _build_pattern_description(
 def parse_single_monster(
     filepath: Path, localization: dict, encounter_types: dict, monster_encounters: dict
 ) -> dict | None:
+    # Skip orphan .cs files left over from previous extractions — the
+    # class no longer exists in the current DLL (no cross-references,
+    # stale mtime) so it shouldn't appear in our output.
+    if is_orphan(filepath):
+        return None
     content = filepath.read_text(encoding="utf-8")
     class_name = filepath.stem
 
-    # Skip test/mock/deprecated monsters
+    # Skip test/mock/deprecated monsters. Orphan classes from prior
+    # extractions (Door etc.) are caught generically by `is_orphan()` at
+    # the top of this function — no need to enumerate them here.
     skip_prefixes = ("Mock", "Deprecated")
     skip_names = {
         "BigDummy",
@@ -740,14 +748,6 @@ def parse_single_monster(
         "OneHpMonster",
         "SingleAttackMoveMonster",
         "TenHpMonster",
-        # Door was a Doormaker minion pre-MU1; the MU1 rework removed it
-        # from the game but `ilspycmd` doesn't delete orphaned files when
-        # re-decompiling, so a stale `Door.cs` can linger in the extraction
-        # tree from previous game versions. Explicit skip as a belt-and-
-        # suspenders defence in case the file comes back — 0 encounters
-        # reference it and `ModelDb.Monster<Door>()` has 0 callsites in
-        # the v0.103.2 source.
-        "Door",
     }
     if class_name.startswith(skip_prefixes) or class_name in skip_names:
         return None

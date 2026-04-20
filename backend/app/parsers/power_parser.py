@@ -5,6 +5,7 @@ import re
 from pathlib import Path
 from description_resolver import resolve_description, extract_vars_from_source
 
+from orphan_filter import is_orphan
 from parser_paths import DECOMPILED, RAW_DIR, loc_dir as _loc_dir, data_dir as _data_dir
 
 POWERS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Powers"
@@ -118,21 +119,15 @@ def detect_parent_power(content: str) -> tuple[str | None, bool]:
 
 
 def parse_single_power(filepath: Path, localization: dict) -> dict | None:
+    # Skip orphan .cs files left over from previous extractions — the
+    # class no longer exists in the current DLL (no cross-references,
+    # stale mtime) so it shouldn't appear in our output.
+    if is_orphan(filepath):
+        return None
     content = filepath.read_text(encoding="utf-8")
     class_name = filepath.stem
 
     if class_name.startswith("Deprecated") or class_name.startswith("Mock"):
-        return None
-
-    # Stale orphans from pre-MU1 extractions that `ilspycmd` never
-    # overwrites when re-decompiling the new DLL. `DoorRevivalPower` was
-    # part of the pre-MU1 Doormaker minion mechanic; MU1 removed it but
-    # the .cs file can linger on disk. The skip-if-no-localization gate
-    # below already catches this one in practice, but an explicit list
-    # makes the intent clear and survives if localization is ever
-    # retroactively added.
-    STALE_ORPHANS = {"DoorRevivalPower"}
-    if class_name in STALE_ORPHANS:
         return None
 
     # Skip abstract base classes — their children are the real powers
