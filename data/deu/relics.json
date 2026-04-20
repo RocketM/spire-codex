@@ -8,9 +8,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/ruined_helmet.webp",
     "image_variants": null,
@@ -27,9 +27,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/akabeko.webp",
     "image_variants": null,
@@ -60,11 +60,7 @@
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "shared",
-    "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
-    },
+    "merchant_price": null,
     "image_url": "/static/images/relics/old_coin.webp",
     "image_variants": null,
     "notes": null,
@@ -79,11 +75,7 @@
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
-    "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
-    },
+    "merchant_price": null,
     "image_url": "/static/images/relics/amethyst_aubergine.webp",
     "image_variants": null,
     "notes": null,
@@ -99,9 +91,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/anchor.webp",
     "image_variants": null,
@@ -182,9 +174,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/candelabra.webp",
     "image_variants": null,
@@ -201,9 +193,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/vambrace.webp",
     "image_variants": null,
@@ -250,9 +242,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/funerary_mask.webp",
     "image_variants": null,
@@ -299,9 +291,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/pear.webp",
     "image_variants": null,
@@ -333,9 +325,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/bellows.webp",
     "image_variants": null,
@@ -382,9 +374,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/blood_vial.webp",
     "image_variants": null,
@@ -465,9 +457,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/letter_opener.webp",
     "image_variants": null,
@@ -499,9 +491,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/bronze_scales.webp",
     "image_variants": null,
@@ -518,9 +510,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/bread.webp",
     "image_variants": null,
@@ -537,9 +529,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/book_of_five_rings.webp",
     "image_variants": null,
@@ -556,9 +548,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/book_repair_knife.webp",
     "image_variants": null,
@@ -590,9 +582,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/charons_ashes.webp",
     "image_variants": null,
@@ -609,9 +601,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/chemical_x.webp",
     "image_variants": null,
@@ -628,9 +620,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/lasting_candy.webp",
     "image_variants": null,
@@ -647,9 +639,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/ornamental_fan.webp",
     "image_variants": null,
@@ -666,9 +658,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/the_abacus.webp",
     "image_variants": null,
@@ -745,9 +737,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/art_of_war.webp",
     "image_variants": null,
@@ -763,11 +755,7 @@
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "shared",
-    "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
-    },
+    "merchant_price": null,
     "image_url": "/static/images/relics/the_courier.webp",
     "image_variants": null,
     "notes": null,
@@ -783,9 +771,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/dollys_mirror.webp",
     "image_variants": null,
@@ -802,9 +790,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/dragon_fruit.webp",
     "image_variants": null,
@@ -836,9 +824,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "silent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/helical_dart.webp",
     "image_variants": null,
@@ -885,9 +873,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/demon_tongue.webp",
     "image_variants": null,
@@ -919,9 +907,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/lizard_tail.webp",
     "image_variants": null,
@@ -938,9 +926,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/regal_pillow.webp",
     "image_variants": null,
@@ -987,9 +975,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/ice_cream.webp",
     "image_variants": null,
@@ -1051,9 +1039,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/ivory_tile.webp",
     "image_variants": null,
@@ -1085,9 +1073,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/strawberry.webp",
     "image_variants": null,
@@ -1104,9 +1092,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/meal_ticket.webp",
     "image_variants": null,
@@ -1123,9 +1111,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/eternal_feather.webp",
     "image_variants": null,
@@ -1142,9 +1130,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "regent",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/fencing_manual.webp",
     "image_variants": null,
@@ -1161,9 +1149,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "defect",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/data_disk.webp",
     "image_variants": null,
@@ -1210,9 +1198,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/meat_on_the_bone.webp",
     "image_variants": null,
@@ -1244,9 +1232,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/wing_charm.webp",
     "image_variants": null,
@@ -1308,9 +1296,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/happy_flower.webp",
     "image_variants": null,
@@ -1346,9 +1334,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/sparkling_rouge.webp",
     "image_variants": null,
@@ -1365,9 +1353,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/intimidating_helmet.webp",
     "image_variants": null,
@@ -1399,9 +1387,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "regent",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/galactic_dust.webp",
     "image_variants": null,
@@ -1418,9 +1406,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/prayer_wheel.webp",
     "image_variants": null,
@@ -1452,9 +1440,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/frozen_egg.webp",
     "image_variants": null,
@@ -1471,9 +1459,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "defect",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/emotion_chip.webp",
     "image_variants": null,
@@ -1490,9 +1478,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/ghost_seed.webp",
     "image_variants": null,
@@ -1539,9 +1527,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/molten_egg.webp",
     "image_variants": null,
@@ -1588,9 +1576,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/girya.webp",
     "image_variants": null,
@@ -1651,11 +1639,7 @@
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
-    "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
-    },
+    "merchant_price": null,
     "image_url": "/static/images/relics/lucky_fysh.webp",
     "image_variants": null,
     "notes": null,
@@ -1671,9 +1655,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "defect",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/gold_plated_cables.webp",
     "image_variants": null,
@@ -1720,9 +1704,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/joss_paper.webp",
     "image_variants": null,
@@ -1754,9 +1738,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/gremlin_horn.webp",
     "image_variants": null,
@@ -1788,9 +1772,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/big_hat.webp",
     "image_variants": null,
@@ -1852,9 +1836,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/belt_buckle.webp",
     "image_variants": null,
@@ -1871,9 +1855,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/gorget.webp",
     "image_variants": null,
@@ -1905,9 +1889,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "silent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/tough_bandages.webp",
     "image_variants": null,
@@ -1939,9 +1923,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/horn_cleat.webp",
     "image_variants": null,
@@ -1973,9 +1957,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/unceasing_top.webp",
     "image_variants": null,
@@ -2007,9 +1991,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/juzu_bracelet.webp",
     "image_variants": null,
@@ -2026,9 +2010,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/captains_wheel.webp",
     "image_variants": null,
@@ -2045,9 +2029,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/cauldron.webp",
     "image_variants": null,
@@ -2064,9 +2048,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/kifuda.webp",
     "image_variants": null,
@@ -2128,9 +2112,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/ringing_triangle.webp",
     "image_variants": null,
@@ -2162,9 +2146,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/bone_flute.webp",
     "image_variants": null,
@@ -2196,9 +2180,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/gnarled_hammer.webp",
     "image_variants": null,
@@ -2215,9 +2199,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "silent",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/twisted_funnel.webp",
     "image_variants": null,
@@ -2234,9 +2218,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/festive_popper.webp",
     "image_variants": null,
@@ -2253,9 +2237,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/screaming_flagon.webp",
     "image_variants": null,
@@ -2272,9 +2256,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/war_paint.webp",
     "image_variants": null,
@@ -2306,9 +2290,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/chandelier.webp",
     "image_variants": null,
@@ -2325,9 +2309,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/ripple_basin.webp",
     "image_variants": null,
@@ -2344,9 +2328,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/kunai.webp",
     "image_variants": null,
@@ -2363,9 +2347,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/kusarigama.webp",
     "image_variants": null,
@@ -2382,9 +2366,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/royal_stamp.webp",
     "image_variants": null,
@@ -2431,9 +2415,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/lantern.webp",
     "image_variants": null,
@@ -2450,9 +2434,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/lava_lamp.webp",
     "image_variants": null,
@@ -2520,9 +2504,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/lees_waffle.webp",
     "image_variants": null,
@@ -2558,9 +2542,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/bookmark.webp",
     "image_variants": null,
@@ -2577,9 +2561,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "regent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/lunar_pastry.webp",
     "image_variants": null,
@@ -2596,9 +2580,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/mango.webp",
     "image_variants": null,
@@ -2634,9 +2618,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/cloak_clasp.webp",
     "image_variants": null,
@@ -2667,11 +2651,7 @@
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
-    "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
-    },
+    "merchant_price": null,
     "image_url": "/static/images/relics/bowler_hat.webp",
     "image_variants": null,
     "notes": null,
@@ -2687,9 +2667,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "defect",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/metronome.webp",
     "image_variants": null,
@@ -2706,9 +2686,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "regent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/mini_regent.webp",
     "image_variants": null,
@@ -2725,9 +2705,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/miniature_cannon.webp",
     "image_variants": null,
@@ -2744,9 +2724,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/miniature_tent.webp",
     "image_variants": null,
@@ -2763,9 +2743,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/membership_card.webp",
     "image_variants": null,
@@ -2797,9 +2777,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/mummified_hand.webp",
     "image_variants": null,
@@ -2816,9 +2796,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/bag_of_marbles.webp",
     "image_variants": null,
@@ -2835,9 +2815,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/mystic_lighter.webp",
     "image_variants": null,
@@ -2959,9 +2939,9 @@
     "rarity": "Laden-Relikt",
     "pool": "silent",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/ninja_scroll.webp",
     "image_variants": null,
@@ -2978,9 +2958,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/nunchaku.webp",
     "image_variants": null,
@@ -2997,9 +2977,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "regent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/orange_dough.webp",
     "image_variants": null,
@@ -3016,9 +2996,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/orichalcum.webp",
     "image_variants": null,
@@ -3204,9 +3184,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/pantograph.webp",
     "image_variants": null,
@@ -3223,9 +3203,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "silent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/paper_krane.webp",
     "image_variants": null,
@@ -3242,9 +3222,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/paper_phrog.webp",
     "image_variants": null,
@@ -3261,9 +3241,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/parrying_shield.webp",
     "image_variants": null,
@@ -3295,9 +3275,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/pendulum.webp",
     "image_variants": null,
@@ -3314,9 +3294,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/permafrost.webp",
     "image_variants": null,
@@ -3348,9 +3328,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/orrery.webp",
     "image_variants": null,
@@ -3367,9 +3347,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/planisphere.webp",
     "image_variants": null,
@@ -3386,9 +3366,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/beating_remnant.webp",
     "image_variants": null,
@@ -3450,9 +3430,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/mercury_hourglass.webp",
     "image_variants": null,
@@ -3469,9 +3449,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/razor_tooth.webp",
     "image_variants": null,
@@ -3488,9 +3468,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "regent",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/regalite.webp",
     "image_variants": null,
@@ -3507,9 +3487,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/rainbow_ring.webp",
     "image_variants": null,
@@ -3541,9 +3521,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/reptile_trinket.webp",
     "image_variants": null,
@@ -3560,9 +3540,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/sturdy_clamp.webp",
     "image_variants": null,
@@ -3579,9 +3559,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/red_mask.webp",
     "image_variants": null,
@@ -3598,9 +3578,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/red_skull.webp",
     "image_variants": null,
@@ -3647,9 +3627,9 @@
     "rarity": "Laden-Relikt",
     "pool": "defect",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/runic_capacitor.webp",
     "image_variants": null,
@@ -3666,9 +3646,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/burning_sticks.webp",
     "image_variants": null,
@@ -3730,9 +3710,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/shovel.webp",
     "image_variants": null,
@@ -3749,9 +3729,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/strike_dummy.webp",
     "image_variants": null,
@@ -3802,9 +3782,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/whetstone.webp",
     "image_variants": null,
@@ -3821,9 +3801,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/sling_of_courage.webp",
     "image_variants": null,
@@ -3855,9 +3835,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/pen_nib.webp",
     "image_variants": null,
@@ -3904,9 +3884,9 @@
     "rarity": "Laden-Relikt",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/brimstone.webp",
     "image_variants": null,
@@ -3953,9 +3933,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/dingy_rug.webp",
     "image_variants": null,
@@ -3972,9 +3952,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/self_forming_clay.webp",
     "image_variants": null,
@@ -3991,9 +3971,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/oddly_smooth_stone.webp",
     "image_variants": null,
@@ -4010,9 +3990,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/shuriken.webp",
     "image_variants": null,
@@ -4029,9 +4009,9 @@
     "rarity": "Laden-Relikt",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/undying_sigil.webp",
     "image_variants": null,
@@ -4112,9 +4092,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "silent",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/snecko_skull.webp",
     "image_variants": null,
@@ -4161,9 +4141,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/gambling_chip.webp",
     "image_variants": null,
@@ -4180,9 +4160,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/game_piece.webp",
     "image_variants": null,
@@ -4293,9 +4273,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/stone_cracker.webp",
     "image_variants": null,
@@ -4327,9 +4307,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/stone_calendar.webp",
     "image_variants": null,
@@ -4346,9 +4326,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/tuning_fork.webp",
     "image_variants": null,
@@ -4365,9 +4345,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/punch_dagger.webp",
     "image_variants": null,
@@ -4399,9 +4379,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "defect",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/power_cell.webp",
     "image_variants": null,
@@ -4418,9 +4398,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "defect",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/symbiotic_virus.webp",
     "image_variants": null,
@@ -4452,9 +4432,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/bag_of_preparation.webp",
     "image_variants": null,
@@ -4471,9 +4451,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/pocketwatch.webp",
     "image_variants": null,
@@ -4520,9 +4500,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "silent",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/tingsha.webp",
     "image_variants": null,
@@ -4554,9 +4534,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/toxic_egg.webp",
     "image_variants": null,
@@ -4573,9 +4553,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/potion_belt.webp",
     "image_variants": null,
@@ -4637,9 +4617,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/venerable_tea_set.webp",
     "image_variants": null,
@@ -4675,9 +4655,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/vajra.webp",
     "image_variants": null,
@@ -4754,9 +4734,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/petrified_toad.webp",
     "image_variants": null,
@@ -4773,9 +4753,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/unsettling_lamp.webp",
     "image_variants": null,
@@ -4792,9 +4772,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/vexing_puzzlebox.webp",
     "image_variants": null,
@@ -4811,9 +4791,9 @@
     "rarity": "Laden-Relikt",
     "pool": "regent",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/vitruvian_minion.webp",
     "image_variants": null,
@@ -4845,9 +4825,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/white_beast_statue.webp",
     "image_variants": null,
@@ -4864,9 +4844,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/white_star.webp",
     "image_variants": null,
@@ -4883,9 +4863,9 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
     "image_url": "/static/images/relics/toolbox.webp",
     "image_variants": null,
@@ -4902,9 +4882,9 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
     "image_url": "/static/images/relics/tiny_mailbox.webp",
     "image_variants": null,
@@ -4921,9 +4901,9 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
     "image_url": "/static/images/relics/tungsten_rod.webp",
     "image_variants": null,
@@ -5015,9 +4995,9 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
     "image_url": "/static/images/relics/centennial_puzzle.webp",
     "image_variants": null,
