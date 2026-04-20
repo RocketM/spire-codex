@@ -50,7 +50,6 @@ CATEGORIES: dict[str, tuple[str, str, bool, list[str] | None]] = {
             # and players see them, so they're shippable.
             "neow.png",
             "tezcatara.png",
-            "architect.png",
             "darv.png",
             "orobas.png",
             "tanx.png",
