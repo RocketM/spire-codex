@@ -2,7 +2,7 @@ name: News refresh
 
 # Steam's ISteamNews/GetNewsForApp returns a sliding window of the newest
 # ~200 articles, so once a post ages out we can never query it again through
-# that endpoint. This workflow polls every 6h, overwrites changed bodies,
+# that endpoint. This workflow polls hourly, overwrites changed bodies,
 # appends new gids to `data/news/`, rebuilds `data/news/index.json`, and
 # commits the diff to main when something changed.
 #
@@ -12,10 +12,12 @@ name: News refresh
 
 on:
   schedule:
-    # Every 6h on the hour. Mega Crit ships announcements roughly weekly
-    # and press picks them up shortly after, so 4× daily is plenty without
-    # spamming the Steam API. Adjust if you want fresher data.
-    - cron: "0 */6 * * *"
+    # Hourly on the top of the hour. The backend reads the bind-mounted
+    # `data/news/` on every request (no lru_cache), so a new Steam post
+    # is visible within ~1h of publish without a container restart.
+    # The parser is idempotent — polls that find nothing new bail before
+    # committing, so most ticks are free aside from the Steam round-trip.
+    - cron: "0 * * * *"
   workflow_dispatch: {}  # allow manual "run now" from the Actions tab
 
 # Don't allow two refreshes to race — if a long run is still committing,
